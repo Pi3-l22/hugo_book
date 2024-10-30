@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>挚爱不是我 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/8/27-%E6%8C%9A%E7%88%B1%E4%B8%8D%E6%98%AF%E6%88%91/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/8/27-%E6%8C%9A%E7%88%B1%E4%B8%8D%E6%98%AF%E6%88%91/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="挚爱不是我">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+  <meta name="twitter:title" content="挚爱不是我">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="挚爱不是我">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9828">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">挚爱不是我</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>20分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%8c%9a%e7%88%b1%e4%b8%8d%e6%98%af%e6%88%91&amp;url=https://mohai.us.kg/posts/2024/8/27-%E6%8C%9A%E7%88%B1%E4%B8%8D%E6%98%AF%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/8/27-%E6%8C%9A%E7%88%B1%E4%B8%8D%E6%98%AF%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%8c%9a%e7%88%b1%e4%b8%8d%e6%98%af%e6%88%91%20https://mohai.us.kg/posts/2024/8/27-%E6%8C%9A%E7%88%B1%E4%B8%8D%E6%98%AF%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26582.jpg" alt="挚爱不是我" />
+      
+
+      <p>挚爱不是我</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>和男友冷战的第三天，我在他电脑里发现了一个名为「一生挚爱」的文档。</p>
+<p>字字斟酌，情真意切，而女主角，是他的初恋。</p>
+<p>1</p>
+<p>这是我第一次站在旁观者的角度看江喆和她的故事。</p>
+<p>从相识，相爱，热恋，争吵，哭泣，再到分开。</p>
+<p>五年的感情，两个人爱惨了彼此，分手又和好，无数次重蹈覆辙，最后遗憾地发现回不去了，在骨子里留下了刻骨的伤。</p>
+<p>江喆的文笔很好，把两个人的热烈缠绵和无奈痛苦，用文字最大化表达了出来。</p>
+<p>一段烂漫却遗憾的青春剧，生动地浮现在眼前。</p>
+<p>这一刻，我觉得我是他们感情的第三者。</p>
+<p>酸涩挤满了整个腹腔。</p>
+<p>我闭上眼，满脑子都是那个小心翼翼，拼尽全力去爱初恋的江喆。</p>
+<p>他知道女孩儿生气了要哄，有了矛盾要解决，吵架不能隔夜。</p>
+<p>他比谁都清楚怎么去爱一个人。</p>
+<p>可和我在一起的这两年，他却任由矛盾发酵，不做回应，让我在冷暴力的沼泽中不断沉浮……</p>
+<p>晚上 10 点，江喆终于回来了。</p>
+<p>彼时我正在客厅的沙发上呆坐。</p>
+<p>但凡他偏头看我一眼，就一定能看到我憔悴的脸和哭肿的眼睛。</p>
+<p>可是没有，一眼都没有。</p>
+<p>地上扔了一地擦鼻涕的纸巾，他像没看到一样跨了过去。</p>
+<p>和往常冷战时一样，他回来就钻进了次卧打游戏，然后洗完澡，出来接着刷着短视频，吃外卖。</p>
+<p>全程没有分给过我一个眼神。</p>
+<p>明明共处一室，可这刻我觉得我们遥远极了。</p>
+<p>深吸了口气，我走过去坐在他身旁，「江喆，我们好好谈谈吧。」</p>
+<p>江喆吃饭的动作一滞，随后不发一言地站起来，把外卖推到另一边，自己转过去重新吃了起来。</p>
+<p>伴着视频搞怪的声音，他愉悦地轻笑出声。</p>
+<p>我尴尬地呆坐在原地。</p>
+<p>明明他一根手指头都没有碰我，可我却觉得脸上火辣辣的疼。</p>
+<p>我回房间拿出江喆的电脑，把那个文档打开放在他面前。</p>
+<p>江喆顿住了。</p>
+<p>沉默了好大会儿，他皱眉看向我，「姜年，这些都是过去的事儿了，而且我跟她都三年多没有联系过了，这还不够吗？你在无理取闹什么？」</p>
+<p>说这话时，他往日平和的眉眼升起浓重的不耐。</p>
+<p>这一刻，我忽然觉得面前这个人陌生极了。</p>
+<p>2</p>
+<p>两年前，我和江喆在父母撮合的相亲局中结识，两情相悦，然后顺理成章地走到了一起。</p>
+<p>我一直都知道他有个谈了五年的初恋，可我不在意。</p>
+<p>因为江喆对我太好了，温柔浪漫，细节深情，简直满足了我对男朋友对爱情的所有幻想。</p>
+<p>可在一起不久，我就发现了江喆的问题。</p>
+<p>平时不吵架还好，一旦发生分歧，任凭我怎么委屈，歇斯底里，试图沟通，他都只会冷着脸说，「姜年，你让我一个人静一静。」</p>
+<p>这一静，少则一两天，多则一周半个月。</p>
+<p>然后他当作什么都没发生地回来，一如既往地对我好。</p>
+<p>我痛苦崩溃想分手，却一次次在他的温柔里溃不成军。</p>
+<p>冷暴力这东西，没有任何实质性的伤口。</p>
+<p>就像从根部腐烂的大树，外面依旧生机勃勃，枝繁叶茂，可不论你给它再浇多少水，再施多少肥，它都只能一天天枯死。</p>
+<p>你每一分的努力都是徒劳的。</p>
+<p>可偏偏，你觉得是你的错，是你不够努力。</p>
+<p>两年，我一直坚信江喆是爱我的，只是他不会沟通罢了。</p>
+<p>直到看到了「一生挚爱」，我才意识到自己这两年有多可笑。</p>
+<p>不是他不会爱人，只是他想爱的不是我罢了。</p>
+<p>3</p>
+<p>我跟江喆提了分手。</p>
+<p>他张了张嘴，最终一个字都没说出口。</p>
+<p>眼里的无奈，就像在看一个无理取闹的孩子。</p>
+<p>直到我收拾好行李箱拉开房门的时候，江喆才抓住了我的手腕，</p>
+<p>「姜年，别闹了行吗，哪个人没点过去，你何必这样揪着不放呢？」</p>
+<p>我抬头直视他的眼睛。</p>
+<p>不知道是不是心理作用，以前我分明很喜欢他看我的眼神，可现在我却觉得，那里面只有化不开的冷漠。</p>
+<p>我想挣开他的手，江喆却越箍越紧。</p>
+<p>僵持了好大会。</p>
+<p>我低头看向自己手腕，那里果然已经红了一大片。</p>
+<p>「江喆，如果换作是她，你还会无视她的疼痛，一直不管不顾地抓着吗？」</p>
+<p>江喆闻言一僵，慌忙放了手。</p>
+<p>他揉了揉眉心，一副无可奈何的模样，「姜年，就算要走，也要等天亮吧。」</p>
+<p>心脏被一只大手抓着喘不过气来，我避开他的视线，深吸了口气缓解窒息感。</p>
+<p>「不了。」</p>
+<p>我一刻也不想在这个染满他气息的地方呆下去了。</p>
+<p>我拿着行李箱钻进夜色。</p>
+<p>晚秋的夜晚很冷，寒风无孔不入地钻进我的大衣里。</p>
+<p>我不由想到了江喆的初恋。</p>
+<p>4</p>
+<p>五年前，那个叫白昭的女孩子半夜和男朋友吵架离家出走。</p>
+<p>她赌气地关掉手机，沿着街道边走边哭，最后走到哪里，她自己都搞不清楚。</p>
+<p>身上只有八块钱，她拿着那钱去买了一个烤红薯。</p>
+<p>寒冷的夜风中，她抱着红薯，没心没肺啃得很香。</p>
+<p>然而，红薯还没吃完，她就被拥进了一个温暖宽厚的怀抱。</p>
+<p>她很惊喜，「江喆，你怎么找到我的？」</p>
+<p>江喆把大衣脱下来裹紧她，声音都有些发颤，「昭昭，我保证这种情况不会再发生第二次了。」</p>
+<p>后来，他跟她吵架再没有争辩过。</p>
+<p>那一晚，在文档中记录着，一个男孩儿为找他的昭昭，穿着一双单薄的拖鞋跑了半个城市。</p>
+<p>同样的夜晚，同样的男朋友。</p>
+<p>不同的境遇。</p>
+<p>我这两年的义无反顾，比起初恋的五年终究不值一提。</p>
+<p>5</p>
+<p>泪水粘在脸上再被寒风一吹，那真是刺骨的冷。</p>
+<p>我伸手去擦，却越擦越多。</p>
+<p>其实不是无处可去，可我就是自虐般在大街上漂泊。</p>
+<p>但我没想到，这么寒冷的夜晚也会有人为我而来。</p>
+<p>冯言终站在我面前时，身上沾满了秋夜的寒意，耳尖都冻得红透了，却偏偏挤着一贯腼腆的笑容，「姜年，跟我回家吧。」</p>
+<p>我很惊讶，「你怎么会来？」</p>
+<p>「江喆给希希打电话，说你出来了，她人在外地所以联系了我。我不放心，出来试着找找你，没想到真的碰到了。」</p>
+<p>他说得轻描淡写。</p>
+<p>可我的鼻子猛地一酸，眼泪不受控制地就要往下落。</p>
+<p>偌大城市的夜晚，要找到一个人谈何容易？</p>
+<p>冯言终急了，「诶，你怎么哭了？」</p>
+<p>刚刚经历过彻骨的冷漠，冯言终这么一关心，我突然就破防了，蹲在地上，抱着自己哭得一把鼻涕一把泪。</p>
+<p>冯言终在我身边蹲下，一米八几的大男人，此刻慌得手脚都不知道该怎么摆，嗫嚅了半天才小心翼翼地说，「姜年，肩膀可以借你靠一下。」</p>
+<p>沉默良久，我最终歪了歪头，轻倚上去。</p>
+<p>能清楚感受到他几乎要跳出胸腔的心跳和僵硬的身体。</p>
+<p>我突然觉得有些好笑。</p>
+<p>二十五六的人了，怎么还是纯情得像个小少年？</p>
+<p>6</p>
+<p>冯言终带我打车回了他家。</p>
+<p>我捧着姜汤小口地喝，看着忙前忙后给我打理房间的冯言终，心慢慢安定下来。</p>
+<p>其实我认识冯言终比江喆还要早。</p>
+<p>高中时，冯言终是典型的理工学霸，一心只读圣贤书，大大小小的奖项拿到手软，大学更是风云人物。</p>
+<p>大二那年，他借酒跟我表白。</p>
+<p>震惊之余，我拒绝了他。</p>
+<p>那时候我深受青春剧熏陶，喜欢幽默霸道的阳光少年。</p>
+<p>沉闷腼腆的冯言终，怎么看都够不上我的择偶标准。</p>
+<p>可冯言终比我想象的固执。</p>
+<p>这些年，他沉默地守在我身边，再没提过一句喜欢。</p>
+<p>今晚超出朋友界限的行为还是头一次。</p>
+<p>他情绪隐藏得太好，正如当年我没搞清楚他为什么喜欢我一样，如今我也看不明白他对我的感情。</p>
+<p>冯言终收拾好房间出来，我倒了一杯姜汤给他，</p>
+<p>「冯言终，谢谢你，等明天我找到房子就搬出去。」</p>
+<p>他微不可察地皱了皱眉，把姜汤一饮而尽，</p>
+<p>「不用了，你就在这儿住下吧，我在附近还有一套房子，我去那儿住。」</p>
+<p>我想了想，跟他说，「那我每个月按市面上的房租给你。」</p>
+<p>他点头：「也好。」</p>
+<p>7</p>
+<p>大概成年人的悲哀就是，不论昨天你因为什么事儿哭得多惨，第二天都还是得爬起来当社畜。</p>
+<p>昏昏沉沉了一整天，好不容易捱到下班，刚出电梯我就看到了一个熟悉的身影。</p>
+<p>江喆。</p>
+<p>他像是什么都没发生般，浅笑着走过来要挽我的肩，「姜年，我们回家吧。」</p>
+<p>我微微侧身，躲开了。</p>
+<p>身边的同事相视一笑，纷纷打趣着说原来恩爱的小两口也有吵架的一天，让江喆回去好好哄哄我。</p>
+<p>江喆一边看我脸色，一边连声应好。</p>
+<p>我全程面无表情。</p>
+<p>直到同事走尽，我才跟他说：「江喆，我们已经分手了，以后不要来我公司了。」</p>
+<p>江喆闻言身体僵了下。</p>
+<p>不过很快，他就不以为意地笑着问我，「年年，你中午想吃什么？我给你做吧。」</p>
+<p>我看着若无其事的他，脑海中突然浮现出去年冬天发生的一件事。</p>
+<p>那时候家里最疼爱我的奶奶突然去世，我匆匆赶回老家。</p>
+<p>悲痛之余，又恰逢我和江喆吵架冷战。</p>
+<p>我有意向他寻求安慰，但一看到微信最后一条消息还停留在一周前我发的「我们能好好沟通一下吗」上，我就只剩下深深的无力感。</p>
+<p>奶奶葬礼后的第三天，我没忍住给江喆打了个视频。</p>
+<p>在快挂断的时候，他才接了起来。</p>
+<p>大大的屏幕里露出来的却不是他的正脸，是那种手机平放在桌面上，他直视着前方，只能看到下颌线的视角，隐约还有键盘的敲击声响起。</p>
+<p>我愣住了，「江喆，你在干吗？」</p>
+<p>他连看都没看我一眼便回，「网吧，打游戏。」</p>
+<p>我当时没有说话，就那么定定地看了他许久。</p>
+<p>心痛得快要窒息，我突然不明白谈这段恋爱的意义何在。</p>
+<p>那是我第一次提分手。</p>
+<p>我下定决心要和江喆一刀两断，可一周后我坐高铁回学校，费力地把行李箱举向上面置物架的时候，手上突然一轻，身后有人帮我托了上去。</p>
+<p>我回头，看见了江喆。</p>
+<p>他手里捧着我最喜欢的桔梗花，风尘仆仆的脸上挽着一抹笑，「姜年，我终于找到你了。」</p>
+<p>我很惊讶，毕竟这是和学校相隔几百公里外的老家，「你怎么在这儿？」</p>
+<p>江喆一双桃花眼目不转睛地含笑看着我，「听说你今天要回学校，我提前买了票赶回来陪你一起回。」</p>
+<p>人在最痛苦的时候，是拒绝不起别人给的光的。</p>
+<p>那一刻，全世界都模糊了，只有面前温柔的男孩子被无限放大。</p>
+<p>不管之前的棒子打得我有多重，可那刻的糖的确甜到了心坎儿里。</p>
+<p>所以我又一次选择扑进他的怀抱。</p>
+<p>可现在我终于明白，江喆最狠的地方就在于这儿。</p>
+<p>爱你，又似乎没那么爱你。</p>
+<p>打一棒子给一颗甜枣，让你不断沉浮，却始终无法逃离。</p>
+<p>江喆的呼唤把我扯回了现实。</p>
+<p>我看着他，心中突然升起了一丝厌恶。</p>
+<p>可能是我眼中的厌恶太明显，江喆慌了。</p>
+<p>他握着我的肩，语气认真地说：「年年，我从没想过和你分开。」</p>
+<p>明明做着不爱你的事儿，却偏偏表现得比谁都深情。</p>
+<p>我忽然觉得好笑，「江喆，虽然这个问题很蠢，但我还是想问你一句，比起你的初恋，我算什么？」</p>
+<p>江喆沉默了很久，最后揉了揉眉心，有些疲惫地说，</p>
+<p>「姜年，我的确爱过她，但那都是过去的事儿了。现在我爱的是你不就够了吗？我不明白你在跟我闹什么。」</p>
+<p>他的眼神很迷惑，似乎是真的不懂。</p>
+<p>我梗了下，突然有些说不出话来。</p>
+<p>脸上忽然有些痒，我下意识伸手去摸，一片湿润。</p>
+<p>江喆也看到了，慌张地想要抱我，「年年，对不起，别生气了好不好？」</p>
+<p>我躲开了，「江喆，人在生气的时候是不会掉眼泪的，受了委屈才会。」</p>
+<p>「我看过你全心全意爱她的样子，我真的觉得你不爱我。」</p>
+<p>江喆皱起眉，强调般说，「姜年，我爱你。」</p>
+<p>「所以为什么她生气了你会哄，但在我这里，永远只是无休无止的沉默呢？」</p>
+<p>「我……」</p>
+<p>「江喆，你知道冷暴力对女孩子的伤害。」我扭头平静地看他，任由脸上泪珠滚落，「你只是，不怕失去我。」</p>
+<p>可能是我的语气太过笃定，又或者把真相血淋淋地剥开放在了明面上，江喆久久没能再吐出一个字。</p>
+<p>8</p>
+<p>明明不觉得多难受，可回家之后，我还是忍不住喝起了酒。</p>
+<p>冯言终来找我的时候，我抱着酒瓶已经醉了七八分。</p>
+<p>他抢走酒瓶，给我倒了杯蜂蜜水。</p>
+<p>房间里只开了一盏小夜灯，月光透过落地窗倾泻了一室，这样的环境让人极其有安全感。</p>
+<p>我急于找个情绪的倾泻点，借着酒劲儿自顾自地把我和江喆的事断断续续都讲了出来。</p>
+<p>临了，我端着酒杯明知故问地问冯言终，</p>
+<p>「没发现那个文档之前，我还一直为他的冷暴力找借口，觉得他这个人可能性格就是这样的。冯言终，我是不是很蠢啊？」</p>
+<p>「是。」</p>
+<p>毫不犹豫的一声回答，倒是让我蒙住了。</p>
+<p>「姜年，只要真的喜欢一个人，对她好就成了刻进骨子里的本能。能做出冷暴力行为的人，要么是不在乎，要么有恃无恐，无一例外。」</p>
+<p>顿了顿，冯言终又沉声加了一句，</p>
+<p>「更何况，解决问题是男人该有的担当，他的处理方式，连十足的男人都算不了。」</p>
+<p>我更吃惊了。</p>
+<p>以前我对冯言终的印象是沉闷，是冷静，是睿智，唯独没有看他这样情绪外放过。</p>
+<p>我想喝口酒压压惊，酒瓶却被冯言终夺走了。</p>
+<p>他拿起来喝了一口，偏头看我，「姜年，你和以前不一样了。」</p>
+<p>「嗯？」</p>
+<p>「我记得你以前，很开心。」</p>
+<p>我偏头看他，模糊的视线中，我隐隐约约在他眸中看到了些许心疼的意味。</p>
+<p>心狠狠一颤，我忽然有些不知所措，慢慢趴到了沙发上假装酣睡。</p>
+<p>酒精很快上头，失去意识的前一秒，我隐隐约约感觉到一个人小心翼翼把我抱了起来……</p>
+<p>从那晚后，我就开始有意无意地躲着冯言终。</p>
+<p>冯言终大概也感受到了我的拒绝，和我又恢复了从前不冷不热的关系。</p>
+<p>江喆这几天也一直在挽留我，我拉黑了他所有的联系方式，他便换号给我发消息。</p>
+<p>从刚开始的挽留，乞求，到后面长篇大论的道歉，甚至最后他妈妈都给我打来电话为他说情。</p>
+<p>我忍无可忍地回了一句，</p>
+<p>「江喆，你不是不会哄人吗，现在这是在做什么啊？迟到的深情比草贱，别让我看不起你。」</p>
+<p>他再没发过消息。</p>
+<p>9</p>
+<p>得知白昭回来的消息，是在一个月后。</p>
+<p>那天我找了新房子准备搬出冯言终家，想最后一次请他吃顿饭。</p>
+<p>结果刚进美食城就收到了闺蜜希希的来电，她告诉我，在朋友圈看见老同学说江喆的初恋回国了。</p>
+<p>我还没来得及说什么，抬眼就看见了江喆和一个女生并肩往这边走。</p>
+<p>以前存在于照片上的人，就这么突然真切地出现在了我眼前。</p>
+<p>白昭看上去比照片上更乖巧生动一些，水蓝色的长裙给她添了些许温婉。</p>
+<p>就是我脑海中幻想过的男生白月光该有的模样。</p>
+<p>本以为失恋的痛我已然淡忘，可这一刻，痛疼和不甘像藤蔓一样瞬间滋生。</p>
+<p>旁边的冯言终发现了我的异样，偏过头来问我，「姜年，怎么了？」</p>
+<p>我木然地摇摇头，示意他继续向前走。</p>
+<p>两步，一步，擦身而过。</p>
+<p>江喆没分给我一个眼神。</p>
+<p>我脚步忽然有些软，冯言终眼疾手快地扶住了我。</p>
+<p>「谢……」</p>
+<p>道谢的话还没说完，一道有力的风突然向我们袭来。</p>
+<p>我下意识往后一躲，身体却重心不稳，重重磕在了后面的柱子上，后背火辣辣地疼。</p>
+<p>顾不上疼，我匆忙跑过去拉不远处正在打架的两人。</p>
+<p>「江喆，你发什么疯？」</p>
+<p>江喆打得正上头，我扑过去的时候也没收力，冯言终怕误伤我，硬生生挨了一拳。</p>
+<p>我气得发抖，大脑还没反应过来，一巴掌就狠狠落在了江喆脸上。</p>
+<p>很清脆的一声，江喆的脸被打得偏到了一边。</p>
+<p>气氛诡异地沉默了半晌。</p>
+<p>江喆回过头来的时候，眼睛都气红了，</p>
+<p>「姜年，怪不得这次分手你那么坚决，你这是早就找好下家了吧，我们才分手多久，你怎么能……」</p>
+<p>「江喆，你自己龌龊，别把别人都想得那么龌龊。」</p>
+<p>我冷冷扔下这一句话，拉着冯言终就要走。</p>
+<p>江喆却攥住了我的手腕，「姜年，我和白昭不是你想的那样，我是故意来试探你的，我想看看你还会不会为了我吃醋。」</p>
+<p>我愣了下，随后无所谓地摇头，「没关系了，你怎么样都跟我没关系了。」</p>
+<p>沉默了一会儿，江喆声音发颤地说，「姜年，我本来打算月底就向你求婚的。」</p>
+<p>婚姻吗？</p>
+<p>我的眼泪莫名其妙地流了下来，即使我并不觉得难过，</p>
+<p>「江喆，我的确曾满心欢喜地幻想过和你结婚，可现在我一想到和你在一起的婚姻将会是无休无止的沉默和争吵，只觉得窒息。」</p>
+<p>「姜年，我改好吗？你不喜欢的，我统统改掉，好不好？」</p>
+<p>我还没答话，一旁的冯言终突然捂住唇咳了两声，</p>
+<p>「姜年，我们去的太迟，订的餐厅位置给别人了，咱们买点儿东西回家吃吧。」</p>
+<p>我抬眸看了眼冯言终，突然懂了他的意思。</p>
+<p>点点头，「是啊，太迟了。」</p>
+<p>是在回答冯言终的问题，却是看着江喆说出来的。</p>
+<p>江喆定定地看着我们，脸色忽然白了。</p>
+<p>10</p>
+<p>从美食城出来，我和冯言终都没了吃饭的心情。</p>
+<p>最后直接去超市买了点儿火锅的材料，回冯言终家煮火锅吃。</p>
+<p>氤氲的热气中，我们有一搭没一搭地说着话，气氛还算融洽，冯言终平时冷冷清清的脸上也挂了笑。</p>
+<p>我夹了块羊肉，然后顺嘴提了一句下周要搬家的事儿。</p>
+<p>冯言终吃饭的动作一顿，闷闷地嗯了下，不再作声。</p>
+<p>气氛突然就沉寂了下来。</p>
+<p>我偷偷看冯言终，他脸上的笑容好像淡了。</p>
+<p>我突然想到那晚冯言终的眼神，心脏一沉，好像被什么东西攥住了。</p>
+<p>安静了好大会儿，冯言终起身去开了几瓶啤酒，他递给我一瓶，「喝吗？」</p>
+<p>我摇摇头。</p>
+<p>他便自顾自地喝了起来，喝得有点儿凶，一连五六瓶。</p>
+<p>我想劝他几句，最终还是什么都没说出口。</p>
+<p>「姜年。」冯言终突然出声，「你帮我去卧室的床头柜里拿包纸吧。」</p>
+<p>我点点头，没多想就进了他的卧室。</p>
+<p>一打开床头柜，我就呆住了。</p>
+<p>哪里有什么纸，分明是……</p>
+<p>我下意识地想关住柜门，当作什么都没看见。</p>
+<p>冯言终却不知什么时候站在了我身后，「姜年，看看吧。」</p>
+<p>手微微一颤，我打开了那个写着姜年的相册集。</p>
+<p>原来冯言终喜欢我比我想象的要早很多。</p>
+<p>高一那会儿，我还是个不折不扣的学渣，冯言终的学神之名却已远扬。</p>
+<p>一次年级考试中途，冯言终的黑笔忽然没水了。</p>
+<p>目光刚落在旁边座位的我身上，我就十分上道地扔了一支笔在他桌子上。</p>
+<p>本以为是一场甜甜的青春校园剧，可成绩一下来，冯言终呆了。</p>
+<p>他的英语只有五十分。</p>
+<p>不信邪的班主任特意从试卷库里找到了冯言终的英语答卷。</p>
+<p>不看不知道，这一看就吓了一跳——他的英语试卷后面竟然都是白卷！</p>
+<p>明明字迹还隐隐约约地映在纸上，可硬生生就是一个字都没显出来。</p>
+<p>原来，是我误把整蛊闺蜜的特殊笔给了他。</p>
+<p>就是那种写上字一个小时就会消失的笔……</p>
+<p>那是学神冯言终第一次也是唯一一次屈居年级第二。</p>
+<p>前无古人后无来者的屈辱，让冯言终深深地记住了我的名字。</p>
+<p>高一下学期，学校里严打早恋，并逮住了一对「情侣」在国旗下当着全校人的面读检讨书。</p>
+<p>不巧，被抓住的那个人正是我。</p>
+<p>不过很快大家都知道我是被冤枉的了。</p>
+<p>因为那天我读的压根不是什么检讨书。</p>
+<p>原来，作为当事人，我和男生并没有过多接触，我不清楚他为什么会向我表白，我也明确地拒绝了他并表明学习为重。</p>
+<p>我向班主任说明这一切，这个年金过百的更年期女人表示一个字都不信。</p>
+<p>甚至说什么苍蝇不叮无缝的蛋，男生之所以会喜欢上我，是因为我自己的行为。</p>
+<p>妥妥的受害者有罪论。</p>
+<p>十七岁的姜年张狂得很，自然不肯吃这种哑巴亏，直接在国旗下说明了事情原委，并激情澎湃地讲述了对「受害者有害论」的不满。</p>
+<p>那天天气很好，女孩儿整个人沐浴在阳光下，很勇敢地表达了自己受到的不公。</p>
+<p>冯言终站在第一排，清楚地看完了全程。</p>
+<p>从有记忆开始，他一步步便循规蹈矩，走着老师和父母口中的人生，努力成为「别人家的孩子」。</p>
+<p>而年少的姜年，就像是他的另一种极端，学渣，张狂。</p>
+<p>活得灿烂又肆意。</p>
+<p>年少的喜欢有时候来的就是这么奇妙。</p>
+<p>冯言终自己都不知道是何时心动的，但回头一看青春，已经到处都是她的影子。</p>
+<p>所以有了后面的一切一切。</p>
+<p>我合上了相册，心里又酸又涨。</p>
+<p>一方面是冯言终炽热真诚的感情，一方面我恍然意识到，在江喆的冷暴力中，我把那个肆意快乐的姜年弄丢了。</p>
+<p>冯言终的声音从后面传来，</p>
+<p>「姜年，其实我现在自己也搞不清楚对你是喜欢还是执念，我只知道我不能再看着你从我身边路过却什么都不敢做了，这一次，我想给自己争取一个机会。」</p>
+<p>11</p>
+<p>时光一晃而逝，距离冯言终表明心迹已经过去了两个月。</p>
+<p>这两个月，我拿着自己多年攒的旅游基金，去了以前一直想去的长白山。</p>
+<p>跋山涉水纵横万里，当看到白云缠绕下那清澈碧透的天池时，所有的一切似乎都豁然开朗了。</p>
+<p>我肆意大吼，尖叫，统统被面前庞大的景象包容并吞没。</p>
+<p>那些痛苦、不甘，在这庞大的自然界面前显得那么微不足道。</p>
+<p>我想，我该放下了。</p>
+<p>回酒店后，我登上了两个月没登过的微信。</p>
+<p>如我所料，江喆给我发了很多信息。</p>
+<p>最后一条是这样的：</p>
+<p>「年年，我懂你跟我分手的真正原因了。冷暴力，我从来都没承认过这个词，但仔细一想，事实好像的确是这样的。」</p>
+<p>「每每和你闹矛盾，我知道应该去沟通，我心里有个声音呐喊着去哄你拥抱你，可一对上生气沉默的你，我好像突然就没有那个力气了。」</p>
+<p>「和白昭五年的爱而不得似乎磨光了我所有的热情，我害怕吵架，一吵架就只剩下无力。我很害怕我们这段感情也会像以前那样无疾而终，所以我站在原地连迈脚都不敢。」</p>
+<p>我看着这段消息愣了很久。</p>
+<p>其实江喆算是我的初恋。</p>
+<p>我还记得当初的我有多认真地对待这段感情，我多想让它有个结果。</p>
+<p>那些寂静无声的夜里，我一次次泪湿满面，仅仅是期待一个回应而已。</p>
+<p>不是每一声对不起都值得被原谅的。</p>
+<p>我回他：</p>
+<p>「江喆，你知道冷暴力不对，但你还是这么做了，你其实渣得很明白。」</p>
+<p>「我宁愿不被爱，也不想有人再打着爱的旗号来消耗我了。咱们就到此为止吧，别把我们曾经美好的记忆彻底毁灭。」</p>
+<p>江喆没再发来消息，我干净利落地拉黑删除了他所有的联系方式。</p>
+<p>12</p>
+<p>回市那天是冯言终来接我的。</p>
+<p>他一如既往地清冷，什么都没多问，搬行李拿东西各种琐事却从未落下。</p>
+<p>我看着他沉稳的侧脸突然觉得很安心。</p>
+<p>我忽然意识到，冯言终一直都是这样的。</p>
+<p>以一种不远不近的姿态出现在我身边，没那么炽热，却也从未缺席。</p>
+<p>「你尽管往前走，我一定在你身后。」</p>
+<p>冯言终一如这句话一样让人安心。</p>
+<p>「冯言终，谢谢你。」</p>
+<p>我动了动唇角，无声地说出了这句话。</p>
+<p>后面的日子格外平静且祥和。</p>
+<p>江喆再未打扰过我，那些伤痛随着时间在逐渐淡化。</p>
+<p>倒是白昭来找过我一次。</p>
+<p>我们约在了奶茶店。</p>
+<p>本以为会遇见电视剧小说的狗血剧情，谁知白昭跟我说的第一句话就让我拉满了好感，「分开了好，他根本配不上你。」</p>
+<p>我惊讶地看着她，「我以为你是来替江喆求情的。」</p>
+<p>「怎么会？」</p>
+<p>白昭忽地笑了，笑起来的眼睛乖巧又灵动，</p>
+<p>「你别说，江喆那小子别的不行，挑女朋友的眼光还是不错的。在美食城见你的第一面，我就想跟你做朋友了。」</p>
+<p>我举着奶茶跟她干了干杯，「这点我同意。」</p>
+<p>谈话间我们说起那个文档，白昭气得脸都鼓了起来，</p>
+<p>「他放屁！那是他自以为是的甜吧。刚开始谈的那会儿他的确会哄我，可是越到恋爱后期他就越冷漠，一吵架就只会不说话。我也是因为感情基础再加上年轻不懂事，才忍他那么久的。现在想想那五年，我都直犯恶心。」</p>
+<p>这倒是很出乎我意料。</p>
+<p>我不禁唏嘘，「果然，没有担当就是没有担当，在谁身上都不行。」</p>
+<p>「是啊，我就是怕再有一个女生被他骗，所以在他找我帮忙气你的时候我才答应的。」</p>
+<p>我注意到白昭手上的婚戒。</p>
+<p>一问，她就羞涩地笑了，「是啊，我已经结婚了，现在很甜蜜，感谢江喆不娶之恩！」</p>
+<p>我们碰着杯相视大笑。</p>
+<p>正谈着，一个男人突然走进来直奔白昭，</p>
+<p>「你啊你，一会儿看不住就干坏事儿，医生都说了让你戒奶茶，你现在不听以后受罪的还不是你？咱们熬过这十个月再喝不行吗？」</p>
+<p>很显然，这就是白昭的丈夫。</p>
+<p>我惊讶地看他们，「白昭怀孕了？」</p>
+<p>男人无奈地揉着眉心，「是啊，让你见笑了。」</p>
+<p>最后白昭还是被男人拖走了。</p>
+<p>我透过大大的玻璃窗，看着他们相携离开的身影。</p>
+<p>男人似乎还在批评白昭，一米八的壮汉，刻意板起的脸上，目光却是掩饰不了的温柔缠绵。</p>
+<p>白昭在一旁吐着舌头听批评。</p>
+<p>两人独成一抹风景。</p>
+<p>我捧着奶茶，看着这和谐的一幕轻轻笑了。</p>
+<p>这世上真诚的爱真的太多太多了，我们实在没必要把时光浪费在不真诚的人身上。</p>
+<p>13</p>
+<p>时间一晃而过。</p>
+<p>这半年，我把自己的重心放在了事业上。</p>
+<p>长白山的旅途让我想通了很多，我开始捡起梦想动笔写故事。</p>
+<p>记得初高中时我有个很喜欢的作者，她的文笔细腻温柔，曾陪伴我走过很多失意。</p>
+<p>文字有一种很奇特的治愈人心的力量。</p>
+<p>早在看见天池的那刻，我突然就很想成为一个她那样的人，我想用我的文字去温暖更多的人。</p>
+<p>自我的成就的满足让我整个人都丰满了起来。</p>
+<p>哦对了，除此之外，冯言终在我生日的时候还送了我一条小金毛。</p>
+<p>圆滚滚的一只，能吃能睡，很亲人。</p>
+<p>我和金毛主人的关系，也在不知不觉间微妙起来。</p>
+<p>冯言终追人也像他这个人一样内敛，「不小心」多出来的电影票，超市「正好」买一送一的牛奶，越来越多的「偶遇」。</p>
+<p>想到之前答应给冯言终一个机会，我也就放任我们的感情发展。</p>
+<p>一次我扁桃体发炎引起了发烧，整个人烧得昏昏沉沉的，意识模糊间，冯言终的脸第一时间浮现在我眼前。</p>
+<p>我给他发了消息。</p>
+<p>半夜三四点，本来没想着会收到回复的。</p>
+<p>可半小时后，门铃忽然响了起来。</p>
+<p>是金毛去开的门。</p>
+<p>再醒来时我已经在医院了，看着床边趴着的男人的疲惫的脸，我心中忽然升起一抹奇异的感觉。</p>
+<p>这个男人什么都没说过，可做的事儿一件件一桩桩皆温柔到了骨子里。</p>
+<p>他再醒来时，我对他说，「冯言终，听说扁桃体发炎后需要吃清淡的食物。」</p>
+<p>他没理解我的意思，只是点头应，「是啊。」</p>
+<p>「我不会做饭，你愿意搬来照顾我一阵子吗？」</p>
+<p>气氛安静了好大会儿。</p>
+<p>冯言终的眼睛一点点亮起来，「求之不得。」</p>
+<p>住在一起后，我发现冯言终这个人，完全就像个小宝藏，越往深处挖越让人觉得惊喜。</p>
+<p>这样一个男人，如果认真和他接触，喜欢不上他真的很难。</p>
+<p>和他在一起那天是跨年夜。</p>
+<p>我邀请他来家里一起包饺子，两个明明做菜手艺还不错的人，偏偏都对饺子无从下手。</p>
+<p>最后我们看着锅里的面皮馅汤指着彼此笑到直不起腰来。</p>
+<p>窗外响起了新年倒计时。</p>
+<p>5，4……</p>
+<p>我们忽然止了笑，默契地看向对方，心跳随着倒计秒数越来越快，越来越快。</p>
+<p>3，2……</p>
+<p>冯言终的脸微微凑近。</p>
+<p>余光看见他紧张到微微蜷起的手指，我轻笑了下，主动伸手勾住了他的脖子。</p>
+<p>1……</p>
+<p>窗外的烟花忽地一颗颗直窜上天，炸开美丽的光影。</p>
+<p>我们吻在了一起。</p>
+<p>良久，我和冯言终轻喘着分开。。</p>
+<p>「在一起吧。」</p>
+<p>我们异口同声地说出这句话。</p>
+<p>然后看着彼此不约而同笑了出来。</p>
+<p>窗外的烟花还在放。</p>
+<p>我轻轻靠在了冯言终的肩上，我们相拥着，一起欣赏着这盛大的美景。</p>
+<p>新的一年开始了。</p>
+<p>冯言终，我们的故事才刚刚开始……</p>
+<p>（全文完）</p>
+<p>备案号:YXX1jppOl3GFOOOXEPzTPM3Y</p>
+<p>他对我才不是没兴趣</p>
+<p>​</p>
+<p>​</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>秋小捌 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/2-%E5%8F%AA%E5%AF%B9%E6%B8%A9%E6%9F%94%E6%9C%89%E7%98%BE/" title="只对温柔有瘾">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">只对温柔有瘾</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/6-%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E4%B8%8A%E5%8F%91%E7%94%9F%E8%BF%87%E5%93%AA%E4%BA%9B%E8%B6%85%E8%87%AA%E7%84%B6%E4%BA%8B%E4%BB%B6-%E7%9F%A5%E4%B9%8E1/" title="中国历史上发生过哪些超自然事件？ - 知乎(1)">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">中国历史上发生过哪些超自然事件？ - 知乎(1)</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

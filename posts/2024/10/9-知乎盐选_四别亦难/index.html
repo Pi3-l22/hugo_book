@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知乎盐选 _ 四：别亦难 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/10/9-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E5%9B%9B%E5%88%AB%E4%BA%A6%E9%9A%BE/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/10/9-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E5%9B%9B%E5%88%AB%E4%BA%A6%E9%9A%BE/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="知乎盐选 _ 四：别亦难">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta name="twitter:title" content="知乎盐选 _ 四：别亦难">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="知乎盐选 _ 四：别亦难">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10029">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">知乎盐选 _ 四：别亦难</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%9f%a5%e4%b9%8e%e7%9b%90%e9%80%89%20_%20%e5%9b%9b%ef%bc%9a%e5%88%ab%e4%ba%a6%e9%9a%be&amp;url=https://mohai.us.kg/posts/2024/10/9-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E5%9B%9B%E5%88%AB%E4%BA%A6%E9%9A%BE/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/10/9-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E5%9B%9B%E5%88%AB%E4%BA%A6%E9%9A%BE/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%9f%a5%e4%b9%8e%e7%9b%90%e9%80%89%20_%20%e5%9b%9b%ef%bc%9a%e5%88%ab%e4%ba%a6%e9%9a%be%20https://mohai.us.kg/posts/2024/10/9-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E5%9B%9B%E5%88%AB%E4%BA%A6%E9%9A%BE/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26302.jpg" alt="知乎盐选 _ 四：别亦难" />
+      
+
+      <p>怪不得一直没联系我，在这等着我呢，想要断了我的经济来源逼我回去吗？我还没这么容易退缩，金融行业的实习找不到，端盘洗完的工作我还找不到吗？</p>
+<p>我想起来咖啡馆的老板娘，问她现在还招不招兼职，她说好久没见我了，想去就去。</p>
+<p>我又开始了咖啡馆的兼职生活，当初要兼顾学习又要实习，现在只想糊口，倒也能活得下去，等时羽懒得跟我计较，我再找工作。</p>
+<p>然而，我还是想得太天真，在咖啡馆兼职的第三天，威西就来了，威西劝我回去，他想时羽应该不会在那样对我了。</p>
+<p>是啊，如果我还是像当初那样，小心翼翼又听话，倒也能让自己在时羽身边求个安稳，但是那样的日子我真的不想再过了，不能工作，没有自己的生活，每天生活在他的监视下，一辈子当他的宠物吗？</p>
+<p>我也认真地问威西：「以时羽的水平和手腕，想要什么样的姑娘没有？他为什么只喜欢折磨别人？他不是喜欢我，他是在折</p>
+<p>威西说时羽对我不一样。</p>
+<p>我冷笑着让威西回去吧，我现在还能坚持。</p>
+<p>他叹了口气走了，走之前还对我说：「苏小姐，你说了，以羽哥的手腕想要什么样的姑娘没有，那羽哥如果想要的姑娘就是你呢？你能扭得过他的手腕吗？」</p>
+<p>我看着他的背影，想着他的话，是啊，如果时羽一定要我回去，我怎么能斗得过他，如今的挣扎也只是时间问题。</p>
+<p>那种绝望又席卷而来。</p>
+<p>第二天，时羽就亲自来了，我看着他，手还有些发抖，他笑着说：「之前可以在这里把你接走，现在我依然有办法，你一定要看到老板娘连这个店都开不下去的地步吗？苏亦清，我告诉你，只要我对你还有兴趣，你走到哪，我都能把你抓回来，我再告诉你一遍，只有我不要你，没有你想走就走的可能，你想都不要想。」</p>
+<p>他说这些话轻巧的样子，就像在约我晚上吃个牛排再看场电影，只不过我听得毛骨悚然。</p>
+<p>我回头看了看老板娘在房间里忙碌得招呼着顾客，她看我在门外看她，还冲我笑。</p>
+<p>算了，我的生活本该如此，回去小心翼翼地活着也总比连累别人好。</p>
+<p>我摘了围裙，再次跟老板娘道别，说就过来帮几天忙，也不用</p>
+<p>给我工资了，有时间再来看她。</p>
+<p>她点点头提前祝我毕业快乐，工作顺利。</p>
+<p>我心里苦笑着，但愿吧。</p>
+<p>跟时羽坐在后座，威西在开车，一上车，时羽就扔过来一条裙</p>
+<p>子让我换上，说要带我去跟别人吃饭。</p>
+<p>我盯着裙子愣了一下：「在这？」</p>
+<p>他讥笑着：「怎么？不好意思？威西也不是外人，威西你不许</p>
+<p>回头偷看。」</p>
+<p>我总以为已经看过了时羽最卑鄙的一面，但他还是能刷新自己</p>
+<p>的纪录，我看着裙子想，还有什么是时羽做不出来的？</p>
+<p>我迅速地换上他扔过来的吊带裙，长度只刚好裹住屁股，时羽</p>
+<p>又扔来一双高跟鞋，细细的跟看上去得有15厘米，以前我要是</p>
+<p>穿着这一身出门，他大概会把我腿打断，再关个30天。</p>
+<p>他不就是要碾碎我的自尊心，让我心甘情愿地跟在他身边吗？</p>
+<p>我踩着高跟鞋，挎着他，走进了一个会所的包厢，里面有一张</p>
+<p>大圆桌已经坐满了人，旁边还有卡拉OK可以唱歌。</p>
+<p>有个人看到我们进来了，一脸轻浮地打量着我，又转头跟时羽</p>
+<p>说：「羽哥，这个不错，第一次见啊，羽哥就是牛逼，一个比</p>
+<p>一个带劲！」我第一次见这场面，抓着时羽的胳膊一直在抖，而时羽就像视而不见一样，轻笑一声：「给大家介绍一下啊，苏亦清，跟我有段时间了，还是大学生呢。」</p>
+<p>我不可思议地看着他，如果你想通过这种方式摧毁我，制服我，让我彻底害怕，你赢了，我不敢走了，但是求求你让我离开这里。</p>
+<p>他丝毫不在意我眼神中的哀求，还拍着我的屁股说：「来给大家喝一个。」</p>
+<p>我颤抖着双唇，小声说着：「我不会喝酒。」</p>
+<p>他拿起一杯啤酒一饮而尽：「酒有什么不会喝的，跟喝水一样。」</p>
+<p>然后又拿起一杯啤酒，举在我面前，嘴角上扬着，眼睛却漏出凶光，我拿起酒杯，一口一口也喝了个干净。</p>
+<p>然后大家就在旁边起哄叫好。</p>
+<p>我好像来到了斗兽场，周围的喝彩声让我觉得我就是舞台上的动物，人人观摩，任人摆布。</p>
+<p>我们坐下后，大家就开始你一句我一句地聊些无聊的话题，只是一到大家热情高涨的时候，时羽就让我跟着大家喝酒，我也不知道我喝了多少，就听到时羽对我说：「去唱首歌。」</p>
+<p>我问唱什么，他说随便。我晕着脑袋，走过去点歌，唱了一首《天生不是情人》。</p>
+<p>即使我已经头晕目眩，也能看到时羽那张越来越阴沉的脸，看</p>
+<p>着时羽不爽的样子，心里有着一丝莫名的快感。</p>
+<p>不过还没唱完，就醉得想吐，扔下麦克风，跑进了包厢里的厕</p>
+<p>所，随后时羽也进来了，顺手锁上了门。</p>
+<p>我吐完就在水池前漱口。</p>
+<p>看着水池上面镜子里的自己，眼睛醉得迷离，几绺头发胡乱地</p>
+<p>贴在脸上，嘴唇红得滴血，我现在的样子，真是恶心。</p>
+<p>时羽站在我身后，手指轻轻摸着我的脖子说：「歌唱得不错，</p>
+<p>以前没发现你还有这种技能。」</p>
+<p>我冷笑一声准备出去。</p>
+<p>他却拉着我不让我动，把我按在水池上，他把头埋在我的头发</p>
+<p>里，在我耳边喷着酒气：「亦清，我好喜欢你的头发。」</p>
+<p>我低着头，醉酒让我不是很清醒。</p>
+<p>接着，他就把手伸进了我的裙底。</p>
+<p>时羽，你真的很厉害，你成功了，你无耻卑鄙的行径真的让我</p>
+<p>怕了。</p>
+<p>反抗变得毫无意义，还好我醉了，清醒的我，怕是没法跟你投</p>
+<p>入地演这场戏。出了卫生间的门，大家都吹着口哨，说些下流的字眼，这些对我已经无害了，因为我已经千疮百孔，怎么还会在乎这绣花针一样的刺痛。</p>
+<p>时羽看我连路都站不稳，就拖着我进了车，在车上晃晃悠悠不知过了多久，然后就到了第二天，我醒在自己的床上。</p>
+<p>我起来洗了个澡，泡在浴缸里，看着一头黑发浮在水面上，想着昨天在包厢厕所里屈辱的画面，内心一阵翻涌，迈出浴缸，浑身还湿着也不在意，找出剪刀，一刀把齐腰长发剪到了脖颈。</p>
+<p>想到又可以看到时羽因为不爽而愤怒的脸，我就更痛快了一点。</p>
+<p>把头发和身上擦干，我就下楼了。</p>
+<p>时羽看到我的短发，眼看着他的脸从惊讶变成愤怒，我装作若无其事的样子，走进了餐厅。</p>
+<p>他不是喜欢我的头发吗？那就不让他得到。</p>
+<p>时羽站在我身后摸着我的短发说：「亦清，我以为昨天的事情，给你个教训，能让你醒悟，看来你越来越不识好歹了。」</p>
+<p>我冷笑一声说：「羽哥养了我这么多年，我也到了回报的时候，不就是陪客户喝酒吗？没问题啊，我就是嫌长发太麻烦，不好打理。」</p>
+<p>时羽的手迟疑了一下，说话也柔和了一些，竟然透着一丝哀伤：「亦清，你现在一定要这样跟我说话吗？」</p>
+<p>我继续咄咄逼人：「我一直都是这样的人，之前都是装的。」</p>
+<p>「好。」时羽收回了手，就转身出去了。</p>
+<p>他没在家吃午饭，一下午也不见人影，只是到了傍晚的时候，让我收拾一下，威西会来接我。</p>
+<p>我穿着抹胸连衣裙，踩着高跟鞋，套了一件毛绒外套，就跟威西去了时羽的饭局。</p>
+<p>我笑着迎接每一个人的目光，主动举杯喝酒，热了还把外套脱了，露出白花花的后背和肩膀，我能清晰看到好几个人都直勾勾盯着我，掩饰不住的欲望。</p>
+<p>时羽也在看着我的变化，我从他的眼神中看不出什么情绪，只是过了一会对我说：「天气冷，把外套穿上，别冻感冒了。」</p>
+<p>我笑呵呵地在他脸上亲了一口，靠着他的肩膀挑逗地说：「人家热嘛，喝酒就是会让浑身都暖暖的。」</p>
+<p>「你……」时羽看了我半天，又接着说，「你喝醉了，我让威西送你回去。」</p>
+<p>我继续说：「我还能喝，我没醉。」说罢，我就准备去拿桌前的酒杯。</p>
+<p>他没听我说什么，直接把威西叫进来，把我拖了出去。我是强撑着醉意坚持到上车，在回去的路上，躺在后座昏昏沉沉，但还是暗自窃喜，我还是了解时羽一些的，他并不喜欢我参与这种场合，更不喜欢我如此沉沦地做派，毕竟这两年多的时间里，没有一次带我参与任何酒局。</p>
+<p>他本以为这样会让我屈服，而我这样做，就是要让他没有折磨我的快感。</p>
+<p>第二天我一睁眼，他居然躺在我身边，昨晚醉得太厉害，完全不记得他什么时候回来的。</p>
+<p>他看我醒了，抬起手，摸着我的脸颊，思索了好一会儿说：「亦清，别闹了，好不好？我们还像以前一样。」</p>
+<p>我也不想为了让他不痛快一味地颓废自己，我也知道，以我目前的情况来说，逃跑已然是不现实了，既然他先开口求和，我也可以顺着台阶下来，只不过现在让我对他说些讨好的话，实在是有些说不出口。</p>
+<p>我就继续闭目养神，不想理他，他看我没反应，就继续说道：「最近这段时间，我是做得有些过了……我保证不会有下次。」</p>
+<p>我转了个身背对着他说：「好，我不走了。」</p>
+<p>他又蹭过来，在我身后抱着我，把脸埋在我的脖颈，闷闷地说：「回来就好，就是可惜了你这一头长发。」</p>
+<p>时羽一定是我这辈子最佩服的人，他接下来的日子，真如他之前说的——回到过去。</p>
+<p>就像之前那些龌龊的事情没发生过一样，每天无论再晚都会回到别墅，对我体贴入微，关怀备至，不知道的人，还真以为我们是什么模范情侣。</p>
+<p>他演得乐此不疲，我也就陪他一起演，他也不让我工作，出门都有威西看着，真不知道他演给谁看。</p>
+<p>我真觉得这么活着没什么意思。</p>
+<p>之前无论再艰难我都没想过死，因为父母就是自杀死的，留下我一个，太不负责任了，我倒没什么人可负责，但是自杀这件事对我来说还是无法接受。</p>
+<p>不过我现在觉得，这些都不重要了，每天睁眼看到他，我都觉得自己恶心。</p>
+<p>我跟他说想回老房子去看看，上次待了几天，也没有完全收拾好。</p>
+<p>他还说陪我回去，我也随他。</p>
+<p>听说自杀的人会变成厉鬼，如果父母也是的话，帮我掐死时羽，我也最后感谢父母一次。</p>
+<p>我跟他走进老房子，过去的一幕幕又浮现在眼前，我找来抹布擦着柜子。</p>
+<p>我边擦边说：「听法医说我父母是在6月28号死的，但是他们忌日的时候，我从来没去看过他们。」时羽惊恐地看着我，他大概也想到了，死亡时间是法医确定</p>
+<p>的，那我回去看到父母的场景，应该已经不是新鲜的尸体了，</p>
+<p>具体是什么场面，真的不好说。</p>
+<p>的确，那一幕很长一段时间都会出现在我的梦里，每天恐惧地</p>
+<p>从梦中醒来。</p>
+<p>所以我真的没办法平静地面对他们的死亡，我是怨恨的。</p>
+<p>他揽过我，轻声说：「你要是想去看他们，我陪你。」</p>
+<p>我没理他，继续说：「时羽，你说大家都为什么活着？你为什</p>
+<p>么活着？」</p>
+<p>他想了想说：「不要想这些了，这些哲学家都没想明白。」</p>
+<p>我抬头看着他说：「你说我为什么活着？」</p>
+<p>他眼神闪烁着，没说话，半天才说一句：「亦清，不要做傻</p>
+<p>事，你还有我。」</p>
+<p>还有你？这里就我们两个，你在这演什么你恩我爱呢？演给我</p>
+<p>死去的爸妈吗？</p>
+<p>这么想想，还挺好笑的。</p>
+<p>从早忙到晚，收拾得差不多了，时羽居然也一直帮我打扫房</p>
+<p>间，认识他的人看着这一幕估计得吓得当场吐血。</p>
+<p>他打扫房间心里想着的可能是忙着献殷勤，我打扫房间心里想着的是，等打扫好，我就死在这里，反正这个老房子也不怕更凶一点，等我变成厉鬼，大概还能再看到爸妈。</p>
+<p>在书房翻看以前的东西时，突然发现书桌的下面有一个暗格，这个暗格什么时候在的？上大学之前，每天都在书房写作业，好像没注意到有什么暗格。那是上大学之后按上的？</p>
+<p>费了好一番力气，终于打开了，从里面掉出来一个笔记本，我记得这个笔记本父亲总是随身带着，是他自己的工作习惯，为什么会藏在这个暗格里？</p>
+<p>简单看了一下，里面就是记录了一些父亲与工作相关的信息，乍一看也没看出什么问题，准备带回去仔细研究。</p>
+<p>但是心里隐隐约约觉得和爸妈的死有关。</p>
+<p>回到别墅，我就钻进书房里翻看这本日记，父亲工作是一个很认真的人，日记本里面还有药厂几年间的流水账单。</p>
+<p>开始看了好几遍，这也是一本普通工作记录，直到我把药厂的盈利和重大决策对照后，发现了问题。</p>
+<p>在父亲去世的前几年，药厂的盈利开始走下坡路，药厂也有了一些应对措施，把一些原有的职工岗位转成了外包公司承包。</p>
+<p>正常来说把高工资且有国企福利待遇的职工岗位，转成外包公司来提供临时工，支出是一定降低的，但是却比往年还高，其中的利益输送可想而知。</p>
+<p>顿时我的大脑如五雷轰顶，突然意识到，我的父母很有可能是被人害死的。</p>
+<p>这时候时羽进来了，他看我脸色不好，一直盯着桌子上的笔记本发呆，从后面抱住我说：「怎么了？从老房子回来脸色就不好。」</p>
+<p>他迟疑了一下又试探着说：「想爸妈了？」</p>
+<p>我的大脑也逐渐复苏，艰难地说着：「我爸妈……有可能是被害死的？」</p>
+<p>他松开我，把椅子转向他，蹲下来看着我说：「什么意思？」</p>
+<p>「我看到了我父亲生前留下的工作笔记，里面可能记录的是药厂领导输送利益给个人的证据。」</p>
+<p>我没想着对时羽隐瞒，因为我知道以我的能力要想调查清楚这件事还有难度，如果时羽可以帮我，也许我真的有机会找到父母死亡的真相。</p>
+<p>果然，他接下来就说：「需要我做什么，你跟我说。」</p>
+<p>虽然现在就跟他提出这件事很冒险，但这件事是必然要做的。</p>
+<p>我犹豫了一下，还是开口说：「时羽，我可能要联系王警官，问问当年的事，那时候法医以自杀结案，如果我爸妈真是被杀害的，应该会留下来线索。」能看到时羽的脸瞬间沉了下去，没说话，站了起来，让我跟他</p>
+<p>下楼吃饭。</p>
+<p>我没敢再争取，低着头，大气不敢出地跟在他后面。</p>
+<p>直到吃了一会，他看了看我，脸色才缓和下来，对我说：「你</p>
+<p>可以跟他讨论案情，但是我都要跟你去。」</p>
+<p>我点了点头，笑着继续吃饭。</p>
+<p>第二天，我就给王警官打了电话，他刚接到电话还很惊讶，以</p>
+<p>为我迷途知返了，很热情地跟我寒暄，我说明了我发现的问</p>
+<p>题，想要咨询一下当年的案情，他也意识到了事情的严重性，</p>
+<p>约我明天在一个咖啡馆见面。</p>
+<p>王警官看到时羽跟我一起进来，眼神里又充满那种不屑。</p>
+<p>时羽笑着先说话了：「现在应该叫你王队长了，听说王局长最</p>
+<p>近在城管局内退了，身体挺好的？」</p>
+<p>王警官冷笑着说：「我父亲身体很好用不着你操心。」</p>
+<p>转头又一脸恨铁不成钢的样子对我说：「亦清，你怎么还跟他</p>
+<p>在一起。」</p>
+<p>这时候，时羽拉过我的肩膀说：「王季晨，你能不能别三番五</p>
+<p>次地挑拨我们的关系？」</p>
+<p>我怕他们争个没完赶紧说：「咱们先坐下吧，说正事要紧。」我又详细地说了一遍我发现的线索，王警官也跟我说出了一个</p>
+<p>疑点：「我又重新翻看了一下当初你父母的尸检报告，是因为</p>
+<p>煤气中毒而死，没有被害痕迹，最后被判定是自杀。」</p>
+<p>我却有些疑惑：「为什么是自杀？不能是因为煤气没关而产生</p>
+<p>的意外呢？」</p>
+<p>「你知道，他们是躺在厨房外的地毯上相拥而死，而且死亡时</p>
+<p>间是白天，煤气中毒是一个很长时间的过程，如果是煤气意外</p>
+<p>泄露，他们不至于没有反抗的机会，除非他们是自愿的。」王</p>
+<p>警官接着说。</p>
+<p>我点了点头问道：「那你刚才说的疑点是什么？」</p>
+<p>「他们后脑都有一处外伤，法医给的结论是，因为中毒摔倒后</p>
+<p>形成的。」</p>
+<p>「你的意思是？」我心中大概有了答案。</p>
+<p>「如果他们是先遭到袭击，昏倒后，又有人放了煤气呢？」王</p>
+<p>警官看着我们两个说。</p>
+<p>「那个法医现在在哪？」时羽也明白了王警官的猜测。</p>
+<p>「他两年前就调到了邻市。」王警官说。</p>
+<p>「我们去找他。」时羽拍了拍我的肩膀对我说。</p>
+<p>王警官看着我们两个的样子显而易见地不开心，咳了两声说：</p>
+<p>「还有亦清，你发给我的笔记资料还不够立案的条件，你要找</p>
+<p>「我可以调查。」时羽说。</p>
+<p>王警官抬起头，眯着眼睛，轻蔑地看了看时羽没说话。他也知道，如果时羽真心想帮我，成功概率一定更大。</p>
+<p>我跟王警官道别后，就跟时羽回了家，我继续在笔记里找线索，整理了当时的第三方公司给时羽，时羽拿到名单后就开始打电话，大概就是查这些公司真正的经营者是谁。</p>
+<p>打完电话，我看他一脸沉重地坐在沙发上一言不发，我走过去问他怎么了。</p>
+<p>他说：「东哥是这个药厂厂长的小舅子，这件事，怕是没那么简单，你最近一定要注意安全，千万不要自己出门，有什么事都要跟我说，或者叫威西陪你，知道了吗？」</p>
+<p>我看他一脸紧张而严肃的样子，还有些动容。但是我很讨厌这样的自己，总是被他这只恶狼披着羊皮的样子迷惑。</p>
+<p>只能点点头不再看他。他还是习惯性地摸了摸我的头发。</p>
+<p>他交代完这些事，我们就准备明天去邻市找那个法医。</p>
+<p>王警官也请了一天假跟我们一起去，毕竟他是警察，那边也有熟悉的同学，遇到事情方便一些。</p>
+<p>最后，就是由威西开车，王警官坐在副驾驶，我和时羽坐在后排。他们两个也知道这事关重大，我的心情肯定很差，一路上倒是安静，除了讨论与案件相关的话题，就不再说话。</p>
+<p>但是就当我们到邻市那个法医的工作单位时，公安局的同事说今天他还没来上班，很奇怪，刘法医从来不迟到的。</p>
+<p>我突然觉得事情不妙，果然，没一会就传来消息，刘法医在今天上班的路上突遇车祸，现在已经被送到医院。</p>
+<p>我们赶紧驱车前往，还是晚一步，刘法医因为伤情过重，抢救无效，去世了。</p>
+<p>肇事车辆的司机又在逃，我们只能盼望快点找到司机，问出幕后指使。</p>
+<p>这一系列的巧合更加证明了我的判断，我父母的死，绝对没有那么简单。</p>
+<p>随后，我们又打听到法医在这座城市是租房住，我们准备去碰碰运气，看看能不能找到什么线索，跟房东拿到钥匙，一进门就傻眼了，一片狼藉，即使他生活再邋遢也不能把家里搞成这样。</p>
+<p>有人先我们一步来了。</p>
+<p>看来法医这里，真的有什么重要的证据。不过，很有可能已经被坏人找到了。</p>
+<p>王警官说：「先别灰心，看他们翻成这样说明他们也不知道在哪，也不一定能找得到，他们翻找的主要是纸张之类的，法医</p>
+<p>之后我们四个在出租屋里找了整整一天，直到半夜，我才在凳子腿的空心里找到了那张尸检报告。</p>
+<p>有了这些证据，至少可以让警察局立案，终于看到一丝希望。</p>
+<p>接着时羽接到了电话，调查药厂的财务状况有了反馈，所有第三方公司的法人，都跟厂长有关系，要么是堂哥的，要么是表弟的，甚至还有他丈母娘的名字。</p>
+<p>王警官说：「经济犯罪是跑不了了，我现在就把资料发给经侦科的同事，明早准备对厂长的抓捕。」</p>
+<p>本想连夜回去，但是我一起身，就站不稳了，时羽赶紧扶住我说：「你一天没吃饭，太累了，咱们休息一晚，明天一早回去。」</p>
+<p>我看大家为我的事，奔波了一天，也挺过意不去的。</p>
+<p>第二天一早，我们在路上就接到了好消息，抓捕很顺利，现在正在预审。</p>
+<p>王警官让我和时羽回家等消息。</p>
+<p>回到家我一直坐立不安，时羽就在我身边，拉着我的手一直安抚我：「等你爸妈的事情处理好，你就要毕业了，毕业之后想去哪里玩？之前说好去旅行的，一直也没去上。」</p>
+<p>我靠在他的肩膀上，思绪飞到了九霄云外，但是他在旁边低沉的声音倒是让我安心不少。</p>
+<p>他又继续说：「亦清穿学士服的样子一定很好看。」</p>
+<p>昏昏沉沉在家待了2天，一直没睡踏实，预审那边的警察连轴转了2天，终于让厂长全招了，包括我父母的死因。</p>
+<p>他的小舅子林东，也就是大家口中的「东哥」，当初知道我父亲发现账务问题后，自告奋勇跟他姐夫方厂长说去解决这件事，方厂长以为就是吓唬一下，没想到直接给杀害了。</p>
+<p>一步错步步错，开了这个口子，就需要杀更多的人来弥补这个口子，沾满鲜血的双手已经回不了头。</p>
+<p>很多事情都是林东去办的，方厂长只是睁一只眼闭一只眼。</p>
+<p>王警官马上带人去抓捕林东，但是林东听到风声跑了。</p>
+<p>这回换时羽坐立不安，一直在叮嘱我一定要注意安全，没事不要出去。</p>
+<p>我就会打趣说：「知道了，这不是还有你吗？」</p>
+<p>去警察局录口供本来时羽要送我去，我笑着说：「你去也是在外面等着，我去警察局你有什么不放心的？让威西送我去就好了。」</p>
+<p>这时候他正好接到一个电话，大概是公司出了什么事，他挂了电话，看着我还是不放心，我看着他紧张的样子还有点好笑：「你快去忙吧，王警官说我很快就可以结束的，到时候你去接我。」</p>
+<p>他点了点头，就准备出门。</p>
+<p>我把他叫住，他转身问我怎么了，我踮起脚尖，在他嘴唇上亲了一下说：「谢谢你。」</p>
+<p>他愣了一下，随后又宠溺地揉了揉我的头发：「傻瓜，谢什么？我答应你了，咱们好好的。」</p>
+<p>这段时间，他的确做到了他之前答应我的，而且为了我爸妈的事尽心尽力，他对我的好是那么真实，但是对我的坏仍历历在目。</p>
+<p>我也有些迷惑了，我对他笑，对他倾诉心事，究竟是在演戏还是真心？</p>
+<p>算了，想不明白的事，就不要想了。</p>
+<p>我换了衣服，就让威西送我去警察局。</p>
+<p>到了警察局门口的路对面，我让威西把车停下，我先下车，他去停车。</p>
+<p>我正要过马路，面前突然出现一辆面包车，还没等我反应过来，我就被拉上了车。</p>
+<p>车里除了我一共有三个人，开车的人是黄毛，我对面坐着的看样子是老大，我没猜错的话，应该就是林东，之前听时羽说过，黄毛是跟着林东的，还有一个正压着我的手臂，应该也是林东的小弟。</p>
+<p>说不害怕是假的，但是我至少得装作淡定一点的样子，而且我面对的很有可能就是杀害我父母的凶手。</p>
+<p>「你就是林东？」</p>
+<p>「从来没见过苏小姐，今天看见了，还真是漂亮，黄毛亲一口，摸几下，被打成这样，也值了。」林东猥琐的嘴脸让我忍不住往他脸上吐口水。</p>
+<p>林东没有暴怒的反应，而是把脸凑过来在我的衣服上蹭了蹭，我被旁边的小弟控制着，根本动弹不了，只能扭头看着窗外。</p>
+<p>黄毛在倒车镜上看到后面的场景，也满嘴的污言秽语：「能把时羽伺候明白了，也不是一般的货色。」</p>
+<p>「你以为，把我绑了就能逃脱法律的制裁吗？现在四处都是抓你的警察，你还能逃到哪去？」</p>
+<p>这时候林东突然狂笑：「我当然逃不了了，但是死之前，我也不会让你们好过，反正我早晚是个死，死前痛快一回也值了。」</p>
+<p>我瞪着眼睛看着他，就像在看一个疯子，这时候，我那种绝望地恐惧才彻底蔓延到全身。</p>
+<p>林东拍了拍我的脸说：「别怕，时羽马上就来陪你了。」</p>
+<p>车又开了一会，开到一个烂尾楼，我被他们拖下车，走上几层，看到一些锅碗瓢盆，还有一些空瓶子，看来这几天，他们都是藏在这里。</p>
+<p>他们把我绑在一个椅子上后，林东对我说：「别着急，我会在时羽来之后，当着他的面扒光你，我倒是想看看时羽是什么表情。」</p>
+<p>我咬着牙说：「那怕是要让你失望了，时羽对待女人的态度，你们又不是不知道，我可就亲眼见过他把一个女生的头塞进电视机。」</p>
+<p>林东不以为意，讥笑着：「那你就等着吧，我已经给他打过电话，让他一个人过来，要是敢报警，他就再也见不到你了。」</p>
+<p>时羽究竟会不会来，我真的拿不准，也有可能他直接报警让警察来抓林东，但是看着林东自信的样子，我也不敢确定。</p>
+<p>不过很快，时羽没让林东失望，他真的来了，一个人。</p>
+<p>他看到我被绑在椅子上，眼睛里的紧张、愤恨和爱意骗不了人，急匆匆地向我跑来，这时候他身后突然窜出一个人拿着棍子，向他砸来，我赶紧提醒他：「小心身后！」</p>
+<p>他一躲，本来砸到头的棍子，挨在了时羽后背，听声音也能感觉到这一棒打得不轻，时羽转身就跟那个拿着棍子的小弟扭打在一起，随后黄毛也加入了。</p>
+<p>能看出来时羽比他们身体素质强很多，但是双臂难敌四手，时羽还是挨了不少打。</p>
+<p>这时候林东拿着刀向我走来，我惊恐地看着他。</p>
+<p>时羽也看到了林东这边的动作，奋力摆脱了两个人向林东扑来，林东也吓了一跳，手里的刀直接刺进了时羽的肚子，黄毛也走了过来，拿着啤酒瓶子一下子砸向了时羽的头。</p>
+<p>我大叫着时羽的名字，时羽看着我倒在了地上。</p>
+<p>黄毛刚才还吓得半死的样子，现在看到时羽倒在地上，应该没有力气站起来了，蹲下拍了拍时羽的脸，嘴上又开始不老实：「之前我在KTV没得逞，现在我当着你的面把这个小婊子上了，肯定更刺激。」</p>
+<p>说完还看着自己的手说：「上次摸了几下，感觉真不错。」</p>
+<p>突然，时羽拔出肚子上的刀，一刀刺穿黄毛的手掌，笑着说：「上次就想这么干，现在终于补上了。」</p>
+<p>黄毛因为剧痛龇牙咧嘴地叫，林东和那个小弟在时羽身上不停地踢着。</p>
+<p>这时候我看到王警官已经悄悄地上楼了，站在林东的身后，趁其不备把他抓住拷了起来，随后上来的警察也都把黄毛和小弟抓住了。</p>
+<p>王警官把林东交给其它警察后赶紧过来给我松绑：「亦清，你有没有受伤？我看你一直没有来，出门看到了冯威西，他说你已经来了，我就想到可能有问题，查了监控一路找来。」</p>
+<p>我身上的绳子解开后，就跑到时羽旁边，跟着医生上了救护车。</p>
+<p>我知道时羽现在肯定很疼，但是他仍然坚持微笑着，拉着我的手说：「亦清，你不要哭，你不是一直想要离开我吗？我死了，你不是很开心？」</p>
+<p>我哭得上气不接下气：「时羽，你别这种话，你要坚持住，我不会再离开你。」</p>
+<p>他看我哭得伤心，脸上有些着急：「我逗你的，看来这个笑话不好笑。」</p>
+<p>「其实有这么一段时光，我这辈子，已经心满意足了，虽然不知道你是不是真情实意，」他自嘲地笑了笑，「但是真的很谢谢你让我拥有了这段时间地回忆。」</p>
+<p>「就是有些可惜，我应该看不到亦清穿学士服的样子了，不能拉着手看到你毕业，说好的毕业旅行，我也不能兑现了。」</p>
+<p>「我想让我对你的承诺都可以成为现实，最后，还是没能完成。我知道我以前做过很多伤害你的事情，我不敢奢求你的原谅，我想用我的后半生去尽力弥补，可是我现在……也无能为力了，注定还是要辜负你。」</p>
+<p>我哭着问他为什么这么傻要自己来。</p>
+<p>他抬手想要摸摸我的头发，我赶紧把头凑了过去，他笑笑说：「我知道林东那个人什么事情都做得出来，我不敢冒险，我即使死了，也不想有人伤害你，你以后可以安心活着，不用担惊受怕，我觉得就是值得的。」</p>
+<p>这时他一只手伸进裤兜里，掏出来一个戒指盒，拿出里面的一枚钻石戒指对我说：「亦清，这个戒指本想等你毕业，我再送你的，但是我怕我等不到那一天了，不知道你愿不愿意戴上它。」</p>
+<p>我拿着戒指戴到了我的中指上，尽量让自己的哭脸没那么难看说：「我愿意，时羽，等我毕业了，再给我戴一次好不好。」</p>
+<p>「我一直觉得我爱你这三个字矫情，说不出口，但是我怕再没有机会对你说了，亦清我爱你，你……爱我吗？」</p>
+<p>我一下子愣住了，我想，我一定是喜欢他的，但是，爱又是什么呢？</p>
+<p>他看我艰难思考的样子笑了：「亦清，不用费力想了，我一直没有学会怎样去爱你，反而弄巧成拙做了很多错事，那些污秽不堪的回忆，不值得你留恋，你还有大好的人生等你去享受，知道吗？等着你的都是明媚的阳光。」</p>
+<p>他抬头摸着我的头发说：「亦清的头发又长了呢。」</p>
+<p>（后记）</p>
+<p>三年后，我第一次来到父母的墓前，看着墓碑我凝望许久，拿着鲜花说道：「对不起，这三年来我一直恨你们，恨你们就那样抛下了我……不过，没关系，所有的坏人都绳之以法了，你们放心吧。」</p>
+<p>说完，我把鲜花放在了墓碑前，手指上的钻戒，刚好反光，非常刺眼，我喃喃自语：「是呀，所有的坏人都绳之以法了。」</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/20-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E4%B8%8A%E5%B2%B8/" title="知乎盐选 _ 上岸">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">知乎盐选 _ 上岸</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/8-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89_%E6%9B%BF%E8%BA%AB/" title="知乎盐选 _ 替身">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">知乎盐选 _ 替身</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

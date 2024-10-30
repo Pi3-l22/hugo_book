@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱之砒霜 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/12/12-%E7%88%B1%E4%B9%8B%E7%A0%92%E9%9C%9C/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/12/12-%E7%88%B1%E4%B9%8B%E7%A0%92%E9%9C%9C/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="爱之砒霜">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-12T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+  <meta name="twitter:title" content="爱之砒霜">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="爱之砒霜">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2023-12-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-12-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="11619">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">爱之砒霜</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2023-12-12T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2023-12-12T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%88%b1%e4%b9%8b%e7%a0%92%e9%9c%9c&amp;url=https://mohai.us.kg/posts/2023/12/12-%E7%88%B1%E4%B9%8B%E7%A0%92%E9%9C%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/12/12-%E7%88%B1%E4%B9%8B%E7%A0%92%E9%9C%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%88%b1%e4%b9%8b%e7%a0%92%e9%9c%9c%20https://mohai.us.kg/posts/2023/12/12-%E7%88%B1%E4%B9%8B%E7%A0%92%E9%9C%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/881.jpg" alt="爱之砒霜" />
+      
+
+      <p>爱之砒霜</p>
+<p>刺客爱人：甜虐反转的古言故事</p>
+<p>我是大盛皇后。</p>
+<p>有一天皇上告诉我，他真正的爱人回来了，我这个替身必须让位。</p>
+<p>他废我后位，将我的儿女逐出宫门。</p>
+<p>后来，他跪在我面前，求我原谅他，哪怕做条狗，他也愿意跟在我身边。</p>
+<p>1</p>
+<p>何佑娴回宫那天，满宫红绸。</p>
+<p>铺得比我封后时还要隆重。</p>
+<p>她从正门乘凤辇入宫。</p>
+<p>我的儿女被贬为庶人，像狗一样从侧门被赶出宫去。</p>
+<p>所有人都以为，我也会死。</p>
+<p>或者也被赶出去。</p>
+<p>谁知高焕只是废我后位，将我幽闭宫中。</p>
+<p>当然，在他看来，这样是要比让我死，或者赶我出宫让我更为痛苦。</p>
+<p>因为我不知我儿女们的死活，会一直提心吊胆，不得心安。</p>
+<p>因为宫里的人惯会拜高踩低，我以后的日子，会生不如死。</p>
+<p>2</p>
+<p>就在我废后的当天，宫内侍女内官便全部撤去。</p>
+<p>所有值钱的好用的东西，也全部搬空。</p>
+<p>偌大的宣慈宫，转眼成了冷宫。</p>
+<p>宫门落下锁。</p>
+<p>正赶上何佑娴入宫，我一天没吃上一口饭。</p>
+<p>晚间，隔壁热闹非凡，烛火满天。</p>
+<p>宣慈宫黑灯瞎火，静寂如坟。</p>
+<p>我安静坐在廊下，像过去一样，看着宫墙外的天空，思绪却飞到很远的从前。</p>
+<p>那时我还是相府千金。</p>
+<p>听说出生时，霞光满天。</p>
+<p>有过路的道士，说我命里带贵，将来必定母仪天下。</p>
+<p>父亲怕此话惹祸，给道士许多银两，让他守口如瓶。</p>
+<p>可我十二岁这年，此事仍是传了出去。</p>
+<p>当时高焕还是皇子，日日带着重礼和各种新鲜玩意儿来我家。</p>
+<p>软硬兼施，逼父亲让我嫁给他。</p>
+<p>他运气不错，我十五岁嫁于他，第二年先帝驾崩，他便成了新帝。</p>
+<p>高焕一直对我还算尊重。</p>
+<p>即使没有恩爱，也不容许别人欺我。</p>
+<p>只是我的家族，一年不如一年，人丁亦越来越零落。</p>
+<p>何佑娴回来前，我家被抄，大大小小几十口全部发配北疆。</p>
+<p>何佑娴曾是我闺中密友。</p>
+<p>我没嫁给高焕时，是她与高焕先有的婚约。</p>
+<p>后来高焕也曾许她贵妃之位。</p>
+<p>但何佑娴心高气傲，随自己的哥哥去了边疆。</p>
+<p>这一走，便是数年。</p>
+<p>没想到回来时，地位直线上升，把我这个皇后取代了。</p>
+<p>隔壁传来清脆的笑声。</p>
+<p>不多时，我的宫门被打开。</p>
+<p>何佑娴凤冠霞帔，由大喜灯笼开路，宫女内侍簇拥着进来。</p>
+<p>我坐在廊下未动。</p>
+<p>原本服侍我的宫女，为了在她面前表现，头一个冲上来。</p>
+<p>在她伸手要扯我头发时，我的眼珠转了过去。</p>
+<p>死死盯住她。</p>
+<p>长久的等级压制，让她本能地缩回手。</p>
+<p>只垂眸低斥：「虞才人还不跪下迎接皇后娘娘！」</p>
+<p>对了，我现在仍然算是宫妃。</p>
+<p>只不过是位分最低的才人。</p>
+<p>3</p>
+<p>我没跪。</p>
+<p>何佑娴打了我一耳光。</p>
+<p>当着众多内侍的面，说了许多凌辱之语。</p>
+<p>无外乎，我当年冲破头要做她的替身，现在却拔光鸡毛，任人欺侮。</p>
+<p>我冷冷看着她叫嚣。</p>
+<p>内心冷笑。</p>
+<p>成王败寇在此刻演得淋漓尽致。</p>
+<p>我嫁给高焕时，我父亲是朝中右相。</p>
+<p>如今父亲去世，哥哥官败充军。</p>
+<p>而何家正好相反。</p>
+<p>何佑娴与高焕有婚约时，她家最高的官位，是兵部侍郎。</p>
+<p>现在，他的大哥是镇边大将军，手握大盛一半兵权。</p>
+<p>高焕姗姗来迟。</p>
+<p>踏进宫门时，何佑娴打我的手刚刚落下。</p>
+<p>他立马捧起来。</p>
+<p>小心放在唇边哈气：「卑贱之人，何须我娴儿如此动怒。」</p>
+<p>目光扫向我，瞬间厌恶冷硬：「来人，把虞才人拖下去打二十大板，贬为婢女。」</p>
+<p>何佑娴的嘴角一弯，笑着偎到高焕的身边。</p>
+<p>「二十大板岂不是要把姐姐打死了，那我以后还找谁说话去？」</p>
+<p>高焕立刻改口，板子减了一半。</p>
+<p>然后哄她：「朕留下这个贱人，就是让娴儿逗着玩，以后她要如何，都听娴儿的。」</p>
+<p>何佑娴的眉尖一挑，声音里满是笑意：「圣上说真的？」</p>
+<p>「君无戏言，自然是真的。」</p>
+<p>她的眼珠转了几圈。</p>
+<p>突然定到我身上。</p>
+<p>「刚才圣上说，她现在是婢女，那不如就去我宫里侍候吧。」</p>
+<p>4</p>
+<p>大家都知道。</p>
+<p>侍候是假。</p>
+<p>折辱才是真。</p>
+<p>直到夜深人静，高焕被何佑娴送出宫门。</p>
+<p>内侍也被遣散。</p>
+<p>她才慢慢走到我面前。</p>
+<p>蹲下身时，我看到她眼里有特别亮的光，映着室内龙凤烛的火苗。</p>
+<p>她定定看我许久，然后一把将我抱进怀里：「姐姐……」</p>
+<p>手臂压到我身上的板子伤。</p>
+<p>我忍不住「咝」了声。</p>
+<p>她立刻拿开手。</p>
+<p>转头要去找药，被我叫住：「无妨阿娴，用了药反而会被人看出端倪。」</p>
+<p>她的泪顺着眼角流下，滴在红色亵衣上，湿了一块。</p>
+<p>「可是这样姐姐太疼了。」</p>
+<p>我朝她笑：「不疼的，看到你就都好了，你吃了那么些苦，我这不算什么。」</p>
+<p>她与我抱在一处，轻声呜咽。</p>
+<p>我们一直是朋友，从未因高焕生分。</p>
+<p>她回朝，也并非要打压我，而是要与我联手，扳倒高焕。</p>
+<p>这些年，这个狗皇帝为了削权夺势，杀了我们太多亲人。</p>
+<p>我还是担心孩子的。</p>
+<p>急急问她：「昶儿与嫒儿如何了？」</p>
+<p>「已安然出宫，狗皇帝派人盯着，我们的人并未靠近，但姐姐放心，他们不会受苦。」</p>
+<p>我别在心口的郁气，总算散了些。</p>
+<p>高焕是个心思歹毒，疑心极重的人。</p>
+<p>我能保下这两个孩子，已经使出浑身解数。</p>
+<p>其他宫妃，压根连有孕的机会都没有。</p>
+<p>不能与阿娴多说。</p>
+<p>我很快散了头发，带着浑身血迹，从她的宫内出来。</p>
+<p>回到宫女住的罩房。</p>
+<p>属于我的床位上，棉被湿成一团，枕头撕烂在地，一些臭烘烘的东西，撒得到处都是。</p>
+<p>几个宫女斜着眼看我，眼里的轻蔑直白告诉我：</p>
+<p>虽然大家同为婢女，但现在她们高我一等。</p>
+<p>我只挨个瞅她们一眼。</p>
+<p>就拉了旁边一个宫女的被子，上了她的床。</p>
+<p>她们大概没想到我会这样。</p>
+<p>愣了一瞬，然后一拥而上，想把我扯下来。</p>
+<p>我快速从袖子里抽出匕首，抵到最近的宫女的脖子上。</p>
+<p>声色俱厉：「想死，就往前站。」</p>
+<p>她们往后退。</p>
+<p>最后，三人挤在两张床上睡下。</p>
+<p>但第二天一早，便都向管事的嬷嬷告状。</p>
+<p>今日是阿娴的封后大典。</p>
+<p>她一大早去了前殿。</p>
+<p>管事嬷嬷将我拉到一间空殿内，手执皮鞭。</p>
+<p>「还以为自己是皇后呢？」</p>
+<p>「啪！」</p>
+<p>她说一句，打一鞭。</p>
+<p>鞭鞭使出吃奶的力气。</p>
+<p>我沉默不语。</p>
+<p>任她发作。</p>
+<p>不置死地，怎能后生？</p>
+<p>顺从得太快，高焕只会怀疑我与阿娴。</p>
+<p>只是嬷嬷打到十几鞭时，我突然听到外面有人说话。</p>
+<p>「大皇子和公主已经被处死。」</p>
+<p>「皇上说，何虞两家不可信……」</p>
+<p>5</p>
+<p>一口血从我胸口涌出，喷到嬷嬷身上。</p>
+<p>她气极，挥鞭打得更凶。</p>
+<p>直到我意识模糊，才看到一块明黄色的衣角，从侧间走出。</p>
+<p>一只手捏起我的下巴。</p>
+<p>拇指抹去我嘴角的血迹。</p>
+<p>「皇后不要怪朕狠心，是娴儿容不下你。」</p>
+<p>我忍下冷笑。</p>
+<p>与他一般深情：「奴婢从未怪过圣上，只是我们的孩子……」</p>
+<p>高焕像是突然想起这事。</p>
+<p>「孩子？皇后是说昶儿与嫒儿吗？他们出宫才是最安全的，不然像皇后一样，岂不是活不成了？」</p>
+<p>钳在我下巴上的手指，突然用力，几乎把我骨头捏碎。</p>
+<p>「朕倒是有件事想问皇后，昶儿和嫒儿真是朕的孩子吗？」</p>
+<p>我沉下眸子，因疼痛声音已经发颤：</p>
+<p>「不然圣上认为是谁的？」</p>
+<p>高焕靠近我，嘴唇几乎贴到我耳朵上：「可是太医说，朕身体有恙，根本不会有儿女。」</p>
+<p>我的心突地跳一下。</p>
+<p>后背的汗与血迹混成一块。</p>
+<p>但长久的后宫生活，早已让我不动声色。</p>
+<p>「是哪个太医说的？如此侮辱圣上，就该乱棍打死，再诛他九族。」</p>
+<p>高焕定定凝视我许久。</p>
+<p>捏着我手突然松开，「哈哈」大笑。</p>
+<p>他接过内官递来的帕子，擦了手上的血，朝外吩咐：「来人，送虞卿回宫。」</p>
+<p>又看了眼刚才打我的嬷嬷：「拖出去埋了吧。」</p>
+<p>嬷嬷连哭都没来得及，就被捂嘴拖出去。</p>
+<p>我回到宣慈宫，内官已经在等着宣旨。</p>
+<p>我以宫女身份，独占一座宫殿，无诏不得出宫门半步，亦不得见任何人。</p>
+<p>半夜，阿娴换了一身装束，出现在我床前。</p>
+<p>告诉我，孩子已经安全。</p>
+<p>但太医院的医正，被打了五十大板，以我的名义。</p>
+<p>我哑了嗓子：「人怎样？」</p>
+<p>「活着。」</p>
+<p>「让他辞去宫中事务，另作安排吧。」</p>
+<p>同时，我交给了何佑娴一包药：「控制量，何昱找到之前，狗皇帝还不能死。」</p>
+<p>阿娴的眼睛立刻红了。</p>
+<p>何昱是她二哥，也是我们年少的玩伴。</p>
+<p>我入宫后，何昱来看我。</p>
+<p>被高焕带走，从此再无音讯。</p>
+<p>当时何家不得势，哪敢向皇帝要人。</p>
+<p>我虽向高焕发过几次脾气，可得到的回答是，他让何昱去办差了。</p>
+<p>至于去哪儿，办什么差，他一句不提。</p>
+<p>最后还是我父亲出面，联名朝臣一起，才逼他扔了一份手书与何家。</p>
+<p>告诉他们，何昱一切安好，只是现在不能回来。</p>
+<p>这么多年过去了，我们收到过何昱的信物，也收过他的书信，却始终未能见到人。</p>
+<p>阿娴声音极轻：「姐姐，你说我二哥他会不会已经……」</p>
+<p>「别胡说，他定是在的。」</p>
+<p>「那我们为什么找不到他？」</p>
+<p>我回答不出，但我认识何昱的字。</p>
+<p>不仅是字体，还有他写字的小习惯。</p>
+<p>那些书信，是他的。</p>
+<p>6</p>
+<p>有何昱为介，在我发现高焕开始对虞家动手时。</p>
+<p>便与何家取得联系，假意成仇。</p>
+<p>这些年我家虽败，但何家起来了，还是掌握兵权的武将。</p>
+<p>之所以没对高焕动手，一来是京城防卫，及城外驻军的兵权，仍在高焕手里；</p>
+<p>二来，我们找遍京城内外，却一直没有何昱的下落。</p>
+<p>阿娴入宫，与我共演苦肉计，也是为了此事。</p>
+<p>外面突然传来响动。</p>
+<p>阿娴正想出去，高焕的声音已经传进来。</p>
+<p>「虞卿，朕来看你了。」</p>
+<p>我从床上滚下。</p>
+<p>示意阿娴掀开床板躲进去，才往门口爬。</p>
+<p>从寝殿到门口有十几步远。</p>
+<p>高焕跨过门槛就止步。</p>
+<p>然后看着我一点点爬到他脚边。</p>
+<p>才假惺惺蹲下：「竟伤得如此重。」</p>
+<p>「圣上万安！」</p>
+<p>我以头点地，给足他虚荣。</p>
+<p>高焕让人拿来药，慢条斯理往我身上撒。</p>
+<p>「虞卿，他们说，你如果不做皇后，朕这皇位也做不长，你信吗？」</p>
+<p>「不信。」</p>
+<p>我面对他，回得没一丝犹豫：「圣上乃真命天子。」</p>
+<p>「虞卿还是这么会说话。」</p>
+<p>高焕笑了。</p>
+<p>把手里的药扔给我。</p>
+<p>「朕也不信，天下是朕的天下，怎会受一个女人胁迫。」</p>
+<p>他突然掐住我的脖子。</p>
+<p>「可是这么算来，朕早些年还真受了一些委屈，被你虞家牵着鼻子走。」</p>
+<p>我知道他在报复。</p>
+<p>也知道，现在我最好什么也不说。</p>
+<p>他发泄够了自然会走。</p>
+<p>可胸口的怒火，还是不由自主地烧了起来。</p>
+<p>我直视他的眼睛。</p>
+<p>「如果圣上说的是我入宫的事，那后宫三千，岂不是个个都要牵你的鼻子。」</p>
+<p>「怎么，圣上不想做天子，要做民间的牛羊，任人牵着走了吗？」</p>
+<p>「啪！」</p>
+<p>我的脸歪到一边。</p>
+<p>嘴里腥甜一片，可脸却是木的。</p>
+<p>我冷漠转回，插他最后一刀。</p>
+<p>「如今正得宠的是何皇后，圣上小心鼻子，别再被她牵了。」</p>
+<p>高焕差点气疯。</p>
+<p>走时，把我这里仅剩的东西全部砸了。</p>
+<p>我刚要松口气。</p>
+<p>走到门口的他，又折身而返。</p>
+<p>我再次被他钳住。</p>
+<p>他的声音又阴又冷：「我知道你想知道何昱的下落，我现在就告诉你，他活着，但他能活多久，完全看我的心情。」</p>
+<p>我使劲攥住手心，才忍住没抽他一耳光。</p>
+<p>7</p>
+<p>阿娴气到捶墙。</p>
+<p>「狗皇帝！」</p>
+<p>「他到底把我二哥关哪里了？」</p>
+<p>「我去弄死他，就不信他死了，还找不到我二哥。」</p>
+<p>「……」</p>
+<p>她在殿内团团转。</p>
+<p>我安静地给自己上药。</p>
+<p>高焕今天来得十分诡异。</p>
+<p>我到现在没猜透，他为什么跑这一趟。</p>
+<p>为我送药？根本不可能。</p>
+<p>拿何昱威胁我？也没必要。</p>
+<p>示威倒是有几分，但他白天封了阿娴，晚上不该去她宫里吗？</p>
+<p>就算她不在，也不该是来我这。</p>
+<p>他还提到何昱。</p>
+<p>一系列迷惑行为，让我内心很不安。</p>
+<p>阿娴走后，我挪开桌下的一块地砖。</p>
+<p>里面藏着一个木盒。</p>
+<p>打开，是一封封书信。</p>
+<p>苍劲的字迹，多年未变，只是少年时的笔锋略显青涩，如今却成熟稳重许多。</p>
+<p>从字迹上看，人应是好好的。</p>
+<p>如果病弱，或是受了苦，当写不出这样的字。</p>
+<p>可既然活得好好的，高焕又能把他藏到哪里？</p>
+<p>书信内容平平，看不出任何信息，显然是被检查过。</p>
+<p>高焕这些年也没出过宫。</p>
+<p>他身边能出宫的暗卫，早已被我摸清了。</p>
+<p>一条线一条线跟出去，都没找到任何线索。</p>
+<p>难道……</p>
+<p>我脑子里跳出那个念头时，自己都吓了一跳。</p>
+<p>赶紧把何昱的信重新展开。</p>
+<p>再次确认，字和内容都没问题。</p>
+<p>纸好像也没问题，不是宫中常用的纸张。</p>
+<p>但是，这种纸也并不罕见，宫外到处都有。</p>
+<p>快速撕下一个无字的纸角，我披上斗篷往外走。</p>
+<p>打开门，人直接僵住了。</p>
+<p>早已离开，此刻应该在嫔妃温柔香里的高焕，冷冷立在门口。</p>
+<p>8</p>
+<p>我退回宫内，他一步步逼进来。</p>
+<p>「虞卿这是要去哪儿？」</p>
+<p>解释无用。</p>
+<p>我干脆不吭声。</p>
+<p>脑子飞快盘算，他是什么时候回来的？</p>
+<p>是否看到阿娴？</p>
+<p>又知道我多少事？</p>
+<p>我退至墙角，高焕的阴影笼罩而下。</p>
+<p>他身上有酒气，眼睛发红，凶狠地盯住我的眼：「你想出宫？」</p>
+<p>「我出不去。」我如实回。</p>
+<p>高焕开始发疯：「可是你想走，你想离开我。」</p>
+<p>他双手抓住我的肩。</p>
+<p>手指抠到白天鞭子打过的伤口，痛得我倒抽冷气。</p>
+<p>为了保命。</p>
+<p>我一把将他推开。</p>
+<p>「圣上这是做什么？是你废了我的后位，迎娶别人入宫，如今这样，是在演深情吗？」</p>
+<p>不知道哪句话扎到他了。</p>
+<p>室内静谧片刻。</p>
+<p>之后高焕一把抱住我：「虞卿，我不想废你的，是何佑娴要废你。」</p>
+<p>呵，都到了这个时候，还在挑拨离间。</p>
+<p>我看到他的样子都嫌恶心。</p>
+<p>这天晚上高焕留在我宫里。</p>
+<p>除了最初闹过，后来便很安静。</p>
+<p>他像过往一样，坐在椅子里看书。</p>
+<p>我出不去，身上又有伤，干脆靠着床柱睡觉。</p>
+<p>不知他是何时走的。</p>
+<p>我醒来时，人已经侧躺在床榻上。</p>
+<p>后背是板伤，前身是鞭伤，躺和趴都不适合我。</p>
+<p>册封来得更加诡异。</p>
+<p>我重回后位，与阿娴分列东西宫皇后。</p>
+<p>高焕是个暴君，朝堂百官，无人敢言。</p>
+<p>我与阿娴私下讨论，也猜不透他葫芦里卖的什么药。</p>
+<p>但有一点我们是清楚的。</p>
+<p>高焕越疯，对我们越有利。</p>
+<p>我和她开始借各种机会，在宫内查探。</p>
+<p>何昱书信的纸张，很可能就是他的下落。</p>
+<p>所以阿娴查宫内出入的物品和人。</p>
+<p>一旦发现有异，立刻通知我们外面安排的人手，重新去摸底。</p>
+<p>我则在宫内走动。</p>
+<p>这座皇城，我已经走过七八年，除了高焕的寝殿，每个角落都是熟悉的。</p>
+<p>至于里面的人。</p>
+<p>有多少是他的，又有多少是我的，也分隔得十分清楚。</p>
+<p>一个月后。</p>
+<p>我与阿娴核对消息。</p>
+<p>宫内宫外无任何收获。</p>
+<p>唯一可疑的就是高焕。</p>
+<p>「得想办法，再让他拿一封信回来。」</p>
+<p>「可是我二哥每次写信都是在中秋节前后，如今才二月。」</p>
+<p>9</p>
+<p>我们没理由向高焕要何昱的信。</p>
+<p>但我们有计谋。</p>
+<p>这次无论如何，也要把这件事弄清。</p>
+<p>要么高焕拿信回来。</p>
+<p>要么，我把他的寝宫翻了。</p>
+<p>与阿娴商量好对策，我们分头行动。</p>
+<p>各项准备就绪。</p>
+<p>时间定在踏青节。</p>
+<p>高焕有一个习惯，每年踏青节这天，他不祭天地，不祭父母，却会踏上高高的城墙，站在上面半日。</p>
+<p>没人知道，他那时在想什么。</p>
+<p>但今年，我会与他同行。</p>
+<p>踏青节前，我备上吃食和薄酒，去长信殿找高焕。</p>
+<p>这里为朝臣议事殿，也是高焕批阅奏折的地方。</p>
+<p>我到时，户部和吏部均在殿内。</p>
+<p>似乎在论今年春闱事议。</p>
+<p>内官把我引入偏殿：「皇后娘娘先稍作歇息，圣上已知您到了。」</p>
+<p>我赏了他一把银稞子。</p>
+<p>一盏茶工夫，高焕进来。</p>
+<p>带着满面怒容。</p>
+<p>「连科考的银子都挤不出来了，那帮穷酸书生，能用多少钱？」</p>
+<p>去岁夏有旱灾，冬有雪殃。</p>
+<p>不知有多少百姓饿死冻死。</p>
+<p>赈灾的银子是送了出去，可有多少进入百姓的手里，没人知道。</p>
+<p>总之，国库是空了。</p>
+<p>我打开食盒，给他斟酒。</p>
+<p>然后又绕到他身后，给他按压头上的穴位。</p>
+<p>手刚按下去，便被他捉住。</p>
+<p>「虞卿怎么看？」</p>
+<p>「内宫不得妄议朝政，臣妾记得圣上训示。」</p>
+<p>他略一使力，便把我从后拽到前面，且跌倒在他腿上。</p>
+<p>手指摸到我脖颈处。</p>
+<p>好像稍一使力，就会把我脖子掐断一样。</p>
+<p>「皇后连死都不怕，还怕说两句话？」</p>
+<p>既然这样。</p>
+<p>我便把准备好的话说出来。</p>
+<p>「户部说没钱，可朝中官员的俸禄一点没少，每年都按时送到。」</p>
+<p>「连宫里嫔妃的月钱，也是一点不少。」</p>
+<p>「吏部说这次春闱花费大，原因是春寒，要备炭火和棉被。」</p>
+<p>「可春闱是踏春之后的事，虽然近几日是冷了些，然而天气不会一直冷下去。」</p>
+<p>我观察着高焕的脸色，继续说：</p>
+<p>「读书人，也未必扛不住那点寒气。」</p>
+<p>「往年圣上在踏春节这天，总会去城门，那里风大寒冷。」</p>
+<p>「今年，让臣妾陪您同去，共沐寒风。」</p>
+<p>「若还有人说天气冷，就告诉他，难道连我一个妇人也比不了？」</p>
+<p>高焕「哈哈哈」大笑。</p>
+<p>「很好，虞卿说得有理，朕这就告诉他们去。」</p>
+<p>但在起身前，他说：</p>
+<p>「虞卿陪朕去城楼就免了，让娴儿去吧。」</p>
+<p>10</p>
+<p>春闱的事很快得到解决。</p>
+<p>可谁要陪高焕去城楼，却三波五折。</p>
+<p>他一天能有十个主意。</p>
+<p>中间掺着挑拨我和阿娴。</p>
+<p>我们两个当高焕的面，自是闹得沸沸扬扬，让他满意。</p>
+<p>背后却早已定好，去城楼的人要如何，留在宫中的人又要如何。</p>
+<p>踏青节前一晚。</p>
+<p>高焕先去阿娴宫里。</p>
+<p>一个时辰后，他又来到我宫里。</p>
+<p>脸色不好，唇色亦有些发青。</p>
+<p>我知道，阿娴给他加量了。</p>
+<p>所以他看上去更为癫狂。</p>
+<p>一进来就把我抱住，连床榻都没走到，就近推倒在一张桌子上。</p>
+<p>我看着他气喘吁吁、欲生欲死的样子。</p>
+<p>内心只有一件事：何昱的书信。</p>
+<p>「圣上可记得今日是什么日子？」</p>
+<p>高焕汗湿的头发垂在鬓角，茫然抬头。</p>
+<p>我朝他笑了一下：「十一年前，圣上就是今天去的虞家。」</p>
+<p>他的兴致瞬间消散。</p>
+<p>穿好衣服喝茶时，才把后话续上。</p>
+<p>「那时虞家似乎在与何家议亲。」</p>
+<p>「对，议的是我二妹与何家二郎的婚事。」</p>
+<p>「什么？」高焕不信。</p>
+<p>但他想听。</p>
+<p>这么多年，他一直为何昱来看我的事耿耿于怀。</p>
+<p>以前不是没给过解释。</p>
+<p>他从来不信。</p>
+<p>今天的说法新鲜了。</p>
+<p>我向自己的妹妹泼脏水。</p>
+<p>「当年，我二妹与何家二郎私订终身，还暗结珠胎，我家觉得丢人之极，把二妹关了起来。」</p>
+<p>「何家二郎为了婚事能成，只能向我求助。」</p>
+<p>「他以为，我入宫为后，一定能帮得上他。」</p>
+<p>「可他没想到，我一样恨他无耻。」</p>
+<p>「如今我二妹去了北疆，彼地天寒，前阵子捎信回来，似染上重疾，恐不久于世。」</p>
+<p>「她一生苦闷，唯何家二郎为她月光，便恳求于我，想见他一面。」</p>
+<p>不知高焕信没信。</p>
+<p>只是面色阴郁，盯着我的目光像两把淬了毒的箭：「想见何昱？」</p>
+<p>「我知这样不合圣上规矩，只是臣妾自入宫来，亲缘渐薄，如今连两个孩子也离我而去……」</p>
+<p>高焕恢复我的后位时，就派人去接两个孩子。</p>
+<p>但得到的结果是，他派去盯着孩子的暗卫全部死亡。</p>
+<p>两个孩子也死了。</p>
+<p>他所怀疑的孩子的身世，所憎恨的我与孩子间的感情。</p>
+<p>在那一刻，不复存在。</p>
+<p>我如今再提，就为了达到刺痛他的目的。</p>
+<p>11</p>
+<p>我二妹要见何昱，是不可能的。</p>
+<p>她在北疆，回不来。</p>
+<p>高焕也不会放了何昱。</p>
+<p>但有这个前提，高焕答应让何昱写一封信，或给一件信物，送于我二妹。</p>
+<p>好让她死得瞑目。</p>
+<p>另外，次日去城楼，又换成我陪同。</p>
+<p>当晚我把消息传给阿娴。</p>
+<p>第二天，我和高焕站在高高的城墙上。</p>
+<p>极目远眺，青山绿水间，是城外的驻军大营。</p>
+<p>营帐旁边，还有一大片桃林。</p>
+<p>此时桃花渐开，远远望去，一片粉红。</p>
+<p>高焕问：「知道朕今日为什么让你陪同吗？」</p>
+<p>我摇头。</p>
+<p>已然被那些驻军惊到。</p>
+<p>阿娴入宫时，说城外的驻军不过七八万。</p>
+<p>可七八万人，哪需要如此多的营帐？</p>
+<p>「因为朕不想让虞卿死在宫里。」</p>
+<p>我心头猛地跳了一下。</p>
+<p>「圣上什么意思？」</p>
+<p>高焕笑得阴森。</p>
+<p>「朕的意思是，今日永寿宫会很热闹。」</p>
+<p>永寿宫是高焕的寝殿。</p>
+<p>今日阿娴要去那儿找何昱。</p>
+<p>接下来城外有什么，我完全看不进去。</p>
+<p>连天空意外飘雨，都没感觉到。</p>
+<p>我急着回去，想看看阿娴如何。</p>
+<p>可高焕不走。</p>
+<p>还强行拉住我的手，让我在雨里淋到午时。</p>
+<p>从城楼上下来，我不顾一身湿衣，狂奔回宫。</p>
+<p>却在宫门口，看到迎接我们的阿娴。</p>
+<p>我以眼神讯问她，发生了何事。</p>
+<p>她向我身后行礼。</p>
+<p>龙辇上，高焕坐得像一堆石像。</p>
+<p>许久，石像才抬了抬手。</p>
+<p>阿娴意会，向龙辇走去。</p>
+<p>经过我身边时，塞了一个纸团在我手里。</p>
+<p>回宫打开。</p>
+<p>我手脚立时失去温度，人如死尸。</p>
+<p>「二哥已死。」</p>
+<p>这是阿娴的字条。</p>
+<p>12</p>
+<p>我不相信何昱死了。</p>
+<p>他每一封信里，「吾安好」三字，都格外用力。</p>
+<p>我还记得他说过的话。</p>
+<p>「将来如果我去远方，给你们写信时，如果这三个字正常写，说明我肯定不怎么好了。」</p>
+<p>「但如果我把力道加重，再把这个点这个横给它挪一下，那才是真的好。」</p>
+<p>何昱的信，明明每一封都是真的好。</p>
+<p>他怎么可能死？</p>
+<p>阿娴留在永寿宫，一夜未归。</p>
+<p>我焦急整宿。</p>
+<p>次日一早便让宫女带上食盒往永寿殿去。</p>
+<p>内官把我拦在门外。</p>
+<p>说圣上和何皇后还未起身。</p>
+<p>早朝的臣子已经在外殿急了，让人过来一探究竟。</p>
+<p>然宫门未开，谁也不敢贸然进去。</p>
+<p>13</p>
+<p>我在高焕寝殿外，等足一个时辰。</p>
+<p>立刻差人唤来各宫妃嫔，和太医院众人。</p>
+<p>为了稳妥起见，把朝中重臣和大内侍卫，一同叫到永寿宫前。</p>
+<p>「去敲门。」</p>
+<p>我吩咐高焕的内宫。</p>
+<p>他瑟瑟发抖。</p>
+<p>没有上前，反而往后退。</p>
+<p>我的目光扫过众人。</p>
+<p>所有人都往后退了一步。</p>
+<p>瞧见没？</p>
+<p>这就是高焕身边的人。</p>
+<p>我大步上前，用力往门上拍。</p>
+<p>门板震得「嗡嗡」作响，可里面却毫无动静。</p>
+<p>等不了了。</p>
+<p>我抽了大内侍卫的宝剑。</p>
+<p>一剑刺进门缝……</p>
+<p>众人与我一同涌进内殿。</p>
+<p>满室狼藉，桌凳床帐衣服，撒得到处都是。</p>
+<p>里面还夹杂着血迹。</p>
+<p>可高焕不在。</p>
+<p>阿娴也不在。</p>
+<p>人群顿时乱了起来。</p>
+<p>有几个人想趁机溜出去。</p>
+<p>我大声吩咐大内侍卫首领：「抓住他！」</p>
+<p>我站上最高的台阶，环视众人：「今日谁离开永寿宫，格杀勿论。」</p>
+<p>大臣与内官宫女，分成堆缩到墙角。</p>
+<p>大内侍卫则分成几路人马。</p>
+<p>有人控制永寿宫，有人去往宫门。</p>
+<p>也有人出城去了。</p>
+<p>我带着一队人，内心焦急，表面上却不得不冷静地在宫内找了一圈。</p>
+<p>没有。</p>
+<p>两个人像是从人间消失了，找不到任何踪迹。</p>
+<p>再回到永寿殿，我让大内侍卫安排大臣去另一个院子。</p>
+<p>宫女内官则关到偏殿去。</p>
+<p>我独自进入高焕寝殿内侧。</p>
+<p>人均八百个心眼的后宫，我不信高焕的后宫，没个暗格或密道。</p>
+<p>在外的面子已经做足。</p>
+<p>我现在找到他，就算一刀嗄了，也不会有人知道。</p>
+<p>只是要快。</p>
+<p>我最担心的就是阿娴。</p>
+<p>床板掀开，桌子挪走，撕下画，敲掉砖。</p>
+<p>我的目光终于落在一件玉壶上。</p>
+<p>太过眼熟，以至于我在看到的瞬间，眼眶便热了。</p>
+<p>这是我十岁那年，阿娴送我的生辰礼物。</p>
+<p>我视如珍宝，时常带在身边。</p>
+<p>高焕却认为是何昱送我的，气愤拿走。</p>
+<p>我以为他早已扔掉。</p>
+<p>没想到会出现在这里。</p>
+<p>挪动玉壶，面前好好的墙，缓缓打开。</p>
+<p>我面前出现了另一个空间。</p>
+<p>一个与高焕寝殿风格完全不同的空间。</p>
+<p>里面全是关于我的物件。</p>
+<p>有我们初定婚约时，我被迫送他的荷包。</p>
+<p>有我入宫那年，封后礼毕为他绣的游龙腰带。</p>
+<p>还有平时我宫里莫名丢失的小玩意儿。</p>
+<p>甚至有几套幼儿的衣服。</p>
+<p>旧的。</p>
+<p>是我儿子和女儿穿过的。</p>
+<p>我的指尖发抖，弄不懂高焕得了什么病，会这么变态。</p>
+<p>我绝不相信，高焕是心悦我的。</p>
+<p>因为我最重视的家人，被他以各种手段伤害。</p>
+<p>包括我自己。</p>
+<p>拿这些无用的东西，珍藏于此，大概是作为战利品炫耀吧。</p>
+<p>恶心至极！</p>
+<p>14</p>
+<p>这间暗室再无其它路径。</p>
+<p>但方法我已经摸透。</p>
+<p>回到内殿，接连在墙上又找到几个暗钮。</p>
+<p>打开最后一个时，我听到里面有人说话。</p>
+<p>声音太小，听不清说什么，但给了我希望。</p>
+<p>我提起裙摆，快步下台阶，往暗室的深处走。</p>
+<p>刚走到一半，一把冰凉的匕首便刺在我脖子上。</p>
+<p>没用太大力，只刺破了皮。</p>
+<p>但足够让我止步。</p>
+<p>身后是一个沙哑的声音：「谁？」</p>
+<p>「虞卿。」</p>
+<p>匕首拿下，有人帮我捂住脖子上的伤口。</p>
+<p>但他手指发凉，比伤痛更让人难受。</p>
+<p>我躲掉他，自己捂住。</p>
+<p>里面说话的声音也停了。</p>
+<p>有人向这边走来。</p>
+<p>借着甬道里昏暗的灯光，我看到了阿娴。</p>
+<p>她一身玄衣，去了头上的金钗凤冠，只简单将秀发束起，别了一根玉钗。</p>
+<p>「姐姐？！」</p>
+<p>她跑过来，握住我的手：「我正与二哥商量要怎么办？」</p>
+<p>我这才往侧边的阴影里看。</p>
+<p>八年未见，何昱高了许多。</p>
+<p>我要抬起脸，才能勉强看清他的面容。</p>
+<p>很狼狈，也很邋遢。</p>
+<p>整张脸都显出一种病态的白，连唇上都没有颜色。</p>
+<p>「商量出结果了吗？」</p>
+<p>我往里面走。</p>
+<p>阿娴跟在我身边：「还没有，狗皇帝已经被我们抓了，但外面要怎么办？」</p>
+<p>我看到了高焕。</p>
+<p>他被绳子绑住手脚，倒在地上。</p>
+<p>不知是不是听到我的声音，脑袋极力往这边扭着。</p>
+<p>在看到我的一瞬间，他挪动了一下。</p>
+<p>但毫无用处。</p>
+<p>不过嘴没封。</p>
+<p>「虞卿，你来救我的？我就知道，只有你能来到这里。」</p>
+<p>我冷冷看他：「你弄错了，我不是来救你的，我跟他们是一伙的。」</p>
+<p>高焕的脸有一瞬间的怔忪。</p>
+<p>之后他再不说话。</p>
+<p>他的唇色已经成了青紫色。</p>
+<p>按我之前计算的药量，活不长了。</p>
+<p>所以，我必须为大盛朝的下一步做打算。</p>
+<p>「外面已知道他消失，位子就传给昶儿吧。」我说。</p>
+<p>高焕在地上发出一声笑。</p>
+<p>「虞卿，你如果想要昶儿继位，跟我说便是，何必用这种方法？」</p>
+<p>我懒得理他。</p>
+<p>继续跟阿娴道：「只是要委屈你，暂时也不能出去。」</p>
+<p>高焕又插话：「昶儿即使不是我儿子，但他只要是你的，便是给他再多，我也愿意。」</p>
+<p>我一个没忍住，过去甩了他一耳朵。</p>
+<p>这个耳光憋得太久，所以打出去时，我用了全身的力量。</p>
+<p>指甲刮花高焕的脸，同时也打出了他嘴角的血。</p>
+<p>他慢吞吞把血舔回去，张嘴朝我笑时，牙都是红的。</p>
+<p>「怎么，我说得不对吗？这么多年，你一直在找他，难道不是在给孩子找爹？」</p>
+<p>「啪！」</p>
+<p>我又扇了他一耳光。</p>
+<p>这次把自己胳膊都震麻了。</p>
+<p>「不是所有人都像你这么龌龊，连自己的亲生儿子都怀疑。」</p>
+<p>高焕像听到了笑话。</p>
+<p>「你说昶儿是我儿子？哈哈哈哈，虞卿，我现在不是皇帝，是被你们绑住的阶下囚，不必再费心骗我的。」</p>
+<p>此人已无救。</p>
+<p>我再不想看他一眼。</p>
+<p>「我们换一个地方说话。」</p>
+<p>将高焕绑结实，我们三人移到甬道里的一盏灯下。</p>
+<p>到此时，我才真正注意到。</p>
+<p>何昱看我的眼神有些不对。</p>
+<p>15</p>
+<p>太过黏腻。</p>
+<p>比高焕看我时还要让人不舒服。</p>
+<p>我想尽量忽略，同阿娴说话。</p>
+<p>可那目光盯在我身上，让我生出一种蛇目的感觉。</p>
+<p>我不得不面对他，问出疑惑：「二公子，是我哪里不对吗？」</p>
+<p>何昱立刻往后缩：「没，你没有不对。」</p>
+<p>「那你为何一直盯着我看？」</p>
+<p>他说不出来。</p>
+<p>不过垂下了眼皮。</p>
+<p>没有干扰，我很快就跟阿娴说清楚，并且拿到联系昶儿的办法。</p>
+<p>从暗室出来，我把一切恢复如初。</p>
+<p>又叫来宫人，把永寿宫收拾妥当。</p>
+<p>然后回宣慈宫，换上朝会时穿的宫服。</p>
+<p>先召集大臣，告诉他们大盛不可一日无君，如今圣上不在，问他们有何高见。</p>
+<p>在他们思考之时，我见了大内侍卫首领。</p>
+<p>这个人，是我宫里的内应。</p>
+<p>让他往宫外传消息，送昶儿回来。</p>
+<p>大臣被我关在宫内三日。</p>
+<p>家人不见，消息不通，个个如热锅上的蚂蚁。</p>
+<p>看到昶儿的一瞬间，立马两眼放光。</p>
+<p>「皇后娘娘说得对，国不可一日无君！」</p>
+<p>不过几日，新皇登基大典便办完了。</p>
+<p>昶儿年幼，我理应辅政。</p>
+<p>把高焕留下的烂摊子处理完，春闱已经结束，时节也进入夏季。</p>
+<p>是该瞅瞅暗室里的男人了。</p>
+<p>16</p>
+<p>永寿宫改成了我的宫殿。</p>
+<p>里面所有伺候的内官和宫人，只可在外殿活动。</p>
+<p>内殿，包括内殿所属的一整个院落，没有我的命令，进去一只苍蝇都得被斩成两截。</p>
+<p>守门的，是大内侍卫首领。</p>
+<p>所以阿娴早就被我放出暗室，有吃有喝有玩。</p>
+<p>她也说过要把何昱放出来。</p>
+<p>但我没想好要给他何种安排，又怕别人撞见，便没马上同意。</p>
+<p>才一开后殿的门，阿娴便跳了过来。</p>
+<p>「姐姐，你回来了。」</p>
+<p>「嗯，今日我让人送来的烤羊肉，你可喜欢？」</p>
+<p>「喜欢，很有边疆的味道，我全部吃完了。」</p>
+<p>我笑着揉她脑袋。</p>
+<p>她便乖巧地靠到我身上：「姐姐，你什么时候把我二哥放出来？」</p>
+<p>「今天。」</p>
+<p>她顿时跳了起来，嘴角咧成了弯钩：「真的吗？」</p>
+<p>「当然是真的，走，我们现在就去看他。」</p>
+<p>一起往里走时，我问阿娴：「把你二哥放出来，你打算让他去哪儿，也去边疆吗？」</p>
+<p>阿娴一下怔住了：「姐姐，他不可以留在宫里吗？」</p>
+<p>我也愣了：「留在宫里，为什么？」</p>
+<p>「因为我二哥喜欢姐姐呀！」</p>
+<p>「哈？」</p>
+<p>17</p>
+<p>我从不知何昱喜欢我。</p>
+<p>幼时我们相处，皆因他是阿娴的哥哥，我才对他礼遇有加。</p>
+<p>后来我入宫，他来看我。</p>
+<p>我也是为了打听阿娴的消息。</p>
+<p>那时她在边疆，与我通信不便，为免高焕多疑，我只能通过旁人，知道她的消息。</p>
+<p>难道这些，会让何昱认为我对他有意？</p>
+<p>我仔细回想。</p>
+<p>相处这么些年，我既未送过他物件，也未向他传过什么女儿家的私话。</p>
+<p>我与他说得最多的，永远是阿娴。</p>
+<p>而且他被高焕关起时，我已经十六岁，且刚刚生完两个孩子。</p>
+<p>这样，他还会喜欢？</p>
+<p>我把何昱送出宫了。</p>
+<p>扮成侍卫，由专人护送出城。</p>
+<p>阿娴不放心，也跟着出去，说是安顿好他，再回来看我。</p>
+<p>我摇头让他们快走。</p>
+<p>之后再次回到暗室。</p>
+<p>多日不见，高焕已经没了皇帝的形态，但语气没变。</p>
+<p>他甚至看到我来，还笑了一下。</p>
+<p>声音已经沙哑：「虞卿，你终于来看我了。」</p>
+<p>见我不答。</p>
+<p>他又说：「昶儿的皇帝做的如何？」</p>
+<p>「很好，比你强。」</p>
+<p>「那是有你在，哈哈哈。」</p>
+<p>他还笑得出来？！</p>
+<p>只是到底做过帝王，洞察力也没有减退。</p>
+<p>「虞卿这次来，是处理我的后事吗？」</p>
+<p>我看着他，没有说话。</p>
+<p>他却突然崩了。</p>
+<p>从椅子上翻下来，跪趴在我面前：「我可不可以不死？」</p>
+<p>「只要我能活着，你让我怎样都可以？」</p>
+<p>「做你的内官，照顾你，伺候你，只要跟在你身边，怎么样都行。」</p>
+<p>我被他的话逗笑了：「你是当宫里的人都瞎吗？」</p>
+<p>高焕的眼神一秒变狠：「我可以毁了这张脸，这样他们就不知道我是谁了。」</p>
+<p>但我冒不起这个险。</p>
+<p>而且，他也没命活到那个时候。</p>
+<p>即使他像狗一样，请求我原谅他的过去。</p>
+<p>告诉我，他是因为喜欢我，才会做出那样伤害我的事。</p>
+<p>我仍然无法放过他。</p>
+<p>他也不会有一个帝王的葬礼。</p>
+<p>死后只能用普通的棺木装上，像普通人一样，埋到土里去。</p>
+<p>这还是看在他是昶儿亲爹的份上。</p>
+<p>18 高焕番外</p>
+<p>心动之年，我在郊外遇到一位明媚的女子。</p>
+<p>她着一身鹅黄衣裙，头上扎亮闪闪的蝶花。</p>
+<p>像精灵一样，行走在桃林之间。</p>
+<p>顾盼生姿，撩人心魄。</p>
+<p>我急需知道她是谁，当下就着人去打听。</p>
+<p>结果却得知，她家正与何家议婚。</p>
+<p>她是我的。</p>
+<p>谁也不能抢去。</p>
+<p>但作为皇子，又有婚约在身，我不能上门去抢丞相家的女儿。</p>
+<p>我挖空心思，找了各种门路。</p>
+<p>总算得知了一个关于她的传说。</p>
+<p>我知道娶她会被旁人议论。</p>
+<p>尤其是我那些皇兄皇弟们。</p>
+<p>但我宁愿被他们防范，被他们敌对，也不想错过虞卿。</p>
+<p>终于，我如愿以偿，努力了三年，迎娶她过门。</p>
+<p>可在新婚夜，揭开她盖头的瞬间。</p>
+<p>我便知道，她不爱我。</p>
+<p>她的目光是冷的。</p>
+<p>尽管为了虞家，她非常乖顺，可我还是清晰感觉到了她的冷淡。</p>
+<p>我用尽所有办法，送她礼物，带她去玩。</p>
+<p>入宫以后，甚至允许何家那个二傻子来看她。</p>
+<p>还想过把她最好的姐妹，也接进宫来陪她。</p>
+<p>然而她依然对我很冷。</p>
+<p>无法，我只能把何昱抓起来，养在暗室里。</p>
+<p>以他做威胁，以图虞卿能多看我一眼。</p>
+<p>我为了让她吃醋，也娶了何佑娴。</p>
+<p>但，我又一次以失败告终。</p>
+<p>那天我躺在冰凉的地面上，鼻尖的土腥味呛得窒息，我亦不在乎。</p>
+<p>只苦苦向她哀求，让我活着。</p>
+<p>我不是想翻盘。</p>
+<p>谁做皇帝我压根就不在乎。</p>
+<p>我只是想多留在她身边一刻。</p>
+<p>可她像过去一样，矜持有度，没有同我多说，也没有原谅我。</p>
+<p>她走后，我的腹部开始搅疼。</p>
+<p>我知道时候到了。</p>
+<p>我一直在服食一种毒。</p>
+<p>最初是虞卿给的，后来换成何佑娴。</p>
+<p>何佑娴继承了何家血脉，又傻又天真。</p>
+<p>我根本不想看她，更不会临幸她。</p>
+<p>我只认虞卿，连她给的毒也认。</p>
+<p>如果不能留在她身边，喝下她喂的毒，似乎也不错。</p>
+<p>至少，她还有东西是留给我的。</p>
+<p>而且会一直伴着我。</p>
+<p>直到死。</p>
+<p>备案号:YXX1O2Adrw0ck2xlYnubPn8</p>
+<p>公主归塞</p>
+<p>​</p>
+<p>​</p>
+<p>刺客爱人：甜虐反转的古言故事</p>
+<p>约等于零 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/13-%E6%99%BA%E5%95%86%E8%A2%AB%E4%BE%AE%E8%BE%B1%E7%9A%84%E6%84%9F%E8%A7%89%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84---%E7%9F%A5%E4%B9%8E/" title="智商被侮辱的感觉是怎样的？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">智商被侮辱的感觉是怎样的？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/12-%E4%B8%8D%E8%A2%AB%E6%94%B6%E4%B9%B0%E7%9A%84%E7%9A%87%E5%90%8E/" title="不被收买的皇后">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">不被收买的皇后</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

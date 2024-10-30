@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顶流说他喜欢我 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/9/8-%E9%A1%B6%E6%B5%81%E8%AF%B4%E4%BB%96%E5%96%9C%E6%AC%A2%E6%88%91/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/9/8-%E9%A1%B6%E6%B5%81%E8%AF%B4%E4%BB%96%E5%96%9C%E6%AC%A2%E6%88%91/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="顶流说他喜欢我">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+  <meta name="twitter:title" content="顶流说他喜欢我">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="顶流说他喜欢我">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11220">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">顶流说他喜欢我</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%a1%b6%e6%b5%81%e8%af%b4%e4%bb%96%e5%96%9c%e6%ac%a2%e6%88%91&amp;url=https://mohai.us.kg/posts/2024/9/8-%E9%A1%B6%E6%B5%81%E8%AF%B4%E4%BB%96%E5%96%9C%E6%AC%A2%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/9/8-%E9%A1%B6%E6%B5%81%E8%AF%B4%E4%BB%96%E5%96%9C%E6%AC%A2%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%a1%b6%e6%b5%81%e8%af%b4%e4%bb%96%e5%96%9c%e6%ac%a2%e6%88%91%20https://mohai.us.kg/posts/2024/9/8-%E9%A1%B6%E6%B5%81%E8%AF%B4%E4%BB%96%E5%96%9C%E6%AC%A2%E6%88%91/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26624.jpg" alt="顶流说他喜欢我" />
+      
+
+      <p>顶流说他喜欢我</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>我是糊咖女星，得了一种对影帝兼死对头言听计从的病。</p>
+<p>他回国当天叫我手捧鲜花去接机，媒体、记者、粉丝将我围了个水泄不通。</p>
+<p>第二天上了热搜。</p>
+<p>死对头站出来辟谣：是我暗恋的她@时念</p>
+<p>我是个爱惜羽毛的娱乐圈十八线糊咖女星，和所有艺人一样都有一个梦想，想要成为影后。</p>
+<p>就算只是个糊咖，我也不会发疯炒 CP。</p>
+<p>但是我的经纪人不这么认为，她总是给我去蹭新晋影帝席砚的热度。</p>
+<p>好巧不巧，我和席砚是从小一起斗到大的死对头！</p>
+<p>刚看到席砚粉丝又在骂我不要脸的热搜，下一秒我就接到了席砚的电话。</p>
+<p>「时念，又蹭老子热度，你给我等着别动，老子来找你算账了！」</p>
+<p>说完就把电话挂了。</p>
+<p>而此时的我刚包裹严实偷偷摸摸去奶茶店买了一杯奶茶，正准备插吸管嘬一口。</p>
+<p>我真的停下来等着了。</p>
+<p>拼尽全力也抬不起脚的那种！</p>
+<p>m 的，早知道会这样我出来买什么奶茶！</p>
+<p>关于对席砚说的话我会无条件顺从这件事，我在好几天之前就发现了。</p>
+<p>那天我拍女 n 号遇到他，他说你去撒泡尿照照自己现在像什么样子。</p>
+<p>然后我真的去厕所撒了泡尿照了一下。</p>
+<p>就……他 m 离谱！</p>
+<p>席砚来时我正被一大堆人围观，毕竟长时间保持着一个姿势不动真的挺像行为艺术的。</p>
+<p>席砚看着我沉默了半晌才凑到我耳边开口：</p>
+<p>「可以动了。」</p>
+<p>一瞬间，就像魔法失效了似的。</p>
+<p>我放松下来，差点瘫倒下去的时候席砚抱着我逃离了现场。</p>
+<p>比起愤怒，我现在更多的是害怕。</p>
+<p>席砚知道了我对他说的话言听计从的事！</p>
+<p>「时念，我叫你别动你就别动啊？」他说。</p>
+<p>我翻白眼：「你别误会，我只是想晒太阳。」</p>
+<p>席砚的嘴角不动声色地扯了扯，接着我从他的脸上看到了一抹邪恶。</p>
+<p>「时念，狗怎么叫的？」</p>
+<p>「汪汪！」</p>
+<p>「猪呢？」</p>
+<p>「哼哼！」</p>
+<p>「猫？」</p>
+<p>「喵～」</p>
+<p>席砚愣住了，耳尖不由得泛红。</p>
+<p>他拿走了我的奶茶，我还没来得及抢回来就眼睁睁地看着他嘬了一口。</p>
+<p>呜呜呜，我排了那么久的队，晒了那么久的太阳才到手的奶茶，被席砚这个大猪蹄子截胡了！</p>
+<p>我一脚踩到席砚的脚上。</p>
+<p>「席砚你混蛋！」</p>
+<p>我跑了，我生气他拿走我的奶茶是其一，我更怕他逼问我是不是对他言听计从！</p>
+<p>「娜姐，以后有席砚的地方别叫我！」</p>
+<p>回去我就对我的经纪人说。</p>
+<p>娜姐一如往常恨铁不成钢地瞪了我一眼。</p>
+<p>「你都糊成这样了，你不蹭席砚的热度，你怎么办？</p>
+<p>「你再糊下去公司赚不了钱就要送你去陪酒，到时就算火了也黑料一大堆！」</p>
+<p>我无语。</p>
+<p>可我也没见我现在有多好，毕竟微博关注我的不到两千人，两千个人里一半以上还都是黑粉！</p>
+<p>「那换个人蹭不行吗？」我最后挣扎道。</p>
+<p>也不需要逮着席砚一个人薅啊。</p>
+<p>娜姐叹气：「那还不是除了席砚，别人都要给咱们发律师函吗！」</p>
+<p>我想说什么，但是动动唇，无话可说。</p>
+<p>席砚这人确实处处和我作对，但从来没有拿我蹭他热度这件事情对我发难。</p>
+<p>可这也不能成为我做他吸血虫的资本啊！</p>
+<p>「反正你换个人蹭吧，我真不能和席砚绑在一起了！」</p>
+<p>席砚现在知道了我会对他言听计从的事，保不准会整蛊我。</p>
+<p>我已经糊成这样了，我不想退圈之前还成为娱乐圈的笑柄！</p>
+<p>「你一定是压力太大了，那我们暂时就不蹭席砚的热度了，咱们去蹭影后的！」</p>
+<p>原来是她给我申请了陪影后一起走红毯的资格，虽然只是给她提裙摆。</p>
+<p>我高兴疯了，饭都多吃了两碗。</p>
+<p>我又上了热搜，黑粉骂我想火想疯了。</p>
+<p>原因是黑粉扒出来在奶茶店门口一动不动站了二十多分钟的人是我！</p>
+<p>我气得飙出国粹。</p>
+<p>还不是他们家正主席砚的错！</p>
+<p>我在想怎么没有人扒出来把我抱走的人是席砚，下一秒就看到了席砚的微博。</p>
+<p>席砚：「奶茶我喝到了，很甜。」</p>
+<p>配图是我的那杯奶茶。</p>
+<p>我瞳孔地震，席砚是不是不想要我好过？</p>
+<p>他的心好黑啊，明明知道他的粉丝讨厌我，还要故意搞我！</p>
+<p>我迅速切上了小号。</p>
+<p>没错，我有小号，而且还是席砚粉丝后援会的副会长，正会长是他的小助理。</p>
+<p>我上小号的时候我的消息列表已经 99＋了，全部都是问我席砚和时念什么情况的！</p>
+<p>我要知道是什么情况就好了。</p>
+<p>我赶紧在粉丝群里噼里啪啦打下一排字。</p>
+<p>我：「大家别慌，咱们哥哥和时念肯定没什么，只不过是他们刚好买了同一家的奶茶而已，影视城就那么大，很容易就撞的！」</p>
+<p>粉丝：「可是有人说把时念从奶茶店抱走的人是我们家哥哥！」</p>
+<p>我：「那一定是时念找人伪装的，这女人为了火疯了！」</p>
+<p>粉丝：「啊对对对，是时念这个女人为了火无所不用其极！」</p>
+<p>在我的鼓舞下大家齐心协力，相信这件事情只是巧合。</p>
+<p>对于自己黑自己这件事我已经不是第一次干了，骂我自己的时候感觉就像在骂一个无关紧要的人！</p>
+<p>我嗑席砚的颜，从他进娱乐圈那天就在嗑了。</p>
+<p>这家伙与我不对付，我怕他知道我是他的大粉嘚瑟，所以我悄悄嗑！</p>
+<p>这件事情就这么过去了，大家都来我的评论区骂我。</p>
+<p>早的帖子由于骂我的人太多被系统删了，我只能另外发了一个帖子，供黑粉消遣。</p>
+<p>我才不在乎，反正我粉的哥哥房不能塌！</p>
+<p>我没有心情再搭理这件事了，因为马上就要走红毯了！</p>
+<p>这可是我人生第一次走红毯，我要打起十二分精神！</p>
+<p>娜姐说要我这阵子安分一点，毕竟名额已经定下来了，不能出意外。</p>
+<p>走红毯那天我拿到了一件并不适合我的礼服。</p>
+<p>嗐！能走红毯就不错了，还求什么呢！</p>
+<p>刚穿上礼服我就接到了来自席砚的电话。</p>
+<p>「你要走红毯？」</p>
+<p>「是啊！本姑娘是不是很厉害？」</p>
+<p>「哦，那你等等老子，这个红毯你跟我走！」</p>
+<p>「你疯了吧，我干嘛要跟你走红毯！我要跟咱们影后一起走！」</p>
+<p>我听到来自电话那头的嗤笑。</p>
+<p>「给李双双提裙摆？有意思吗？等会儿他们催你给李双双提裙摆，你就说你要和我一起走，就这样，我在开车，马上到了！」</p>
+<p>我：？</p>
+<p>我为什么要跟他走红毯啊！</p>
+<p>提裙摆怎么了，我这种糊咖能蹭个红毯死而无憾了好吗！</p>
+<p>我没有把席砚的话放在心上，这时候有人来叫我去准备，该和李双双上场了。</p>
+<p>「我不去，我要和席砚一起走！」</p>
+<p>我真豪横，把工作人员一推，环抱着双臂死活不走！</p>
+<p>我赶紧捂住嘴，我忘了我会对席砚的话言听计从！</p>
+<p>所有人都用吃惊的眼神看着我，仿佛在问「你没事吧」？</p>
+<p>「时念，该不会是蹭席砚的热度傻了吧？」</p>
+<p>「就是，平时蹭人家的热度就算了，这个节骨眼上还玩这么大，咱们双双都不敢说要和席影帝一起走红毯呢！」</p>
+<p>大家你一嘴我一嘴，无数人用异样的目光打量着我。</p>
+<p>李双双走到我的面前，用居高临下的姿态看着我。</p>
+<p>「时念，和我一起走红毯是你八辈子修来的福分，你还妄想和席影帝一起走，天都还没黑呢你就开始做梦了？」</p>
+<p>李双双看我的眼神充满了鄙夷。</p>
+<p>「在我还没有决定替换掉你之前，我劝你赶紧下跪认错，并发微博向我和席影帝公开道歉！」</p>
+<p>顿了下，李双双又对我刻薄道。</p>
+<p>我承认，现在我这情况是个人见到我这样都会骂哭「傻 X」，甚至还想上前给我一个大 B 兜。</p>
+<p>但是，她这个姿态真的好叫人讨厌哦！</p>
+<p>我环抱着双臂哼声道：「你不敢和席砚一起走红毯那是你的事情，反正我就是要和席砚一起走红毯！</p>
+<p>「 你不服是吧，不服也没办法，毕竟和席砚这种咖位一起走红毯不是随便一个人都敢想的！」</p>
+<p>李双双被我怼得面红耳赤。</p>
+<p>这时，原本安排和我一起给李双双提裙摆的十八线女艺人走到我的面前。</p>
+<p>「那是，随便一个人脸皮可没有你这么厚！</p>
+<p>「天天蹭席影帝的热度就算了，今天还大放厥词说要和他一起走红毯，山鸡也妄想变凤凰！</p>
+<p>「双双姐，你这么人美心善，她不听你的劝是她的事，我陪你一起走红毯！」</p>
+<p>她的脸上仿佛写着：「要滚快滚，你滚了热度就是我的了！」</p>
+<p>李双双没在我这里讨到便宜，拿起手机就拨通了我经纪人的电话。</p>
+<p>「我治不了你有人治你，还想走红毯呢，你去陪睡还差不多！」</p>
+<p>说着李双双和那个十八线女艺人走了。</p>
+<p>没一会儿我的经纪人来了，看到我就上前在我耳边骂。</p>
+<p>「你是疯了还是翅膀硬了？李双双你都敢得罪？</p>
+<p>「咱们不是说好不蹭席砚的热度了吗！今天的红毯你也别走了，赶紧跟我走吧！</p>
+<p>「你之前不是说你想退圈吗？退吧，我同意了！</p>
+<p>「你赶紧发一条微博向席影帝道歉，违约金的事情我想办法给你把损失降低到最低！」</p>
+<p>娜姐一向待人严格，但关键时刻真的就跟亲妈似的！</p>
+<p>听到她的话，我感动地身子一颤一颤的，我真的好爱她！</p>
+<p>但是我后退两步抬着下巴十分不识好歹地摆手。</p>
+<p>「不，我要和席砚一起走红毯！」</p>
+<p>我看到娜姐气得眼泪都要飙出来了，我也眼泪要飙出来了。</p>
+<p>我能说这真的不关我的事吗？</p>
+<p>「时念，你当自己是什么啊，你有那本事陪着资本家玩吗？</p>
+<p>「混圈的时候不争气没关系，但你退圈的时候能不能给我安分点？」</p>
+<p>娜姐被我气得面红脖子粗。</p>
+<p>我赶忙解释：「不是啊，是席砚叫我和他一起走红毯的。」</p>
+<p>娜姐愣了一下上前摸摸我的额头。</p>
+<p>「没有发烧啊，咋说胡话了呢，不行，你跟我走，我带你去精神科看看！」</p>
+<p>娜姐拉着我就要走。</p>
+<p>我也想跟她走，可我现在对席砚言听计从！</p>
+<p>于是我俩跟唱戏似的，她拉我一下，我推她一下。</p>
+<p>很快我们周遭围了一群人，媒体拿着相机咔咔拍照。</p>
+<p>我已经想好今天的微博头条是什么了：「糊咖女星红毯发疯，亵渎影帝」！</p>
+<p>我——时念，二十四岁，卒！</p>
+<p>在一阵哗然声中，席砚朝着我走来了，周围的人迅速给他让出一条大道。</p>
+<p>大家都用戏谑的眼神看着我，仿佛他们在心中已经幻想了千百遍我被席砚羞辱的画面。</p>
+<p>在所有人的期待中，席砚挽上了我的胳膊。</p>
+<p>娜姐揉了无数下眼睛，见鬼似的看着我。</p>
+<p>我两手一摊，道：「我都说了，是席砚邀请我和他一起走红毯的！」</p>
+<p>「邀请」这两个字我咬得极重。</p>
+<p>甚至我还故意把头靠在席砚的宽肩上，表现得十分亲昵。</p>
+<p>m 的，这么整蛊我，别怪我拿你挡刀！</p>
+<p>我以为我会在席砚的脸上看到嫌弃，但是并没有，我甚至还看到这家伙勾起了唇角。</p>
+<p>也不知道他发的什么神经！</p>
+<p>就在这个时候，工作人员恭恭敬敬地过来叫他去走红毯。</p>
+<p>席砚对工作人员说了句我是他的女伴，我们俩就一起走上了红毯。</p>
+<p>很快一盆水就将我心中的怒火浇灭了。</p>
+<p>原来万众瞩目的感觉是这样的！</p>
+<p>我沉浸在摄影机的咔咔声中，这时候听到一声破口大骂。</p>
+<p>「该死的时念挡住了我男神的宽肩窄腰！」</p>
+<p>我的好心情被她骂没了，身旁的席砚捏了捏我的胳膊。</p>
+<p>「别管她们，她们嫉妒你！」他说。</p>
+<p>我扑哧笑出声。</p>
+<p>对！没错！她们看得到碰不到嫉妒我！</p>
+<p>想着，我故意往席砚身上贴了贴。</p>
+<p>骂吧，骂地再大声，男神也与你们无缘！</p>
+<p>走完红毯据说微博已经崩了，我也已经想好了我的退圈致辞。</p>
+<p>「席砚，你明知道我对你的话言听计从，你还要故意搞我！」</p>
+<p>虽然他刚才带领我领略了一番红毯风光，但依旧不影响我找他算账！</p>
+<p>席砚挑眉看着我：「什么？你对我的话言听计从？」</p>
+<p>「……」</p>
+<p>我气死了。</p>
+<p>席砚上前两步，笑道：「我就是单纯地想带你走一次红毯。」</p>
+<p>看着他炽热的眼神，我真在心中怀疑自己是不是误会他了。</p>
+<p>看了一眼刚刚修复的微博，前十的热搜我俩占五。</p>
+<p>#时念席砚#</p>
+<p>#回顾时念蹭席砚热度的日子#</p>
+<p>#不，我要和席砚一起走红毯#</p>
+<p>#是席砚邀请我和他一起走红毯#</p>
+<p>#时念席砚恋情#</p>
+<p>前面的我都能理解，最后一条是什么意思？</p>
+<p>他们是真不知道我和席砚是从小互掐到大的啊！</p>
+<p>我把手机甩到他面前。</p>
+<p>「赶紧去辟谣！」</p>
+<p>我环抱着双臂很不服气。</p>
+<p>席砚看了一眼，面无波澜。</p>
+<p>「小事情，我会让公关去处理。」</p>
+<p>他不咸不淡地说，好像这件事情与他没有任何关系。</p>
+<p>他是影帝，公关团队是圈里最好的，他当然不担心！</p>
+<p>我气死了，经纪人的电话也打来了，这个时候我哪里敢接。</p>
+<p>手机一关，我做贼似的赶紧回家。</p>
+<p>第一件事自然是登录我的微博小号。</p>
+<p>大号没有必要看，肯定全部都是席砚的真爱粉攻击我的言论。</p>
+<p>果不其然，小号已经炸了，我赶紧在群里头安抚席砚的粉丝情绪。</p>
+<p>我：「大家被骗了，一定是时念那个女人威胁咱家哥哥！」</p>
+<p>我：「这件事情肯定有黑幕，大家理智吃瓜！」</p>
+<p>我：「大家都别说了，等着咱家哥哥发博澄清吧！」</p>
+<p>我说完这些话，发现席砚的粉丝生了反骨！</p>
+<p>粉丝：「可是他们真的好般配哎！」</p>
+<p>粉丝：「光是这颜值的话，我嗑了！放眼内娱好像并没有能和咱家哥哥般配的女星，时念算一个！」</p>
+<p>我：「姐妹你快醒醒！时念是给你下蛊了吗！」</p>
+<p>粉丝：「我不想醒，先让我沉沦一会儿，我舔个屏先！」</p>
+<p>粉丝：「我也舔屏！」</p>
+<p>粉丝：「舔屏+10086！」我放下手机，这届粉丝我带不下去了！</p>
+<p>我的经纪人还是找上了门，不是找我算账，而是告诉我，我收获了一大波粉丝。</p>
+<p>我半信半疑地打开微博，全部都是在问我和席砚的恋情的。</p>
+<p>谁跟他恋情啊！</p>
+<p>晦气！</p>
+<p>我关掉了微博，拨通了席砚的电话。</p>
+<p>「你的公关团队不是圈里最好的吗，热搜怎么还没有撤啊？」我问。</p>
+<p>电话那头的席砚不明所以地「啊」了一声。</p>
+<p>「没有啊，热搜已经被压下去了。」他说。</p>
+<p>我朝着空气翻了个白眼，他这眼睛没用了的话不如捐了！</p>
+<p>「到处都是讨论咱俩恋情的事！」</p>
+<p>「哦，这个热度太大了压不下去。」他低笑。</p>
+<p>我怎么感觉他有点幸灾乐祸？</p>
+<p>既然席砚团队压不下这条热搜，那就只能我自己来了。</p>
+<p>我准备登录我的微博大号，发现密码被改了。</p>
+<p>娜姐笑道：「你好不容易来的热度，目前已经有好几个品牌方来找你了，微博我暂时替你保管。」</p>
+<p>我：？</p>
+<p>「我已经做好退圈的打算了。」我叹气。</p>
+<p>这个圈子已经没有我的一席之地了。</p>
+<p>「那你也得把品牌方广告录了再说！」</p>
+<p>娜姐拿出她给我安排的行程表。</p>
+<p>我流下了激动的泪水，我也是有活的人了！</p>
+<p>我很快把退圈的想法抛之脑后。</p>
+<p>原来是我当天在红毯上的耳环、头饰、鞋子都被我带火了，所以有品牌方来找我合作。</p>
+<p>但我没想到，好好一个广告为什么席砚会在！</p>
+<p>「我和你一起代言！」他走到我身旁笑道。</p>
+<p>想到网上的热搜，我真的想拍屁股走人，可是我已经欠了公司很多钱了，这违约金我不想再付了！</p>
+<p>我们要拍的是一款饮料的广告，品牌方的要求是我喝一口然后再给席砚喝一口。</p>
+<p>还要念一句很尴尬的台词，我的是「什么味道」，席砚的是「你的味道」。</p>
+<p>因为席砚是影帝的缘故，品牌方说他可以假喝。</p>
+<p>这样我才在心中长舒了一口气。</p>
+<p>可是在录制的过程中席砚不知道发的什么神经，接过我喝过的饮料就大口大口灌。</p>
+<p>水顺着他的唇角流下来，划过下颌，再到脖子，再到他粗壮的喉结。</p>
+<p>这……不是等于我跟他间接性接吻了吗！</p>
+<p>我瞬间小脸涨得通红。</p>
+<p>品牌方那边赶紧给我使眼色叫我说台词，我只能硬着头皮问：「什么味道？」</p>
+<p>席砚深情地看着我：「你的味道。」</p>
+<p>看着他挂在喉结上的水，我不由得咽了口口水。</p>
+<p>在一声「咔」中结束了录制，我正打算吐槽席砚临时改剧本。</p>
+<p>这时候摄影棚里响起了品牌方的掌声。</p>
+<p>「我只是觉得假喝是对这份工作的不负责，同时也是对我身为演员职业素养的耻辱。」席砚说。</p>
+<p>接着他又凑到我耳边笑道：「饮料的味道不错。」</p>
+<p>到底是饮料还是我？</p>
+<p>席砚建议我和他一起去吃饭，想到网上的那些热搜，我哪敢和他一起去吃饭啊。</p>
+<p>「不去！」我说得十分潇洒。</p>
+<p>席砚勾唇看着我，我总觉得他这笑不怀好意。</p>
+<p>「不，你想去。」</p>
+<p>我还是跟席砚去吃饭了，没办法，谁叫我现在对他言听计从。</p>
+<p>席砚还算是绅士，点的菜都是我最喜欢的。</p>
+<p>公司为了上镜控制艺人的体重，我已经很久没有尝到这么多好吃的了。</p>
+<p>今天经纪人不在，我大开杀戒。</p>
+<p>吃到一半，席砚双手支颐看着我。</p>
+<p>「现在是不是我叫你干嘛你就干嘛？」他问。</p>
+<p>正在大口啃着排骨的我，突然感觉手中的排骨不香了。</p>
+<p>「你想干嘛？你不会想让我去做违法犯罪的事蹲局子吧？」我问。</p>
+<p>那他这心思也未免太歹毒了些，枉我还嗑他嗑了这么久的颜！</p>
+<p>「我只是问问，别紧张。」</p>
+<p>他优雅地拿起汤勺给我盛了一碗燕窝。</p>
+<p>「你最喜欢吃的。」</p>
+<p>我有种羊入虎口的感觉，总觉得他的肚子里装着坏水。</p>
+<p>他不会想等我吃饱喝足了噶腰子吧。</p>
+<p>「席砚，热搜的事情我真的很抱歉，以前蹭你热度也并非我意，我发誓这样的事情以后绝对不会发生了！」</p>
+<p>我伸出手来对他再三保证。</p>
+<p>「你手里头有圈里最好的公关团队，不用顾及我的颜面，恋情的事情你只管澄清！」</p>
+<p>席砚轻笑道：「我不想压这条热搜，我想让它成真。」</p>
+<p>我：？</p>
+<p>我想多问两句，席砚的经纪人给他打电话来了。</p>
+<p>「我要去赶通告了，出国的那种，等我回来和你好好说。」席砚站起身来。</p>
+<p>我看到他朝着电梯口走去，嘴唇动了几下好像是在说「我喜欢你」。</p>
+<p>我赶紧伸手捂住我的心。</p>
+<p>我的死对头说他喜欢我？</p>
+<p>席砚那天临走时的话让我好几天都不安生。</p>
+<p>就好像心里被人挠了一下，我还没抓住，他就跑了，让我感觉很不爽快。</p>
+<p>「是不是最近通告太多了，累了？」娜姐问我。</p>
+<p>我摇头。</p>
+<p>「是席砚，他好像喜欢我。」</p>
+<p>娜姐身子抖了一下。</p>
+<p>「乖乖，咱们说好的不蹭这尊大佛的热度的。</p>
+<p>「你现在事业起步，要珍惜羽毛。」</p>
+<p>啧～女人的嘴果然不能信。</p>
+<p>以前她可不是这么说的！</p>
+<p>我和席砚拍摄的饮料广告在电视上播了，据说当天那款饮料销量破两个亿。</p>
+<p>我拍摄这条广告原本签的合同是两千，现在变成了二百万，而且还是长约。</p>
+<p>就……挺意外的！</p>
+<p>席砚依旧令我头疼。</p>
+<p>那天之后不论是给他打电话还是发微信他都不回！</p>
+<p>我怀疑我又被席砚整蛊了，他肯定想看我笑话！</p>
+<p>想通之后的我终于睡了个好觉，等席砚回来我要让他知道我才没有受他欺骗！</p>
+<p>我把所有的精力都投身进了工作里，我第一次感受到了工作的充实。</p>
+<p>听娜姐说我的微博粉丝已经有五万了，多么难得，我不能让我的小宝贝们失望！</p>
+<p>我终于接到了人生的第一部戏，是一部低成本小网剧，我是女主。</p>
+<p>我感觉我出息了！</p>
+<p>因为是小网剧，我的经纪人和男主的经纪人意见达成一致，让我和饰演男主的新人炒 CP！</p>
+<p>我正想把我和席砚恋情的热搜压一压呢，这不是天助我也吗！</p>
+<p>于是我十分配合地和我的搭档宁风炒 CP，刚有一点苗头，我就又被骂上了热搜。</p>
+<p>这条热搜把我和宁风炒 CP 的热度压没了。</p>
+<p>我好奇点进去看了一眼，评论区都是骂我眼瞎的。</p>
+<p>「是我家哥哥没有这个宁风帅吗，快告诉我你是被威胁的！」</p>
+<p>「我家哥哥的指甲盖都比他好看，时念，你的眼睛脏了需要洗一洗！」</p>
+<p>「我不信！假的！我的砚念 CP 锁死！」</p>
+<p>评论的基本上都是席砚的粉丝，曾经巴不得我离他们家哥哥有多远就多远的粉丝们，急了！</p>
+<p>好家伙！我猛涨二十万粉丝，这波不亏啊！</p>
+<p>我看着微博笑，宁风看着微博哇哇哭。</p>
+<p>「姐姐，这 CP 我不敢继续炒了！」宁风可怜兮兮。</p>
+<p>我伸手摸摸他头：「没事，多被骂一骂，黑火也是火！姐姐我就是一个鲜活的例子！」</p>
+<p>反正我火了！</p>
+<p>这时候我收到了来自席砚的电话。</p>
+<p>「我回国了。」他道。</p>
+<p>我十分冷淡地「哦」了一声。</p>
+<p>「五点二十分下机，你还有二十分钟时间，来接机。」他又说。</p>
+<p>「不，我不来。」</p>
+<p>「不，你想来。」</p>
+<p>我就知道席砚把我拿捏得死死的！</p>
+<p>我买了一束花，穿上了我最喜欢的连衣裙，打了一辆出租车前往机场。</p>
+<p>最关键的是我没戴口罩！</p>
+<p>这一切都是席砚这条修狗特地要求的！</p>
+<p>无数人诧异的目光中，我站在机场出口成了一道特别的风景线。</p>
+<p>「你是时念吗？你也是来接人的？你接谁呀？」</p>
+<p>我看了他们一眼，他们的手里捧着鲜花，还扯了一条横幅，全部都是席砚的粉丝。</p>
+<p>「我来接席砚。」我的嘴不受控制地说。</p>
+<p>没错这也是席砚特地要求的。</p>
+<p>我现在只想找个地方钻进去，可是我的脚一步也挪不走。</p>
+<p>所有的人都长长地「哦」了一声。</p>
+<p>「我就知道你的眼睛是雪亮的，眼里只有我们家哥哥！」</p>
+<p>「可你不是刚和宁风恋情曝光吗？」</p>
+<p>「……」我。</p>
+<p>人群突然喧哗起来，原来是席砚来了。</p>
+<p>他径直走向我，接过了我手中的花。</p>
+<p>在记者追问和相机的咔咔声中他拉着我上了专门接他的保姆车。</p>
+<p>「席砚，我正在和别人炒 CP！你这是让我自己打脸自己呀！」</p>
+<p>席砚凑近我。</p>
+<p>「我刚和你表白你就和别人炒 CP，时念你有没有良心！」</p>
+<p>我想了一堆怼他的话，现在一个字都蹦不出。</p>
+<p>我别过头嘟囔：「什么告白？我怎么不知道？人家告白不是鲜花就是戒指，你请一顿火锅就想嫖个女朋友，想得真美！」</p>
+<p>席砚无奈地笑了。</p>
+<p>「是我不对，一定补给你，但是你已经被我预订了，不许和别人炒 CP。听到没有！」他说。</p>
+<p>我伸手戳了戳他的腰。</p>
+<p>「你好霸道！」</p>
+<p>席砚身上搂住我。</p>
+<p>「我要不霸道一点，现在挂热搜上的肯定是你和别人的官宣文案。」</p>
+<p>听到他这么说，我赶紧就掏出手机打开了微博。</p>
+<p>果然，热搜变成了：</p>
+<p>#席砚时念恋情坐实#</p>
+<p>坐实个屁，我还没答应呢！</p>
+<p>好气！我关掉了手机。</p>
+<p>席砚将头埋在我肩膀上咯咯笑。</p>
+<p>娜姐来找我了，告诉我我和宁风炒 CP 的事情只能告一段落了。</p>
+<p>席砚的粉丝太凶了，愣是把我和宁风的 CP 粉吵成了我和席砚的 CP 粉。</p>
+<p>我一点也不意外。</p>
+<p>毕竟那天机场接机，我已经看出了席砚的粉丝态度。</p>
+<p>「实在炒不起来那就算了吧，毕竟我现在的热度还不错啊！」</p>
+<p>短短几个月的时间我就拥有了一百多万的粉丝了呢！</p>
+<p>「要不咱们去炒你和席砚的 CP？」娜姐说。</p>
+<p>我一口奶茶喷出。</p>
+<p>「咱们可以不炒 CP 吗？娜姐，我的事业刚有起色，我要珍惜羽毛！」</p>
+<p>娜姐听了之后觉得很有道理。</p>
+<p>「那暂时就不炒 CP 了。」</p>
+<p>我的心中现在确实只有一个目标，那就是好好拍戏，成为大明星！</p>
+<p>我不想蹭红毯，我想自己走红毯！</p>
+<p>小网剧的拍摄速度很快，两个月的时间就拍好了。</p>
+<p>导演说他会赶在我的热度还没有降的时候赶紧上映。</p>
+<p>我只想说别因为我太招黑上不了就好。</p>
+<p>杀青那天席砚出现在了剧组，看到他我赶紧道：「我晚上还要和大家一起去聚会呢！」</p>
+<p>「谁说我是来接你的？我是和我的导师一起来物色电影配角的！」席砚看着我笑道。</p>
+<p>淦！所以说我自作多情了呗！</p>
+<p>席砚被他的导师叫去了，两个人不知道聊了什么，席砚又走了回来。</p>
+<p>「我的导师说你很适合。」</p>
+<p>「适合什么？」</p>
+<p>「做我的爱人。」</p>
+<p>我伸手掐在席砚的腰上。</p>
+<p>「再贫嘴我揍你！」</p>
+<p>席砚一脸无辜：「我们正在寻找我这个角色的爱人，我的导师说你很适合饰演我的爱人，怎么了？」</p>
+<p>我一梗，一时间竟接不上话。</p>
+<p>突然我反应过来伸手拉着他。</p>
+<p>「你什么意思？你的导师想要我演电影？」</p>
+<p>他的导师啊，那可是国际知名导演！</p>
+<p>席砚伸手揉着我的头发道：「没错，不知时念小姐，我有没有这个荣幸和你搭讪？」</p>
+<p>「当然有！当然有！」</p>
+<p>我高兴地跳起来。</p>
+<p>我没有参加剧组的杀青宴，而是跟席砚走了， 我们一起聊剧本的事情。</p>
+<p>我要饰演的这个角色已经找了大半年了，迟迟没有找到合适的人选，直到今天。</p>
+<p>娜姐听说我要拍电影的时候整个人都震惊了，她还是第一次听到艺人自己给自己整活的！</p>
+<p>她看我的眼神有种吾家有女初长成的感觉！</p>
+<p>「既然你们都要搭戏了，那不如趁机炒个 CP 吧！</p>
+<p>「等到戏拍完，就分手的那种！」</p>
+<p>「不行！」</p>
+<p>「不行！」</p>
+<p>我和席砚异口同声拒绝。</p>
+<p>炒 CP 其实很败坏路人缘的，非必要我真的不想，宁风那个是我想要压我和席砚的热搜才同意的。</p>
+<p>拍戏的事情就这么定了下来，席砚给我一张邀请函。</p>
+<p>「电影节，天哪，这是电影节的邀请函！」我没见过世面地叫出了声。</p>
+<p>这种活动一般只有圈内的大咖才有机会参加，那可都是真正有实力有演技的前辈！</p>
+<p>「你想去吗？」</p>
+<p>「嗯，我想！」</p>
+<p>我抱住席砚。</p>
+<p>席砚温柔地笑出声。</p>
+<p>活动当天我穿着一袭黑色露背连衣裙，席砚给我准备了最靠前的位置。</p>
+<p>我看着一个个上台领奖的前辈，露出了羡慕的口水。</p>
+<p>这可都是圈内有头有脸的人物啊！</p>
+<p>我这种糊咖在有生之年能够见着这么多大人物，简直不要太幸运好吗！</p>
+<p>「接下来是最佳男主角提名，席砚，请上台领奖！」</p>
+<p>听到席砚的名字，我激动坏了，拉着他的手指着台上。</p>
+<p>「在叫你！」</p>
+<p>「我听到了，等我。」</p>
+<p>他理了理西装，起身上台。</p>
+<p>我听着席砚接过奖杯在台上铿锵有力的发言，拿出手机咔咔拍了两张。</p>
+<p>虽然到时候也会有网图，但这是我亲自见证的！</p>
+<p>意义不一样！</p>
+<p>「接下来耽搁大家几分钟的时间，时念，请上台！」席砚突然对我说。</p>
+<p>我还没反应过来，我就不受控制地站起身朝台上走去。</p>
+<p>我走到了席砚的面前，台下是无数圈内的前辈，头上是聚光灯，四周是媒体和记者。</p>
+<p>这一场电影节是直播的！</p>
+<p>只见席砚单膝下跪。</p>
+<p>「念念，我喜欢好久了，如果非要追溯有多久，那大概青春期以前就开始了吧。」</p>
+<p>「请原谅我的仓促，我答应过你要给你一场激动人心的告白，现在我当着台下的前辈，和全国人民的面正式向你告白，我喜欢你！」</p>
+<p>席砚一边说一边将他的奖杯向我举来。</p>
+<p>奖杯里头是一枚闪闪发光的戒指。</p>
+<p>我激动坏了，赶忙就接了过去。</p>
+<p>这奖杯也不知道是不是纯金的，我仔细打量。</p>
+<p>「真没心没肺。」席砚说我。</p>
+<p>接着把戒指套上了我左手的无名指，伸手指着他的唇笑道：「亲这里。」</p>
+<p>我二话不说就吻了上去。</p>
+<p>我也不知道是不受控制还是情难自已。</p>
+<p>台下是激烈的掌声、相机的快门声，闪光灯一下接一下。</p>
+<p>等我反应过来我早已经面红耳赤，我拉着席砚就赶紧跑。</p>
+<p>我哪里敢回座位啊，我拉着他就出去了。</p>
+<p>「席砚，在电影节上告白，你是疯了吧！」我嗔怪。</p>
+<p>「你是得了便宜还卖乖。」</p>
+<p>我还想说什么就接到了我妈的电话，席砚也接到了他妈的电话。</p>
+<p>原来她们正在电视机前看这场电影节的直播，现在他们都知道了席砚跟我告白的事。</p>
+<p>「我妈叫我回去吃饭。」</p>
+<p>「好巧，我妈也是。」</p>
+<p>不用想也知道今天的饭是两家人一起吃，走到门口的时候我有些发怂。</p>
+<p>席砚伸手扣住我的手。</p>
+<p>「别怕，谈婚论嫁这种事情迟早要面对的。」</p>
+<p>我轻哼！</p>
+<p>「我才没怂！」</p>
+<p>席上，我妈和席砚他妈笑得合不拢嘴，看来她们俩是早就想让我们成了。</p>
+<p>我爸和席砚他爸就更别说了，两个人也乐开了花。</p>
+<p>「亲家，以后生意就要互相照顾了！」</p>
+<p>我：……</p>
+<p>席砚：……</p>
+<p>晚上，席砚亲自开车送我回去。</p>
+<p>「再吻我一下好不好。」</p>
+<p>到家之后他眷恋地看着我。</p>
+<p>「不要。」</p>
+<p>「你的吻技这么差，不多学一学怎么行？」他说。</p>
+<p>我气不打一处来，他竟然说我吻技差！</p>
+<p>我抬手就捧着他的脸吻去，席砚的唇被我磕破了皮。</p>
+<p>「吻人不是这么吻的，我教你。」</p>
+<p>我早该知道席砚不安好心的，第二天我俩一起从床上醒来的时候，我才意识到我俩真的在一起了。</p>
+<p>我俩在电影节上官宣了，然后就双双把手机关机回家吃饭。</p>
+<p>只怕这个世界早已经乱套了。</p>
+<p>我赶紧开机打开微博。</p>
+<p>「席砚，咱们又上热搜了！」</p>
+<p>现在排在热搜榜第一的是：</p>
+<p>#有嫂子了，不想和没嫂子的人说话了#</p>
+<p>配图是我和席砚在电影节上接吻的照片。</p>
+<p>「我看看。」</p>
+<p>席砚把我手机拿过去，没一会儿抬起眼皮挑了挑眉。</p>
+<p>我凑过去一看，原来他打开了「我的」这一栏。</p>
+<p>我的小号掉马了！</p>
+<p>「原来你就是我的疯狂舔狗喵喵酱啊！」</p>
+<p>我的小号名字就是「席砚的喵」，他的粉丝都叫我喵喵酱。</p>
+<p>而我确实是席砚的颜狗！</p>
+<p>「席砚，你不讲武德！」</p>
+<p>「是，你讲武德！」</p>
+<p>我：……</p>
+<p>我确实不讲武德！</p>
+<p>「把手机给我让我再看看！」他说。</p>
+<p>「我不！」</p>
+<p>把手机藏到了身下。</p>
+<p>咦～言听计从的病好了！</p>
+<p>我和席砚面面相觑，我露出一抹坏笑。</p>
+<p>「好啊席砚，现在轮到我欺负你了！」</p>
+<p>23.番外 1</p>
+<p>我和宁风拍摄的小网剧上映了，短短两天时间就火了，这还得全靠席砚的粉丝。</p>
+<p>我打开网剧的时候满屏都是「来给嫂子捧场」！</p>
+<p>这部戏获得了很好的反响。</p>
+<p>虽然我和宁风炒 CP 没成，但是我们还是凭借自己的实力圈粉无数。</p>
+<p>我和席砚把电影也开拍了，电影结束之后我俩一起领了证办了婚礼。</p>
+<p>请的都是双方的亲人，和几位圈内的著名前辈。</p>
+<p>我还特地邀请了我的经纪人娜姐。</p>
+<p>直到这天她才知道原来我和席砚从小就认识，同时我们父母也都是商界有头有脸的人物。</p>
+<p>并没有大张旗鼓地搞什么直播婚礼，因为浪漫是我们的。</p>
+<p>后面我又接了好几部电视剧，甚至还有人直接来找我饰演大女主。</p>
+<p>再到后来啊我的粉丝升到了八千万，和席砚旗鼓相当，我走红毯不需要蹭别人了，也凭借自己的努力上台领了奖。</p>
+<p>对了，那奖杯不是纯金的！</p>
+<p>24.番外 2</p>
+<p>很早以前我就喜欢时念了，具体从什么时候开始我记不清了。</p>
+<p>只是她总是那么没心没肺，似乎从来都没有感觉到我对她感情的异样。</p>
+<p>而我们又是从小斗到大的，我不敢将她的感情宣之于众。</p>
+<p>后来我选择进了娱乐圈，我以很快的速度在圈内出名。</p>
+<p>大概是不服气吧，时念立刻就踏进了娱乐圈。</p>
+<p>凭借她家的条件，想要在娱乐圈混得风生水起只是她爸一句话的事情。</p>
+<p>她根本没必要吃那么多苦。</p>
+<p>但是她听说我是靠自己的努力一步一个脚印成为影帝的，所以她觉得她也可以。</p>
+<p>这条路哪有那么好走啊，尤其是女孩子。</p>
+<p>好在她的那个经纪人不是傻子，还知道让她去蹭热度，特别是蹭我。</p>
+<p>每次看到她蹭热度蹭到我身上，想怼我又吃瘪的样子可爱极了。</p>
+<p>后来我发现她居然会对我说的话言听计从，同时我对她的欢喜也要藏不住了。</p>
+<p>在我确定她真的对我的话言听计从之后，决定对她展开攻击。</p>
+<p>我让她和我一起走红毯，出现在有我的地方，让网络上都是我们的流言蜚语。</p>
+<p>我的确有着圈内最好的公关团队，但当他们问我要不要把恋情这条热搜也压下去的时候，我犹豫了。</p>
+<p>我承认，我确实不讲武德。</p>
+<p>我很忙，事业上升期再加上我的身份，我的通告都被排满了。</p>
+<p>和时念表白之后我就跟着剧组出国拍戏去了，我没想到当我再次打开手机看到的竟是她和别人炒 CP 的热搜。</p>
+<p>我嫉妒疯了。</p>
+<p>于是我赶紧结束了在国外的拍摄，我又一次动用了我的权利。</p>
+<p>我相信上天让她对我言听计从，就是给我这个机会。</p>
+<p>果然，这次之后，我们的 CP 粉更多了，我很高兴。</p>
+<p>我向我的导师推荐了她和我一起拍摄电影，导师看过她拍摄的网剧之后很满意。</p>
+<p>我承认，我有点小私心。</p>
+<p>时念说我的表白太随意了，我也觉得随意。</p>
+<p>到底要怎样才不随意呢？</p>
+<p>我本来是想在电影节之后跟她表白的，但当我看到她看着一个个演员走上台的时候羡慕的目光。</p>
+<p>我也想让她走一次，可以不领奖，但可以领我啊！</p>
+<p>后来我的小公主凭借自己的努力走上了那个舞台，在聚光灯的照耀下熠熠生辉。</p>
+<p>她成为了国际影后，和我并肩而行！</p>
+<p>—完—</p>
+<p>备案号:YXX1vzzo02SkkkEa4YCel6R</p>
+<p>​</p>
+<p>​</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>沉江渚月 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/24-%E7%94%B5%E8%84%91%E7%97%85%E6%AF%92%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99%E5%BD%93%E5%B9%B4%E6%9C%89%E5%A4%9A%E5%87%B6%E6%AE%8B-%E7%9F%A5%E4%B9%8E/" title="电脑病毒「熊猫烧香」当年有多凶残？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">电脑病毒「熊猫烧香」当年有多凶残？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/25-%E4%B8%9C%E5%8C%97%E9%9C%B8%E6%80%BB%E7%9A%84%E7%88%B1%E6%83%85%E6%95%85%E4%BA%8B/" title="东北霸总的爱情故事">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">东北霸总的爱情故事</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

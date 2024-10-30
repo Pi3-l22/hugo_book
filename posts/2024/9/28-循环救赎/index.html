@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环救赎 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/9/28-%E5%BE%AA%E7%8E%AF%E6%95%91%E8%B5%8E/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/9/28-%E5%BE%AA%E7%8E%AF%E6%95%91%E8%B5%8E/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="循环救赎">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta name="twitter:title" content="循环救赎">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="循环救赎">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11624">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">循环救赎</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%be%aa%e7%8e%af%e6%95%91%e8%b5%8e&amp;url=https://mohai.us.kg/posts/2024/9/28-%E5%BE%AA%E7%8E%AF%E6%95%91%E8%B5%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/9/28-%E5%BE%AA%E7%8E%AF%E6%95%91%E8%B5%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%be%aa%e7%8e%af%e6%95%91%e8%b5%8e%20https://mohai.us.kg/posts/2024/9/28-%E5%BE%AA%E7%8E%AF%E6%95%91%E8%B5%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26679.jpg" alt="循环救赎" />
+      
+
+      <p>循环救赎</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>刺杀宦官失败后，我在牢里遇到了自称手握剧本的前朝国师。</p>
+<p>他说他是自带系统的穿越者，为了救我已经死了一百六十八次。</p>
+<p>我刺杀宦官白无宁的时候手抖了下，不小心把我的主子七王爷萧肃捅穿了。</p>
+<p>谁想后来七王成了新帝，若没有那一剑，我本该风风光光大婚，成为他的贵妃。</p>
+<p>现在却沦为阶下囚。</p>
+<p>隔壁牢房是前朝国师顾年，会妖术，是人人喊打的妖道。</p>
+<p>更有传言说，宦官白无宁正是靠着他的预言，才一步步位极人臣。</p>
+<p>但我身边的这个国师，此刻，却像个话痨。</p>
+<p>「姐妹，你是犯啥事儿进来的啊。」</p>
+<p>顾年扒着铁栏杆，一脸八卦样。</p>
+<p>「三天了啊，不吃不喝不说话，我连脸都没有看清。」</p>
+<p>「好歹咱们是同一天上刑场的，别这么见外嘛。」</p>
+<p>他絮絮叨叨地说。</p>
+<p>「你知道萧肃吗？听说他成了新帝。」</p>
+<p>「前朝站错队的全家都被砍了头，刽子手砍了整整三天，刀都砍钝了。」</p>
+<p>我瞥了顾年一眼，「你在牢里怎么对外面的事了解得如此清楚？」</p>
+<p>见我终于肯搭理他，他故作神秘地笑了笑：</p>
+<p>「因为我就是前朝国师。下一个砍的就是我。」</p>
+<p>我不屑地嘁了一声，继续睡觉，反正过不了几天就要死了。</p>
+<p>「你怎么还有心情睡觉？那么大的刀，你就一点都不怕？」</p>
+<p>「怕，我都要怕死了。」</p>
+<p>我懒洋洋的应付了一句，换了个舒服的姿势，却不想顾年看清了我的脸。</p>
+<p>他猛地呆住，眼睛瞪得比铜铃还大，嘴张成了平行四边形：</p>
+<p>「安安？怎么是你？你怎么会进来？」</p>
+<p>「你现在应该在宫殿准备跟皇帝大婚啊。」</p>
+<p>他满脸的难以置信：</p>
+<p>「白安，你怎么会坐牢呢？」</p>
+<p>他认识我。而且很了解我。</p>
+<p>我挑了挑眉，「刺杀白无宁的时候手抖了下，不小心把萧肃捅穿了。」</p>
+<p>顾年眉头皱成了囧字，excuse me？</p>
+<p>我也奇怪呢，本来剑在白无宁脖子上搭得好好的。</p>
+<p>谁知他一句「杀了萧肃」，我的手就不受控制地刺向了七王萧肃。</p>
+<p>我使劲浑身解数才让刀尖偏了一寸，没让他当场暴毙。</p>
+<p>估计那是秘术搞的鬼吧。</p>
+<p>顾年僵住片刻，硬生生挤出一个笑脸，满口胡诌。</p>
+<p>「他没有当场杀了你，而是选择让你多活三天。」</p>
+<p>「你说，这不是爱是什么？」</p>
+<p>三日后，直到我们俩被身形高大的狱卒押出牢，顾年气定神闲的表情才终于破碎。</p>
+<p>「系统，这狗皇帝真要杀她吗？」</p>
+<p>系统？</p>
+<p>我疑惑地看向顾年，「什么是系统？」</p>
+<p>「一个全知全能、无所不能的存在。」</p>
+<p>顾年神色凝重，似乎在用意念和那个「系统」对话。</p>
+<p>不知系统回答了什么，顾年脸色有些慌乱。</p>
+<p>「再不跑可就来不及了！皇帝怎么这么凉薄呢，翻脸不认人啊！」</p>
+<p>他烦躁地挠着头发，一声接一声地叹气。</p>
+<p>看他急得团团转，我没忍住笑出了声。</p>
+<p>顾年黑着一张脸，恨铁不成钢的看着我：「死到临头了你笑什么笑？」</p>
+<p>我压低声音靠近顾年的耳朵，「传言国师不苟言笑、清冷淡漠。」</p>
+<p>顾年斜眼瞪了我一眼，「出门在外人设都是自己立的。」</p>
+<p>我不依不饶，「无所不知，知无不言，言无不尽。」</p>
+<p>他「啧」了一声，「我是行走的中华百科全书。」</p>
+<p>锁链的碰撞声在空空荡荡的走道里显得分外刺耳。</p>
+<p>我探手摸向后腰，含笑冲顾年耳尖吐着热气，故意拉长声音。</p>
+<p>「国师难道不知道，我是萧肃手底下……」</p>
+<p>一记飞针刺入狱卒耳后，那人眨眼间瘫倒在地。</p>
+<p>我用脚尖勾起锁链，轻轻一掰便断成两段，两节锁链缠绕在胳膊上充作护甲。</p>
+<p>我含笑看向一脸震惊的顾年。</p>
+<p>「……最锋利的一把剑啊。」</p>
+<p>顾年呆在原地，阳光洒在他身上，一双眼睛出奇得亮。</p>
+<p>他直愣愣地看着我，喃喃道：</p>
+<p>「6。」</p>
+<p>我将他卡在腰间，脚尖轻轻一跃踏上屋顶，耳边是疾驰的风，呼啸而过。</p>
+<p>我是皇帝萧肃最信任的暗卫，此番也是将计就计假意刺杀他被关入狱。</p>
+<p>接近顾年获取他的信任，得到他言灵的秘密，便是我此行的目的。</p>
+<p>我已经接近了真相——他有一个不为人所知的「系统」。</p>
+<p>只不过，这国师和传言中的十恶不赦，好像不太一样。</p>
+<p>「姐！慢点，慢点啊！」顾年吓得小脸惨白，不住地求饶。</p>
+<p>我忍不住笑出了声，「国师，别这样，丢了面子可不好。」</p>
+<p>顾年撕心裂肺地大喊：「我恐高，你能不能把我抱紧一点，我感觉我要掉下去了。」</p>
+<p>闻言我坏心眼的松手让他往下滑了些，他登时叫的比杀猪还要凄惨。</p>
+<p>堂堂国师，朝臣官职性命全由他一句话定夺。</p>
+<p>背地里居然是这个草包模样。</p>
+<p>一支羽箭破空直奔面门而来，我拎着顾年猛地弹起堪堪避过。</p>
+<p>羽箭撕下了顾年半截袖子。</p>
+<p>我赤足狂奔于屋顶间，身旁是密密麻麻的利箭，入木三分。</p>
+<p>他小脸一白，急急和那个我看不到的「系统」又说起话来。</p>
+<p>「系统，我顶不住了！」</p>
+<p>「这么搞是会死的，积分兑换，兑换啊！」</p>
+<p>话音未落，本因稳稳落在瓦片上的脚却一脚踏空，直直向下坠。</p>
+<p>眼瞅着下边精兵高举着长矛，我吸了口气，认命般闭上眼。</p>
+<p>但是，突然！</p>
+<p>耳边脚步声凭空消失，我们离开了刚才的地方，瞬间到了另一个地方！</p>
+<p>看来这个「系统」不仅仅是无所不知，它还有更厉害的力量！</p>
+<p>我们从空中坠落，预想中的疼痛没有到来，身下软软的，空气中弥漫着草木清香。</p>
+<p>「哎呦，看着挺瘦，差点没把我腰板坐断。」</p>
+<p>顾年吸着冷气，一把将我推搡下去。</p>
+<p>我站直身，指尖是明晃晃的银针，蓄势待发。</p>
+<p>「你到底是什么人？」</p>
+<p>「你的相公。」</p>
+<p>「厚颜无耻！」</p>
+<p>我冷脸一脚踹上顾年的膝窝，他一个不稳趴在地上。</p>
+<p>顾年揉着腰，一边哀嚎，一边摇摇晃晃起身，长叹一口气。</p>
+<p>「家暴可耻！」</p>
+<p>我凝眉，举针直逼顾年白皙的脖颈，他吓得不敢动。</p>
+<p>「你怎么每次都这样凶巴巴的。」</p>
+<p>我与他只见过寥寥几面，何来的每次？</p>
+<p>「刚才那一招叫空间转移，我的积分只够使用这一次。」他说。</p>
+<p>「我是一个穿越者，随身自带系统，了解南国每个人的命运走向。</p>
+<p>系统给我的定位是奸臣，他安排的任务，我必须去完成。」</p>
+<p>我沉默不语，听他将详情一一道来。</p>
+<p>按顾年的意思，系统是神一样的操纵者，它需要一个大奸臣勾结党羽、做尽坏事，方便明君将这些人连根拔起，以保天下未来百年的安宁。</p>
+<p>而系统选中的这个奸臣，就是顾年。</p>
+<p>系统以积分兑换为条件，换来了顾年心甘情愿的服从。</p>
+<p>「做这些并非我本意。。」</p>
+<p>顾年明明在看我，可目光却穿过我看向了另一个人。</p>
+<p>一个求而不得的人，</p>
+<p>「我没有别的办法了，只有完成任务，我才能救她。」</p>
+<p>看着我怀疑的眼神，顾年深深吸了口气，直直看向我的眼睛：</p>
+<p>「白安，七岁时你被白无宁看重，被其手下领入宫得白无宁的亲传。但很快你发现要想武艺更进一步唯有拿活人练手，白无宁更是利用你铲除异己。你心生厌倦，借安葬因苛政身死的父母，趁机出宫，偶遇七王爷萧肃，被他收入麾下。」</p>
+<p>被一个没见过几面的人对自己的生平经历如数家珍，这种感觉很奇怪。</p>
+<p>「你助他登上皇位后，他第一道圣旨便是封你为贵妃。你本该荣华富贵过一生。」</p>
+<p>顾年耸了耸肩，「但现在剧情完全走偏了，我不懂，为什么你会出现在牢里？」</p>
+<p>他挠着头猜测：「这偏差估计是你那一剑导致的。」</p>
+<p>那天，我跟着萧肃，率领精兵，一路杀至东厂，直逼厂公白无宁住处。</p>
+<p>杀了他，萧肃就会成为名正言顺的新帝。</p>
+<p>长剑搭上脖颈，他却毫不在意。</p>
+<p>萧肃举剑上前，与我擦肩而过。</p>
+<p>「白安！杀了萧肃！」白无宁陡然开口，我一颤，手不受控制地掉转刀头。</p>
+<p>回过神时，长剑已经深深没入了身侧萧肃腹部，大片血迹晕开。</p>
+<p>一切发生在电光火石之间。</p>
+<p>我慌张的看向萧肃，他脸色惨白，眼睛却出奇得亮。</p>
+<p>「我知道……你是无心的，是他用那妖术控制你……对吗？」</p>
+<p>后来他召见我，让我假装落狱接近顾年，套取秘术。</p>
+<p>我收起银针，看不出情绪，声音闷闷的。</p>
+<p>「无所谓，我也不想当什么贵妃。」</p>
+<p>顾年轻笑出声，他弯眸看我，眸色深沉。</p>
+<p>「得了吧，你现在对萧肃可谓是爱的忠贞不渝。」</p>
+<p>「用我们那儿的话来说，你是名副其实的恋爱脑。」</p>
+<p>夜晚我围在篝火旁，盯着顾年手里烤得滋滋冒油的乳鸽。</p>
+<p>「咕~」</p>
+<p>垂头眼观鼻，我只恨我这不争气的肚子打碎了刺客高冷的滤镜。</p>
+<p>顾年先是一愣，接着弯起眸子。</p>
+<p>声音里是藏不住的笑意。</p>
+<p>「饿啦？再等等。」</p>
+<p>「马上就好了。」</p>
+<p>从未有人用如此熟络亲昵的语气同我说话。</p>
+<p>我一时脸红心跳，仓皇别过头。</p>
+<p>才认识几天就这么轻浮，国师果然诡计多端。</p>
+<p>顾年的手艺很好，他说是从家乡那边学的。</p>
+<p>只可惜这里没有烧烤料，不然更好吃。</p>
+<p>他讲了家乡的飞机、火车、动物园、博物馆。</p>
+<p>祥和宁静，没有杀戮。</p>
+<p>是我梦里的地方。</p>
+<p>微风吹乱了他的发丝，他的眼底亮着光，满是希冀。</p>
+<p>「那你怎样才能回去呢？」我忍不住开口询问。</p>
+<p>顾年撕下一块肉，认真嚼着，彷佛那是什么山珍海味一般。</p>
+<p>过了很久，久到我几乎要以为他没听到。</p>
+<p>才听见微不可闻的叹息声传进我的耳朵。</p>
+<p>「死了就能回去。」</p>
+<p>顾年垂着眼眸，长长的睫羽轻颤，浑身散发着与周围格格不入的孤寂感。</p>
+<p>忽地，他冲我翻了个白眼。</p>
+<p>「本来我今天就该被砍头，然后回家的。」</p>
+<p>顾年咬牙切齿地戳了戳我的脑袋，「你为什么不好好呆在宫里成亲呢？」</p>
+<p>「现在好了，一切努力都白费了。」</p>
+<p>「我们还是相遇了。」</p>
+<p>我头被戳得偏到一边，不气也不恼。</p>
+<p>平静地盯着眼前熊熊燃烧的火堆。</p>
+<p>死了就能回家啊。</p>
+<p>你会回家的，我保证。</p>
+<p>越狱之前我给萧肃留了密信，估计他的暗卫不出两日便会赶来。</p>
+<p>萧肃多疑谨慎，自然不会被白无宁拙劣的离间计挑拨。而是将计就计，将我关入牢中，只为让我找出国师言灵的秘密。</p>
+<p>萧肃看着窗外，语气冷冽。</p>
+<p>「若是能夺过来，自然是更好。」</p>
+<p>那时，我本以为顾年是个无恶不作藐视人命的奸臣。</p>
+<p>可今天顾年说，他这一切都是系统所迫，不得已而为之。</p>
+<p>顾年性情直爽，爱憎分明，又有几分侠客义气。</p>
+<p>他愿意向我说出自己的秘密，想必也不过是回家之日将近，想一吐为快罢了。</p>
+<p>我瞥向顾年，他毫无防备沉沉睡去，还打着鼾。</p>
+<p>夜里风凉，顾年冷不丁打了个喷嚏。</p>
+<p>顾年说过宿主身死之后系统可以选择绑定其他人，并不会消失。</p>
+<p>也就是说国师的能力，可以转移给任何一个人。</p>
+<p>一剑杀了顾年，萧肃派给我的任务就算是完成了。</p>
+<p>那个无所不能的系统会为萧肃所用。</p>
+<p>我盯着顾年，握剑的手紧了又紧。</p>
+<p>他迷迷糊糊睁开眼睛，随意拨开剑尖，顺手为我披上大衣，含糊不清地嘟囔着。</p>
+<p>「注意保暖，小心老了以后得风湿。」</p>
+<p>顾年被暗卫层层包围时，他脸上没有丝毫意外。</p>
+<p>剑架上脖颈，他没有看我。</p>
+<p>只深深地吐出一口气，似有诸多无奈。</p>
+<p>「所以说我讨厌恋爱脑。」</p>
+<p>他答应过我，事成之后，允我贵妃之位，坐享荣华富贵。</p>
+<p>从此不问江湖，不碰刀剑，安安稳稳度过余生。</p>
+<p>我冷眼看着他，用麻绳紧紧绑住他的手脚，像是辩解：</p>
+<p>「是萧肃给我了家，我得报答他。」</p>
+<p>顾年勾起嘴角，眉目间满是嘲讽，带着薄凉，又带着几丝怜悯：</p>
+<p>「你天赋异禀，短短四个月的训练就能在白无宁手下过招。七王爷怎会放过你这把好刀？」</p>
+<p>「是七王爷萧肃，杀了你的父母，想法子逼你出宫。」</p>
+<p>「后以收留的名义将你带回王府，让你成为他的暗卫。」</p>
+<p>他声音很轻，我却如遭五雷轰顶般，一阵头晕目眩。</p>
+<p>大脑一片空白。</p>
+<p>回过神来时，我已经失控地掐住他的脖子，手骨发白，极力克制心中的怒火。</p>
+<p>「分明是有人告诉白无宁，没有家人，就没有软肋，杀了我家人，我才会为了所谓的主人毫不犹豫地去死！」</p>
+<p>指尖收缩，我听见顾年的骨头咔咔作响。</p>
+<p>「怎么可能是萧肃！你知道的我最恨撒谎的人！」</p>
+<p>他痛苦的皱起眉头，却毫不畏惧，直直地看着我。</p>
+<p>强扯出一丝笑，额角渗出冷汗。</p>
+<p>「没关系，你就相信你看到的，安生过完这辈子吧。」</p>
+<p>明明将死之人是他，我却感到一阵无力。</p>
+<p>顾年跌坐在地上，大口大口地喘着气。</p>
+<p>暗卫一记手刀他打晕，扛在肩上，穿梭在在林间，不见身影。</p>
+<p>独留我一人站在空旷的天地间，望着那堆燃尽的枯柴。</p>
+<p>顾年昨夜问我，「如果我告诉你，你看到的都是假象，你会怎么做？」</p>
+<p>他的眸中倒映出熊熊燃烧的烈火，神情严肃，不像是玩笑话。</p>
+<p>我挑眉，「我讨厌骗子。」</p>
+<p>「不论是谁。」</p>
+<p>我跪在萧肃面前，将近些天的调查一一禀报给他。</p>
+<p>萧肃单手扶着下巴，眼中满是玩味。</p>
+<p>「哦？顾年只是个普通人？所谓灵言只是巧合，没有秘密？」</p>
+<p>我将头垂得更低了些：</p>
+<p>「句句属实。」</p>
+<p>萧肃起身向我走来，天子威严扑面而来。</p>
+<p>他抬手捏住我的下巴，缓缓收紧，漫不经心把玩着我的发丝。</p>
+<p>空气中是浓浓的警告意味。</p>
+<p>「白安，那妖人给你灌了什么迷魂汤？」</p>
+<p>「这才几天啊，你就懂得耍心眼了。」</p>
+<p>我勉强稳住身形，看向他波澜不惊的双眸。</p>
+<p>「我的父母是你杀的。」</p>
+<p>话一出口，萧肃动作顿了顿，了然一笑。</p>
+<p>「这也是顾年那妖人说的吗？」</p>
+<p>「安安，你竟然会相信他的话。」</p>
+<p>他直直地盯着我，眸中满是玩味，似乎在嘲讽我是一个被人耍得团团转的小孩。</p>
+<p>「十四岁那年你任务失手受了重伤，是我在床前不眠不休照顾你，三天三夜没合眼。」</p>
+<p>「我们相遇的那一天我便说过，七王府就是你的家。」</p>
+<p>「全府上下，都是你的家人。」</p>
+<p>「你仔细想想，这么多年来……」</p>
+<p>萧肃叹了口气，揉了揉我的头发，声音带着一丝不可抗拒的意味。</p>
+<p>「我可曾有半分亏待过你？」</p>
+<p>我心里咯噔一跳，后知后觉的意识到不对劲。</p>
+<p>萧肃对我一向很好，为什么我会听信顾年的话去怀疑一个陪伴了我五年的人？</p>
+<p>顾年果然在骗我。他的话让白无宁杀了我全家，如今还想让我杀了自己的恩人！</p>
+<p>萧肃从袖中拿出一个精致的小盒子。</p>
+<p>看清盒中扭动的活物时，我瞳孔骤缩，后背发凉。</p>
+<p>那是——白无宁的秘蛊。</p>
+<p>子蛊寄生在人体，母蛊由人操控。</p>
+<p>能扰人心智，乱人情欲，甚至可以操控人的行为。</p>
+<p>他俯身靠近我的耳边，故意拉长了声音。</p>
+<p>「这是我从顾年身上搜出来的秘蛊，白安，这下你相信了吧。</p>
+<p>「顾年妖言惑众，蛊惑先皇，与白无宁一党沆瀣一气，胡作非为。</p>
+<p>「拟明日午时于闹市凌迟处死。</p>
+<p>「白安……是他害死了你的家人。</p>
+<p>「这次，就由你来操刀。</p>
+<p>「白安……你来操刀。」</p>
+<p>如身处寒窑，连呼吸也觉得冷了。</p>
+<p>我呆滞的抬头对上含笑的眸子，只觉得毛骨悚然，浑身汗毛竖起。</p>
+<p>连手也不听使唤了，抖个不停。</p>
+<p>「别抖，手抖了，就不稳了。」</p>
+<p>萧肃俯在我耳边不紧不缓地笑着。</p>
+<p>低低的笑声，像来自深渊的恶灵。</p>
+<p>我想说话，却喉咙发紧什么也说不出来。</p>
+<p>不该是这样的。</p>
+<p>顾年和萧肃，到底谁在骗我？</p>
+<p>我趁着夜色潜入关押顾年的牢房里。</p>
+<p>他见了我，眸子一亮。</p>
+<p>十分自然地挪了挪身子，给我腾出一片空地来，示意我坐下。</p>
+<p>似乎全然不在乎我先前的背叛。</p>
+<p>好像他早就知道我会这么做。</p>
+<p>「来啦？」</p>
+<p>他满身伤痕，想必已经受了严刑拷打，吃尽了苦头。</p>
+<p>「对不起。」</p>
+<p>话一出口，我才发觉自己带着哭腔。</p>
+<p>我疑惑的抬手擦去泪水，可眼泪越擦越多。</p>
+<p>奇怪，我为什么会难过……</p>
+<p>顾年见我哭得不成样子，眸中满是心疼。</p>
+<p>他扶着墙壁勉强站起来。</p>
+<p>只这一个动作，便费了他好些力气。</p>
+<p>他喘着粗气，颤抖着手扶上我的脸。</p>
+<p>「安安，别哭了。」</p>
+<p>从未有人这样唤我。</p>
+<p>莫名的亲切与熟悉，就好像，我早已被他这样叫了千万遍。</p>
+<p>心头一颤，流下两行清泪。</p>
+<p>我茫然无措的擦去眼泪，破碎的声音从喉间溢出。</p>
+<p>「为什么。」</p>
+<p>顾年用力把我搂进怀里，几乎要将我揉进他的身体。</p>
+<p>声音嘶哑，带着极克制的隐忍。</p>
+<p>「没关系。」</p>
+<p>「我们还会再见面的。」</p>
+<p>10</p>
+<p>我杀了顾年。</p>
+<p>三百多刀下来，他身上没有一片好肉，血肉模糊，惨不忍睹。</p>
+<p>最后一刀狠狠刺进他的心脏，我几乎要连胆汁都吐了出来。</p>
+<p>坏人得到惩罚，看热闹的群众一哄而散。</p>
+<p>匕首脱手掉落在地，我失神地瘫倒在地上。</p>
+<p>他惨白着脸，冲我笑道：</p>
+<p>「不疼的。」</p>
+<p>萧肃高坐在皇位上，含笑冷眼看着我。</p>
+<p>他手中把玩着那只又白又胖的蛊虫，然后忽地用力，将它捏成了肉沫。</p>
+<p>脑中紧绷的那根弦突然断裂。</p>
+<p>顾年的言笑晏晏，父母的冰冷尸体，萧肃的相濡以沫，往昔的种种，在我心里乱成一团。</p>
+<p>正在浑身难受、脑海中几欲炸裂，忽然，想起一句话：</p>
+<p>「那秘蛊能扰人思绪乱人情欲……」</p>
+<p>原来是这样！</p>
+<p>那秘蛊，白无宁可以用，萧肃同样也可以用！</p>
+<p>刚才，萧肃正用它扰乱我的心智！</p>
+<p>让我即便神魂俱裂、心如刀绞，却还是能对着顾年，一刀又一刀！</p>
+<p>我曾以为，萧肃在我失去一切的时候，给了我一个家。</p>
+<p>他是这个世界上唯一一个坚定站在我身前的人。</p>
+<p>为此，我拼了命的报答他。</p>
+<p>奉天府尹刘顺、中书侍郎葛青、下州刺史江于……</p>
+<p>凡是对萧肃不利的人，我会统统将其斩杀，哪怕豁出性命也在所不惜。</p>
+<p>可现在，一切的努力都显得可笑极了。</p>
+<p>萧肃因为心虚，所以不信任我。</p>
+<p>选择了用秘蛊蒙蔽我。</p>
+<p>他是为了什么呢？</p>
+<p>为了皇权的稳定，还是舍不得我这把刀？</p>
+<p>这都不重要了。</p>
+<p>白无宁利用我、萧肃诓骗我。</p>
+<p>而唯一对我毫无保留的顾年，却惨死在我手下。</p>
+<p>我攥紧拳头，指甲深深嵌入掌心，泪水夺眶而出。</p>
+<p>萧肃曾说：「从今往后，七王府就是你的家。」</p>
+<p>你骗我，我早就没有家了。</p>
+<p>11</p>
+<p>我颤抖着把刀尖对准我的脖子，一道冰冷的电子音在脑海中响起。</p>
+<p>「宿主，请不要伤害自己。」</p>
+<p>「他很爱你，如果你轻易死去，我会很难办。」</p>
+<p>我愣住，系统？这是顾年的系统。</p>
+<p>他在死之前，把系统给了我！</p>
+<p>还没结束，只要有系统，我就能救他。</p>
+<p>它似乎能直接读取我脑内的想法，打断了我的思路。</p>
+<p>「顾年以放弃循环为代价，换你此生荣华富贵，平稳度过余生。</p>
+<p>宿主，你本该在顾年的时空中遭遇车祸横死。</p>
+<p>但现在，你的人生轨迹已经被顾年所改变。</p>
+<p>宿主，我可以带你去找他。</p>
+<p>不过，这个办法，你们已经用了一百六十八遍了。</p>
+<p>结果从未改变。」</p>
+<p>我脸色惨白，还未来得及扬起的嘴角僵在脸上。</p>
+<p>「只有绑定系统的人才有权查看过往记忆。而现在，我可以把你的过往记忆展现给你了。」</p>
+<p>忽然间，无数张顾年的面孔掠过我的脑海，悲伤、大笑、纠结、绝望。</p>
+<p>最终都定格在一张惨白的脸上，放大无神的瞳孔里倒映着我的身影。</p>
+<p>也就是说，每一次都是我……杀了他。</p>
+<p>难怪他说，「我们会再见的。」</p>
+<p>世上怎么会有这样的人。</p>
+<p>一遍又一遍，一遍又一遍的。</p>
+<p>情愿为另一个人去死呢？</p>
+<p>悲伤铺天盖地而来，连呼吸都变得困难起来。</p>
+<p>大颗大颗的眼泪落下，我慌张地爬向顾年，可手脚发软使不上劲。</p>
+<p>我摔倒在血泊中，又挣扎着爬起来。</p>
+<p>「顾年，我错了，我真的错了。」</p>
+<p>声音颤抖得不成样子，我哭着抚上他早已冷透的脸。</p>
+<p>他真的死了。</p>
+<p>冰冷的电子音，没有一丝起伏。</p>
+<p>「宿主，检测到有强烈的自杀倾向！」</p>
+<p>我空洞地看向眼前鲜血淋漓的尸体，给他披上衣服，将他抱起。</p>
+<p>「宿主，检测到有强烈的自杀倾向！」</p>
+<p>「警报！警报！」</p>
+<p>系统太吵，比顾年话还要多。</p>
+<p>「我不会寻死的。」</p>
+<p>「我只是……太难过了。」</p>
+<p>我忽然回忆起，七岁入宫那年，爹请了一个神叨叨的算命大师。</p>
+<p>他面容清秀，年纪同我十七岁的二哥差不多大。</p>
+<p>可偏偏算的前生往事一字不差。</p>
+<p>是位道行高深的大师。</p>
+<p>他劝我爹，卦象乃大凶之兆。</p>
+<p>不要送我入宫。</p>
+<p>可那时白无宁正是先帝身边的红人，能沾他的光算得上是祖坟冒青烟了。</p>
+<p>爹爹架不住白无宁的再三邀请，一方面是眼红心热，另一方面是他招惹不起。</p>
+<p>起先爹爹还推脱两句，后来被磨得烦了，不等他说话就放家丁将他一顿好揍。</p>
+<p>他常被守门的家丁揍得鼻青脸肿，孤零零的守在门口。</p>
+<p>他一见我便眼前一亮急急忙忙冲过来，慌乱中一个踉跄重重的摔在地上。</p>
+<p>可他并不在乎，利落爬起来到我面前。</p>
+<p>「小丫头，别入宫。」</p>
+<p>他攥着糖葫芦，在我眼前晃悠，我被馋得直流口水。</p>
+<p>「小丫头，只要你听我的话，这串糖葫芦就全都给你。」</p>
+<p>我强忍着口水摇了摇头。</p>
+<p>爹爹早就叮嘱过我，不要听信这个人说的话。</p>
+<p>他见我态度坚决，脸色刷一下变得惨白。</p>
+<p>像是被人抽走了全部的力气，狼狈地瘫坐在地上，喃喃地道：</p>
+<p>「别入宫，算我求你，别入宫。</p>
+<p>「为什么，我该怎么办……</p>
+<p>「安安，你告诉我，我该怎么办啊。」</p>
+<p>绝望又无助，就像一个走丢了的小孩。</p>
+<p>他看向我，眼眶通红。</p>
+<p>我愣住，看他这副模样，我忍不住安慰道：</p>
+<p>「别哭了男子汉大丈夫，流血不流泪。</p>
+<p>「再说了，如果你不放心，可以和我一起入宫啊。</p>
+<p>「听说白公公住的府邸极大，到时候你还可以找我一起玩。」</p>
+<p>我冲他露出一个大大的笑脸。</p>
+<p>「好。我会来找你的，」</p>
+<p>他嗓音沙哑，带着重重的鼻音。</p>
+<p>我们的小指相勾，那天我们便约定好了。</p>
+<p>等到相遇的那一天，我们要一起玩个痛快。</p>
+<p>后来我入了宫，听闻白公公手下多了个厉害的术士，极擅长算人之术。</p>
+<p>听娘说，那个算卦师父在我入宫那一年起，便不知所踪了。</p>
+<p>12</p>
+<p>萧肃是百年难逢的明君，而顾年是祸国殃民的妖人。</p>
+<p>我没办法替顾年报仇。</p>
+<p>甚至没有理由去恨萧肃。</p>
+<p>因为萧肃才是这个世界的正道。</p>
+<p>正因为他的登基，南国的百姓才能免去颠沛流离之苦。</p>
+<p>系统给我的任务，是帮助萧肃治理国家。</p>
+<p>平定叛乱、清除乱党、兴修水利。</p>
+<p>每完成一条，便会给我相应的积分。</p>
+<p>我被穿越空间所需的巨额积分吓了一大跳。</p>
+<p>只要能再见到他，一切的付出就都是值得的。</p>
+<p>我勤勤恳恳为萧肃做事，没有一丝埋怨。</p>
+<p>乖巧顺从到萧肃怀疑我被人夺了舍。</p>
+<p>偶尔他会对曾经的隐瞒流露出几分歉意，「安安，顾年的事是我不对。」</p>
+<p>「我不该瞒着你，可你要理解。」</p>
+<p>「他是妖道，注定是要死的。」</p>
+<p>我看着他，什么话也没说，沉默的敛下眸子，沉默的转身离开。</p>
+<p>我早已受够了谎言。</p>
+<p>自成为暗卫以来，我落下了诸多病根。</p>
+<p>一遇到冷天，伤口处便像是有千百只蚂蚁在爬，又疼又痒难以忍受。</p>
+<p>萧肃起初还会觉得愧疚，常派人给我送来补药，弥补我数年来为他拼死效力的苦劳。</p>
+<p>我现在想要的，唯有再见顾年一面。</p>
+<p>但是，我渐渐发现，穿越时空所需要的积分，太多，太多了……</p>
+<p>我这辈子也攒不够。</p>
+<p>没有他的世界，我苟活下去又有什么意义呢？</p>
+<p>药全被我偷偷倒进了窗边的花盆里。</p>
+<p>久而久之，萧肃也没了耐心，索性将我丢在冷宫中任我自生自灭。</p>
+<p>大雪之日，寒风刺骨。</p>
+<p>手中的茶杯因突如其来的刺痛落在地上，摔成了两半。</p>
+<p>我惨白着脸捂住心口跪倒在地，艰难地呼吸着。</p>
+<p>嘴角却不受控制的上扬。</p>
+<p>顾年，我来找你了。</p>
+<p>我恍惚间好像听到系统叹了口气。</p>
+<p>「又是这招。</p>
+<p>「发了疯似的折磨自己的身体，直到拖垮身体，沉疴难起。</p>
+<p>「直到死了，才肯罢休。」</p>
+<p>我没有理会系统的喃喃自语。</p>
+<p>「宿主，这次循环你和顾年的累计积分总额远超先前循环次数，超额完成了系统管理局的积分指标。</p>
+<p>「作为奖励，兑换时空穿越后还可以额外附赠一个危机预警。</p>
+<p>「用于帮助宿主避开先前的死局。</p>
+<p>不知道是不是我的错觉，系统的电子音竟带着一丝释然。</p>
+<p>「宿主，祝你成功。」</p>
+<p>心猛地刺痛，我强压下声音的颤抖。</p>
+<p>「带我去他的时空吧，我要去见他。」</p>
+<p>行刑前一夜，顾年抱着我，没有出声。</p>
+<p>我却感觉到肩头冰凉一片。</p>
+<p>他埋进我的肩窝，声音沙哑，闷闷地说。</p>
+<p>「如果有一天你受够了这个世界，就来找我吧。」</p>
+<p>「我随时欢迎你。」</p>
+<p>一片天旋地转，耳边是久别重逢的、日思夜想的声音。</p>
+<p>「同学，不要碰瓷！」</p>
+<p>「我朋友可都看见了，是你突然冲上来，又突然晕倒的。」</p>
+<p>「我可没碰你。」</p>
+<p>我费力睁开眼睛，看清眼前人的模样后。</p>
+<p>铺天盖地的悲伤从四面八方涌过来，几乎要将我溺死。</p>
+<p>我哽咽着看着他，刹那间红了眼睛。</p>
+<p>我把头埋进顾年怀里，他顿时身体紧绷，不知该如何是好。</p>
+<p>「好久不见，顾年……」</p>
+<p>我颤声开口，不停的啜泣着。</p>
+<p>「好小子，什么时候招惹人家姑娘了？」</p>
+<p>「服了，你背刺我们。」</p>
+<p>「突然就多了个嫂子，牛啊顾哥。」</p>
+<p>他的朋友嚷嚷着，纷纷识趣地离开了。</p>
+<p>诺大的街道上一时间竟然只有我们两个。</p>
+<p>等哭完了，我才想起好好看看如今的顾年。</p>
+<p>我胡乱擦干泪水，抬头望去，才发现他早已涨红了脸。</p>
+<p>耳尖通红，眼神躲闪。</p>
+<p>「你是不是认错人了啊。」</p>
+<p>顾年别过头，手却下意识地轻轻拍着我的后背，试图安抚我。</p>
+<p>他的面容稚嫩了些，想必这时的顾年还没有绑定系统。</p>
+<p>我将顾年紧紧抱住，生怕下一秒他就不知所踪。</p>
+<p>顾年手忙脚乱地推开我，连忙开口。</p>
+<p>「如果你是喜欢我的话，我们可以慢慢来。」</p>
+<p>我这才想起，此时的我不过是一个初次见面的陌生人罢了。</p>
+<p>心尖一阵酸楚，我垂下眸子，带着刚哭过的鼻音。</p>
+<p>「抱歉，吓到你了。」</p>
+<p>「没有。」</p>
+<p>他的声音无比认真，我抬眸，正对上一双沉如水的眸子。</p>
+<p>翻涌着不知名的情绪，我看到他喉结上下滚动，耳畔的呼吸声越发粗重。</p>
+<p>「我叫顾年，请问你叫什么？」</p>
+<p>我后知后觉的害羞起来，脸颊烧得通红。</p>
+<p>「我……叫白安。」</p>
+<p>顾年仔细地看着我，像是要把我的每一处都认认真真记在心中。</p>
+<p>我听见他低声呢喃，「安安……」</p>
+<p>有些人是注定会在一起的。</p>
+<p>和顾年结婚后的第五个纪念日，我们约好在附近的西餐厅吃饭。</p>
+<p>天色有些暗，还飘着小雨。</p>
+<p>擦肩而过的行人撑着伞挡住了我的视线，我只好百无聊赖的盯着红灯。</p>
+<p>幻想着今年顾年准备的礼物。</p>
+<p>「宿主，请注意观察四周。」</p>
+<p>沉寂许久的系统突然出声，我冷不丁吓了一跳。</p>
+<p>五年来系统从未主动和我说过一句话。</p>
+<p>像是精疲力尽后长久的休眠。</p>
+<p>也许根本没有什么超额积分奖励。</p>
+<p>不过是一百六十八遍的生离死别让系统懂得了一件事，甚至甘愿为此竭尽全力，打破规则。</p>
+<p>「之前你就是在这条马路上被酒后驾驶的车辆撞死的。」</p>
+<p>电子音带着一丝紧迫感。</p>
+<p>我微微一愣，忙四处打量，果然看到不远处有一辆车歪歪扭扭的冲过来。</p>
+<p>车速太快，眨眼间就来到了眼前。</p>
+<p>刺耳的刹车声让人不安，我脚尖点地一跃而起，车擦着发丝疾驰而过，径直撞在电线杆上。</p>
+<p>车头顷刻间撞得稀碎。。</p>
+<p>如果系统提示再慢一两秒，按照这个速度，我根本来不及反应。</p>
+<p>我会死……</p>
+<p>我后怕的捂住胸口，大口大口喘着气。</p>
+<p>「安安！」我听见顾年颤声喊着我的名字，他慌慌张张的跑过来，一把将我抱在怀里。</p>
+<p>顾年身上熟悉的味道让我放松了不少。</p>
+<p>他的心跳声如擂鼓般「怦怦」直跳，强有力的臂弯将我死死搂在怀中。</p>
+<p>婚后顾年稳重了许多，鲜有今天失态的模样。</p>
+<p>我轻拍他的手臂，示意他松开，「在街上呢，多不好意思啊。」</p>
+<p>顾年一顿，搂得更紧了些。</p>
+<p>他双手捧着我的脸，落下一个热烈滚烫的吻。</p>
+<p>我腿一软，几乎要喘不上气。</p>
+<p>顾年的声音闷闷的，带着粘腻的嘶哑。</p>
+<p>「我心慌得厉害。」</p>
+<p>「安安，抱抱我。」</p>
+<p>（番外：男主视角）</p>
+<p>白天我遇到了一个奇怪的女生。</p>
+<p>她一见我，就哭个不停。</p>
+<p>我自认为没有让陌生女生为我肝肠寸断的外貌。</p>
+<p>可她哭得太伤心，连我也鼻子一酸。</p>
+<p>我听见她颤着嗓子，断断续续地喊着我的名字。</p>
+<p>「顾年，好久不见。」</p>
+<p>「好久不见……」</p>
+<p>我和那女孩很合得来。</p>
+<p>我们在草地里烤肉。</p>
+<p>肉烤得吱吱冒油，涂上烧烤料，香气四溢。</p>
+<p>她眼睛一眨不眨地看着我，我都要不好意思了。</p>
+<p>我忙递给她一串。</p>
+<p>她突然间又红了眼睛。</p>
+<p>「果然很好吃啊。」</p>
+<p>我听见她说。</p>
+<p>我们顺利结婚，日子平淡幸福。</p>
+<p>五周年那天，我们订了餐厅。</p>
+<p>我在马路这头，她在那头。</p>
+<p>我看着一辆醉驾的车直直向他冲去。</p>
+<p>听到刹车声时，我心猛地一阵刺痛。</p>
+<p>大脑一片空白，连声音也发不出了。</p>
+<p>可她像是早有预知一般，像只蝴蝶轻轻飞起，又轻轻落下。</p>
+<p>我腿颤得厉害，死死将她抱在怀中。</p>
+<p>失而复得的庆幸将我笼罩。</p>
+<p>我知道的，我深深地知道。</p>
+<p>我曾经失去过她。</p>
+<p>晚上回家后，我做了一个很长的梦。</p>
+<p>梦里我是人人喊打的妖道，奸臣倒台后，我被抓进牢里。</p>
+<p>隔壁是一个单薄瘦小的女子，可惜话不多，闷闷的像个木头。</p>
+<p>我好不容易吸引了那女子的注意。</p>
+<p>没想到，她竟和我的安安一模一样。</p>
+<p>我后背一凉，心头浮上不好的预感。</p>
+<p>梦里我无所不知。</p>
+<p>我知道她是七王的暗卫。</p>
+<p>也知道她另有所谋。</p>
+<p>可我就是想赌一把，赌她会选择我。</p>
+<p>她的眼睛一闪一闪，装着漫天的繁星。</p>
+<p>我成了赌徒。</p>
+<p>我说，如果你不想呆在这里，就来找我吧。</p>
+<p>我永远欢迎你。</p>
+<p>可我赌输了。</p>
+<p>长剑抵在脖颈上。</p>
+<p>我没忍住，道出了她被灭门的真相。</p>
+<p>她的眸子忽地碎开，眼眶通红。</p>
+<p>她咬紧牙关，发了狠掐住我。</p>
+<p>「是萧肃给了我家。」</p>
+<p>不是的，是他毁了你的家。</p>
+<p>天牢里的人心狠手辣。</p>
+<p>我对我的罪行供认不讳。</p>
+<p>可他们不满意，变着花样折磨我。</p>
+<p>幸好，我明天就会死了。</p>
+<p>我没想到在这风口浪尖上她还会来找我。</p>
+<p>她无助的哭着，不停地跟我道歉。</p>
+<p>我心想，这不怪你。</p>
+<p>我伸手抱住她。</p>
+<p>我早该这么做的，见她的第一面起，我就想抱抱她。</p>
+<p>我说，「没事的，我们还会再见面的。」</p>
+<p>她握着刀，手抖个不停。</p>
+<p>脸色惨白的，好像刀落在了她身上。</p>
+<p>梦里的痛感太过真实，我强扯出一丝笑。</p>
+<p>「别哭了，手抖了，刀就不稳了。」</p>
+<p>最后一刀她捅入了我的心脏。</p>
+<p>我听见她放声大哭，哭声震耳欲聋。</p>
+<p>别哭了，安安。</p>
+<p>奸臣自古以来都没有好下场，你做的对。</p>
+<p>恍惚间我又回到刚上大学的年纪。</p>
+<p>我又一次遇到了她。</p>
+<p>相遇、相恋、结婚、车祸。</p>
+<p>以及……死亡。</p>
+<p>她没躲过车祸。</p>
+<p>神灵消失了。</p>
+<p>有一个自称是系统的东西告诉我。</p>
+<p>只要我按它说的做，就能再次见到她。</p>
+<p>我同意了。</p>
+<p>她家的府邸气派非凡，看门的家丁各个人高马大。</p>
+<p>我硬闯了几次，都被打的鼻青脸肿。</p>
+<p>系统告诉我，我可以伪装成算命先生。</p>
+<p>他们迷信，自然会尊敬我。</p>
+<p>我一一道出他们家人的生平往事。</p>
+<p>终于到她了。</p>
+<p>这时的她还很小，眼睛扑闪扑闪，像个粉雕玉琢的瓷娃娃。</p>
+<p>可爱极了。</p>
+<p>我分明再三强调不要进宫，可他们就是不听。</p>
+<p>我气极了，抄起砚台就砸向地面。</p>
+<p>家丁见我撒泼打滚，卡着我将我扔出门外。</p>
+<p>我躺在地上，一动不动。</p>
+<p>脑海中灵光一闪，我直起身。</p>
+<p>罢了，拦不住她，就拦住白无宁吧。</p>
+<p>我进宫求见白无宁，成了他身旁言无不灵的国师。</p>
+<p>她天赋极好，连白无宁都时常夸她。</p>
+<p>我说，她若是留在你身边。</p>
+<p>将会后患无穷。</p>
+<p>白无宁若有所思地盯着我。</p>
+<p>「怎么，你舍不得她？」</p>
+<p>我一时无言，他忽地笑了。</p>
+<p>「也罢，都听国师的。」</p>
+<p>我千方百计想让她远离皇都这个是非之地。</p>
+<p>可她还是卷进来了。</p>
+<p>虽然摆脱了白无宁，却在萧肃的设计下，成了萧肃的暗卫。</p>
+<p>当所有的事情又一次发生。</p>
+<p>我被绑在柱子上，血肉模糊时。</p>
+<p>我绝望地意识到。</p>
+<p>这是个死局。</p>
+<p>我不停的重生，死亡，重生，死亡。</p>
+<p>连一向冷漠的系统都忍不住吐槽起来。</p>
+<p>「你们人类还真是痴情啊。」</p>
+<p>我无所谓的笑笑。</p>
+<p>「我只是想让她好好活着。」</p>
+<p>我计算着时间，匆忙向那条马路跑去。</p>
+<p>可这个世界似乎铁了心和我过不去。</p>
+<p>撞翻的自行车，络绎不绝的人群，占满过道的商贩。</p>
+<p>每一个，每一个都在阻挠我救她。</p>
+<p>刺耳的刹车声，横冲直撞的车辆。</p>
+<p>我绝望地捂住眼睛，却听到一声惊呼。</p>
+<p>透过指缝我看到她彷佛有未卜先知的能力，轻轻一跃，避开车辆。</p>
+<p>稳稳地落在地上。</p>
+<p>那一刻，我突然喘不上气。</p>
+<p>心仿佛被揉成一团。</p>
+<p>我冲上前将她紧紧抱住。</p>
+<p>她害羞的想要推开我。</p>
+<p>才不要，为了这一天，你知道我等了多久吗。</p>
+<p>我几乎要哭出来，手脚也使不上劲。</p>
+<p>我一遍遍确认她还好好活着。</p>
+<p>抱她，吻她，恨不得将她揉进我的身体里。</p>
+<p>相爱的人总会在一起的。</p>
+<p>我一觉睡到天亮，身边是软乎乎的安安。</p>
+<p>她抱着我的胳膊，睫毛轻颤.</p>
+<p>含糊不清的嘀咕着我的名字。</p>
+<p>「顾年……」</p>
+<p>我在她光洁的额头上留下一个吻。</p>
+<p>「我在。」</p>
+<p>（全文完）</p>
+<p>作者：栗子</p>
+<p>备案号:YXX1pQQ9r98tYYYEP4niNAJ0</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>猫猫 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/8/7-%E5%AF%BB%E6%BA%BA/" title="寻溺">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">寻溺</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/6-%E9%9B%85%E6%80%9D%E5%90%AC%E5%8A%9B%E8%AF%8D%E6%B1%87%E6%9C%89%E5%93%AA%E4%BA%9B%E9%9C%80%E8%A6%81%E8%AE%B0-%E7%9F%A5%E4%B9%8E1/" title="雅思听力词汇有哪些需要记？ - 知乎(1)">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">雅思听力词汇有哪些需要记？ - 知乎(1)</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

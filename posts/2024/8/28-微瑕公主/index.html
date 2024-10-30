@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微瑕公主 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/8/28-%E5%BE%AE%E7%91%95%E5%85%AC%E4%B8%BB/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/8/28-%E5%BE%AE%E7%91%95%E5%85%AC%E4%B8%BB/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="微瑕公主">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26672.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26672.jpg">
+  <meta name="twitter:title" content="微瑕公主">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="微瑕公主">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12313">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26672.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">微瑕公主</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%be%ae%e7%91%95%e5%85%ac%e4%b8%bb&amp;url=https://mohai.us.kg/posts/2024/8/28-%E5%BE%AE%E7%91%95%E5%85%AC%E4%B8%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/8/28-%E5%BE%AE%E7%91%95%E5%85%AC%E4%B8%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%be%ae%e7%91%95%e5%85%ac%e4%b8%bb%20https://mohai.us.kg/posts/2024/8/28-%E5%BE%AE%E7%91%95%E5%85%AC%E4%B8%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26672.jpg" alt="微瑕公主" />
+      
+
+      <p>微瑕公主</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>室友把我的照片放在了校园墙上。</p>
+<p>并配文，「除了美貌一无所有的小姐姐，0 元出，微瑕懒惰版。」</p>
+<p>并贴心地在评论区留下了我的联系方式。</p>
+<p>1</p>
+<p>「沈欣，你要死了啊！」</p>
+<p>我看着手机不断弹出来的好友申请。</p>
+<p>「哎呀，好玩嘛！我已经联系校园墙删帖了啊。」</p>
+<p>我郁闷地抓了抓头发。</p>
+<p>「为什么还有在加啊！」</p>
+<p>沈欣走过来，捏捏我的肩，笑道。</p>
+<p>「我好像忘了删网上的视频了……」</p>
+<p>我实在忍不了了！</p>
+<p>抄起靠枕就向沈欣砸过去。</p>
+<p>沈欣还在拿着手机对着我。</p>
+<p>我不顾鸡窝一样的头发，扭曲的面容。</p>
+<p>模仿着炮弹，向沈欣冲过去。</p>
+<p>我要打死她！</p>
+<p>很快我和沈欣扭打在地上。</p>
+<p>我们两个的睡衣，估计已经把寝室的地拖过一遍了。</p>
+<p>「不打了，不打了，累了。」</p>
+<p>我挥挥手，喘着气。</p>
+<p>晚上躺着刷视频时，给我推荐了沈欣发布的视频。</p>
+<p>可以，是我下午扔抱枕和冲过来的片段。</p>
+<p>配文是：「战斗力为零的室友，0 元出，微瑕战斗版。」</p>
+<p>「啊啊啊啊啊！」</p>
+<p>我在床上尖叫，要和沈欣决斗！</p>
+<p>第二天又看到了我尖叫的视频。</p>
+<p>配文是：「强劲穿透力的室友，0 元出，微瑕尖叫鸡版。」</p>
+<p>我是真的谢谢了。</p>
+<p>2</p>
+<p>感谢我的室友沈欣，我已经不是在学校出名了。</p>
+<p>整个同城高校圈都流传着我的名号。</p>
+<p>微瑕公主。</p>
+<p>最开始的校园墙联系方式已经删除了。</p>
+<p>让我免去了信息轰炸的困扰。</p>
+<p>只是走在学校里，各种各样的视线，让我想用脚成为建筑大师。</p>
+<p>「瑶瑶！快看有人后台给发消息！」</p>
+<p>我看着沈欣，生无可恋。</p>
+<p>「不是每天都有人来 0 元取我吗？」</p>
+<p>沈欣嘿嘿笑。</p>
+<p>「哎呀，不是，有人邀请你去上恋综！」</p>
+<p>「不去，不去！」</p>
+<p>我连忙拒绝。</p>
+<p>我现在只希望这「微瑕公主」的热度赶快过去。</p>
+<p>「哎呀，你去嘛！这个恋综是高校版的！可以看各个学校的帅哥诶！」</p>
+<p>「不去，不去」</p>
+<p>帅哥也不能让我去丢脸啊！</p>
+<p>「可是我已经答应了。」</p>
+<p>「我可没答应！」</p>
+<p>我转头就走。</p>
+<p>「昨天我送你的贵妇面霜就是定金买的！你已经用了！」</p>
+<p>「啊啊啊！你不是说那是给我赔罪的吗？」</p>
+<p>沈欣点点头。理所应当的说。</p>
+<p>「对啊，可是我没钱啊！」</p>
+<p>我真的谢谢，人已经在录备采了。</p>
+<p>3</p>
+<p>「大家好，我叫卢瑶。来自 AA 大学，希望能和大家度过愉快的一段时光。」</p>
+<p>PD 抬头看着我。</p>
+<p>「就说这么一点，在多说一点吧，说说你的理想型吧。」</p>
+<p>我的理想型？我没有啊！</p>
+<p>「嗯，长得帅，长得高，还有成绩好！」</p>
+<p>各个学校的恋综主人公已经相继出炉。</p>
+<p>在各个学校讨论得热火朝天的时候，我要去第一次录制了。</p>
+<p>进入恋爱小屋，我算是来的晚的倒数第三个进门。</p>
+<p>现在恋爱小屋已近有了包括我在内的 6 个人。</p>
+<p>还有两个人没到。</p>
+<p>我们这已近三男三女了，看来还有一男一女。</p>
+<p>剩下两个人一起有说有笑地进来的，看来这已经组好队了。</p>
+<p>所有人都到齐了，进入第一个环节。</p>
+<p>自我介绍。</p>
+<p>按照座位顺序我在后面，这可不着急。</p>
+<p>可是我不知道高校版的自我介绍需要介绍自己的绩点啊！</p>
+<p>第一位酷酷的姐姐已经是研二，本科绩点 4.2。</p>
+<p>第二位戴眼镜的男生是研一，本科绩点 4.1。</p>
+<p>接下来几位绩点都在 4.0 以上。</p>
+<p>就连我觉得最可能和我差不多的一个可爱的妹妹，哦不姐姐。</p>
+<p>她还是个美妆博主，绩点也有 4.0。</p>
+<p>我实在不想介绍我三点几的绩点。</p>
+<p>可是还是轮到我，按着大家的模板，说自己目前大二和绩点 3.7。</p>
+<p>大家都很平静，这让我很快乐。</p>
+<p>在我后面发言的男生，感觉和场上所有的男生都不一样。</p>
+<p>嗯，他更有……更有野性！</p>
+<p>自我介绍也很有野性。</p>
+<p>只有一句。</p>
+<p>「我叫程锦川。大四。」</p>
+<p>我心里暗喜，看来绩点可能也不高。</p>
+<p>可以的，男人，你成功吸引了我的注意力。</p>
+<p>4</p>
+<p>为什么啊！为什么每个恋综都喜欢做饭这个项目啊！</p>
+<p>我是一点也不会做饭啊！</p>
+<p>在大家讨论自己的拿手菜时，我默默举起了手。</p>
+<p>「我不会做饭……我可以给大家洗碗，我会洗得很干净的！」</p>
+<p>大家也同意我的提议。</p>
+<p>在讨论自己喜欢吃什么时，啥也不敢说。</p>
+<p>毕竟要饭可不能嫌菜馊。</p>
+<p>大家讨论完就准备做菜。</p>
+<p>我啥也不会，和大家也还不熟，都不好意思去帮忙。</p>
+<p>整个流理台都是人，我还是到处晃晃吧。</p>
+<p>吃完饭看到整个洗碗池的饭碗和餐盘，我沉默了。</p>
+<p>我感觉有人走过来。</p>
+<p>嗯……想不起来叫什么名字了。</p>
+<p>他把袖子撸起来。</p>
+<p>「我来帮你吧。」</p>
+<p>我连忙挥手。</p>
+<p>「不用，不用本来我就没做饭。这样我会愧疚的！」</p>
+<p>笑死，我可不想被喷成筛子。</p>
+<p>两人一间房，等我洗完碗，和我一起住的酷姐姐已经洗漱完了。</p>
+<p>叫我快去洗漱。</p>
+<p>可不能这么卷啊！</p>
+<p>洗漱完我发现酷姐姐正在电脑面前写论文。</p>
+<p>此时节目组让每个人给自己感兴趣的异性发一条信息。</p>
+<p>所有信息都是匿名。</p>
+<p>但是双方互相发送信息，就会显示对方的名字。</p>
+<p>并且整个恋爱小屋会想起浪漫的音乐。</p>
+<p>谁我都不感兴趣，按照今天的自我介绍顺序，我给一号男生发了信息。</p>
+<p>就两个字。</p>
+<p>「你好。」</p>
+<p>每个人都发送完毕后，让我们查看收件。</p>
+<p>这种概率极有可能有人没有收到信息。</p>
+<p>我已经做好没有信息的准备，毕竟今天我可以说是最拉胯的一个。</p>
+<p>按照流程打开我的收件箱。</p>
+<p>里面竟然有一条未读信息！</p>
+<p>谁啊！真是慧眼识珠！</p>
+<p>「0 元出，我可以上门取，还可以加价。」</p>
+<p>可以，收回我认为他慧眼识珠的话。</p>
+<p>看不到发件人信息，不是一号。</p>
+<p>这时，恋爱小屋响起了所谓的浪漫音乐。</p>
+<p>不是吧，这么快！</p>
+<p>这概率也够小的，这速度也够快的。</p>
+<p>算了，需要找到那个 0 元出。</p>
+<p>我的「微瑕公主」可不能再传播了！</p>
+<p>哼，男人，让我找到你！</p>
+<p>5</p>
+<p>每次的录制都是三天两夜。</p>
+<p>咱们大学生也不能不学习啊。</p>
+<p>鉴于大家都还不是很熟悉，节目组把选择权利交给了我们。</p>
+<p>让我们自己选择一个地方大家八个人一起去玩。</p>
+<p>去烧烤？去密室？去露营？</p>
+<p>我都喜欢诶！好难选。</p>
+<p>和我住同一间房的酷姐姐这时提了一句。</p>
+<p>「要不我们去图书馆吧！大家可以一起学习！」</p>
+<p>看见大家发亮的眼神，我只能寄希望于可爱的姐姐了吧。</p>
+<p>美妆博主应该喜欢玩吧？</p>
+<p>「可以啊！我可以去剪视频诶。」</p>
+<p>好的，希望破灭。</p>
+<p>估计节目组也没想到，一群年轻有朝气的大学生会选择图书馆去团建。</p>
+<p>我也没想到啊！上个节目谁还管学习啊！</p>
+<p>大家都拿好自己的东西整装待发，我看着自己只有漂亮衣服的行李箱陷入沉思。</p>
+<p>算了，出门，买个本子吧。</p>
+<p>一群人整装出发。</p>
+<p>去往图书馆的路上大家是在演习吗？路上都这么安静。</p>
+<p>很尴尬，我的电话响了。</p>
+<p>我立马接通。声音放低。</p>
+<p>「喂？」</p>
+<p>「卢瑶！你的青年大学习还没做！快点做了交截图！」</p>
+<p>「诶诶，好的好的，马上做。」</p>
+<p>挂断后，立马打开我的青年大学习。</p>
+<p>「学习新思想，争做新青年。欢迎……」</p>
+<p>不好意思，声音忘记关掉了。</p>
+<p>看着窗外的路。</p>
+<p>我多希望目的地不是图书馆而是我的坟墓啊。</p>
+<p>6</p>
+<p>图书馆真是一个好地方啊。</p>
+<p>知识的芳香让我沉醉，沉醉在我的香甜的梦乡。</p>
+<p>我实在快睁不开眼睛了。</p>
+<p>喂！醒醒啊！这可是录节目！</p>
+<p>可不能把脸丢在全国观众面前吧。</p>
+<p>我看着大家剪视频的剪视频，写论文的写论文。</p>
+<p>嗯都很认真，看不着我。</p>
+<p>就一小下下。</p>
+<p>我慢慢摸出我的手机。</p>
+<p>长按音量键，关掉声音。</p>
+<p>再次确认，OK。</p>
+<p>打开我的视频软件。</p>
+<p>第一条就是沈欣的视频。</p>
+<p>是我的床位。</p>
+<p>配文是，「室友没钱讨口去了，桌子 1 元出，微瑕。」</p>
+<p>下面有人评论。</p>
+<p>「桌子都比小姐姐贵。」</p>
+<p>沈欣点了赞。</p>
+<p>我留下一句，「等我回来」，后面加了一个微笑。</p>
+<p>说实话，在图书馆刷视频真有自己是颗老鼠屎的感觉。</p>
+<p>但是图书馆也没老师，怎么有种被人盯着玩手机的感觉。</p>
+<p>为了装模作样，我还边看视频边在新买的本子上乱画几笔。</p>
+<p>真的很享受这种死到临头还要忙里偷闲的焦灼感。</p>
+<p>7</p>
+<p>图书馆可能也不适合节目组恋综的调性。</p>
+<p>两个小时过后看到大家还有继续的趋势，节目组紧急叫停。</p>
+<p>「该吃饭了！出去吃饭吧，别学习了！」</p>
+<p>节目组发出最后的怒吼。</p>
+<p>同时否定了我们去吃门口麻辣烫的决定。</p>
+<p>咱们大学生就爱吃这些。</p>
+<p>最后节目组给我们选择了一家看起来就是谈情说爱的场所吃饭。</p>
+<p>盘摆的挺好的，味道一般，环境不错。</p>
+<p>如果耳边他们没有谈论期刊论文就好了。</p>
+<p>还好有可爱的阿柔姐姐和我谈论美妆，虽然我手残，但是我的眼睛和耳朵应该会了。</p>
+<p>回去恋爱小屋，终于有了午休时间。</p>
+<p>可能也是互有好感的伙伴可以单独相处的时间。</p>
+<p>午休！我爱午休！</p>
+<p>对着摄像头挥挥手。</p>
+<p>「哎呀，学习了一上午。好累啊，大家要好好休息保重身体啊！」</p>
+<p>在图书馆看了一上午视频也累了。</p>
+<p>躺在床上想再看一眼就睡，没撑住，昏过去了。</p>
+<p>没想到一昏昏迷到吃晚饭。</p>
+<p>完了完了，没有形象了。</p>
+<p>当我冲下楼看见大厅就两个人，心里舒了一口气。</p>
+<p>这就是正常的作息嘛！</p>
+<p>「嗯？瑶瑶下来了？给你留了饭，刚才叫你你没醒。」</p>
+<p>「啊哈哈，谢谢啊。」</p>
+<p>不用说后面一句的。</p>
+<p>8</p>
+<p>不带这么欺负人的。</p>
+<p>当我吃完饭节目组说今天晚上去夜市。</p>
+<p>录制的城市可是鼎鼎有名的美食之都。</p>
+<p>想了想，我在胃里给小吃单独开了个小房间。</p>
+<p>冲啊！夜市。</p>
+<p>大家相处了快两天，看来有人已经有苗头了。</p>
+<p>夜市人挤人，咦有人可一直在一起没分开诶。</p>
+<p>妈呀！好激动我看的第一对 cp 就要这样诞生吗?</p>
+<p>马上就更激动了，因为别人有 cp 看着我可没有。</p>
+<p>我走散了！</p>
+<p>也行，夜市就这么大，总会遇见的。</p>
+<p>不过先遇见我的卤猪蹄、羊肉串、手抓饼……</p>
+<p>没办法，都很好吃，肚子里的房间还是太小了。</p>
+<p>不能浪费粮食！现在 他们可能在我的嗓子眼了。</p>
+<p>得扶着肚子走路，我怕别人撞过来就吐出去了。</p>
+<p>嗯？程锦川！他也一个人。</p>
+<p>我朝他挥挥手！向他走过去。</p>
+<p>「程锦川！这里！」</p>
+<p>估计是看我动作有点激动，才回应了我的挥手。有点别扭。</p>
+<p>但是走了这么久，确实有点害怕。见到稍稍熟悉的人就有点激动。</p>
+<p>「你也走散啦！还好我们俩遇到了。」</p>
+<p>「嗯。」</p>
+<p>他真的和这里夜市的烟火气格格不入，像月光一点也不热烈。</p>
+<p>「哎，不知道什么时候才能找到他们啊。」</p>
+<p>程锦川默默拿起了手机，发起了共享位置。</p>
+<p>啊……刚才吃得太多，我就没有拿出我的手机。</p>
+<p>我也拿出手机，看到了节目组的轰炸。</p>
+<p>赶紧回复节目组。</p>
+<p>我刚想说我们马上过去回合。</p>
+<p>节目组说摄影机马上过来，让我和程锦川待在一起。</p>
+<p>说实话，这还是我来这恋综第一次和男嘉宾单独待在一起诶。</p>
+<p>啊，两个人！单独！恋综！这不会，哎呀好多粉红泡泡。</p>
+<p>泡泡散了，节目组一来，程锦川就让我们回去了。</p>
+<p>到了发信息的时候，按顺序我给二号也发了你好。</p>
+<p>连续响起了两次了浪漫音乐。</p>
+<p>看着我空空的收件箱，搞笑女不配拥有爱情！</p>
+<p>9</p>
+<p>吃太多了，睡不着，肚子好痛啊。</p>
+<p>下楼准备找水喝。</p>
+<p>吓我一大跳，怎么还有人在大厅啊。</p>
+<p>「哈喽！你还没休息啊？」</p>
+<p>我率先挑起话题。</p>
+<p>「没呢，有个论文需要赶赶。」</p>
+<p>我真该死啊，人家学霸的世界，时间是用来学术的，不是用来吃喝玩乐的！</p>
+<p>「你晚饭吃的晚，这里有健胃消食片。」</p>
+<p>「啊哦，谢谢啊。」</p>
+<p>这可能是爱情吗？他可准备了健胃消食片给我诶！</p>
+<p>可是我现在是丘比特见了都要摇摇头的形象！</p>
+<p>「那个，我先走了啊，你早点休息！谢谢你的药！」</p>
+<p>我转头就奔上楼，也没听清他说的啥。</p>
+<p>之前肚子涨的睡不着，现在嘛……</p>
+<p>我超关心我的爱情的……可是我今天给他发的信息，他没有给我发诶。</p>
+<p>算了，可能是最近磕 cp 让我想长恋爱脑了吧。</p>
+<p>可不能这样，我去看看挖野菜。</p>
+<p>程锦川回到大厅，看到桌上的药没有了。</p>
+<p>「药呢？」</p>
+<p>二号李彬都没抬头。</p>
+<p>「刚才卢瑶下来，我把药给她了。」</p>
+<p>「什么时候？」</p>
+<p>「就刚才你去上厕所啊，我看你又不需要了，我就给她了。」</p>
+<p>「哦。」</p>
+<p>李彬终于觉得有点不对。</p>
+<p>「刚才你跑出去买药，不是给你自己买的吧？你是不是喜欢人家！」</p>
+<p>程锦川不说话，准备上楼走了。</p>
+<p>李彬在后面大叫。</p>
+<p>「那我明天就去找卢瑶玩了啊！」</p>
+<p>楼梯上的程锦川回头，眼神在昏暗的灯光下也凌厉。</p>
+<p>「不行！」</p>
+<p>10</p>
+<p>一大早，我就被吓醒了。</p>
+<p>我做了一个巨可怕的噩梦，我一直在不停歇地挖野菜。</p>
+<p>太恐怖了，太恐怖了。</p>
+<p>看见李彬我的心情都很复杂，但是我也不知道他一直挤眉弄眼干嘛。</p>
+<p>星期天，大家都是天南海北的各大高校的学生，需要回学校。</p>
+<p>节目组安排送我们回学校。</p>
+<p>还好我的学校不远，坐车就两个小时可以到。</p>
+<p>节目组为了节省成本，同一方向嘉宾的坐一辆车。</p>
+<p>程锦川和我一辆车，确实他的学校和我的学校在一个城市。</p>
+<p>回程路上，嘴巴有点干，摸着肚子。想要吃小零食。</p>
+<p>程锦川看着我，皱眉。</p>
+<p>「你肚子还是不舒服？」</p>
+<p>程锦川突然说话，我还有点惊讶不习惯。</p>
+<p>高冷男神怎么能说话呢？应该当一个完美的静音的艺术品啊。</p>
+<p>「没有！」</p>
+<p>我立马放下了摸肚子的手，挺直了背，端坐起来。</p>
+<p>还好我的学校先到，我立马跳下车。</p>
+<p>「再见！」</p>
+<p>回到寝室，我抱着沈欣就嚎叫。</p>
+<p>「欣欣啊，那不是人待的地方，我重新给你买一套护肤品吧，咱不去了好不好啊？」</p>
+<p>沈欣把我扒拉开。</p>
+<p>「咋啦？不给你饭吃？」</p>
+<p>「没有没有，那里的人都好卷啊！我受不了，来自学霸们的碾压，呜呜。」</p>
+<p>学霸！长得帅的学霸！</p>
+<p>「瑶瑶，这你不得拿下一个，期末你还会看着书流泪吗？」</p>
+<p>谢谢，有点心动。</p>
+<p>刚到宿舍楼下，有个少年背着包靠着树。</p>
+<p>真是……好装啊。</p>
+<p>看他又拒绝了一个要微信的小姐姐之后，朝我走过来。</p>
+<p>「走，回家吃饭。」</p>
+<p>告别沈欣，出了校门准备坐车。</p>
+<p>少年成宇拉着我的衣服，我不耐烦。</p>
+<p>「回家吃饭了！」</p>
+<p>「姐姐，我的好姐姐。我是真的很想吃！我已经很久没吃过了！」</p>
+<p>站在大学小吃街的时候，我是真的疑惑，怎么成宇这么爱吃小吃啊！</p>
+<p>读高中每天零花钱又不多，没钱就会跑对面的大学来找我资助他。</p>
+<p>半大小子吃穷娘，也吃穷姐啊。</p>
+<p>11</p>
+<p>到舅舅家，餐桌上已经摆满了饭菜，就等入座了。</p>
+<p>舅舅照例问了问我的情况，又开始数落成宇。</p>
+<p>「都高三了，还一天疯跑，能不能有点紧迫感！」</p>
+<p>成宇嘴硬。</p>
+<p>「哎呀，我的补习老师最近有事，我才放假的！」</p>
+<p>小成本制作的恋综，不敢投入太多成本。</p>
+<p>只能录制一期做一期。</p>
+<p>当第一期准备播出时，我们才开始录制第二次。</p>
+<p>比起第一次，大家都放松了不少。</p>
+<p>第一次分开后，我们就有了一个群，网络很容易拉近大家的距离。</p>
+<p>嗯，如果每天在群里聊的不是学术就更好了。</p>
+<p>这次还是我和程锦川一起去恋爱小屋。</p>
+<p>「哈喽哈喽。」</p>
+<p>程锦川好像很忙，腿上放着电脑，一手拿着手机。</p>
+<p>对我挥手，点点头。</p>
+<p>哇哇哇，车门一开，我就看见了已经到了的阿柔姐姐。</p>
+<p>漂亮姐姐真的好可爱！前几天直播还和我互动呢，真的看美女好快乐啊。</p>
+<p>手拉手和阿柔姐姐走进恋爱小屋。</p>
+<p>这次节目组绝不会让我们做决定了。</p>
+<p>所有人到齐马上就通知我们今天晚上去露营。</p>
+<p>烧烤露营！太快乐了吧。</p>
+<p>第一次录制，原来大家都很社恐。第二次录制，大家是一点都不想学习。</p>
+<p>「滚吧！学习！」</p>
+<p>我们一到露营地就有人喊了出来，大家都放肆大笑起来。</p>
+<p>烧烤有点难烤，有的有点糊，有的有点重口味。</p>
+<p>帐篷有点难搭，有的有点歪，有的有点不稳固。</p>
+<p>没关系，我们吃得很快乐，睡得也很开心。</p>
+<p>一共两顶大帐篷，男生一顶，女生一顶。</p>
+<p>晚上我们躺在帐篷里，把头顶的帘子拉开，看见满天的星河。</p>
+<p>「哎，还以为咱们会想其他恋综一样三角恋啊，看来大家都封心锁爱了。」</p>
+<p>「谈恋爱有什么好，为了洗衣做饭生孩子？我们还是要把书读烂。」</p>
+<p>「我最近看文献……」</p>
+<p>呵呵，什么不在乎学习？伤的只是我一个人的心罢了。</p>
+<p>12</p>
+<p>节目组觉得我们进度太慢，让我们抽签两人一起明天单独约会。</p>
+<p>但是他们好像忘了，两个人，也可以是两个女生，两个男生，不一定都是一男一女。</p>
+<p>诶，我和酷姐姐分到一起了。</p>
+<p>她说带我去玩好玩的。</p>
+<p>看见我十分钟就破产的沙盘，她陷入了沉思。</p>
+<p>我看出了她想说些什么却又无话可说，这时节目组拯救了她。</p>
+<p>必须要一男一女一组，酷姐姐被带走了，同时带来了程锦川。</p>
+<p>「那……我们干嘛呀？」</p>
+<p>什么！上一次录制后为我自己不学无术的表现，我决定痛改前非，这次带了作业，谁知道大家变成不爱学习的样子了。</p>
+<p>「带了，带了。」</p>
+<p>程锦川带我找了一个咖啡馆，给我一杯柠檬水，给自己点了一杯咖啡。</p>
+<p>他在参加比赛，让我做作业，有不会的问题就问他。</p>
+<p>这怎么好意思啊，我这一道题也不会啊。</p>
+<p>我看着草稿本，画了一个又一个小兔子。</p>
+<p>程锦川终于分心看了我一眼，拿走了我的草稿本，看着满页各式的小兔子，翻了一页。</p>
+<p>「从哪开始？」</p>
+<p>我拿笔点了了书，程锦川抽走我手中的笔，开始在草稿本上一边演算一边低声给我讲解。</p>
+<p>手上没了东西，我只好抱着柠檬水。我的视线慢慢从下面往上。</p>
+<p>手真好看，阳光洒进来，喉结也好看，轮廓也好看，嘴唇也好看，睫毛也好看。</p>
+<p>「懂了吗？」</p>
+<p>「嗯嗯，好看！不是……那个……」</p>
+<p>程锦川突然笑了笑，我真的承认这一刻我有点沦陷。</p>
+<p>「这么好看？」</p>
+<p>我属实不敢再说话了，我能感觉我的脸慢慢的在发烫，我不敢想象现在它的颜色是什么。</p>
+<p>「好了，我再讲一遍。」</p>
+<p>之后，程锦川一直在给我讲题，偶尔将目光放在他的电脑上。</p>
+<p>哎，这个氛围怎么能不醉人，有点上头了。</p>
+<p>更该叹气的是节目组，好不容易有了单人约会，有人去做题，有人去实验室，有人去公司谈合作。</p>
+<p>想魔鬼剪辑出粉红泡泡都很难。</p>
+<p>没办法最近这段时间竞赛多。</p>
+<p>13</p>
+<p>今天晚上大家约会回来后，节目组将我们聚集在一起。</p>
+<p>本来投资方就不看好这个项目，剪辑出第一期给投资方看了直接毙掉了这个项目。所以可能今晚之后，大家就要回学校了。</p>
+<p>啊，我今天马上就要迎来我的小桃花，这样就要被夭折了吗。</p>
+<p>在恋爱小屋的大厅，节目组就无所谓的让我们聊。</p>
+<p>「那个……还是告诉你们一件事，我和张尧本来就是情侣。」</p>
+<p>什么？我就知道，为什么第一天两个人是一起进来的。</p>
+<p>「我们是不同学校的，谁知道节目组都找到了我们，公费恋爱感觉也不错。所以……」</p>
+<p>他们还准备去同一个学校读博。</p>
+<p>不同学校，同样优秀的人。势均力敌的爱情太好嗑了吧。</p>
+<p>大家都在感叹，想到我还没有萌芽的小桃花，视线不自觉的就看向了程锦川。</p>
+<p>虽然大家认识没多久，但是大家还是相互约定以后一起玩。</p>
+<p>还好我和程锦川离得近，我应该可以去找他的吧。</p>
+<p>第二天一早我和程锦川就坐上了回学校的车。</p>
+<p>当我出现在沈欣面前，沈欣大吃一惊。</p>
+<p>「不是，你不会偷跑回来了吧？咱们不会赔违约金吧？」</p>
+<p>我给沈欣解释了始末，没想到她的关注点是出场费。</p>
+<p>「那之前说好的价格呢?不会咱没钱了吧？」</p>
+<p>我白了沈欣一眼，无奈道。</p>
+<p>「会按比例给你的，放你的心吧。」</p>
+<p>「嘿嘿，咱又不是贪财，我们可不能给人打白工啊！」</p>
+<p>我真的谢谢你为我着想啊。</p>
+<p>睡不着，室友都让我聊聊去录节目有什么好玩的。</p>
+<p>告诉了她们地下情侣势均力敌的爱情，大家连连感叹，纷纷姨母笑。</p>
+<p>「如果一个男生放下手中重要的事来教女生做题，这个男生是不是喜欢这女生啊？」</p>
+<p>「这当然啊，不喜欢理都不想理好吗？」</p>
+<p>「这不是爱情就是亲情了。看他是不是爸爸了。」</p>
+<p>沈欣突然坐起来。</p>
+<p>「你这次不是带作业去了吗？是你啊！」</p>
+<p>其他两个室友也起哄起来。</p>
+<p>我心一梗。</p>
+<p>「就是我啊，可是节目都结束了。虽然有他的联系方式但是一次也没有认真聊过，难道我直接冲上去表白啊？」</p>
+<p>室友们叽叽喳喳的把程锦川的事都套出来了。</p>
+<p>为我制定了一系列撩男计划。</p>
+<p>有点害怕，在室友的催促下我答应从明天开始实施计划。</p>
+<p>14</p>
+<p>首先，因为不是初次认识。隔着网络撩已经没有太大的用处了。</p>
+<p>必须要先见面，直球一点。</p>
+<p>知道吗？知道了！</p>
+<p>我正准备拿手机给程锦川发信息，约他周末出来玩。</p>
+<p>手机正好跳出来了信息，刚好是程锦川的。</p>
+<p>「上次回去的时候，你的钥匙落车上了。需要我给你送过去吗？」</p>
+<p>围观我发信息的室友们，比我还激动。</p>
+<p>「快快快，机会这不就来了！」</p>
+<p>「这还没啥小九九，都要给你送过来了哟。」</p>
+<p>室友们都急得不得了，恨不得上手回复了。</p>
+<p>「快点答应他，说请他逛学校，请他吃饭。」</p>
+<p>「好的，我们学校附近有家花雕醉鸡很好吃，我请你吃好吗？」</p>
+<p>「不要说请，说带！语气可爱一点呀！」</p>
+<p>修改了几次，终于所有人都满意发送了。</p>
+<p>「好的呀，我们学校附近有家花雕醉鸡超好吃的，我带你去吃呀。」</p>
+<p>看到程锦川同意的信息，大家尖叫起来，在寝室里跑来跑去。</p>
+<p>「找衣服，现在就找！还有配饰！」</p>
+<p>大家确实比我努力。</p>
+<p>要美丽又不刻意，大家终于搭配好了衣服，挑选好了配饰，试好了伪素颜的妆。</p>
+<p>学习了捂嘴笑，微微颔首，不经意的对视。终于来到了周末。</p>
+<p>临出门，大家兴奋又严肃地问我这次最重要的什么。</p>
+<p>我坚定地点点头。</p>
+<p>「约下一次！」</p>
+<p>到了约定的校门口，程锦川已经到了，我连忙跑过去。</p>
+<p>「不好意思啊，我来晚了。」</p>
+<p>程锦川一边递给我一杯柠檬水，一边把钥匙给我。</p>
+<p>「还没到约定时间呢，你别着急。」</p>
+<p>看见程锦川递给我的柠檬水已经插好了吸管，实在是很想笑诶，只能将头转向一边偷偷笑。</p>
+<p>走了，程锦川率先抬步。</p>
+<p>我给程锦川说现在人很多，要不逛逛我的学校，再去吃饭。</p>
+<p>边走我边给程锦川介绍，艺术楼，林荫道。</p>
+<p>看见程锦川在十字大道中间停留，我连忙去拉程锦川到路边。</p>
+<p>「那里有很多校园电单车相撞或者摔倒，很危险的！」</p>
+<p>程锦川点点头。</p>
+<p>「确实容易。」</p>
+<p>花雕醉鸡真的好好吃，可是吃完程锦川就要回学校了。</p>
+<p>我陪着程锦川在等车，在心里感叹时间真的过得好好快。</p>
+<p>程锦川的车到了，快要上车。我突然想起室友们临行时叮嘱。</p>
+<p>我连忙跑过去，叫了程锦川的名字时车已经开走了。</p>
+<p>在回宿舍的路上，我收到了程锦川的信息。</p>
+<p>「我的学校附近有家烤肉听说很好吃，我没去过，你愿不愿意陪我去吃？」</p>
+<p>「好啊。」</p>
+<p>任务完成！</p>
+<p>15</p>
+<p>回到寝室，汇报了进度。</p>
+<p>沈欣突然说「我在那个学校有熟人，我们要不要先打听一下，他叫什么名字？」</p>
+<p>我很疑惑。</p>
+<p>「我没告诉你们名字吗？他叫程锦川，大四的。」</p>
+<p>沈欣尖叫。</p>
+<p>「什么！他叫程锦川？你确定?」</p>
+<p>「怎么了？名字我还能说错吗？」</p>
+<p>沈欣有点奇怪，但是她说没什么。</p>
+<p>其他室友还在追问约会细节。</p>
+<p>周五回到舅舅家吃饭，准备待一天，星期天再去找程锦川。</p>
+<p>我到舅舅家成宇还没回家，等饭上桌后，成宇刚好回来。</p>
+<p>为了避免舅舅继续说他，成宇抢占先机。</p>
+<p>「我的补习老师回来了，我明天就去上课。」</p>
+<p>周六下午，成宇让我快去他的补习班接他，语气很急，给舅舅说了一声，我就去接成宇了。</p>
+<p>当我看见站在补习班小吃摊的成宇，一个包就摔在他身上。</p>
+<p>「又让我来结账！」</p>
+<p>成宇刚才还对我嬉皮笑脸，立马停住了打闹，朝补习班门口喊了一句。</p>
+<p>「程老师好！」</p>
+<p>我怎么也算成宇的家长，也要给他的老师问问好。</p>
+<p>「程老师……好？」</p>
+<p>怎么会是程锦川？我的大脑有点宕机。</p>
+<p>「你好，卢瑶。」</p>
+<p>当我还沉醉在程锦川叫我的名字时，成宇在一边咋咋哇哇起来。</p>
+<p>「程老师，你和我姐认识？」</p>
+<p>程锦川很从容。</p>
+<p>「是因为一些事认识的。我先走了。」</p>
+<p>我只来得及和程锦川说了一句再见。</p>
+<p>当晚我就回了寝室，告诉大家我同样很震惊的事。</p>
+<p>沈欣扭着凳子过来了。</p>
+<p>「啊，瑶瑶你和程锦川真的好有缘啊。我再告诉你一个更有缘的好不好啊？」</p>
+<p>「什么？」</p>
+<p>「程锦川是我表哥，我说那个学校的熟人就是程锦川……」</p>
+<p>其他室友在起哄。</p>
+<p>「这可必须在一起啊，给咱们欣欣当嫂子！不在一起说不过去啊！」</p>
+<p>确实被冲昏头了，我已经想到了和程锦川的婚后生活了。</p>
+<p>16</p>
+<p>过了一夜，我到程锦川的的学校门口，给程锦川发信息说我到了。</p>
+<p>程锦川的信息很快，说他目前还在实验室，如果我愿意的话可以去实验室找他，并且附上了他实验室的地址。</p>
+<p>学习中的程锦川我当然也喜欢啦。</p>
+<p>「好呀！」</p>
+<p>我刚到实验楼，就看见程锦川站在楼下。</p>
+<p>当我走过去，程锦川很自然的拿过了我的包。</p>
+<p>「不好意思，有点远让你过来，这个实验楼不好找出入口，我来接你。」</p>
+<p>程锦川怎么那么会啊！好温柔！</p>
+<p>实验室还有几个人，我和程锦川到了之后，其他人也只是看了一眼就继续做事了。</p>
+<p>我让程锦川先去忙他的，我在门外椅子上坐着等他就行。</p>
+<p>程锦川说行，就穿上实验服进去了。</p>
+<p>此时我可在寝室群里发疯。</p>
+<p>「哎呀，程锦川带我来他的实验室了。这也算见过他的同门师兄弟了吧，四舍五入我和他已经算是一家人了诶。」</p>
+<p>她们应该已经变异了，不会说话。在群里只有啊啊啊啊。</p>
+<p>沉迷消消乐了，再也没有了精力瓶时发现程锦川已经站在我的面前了。</p>
+<p>「走吧。」</p>
+<p>他提上了我放在另一个椅子的包。</p>
+<p>烤肉店的小哥要来帮我们烤肉，程锦川拒绝了。</p>
+<p>不过烤肉真的很好吃，可能是程锦川亲手给我烤好包好递到我的嘴边的原因。</p>
+<p>可能是粉红泡泡太多成了酸臭，我的身体受不了，当天晚上就进行了多次五谷轮回。</p>
+<p>沈欣把这情况告诉了程锦川，我刚躺在床上，程锦川的电话就打过来了。</p>
+<p>他没说什么，只有一句。</p>
+<p>「对不起。」</p>
+<p>「这有什么，很正常的啊，帮助我新陈代谢，还减肥了呢！」</p>
+<p>问了问我还有没有其他难受的地方，我觉得我早就好了。</p>
+<p>确认我没事以后，程锦川沉默了一会，叮嘱我好好休息，就结束通话了。</p>
+<p>好可惜，都没有亲亲。好吧，这我也只敢心里想想。</p>
+<p>星期一的早八，注定是没有早饭吃的。</p>
+<p>刚下楼准备冲刺去教学楼，在寝室门口生生的停住了脚。</p>
+<p>「哥，你怎么来了？」</p>
+<p>「你不是说没早饭吃吗，我又没课，给你送一点拿去给你室友分吧。」</p>
+<p>说着程锦川将左手的早饭递给了沈欣，然后走到了我的面前。</p>
+<p>「昨天你才吃坏了肚子，我给你带了粥。」</p>
+<p>我只说了谢谢，还想说些什么。</p>
+<p>程锦川就让我们快去上课，要迟到了。</p>
+<p>到了教室，还有几分钟。</p>
+<p>大家发现早餐都一样，除了我的。</p>
+<p>大家的标配是豆浆，而我的是粥。</p>
+<p>幸亏上课了，来不及起哄。</p>
+<p>这粥真的好暖啊。</p>
+<p>17</p>
+<p>这周，程锦川来了几次我们学校。</p>
+<p>每次也不多待，一会就走。让人感觉不到厌烦，就是恰如其分的感觉。</p>
+<p>过了一个月。</p>
+<p>周末，程锦川说上次的烤肉不好，要带我去吃一些其他的，也连续几周都和程锦川在一起。</p>
+<p>每周都出去，室友问我到哪一步了。</p>
+<p>我也很烦闷，感觉好像就到这里了。总是不能更进一步。</p>
+<p>「冲啊，上啊，直接打直球表白！」</p>
+<p>其他室友表示十分赞同。</p>
+<p>被大家说得我的勇气都快漫出来了，马上就要打电话表白。</p>
+<p>大家紧急按住我，这样也不好，最后决定这周周末程锦川再约我出去时，当面给他表白。</p>
+<p>很可惜，这周程锦川没有约我。</p>
+<p>照例周五周六在舅舅家，成宇补课去了，又叫我去接他。</p>
+<p>可能见到程锦川，我也不在乎成宇是不是又要我去给他结账。</p>
+<p>我提前到了补习班，在小吃摊和大门口都没有找到成宇。</p>
+<p>我准备进去找找成宇，我怕他被留堂了。</p>
+<p>隔着多远的窗户我都看见成宇在给我招手。</p>
+<p>「姐，程老师去办公室了，他说让你等他一下，我去催催他啊。」</p>
+<p>确实，放学过后没有人的教室真的有点可怕。</p>
+<p>在我脑补学校丧尸变异，程锦川突然出现，把我吓了一大跳。</p>
+<p>不过就算我不脑补，我估计也会吓一跳。</p>
+<p>程锦川拿着一个书包和一捧玫瑰在我身后。</p>
+<p>「卢瑶……」</p>
+<p>不知道是不是玫瑰的红映照在了他的脸上，我依稀觉得他的脸有些粉红。</p>
+<p>「我喜欢你，你……愿不愿意……愿意和我在一起？」</p>
+<p>尽管我的内心疯狂到在跳舞，我也矜持地点点头。</p>
+<p>「我也好喜欢你啊！」</p>
+<p>我接过玫瑰花，程锦川把书包拿起来，我才发现这是一个猫包，里面有只小猫咪。</p>
+<p>「他们说，要有一个定情信物。我想这个小猫你会喜欢的吧？」</p>
+<p>「喜欢，我超级喜欢小猫猫的！」</p>
+<p>成宇早就回家了，程锦川送我回家。</p>
+<p>「如果我们分手，你会把小猫咪要回去吗？」</p>
+<p>「我们不会分手，小猫会有小小猫，小小猫会有小小小猫，我们会一直在一起的。」</p>
+<p>18</p>
+<p>没办法，走到哪里都被人关注，就是我作为美女的宿命吧。</p>
+<p>更何况，现在我身边多了这么大一个帅哥。</p>
+<p>爱美之心，人皆有之。我都明白。</p>
+<p>直到我和程锦川被认出来了。</p>
+<p>恋综制片人虽然把节目砍掉，但是还是把录了的两期在网络上上线了。</p>
+<p>我以为一个破恋综，还没后续，谁会关注？</p>
+<p>我错了，有一群没事吃瓜的大学生。</p>
+<p>虽然没有后续，半路被砍。</p>
+<p>但是不得不说，这节目组选人是真的找的一群俊男美女并且能力出众的嘉宾。</p>
+<p>当然我只是个摸鱼的，但是并不影响大家的优秀。</p>
+<p>吃瓜网友最先关注的是那对地下小情侣，和一直活跃在网络的美妆博主阿柔。</p>
+<p>顺藤摸瓜找到了其他人，大家在学校都是佼佼者，风云人物，任何风吹草动都会被迅速传播。</p>
+<p>程锦川恋爱了！卢瑶恋爱了！</p>
+<p>程锦川和卢瑶恋爱了！</p>
+<p>恋综没有后续，但我们有后续。</p>
+<p>吃瓜网友就在两期节目疯狂寻找蛛丝马迹。</p>
+<p>看见网络热度还挺好，没想到节目组出了一期特辑。</p>
+<p>名字叫做，暗恋的过程。</p>
+<p>主人公是程锦川。</p>
+<p>在自我介绍，从大家介绍自己绩点我尴尬时，程锦川一直注视着我。</p>
+<p>为了证明不是特写乱剪辑，每个片段节目组专门放出了所有人都在的全景。</p>
+<p>在移动去图书馆，我的青年大学习外放时，程锦川坐在我的后面看着我的后脑勺笑。</p>
+<p>在夜市，程锦川第一个发现我走散，留下一句。</p>
+<p>「我去找她！」</p>
+<p>转身走进人流，大步流星。连摄像都叫他慢点，注意安全。可是他的速度丝毫不减。</p>
+<p>直到程锦川隔着小段的距离看见我，走在我的身后，看着我把东西一口一口的塞进嘴里。</p>
+<p>程锦川出去买了健胃消食片，错过了晚间发信息的活动。</p>
+<p>一直和李彬在楼下坐着看书，时不时地看向楼梯口。</p>
+<p>在野营，程锦川跑了很远买了很多花露水撒在帐篷周围。</p>
+<p>我们起床还感谢节目组为我们着想，都没有顾上他们自己，被蚊子咬了满身包。</p>
+<p>此特辑一出，关注的网友炸锅，就连李彬也来凑热闹。</p>
+<p>「当时对我说不行，我可害怕了呢！」</p>
+<p>程锦川被网友戏称新一代恋爱脑，和舔狗。</p>
+<p>当我看完这特辑，我恍然大悟，我说怎么感觉老有人看我。</p>
+<p>「当时那个微瑕是不是你，你怎么知道这个的！」</p>
+<p>程锦川捏住我的手。</p>
+<p>「我是一天有很多文献看，实验做。可是我不是老古董，我也上网的。」</p>
+<p>「原来你这么早就喜欢我啊，还这么喜欢我……」</p>
+<p>为了不再让我说话，程锦川嘬了我一口。</p>
+<p>好吧，既然你这么喜欢我，那我以后也要更加喜欢你。</p>
+<p>番外</p>
+<p>我和卢瑶在一起了，她很开心，我也很开心。</p>
+<p>她经常谈起我们在恋综的第一次见面。她以为那是第一次，虽然后来她认为我是在网络上认识的她。</p>
+<p>其实都不是，我认识她更早在两年前。</p>
+<p>我大二，亲戚家开了补习机构我去帮忙，有了一个学生叫成宇。</p>
+<p>有天成宇给我说他要提前走，他的姐姐高考完要过来，他要去接她。</p>
+<p>没想到他的姐姐提前来了，并且来接他。</p>
+<p>她估计以为成宇已经下课了，在走廊叫成宇的名字。</p>
+<p>声音很好听。当天有新的电影上映，我的表妹沈欣说高考完要放松，让我陪她去看。</p>
+<p>到了电影院，我又看见成宇了，旁边和他打闹的女生应该是他说的姐姐吧。</p>
+<p>他们离开时，我们进场。没能打上招呼，有些可惜。</p>
+<p>大三，作为主席代表了学校学生会去祝贺隔壁学校周年校庆，隔壁学校的学生会作为东道主带领了我们去参观学校。</p>
+<p>路过一个十字路口，我看见她了，成宇的姐姐。</p>
+<p>她正一边抚摸安慰着被电单车撞伤的小猫，一边谴责着骑电单车的同学。</p>
+<p>很奇怪，她据理力争的脸并不狰狞，有些可爱。</p>
+<p>我突然收到沈欣的信息，说她的账号要火了，让我去给她点点赞。</p>
+<p>我又见到她了，原来她是沈欣的室友，她叫卢瑶。</p>
+<p>我按照下面评论区的联系方式去加了她，好友申请石沉大海没有回应。</p>
+<p>沈欣总给我她的账号，有一天说起有恋综邀请了卢瑶，看见我已经打好了拒绝信的邮件把它们全部删除。</p>
+<p>节目里，卢瑶好像不喜欢我，她也应该不喜欢所有人。</p>
+<p>除了那个美妆博主，美妆博主讲话总能吸引了卢瑶的视线，真讨厌。</p>
+<p>卢瑶没有给我发过信息，我们俩的浪漫音乐一次也没有响起过，有点难过。</p>
+<p>节目半路被砍，回学校卢瑶下车时，我看见了她的位置上有一串钥匙，司机师傅说，一条街还没走过，想折回去给卢瑶送钥匙。</p>
+<p>我拒绝了，我说我可以送，不麻烦师傅了。</p>
+<p>我给卢瑶说要把钥匙还给她，她说要带我去吃她最爱的花雕醉鸡，她最爱的。</p>
+<p>我好激动，在不同的浏览器中搜索，第一次约会要注意什么。</p>
+<p>我不能表现得很急切，我不能像个登徒子，可是我需要时不时在裤子上擦一下手心的汗。</p>
+<p>我不知道我该说些什么，回到学校后才着急给卢瑶发信息，告诉她我想和她吃吃我们学校的烤肉。</p>
+<p>我不知道好不好吃，我只是听说很多情侣都爱去那里吃饭。</p>
+<p>没想到，卢瑶拉肚子了。</p>
+<p>我连忙去药店买了药，可是我要怎么去送。</p>
+<p>我想不管所有的时候，她告诉我好的差不多了。我停下了我的脚步。</p>
+<p>我觉得我要前进一下了，我去给她们寝室送了早饭，沈欣表哥的借口，给她单独买了一份不一样的。</p>
+<p>周末，我和卢瑶仍然见面。</p>
+<p>每次我都想告诉她我好喜欢她，可是她会不会觉得太快了，她会不会觉得不舒服。</p>
+<p>直到沈欣告诉我，我再不表白卢瑶就要给我表白了。</p>
+<p>这周周末我没有约卢瑶，我跑遍了宠物商店，终于选到了一只她可能喜欢的猫猫。</p>
+<p>我让成宇叫她来补习班，我迫不及待的要和她表白了。</p>
+<p>我成功了，那一瞬间我觉得我好幸福，我想我会一直幸福下去的。</p>
+<p>（全文完）</p>
+<p>备案号:YXX1lMMy2OF0009ZXQhZ28J</p>
+<p>大白尾巴</p>
+<p>​</p>
+<p>​</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>秋小捌 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/13-%E6%9C%9B%E4%BB%99%E6%A5%BC%E4%B8%8A%E6%9C%9B%E5%90%9B%E7%8E%8B/" title="望仙楼上望君王">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">望仙楼上望君王</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/" title="唯有杜康">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">唯有杜康</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

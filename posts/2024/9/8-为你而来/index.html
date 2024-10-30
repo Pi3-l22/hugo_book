@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为你而来 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/9/8-%E4%B8%BA%E4%BD%A0%E8%80%8C%E6%9D%A5/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/9/8-%E4%B8%BA%E4%BD%A0%E8%80%8C%E6%9D%A5/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="为你而来">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/615.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/615.jpg">
+  <meta name="twitter:title" content="为你而来">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="为你而来">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10900">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/615.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">为你而来</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%b8%ba%e4%bd%a0%e8%80%8c%e6%9d%a5&amp;url=https://mohai.us.kg/posts/2024/9/8-%E4%B8%BA%E4%BD%A0%E8%80%8C%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/9/8-%E4%B8%BA%E4%BD%A0%E8%80%8C%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%b8%ba%e4%bd%a0%e8%80%8c%e6%9d%a5%20https://mohai.us.kg/posts/2024/9/8-%E4%B8%BA%E4%BD%A0%E8%80%8C%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/615.jpg" alt="为你而来" />
+      
+
+      <p>为你而来</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>偷看消防员小哥哥们训练，被当场抓包。</p>
+<p>闺蜜麻溜跑人，我……头卡进了铁门。</p>
+<p>小哥哥们将我包围。</p>
+<p>为了避免社死，我硬着头皮看向消防队长前男友：「亲爱的，训练累不累？」</p>
+<p>他挑眉：「你谁？」</p>
+<p>我：？</p>
+<p>1</p>
+<p>大学毕业不过一年，我跟我妈就从相亲相爱，变成了两看两相厌。</p>
+<p>原因很简单：她催婚，我单身。</p>
+<p>为了维系我们岌岌可危的母女情，我果断租房子搬了出去。</p>
+<p>我就租住在闺蜜租的房子对面。</p>
+<p>搬家第一天，闺蜜陈琪就神神秘秘地对我说：「走，我带你去看个好东西。」</p>
+<p>「什么好东西？」</p>
+<p>「去了你就知道了。」</p>
+<p>她带着我走出小区，绕过一个小巷子，来到一处空旷的地方。</p>
+<p>然后她扒开边上的草丛，趴在生锈的铁门上，对着我招了招手：「快来看！」</p>
+<p>我疑惑地走到她身边，顺着她的视线看过去。</p>
+<p>顿时，看直了眼。</p>
+<p>只见隔着铁门的里面，十几个帅气的消防员小哥哥围着操场跑步。</p>
+<p>他们光着膀子，各个身材健硕。</p>
+<p>特别是为首的男人。</p>
+<p>刺眼的阳光下，他蜜色的肌肤仿若泛着光。</p>
+<p>性感迷人。</p>
+<p>咕咚——</p>
+<p>我忍不住咽了咽口水。</p>
+<p>视线顺着他的好身材往上，在看到他的脸的时候，吓了一跳。</p>
+<p>这不是我的前男友周辞吗？</p>
+<p>2</p>
+<p>我跟他大学相恋，毕业后分道扬镳。</p>
+<p>他长得帅气，性情高傲，是典型的富二代。</p>
+<p>本以为他毕业后会回家继承家业，没想到竟然成了消防员！</p>
+<p>不知是不是我的目光太过灼热。</p>
+<p>他忽然看了过来。</p>
+<p>脚步微顿后，改变了跑步路线，朝我跑来！</p>
+<p>「快跑！被发现了！」闺蜜瞬间反应过来，麻溜跑路。</p>
+<p>我也准备跑，然而我一动，脖子就一痛。</p>
+<p>这才发现，刚才看得太痴迷，脖子伸得老长，不知道怎么就伸进了铁门。</p>
+<p>「琪琪，救我！」我呼喊闺蜜。</p>
+<p>像是没听到我的求救，她的脚步一点也没停。</p>
+<p>这个死没良心的！</p>
+<p>我一边在心里骂她，一边将头左歪右歪，试图找到一个角度，解救我自己。</p>
+<p>以周辞为首的消防员小哥哥们很快将我包围。</p>
+<p>他们看着撅着屁股被铁门困住的我，笑得开怀。</p>
+<p>当然，这里面不包括周辞。</p>
+<p>周辞站在我的左手边，俊脸上没有表情，看不出喜怒。</p>
+<p>像是被他的气势震慑，其他小哥哥们都跟他保持安全距离，站在我右手边。</p>
+<p>「小姐姐，你在看什么呢？」</p>
+<p>有小哥哥问道。</p>
+<p>我老脸一红。</p>
+<p>能看什么？当然是看帅哥！</p>
+<p>不过心里的话我当然不可能说出来。</p>
+<p>为了避免社死，我看向周辞：「亲爱的，我就是来看看你训练累不累？」</p>
+<p>3</p>
+<p>目标是一个，总比目标是一群要来得好一些。</p>
+<p>「队长，她是你女朋友啊！」</p>
+<p>「哇塞，队长女朋友好漂亮！」</p>
+<p>「还以为我要脱单了，结果被队长捷足先登了，呜呜呜……」</p>
+<p>「……」</p>
+<p>没想到周辞一年时间，就混成了队长。</p>
+<p>不愧是我曾经看上的男人。</p>
+<p>6！</p>
+<p>小哥哥们你一言我一语地打趣。</p>
+<p>周辞却始终不吭声。</p>
+<p>怕谎言被戳穿会更社死，我在其他小哥哥们看不到的角度，对周辞做口型：「看在我们是前任的关系，行行好，帮我撒个谎吧？拜托拜托！」</p>
+<p>我可怜巴巴地看着周辞。</p>
+<p>以前他最受不了的就是我撒娇。</p>
+<p>果不其然，他深沉无波的眸中多了一丝动容。</p>
+<p>不过瞬间，又恢复如常。</p>
+<p>在我期待的目光中，他的薄唇轻启：「你谁？」</p>
+<p>我：「？」</p>
+<p>「唉？小姐姐，我们队长说不认识你，难不成是你一厢情愿？」</p>
+<p>「追我们队长的很多，你压力有点大哦~」</p>
+<p>「嗐，还以为队长这么高冷的人有不为人知的一面，原来是我想多了……」</p>
+<p>「……」</p>
+<p>周辞直接装不认识我，我是真没想到。</p>
+<p>这厮比我想的还要冷酷！</p>
+<p>在这么多帅气的小哥哥们面前丢脸了，我恨不得将头扎进地里。</p>
+<p>「那个……能不能先把我救出去？」我弱弱开口。</p>
+<p>小哥哥们这才反应过来我还被困着。</p>
+<p>他们快速拿来钳子，剪开铁门。</p>
+<p>得到自由的我转身就跑。</p>
+<p>毕竟，多待一秒就多丢一秒的人！</p>
+<p>然而——</p>
+<p>我还没跑出几步，就被攥住了命运的后脖颈。</p>
+<p>男人一把抓住我的后衣领，开口时的声音磁性好听，却冷漠：</p>
+<p>「弄坏了铁门，得赔。」</p>
+<p>4</p>
+<p>我用最快的速度掏出五百元，塞到周辞手里。</p>
+<p>他的手却还是没松。</p>
+<p>「偷看的行为是不对的，写两千字的检讨才能走。」</p>
+<p>我：「？？？」</p>
+<p>我算是明白了，这厮分明就是公报私仇！</p>
+<p>怒火在此时喷涌而出，我不动声色地掐了一把大腿。</p>
+<p>顿时，我的眼中含了泪。</p>
+<p>用控诉的眼神看向周辞：「亲爱的，我知道你厌烦我了，但是……但是我怀了你的孩子！」</p>
+<p>我的话出口，现场的气氛静了。</p>
+<p>消防员小哥哥们目瞪口呆地看着周辞。</p>
+<p>周辞的脸色黑了黑，但是抓着我的手依然没松。</p>
+<p>大有跟我死磕到底的意思。</p>
+<p>「队……队长，这个小姐姐说的是真的还是假的？」</p>
+<p>「要是真的，你可要为小姐姐和她肚子里的孩子负责啊！」</p>
+<p>「虽然你是队长，但是要是你做事情不负责的话，我是不会服气的。」</p>
+<p>「……」</p>
+<p>小哥哥们的话让周辞的脸黑成了锅底。</p>
+<p>他磨了磨牙：「都是成年人了，一点判断能力都没有吗？」</p>
+<p>「这……」小哥哥们看了看一脸正气的周辞，有点犹豫。</p>
+<p>他们又看向我，我连忙再次憋出泪水。</p>
+<p>原本动摇的小哥哥们再次用同情的眼神看着我。</p>
+<p>有小哥哥要为我说话，周辞赶在他们之前吹响了口哨：「全体注意，五千米，开始！」</p>
+<p>「是！」</p>
+<p>小哥哥们异口同声，全都回到操场跑步去了。</p>
+<p>5</p>
+<p>现场只剩下了我跟周辞，还有一个优哉游哉背着手走过来的大叔。</p>
+<p>大叔拍了拍周辞的肩膀：「阿辞啊！工作虽然重要，但是家务事也要解决好。你也老大不小了，既然孩子都有了，婚事也该提上日程了。」</p>
+<p>他俨然是周辞的领导，就算误会了，周辞也不能让他也去跑五千米，只能默认。</p>
+<p>「这样吧！下午给你放半天假，你好好休息。」</p>
+<p>说完后，大叔又优哉游哉地走了。</p>
+<p>现场的气氛静了一瞬，周辞提溜着我往消防队里面走去。</p>
+<p>「你带我去哪儿？无论如何，我都不可能写检讨的。」</p>
+<p>他没有搭理我，一直带我到等候厅，才松开我：</p>
+<p>「老老实实在这里等着，我去换衣服。」</p>
+<p>「你你你……你换衣服干嘛？」</p>
+<p>他扫了一眼我平坦的小腹，咬牙切齿地开口：「当然是陪你和孩子啊！」</p>
+<p>我：「……呵呵！」</p>
+<p>我又不傻，当然不可能原地等他。</p>
+<p>等他的身影消失在视线中，我立马跑路。</p>
+<p>顺着原路返回。</p>
+<p>在跑五千米的小哥哥们的注视中，从破了个大洞的铁门钻出去。</p>
+<p>一口气跑到来时的巷子，看到等待我的陈琪，才大大地松了一口气。</p>
+<p>「苏苏，你没事吧？」闺蜜陈琪给我顺着气。</p>
+<p>我没好气地拍开她的手：「现在知道关心我了？刚才跑得可是比兔子还快。」</p>
+<p>她心虚地缩了缩脖子：</p>
+<p>「哎呀，我刚才就是太紧张了，我保证，要是再有下一次，我肯定不会丢下你一个人跑的。」她拉着我的胳膊撒娇：「苏苏，我错了，你就原谅我这一次嘛~」</p>
+<p>到底扛不住她撒娇，我态度松软：「看在你认错态度良好的分上，这次我就原谅你了。」</p>
+<p>「苏苏你真好。」她噘着嘴作势要亲我。</p>
+<p>我嫌恶地去挡。</p>
+<p>嬉闹间，她忽然停下动作，皱眉看向前方。</p>
+<p>我顺着她指示的方向看过去，就见身形修长的男人站在巷子的尽头。</p>
+<p>他逆着光，面容有些看不清。</p>
+<p>我却一眼就认出，那人是周辞。</p>
+<p>顿时，心里「咯噔！」了一下。</p>
+<p>他来这里做什么？该不会是来堵我的吧？</p>
+<p>6</p>
+<p>我心里有些慌，面上却故作镇定。</p>
+<p>跟陈琪继续向前。</p>
+<p>随着距离逐渐拉近。</p>
+<p>陈琪也看清了周辞的脸。</p>
+<p>「这……这不是消防队长吗？」陈琪看了看周辞，又看了看我，「苏苏，我怎么感觉他是冲着你来的？」</p>
+<p>「我也是这样感觉的，谢谢！」我皮笑肉不笑地回道。</p>
+<p>实在是周辞看我的眼神太过灼热，想不注意到都难。</p>
+<p>「要命，这个消防队长心眼这么小的吗？」陈琪小声吐槽。</p>
+<p>我内心：有没有可能他心眼这么小是因为我是他前任。</p>
+<p>巷子很窄，勉强可以让我跟陈琪并排前行。</p>
+<p>周辞站在正中央，正好将巷子堵住。</p>
+<p>「麻烦让一让！」我对着周辞说道。</p>
+<p>他站在原地未动。</p>
+<p>气氛僵持。</p>
+<p>陈琪在此时松开挽着我胳膊的手，对周辞说道：「那个……队长，这件事情跟我没关系，我就……先走了？」</p>
+<p>闻言，周辞略微侧过身子。</p>
+<p>在我震惊的目光中，陈琪再一次卖队友跑路！</p>
+<p>等我也准备冲过去的时候，周辞又挡住了出口。</p>
+<p>「周辞，你到底想干什么？」</p>
+<p>「我能干什么？」他露出标志性的假笑，「当然是怕你走路摔倒，伤了我的孩子，所以来送你回家。」</p>
+<p>「……你！」</p>
+<p>对上周辞带着挑衅的目光，我深吸了一口气，强迫自己冷静下来。</p>
+<p>「既然如此，那辛苦你了。」</p>
+<p>「应该做的，不辛苦。」</p>
+<p>我恨恨地磨了磨牙：「那你现在是不是可以让开了？」</p>
+<p>「当然。」</p>
+<p>7</p>
+<p>我跟周辞一前一后地走着。</p>
+<p>感受到他亦步亦趋的脚步，我恨恨地磨了磨牙。</p>
+<p>喜欢跟是吗？</p>
+<p>我倒是要看看你能跟多久。</p>
+<p>周辞比我想的还要有毅力。</p>
+<p>一直走到我租的房子门口，他都没有离开的意思。</p>
+<p>站在门口，我深吸了一口气，看向周辞：「我好心提醒你，进了我家会发生什么，就不是你能说的算了。」</p>
+<p>「这是自然。」他一脸无畏。</p>
+<p>我只能掏出钥匙。</p>
+<p>钥匙刚插进门里，还没来得及转动。</p>
+<p>门就从里面被打开。</p>
+<p>「你回来啦！看看我给你添的东西怎么样？」我妈说着，就准备进屋。</p>
+<p>看到周辞的时候，她的脚步一顿：「这位是？」</p>
+<p>我的心里一个「咯噔！」</p>
+<p>虽说平常在家里她看我心烦，但是我要搬出来，她又舍不得。</p>
+<p>为了表达她对我的拳拳母爱，她给我买了一堆东西，说晚点给我送过来。</p>
+<p>但是我万万没想到，她所谓的晚点是现在。</p>
+<p>还跟周辞撞了个正着。</p>
+<p>「额，他是我……」朋友。</p>
+<p>我的话还没说完，周辞就上前一步，揽住我的肩膀，对着我妈说道：「阿姨您好，我是苏苏肚子里孩子的爸爸。」</p>
+<p>8</p>
+<p>不单单是我妈，就连我，都被周辞的话震得外焦里嫩，半晌都回不过神。</p>
+<p>这厮是不是疯了！</p>
+<p>为了跟我作对，竟然把玩笑开到我妈这里了。</p>
+<p>眼见着我妈的脸色剧变，我连忙开口解释道：「妈，他只是我……」朋友。</p>
+<p>话未说完，我妈的脸上忽然扬起大大的笑容。</p>
+<p>「起开！」她用肩膀把我撞开，眼冒金光地看向周辞，「哎呀！原来是女婿啊！久仰久仰。」</p>
+<p>说着，她把周辞拉进去，殷勤地给他端茶递水切水果。</p>
+<p>「谢谢阿姨。」</p>
+<p>「不用谢，以后咱们都是一家人。」</p>
+<p>见周辞抿了口茶，我妈问道：「那个，小周啊！你看你跟我们家苏苏孩子都有了，什么时候结婚啊？」</p>
+<p>「阿姨，我……」</p>
+<p>见事情逐渐朝离谱的方向发展，我连忙冲进去，把我妈拉出来：「妈，我之前一直住在家里，一个星期前大姨妈才走，我怀没怀孕你心里没数吗？」</p>
+<p>闻言，我妈一怔。</p>
+<p>显然也想到了之前她骂骂咧咧地下楼给我买姨妈巾的事情了。</p>
+<p>本以为离谱的话题终于要终止，没想到我妈不赞同地看着我：「就算现在没怀孕，以后不能怀吗？」</p>
+<p>「小周长得那么帅，看穿着打扮和气质，家庭条件应该也不错。你可要好好把握啊！」</p>
+<p>给了我一个期许的眼神，我妈回客厅拿起包包，麻溜走人。</p>
+<p>临走前，我妈将我推进屋，贴心地关上门。</p>
+<p>砰——</p>
+<p>我跟周辞大眼瞪小眼。</p>
+<p>看着我懵逼的样子，周辞忍俊不禁。</p>
+<p>捕捉到他眼里的笑，我回过神来，气不打一处来。</p>
+<p>前任啊前任，你不仁，就不要怪我不义！</p>
+<p>我走到周辞面前，将他按倒在沙发上，嘴角勾起不怀好意的笑：「既然你是我肚子里的孩子的爸爸，那么，不管我想对你做什么，都是可以的吧？」</p>
+<p>9</p>
+<p>我故意扫了他的领口几眼，目的不言而喻。</p>
+<p>男人挑了挑眉，一脸的有恃无恐：「你想对我做什么？嗯？」</p>
+<p>他越是无懈可击，我就越是气愤。</p>
+<p>我逐渐拉近两人之间的距离。</p>
+<p>眼见着红唇就要覆上他的薄唇，他却依然毫无反应。</p>
+<p>咬了咬牙，我直接亲了上去。</p>
+<p>短暂的触碰让我的心头一颤。</p>
+<p>我连忙后退。</p>
+<p>男人却在此时扣住我的后脑勺，加深了这个吻。</p>
+<p>周辞的吻霸道且炙热，我不受控地沉迷其中。</p>
+<p>却在此时，就像是大梦初醒，男人陡然推开我。</p>
+<p>然后起身，头也不回地离开。</p>
+<p>砰——</p>
+<p>关门声剧烈，震得我的头脑清醒了不少。</p>
+<p>有些害羞，也有些气愤。</p>
+<p>就算是吃亏，也是我吃亏好吗？</p>
+<p>他生那么大气做什么？还一副被我欺负了的样子。</p>
+<p>切！</p>
+<p>谁稀罕。</p>
+<p>10</p>
+<p>愤愤地擦了擦红唇，我倒了杯水，一饮而尽。</p>
+<p>躁动的心逐渐冷却。</p>
+<p>闺蜜陈琪的声音在此时从外面传来。</p>
+<p>「苏苏，你在家吗？给我开门呀！」</p>
+<p>想到她刚才两次卖队友，我就懒得搭理她。</p>
+<p>「我刚才都听到你这边的动静了，你别装不在家，我才没那么好骗呢！</p>
+<p>「这次我真的知道错了，你再原谅我这一回嘛~」</p>
+<p>见我铁了心不理她，门外安静了。</p>
+<p>半个小时后，我准备睡一会儿的时候，陈琪的声音再次响起：</p>
+<p>「苏苏，我买了奶茶炸鸡和一堆垃圾零食，你要是再不开门的话，我就把这些拿回自己家吃了哦~」</p>
+<p>闻言，我顿时鲤鱼打挺般地从沙发上弹起来，给陈琪开门。</p>
+<p>拿过她手里的大包小包，我就准备关门。</p>
+<p>谁知她像是预料到我的做法，从门缝挤了进来。</p>
+<p>「消消气、消消气。」插上吸管，她递给我一杯奶茶。</p>
+<p>我白了她一眼。</p>
+<p>等到吃饱喝足，她才试探性地开口问道：「苏苏，那个消防队队长，跟你是什么关系啊？」</p>
+<p>「普通朋友关系。」</p>
+<p>「切~忽悠谁呢！我刚才分明听他说他是你肚子里孩子的……」</p>
+<p>我额头上青筋直跳：「他是我前男友，大学里认识的，毕业后我们就和平分手了。」</p>
+<p>「这样啊！」她了然地点了点头，转而嘟囔道，「可是看他对你的态度，怎么也不像是和平分手啊！总觉得他还因为分手的事情记恨着你呢！」</p>
+<p>11</p>
+<p>陈琪说出了我心中所想。</p>
+<p>只是周辞有什么好记恨我的？</p>
+<p>我的思绪不受控地飘远，回到三年前。</p>
+<p>周辞一直是学校的风云人物。</p>
+<p>高高帅帅还有钱。</p>
+<p>对比起来，我就显得普通得多。</p>
+<p>之所以认识，是因为我匿名发在学校表白墙上的帖子，被表白墙的管理员爆了真实信息。</p>
+<p>我表白的是周辞，管理员也喜欢周辞。</p>
+<p>这件事情一度占据学校论坛首页的热门。</p>
+<p>从那时候开始，周辞就多次出现在我的视野，然后我们就顺理成章地在一起了。</p>
+<p>直到临近毕业的时候。</p>
+<p>周辞不知道为什么开始变得忙碌。</p>
+<p>觉得受到冷落的我决定去找他掰扯掰扯，却正好看到他跟校花林雪在一起，两人相处得甜甜蜜蜜的。</p>
+<p>我这才知道，原来他所谓的忙是有了新目标。</p>
+<p>我能怎么办？</p>
+<p>当然是选择成全。</p>
+<p>我直接跟他说了分手，然后把他拉黑。</p>
+<p>万万没想到，他竟然还有脸来找我。</p>
+<p>为了不让自己显得太狼狈，我随手从路边拉过一个小哥哥，用来充当我新男朋友。</p>
+<p>周辞成功被气走，并再也没有出现在我眼前过。</p>
+<p>所以，这件事情的前因后果不管怎么看，都是他先对不起我的。</p>
+<p>我没怪他就算了，现在他反倒怪上了我？</p>
+<p>就离谱！</p>
+<p>12</p>
+<p>不过话说回来。</p>
+<p>事实证明。</p>
+<p>年轻的时候不要遇到太惊艳的人，不然可能会注孤生。</p>
+<p>毕业后，急于抱上大胖外孙的我妈，不顾我的阻止，给我介绍了很多个相亲对象。</p>
+<p>高的矮的，胖的瘦的，帅的丑的，什么类型的都有，但是跟周辞一比，总觉得逊色了一些。</p>
+<p>我这边感情路不顺。</p>
+<p>陈琪那边却开了桃花。</p>
+<p>这天一大早，她正在画图做一些兼职。</p>
+<p>陈琪已经敲响了我的门。</p>
+<p>她打扮精致，满脸害羞，跟她平常大大咧咧的样子截然不同。</p>
+<p>「苏苏，那个，今天我有一场约会，你能不能陪我一起去啊？」</p>
+<p>「你约会我陪你去做什么？当电灯泡吗？」</p>
+<p>「就……就第一次嘛，我害羞，你给我壮壮胆嘛！」</p>
+<p>她扭扭捏捏的样子实在新奇，我笑着应道：「行。」</p>
+<p>我没有化妆，穿上了日常穿的衣服，就跟她一起出发了。</p>
+<p>抵达餐厅的时候，陈琪的约会对象已经到了，也带来了一个朋友。</p>
+<p>「你好，我叫徐浩，是琪琪的……男朋友。」徐浩腼腆开口。</p>
+<p>陈琪更是脸色爆红，恨不得找个地洞钻进去。</p>
+<p>徐浩旁边的男人接着介绍道：「你好，我是徐浩的朋友杜明泽。」</p>
+<p>「你好，我是琪琪的闺蜜白苏苏。」</p>
+<p>互相打完招呼后，我们便落座了。</p>
+<p>徐浩将菜单递给我们：「你看你们想吃什么，尽管点。」</p>
+<p>陈琪不好意思，就让我点。</p>
+<p>点完菜，我看了看徐浩，凑到陈琪的耳边小声问道：「我怎么觉得他长得有点眼熟？」</p>
+<p>「他……」</p>
+<p>陈琪羞得根本说不出话。</p>
+<p>还是徐浩不好意思地提醒道：「那个，昨天我们见过的。」</p>
+<p>「昨天我们什么时候见……」过。</p>
+<p>说着说着，我的话卡了壳儿。</p>
+<p>昨天我除了见到陈琪、周辞和我妈，见过的就只有那一堆消防员小哥哥了……</p>
+<p>13</p>
+<p>意识到这一点，我看徐浩的脸，越看越眼熟。</p>
+<p>这不是昨天拿铁钳剪开铁门，救我出来的小哥哥吗？</p>
+<p>怪不得昨天去拿铁钳的小哥哥们中，他跑得最快。</p>
+<p>合着是有这一层的交情在啊！</p>
+<p>捋清了前因后果，我拧住陈琪的耳朵：「好啊你，原来你跑到那里是为了偷看他！」</p>
+<p>「我错了我错了……」</p>
+<p>陈琪跟我连连求饶。</p>
+<p>一番打闹，她放松了不少，不似之前那样紧张。</p>
+<p>我看向对面的杜明泽：</p>
+<p>「我看你也挺眼熟的，你也是消防队的？」至于是哪个小哥哥，我目前还没对上号。</p>
+<p>杜明泽却摇了摇头：「不是，我是你学弟。」</p>
+<p>「学弟？」我有些蒙。</p>
+<p>「就是之前跟你有一面之缘的那个。」</p>
+<p>脑海中火光四射，我猛拍大腿：「我想起来了，原来是你！」</p>
+<p>这不就是当初我随手从路边拉过来，用来气周辞的那个学弟吗？</p>
+<p>「谢谢你啊学弟。」</p>
+<p>「谢谢的话学姐当年就说了。」</p>
+<p>见我跟杜明泽认识，陈琪的眼中多了八卦的气息。</p>
+<p>「你们两个……」她的目光暧昧。</p>
+<p>「不是你想的那样。」我没好气地把事情的前因后果讲了。</p>
+<p>徐浩恍然大悟：「所以你真的是我们队长的前女友！那你的肚子里……」</p>
+<p>「没孩子，坑他的。」</p>
+<p>「原来是这样！敢坑我们队长，苏苏姐，你真厉害！我以茶代酒，敬你一杯。」</p>
+<p>「你们队长很厉害吗？」</p>
+<p>「那可不……」一提到周辞，徐浩就有些畏惧，「我们队长可是出了名的冷面阎王，他……」</p>
+<p>我刚竖起耳朵准备好好听，徐浩忽然停下来了。</p>
+<p>「快说啊！」我忍不住催促，「快说说他有多么地阴险狡诈，雷厉风行，冷酷无情……」</p>
+<p>随着我的话继续，徐浩的眼睛都快抽筋了。</p>
+<p>我关心地问道：「你眼睛怎么了？要不要去医院看看？」</p>
+<p>见我实在不开窍，他认命地对着我身后说道：「队长。」</p>
+<p>队长？？？</p>
+<p>我一惊。</p>
+<p>回过头，就见周辞黑着脸站在我身后。</p>
+<p>14</p>
+<p>说人坏话被当事人揪住。</p>
+<p>还有比这更社死的事情吗？</p>
+<p>我僵硬地转过头，对上周辞的黑脸。</p>
+<p>他磨了磨牙：「谢谢你对我的评价。」</p>
+<p>「不客气。」</p>
+<p>他还想说些什么，手机铃声在此时响起。</p>
+<p>接了电话的周辞走出餐厅，再进来的时候，他扶着一个孕妇。</p>
+<p>再看那孕妇的脸，虽然有些发福，但是我还是认出来，那个孕妇竟然是之前的校花林雪。</p>
+<p>正是周辞劈腿的那个！</p>
+<p>好家伙！</p>
+<p>现在看来，大学毕业后，周辞火速跟林雪结婚，并且两人有了孩子！</p>
+<p>真是个十足十的渣男！</p>
+<p>老婆肚子那么大，看样子都快要生了。</p>
+<p>他昨天竟然还跟着我去我家，在我妈面前说那种话，还……还吻我。</p>
+<p>不行，我得揭穿这个渣男的真面目。</p>
+<p>可是要是直接揭穿的话，林雪会不会受到刺激？</p>
+<p>孕妇的情绪不能大起大落，我不能说得太直白。</p>
+<p>接下来，桌上的聊天我没怎么听进去，满脑子都是怎么提醒林雪。</p>
+<p>终于，我想到了方法。</p>
+<p>我叫来服务员，点了一堆菜：「给那桌送去，就说是我请的。」</p>
+<p>「好的。」</p>
+<p>然后我就观察着那桌的动静。</p>
+<p>一堆炒青菜，全都是绿色的，这提醒够明显吧？</p>
+<p>然而，林雪一点也没看出来，吃得很开心。</p>
+<p>像是为了气我，周辞还给林雪夹了几筷子菜。</p>
+<p>好气！</p>
+<p>15</p>
+<p>不能让渣男这么放肆！</p>
+<p>等周辞去洗手间的时候，我连忙跑到他那桌。</p>
+<p>还没来得及开口提醒，林雪的眼前就是一亮：「是你呀！」</p>
+<p>她欣喜的反应让我一怔。</p>
+<p>觉得怪怪的。</p>
+<p>我跟她好像不熟，看到我没必要这么开心吧？</p>
+<p>不过都是同学，这种反应也许是正常的？</p>
+<p>时间紧迫，我没多想。</p>
+<p>「那个，林雪，你最近有没有发现周辞有什么不对劲？」按照周辞目前的渣男程度来看，林雪怀孕期间，他肯定耐不住寂寞，还勾搭了别的女人。</p>
+<p>闻言，林雪认真思索了一下，回答道：「没有啊！」</p>
+<p>没想到周辞还挺会伪装。</p>
+<p>考虑到周辞随时会回来，我只能明示：「就是……咱就是说，有没有可能，周辞是个渣男？」</p>
+<p>「啊？」林雪有些蒙。</p>
+<p>「就是你看周辞他……」</p>
+<p>我不能直白地跟林雪说周辞昨天跟我有了亲密举动。</p>
+<p>只能跟她分析周辞的渣男属性。</p>
+<p>「你看，周辞长得那么帅，以前在学校的时候，追他的女生都那么多，出社会了只会更多。</p>
+<p>「再者，他要是没给别人一些暗示，别人会那么对他死心塌地吗？」</p>
+<p>「所以？」林雪疑惑地看着我。</p>
+<p>「所以我觉得，周辞是个渣男！」</p>
+<p>林雪还没来得及反应，周辞的声音就在我身后炸开：「你说谁是渣男？」</p>
+<p>我浑身一僵。</p>
+<p>救命啊！</p>
+<p>说人坏话两次被抓包，要命了！</p>
+<p>不用回头我都知道站在身后的周辞脸色有多难看。</p>
+<p>却在此时，林雪看向周辞，开口问道：「哥，这就是你心心念念的前女友吧？」</p>
+<p>16</p>
+<p>什么哥？什么心心念念？</p>
+<p>我有些懵逼。</p>
+<p>偏偏周辞低低地应了一声：「嗯。」</p>
+<p>轰——</p>
+<p>有什么东西在我脑海中炸开。</p>
+<p>让我不知所措。</p>
+<p>所以林雪是周辞的妹妹？</p>
+<p>当初是我误会了周辞跟林雪的关系，所以随手拉了学弟杜明泽过来气周辞。</p>
+<p>我以为他出轨，他以为我出轨。</p>
+<p>导致我们两人就这样分道扬镳……</p>
+<p>忽然不知道该怎么面对周辞。</p>
+<p>我小跑着回到我所在的桌子。</p>
+<p>接下来无事发生。</p>
+<p>直到——</p>
+<p>饭后，陈琪跟徐浩率先你侬我侬地离开，将我托付给了杜明泽。</p>
+<p>杜明泽看向我：「学姐，我们加个微信吧？」</p>
+<p>「好。」</p>
+<p>我掏出手机。</p>
+<p>还没来得及扫杜明泽的微信码，一只骨节分明的手陡然伸出。</p>
+<p>拿过我的手机。</p>
+<p>是周辞。</p>
+<p>他拧眉看向杜明泽：「你跟她不熟？」</p>
+<p>说这话的时候，他周身散发出一种与生俱来的气势。</p>
+<p>原本还正常的杜明泽忽然拘谨：</p>
+<p>「学长，我跟学姐今天是第二次见面。」</p>
+<p>「那一年前……」</p>
+<p>「一年前是学姐随手从路边把我拉过来，让我气你的。」</p>
+<p>「竟然是这样。」周辞看向我，眸色深深。</p>
+<p>我眸光闪躲，不敢看他的眼睛。</p>
+<p>看来，他也反应过来，当初是一场误会了。</p>
+<p>「既然如此，那就加我微信吧！以后有事情找你学姐，就给我发微信。」</p>
+<p>「真的可以吗？学长，你可是我偶像！」杜明泽顿时星星眼，「在学校的时候我看过你打球，可帅了！」</p>
+<p>我看着杜明泽的反应，只觉得风中凌乱。</p>
+<p>加上微信，周辞开口：「既然如此，你先走吧！你学姐我来送。」</p>
+<p>「好嘞！」</p>
+<p>杜明泽走得很快，一句挽留都没有。</p>
+<p>「唉！等一下……」</p>
+<p>我挽留的话还没说完，他就消失得无影无踪。</p>
+<p>无奈，我只能讪讪地收回手。</p>
+<p>17</p>
+<p>「哥，司机来了，我也先走了。」</p>
+<p>林雪说着，往外走去。</p>
+<p>周辞忙去扶她。</p>
+<p>我也跟了出去。</p>
+<p>等林雪坐上车，他才看向我。</p>
+<p>气氛有些诡异，我没话找话：「林雪是你妹妹？一个爹一个妈生的？」</p>
+<p>「不然呢？」</p>
+<p>「那你们怎么不同姓？」</p>
+<p>「我跟妈姓，她跟爸姓。」</p>
+<p>「原来是这样。」</p>
+<p>气氛再次安静。</p>
+<p>周辞随手拦了辆的士，他打开车门，让我先进去。</p>
+<p>一路沉默地抵达我家门口。</p>
+<p>「我到家了。」言外之意就是，你可以走了。</p>
+<p>一向聪明的周辞却像是听不懂我的言外之意：「我送你回来，进去喝杯茶不过分吧？」</p>
+<p>「……好吧！」</p>
+<p>一杯茶下肚，他还是半点没有要离开的意思。</p>
+<p>我正思考着该用什么理由把他赶走。</p>
+<p>「砰砰！」敲门声响起。</p>
+<p>我打开房门。</p>
+<p>就见穿着搬家公司马甲的工作人员，将几个大箱子推了进来。</p>
+<p>「这是……」</p>
+<p>周辞适时开口，解答我的疑惑：「这是我的东西。」</p>
+<p>他核对了一下箱子数量，在单子上签字。</p>
+<p>工作人员便拿着单子离开了。</p>
+<p>重新关上门，我气冲冲地看向周辞：「你的东西你搬我家来干什么？」</p>
+<p>「你都怀了我的孩子了，我当然要贴身照顾你了。」</p>
+<p>我一阵气闷：「周辞，那只是我的气话，我根本没怀孕！」</p>
+<p>「没关系。」他拿出手机，将屏幕对准我，「你看，阿姨不久前还嘱咐我，让我赶紧把你拿下呢！」</p>
+<p>我一看聊天记录，更是血气上涌。</p>
+<p>「你什么时候加上我妈微信的？赶紧删掉！」</p>
+<p>「不要。」</p>
+<p>他拒绝，我就去抢他的手机。</p>
+<p>他的个子很高，举起手机我根本够不着。</p>
+<p>咬了咬牙，我猛地往上一蹦。</p>
+<p>他的身子却顺势往沙发上一歪，而我也扑倒在了他身上。</p>
+<p>鼻翼相对。</p>
+<p>18</p>
+<p>心跳陡然加速。</p>
+<p>在周辞的薄唇靠近的时候，我连忙撑着他的胸膛坐起身，回了卧室。</p>
+<p>百思不得其解的我选择睡觉。</p>
+<p>我是被饭菜的香味唤醒的，跟随着香味走出卧室。</p>
+<p>就见周辞系着围裙在厨房做饭。</p>
+<p>恍惚间，我想到以前在大学的时候，球场上那抹张扬的身影。</p>
+<p>不过是一年时间，当初那个阳光灿烂的少年已经成长得稳重成熟。</p>
+<p>乍一看，还有几分家庭煮夫的味道。</p>
+<p>在我失神的注视中，周辞将饭菜端上餐桌。</p>
+<p>「吃吧！」</p>
+<p>磁性的嗓音拉回我的思绪。</p>
+<p>我坐在餐桌前，本是试探性地尝一口，没想到一发不可收拾。</p>
+<p>一口气干了两大碗米饭！</p>
+<p>「厉害啊！周辞。厨艺真不赖！」</p>
+<p>吃撑的我毫不吝啬地对他竖起了大拇指。</p>
+<p>他勾了勾唇：「看在我厨艺不错的分上，是不是可以收留我了？」</p>
+<p>「收留你可以，中餐和晚餐你负责。」</p>
+<p>「成交。」</p>
+<p>本想着留下周辞可以不用天天点外卖，但是等晚上的时候，我发现了问题。</p>
+<p>我租的是一室一厅的单间，只有一个卧室。</p>
+<p>搬出一床被子放在沙发上，我看向周辞：「你睡沙发。」</p>
+<p>他抿了抿唇，没有说话。</p>
+<p>不说话我就当默认了。</p>
+<p>反正我是不可能睡沙发的。</p>
+<p>周辞要是不愿意，走人就是了。</p>
+<p>撇了撇嘴，我早早地洗漱完毕躺在床上。</p>
+<p>辗转反侧，怎么也睡不着。</p>
+<p>卧室门在此时被打开。</p>
+<p>周辞走了进来：「我也想睡床。」</p>
+<p>「不行！」我双手打叉。</p>
+<p>「这样行不行？」他直接脱掉上衣。</p>
+<p>我顿时看直了眼！</p>
+<p>不能忍！</p>
+<p>几乎不带思考的，我起身，一把将周辞拽过来，按在身下。</p>
+<p>19</p>
+<p>第二天醒来的时候，周辞已经不在身边了。</p>
+<p>想到我昨晚竟然没有经住诱惑，把周辞吃干抹净，我就一阵懊恼。</p>
+<p>洗漱完毕后，我去了对面的陈琪家。</p>
+<p>把昨天晚上的事情说给她听后，她竟然不觉得愤怒，反而满眼艳羡：「周大队长那么帅，身材又好，你又不吃亏！也不知道我家浩浩什么时候能开窍，昨天牵手都是我主动的，这合理吗？」</p>
+<p>闻言，我深深地叹了口气：「你不懂。」</p>
+<p>当初虽然是因为误会跟周辞分手的。</p>
+<p>可现在，即使误会解除了，也不代表着什么都不存在。</p>
+<p>我总觉得跟周辞的发展有些太快了，快到我无法确定他到底喜不喜欢我，也无法确定我到底对他有几分喜欢。</p>
+<p>「我当然不懂，我只知道，遇到了帅哥，千万不要放过。」</p>
+<p>我在陈琪家赖了一天。</p>
+<p>下午的时候，午休的我们被剧烈的敲门声吵醒。</p>
+<p>「你去开门。」</p>
+<p>「你去。」</p>
+<p>跟陈琪互相推了一会儿，她扭不过我，起身去开门。</p>
+<p>「琪琪，快出来，隔壁失火了！」是徐浩的身影。</p>
+<p>「隔壁？那不是苏苏家吗？」陈琪尖叫出声。</p>
+<p>两人的对话让我瞬间清醒。</p>
+<p>发生了什么？</p>
+<p>我家怎么就烧了？</p>
+<p>是了！</p>
+<p>我早上煮了鸡蛋，本打算一会儿回来吃，没想到在陈琪家一待就是一天。</p>
+<p>徐浩的声音还在继续：「是，火势很大，你先下楼，我们负责营救苏苏姐。」</p>
+<p>「可是苏苏在我家啊！」</p>
+<p>陈琪一脸懵逼地回道。</p>
+<p>我也在此时走了出来。</p>
+<p>看到我，徐浩先是一怔，而后他发红的眼睛有泪水涌出，他对着我家门口大喊：「队长！苏苏姐不在家，你快出来啊！」</p>
+<p>20</p>
+<p>我这才发现，巨大的烟雾下，消防员们个个神情凝重，带着悲戚。</p>
+<p>意识到什么，我的声音发颤：「周辞呢？」</p>
+<p>「他……」徐浩再也忍不住，哽咽出声，「队长他进去救你了，火很大，按理说不该进去，但是他执意要进去救你！」</p>
+<p>我看向对面我的家门。</p>
+<p>十几个灭火器对着喷，火势依然迅猛。</p>
+<p>周辞竟然为了我，不顾生命危险！</p>
+<p>难以言喻的情感在此时喷薄而出，我哭着呼喊出声：「周辞，我在这里，你快出来啊！」</p>
+<p>消防员们也跟着喊：「队长，苏苏姐不在家，你快出来！」</p>
+<p>然而，门口始终没有动静。</p>
+<p>这么大的火，根本就出不来！</p>
+<p>一想到周辞很有可能因为救我而……</p>
+<p>我的心脏就抽搐般地疼痛。</p>
+<p>竟然为了我连自己的性命都不顾了……</p>
+<p>也不知道是过于难受，还是烟雾让人窒息，我眼前一黑，晕了过去。</p>
+<p>21</p>
+<p>再次醒来，眼前白茫茫的一片。</p>
+<p>鼻息间是浓烈的消毒水的味道。</p>
+<p>我在医院！</p>
+<p>周辞呢？</p>
+<p>我慌忙起身，陈琪跟我爸妈都在病床边，却没有看到周辞。</p>
+<p>「他呢？」我看向我爸妈和陈琪。</p>
+<p>「他受伤了，在修养呢！放心，很快就好了。」</p>
+<p>「你骗人！那么大的火！他怎么可能会好！」我哭着从病床上爬起来，不顾家人的阻拦，往外面跑去。</p>
+<p>一边跑，一边哭着喊：「周辞，你在哪里？」</p>
+<p>始终没有回应。</p>
+<p>我的心也逐渐沉入谷底。</p>
+<p>「周辞，你理理我好不好？」</p>
+<p>就在我绝望之际，熟悉的声音从前方传来：</p>
+<p>「傻丫头，我在这里。」</p>
+<p>我慌忙抹掉眼泪看过去。</p>
+<p>就见走廊的尽头，周辞拄着拐杖看着我。</p>
+<p>他伤痕累累，俊脸上却艰难地扯出一抹笑。</p>
+<p>我飞奔上前，紧紧地将他抱住。</p>
+<p>想说些什么，可话到了嘴边，全都变成了呜咽。</p>
+<p>「别哭，我一听到你的声音，就跳楼了。虽然伤了腿，不过你放心，养几个月就能好。」</p>
+<p>他越是安慰我，我哭得越是凶。</p>
+<p>「你怎么那么傻……呜呜呜……」</p>
+<p>他单手擦着我脸上的泪：「不傻，因为是你，所以值得。」</p>
+<p>掷地有声的话砸进我的心里。</p>
+<p>我将头埋在他的胸膛，哭得不能自已。</p>
+<p>我爸妈和陈琪在此时追了过来。</p>
+<p>徐浩也从周辞的病房走出来：「苏苏姐，队长怕你担心，强撑着下床的，你们再这么抱下去，怕是他没事也得有事了。」</p>
+<p>闻言，我脸颊一红。</p>
+<p>连忙扶着周辞回他的病床。</p>
+<p>准备走的时候，他却紧紧拉着我的手：「苏苏，以后再也不离开我好不好？」</p>
+<p>鼻头一酸，我重重点头：「好。」</p>
+<p>备案号:YXX1lMMylZXi0009ZXQhZ28J</p>
+<p>顶流说他喜欢我</p>
+<p>​</p>
+<p>​</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>沉江渚月 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/24-%E5%A8%93%E5%A8%93%E9%81%93%E6%9D%A5/" title="娓娓道来">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">娓娓道来</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/11-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%80%BB%E6%98%AF%E6%9C%80%E5%AE%B9%E6%98%93%E5%A0%95%E8%90%BD%E7%9A%84%E7%BE%A4%E4%BD%93%E5%A4%A7%E5%AD%A6%E7%94%9F%E9%98%B2%E5%A0%95%E6%8C%87%E5%8D%97/" title="为什么大学生总是最容易堕落的群体？：大学生防堕指南">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">为什么大学生总是最容易堕落的群体？：大学生防堕指南</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

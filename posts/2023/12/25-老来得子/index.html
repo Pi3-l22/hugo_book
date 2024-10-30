@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老来得子 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/12/25-%E8%80%81%E6%9D%A5%E5%BE%97%E5%AD%90/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/12/25-%E8%80%81%E6%9D%A5%E5%BE%97%E5%AD%90/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="老来得子">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-25T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/11986.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/11986.jpg">
+  <meta name="twitter:title" content="老来得子">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="老来得子">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2023-12-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-12-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="12659">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/11986.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">老来得子</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2023-12-25T00:00:00Z</span>
+          
+
+          | <span>26分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2023-12-25T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%80%81%e6%9d%a5%e5%be%97%e5%ad%90&amp;url=https://mohai.us.kg/posts/2023/12/25-%E8%80%81%E6%9D%A5%E5%BE%97%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/12/25-%E8%80%81%E6%9D%A5%E5%BE%97%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%80%81%e6%9d%a5%e5%be%97%e5%ad%90%20https://mohai.us.kg/posts/2023/12/25-%E8%80%81%E6%9D%A5%E5%BE%97%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/11986.jpg" alt="老来得子" />
+      
+
+      <p>老来得子</p>
+<p>非典型蛇蝎</p>
+<p>我公公去世三年后，我婆婆突然怀孕了。</p>
+<p>我把这件事告诉我老公后，他神情突然变得诡异…</p>
+<p>1</p>
+<p>「55 岁属于高龄产妇，且不说怀孕生娃这个过程很危险，就算顺利生出来了，这孩子要怎么办？</p>
+<p>「妈，你都 55 了，已经没有那个能力去抚养孩子了，我也怀孕了，再过五个月就生了，嘉豪压力很大的。」</p>
+<p>我在发现婆婆手里的验孕棒是两条杠后，顿时慌了，公公已经去世了三年，婆婆没有再婚，这个孩子是谁的？</p>
+<p>我不得而知。</p>
+<p>只能隐晦地劝她，不要生。</p>
+<p>我见多了这样的家庭，老来得子，然后生出来，让自己的孩子养。</p>
+<p>我和嘉豪新婚燕尔，才刚结婚一年，才怀了第一个孩子，还有几个月就要生了，我不想在这个关头，摊上这事。</p>
+<p>婆婆丁香沉着脸，一语不发。</p>
+<p>我心更乱了。</p>
+<p>难道，她还真打算生出来不成？</p>
+<p>不行！</p>
+<p>这事我得告诉老公，让他阻止婆婆！</p>
+<p>2</p>
+<p>嘉豪回来后，我第一时间告诉了他。</p>
+<p>他听完，脸色变得很奇怪。</p>
+<p>「真怀了？」</p>
+<p>「去医院检查了没有？」</p>
+<p>我摇头小声道：「没有，只是用验孕棒测试了，验孕棒的准确度能在百分之九十以上，我觉得婆婆是真的怀了。」</p>
+<p>「怀没怀，能是你说了算的？」嘉豪冷嗤一声，「医生说了才算！」</p>
+<p>我没出声。</p>
+<p>只是心里觉得疑惑。</p>
+<p>正常一个儿子听到这话，不是应该好奇，孩子的父亲是谁吗？</p>
+<p>怎么关注点，反而在这里……</p>
+<p>难道，他早就知道，婆婆另找新欢了？</p>
+<p>合着这个家，就我不知道呗？</p>
+<p>我心情突然不好了。</p>
+<p>总觉得自己被他们排除在外了一样。</p>
+<p>嘉豪也没注意到我的脸色不好看，他起身出房，拉着婆婆，就往外走。</p>
+<p>我急忙跟了上去。</p>
+<p>我们来到了医院，婆婆被折腾得有些累，我看到嘉豪抿着唇，一脸紧张，也没有打扰他们，而是拖着个大肚子，去楼下买点吃的。</p>
+<p>孕妇容易饿。</p>
+<p>不管婆婆最后打不打算留，肚子总得填饱来。</p>
+<p>我很快就买完东西，提着一袋吃的，刚回去，就听到他们两人在争吵。</p>
+<p>「这孩子，必须留！」</p>
+<p>「你听我的就对了！」</p>
+<p>我僵在原地，有点没想到，这话居然是从我老公嘉豪嘴里说出。</p>
+<p>他什么意思？</p>
+<p>他这是愿意替他妈养孩子？</p>
+<p>那我呢？</p>
+<p>我的孩子又算什么？</p>
+<p>3</p>
+<p>我沉着脸，将东西丢到他身上，然后转身就走，我以为他会追上来。</p>
+<p>可是没有。</p>
+<p>等我回到家，吃完外卖，又等了两三个小时，才看到他和婆婆两人，有说有笑地回来。</p>
+<p>我的眼神定格在嘉豪手上。</p>
+<p>「这是什么？」</p>
+<p>「婴儿用品啊。」</p>
+<p>嘉豪翻了个白眼：「还愣着干嘛，赶紧扶妈进去啊。」</p>
+<p>「……」</p>
+<p>我本就压着的脾气，顿时就上来了。</p>
+<p>「她是孕妇，我不是？</p>
+<p>「她怀了三个月，那我呢，怀了五个月你怎么不说？」</p>
+<p>我们孩子需要用的东西，他到现在都没有陪我去买，每次和他说，都是左耳进右耳出，不当回事。</p>
+<p>可现在，婆婆才发现怀孕第一天，他就带着去买了，这怎么能不让我多想？</p>
+<p>这还没生出来呢，就偏心。</p>
+<p>这要是生出来了，我肚子这个孩子，岂不是在这个家里没有一点地位？</p>
+<p>我本来就生性敏感，现在怀孕，激素一上来，更是控制不住情绪。</p>
+<p>嘉豪这才发现我的不对劲，他急忙上前抱住了我：「别激动别激动，是我的错。」</p>
+<p>我听着他的安慰，决定今晚再和他聊聊。</p>
+<p>婆婆从这身边走过，不冷不热地哼了一声。</p>
+<p>「娇气！」</p>
+<p>我脸色顿时一变。</p>
+<p>以往待我和气的婆婆，今天怎么感觉变了？</p>
+<p>4</p>
+<p>我没有多想。</p>
+<p>晚上，我和嘉豪洗漱完，躺在床上。</p>
+<p>他没有和之前一样，侧过身，贴在我高高肚皮上，逗弄孩子，做胎教。</p>
+<p>而是呆呆地看着天花板，出神。</p>
+<p>我忍耐不住，打断了他的思绪。</p>
+<p>「你真打算让妈生下来啊？」</p>
+<p>「嗯。」</p>
+<p>嘉豪点了点头，没有一丝犹豫。</p>
+<p>我心一寒。</p>
+<p>「那孩子谁养？</p>
+<p>「婆婆坐月子谁照顾？谁伺候？」</p>
+<p>「孩子我妈会养，坐月子不是有月子中心么？」嘉豪满不在乎地说道。</p>
+<p>我很生气。</p>
+<p>「妈养？她要带孩子，怎么去工作？怎么去赚钱养娃？</p>
+<p>「孩子是不是最后还是丢给我带？</p>
+<p>「月子中心的钱，是不是还得我们出？」</p>
+<p>「你明知道，爸一点钱都没给她留下，我们住的这房子还是我家出的首付……」</p>
+<p>嘉豪皱了皱眉：「这个到时再说，车到山前必有路，船到桥头自然直。」</p>
+<p>「还到时说，月份大了，就不能打了。」</p>
+<p>我非常生气，从没想过他想事情这么片面：「还有你一个月工资才多少啊，七千块，扣去房贷车贷，才剩多少，养了妈的孩子，那我的孩子，谁养？」</p>
+<p>这才是我最在意的。</p>
+<p>我的孩子，我想要给他最好的。</p>
+<p>我没有那个义务把对自己孩子的爱，分给别人，哪怕他是婆婆的孩子，也一样！</p>
+<p>我就是这么自私。</p>
+<p>嘉豪不吭声了。</p>
+<p>他翻了个身，睡觉了。</p>
+<p>我气得肚子闷痛，嘉豪平时对我很好，这是我们第一次吵成这样。</p>
+<p>准确来说，还是我单方面生气……</p>
+<p>我很憋闷，又无奈，还不甘心。</p>
+<p>不行，我不能放弃我的婚姻，也不能坐以待毙，我要想办法找到婆婆的情人！</p>
+<p>让那个男人，履行自己该履行的义务！</p>
+<p>5</p>
+<p>第二天一大早，我就拖着笨重的身体，找到了我的闺蜜北北。</p>
+<p>北北听完全部过程，气得差点上门揍嘉豪。</p>
+<p>「这王八蛋，他是不是忘了，要是没有你，他现在也不能找到这么好的工作，还养两个孩子，我呸！就他那点工资，养一个都够呛了！</p>
+<p>「奶粉不用钱，衣服尿布营养品不用钱，合着这些都是刮大风刮来的？</p>
+<p>「现在都是拼教育，很多人孩子还没满三岁就送幼儿园提前接受教育。</p>
+<p>「咱为的啥？为的就是不让孩子输在起跑线上！</p>
+<p>「再大一点，辅导班是不是还得安排上，那些学费，资料，学习工具，还有好一点的学校，哪样不要钱？</p>
+<p>「别说我说得难听，嘉豪现在的工作，稳定是稳定。</p>
+<p>「可就是太稳定了，根本就没有提升的空间，每个月拿的就是这点死工资，他真的不用脑子想问题是吗，这孩子要是留下来了，你们的娃吃啥喝啥？」</p>
+<p>北北一通话说到了我的心坎上了。</p>
+<p>我和嘉豪从大学认识至今，我排除万难在一起，扛过了我爸妈的考验，也度过了前女友突然出现的关卡。</p>
+<p>我们买了房子，买了车子。</p>
+<p>眼看着日子过得一天比一天好。</p>
+<p>可现在，却摊上了这种糟心事。</p>
+<p>我红着眼睛，憋了一晚上的眼泪终于在这一刻流了下来。</p>
+<p>「这件事我都不敢告诉我爸妈。</p>
+<p>「他们为了我，都操碎了心，这事要是被他们知道……」</p>
+<p>我哽咽着，声音低了下来。</p>
+<p>北北拍着我的背部，轻声问道：「我都懂，那你打算怎么做？」</p>
+<p>「找到孩子的父亲。」我抹了抹眼泪，抬头定定看她，「我需要你的帮助。」</p>
+<p>北北的父亲是私人侦探，有她的帮忙，事倍功半。</p>
+<p>也能尽快查到那个人的身份。</p>
+<p>我没有时间等，我也等不起。</p>
+<p>我得为自己留一条后路。</p>
+<p>我摸着肚子，感受着频率不一的胎动，眼睛又红了。</p>
+<p>「宝宝，你放心，妈妈一定会为你拿回你应得的东西。」</p>
+<p>6</p>
+<p>北北父亲的速度很快，不过两天的时间，就把婆婆这个月所接触的人的资料，全部都找了出来。</p>
+<p>我婆婆丁香，平时很少出门，也很少和别人打交道。</p>
+<p>每天都是待在家里，除了买菜的时候，会出去一下，基本都很少出去。</p>
+<p>而这份资料中，只显示了婆婆和五个人有所接触。</p>
+<p>其中两个是菜市场的卖菜阿姨。</p>
+<p>剩下的三个，分别是。</p>
+<p>1.刘民，48 岁，是我们小区门口的保安大叔，未婚，为人和善。</p>
+<p>2.赵重，50 岁，是管理我们这片小区的物业队长，已婚，有一子。</p>
+<p>我的视线往下移，停在了第三个人的资料上。</p>
+<p>在看到第三个人的名字和照片后，我直接愣住了。</p>
+<p>一个可怕的念头，从我心头浮出。</p>
+<p>不，不可能！</p>
+<p>我咬着下唇，不愿相信，也不敢相信。</p>
+<p>为什么会有他，为什么！</p>
+<p>我颤抖着手，打了一个电话出去。</p>
+<p>7</p>
+<p>「喂，闺女啊，身体怎么样了啊？怎么今天有空打回来了？」</p>
+<p>我爸张涛的声音，从电话那头传了过来。</p>
+<p>熟悉的味道，熟悉的语调。</p>
+<p>我不愿相信，最后一个人，居然会是我爸。</p>
+<p>这是误会。</p>
+<p>一定是的！</p>
+<p>我干笑两声，不经意地问了一句：「爸，上上周五和上周六，你在哪啊？」</p>
+<p>「在家啊，怎么了？」</p>
+<p>我心里一阵咯噔。</p>
+<p>他在说谎！</p>
+<p>北北父亲查出来的资料，有照片，有时间线。</p>
+<p>上上周五和上周六，我爸分明就来到了一百公里外的这个小区，和我婆婆私下会面。</p>
+<p>为什么要说谎？</p>
+<p>为什么！</p>
+<p>我沉默了许久。</p>
+<p>张涛察觉到了一丝不对劲，他轻声细语道：「怎么了？闺女，是不是嘉豪那小子欺负你了？」</p>
+<p>「爸，我没事，我突然想起，我待会还要去医院检查，先不说了啊。」</p>
+<p>我匆匆挂断了电话。</p>
+<p>眼神定格在第一个人和第二个人的资料上。</p>
+<p>我爸那么疼我，我应该相信他。</p>
+<p>和婆婆有接触的男人，除了我爸外，不是还有另外两个么？</p>
+<p>查，我得从他们身上开始入手调查！</p>
+<p>8</p>
+<p>我来到小区保安室，却扑了个空，在问了值班保安后，我才知道，原来刘民早在昨天，就已经辞职回老家了。</p>
+<p>「这也太巧了吧？」</p>
+<p>我拧着眉头，嘀咕了一句。</p>
+<p>突然，一个人从我身后冒了出来。</p>
+<p>「什么这么巧？」</p>
+<p>是嘉豪。</p>
+<p>我浑身一僵，有种干坏事被发现的心虚感。</p>
+<p>不等我回应，嘉豪又笑了出声：「我也觉得很巧。」</p>
+<p>我愣住了。</p>
+<p>他什么意思？</p>
+<p>难道……他也在调查刘民？</p>
+<p>我心脏开始怦怦乱跳，脸上的笑还没洋溢开，嘉豪就开口打断了我。</p>
+<p>「我给你带了北城那家蛋糕，你最爱吃的，就是路有点远，我都担心化了，想着赶紧回来，早点拿给你。</p>
+<p>「没想到啊，这小区还没进呢，就瞅见了你，你说，这还不巧吗？」</p>
+<p>嘉豪笑得贱兮兮的：「阿雅，你老实交代，你是不是特地来门口接我啊？」</p>
+<p>「……」</p>
+<p>我就不该对他有所期望。</p>
+<p>我瞪了他一眼，转身就走。</p>
+<p>嘉豪抓了抓头发，有些蒙。</p>
+<p>「咋了咋了，你咋又生气了啊？」</p>
+<p>嘉豪追在我的屁股后面，手里提着蛋糕，又怕我走太快碰着呢，又担心自己手里的蛋糕弄塌了。</p>
+<p>一时间竟有些手忙脚乱。</p>
+<p>这样的嘉豪，让我有种我们回到了过去的感觉。</p>
+<p>那个时候，我还没怀孕，婆婆也还没怀孕，一切都还好好的。</p>
+<p>我看着他，眼底闪过一丝迷茫。</p>
+<p>我……是不是有点钻牛角尖了？</p>
+<p>不等我纠结完，对面传来的冷哼声，瞬间让我打消了我心里仅剩的愧疚。</p>
+<p>我冷眼看着我婆婆一出现，嘉豪就冲了过去，扶住了她。</p>
+<p>一脸紧张。</p>
+<p>就连手边的蛋糕倒了一半都没发现。</p>
+<p>「张雅，这孩子是我的命根子，我必须生。」</p>
+<p>丁香看着我，挡住了我的去路：「不管你做什么，我都不会改变主意。」</p>
+<p>我没吭声。</p>
+<p>也不能吭声。</p>
+<p>这是在外面，是在人来人往的小区里。</p>
+<p>我要是说了什么阻止婆婆生孩子的话，这里的人一口一个唾沫都能把我喷死。</p>
+<p>我不知道她是不是故意的。</p>
+<p>故意挑在这个地方，说这件事。</p>
+<p>我觉得很难受。</p>
+<p>如果她有钱，有资本，丈夫还在，自己也有能力去养育这么小的孩子，那我怎么可能会那么狠心地让她打胎。</p>
+<p>我也怀孕了，我当然知道这样的话对她来说有多么残忍。</p>
+<p>可现在的问题就是，她太不现实了。</p>
+<p>为什么就不能承认自己已经没有这个能力了呢？</p>
+<p>有本事生，没本事养。</p>
+<p>这对那孩子来说，就真的好吗？</p>
+<p>明明……我只是想要一个简单幸福的小家庭而已，为什么要碰到这种吃力不讨好，贼戳心窝子的荒唐事呢？</p>
+<p>我下意识地看向嘉豪，却发现他一点表态的意思都没有。</p>
+<p>所以，那天晚上的谈话，他是一个字都没听进去？</p>
+<p>我心一痛，可我又不甘心这样放弃自己的婚姻。</p>
+<p>我攥紧了拳头，看着他们。</p>
+<p>看着丁香的宣示，嘉豪的漠视，这让我更加坚定了找到孩子父亲的想法。</p>
+<p>这个亏，我绝对不会咽下去！</p>
+<p>9</p>
+<p>我托了好多层关系，才找到刘民的老家。</p>
+<p>还好宝宝听话，没折腾我。</p>
+<p>不然，这一路可有得受罪。</p>
+<p>我摸着肚子，满脸幸福，敲开了刘民的家门。</p>
+<p>「你是？」</p>
+<p>刘民警惕地看着我，脸上没有一丝照片上的和善。</p>
+<p>现在的他，看起来穷困潦倒，满脸颓废。</p>
+<p>不过是短短的几天时间，他发生了什么？</p>
+<p>我按下心中的不解，说出了自己的来意。</p>
+<p>「请问，你认识丁香吗？」</p>
+<p>刘民一听到这个名字，立马拉下了脸，：「不认识！」</p>
+<p>说完，他就砰的一声，关上了房门。</p>
+<p>我差点被碰到鼻子，心脏都开始乱跳了。</p>
+<p>这刘民怎么回事？</p>
+<p>为什么听到婆婆的名字，就跟见了鬼一样。</p>
+<p>我的不解，很快就在北北父亲那里，得到了答案。</p>
+<p>10</p>
+<p>「您是说，他不是主动辞职的，而是被辞退的？」</p>
+<p>「为什么啊？」</p>
+<p>我疑惑地看着北北父亲，他喝了一口热茶后，才缓缓开口道：「因为你婆婆举报了他。</p>
+<p>「4 月 28 日，下午三点钟，你婆婆举报刘民，说他猥亵她。</p>
+<p>「保安队长知道后，二话没说，就直接辞退了刘民。」</p>
+<p>我一愣：「所以……婆婆和他见面，是因为这件事？」</p>
+<p>「没错，不过……」</p>
+<p>北北父亲放开把玩着黑色钢笔的手，从抽屉里拿出最新查到的资料，摊开，放在我面前，指了指最后一行：「刘民是被冤枉的，那天下午，刘民根本就没有进到你家。</p>
+<p>「你婆婆在说谎。」</p>
+<p>「为什么……」</p>
+<p>我皱着眉头，突然想到了一个可能。</p>
+<p>「难道……」</p>
+<p>11</p>
+<p>「难道说，她是为了给孩子真正的父亲掩饰，所以才会故意冤枉刘民，给他做一个不在场证明？」</p>
+<p>我感觉我摸到了一点真相。</p>
+<p>北北父亲嘴角边溢出一点笑：「没错，我也是这么想的，所以，我现在正往这个方向调查，一有消息，我会通知你。」</p>
+<p>「谢谢，那就有劳你了。」</p>
+<p>我从北北家离开，松了一口气。</p>
+<p>接下来，是第二个人，赵重。</p>
+<p>我很快就找到了他。</p>
+<p>他看到我出现，一点惊讶都没有，似乎早就料到我会来找他。</p>
+<p>「如果你是来问你婆婆的事，我只能告诉你，我和她一点关系都没有。」</p>
+<p>赵重按下烟头，面无表情：「如果可以，请你转告那个男人，让他也不要再来打扰我了。」</p>
+<p>我愣住了。</p>
+<p>「那个人？那个人是谁？」</p>
+<p>除了我，居然还有人找他？</p>
+<p>我连忙问出的问题，并没有得到答案。</p>
+<p>赵重就把我赶了出来。</p>
+<p>我有些丧。</p>
+<p>资料上的三个可疑人物，一个是我爸，一个是被冤枉的，最后这个又神神秘秘的什么都不愿意说。</p>
+<p>难道，事情就只能这样了？</p>
+<p>不。</p>
+<p>我不认命！</p>
+<p>那个男人，那个男人，除了我，还知道调查赵重这件事的男人，不就是……</p>
+<p>北北父亲！</p>
+<p>我被自己的想法给吓了一跳。</p>
+<p>不等我甩掉这个荒唐的想法，我就接到了北北父亲的来电。</p>
+<p>「不要再查下去了。」</p>
+<p>我拧起眉头：「什么意思？」</p>
+<p>「再查下去，你会后悔的。</p>
+<p>「有些事，睁一只眼闭一只眼对你更好。」</p>
+<p>北北父亲的声音有些缥缈，也有些无奈。</p>
+<p>我知道他是为了我好，可是……</p>
+<p>我不甘心！</p>
+<p>一天不查到真相，我一天不能安心！</p>
+<p>手指攥紧了电话，我看着窗外，感受着肚子的跳动，毫不犹豫地拒绝了他的提议。</p>
+<p>「我不会放弃的。」</p>
+<p>听到那边突然变得粗重的呼吸声，我直接挂断了电话。</p>
+<p>开什么玩笑，距离真相就差那么几步了，我怎么可能会放手！</p>
+<p>就是为了我的孩子，我也要坚持！</p>
+<p>我死死地咬住下唇，恶狠狠地瞪向隔壁丁香居住的房间。</p>
+<p>第二天。</p>
+<p>我还没起床，就接到了一个惊天消息。</p>
+<p>12</p>
+<p>北北父亲，死了。</p>
+<p>他最后一个联系的人是我，警察很快就上门，对我进行询问。</p>
+<p>我一脸茫然地看着他们：「我不知道发生了什么。</p>
+<p>「昨天，我们只是打了一通电话，聊了几分钟。</p>
+<p>「我不知道他在哪，更加不知道他会死。」</p>
+<p>我红着眼睛，也不知道他的死，是不是和我有关。</p>
+<p>我有些害怕。</p>
+<p>早上匆匆赶回的嘉豪搂住我的腰，无声地安抚我。</p>
+<p>可我却在他身上闻到了陌生的沐浴露味道。</p>
+<p>他昨晚不是加班吗？</p>
+<p>怎么还有时间去洗澡？</p>
+<p>我眼里闪过一丝疑惑，不等我想明白，对面的警察同志就打断了我的思绪。</p>
+<p>「你们聊了什么？」</p>
+<p>我手指一僵，突然不知道该说真话还是假话。</p>
+<p>嘉豪就在身边，我要是说了真话，他该怎么想我？</p>
+<p>我不想我辛苦维系的婚姻，因为这种荒唐的事而彻底破灭。</p>
+<p>我的孩子需要一个父亲。</p>
+<p>我也需要一个丈夫。</p>
+<p>在犹豫的两秒钟，警察同志像是察觉到什么，他突然笑着开口：「我们去房间聊吧。」</p>
+<p>我一愣，然后呆呆地点头。</p>
+<p>嘉豪看着我们走进房间，眉头微微皱起。</p>
+<p>丁香看着这一屋子警察，忍不住晦气地撇了撇嘴：「真是个扫把星。」</p>
+<p>她的声音很小，却足以让嘉豪听见。</p>
+<p>我不知道房间外发生的事，我还在接受盘问。</p>
+<p>「你刚刚说，你和受害者联系，是在调查你婆婆怀孕的事？」</p>
+<p>我点了点头，眼泪含在眸中：「没错，我婆婆怀孕了，还打算生下来。</p>
+<p>「你也看到了，她年纪这么大了，要是真的生下来，那孩子到时还不是让我和嘉豪来养，我不愿意，不仅仅是因为条件不允许，更是因为我不想吃这个亏。</p>
+<p>「所以我拜托了北北父亲，帮忙调查孩子父亲的身份，我查到了三个可疑的人。」</p>
+<p>我颤抖着手，将资料交给了徐 SIR，里头其中一个人就有我爸。</p>
+<p>我不知道徐 SIR 拿到这份资料后，会不会为难我爸。</p>
+<p>我很害怕。</p>
+<p>又不得不交出来。</p>
+<p>「好的，我明白了。」</p>
+<p>徐 SIR 看到资料，眼睛一亮，有了这份资料，确定嫌疑人身份的范围就能缩减很多了。</p>
+<p>「我能问一下吗？他是……怎么死的？」</p>
+<p>我红着眼眶，心里很难受。</p>
+<p>徐 SIR 摇了摇头：「无可奉告，如果还想起什么新的消息，请记得及时通知我，这是我的电话。」</p>
+<p>我低头接了过来，伸手抹了抹眼泪。</p>
+<p>「好，我会配合调查的。」</p>
+<p>警察离开后，我魂不守舍了好几天。</p>
+<p>直到北北父亲葬礼举行的时候，我才重新踏出房门。</p>
+<p>外头的天灰蒙蒙的，好似要塌下来一样。</p>
+<p>我出现在现场，一眼就看到了泪流不止的北北和她母亲。</p>
+<p>北北很痛苦，我看到她那样，心里也很不好受。</p>
+<p>如果不是因为我，她父亲也不会去世。</p>
+<p>「对不起……」</p>
+<p>「对不起……」</p>
+<p>或许，我该认命了。</p>
+<p>也该放弃了。</p>
+<p>我跪在墓碑前，想给他磕头，却因为肚子大了，无法弯腰，只能作罢。</p>
+<p>我余光一扫，突然看到北北母亲在烧的东西里，有个反光的黑色钢笔。</p>
+<p>钢笔……</p>
+<p>我顿住了。</p>
+<p>我好像记得他曾经说过，这是他的秘密武器！</p>
+<p>表面看着是钢笔，其实是根录音笔！</p>
+<p>我想起来了，那天接到他的最后一通电话，他突然变得粗重的呼吸声。</p>
+<p>现在想想，那不就是故意发出来，用以遮掩录音笔刚开启时发出的噪音吗？</p>
+<p>如果真是这样，这个录音笔，很可能就录下了凶手的声音！</p>
+<p>我想也没想就伸手往火里探去，直接抓起了那个还没来得及被烧毁的录音笔。</p>
+<p>北北和北北母亲被我吓了一大跳。</p>
+<p>「你没事吧？」</p>
+<p>北北抓住我发红的手，气得眼泪直冒：「王八蛋，怎么今天还不让我省一点心！</p>
+<p>「走，我们去医院！」</p>
+<p>「我没事。」</p>
+<p>我急忙拉住了她：「就是一点发红而已，不疼。」</p>
+<p>「现在最重要的不是这个，而是录音笔！」</p>
+<p>13</p>
+<p>我把他们拉到房间，然后打开了录音笔。</p>
+<p>在听完一段呼呼呼的风声后，录音笔里突然响起了一个男人的声音。</p>
+<p>这声音不是北北父亲的，而是……</p>
+<p>「张涛？」</p>
+<p>「我老公临死前见的最后一个人，怎么会是你爸？！」</p>
+<p>北北母亲死死地盯着我，我被盯得头皮发麻。</p>
+<p>「妈，可能是个误会，张叔叔不是这种人，我相信他，也相信阿雅，我们还是继续听下去吧。」</p>
+<p>北北母亲只能按捺住满腔怒火，没有再开口。</p>
+<p>我苦笑一声，将注意力放在了录音内容上。</p>
+<p>对话内容，如下。</p>
+<p>张涛：「老北啊，事情都调查得怎么样了？」</p>
+<p>北北父亲：「已经查得差不多了，我还在等医院的检测报告，最迟明天，我就能拿到手，到时电话联系。」</p>
+<p>张涛：「好嘞，谢谢了啊，哥们。」</p>
+<p>……</p>
+<p>对话不长，只有简短的几句话。</p>
+<p>我却听得云里雾里：「报告？什么报告？」</p>
+<p>爸，你究竟在调查什么？</p>
+<p>我不敢直接问，我知道，以我爸的性子，就算我问了，他也不可能会说的。</p>
+<p>所以，最好的办法，是在警察查到之前，尽快找到这家医院，拿到报告书。</p>
+<p>我和北北对视一眼，默契地起身，朝着她爸的房间走了过去。</p>
+<p>经过翻找过后，北北在一个抽屉里找到了一张医院的名片。</p>
+<p>「世华中心医院。」</p>
+<p>14</p>
+<p>距离真相越近，我的心就跳得越快。</p>
+<p>我和北北没有耽误时间，直接赶了过去，等我们赶到医院的时候，已经晚了。</p>
+<p>徐 SIR 他们已经到了。</p>
+<p>他们看到我们出现，有些意外。</p>
+<p>徐 SIR 投射过来的眼神，带着浓浓的探究，我被看得心里一阵咯噔。</p>
+<p>「你们怎么会来这里？」</p>
+<p>我强装镇定，看着他的靠近，干笑了声：「来做检查。」</p>
+<p>徐 SIR 单挑眉头，很明显不信。</p>
+<p>「 你爸都招了，跟我们走一趟吧。」</p>
+<p>「什么？」</p>
+<p>我愣住了：「我爸招了？他招什么了？」</p>
+<p>「北叔叔的死，难道真的跟我爸有关？」</p>
+<p>我又哭了。</p>
+<p>可这回，北北没有再安慰我。</p>
+<p>我知道，我和她，回不去了。</p>
+<p>我坐上了警车，一脸迷茫，直到抵达目的地，我才从思绪中脱离出来。</p>
+<p>「报告，徐 SIR，又发生了两起命案。」</p>
+<p>一个警察突然敲开车窗，冲着徐 SIR 低声说道。</p>
+<p>我听到这话，突然打了一个激灵。</p>
+<p>怎么又……死人了？</p>
+<p>这次死的，是谁？</p>
+<p>15</p>
+<p>「别害怕。」</p>
+<p>徐 SIR 看到我苍白的脸色，难得缓和了语气：</p>
+<p>「你不是嫌疑人，只是过来配合调查，接下来，只要你把你丈夫的所有资料和交往过的人，事无巨细地告诉我，就行了。」</p>
+<p>我猛地抬头：「什么意思？</p>
+<p>「你们是在怀疑嘉豪？</p>
+<p>「怎么可能呢！嘉豪那么老实温柔，怎么可能会杀人！」</p>
+<p>我不敢置信的摇头，徐 SIR 只是笑而不语地递了一份报告给我。</p>
+<p>我颤抖着打开一看，顿时惊住了。</p>
+<p>报告书里，清楚地记录了，嘉豪和婆婆丁香毫无血缘关系。</p>
+<p>而第二份报告，更是让我心生作呕，只想吐。</p>
+<p>这是一份 DNA 检验报告，报告显示：丁香肚子里的孩子，和嘉豪有血缘关系。</p>
+<p>换句话来说，嘉豪就是丁香孩子的父亲。</p>
+<p>是我兜了一个大圈，都没能找到的人。</p>
+<p>我看完报告，僵在原地，五雷轰顶。</p>
+<p>「我们怀疑，北城的死，和嘉豪有关。</p>
+<p>「在他发现北城调查他和丁香的事后，他起了杀心，所以杀人灭口。</p>
+<p>「现在我们找不到他。</p>
+<p>「你和他认识了这么多年，一定知道，他的习惯和藏身之所，好好想想，然后告诉我们。」</p>
+<p>「我想冷静一下，可以吗？」</p>
+<p>我苍白着脸，摇摇欲坠。</p>
+<p>徐 SIR 表示理解，他起身离开了车内，靠在车外，懒洋洋地拿了根烟，抽了起来。</p>
+<p>我摸出手机，呆滞地抚摸着手机屏幕里的相片，那是我和嘉豪的合照。</p>
+<p>为什么……</p>
+<p>他为什么要做出这么恶心，这么违背常伦的事！</p>
+<p>我才是他的妻子啊，难道就因为我怀了身孕，他就管不住下半身了？</p>
+<p>眼泪一滴滴地掉落在屏幕上，突然，手机弹出了一个来电。</p>
+<p>我定睛一看，发现居然是我婆婆打来的。</p>
+<p>她怎么还有脸联系我！</p>
+<p>我怒火中烧，一接通电话，就劈头盖脸地骂了她，：「你怎么这么恶心！</p>
+<p>「没有血缘关系，就能做这种事吗？！</p>
+<p>「你们把我当成什么了？</p>
+<p>「嘉豪为人老实，一定是你故意引诱他，他才会犯了这种错误！</p>
+<p>「你真的让我想吐！」</p>
+<p>…….</p>
+<p>我发泄了一通后，突然听到了一句句轻微的求救声。</p>
+<p>「救……救命……」</p>
+<p>「救……救命……」</p>
+<p>那是……我婆婆的声音。</p>
+<p>她怎么了？</p>
+<p>我害怕了，急忙打开车门，将手机递给了徐 SIR。</p>
+<p>「我婆婆有危险！」</p>
+<p>随着这声落下，电话也被挂断了。</p>
+<p>徐 SIR 一听到这话，立马丢掉烟头，上车，载着我往家里赶去。</p>
+<p>在打开家门的那一刻，我被眼前的这一幕给吓呆了。</p>
+<p>16</p>
+<p>血……</p>
+<p>到处都是血……</p>
+<p>那些血，从干净的楼梯，一路蔓延到地上，然后消失在丁香的身下。</p>
+<p>「别看，闭上眼睛。」</p>
+<p>徐 SIR 挡在我面前，盖住了那铺天盖地的红，还有呛鼻的血腥味。</p>
+<p>救护车到了。</p>
+<p>他们带走了丁香，我呆滞地跟着跑来跑去。</p>
+<p>在经过一夜的抢救后，她的命保住了。</p>
+<p>孩子也保住了。</p>
+<p>可惜……她成为了植物人。</p>
+<p>我坐在冰冷的长凳上，垂着脑袋，不明白，为什么不过一天，我的世界就出现了翻天覆地的变化。</p>
+<p>北北父亲死了。</p>
+<p>嘉豪失踪，成为头号嫌疑人。</p>
+<p>我婆婆丁香，成为了植物人。</p>
+<p>徐 SIR 走过来，停在我面前。</p>
+<p>我没有抬头，整个人思绪都是混乱的。</p>
+<p>徐 SIR 叹了一口气：「你婆婆摔下楼是意外，你不要太自责了。</p>
+<p>「对了，刘民和赵重都死了。</p>
+<p>「我们怀疑，他们，都是嘉豪杀的。」</p>
+<p>「死……死了？」</p>
+<p>「怎么会这样。」</p>
+<p>我捂着脸，突然浑身发软，一点力气都没有。</p>
+<p>我瘫在长椅上，看着前方，沉默了好一会儿，突然开口：「我有办法能引他出来。</p>
+<p>「不过，我有一个条件。」</p>
+<p>「什么条件?」</p>
+<p>「能不能……保护好我？」</p>
+<p>我摸着自己的大肚子，笑得很难看：「我的孩子不能出事。」</p>
+<p>「我这辈子的指望就是他了。」</p>
+<p>「你放心，保护人民，是我们的职责！」</p>
+<p>我听到徐 SIR 的保证，安心了。</p>
+<p>我把他们带到了嘉豪所在的老家，他们穿着便服，潜藏在各处。</p>
+<p>在一切安排妥当后，我拨通了嘉豪的电话。</p>
+<p>嘟嘟嘟——</p>
+<p>电话里传来的声音，让我紧张地抓紧了手机。</p>
+<p>快接。</p>
+<p>快接啊。</p>
+<p>怎么还不接呢。</p>
+<p>我打了一个又一个，最后终于在打了四五个之后，电话通了。</p>
+<p>那头传来了嘉豪沉重的呼吸声。</p>
+<p>「你相信我吗？</p>
+<p>「阿雅。</p>
+<p>「我不是凶手，我真的不是！」</p>
+<p>他颤抖的声音，传了过来，我看了眼站在旁边的徐 SIR,然后点了点头：「我相信你。</p>
+<p>「你不可能会做这种事。</p>
+<p>「这其中一定是有什么误会。</p>
+<p>「嘉豪啊，你好好想想，你是不是得罪了什么人？</p>
+<p>「一定要认真想，我不能没有你，我的孩子也不能没有父亲。」</p>
+<p>我说着，哽咽了。</p>
+<p>嘉豪听到我的哭声，越发烦躁：「我想不出，真的想不出！</p>
+<p>「阿雅，别哭了，你过来，我抱抱你。」</p>
+<p>「那我在我们第一次见面的地方，等你。」</p>
+<p>我留下这句话后，就挂断了电话。</p>
+<p>我擦了擦眼泪，红着眼睛看向徐 SIR：「警官，如果嘉豪真的杀人了，那他会死吗？」</p>
+<p>「会。」</p>
+<p>「判处死刑。」</p>
+<p>我听到这话，双腿都软了。</p>
+<p>要不是手边扶着桌子，我恐怕要狼狈得倒在地上了。</p>
+<p>17</p>
+<p>我和嘉豪是在珠江大桥上认识的。</p>
+<p>我依稀还记得，那天的风很大，我穿着碎花裙，狼狈地抓着裙子，走在桥上，一步一步地挪，生怕自己走光。</p>
+<p>嘉豪就是在那个时候出现的。</p>
+<p>他脱下了自己的外套，系在了我的腰上，帮我解决了当时的困扰。</p>
+<p>然后，我们就认识了。</p>
+<p>在加了微信之后，我们发现自己居然和对方聊得这么来，恋爱结婚生子，自然也就是顺其自然的事了。</p>
+<p>我本来以为，我会就这样幸福地度过余生。</p>
+<p>没想到，事情竟然会发展到今天这个地步。</p>
+<p>我站在桥中心，看着嘉豪一步步靠近，眼泪不自觉地流了出来。</p>
+<p>他冲过来，抱住了我。</p>
+<p>小心翼翼地，宛如我们当年第一次见面。</p>
+<p>我贪念地闻着他身上的味道，然后苦笑一声：「我好想你啊。」</p>
+<p>嘉豪听到这话，非但没有感动，反而还冷笑一声，伸手插进我的头发，一把抓住监听器，摔在了地上。</p>
+<p>我脸色一白。</p>
+<p>嘉豪冷笑：「这是什么？</p>
+<p>「你是不是和警察合作了？</p>
+<p>「你是不是要抓我进去，让我坐牢！</p>
+<p>「是不是想和我离婚啊！」</p>
+<p>我害怕了，急忙摇头：「不是的。</p>
+<p>「我知道，我之前做了对不起你的事，可我真的不是故意的。」</p>
+<p>嘉豪抓着自己的头发，非常烦躁，他不知道自己当时为什么会那样。</p>
+<p>鬼使神差，就好像冥冥之中，不受自己控制了一样。</p>
+<p>上了不该上的床，睡了不该睡的人。</p>
+<p>究竟是哪里出了差错呢？</p>
+<p>嘉豪想不明白，也越发激动：「你不该这么狠心，我告诉你，我就是死，也不可能让我的孩子和别的男人姓的！</p>
+<p>「阿雅，你是我的，是我的！」</p>
+<p>我看着他陷入癫狂，有些害怕了，那些人怎么还没出现！</p>
+<p>我下意识地后退，嘉豪步步紧逼。</p>
+<p>「嘉豪，你冷静一点，我刚刚是开玩笑的。」</p>
+<p>我等不到救援，所以只能自救。</p>
+<p>我改变了一开始商量好的拖延时间策略，柔声细语道：「那只是一个普通的耳机而已，你忘啦？我们第一次见面的时候，我就戴着耳机。」</p>
+<p>嘉豪没听进去，他现在已经没有回头路了。</p>
+<p>他对我说了谎。</p>
+<p>他的确杀人了。</p>
+<p>现在将我骗出来，也是为了带我一起走。</p>
+<p>如果她不愿意，那……</p>
+<p>嘉豪突然狠下心，一把抓住我的肩膀，然后将我推到桥边。</p>
+<p>「不要！」</p>
+<p>「你要干什么？」</p>
+<p>我的挣扎无济于事，我意识到，嘉豪是真的想要我死。</p>
+<p>我的心，一点点掉落在尘埃里。</p>
+<p>痛得呼吸都有些困难。</p>
+<p>冷风在耳边呼啸，我大声呼叫：「救命啊！」</p>
+<p>「不要不要，嘉豪，不要啊——」</p>
+<p>在我掉落珠江桥的那一刻，我下意识地紧抓着嘉豪的手臂，最后和他一起掉进了底下那条又深又长又冰冷的珠江。</p>
+<p>「赶紧救人！」</p>
+<p>徐 SIR 看到出事，急忙安排捞人。</p>
+<p>他盯着掉落在桥上的监听器，眉头皱得紧紧的。</p>
+<p>「为什么……会被发现呢?」</p>
+<p>原本，他和我沟通好，她戴着监听器，拖延时间，想办法将嘉豪引下珠江大桥，然后再在恰当的时机，通知他们动手抓人。</p>
+<p>可关键时刻，监听器居然被发现，给嘉豪丢在地上砸坏了？</p>
+<p>经过紧急的打捞，他们终于找到了奄奄一息的我和已经失去生命迹象的嘉豪。</p>
+<p>我在医院里有惊无险，经过抢救肚子里的孩子保住了。</p>
+<p>我醒过来后，第一件事就是跑到天平间，呆呆地看着嘉豪的尸体。</p>
+<p>徐 SIR 跟在我身边，寸步不离。</p>
+<p>突然，他像是看不下去了，打破了寂静：</p>
+<p>「他的下个目标本来就是你。」</p>
+<p>说着，徐 SIR 拿出了一份人身安全保险单。</p>
+<p>这张保险单，清楚地记录了，如果我出现任何意外，嘉豪将获得五百万的赔偿金。</p>
+<p>我看着保险单，眼泪又无声地涌了出来。</p>
+<p>「巨额保险……五百万……</p>
+<p>「就为了五百万，他居然想要我死？</p>
+<p>「徐 SIR,他是不是早就设计好了这一切！」</p>
+<p>我哭成泪人，颤栗着身体，不敢置信。</p>
+<p>徐 SIR 叹了一口气，没出声。</p>
+<p>最近这几年确实出现了很多杀妻骗保的案子，没想到，原本只是一宗简单的谋杀案，还能牵扯出这事来。</p>
+<p>我也太倒霉了。</p>
+<p>徐 SIR 一脸复杂。</p>
+<p>我哭得肚子隐隐约约都有些抽痛：「钱，钱，钱，他要钱，怎么不直接跟我说呢？</p>
+<p>「为了他，我家连房子首付都给了，难道还不够吗！</p>
+<p>「为什么要这样对我！」</p>
+<p>我捶打着嘉豪的尸体，哭得不能自已：「混蛋！</p>
+<p>「混蛋！！」</p>
+<p>徐 SIR 没有阻止我的发泄，而是在一旁静静地守着我。</p>
+<p>我发泄了没多久，不远处就跑来了他的同事。</p>
+<p>「老大，我们又查到了一个新消息，您看。」</p>
+<p>他把手里的资料递给了徐 SIR，徐 SIR 打开一看，脸色顿时变得奇怪了起来。</p>
+<p>「阿雅。</p>
+<p>「你丈夫嘉豪，还买了另外一份保险。」</p>
+<p>「什么？」</p>
+<p>我的心，好像已经不会跳动了，我呆呆地抬头：「什么保险?」</p>
+<p>「他的意外事故巨额保险，受益人，是……丁香。」</p>
+<p>我的脸色顿时变得难看了起来。</p>
+<p>所以，嘉豪其实是做了两手准备？</p>
+<p>他是不是担心如果杀我不成，事情败露，为了给他妈的孩子得到保险赔偿，还准备设计自己假死？</p>
+<p>他从头到尾，从头到尾都没有把我的孩子当成一回事！</p>
+<p>我已经哭不出来了。</p>
+<p>哀大莫过于心死，大抵就是这样。</p>
+<p>「节哀，你婆婆还需要你照顾，如果有什么需要帮忙的尽管找我。」</p>
+<p>「谢谢…」</p>
+<p>我垂下头，实在提不起一点精力。</p>
+<p>嘉豪一走，还没和他离婚的我，就成为了侍奉婆婆的唯一人选。</p>
+<p>婆婆现在已经成为了植物人，她肚子里的孩子还好好的。</p>
+<p>我一想到再过几个月，我就得一个人带两个孩子，伺候植物人婆婆，就觉得崩溃。</p>
+<p>日子过得很快。</p>
+<p>几个月后，我顺利生下了一个女婴。</p>
+<p>我爸我妈，早早就提前来到我家，伺候我坐月子。</p>
+<p>不用再面对那对关系畸形的母子，我这个月子，竟过得十分畅快。</p>
+<p>女儿也乖巧听话，一点都不磨人。</p>
+<p>我很高兴。</p>
+<p>更让我高兴的是，三个月后，我婆婆在医院生下一个儿子后，便去世了。</p>
+<p>而我……也不枉设计了这么多事，最后终于如愿得到了那笔巨额赔偿款呢。</p>
+<p>全文完。</p>
+<p>番外 1.张雅</p>
+<p>我早就看我婆婆不顺眼了，表面一套背后一套。</p>
+<p>她儿子在的时候，对我和气体贴。</p>
+<p>她儿子一走，就对我不是鼻子不是眼睛的。</p>
+<p>我嫁给嘉豪，可不是为了受她的气的。</p>
+<p>我没忍住，在嘉豪面前，揭开了他妈的真面目。</p>
+<p>没想到，他居然不信。</p>
+<p>不仅不信，还指责我不该这么冤枉他妈。</p>
+<p>这是我犯的第一个错误，我根本就不该对他说这件事，母子毕竟是母子，又怎么会是我一个外人能比的呢。</p>
+<p>自从我挑破了这事后，丁香也没有再掩饰什么了。</p>
+<p>直接当着嘉豪的面，就开始为难我。</p>
+<p>嘉豪更是听他妈的话，对我拳打脚踢。</p>
+<p>嘉豪根本就是一个妈宝男！</p>
+<p>他妈说什么都是对的，我说什么都是错的！</p>
+<p>我被骗了。</p>
+<p>我过得一点都不开心。</p>
+<p>这对母子，怎么能这么对我？！</p>
+<p>我也是我家千娇万宠的宝贝啊。</p>
+<p>凭什么，凭什么，我嫁过来，就要受这个气！</p>
+<p>我不甘！</p>
+<p>一个大胆的想法和计划，涌上我的心头。</p>
+<p>你们……死定了。</p>
+<p>我冷冷地看着他们这对母子，当天下午，就给他们下了药，在亲眼看到他们纠缠在一起，躺在床上的时候，我才半关上门。</p>
+<p>然后想办法找来了物业大叔赵重。</p>
+<p>赵重这个王八蛋，眼睛都看直了，居然也没胆子走进去戳穿他们做的肮脏事。</p>
+<p>嗯，没关系，我本来也不指望他。</p>
+<p>我看到嘉豪和丁香清醒过后的惊慌失措，看着丁香为了掩盖这件事，故意引诱刘民上门，然后再翻脸不认人，直接举报了他。</p>
+<p>接着，她怀孕了。</p>
+<p>之后的事，全都按照我的计划进行。</p>
+<p>我故意让北北父亲参与调查，就是想让给嘉豪一个压力。</p>
+<p>没想到，这小王八蛋，怂了二十多年，突然有胆了。</p>
+<p>居然杀了北北父亲。</p>
+<p>然后还想杀我。</p>
+<p>嘻嘻嘻，可惜啊，你的一举一动都在我的眼里呢。</p>
+<p>谁杀谁，还不一定呢。</p>
+<p>我没有手软，在嘉豪动手前，我杀了刘民和赵重，然后在他们的家里留下了属于嘉豪的毛发。</p>
+<p>接着，我在家里的楼梯上放了一层不薄不厚的冰片，然后设定了定时电话，引诱丁香下楼接听电话，她踩中冰片，就一定会摔下楼。</p>
+<p>她可是怀孕了呢。</p>
+<p>这一摔，不死也残。</p>
+<p>冰片也会在一定的时间内，融化成水，而我，早已悄悄在楼梯的角落里放置了一个倒在地上的杯子，这样一来，就没人会怀疑地上残留的水渍。</p>
+<p>这件事，我可是做了上百次的实验呢。</p>
+<p>所以，万无一失。</p>
+<p>我就这么成功在徐 SIR 身边，隔着几十公里把丁香弄成了植物人。</p>
+<p>我有了不在场证明，自然没人会再怀疑到我的头上来。</p>
+<p>嘉豪，是我的最后一个目标。</p>
+<p>我根据徐 SIR 的要求，一步步带着他，设定了自己的计划。</p>
+<p>桥上的风真的很大呢，我的头发被吹得乱跑。</p>
+<p>嘉豪轻而易举就发现了我耳后的监听器。</p>
+<p>我最了解这个男人了，同床共枕这么久，他的性子我里里外外都摸透了。</p>
+<p>他受不了刺激。</p>
+<p>大男子主义。</p>
+<p>绝对不允许我有离开他的念头。</p>
+<p>嘻嘻嘻，我就这么一句句的不经意间，刺激了他，然后当着所有警察的面，我被嘉豪推进了江里。</p>
+<p>当然，我没有放过他，我死死地抓住他的手，和他一起掉了进去。</p>
+<p>没人知道，我为了这一刻，每晚练习了多久的闭气。</p>
+<p>我看着嘉豪在我手下失去了动静，然后再一脚将他踹进江底，涌出水面，不停地呼救，最后，我赢了。</p>
+<p>我骗过了所有人，拿到了这笔价值一千万的赔偿金。</p>
+<p>备案号:YXX1y665vbJTggga4wziP0X4</p>
+<p>​</p>
+<p>​</p>
+<p>非典型蛇蝎</p>
+<p>匿名用户 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/25-%E7%A6%81%E9%97%AD%E6%B8%B8%E6%88%8F/" title="禁闭游戏">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">禁闭游戏</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/25-%E5%8E%86%E5%8F%B2%E4%B8%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E5%90%9B%E5%AD%90%E6%8A%A5%E4%BB%87%E5%8D%81%E5%B9%B4%E4%B8%8D%E6%99%9A%E7%9A%84%E5%AE%9E%E4%BE%8B---%E7%9F%A5%E4%B9%8E/" title="历史上有哪些“君子报仇，十年不晚”的实例？ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">历史上有哪些“君子报仇，十年不晚”的实例？ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

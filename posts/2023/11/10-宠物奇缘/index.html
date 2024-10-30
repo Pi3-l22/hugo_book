@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宠物奇缘 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/11/10-%E5%AE%A0%E7%89%A9%E5%A5%87%E7%BC%98/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/11/10-%E5%AE%A0%E7%89%A9%E5%A5%87%E7%BC%98/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="宠物奇缘">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-10T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+  <meta name="twitter:title" content="宠物奇缘">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="宠物奇缘">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2023-11-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-11-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="12171">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">宠物奇缘</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2023-11-10T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2023-11-10T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%ae%a0%e7%89%a9%e5%a5%87%e7%bc%98&amp;url=https://mohai.us.kg/posts/2023/11/10-%E5%AE%A0%E7%89%A9%E5%A5%87%E7%BC%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/11/10-%E5%AE%A0%E7%89%A9%E5%A5%87%E7%BC%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%ae%a0%e7%89%a9%e5%a5%87%e7%bc%98%20https://mohai.us.kg/posts/2023/11/10-%E5%AE%A0%E7%89%A9%E5%A5%87%E7%BC%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25982.jpg" alt="宠物奇缘" />
+      
+
+      <p>宠物奇缘</p>
+<p>低调厚爱：请星星捎信告白</p>
+<p>我贪图高冷兽医的美色，跑去当他的狗。</p>
+<p>本以为他不知道我是人。</p>
+<p>直到被按在床上，签下「宠物」条约，我才明白。</p>
+<p>我可能不是人，但他是真的狗！</p>
+<p>01</p>
+<p>我家小区门口新开了一家宠物医院。</p>
+<p>价格良心，医术精湛。</p>
+<p>重点是，那个医生帅得惊天地、泣鬼神。</p>
+<p>平日一起遛狗的姐妹们全都欣喜若狂。</p>
+<p>结果，一群人花枝招展地去，灰头土脸地回。</p>
+<p>她们说，那个易医生帅是帅，就是脾气不太好。</p>
+<p>我缩了下脖子，摸了摸身旁毛毛的头，有点沮丧。</p>
+<p>「他脾气不好诶，咱们还是别去了吧。」</p>
+<p>毛毛不太认同，鄙夷地瞪了没出息的我一眼。</p>
+<p>我是典型的有色心没色胆。</p>
+<p>可我养的狗不是。</p>
+<p>要知道，这位英姿飒爽的德牧妹妹，最大的爱好就是看帅哥。</p>
+<p>而且是「若为美色故，啥东西皆可抛」的那种。</p>
+<p>于是，一个电闪雷鸣的暴雨夜，它毅然决然地奔向了疾驰的电动车。</p>
+<p>02</p>
+<p>我抱着 70 多斤的毛毛，哭得稀里哗啦，冲进了宠物医院。</p>
+<p>「医生，救救它！」</p>
+<p>此时的我像个落汤鸡，脸上的妆糊作一团，身上满是泥水和血迹。</p>
+<p>左腿膝盖上还有来时路上摔了俩跟头的伤口，可谓惨不忍睹。</p>
+<p>易丞正准备下班。</p>
+<p>看到这场面，他脱下穿到一半的外套。</p>
+<p>利落而平稳地从我的怀里把毛毛接过去。</p>
+<p>我顾不上欣赏传闻中的那张脸，紧张得腿直抖。</p>
+<p>片刻过后，我听到他松了一口气。</p>
+<p>「右后腿受了一点皮外伤，没伤到内脏，也没骨折。」</p>
+<p>体力告竭的我瞬间瘫软在地，声音打着颤。</p>
+<p>「可是……它刚刚一直在抽搐，看上去很痛苦……」</p>
+<p>易丞看了眼毛毛的肚子，眉梢抖了一下：</p>
+<p>「应该是吃了太多东西，噎着了。」</p>
+<p>「……」</p>
+<p>我看向赖在易丞怀里一脸幸福的毛毛，气得头发差点竖起来。</p>
+<p>好你个色胆包天的女流氓，为了看帅哥还真是无所不用其极！</p>
+<p>易丞为毛毛处理着伤口，头也没抬，指了下一旁的桌子。</p>
+<p>「把信息单填了。」</p>
+<p>我抹了把脸，从地上爬起来。</p>
+<p>抖着手填着表格，这才有闲情逸致去偷看易丞。</p>
+<p>哎哟喂，这腿，嘶哈。</p>
+<p>哎哟喂，这腰，嘶哈。</p>
+<p>哎哟喂，这脸……</p>
+<p>我还没来得及擦一下哈喇子，就被易丞冷箭般的目光定在了原地。</p>
+<p>他声音凉凉的：「怎么？信息单在我脸上？」</p>
+<p>我乖乖收回视线，瘪了下嘴。</p>
+<p>呜，真凶，长那么帅让人看两眼怎么了……</p>
+<p>03</p>
+<p>处理完伤口，易丞把毛毛抱下看诊台，坐回桌前。</p>
+<p>修长白净的大手拿起信息单，略过一眼。</p>
+<p>垂首看向毛毛，含笑道：「汪毛毛？」</p>
+<p>我条件反射地举起手：「到！」</p>
+<p>对上易丞金丝眼镜下诡异的目光，我弱弱地放下手，努力找回点颜面。</p>
+<p>「咳，我就是汪毛毛。」</p>
+<p>真不怪我不争气，不管过了多少年，面对医生和老师，血脉压制这个东西永远存在。</p>
+<p>易丞抬指轻推鼻梁上的眼镜，声音里压抑着叹息。</p>
+<p>「信息单是要填宠物名字。」</p>
+<p>一阵静默，我看了看毛毛，毛毛看了看我。</p>
+<p>我指了指身旁坐得端正的大德牧。</p>
+<p>「它也叫毛毛，随主人姓的话，我俩同名。」</p>
+<p>易丞凝视我两秒，俯身去摸毛毛的头。</p>
+<p>语气轻柔：「毛……咳，你要乖，回去不可以舔伤口。」</p>
+<p>毛毛一脸陶醉地蹭了蹭他的大手。</p>
+<p>我在一旁看着，突然就有点羡慕我的狗。</p>
+<p>期盼着，期盼着，易医生的目光终于移到我身上。</p>
+<p>我瞬间立正站好。</p>
+<p>他敛了笑意，眉心轻皱，声线寒凉。</p>
+<p>「母德牧的正常体重是 22~32kg，而毛毛现在的体重是 76 斤。肥胖会引发心脏和关节等疾病，汪毛毛女士，你明白这件事的严重性吗？」</p>
+<p>我无语凝噎，瞪向罪魁祸首。</p>
+<p>只见贪吃狗一脸无辜。</p>
+<p>我的目光缓缓移到捂在毛毛耳朵上的那双大手。</p>
+<p>？？？</p>
+<p>怎么？</p>
+<p>他是怕毛毛听到说它胖，伤了自尊心吗？！</p>
+<p>那汪毛毛破碎的心呢？</p>
+<p>有没有人来管管啊？！</p>
+<p>04</p>
+<p>我一瘸一拐地走出大门。</p>
+<p>左手牵着毛毛，右手握着易医生送给毛毛的伞。</p>
+<p>没错，是送给毛毛的。</p>
+<p>他说：「它的伤口不能沾水。」</p>
+<p>我低头看了看自己膝盖上的伤，悲愤地走进瓢泼大雨。</p>
+<p>美色不能移，长腿不能屈！</p>
+<p>我汪毛毛绝不会再踏进这个宠物医院半步！</p>
+<p>05</p>
+<p>第二天一早，我站在宠物医院门口。</p>
+<p>来开店的易丞看到我，面露异色。</p>
+<p>他眉眼柔和，大掌揉着我的脑袋。</p>
+<p>「你怎么自己在这？」</p>
+<p>我泪眼汪汪，张嘴，一声清脆的狗叫。</p>
+<p>「汪！」</p>
+<p>06</p>
+<p>昨天夜里，一声震天的雷响过后，我从狗窝里醒过来。</p>
+<p>我用爪子揉了把脸，以为这只是一场梦。</p>
+<p>然而再醒过来，看着熟悉而巨大的家具，我认清了现实。</p>
+<p>我真的变成毛毛了。</p>
+<p>魂淡啊！</p>
+<p>我承认，我昨天是有那么一瞬间想魂穿毛毛……</p>
+<p>但也不必言出法随吧？！！！</p>
+<p>我那些中彩票，隐藏富二代的梦想能不能先结清一下啊？！！</p>
+<p>我躺在狗窝里，深沉地思考过后，终于接受了命运。</p>
+<p>人生总有许多多多多多多的不如意。</p>
+<p>但狗还是要坚强地活下去的。</p>
+<p>我摸摸瘪瘪的肚子。</p>
+<p>想起昨天赖在易丞怀里一脸陶醉的毛毛。</p>
+<p>走向了那家发誓不会再踏进半步的宠物医院。</p>
+<p>在哪里跌倒就在哪里躺着。</p>
+<p>我就不客气地去体验一下被帅哥疼爱的感觉吧！</p>
+<p>没记错的话，昨天在店里看见很多好吃的。</p>
+<p>他一个「宅心仁厚」的医生，不会见我这个饿肚子的小可怜而不顾吧？</p>
+<p>07</p>
+<p>我觉得我在当狗这方面属实有点天赋。</p>
+<p>本来只想讨口吃的，没想到只是蹭了蹭易丞，我还获得了一个家。</p>
+<p>「你在这等着，不要乱动。」</p>
+<p>他把我抱到沙发上，抽身去拿医药箱。</p>
+<p>我恋恋不舍地把爪子从他的胸肌上收回来，咂吧了一下嘴。</p>
+<p>易医生还真是，深藏不露……</p>
+<p>可惜这种福利居然只有动物才能享受。</p>
+<p>暴殄天物啊！</p>
+<p>易丞屈膝半跪在沙发旁，为我处理右后腿沾湿的纱布。</p>
+<p>当他的视线落在我的左腿时，好看的眉心拧紧。</p>
+<p>「汪毛毛虐待你？」</p>
+<p>我：「？」</p>
+<p>易丞给我的伤口上药，有些心疼。</p>
+<p>「昨天晚上左腿还好好的，不过一个晚上，又添新伤。</p>
+<p>「没想到她是这种人，早知道就不那么和颜悦色了……」</p>
+<p>我：「？？？」</p>
+<p>易医生，您是不是对和颜悦色有什么误解？</p>
+<p>而且……有没有一种可能，这伤是我汪毛毛自己的伤啊！！</p>
+<p>我气恼不平，挥着爪子哼哼唧唧。</p>
+<p>易丞怜爱地把我揉进怀里。</p>
+<p>大手一下一下摸着我的脑袋。</p>
+<p>「可怜的小家伙，你一定是忍受不了才逃出来的吧。」</p>
+<p>我看着他满脸的「别哭了，我都懂」。</p>
+<p>一口气没上来，抬腿蹬了他一脚。</p>
+<p>你懂个屁！</p>
+<p>08</p>
+<p>易丞在店里守株待兔了三天。</p>
+<p>等汪毛毛良心发现去找她的狗。</p>
+<p>结果可想而知——</p>
+<p>笑死，根本等不着。</p>
+<p>他根本不会想到他等的人此刻正葛优瘫在他家沙发上。</p>
+<p>嘴里叼着他亲手做的小饼干，津津有味地看着海绵宝宝。</p>
+<p>不得不说，当狗挺爽的。</p>
+<p>不用工作，不用做家务，不用还各种贷款。</p>
+<p>吃饱睡，睡饱玩。</p>
+<p>最重要的一点是——</p>
+<p>可以正大光明地吃帅哥豆腐。</p>
+<p>「虐待宠物又抛弃，这样的人根本不配当人。」</p>
+<p>我窝在刚洗完澡的易丞怀里，摇头晃脑地扒拉着他 T 恤的衣领。</p>
+<p>经过这几天，我算是想明白了。</p>
+<p>他说汪毛毛的坏话，关我毛毛什么事？</p>
+<p>我只是一只什么都不懂的修勾。</p>
+<p>易丞看向我的目光一改刚才的愤愤，温柔得不行。</p>
+<p>「毛毛乖，从我身上下去，该睡觉了。」</p>
+<p>正在努力想要一睹春光的我停下爪子。</p>
+<p>犹豫片刻，转身跳上了他的大床。</p>
+<p>姐睡了三天沙发，腰酸背痛。</p>
+<p>今天说什么也要和易丞同床共枕。</p>
+<p>易丞怔了半晌，无奈地笑。</p>
+<p>「真拿你没办法。」</p>
+<p>09</p>
+<p>夜深了，我躺在床上。</p>
+<p>鼻尖萦绕着易丞身上清冽的薄荷香，翻来覆去睡不着。</p>
+<p>他似乎是累了，没过一会儿身旁就响起轻浅平稳的呼吸声。</p>
+<p>我睁眼悄悄地看他的侧脸。</p>
+<p>睫毛很长，下颌线分明。</p>
+<p>怎么有人连睡着都这么好看？</p>
+<p>我忍不住贴过去，把头埋在他颈窝蹭了蹭。</p>
+<p>嗯？</p>
+<p>怎么感觉有点奇怪？</p>
+<p>我攥起落在他胸前的一缕长发，盯了半天。</p>
+<p>不是毛茸茸的爪子，是手。</p>
+<p>不是短粗的毛发，是头发。</p>
+<p>？？？</p>
+<p>我变回人了？！</p>
+<p>我从床上跳起来，跑向落地镜。</p>
+<p>熟悉的脸，熟悉的身体！</p>
+<p>我热泪盈眶地熊抱着落地镜，感叹着老天待我不薄。</p>
+<p>既然已经变回人了，就得赶快离开这里。</p>
+<p>不然被易丞发现，以他现在对我的印象。</p>
+<p>怕是要直接把我扭送到警察局里去。</p>
+<p>这样想着，我贼不走空地抓起桌上的小饼干，奔向了大门。</p>
+<p>怎么还反锁了？</p>
+<p>这什么破门？怎么这么难开？！</p>
+<p>手忙脚乱之时，我听到易丞低哑的声音从床那边传来。</p>
+<p>「毛毛？」</p>
+<p>我僵在原地，满脑子都是明天的头条新闻。</p>
+<p>《惊！妙龄女子不惜变成狗，竟是为了做这件事……》</p>
+<p>《男孩子在家一定要保护好自己，昨夜，我市发生了一起骇人听闻的入室劫色案……》</p>
+<p>我不禁悲从心来。</p>
+<p>完了，全完了。</p>
+<p>然而，预想中的斥责声并没有到来。</p>
+<p>我回头去看，只见易丞仍是合眼躺在床上，眉心轻拧。</p>
+<p>难道只是被开门的声音吵到了？</p>
+<p>我不敢再乱动，靠在门边蹲下。</p>
+<p>等一会儿吧。</p>
+<p>等他睡熟了，我再找机会跑出去。</p>
+<p>等着等着，我两眼一闭。</p>
+<p>会周公去了。</p>
+<p>10</p>
+<p>转天早上醒来时，我被易丞抱回了床上。</p>
+<p>没有被打包扔出去，也没有被报警抓走。</p>
+<p>因为，我又变成了狗。</p>
+<p>……</p>
+<p>当狗就当狗吧。</p>
+<p>这么赖在易丞家也挺幸福的。</p>
+<p>他人长得帅，对我又好，而且，厨艺一绝！</p>
+<p>简直是二十四孝完美主人！</p>
+<p>我坐在餐桌旁，翘首以盼。</p>
+<p>他来了他来了！</p>
+<p>他端着美食走来了！</p>
+<p>等等，这上的什么玩意儿？</p>
+<p>我盯着碗里清淡的沙拉，郁郁寡欢地叹了口气。</p>
+<p>易丞循声看了过来。</p>
+<p>微挑眉梢：「现在连沙拉都不吃了？」</p>
+<p>因为我拒绝吃狗粮，易丞变着法子给我做了几天饭。</p>
+<p>我刚觉得好日子来了，没想到却是到头了。</p>
+<p>我跳下餐椅。</p>
+<p>坐在窗边，神情哀怨。</p>
+<p>我心里清楚，毛毛体重超标，易丞想帮我减肥。</p>
+<p>但是……</p>
+<p>遭这份罪的为什么是我汪毛毛啊？！</p>
+<p>我生着闷气，耷拉着耳朵望向窗外。</p>
+<p>易丞在我身后静默了几秒，又回身进了厨房。</p>
+<p>再出来时，手里托着一盘小蛋糕。</p>
+<p>有点讨好：「喏，草莓味的，你最喜欢的。」</p>
+<p>嘿，我就知道他拿我没办法。</p>
+<p>但我必须矜持住，让他知道「虐待」我的严重性。</p>
+<p>我扭了下身子，把头扬到一边。</p>
+<p>「生气了？真的不吃？」</p>
+<p>易丞揉了揉我毛茸茸的脑袋瓜，低哑地轻笑。</p>
+<p>「可是毛毛……你的尾巴在摇哦。」</p>
+<p>我：「……」</p>
+<p>出息啊出息，你怎么就离家出走了呢？</p>
+<p>11</p>
+<p>夜深了，我再次尝试离开。</p>
+<p>然而同样的剧情再次上演。</p>
+<p>唯一的不同是，这次我睡着前，手里抓着的是易丞白天做的小蛋糕。</p>
+<p>就这样，我屡战屡败，屡败屡战。</p>
+<p>白天当狗晚上当人地在易丞家变了足足两周。</p>
+<p>这天，家里迎来了客人。</p>
+<p>透过门缝，我看见一张毫不逊色于易丞的帅脸。</p>
+<p>我兴高采烈，尾巴摇得像直升机。</p>
+<p>正准备迎接，易丞长腿一蹬，把我和客人一同关在了门外。</p>
+<p>？？？</p>
+<p>这是啥？</p>
+<p>关门放狗？</p>
+<p>帅哥习以为常地靠在门边，朝里面喊：「这就是你的待客之道？」</p>
+<p>门那头静悄悄的。</p>
+<p>见色眼开的我围着帅哥转了两圈，蹭了蹭他的裤腿。</p>
+<p>帅哥注意到我，弯下身子，揉我的头。</p>
+<p>「哟，易丞什么时候养狗了？」</p>
+<p>我忍不住咧嘴笑。</p>
+<p>好帅，好痞，我好爱。</p>
+<p>「呵，还挺可爱，要不要跟哥哥回家啊？」</p>
+<p>话音未落，门突然被打开。</p>
+<p>易丞单手抱起我，正准备再关门，帅哥从门缝里挤了进来。</p>
+<p>帅哥对上易丞的冷眼，面不改色，一屁股坐在沙发上。</p>
+<p>「我说你，不就是坑你去和落落见一面，至于记仇那么久吗？」</p>
+<p>易丞：「……」</p>
+<p>帅哥又说：「哎哟，她缠了我三个月，死活要见你一面，我实在没辙了。</p>
+<p>「再说了，落落大美女一个，见一面又不会少块肉。」</p>
+<p>「贺尧，别以为所有人都和你一样，女人这种生物，我躲都……」</p>
+<p>易丞话说到一半，突然神色复杂地看了我一眼。</p>
+<p>然后像烫手山芋一样把我扔到地上。</p>
+<p>呜，屁股疼。</p>
+<p>有人虐待宠物啦！</p>
+<p>我跳到贺尧腿上，哼哼唧唧求安慰。</p>
+<p>贺尧挠了挠我的下巴，有些奇怪地瞥了易丞一眼。</p>
+<p>「你不是最喜欢狗？扔它干嘛？」</p>
+<p>就是就是！</p>
+<p>我愤愤点头。</p>
+<p>最近几天易丞总是这样忽冷忽热的。</p>
+<p>说他对我不好吧，但还是好吃好喝，轻声细语地照顾着。</p>
+<p>可说他对我好吧，又会在这种我吃豆腐吃到一半……</p>
+<p>啊不，是在这种人宠依偎的幸福时刻，突然把我推开。</p>
+<p>Ok，这些我都可以不计较。</p>
+<p>最罪不可恕的是，他现在每次洗完澡都裹得严严实实！</p>
+<p>还不许我再上床睡觉！</p>
+<p>怎么有人连小狗都防着啊？</p>
+<p>狗狗委屈，狗狗不说话。</p>
+<p>易丞抿着唇，没有回答贺尧的问题。</p>
+<p>只是把我从贺尧怀里捞了回去。</p>
+<p>「娇气。」</p>
+<p>他嘴上嫌弃着，大手却轻柔地替我揉着屁股。</p>
+<p>我老脸一红。</p>
+<p>这也就是毛黑，不然非暴露不可。</p>
+<p>12</p>
+<p>晚饭时间，贺尧看着像人一样坐在餐椅上、裹着围嘴的我。</p>
+<p>犹豫了半秒，还是把憋了很久的话说了出来。</p>
+<p>「易丞你说对女人没兴趣，该不会是因为喜欢狗吧？」</p>
+<p>也不怪他这么想。</p>
+<p>这一下午，每当贺尧想摸摸我的时候都会被易丞隔开。</p>
+<p>那架势，和醋罐子被打翻了没什么区别。</p>
+<p>我暗戳戳地羞红了脸。</p>
+<p>易丞不会真的喜欢我吧？</p>
+<p>可是等等……</p>
+<p>我是条狗啊！</p>
+<p>我摇了一半的尾巴瞬间耷拉下去。</p>
+<p>好好的一个帅哥，怎么是个变态……</p>
+<p>易丞闻言斜睨向我，将我的反应尽收眼底。</p>
+<p>他拿起贺尧的外套，往他身上一扔。</p>
+<p>「少废话，吃饱了就赶紧滚。」</p>
+<p>这话听着刻薄，可是很奇怪的，却隐约带了笑音。</p>
+<p>贺尧被推出去的时候，手里还抓着筷子。</p>
+<p>「诶，我还带了两瓶好酒要跟你喝呢。</p>
+<p>「不是，好歹让我把酒带走……」</p>
+<p>夜深人静，易丞已经睡下。</p>
+<p>我蹑手蹑脚地扒在桌边，盯着那两瓶酒舔了舔嘴唇。</p>
+<p>日子过得太素了，是时候来点调味品了。</p>
+<p>「小酌」过后，贺尧心心念念的两瓶好酒已经见底。</p>
+<p>我心满意足地摸摸肚皮，手脚并用地爬到易丞的床上。</p>
+<p>晕头转向间，我寻到一个热源。</p>
+<p>没多想，挤了过去。</p>
+<p>贴紧的瞬间，手下的肌肉僵了一瞬。</p>
+<p>13</p>
+<p>我东倒西歪地蹭到易丞怀里。</p>
+<p>嫌弃地嘟囔：「啧，硬邦邦的。」</p>
+<p>话落，轻车熟路地找到最舒适的姿势，不省人事。</p>
+<p>熟睡中，我翻了个身，差点掉下床。</p>
+<p>腰间突然被一只大手揽住，转瞬重新落回那个温热的怀抱。</p>
+<p>易丞闭着眼，声线慵懒。</p>
+<p>「乖点，别乱动。」</p>
+<p>我恢复了一些意识。</p>
+<p>但没完全恢复。</p>
+<p>喝醉酒的人最擅长多愁善感，没事找事。</p>
+<p>我一想到自己身为人时受到的待遇，突然就委屈起来。</p>
+<p>「哼，也就对狗会这么好。」</p>
+<p>酒壮怂人胆的我难得升起了一股逆反心理。</p>
+<p>不让我动是吧？</p>
+<p>我偏要动！</p>
+<p>我还要大动特动！</p>
+<p>反正我现在是条狗，易丞能拿我怎样？</p>
+<p>这么想着，我在他怀里变本加厉地拱来拱去。</p>
+<p>「爪子」也开始为眼睛谋福利。</p>
+<p>易丞缓缓睁开眼，看着正在扒他衣服的我，声音有些哑。</p>
+<p>「汪毛毛，你还睡不睡了？」</p>
+<p>我没有发现事情的严重性，也没有心思去回答他的问题。</p>
+<p>我停下手上的动作，盯着眼前那双翕动的唇，咽了口唾沫。</p>
+<p>……唔，看起来很好亲的样子。</p>
+<p>心动不如行动。</p>
+<p>我攀着他的肩膀，仰着头轻啄那片温软。</p>
+<p>恍惚间，迎面袭来的呼吸变得炙热粗重。</p>
+<p>突然窗外一道惊雷炸响。</p>
+<p>我吓得一抖，缩头乌龟一般撤离，把头埋回他胸前。</p>
+<p>「偷亲帅哥是不对，但也不至于遭天谴吧……」</p>
+<p>正忏悔着，头顶传来一道低哑的声音：</p>
+<p>「亲够了？」</p>
+<p>？？？</p>
+<p>我缓缓看向被我压在身下的易丞。</p>
+<p>从他墨黑的瞳孔中，我看到自己的倒影。</p>
+<p>不看不知道，一看吓一跳。</p>
+<p>是个人啊！</p>
+<p>我后知后觉地反应过来现在的情况。</p>
+<p>脑子里只有一个念头——</p>
+<p>跑！</p>
+<p>我火速从易丞身上爬起来。</p>
+<p>歪歪扭扭地奔向大门。</p>
+<p>易丞迈开两步，手一抓，把我拎了回去。</p>
+<p>「这次不带点吃的上路了？」</p>
+<p>「？？？」</p>
+<p>等等，好像有哪里不对劲。</p>
+<p>14</p>
+<p>正在我努力思考是哪里不对的时候。</p>
+<p>易丞一指托着我下巴，将我的头抬起来。</p>
+<p>「不想和我解释一下？」</p>
+<p>他的指尖划过下巴时，鬼使神差地屈指挠了挠。</p>
+<p>而我，习惯性地歪头蹭了蹭他的手掌。</p>
+<p>他怔了一瞬，我也傻了。</p>
+<p>不争气啊！</p>
+<p>怎么当狗还当出职业病了？！</p>
+<p>易丞沉默片刻，轻笑一声。</p>
+<p>平时那双藏于镜片之后的狭长双眸卸去了伪装，闪过一道精光。</p>
+<p>「算了，你不用解释。」</p>
+<p>他把我拎回床上。</p>
+<p>打开床头柜，抽出一张纸。</p>
+<p>「把这个签了吧。」</p>
+<p>我看着纸中央「宠物条约」四个字，只觉得人生都玄幻了。</p>
+<p>他这是养我养上瘾了？</p>
+<p>我一个新时代女性，怎么可能接受这种「丧权辱国」的条约？！</p>
+<p>正想抗议，只见他慢条斯理地将金丝眼镜架回鼻梁。</p>
+<p>拿出一个计算器，敲敲打打。</p>
+<p>「汪毛毛女士，你隐瞒身份住进我家，两周时间内吃空了三次冰箱，总计损失……」</p>
+<p>我从床上爬起来：「是你把我带回来，还做给我吃的……」</p>
+<p>他没理我，继续敲：「居住期间，多次对本人进行亲密接触，意欲图谋不轨，造成了本人严重的心理创伤，精神损失费……」</p>
+<p>我坐不住了：「那时候我是条狗！」</p>
+<p>易丞眯眼：「所以我刚才是被狗亲了？」</p>
+<p>我很利索地跪了回去。</p>
+<p>用最怂的姿势说着最硬气的话。</p>
+<p>「我可以赔钱给你，太多的话，分期也行。但是休想让我签这种东西！」</p>
+<p>我嫌弃地把纸扔开。</p>
+<p>易丞看向桌上已经倒了的酒瓶子。</p>
+<p>小声嘟囔。</p>
+<p>我没听清，只听到了什么「假酒」。</p>
+<p>只见他摸着下巴，装作思考。</p>
+<p>而后竟然缓缓露出一个委屈的表情。</p>
+<p>长长的睫毛忽闪忽闪的，像是挠进了心里。</p>
+<p>「真的不考虑一下？」</p>
+<p>我咽了口唾沫。</p>
+<p>禁、禁止魔法攻击啊！</p>
+<p>他恶魔低语：「做我的宠物不仅不用赔钱，而且福利多多哦……」</p>
+<p>眼前的男人单手解开一颗扣子。</p>
+<p>月色下，他精致的锁骨和若隐若现的肌肉像是在说：「客官，来玩啊~」</p>
+<p>这招美人计戳中了我的心巴。</p>
+<p>我抹了把哈喇子。</p>
+<p>二话不说拿起笔。</p>
+<p>在「宠物条约」上签下「汪毛毛」的大名。</p>
+<p>易丞似乎对我的决定早有预料。</p>
+<p>笑着把计算机归零，扔到一边。</p>
+<p>我「毛」字刚写完，他便抬手把纸收走了。</p>
+<p>然后抬手把扣子重新系上。</p>
+<p>我急了，扑过去阻止他这种过河拆桥的恶劣行为。</p>
+<p>手刚伸过去便被他反手握住。</p>
+<p>「我要睡了，你去睡沙发吧。」</p>
+<p>言罢，他轻轻一带，把我送下了床。</p>
+<p>我：「？？？」</p>
+<p>我抱着毯子，愤愤地在沙发上窝起来。</p>
+<p>心疼男人，倒霉一阵子。</p>
+<p>相信男人，倒霉一辈子！</p>
+<p>15</p>
+<p>第二天一早，我沐浴着阳光。</p>
+<p>顶着一头鸡窝，呆坐在床上。</p>
+<p>我怎么在床上？</p>
+<p>不对，我怎么坐着？！</p>
+<p>易丞端着早餐从厨房出来，看见我，也愣住了。</p>
+<p>他把碟子放在桌上，快步走到床边。</p>
+<p>「还没变回去？出故障了？」</p>
+<p>说着，抬手捏了捏我的脸。</p>
+<p>我一把抓住易丞，凑近，用他的眼睛当镜子。</p>
+<p>意料之外地看到了我那美丽的脸蛋！</p>
+<p>！！！</p>
+<p>我真的变回人了！</p>
+<p>易丞不知想到什么，笑了笑，回身坐到了餐桌旁。</p>
+<p>「还不去洗漱？一会儿早餐凉了。」</p>
+<p>我一时之间陷入混乱，呆呆地点了点头：「哦。」</p>
+<p>「洗手台旁边的柜子里有新的牙刷，自己打开用。」</p>
+<p>我站在洗手间，看着手里全新的牙刷。</p>
+<p>粉、色、的？</p>
+<p>本就混乱的大脑更加混乱了。</p>
+<p>他不会真的是个变态吧？</p>
+<p>洗漱完毕，我坐到易丞对面。</p>
+<p>太久没有以人类的形态吃饭，还真有点不适应。</p>
+<p>我一边拿叉子戳着煎蛋，一边偷偷看向易丞。</p>
+<p>「再看要吃进鼻子里去了。」</p>
+<p>他冷不丁出声。</p>
+<p>我连忙低下头，可是没多久，目光又忍不住飘了回去。</p>
+<p>「那个，我没有变成狗诶。」</p>
+<p>「嗯，我没瞎。」</p>
+<p>「你就不震惊，不好奇，不想知道我为什么会变成狗，又为什么变回来了？」</p>
+<p>「哦，为什么？」</p>
+<p>我看着他那副云淡风轻的样子，一阵气闷。</p>
+<p>他根本不是真的想知道吧？</p>
+<p>更像是，逗着我玩。</p>
+<p>我愤愤地咬下一口煎蛋：「不告诉你。」</p>
+<p>他突然轻笑出声，柔着声音哄。</p>
+<p>「锅里还有培根卷，我去拿，你边吃边告诉我，好不好？」</p>
+<p>可恶，他太会了。</p>
+<p>根本无法拒绝。</p>
+<p>等我将盘子里的培根卷一扫而空，也刚好把变身的全过程讲完。</p>
+<p>他靠在椅背上，双手环胸。</p>
+<p>「所以你是觉得，打雷是控制你变身的关键？」</p>
+<p>我点点头。</p>
+<p>不然我突然变回人这件事实在说不通。</p>
+<p>「可是一周前也打雷了，你却没有变回来。」</p>
+<p>「也对哦。」</p>
+<p>我又陷入了苦恼。</p>
+<p>易丞盯着我的嘴唇若有所思。</p>
+<p>「我可能知道了。」</p>
+<p>我连忙拉开易丞身旁的椅子，坐下。</p>
+<p>「是什么？！你展开说说。」</p>
+<p>易丞笑笑，抬手敲了下我的额头。</p>
+<p>「自己慢慢想吧。」</p>
+<p>「对了，一会儿陪我去见个人。」</p>
+<p>「谁啊？」</p>
+<p>「陈落落。」</p>
+<p>16</p>
+<p>咖啡厅内，我有些局促地搅拌着杯中的咖啡。</p>
+<p>「她是谁？！」</p>
+<p>对面的女生瞪着眼指向我。</p>
+<p>易丞波澜不惊地轻抿咖啡：「和我住在一起的人。」</p>
+<p>「论身材，论颜值，她哪里比得过我？她凭什么能和你住一起？」</p>
+<p>我不乐意了，挺起胸脯。</p>
+<p>看了看她的，又缩了回去。</p>
+<p>气势弱了一半：「我，我可爱。」</p>
+<p>陈落落气鼓鼓地打量了我一会儿，点了点头：「确实。」</p>
+<p>？？？</p>
+<p>剧情应该这么发展吗？</p>
+<p>易丞忍住笑意，正经道：「总之，现在人你也见到了，以后不要再吵着要见我了。」</p>
+<p>说完，他便起身去结账。</p>
+<p>落落蔫了，泫然欲泣。</p>
+<p>我有点不忍心。</p>
+<p>她还怪可爱的。</p>
+<p>「那个，你别哭啊。」</p>
+<p>她瘪着嘴：「你真和易丞住一起了啊？」</p>
+<p>我点点头。</p>
+<p>落落摇了摇头：「呜呜，我不信。」</p>
+<p>「真的！他每天都给我做饭，还陪我玩。」</p>
+<p>这可都是实话。</p>
+<p>落落不甘心：「可是，这些都是很寻常的事。」</p>
+<p>易丞刚好结完账回来，听到陈落落的反驳，轻飘飘地加了一句。</p>
+<p>「我还帮她洗过澡，在一张床上睡觉。」</p>
+<p>落落：「……」</p>
+<p>我的脸「唰」的一下，从耳根红到了脖子。</p>
+<p>17</p>
+<p>从咖啡厅出来，我和易丞并肩走在街上。</p>
+<p>迎面的风也吹不凉我的猴屁股脸。</p>
+<p>「你怎么乱说话啊？」</p>
+<p>易丞挑眉：「我说错了吗？」</p>
+<p>以前怎么没发现，这人这么不要脸的。</p>
+<p>我抬手在脸边扇风：「我那时候是毛毛……」</p>
+<p>等等……</p>
+<p>毛毛！</p>
+<p>我满天飞散地凌乱思绪瞬间归位。</p>
+<p>我怎么把毛毛忘了！</p>
+<p>我变回来了，那毛毛去哪了？</p>
+<p>我慌了神，拔腿就要往家跑。</p>
+<p>易丞一把抓住我的手：「上车，我带你回去。」</p>
+<p>一路上，易丞的手都没有放开。</p>
+<p>我的心奇迹般地安定下来。</p>
+<p>下车后，我拉着他开始往家跑。</p>
+<p>迎面撞上以前一起遛狗的姐妹。</p>
+<p>「诶，小汪，好久不见啊——啊啊啊啊啊啊易医生！」</p>
+<p>我脚步不停，急匆匆地跑过去：「我有点事，下次和你聊！」</p>
+<p>相比之下，易丞显得游刃有余多了。</p>
+<p>他迈着长腿跟在我旁边，还有空闲对我的遛狗姐妹点点头。</p>
+<p>身后传来姐妹喜极而泣的声音：「易医生对我点头了呜呜呜他心里有我！」</p>
+<p>出了电梯，刚走近防盗门。</p>
+<p>我就听见毛毛在里面兴高采烈的哼唧声。</p>
+<p>我连忙按下密码，冲进屋里。</p>
+<p>抱着毛毛泪眼汪汪：「妈妈的好大儿！你真的在家啊！」</p>
+<p>毛毛在我怀里兴奋地乱扑腾，用舌头狂甩我的脸。</p>
+<p>一抬眼扫到站在门边的易丞，腿一蹬。</p>
+<p>毫不留恋地离我而去了。</p>
+<p>……</p>
+<p>我看着毛毛围着易丞又蹦又跳。</p>
+<p>心梗了一瞬。</p>
+<p>那模样，简直比见着我还亲。</p>
+<p>一番热情的洗礼过后，易丞终于得空观赏我的小房子。</p>
+<p>直到他的视线停留在沙发一角。</p>
+<p>我顺着看过去，只见草莓图案的小内内明晃晃地躺在那。</p>
+<p>我屁滚尿流地跑过去把衣物收好。</p>
+<p>「那个，你先坐，我去给你弄点喝的。」</p>
+<p>「不用，我先走了。」</p>
+<p>本来还在雀跃的一颗心，突然落了下去。</p>
+<p>我把易丞送到门边。</p>
+<p>没忍住，拉住了他的衣角。</p>
+<p>「那个，现在我已经变回人了，合约是不是也作废了……」</p>
+<p>分明是被骗着签下的合约，怎么现在反倒不舍上了？</p>
+<p>我捏紧手中的衣角。</p>
+<p>突然觉得眼眶有些发热。</p>
+<p>是不是以后，我和他就再也没有关系了？</p>
+<p>18</p>
+<p>低哑的轻笑声在我头顶响起。</p>
+<p>「你好像忘了，你签的是『汪、毛、毛』三个字。」</p>
+<p>我愣愣地抬起头：「啊？」</p>
+<p>易丞看着我的脸，微不可察地蹙了下眉心。</p>
+<p>「汪毛毛，你该不会以为回了家就自由了吧？」</p>
+<p>他一边说，一边俯下身。</p>
+<p>用拇指将我眼睫上要掉不掉的眼泪抹去。</p>
+<p>温热的呼吸将我的脸喷得通红。</p>
+<p>「少做梦了，养了这么久——</p>
+<p>「你别想跑。」</p>
+<p>他的声线很低，缓缓的。</p>
+<p>一字一顿，仿佛别有深意。</p>
+<p>我好半天才找回声音，小得像蚊子叫。</p>
+<p>「可、可你说要走……」</p>
+<p>「某人不是吃早饭时就说午饭想吃糖醋小排骨？」</p>
+<p>「？」</p>
+<p>「家里没有排骨了。」</p>
+<p>……</p>
+<p>原来他是要去买菜做饭。</p>
+<p>想到我刚才掉的金豆豆。</p>
+<p>我羞得从头红到脚，恨不得挖个地洞钻进去。</p>
+<p>「一个小时后过来吃饭。」</p>
+<p>易丞垂眸看向我抓着他衣角的手：「回家的路还记得吧？」</p>
+<p>我松开手，拍着胸脯咧嘴笑：「忘不了。」</p>
+<p>易丞挑挑眉，没再说什么，转身走了。</p>
+<p>他前脚刚走，后脚对门的阿姨就笑嘻嘻地探出头来。</p>
+<p>「小汪啊，一阵子没见，交男朋友啦？小伙子好高好帅哟！小情侣还在热恋期吧？如胶似漆的，回个家都像生离死别，怎么没亲个再走啊？唉，想当年我家那口子可是不放人……」</p>
+<p>「啊哈哈哈，是啊！那个我还有事，先进去了，阿姨再见。」</p>
+<p>我凌乱地和阿姨打了招呼，逃窜般地回身进了屋。</p>
+<p>背靠着门，神游天外。</p>
+<p>情侣吗？</p>
+<p>我和易丞？</p>
+<p>19</p>
+<p>一个小时后，我按响了易丞家的门铃。</p>
+<p>脚边还跟着摇头摆尾的毛毛。</p>
+<p>易丞来开完门就匆匆往厨房里走。</p>
+<p>「不是知道密码？下次自己进来。」</p>
+<p>我站在门口，有点手足无措。</p>
+<p>现在我对易丞家简直像自己家一样熟悉。</p>
+<p>可是一想到对门阿姨说的话，就觉得站也不是，坐也不是。</p>
+<p>见我半天没有动静，易丞又出来看我。</p>
+<p>「愣着干什么？去看电视，等着开饭。」</p>
+<p>这种奇怪的夫妻日常既视感是怎么回事啊？！</p>
+<p>我红着脸往厨房里钻。</p>
+<p>「我还是来帮忙吧。」</p>
+<p>易丞垂眼翻炒着排骨，闻言轻笑：「少添乱，在门口看着就行。」</p>
+<p>我看着眼前肩宽腿长的男人围着围裙，专心地炒着我爱吃的菜。</p>
+<p>本应觉得滑稽违和，但心里却在奇妙地冒着泡泡。</p>
+<p>我忍不住问道：「你为什么对我这么好？」</p>
+<p>之前他明明很讨厌我的。</p>
+<p>易丞装盘的手一顿，斜睨向我。</p>
+<p>「你不是我的宠物吗？」</p>
+<p>是哦。</p>
+<p>我只是他的宠物。</p>
+<p>这个回答本就在我的预料之中。</p>
+<p>可是为什么心情会这么低落呢？</p>
+<p>毛毛闻到香味，也跟着凑到了厨房门口。</p>
+<p>我盯着毛毛若有所思。</p>
+<p>「如果你真的这么喜欢养宠物的话，我可以再给你买一条狗。」</p>
+<p>易丞沉下眼，端着菜从我身边走过。</p>
+<p>冷淡的声音和我第一次见他时如出一辙。</p>
+<p>「不用，吃饭。」</p>
+<p>餐桌上，我低着头，心里闷闷的。</p>
+<p>连最爱的糖醋小排骨都没什么胃口去吃。</p>
+<p>易丞往我碗里夹菜：「怎么不吃？不好吃？」</p>
+<p>我摇了摇头。</p>
+<p>再好吃又怎么样，这盘菜终究不属于我。</p>
+<p>就像眼前这个秀色可餐的人。</p>
+<p>我突然文艺地想到张爱玲的那句话。</p>
+<p>水中月是天上月。</p>
+<p>眼前人是心上人。</p>
+<p>眼前人……</p>
+<p>是心上人？</p>
+<p>我真的喜欢上易丞了？</p>
+<p>汪毛毛，你醒醒。</p>
+<p>有个帅哥能这样养着你已经是天大的馅饼了。</p>
+<p>可不能再贪心。</p>
+<p>易丞似乎心情也不是很好。</p>
+<p>沉默了很久才开始对我说些什么。</p>
+<p>然而我沉浸在自我劝诫中，没有听清。</p>
+<p>吃过饭后，我借口还要回去处理工作。</p>
+<p>易丞冷着一张脸，把我送回了家。</p>
+<p>这次我们没有像小情侣一样腻腻歪歪。</p>
+<p>我压下心中的不舍，简单地道了别，回身进了家门。</p>
+<p>我本以为我可以调整好自己的心。</p>
+<p>安分守己地当个宠物。</p>
+<p>可是很快，我发现我错了。</p>
+<p>整整一周，我都没有再见到易丞。</p>
+<p>去他家的时候，只有装修队在忙碌。</p>
+<p>他该不会是，搬家了吧？</p>
+<p>20</p>
+<p>日子还是要过。</p>
+<p>我回归到了从前平静的生活。</p>
+<p>吃饭，睡觉，录 vlog。</p>
+<p>只是现在每天还多了一项活动：想起易丞。</p>
+<p>这天我正在思考自己是不是被「遗弃」了的时候。</p>
+<p>电话响了。</p>
+<p>陌生的号码。</p>
+<p>难道是易丞？</p>
+<p>我兴高采烈地接通。</p>
+<p>陈落落的声音从听筒传来：「猜猜我是谁？」</p>
+<p>我抹了把鼻子，声音闷闷的。</p>
+<p>「陈落落，你怎么有我的电话号码？」</p>
+<p>「你怎么知道是我？！哎呀不重要，快下来，咱们出去玩。」</p>
+<p>「？？？」</p>
+<p>我做梦也不会想到，有一天会和陈落落还有贺尧来游乐园玩。</p>
+<p>他俩对我来说可谓陌生人。</p>
+<p>还没想明白他们怎么会知道我的电话还有住址。</p>
+<p>我就被拉上了过山车。</p>
+<p>几趟下来。</p>
+<p>我们不仅打成一片，原本郁闷的心绪更是一扫而空。</p>
+<p>我们仨并排坐在长椅上，一人举着一个冰淇淋。</p>
+<p>「总听易丞提起你，这次总算是见着真人了。」贺尧朝着我挤眉弄眼，「你知不知道，易丞养了条狗，也叫毛毛。」</p>
+<p>我知道，我太知道了。</p>
+<p>正是本人。</p>
+<p>陈落落嫌弃地给了贺尧一肘子：「你村里没通网啊？他俩都同居了，能不知道吗？」</p>
+<p>贺尧扫过我一眼，坏笑：「啧，易丞这棵铁树不言不语的，自己开上花了。」</p>
+<p>开什么花啊，都凋谢了好吗？</p>
+<p>刚好一些的心情又 down 了下去：「不是你们想的那样，我们现在没什么关系了。」</p>
+<p>陈落落直接从椅子上蹦起来：「没有关系？！那我是不是又可以追易丞了？！」</p>
+<p>贺尧把陈落落拉回长椅：「你消停会儿。」</p>
+<p>说完又打量着我，挑眉问道：「易丞没联系你？」</p>
+<p>我摇了摇头。</p>
+<p>他又问：「你知道他去干什么了吗？」</p>
+<p>我又摇了摇头。</p>
+<p>我不想再聊起那个人，拉着陈落落继续去坐过山车。</p>
+<p>这次贺尧没有跟我们一起玩。</p>
+<p>他在下面不知在和谁打电话。</p>
+<p>过山车运行途中，陈落落突然想起什么，喊道：</p>
+<p>「不对啊！是易丞让我们来找你的！你是不是骗我？！」</p>
+<p>我正忙着在风中凌乱地尖叫。</p>
+<p>「你说啥啊啊啊啊——」</p>
+<p>21</p>
+<p>我被贺尧和陈落落送回家的时候，天已经黑了。</p>
+<p>滚动的云层中闪过几道白光。</p>
+<p>车前脚走，雨后脚就落了下来。</p>
+<p>我想跑，但是腿根本没有力气。</p>
+<p>干脆直接来了个雨中漫步。</p>
+<p>说起来，第一次见到易丞，也是这样的天气。</p>
+<p>我正胡思乱想着，迎面撞上一堵肉墙。</p>
+<p>「汪毛毛，你是淋雨上瘾？」</p>
+<p>许久未见的那个人站在我面前。</p>
+<p>将伞举在我头顶，眉眼间竟隐隐有股戾气。</p>
+<p>我忍不住笑：「你终于出现了！」</p>
+<p>我一笑，他冷硬的俊脸也柔了下来。</p>
+<p>「我不是告诉你有研讨会，要去外地半个月？」</p>
+<p>「？？？」</p>
+<p>「什么时候？」</p>
+<p>易丞无奈：「吃糖醋排骨时。」</p>
+<p>「……」</p>
+<p>「不知道我去哪了就不会打电话问我？」</p>
+<p>他还好意思说？</p>
+<p>「我哪有你电话？」</p>
+<p>「我不是给你拨了个电话，让你存下来？」</p>
+<p>「？？？」</p>
+<p>「什么时候？」</p>
+<p>易丞直接气笑了：「吃糖醋排骨时。」</p>
+<p>「……」</p>
+<p>我愧疚地低下头。</p>
+<p>老师早就说过，不要开小差。</p>
+<p>看吧，开小差的下场有多惨。</p>
+<p>易丞揽住我的肩，带着我往楼里走。</p>
+<p>电梯里，我突然想到了翻身的点。</p>
+<p>「既然你有我的电话，为什么这么久都不打给我？」</p>
+<p>这次轮到易丞不说话了。</p>
+<p>他又把我带回了家。</p>
+<p>我刚一进去就停住了，震惊得直比划。</p>
+<p>「这怎么多了面墙？！」</p>
+<p>「自己住时喜欢通透，后来觉得还是打出个卧室比较方便。」</p>
+<p>「方便什么？」</p>
+<p>易丞不顾我的疑问，把我推进浴室：「新浴巾在柜子里，自己拿。」</p>
+<p>我看着比我淋得还彻底的易丞，有点不好意思。</p>
+<p>「还是你先洗吧。」</p>
+<p>他突然笑了：「汪毛毛，你再磨蹭，我就亲自帮你洗了。」</p>
+<p>我脸「腾」地红了，一把将他推出门外。</p>
+<p>从柜子里翻出没拆包装的浴巾。</p>
+<p>看着那粉嫩的颜色。</p>
+<p>突然觉得，好像有很多事，我没有搞清楚。</p>
+<p>22</p>
+<p>易丞洗完出来的时候。</p>
+<p>我正坐在沙发上，努力整理所有想问的问题。</p>
+<p>然而看到他微敞的衣领，什么问题都飞了。</p>
+<p>我情不自禁地舔舔嘴唇。</p>
+<p>这就是宠物福利吗？</p>
+<p>易丞看到我直愣愣的目光，勾起一个笑。</p>
+<p>走过来，拿起毛巾帮我擦头发。</p>
+<p>「口水擦擦，先把想问的都问了。」</p>
+<p>我心猿意马，盯着垂在眼前的粉色毛巾胡乱地问：「牙刷，浴巾，毛巾，都是给我准备的吗？」</p>
+<p>「嗯，还有拖鞋，水杯……」</p>
+<p>我听着他细数家中所有我会用到的东西，嘴角偷偷上扬。</p>
+<p>心中一簇簇缓慢生长的小花，在悄悄绽放。</p>
+<p>「你不是说研讨会要开半个月，怎么今天就回来了？」</p>
+<p>「因为我接到一个电话，我的好兄弟说某个笨蛋不开心了。」</p>
+<p>好吧，我就是那个笨蛋。</p>
+<p>「所以是你让他们来找我的？」</p>
+<p>「嗯。」</p>
+<p>「我的电话也是你给他们的？」</p>
+<p>「嗯。」</p>
+<p>「可是你为什么会有我的电话？」</p>
+<p>「宠物医院的信息单上……」易丞深吸一口气，咬牙切齿，「汪、毛、毛，你的重点是不是放错了？」</p>
+<p>不等我回答，他继续说。</p>
+<p>「你在电梯里不是问我为什么不联系你？</p>
+<p>「因为我觉得，既然你不想做我的宠物，我也不应该再绑着你不放。」</p>
+<p>我没忍住，纠正道：「我不想做你的宠物是因为……」</p>
+<p>他停下帮我擦头发的动作。</p>
+<p>「汪毛毛，你愿意做我的女朋友吗？」</p>
+<p>「我愿意！！！」</p>
+<p>我笑着从沙发上跳起来，蹦到他身上。</p>
+<p>易丞接住我，无声地笑。</p>
+<p>那双桃花眼盈满了温柔，如同一坛陈年老酒，醉得人头晕。</p>
+<p>他的唇缓缓靠近。</p>
+<p>我顺从地闭上眼。</p>
+<p>然而等了很久，也没有等来温热的触感。</p>
+<p>我忍不住把眼睛打开一条缝。</p>
+<p>只见他蹙眉看向电闪雷鸣的窗外：「今天不行。」</p>
+<p>？？？</p>
+<p>「为什么不行？」</p>
+<p>「……」</p>
+<p>「你来大姨夫了？」</p>
+<p>「汪、毛、毛。」</p>
+<p>窗外，狂风暴雨。</p>
+<p>房间内，打闹声盈着爱意。</p>
+<p>「到底为什么不行？男人不能说不行知不知道？」</p>
+<p>我攀着易丞的脖子，努力凑过去：「你亲亲我呀！」</p>
+<p>易丞的额角跳了跳：「汪毛毛，我命令你下去！」</p>
+<p>「我现在是你的女朋友，不是你的宠物，你不能命令我！」</p>
+<p>想到那份宠物条约，我突然发现自己遗漏了一个大问题。</p>
+<p>「易丞，你到底是什么时候发现我是汪毛毛的？」</p>
+<p>易丞挑了挑眉稍，所答非所问：「汪毛毛，你忘了给毛毛喂饭了。」</p>
+<p>「糟了！你怎么不早提醒我？！」</p>
+<p>我从他身上跳下来，火急火燎地往外跑。</p>
+<p>易丞笑了笑，拿起伞跟了上来。</p>
+<p>……</p>
+<p>很多年后，那个问题，我还是没有得到答案。</p>
+<p>不过又有什么关系呢？</p>
+<p>其实答案早就藏在每一块草莓蛋糕中了。</p>
+<p>□ 要开心鸭</p>
+<p>备案号:YXX13KaDNwRCe6mdKpSNBlM</p>
+<p>豪门姐弟之再归来</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>低调厚爱：请星星捎信告白</p>
+<p>一点点 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/11/11-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8D%8A%E5%B0%8F%E6%97%B6%E4%BB%A5%E5%86%85%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%AE%8C%E7%9A%84%E7%9F%AD%E7%AF%87%E5%B0%8F%E7%94%9C%E6%96%87_---%E7%9F%A5%E4%B9%8E/" title="有哪些半小时以内可以看完的短篇小甜文_ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">有哪些半小时以内可以看完的短篇小甜文_ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/11/10-%E7%8B%90%E8%80%81%E6%9D%BF/" title="狐老板">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">狐老板</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云间谁寄锦书来 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/9/17-%E4%BA%91%E9%97%B4%E8%B0%81%E5%AF%84%E9%94%A6%E4%B9%A6%E6%9D%A5/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/9/17-%E4%BA%91%E9%97%B4%E8%B0%81%E5%AF%84%E9%94%A6%E4%B9%A6%E6%9D%A5/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="云间谁寄锦书来">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26596.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26596.jpg">
+  <meta name="twitter:title" content="云间谁寄锦书来">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="云间谁寄锦书来">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11084">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26596.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">云间谁寄锦书来</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%ba%91%e9%97%b4%e8%b0%81%e5%af%84%e9%94%a6%e4%b9%a6%e6%9d%a5&amp;url=https://mohai.us.kg/posts/2024/9/17-%E4%BA%91%E9%97%B4%E8%B0%81%E5%AF%84%E9%94%A6%E4%B9%A6%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/9/17-%E4%BA%91%E9%97%B4%E8%B0%81%E5%AF%84%E9%94%A6%E4%B9%A6%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%ba%91%e9%97%b4%e8%b0%81%e5%af%84%e9%94%a6%e4%b9%a6%e6%9d%a5%20https://mohai.us.kg/posts/2024/9/17-%E4%BA%91%E9%97%B4%E8%B0%81%E5%AF%84%E9%94%A6%E4%B9%A6%E6%9D%A5/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26596.jpg" alt="云间谁寄锦书来" />
+      
+
+      <p>云间谁寄锦书来</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>世人只知我幸运。</p>
+<p>区区青楼风尘女子。</p>
+<p>就能惹得太子不惜触怒龙颜，御书房前跪三天三夜也要纳我入府。</p>
+<p>可谁人知道，他是个不折不扣的恶魔。</p>
+<p>「云锦，太子殿下又来看你啦」</p>
+<p>王妈妈冲我的房间喊道。</p>
+<p>我一边面无表情地整理衣服，一边起身准备迎接。</p>
+<p>这已经是他这个月第十次来了。</p>
+<p>我叫云锦，是翠红楼的头牌。</p>
+<p>「太子殿下。」我纤细的腰肢柔柔一弯，他便连忙将我扶住。</p>
+<p>「说了多少次了，云锦见孤不必多礼。」</p>
+<p>斜睨了一眼他手中拎着的食盒，我心中不由的一颤。</p>
+<p>似乎是感受到了我的异样，他温柔一笑。</p>
+<p>「云锦，孤又给你带了你喜欢吃的虾饺。」</p>
+<p>面对着王妈妈满眼赚翻的贪婪，和其他女子羡慕嫉妒的眼神，我回以笑容。</p>
+<p>「多谢太子殿下抬爱云锦。」</p>
+<p>「云锦，此番来孤是告诉你，孤想将你纳入东宫。」</p>
+<p>我盯着虾饺的目光一怔。</p>
+<p>「会不会太匆忙了些？」</p>
+<p>太子揉了揉我的头发，脸颊埋入我的脖颈间，深吸一口气。</p>
+<p>「不会，孤已经迫不及待接你回去了。」</p>
+<p>我还想说话，脖间传来一阵刺痛，逼得我生生咽了下去。</p>
+<p>只得挤出一句：「云锦全听殿下安排。」</p>
+<p>他终于放开了我，一边用绢帕细细擦拭着汩汩渗出的血，一边笑着。</p>
+<p>「还是云锦懂事。」</p>
+<p>不用看我也知道，脖间的皮肉已经被咬得翻卷出来。</p>
+<p>「好了，快吃虾饺吧。这可是孤特意派人，从鸿安楼买来的。」</p>
+<p>鸿安楼……</p>
+<p>是舒寓打杂的酒楼。</p>
+<p>舒寓是我的竹马，我们一同长大。</p>
+<p>后来我们逃难，快被饿死之时。</p>
+<p>王妈妈劝说我到翠红楼，他本是极不同意的。</p>
+<p>「锦儿，我们还有其他的出路。」他红着眼睛。</p>
+<p>我摇摇头：「你的旧伤，必须马上要钱来治。」</p>
+<p>后来，我到了翠红楼，他在鸿安楼做店小二。</p>
+<p>这件事被太子殿下发现，他便告诉我：「云锦，你只能是孤的。」</p>
+<p>「殿下放心，云锦生是您的人，死是您的鬼。」</p>
+<p>本来相安无事，可他突然提及。</p>
+<p>怕是已经发现了我昨日见过舒寓的事情。</p>
+<p>「殿下，云锦昨日只是……」</p>
+<p>「虾饺要凉了，就不好吃了。」</p>
+<p>我夹起来，一只一只地吃下去。</p>
+<p>「云锦真乖。」</p>
+<p>吃到最后一只时，我终于忍不住，趴在地上呻吟起来。</p>
+<p>我一直都对虾有过敏症。</p>
+<p>吃完轻则皮肤起疹红痒，重则呕血痉挛。</p>
+<p>「殿……下，云锦真的不行了。」</p>
+<p>太子终于起身，挑起我的下巴。</p>
+<p>「云锦，上次吃虾饺，可不只吃了这么点。」</p>
+<p>他暗黑色的眸子，一眼望不到底。</p>
+<p>薄唇却是微微勾起。</p>
+<p>「殿下，云锦知错了，求殿下垂怜。」</p>
+<p>泪水自脸颊滑落，砸在地上。</p>
+<p>蓦的，嗓子里一口腥甜。</p>
+<p>血喷在地面，溅在了他的衣摆上，留下点点红印。</p>
+<p>他将我扶起，直面着我的眼睛。</p>
+<p>「以后不可以不乖，听到了吗？」</p>
+<p>「云锦知晓了，云锦一定乖。」</p>
+<p>「那为孤弹奏一曲吧。」</p>
+<p>我努力稳住颤抖的双手，拨弄着琴弦。</p>
+<p>终于，他心满意足地起身。</p>
+<p>临走，留下一句话。</p>
+<p>「鸿安楼的店小二，他冒犯了孤，孤命人断他一条腿。」</p>
+<p>再也支撑不住，我又呕出一口鲜血，溅在琴弦上。</p>
+<p>「云锦姑娘，殿下体恤您，叫小的给您送药来了。」</p>
+<p>一个小厮敲了敲门，将药放在门外。</p>
+<p>没错，太子，他是个恶魔。</p>
+<p>高兴的时候对我关怀备至，生气的时候便倍加折磨。</p>
+<p>我不知道如果进了东宫，等着我的会是什么光景。</p>
+<p>但是我没有办法。</p>
+<p>隔日，王妈妈便告诉我一件大事。</p>
+<p>「云锦，你知道吗？太子殿下为了纳你入东宫，触怒龙颜，此时还在御书房外跪着。」</p>
+<p>我轻轻抚摸着怀里的小猫，眼睛抬也没抬。</p>
+<p>「希望殿下平安。」</p>
+<p>平安？我倒希望他死，死得越惨越好。</p>
+<p>王妈妈又感叹了一会我命好，然后起身离开了。</p>
+<p>三日后。</p>
+<p>我便听到消息：架不住太子苦求，皇上最终答应了。</p>
+<p>「你要娶那青楼女子，便去吧，但是别让朕见到！」</p>
+<p>我离开翠红楼那日，天气极好。</p>
+<p>我穿着太子准备的大红色嫁衣，上了软轿。</p>
+<p>这不合规矩。</p>
+<p>不合纳妾的规矩。</p>
+<p>虽然没有多么声势浩大，却也是让整个京城都看到了。</p>
+<p>大家只会说：「这女子真是命好。」</p>
+<p>却不知，无形之中，我成了整个皇家的敌人。</p>
+<p>因为我丢了他们的脸面，皇室极重颜面。</p>
+<p>「殿下。」</p>
+<p>洞房花烛夜，他掀了我的盖头，满脸温柔。</p>
+<p>「云锦终于在孤的手掌心了。」</p>
+<p>是啊，我再也逃不出他的手掌心了。</p>
+<p>此时，有下人来报。</p>
+<p>他面色不耐：「何事？」</p>
+<p>「殿下，白日里那跛子被我们打了一顿，此时又在府门前闹起来」</p>
+<p>我顿时有一种不好的预感。</p>
+<p>「命还挺大，打死吧。」太子淡淡说道。</p>
+<p>「不可。殿下，云锦求您放他一条生路。」</p>
+<p>顾不得满头的珠翠，我急急跪下。</p>
+<p>太子面色深沉，死死盯着我：「你要为他求情？」</p>
+<p>「殿下，那也是一条命。只要殿下放过他，您说什么，云锦便做什么。」</p>
+<p>一咬牙，我说道。</p>
+<p>顿时，他来了兴趣。</p>
+<p>「打断他另一条腿，扔远点。」</p>
+<p>舒寓，都怪我连累了你。</p>
+<p>「云锦，孤今夜想看你跳舞。」</p>
+<p>我福了福身，点头：「云锦这就跳。」</p>
+<p>却又被阻止：「不是这样跳，孤想看你在冰上起舞，一定很美。」</p>
+<p>说罢，外面有人抬进来一大块冰。</p>
+<p>完整的，晶莹剔透的。</p>
+<p>此时正逢三月，春寒料峭。</p>
+<p>我没有选择，脱下鞋子，站在冰上跳起舞来。</p>
+<p>冷，很冷，我颤抖着跳。</p>
+<p>我没有选择。</p>
+<p>一曲舞毕，太子始终没有说停，只是玩味地盯着，我那红肿到快失去知觉的脚。</p>
+<p>那夜之后，我便病了。</p>
+<p>病得很重，一个月都下不来床。</p>
+<p>天气逐渐暖和起来，草长莺飞。</p>
+<p>这一个月，太子除了让人来送药，并没有召见过我。</p>
+<p>倒是这日，我抱着猫，在院子里晒太阳。</p>
+<p>一个身量高挑，眉清目秀的男人闯进来，似乎是走错路了。</p>
+<p>看到我时，他愣了一瞬，开口。</p>
+<p>「姑娘，你生得真好看。」</p>
+<p>他说着轻佻的话，面上却一本正经。</p>
+<p>我起身见了一礼：「公子怕是走错了，这是内院。」</p>
+<p>他面色略带抱歉，拱了拱手。</p>
+<p>「我是楚王，今日来找皇兄，却不慎走错了路，打扰了姑娘。」</p>
+<p>四皇子，皇上亲封的楚王。</p>
+<p>纵使我再不解朝事，也知楚王党和太子党向来不和，相争已久。</p>
+<p>他出现在太子府，倒是稀客。</p>
+<p>这夜，太子便来了我的房中。</p>
+<p>他似乎瘦了些，身形渐薄。</p>
+<p>「今日，你见了楚王？」</p>
+<p>我半蹲着行礼，他没有让我起来。</p>
+<p>「是。」</p>
+<p>我答道。</p>
+<p>「孤那弟弟觉得你天生国色，向孤夸了你。」</p>
+<p>我抬头，他脸色晦暗不明，端着一杯酒细细打量。</p>
+<p>「云锦今日只是在院中晒太阳，不知楚王殿下为何来此。」</p>
+<p>我的腿有些麻，身形摇晃起来。</p>
+<p>太子轻笑：「是吗？」</p>
+<p>下一秒，他的酒杯便砸到我的额头上，感觉有东西流下来。</p>
+<p>不知是酒，还是血。</p>
+<p>他捏住我的下巴，强迫我正视着：「云锦，知道孤为何要纳你入东宫吗？」</p>
+<p>「因为你听话，而且你没有任何的依靠。」</p>
+<p>「在这世上，你只能靠对孤摇尾乞怜，来得到一些好处。」</p>
+<p>「可是，孤发现有些时候，你并不是那么地乖。」</p>
+<p>我身体止不住地颤抖，额头上的伤口也疼了起来。</p>
+<p>太子对我的反应很满意，又将头埋进我的颈窝。</p>
+<p>「云锦，只要你听话，孤会对你好的。」</p>
+<p>他走了。</p>
+<p>我擦拭着脖子和额头的血迹，机械地，没有任何活人气。</p>
+<p>连续几日，太子都来看我。</p>
+<p>不知是不是楚王在朝堂参他的缘故，他越来越暴躁。</p>
+<p>我旧伤未愈，又添新伤。</p>
+<p>这一日，有人从院子外扔进来一个小纸条。</p>
+<p>「云锦莫要担心，我一切安好。」</p>
+<p>是舒寓的字迹。</p>
+<p>我放下心来。</p>
+<p>这几日，太子身边似乎多了一个叫苏户谋士。</p>
+<p>并且这位谋士深得太子信任。</p>
+<p>「云锦，这位是苏先生，以后常住东宫，你认识认识。」</p>
+<p>太子向我介绍道。</p>
+<p>外人面前，他一向做得周全。</p>
+<p>我看去，苏先生一袭白衣，倒是颇有读书人的风范。</p>
+<p>「云锦记住了。」</p>
+<p>此后，苏先生便常伴太子左右。</p>
+<p>「哈哈哈哈，苏先生真乃上天赐予孤的珍宝。」</p>
+<p>听说是苏户帮助太子，破了楚王使的计谋，还令太子得到了皇上的嘉奖。</p>
+<p>中秋夜宴。</p>
+<p>太子破例允许大家一起用膳。</p>
+<p>不知道是不是我的错觉，太子看起来意气风发，却更加瘦得颧骨凹陷。</p>
+<p>贪了几杯，我有些不胜酒力，便匆匆来到湖边吹风。</p>
+<p>正迷迷糊糊的，不知何人推了我一把，我「啊」了一声栽进湖里。</p>
+<p>在失去意识前的最后一刻，感觉有人焦急地唤我：「锦儿！」</p>
+<p>再睁眼时，太子就坐在我的床前。</p>
+<p>「殿下。」</p>
+<p>太子说道：「你身体还受着寒，先别起来。」</p>
+<p>我又躺了回去，余光一瞄才发现，苏先生也在。</p>
+<p>「云锦，这次可多亏了苏先生救你。」</p>
+<p>是他救了我？那一声「锦儿」又是怎么回事？</p>
+<p>我没敢多问，只能朝他道谢：「多谢苏先生救命之恩。」</p>
+<p>据说推我的是一个婢女，不愿服侍我一个青楼出身的主子，心存怨念。</p>
+<p>入夜，不出所料，太子惩罚了我。</p>
+<p>这次是用皮鞭抽我，竖着倒刺的蛇皮鞭。</p>
+<p>每一鞭，都会让皮肉翻卷，鲜血淋漓。</p>
+<p>一开始很疼，后来，我逐渐没有了知觉。</p>
+<p>不知过了多久，他似乎打累了，开始和我说话。</p>
+<p>「你这个贱人，偏偏要昨日落水，竟被苏先生看了。」</p>
+<p>确实，落水被外男看到，就是不守妇道。</p>
+<p>他不能责怪苏先生，只能惩罚我。</p>
+<p>仿佛一个嗜血者，他用舌头舔拭着我的伤口，我得得眼泪直掉。</p>
+<p>「殿下，苏某有要事启奏。」</p>
+<p>门外，突然传来苏先生的声音。</p>
+<p>他应该还不知道，这屋子里是怎样一番光景。</p>
+<p>太子纵有不满，也只能起身整理好衣服。</p>
+<p>「苏先生去书房等着孤，孤马上就到。」</p>
+<p>一晚上，太子未曾归来。</p>
+<p>这次，我是真的要感谢苏先生了，要不然不知道我还要遭受什么样的虐待。</p>
+<p>这一日，太子外出。</p>
+<p>「多谢苏先生救命之恩。」</p>
+<p>邂逅苏户，我真心感谢道。</p>
+<p>他得的眉眼弯弯：「云锦姑娘不必客气，举手之劳。」</p>
+<p>那双眼睛真的很熟悉，以至于我都没有注意到他那一声并不和规矩的，姑娘。</p>
+<p>近日，太子在朝中的地位开始动摇。</p>
+<p>听说是他私自开采的金矿，因为塌方死了不少人，这才被皇上发现。</p>
+<p>「这金矿好端端的，怎么会塌方？」</p>
+<p>太子紧锁眉头，在书房踱来踱去。</p>
+<p>苏先生说道：「许是最近雨季，金矿又位处南边，所以地基不稳。」</p>
+<p>私采金矿是大罪，更何况是太子！</p>
+<p>皇上因此大发雷霆，令太子在东宫思过，未得召令不得进宫。</p>
+<p>如果许久不入宫，宫里的局势瞬息万变，主动权就会落到楚王手里。</p>
+<p>「殿下莫急，臣认为这并非没有好处。借此机会，殿下可以沉下心来，做大事。」</p>
+<p>大事？太子转头疑惑。</p>
+<p>好几天，我都见到他们早出晚归，深夜还在书房议事。</p>
+<p>而我也乐得清闲。</p>
+<p>「云锦。」</p>
+<p>我正逗着猫儿，抬头，竟又是楚王。</p>
+<p>「殿下早些走吧，这是内院。」</p>
+<p>说他不是有意我都不信，谁能一次又一次地，往人家内院跑。</p>
+<p>他却勾唇一笑，说道：「云锦姑娘，本王是来见你的。」</p>
+<p>「云锦是太子的人，楚王不该称云锦为姑娘。」</p>
+<p>「既然未曾入皇室宗碟，便算不得太子侧妃。」</p>
+<p>是啊，太子兴师动众的接我入东宫，却未曾让我入宗碟，明理上，我算不得侧妃。</p>
+<p>「楚王殿下来，又是所为何事？」</p>
+<p>「云锦姑娘放心，本王是有拜帖而来，不是私闯东宫。」</p>
+<p>我有些生气，他来，只会给我带来灾祸。</p>
+<p>他竟一把捏住我的胳膊，将我拉近。</p>
+<p>「云锦姑娘何必如此，拒人于千里之外？」</p>
+<p>我想要推开他，却反抗不过。</p>
+<p>只得怒骂：「登徒子。」</p>
+<p>他也不恼，哈哈一笑便离开了。</p>
+<p>我看着袖中的一封信，陷入沉思。</p>
+<p>「苏先生亲启。」</p>
+<p>他是写给苏户的！</p>
+<p>我明白了，苏户每日几乎都与太子在一处。</p>
+<p>而且太子对他保护极严，他没有办法靠近，于是想要从我这里下手。</p>
+<p>他想拉拢苏户！</p>
+<p>「苏先生，太子殿下。」</p>
+<p>经过再三思量，我来到书房。</p>
+<p>将信递给太子，我便在一旁静静站着。</p>
+<p>许久，苏户答道：「苏某此生只为殿下效力。」</p>
+<p>说完，便将那信烧了。</p>
+<p>太子很高兴，连同对我的态度也好了几分。</p>
+<p>「云锦，你果真对孤忠心。」</p>
+<p>许久没有舒寓的消息了，有次回翠红楼，我听王妈妈说，他好像离开了京城。</p>
+<p>离开，对他来说或许是最好的保命符。</p>
+<p>「太子殿下，您该好好休息的，都瘦了许多。」</p>
+<p>我一边替他擦脸，一边轻声说道。</p>
+<p>是啊，他已经瘦到了形销骨立的程度。</p>
+<p>太子精神倒是很好，摆摆手：「孤的身体孤自己清楚，想必是最近太劳累所致，不碍事。」</p>
+<p>户部尚书看到太子，吓一跳：「殿下，您是否生病了？该找太医来瞧瞧。」</p>
+<p>苏户在旁扬唇一笑：「殿下为公务劳心费神，自是精瘦了些。</p>
+<p>况且，殿下身体如何，自是御医该关心的。</p>
+<p>不承想，尚书大人竟如此关心，不知道的，该以为尚书大人别有所图。」</p>
+<p>一番话，说得阴阳怪气。</p>
+<p>太子怒斥：「尚书大人，你是在咒孤？」</p>
+<p>尚书气得拂袖而去。</p>
+<p>自此，再也无人轻易提及太子身体。</p>
+<p>要说皇上，是真的宠爱这个嫡子。</p>
+<p>待到气消了些，太子被允许上朝。</p>
+<p>听说，皇上派御医给太子诊脉。</p>
+<p>「殿下，脉象上看并无大碍，许是劳累所致。」</p>
+<p>一群太医聚在一起，也没有看出来个什么。</p>
+<p>最后，只能说是劳累过度。</p>
+<p>「孤就说没有事，还是苏先生了解孤。」</p>
+<p>苏户颔首。</p>
+<p>不知道是不是心理作用，我总能隐约感受到，太子身体并不像面上那样好。</p>
+<p>此番回朝，太子敛起锋芒，踏踏实实做事。</p>
+<p>为此，博得了皇上的赞誉。</p>
+<p>而苏先生，也更加成为太子的坚实后盾。</p>
+<p>正当此时，楚王称病罢朝。</p>
+<p>「苏先生，楚王这是卖的什么关子？」</p>
+<p>太子不解。</p>
+<p>苏户拱手：「殿下怕是多心了，楚王定是觉得殿下光芒正盛，回家韬光养晦而已。」</p>
+<p>太子焦虑：「可是……」</p>
+<p>我端着安神香进来，给太子换上。</p>
+<p>冉冉香烟升起，弥散在房间里。</p>
+<p>不久，太子就心平气和下来，睡了过去。</p>
+<p>「苏先生，殿下睡着了，您也去休息吧。」</p>
+<p>「多谢娘娘。」</p>
+<p>「云锦，孤头疼得很，你来点上安神香。」</p>
+<p>太子近日时不时就头疼，唯有我自制的安眠香，可以有效缓解。</p>
+<p>而我，也渐渐的免于皮肉之苦。</p>
+<p>太子忙时，自然顾不得我。</p>
+<p>不忙时，便是我伺候燃香，按摩。</p>
+<p>一切看似都走上了正轨。</p>
+<p>「殿下，您可以多纳些侧妃进府服侍您，云锦娘娘一人怕是忙不过来。」</p>
+<p>苏先生进言。</p>
+<p>我没有拒绝的权利，只得点头：「苏先生说的是，殿下是需要多些人伺候。」</p>
+<p>于是这件事，便落在了苏户身上。</p>
+<p>他寻来的大都是民间女子。</p>
+<p>怕惹得皇上不悦，这些事情都是暗地里进行。</p>
+<p>「殿下，这便是苏先生新寻来的，红樱，绫罗姑娘。」</p>
+<p>我一一为他介绍。</p>
+<p>红樱和绫罗生的都是极好的，红樱豪爽开朗，绫罗小家碧玉。</p>
+<p>「见过殿下。」</p>
+<p>太子玩得并不花，当夜只留下红樱一个侍寝。</p>
+<p>我站在院子里看月亮，苏户不知何时来到这里。</p>
+<p>「娘娘可是不开心？」</p>
+<p>我摇摇头，说道：「太子殿下有人照顾，云锦开心还来不及。」</p>
+<p>苏户轻笑。</p>
+<p>第二日，我去看望红樱，她平日灵动的眼里，现在已经满是呆滞。</p>
+<p>「红樱，你还好吗？」</p>
+<p>她突然挣扎起身，死死抓着我的手臂。</p>
+<p>「云锦姐姐，你也是这样过来的？」</p>
+<p>我看到了她衣袖下，满是伤痕的肌肤。</p>
+<p>太子暴虐的脾性，果然没有变。</p>
+<p>我拍拍她的手，安抚道：「红樱，想开些。只有顺着他，才有活路。」</p>
+<p>本以为绫罗会逃跑，没想到她却出奇地安静，甚至很用心的打扮起自己。</p>
+<p>「云锦姐姐。」</p>
+<p>侍完寝的第二天早上，她笑得眉眼弯弯，一副乖巧模样。</p>
+<p>我也笑道：「看起来，妹妹昨夜过得很好。」</p>
+<p>「太子殿下对我，温柔备至。」</p>
+<p>我皱了皱眉，随即舒展开。</p>
+<p>「那就预祝妹妹永得宠眷。」</p>
+<p>路上我遇到了苏户，他依旧是白衣飘飘，温润如玉。</p>
+<p>「苏先生，您真是为殿下寻了好侍奉。」</p>
+<p>「云锦娘娘，苏某虽然不是什么好人，却也不愿与你为敌。」</p>
+<p>我嗤笑，都是别人的狗，谈何为敌。</p>
+<p>此后，我的存在感似乎越来越低。</p>
+<p>除了太子时而暴躁，需要我燃安神香之外。</p>
+<p>侍奉太子的事情都交给了绫罗，只余下我和红樱，偷个清闲。</p>
+<p>也不知道绫罗用了什么方法，她和太子似乎总是欢声笑语，没有变态的折磨。</p>
+<p>太子的赏赐如流水般，东宫的下人们也见风使舵，对我爱答不理。</p>
+<p>当然，这一切都建立在外人不知道的前提下。</p>
+<p>「云锦姐姐，我胳膊疼，麻烦姐姐为我倒杯茶。」</p>
+<p>我看向太子，他干瘦的手搂着绫罗，随意地说道：「云锦，你就替绫罗斟一杯吧。」</p>
+<p>「是。」</p>
+<p>我深吸一口气，斟茶，端到她面前。</p>
+<p>绫罗嘻嘻一笑，伸手准备接过。却在我即将递给她的一瞬间，松了手。</p>
+<p>不出意料，热茶全部洒在了我的手上。</p>
+<p>「呀，姐姐拿杯子可要当心些。」</p>
+<p>太子不耐烦道：「你先下去吧，毛手毛脚，什么也做不好。」</p>
+<p>我面无表情地收拾好茶杯碎片，退下。</p>
+<p>碎片划破了我的手，我却仿若不知。</p>
+<p>「云锦娘娘，你的手……」苏户提醒道。</p>
+<p>我摇摇头，示意没事。</p>
+<p>他却执意用帕子给我包扎起来，似乎是怕弄疼我，十分小心翼翼。</p>
+<p>「多谢苏先生。」我此刻只想回去睡一觉，便没有多寒暄。</p>
+<p>「云锦娘娘……要多注意身体。」</p>
+<p>此刻的我已经走远。</p>
+<p>但我听到了。</p>
+<p>东宫出事了。</p>
+<p>突然一群侍卫冲进来，控制住了所有人。</p>
+<p>领头的，是楚王。</p>
+<p>我呆在原地。</p>
+<p>听着他们的谈话，我听懂了，是因为太子私铸钱币，东窗事发。</p>
+<p>这大概就是他与苏户每日密谋之事。</p>
+<p>太子私开矿产，皇上已已经格外开恩。</p>
+<p>如今私铸钱币，不知皇上还会如何处置？</p>
+<p>「太子及其党羽，一律押入大牢。其他人，原地待命，谁也不准离开东宫。」</p>
+<p>楚王下令。</p>
+<p>太子和苏户被押走。</p>
+<p>太子凹陷的双目圆瞪，临走还叫嚣着：「楚王，你不要得意！孤要见父皇，孤要见父皇！」</p>
+<p>相比，苏先生就显得很镇静，全程十分配合。</p>
+<p>「保重。」</p>
+<p>我看着他们离开的背影，轻声说道。</p>
+<p>「姐姐，你倒是很淡定。」绫罗走到我身旁，说道。</p>
+<p>我回之以笑容：「彼此彼此。」</p>
+<p>皇上龙颜大怒，百官参太子的奏书堆成了山。</p>
+<p>太子德不配位，恳请废黜。</p>
+<p>可是皇上仍旧没有给出最终结果，就是拖着。</p>
+<p>我们，则日复一日地在东宫，等待结果。</p>
+<p>抄家还是流放，并不可知。</p>
+<p>红樱每天拉着我的胳膊，惶惶恐恐。</p>
+<p>而绫罗，看不出什么情绪，只每日坐在树下看书。</p>
+<p>「太子要完了。」楚王伫立在我面前，淡淡说道。</p>
+<p>我笑着说道：「皇上不是还没给出结果？」</p>
+<p>不过很快，便有了消息。</p>
+<p>大牢里，苏户突然要求单独面见皇上。</p>
+<p>「草民苏户，恳请见皇上一面。」</p>
+<p>苏户站得笔直，连日来的牢狱生活并未压弯他的背脊。</p>
+<p>「你有什么话直接告诉本王，会替你转告父皇。」</p>
+<p>楚王说道。</p>
+<p>苏户不肯说，执意要见皇上。</p>
+<p>听说面见的那日，他与皇上在御书房待了整整两个时辰，无人知晓到底说了什么。</p>
+<p>还听说，他走后，皇上自己一人在御书房，待了一天。</p>
+<p>后来，太子的暗地里的一系列操作，都被公之于众。</p>
+<p>桩桩件件，令人啧舌。</p>
+<p>「父皇，父皇！」</p>
+<p>太子接到废黜皇族身份，流放的旨意后，在牢里大闹一场。</p>
+<p>其他人幸免于难，都遣散了。</p>
+<p>「殿下，云锦来看你了。」</p>
+<p>我和绫罗端着食盒，轻装来到大牢。</p>
+<p>红樱受够了折磨，早早便逃离东宫了。</p>
+<p>一团茅草，太子蜷身于其上。</p>
+<p>远看像一只干瘪的虾，近看蓬头垢面，远远没有往日的精气神。</p>
+<p>他看到我们，如死灰般的眼眸里，突然亮起来。</p>
+<p>「云锦，绫罗！」</p>
+<p>「你们是来救孤的吗？」</p>
+<p>我笑着点点头，示意他不要激动。</p>
+<p>「殿下，我们是来送你走的。」</p>
+<p>他一下子死死抓住我的手，问：</p>
+<p>「孤就知道，一定是孤的死士们要救孤。</p>
+<p>不对，如果要救孤，为何是你们来？」</p>
+<p>随即又安慰自己：「许是太引人注目，才让你们来打前阵。」</p>
+<p>绫罗轻笑一声，说道：「殿下莫急，先吃点东西。」</p>
+<p>许是饿了，许是觉得吃点东西好赶路，太子拿着虾饺狼吞虎咽。</p>
+<p>「走吧。」</p>
+<p>他看着我们。</p>
+<p>正在疑惑间，他突然浑身一颤，喷出一口血来。</p>
+<p>呆愣了一瞬，他终于反应过来。</p>
+<p>「你们……是来杀孤的？」</p>
+<p>「来人——」话还未说完，他便倒在地上，失去了气力。</p>
+<p>「为什么？云锦，你告诉孤为什么？」</p>
+<p>他死死盯着我，仿佛要把我看穿。</p>
+<p>我蹲下来，用手捏住他的下巴，一如他当初对我那般。</p>
+<p>「殿下，把云锦当玩物欺辱了这么久，现在问为什么，是否有些晚了？」</p>
+<p>我轻笑着，说出的话却是冰冷的。</p>
+<p>是啊，这么久的折磨，怎会善罢甘休。</p>
+<p>「还有一个秘密，云锦是楚王殿下的人。」</p>
+<p>我一字一句，说出这个事实。</p>
+<p>「你……」他想掐我的脖子，却被我一把推翻在地上。</p>
+<p>是的，我是楚王自小培养的人，为的就是有朝一日潜伏卧底。</p>
+<p>作为一个合格的棋子，我确实很尽心尽力。</p>
+<p>从我的猫第一次在翠红楼外跑上太子马车开始，就是一个阴谋。</p>
+<p>「我对虾有敏症，是假的。」</p>
+<p>这只是我为了迎合他暴虐变态的手段罢了。</p>
+<p>「都是……假的？」他伏在地上，又呕出一口鲜血。</p>
+<p>「本来我还心存善念，想着相识一场，我帮你在楚王殿下那里求得一条命。」</p>
+<p>「可是你并没有珍惜，就连舒寓都不愿意放过。」</p>
+<p>太子突然癫狂似的大笑一声。</p>
+<p>「舒寓孤早就派人杀了，你再也见不到他了。」</p>
+<p>「是吗？」</p>
+<p>暗处，突然走过来一个身影。</p>
+<p>太子仰头看去，干枯的手指突然伸出，指着面前这个人。</p>
+<p>「苏——户！你这个贱人，还敢出现。」</p>
+<p>没错，是苏户。</p>
+<p>当日面见皇上，苏户一纸罪状呈上。</p>
+<p>将太子的罪行一一揭露。</p>
+<p>「殿下，是苏某。」</p>
+<p>「孤待你不薄，为什么要这么做！」</p>
+<p>因为激动，太子猛烈的咳嗽起来。</p>
+<p>绫罗突然嗤笑一声：</p>
+<p>「不薄？包括派人打断他一双腿？」</p>
+<p>「你说什么？」太子似乎是没有反应过来，问道。</p>
+<p>苏户伸手在脸颊旁摸索一番，撕下一张人皮面具。</p>
+<p>一个新的面孔露出来。</p>
+<p>是舒寓。</p>
+<p>「啊啊啊啊啊！」</p>
+<p>太子抱头鼠窜，躲在角落里。</p>
+<p>苏户是舒寓，在我第一次见他的时候就知道了。</p>
+<p>那一双眼，我永远认得。</p>
+<p>我们一同长大，都是楚王精心培养的棋子。</p>
+<p>所以，从头到尾都是一个局。</p>
+<p>故事由我先引出，舒寓则是一个青梅竹马的身份。</p>
+<p>如果我孤身一人突然出现，势必会引起太子的怀疑。</p>
+<p>有了软肋，他也好拿捏我。</p>
+<p>后来舒寓明面上被他暗杀，暗地里易容成苏户。</p>
+<p>在楚王的配合下，得到太子信任。</p>
+<p>接近他，逐渐拿到所有罪证。</p>
+<p>「殿下，你将会慢慢呕血死亡，好好享受吧。」</p>
+<p>绫罗笑着，一脚踩在他的手指上。</p>
+<p>太子疼的冷汗直流，咬紧牙关说道：</p>
+<p>「孤莫名死在狱中，你们一个也别想跑。」</p>
+<p>「殿下大可放心，任何大夫来看了，都会说你是突发心疾。」</p>
+<p>我告诉他这个事实。</p>
+<p>是的，周全如楚王，怎么会留下这个疏漏？</p>
+<p>我和绫罗的目的，就是给他下毒。</p>
+<p>世上并无几人知晓的，含香毒。</p>
+<p>他喜欢将我颈窝咬得皮肉翻卷，这含香毒引便下在我的颈窝。</p>
+<p>初时只有毒引，他并不会受到什么影响。</p>
+<p>时间久了慢慢的，他便消瘦下来，情绪暴躁易怒。</p>
+<p>毒引不易储藏，容易被发现。</p>
+<p>自我入了东宫，楚王来的两次，都是为我送毒引。</p>
+<p>而绫罗，则是苏户刻意安排进来的。</p>
+<p>「这些日子与你虚与委蛇，你可知我有多反感？」</p>
+<p>绫罗皱着眉头，仿佛在说什么十分恶心的事情。</p>
+<p>「而我的任务，就是给你加把火，让你死的更快些。」</p>
+<p>包括她每日给太子沏的茶，我的安神香，看似能让他心情平静。</p>
+<p>其实都是加速毒在筋脉流动罢了。</p>
+<p>这整个局，只有红樱是无端被牵扯进来的。</p>
+<p>「希望她余生幸福。」</p>
+<p>太子死了。</p>
+<p>死在流放前一晚，死于心疾。</p>
+<p>于此同时，牢房失火，同党苏户被烧死。</p>
+<p>面目全非，只有腰间的玉坠稍可辨认。</p>
+<p>楚王别院。</p>
+<p>「殿下，太子流放已经是定局，为何一定要杀死他？」</p>
+<p>绫罗问道。</p>
+<p>楚王抿着茶，一派清流雅士之姿。</p>
+<p>谁能想到，他是一个心机深沉，杀人不眨眼的恶魔？</p>
+<p>「百足之虫死而不僵，父皇宠爱他，难保有一天不会让他回来。」</p>
+<p>转头看着我和舒寓，问道：</p>
+<p>「舒寓，云锦，你们的任务完成的很好，有什么想要的吗？」</p>
+<p>「殿下，我想和锦儿离开，自此隐姓埋名 ，浪迹天涯。」</p>
+<p>舒寓拉着我的手，说道。</p>
+<p>我们相视一笑，对我们来说，这是最好的归宿。</p>
+<p>楚王沉思一番，点点头。</p>
+<p>「还有最后一个任务交给舒寓，结束之后，你们就可以离开。」</p>
+<p>他们离开后，我问绫罗：「你呢？」</p>
+<p>「我？我孤身一人能去哪里，就留在这里吧。」</p>
+<p>是啊，我有舒寓。</p>
+<p>哪里都是家。</p>
+<p>我以为，一切都会是美好的结局。</p>
+<p>直到，那日。</p>
+<p>「锦儿，今日任务结束，咱们就可以离开了。」</p>
+<p>舒寓抱着我，语气里的欣喜掩饰不住。</p>
+<p>我的左眼皮子总是跳个不停，心里有些惶恐。</p>
+<p>「舒寓，保重。」</p>
+<p>「放心吧锦儿，我还要回来带你离开呢。」</p>
+<p>我从天亮等到天黑，再等到天亮。</p>
+<p>依旧没有消息。</p>
+<p>绫罗安抚我：「许是路上耽搁了，不要担心。」</p>
+<p>整整三天，他都没有回来。</p>
+<p>突然，别院的大门被打开。</p>
+<p>我腾的站起身，舒寓的笑容一如往常，拥我入怀，抚摸我的头发。</p>
+<p>唤我一声，「锦儿」。</p>
+<p>可这只是我的幻想。</p>
+<p>回来的不是他，是楚王手下。</p>
+<p>「舒寓不幸被伏，如今已身亡。」</p>
+<p>身亡？谁身亡？</p>
+<p>我突然失去了一切感知，脑子也不能思考。</p>
+<p>眼前一黑，倒在地上。</p>
+<p>等我再次醒来的时候，床前坐着楚王。</p>
+<p>「云锦，你醒了。」</p>
+<p>我没有回应，也没有哭，就这么躺着。</p>
+<p>我不知道我该怎么办。</p>
+<p>我闯进了楚王府。</p>
+<p>被侍卫拿刀拦住的时候，我仍大喊：「我要见楚王。」</p>
+<p>「云锦？你怎么来了，不在别院好好休息？」</p>
+<p>他喝令侍卫退下，留我一人在书房。</p>
+<p>我盯着他的眼睛，一字一句问道：</p>
+<p>「舒寓，是不是你故意杀死的？」</p>
+<p>楚王眼眸闪了闪，反问：「你怎么会这么想？是不是没休息好。」</p>
+<p>「我再问一遍，舒寓，是不是你故意杀死的？」</p>
+<p>我逼问。</p>
+<p>这次，他没有再说话。</p>
+<p>我已经知道了答案。</p>
+<p>我派出的人回禀，那日楚王所说的地方，根本没有什么所谓的任务。</p>
+<p>只有一场截杀。</p>
+<p>数名暗卫围堵一人。</p>
+<p>舒寓不是全然不会武功，但也绝不会是这么多暗卫的对手。</p>
+<p>我没有见到尸体。</p>
+<p>听说他浑身没有一块完好地方。</p>
+<p>即使临死，还死死捏着一枚簪子。</p>
+<p>我送他的。</p>
+<p>「为什么？」我机械的吐出三个字。</p>
+<p>「因为你们不能离开，天下不乏有那么多认识你们的人。</p>
+<p>你们即便走了，也会招致杀身之祸。」</p>
+<p>我笑了：「所以你杀了舒寓？」</p>
+<p>「他一心要带你离开。」</p>
+<p>真可笑，就是卸磨杀驴而已，说的如此冠冕堂皇。</p>
+<p>他突然握住我的手，说道：「云锦，你自小便在我身边，我会对你好的。」</p>
+<p>我推开他，正视着他的眼睛，说道：「我真的不认识你了。」</p>
+<p>我认识的楚王，是对待外人再怎么狠厉，对我们也是极好的。</p>
+<p>他说：「你们自小跟我在一起，就是我的亲人。」</p>
+<p>可是，他杀了自小陪他的舒寓。</p>
+<p>我觉得自己病了，病的很严重。</p>
+<p>「云锦，你想开一点。即便是你把自己饿死，舒寓也不会活过来。」</p>
+<p>绫罗带来了吃食，看着直直躺在床上的我。</p>
+<p>「你越这样，舒寓在天有灵，越不得安息。」</p>
+<p>是啊，我不能让舒寓再替我担心了。</p>
+<p>我开始吃东西，叫花鸡，松鼠厥鱼……</p>
+<p>都是舒寓爱吃的。</p>
+<p>楚王来过几次，我笑着说：「殿下，舒寓已不在，我总不能将自己囚死。」</p>
+<p>「云锦，这才是你。」</p>
+<p>他很满意。</p>
+<p>「好好留在我身边，荣华一生。」</p>
+<p>我淡淡一笑，目送他离开。</p>
+<p>「你真的想开了？」绫罗问我。</p>
+<p>我没有说话，目视着楚王离去的背影。</p>
+<p>渐渐的，日子一天天就这样过去，一切归于平静。</p>
+<p>楚王来的次数多了起来。</p>
+<p>他时常会同我讲很多东西，比如他又寻了什么奇珍异宝。</p>
+<p>比如，他三日后要被封太子。</p>
+<p>「殿下，大典前一日你可否来一趟？云锦想亲手替您束最后一次发。」</p>
+<p>我一边替他束发，一边说道。</p>
+<p>「待您成为太子，再要来便不知何时了。」</p>
+<p>楚王一怔，随即点点头：「我答应你。」</p>
+<p>我坐在梳妆台前，看着镜中的自己。</p>
+<p>依旧是容颜秀丽，否则如何成为花魁呢？</p>
+<p>还记得当初第一次见到舒寓，是在一个暗牢里。</p>
+<p>那个时候，我们都是四五岁的孩童。</p>
+<p>他一见到我，便说道：「云锦，以后我保护你。」</p>
+<p>他确实说话算话，很多难关都是他帮我克服的。</p>
+<p>不是亲人，胜似亲人。</p>
+<p>我时常在想，没有舒寓，我该怎么活呢？</p>
+<p>在前太子暴虐的伤害中，如果不是心里想着舒寓，我便无法扛过去。</p>
+<p>收回思绪，我开始梳妆打扮起来。</p>
+<p>簪上红牡丹花步摇，挽上流云髻。</p>
+<p>我换上一条红色的裙子，这是我最喜欢的。</p>
+<p>舒寓曾经说过：「锦儿，你穿这条裙子真好看。」</p>
+<p>是很好看，我满意了。</p>
+<p>我叫来绫罗：「我身体有些虚，劳烦你替我买些东市的马蹄糕来。」</p>
+<p>她打量我一番，点点头离开了。</p>
+<p>我继续端坐着。</p>
+<p>「砰砰砰」，有人敲门。</p>
+<p>「来了。」</p>
+<p>我起身开门，是楚王。</p>
+<p>他眼中一亮，夸赞：「云锦，你真好看。」</p>
+<p>「多谢殿下夸奖。」</p>
+<p>我拿出梳子，替他梳头发。</p>
+<p>瀑布般黑色长发飘散，我梳的格外认真。</p>
+<p>「云锦，待我登基，你一定会有一世的荣华富贵。」</p>
+<p>「殿下，云锦不需要荣华富贵。」</p>
+<p>我轻笑一声，用簪子替他簪好头发。</p>
+<p>「那你想要什么？」</p>
+<p>「如果可以，云锦想要舒寓活过来。」</p>
+<p>他脸色沉了下来，斥道：「云锦，他已经死了，你不该再想那些。」</p>
+<p>「对不起殿下，云锦失言了。」</p>
+<p>说着，我替他倒了一杯酒。</p>
+<p>「殿下，云锦敬您一杯。祝您……往后路途坦荡。」</p>
+<p>他很谨慎，并没有直接喝下。</p>
+<p>我很识趣的拿来银针，晃一晃，拿出来依旧是洁白无瑕。</p>
+<p>「云锦，不要总想着多余的，安心待在这里就好。」</p>
+<p>他仰头喝下，然后看着我说道。</p>
+<p>「是。」</p>
+<p>「殿下，云锦时常在想，您到底是个什么样的人。」</p>
+<p>「你想说什么？」</p>
+<p>「以前，总觉得您是个很好的人。但是，您不该杀了舒寓。」</p>
+<p>他手里的酒杯「彭」的摔了出去，刚站起身，却又跌坐了下来。</p>
+<p>「你……给我下毒？」</p>
+<p>他捂着胸口，颤声问道。</p>
+<p>「哈哈哈哈哈哈哈，看来我的技术有进步。」</p>
+<p>我笑出了眼泪。</p>
+<p>「可是……银针并未变色！」</p>
+<p>「殿下，毒是下在给您束发的簪子上，不是酒里。」</p>
+<p>此毒，只有通过天灵盖，方可直入体内。</p>
+<p>并且毒性霸道，毒发极快。</p>
+<p>「你这些日子，都是装的？」</p>
+<p>是啊，都是装的。</p>
+<p>舒寓死了，我的心也跟着死了。</p>
+<p>但我不是无用之人，以前都是他保护我，这次，换我替他做一件事。</p>
+<p>让杀死他的仇人死于胜利的那一步。</p>
+<p>就差一步，他便达到了目的。</p>
+<p>可惜，世上没有那么便宜的事情。</p>
+<p>「殿下，路上碰到舒寓，记得替他道歉。」</p>
+<p>看着楚王倒地不起，我勾起嘴角。</p>
+<p>舒寓，我打扮成你最喜欢的样子，来寻你了。</p>
+<p>这晚，别院的火起的格外大，数人合力，都浇不灭。</p>
+<p>后来啊，世人叹息不已。</p>
+<p>楚王册封的前一晚，死于大火。</p>
+<p>无人记得曾经的云锦，</p>
+<p>也无人记得曾经的舒寓，</p>
+<p>但是他们应该已经相遇了。</p>
+<p>作者署名：三七姑娘～</p>
+<p>备案号:YXX1jppO0AEFOOOXEPzTPM3Y</p>
+<p>强娶了美强惨男配后</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>戎安鸽 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/4-%E9%81%87%E8%A7%81%E4%BD%A0%E4%B9%8B%E5%90%8E/" title="遇见你之后">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">遇见你之后</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/6-%E4%BA%91%E6%95%9B%E9%9C%81%E6%98%8E/" title="云敛霁明">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">云敛霁明</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

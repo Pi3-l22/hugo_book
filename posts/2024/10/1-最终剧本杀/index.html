@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最终剧本杀 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/10/1-%E6%9C%80%E7%BB%88%E5%89%A7%E6%9C%AC%E6%9D%80/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/10/1-%E6%9C%80%E7%BB%88%E5%89%A7%E6%9C%AC%E6%9D%80/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="最终剧本杀">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+  <meta name="twitter:title" content="最终剧本杀">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="最终剧本杀">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9150">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">最终剧本杀</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>19分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%9c%80%e7%bb%88%e5%89%a7%e6%9c%ac%e6%9d%80&amp;url=https://mohai.us.kg/posts/2024/10/1-%E6%9C%80%E7%BB%88%E5%89%A7%E6%9C%AC%E6%9D%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/10/1-%E6%9C%80%E7%BB%88%E5%89%A7%E6%9C%AC%E6%9D%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%9c%80%e7%bb%88%e5%89%a7%e6%9c%ac%e6%9d%80%20https://mohai.us.kg/posts/2024/10/1-%E6%9C%80%E7%BB%88%E5%89%A7%E6%9C%AC%E6%9D%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26675.jpg" alt="最终剧本杀" />
+      
+
+      <p>最终剧本杀</p>
+<p>那天刚好是农历七月十四，鬼节。</p>
+<p>夜里，我正好好地巡逻着，却被赵俊用对讲机召唤到了一个诡异的建筑面前：</p>
+<p>「H 医科大学附属第 X 疗养院」。</p>
+<p>这里发生过火灾，烧死过很多人，是个很邪门的地方。</p>
+<p>他说在这里听到了呼救声，所以才叫我过来，我们当保安的，最烦的就是专程鬼节探险又玩脱了的年轻人。</p>
+<p>推开大门，我们走进了疗养院。</p>
+<p>一楼大厅没有任何人影，而在后面住宿区某个房间里，我们找到了一个躲在暗处，瑟瑟发抖的年轻男子。</p>
+<p>而且，那男子右臂明显也受伤了。</p>
+<p>见到我们，他慌忙起身，用颤抖的声音问道：</p>
+<p>「你，你是刚刚才进来的？门没有被锁上吗？」</p>
+<p>我们面面相觑。</p>
+<p>就在这时候，大厅里突然「咣当」一声巨响。</p>
+<p>我心里暗叫一声「不好」，连忙拔腿往回跑，可已经晚了。</p>
+<p>刚刚进来时的大门已经紧紧关上，我赶紧过去试图打开，可是几经尝试，发现只是徒劳。</p>
+<p>门被锁上了。</p>
+<p>我用电筒照射四周，除我之外，这里没有任何人。</p>
+<p>我又掏出手机想要报警，才发现，手机也没有了信号。</p>
+<p>我们被困在这里了。</p>
+<p>可是，谁的速度那么快，把门锁上人马上就消失不见了？</p>
+<p>这时候，赵俊跟那个男子也回到了大厅。</p>
+<p>我转过身来，焦急地问他：</p>
+<p>「这是怎么回事？」</p>
+<p>男子颤抖着说道：</p>
+<p>「是他，一定是他把门锁上了！我就是来探个险玩个剧本杀而已，没想到会真的被杀……」</p>
+<p>「谁？这里到底发生什么事了？快说！」</p>
+<p>他顿了顿，才开始缓缓说了起来……</p>
+<p>这个男子姓侯，是个普通的上班族，平时喜欢玩剧本杀。</p>
+<p>来这个被火烧过的疗养院，也只是一次自发的探险向实景剧本杀活动。</p>
+<p>一共有六个人，都是男生。</p>
+<p>整个场景共有五个角色，分别是医生、护工、保安、病人、医院管理者（经理），其中病人有两个。</p>
+<p>大家来之前就抽签了，他抽到了经理的角色，也拿到了任务卷轴。</p>
+<p>因为是一次探险向的剧本杀，大家都是匿名的。</p>
+<p>所以对侯经理来说，他只知道其他人分别是龙医生、陈病人、周病人、李护工、赵保安。</p>
+<p>更要命的是，侯经理还迟到了，导致来到疗养院之后，他只见到过龙医生、陈病人、周病人三个人。</p>
+<p>当时，他们穿着医生跟患者的病服，在这被大火烧过的废墟里出现，那画面确实相当惊悚。</p>
+<p>龙医生跟他解释说活动已经开始，因为每个人都有一个独属于自己的个人秘密任务，所以都是分开行动的。</p>
+<p>可以是纯探险，也可以互相整蛊，但要用夜视摄影机把一切都拍下来。</p>
+<p>后续还需要把视频到群里，让其他观众观看后投票打分。</p>
+<p>完成秘密任务的人有加分，高分为胜，获胜者的奖品还挺不错的。</p>
+<p>侯经理的任务很简单，就是让他们几个人相信这里有问题，闹鬼。</p>
+<p>也就是说，他需要去恐吓其他角色。</p>
+<p>跟龙医生他们分别之后，侯经理隐藏好自己的行踪，收集了一些焦黑的废弃物，准备拿去吓人。</p>
+<p>之后，他开始静悄悄地挪动自己的步伐，连手电筒都没有用，而是依靠从窗户照射进来的微弱月光行走。</p>
+<p>事实也证明，他这样做是正确的。</p>
+<p>因为在来到三楼的时候，他听到了两个人对话的声音。</p>
+<p>他们对话的内容极其不正常。</p>
+<p>因为有一方竟然是在苦苦哀求的。</p>
+<p>侯经理听出来了，那是周病人的声音。</p>
+<p>一开始，侯经理还以为这是剧情需要。</p>
+<p>但很快他就发现问题了。</p>
+<p>周病人带着一副哭腔的声音哀求道：</p>
+<p>「龙医生，不要，不，你为什么要这样做……」</p>
+<p>龙医生却回答道：</p>
+<p>「没办法，游戏内容就是这样设定的。我是医生，你们是失控的精神病人，我逮到你们，就会用我的方式去拯救你们。」</p>
+<p>「不，我不玩了，我不玩了还不行吗？你根本不是在玩游戏！你杀了陈病人，你杀了他！」</p>
+<p>「不不不，这就是一场游戏而已，我的任务就是要拯救你们。来，你是个狂躁精神病患者，只要把你的四肢都切了，你就不会因为失控而伤害别人，你的灵魂也将得到救赎。」</p>
+<p>接下来，便是周病人无休止且撕心裂肺的嚎叫：</p>
+<p>「不要，不要！啊！啊啊啊！啊啊啊啊……」</p>
+<p>单是听声音，都让侯经理惊出一身冷汗。</p>
+<p>那不是玩玩闹闹能装出来的，那真是一个人在被折磨、被虐待才能发出来的恐怖尖叫声。</p>
+<p>随着时间过去，周病人的声音慢慢从求饶变成竭斯底里的咒骂，再变成毫无意义的哭泣。</p>
+<p>最后慢慢回归平静，现场只剩下金属与骨头摩擦碰撞的响声。</p>
+<p>侯经理蹲在黑暗的角落里，腿都吓软了。</p>
+<p>回过神来，他心里只有一个想法：</p>
+<p>逃。</p>
+<p>就像周病人说的那样，这根本就不是游戏。</p>
+<p>他也才意识到今晚的种种怪异之处。</p>
+<p>比如，这个剧本杀连组织者是谁他都不知道，</p>
+<p>而且这还是场没有主持人的剧本杀？</p>
+<p>那一刻，他更倾向于相信这是龙医生为了杀人而密谋已久的计划！</p>
+<p>想到这里，他开始偷偷摸摸地爬着逃走。</p>
+<p>但不幸的是，这个自称龙医生的恶魔居然不用任何照明工具，就发现了躲在角落的他。</p>
+<p>「侯经理，你在那做什么？」</p>
+<p>侯经理一辈子可能都没这么紧张过。</p>
+<p>他只能硬着头皮转过身来，而龙医生也已经朝他慢慢走了过来。</p>
+<p>那一刻，他是不知所措的。</p>
+<p>可联想到自己的角色内容，他只能尝试着开口回应道：</p>
+<p>「是，是我！我是侯经理，我不是病人！」</p>
+<p>他还奢望自己的角色不是病人，龙医生就不会帮他「治病」了。</p>
+<p>但，他还是太天真了。</p>
+<p>「你不是病人，你当然不是病人。」</p>
+<p>龙医生把电筒打在他脸上，继续阴阳怪气地说着话：</p>
+<p>「但是你放心，我会帮你的，真的，我、绝、对、会、帮、你、的！」</p>
+<p>他的语气让侯经理明白，不管这个角色有没有病，都难逃一死！</p>
+<p>为了逃命，侯经理决定拼一把。</p>
+<p>于是他以迅雷不及掩耳之势狠狠扑向龙医生，跟他扭打了起来。</p>
+<p>而其间，龙医生手中的刀把他的手臂刺伤了。</p>
+<p>他见形势不对，立刻找机会脱离战斗，飞奔下楼。</p>
+<p>回到一楼，他才发现大门被完全锁上，只好找地方躲藏了起来。</p>
+<p>然后，他终于等到了我们出现……</p>
+<p>我听完后只觉得头皮发麻。</p>
+<p>这场剧本杀，居然真的出现杀手了。</p>
+<p>想到这里，我默默地把腰间的电击器掏了出来。</p>
+<p>不过，我也想到另一个问题：</p>
+<p>「我们可是听到了呼救声才过来的，侯经理，不是你呼救的吗？」</p>
+<p>侯经理摇了摇头回答道：</p>
+<p>「我哪里敢啊？我就一直心惊胆战地躲着啊！不过，我也听到了楼上有杂音，但是我也不敢去查看，应该是其他人也被龙医生给抓住了吧？」</p>
+<p>赵俊也跟着自言自语：</p>
+<p>「那就是，其他幸存者发出的求救声？」</p>
+<p>侯经理没有理会赵俊，而是继续对我说：</p>
+<p>「对了，你要特别注意龙医生，因为他似乎沉浸在剧本杀的故事情节里了。」</p>
+<p>我表示疑惑：</p>
+<p>「什么故事情节？」</p>
+<p>侯经理解释道：</p>
+<p>「我大概弄清楚了，这个剧本杀里的角色故事是：我们所有人都是他的病人，只不过因为他犯了错让我们不幸逃走，而他的任务就是要抓回我们并且治疗我们！」</p>
+<p>「我明白了。」</p>
+<p>我扭过头来看着那道漆黑的楼梯，想了想，才说：</p>
+<p>「我一个人上去吧，赵俊你陪着侯经理，保证他的安全。」</p>
+<p>「没问题，你小心。」</p>
+<p>我开着电筒，小心翼翼地爬上了楼梯。</p>
+<p>二楼，电筒照到的地方都是一片焦黑，烧烂的餐桌、沙发、凳子等等。</p>
+<p>但没发现人影，也没发现尸体。</p>
+<p>三楼也一样。</p>
+<p>走上四楼，我谨慎地放慢了脚步，这是犯人唯一能躲藏的楼层了。</p>
+<p>但是，事情却出乎我的预料。</p>
+<p>因为我觉得既然是杀人狂魔，那他肯定会躲在黑暗中的某处，肆机埋伏。</p>
+<p>但我却看到了光亮。</p>
+<p>是的，在某个房间里，居然有光。</p>
+<p>我只能万分小心地挪到那个门口，偷偷往房里瞥：</p>
+<p>真的有个医生着装的年轻男子。</p>
+<p>他正坐在烧坏的床上，旁边还有一只亮着光的电筒。</p>
+<p>而他身上沾了不少血迹，同时他的手臂也受伤了，明显包扎处理过。</p>
+<p>这么明目张胆坐在这里？</p>
+<p>不愧是个疯子，不按常理出牌啊。</p>
+<p>「别动，我是这里的保安，请束手就擒！」</p>
+<p>电筒打在他身上，我终于看清楚他的脸了：</p>
+<p>年轻，斯斯文文，鼻梁上还戴着一副眼镜。</p>
+<p>「终于有人来了！你是听到我呼救才过来的对吧？」</p>
+<p>年轻的男子激动得从床上一跃而起，感觉就像要冲过来。</p>
+<p>我心里一惊，连忙用电筒指着对方眼睛吼道：</p>
+<p>「别动！站在原地！」</p>
+<p>那男子顿在原地，也马上焦急地解释：</p>
+<p>「我是个医生，叫龙宇华，我在找一个我的病人，但他情绪不稳定还有暴力倾向，刚刚把我也打伤了，你能帮我把他找回来吗？」</p>
+<p>这家伙，果然把自己代入到虚幻的角色当中了。</p>
+<p>我深知他是个危险人物，也不管他说了什么，直接就命令道：</p>
+<p>「双手抱头，蹲在地上，不束手就擒的话，就别怪我不客气了！」</p>
+<p>那一刻，我手中的电击器也握得更紧了。</p>
+<p>「为什么？不是，你不相信我是医生吗？」</p>
+<p>我没有说话，只是聚精会神地盯着他，以防让他有机可乘。</p>
+<p>而他盯着我看了一会儿，才又继续问道：</p>
+<p>「慢着，你是 H 医科大学的保安吗？」</p>
+<p>我一时间没明白他的重点是什么。</p>
+<p>他又急急忙忙地解释道：</p>
+<p>「我是 H 医科大学附属医院精神科的医生啊，今晚我和同事驾车运送病人到省部医院做深度治疗，但其间病人要求下车上厕所，并趁机打伤我同事逃走了，我一路追来进了这个地方，然后就……」</p>
+<p>我不禁打心里感叹，这家伙真是够厉害的，居然还给自己设定了这么好的一个剧情。</p>
+<p>我继续质问：</p>
+<p>「那你同事呢？」</p>
+<p>他也回答得滴水不漏：</p>
+<p>「他搬救兵去了，我自己一个人追过来的。」</p>
+<p>我已经不想跟他继续扯下去了，他不仅把故事编得逻辑自洽，更是一个字的【剧本杀】都没有提到过。</p>
+<p>见我不为所动，龙医生突然恍然大悟，他反问道：</p>
+<p>「慢着，你是不是见过我的病人了？」</p>
+<p>我点了点头，回答道：</p>
+<p>「何止见过，他什么都跟我说了，不就是一个【剧本杀】吗？」</p>
+<p>「什么剧本杀？」龙医生脸上焦急与疑惑完全不像装出来的，「他可是重度人格分裂症和狂躁症患者，有暴力倾向，随时都会抓狂！他到底跟你说了什么？」</p>
+<p>龙医生的语气执着而认真，尤其是那完美自洽的逻辑，让我完全感觉不到他是疯子。</p>
+<p>我不禁迟疑了。</p>
+<p>于是，我只能把侯经理所说的事情经过，全部跟龙医生复述了一遍。</p>
+<p>龙医生听完差点蹦起来，并且大声反驳道：</p>
+<p>「胡说八道！他在说谎！我怎么会杀人？我是医生啊！这也不是什么剧本杀，他是病人啊！」</p>
+<p>我也被整乱了。</p>
+<p>这两个人到底谁在说谎？</p>
+<p>就在我迷乱的时候，他突然想起了什么：</p>
+<p>「对了对了，如果你是这里的保安，那么你一定认得出这个吧？」</p>
+<p>他一边说话，一边从口袋里掏出一张证件扔了过来。</p>
+<p>我小心翼翼地捡起来一看，是一张工作证？</p>
+<p>而且没错，确实是医院的工作证。</p>
+<p>我惊呆了。</p>
+<p>「我真的是个医生啊！」</p>
+<p>他真的是个医生。</p>
+<p>如果他是医生，那么说谎的是侯经理？</p>
+<p>我突然想起一件事。</p>
+<p>时至如今，我居然不知道那个侯经理全名是什么！</p>
+<p>糟糕，赵俊有危险。</p>
+<p>我转身就跑。</p>
+<p>当我跟龙医生回到一楼的时候，大厅里本来应该有的电筒光居然消失了。</p>
+<p>我一边用电筒扫射四周，一边大声吼道：</p>
+<p>「赵俊！听到回应我！侯经理才是病人，你要小心！」</p>
+<p>龙医生却马上阻止我：</p>
+<p>「不能说他有病，他会抓狂的！」</p>
+<p>黑暗中，一个人影浮现。</p>
+<p>「我才不是病人！凶手！你们都是凶手！」</p>
+<p>侯经理飞快地朝着我俩冲了过来，他的样子，仿佛已经进入癫狂状态。</p>
+<p>还好我身手敏捷，两手一架和侯经理缠斗了起来。</p>
+<p>但我手里可是有电击器的！</p>
+<p>我们互相推搡了几下之后，我找准机会，掏出电击器稳稳地按在他的腰上。</p>
+<p>他浑身都抽搐了起来。</p>
+<p>随后，他缓缓倒下，可嘴里还念叨着「我不是病人」。</p>
+<p>我把他按在地上，用随身的塑料扎带反绑好他的双手，这才舒了一口气。</p>
+<p>旁边的龙医生吓得惊魂未定。</p>
+<p>我站了起来，扭头问他：</p>
+<p>「龙医生，你的这个病人，他怎么会臆想出你杀人的画面？还说得那么逼真，差点把我都忽悠了。」</p>
+<p>龙医生想了想，解释道：</p>
+<p>「他是个人格分裂症患者，拥有多重人格，简单点说，就是他的身体内有好几个不同的【灵魂】。而我作为他的医生，自然是在帮他逐一消除那些亚人格了，而在亚人格消失的同时，在他的心里投射出来的，就是我杀了他们这回事吧？毕竟他混乱的精神状态，并不能区分哪些是人格，哪些是真实存在的人。」</p>
+<p>我居然听懂了，龙医生这一番解释还真是奇妙。</p>
+<p>也就是说，所谓的周病人、陈病人，其实都是侯经理分裂出来的人格。</p>
+<p>他所说的龙医生杀了人，其实只是帮他治病的过程罢了。</p>
+<p>难怪我在二、三、四楼都没有找到任何一具尸体。</p>
+<p>原来如此。</p>
+<p>这下就都能解释清楚了。</p>
+<p>但赵俊呢？他不会受伤了吧？</p>
+<p>我连忙拜托龙医生看住侯经理，我得去找赵俊。</p>
+<p>龙医生看了看晕厥状态且被反绑双手的侯经理，也答应了下来。</p>
+<p>刚刚侯经理是从住宿区窜出来的。</p>
+<p>我举着电筒，缓缓往那个方向走了过去。</p>
+<p>因为侯经理已经被制服，所以我掉以轻心了。</p>
+<p>在我进到走廊的时候，又一个黑影突然撞了过来！</p>
+<p>非常突然。</p>
+<p>我发出一声尖叫，然后重重摔在墙角，手中的电筒跟电击器都应声脱落。</p>
+<p>在反应过来后，我不顾摔疼的腰背，立刻伸手拿起了身旁的电筒，朝着那个黑影照了过去——</p>
+<p>当然不是赵俊，而是一张陌生的脸。</p>
+<p>而他脸上，居然带着慌张的表情。</p>
+<p>我一边扶墙站起来，一边质问他：</p>
+<p>「你是谁？」</p>
+<p>我完全没想到，这地方除了我们几个之外还有其他人。</p>
+<p>龙医生不是说只有他一个人追着病人进来这里的吗？</p>
+<p>这个陌生人又是谁？</p>
+<p>这时我才发现，他把我的电击器捡起来握在手中了。</p>
+<p>所以我也谨慎得很，不敢轻举妄动。</p>
+<p>出乎我意料的是，他一边挥舞着电击器，一边反而质问我：</p>
+<p>「是你！是你杀了周跟陈的，对吧？是你！」</p>
+<p>周？陈？</p>
+<p>我的脑子里，直接把这两个名字跟周病人、陈病人给对应上了。</p>
+<p>所以当时我就蒙了：</p>
+<p>「你在说什么？是不是侯经理跟你说这两个人被杀了？他是个精神病，那是他幻想出来的人，这里根本就没人被杀，一切都结束了，明白吗？」</p>
+<p>他却更紧张了，对我连连质问：</p>
+<p>「你放屁！我亲眼看到他俩被杀的！你在放屁！结束的话就放我走啊？外面的大门是不是还锁着？是不是？」</p>
+<p>他这么一提醒我才想起来，对的，这个建筑唯一的出口，那扇大门被锁起来了。</p>
+<p>可门被关上的时候，侯经理就跟我们一起，不可能是他做的。</p>
+<p>那到底是谁上的锁？</p>
+<p>我脑子又开始乱起来了。</p>
+<p>因为在龙医生的故事里，根本就没提到为什么大门会被锁起来这件事。</p>
+<p>而且，如果龙医生所说都为真，那这个建筑里是不应该还有其他人才对，眼前这个又是谁呢？</p>
+<p>我想起了今晚这里的另外一个设定，侯经理版本的设定：</p>
+<p>探险向实景剧本杀。</p>
+<p>这个设定里，他们一共是有六个人的。</p>
+<p>除了龙医生，侯经理还有两个病人之外，就只剩下一个保安和一个护工的角色了。</p>
+<p>我忍不住问他：</p>
+<p>「你是保安还是护工？」</p>
+<p>他先是一愣，然后才狰狞着表情反问我：</p>
+<p>「你他妈就是个保安，我还能是保安？」</p>
+<p>我顿时愣住了：</p>
+<p>「你是护工？你们真的在玩剧本杀？」</p>
+<p>他都快哭出来了：</p>
+<p>「本来只是剧本杀，但现在真的出现杀人事件了啊！你他妈还不知道吗？」</p>
+<p>这到底？</p>
+<p>我的脑袋已经快转不过来了。</p>
+<p>不过这个人的出现就是铁证！</p>
+<p>至少证明龙医生所描述的故事并不为真。</p>
+<p>而且，我回忆起刚刚侯经理从黑暗中冲出来时，他喊的是「你们都是凶手」。</p>
+<p>也就是说，侯经理发现我跟龙医生一起下楼来了，他误会我跟龙医生同流合污了！</p>
+<p>但是我却把侯经理绑好之后交给了龙医生。</p>
+<p>不好！</p>
+<p>我立刻转身，往大厅的方向冲了出去。</p>
+<p>当我回到大厅的时候，龙医生已经不见了。</p>
+<p>侯经理却依然趴在地板上。</p>
+<p>我蹲在他身旁检查了一番，幸亏他没有受伤。</p>
+<p>难道龙医生听到了我的脚步声，来不及伤害侯经理就逃跑了？</p>
+<p>但是电击器击晕的时间也过去了，在我检查着侯经理的同时，他也醒了过来。</p>
+<p>他一醒来便一边挣扎，一边惊恐地说：</p>
+<p>「你这个混蛋，你，你居然也是凶手！你居然……」</p>
+<p>我一边按住他一边解释道：</p>
+<p>「不不不，你听我说，我是被龙医生给骗了！我现在就给你松绑，但你要冷静，可以吗？」</p>
+<p>他也迷惑了：</p>
+<p>「什么？你跟他不是一伙的？可是，怎么会……？」</p>
+<p>我见他已经冷静下来了，连忙伸手把绑住他的扎带给解开了。</p>
+<p>他这才晃了晃脑袋，缓缓地站了起来，还防备地跟我保持了适当的距离。</p>
+<p>而这时候，李护工也跑了出来。</p>
+<p>三人你看我，我看你，都对彼此充满了不信任。</p>
+<p>我举着电筒环顾四周，见暂时没有危险，于是说道：</p>
+<p>「我们得好好谈一谈，我要弄清楚现在到底是怎么个情况。」</p>
+<p>他俩继续互相大眼瞪小眼，都保持沉默。</p>
+<p>于是，我率先问了我最关心的问题：</p>
+<p>「你们先回答我一个问题，你们有没有看到我的搭档赵俊？」</p>
+<p>侯经理立即反问了一句：</p>
+<p>「什么？」</p>
+<p>我着急了起来，朝他吼道：</p>
+<p>「赵俊啊，就是跟我一起的那个保安，我上去找龙医生的时候，是他在这里陪着你的啊。」</p>
+<p>侯经理呆滞了好几秒。</p>
+<p>而接下来他的回答，却让我大脑生疼：</p>
+<p>「保安这个角色从始至终就只有一个，就是你！你也是一个人出现的，哪有什么赵俊？」</p>
+<p>这？</p>
+<p>我目瞪口呆，侯经理这说的是什么话？</p>
+<p>李护工也绕了过去，在侯经理那边对着我吼：</p>
+<p>「妈的，你是个精神病啊！我就觉得你是凶手！」</p>
+<p>我百口莫辩。</p>
+<p>不，我是迥异得无法开口说话。</p>
+<p>赵俊不存在？</p>
+<p>可我今晚明明是跟他一起值班，跟他一起来到这里，一起救了侯经理的。</p>
+<p>我尝试着去解释：</p>
+<p>「不，不对，你们弄错了，我根本就不是跟你们游戏角色中的保安，我是个保安，是真的保安，我……」</p>
+<p>我的话却被李护工直接打断了：</p>
+<p>「放屁！你就是我们的保安！妈的，你居然连自己的身份都忘了？说吧，那两个病人是不是你杀的？是不是你杀完人之后就忘了？就像你忘了自己是玩家这个身份一样！」</p>
+<p>我傻眼了。</p>
+<p>这都什么跟什么啊。</p>
+<p>我镇定下来，先确定一点：</p>
+<p>我的记忆是绝对不会出错的。</p>
+<p>对应而来的结论就是：</p>
+<p>侯经理在撒谎！</p>
+<p>他说没有见到过赵俊，是谎言。</p>
+<p>那么他的目的又是什么呢？</p>
+<p>很简单，他才是凶手。</p>
+<p>他想伙同李护工，拉拢力量，除掉我。</p>
+<p>而这样猜测的话，赵俊恐怕也是凶多吉少了。</p>
+<p>果不其然，在我思考着的时候，他们已经开始缓缓挪动脚步向我逼近了。</p>
+<p>先不说龙医生到底是什么角色，也不论他到底躲在哪里。</p>
+<p>我现在要做的，是避免被他俩围攻。</p>
+<p>否则真被制服的话，在这样的侯经理手中，恐怕我难逃厄运。</p>
+<p>想到这里，我拔腿就跑！</p>
+<p>他们当然是追了上来。</p>
+<p>但我距离楼梯非常近，而且楼上每一层都有隐藏身影的位置，所以我一开始就是冲着楼梯而去的。</p>
+<p>我飞快地往楼上跑，哪怕听到身后似乎传来了争执的声音，我也没有理会。</p>
+<p>因为我怕是陷阱。</p>
+<p>我几经拐弯更换路线，最后躲在了三楼一个黑暗的房间里。</p>
+<p>我苦苦思索，却仍然理不清到底哪件事是真，哪件事是假。</p>
+<p>太邪门了。</p>
+<p>我突然想起今天是鬼节。</p>
+<p>而且我想到一件更恐怖的事情……</p>
+<p>这个疗养院火灾时烧死过很多人，这里也一直被传闹鬼。</p>
+<p>难道今晚这里，真是群鬼出动了？</p>
+<p>如果是这样的话，那么被困大楼无法逃脱，以及赵俊消失也能解释清楚了。</p>
+<p>就是鬼打墙啊……</p>
+<p>不不不。这世界是没有鬼的！</p>
+<p>我连忙强迫自己甩掉这样的念头。</p>
+<p>这念头太危险了。</p>
+<p>一旦我接受了这样的设定，那还怎么想办法解开谜底，逃离这里？</p>
+<p>就在我胡思乱想的时候，外面突然有了响动。</p>
+<p>我顿时也警惕了起来。</p>
+<p>我听到，外面除了脚步声之外，还有吁吁喘气的声音。</p>
+<p>而且脚步声听起来就只有一个人。</p>
+<p>会是谁呢？</p>
+<p>我从窗户偷偷探了出去，发现是狼狈不堪的李护工。</p>
+<p>我终于明白我逃上三楼之后，他们发出的那些争执声是为何了。</p>
+<p>看样子他是被侯经理给袭击了！</p>
+<p>而且，他肯定也失去电击器了，才这么狼狈地逃了上来。</p>
+<p>我必须跟他谈一谈。</p>
+<p>因为无论是龙医生还是侯经理，他们明显都没有完全说实话。</p>
+<p>我必须获取更多情报，才能作出最好的判断。</p>
+<p>为了避免碰到可能在追杀李护工的侯经理，我并没有第一时间出去。</p>
+<p>而是暗中记下了李护工躲藏进去的房间。</p>
+<p>然后又躲了好一会儿。</p>
+<p>在确认侯经理没有追到这个地方来后，我才出了门，朝着那个房间悄悄走了过去。</p>
+<p>为了避免冲突，我并没有直接冲进去，而是站在门口停下，小声地问道：</p>
+<p>「侯经理袭击你了对吧？你现在相信我不是凶手了吗？我们可以聊一聊吗？」</p>
+<p>在房间尽头一张椅子后面，传来李护工尽量压低的声音：</p>
+<p>「妈的，赶紧进来，别让他发现我们了！」</p>
+<p>我小心翼翼地溜了进去。</p>
+<p>但也保持了一定的防备心，在跟他还有一定距离的位置就停下了脚步。</p>
+<p>「这到底怎么回事？真的有人被杀吗？可无论哪个楼层我都去找过，我一具尸体都没有发现啊！」</p>
+<p>他从椅子后面走出来，信誓旦旦地说道：</p>
+<p>「当然是真的！我亲眼看到的！」</p>
+<p>就在此时，</p>
+<p>就在我想问其他问题的时候，他却突然加速扑了过来！</p>
+<p>伴着窗外渗进来的微弱月光，我看到的是他那张扭曲表情的脸：</p>
+<p>「因为是我亲手杀的，所以我当然亲眼看到过啊！」</p>
+<p>电击器，从他手中露了出来。</p>
+<p>虽然我有所防备，在他扑过来的瞬间就侧身欲躲，但也因为距离太近而没有完全闪躲开。</p>
+<p>他手中电击器还是按在了我的盆骨上。</p>
+<p>我尽力一蹬腿，后撤摔坐在了地板上。</p>
+<p>下半身，一阵酥麻。</p>
+<p>这下别说逃跑，我连站起来都做不到了。</p>
+<p>抬起头，只有李护工带着邪恶微笑的脸。</p>
+<p>我也听到了另一个，完全不同于龙医生跟侯经理版本的剧情：</p>
+<p>「你是最后一个了，只要杀光你们全部人，我就能得救了！」</p>
+<p>我努力挣扎，但还是无法控制自己的下半身。</p>
+<p>但我不想束手就擒，只能先拖延一下时间：</p>
+<p>「不是，谁告诉你只要杀死其他人就能得救的？你会被抓起来，你会被枪毙的！」</p>
+<p>他却继续笑了起来：</p>
+<p>「你还不明白吗？这里为什么会被莫名其妙地锁起来？为的就是让我们互相残杀，只留最后一个！」</p>
+<p>说话间，他的另一只手已经从身后掏出了一把匕首。</p>
+<p>干净锋利的匕首。</p>
+<p>为了能争取活下来的时间，我开始口不择言地说着话：</p>
+<p>「慢着，你在胡说什么？我才不是最后一个，还有个医生，龙医生啊！而且，你没有发现这个地方不对劲吗？很有可能是闹鬼！锁住门的是恶鬼，是鬼打墙，不然还能怎么解释？杀了我也不能逃出去的！你是不是鬼上身了？你说你杀过人，可是你看看自己的匕首，上面一点血迹也没有，不是吗？」</p>
+<p>他却顿了顿，笑得更欢了：</p>
+<p>「你还真以为龙医生可以被杀得死？龙医生才是主宰啊，他是要来杀我们的人，还不明白吗？是他选中了我，是他让我杀了那两个病人，也是他让我杀光你们所有人，你还不懂吗？这里就是个恶鬼交加的世界，只有活下来的人才能逃出去！我们每个人，都是鬼！」</p>
+<p>我蒙了，这里是恶鬼交加的世界？</p>
+<p>我们每个人都是鬼？</p>
+<p>不，他一定是疯了。</p>
+<p>我不是鬼，我是活生生存在的，我才不是鬼。</p>
+<p>而且，什么叫龙医生是主宰？</p>
+<p>这到底……</p>
+<p>我想不明白。</p>
+<p>但此时此刻，想明白了也没用，最要紧的还是先躲过眼前的这把屠刀。</p>
+<p>虽然下半身仍然麻痹着，但我上半身还是活动自如的。</p>
+<p>而这个房间里，随意放置了不少椅子。</p>
+<p>在刚刚引诱对方说话拖延时间的时候，我就已经悄悄伸出右手去，抓住了一个椅子脚。</p>
+<p>就在他俯下身来要给我一刀的时候——</p>
+<p>我猛地一挥手，把整张椅子都砸在他身上。</p>
+<p>「砰」的一声，</p>
+<p>他发出一声惨叫，往侧面倒了过去。</p>
+<p>当然，我手上的椅子也因为太用力而脱手飞了出去。</p>
+<p>我又是手无寸铁的状态了。</p>
+<p>这时候我只能有两种选择：</p>
+<p>第一，尽力逃跑。</p>
+<p>但我下半身仍然麻痹，别说是跑了，站起来都费劲，爬着出去简直就是等死。</p>
+<p>第二，我要拼死一搏。</p>
+<p>我毫不犹豫地选择了第二个选项！</p>
+<p>因为我是能爬的。</p>
+<p>也因为，李护工在被我椅子打中的那个瞬间，他手中的匕首也脱手了，就掉在离我不远的地方。</p>
+<p>我费劲全身力气，朝着匕首爬了过去。</p>
+<p>而李护工也快速地站了起来，愤怒地大吼：</p>
+<p>「你他妈的！嫌死得不够快是吧！」</p>
+<p>他手中还有一个电击器。</p>
+<p>而我已经伸手摸到匕首的刀柄了。</p>
+<p>转过身来，我看到的是他扑过来的画面。</p>
+<p>因为黑暗，他没有发现我已经拿到匕首了。</p>
+<p>他毫不犹豫地扑了过来。</p>
+<p>电击器直接砸在我的胸口上。</p>
+<p>而我手中的匕首，也稳稳地插进了他的腹部！</p>
+<p>我被电得一阵痉挛，抽搐不已。</p>
+<p>而他也震惊地伸出另一只手，摸到了插进身体的匕首。</p>
+<p>电击器脱手了，但我也被电得够呛，眼睛都开始模糊了。</p>
+<p>我最后看到的画面，是他跪在地上，双手捂着匕首不知如何是好，他的嘴巴也缓缓渗出了血……</p>
+<p>再次醒来的时候，白光隔着眼皮刺痛我的双眼。</p>
+<p>我的眼角瞥到，白色，只有白色，周围的一切都是白色的。</p>
+<p>而我，则躺在了白色的病床上。</p>
+<p>除了眼皮能动之外，我的身体一塌糊涂，像是被完全麻醉过。</p>
+<p>我努力睁开眼，迎面而来的却是……</p>
+<p>一张熟悉的脸。</p>
+<p>年轻，斯斯文文，鼻梁上还戴着一副眼镜。</p>
+<p>我也听到了醒来后的第一句话：</p>
+<p>「赵俊先生，你能听到我说话吗？」</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/21-%E6%9C%80%E6%97%A0%E6%9C%9B%E7%9A%84%E6%9A%97%E6%81%8B%E6%98%AF%E4%BB%80%E4%B9%88%E4%BD%93%E9%AA%8C-%E7%9F%A5%E4%B9%8E/" title="最无望的暗恋是什么体验？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">最无望的暗恋是什么体验？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/25-%E6%98%A8%E5%A4%9C%E8%A5%BF%E9%A3%8E%E5%87%8B%E7%A2%A7%E6%A0%91/" title="昨夜西风凋碧树">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">昨夜西风凋碧树</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

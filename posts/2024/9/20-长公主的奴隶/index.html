@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长公主的奴隶 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/9/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/9/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="长公主的奴隶">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/6502.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/6502.jpg">
+  <meta name="twitter:title" content="长公主的奴隶">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="长公主的奴隶">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11244">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/6502.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">长公主的奴隶</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%95%bf%e5%85%ac%e4%b8%bb%e7%9a%84%e5%a5%b4%e9%9a%b6&amp;url=https://mohai.us.kg/posts/2024/9/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/9/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%95%bf%e5%85%ac%e4%b8%bb%e7%9a%84%e5%a5%b4%e9%9a%b6%20https://mohai.us.kg/posts/2024/9/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/6502.jpg" alt="长公主的奴隶" />
+      
+
+      <p>长公主的奴隶</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>不小心喝醉酒，睡了养了三年的奴隶。</p>
+<p>醒来，我一脚踹了他。谁知他过了两个月摇身一变，成了位高权重的丞相。</p>
+<p>我想逃，他却狠狠地圈住我：「公主殿下，你跑什么？」</p>
+<p>1</p>
+<p>「沈容安……」</p>
+<p>我头痛欲裂，下意识想翻个身，手却搭上了一个奇怪的物体。</p>
+<p>感受到一阵推力，我直接被推下了床榻。</p>
+<p>屁股落地的痛感让我清醒了几分。</p>
+<p>「大胆！把这狗奴才给我拉下去斩了！」</p>
+<p>「公主殿下，你要斩谁？」</p>
+<p>我一抬眼，却怔愣在地上。</p>
+<p>面前男子唇红齿白，黑发柔顺地披在身上，桃花眼微挑，一副祸水的模样。</p>
+<p>他的衣衫不整，活像是我欺负了他。</p>
+<p>「沈容安，你怎么在这里？」</p>
+<p>「臣倒也想问问公主殿下为何要暗算臣。」</p>
+<p>我正想开口问什么暗算，房间里的门被突然打开，涌进来了一大波人。</p>
+<p>「穆颜，你居然跟陌生男子在此私会！」</p>
+<p>整理了下自己的裙摆，到这个地步还不明白就真的是傻子了。</p>
+<p>眼前指着我的鼻子的女人，正是与我做对了许多年的好皇妹。</p>
+<p>我轻轻一笑，向她靠近。</p>
+<p>「四皇妹这么说可是口说无凭，你又何时见过本宫与陌生男子私会了，就凭我们现在共处一室？」</p>
+<p>头轻轻靠近她的耳朵，一阵令人作呕的香味传来。</p>
+<p>「况且，你可知道这陌生男子，乃是丞相大人？」</p>
+<p>退后一步，清楚地看见穆离脸上的错愕。</p>
+<p>我虽不知为何在同一张床榻上的人成了沈容安，但能看见穆离吃瘪也是一大乐事。</p>
+<p>当着众人的面，我紧紧地攥住了穆离的手腕，指甲深陷。</p>
+<p>「穆离，今日这笔账，我们慢慢算。」</p>
+<p>……</p>
+<p>这件事终究还是传到了父皇那里，气得父皇连砸了几个他最爱的茶壶。</p>
+<p>我跪在他面前，一言不发。</p>
+<p>「穆颜，你平日里养些面首朕便纵容你罢了，如今倒险些被人暗算！」</p>
+<p>我面色淡漠地盯着地面：「穆颜知错。」</p>
+<p>「你端的是长公主的尊容，也是皇家的脸面，若是再被人算计，你这长公主的位置有的是人坐。」</p>
+<p>嘴角扬起一抹嘲讽的笑，不欲多说，起身退走。</p>
+<p>「丞相说要对你负责，向朕请旨求婚，你怎么看？」</p>
+<p>内心仿佛被猫轻轻挠了一下，脑海里闪过沈容安昨晚那副勾人的样子。</p>
+<p>可嘴里却充满了苦涩的意味。</p>
+<p>「儿臣与丞相大人只是误会，烦请父皇拒了吧。」</p>
+<p>坐在龙椅上的那个人满意地点了点头：「不错，这才是合格的长公主。」</p>
+<p>呵，长公主，不过是牢笼罢了。</p>
+<p>我请安退下，却对上了沈容安的视线。</p>
+<p>他将头发束了起来，平添了几分正经的意味。</p>
+<p>「公主殿下看样子似乎不愿？」</p>
+<p>「当然。」</p>
+<p>头微微扬起，我一瞬不瞬地直视着他深邃的眼瞳。</p>
+<p>「府里还有那么多面首呢，本宫可不想抛弃他们。」</p>
+<p>2</p>
+<p>「最近丞相大人日日都送来些玩物给长公主殿下，如今更是抬了十几箱聘礼，看来是铁了心了。」</p>
+<p>床榻上红帘微垂，跪在床下的男子只着一身单薄的红衣，细长的丹凤眼尾处有一抹艳丽的泪痣。</p>
+<p>频频被沈容安的事吵醒，我抬手按了按眉心。</p>
+<p>「全数退回去，本宫看见他的东西就烦。」</p>
+<p>红衣男子低眉顺眼地退下，我却盯着帐顶发呆。</p>
+<p>沈容安到底是什么意思？他不是讨厌极了我吗？</p>
+<p>梳妆打扮完后，看见门口伫立了一道清俊的白色身影，自从他从长公主府离开后就再也没看见他穿过红衣了。</p>
+<p>缓缓靠近沈容安，他的眼角含着一抹常年的笑意，一双微棕色的瞳孔一眨也不眨地盯着我。</p>
+<p>「那日众目睽睽，长公主只道是误会，怕是堵不住悠悠众口。」</p>
+<p>我轻嗤了一声。</p>
+<p>「本宫的名声早就烂了，还在乎这些吗？」</p>
+<p>世人皆传长公主仗着圣宠无法无天，府邸里养了一堆男宠，夜夜笙歌，谁家的儿郎敢娶长公主？</p>
+<p>这么多年来，沈容安倒是头一个。</p>
+<p>「如果我说，我在乎呢？」</p>
+<p>「你？」</p>
+<p>我用手掩住唇，悦耳的笑声弥漫在空气中。</p>
+<p>「你会在乎本宫？真是笑话，本宫的母妃不就是被你害死的吗？」</p>
+<p>莲步轻移，我走上前，手指落在他瘦削的脸上。</p>
+<p>「本宫嫁给任何人，都不会嫁给你。」</p>
+<p>他沉沉地看着我，眼睛里浮现我看不懂的情绪。</p>
+<p>他突然扬手将我一把抱在怀里，挣扎间，我听见他喊着恨意的声音。</p>
+<p>「长公主不想嫁给臣，那臣便偏要娶。」</p>
+<p>「长公主要嫁谁，臣便毁了谁。」</p>
+<p>我使了狠劲，将他一把推开，整理了自己的头饰。</p>
+<p>「沈容安，不就是有过一夜吗？本宫都不在乎，你在乎些什么？」</p>
+<p>低沉的笑意传来，他又恢复了那副在外人面前温润无比的样子。</p>
+<p>「为了什么？当然是想要好好回敬当初长公主的相救之恩，还有将臣狠心抛弃的行为啊。」</p>
+<p>我不欲与他多说，转身便走，可他却一把拉住了我的手腕。</p>
+<p>他的手指紧紧握着，愈发用力。我的手腕生疼，眉毛微蹙。</p>
+<p>沈容安的头低下，一股栀子花的味道扑鼻而来。</p>
+<p>他的眼里似笑非笑。</p>
+<p>「还是说，你在害怕什么？长公主殿下。」</p>
+<p>……</p>
+<p>沈容安是我在一处无人的街巷遇见的。</p>
+<p>那日他衣着褴褛，棕色的眼睛直直地盯着我。</p>
+<p>就算被人打的满身见血也不吭一声。</p>
+<p>他长得真像我曾经的心上人。</p>
+<p>沈家三小公子。</p>
+<p>我破天荒地叫人停了下来，赶走了那群人。</p>
+<p>「你叫什么名字？」</p>
+<p>「兰容。」</p>
+<p>许是许久都没有说过话，他的嗓音嘶哑，也难听无比。</p>
+<p>「眼睛倒是独特，愿意做本宫府上的人吗？」</p>
+<p>我将他带回了府上。</p>
+<p>他的半边脸颊上有一块巨大的疤痕，太医看了也纷纷摇头。</p>
+<p>然而他另外半边脸却唇红齿白，妖孽无比，本该是含情脉脉的桃花眼里却满是淡漠，唯有看向我的时候才仿若坚冰融化。</p>
+<p>为了不让人说闲话，我派人定制了一个面具给他。</p>
+<p>他对我而言充满了新鲜感，我时常逗弄他，喜欢看他脸红的样子。</p>
+<p>圣上赏赐了什么玩物，路边捡到了什么野花，我都不吝啬于给他。</p>
+<p>明明他是我府邸上长得最丑的，可我整整三年都让他侍奉我。</p>
+<p>我因着皇帝的眼线，府里的男宠络绎不绝。</p>
+<p>这三年，我们也时常做亲密的事情，沈容安倒是尽职尽责地扮演着男宠的角色。</p>
+<p>我本以为会如此相安下去。</p>
+<p>因宫宴醉酒，我回到府邸，落入一个满是栀子花香的怀抱。</p>
+<p>「殿下喝醉了？」</p>
+<p>他摘掉了面具，眼里含着前所未有的温柔。</p>
+<p>我怔怔地瞧着他的半边完好的脸，感慨说道：「你长得真像他。」</p>
+<p>他的笑意僵硬了一瞬。</p>
+<p>「像谁？」</p>
+<p>我却失去了意识，记忆从此断片。</p>
+<p>醒来的时候，发现自己不着寸缕，而兰容双眼沉沉地盯着自己。</p>
+<p>我面不改色地穿好了衣裳，起身叫人。</p>
+<p>「来人，兰容目无尊上，从此之后逐出长公主府。」</p>
+<p>后来我回到府上门口，看见兰容跪在门前。</p>
+<p>目不斜视地走进去，命人将大门关上。</p>
+<p>「长公主殿下。」</p>
+<p>我回头，低下眼睫，内心轻微波动。</p>
+<p>「兰容谢长公主三年之恩。」</p>
+<p>过了两个月再见，他却成了位高权重的丞相，脸也好了个彻底。</p>
+<p>外界只知道他叫兰容，却只有极少数人知道，他的名字，其实叫沈容安。</p>
+<p>3</p>
+<p>不知道为何，沈容安居然真从皇帝那里要来了圣旨，说要娶我为妻。</p>
+<p>尽管这长公主的名分只是个傀儡，可该有的仪式却丁点都没少。</p>
+<p>别人都说新婚夫妻面上都应是喜气洋洋的。</p>
+<p>可我与沈容安不是。</p>
+<p>他的面上含着浅浅的笑意，可眼里却是无比冷漠的。</p>
+<p>洞房花烛夜，本该是闹腾腾的。</p>
+<p>可沈容安却将我安置在了离他最远的院子，连一丝人气也无。</p>
+<p>喝完交杯酒，他便掀起我的盖头，二人视线对上。</p>
+<p>我本以为他应当眼里有惊艳的。</p>
+<p>就像寻常夫君那样。</p>
+<p>可没有，他的眼里一丝波澜都未起。</p>
+<p>「长公主殿下今晚便歇在这里吧。」</p>
+<p>我抓住裙摆，不明白沈容安到底是什么意思。</p>
+<p>费尽心思娶到我，又无一丁点娶到的喜悦。</p>
+<p>「你睡书房吗？」</p>
+<p>他转身便走，一句肯定的答复都不愿意给我，只淡淡留下一句话。</p>
+<p>「既然入了丞相府，就将你府上那群面首遣散。」</p>
+<p>我怔怔地看着他的背影。</p>
+<p>沈容安，你真的喜欢我吗？</p>
+<p>想要问出口的话被我硬生生咽了回去。</p>
+<p>我坐在梳妆台前，将精致华丽的珠钗一把扯下。</p>
+<p>断线的珠子落在地上，发出清脆的声音。</p>
+<p>一如此刻我有些躁郁的心情，心口隐隐作痛。</p>
+<p>本是对他有着期待的，可终究是我的臆想。</p>
+<p>穆颜，这不就是你想看到的吗？</p>
+<p>你与他的情分，早在当初的无情抛弃中散尽了。</p>
+<p>第二天我让丫鬟将我的脸色乔装了一番，掩盖了前晚的憔悴。</p>
+<p>打开门，发现沈容安站在门口，手里拿着一盒木匣子。</p>
+<p>「这是我派人从库房里拿来的，此物只传给丞相夫人。」</p>
+<p>我抬眼看了一眼，无趣地收回了视线。</p>
+<p>不过是他的表面功夫罢了。</p>
+<p>拜见完皇帝皇后，他送我回府之后便匆匆离开。</p>
+<p>丫鬟问我那个木匣子该如何安置。</p>
+<p>「随便藏在哪便行了，备马车。」</p>
+<p>来到魂梦楼，老鸨笑着走上前。</p>
+<p>「公主殿下，三楼已经为您准备好了。」</p>
+<p>我带着红纱，叫丫鬟留在一楼待命。</p>
+<p>跟着老鸨去了三楼，里面有两个红衣男子。</p>
+<p>皆是长得一副狐媚样，跟公主府上的男宠像是一个模子刻出来的。</p>
+<p>「公主殿下，近来丞相那边并无特殊动静。」</p>
+<p>我随意地坐在软垫上，轻阖眼深思。</p>
+<p>「当初岚贵妃之死的事情幕后之人查清楚了吗？」</p>
+<p>「回公主殿下，除了知道目击第一人是丞相之外再也没有任何线索了。」</p>
+<p>我缓缓睁开眼睛，看着面前两个跪伏的男子，轻嗤一声。</p>
+<p>「废物。」</p>
+<p>「长公主息怒，奴下再去搜集线索。」</p>
+<p>「长公主殿下，白府传来了消息，说感谢之前长公主殿下将丞相送回了白府。」</p>
+<p>我站起身来，时候不早了，再待下去怕是要引人怀疑。</p>
+<p>「兰容能被本宫救下，是因为他就是当初的沈家三公子，如今本宫与他再不相欠。」</p>
+<p>耳朵里传来熟悉的脚步声。</p>
+<p>我抬手指着他们两个：「过来。」</p>
+<p>等到两个红衣男子来到身边，房间门恰好被人踹开。</p>
+<p>来人站在门口，一脸阴沉。</p>
+<p>「兰丞相怎么来了，这种地方你不是从来都不踏及吗？」</p>
+<p>他靠在门边，自上而下看着我。</p>
+<p>「还不快滚。」</p>
+<p>那两个红衣男子看了我一眼，我默不作声端起眼前的茶杯轻抿。</p>
+<p>待房间内只剩沈容安与我之后，他席地而坐，棕色的双眼紧盯着我。</p>
+<p>「长公主殿下真是好手段，新婚第二天跑来这魂梦阁。」</p>
+<p>我轻轻一笑：「彼此彼此。」</p>
+<p>你不也新婚夜就留我独守空房吗？</p>
+<p>不过这句我没说，倒显得我愤愤不平一般。</p>
+<p>「长公主殿下莫不是想要我将这魂梦阁抄了？」</p>
+<p>「怎么，你将本宫公主府上的男宠们遣散了，本宫在此寻欢作乐，有何不好？」</p>
+<p>他单手扣住我的后脑勺，两人距离一下拉近。</p>
+<p>「不若换个人来如何？」</p>
+<p>4</p>
+<p>我微微睁大眼睛，他的面容骤然间无限靠近，棕色的眼珠里倒映着我的脸颊。</p>
+<p>呼吸被他摄取，心跳猛然加快。</p>
+<p>连嘴唇仿佛都变得火热起来。</p>
+<p>我恍惚了一瞬，直到他的气息想要再次攻占营垒才清醒了几分。</p>
+<p>双手将他用力推开，擦了擦嘴唇。</p>
+<p>「沈容安，你好大的胆子！」</p>
+<p>他却笑了起来，眼尾还含着方才的情意绵绵。</p>
+<p>「我可是你的驸马，长公主殿下，有何逾矩？」</p>
+<p>你哪是驸马，你都快骑到本宫头上了！</p>
+<p>他的眼里含笑，就像个狐狸一般。</p>
+<p>「之前再亲密的事情都做过，隔了两个月之后就变了？」</p>
+<p>「沈容安，你到底几个意思？」</p>
+<p>我真是彻底不理解他的所作所为。</p>
+<p>说他喜欢我，他却将我安置在最偏远的院落，新婚夜去睡书房。</p>
+<p>说他不喜欢我，那他方才的行为又算什么？只是单纯的报复吗？</p>
+<p>沈容安没有答复我，他将我带回了丞相府，威胁一通之后便又匆忙走了。</p>
+<p>吃饭的时候，我的肚子突然涌现一股奇怪的感觉，有想反胃的冲动。</p>
+<p>啪的一声，面前的瓷碗被打翻在地上，碎了一地。</p>
+<p>「夫人，将公主府上的太医请过来。」</p>
+<p>太医很快便来了。</p>
+<p>「长公主殿下，你这症状是有喜了。」</p>
+<p>连一丝微弱的希望也不留，我的手抚上肚子，内心却前所未有的绝望。</p>
+<p>这个孩子只有可能是沈容安的，可为何偏偏会出现？</p>
+<p>「你下去吧，此事绝对不要向任何人提起。」</p>
+<p>太医退下，我却久久无法释怀。</p>
+<p>该告诉沈容安吗？</p>
+<p>可他如此厌恶我，真的会喜欢这个孩子吗？</p>
+<p>轻轻闭了闭眼睛，我的内心由最初的慌乱已经逐渐平静。</p>
+<p>夜晚，我本以为今晚他又是直接待在外面了，于是便径自吃了起来。</p>
+<p>可他不仅回来了，还一脸风尘仆仆。</p>
+<p>「穆颜，你今天叫太医了？」</p>
+<p>听见这个陌生的称呼从他口中说出，我愣了一瞬。</p>
+<p>有多久没听见他呼唤我的名字了？</p>
+<p>「就是突然身子不舒服，已经叫太医给我准备些滋补的药品了。」</p>
+<p>他皱着眉上下打量着我：「请太医过来再看一下。」</p>
+<p>我的心停滞了一瞬，绝对不能让沈容安知道自己怀孕的事情！</p>
+<p>「丞相大人何时这么好心关注本宫的身体了？」</p>
+<p>果不其然，他被我的话转移了注意力，落座后，一言不发地瞧着我。</p>
+<p>我被他盯得浑身不自在，连饭都好像吃不习惯了。</p>
+<p>「明天宫宴，好好打扮一下，别落了丞相府的脸面。」</p>
+<p>心里被突然刺了一下。</p>
+<p>「丞相大人不用担心，倒是到时候别让外界传长公主与她的驸马感情不睦就好。」</p>
+<p>他的眼睛微微眯起：「你在威胁我？」</p>
+<p>「笑话，本宫相信聪明如丞相大人知道应该做什么。」</p>
+<p>我想起身离去，可沈顺却蓦然逼近，将我困在他的双臂之间。</p>
+<p>腰身磕在红木桌上，钻心的疼痛袭来。</p>
+<p>我悄悄抚摸了一下自己的肚子，面上却嘴角微勾，一副毫不在意的样子。</p>
+<p>「丞相大人这是怎的了？」</p>
+<p>沈容安面色带着些微阴郁：「穆颜，你的心到底是什么颜色的？」</p>
+<p>「当初救了我又将我弃如敝屣，我们相处的三年，你忘了吗？」</p>
+<p>肚子愈来愈疼，似乎是受不住这番力道。</p>
+<p>我内心隐约抽痛，可却强制抑制下来。</p>
+<p>「沈容安，那三年，不过就是打发时间罢了。」</p>
+<p>我的下颚被他一手抬了起来。</p>
+<p>呼吸交错间，他又浮现出唯有二人在场时的冷漠。</p>
+<p>「毁了你与心上人的姻缘，便与我如此勉强，是吗？」</p>
+<p>脑海里突然浮现出小时候那个白衣男孩温柔的抚摸。</p>
+<p>骤然清醒，对上他隐含着怒气的棕色双眼。</p>
+<p>真是哪哪都不像。</p>
+<p>眼睛突然有些酸涩，被我硬生生遏制下去。</p>
+<p>「对啊，你与他相比，差太远了。」</p>
+<p>5</p>
+<p>「长公主殿下，您的马车在后面一辆。」</p>
+<p>面前的侍卫面无表情地拦住我的去路，朝我指了指后面那辆明显小巧许多的马车。</p>
+<p>而他身侧的那辆，明明可以容纳三人，却连进场前的做样子都不愿。</p>
+<p>在心里冷哼了一声，我坐上了后面那辆马车。</p>
+<p>没有侍卫搀扶，我便就着丫鬟的手上去，没人注意的视角下，我的手下意识地遮挡住了肚子。</p>
+<p>父皇脸上洋溢着虚伪的笑容。</p>
+<p>「兰容啊，你与颜颜新婚如何？」</p>
+<p>他一脸笑意地牵住了我的手：「承蒙圣上关爱，臣与长公主殿下很好。」</p>
+<p>要不是提前商量好了，我差点以为他是认真的了。</p>
+<p>他牵着我的手一路走过众位大臣，落座之后立刻松开我的手，表情也淡然了不少。</p>
+<p>我的手指微微蜷缩，想要保留指尖那一抹熟悉的温度。</p>
+<p>「乌国使臣觐见！」</p>
+<p>一位长相英气十足的男女一同走上前来。</p>
+<p>男子使臣与父皇相谈甚欢。</p>
+<p>我看到那个看起来像乌国公主的女人眼神时不时往这边撇。</p>
+<p>内心突然涌现了不好的预感。</p>
+<p>「此次前来，带来了我们乌国最受宠的公主，献予大齐国，结两晋之好。」</p>
+<p>父皇眯了眯眼：「哦？不知乌国公主想要嫁给何人？」</p>
+<p>「就是他！」</p>
+<p>我的呼吸微微停滞，手悄悄抓住沈容安的衣袖，面上却依然不动声色。</p>
+<p>乌国公主指尖所至，赫然是沈容安。</p>
+<p>「怕是要让乌国失望了，此人乃我大齐丞相，朕之爱女已然嫁与他为妻，怕是不妥。」</p>
+<p>然而乌国公主却依然紧盯着沈容安：「我知道你，你曾救过我。」</p>
+<p>救过她？我怎么不知道。</p>
+<p>我再也控制不住去看沈容安的面容，他静静地盯着乌国公主，眼里的寒冰或多或少退去了一些。</p>
+<p>内心隐隐开始抽痛起来。</p>
+<p>据我所知沈容安不是助人为乐的性子。</p>
+<p>难道沈容安喜欢这乌国公主，才会去救她吗？</p>
+<p>他轻瞥了我一眼，我这才发现自己已经将他的衣袖攥得皱皱的。</p>
+<p>我松开手，若有所失。</p>
+<p>沈容安站起来，对着乌国公主拱手道：「恐怕要让公主失望了，在下有家规，家妻唯有一人，还望公主另觅良人。」</p>
+<p>我抿了抿嘴，虽然不想承认，可内心里突然涌现的淡淡喜悦却做不了假。</p>
+<p>明明告诉自己应当克制的，不应该对他有感情。</p>
+<p>沈容安这个人，真是越来越摸不透了。</p>
+<p>……</p>
+<p>宫宴中，我借口自己不舒服去原来居住的宫殿休息。</p>
+<p>来到岚贵妃生前所在的岚珍阁。</p>
+<p>岚珍阁，顾名思义，岚贵妃受极了圣上宠爱。</p>
+<p>可后来母妃却一朝得父皇厌恶，打入了冷宫。</p>
+<p>我也由此得到了隐藏在其中的惊天秘密。</p>
+<p>母妃居然谎报沈家将军府的情报，陷害将军府引得满门被斩抄。</p>
+<p>可我不信母妃会干出这样的蠢事，陈家非将军世家，又为何要谎报军情？</p>
+<p>父皇后来知道真相之后大怒，将母妃打入了冷宫。</p>
+<p>然而母妃身后的陈家势力根深蒂固，父皇动不得。</p>
+<p>「颜颜，是母妃对不住你，没有保护好你。」</p>
+<p>母妃身体并不好，之前生了我落了病根，脸色日渐苍白。</p>
+<p>「母妃，只要找到背后暗算陈家的人，你便能出去了！」</p>
+<p>她的眼神闪烁了一下，惨然一笑：「凶手，永远都不会出现。」</p>
+<p>为何？</p>
+<p>她不肯告诉我，直到死亡。</p>
+<p>那时候正是雨天，我抱着母妃逐渐冰冷的身体，内心悲怆，昔日受尽宠爱的公主一夜之间仿佛长大了。</p>
+<p>因为之前对此毫不知情，我侥幸活了下来，成为如今父皇眼里的肉中刺。</p>
+<p>6</p>
+<p>「长公主不是说歇在了清莲楼吗？」</p>
+<p>从回忆中快速抽身，看向身后的沈容安。</p>
+<p>「怎么，本宫来看看母妃生前所在的院子，有何问题？」</p>
+<p>「说来，陈家的覆灭，还得有你一半的功劳。」</p>
+<p>当初沈容安一派的人在朝堂之上条条罗列了陈家近十年的罪条，父皇震怒。</p>
+<p>陈家从此大厦倾倒。</p>
+<p>他沉默地看着我，眼里蕴含着我看不懂的情绪。</p>
+<p>「你以为，陈家的覆灭，是我出手的？」</p>
+<p>我的心一沉，不明白他这句话是什么意思。</p>
+<p>「长公主，你也知道当初陈家的所作所为，迟早也会被人揭露。」</p>
+<p>我的心里突然蹿起了一股火气。</p>
+<p>「本宫只知道，岚贵妃、陈家满门的死都与你脱不开关系！」</p>
+<p>沈容安叹息了一声。</p>
+<p>「颜颜，你我之间真的要闹到这种地步吗？」</p>
+<p>内心的火气仿佛被一盆凉水浇了个透底，忍不住阵阵心寒。</p>
+<p>想到腹中属于沈容安的胎儿，我的手紧紧攥住。</p>
+<p>「沈容安，你告诉我，我们二人的关系，还有情分可言吗？」</p>
+<p>你对我又到底是什么态度呢？</p>
+<p>「可我若告诉你，此事不是我做的呢？」</p>
+<p>我倏然睁大眼睛，不敢置信地看向沈容安，良久后又嗤笑。</p>
+<p>「本宫为何要相信你，不是你，还能是谁？」</p>
+<p>……</p>
+<p>隔了几日，父皇召我进殿。</p>
+<p>「穆颜，你当这长公主当了多久了？」</p>
+<p>我一声不吭，最开始岚贵妃还不受宠的时候我只是个不起眼的公主。</p>
+<p>后来父皇极为宠爱岚贵妃，这长公主的名头也安在了我身上。</p>
+<p>可我却并不是第一个长公主，前长公主早就死了。</p>
+<p>「八年了，翅膀也硬了。」</p>
+<p>我内心升起讽刺之感，终究是看不惯我这个肉中刺了吗？</p>
+<p>「穆颜听不懂父皇的意思。」</p>
+<p>「你是听不懂，还是假装不懂？」</p>
+<p>「穆颜，朕知道你在搜查当年岚贵妃死的下落。」</p>
+<p>眼睫微微轻抬，可却强忍住面上的不动声色，眼睛平视着地面。</p>
+<p>「父皇这是何意？」</p>
+<p>眼前出现了一双明黄色的靴子，象征着高不可攀的身份。</p>
+<p>「穆颜，别以为你的那些小动作逃得了朕的眼线。」</p>
+<p>「看来你这位置坐得还是太安逸了。」</p>
+<p>毫不意外，这件事会被他发现。</p>
+<p>想起前几天沈容安认真的样子，告诉自己此事另有其人。</p>
+<p>不知道为何，我突然涌现一股强烈的冲动，想要相信他。</p>
+<p>只是一直以来的固定认知霎时被人打破让我无法接受。</p>
+<p>既然不是沈容安，那陈家灭亡的背后到底是谁在推波助澜？</p>
+<p>父皇又为何为了此事特意警告自己？</p>
+<p>踏出殿门口，我的内心已然有了一个模糊的猜想。</p>
+<p>「哟，皇姐这是被父皇教训了？」</p>
+<p>思维被人打散，我眉毛微蹙，内心不爽地看向始作俑者。</p>
+<p>穆离一身张扬的桃色衣裙，珠钗满头，透着一如既往的俗气。</p>
+<p>我不欲与她多加争论，转身想走。</p>
+<p>「听说皇姐被父皇罚了禁闭，之后一段时间怕是要日日待在丞相府了。」</p>
+<p>脚步微顿，我缓缓抬头，眯了眯眼。</p>
+<p>「穆离，你的消息还挺快，不知道的人，还以为你是皇上呢。」</p>
+<p>穆离听见这话也是面不改色：「皇姐可别乱给我安帽子，我也不过是试探着问一问罢了，哪知居然是真的。」</p>
+<p>看着穆离笑得幸灾乐祸的样子，我双手抱胸。</p>
+<p>「本宫是被父皇授予了尊称的长公主，你一来不行礼，二来胡乱出口，按照宫规，你又该当何罪？」</p>
+<p>看见穆离的笑意僵在了脸上，我迈步靠近，不声不响将她逼到了水池边。</p>
+<p>「你的母妃也不过是爬上父皇床的宫女罢了，有什么资格在这说话？」</p>
+<p>穆离果然被我惹怒了，然而脚步一滑，跌进了水里。</p>
+<p>「快来人啊……」</p>
+<p>我冷漠地看向仿若落汤鸡的穆离，内心没有一丝波澜。</p>
+<p>嘴唇轻启：「蠢货。」</p>
+<p>说完便转身，朝着宫殿大门走去。</p>
+<p>7</p>
+<p>回丞相府的路上，马车突然被一个人拦住了。</p>
+<p>「长公主，又见面了。」</p>
+<p>……</p>
+<p>我坐在临近的酒楼包厢内，面前坐着前几天宴会见到的乌国公主。</p>
+<p>「何事？」</p>
+<p>「你或许不知道，兰容离开公主府之后的事。」</p>
+<p>沈容安不是直接被白家接走了吗？</p>
+<p>我内心疑惑陡升，面上却是不动声色。</p>
+<p>「兰容的事情不需要旁人来告诉本宫。」</p>
+<p>更何况此人之前还在宫宴上说要嫁给沈容安。</p>
+<p>乌国公主脸上含着笑意：「你喜欢他。」</p>
+<p>拿着茶杯的手指紧握了一番，我凝视着她，没有反驳。</p>
+<p>「长公主可能误会了，当日我并非真心想要嫁给兰容，我只是在看长公主的态度。」</p>
+<p>我轻抿了一口茶，等着她继续说。</p>
+<p>「事实上，兰容曾经救过我，我对他也并无男女之情，那日旁观出长公主的态度，足矣。」</p>
+<p>「你想做什么？」</p>
+<p>以为说这点话就能打消我的疑虑吗？</p>
+<p>「兰容被接回白家之后，便被你们容国皇帝派遣成为使臣陪伴，来到了乌国。」</p>
+<p>这点事情我当然知道。</p>
+<p>我已经没有耐心再跟这个乌国公主谈下去了，母妃之死还没有来得及问沈容安。</p>
+<p>起身欲走，乌国公主的话语却将我震在了原地。</p>
+<p>「他就连重伤昏迷嘴里都呼唤着你的名字，长公主，你还是看不清吗？」</p>
+<p>……</p>
+<p>沈容安以为他是我心上人的替身。</p>
+<p>那日醉酒后所言却是真，沈容安确实长得像极了我的心上人。</p>
+<p>因为，这二人本就是同一人。</p>
+<p>沈家三小公子因为身体不好，时常闭门谢客，以至于京城只闻此人，却从未见过。</p>
+<p>然而我小时翻墙，见到了沈容安，只觉得惊为天人。</p>
+<p>沈容安不知道我，我作为颜控，却时常偷偷瞧他。</p>
+<p>奈何公主之前少有出宫的时候，以至于我与沈容安，多年来居然无甚交集。</p>
+<p>后来沈家生变，我再也看不到他了。</p>
+<p>再见，他已成了我府上的面首。</p>
+<p>直到回到丞相府，那句话都反复出现在我的脑海里。</p>
+<p>天色已暗，可面前人却仿佛成了眼中唯一的光亮。</p>
+<p>沈容安一袭白衣，明明脸上五官妖孽，可却恰好融合了温润的气质，远远看去，与过去的沈家三小公子渐渐重合。</p>
+<p>因为喜欢，知道母妃对沈家做的事情之后，秘密联系了沈家亲信白府，再借着醉酒一事将沈容安赶去了白府。</p>
+<p>可没想到，沈容安短时间内坐上了丞相之位，之后陈家被连根拔起。</p>
+<p>我一直以为，这一切都是沈容安的手笔。</p>
+<p>可到头来，却发现自己恨错了人。</p>
+<p>可那又如何，沈家的事情至今没有任何线索，我便还是沈容安的仇人。</p>
+<p>我站在原地不动，看到沈容安缓步走来。</p>
+<p>「沈容安，凶手是他吗？」</p>
+<p>他的手缓缓抬起，第一次做出温和的举动，轻轻抚摸了我的头。</p>
+<p>我的眼睛却酸涩无比。</p>
+<p>原来，一切只不过是权力的算计。</p>
+<p>沈容安带我来到了新婚之后的居所。</p>
+<p>我原本该告诉自己，身为长公主，见惯了尔虞我诈，不得轻信旁人。</p>
+<p>可遇见沈容安，所有的谨慎心仿佛都变得不重要起来。</p>
+<p>「沈容安，那日你说的话，我信了。若我说，沈家的灭亡不是陈家所为呢？」</p>
+<p>8</p>
+<p>烛光摇晃，沈容安的面色柔和。</p>
+<p>「我知道，此事我已经查出来了。」</p>
+<p>我的内心忍不住唏嘘，这么快，沈容安便查出来了？明明自己先前还一头雾水。</p>
+<p>「何时？」</p>
+<p>「你我结婚的时候。」</p>
+<p>怪说不了，那几日沈容安非常忙碌，时常见不到人。</p>
+<p>我张了张口，想问为何结婚那日他如此冷漠，可沈容安却轻拍了我的头。</p>
+<p>「此事牵扯甚广，陈家和沈家的事情你便当不知晓罢。」</p>
+<p>「为何，母妃的死便是我那好父皇造成的，加上我，接近他的机会不是更多了吗？」</p>
+<p>沈容安摇了摇头：「你该安寝了。」</p>
+<p>沈容安明显知道更多，可他却不肯告诉我！</p>
+<p>我想要挣扎，跟沈容安好好谈谈。他却一把抱起我，将我安置在了床上。</p>
+<p>带着温热的体温传来，我与他的眉眼相对，霎时静止。</p>
+<p>「沈容安，你想做什么？」</p>
+<p>他不言不语，只是双手将我搂住，缠得愈来愈紧。</p>
+<p>「颜颜，你喜欢的那个人，是谁？」</p>
+<p>我此时此刻着急想要问清楚两家背后的事情，可沈容安却将我死死禁锢住，不得动弹。</p>
+<p>感受到脖颈传来的热气，我泄了气般，将他狠狠一推。</p>
+<p>「我喜欢的，从前是将军府三小公子，现在是兰丞相，满意了吗？」</p>
+<p>内心悄然释然。</p>
+<p>是啊，从头到尾，都是沈容安一人。</p>
+<p>低沉的笑意在我的耳边响起，我颇有些气恼：「别以为我看不出来，此事你早就知晓了，白家告诉你的？」</p>
+<p>沈容安带着薄茧的双手摩挲着我的脸颊。</p>
+<p>「未曾，我也是今天才知晓的。」</p>
+<p>「颜颜，很幸运，能够遇见你。」</p>
+<p>身边无比温暖，紧紧地包裹住我，像是想要为我驱散所有的寒冷。</p>
+<p>……</p>
+<p>一夜安眠之后，我下意识想要寻找昨晚身边的温度。</p>
+<p>然而触手一片冰凉，看样子沈容安已经离去了许久。</p>
+<p>外面一阵吵闹，完全不像平时的丞相府。</p>
+<p>「何事？」</p>
+<p>推开门，丫鬟静静等候在一旁：「夫人，大人说让夫人留在屋里。」</p>
+<p>什么意思？</p>
+<p>我的眼皮跳了跳，内心涌出强烈的不安。</p>
+<p>「沈容安呢？」</p>
+<p>那丫鬟训练有素，面上倒是一片平静。</p>
+<p>我脸色瞬间一沉，拨开丫鬟阻拦的手，径自前往丞相府门口。</p>
+<p>外面涌进来了一批人，来者皆是父皇的亲卫。</p>
+<p>内心一沉，只觉不简单。</p>
+<p>「石侍长为何事而来？」</p>
+<p>石侍长双手抱拳：「长公主殿下，陛下命令封锁丞相府，沈容安已被押入大牢，得罪了。」</p>
+<p>沈容安？他的真实身份暴露了！</p>
+<p>不愧是心机深沉的父皇，将沈家陈家玩得团团转，如今，我与沈容安也逃不脱他的掌心。</p>
+<p>轻轻闭眼：「来人，备马车，本宫要去皇宫。」</p>
+<p>丫鬟欲言又止，石侍长一本正经：「长公主殿下，陛下命令丞相府所有人呆在原地不动，恕难从命。」</p>
+<p>「是吗？」</p>
+<p>我猛地将身旁侍卫的刀拔了出来，抵在自己的脖颈旁：「若是堂堂长公主就此丧命，石侍长也不好交代吧？」</p>
+<p>所有人不由得往后退了一步，石侍长眼里也带着犹豫。</p>
+<p>「来人，备马车。」</p>
+<p>9</p>
+<p>我一路疾驰到皇宫门口，因着接连受刺激，腹部有些隐隐作痛。</p>
+<p>但此时此刻内心无比担忧沈容安的安危，连身后丫鬟都跟不上我的步伐。</p>
+<p>来到巍峨的正殿门口，我掀裙而跪：「父皇，儿臣有事禀报。」</p>
+<p>然而等了许久，殿内都没有声响。</p>
+<p>时间一分一秒过去，不知为何，腹部愈来愈痛。</p>
+<p>我的手忍不住抚摸了一下腹部。</p>
+<p>「夫人，大人说了此事无需夫人插手，夫人快回去吧。」</p>
+<p>我闷不吭声，我确实不知沈容安有何计谋，但难保不会真的失算。</p>
+<p>将丫鬟使唤开之后，我默默地跪在大殿门口。</p>
+<p>何其讽刺，昔日宠爱自己无比的父皇，本是有血缘关系的父女，如今竟也成了仇家。</p>
+<p>说不定，连当初的宠爱也是假的，目的便是沈陈两家。</p>
+<p>都说帝王无情，如今倒是信了十分。</p>
+<p>膝盖已经麻木，肚子疼痛难忍，我不想让腹里的胎儿出事。</p>
+<p>「昔日，母妃从父皇那得来一免死金牌，可她却将那令牌留给了儿臣，不知父皇还认不认？」</p>
+<p>很久，里面传来一道冷漠的声线：「进来吧。」</p>
+<p>我缓慢起身，迈步走进宫殿，看见父皇在桌案执笔写奏折。</p>
+<p>「想必父皇已然知道儿臣的来意。」</p>
+<p>他缓缓停笔，如鹰的双目看向我：「沈容安，朕是不可能放的。」</p>
+<p>「父皇所作所为，儿臣早已命人散步 出去，人言可畏，若父皇不想放他，大不了鱼死网破。」</p>
+<p>也是父皇今日将沈容安押入大牢，才彻底让我认清了他。</p>
+<p>「穆颜，你可比你的母妃聪明多了。」</p>
+<p>我的嘴唇颤抖：「所以，当初陈家陷害沈家得来的消息，是你做的主。」</p>
+<p>坐在高位上的父皇一袭黄袍加身，神色淡漠地看着我。</p>
+<p>我却如至冰窖，仿佛十几年来从未认识这人。</p>
+<p>之前将我当作肉中刺便罢了，却没想到连这都是想要欺骗我的假象。</p>
+<p>「陈家被灭，谏言的人表面是沈容安一派的，实际却是你的人，而你的目的，便是让陈沈一文一武两家消失，并且还将陈家被灭的真相推给了兰容，也就是沈容安。」</p>
+<p>「父皇，你真是好算计啊。」</p>
+<p>可他唯独算漏了，我与沈容安有情。</p>
+<p>正是因为有情，我才会将沈容安送去白家，而沈容安也成功隐姓埋名。</p>
+<p>最后二人也冰释前嫌。</p>
+<p>我突然理解了当初沈容安为何新婚做出那副冷漠的样子，原是为了让父皇以为我们二人不合。</p>
+<p>就算宫宴上一副两人尚好的样子，他也只会以为我与沈容安是表面功夫。</p>
+<p>「也算是沈容安聪明，隐姓埋名了这么多年，连朕也瞒了过去。」</p>
+<p>他缓缓起身，绣着龙爪金纹的皂靴映入眼帘。</p>
+<p>「这可多亏朕的长公主，包庇罪臣之子，该当何罪？」</p>
+<p>我猛地抬头，眉毛紧皱。</p>
+<p>「你以为，就凭你，斗得过朕吗？」</p>
+<p>眼前突然闪过一抹黑色的影子。</p>
+<p>我的眼睛渐渐放大，身体突然感受到一阵钻心的疼痛，看见一支箭从自己身体穿过。</p>
+<p>他竟然真的狠心杀掉我这个亲生女儿！</p>
+<p>「长公主穆颜包庇罪臣之子，以下犯上，理应问刑。」</p>
+<p>鲜血流出，我无力支撑，躺在地上，腹部前所未有地疼。</p>
+<p>孩子……</p>
+<p>眼前的光线渐渐变暗，我想要抬手，那黄色衣角也未曾摸到。</p>
+<p>突然宫殿外出现了一批士兵，我抬眼，光亮处有一道人影若隐若现。</p>
+<p>「沈容安……」</p>
+<p>10</p>
+<p>我从噩梦中醒来，梦里我与沈容安都死了。</p>
+<p>那股窒息之感犹在。</p>
+<p>「醒了？」</p>
+<p>我转头，沈容安仔细打量着自己：「你怀孕了为何不跟我说？」</p>
+<p>略微有些恍惚，本以为要一别两宽了，没想到兜兜转转，我与他都还好好活着。</p>
+<p>「到底发生了何事？」</p>
+<p>沈容安沉默了片刻：「颜颜，之前一切都是我的计谋，目的是逼宫，可没想到你会出现在那。」</p>
+<p>他的表情带着一抹心疼：「还痛吗？」</p>
+<p>我此时此刻才感受到心口若有若无的疼痛，摇了摇头。</p>
+<p>「他死了吗？」</p>
+<p>沈容安点点头：「在大殿上自杀了。」</p>
+<p>内心宛若冷风穿堂刮过，最后一个亲人也离世了。</p>
+<p>连手指都止不住发寒。</p>
+<p>突然栀子花味传来，身体被拥进了一处温暖之地。</p>
+<p>「颜颜，之前的，就当他过去吧。」</p>
+<p>「沈容安……」</p>
+<p>他嗯了一声，小心翼翼地抱着我，愈发紧。</p>
+<p>「今后我就是你唯一的亲人，好吗？」</p>
+<p>我愣愣地盯着他的棕色的眼睛。</p>
+<p>一如当年，眼里倒映的人从来都是自己。</p>
+<p>「你不怨我？」</p>
+<p>沈容安摇了摇头：「过去的就当它过去吧。」</p>
+<p>我双手缓慢抬起，随即坚定地环抱住了他。</p>
+<p>「好。」</p>
+<p>（全文完）</p>
+<p>备案号:YXX1M22G8weSmmmO9RXsDdw6</p>
+<p>梅又雪</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>今天你点赞了嘛 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/8/18-%E6%88%98%E5%B2%9A%E5%87%BA%E4%B8%96/" title="战岚出世">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">战岚出世</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/19-%E9%95%BF%E6%81%A8%E6%AD%8C/" title="长恨歌">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">长恨歌</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

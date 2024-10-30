@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赐锦番外：晚樱落尽一浮生 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/6/23-%E8%B5%90%E9%94%A6%E7%95%AA%E5%A4%96%E6%99%9A%E6%A8%B1%E8%90%BD%E5%B0%BD%E4%B8%80%E6%B5%AE%E7%94%9F/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/6/23-%E8%B5%90%E9%94%A6%E7%95%AA%E5%A4%96%E6%99%9A%E6%A8%B1%E8%90%BD%E5%B0%BD%E4%B8%80%E6%B5%AE%E7%94%9F/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="赐锦番外：晚樱落尽一浮生">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26027.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26027.jpg">
+  <meta name="twitter:title" content="赐锦番外：晚樱落尽一浮生">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="赐锦番外：晚樱落尽一浮生">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="4138">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26027.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">赐锦番外：晚樱落尽一浮生</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>9分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%b5%90%e9%94%a6%e7%95%aa%e5%a4%96%ef%bc%9a%e6%99%9a%e6%a8%b1%e8%90%bd%e5%b0%bd%e4%b8%80%e6%b5%ae%e7%94%9f&amp;url=https://mohai.us.kg/posts/2024/6/23-%E8%B5%90%E9%94%A6%E7%95%AA%E5%A4%96%E6%99%9A%E6%A8%B1%E8%90%BD%E5%B0%BD%E4%B8%80%E6%B5%AE%E7%94%9F/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/6/23-%E8%B5%90%E9%94%A6%E7%95%AA%E5%A4%96%E6%99%9A%E6%A8%B1%E8%90%BD%E5%B0%BD%E4%B8%80%E6%B5%AE%E7%94%9F/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%b5%90%e9%94%a6%e7%95%aa%e5%a4%96%ef%bc%9a%e6%99%9a%e6%a8%b1%e8%90%bd%e5%b0%bd%e4%b8%80%e6%b5%ae%e7%94%9f%20https://mohai.us.kg/posts/2024/6/23-%E8%B5%90%E9%94%A6%E7%95%AA%E5%A4%96%E6%99%9A%E6%A8%B1%E8%90%BD%E5%B0%BD%E4%B8%80%E6%B5%AE%E7%94%9F/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26027.jpg" alt="赐锦番外：晚樱落尽一浮生" />
+      
+
+      <p>赐锦番外：晚樱落尽一浮生</p>
+<p>芳华怨：烟花易冷为谁折腰</p>
+<p>「皇上，奴才伺候您更衣罢？吉时要到了。」</p>
+<p>「皇上？」</p>
+<p>身旁的阿翁唤了两次，我才蓦然回神。</p>
+<p>殿外很远的地方传来钟声，悠长而凝重，是封后大典的最后一重——这也难免，到底冯家蒙冤受屈，如今终于昭雪，为平前朝后宫的议论，抬漪珠为后，策重典迎奉回宫便是最好的法子。</p>
+<p>何况……她的心意数年如一，我是知道的。</p>
+<p>铜镜之中的面容沉寂而无分毫波澜，连我自己也不晓得，分明是大喜日子，为何心中并无纯粹的为人夫的喜悦？甚至隐隐有些不安。</p>
+<p>我由着宫人替我戴好冕旒玉冠，随口问阿翁，「何翁，樱——吕樱来了么？」</p>
+<p>阿翁是自幼便跟在我身边的，闻言便笑道，「陛下与相傅解冤释结，却因着处理乱党余孽，一直未曾相见，今日大宴群臣，自然是能见到的。」</p>
+<p>掌事女官恰在此刻转过了屏风，面色有些尴尬。</p>
+<p>「林姑姑，怎么？」</p>
+<p>「吕大人言说身体抱恙，差身边的送了信与陛下。」</p>
+<p>我眉头微蹙，「是什么病？找太医了不曾？」脑海中闪过女子狡黠的瞳，遂无奈笑笑，「她呀，怕不是还在生朕的气，让我看看写了点什么，总归不是什么好话。」</p>
+<p>林姑姑面露难色，「可是，吕大人特意嘱咐了，须得封后大典毕了才能启封，身旁人也是再三叮嘱，奴不敢造次。」</p>
+<p>「你瞧瞧，相傅还是相傅，普天下无人镇得住她的脾气了。真不知道将来嫁与谁家儿郎？」</p>
+<p>同阿翁言说的时候，外面遥遥传了一声，「皇后到——」</p>
+<p>冯漪珠穿一身绛红色金银丝鸾鸟朝凤绣纹朝服，那上面凤凰的纹样精巧入微，夜风轻拂，流光过锦，愈发衬的她绝世容光，恐怕放眼整个后宫，再不会有人能与红衣如此相得益彰了。</p>
+<p>她眉眼弯弯，明艳动人。</p>
+<p>我纵有再多心事，也不禁随之而笑，「内务府倒是有心，这身衣裳皇后穿很好看。」</p>
+<p>「是啊，一会儿臣妾要亲自谢过吕大人。」</p>
+<p>我眉心微动。</p>
+<p>「吕樱？」</p>
+<p>冯漪珠便半笑半嗔道，「陛下难道不认得？寻常锦缎哪有这样好的光泽，这可是有市无价的凤锦哪。」</p>
+<p>「凤锦」二字如绵针一般，朝着心口某隐秘处直直刺了下去。</p>
+<p>仿佛连那些金线刺绣的纹样也显得有些狰狞难辨了。</p>
+<p>她到底是不喜这些浮华身外物。饶是我稳居皇位，能正大光明地赐予她世间珍宝，又如何呢？</p>
+<p>我与冯漪珠同乘到了琼华岛，澹澹月色被揉碎在湖中，如点点碎金，满座衣香鬓影、香气馥郁缠绵。我遥望着宫门外重叠如山峦的殿宇飞檐，虽面上仍有条不紊地逐一免了礼数，心思却始终游离不定。</p>
+<p>凤锦……</p>
+<p>朱色凤锦。</p>
+<p>且慢。</p>
+<p>吕樱虽在前朝位极人臣，手握重权，然而她从何处得来这皇族之中的稀罕物？又是凤凰的图样，须知除却中宫之外，就算是皇亲国戚、朝廷命妇也不敢着刺绣完整凤凰的图腾啊？</p>
+<p>我倏然间起身，太阳穴突突地跳着，心却如同堕入湖底，被寒意汹涌漫过。</p>
+<p>「陛下？！」林姑姑微惊。</p>
+<p>然而我顾不得群臣三三两两投来的诧异目光，侧耳同阿翁吩咐了几句。冯漪珠喝的半醉，我便遣宫人扶她回宫歇息。</p>
+<p>一定是我多疑多思。</p>
+<p>必然是我多疑多思。</p>
+<p>几重宫门逐次大开，入夜的的料峭寒风直直钻入衣领之中，然而比风声更迅疾的是心跳声。</p>
+<p>蟠龙金铃被晃出叮叮当当的脆响。</p>
+<p>我勒马府前，急急叩门。</p>
+<p>无人应和，一片死水般的沉寂。</p>
+<p>然而那股惴惴不安的感觉却如阴云聚拢愈加浓烈，我索性摘下斗笠，也不顾身份，就地寻了墙根翻墙而入。</p>
+<p>打眼见到我的是个年轻丫头，吕樱府上没有仆从成群，是以我记得她的名字，「容儿——」触及她那张苍白的脸庞和失神双眼，我试探着重复了一遍，「容儿？」</p>
+<p>她这才如梦初醒，惶然跪地。</p>
+<p>「奴婢不知圣驾到，奴婢罪该万死。」</p>
+<p>我挥了挥手，「无碍，你家主子呢？这么早就歇下了？朕听闻她身子不爽，便来看看。」</p>
+<p>女子缓慢地抬起脸，竟然已是泪痕满面，愈加显得那双杏眼大而无助，只是盯着我不住地落泪。</p>
+<p>急躁渐渐浮上眉心，我斥道，「你这丫头哭什么？」</p>
+<p>撇开了她，我的脚步轻浮紊乱，直穿长廊，奔向正堂——吕樱，她不是好端端地倚在阶前么？</p>
+<p>那样沉静而从容。</p>
+<p>我叫她，「阿樱。」</p>
+<p>脱口而出的刹那才发觉，原来已经很久很久，没有如此称呼过了。</p>
+<p>自反目成仇之后，背道而驰，渐行渐远，已经有太久没有唤过她的小字了。</p>
+<p>「小姑姑，别贪睡了。」</p>
+<p>我在她身旁坐下来，轻轻晃了晃她的肩膀。</p>
+<p>「今日是我的大喜日子，你不替我高兴么？」</p>
+<p>我缓慢地蹲下来，单膝跪地，朝她轻声道，「是了，你怪我不信你，你冷落我也是应该的，只是朕怎么做你才肯理理我？你告诉朕。」</p>
+<p>「陛下——」</p>
+<p>身后是谁的声音？</p>
+<p>我分不清，也不愿听。</p>
+<p>「吕樱，你必然是累了。」我在她旁边坐下，只顾着自言自语，絮絮说着从前的事，「可是入夜寒凉，怎么能睡在这儿呢，我抱你回去，回去再睡好不好？你受不得风，又不肯好好吃药，从前你闹风寒时，伯父和请来的太医头疼得紧，如今换我担心了，咱们回去吧，好不好？」</p>
+<p>「皇上，主子她……」</p>
+<p>我微微摇首，比了个噤声的手势，轻手轻脚地将人儿打横抱了起来。</p>
+<p>她身体还是那样柔软，只是拂袖间露出了苍白消瘦的腕骨，这个人啊，明明万人之上，怎么就不肯对自己好一点呢？</p>
+<p>屋内未曾掌灯，只有淡淡的月色自窗棂倾泻而下。</p>
+<p>我将她安置榻上，目光所及之处，瞧见了叠的整整齐齐的朝臣衣袍。</p>
+<p>她还是那样爱干净，连烛台也擦拭得一尘不染。</p>
+<p>只是那座观音像蒙了尘，原本慈悲的眉目笼在黑暗里，怎么也看不清。</p>
+<p>书桌上是一叠用过了的信纸，吕樱的字深得冯尚书真传，遒劲有力、根骨清秀，我读「展信安」不由得笑了，这些年针锋相对，她何曾这样客客气气呢？</p>
+<p>「臣当贺陛下肃清朝野、攘除奸凶之喜，然而力不从心。」</p>
+<p>最后四个字被一大团墨迹晕开，染出蜿蜒的纹路，这张纸多了揉痕。</p>
+<p>「陛下生性聪敏，经数年之历练，终于能独当一面了，臣历历在目、心中不胜欢喜。愿陛下广纳贤言，兼听灼见，成就一代明君。那么臣无论身在何处，心长安宁。」</p>
+<p>像是一双无形的手死死攥住心房，握紧、握紧，在几欲窒息的钝痛之中，仿佛酝酿着即将扑面而至的真相。</p>
+<p>「臣与君初见于叠翠湖畔，臣那时年少无知，尚不知当日之抉择，关系非止当日。」</p>
+<p>初见于叠翠湖畔？</p>
+<p>我对着淡黄色的信笺摇首，有温热的液体在双目中打转。</p>
+<p>吕樱啊，不是的。</p>
+<p>很早之前，我就见过你了。</p>
+<p>我见你随父入宫，身量欣长，见你与父皇对答，神色从容。</p>
+<p>可我是谁呢？我是不受宠的妃嫔所出一个最渺小无依的皇子，我甚至怀疑自己名义上的父亲是否还记得我的名字。</p>
+<p>大抵是不爱珠翠，少女通身上下没有一丝坠饰，只用木簪将满头青丝挽髻。然而见惯了六宫姹紫嫣红，我躲在众皇子之后看着那张冰清如雪的面容，觉得极美。</p>
+<p>可那又怎么样呢？</p>
+<p>我比不上你，更配不上你。</p>
+<p>你拒绝了几位皇子的示好，舌灿莲花，锋芒毕露。甚至连得到凤锦的赏赐时也只是淡淡的。我深恨自己暗中疯狂滋生的妒忌，忍不住冲到湖畔拦下了你。</p>
+<p>——「站住！」</p>
+<p>——「这凤锦是父皇许诺赐我母妃的！」</p>
+<p>那是在无数次远观眺望后的第一句话。</p>
+<p>少女看过来，一双眼如春水明澈。</p>
+<p>「哦，那便给七皇子吧。」她如是说。</p>
+<p>信笺终于湿了一小片，我控制不住自己愈加浊重的呼吸声，然而那些字句分明而刺目，却怎么也挪不开眼睛。</p>
+<p>「也罢，最后修书一封，又何必君君臣臣不休呢？我还是叫你冠雪好了。」</p>
+<p>「冠雪啊，我不悔遇见你，只是气盛不服输，又眼高于顶，我不知道那些所谓的垂青和偏爱，暗中早布好了棋局。」</p>
+<p>暮影沉沉里，我倏然间见到了一抹身影，仓促地转首望去，只见到了替她问诊的郎中，蓦然奔上前去，也顾不得礼数，只是一叠声地逼问，「郎中，阿樱的病是你一手医治的，你有办法对不对？她这次……她这次……」</p>
+<p>老人泪眼婆娑，颤颤跪下。</p>
+<p>「请陛下，节哀顺变。」</p>
+<p>血丝从眼底蔓延上来，我听到自己尖锐到变调的嘶吼，「什么叫节哀？什么叫节哀！？前些日子朕还见到阿樱，再过两个月便是她的生辰，我要普天同庆，你说什么节哀？」</p>
+<p>他的声音喑哑难辨，混合着呜咽，「老朽……自知隐瞒陛下，只是吕大人是为陛下铺路筹谋，苦求老朽三缄其口，她精于茶道，又跟着老朽学医，陛下您以为大王正值壮年为何暴毙？」</p>
+<p>我蓦然哽住。</p>
+<p>穆玄弈。</p>
+<p>原来是他，竟然是他。</p>
+<p>我分明该想到的，只是被吕樱的冷言冷语彻底瞒了去，她如何让自己狠下心来，又是如何委身于一个狠戾莫测的人？无数次朝堂对峙，但凡我再通透一些，会不会看出她眼中的委屈和不甘心？</p>
+<p>可我没有。</p>
+<p>在她孤身一人周旋于波云诡谲的朝堂时，我却以为君臣离心，字字如刺，直奔要害。</p>
+<p>那样清冷骄傲，孑然独立的女子。</p>
+<p>手指如秋风席卷的残叶一般簌簌发抖，我抓起剩余的信笺，一字一句地看过去。</p>
+<p>清隽有力的字迹，横竖撇捺拼凑出残忍而凛冽的真相。</p>
+<p>我像是想起什么，倏然惊起，三两步走到榻前，小心翼翼挽起她的衣袖。</p>
+<p>那样横亘交错，一路狰狞盘轧下去的伤口，一刀一刀，皆是她亲手划下去的。</p>
+<p>我缓慢地扶着膝盖蹲下来，伏在她身前，宛如濒死一般大口地喘气，却发不出丝毫声音。如果我知道她会身陷于局中，为了我不惜以命下注，是不是那日本不该相遇？如果她问我「一定要当皇帝」时我否认，是不是能避免而今的结局？</p>
+<p>往日一幕一幕如走马灯般飞旋而过，笑着的少女，手上高举的金钗，在夜深时仓促奔回寻找的人，执子下棋的一双手，还有曾经无人知晓的吻……</p>
+<p>如是反复数次，才勉强从唇齿间挤出喑哑的字句。</p>
+<p>「吕樱，你疼不疼啊？」</p>
+<p>没有人知道那一晚发生了什么，只知我封了冯氏为后，旋即取消了三年一度秀女大选，而是御驾亲征，直逼昔日亲王旧部，其势如利刃。</p>
+<p>那不是我手上第一次沾血，然而却是最频繁的一次，所有曾经和穆玄弈往来的部落皆被清屠，我的眼中似乎只剩下杀戮二字。</p>
+<p>人人皆道，当世圣上秉雷霆之势，攘除余孽，颇有先帝遗风。</p>
+<p>又或者，史书工笔会记载我如何铁血手腕，如何残暴无情。</p>
+<p>但都不重要了，就算那么多城池屠杀殆尽，所有牵连者以死谢罪，那个人，再也无法活过来了。她不会在朝堂上振振有词与我对峙，她不会劝我行仁君之道。</p>
+<p>那夜凯旋、军中设宴，我喝得大醉，在篝火旁吟诗舞剑，散落的将士们击筑为歌。</p>
+<p>可我却再无悲喜，只是凝视着手上这把军刀。</p>
+<p>回皇城的路，原来说长也不长，我想起曾经年少时和吕樱许诺，来日策马同去看一看塞北的风光。</p>
+<p>如今万里封疆，举世称臣，我却只能在漫天的风雪中为她立一方小小的衣冠冢。</p>
+<p>叠翠湖畔的梨花已吐蕊，满树新白。</p>
+<p>终抵不过群臣上谏，选秀大典在时隔数年后姗姗来迟。极年轻而光鲜的女子一批一批涌入宫内，有人容光鲜艳、有人婉转清丽，当真称得上三春盛景。</p>
+<p>我高坐明堂，得群芳参拜。</p>
+<p>然而那么多各有千秋的佳人，终究无人再会踏入这片孤寂山河中了。</p>
+<p>备案号:YX01VmYJ9oaMgq9rR</p>
+<p>发布于 2022-06-20 13:55 · 禁止转载</p>
+<p>驸马又纳了一个妾</p>
+<p>​</p>
+<p>​</p>
+<p>芳华怨：烟花易冷为谁折腰</p>
+<p>胖达菲菲 等</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/23-%E8%B5%90%E9%94%A6/" title="赐锦">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">赐锦</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/8/13-%E5%8C%86%E5%AE%81%E5%B2%81%E6%9C%88/" title="匆宁岁月">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">匆宁岁月</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
