@@ -1,7 +1,7 @@
 ---
 title: 30分钟入门C语言 
-date: 2024-10-29T12:16:11+08:00
-lastmod: 2024-10-29T12:16:11+08:00
+date: 2024-10-29
+lastmod: 2024-10-29
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun

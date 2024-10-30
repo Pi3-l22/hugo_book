@@ -6,16 +6,13 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-
-
-所有分类 | 墨海拾贝</title>
+    <title>搜索 | 墨海拾贝</title>
 
     
 <link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
 
 
-<link rel="canonical" href="http://localhost:1313/categories/" />
+<link rel="canonical" href="http://localhost:1313/search/" />
 
 
 
@@ -27,9 +24,9 @@
 <meta name="generator" content="Hugo 0.133.1">
 
 
-<meta property="og:url" content="http://localhost:1313/categories/">
+<meta property="og:url" content="http://localhost:1313/search/">
   <meta property="og:site_name" content="墨海拾贝">
-  <meta property="og:title" content="Categories">
+  <meta property="og:title" content="Searches">
   <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
   <meta property="og:locale" content="zh_Hans">
   <meta property="og:type" content="website">
@@ -38,7 +35,7 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
+  <meta name="twitter:title" content="Searches">
   <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
 
 
@@ -110,9 +107,12 @@
 
 
 
-
-
-
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
 
 
 
@@ -178,9 +178,9 @@
 
       
       
-
-
-
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
 
 
       
@@ -228,83 +228,55 @@
             
 
 
-<div class="flex flex-col md:flex-row mt-4">
+<div class="mt-8 lg:mt-12 px-4"
 
-  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
-    <h1 class="text-2xl">所有分类</h1>
-    <p class="text-sm">1分类</p>
-    <div class="flex flex-wrap gap-4 mt-6">
-      
-      <a href="/categories/c/" class="badge h-6 no-underline hover:badge-primary">
-        C
-      </a>
-      
-    </div>
-  </div>
-  
-  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
-  
-  <div class="flex-1">
-    
+x-data="{
+  search: '',
+  get posts() { return this.search !== '' ? window.fuse.search(this.search) : [] },
+}">
+  <label for="search" class="input input-bordered flex items-center gap-2">
+    <input id="search" name="search" type="text" class="grow" placeholder="搜索" x-model.debounce="search" />
+    <ion-icon name="search"></ion-icon>
+  </label>
 
-    
-    <div class="dream-grid">
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/30-minute-introduction-to-c/">
-  
-  <figure>
-    
-    <img src="https://cdn.jsdelivr.net/gh/Pi3-l22/pico_rep/img/c.jpg" alt="30分钟入门C语言" />
-    
-  </figure>
-  
+  <div class="mt-8 space-y-4">
+  <template x-for="post in posts">
+    <a class="card card-compact bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+      <div class="card-body">
+        <h2 class="card-title" x-text="post.item.title"></h2>
 
-  <div class="card-body">
-    <h2 class="card-title">30分钟入门C语言</h2>
+        <div x-html="post.item.description"></div>
 
-    <p class="date text-base-content/60">
-    
-      <span data-format="luxon">2024-10-29T00:00:00Z</span>
-    
-    </p>
+        <div class="card-actions justify-between items-center mt-4">
+          <div class="flex items-center">
+            <template x-if="post.item.avatar">
+            <div class="avatar mr-1">
+              <div class="w-8 rounded-full">
+                <img class="my-0" :src="post.item.avatar" :alt="post.item.author" />
+              </div>
+            </div>
+            </template>
+            <template x-if="!post.item.avatar">
+            <span>@</span>
+            </template>
 
-    
+            <template x-if="post.item.author">
+            <span x-text="post.item.author"></span>
+            </template>
+            <template x-if="!post.item.author">
+            <span>Robot</span>
+            </template>
+            </span>
+          </div>
 
-    <div class="card-actions justify-between items-center mt-4">
-      <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Robot</span>
-    
-  
-  </span>
-</div>
-
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>6分钟阅读</span>
+          <div class="inline-flex items-center">
+            <ion-icon name="time" class="mr-1"></ion-icon>
+            <span><span x-text="post.item.readingTime"></span>分钟阅读</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-    </div>
-    
-
-    
+    </a>
+  </template>
   </div>
 </div>
 
@@ -411,24 +383,21 @@
     
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
-  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
-  crossorigin="anonymous"
-></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha256-42IbU8t3tOwwbexB7ZVRHm3YDRf65aBPPjRtIUufj5I=" crossorigin="anonymous"></script>
 <script>
-  format()
+  var fuseData = [{"author":"Robot","avatar":"https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png","categories":["C"],"description":"","readingTime":6,"tags":["tag1","tag2"],"title":"30分钟入门C语言","url":"/posts/30-minute-introduction-to-c/"}];
+  var fuseOptions = {
+    keys: [
+      "title",
+    ]
+  };
 
-  function format() {
-    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
-      const date = el.textContent
-
-      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
-    })
-  }
+  var fuse = new Fuse(fuseData, fuseOptions);
 </script>
-
-
 
 
 

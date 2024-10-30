@@ -31,7 +31,7 @@ footerBottomText = " "
 
 rss = true
 
-# utterancesRepo = ""
+utterancesRepo = "Pi3-l22/hugo_book"
 
 # valine = true
 # LEANCLOUD_APP_ID = ""
@@ -65,6 +65,6 @@ showPrevNextPost = true
 # customCSS = ["css/custom.css"]
 # customJS = []
 
-# [params.experimental]
-# jsDate = true
-# jsDateFormat = "yyyy年MM月dd日"
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"

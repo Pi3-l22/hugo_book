@@ -244,7 +244,7 @@
 
     <p class="date text-base-content/60">
     
-      星期二, 10月 29, 2024
+      <span data-format="luxon">2024-10-29T00:00:00Z</span>
     
     </p>
 
@@ -386,6 +386,24 @@
 <script src="/js/main.js"></script>
 
     
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
 
 
 
