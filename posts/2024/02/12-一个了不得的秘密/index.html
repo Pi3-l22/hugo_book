@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个了不得的秘密 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/02/12-%E4%B8%80%E4%B8%AA%E4%BA%86%E4%B8%8D%E5%BE%97%E7%9A%84%E7%A7%98%E5%AF%86/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/02/12-%E4%B8%80%E4%B8%AA%E4%BA%86%E4%B8%8D%E5%BE%97%E7%9A%84%E7%A7%98%E5%AF%86/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="一个了不得的秘密">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-02-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-02-12T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26613.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26613.jpg">
+  <meta name="twitter:title" content="一个了不得的秘密">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="一个了不得的秘密">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-02-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-02-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="10764">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26613.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">一个了不得的秘密</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-02-12T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-02-12T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%b8%80%e4%b8%aa%e4%ba%86%e4%b8%8d%e5%be%97%e7%9a%84%e7%a7%98%e5%af%86&amp;url=https://mohai.us.kg/posts/2024/02/12-%E4%B8%80%E4%B8%AA%E4%BA%86%E4%B8%8D%E5%BE%97%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/02/12-%E4%B8%80%E4%B8%AA%E4%BA%86%E4%B8%8D%E5%BE%97%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%b8%80%e4%b8%aa%e4%ba%86%e4%b8%8d%e5%be%97%e7%9a%84%e7%a7%98%e5%af%86%20https://mohai.us.kg/posts/2024/02/12-%E4%B8%80%E4%B8%AA%E4%BA%86%E4%B8%8D%E5%BE%97%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26613.jpg" alt="一个了不得的秘密" />
+      
+
+      <p>一个了不得的秘密</p>
+<p>帝心难测</p>
+<p>31</p>
+<p>马车回到宫中，我径直下车，连礼都没冲他拜就走了。</p>
+<p>下了马车，茯苓和翠玉都静悄悄的。</p>
+<p>直到走出去好远，茯苓才战战兢兢地道：「娘娘，您是怎么敢和皇上吵架的？回来的一道，我好担心皇上一个动怒，把您踹下马车，我一直琢磨着，该怎么接住您，让您不受伤呢，还好皇上最后都没踹您下来！」</p>
+<p>我听着，忍不住停下来瞪了她一眼，可她竟然又冲我点了点头，道：「真的。」</p>
+<p>我又狐疑地看了眼翠玉，谁知翠玉也道：「我也害怕。」</p>
+<p>这俩东西，非要在这时候提醒我，刘烁掌握着生杀大权吗？</p>
+<p>没理她们，我自己往凤鸣宫走去。</p>
+<p>茯苓和翠玉很快又追上来，两个人莫名地交谈了起来。</p>
+<p>「娘娘，您看您都那么气皇上了，皇上都没把您踹下马车，说明皇上待您还是很好的。」</p>
+<p>翠玉附和道：「是啊。」</p>
+<p>不踹我下马车，就是对我好了？</p>
+<p>茯苓又道：「我觉得娘娘可能误会了什么，咱们皇上瞧着也不像喜欢那宁瑾的样子啊，我倒觉得皇上喜欢您。」</p>
+<p>翠玉想了想，也附和着点了点头。</p>
+<p>喜欢个棺材板板，我女扮男装和微服私访的刘烁在外面厮混发生的事，她们什么都不知道！</p>
+<p>当日在飞云楼，俩人可是当众对过情诗的，至今飞云楼还收录着刘烁化名做乐卿，题给宁瑾的诗。</p>
+<p>乐卿乐卿，连名字都取的这么呼之欲出！</p>
+<p>还有宁瑾作的画，他也题过情诗；情书也收过人家的，还给人家回过信；这些私底下暗通曲款的事，她们知道什么？</p>
+<p>不然宁瑾一个四品小官家的女儿，凭什么我就非得容着她敬着她，好似我天生命贱似的！</p>
+<p>32</p>
+<p>当日午后，两箱东西兀自被抬到了凤鸣宫，抬进来的小太监说是礼部侍郎家退回来的东西。</p>
+<p>我弄不懂是什么情况，就见到退回来的东西中，有前些日子送给礼部侍郎府的两身衣裳，其中就有昨日宁瑾穿的那身。</p>
+<p>也是有趣，穿过的衣裳还给退回来，这是糟践谁呢！</p>
+<p>「把财宝收起来，那两身衣裳给我烧了。」</p>
+<p>茯苓听了，又上前来劝我：「娘娘，这可是皇上赏的。」</p>
+<p>我不想听茯苓啰嗦，直接对翠玉吩咐：「翠玉你烧。」</p>
+<p>翠玉忌讳地看了茯苓一眼，取了衣裳和火盆来。</p>
+<p>冬日里天气凉，难得翠玉烧衣裳，我凑着一块烤起了火。</p>
+<p>看着蹿起来的火苗，我想到曾经宁瑾对我趾高气昂的样子，心里莫名就有些爽。</p>
+<p>正烤着火，茯苓凑上来对我说，「娘娘，皇上来了。」</p>
+<p>我嗯了一声，知道她讲这话的意思，是提醒我把火盆收起来，但我就没收，继续懒洋洋地烤着火。</p>
+<p>不消片刻，那身明黄的身影就从凤鸣殿的殿门处，走了进来。</p>
+<p>他走过来，瞥了眼没来得及丢进火盆的衣裳，也没让茯苓和翠玉退下，就道：「我不知道宁瑾对你那么嚣张。」</p>
+<p>没由来的一句话，他这是从哪听说了什么吗？</p>
+<p>意思是他以前纵着宁瑾，是因为不知道宁瑾对我耀武扬威，如今知道了，才想起我和他的感情来？</p>
+<p>我淡淡地嗯了一句，他嘴角翕合，目光又落到了火盆边，还没来得及扔进火里烧掉的迦南国舞衣上。</p>
+<p>「这舞衣，是送给你的，那衣裳也是。」</p>
+<p>这话的意思我猜不透，明明是送宁瑾的东西，现在却说是送我的，未免太假了吧？</p>
+<p>「我从来不跳舞，还有那衣裳，做的是闺中女子的款式，你让我一个大武国的皇后，穿这样的衣裳？」</p>
+<p>「左右朕送的东西，你都不喜欢！」刘烁似乎突然生气了，拂袖走了。</p>
+<p>茯苓和翠玉在边上紧抿着唇，直到刘烁的背影彻底消失在凤鸣宫，茯苓才道：「娘娘，那是皇上！」</p>
+<p>「本宫知道！」</p>
+<p>讲完话，我把舞衣从翠玉手里抢过来，丢进了火盆里。</p>
+<p>我就是心里不痛快！</p>
+<p>33</p>
+<p>因为我和刘烁，宫里的气氛始终不对劲儿，阿娘为我挑选的娘子，早已被悄悄送进宫来，但宫中如此形势，她也不敢传授我任何房中之术。</p>
+<p>34</p>
+<p>半个月后的一日。</p>
+<p>我正趴在案牍上看话本子，茯苓突然跟我讲：「娘娘，国舅大人来了。」</p>
+<p>她前脚刚讲完，后脚洛南臣就到了，全须全尾，步履自然，身上一点磕碰都没有。</p>
+<p>其实昨日洛府就传来了消息，说他安然回来了，他竟还知道平安回来了来探我！</p>
+<p>但想到之前他的不告而别，我又装作没看到，继续将目光放在手中的事情上。</p>
+<p>洛南臣走到我对面坐下来，拿案牍上挂着的狼毫敲了敲我的头，「看什么呢？你哥来了也不知道看一眼。」</p>
+<p>「你有什么好看的。」我兴致缺缺地重新拿了一只狼毫。</p>
+<p>「还生气呢？上次没告诉你去南境，算我不对成了吧？那你上次做的不过分吗？当哥哥的饿了半晌，你的午膳都做好了，也不让我吃一口，还把我赶出去，我都没跟你生气！」</p>
+<p>洛南臣声音软软的，似乎带着哄人开心的调子。</p>
+<p>我才抬了抬眼，看向他，「那你今日来干什么？总不是想吃我一顿饭吧？」</p>
+<p>「额……」</p>
+<p>洛南臣张了张唇，迟疑道：「走之前，皇上请我吃了山珍海味，我吃人嘴短，这不是过来帮皇上办事吗？」</p>
+<p>「听说你和皇上吵架了，我这个做哥哥的，是来替皇上教训你的。」</p>
+<p>原本我稍稍缓和的心情，突然又雷霆炸裂。</p>
+<p>「你给我滚出去！」</p>
+<p>「洛南书，你怎么越来越没正行了！」洛南臣的脸上带了些怒气，瞪着眼睛瞪着我。</p>
+<p>「以前你还听皇上的话，如今是谁也治不了你了，是吗？」</p>
+<p>看着他怒气鼓鼓的样子，我突然咧嘴一笑，「你说错了，我不仅以前听阿九的话，我现在也听，所以要教训，得阿九亲自过来教训我，你不行。」</p>
+<p>「洛南书，阿九现在是皇上，你怎么还这么没大没小！」</p>
+<p>洛南臣端着正经的样子，还没完没了了。</p>
+<p>我眉梢一冷，当即坐回案牍前，摊开了纸。</p>
+<p>「嗯，你说的对，阿九现在是一国之主，我现在是皇后，一国之母。一国之母可以做什么呢？洛南臣，不如我给你赐个婚吧？」</p>
+<p>「你喜欢谁家的姑娘，孟国公家的飞燕，还是周国公家的碧玉？我给你赐个婚，怎么样？」</p>
+<p>「洛南书，亏我回了丰都，连家都没回，就第一个来瞧你，你就这样坑我！」</p>
+<p>我上下瞟了他身上的朝服，冷笑道：「第一个来瞧我？你在南境也天天穿朝服？」</p>
+<p>洛南臣被我拆穿，无言以对，过了好久才对我嘲讽道：「你这性子就是不讨喜，也不知皇上瞧上你哪了！」</p>
+<p>又来了，又来了，又说刘烁瞧上我了！</p>
+<p>洛南臣果然和刘烁是一个夫子教出来的，俩人眼睛都有毛病！</p>
+<p>我不过是为了保全宁瑾的名声，一直没有澄清过，谁知洛南臣越说越上劲儿！</p>
+<p>「我瞧见你了，你可以滚回去给阿娘瞧了！」</p>
+<p>「你以为我稀罕来看你，还不是皇上说，你日日为我祈祷，记挂我记挂的不行，一听我就知道是假的！但皇上非逼着我来的，不然你以为我乐意来！」</p>
+<p>「是，他让你干什么，你就干什么，让你去南境送死，你也照去不误，你就是头猪！」</p>
+<p>「什么叫皇上让我去南境送死，你都听了什么乱七八糟的谣言？」洛南臣坐到我对面，拿毛笔丢我。</p>
+<p>我把毛笔丢回去，「什么叫谣言，难道不是他让你去南境的？」</p>
+<p>「当然不是！南境是我自己主动要去的，你怎么会以为是皇上逼我去的？」洛南臣瞪着眼问我。</p>
+<p>「洛南书，你怎么把人想的那么坏？皇上怎么可能做这种事！是我自己要去南境的，皇上怕我有危险，一直不答应。最后还是我在朝堂上主动请缨，他避无可避，才不得不答应的！」</p>
+<p>洛南臣翻着白眼，看我的眼神像看傻子似的。</p>
+<p>我狠狠一愣，怎么也没想到，洛南臣去南境是这样一回事。</p>
+<p>洛南臣见我气势虚了，也越发变本加厉起来，严肃地给我讲当下朝内的形势。</p>
+<p>他说南境的疫病，外官瞒报，报上来时，南境已经伤亡无数了，但是刘烁想派人去治理，朝内官员却都怕死，个个推诿，刘烁根本无人可用，他不能放着刘烁的子民不管。</p>
+<p>讲了许久，他语重心长地看着我叹道：「洛南书，你我已经长大了，该担负自己肩上的责任，不能像以前那样随性了。」</p>
+<p>35</p>
+<p>听完洛南臣的话，我突然心里怪怪的。</p>
+<p>洛南臣走了后，我问茯苓和翠玉，如今朝堂是如何评价洛南臣治理南境之事的。</p>
+<p>翠玉没说话，倒是茯苓讲了句，「娘娘，咱们公子可能耐着呢！他单枪匹马去了南境，知人善任，解决了南境之患，如今朝堂个个称颂，皇上还给他升了官呢。」</p>
+<p>「洛南臣有这么厉害？」我问道。</p>
+<p>「娘娘，是真的，公子现在都是少卿了。」茯苓道。</p>
+<p>我听着惊了一惊，竟然由从五品下的上牧监升到了从四品上，差不多算是两品了，刘烁对他也算是大方！</p>
+<p>「娘娘，皇上对咱们洛家，还是挺好的。」茯苓又道。</p>
+<p>是吧，洛南臣得知南境有事，刘烁无人可用，他一个毫无经验的文官，竟站出来只身前往南境！</p>
+<p>而洛南臣真的那么有能耐吗？毫无经验，却能把南境的疫病处理的如此漂亮，这其中自然少不了刘烁的书信指导。</p>
+<p>他们两个倒是一个有情，一个有义，兄弟情深的很，怎么到我这里，我就成了外人了！</p>
+<p>36</p>
+<p>让我主动去给刘烁赔礼这事，我自然是不乐意的。</p>
+<p>但我感觉，我和他之间有误会，思量一番，还是去了。</p>
+<p>为表诚意，我特意把外祖生前为我酿的那坛桃花酿挖了出来，送给刘烁当礼物。</p>
+<p>外祖的酿酒技艺天下独绝，大武国上下皆知，而那坛桃花酿，是我出生之时，外祖特意为我酿的，让我在产子后，办满月酒时喝的。</p>
+<p>外祖说女子坐月子时，身子极弱，不宜饮烈酒，但诞下麟儿是喜事，人逢喜事便少不了喝酒庆贺，所以特意为我酿了清甜宜人的桃花酿。</p>
+<p>不知何时起，刘烁突然知晓了桃花酿的事，然后就日日觊觎着那坛桃花酿。</p>
+<p>甚至他登基之时，还拿皇帝的名头压过我，说他是天下之主，天下的一切都该是他的，让我把外祖留下的那坛桃花酿也送给他。</p>
+<p>当时他是威逼利诱，连哄带骗的，好在我定力够，最终也没给他抢走。</p>
+<p>但我知道，他就是觊觎外祖的手艺，想要那坛桃花酿。</p>
+<p>桃花酿送到后，我正准备去送，但阿娘送来的娘子福音却将我拦住了，说我穿成这样，没法和刘烁推心置腹地讲话，得换身衣裳去才行。</p>
+<p>我一听福音这样讲，就觉得她要搞房中之术那些，我当然不答应，可她却将阿娘搬了出来，说若是我不换衣裳，她就把阿娘找来，让阿娘亲自与我讲。</p>
+<p>如此大胆之人，实属可恶，可碍于阿娘的面子，我拿她又无可奈何，我是真的怕阿娘再同我一哭二闹三上吊……</p>
+<p>任由那福音娘子将我打扮一番，待穿戴整齐时，我照着铜镜，简直羞的想挖个洞跳进去。</p>
+<p>不行，我宁死也不能穿这样的衣裳见刘烁！</p>
+<p>撞开福音娘子，我就要脱掉身上的衣裳，可她扑通一声跪下来，说有愧我阿娘所托，又让我赐死她，又是说给阿娘写了遗书，死活缠着我不让我换掉衣裳。</p>
+<p>我被她闹的着实无奈，只能答应了下来。</p>
+<p>哎，当日若是我再强硬些，用以死相逼对待阿娘的以死相逼，如今应该也不会被人按在火架子上烤了。</p>
+<p>奈何这世间没有后悔药，我扶了扶额，转身抱着桃花酿，出了凤鸣宫。</p>
+<p>到了承乾殿，刘烁还在处理政务，我将桃花酿交给了小禄子，转身就想走。</p>
+<p>但还没转身，小禄子就留住了我，「娘娘，皇上吩咐了，若是您来了，一定让奴才留住您，他请您进去。」</p>
+<p>「不用，本宫只是来给皇上送酒，也没其他事，本宫还是不打扰皇上了。」我连连摆手道。</p>
+<p>今日着实不方便，本来出来的路上，我想寻个地方，把身上这衣裳给换掉，可每每我停下来，那福音娘子都会冒出来，如同鬼魅一般盯着我。</p>
+<p>如今我身上还穿着她给我穿的那身衣裳，若是进去了，我只怕无颜再苟活于世。</p>
+<p>「娘娘，是皇上请您进去的。」小禄子又拦我。</p>
+<p>「本宫今日不方便。」我继续找着借口。</p>
+<p>「那奴才让人抬您进去？」小禄子好脾气地问我。</p>
+<p>我：「……」</p>
+<p>小禄子，你是不是听不懂人话？</p>
+<p>37</p>
+<p>我简直欲哭无泪，身上的衣裳奇葩，无法大步行走，如今我即便是想跑，都跑不了。</p>
+<p>「娘娘，要奴才安排人抬您进去吗？」</p>
+<p>「不用了。」</p>
+<p>白了小禄子一眼，我视死如归地往承乾殿走去。</p>
+<p>上台阶时，大氅挥动，露出我一截藕白的小腿，小禄子瞧见了，眼睛瞪大了一瞬，慌忙当没看到移开了眼。</p>
+<p>完了，我的一世英名全完了！</p>
+<p>进了承乾殿，小禄子将桃花酿放到刘烁的几案前，很识趣地退下了，还给我和刘烁带上了承乾殿的门。</p>
+<p>刘烁见我来了，视线从手里的折子上移开，冷冷地问我：「你就送一坛酒来，没话同我说？」</p>
+<p>我将身上的大氅裹得更紧，抿唇道：「是我错怪你了，今日洛南臣同我讲了，我错了，我来给你赔罪了。」</p>
+<p>「赔罪站那么远？」他把手里的折子扔掉，起身朝我走过来。</p>
+<p>我吓得连忙往后退，刘烁见我如此，又往前几步，我又吓得后腿，他白俊的脸兀自就阴鹜了起来。</p>
+<p>「洛南书！」</p>
+<p>冷冷的怒喝声落下，他的神情才略有松动，很是无力地叹道：「你我从小一起长大，哪怕你惹了滔天大祸，我还能打你不成，你躲什么？」</p>
+<p>受伤的语气让我心里也难受，只能和他讲实话。</p>
+<p>「我今天，不太方便。」</p>
+<p>「什么不方便？」</p>
+<p>他呢喃了一遍，才将注意力集中到我身上的大氅上，「屋内如此暖和，你还穿着大氅做什么？不热？」</p>
+<p>我忙摇头，「不热，我冷。」</p>
+<p>「你染了风寒？」他眸子眯了眯，伸手就要往我额上试一试冷热。</p>
+<p>我又慌着后退，但大氅实在太长，一脚踩到衣尾，整个人就被栽了出去。</p>
+<p>但我的人没被摔到地上，而是被刘烁给捞住了。</p>
+<p>「慢点！」</p>
+<p>我没顾忌摔倒这事，更怕刘烁看到大氅内的衣裳，我忙推开他，朝着一边爬去，但我挣扎间，衣裳还是露了出来。</p>
+<p>38</p>
+<p>「你……身上是穿的什么？」刘烁满脸惊讶地看着我，看着看着，眉宇间就带了笑意。</p>
+<p>「囡囡，你是特意穿这身衣裳给我看的？你的赔礼，不是酒，而是你？」</p>
+<p>「不是！」</p>
+<p>我否认着，想从承乾殿的门夺门而出，但我刚一动，刘烁了将我拽入了怀中。</p>
+<p>「今晚你不许走，你的赔礼，我很喜欢。」</p>
+<p>他钻进大氅里，将我搂得紧紧的。</p>
+<p>大氅里面，只穿了一件肚兜和渎裤，我近乎光着的身子，被他温热衣料包裹着，他的某个地方又顶了起来。</p>
+<p>我的头埋在他怀里，真的没法见人了……</p>
+<p>39</p>
+<p>刘烁将我抱起，去了他的正阳宫，把我放在龙榻上，然后他掀开被子，温热的身子也蹭了进来。</p>
+<p>如今我就想砧板上的肉，刘烁虎视眈眈地盯着我，仿佛随时要把我吃掉。</p>
+<p>我和他讲，这都是阿娘的人逼我穿的，不是我自己的意思，可他不听我的解释，只是贴着我的耳朵对我讲：「囡囡，我想要你。」</p>
+<p>轻的第三个人完全听不到的话，肯定不是说给太后的人听的，只是说给我一个人听的，我有些慌了，心口扑通扑通地乱跳起来。</p>
+<p>我和他刘烁讲，他有宁瑾了，不该碰我，但他却不听我的话，依旧抓住我的手，解掉了我身上的肚兜。</p>
+<p>「不行！」</p>
+<p>我越发的急起来，在他俯身下来亲我时，我突然一口咬在了他的肩膀上。</p>
+<p>刘烁大约是吃痛了，也从来没有人敢这样对他，他的眸子蓦地猩红起来，狠狠地瞪着我。</p>
+<p>「你就这么不愿意跟我？」</p>
+<p>「阿九，你这样我会讨厌你的！」</p>
+<p>我慌得厉害，一边推搡着他，一边和他重复着这句话。</p>
+<p>刘烁喘着气，瞪着我的眸子越来越深邃，许久之后松开了我。</p>
+<p>而我一得到自由，就慌忙起身，随手抓起一身衣裳就往外跑。</p>
+<p>匆匆忙忙穿上，才发现是刘烁的衣裳，但我也没顾忌那么多，一穿好，连鞋子都没穿，就往凤鸣宫跑。</p>
+<p>待我气喘吁吁地跑到了凤鸣宫，却发现院门被人上了锁，茯苓这群挨千刀的，竟然不想我回来，还锁上了门。</p>
+<p>拍了好久的门，她们才打着哈欠开了门，看到我身上宽松的衣裳，微微一愣。</p>
+<p>然后……</p>
+<p>福音娘子道：「娘娘辛苦了，恭喜娘娘喜得龙恩。」</p>
+<p>茯苓听完，脸上也突然惊喜起来，「太好了，娘娘终于和皇上圆房了！」</p>
+<p>翠玉最后知后觉，也和我道喜：「恭喜娘娘。」</p>
+<p>看着三人会错意的模样，我急得想解释，只是话到嘴边，又被我咽了回去。</p>
+<p>我干嘛要解释呢？让她们误会了，不是更好，也省的她们认为我一直没和刘烁圆房，天天变着法地设计我。</p>
+<p>所以我点了点头，什么也没解释，就回了凤鸣宫。</p>
+<p>40</p>
+<p>第二日，我一醒来，还没起床梳洗，茯苓就对我道：「娘娘，福寿宫送了赏赐来，说您昨日辛苦了，今日不用去问安，太后还让您好好歇息。」</p>
+<p>刚醒来，我没反应过来，随口问了句「我辛苦什么了」，茯苓一听，就抿着嘴笑。</p>
+<p>我才想起昨夜之事，嗯了一声。</p>
+<p>用过早膳后，我在宫里散步，逐渐觉察出了不一样。</p>
+<p>一路上，茯苓和翠玉开怀的不行，仿佛生怕别人不知道我和刘烁「圆房」了。</p>
+<p>而其他与我行礼的宫人们，似乎也格外的俯首帖耳，尊敬的紧。</p>
+<p>我这才觉察到，我和刘烁「睡了」一觉，现在整个皇宫都知道了。</p>
+<p>昨夜的决定，草率了……</p>
+<p>41</p>
+<p>晌午时分，我坐在凉亭中晒太阳，耳畔突然传来一声。</p>
+<p>「皇上驾到。」</p>
+<p>我一抬头，果然瞧见刘烁朝我这边来了。</p>
+<p>此刻的情形，跑，不合适，我只能站起来尴尬地冲刘烁行礼，但刘烁却没睬我，只是经过我身边时，对我讲了句。</p>
+<p>「你可真行！」</p>
+<p>然后，他就头也不回地走了。</p>
+<p>我不明白他为什么会对我讲这句话，若是昨晚之事，应该不至于吧？</p>
+<p>我问让茯苓去打听，刘烁今日都做了些什么事，茯苓打听的很快，回来就对我道：「皇上今日下了早朝，把钟侍郎和宁侍郎叫了去，让他们尽快把婚期定下来。」</p>
+<p>我一听这个就明白了，肯定是太后又给刘烁施压了，刘烁被迫执行太后的话，让宁瑾和钟家尽快成婚，刘烁有气没处发，才对我发火呢。</p>
+<p>明白了缘由，我也就没多想。</p>
+<p>又过了几日，有次我去太后那里闲坐，商讨太后寿宴的事宜，却和刘烁撞上了。</p>
+<p>这还是除了大婚请安外，我和刘烁第一次在福寿宫撞上，他狐疑地看了我一眼，和太后请了安，走到我身边坐了下来。</p>
+<p>太后见他不吝与我亲近，很是满意。「如今见你们这样，母后也算是放心了。烁儿，宁家那个，你算是放下了吧？」</p>
+<p>「什么宁家？」</p>
+<p>刘烁心不在焉地同太后讲话，见我在剥葡萄，张口跟我要剥好的葡萄。</p>
+<p>我猜出他又要做戏，不好意思地瞥了瞥太后，将葡萄喂进他的口中。</p>
+<p>太后见状，乐的合不拢嘴，也没再提宁瑾之事。</p>
+<p>后面大多是讨论寿宴之事，太后让我全权负责寿宴的安排，我答应下来，心里也有了安排。</p>
+<p>从福寿宫出来，刘烁和我并排走着，把伺候的宫人都支开了。</p>
+<p>「为何太后和你阿娘，都认为我和宁瑾有什么？洛南书，你都和旁人讲什么了？」刘烁对我问道。</p>
+<p>听他这问责的语气，我不好意思地道歉：「那还不是当日为了拒婚吗？所以我和太后讲了你和宁瑾的事。」我回道。</p>
+<p>「我和宁瑾有什么事？你为了拒婚，就拿我当挡箭牌？」</p>
+<p>「什么叫拿你当挡箭牌？我拒婚不都是为了你和宁瑾吗？」</p>
+<p>「我和宁瑾有什么瓜葛？我不过就是见过她几面而已！如果是之前锦囊的事，我误以为她绣的锦囊，是……宫里的人绣的，后来知晓是她绣的，我不是都把锦囊烧了吗？我和她还有什么事？」刘烁压低着声音，却带着怒意。</p>
+<p>我不知道他为何要这样牵强的解释，宁瑾送他的那枚锦囊，是当初宁瑾借着探我的由头，让茯苓放在刘烁的案牍上的，从我们洛家出去的东西，他会认为宫里的人绣的？</p>
+<p>那就只有一种解释了，他嫌我把他和宁瑾的事情暴露了，心里不痛快。</p>
+<p>翻了翻白眼，我对他解释道：「我知道你想遮掩你和宁瑾的事，让太后放松警惕，虽然我不想再掺和你和宁瑾的事，但我这么久不也都替你遮掩着吗？」</p>
+<p>「替我遮掩什么？你为何就认定，我和宁瑾有什么？」刘烁讲的又气又无奈。</p>
+<p>我也分辨不出，他此时到底是在演戏，还是真的又气又无奈，只道：「飞云楼题的诗，你不是亲自给人家题的情诗吗？不止飞云楼的诗，你还和人家飞燕传书那么多次，这些你是不是也要解释下？」</p>
+<p>「飞云楼的诗，你认真看过吗？你明白我所题何意吗？」</p>
+<p>他这是嘲笑我不学无术吗？</p>
+<p>「谈崩了，不聊了。」</p>
+<p>我扔下一句话，转身就走。</p>
+<p>「洛南书，你给我站住！」身后刘烁对着我，语气又冷又硬。</p>
+<p>但我却像没听到般，没有停留。</p>
+<p>42</p>
+<p>接连半个月，我和刘烁不冷不热的，我忙着给太后办寿宴，也没功夫想他。</p>
+<p>不过寿宴的前一晚，我准备把我暗地里搞的事情告诉太后。</p>
+<p>虽然嘴上说不管刘烁和宁瑾了，但我还是不忍心看刘烁难过，想再帮他一次，所以我把他和宁瑾的故事写成了话本子，还在丰都找了戏班子，排成了戏。</p>
+<p>我想在戏台子上，把刘烁和宁瑾的故事唱给太后听，说不定太后感动了，就成全他们了。</p>
+<p>但这有点牛不喝水强按头的意味儿，我有负太后所托，利用她的信任，却帮刘烁办事，我心中有愧，就来了福寿宫。</p>
+<p>因为时辰晚了，宫里的人想通报，我怕太后歇下了，就没让宫人通传，自己悄咪咪地进去了。</p>
+<p>站在太后的寝宫外，我正打算推门进去，里头却传出了太后和王公公交谈的声音。</p>
+<p>「前些日子，不是说烁儿和囡囡圆房了吗？怎的两人又疏远了？这样下去，难道真的让烁儿和宁家那女人生孩子？」</p>
+<p>「不行，只有囡囡的孩子是皇室正统，决不能让其他人混淆皇室血脉！」</p>
+<p>我放到殿门上的手，在听到那些话时，骤然一缩，像被烫到一般，我被吓得几乎趔趄摔倒，好在没摔倒发出声响。</p>
+<p>为何太后说，只有我生的孩子是皇室正统，其他人生的孩子，就是混淆皇室血脉？</p>
+<p>想到我和刘烁同年同月同日生这点，想到太后从小就疼我疼的不像话，却对刘烁不亲，我不敢再想下去……</p>
+<p>43</p>
+<p>我的心变得乱糟糟的，又怕太后发现我来过，转身就往外走。</p>
+<p>走出福寿宫前，我对守门的宫女吩咐：「母后歇下了，今日本宫来福寿宫之事，不要同母后讲了。」</p>
+<p>我从没有想过，太后和阿娘逼着我嫁给刘烁，背地里会隐藏着惊天阴谋，原是我天真了！</p>
+<p>怪不得她们无论如何都不同意宁瑾进宫，也不给刘烁纳妾！</p>
+<p>他们……是不是都知道？</p>
+<p>一整晚，我翻来覆去地睡不着，第二日在太后的寿宴上，我也是浑浑噩噩的。</p>
+<p>刘烁和宁瑾的戏，如期在戏台子上演出了，太后自然是瞧出来了，她看完戏，只深深地看了我一眼，但当着皇亲国戚的面，并没有说什么。</p>
+<p>倒是刘烁不痛快，可能他觉得自己身为天子，威严受到了挑衅，毕竟不是谁都能接受，自己的故事被他人观阅的。</p>
+<p>可我如今心里装着块大石头，宁瑾这些小儿女的事，和那件事相比，根本无足轻重了。</p>
+<p>寿宴上，我实在不知该如何面对太后，面对刘烁，我甚至在纠结要不要告诉刘烁，但告诉他是错，不告诉他也是错！</p>
+<p>哎，我这么爽快的人，竟然都学会纠结了！</p>
+<p>我起身去了宴席后面的花园，离宴席也越来越远的寂静之地。</p>
+<p>但走着走着，身后却传来了尾随的脚步声，我一回头，看到了钟弈。</p>
+<p>钟弈看见了我，愣了片刻，然后仔细地上下打量了我一番，用手对我指指点点的。</p>
+<p>「你，你不就是那个接骨师！怪不得本少爷找遍了丰都都找不到你，合着你是个女的啊！」</p>
+<p>「你是谁家的小姐？」</p>
+<p>钟弈认出我后，可能顾忌我是女子，并没有像之前那样无礼，反而规规矩矩的。</p>
+<p>但我没心思和他周旋，没有理会他，掉头就走。</p>
+<p>可钟弈不知怎么回事，却纠缠了上来，拦着路不让我走。</p>
+<p>「你这是害羞了？那天你不是挺泼辣的吗？还不顾男女之防摸了本少爷，你知不知道男女授受不亲的？」</p>
+<p>「你给我让开！」</p>
+<p>讲着，我冷眼瞥向钟弈那条还不利索的腿，虽说我打不过刘烁和洛南臣，但收拾这么个病秧子，应该不成问题吧？</p>
+<p>「呦，脾气上来了，你平日待其他男子也这般泼辣吗？你这性子怎么嫁的出去，不如本少爷就发发慈悲，娶了你吧，好歹你我也算有过肌肤之亲，本少爷不是那般无情之人，你说你是谁家小姐，我回去可以让我娘去你家提亲……」</p>
+<p>听着他呱噪不停的声音，我索性一脚踢在了他没受伤的腿上。</p>
+<p>原本钟弈就只有一条腿支撑，如今唯一的一条腿又被我一脚踹翻，他直接一个狗吃屎倒在了地上，所以身后又传来了他的猪叫声。</p>
+<p>干完这一切，我若无其事地回到了宴席。</p>
+<p>真是到哪都不让人省心，烦死了！</p>
+<p>回到宴席，我刚坐下，后脚刘烁就回来了，我才注意到他也离席了。</p>
+<p>宁瑾也来了？</p>
+<p>我几乎是下意识地想到这点的，虽然席间没见到她来贺寿，但太后的寿宴普天同庆，朝内五品以上官员都在受邀之列，宁侍郎官拜四品，带个宁瑾前来，也不是什么难事。</p>
+<p>只不过大殿内坐的是皇亲国戚，朝官坐在殿外，我刚刚没注意到，也属正常。</p>
+<p>寿宴一直持续了三个时辰，寿宴结束时，都亥时了。</p>
+<p>朝官和皇亲国戚陆续离开，阿爹阿娘和洛南臣离开前，来同我说话。</p>
+<p>阿娘道：「囡囡，你如今是皇后，虽有洛家为你撑腰，但你日后在宫中生活，还得早日诞下皇子，你与皇上得抓紧些。」</p>
+<p>往日听阿娘这样讲，我会觉得她是为我考虑，可如今听她这样讲，我却忍不住开始怀疑，太后讲的事情，她和阿爹是不是都知晓？</p>
+<p>我探寻地看向阿爹，阿爹只讲了一句，「听你阿娘的话。」</p>
+<p>我点了点头，嗯了一句。</p>
+<p>洛南臣也道：「听到没有，你得肩负起做皇后的责任来。」</p>
+<p>听着洛南臣的话，我瞪了他一眼，他真当我耳聋，听不到他宴席上讲的那些话呢！</p>
+<p>我今日才知道，他从南境回来那日，讲的那些大义，都是诓我去给刘烁赔礼道歉的，亏我还愧疚那么久！</p>
+<p>只不过如今，我懒得和他计较，又冲他们嗯了一声。</p>
+<p>44</p>
+<p>送走了洛家人，太后把我叫到了跟前，让我再同她喝一杯，讲几句祝寿的话。</p>
+<p>太后的眼神殷殷的带着期望，我想到我和她的关系，立即倒了酒水，情真意切地喊了声：「母后，生辰快乐！」</p>
+<p>太后听了，开心地饮了杯中的酒，我也一杯见底了。</p>
+<p>喝完了酒，太后看向旁边醉倒的刘烁，对我道：「烁儿今日高兴，喝的有些多，囡囡你送他回去吧。」</p>
+<p>我应了一声，让人搀着刘烁，去了正阳宫。</p>
+<p>到了殿内，刘烁一躺下，就喊热，没等宫女服侍他脱衣裳，他自己就解开了袍子。</p>
+<p>如此不端的行为，让宫女们瞧见有些丢脸，想到刘烁的性子，我就把人都遣散了，只让小禄子去打盆水来，给刘烁擦脸。</p>
+<p>我拿着帕子湿了水，一点一点给刘烁擦着。</p>
+<p>许是散了热，他身上爽快了，就睁开眼睛看着我，眼神茫然，还带了点痴迷。</p>
+<p>「你为什么就不能喜欢我？」他突然抓住我的手，喊道。</p>
+<p>「你把我当成谁？」</p>
+<p>我帮他擦手指的手一顿，愕然地问他。</p>
+<p>「不准喜欢钟弈，你若是喜欢他，我就把他赐死，哪怕你恨我，我也不准你喜欢他。」</p>
+<p>「放手！」</p>
+<p>合着是把我当成宁瑾了，想到这点，我心里闷闷的，不太舒服。</p>
+<p>没人喜欢做别人的替身。</p>
+<p>「不放，我这一辈子都不会放开你！」</p>
+<p>他的手又抓上来，然后突然把我压倒在下面，眸子突然猩红恼怒起来，「我不准你喜欢他，不准，你是我的，只能是我的！」</p>
+<p>「阿九，你抽什么风，你看清楚我是谁！」</p>
+<p>我怒不可遏地冲刘烁吼着，身上却猛地躁起来，心也跳的厉害，身上也越来越热，体内的血烧的我难受。</p>
+<p>我推了推刘烁，想让他起来，但他却像被激怒般，突然压下来，对着我的脸就亲。</p>
+<p>「你是朕的，只能是朕的！」</p>
+<p>他一边亲，一边猴急地解着我的衣裳，手指碰到我的肌肤时，那么烫。</p>
+<p>我理智上想把他推开，但他一碰到我，有种自己控制不住的冲动，却让我把他搂的更紧。</p>
+<p>后来的事情，就发展的轰轰烈烈，又水到渠成。</p>
+<p>一场情事结束，我们两个大汗淋漓，刘烁的酒也醒了大半，他躺在一旁，沉思良久，才吐出来一句话。</p>
+<p>「酒里有药。」</p>
+<p>我不知自己在想什么，只是眼睛一眨，掉下一滴泪来，轻轻地嗯了一声。</p>
+<p>其实从身体不受自己控制的时候，我便觉察到了。</p>
+<p>太后竟然为了要皇室正统，给我和刘烁下药。</p>
+<p>我沉思了良久，才慢慢转过头，对刘烁无悲无喜地问道：「阿九，你会对我负责吗？」</p>
+<p>我并不想做这个大武国的皇后，可我也知道，不管我想不想，太后和洛家都会想方设法地逼着我做皇后，逼着我和刘烁在一起。</p>
+<p>而且，我和刘烁还有了夫妻之实……</p>
+<p>还不如顺应了他们的意思，老老实实地和刘烁在一起，老老实实地和他生孩子。</p>
+<p>如此，刘烁的身份，就永远不会被揭穿了，他可以一辈子安稳无虞地做他的皇帝，曾经的易子之事，永远不会有人知晓了。</p>
+<p>「嗯。」</p>
+<p>刘烁转过身来，认真地看着我。</p>
+<p>我松了口气，还好，刘烁向来是个爱负责任的男子，不过今日，我却要利用他的性子，和他谈条件了。</p>
+<p>「阿九，以后我不会再提出宫的事了，我会安安稳稳地做你的皇后。以后你若有了喜欢的人，都可以迎进宫来，想立谁为妃，我都不会干预你。」</p>
+<p>「我只有一个条件，以后继承大统的，必须是我的孩子，还有宁瑾，我不允许她进宫。」</p>
+<p>我一口气把自己的诚意和要求都讲完了，而且态度坚决，分文不让。</p>
+<p>刘烁听完了，目光深邃地瞪着我，满眼的难以置信。</p>
+<p>「你最想要的，就是这个？」</p>
+<p>「是啊，你作为皇太孙应该明白，储君有多重要，只有我的孩儿能做太子，我的地位才能经久不衰啊。况且日后在宫中生活，我也只能仰仗自己的孩儿了。」</p>
+<p>我找着借口道。</p>
+<p>「只能仰仗自己的孩儿，你就从没……」刘烁瞪着我，欲言又止，深邃的眸中藏着浓浓的失望。</p>
+<p>但我迎着他的目光，却没有闪躲。</p>
+<p>他如今是大武国的皇帝，历朝历代的皇帝都不喜欢后宫干政，都不喜欢后宫议论储君，可我一张口却要自己的孩儿做太子。</p>
+<p>若我不是洛南书，只怕此时人头已经落地了吧？</p>
+<p>「朕答应你！」刘烁的声音那样冷。</p>
+<p>备案号:YX01Yp59DgGbL9j5w</p>
+<p>他的温柔与情深</p>
+<p>​</p>
+<p>​</p>
+<p>帝心难测</p>
+<p>烟雨平生</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/02/12-%E4%B8%96%E7%95%8C%E5%90%84%E5%9B%BD%E5%92%8C%E5%9C%B0%E5%8C%BA%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BB%A5%E4%B8%BA%E6%88%91%E8%83%BD%E4%BD%86%E4%B8%AD%E5%9B%BD%E4%B8%8D%E8%83%BD%E7%84%B6%E5%90%8E%E6%82%B2%E5%89%A7%E7%9A%84%E4%BA%8B%E4%BE%8B---%E7%9F%A5%E4%B9%8E/" title="世界各国和地区有哪些以为「我能但中国不能」然后悲剧的事例？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">世界各国和地区有哪些以为「我能但中国不能」然后悲剧的事例？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/02/12-%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BB%A4%E4%BA%BA%E6%B5%91%E8%BA%AB%E5%8F%91%E6%8A%96%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E/" title="有哪些令人浑身发抖的故事？ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">有哪些令人浑身发抖的故事？ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

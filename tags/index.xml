@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 墨海拾贝</title>
-    <link>https://example.com/tags/</link>
+    <link>https://mohai.us.kg/tags/</link>
     <description>Recent content in Tags on 墨海拾贝</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mohai.us.kg/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网文</title>
-      <link>https://example.com/tags/%E7%BD%91%E6%96%87/</link>
+      <link>https://mohai.us.kg/tags/%E7%BD%91%E6%96%87/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tags/%E7%BD%91%E6%96%87/</guid>
+      <guid>https://mohai.us.kg/tags/%E7%BD%91%E6%96%87/</guid>
       <description></description>
     </item>
   </channel>

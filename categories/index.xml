@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 墨海拾贝</title>
-    <link>https://example.com/categories/</link>
+    <link>https://mohai.us.kg/categories/</link>
     <description>Recent content in Categories on 墨海拾贝</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mohai.us.kg/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Robot</title>
-      <link>https://example.com/categories/robot/</link>
+      <link>https://mohai.us.kg/categories/robot/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/categories/robot/</guid>
+      <guid>https://mohai.us.kg/categories/robot/</guid>
       <description></description>
     </item>
   </channel>
