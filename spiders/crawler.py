@@ -77,7 +77,7 @@ class ArticleCrawler:
     def save_article(self, title, date, content):
         try:
             # 创建年月目录
-            date_match = re.match(r'(\d{4})年(\d{2})月(\d{2})日', date)
+            date_match = re.match(r'(\d{4})年(\d{1,2})月(\d{1,2})日', date) # 
             if date_match:
                 full_year, month, day = date_match.groups()
                 # year = "24"  # 简化年份格式
@@ -86,15 +86,14 @@ class ArticleCrawler:
                 # 修改根目录为 content/posts
                 dir_path = os.path.join('../content', 'posts', f"20{year}", f"{month}")
                 os.makedirs(dir_path, exist_ok=True)
-                
+
                 # 清理标题中的序号和非法字符
-                clean_title = re.sub(r'^\d+\.\s*', '', title)  # 移除开头的数字序号
-                safe_title = re.sub(r'[\\/:*?"<>|]', '_', clean_title)
+                clean_title = re.sub(r"^\d+\.\s*", '', title)  # 移除开头的数字序号
+                safe_title = re.sub(r"\s+", "", clean_title)
                 
                 # 新的文件名格式：日期-标题.md
                 filename = f"{day}-{safe_title}.md"
                 file_path = os.path.join(dir_path, filename)
-                
                 # 处理文章内容格式
                 content = self.format_content(content)
                 
@@ -189,7 +188,7 @@ class ArticleCrawler:
                 logging.info(f"正在爬取第 {page} 页")
                 if not self.crawl_page(page_url):
                     logging.error(f"爬取第 {page} 页失败")
-                time.sleep(5)  # 页面间延时
+                time.sleep(2)  # 页面间延时
                 
         except Exception as e:
             logging.error(f"爬取过程中出现错误: {str(e)}")
