@@ -76,10 +76,11 @@ class ArticleCrawler:
     def save_article(self, title, date, content):
         try:
             # 创建年月目录
-            date_match = re.match(r'(\d{2})-(\d{2})', date)
+            date_match = re.match(r'(\d{4})-(\d{2})-(\d{2})', date)
             if date_match:
-                month, day = date_match.groups()
-                year = "24"  # 简化年份格式
+                full_year, month, day = date_match.groups()
+                # year = "24"  # 简化年份格式
+                year = full_year[2:]
                 
                 # 修改根目录为 content/posts
                 dir_path = os.path.join('../content', 'posts', f"20{year}", f"{month}")

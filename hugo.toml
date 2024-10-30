@@ -5,6 +5,7 @@ title = "墨海拾贝"
 theme = "hugo-theme-dream"
 enableRobotsTXT = true
 hasCJKLanguage = true
+paginate = 20
 
 # [services]
 # [services.disqus]
