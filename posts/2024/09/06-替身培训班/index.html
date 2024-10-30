@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>替身培训班 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/09/06-%E6%9B%BF%E8%BA%AB%E5%9F%B9%E8%AE%AD%E7%8F%AD/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/09/06-%E6%9B%BF%E8%BA%AB%E5%9F%B9%E8%AE%AD%E7%8F%AD/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="替身培训班">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-06T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+  <meta name="twitter:title" content="替身培训班">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="替身培训班">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-09-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="11731">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26675.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">替身培训班</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-09-06T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-09-06T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%9b%bf%e8%ba%ab%e5%9f%b9%e8%ae%ad%e7%8f%ad&amp;url=https://example.com/posts/2024/09/06-%E6%9B%BF%E8%BA%AB%E5%9F%B9%E8%AE%AD%E7%8F%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/09/06-%E6%9B%BF%E8%BA%AB%E5%9F%B9%E8%AE%AD%E7%8F%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%9b%bf%e8%ba%ab%e5%9f%b9%e8%ae%ad%e7%8f%ad%20https://example.com/posts/2024/09/06-%E6%9B%BF%E8%BA%AB%E5%9F%B9%E8%AE%AD%E7%8F%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26675.jpg" alt="替身培训班" />
+      
+
+      <p>替身培训班</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>为了打发时间，我在网上给人做替身培训。</p>
+<p>学员竟是自家老公，还义正辞严：</p>
+<p>「只要我老婆开心，当替身有什么关系？</p>
+<p>「有白月光又怎样，还不是被我娶回家了。</p>
+<p>「只要模仿到位，替身就能上位！」</p>
+<p>？我不理解。</p>
+<p>一直被当成替身的，难道不是我嘛？？？</p>
+<p>1</p>
+<p>我是个兢兢业业的替身。</p>
+<p>和陆聿安结婚两年，始终恪守本分，尽职尽责模仿他白月光的各种习惯。</p>
+<p>不过最近我摆烂了。</p>
+<p>因为我的零花钱已经攒到了八位数，我想等花得差不多了，再继续哄骗陆聿安。</p>
+<p>看着其他替身姐妹如履薄冰的样子，我决定把我的丰富经验传授给更多的人，造福社会。</p>
+<p>我精心整理了一篇细致全面的替身必备注意事项，发布在网络上。</p>
+<p>没想到经验帖后没多久，就收到了一条陌生私信：</p>
+<p>「你好，无意间浏览到你的帖子，深感敬佩，不知可否教授我如何做一名优秀的替身？」</p>
+<p>我正觉得奇怪，他继续补充：</p>
+<p>「我可以支付课时费，价格你开。」</p>
+<p>其实嫁给陆聿安后，我就从来都没有缺过钱，更不需要自己赚外快。</p>
+<p>但是为了打发时间，拉扯一番后，我同意了他的请求：</p>
+<p>「可以，你给我一个联系方式吧。」</p>
+<p>我摩拳擦掌，准备将自己的毕生所学传授给他。</p>
+<p>他也很爽快地发来一个微信号。</p>
+<p>我瞄了一眼，感觉号码有点眼熟，像是在哪见过。</p>
+<p>一搜微信号，弹出的是我的列表好友。</p>
+<p>看清备注的一瞬，我瞳孔放大。</p>
+<p>明明白白三个大字——陆聿安。</p>
+<p>这不我自家老公吗？</p>
+<p>他学这个干什么？</p>
+<p>我有点不敢相信，反复跟那人确认了好几遍。</p>
+<p>「你确定是这个号码吗？」</p>
+<p>「是。」</p>
+<p>「你真的确定吗？」</p>
+<p>「我很确定。」</p>
+<p>我看着对话框，陷入沉默。</p>
+<p>难道陆聿安后悔娶我这个替身了？</p>
+<p>想改头换面，投身白月光的怀抱？</p>
+<p>我和陆聿安的婚姻虽然没有甜甜蜜蜜的爱情，但是我有了源源不断的人民币。</p>
+<p>而且目前，我还没捞够，我不想退位。</p>
+<p>我要阻止他！</p>
+<p>思索再三后，我拿了个小号加他。</p>
+<p>先探探再说。</p>
+<p>我试探着：「看你名片，条件不错啊，为什么要做别人的替身？」</p>
+<p>他秒回：「当然是因为爱情。」</p>
+<p>我劝他：「年轻人，白月光的杀伤力是毁灭性的，Ta 一辈子都不会忘记的！</p>
+<p>「做替身没前途的，你慎重啊。」</p>
+<p>他却义正辞严，噼里啪啦：</p>
+<p>「只要我老婆开心，做替身有什么关系？</p>
+<p>「有白月光又怎么样，还不是被我娶回家了。</p>
+<p>「只要模仿到位，替身就能上位！」</p>
+<p>我愣了。</p>
+<p>呃。</p>
+<p>陆聿安应该……没有重婚吧？</p>
+<p>那他老婆……不就是我嘛？</p>
+<p>2</p>
+<p>我的大脑飞速运转。</p>
+<p>两年前陆聿安找到我，说他能给我我想要的，我也能给他他想要的。</p>
+<p>所以邀请我跟他结婚。</p>
+<p>我家败落以前，和他也算有过不少交集，并非全然不熟。</p>
+<p>甚至如果没有败落，我和他可能本就要联姻。</p>
+<p>于是我看着他身后闪着光的劳斯莱斯，毫不犹豫地点了点头。</p>
+<p>当时我以为他给我的是钱，我给他的是盗版白月光的贴心。</p>
+<p>难道是我理解错了？</p>
+<p>想了想，我装模作样地给陆聿安发消息：</p>
+<p>「看你觉悟这么高，平时对老婆一定不错吧？」</p>
+<p>陆聿安沉默了。</p>
+<p>好半天才回：「她喜欢高冷的，所以我不敢太体贴了。」</p>
+<p>我满脸黑人问号。</p>
+<p>这就是他平时总板着个死人脸的原因？</p>
+<p>他急吼吼地又连发好几条：</p>
+<p>「怎么了，这样有什么不好的吗？</p>
+<p>「她大学时候的学长就是这样的，我一直在努力学习。</p>
+<p>「是不是这样会适得其反，老师？」</p>
+<p>我嘴角抽搐着打字：</p>
+<p>「难道你希望你老婆对你冷冰冰吗？」</p>
+<p>他：「呃……</p>
+<p>「当然不希望。」</p>
+<p>那不就对了？</p>
+<p>我在心里怒骂。</p>
+<p>想起之前每天他看我时的眼神，清冷得好像下一秒就要出家了。</p>
+<p>让我对自己的人格魅力产生了深深的怀疑。</p>
+<p>今天，我失去的，都要！拿回来！</p>
+<p>我飞快打字：「那你第一节课，先学习一下如何体谅老婆吧。」</p>
+<p>他深感不解：「我们不是学习替身技巧吗？老师？」</p>
+<p>我恨不得给他一个大比兜。</p>
+<p>我这个母单选手，连个心动男嘉宾都没有过，又哪来的替身！</p>
+<p>我没憋住：「你还学不学了？」</p>
+<p>他连连道：「学的，学的！</p>
+<p>「老师，我接下来应该怎么做？」</p>
+<p>看着他虚心求教的样子，我顿时玩心大发：</p>
+<p>「你先去给你老婆按个脚吧。」</p>
+<p>高高在上的陆聿安，是从来没有伺候过人的。</p>
+<p>别说按脚，连给人端茶倒水都极少。</p>
+<p>他会拒绝这个建议吗？</p>
+<p>我正想着，他发来了消息：</p>
+<p>「可是她会不会觉得我烦？</p>
+<p>「我感觉她不太喜欢我接触她，尤其是肢体接触。」</p>
+<p>我：？</p>
+<p>大哥，晚上睡觉你都离我八丈远。</p>
+<p>你说我不喜欢你接触我？</p>
+<p>我愤愤不已的时候，他继续道：</p>
+<p>「晚上我连亲密行为都要拼命忍着，可难受了，老师。」</p>
+<p>我：？？</p>
+<p>晚上？</p>
+<p>忍着？</p>
+<p>难道他离我那么远，是……</p>
+<p>想到某些 xx 废料，我小脸瞬间爆红。</p>
+<p>……不是吧？</p>
+<p>陆聿安却像打开了话匣子一样喋喋不休：</p>
+<p>「老师，你不知道，心爱的女人就躺在身边，我却只能……我太痛苦了。</p>
+<p>「老师，我跟你讲，结婚那天晚上，我其实学了很多东西，我真的好想……</p>
+<p>「老师，你有没有听说过 24 种……」</p>
+<p>看着屏幕上的话，我的耳根子都红透了。</p>
+<p>他看着正正经经，怎么……怎么……心里想的都是这些啊！</p>
+<p>面对不断弹出来的颜色语录，我羞得不行，没忍住直接大声喊出来：</p>
+<p>「陆聿安！！！」</p>
+<p>话音刚落，我骤然意识到什么。</p>
+<p>陆聿安还在家里，岂不是暴露了？</p>
+<p>果然，楼上书房的门慢悠悠地打开。</p>
+<p>陆聿安不紧不慢地走出来，依旧冷着脸：</p>
+<p>「干什么？」</p>
+<p>我：？</p>
+<p>你刚刚可不是这样的。</p>
+<p>男人，一个善于伪装自己的物种！</p>
+<p>3</p>
+<p>我切出聊天界面，对着陆聿安仰头：「你在楼上干嘛呢？」</p>
+<p>他表情变了变，眉宇间有着不易察觉的慌乱。</p>
+<p>但他很快又压下情绪，剑眉微蹙，声音冷沉：「办公。」</p>
+<p>呵呵。</p>
+<p>你明明在学习如何成为一名优秀的替身，还开黄腔！</p>
+<p>我装作不知道：「喔。」</p>
+<p>陆聿安眯着眼看了看我，准备转身继续回书房。</p>
+<p>我叫住了他：</p>
+<p>「老公。」</p>
+<p>他迈出去的脚步不稳，整个人都晃了晃，才堪堪稳住身形，然后直挺挺地、僵硬地站在原地，</p>
+<p>恍若一个人形立牌。</p>
+<p>好半天才机械地扭过头：「怎么了？」</p>
+<p>我暗暗憋笑，故作困扰地摸了摸自己的脖颈：</p>
+<p>「也没什么啦，就是脖子有点酸，想去外面按摩一下。」</p>
+<p>陆聿安转过身来，表情像是陷入了极大的纠结与挣扎之中。</p>
+<p>半晌，他终于下定决心，朝我走来：</p>
+<p>「哪里酸？我看看。」</p>
+<p>我撩开头发，随便指了指：「这儿。」</p>
+<p>下一秒，我感觉到自己的后颈被某个微凉的指腹轻轻摩挲了几下。</p>
+<p>他带着点小心翼翼的试探，不轻不重地揉捏：</p>
+<p>「这里？」</p>
+<p>我点点头，彻底放松下来，开始享受。</p>
+<p>没想到陆聿安这个大少爷，竟然还熟练掌握了按摩技术。</p>
+<p>这力度，这手感……</p>
+<p>过去的两年，我都错过了多少！</p>
+<p>我忍不住转过头去看他。</p>
+<p>他表情很淡定，一副公事公办的样子。</p>
+<p>还冲我挑眉：「怎么，不舒服？」</p>
+<p>我连忙摇头。</p>
+<p>4</p>
+<p>等陆聿安一脸板正地回到书房以后，我的小号就收到了轰炸：</p>
+<p>「老师，我发现你说得很对。</p>
+<p>「今天是我第一次和她这么长时间的肢体接触，就是按摩。</p>
+<p>「她真的好软好香，刚刚差点就忍不住要往下按了，想按按她的腰，还有她的……</p>
+<p>「哎呀，跑题了。</p>
+<p>「我下一步应该怎么做？老师，请您赐教。」</p>
+<p>我：……</p>
+<p>刚刚不就按了下脖子和肩膀吗！Lsp 竟在我身边？</p>
+<p>我敲了敲自己的脑袋，试图把颜色废料都给敲出去。</p>
+<p>然后唰唰打字：「替身的核心，当然还是模仿。</p>
+<p>「只有模仿到了精髓，才算合格。」</p>
+<p>这倒不是我想整他。</p>
+<p>我只是想知道他在做谁的替身。</p>
+<p>他回复得很快：「我一直都在努力模仿她的大学学长，但是最近好像没什么效果。</p>
+<p>「她几乎不搭理我了，是不是还有什么我没注意的细节？」</p>
+<p>我默默流汗黄豆：</p>
+<p>「有没有一种可能，是你搞错对象了？」</p>
+<p>毕竟，我怎么不知道我还有这么一个大学学长做白月光。</p>
+<p>他并不相信：</p>
+<p>「不可能！我亲眼见过她给那学长递情书的！」</p>
+<p>说完，他很激动地发来一张照片：</p>
+<p>「你看，这就是当时的现场！」</p>
+<p>我点开一看。</p>
+<p>照片上有两个人，一个是我，一个是我不认识的男生。</p>
+<p>嚯，这不是我大学兼职发传单时候的照片吗？</p>
+<p>……</p>
+<p>我一时不知道该说陆聿安是清澈的愚蠢，还是没有脑子。</p>
+<p>居然看不出来那是一张粉红色的传单？</p>
+<p>他还在不停轰炸：</p>
+<p>「这个什么学长一毕业就结婚了，我老婆参加他们的婚礼，都只能一个人在角落默默地流眼泪！」</p>
+<p>说着，他又发来一张照片。</p>
+<p>嗯，又是我。</p>
+<p>照片里，婚礼现场一派人声鼎沸，而我正扶着角落里的柱子抹眼泪。</p>
+<p>乍一看，确实很凄美。</p>
+<p>我回忆了一下，这好像是我们社团某个学姐的婚礼。</p>
+<p>那天我被辣油溅到了眼睛，去厕所冲洗了很久，冲得眼睛通红。</p>
+<p>出来后还是有些刺疼，就随手找了个地方扶着揉眼睛。</p>
+<p>然后就……</p>
+<p>「老师，你能理解吗？我太心疼我老婆了。</p>
+<p>「她在那场没有结果的感情中，被伤透了心。</p>
+<p>「我一定要做一个完美的替身，我要夺取老婆的爱，让我老婆不再流泪！」</p>
+<p>看着屏幕上不断跳出来的信息，我只觉得，脑阔痛痛。</p>
+<p>5</p>
+<p>我尽可能地提示他：「不然你去问问你老婆呢？万一误会了……」</p>
+<p>他有些犹豫：「可是这要怎么问？她会不开心的吧。」</p>
+<p>我：「我保证，她不会不开心。」</p>
+<p>在我动之以情，晓之以理的劝说下，他终于同意了。</p>
+<p>「好吧，那我就去问问。</p>
+<p>「老师，我相信你，你可别让我尴尬啊。」</p>
+<p>末了还不忘凶巴巴地威胁：</p>
+<p>「要是她从此讨厌我了，你就再也不是我老师了！」</p>
+<p>我：……其实这老师我不当也罢。</p>
+<p>楼上传来门锁的咔哒声时，我赶紧把手机往旁边一扔，故作惬意地往沙发上一趴。</p>
+<p>余光瞄到陆聿安正步伐不太自然地走来。</p>
+<p>我抬眼看向他，面色露出疑惑。</p>
+<p>他只是慢慢悠悠地坐到旁边，刻意地清了清嗓子。</p>
+<p>我并不主动询问，就静静看着他表演。</p>
+<p>他显然没有想到我不发问，一时有些不知道如何开口。</p>
+<p>安静了一分钟。</p>
+<p>他挪了挪屁股，好像有些如坐针毡。</p>
+<p>我瞟他一眼，依旧不说话。</p>
+<p>又过了两分钟，他开始抓耳挠腮。</p>
+<p>五分钟后，他终于十分做作地掏出手机：</p>
+<p>「咳，那个什么，赵澜，他公司好像在融资了？」</p>
+<p>赵澜这个名字，我有印象。</p>
+<p>是学姐的结婚对象。</p>
+<p>我迷茫地眨巴眨巴眼睛：「赵澜是谁呀？」</p>
+<p>陆聿安肉眼可见地愣了。</p>
+<p>他向来冷峻的眉眼中露出了小小的茫然：</p>
+<p>「你的大学学长，你不记得了？」</p>
+<p>我笃定地摇摇头：「不认识。」</p>
+<p>陆聿安眉心跳了跳，拿出手机，状似不经意地划拉了几下。</p>
+<p>然后淡淡道：「嗯，那可能是我记混了。」</p>
+<p>我默默看着他起身，转身，上楼，一气呵成。</p>
+<p>已经极力压制，却依然轻快的步伐透露出他此刻极佳的心情。</p>
+<p>等他关上那扇门，我的手机就开始振。</p>
+<p>「老师，你真神了你知道吗！</p>
+<p>「我刚刚去问了，我老婆说她不认识那个人！</p>
+<p>「这是不是说明，之前都是误会？」</p>
+<p>我冷酷一笑。</p>
+<p>确实是误会。</p>
+<p>但，谁让你是我的弟子呢。</p>
+<p>不把绝学传授给你，我怎么担得起这一声「老师」！</p>
+<p>我淡定回复：「就算是误会……</p>
+<p>「可你之前不是说她不搭理你吗？很有可能，她的白月光另有其人。」</p>
+<p>陆聿安这个小话匣子终于沉默了。</p>
+<p>我也不着急，干脆把手机放到一旁，耐心地等待他的回复。</p>
+<p>没想到，没等来消息。</p>
+<p>等来的是一阵洪亮而急促的微信电话铃声。</p>
+<p>十分清晰。</p>
+<p>哦不，在我的耳朵里简直震耳欲聋。</p>
+<p>我拿起手机，屏幕上显示的正是陆聿安的名字。</p>
+<p>我心跳直逼 130，手忙脚乱地想要摁掉声音时，书房的门忽然开了。</p>
+<p>陆聿安探出身子，和我对视。</p>
+<p>他的视线缓缓下移，落在了我亮着屏的手机上。</p>
+<p>6</p>
+<p>那一刻，我的大脑运转如涡轮发动机。</p>
+<p>千钧一发之际，火速打开静音键。</p>
+<p>然后把手机送到耳边，装模作样地开始通话。</p>
+<p>「喂？大壮呀，啊对对，我好着呢……」</p>
+<p>我一边演戏，一边偷摸着看陆聿安的反应。</p>
+<p>但他的眼神并没有在我身上过多地停留，只一眼，就背过身去了卧室。</p>
+<p>我松了一口气。</p>
+<p>电话已经因为长时间未接通，被系统自动挂断。</p>
+<p>我才看见陆聿安刚刚的消息：</p>
+<p>「老师，你方便接电话吗？我找了个安全的地方，我们要不电话交流？</p>
+<p>「刚刚好像有人给她打电话，叫大壮，肯定是个男的吧？</p>
+<p>「老师，你帮我分析分析呢？刚刚她好像表情不对劲，这会不会是她的白月光？」</p>
+<p>我为他的脑洞折服：「你也别太风声鹤唳，根据我的经验，这种事最好还是询问当事人。</p>
+<p>「没准儿她的白月光是吴彦祖呢。」</p>
+<p>陆聿安似乎有些无语。</p>
+<p>「老师，我的确很相信你，但你别扯犊子。」</p>
+<p>……我没有。</p>
+<p>非要说白月光的话，那就真是吴彦祖啊！</p>
+<p>我十分不服气：「你要是不信，找个机会试探试探不就好了？」</p>
+<p>他半信半疑：「哦？展开说说。」</p>
+<p>我开始出损招：「你先试试模仿不同类型的男人，测测她对哪种类型的男人有反应。」</p>
+<p>他发来一个「老脸一红」的表情。</p>
+<p>「有反应？这恐怕不好测吧『害羞』 『害羞』……」</p>
+<p>我缓缓打出一个问号。</p>
+<p>这破路也能开？</p>
+<p>啧啧，看不出来，你居然是这样的陆聿安。</p>
+<p>我干脆无视，继续发功：「嗯，我先给你列出几种常见的类型，你挨个尝试一下。</p>
+<p>「霸道总裁型、黏人奶狗型、清冷禁欲型、温柔忠犬型。」</p>
+<p>灵光一闪，我又加了句：「哦，再加个傻白甜型。</p>
+<p>「最好每天切换，观察至少两个周期。</p>
+<p>「尝试不同类型的时候，都要记得表现出你的喜欢哦。」</p>
+<p>哈，夹带私货的感觉真好。</p>
+<p>陆聿安发来一个问号：</p>
+<p>「你到底是不是正经人啊，老师？」</p>
+<p>我反问他：「我出过错吗？大师就是兵行奇招，懂？」</p>
+<p>他沉默了一会儿，可能是在原则与底线的边缘反复挣扎。</p>
+<p>最终还是妥协了：</p>
+<p>「老师，那我相信你！」</p>
+<p>7</p>
+<p>第二天。</p>
+<p>陆聿安就抽风了。</p>
+<p>清晨，我原本正在睡梦中跟五个男人约会。</p>
+<p>忽然听到一个急切又恼怒的声音：</p>
+<p>「你给我醒过来！</p>
+<p>「我命令你马上睁开眼睛，听到没有？」</p>
+<p>他说得实在情真意切，我便迷迷糊糊睁开眼。</p>
+<p>看见陆聿安穿着整整齐齐的西装，站在我床边。</p>
+<p>见我醒来，他的唇角勾起一个邪魅的笑。</p>
+<p>带着三分不羁两分凉薄一分漫不经心：「很好，女人。」</p>
+<p>我：？</p>
+<p>我迷茫地掀开被子，从床上坐起来：「你说啥？」</p>
+<p>由于我的动作，身上的丝质睡裙吊带顺势滑下了肩头，露出一片雪白的肌肤。</p>
+<p>陆聿安的眼角立即眯了眯：「女人，你在玩火。」</p>
+<p>我：？？</p>
+<p>我的 CPU 急速加载的时候，陆聿安已经十分躁动地扯了扯自己的领带，俯身过来，双手撑在我身侧。</p>
+<p>呼吸擦着我的耳朵：「你自己点的火，自己来灭。」</p>
+<p>然后他就……</p>
+<p>我：？？？</p>
+<p>一直到吃早饭的时候，我整个人都处于宕机状态，没明白早上发生了什么。</p>
+<p>只能习惯性地打开手机，想要刷点下饭的小段子。</p>
+<p>忽然注意到微信的消息提醒。</p>
+<p>刚要点开，陆聿安就凑过来，冷冷道：「我足够满足你了吧，嗯？」</p>
+<p>我满脸问号的时候，他已经不由分说地摁熄了我的手机屏幕。</p>
+<p>「你是我的，我要你的眼里只有我一个。</p>
+<p>「我不准你和别的男人发消息。」</p>
+<p>我：……</p>
+<p>说着，一旁的管家已经主动上前来，从我的手里把手机接过去。</p>
+<p>在管家碰到我手的那一瞬间，陆聿安狭长的眸子闪过一丝寒光，怒道：</p>
+<p>「谁给你的勇气碰她？」</p>
+<p>管家和我：？？？</p>
+<p>陆聿安注意到我震惊的表情，咬了咬牙：「该死，你这个磨人的小妖精。」</p>
+<p>完蛋了，陆聿安被夺舍了！</p>
+<p>我害怕，我受不了了。</p>
+<p>我哆哆嗦嗦地站起身：「其实我不是很饿，我就先走了……」</p>
+<p>陆聿安伸手拽住我的胳膊，笑得邪魅狂狷：</p>
+<p>「你以为，你能跑得掉吗？」</p>
+<p>救……救命！</p>
+<p>一直战战兢兢到中午，我终于拿回了我的手机。</p>
+<p>才发现昨天晚上我睡得早，错过了陆聿安的很多消息。</p>
+<p>他：「老师，明天我就先试试霸道总裁型吧。</p>
+<p>「但我不太了解这个要怎么做，你能简单跟我讲讲吗？」</p>
+<p>……</p>
+<p>他见我没理他，过了一会儿，发来了几张图片和几本电子书的 txt 文档。</p>
+<p>《霸道总裁经典语录 50 条》。</p>
+<p>《霸道总裁爱上我：娇妻要出逃》。</p>
+<p>《霸道总裁别爱我：陆少的甜心宝贝》。</p>
+<p>……</p>
+<p>他还做了好多马克笔标注。</p>
+<p>「老师，这几句是我总结出来的最高频词，明天我就这样试试了？</p>
+<p>「可以吗老师？</p>
+<p>「老师，你在吗？」</p>
+<p>……</p>
+<p>苍天啊。</p>
+<p>大地啊。</p>
+<p>我为什么，睡觉的时候要关机啊？</p>
+<p>8</p>
+<p>晚上，陆聿安有些忧郁地给我发消息：</p>
+<p>「老师，我感觉她好像不是很喜欢霸道总裁。」</p>
+<p>我连忙回复：「那就直接 pass 掉这个类型！不要再沾。」</p>
+<p>他表示赞同：「嗯嗯，我也觉得。</p>
+<p>「明天应该是黏人奶狗型，老师，你大概教教我呢？」</p>
+<p>为了避免重蹈覆辙，我不敢懈怠，小心叮嘱：</p>
+<p>「就是你要可爱一点，会撒娇，然后黏着她。</p>
+<p>「不过千万不要照着网上说的学，会适得其反！</p>
+<p>「嗯……还有就是，你记得要叫姐姐。」</p>
+<p>发出去最后一条消息，我的脸上露出了贼贼的笑容。</p>
+<p>他一开始还有些不明白：「一定要叫姐姐吗？」</p>
+<p>我着重强调：「是的，一定要！」</p>
+<p>他发来言简意赅的：「ok，收到。」</p>
+<p>诶嘿，陆聿安要叫我姐姐了。</p>
+<p>虽然我比他小，但是人家也有个姐姐梦嘛。</p>
+<p>于是我带着笑意入睡，却在惊恐中醒来。</p>
+<p>就是说，我让陆聿安叫我姐姐。</p>
+<p>我没让他把他姐姐叫过来啊？？？</p>
+<p>这一刻，我看着笑眯眯的陆玥和旁边一脸娇俏的陆聿安，沉默了。</p>
+<p>陆聿安扯了扯我的胳膊：「嗯……我姐想来看看你啦。」</p>
+<p>我真的傻眼了。</p>
+<p>陆聿安还以为是我一时不习惯：「怎么啦？你还没有睡醒嘛？」</p>
+<p>我机械地摇摇头。</p>
+<p>结果他朝我 wink 了一下，还蹭了蹭我的小臂。</p>
+<p>陆玥温柔地看着我：「妹，小聿还有很多不足的地方，劳你多担待。」</p>
+<p>我：「嗯嗯……」</p>
+<p>接下来的一天……</p>
+<p>我去洗漱。</p>
+<p>陆聿安在一边嗷嗷叫：「你洗好了嘛？我可以进来看看你嘛？」</p>
+<p>我去上厕所。</p>
+<p>陆聿安在门外嘎嘎叫：「你在干嘛呀？怎么这么久呀？」</p>
+<p>我去冰箱拿水喝。</p>
+<p>他在后面……</p>
+<p>我忍无可忍，一个猛地转身。</p>
+<p>结果嘎巴。</p>
+<p>撞了个大脑门儿。</p>
+<p>陆聿安一脸心疼地揉着我的额头：「你想跟我贴贴也不用这么着急呀。」</p>
+<p>说完，还把我搂在怀里，用他的下巴摩挲我的头发。</p>
+<p>「嗯……你好香。</p>
+<p>「抱抱。」</p>
+<p>？？？</p>
+<p>服了。</p>
+<p>9</p>
+<p>为了避免遭到更多雷击，我选择了及时叫停。</p>
+<p>「徒儿，为师夜观天象，发现你最近不宜执行奇招。」</p>
+<p>他很是不解：「什么意思？」</p>
+<p>「就是之前那招，你别试了，搞不好会有血光之灾！」</p>
+<p>他：「可是我还有三种类型没有尝试，没有参考对照组。」</p>
+<p>想到陆聿安在工作时候的轴劲，我决定迂回一下：</p>
+<p>「这样吧，为师再给你提供一个更好的办法。</p>
+<p>「你让她选一件最喜欢的衣服，把照片发给我，我来根据衣服的款式帮你直接画出那个人的侧写。」</p>
+<p>陆聿安很惊喜：「老师，你还会这个呀？」</p>
+<p>嗯……我当然不会这个。</p>
+<p>但谁让他的对象是我呢。</p>
+<p>我自己想要啥样的，我自己还不知道吗？</p>
+<p>我故作高深：「这得需要经年的沉淀，你还要多修炼修炼！」</p>
+<p>陆聿安的执行力一向是很强的。</p>
+<p>我刚说完，他直接大剌剌闯进了卧室。</p>
+<p>正靠在躺椅上的我：？</p>
+<p>陆聿安双手插在兜里，下颚微扬：</p>
+<p>「下午，去逛街吗？」</p>
+<p>见我没反应，他又补充道：「给你买衣服。」</p>
+<p>？我没让他给我买衣服啊。</p>
+<p>买衣服岂不是还要化妆，还要洗头，漏！</p>
+<p>我连忙发消息：「你如果想见效快，可以直接问她喜欢什么颜色！」</p>
+<p>陆聿安面不改色地掏出手机，划拉几下，然后又深深地看了我一眼，轻咳一声：</p>
+<p>「或者喜欢什么颜色？让人给你做。」</p>
+<p>我摸着下巴，假装自己在认真思考：</p>
+<p>「白色吧。」</p>
+<p>他板着脸点了点头：「嗯。」</p>
+<p>陆聿安走的时候，还不忘把门给我带上。</p>
+<p>「老师，是白色！</p>
+<p>「这个信息够了吗？会不会有点太少了？</p>
+<p>「要不我还是带她去买件新衣服吧，或者让人送几条裙子来选？」</p>
+<p>我连忙拒绝：「别！不用！</p>
+<p>「你老师我是何许人也？这个就够了。</p>
+<p>「根据我缜密的分析，她喜欢的类型应该是吴彦祖和金城武的结合体！」</p>
+<p>陆聿安：「？</p>
+<p>「老师，你又在扯淡了。」</p>
+<p>我笑：「你不信，照着我说的做，保管她对你百依百顺！」</p>
+<p>陆聿安瞬间动摇：「怎么做？」</p>
+<p>「你就……」</p>
+<p>10</p>
+<p>不得不说，陆聿安是个很听话的学生。</p>
+<p>当他穿着不系扣的睡衣，露着大块腹肌在我面前晃悠的时候，我狠狠咂嘴了。</p>
+<p>明明有这么好的身材，怎么从来都捂得跟修女似的。</p>
+<p>两年了。</p>
+<p>整整两年！</p>
+<p>我都只能扮演着纯洁无瑕的小白兔，不敢对他的美好肉体表现出半分幻想。</p>
+<p>别说碰了，连惊鸿一瞥都很少有。</p>
+<p>此刻，我看着他轮廓分明的肌肉线条，终于露出了慈祥的微笑。</p>
+<p>经常展现自己的好身材，只是我对他的第一个叮嘱。</p>
+<p>还有一条重点，是要给我，摸！</p>
+<p>陆聿安绷着脸，似乎很冷淡，但脸颊飘着的两抹淡淡绯红已经出卖了他。</p>
+<p>他用身高优势俯视我，从牙缝里蹦出几个不带感情的字眼：</p>
+<p>「我好像发烧了。</p>
+<p>「帮我摸摸。」</p>
+<p>我依言伸手探了探他的额头。</p>
+<p>他却抓住我的手腕，眼睑翕动：「这里不准确。</p>
+<p>「要往下。」</p>
+<p>我呆呆地看着他：</p>
+<p>「啊？」</p>
+<p>他直接抓着我的手，不由分说，一路往下。</p>
+<p>鼻梁、嘴唇、喉结……</p>
+<p>胸肌……腹肌……</p>
+<p>……他停住了。</p>
+<p>我小脸通红。</p>
+<p>原来，摸腹肌是这个感觉。</p>
+<p>好硬，好有劲啊。</p>
+<p>好上瘾，还想摸。</p>
+<p>我鬼使神差地动了动手指，指尖在他的肌肉轮廓上画了个圈。</p>
+<p>陆聿安瞬间一僵。</p>
+<p>他嘴唇紧抿，迅速把我的手挪开：「……好了。</p>
+<p>「怎么样，发烧没有？」</p>
+<p>我摇摇头：「有点烫，但应该没有发烧。」</p>
+<p>我没说谎，他真的好烫。</p>
+<p>不过是不是发烧，我也不好意思说。</p>
+<p>陆聿安淡淡地「嗯」了一声，然后转身走了。</p>
+<p>他转过身，我才看清。</p>
+<p>这人两边的耳廓已经红得快要滴血。</p>
+<p>好像，还有点顺拐？</p>
+<p>11</p>
+<p>第一阶段实训教学的效果，我很满意。</p>
+<p>为了让陆聿安感受到我的变化，我特意下厨为他煎了一个爱心鸡蛋。</p>
+<p>结果他不吃。</p>
+<p>端起盘子就说要回书房处理公务。</p>
+<p>我让他坐下吃，他还不听。</p>
+<p>看着他决绝离去的背影，我有点小受伤。</p>
+<p>这可是我精心制作的爱心鸡蛋诶。</p>
+<p>他怎么都不夸夸我的？</p>
+<p>我愤愤打开手机，准备用小号叮嘱他对我细心点。</p>
+<p>结果一连串的消息弹了出来。</p>
+<p>为首的是一张图片。</p>
+<p>嗯？这不是我的爱心鸡蛋吗？</p>
+<p>陆聿安：「哈哈哈，老师，给你看看，我老婆给我做的爱心鸡蛋！</p>
+<p>「好可爱，好精致，我完全不舍得吃。</p>
+<p>「老师你说，我把它密封起来，藏在书柜里怎么样？</p>
+<p>「要是想念，我就可以随时都拿出来看看。」</p>
+<p>？</p>
+<p>会臭死的吧？？？</p>
+<p>我吓了一大跳，赶紧打字：「别啊，这样会发霉的。</p>
+<p>「要是房间变臭，你老婆就会嫌弃你！」</p>
+<p>他也吓了一大跳：「真的吗？那我应该怎么办？」</p>
+<p>我有些无语。</p>
+<p>虽然这确实是我第一次下厨，但也不至于……</p>
+<p>我想了想：「你去夸她貌比西施，美若天仙，还厨艺了得，她就会经常给你做饭。」</p>
+<p>说完我就后悔了。</p>
+<p>干啥给自己挖坑呢？</p>
+<p>刚想撤回，就看见陆聿安又端着盘子回来了。</p>
+<p>他清冷的视线在我身上打量了几下，缓缓开口：</p>
+<p>「很好吃。</p>
+<p>「没想到你长这么漂亮，还这么会做饭。」</p>
+<p>昂。</p>
+<p>听着还挺舒心。</p>
+<p>12</p>
+<p>接下来的几天， 我让陆聿安干了很多他以前绝不会干的事情。</p>
+<p>他毫无异议，一一实行。</p>
+<p>他把碎刘海用皮筋扎成小揪揪。</p>
+<p>把黑色睡衣换成粉红色。</p>
+<p>早上从不叫我起床。</p>
+<p>晚上睡觉乖乖给我当人肉靠枕。</p>
+<p>我一咳嗽就递水，我一弯腰就捶背。</p>
+<p>我简直，快活似神仙。</p>
+<p>已经快要忘乎所以了。</p>
+<p>这也就导致，我的欲望日渐膨胀，要求逐渐过分。</p>
+<p>看电视的时候，因为想要体验一把偶像剧女主的感觉，我又登小号给陆聿安发消息：「你试一试，把她摁在墙上强吻！」</p>
+<p>坐在我对面的陆聿安脸色一变。</p>
+<p>他小心翼翼地看了我一眼，然后遮住自己的手机屏幕。</p>
+<p>「这……这样真的可以吗？」</p>
+<p>我急不可耐地回他：「真的啊，或者沙发上也行，你就地取材什么的，都行。」</p>
+<p>我看着陆聿安的耳根逐渐染上粉红。</p>
+<p>「可是这会不会太突然了？」</p>
+<p>我：「当然不会啊，你还相不相信大师了？」</p>
+<p>这条消息发出后，陆聿安就再也没有回复。</p>
+<p>我等了好一会儿，偷偷瞄他。</p>
+<p>他脸上并没有什么多余的表情，保持着他一贯的高冷。</p>
+<p>难道是不愿意？</p>
+<p>我连忙埋头继续给他发消息，试图做他的思想工作。</p>
+<p>「她肯定喜欢这样的啦，你不要担心。</p>
+<p>「如果你试过了不灵验，我双倍补偿你！</p>
+<p>「哎呀，小伙子不要害羞……」</p>
+<p>最后一行字，我没有打完。</p>
+<p>因为陆聿安不知道什么时候已经过来了。</p>
+<p>他右膝卡在沙发上，顺势把我摁倒，禁锢在沙发和他的胸膛之间。</p>
+<p>像是下定了极大决心一般，眼神里跳跃着某种火焰。</p>
+<p>我正在敲屏幕的手一松。</p>
+<p>手机就掉在了陆聿安的膝边。</p>
+<p>他本要落下的亲吻一滞。</p>
+<p>我惊慌地想要伸手去捞我的手机。</p>
+<p>「你，你干嘛呢！」</p>
+<p>但是整个人被他紧紧圈住，除了叫喊，根本伸不过去。</p>
+<p>挣扎间，陆聿安已经捡起了我的手机。</p>
+<p>他划拉了几下屏幕，双眼微微眯起。</p>
+<p>我的心脏在那一瞬间几乎快要跳出胸腔。</p>
+<p>完……完蛋了！</p>
+<p>陆聿安转头看了看我，几乎是咬着牙说出的那几个字：</p>
+<p>「替身大师？</p>
+<p>「林听，你？」</p>
+<p>他叫我名字的时候，语气尤其危险。</p>
+<p>夫妻两年，他这样的语气我很熟悉。</p>
+<p>代表着他此刻想要把我给刀了的心情。</p>
+<p>我缩了缩脖子，试图装傻：</p>
+<p>「……啊？」</p>
+<p>陆聿安忽然被气笑了：</p>
+<p>「我就说，这个大师怎么会那么厉害。」</p>
+<p>我扭头拿了个靠枕挡住自己的脸。</p>
+<p>「我不知道，我什么都不知道……」</p>
+<p>陆聿安力气很大。</p>
+<p>他等了一会儿，一把拨开我的靠枕，又急又凶的吻就落了下来。</p>
+<p>嘶，有点重。</p>
+<p>……</p>
+<p>「喜欢这样？</p>
+<p>「你直说就可以。」</p>
+<p>耳畔是他带着揶揄的暧昧低语。</p>
+<p>我羞愧地捂住眼睛。</p>
+<p>别的不说。</p>
+<p>他，他真的好会啊……</p>
+<p>13</p>
+<p>我以为，小号暴露以后，陆聿安会暴怒，然后把我打入小黑屋。</p>
+<p>毕竟，敢这么骗他的人，我应该还是头一份。</p>
+<p>但没想到的是，他什么也没说。</p>
+<p>虽然有些喘不上气，我还是把头深深地埋进了沙发窝里。</p>
+<p>救命啊。</p>
+<p>我居然怂恿陆聿安强吻我。</p>
+<p>还被他发现了！</p>
+<p>陆聿安一脸玩味地看着我：</p>
+<p>「原来，这才是你最真实的想法。」</p>
+<p>我不是，我没有，你别瞎说啊。</p>
+<p>他全然没有要放过我的意思，继续调侃：</p>
+<p>「大师，今晚还要靠着我的胸肌入睡吗？</p>
+<p>「或者，还要我继续露腹肌吗？」</p>
+<p>……</p>
+<p>啊啊啊啊。</p>
+<p>我的脑子已经完全炸掉了。</p>
+<p>掉马的羞耻感它围绕着我。</p>
+<p>陆聿安却不以为意：</p>
+<p>「耍了我这么久，感觉如何？」</p>
+<p>我战战兢兢，如履薄冰：</p>
+<p>「我、我错了……」</p>
+<p>他勾唇笑笑，伸手在我的脑袋上揉了一把：</p>
+<p>「你没错。</p>
+<p>「你只是想摸摸腹肌，又有什么错呢？」</p>
+<p>我有些愕然。</p>
+<p>嗯……这是可以说的吗？</p>
+<p>我偏过脑袋，发现他正撑着下巴看我。</p>
+<p>他的笑容似乎带着蛊，嘴唇一张一合间，像在念什么魔咒。</p>
+<p>「你喜欢的话，我都可以。」</p>
+<p>说完，他忽然俯身，又蜻蜓点水般地亲了我一下。</p>
+<p>「这样可以。」</p>
+<p>我还在思考他在干什么的时候，他又抓住我的手，往他的衣服里探去。</p>
+<p>「这样也可以。」</p>
+<p>我张大了嘴巴。</p>
+<p>他却朝我眨了眨眼：「就是不知道我的愿望，大师可以满足吗？」</p>
+<p>我嘴比脑子快：「什么愿望？」</p>
+<p>他嘴角勾起一个暧昧的弧度，附耳过来，在我的耳边用气声说了几个字。</p>
+<p>我瞬间满脸通红。</p>
+<p>陆聿安也不着急，就用一种探寻中带着点期待的眼神看我。</p>
+<p>我只差一点点就要色令智昏的时候，忽然灵光一闪。</p>
+<p>之前用小号的时候，一直有件事没有问他。</p>
+<p>如今我都已经暴露了，自然更要问个清楚。</p>
+<p>14</p>
+<p>两小时后。</p>
+<p>陆聿安、我、赵晓曼三个人，在客厅面面相觑。</p>
+<p>因为小时候家里败落，我和陆聿安以前其实不如他和赵晓曼亲近。</p>
+<p>赵晓曼，也就是我一直在模仿的那位白月光。</p>
+<p>算得上陆聿安的半个青梅竹马。</p>
+<p>此刻她正泪眼婆娑地看着陆聿安：</p>
+<p>「阿聿，你还是放不下我……」</p>
+<p>陆聿安满脸铁青。</p>
+<p>我默默吃瓜。</p>
+<p>两年前，她也是这么找到我，用她人畜无害的眼睛，一滴一滴地掉小珍珠，哭得我都心疼。</p>
+<p>她那时因为家族安排，跟另一家石油企业的儿子订婚了。</p>
+<p>她一边抹眼泪一边对我说：「小林，你知道，阿聿从来不是这么唐突的人。</p>
+<p>「我下个月就要结婚了，我知道，他还放不下我……</p>
+<p>「虽然对你很不公平，但是……麻烦你多照顾他了。」</p>
+<p>我看着她那张和我有六分相似的脸，自以为恍然大悟。</p>
+<p>原来陆聿安突然邀请我结婚，是为了疗伤。</p>
+<p>我一脸郑重：「放心吧姐，我会好好照顾陆聿安的。」</p>
+<p>赵晓曼对我的这个反应好像有些错愕。</p>
+<p>但我不等她多说什么，已经拍着胸脯离开了。</p>
+<p>誓要做一个完美替身。</p>
+<p>现在想想，如果不是她的那番表演。</p>
+<p>我也不会乖乖装了这么多年的纯良小白兔。</p>
+<p>……</p>
+<p>赵晓曼还在抽抽噎噎：</p>
+<p>「阿聿，这两年来，我、我……」</p>
+<p>我对她的婚后遭遇也偶有耳闻。</p>
+<p>听说她老公因为家族势力更大，其实不太把她放在眼里。</p>
+<p>在外面玩得可花了。</p>
+<p>陆聿安冷着脸打断她：</p>
+<p>「赵小姐，除了少时我们的同学情谊，我和你之间，好像并无交集吧。」</p>
+<p>赵晓曼有些无措地抬眼：「阿聿，你……」</p>
+<p>陆聿安没给她太多反应的机会。</p>
+<p>直接站起来，居高临下地看着她：</p>
+<p>「由于你两年前的行为，让我和我的妻子之间产生了误会。</p>
+<p>「现在，请你向她解释清楚。」</p>
+<p>赵晓曼一脸无辜：「我……我有什么要解释的……」</p>
+<p>我看着她投来的求助目光，默默地别开了眼。</p>
+<p>如果不是她，我也不至于白干活那么久。</p>
+<p>其实我还是心存怨念的。</p>
+<p>陆聿安见赵晓曼不为所动，也没多说，只是掏出手机打了个电话。</p>
+<p>也不知道说的什么。</p>
+<p>十几分钟后，赵晓曼哭得一把鼻涕一把泪：</p>
+<p>「呜呜呜，小林，我错了，我不该那样跟你说……」</p>
+<p>15</p>
+<p>赵晓曼从家里离开后，陆聿安的冰山脸一秒变忧郁。</p>
+<p>我摸了摸他的脸：「怎么了？」</p>
+<p>他盯着我，撇撇嘴：</p>
+<p>「我没想到，你居然会误会我这么久。」</p>
+<p>我一时有些不知道该说什么，只能梗着脖子：</p>
+<p>「那你不也一样？」</p>
+<p>陆聿安俊脸一红。</p>
+<p>自从我给他讲过了那几张照片背后的故事以后，他就总是扬言要开除他的助理。</p>
+<p>我笑他自己傻，还给别人甩锅。</p>
+<p>他不乐意，就会翻出他和我的聊天记录：</p>
+<p>「大师，你看看，今天该实行哪一条呢？」</p>
+<p>我只能在一边无能狂怒。</p>
+<p>虽然当初提出那些的是我自己。</p>
+<p>但是，我也要面子的好嘛！</p>
+<p>他就不能假装自己摸索，然后发现刚好我也喜欢嘛？</p>
+<p>「大师，你看，你当初都说我学得不错了。</p>
+<p>「为什么现在还说不要呢？」</p>
+<p>我说不出话，只能死死咬住嘴巴，以示反骨。</p>
+<p>结果他一掐我的腰，我又不可控制地从嘴角泄出某种声音。</p>
+<p>他低头亲了亲我。</p>
+<p>「嗯，这才乖。</p>
+<p>「别憋着。」</p>
+<p>我：……</p>
+<p>我算是知道了。</p>
+<p>这人当初学习的时候，说的还真都是真心话。</p>
+<p>表面看着斯斯文文的，私底下却……</p>
+<p>16</p>
+<p>我也曾问过陆聿安，为什么喜欢我。</p>
+<p>他一脸难为情，眉宇间又有些隐隐的怨忿。</p>
+<p>「小时候，你明明说过长大了要跟我结婚。」</p>
+<p>我陷入迷茫的时候，他不知道从哪找出一个易拉罐拉环：</p>
+<p>「你用这个跟我求婚，还说我要是不娶你，就是二手货，就没人要了。」</p>
+<p>我：？</p>
+<p>仔细一想，好像是有这么回事。</p>
+<p>以前看小男生长得漂亮，我没少占便宜。</p>
+<p>什么强行表白，强行威胁，都像过家家一样。</p>
+<p>陆聿安这个小帅哥胚子，当然是我祸祸的首要对象。</p>
+<p>不过大了以后就收敛了。</p>
+<p>毕竟没有底气了。</p>
+<p>陆聿安有些委屈：「我记得清清楚楚，你倒是转头就把我忘了……」</p>
+<p>我连忙扑进他怀里：</p>
+<p>「没有没有，我没忘！」</p>
+<p>忘了也不承认。</p>
+<p>不过……陆聿安居然这么纯情的嘛？</p>
+<p>竟然真的记了这么久。</p>
+<p>陆聿安捏了一把我的脸：</p>
+<p>「你小时候，就是这么捏我的。」</p>
+<p>我想了想，好像不是。</p>
+<p>我捏他明明更狠，哪有这么温柔。</p>
+<p>还没来得及说话，他长臂揽上我的肩膀，忽然用力：</p>
+<p>「现在，我要惩罚你。」</p>
+<p>我：？</p>
+<p>真·惩罚我。</p>
+<p>没多久，听说赵晓曼家的企业被终止合作了。</p>
+<p>理由是涉嫌违规操作，产品良莠不齐。</p>
+<p>我笑：「你这算不算公报私仇？」</p>
+<p>他一本正经：「不算，这只能算合理选择合作对象。」</p>
+<p>然后又话锋一转：</p>
+<p>「不过，这时候还想着别人，是不是不太合适？」</p>
+<p>说完，他俯身在我肩膀处咬了一口。</p>
+<p>我环着他的脖颈，满脸酡红。</p>
+<p>后来，我的声音逐渐支离破碎：</p>
+<p>「不想了，再也不想了，想的只有你……你……」</p>
+<p>他环着我的腰，语气暧昧：</p>
+<p>「现在，晚了。」</p>
+<p>备案号:YXX1jKKJkn9UxxxRKMOC9ldw</p>
+<p>家有孕夫</p>
+<p>​</p>
+<p>​</p>
+<p>暗恋无声：偏偏喜欢你</p>
+<p>沉江渚月 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/06-%E4%BD%A0%E8%BA%AB%E8%BE%B9%E6%9C%89%E6%B2%A1%E6%9C%89%E5%BE%88%E5%8F%AF%E6%80%95%E7%9A%84%E5%90%8C%E5%AD%A6/" title="你身边有没有很可怕的同学？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">你身边有没有很可怕的同学？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/06-%E4%B8%80%E4%BA%9B%E7%A9%BF%E8%B6%8A%E8%80%85%E4%B8%BA%E4%BD%95%E5%A6%82%E6%AD%A4%E6%89%A7%E7%9D%80%E4%BA%8E%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5%E7%9A%84%E4%B8%96%E7%95%8C/" title="一些穿越者为何如此执着于回到原来的世界？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">一些穿越者为何如此执着于回到原来的世界？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

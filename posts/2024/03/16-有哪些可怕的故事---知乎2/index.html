@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有哪些可怕的故事？ - 知乎(2) | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/03/16-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E6%80%95%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E2/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/03/16-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E6%80%95%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E2/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="有哪些可怕的故事？ - 知乎(2)">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-16T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+  <meta name="twitter:title" content="有哪些可怕的故事？ - 知乎(2)">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="有哪些可怕的故事？ - 知乎(2)">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-03-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-03-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="7969">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">有哪些可怕的故事？ - 知乎(2)</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-03-16T00:00:00Z</span>
+          
+
+          | <span>16分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-03-16T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%9c%89%e5%93%aa%e4%ba%9b%e5%8f%af%e6%80%95%e7%9a%84%e6%95%85%e4%ba%8b%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%282%29&amp;url=https://example.com/posts/2024/03/16-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E6%80%95%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E2/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/03/16-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E6%80%95%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E2/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%9c%89%e5%93%aa%e4%ba%9b%e5%8f%af%e6%80%95%e7%9a%84%e6%95%85%e4%ba%8b%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%282%29%20https://example.com/posts/2024/03/16-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E6%80%95%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E2/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26587.jpg" alt="有哪些可怕的故事？ - 知乎(2)" />
+      
+
+      <p>有哪些可怕的故事？</p>
+<p>我和闺蜜一起住，她爱喝酒，常常很晚回来。</p>
+<p>那天我听见她在叫门，正要给她开，却收到她的微信：不要给我开门！！为什么是不要给「我」开门？</p>
+<p>门外是谁？</p>
+<p>——我在一个网站上看到我了。</p>
+<p>那是一部标题为「醉酒」的小电影，偷拍者视角，女主醉得很死，脸埋进枕头里，头发披散如水藻，一动不动。</p>
+<p>这是犯罪吧？</p>
+<p>我正准备叉掉，不小心瞟到女主左肩的粉红胎记，如遭雷击。</p>
+<p>这胎记，怎么跟我的一模一样？</p>
+<p>女主被扳着肩膀翻了个身，露出真容，最后一丝侥幸消失了。</p>
+<p>她就是我。</p>
+<p>「我」从床上滚落，惨白的脸正对镜头，看不出一丝表情，就连鼻翼都没有呼吸的迹象。</p>
+<p>「我」死了。</p>
+<p>一我？</p>
+<p>某个著名的「那种」网站？</p>
+<p>尸体？</p>
+<p>这一定是幻觉。</p>
+<p>我用冷水冲了把脸，冻得打了个哆嗦。</p>
+<p>我，赵依，没去过酒吧，没谈过男友，从小就是乖乖女，读大学三年了，基本足不出校园。</p>
+<p>怎么会有这种视频？</p>
+<p>不知何时，细细密密的水汽已蒙上洗手台的镜面。</p>
+<p>我擦去水雾，镜面缓缓显露出我的脸——一张绝望的脸。</p>
+<p>我吓得倒退好几步，后背撞在瓷砖墙壁上，冰凉的触感一丝一丝沿着脊椎蔓延到后脑勺。</p>
+<p>不，这不是我。</p>
+<p>我的脸应该是丰润的，我的唇应该是挂着笑的，我的眼睛应该是明亮亮的。</p>
+<p>我怎么可能有这么绝望的眼神？</p>
+<p>镜中人死死盯着我，流下血泪。</p>
+<p>你想干什么？</p>
+<p>我听见我的牙齿被咬得咯咯响。</p>
+<p>「救我。</p>
+<p>」我听不到她的声音，但我知道她在说什么。</p>
+<p>怎么救？</p>
+<p>你是小电影里那个人吗？</p>
+<p>你为什么要变成我的样子？</p>
+<p>你不是已经死了吗？</p>
+<p>「我就是你。</p>
+<p>」不，你不是。</p>
+<p>我拼命摇头。</p>
+<p>我冷，身上好冷，我冷得全身发抖。</p>
+<p>重，空气好重，我喘不过气。</p>
+<p>我该怎么办？</p>
+<p>门被推开，乔乔踩着高跟鞋，醉醺醺歪歪扭扭地走进来，浓重的酒味和香水味冲得我瞬间惊醒。</p>
+<p>乔乔是我的室友，跟我是两个极端，她永远是人群中最亮眼的那一个。</p>
+<p>大家都刚走出灰头土脸的高中时代，学着打扮没多久，刚学会怎么遮瑕怎么涂粉底液，画出的眼线还歪歪斜斜，夹睫毛的时候还忍不住鬼哭狼嚎，乔乔微微昂起那妆容精致的脸，连下巴的颌线都完美到无可挑剔，自然而然地脱颖而出。</p>
+<p>她的眼神勾人，举手投足不自觉地带着撩人气息，就算站在光秃秃的教室，也让人分分钟生出灯红酒绿的错觉。</p>
+<p>说实在的，她不是男生们喜欢的那款，或者说，男生们不会承认自己喜欢这款。</p>
+<p>毕竟是校园嘛，清纯校花才值得推崇。</p>
+<p>关于乔乔的风言风语，尤其不堪，「不知道多少人用过了」「给钱就能上」。</p>
+<p>有不少同学声称，见过乔乔坐上校门口的豪车，还不是同一辆，各个说得有鼻子有眼。</p>
+<p>我向来不听这些流言蜚语，众口铄金、积毁销骨的道理我还是懂的。</p>
+<p>我跟她原本没有交集，直到有一天，我看到她在哭。</p>
+<p>女孩的哭分两种，一种是梨花带雨，楚楚可怜，一种是不顾形象，涕泪齐下。</p>
+<p>乔乔是后者。</p>
+<p>我从未见过这么狼狈的她。</p>
+<p>初春的风料峭寒冷，杜鹃紫红色的花丛中，她一身红衣半蹲半跪，紧咬着拳头，痛苦地哀嚎着，眼泪大股大股涌出。</p>
+<p>睫毛膏哭成两行黑雨，把脸上浓艳的妆容毁得一塌糊涂，有一种彩墙被风雨剥蚀后的苍白。</p>
+<p>比杜鹃更艳，比杜鹃更单薄。</p>
+<p>我递上湿巾，她的目光有些躲闪，有些难堪，不过还是接受了我的好意。</p>
+<p>那是我们友谊的开端，看，我们多像《左耳》里的小耳朵和黎吧啦。</p>
+<p>乔乔的室友和她水火不容，我和乔乔搬出去合租，关系突飞猛进。</p>
+<p>乔乔还特意订制了一对闺蜜吊坠，两枝玫瑰紧紧缠绕着Z、Q两个字母——我们名字的首字母。</p>
+<p>乔乔对着镜子补妆，悠悠然提醒，「小依，镜面是试不出色号的。</p>
+<p>」色号？</p>
+<p>我连忙眨了眨眼睛。</p>
+<p>镜面上赫然是两条竖直的口红痕迹，哪有什么血泪？</p>
+<p>「待会儿带你做头发，后天就要跟男神聚餐了哦。</p>
+<p>」啊，差点忘了。</p>
+<p>乔乔前些天给我介绍了个男神，八块腹肌，帅得掉渣的那种。</p>
+<p>可刚刚被那么一吓，就算李现约我，我也没了兴致。</p>
+<p>听我讲完小电影的内容，乔乔吓了一跳，「尸体肯定是错觉，偷拍倒是有可能……你好好想想，有没有断片过？</p>
+<p>」「我不喝酒的。</p>
+<p>」我家教很严，不许碰酒。</p>
+<p>「不一定是酒。</p>
+<p>」乔乔神色严峻，「对付你这种乖乖女，多的是手段。</p>
+<p>你仔细回忆回忆，和男生出去玩时，有没有犯困、意识恍惚过？</p>
+<p>」「我从来不跟男生单独出去玩的。</p>
+<p>」我仔细回想，实在想不出。</p>
+<p>我胆小，再加上爸妈千叮咛万嘱咐，平时还是很小心的。</p>
+<p>乔乔皱眉思索半天，「听你说的样子，应该是宾馆偷拍，我们先看看能不能认出地方。</p>
+<p>」乔乔打开那个视频。</p>
+<p>偷拍的视角，女主醉得很死，脸埋进枕头里，她抬起头——一个很多人脸熟的日本演员。</p>
+<p>乔乔一脸黑线，「你想分享小电影就直说，怎么还编个故事来吓我？</p>
+<p>」不可能啊，我怎么会连自己都认错？</p>
+<p>我再三辨认，可事实证明，那就是个普通的小电影，主角不是我，更不是死人。</p>
+<p>「你每天多吃点木瓜努力发育一下，不然，你说看错我都没法信。</p>
+<p>」乔乔拖着我离开宿舍，直奔美发店。</p>
+<p>托尼老师已经开始咔咔剪头发的时候，我才慢慢回过神。</p>
+<p>乔乔给我挑了个二次元发型，绿茶公主切，平刘海，齐脸两鬓，黑长直，特别像《地狱少女》里的阎魔爱，纯真中带一点魅惑。</p>
+<p>乔乔赞叹不已，连连拍照，「小依，这也太适合你了吧。</p>
+<p>」不，不能要这个发型。</p>
+<p>我的身体开始颤抖，本能在抗拒这种发型，不对，不是抗拒，是恐惧。</p>
+<p>我的脸色苍白，牙齿冷得咯咯作响。</p>
+<p>我终于明白我在害怕什么了，小电影里的我就是这个发型。</p>
+<p>我捞起剪刀，在乔乔和托尼老师震惊的目光中，咔嚓剪下一大把头发。</p>
+<p>我在害怕什么？</p>
+<p>二乔乔晚上有约，我在灶上咕嘟着雪梨汤，等她回来一起喝，哦对，顶着周冬雨那款俏皮短发。</p>
+<p>为了拯救我那咔嚓一剪，足足消耗了三个托尼老师。</p>
+<p>为了不让自己乱想，我点开男团选秀，选择用男色麻痹自己。</p>
+<p>米卡深情的声线让我的心怦怦跳，又憨又直的甘望星让我笑厥过去，赞多和和刘宇的共舞，更是让我亢奋得差点打翻显示器。</p>
+<p>让我清醒的是寒意，很冷。</p>
+<p>未免太安静了些。</p>
+<p>这栋楼的租客都是学生，这个时间本该有嬉笑吵闹各种声音，打电话的，玩游戏的，刷剧的，今天却只有死沉沉的安静。</p>
+<p>窗外起了好大的雾。</p>
+<p>我开窗，夜雾肉眼可见地向宿舍弥漫。</p>
+<p>风呼呼吹着，吹得香樟树叶哗啦哗啦响，塑料袋飞卷上天。</p>
+<p>奇怪，这么大风也吹不散雾吗？</p>
+<p>电脑开始自动播放视频，又是那部小电影。</p>
+<p>主角还是我，而且是短发，我新剪的短发。</p>
+<p>我浑身发颤，仿佛被潮湿、黏稠、沉重的雾包围。</p>
+<p>不对，不是仿佛，我就是被浓雾包围。</p>
+<p>浓雾似乎有了重量，压在我胸口，我喘不过气来。</p>
+<p>微信提示音响起，是乔乔发来的，「不要给我开门。</p>
+<p>」不要给我开门？</p>
+<p>还没等我反应过来乔乔这句话是什么意思，敲门声响起，乔乔甜腻腻的声音传来，「亲爱的，我忘带钥匙了，开一下门。</p>
+<p>」我看了看手机，又看了看门，不知所措。</p>
+<p>梆——梆——梆——敲门声异常迟钝，一下一下，就像行动迟缓的丧尸。</p>
+<p>「乔乔，是你吗？</p>
+<p>」我壮了壮胆子，大声问话。</p>
+<p>「亲爱的，我忘带钥匙了，开一下门。</p>
+<p>」乔乔回答，跟前一句一字不差。</p>
+<p>我听清楚了，话里有滋滋啦啦的杂音，是录音！梆——梆——梆——我连忙给乔乔视频通话，她那边镜头摇晃得厉害，看不到她的脸，只能看出她在全力奔跑。</p>
+<p>乔乔哼哧带喘地抢先说：「别信她，我马上回来。</p>
+<p>」不等我回答，乔乔挂断。</p>
+<p>门外乔乔的声音再次传来，「亲爱的，我忘带钥匙了，开一下门。</p>
+<p>」这玩意儿进不了门，给了我一点底气，我大声喊：「你就这一句话吗？</p>
+<p>！」敲门声停了，沉寂得非常吓人，我有点后悔戳穿她的破绽了。</p>
+<p>声音再次响起。</p>
+<p>「亲爱的，我代购的小黑管到了，你帮我取一下。</p>
+<p>」「小依，小依依，帮我点一下到嘛，高数课我实在不想去。</p>
+<p>」「啊——老娘心动了啊。</p>
+<p>刚撩的小哥哥，男神级别的，一点折扣都不打，我发照片给你看。</p>
+<p>」……是我和乔乔的通话录音。</p>
+<p>乔乔的手机通话自带录音功能，这些是我们乱七八糟的聊天内容。</p>
+<p>那句「亲爱的，我忘带钥匙了，开一下门」也是不久前的聊天内容。</p>
+<p>我确信，只有乔乔的手机才有这些。</p>
+<p>那跟我发微信「不要给我开门」，跟我视频通话的人是谁？</p>
+<p>「就是开不了口让她知道，就是那么简单几句我办不到……」门外，乔乔播放一首《开不了口》。</p>
+<p>我紧张到满脑门冷汗，不知道该不该相信她，她突然放情歌当背景音乐。</p>
+<p>我忽然明白乔乔的意思了，她开不了口，她说不了话！我开了个门缝往外看。</p>
+<p>她没有嘴。</p>
+<p>鼻子下面是一片空白。</p>
+<p>无嘴乔乔一把推开房门，钳住我的手往外扯。</p>
+<p>我大力挣扎，可她的手就跟铁铸的一样，纹丝不动，触感冰冷。</p>
+<p>我惊惶大叫起来，可无人回应，整座宿舍楼似乎只有我们两个。</p>
+<p>我摔打踢踹，手腕被钳得瘀青，还是无法挣脱。</p>
+<p>「你放开她！」乔乔疯狂地冲来，把无嘴乔乔撞了个趔趄。</p>
+<p>乔乔拉着我的手就往房间逃窜，乔乔喘着粗气，感受到她手掌的温度，这种紧张时刻，我竟感觉到一丝丝的幸福，没想到乔乔居然不顾危险来救我。</p>
+<p>可无嘴乔乔钳着我另外一只手，我痛得尖叫。</p>
+<p>我被钳着的手稍稍松开，无嘴乔乔悄悄在我掌心塞进一样东西，乔乔用力把我拽进房间，砰地关上房门。</p>
+<p>我藏了心思，悄悄攥紧拳头，猜测无嘴乔乔给我的究竟是什么。</p>
+<p>「我不是说了别给我开门吗？</p>
+<p>」乔乔背靠着门，气急败坏地抱怨。</p>
+<p>门是防邪祟的，主人不邀请，它进不来。</p>
+<p>「这到底怎么回事？</p>
+<p>」我有太多的疑惑要问。</p>
+<p>「一时间说不清楚，你一定得相信我，不然我们就完了。</p>
+<p>」乔乔神色紧张，紧紧抓着我的手臂，抓得我生疼。</p>
+<p>「我……我……」我当然相信你了，我正准备这么说，宿舍忽然断电，一片漆黑。</p>
+<p>我的心沉了下来。</p>
+<p>我摸出来无嘴乔乔给我的东西了，是我和乔乔的闺蜜吊坠。</p>
+<p>她开不了口，只能用这种方式证明自己。</p>
+<p>「乔乔，」我咽了咽口水，「外面的那个是什么？</p>
+<p>」乔乔盯着我，伸出手，「握住我的手。</p>
+<p>」温暖、柔软，不愧是SK-II保养出来的手。</p>
+<p>乔乔看穿我的心思，嘴角勾出嘲讽的笑意，「那现在呢？</p>
+<p>」指尖的温软滑腻瞬间变得冰冷、坚硬，钢铁一般，和门外的无嘴乔乔并无二致。</p>
+<p>「这、这是……怎么回事？</p>
+<p>」我连忙甩开乔乔的手，倒退好几步，紧张看着她。</p>
+<p>「声音、气味、触感都会欺骗你，记忆会欺骗你，情感更会欺骗你。</p>
+<p>」乔乔狠狠抓住我的双臂，手指长出尖尖的爪子，扎得我手臂生疼，「说，你相信的是我。</p>
+<p>」乔乔表情癫狂，她的五官开始扭曲，渐渐揉成一张熟悉的脸。</p>
+<p>我的脸。</p>
+<p>脸上流下血泪。</p>
+<p>「说，你相信的是我。</p>
+<p>」我摇头，不住摇头。</p>
+<p>门外，敲门声再度响起，梆——梆——梆——是我，这玩意儿是我招来的，是我害乔乔陷入危险中。</p>
+<p>她不顾性命来救我，又说不出话，可我不相信她，还把她关在门外。</p>
+<p>「诡物」发现了我掌心的闺蜜吊坠，目光中露出仇恨，「什么玩意儿都能骗你！一个破吊坠，你就相信她了？</p>
+<p>」不，这不是破吊坠，这是乔乔与我友谊的见证。</p>
+<p>我死死攥着吊坠，掌心被硌得生疼。</p>
+<p>「你放手！」不，坚决不放。</p>
+<p>「乔乔，我相信你。</p>
+<p>」我冲着门外大喊，「我相信的一直都是你。</p>
+<p>」这句话仿佛给了我无穷力量，「诡物」怔住，松开了擒住我的手。</p>
+<p>浓雾开始散了。</p>
+<p>我的视野开始模糊，意识昏昏沉沉，还握着吊坠不放。</p>
+<p>三紫红色杜鹃花丛中，一身艳丽红衣的乔乔号啕大哭。</p>
+<p>其实那天我看到了她手腕的瘀青，闻到了她身上的酒味混杂了其他气味。</p>
+<p>我阅历少但不代表我蠢，一个醉酒的女孩会经历些什么，为什么会在大清早哭，我大概猜得到。</p>
+<p>关于乔乔的流言并非空穴来风，但我看到了她受到的伤害，我相信那天她眼泪冲刷的黑雨。</p>
+<p>我头疼得厉害，记忆碎片如同幻灯片一样一帧接着一帧。</p>
+<p>掌心有点疼，是被什么东西划破了吗？</p>
+<p>鼻腔里满是消毒水的气味，我应该是在医院。</p>
+<p>我撑开眼皮，看到乔乔泫然欲泣的脸，「不就是一个破吊坠吗？</p>
+<p>你不要命了？</p>
+<p>」从乔乔口中，我知道了昨晚的真相。</p>
+<p>雪梨汤洒了，浇灭了煤气灶，我看选秀的时候不知不觉煤气中毒。</p>
+<p>我已经逃到宿舍门口，只差一步就安全了。</p>
+<p>可吊坠卡在洗手台缝隙里，我死死抓着吊坠不撒手。</p>
+<p>若不是乔乔回家早，我已经凉透了。</p>
+<p>我查了资料，人在缺氧的情况下，濒死之际会出现幻觉。</p>
+<p>也就是说，昨晚那些诡异事件拥有科学的解释。</p>
+<p>回到宿舍后，我打开电脑，小电影果然是正常的，不是我，更不是我的尸体。</p>
+<p>我再三照镜子，确信她真的不存在。</p>
+<p>世界恢复正常，再也没有灵异事件发生。</p>
+<p>乔乔拉着我搭配衣服，都是我没尝试过的风格。</p>
+<p>用她的话说，漂亮都是钱堆出来的，跟男神聚餐，土里土气怎么行？</p>
+<p>一切都走向正轨，可那些画面我始终忘不掉。</p>
+<p>忘不掉小电影里僵硬的躯体，忘不掉镜子里的血泪，忘不掉她恶狠狠的话语：「声音、气味、触感都会欺骗你，记忆会欺骗你，情感更会欺骗你。</p>
+<p>」她这话什么意思？</p>
+<p>为什么会突然消失？</p>
+<p>我翻查网站账户信息，里面盗摄者还真不少。</p>
+<p>厕所、酒店、浴室，没有一个地方是安全的。</p>
+<p>就连在外租房，自己的房间，也不见得安全，有一个房东在租户的洗澡间里装了针孔摄像头。</p>
+<p>如果不观察深渊，哪知道深渊里竟有一双双不怀好意的眼睛？</p>
+<p>我还混入酒吧捡尸群。</p>
+<p>世界上怎么有这么恶心的群体？</p>
+<p>说是捡尸，其实更多的是下药、灌酒。</p>
+<p>他们肆意炫耀「战利品」，一般是同学、同事、亲戚，甚至自己的女朋友。</p>
+<p>他们一边做着禽兽行径，一边嘲讽这些女孩，骂她们下贱。</p>
+<p>我深深感知到这个世界的恶意。</p>
+<p>我跟乔乔聊起这些，乔乔变了脸色。</p>
+<p>她抱我入怀，轻拍着我的肩膀安慰，「你可以相信我。</p>
+<p>」乔乔跟我不一样，她见识比我广，知道这个世界的光怪陆离。</p>
+<p>「还好有你在，不然我就要对这个世界绝望了。</p>
+<p>」我抱紧乔乔，「过两天再聚餐吧，我还有点事。</p>
+<p>」有些事，我必须确认一下。</p>
+<p>很快就到了跟男神和他的朋友聚餐的日子。</p>
+<p>我做了万全功课，不去偏僻的地方，不去乌烟瘴气的场所，包厢的门要敞开，劝酒一律不喝，饮料在视线外超过十秒就换一杯。</p>
+<p>学校从未教过女性安全课，这些都是我从血淋淋的案例里学来的。</p>
+<p>可事实告诉我，我想多了。</p>
+<p>他们选的是正常餐厅，没有灌酒，也没有开不合时宜的玩笑，只是贴心地聊一些女孩喜欢的话题。</p>
+<p>我就知道，乔乔精挑细选的人当然是靠谱的。</p>
+<p>看到我们的闺蜜吊坠，男神的脸色有些怪异，「没想到你们关系这么好。</p>
+<p>」乔乔揽着我的肩膀，笑嘻嘻递上饮料，「那当然，我们是最好的闺蜜。</p>
+<p>」男神开车送我回去的途中，我感觉一阵阵眩晕。</p>
+<p>「停车。</p>
+<p>」我有气无力地叫。</p>
+<p>男神瞟我一眼，没有搭理，嘴角的笑意让我心底发寒。</p>
+<p>我知道，我的功课白做了，尽管我一再小心，还是着了道。</p>
+<p>「停车！」我取下安全带，拼着最后的力气去抢方向盘。</p>
+<p>这招也是网上学来的，近乎同归于尽的招数，比跳窗或是被拉去陌生地方要安全得多。</p>
+<p>「你想死吗？</p>
+<p>」男神果然被这疯劲吓了一跳，连推带踹，想把我弄开。</p>
+<p>在我二人僵持下，车差点冲出护栏，男神连忙紧急刹车，我趁机推开车门。</p>
+<p>另一辆车挡在我面前，乔乔下车，疑惑地拉住我，「怎么了？</p>
+<p>」「他下药了。</p>
+<p>」来不及过多解释，我拉起乔乔的手向远处奔去，可乔乔反而死死拉住我，「你这几天看反面新闻魔怔了，你盯得那么死，他们哪有机会下药啊？</p>
+<p>」乔乔说得没错，我一直盯着他们，生怕他们有小动作，现场只有一个人我不会防备。</p>
+<p>我看向乔乔，乔乔还在继续劝说，「大家出来就好好玩，干吗闹得不开心？</p>
+<p>」看着她的嘴唇一张一翕，神色淡定，我什么都懂了，「是你给我的那杯饮料，对不对？</p>
+<p>」乔乔不说话了。</p>
+<p>他们已经围了上来，她不需要再演戏。</p>
+<p>她看着我，眉眼俱是冷的。</p>
+<p>「为什么？</p>
+<p>」我问她。</p>
+<p>有人狠狠抽了我一巴掌，我伏倒在地。</p>
+<p>「为什么？</p>
+<p>」我声音嘶哑，从怀中掏出闺蜜吊坠。</p>
+<p>乔乔狠狠拽断闺蜜吊坠，扔进绿化带，「几块钱的玩意儿，你还真当回事儿了？</p>
+<p>」乔乔贴近我的耳朵，「你知不知道，你自以为是、高高在上的模样有多可憎？</p>
+<p>」乔乔冷笑，「你以为你是谁？</p>
+<p>小说看多了，就想着来拯救我吗？</p>
+<p>省省吧。</p>
+<p>」不，不是这样的，那个在杜鹃花丛里哭泣的乔乔，她不是这样的。</p>
+<p>看着面目陌生的乔乔，我只剩下一个问题，「我们的友谊完全是假的吗？</p>
+<p>我们有那么多快乐时刻，都是假的吗？</p>
+<p>」乔乔愣了愣，「那天我哭，你不该来安慰我的。</p>
+<p>我已经毁了，你凭什么好好的？</p>
+<p>」原来如此。</p>
+<p>一切都有了答案，我站直身体，哪里还是眩晕的模样？</p>
+<p>「声音、气味、触感都会欺骗我，记忆会欺骗我，情感更会欺骗我。</p>
+<p>」我郑重看着乔乔，「乔乔，我不相信你了。</p>
+<p>」熟悉的寒意浸入我的身体，我知道，是她回来了。</p>
+<p>那天我选择相信乔乔，她便消失，一切回归正常。</p>
+<p>可一个问题始终萦绕在我心头，我信任乔乔，但她真的值得信任吗？</p>
+<p>于是我推迟了聚餐时间，用这两天时间，花钱花时间到处找人，以好好了解我这个闺蜜。</p>
+<p>她交好过很多女孩，基本上都是乖巧听话的类型，时常带她们出去「见见世面」。</p>
+<p>这些女孩后来都沉默了。</p>
+<p>我甚至找到一个退学的女孩，她是山里走出的女孩，对城市充满忐忑和期待。</p>
+<p>可惜，引她走入这座城市的人是乔乔。</p>
+<p>女孩们总是被耳提面命，要小心，小心熟悉的男人，小心陌生的男人，女孩们都很警觉。</p>
+<p>可是面对同性，面对闺蜜，女孩们很容易放下戒心。</p>
+<p>男神是钩子，乔乔是催化剂，后面紧跟着暴力、强迫、拍摄、威胁。</p>
+<p>这是一条由无数女孩艳尸铺就的修罗场，没有人能够全身而退。</p>
+<p>女孩们的血泪，化作乔乔脸上精致的化妆品，化作她招摇的名牌包包。</p>
+<p>听着警笛声越来越近，男神们和乔乔慌乱了神色，我笑了。</p>
+<p>一切都该结束了。</p>
+<p>四我回到房间。</p>
+<p>我承认，这个房间承载有不少我和乔乔的回忆，我们一起笑一起闹，一起看电影，一起聊男人，一起吃臭烘烘的螺蛳粉，只有在我面前，乔乔才会抛下女神那一面，跟我一起傻乐。</p>
+<p>我以为我是特殊的。</p>
+<p>推开窗，阳光细细密密洒在眉毛上，温暖徜徉。</p>
+<p>灰喜鹊踏在香樟树枝叶间，幸福地振动羽毛。</p>
+<p>活着真好。</p>
+<p>我突然想家了。</p>
+<p>我想妈妈做的红烧肉了，我想陪爸爸再看一遍《亮剑》，我想告诉他们，我很机警，我保护了自己，我想……一阵寒意忽然而来，裹挟全身，我知道，「她」又来了。</p>
+<p>我轻车熟路来到洗手台前，看向镜中，冲她微微一笑。</p>
+<p>镜中的我回以微笑。</p>
+<p>「你是来拯救我的吗？</p>
+<p>」她不说话，脸上是淡淡的哀伤。</p>
+<p>「你是谁？</p>
+<p>」我问。</p>
+<p>「我就是你。</p>
+<p>」她无声地用口型回答。</p>
+<p>我不是，我……我心中一个激灵，连忙打开电脑，再次打开那个小电影。</p>
+<p>身体僵直的女主角被翻过身，露出真容，还是我。</p>
+<p>不是已经结束了吗？</p>
+<p>我剪下一撮头发，小电影中那人头发也少了一撮。</p>
+<p>我用漆笔在掌心画一条线，那人掌心就多了条线。</p>
+<p>仿佛有人事先已写好结局，不论我怎样努力，都无法改变。</p>
+<p>我冲到镜子前，大声质问：「这到底怎么回事？</p>
+<p>」镜中人哀伤地看着我，她的脸颊出现一丝裂缝，随即又是一丝，转眼之间，碎纹满脸。</p>
+<p>「谢谢你。</p>
+<p>」伴随着几不可闻的声音，她散逸作漫天灰尘。</p>
+<p>她消失了。</p>
+<p>再没有人能帮我。</p>
+<p>回家。</p>
+<p>这个念头一旦生起，便不断滋长蔓延。</p>
+<p>留在家里，留在爸爸妈妈身边，留在从小长大的房间里，就永远不用面对腌臜的现实，就永远不会遭遇可怕的命运。</p>
+<p>走出房门，天气很暖，甚至称得上炎热，仿佛我不知不觉间错过了整个季节。</p>
+<p>回家。</p>
+<p>我看着高铁窗外呼啸而过的风景，一遍一遍幻想爸妈见到我时的狂喜。</p>
+<p>如果可以，我再也不要离开他们了。</p>
+<p>我看见熟悉的城市，我听到亲切的乡音，我甚至能感受到家乡的空气。</p>
+<p>可为什么距离家越近，我的心越空？</p>
+<p>好像有无休无止的风从我心口呼啸而过。</p>
+<p>家门口的大槐树投下浓重的树荫，奇怪，今年大槐树树叶长得真早，明明是初春，看起来竟是盛夏光景。</p>
+<p>大门有些衰败，落满灰尘，奇怪，老妈那么爱干净的人什么时候学会偷懒了？</p>
+<p>该不会生病了吧？</p>
+<p>我连忙开门。</p>
+<p>门锁有些锈蚀，门框簌簌落下的尘土呛得我打了个喷嚏，这里很久没有人出入了。</p>
+<p>我心里满满都是不好的预感，冲进院中。</p>
+<p>触目所及，一片荒凉。</p>
+<p>老爸心爱的茶座，每天都要小心擦拭，现在上面落满灰尘。</p>
+<p>老妈精心伺弄的几盆兰花，彻底干成枯草。</p>
+<p>我走进正屋，一眼就看到摆在正中的黑白相片。</p>
+<p>我的遗照。</p>
+<p>我还是乖乖女的模样，羞怯地笑着，根本不知道世间有什么污浊的事。</p>
+<p>原来我已经离世这么久了呀。</p>
+<p>我死了，只有这个可能，才会让曾经温暖的家，变成这般破败田地。</p>
+<p>为什么？</p>
+<p>为什么我和我的家人要承受这些？</p>
+<p>我看到我的手慢慢变淡。</p>
+<p>我要消失了吗？</p>
+<p>我的身体轮廓变得模糊，快要融进空气中。</p>
+<p>我飘在空中，我看到有人的电脑上在播放那个小电影，女主角是我，公主切黑长直的头发，左肩有块粉红胎记。</p>
+<p>小电影中的我身体僵直，已没有呼吸。</p>
+<p>这不是灵异现象，这是真相。</p>
+<p>我知道我是谁了。</p>
+<p>我是不存在的。</p>
+<p>准确地说，我是赵依临死的执念。</p>
+<p>那个被闺蜜设计，沦入地狱的少女，她无力挣扎。</p>
+<p>她的惊惧、痛苦、绝望，如潮水席卷，淹没了一切。</p>
+<p>生机杳然间，她看到了盗摄者的镜头。</p>
+<p>如果自己早些知道世间丑恶，那该有多好，多好……（完）*本故事为虚构，如有雷同纯属巧合.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/03/16-%E4%BA%B2%E6%88%9A%E5%AE%B6%E7%9A%84%E7%86%8A%E5%AD%A9%E5%AD%90%E5%81%9A%E8%BF%87%E4%BB%80%E4%B9%88%E8%AE%A9%E4%BD%A0%E7%94%9F%E6%B0%94%E7%88%86%E5%8F%91%E7%9A%84%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" title="亲戚家的熊孩子做过什么让你生气爆发的事？ - 知乎(1)">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">亲戚家的熊孩子做过什么让你生气爆发的事？ - 知乎(1)</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/03/15-%E5%8F%91%E7%8E%B0%E6%9A%97%E6%81%8B%E7%9A%84%E4%BA%BA%E6%9C%89%E4%BA%86%E7%94%B7%E6%9C%8B%E5%8F%8B%E6%88%96%E5%A5%B3%E6%9C%8B%E5%8F%8B%E6%97%B6%E4%BB%80%E4%B9%88%E6%84%9F%E5%8F%97---%E7%9F%A5%E4%B9%8E/" title="发现暗恋的人有了男朋友或女朋友时什么感受？ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">发现暗恋的人有了男朋友或女朋友时什么感受？ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

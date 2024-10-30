@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你是怎么变自律的？ - 知乎(1) | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/06/25-%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%98%E8%87%AA%E5%BE%8B%E7%9A%84---%E7%9F%A5%E4%B9%8E1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/06/25-%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%98%E8%87%AA%E5%BE%8B%E7%9A%84---%E7%9F%A5%E4%B9%8E1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="你是怎么变自律的？ - 知乎(1)">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/5346.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/5346.jpg">
+  <meta name="twitter:title" content="你是怎么变自律的？ - 知乎(1)">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="你是怎么变自律的？ - 知乎(1)">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3490">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/5346.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">你是怎么变自律的？ - 知乎(1)</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-06-25T00:00:00Z</span>
+          
+
+          | <span>7分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-06-25T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%bd%a0%e6%98%af%e6%80%8e%e4%b9%88%e5%8f%98%e8%87%aa%e5%be%8b%e7%9a%84%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29&amp;url=https://example.com/posts/2024/06/25-%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%98%E8%87%AA%E5%BE%8B%E7%9A%84---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/06/25-%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%98%E8%87%AA%E5%BE%8B%E7%9A%84---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%bd%a0%e6%98%af%e6%80%8e%e4%b9%88%e5%8f%98%e8%87%aa%e5%be%8b%e7%9a%84%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29%20https://example.com/posts/2024/06/25-%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%98%E8%87%AA%E5%BE%8B%E7%9A%84---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/5346.jpg" alt="你是怎么变自律的？ - 知乎(1)" />
+      
+
+      <p>你是怎么变自律的？</p>
+<p>不熬鸡汤，说点真实有用的。</p>
+<p>好几个朋友说我好自律，对自己太狠了！其实我之前是重度拖延症者，做事拖拖拉拉，效率极低。</p>
+<p>注意力也很难集中，本来是上网找点资料，不知不觉就刷起了微博、微信。</p>
+<p>现在，我的一天过的忙碌而充实。</p>
+<p>早上自觉早起，阅读一小时，然后进入紧张而忙碌的工作状态。</p>
+<p>碎片化时间刷刷知乎，晚上有空去健身房健身，一周3-4次。</p>
+<p>回到家还会学习一会，晚上11点准时复盘，总结一天的得失。</p>
+<p>这样的状态我持续了两年多，人生也因此发生了彻底的变化，从一个颓废的底层青年，转行为自媒体小编，然后成为公司的产品经理，接着辞职做自由职业者，现在又成为一家公司的创始人。</p>
+<p>优秀始于自律，我深刻的认同并践行这句话。</p>
+<p>如果整天沉迷手机，毫无节制的熬夜、贪恋美食，这样的人生就像「豆腐渣工程」一样，很容易坍塌。</p>
+<p>就像这位读者一样：而始终保持自律的人生，就像指数一样，人生不断处于上扬状态。</p>
+<p>所以，如果你也想变自律，那么一定要耐心的看完这篇文章。</p>
+<p>一、自律的几个误区首先和大家聊聊自律的误区，这些误区会让你进入自律的死胡同，耗费大量的时间精力。</p>
+<p>1、自律不是完美主义很多人觉得，自律就应该做到极致，每天早睡早起、坚持阅读、不刷剧不玩游戏，不吃高热量食物，中间不能出现一丝纰漏。</p>
+<p>否则，就是不自律。</p>
+<p>只能说，能做到固然好，但大多数人是做不到的，尤其是刚开始的时候，你从「放养」的状态一下子想转变为极度自律。</p>
+<p>这么大的转变幅度，我敢说几乎没人能做到。</p>
+<p>问题正是出在这里，许多人因为一两次的拖延、偷懒，就开始自我否定，觉得自己太差劲、烂泥扶不上墙。</p>
+<p>当这种负面情绪越积越多，就会给大脑施加压力，最后发展为破罐子破摔。</p>
+<p>总是静不下心看书——算了不看了；所以，当你因为偷懒贪玩而耽误了正事，不要去否定、苛责自己，从而放弃自律。</p>
+<p>最好的办法，就是利用好余下的时间，能做多少做多少。</p>
+<p>2、陷入道德许可效应自律，还需要警惕另外一个误区。</p>
+<p>有些人在学习一小时后，觉得自己做了一件光荣的事，应该得到补偿。</p>
+<p>所以奖励自己刷半小时抖音，玩几把王者。</p>
+<p>本来只是玩半小时，结果却陷入其中无法自拔。</p>
+<p>还有些人，去了两天健身房，非常有成就感，这个时候，吃一顿烧烤竟然毫无心理负担。</p>
+<p>《自控力》中提到，这是道德许可效应。</p>
+<p>心理学家调查了那些纵容自己的人，他们认为自己一直很自控，没有罪恶感，认为自己理应得到奖励，正是这种补偿的心理使人堕落！因为刷剧耽误了去图书馆学习——反正都延误了，继续刷吧；玩王者到凌晨，被强制下线——都已经这么晚了，再看看小说吧。</p>
+<p>啊啊啊，太真实了有没有。</p>
+<p>我以前正是这样，看了一个小时的书，成就感满满。</p>
+<p>看到自己这么努力，于是我告诉自己，这时候玩王者是理所应当的，结果，整个一天我都在玩游戏······同样，当我们取得一些成绩的时候，这时大脑告诉你：「这段时间辛苦了，应该好好休息」。</p>
+<p>这一歇就是失去了动力······你看，道德许可效应就在我们身边。</p>
+<p>在你努力改变的时候，另外一个声音不断在耳边对你说，「你已经很努力了，停下来休息会，刷刷抖音，看看电视吧」。</p>
+<p>一旦陷入了道德许可效应，你会越来越纵容自己。</p>
+<p>该如何避免呢？</p>
+<p>答案是，不要去做与目标相悖的事。</p>
+<p>学习完了，你可以奖励自己一个鸡腿，但不要沉迷在抖音里；健身回来，你可以喝一杯含糖低的水果茶，但不要摄入高热量的烧烤。</p>
+<p>总之，你可以给自己奖励，但不要去做阻碍目标实现的事。</p>
+<p>二、要有明确的目标我们大部分的拖延、迷茫、焦虑都是因为没有目标引起的。</p>
+<p>因为你没有目标，做事没有方向感，注意力不集中，很容易被其他事情吸引，比如明明是准备学习的，却一直在聊天刷剧。</p>
+<p>有人可能觉得这是鸡汤，实际上可以用心理学的知识来解释，当你很想完成一件事，你的潜意识会产生强烈的渴望，驱动你努力实现它。</p>
+<p>在电影《当幸福来敲门》里，克里斯因长期拖欠房租被扫地出门，带着儿子到处流浪，夜宿公厕。</p>
+<p>陷入困境的克里斯非常渴望改变，所以，当他从一个开超跑的男人嘴里了解到股票经纪人这个职业之后，决定应聘股票公司的实习生，哪怕没有薪水也愿意干。</p>
+<p>他一遍卖器材，一遍做着股票实习生的工作。</p>
+<p>最后，历经艰难，他终于转正，也成功改变了自己的命运。</p>
+<p>我为什么要讲这个电影呢？</p>
+<p>当你有了明确的目标，会蹦出巨大的动力，帮助你克服一切困难。</p>
+<p>所以，如果你想变得自律，最重要的是找到自己的目标。</p>
+<p>要找到目标其实不难，看看你最想改变的是什么。</p>
+<p>比如说，你想考上某个学校的研究生、你想通过英语四级、你想提升收入、你想减掉多余的脂肪等等。</p>
+<p>你改变的意愿越是强烈，动力就越强。</p>
+<p>我当初能够成功转行，最主要的原因就是当前的收入太低，我非常渴望提升收入。</p>
+<p>改变现状的动力很强，让我从一个厌恶读书，看到书就头痛的人，开始每天早起阅读。</p>
+<p>没有明确的目标，这一切都不会发生。</p>
+<p>因为改变是非常痛苦的，如果你的动力不够强，很可能尝试一下就会放弃。</p>
+<p>三、要形成规范化的生活那些优秀的人，不是因为他们有异于常人的意志力。</p>
+<p>心理学家给出了一组数据，人的一天中，受自己掌控的事情只有5%，其他95%都是不可控的。</p>
+<p>所以，你看的那些鸡汤文，只是打了一针鸡血，短暂提升了意志力。</p>
+<p>当意志力耗尽了之后，该怎样就怎样，这就是鸡汤文没用的原因。</p>
+<p>优秀的人之所以优秀，是因为他们养成了一个又一个的好习惯，这些习惯融入了他们的生活作息当中，到了固定的时间，习惯就会推动他们做这件事，根本就不需要靠意志力。</p>
+<p>大家想想高考的时候就知道，每天的学习那么辛苦，依然可以坚持下来，因为那时的生活规范有序。</p>
+<p>每天几点起床、几点上课、几点吃饭，什么时候做什么事，全都给你安排好了。</p>
+<p>几乎天天都是这样，如此规范有序的生活，最有利于习惯的养成。</p>
+<p>所以，高中阶段，特别是高三，应该是我们大部分人最自律的一段时期。</p>
+<p>而一到大学，再想坚持做一件事就很难。</p>
+<p>说到底，就是要养成一个又一个习惯。</p>
+<p>但是，一次只能改变一个习惯。</p>
+<p>很多人一次性给自己设定很多目标，最后还是失败了，为什么？</p>
+<p>因为意志力有限，改变意味着消耗意志力，一次改变好几个习惯，意志力早就耗尽了。</p>
+<p>一定要有耐心，切勿急功近利。</p>
+<p>我们可以先培养一个核心习惯，核心习惯能起到四两拨千斤的效果，引起连锁反应，带动其他习惯的养成。</p>
+<p>比如我，养成的核心习惯就是阅读，后来，为了阅读，不得不早起，所以养成了早起的习惯。</p>
+<p>为了保持精力，我又养成了健身的习惯。</p>
+<p>实际上，健身也是一种核心习惯。</p>
+<p>当你养成了各种习惯之后，就像滚雪球一般，你整个人的生活都高度习惯化了，你的人生也会从此开挂。</p>
+<p>四、一些精力管理的技巧1.增强意志力的方法锻炼：锻炼可以极大的增强人的意志力，因为锻炼需要不断挑战自己，这可以提升我们意志力的极限。</p>
+<p>早睡早起：保持充足的睡眠，人的精力旺盛，思维活跃。</p>
+<p>缺乏睡眠，人会觉得反应迟钝，头脑不灵光。</p>
+<p>2.提升注意力的方法冥想：冥想的好处很多，不仅可以提升睡眠质量，还能改善负面情绪，提升注意力质量，活跃思维，研究表明，只要十几小时的冥想，人们的注意力显著提升，很多患有抑郁症的人，用冥想的方法，疗效显著。</p>
+<p>冥想的方法，平躺着，做深呼吸，注意力放在呼吸上面，可以跟着呼吸的节奏在心里默念「呼」「吸」，如果注意力分散了，就重新来过，每天5分钟的冥想，会让你受用无穷。</p>
+<p>番茄工作法：在25分钟内专注于你做的事情，抛开一切与当前无关的事，这可以极大的提升注意力。</p>
+<p>3.排除干扰项切断干扰信号：我们的手机里，时不时会收到各种app的信息推送，大部分人总会习惯性的看一下，然后陷入无尽的拖延中。</p>
+<p>隔离这些信息的干扰，能够让你变得更加自律。</p>
+<p>假如你实在控制不了玩手机的冲动，这里给你推荐一个app，叫「不做手机控」。</p>
+<p>（不是广告）这个app，能够帮你拦截骚扰推送。</p>
+<p>而且，只要你设置好学习时间，就会强制性锁机，这个时间段内，你的手机就是一块砖头。</p>
+<p>无论你重启、卸载都没用。</p>
+<p>所以，你只能乖乖学习。</p>
+<p>注：「不做手机控」只适合安卓机，苹果用户可以用「番茄todo」，安卓用户这两个都能用。</p>
+<p>保持环境整洁：环境对人的影响很大，打扫房间卫生，保持环境整洁，营造一个良好的学习氛围。</p>
+<p>OK，以上，就是我变自律的过程。</p>
+<p>方法其实挺简单，但是，我想强调一点，自律需要一个过程，不可操之过急。</p>
+<p>一次只能改变一个习惯，养成一个习惯后，才可以进行下一个习惯的养成。</p>
+<p>五、写在最后王小波说，人一切的痛苦，本质上都是对自己无能的愤怒。</p>
+<p>而自律，则是让一个人越来越优秀的途径。</p>
+<p>因此，如果一个人总是独来独往，没什么娱乐活动，业余时间都用来做看书、学习、健身这些「无聊」的事，千万别小看他。</p>
+<p>他这一系列自虐行为的背后，目的只有一个：有强烈的欲望去追求他想要的东西。</p>
+<p>这类人，迟早是个牛逼的人。</p>
+<p>看到最后的同学，如果对你有用，请赞一个吧！.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/25-%E7%A6%BB%E5%BC%80%E4%BA%86%E6%B8%A3%E7%94%B7%E7%9A%84%E4%BD%A0%E5%90%8E%E6%9D%A5%E6%80%8E%E4%B9%88%E6%A0%B7%E4%BA%86---%E7%9F%A5%E4%B9%8E/" title="离开了渣男的你，后来怎么样了？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">离开了渣男的你，后来怎么样了？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/25-%E5%A4%AA%E5%AD%90%E8%A2%AB%E9%80%BC%E5%A8%B6%E4%BA%86%E6%88%91/" title="太子被逼娶了我">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">太子被逼娶了我</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

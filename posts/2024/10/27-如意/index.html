@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如意 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/10/27-%E5%A6%82%E6%84%8F/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/10/27-%E5%A6%82%E6%84%8F/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="如意">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-27T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26670.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26670.jpg">
+  <meta name="twitter:title" content="如意">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="如意">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-10-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="10712">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26670.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">如意</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-10-27T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-10-27T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a6%82%e6%84%8f&amp;url=https://example.com/posts/2024/10/27-%E5%A6%82%E6%84%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/10/27-%E5%A6%82%E6%84%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a6%82%e6%84%8f%20https://example.com/posts/2024/10/27-%E5%A6%82%E6%84%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26670.jpg" alt="如意" />
+      
+
+      <p>如意</p>
+<p>我的心上人，一意求娶我长姐。</p>
+<p>长姐闻讯连夜便跑了，换成我坐入喜轿，得偿所愿。</p>
+<p>谁料成亲当晚，长姐的死讯传入王府。</p>
+<p>闻言，我的心上人咳出一口浓血。</p>
+<p>在本该夫妻对拜之际，溅脏了我的红盖头……</p>
+<p>1</p>
+<p>我的长姐应如是，是穆州战功赫赫的女将军。</p>
+<p>她战死沙场的消息早不来晚不来，偏要挑在我大喜的好日子里，叫红事变白事。</p>
+<p>闻讯，四座哗然。</p>
+<p>唯我平静而笃定，不忘小声提醒：「王爷，继续吧，别过了好时辰。」</p>
+<p>仿佛战场上死的，不过是路边的阿猫阿狗，与我没有半分干系。</p>
+<p>齐怀安抬起颤抖而冰冷的手，指尖停在我面前，蓦地一把扯下我的红盖头。</p>
+<p>没了这道遮挡，他眼中的愤怒与苦痛，直直对着我双目的无辜。</p>
+<p>宾朋满座，这下的焦点，都落在我脸上。</p>
+<p>片刻，我笑开了：「王爷怎么这么迫不及待呢？」</p>
+<p>我弯腰，把红盖头拾起来，自己个儿又给盖回去，整理得体体面面。</p>
+<p>「拜完天地，如意就是您的人了，不差这一会儿。」</p>
+<p>我扯着红绸，小步凑近他，咬着牙轻声道，「难道王爷，要打应家的脸，打我尸骨未寒的姐姐的脸吗？」</p>
+<p>他微鼓着腮帮，终究一言不发。</p>
+<p>片顷之后，我俩一并弯腰。</p>
+<p>额头碰上额头，礼便成了。</p>
+<p>2</p>
+<p>花烛之夜，空闺之中，我蒙着红盖头，候了齐怀安一个时辰。</p>
+<p>脚步声在屋外交错来回，却尽是些等着笑话，看新妇如何独守空闺的小厮丫头们。</p>
+<p>侍奉的春柳先等不及了，问我：「王妃，要奴婢去寻寻吗？」</p>
+<p>「不必，别扰了王爷做正经事。」</p>
+<p>我当然知道他的正经事是什么，也知道眼下，我的正经事是什么。</p>
+<p>我看不清眼前的东西，在手边东摸摸又西摸摸，半天终于抓住那只冰冷的杆子。</p>
+<p>我对着春柳晃晃，试图递给她：「来，帮帮我。」</p>
+<p>她手足无措：「奴婢要怎么帮王妃？」</p>
+<p>「帮我，把盖头挑开，让我知道做王爷新娘的滋味儿。」</p>
+<p>这就是我的正经事。</p>
+<p>春柳惊措地跪下，连连磕头，嘴里一遍遍呼喊：「奴婢不敢，王妃折煞奴婢，王妃折煞奴婢……」</p>
+<p>她喊一声，就磕一下，磕得扑通扑通的，声响一下比一下大，震得我心肝儿疼。</p>
+<p>我在红盖头下苦苦地笑了，笑得嘴角不住发着抖：「可我是新娘子啊，难道，难道真要新娘子自己揭吗？」</p>
+<p>我鼻头泛着酸，春柳还在不住地磕，磕着磕着，她先哭出了声。</p>
+<p>她一哭，我更烦了，便派了另个活：</p>
+<p>「你找找屋子里的纸，都给王爷送去，别叫他不够烧的，辜负了他的一番情谊，耽误了他的正经事儿。」</p>
+<p>春柳闻言，又添了个顶响的头，爬起来逃似的跑了。</p>
+<p>真是有意思，旁人成亲，是春宵一刻。</p>
+<p>我成亲，却跟上坟似的，我就是个石碑，被人磕了又磕。</p>
+<p>那晚，齐怀安也没闲着，他在屋外烧了一宿的纸，望了一宿的月。</p>
+<p>因离京前，长姐允诺我说：</p>
+<p>「若是此行有去无回，我就化作天上明月，夜夜守着意儿，绝不叫意儿孤苦。」</p>
+<p>这话明明不是说给他听，却被他偷了去，充作了他往后的痴念。</p>
+<p>3</p>
+<p>成亲第二日，齐怀安急不可耐地将喜袍换成素缟。</p>
+<p>他一身白衣，连夜嘱咐人在王府的厅堂里立上了灵位。</p>
+<p>上面写着——「爱妻应如是」。</p>
+<p>「那我是谁呢？」</p>
+<p>我着一席鬼魅似的红装，是昨日拜堂的喜服，在他身后发问。</p>
+<p>彻夜未眠，我眼熬得通红，摸来王府正厅，却再一次被这灵位灼得生疼。</p>
+<p>穿着这一身，杵在王府下人面前，我是将颜面丢在脚下踩。</p>
+<p>我仿佛是在告诉全府上下，洞房夜之后，我仍被打包得完完好好，是入府时的完璧之身。</p>
+<p>他不理我，愣愣地盯着长姐的名字。</p>
+<p>灵位都比我好看，那才是他认准了的皇帝赐婚给他的妻子。</p>
+<p>我是个赝品，是冒名的替身。</p>
+<p>半晌，他指指我一身红艳，随口冲下人吩咐：「扒了。」</p>
+<p>侍卫们面面相觑，无一人上前。</p>
+<p>「本王说扒了！」</p>
+<p>终于，他们还是决定效忠于主子，效忠这折辱人的吩咐。</p>
+<p>「扒什么，我自己脱就是了。」我喝住逼近的男丁们，伸手解了第一颗扣子。</p>
+<p>随即，第二颗，第三颗……</p>
+<p>我越解，手越抖得厉害。</p>
+<p>最后一颗，我哆哆嗦嗦半天，长指甲被丝线缠住。</p>
+<p>我狠着心一扯，指甲断裂劈开，丝绸撕裂的声音，荡在我姐姐的灵位前。</p>
+<p>喜袍终于松垮垮地滑落掉地，挂着我指尖的血，聚在我脚边，真像是一滩浓血。</p>
+<p>「还继续吗？」我问齐怀安。</p>
+<p>我的手停在亵衣领口，故意撑着口气揶揄他：</p>
+<p>「王爷怎么偷懒呢，新婚燕尔，洞房花烛，这衣服，该是王爷动手脱的……」</p>
+<p>「不要脸。」他拂袖而出，却停步在门前，背对我道，「往后，你想留在这也好，想回将军府也罢，都可以。」</p>
+<p>「但就算留下，」他补上，「留在王府，你也只是个妾。」</p>
+<p>灵位上的名字，才是他的正妻。</p>
+<p>「三茶六礼，八抬大轿，娶回家一位妾。」我在他身后不住拍手，「王爷真是，好大的手笔。」</p>
+<p>他回头，怒目而视我的笑，更是哪哪都不顺眼：「王妃新丧，你在这跪她一日吧。」</p>
+<p>她是你哪门子的正妃呢？</p>
+<p>我在心里啐道，她明明宁可死都不愿嫁给你。</p>
+<p>4</p>
+<p>我不跪。</p>
+<p>起初，也只是不跪，后来，我嫌王府的正厅放着灵位晦气，便干脆叫人撤了去。</p>
+<p>不多时，齐怀安果然破天荒地主动来我房中。</p>
+<p>当然，是兴师问罪。</p>
+<p>彼时，我正坐在桌边专心致志地绣着鸳鸯。</p>
+<p>打从知道要嫁给齐怀安，我就开始绣这块帕子，想着以后被他收在腰间的模样。</p>
+<p>如今，差着最后一片浮萍，便大功告成。</p>
+<p>可惜了，这对鸳鸯碍着齐怀安的眼。</p>
+<p>他劈手夺过，撕得稀碎，狠狠掷于脚下，恨不能再添上两脚，碾进泥土里才甘心。</p>
+<p>我有些恼了，抬起头，死死地盯着他看。</p>
+<p>齐怀安不惧，甚至凑得更近，捏起我下巴：「你再凶一点，凶一点，更像你姐姐。」</p>
+<p>我眨巴眨巴眼，把目光收回去，掸开他的手，蹲下来拾那些碎帕子，一片一片地收拢进手心里。</p>
+<p>「王爷，我想了想，我还是不做妾了。」我垂着脑袋，轻描淡写。</p>
+<p>5</p>
+<p>当晚，我换了身玄衣，收拾东西，回将军府。</p>
+<p>谁料轿辇才走了一半，身后便传来「哒哒」的马蹄声，迅捷，汹涌，不讲道理。</p>
+<p>来人拦住我的座驾，掀开我的轿帘，正是齐怀安。</p>
+<p>他叫停轿夫，打量我半晌。</p>
+<p>骨节分明的手蓦地探进来，指尖顺着我的面颊，走上我的下颌，将我脸蛋拖起。</p>
+<p>「本王改主意了。」</p>
+<p>片顷后，他饱含玩味和诡计地笑了。</p>
+<p>在我身上，他似乎寻到了某种自我慰藉。</p>
+<p>齐怀安的主意说改便改，我除了受着，老老实实下轿，别无他法。</p>
+<p>「上来，回府。」骑在红鬃马上，他冲我伸出手。</p>
+<p>我不敢接。</p>
+<p>他恨铁不成钢，一俯身子，轻易将我拦腰抱上马：「要是你能有你长姐一成的能耐……」</p>
+<p>别说一成，在他眼里，我连如是的小指头都比不上。</p>
+<p>「没事，脸蛋像，也够了。」</p>
+<p>他将我打横搁在马背上，一只手扯缰绳，一只手勾住我的腰不让我掉下去。</p>
+<p>他说：「如意，你今儿还真是好几次，差点叫本王认错了人……」</p>
+<p>6</p>
+<p>那一晚，齐怀安终于想起我们是新婚夫妇，理应同枕而眠，应花烛洞房。</p>
+<p>我被他逼到床榻一隅，瑟瑟地裹着被子哆嗦。</p>
+<p>「意儿抖什么，是冷吗？」他捞我的脸，迫得更近。</p>
+<p>然后含了口酒，不由分说覆上我的唇，将辛辣的烈酒度入我的唇齿：「酒最暖人。」</p>
+<p>我何曾受得住这样的热辣，呛得连声咳嗽，面红耳赤。</p>
+<p>齐怀安见状哈哈大笑，将我搂在怀里，轻拍我的背，蓦地又凝住笑意，沉声道：「她在北羌黄土之下的尸身，想来也很冷吧。」</p>
+<p>说他是煞风景吧，偏又情深得动人。</p>
+<p>沉默中，他把酒尽数灌入自己口中。</p>
+<p>仿佛只要这样迷着神智，就真能骗过自己，他是在与长姐红烛帐暖。</p>
+<p>「她是有那样好的才貌，我却也不贪这些。」酒入了肺腑，齐怀安诉起些衷肠，「如是自己可能都忘了，十多年前，后宫之中，她就是那样拿着剑，救我母妃于危难。后来在长街上见她第一眼，我便认了出来……」</p>
+<p>醉意渐浓，他唤起如是的名字。</p>
+<p>唤着唤着，齐怀安的手按上我孱弱的肩膀，我那举不起来刀枪的肩膀。</p>
+<p>再轻轻一推，我便为他鱼肉。</p>
+<p>「长姐新丧，不合适。」</p>
+<p>这样的关头，我搬出他的说辞，抵住他精硕的胸膛，阻止他的动作：「按规矩，我要为长姐守丧。」</p>
+<p>「丧多久呢？」他呵着酒气问。</p>
+<p>「王爷丧多久？」我反问。</p>
+<p>「京城谁不知道，宝亲王，从不讲规矩。先皇死时，我也没丧。」</p>
+<p>他还想进攻，我鱼儿似的从他胳膊下溜走，光着脚跑开了。</p>
+<p>「如是……如是……」</p>
+<p>我的身后，是他恶咒般的念叨。</p>
+<p>7</p>
+<p>自此，我成了他长夜无宁的唯一慰藉。</p>
+<p>这份慰藉，源于我脸蛋有九分像长姐，一母所出的胞姐，哪有不像的理儿呢？</p>
+<p>哪怕在他眼里，其他的，我是连一成都比不上如是。</p>
+<p>哦，对了，还有一点像的，——我不让他碰。</p>
+<p>他也不强来，只是很快，他似乎失了对我的兴趣。</p>
+<p>也许是我太软太糯，太不像长姐刚烈飒爽的性子。</p>
+<p>齐怀安迅速找到了下一个目标。</p>
+<p>我知道的时候，小厮们已经开始张罗那位姑娘入府了。</p>
+<p>我躲在正厅的门后悄悄瞅她，真奇怪，她明明和长姐容貌一点都不像。</p>
+<p>长姐的脸蛋清瘦冷峻，是北边的风沙刮出来的棱角，这姑娘却圆圆的，瞧着倒是有福气的样子。</p>
+<p>「别在这藏着，出去看。你长姐能杀敌无数，你怎么人都不敢见？」</p>
+<p>我还是被齐怀安逮住了，他拧着我的后颈肉，像提起一只猫，非要将我往府门外扯。</p>
+<p>我挣扎着不肯走，他就干脆把我抱起来，竖着搁在那姑娘面前。</p>
+<p>「这是宝亲王妃，你跪她，给她行个大礼。」</p>
+<p>他介绍我，明明背里，他总说我是个妾。</p>
+<p>姑娘愣了下，跪了，直着腰板，瞧我的眼神，充斥满满的不屑与嫌弃。</p>
+<p>「跪深点。」齐怀安却一手摁住了她的头，直到将她额头抵上石砖。</p>
+<p>他终于满意：「这才有见宝亲王妃的样子。」</p>
+<p>8</p>
+<p>后来，他贴身的小厮告诉我。</p>
+<p>那姑娘是齐怀安从戏园子里讨回来的。</p>
+<p>「她演花木兰，就是古书里替父从军的那位女将军。」</p>
+<p>小厮学着比划了两下：</p>
+<p>「她在戏台上舞刀弄枪，可真像个将军，神气极了，就像是上过战场，杀过人的样子，叫王爷看直了眼。」</p>
+<p>原是如此。</p>
+<p>齐怀安待我的长姐，还真是痴情。</p>
+<p>可惜越痴情，就越滑稽。</p>
+<p>他怎么竟不知，我长姐明知凶多吉少，宁可逃婚，也要奔赴沙场出生入死，为的，不过是那位戍守边疆的大将尹青山，那道引她前行的明月光。</p>
+<p>她英勇杀敌，奋不顾身，一身新伤叠旧痕，说到底，也不过是为保全自己的心上人罢了。</p>
+<p>当晚，我便看见那位新宠「木兰」姑娘的纸窗上，映着她的影儿，和她手上软剑的影儿。</p>
+<p>「你软绵绵的，花拳绣腿，怎么能杀人？」齐怀安倚在榻上，不满地发话。</p>
+<p>「王爷难道不喜欢奴家软绵绵吗？」她扭动着腰肢，影儿越来越小。</p>
+<p>不一会儿，软榻上，她缩进齐怀安的怀里：「女人哪有真打打杀杀的，像个什么样子。」</p>
+<p>齐怀安脚一蹬，她猝不及防，从榻上滚到地上，吃痛地捂着腰哀嚎。</p>
+<p>所谓戏子，演得也不过如此，叫我这看戏的都看乏了。</p>
+<p>一阵冷风过，混着柳絮往鼻腔里钻，我打了个喷嚏。</p>
+<p>榻上的身子立刻直起来：「谁在外面？」</p>
+<p>我转身要跑，齐怀安的声音又传出来：「如意？」</p>
+<p>「不是如意！」我喊了一声，钻进小路躲入了梅花林。</p>
+<p>身后的门应声打开，他戏谑地继续叫嚣：「那是哪来的小贼？别叫我抓着，不然准将她好好修理。」</p>
+<p>9</p>
+<p>夜深，我独自蜷在被窝里。</p>
+<p>有个人，他温热的掌心覆于我的额头。</p>
+<p>我警觉地睁开眼，迅雷之势摸出枕头下的匕首，对准了他。</p>
+<p>借着月色看清楚脸，我才发现，竟是齐怀安。</p>
+<p>我手一哆嗦，匕首掉到地上，他笑起来：</p>
+<p>「我还以为，意儿拿不动匕首呢，不想你这小白兔，也是又利爪的。」</p>
+<p>他的语气充满了惊喜，仿佛我会用匕首，就又多了三分像长姐。</p>
+<p>我红着脸侧过身，拿被子蒙住头：「王爷来做什么，是『木兰』姑娘的腰肢不够软吗？」</p>
+<p>「听见你在屋外的动静，怕你病了，又怕你纵是没病，夜里贪凉踢被子，回头再把自己弄病了。」</p>
+<p>「也不用王爷管。」</p>
+<p>话一出口，我意识到失言，捂着嘴道：「什么屋外的动静？哪来的动静？」</p>
+<p>齐怀安笑了，不由分说坐上了床，掀开我的被子就要往里面拱。</p>
+<p>我搡他，却真是软绵绵，半分气力也没有：「莫叫新妇守空闺，去她屋里。」</p>
+<p>「如意，你当疼疼我。」他不讲道理地抓住我一双手，「我夜里贪凉踢被子，需要人看着，别回头叫我病了。」</p>
+<p>我咬着唇憋着笑：「那王爷，不用去修理那小贼了？」</p>
+<p>「现在就修理。」话音未落，他一双手落上我腰窝，痒得我笑得打起滚来。</p>
+<p>夜半，我感到身边空落落的。</p>
+<p>望去，齐怀安独自立在床边，对着那一轮残月的方向。</p>
+<p>「自己贪凉，谁也看不住王爷。」我坐起来，我知道他在看什么，那不只是月亮，还是他的白月光，他的应如是。</p>
+<p>「她的棺椁下个月就要回京了。」齐怀安的嗓子哽着，「不知道我有没有好福气，能讨着她的尸身，入齐家的坟。」</p>
+<p>你怎么不问问，她想不想入你家的坟呢？</p>
+<p>我在心里腹诽着，你拼死想护她的命，奈何她拼死上战场，也不过是为了护另一人性命罢了。</p>
+<p>10</p>
+<p>很快，如他所愿，长姐的棺椁回了京。</p>
+<p>一同回来的，竟还有长姐的心上人，尹青山。</p>
+<p>那是阔别五年后，他第一次回京。</p>
+<p>他是抗旨而返。</p>
+<p>多年前，尹青山违逆军令，在两国休战后，擅自孤身杀入敌营，斩杀敌军数十人，令龙颜大怒，下令他终身戍守边疆，不得回京。</p>
+<p>如今，他冒着抗旨的死罪，也非要走上这一遭。</p>
+<p>偏巧那日，「木兰」姑娘突发重疾，我束手无策，只好去宫外侯齐怀安。</p>
+<p>没等到他下朝，我先等到了尹青山。</p>
+<p>见我第一眼，这铮铮铁骨的大将，眼眶便湿了。</p>
+<p>他慌乱着，不知是该先行礼，还是该先道贺，或者只是叙叙旧，叙叙关乎长姐的事。</p>
+<p>后来，还是我先施了个礼：「将军的书信，我收到了。」</p>
+<p>我凑近，附在他耳边小声道：「你信里说的，都是真的对吧？」</p>
+<p>他颤了一下，不答我。</p>
+<p>我自顾自笑着絮叨：「青山哥哥，你同我说说，我长姐近来吃喝还好吗，她想我吗，可有什么话托你和我说？」</p>
+<p>尹青山还是不答我，半晌，他逼出来一句：「臣……十分挂念王妃。纵然远在千里，也求王妃，千万平安顺遂，无虑无忧。」</p>
+<p>我心里「咯噔」了一下：「还有吗？」</p>
+<p>话音未落，身后传来齐怀安的声：「如意，回家了。」</p>
+<p>我同他走了，脚下却似是坠了石头，千斤之重，迫得人一步三回。</p>
+<p>11</p>
+<p>我与齐怀安的轿子行了半里路，尹青山到底还是追了上来。</p>
+<p>面对我灼灼目光，他咬着牙，同我说了句废话：</p>
+<p>「臣擅自抗旨入京，犯了大罪。可，臣如今能得见王妃无恙，便是明日被推上午门斩首，也是值了。」</p>
+<p>齐怀安沉着脸，一揽我薄削的肩，将我脑袋揽进他的胸膛。</p>
+<p>我的手松开，轿帘落下。</p>
+<p>轿子又走了一炷香的功夫，我再次探出脑袋，向后望去。</p>
+<p>尹青山骑着匹老马，仍是驻在那儿，面着我离去的方向，久久挪不开步子。</p>
+<p>回到府上，齐怀安阴了张脸，一言不发。</p>
+<p>我拉他的衣角，催他快去看看重病卧床的「木兰姑娘」。</p>
+<p>他狠狠将我甩开，发着一股子无名火：</p>
+<p>「她死了你不才该开心？再没人同你争你的夫君。你就这么贤德，你不会吃醋的？」</p>
+<p>「别闹了，她病得厉害……」我再一次拉他。</p>
+<p>「尹青山既然想被斩首，不如本王遂了他的愿。」齐怀安咬着牙，恶狠狠地窜出这莫名的一句。</p>
+<p>我一怔，松开了手。</p>
+<p>「有些事情，怎么能藏得住呢？他瞧你的眼神，」齐怀安冷冷撂下一句，「同我看你长姐时，是一样的。」</p>
+<p>「你看错了，王爷眼神，一向不怎么样的。」我嘀咕了一句，做贼心虚似的跑开了。</p>
+<p>12</p>
+<p>翌日，我领着春柳儿去店里选缎子，作为今春送往各个府邸女眷的礼。</p>
+<p>我总觉得身后有人看我，可一回头，又什么动静也觉察不出。</p>
+<p>春柳指着一匹说：「这金线织的山水样式这样好看，最衬我们王妃了。」</p>
+<p>我询了个价，然后瘪瘪嘴：「好看是好看，可也太贵了，都抵上我爹爹快半月的俸禄。」</p>
+<p>挑完几匹后，我们打道回府。</p>
+<p>半途中，我又听见那老马的蹄声。</p>
+<p>我回头望去，尹青山风尘仆仆，怀里抱着匹缎子，正是天价的那段。</p>
+<p>「我记得妹妹……」他迅速笨拙地改口，「臣记得王妃喜欢青色，远道而来，不曾备礼，就随便买了匹缎子。」</p>
+<p>边疆苦寒，军饷微薄，我知道，这劳什子够他掏空经年的储蓄。</p>
+<p>「姐姐也喜欢青色，将军不能空手回去，不如，就将这缎子赠给姐姐。」</p>
+<p>「可王妃……」</p>
+<p>他还想多说两句，我断了他的念想：「王爷在府上候着我呢。」</p>
+<p>13</p>
+<p>一语成谶，齐怀安真在候着我，阴仄逼人。</p>
+<p>我看了眼春柳，她迅速垂下脑袋。</p>
+<p>想来，今日的事儿，她都说了。</p>
+<p>「你把自己当谁，宝亲王妃吗？」齐怀安捏着我的脸，叫我生疼，「你不过是个不合格的替身，连她半点样子都没有。」</p>
+<p>说着，他将我拉至他习武的院中。</p>
+<p>哐当一声，齐怀安往我脚下丢了把铁剑。</p>
+<p>不是「木兰」姑娘舞着好看的软剑，是开了刃的，能刺穿人胸膛，甚至是盔甲的那种。</p>
+<p>我本能地后撤，齐怀安却封住我的逃路，结结实实挡在我身后，将我囚在他怀里。</p>
+<p>「拿起来。」他冷着嗓子，命令我。</p>
+<p>我不住摇头：「我不会……」</p>
+<p>「这是她生前练过的剑，听话，如意，你听一次话，拿起来。」齐怀安转变策略，原本冷冰冰的嗓，兀然温柔起来，哄骗着我遂了他的心意，「你拿起来挥两下，只随便挥两下便好。」</p>
+<p>然后呢？</p>
+<p>然后我就更像长姐了是吗，就更能叫他聊以慰藉了？</p>
+<p>我依旧摇着头，不肯去捡，他抓着我的手，逼着我弯下腰，然后凑到我耳边：「如意，你听话，我就不参尹青山这一本，留住他这条命。」</p>
+<p>威胁，他当真是软硬皆施。</p>
+<p>「你能保证他安然无恙返回边疆吗？」</p>
+<p>「我能。」他应允。</p>
+<p>我知道，我这个问题只会叫齐怀安更气恼，可我不得不讨他一个承诺。</p>
+<p>讨来了，我便遂他意，颤颤巍巍捡起那柄真杀过人的铁剑。</p>
+<p>「你挥两下。」</p>
+<p>「我不行。」</p>
+<p>「你试试。」</p>
+<p>我头疼得厉害，我想扔开这把剑，齐怀安却紧紧攒着我的手。</p>
+<p>我拼命摇头，却越摇越头痛欲裂。</p>
+<p>看见一旁地上散落的盔甲，我知道，一切还没结束，齐怀安还会叫我穿上盔甲，他要打扮我，要把我打扮成应如是……</p>
+<p>「放开我！」我终于挥起剑，却是狠狠割伤他的胳膊，跌跌撞撞地逃开了。</p>
+<p>他失望地叹息了一句：「为什么，你偏偏连你长姐一成都不如，可又为什么……」</p>
+<p>后面的，我便再听不清了。</p>
+<p>14</p>
+<p>齐怀安也没说错，我确实连如是的一成都不如。</p>
+<p>和我的手无缚鸡之力不同，她是将门虎女，自小武艺卓绝，一身领兵打仗的好本事，比起朝堂上的男人们也强了百倍。</p>
+<p>两年前的秋日里，她策着红鬃马，束着高马尾，往长街上走一遭，便引得无数少年郎侧目。</p>
+<p>途径闹市，她怀里揣着的买给我的胭脂掉落在地。</p>
+<p>她就用剑鞘随意挑起一个路过少年的下巴，居高临下，笑得明艳，使唤道：「小郎君，替我捡了。」</p>
+<p>不巧，她挑的那人，是宝亲王齐怀安。</p>
+<p>齐怀安抬起头，不言语，屈膝半跪，目光却始终流连在长姐的眉眼之间。</p>
+<p>这是他难得的屈膝，平日里朝堂之上，他连皇上都不跪。</p>
+<p>「拿什么谢我？」起身后，齐怀安攒着胭脂不肯松手。</p>
+<p>长姐笑着收了长剑，一把从他手里抢过：</p>
+<p>「先赊着吧，小郎君。明日我就要离京，若有命回，你过上数月，来将军府讨。」</p>
+<p>「我怕我讨的，小姐给不起。」齐怀安眯起眼，筹谋起三个月后的攻势。</p>
+<p>以至于他不曾瞧见，长姐身后不远的轿辇中，我掀开帘子，望他望出了神。</p>
+<p>15</p>
+<p>三个月后，长姐凯旋，带着一身新伤。</p>
+<p>齐怀安真来了将军府，讨的却不是谢，而是人。</p>
+<p>他以为长姐好胭脂。</p>
+<p>于是为换长姐一眼垂青，他包下京城所有的胭脂铺子，红粉口脂一车一车往将军府送。</p>
+<p>长姐一身戎装站在府外，散着青丝，遮后颈的刀伤。</p>
+<p>见状她笑得开怀，忙不失迭，来者不拒。</p>
+<p>除了几盒留给我玩之外，其余全运去了军营，让人随便用来在教场的土地上勾勾画画。</p>
+<p>「小郎君，有这样多的银钱，不如再送我些粮草。军营里几万口人，等着吃肉呢。」</p>
+<p>甚至，她还伸手，冲齐怀安要更多。</p>
+<p>齐怀安没应她，但不过数日，朝廷就下了令，军营里这一季的口粮和军饷，都添上五成。</p>
+<p>「应姑娘还差什么？」他有的是底气。</p>
+<p>长姐也并不客气，又搬出府上的麻烦事来：</p>
+<p>「我家中有个妹妹，想寻户好人家。」</p>
+<p>「长姐尚且待字闺中，谁又敢来和妹妹提亲呢？」</p>
+<p>不愧是一句话能叫朝堂抖三抖的权臣，齐怀安轻而易举地反将一军。</p>
+<p>后来有一回，他在长街上遇着我。</p>
+<p>「小姨子，是你要寻好人家吗？」他叫我，莫名叫红我的脸。</p>
+<p>「谁是你小姨子？」</p>
+<p>「往后都是一家人，」他端详着我垂下的脑袋，打趣我，「你红什么脸？」</p>
+<p>我拔腿便跑了。</p>
+<p>不想，很快真成了一家人，却不是他想要的方式。</p>
+<p>16</p>
+<p>可也有件事儿，是齐怀安都难办的。</p>
+<p>长姐领兵北羌前夕，齐怀安在宫门口跪了整整一夜。</p>
+<p>他所求只一件事，他要娶我长姐，做他的宝亲王妃。</p>
+<p>他以为，只要这样做了，长姐就能永远逃过战场上不长眼的刀枪，永远平安，永远喜乐。</p>
+<p>我爹爹闻言急得坐立难安，就差去和他一起在宫门外跪着，将这位爷哄回去。</p>
+<p>长姐却没事儿人似的，照旧在府苑里舞剑，在教场上练兵。</p>
+<p>「一个大男人，还能跪死不成。」</p>
+<p>她无心理睬齐怀安，她的长剑出鞘，指的是东北方，是她即将出征的沙场。</p>
+<p>齐怀安跪到天明，皇帝终于走出来，他虔诚地叩了个首：「臣弟求陛下，救臣的心上人一命。」</p>
+<p>皇帝一脸蒙：「朕何时要你心上人的命？」</p>
+<p>「此次出兵北方，应将军凶多吉少……」</p>
+<p>皇帝立刻会意了，笑得莫测：「怀安，你是想驭虎啊。」</p>
+<p>多感人。</p>
+<p>啧啧，只是可惜了。</p>
+<p>齐怀安并不知道，长姐的长剑所指，除了北羌，更是那位戍守边疆的大将尹青山，是引她前行的明月光，是她拼死也要守护的人。</p>
+<p>很快，陛下的诏下了。</p>
+<p>——将应家的女儿许给宝亲王为妃。</p>
+<p>长姐闻讯连夜换上戎装，驾了匹快马逃出京城，北上而去。</p>
+<p>齐怀安跪了六个时辰，最后却只换来我替姐出嫁，到头来，是将我跪回了府上。</p>
+<p>17</p>
+<p>齐怀安娶了我，却并不好好待我。</p>
+<p>那日拿了剑之后，我起了高热，怎么都不好。</p>
+<p>齐怀安请来的名医一批批换，我的气息却越来越弱，身子也越来越虚浮。</p>
+<p>宫里的御医也来过，说我是受了惊吓，叠着心病，才如此难以治愈。</p>
+<p>一把剑就能叫人如此惊吓，齐怀安怎么也想不明白。</p>
+<p>他宁肯归结为他们都是庸医，治不好他口中「视若珍宝」的宝亲王妃。</p>
+<p>我爹也来了一趟，要接我回将军府。</p>
+<p>齐怀安不应，我爹二话不说便给这位女婿跪倒：「我已经没了一个女儿，如今，只剩如意这一个……」</p>
+<p>话已至此，他只好将我爹扶起来，行了个礼，道了一桩往事：</p>
+<p>「十多年前，我母妃还是个排不上号的美人，叫当时的钱贵妃寻了个错处，要趁着父皇不在宫中时，将我母妃拖走，私刑打死。幸而，恰逢岳母带着如是进宫探望太妃，如是那时小小年纪，却神勇万分，为了个公道，抢了侍卫的剑，守在素昧平生的母妃屋外不许人踏足半分，终于等来太后，救了我母妃一条命。」</p>
+<p>这回，轮到齐怀安跪下，冲着我爹行了个大礼：</p>
+<p>「岳丈一家，于我是救母之恩，而我，却没能照料好如意……」</p>
+<p>「爹爹。」我烧得迷迷糊糊，听见声音，迫不及待挥着手，想要抓住我爹，「爹爹，意儿不要拿剑……意儿不要上战场，不要杀人……」</p>
+<p>「好，好，不要，我们不要。」</p>
+<p>「意儿想回家……别留在这儿，别留在边疆，我们回家吧……」</p>
+<p>「好，好，回家。」</p>
+<p>我爹老了，没了当年驰骋沙场的威武，——我竟听出他在哽咽。</p>
+<p>18</p>
+<p>回到将军府，我的状态慢慢好了些。</p>
+<p>可当我偷偷同我爹说，我长姐没死的时候，他却摇着头道：「如意，你是烧糊涂了。」</p>
+<p>怎么会是烧糊涂了呢？我明明不怎么高热了。</p>
+<p>我告诉他都是真的，尹青山一早给我修了书信，告诉我这是长姐的谋划，她一早厌倦了沙场征战，只得佯死，好留在边疆，与心上人尹青山平平淡淡地一生一世一双人。</p>
+<p>爹爹摇头叹息，嘴上却说：「对，意儿说得对，是爹爹糊涂，爹爹老了，把这事儿忘了。」</p>
+<p>我心里咯噔一下。</p>
+<p>我一下子就串起来了，尹青山的闪躲，我爹的支吾……</p>
+<p>我的眼泪忍不住夺眶：「……青山哥哥骗我，是他骗我？」</p>
+<p>「没有，如意，没有人骗你，是爹糊涂了。」</p>
+<p>「姐姐……姐姐是真死了是不是，那封信只是骗我……」</p>
+<p>「如是她没死，真没死，爹爹烧了，爹爹烧糊涂了。」我爹手忙脚乱地分辩，唯恐我病中伤感，更添心病。</p>
+<p>我睁眼看他，才发现他白发下苍老的面庞，早已涕泗横流。</p>
+<p>我没法再自欺欺人假意相信，当晚，我烧得更加厉害，嘴里不住地说着胡话。</p>
+<p>我叫着如是的名字，我说我知道了，我知道是怎么回事了……</p>
+<p>我说你回来，你别死，我好想你……</p>
+<p>齐怀安很快闻讯而来，他握着我的手，将我的手贴在他的脸上：</p>
+<p>「如意，如意你只要好起来，我再不逼你做任何事，我好好待你，你不用像任何人，你就是如意，是宝亲王妃……」</p>
+<p>我张张嘴，说出口却是：「如是……我们到底，是谁做错了，怎么就这样了呢……」</p>
+<p>19</p>
+<p>到了夜里，尹青山也来了。</p>
+<p>我爹爹起先不让他进，反而是齐怀安大度了一回，主动迎出去。</p>
+<p>可他一开门，一把刀就架上他的脖颈。</p>
+<p>「你知不知道你干了什么？」尹青山攥着刀的手爆出青筋，他高高举起，狠狠挥下。</p>
+<p>最终，却停在齐怀安脸颊旁的半寸，割断了他的额发。</p>
+<p>「如意最忌惮这些，你为什么，偏要她……」</p>
+<p>他吸了长长一口气，再无奈叹出：「你知道，我为何会受罚，终身戍守边陲么？」</p>
+<p>尹青山于是讨了壶酒，说起一桩往事。</p>
+<p>约摸十年前，我爹爹带领一家老小，领着皇命，去边境犒赏三军。</p>
+<p>就是那时，尹青山与应家的女儿得以相见，一个英姿飒爽，叫他见惯不惯；一个娴静娇弱，却叫他着迷不已。</p>
+<p>他出生于边陲的将领世家，自小饱受黄土风霜，见惯了打打杀杀，哪里见过这样文静柔弱的女孩儿，顿时生出了铁汉柔情。</p>
+<p>谁料好景不长，敌军劫走了我娘，因换不来他们想要的筹码，敌军一伙人竟当着我一家的面，在城楼之上将我娘虐杀。</p>
+<p>「那时，如意就生了一场这样的病，应将军带她回京治病，临走前，她拉着我的手，求我为她报仇。」尹青山边说边灌着酒。</p>
+<p>齐怀安于是明白了：「然后，便在两军议和后，你不惜违抗君命，要除掉那伙伤害应夫人的歹人。」</p>
+<p>「是。」尹青山点点头，「再次见到如意，就是五年前了，她回边陲祭拜母亲。经过那件事儿后，她变得更加娇弱怜人，却也再见不得刀剑武器，见不得打打杀杀，惟恐触景伤情。」</p>
+<p>齐怀安不再言语。</p>
+<p>「明日，我便启程离京了。我送的是空棺椁，如是的尸身，一早按她所嘱，葬在了边陲黄土之下。」尹青山拍拍他的肩，「我怕如意伤心，便骗她如是没死。你要是有能耐，就帮我骗完她这辈子吧。」</p>
+<p>20</p>
+<p>齐怀安依旧日日来看我。</p>
+<p>我问他「木兰」姑娘见不着他，想他可怎么是好。</p>
+<p>他说人已经被撵出去了。</p>
+<p>我「哦」了一声，故作失望道：「那往后便没人舞刀弄枪看了。」</p>
+<p>「不看，不看舞刀弄枪。」他小心翼翼地咬「刀」字和「枪」字的音，生怕说重了，就变成刀在我心上砍，枪在我心口戳。</p>
+<p>我又问他：「王爷醉心长姐，究竟是喜欢当年救太妃的女娃娃，还是喜欢长街上策马奔腾的女将军呢？」</p>
+<p>他思忖良久，终究抱着我一言不发。</p>
+<p>我不依不饶：「那王爷您说，尹将军一往情深，究竟是念着当年天真无知的京城少女，还是念着如今剑都抓不住的将军府小姐呢？」</p>
+<p>他依旧不答我。</p>
+<p>我叹了口气：「可如果，一切本就颠倒了呢？」</p>
+<p>从前有个算命先生，说我和如是是双生的花儿。</p>
+<p>一朵茁壮，一朵娇嫩，可经上一场风雨，那茁壮的却被打蔫，娇嫩的反而坚毅。</p>
+<p>可茁壮也好，娇嫩也罢，两花缠着一团根，一朵没了，另一朵注定开不了多久。</p>
+<p>如今想来，倒是尹青山的信，给我续了多月的命。</p>
+<p>21</p>
+<p>其后的日子里，齐怀安待我小心翼翼百般呵护，我的病却怎么也不见好。</p>
+<p>行将就木之际，我同齐怀安吩咐：「你去给我寻把剑来。」</p>
+<p>他怔了一下，什么也没问，真去给我寻来一把。</p>
+<p>我撑着身子从床榻上爬起来，接过那柄剑，手柄一转，舞出一个剑花，一切好像回到了十多年前。</p>
+<p>我还是意气风发的将军府小姐，父母双全，爱我护我，长姐温婉娴静，马步都扎不起来。</p>
+<p>我初生牛犊，跟着爹爹习得一身武艺，不知天高地厚，就敢在后宫之后路见不平，救下不受宠的嫔妃。</p>
+<p>那时的小皇子齐怀安，拿着他娘绣的鸳鸯帕子给我做谢礼，说是他娘说的，接了谁的鸳鸯帕子，就得做鸾凤和鸣的一对鸳鸯。</p>
+<p>我没接，我说，往后我要亲手给我的夫君绣。</p>
+<p>那是我见他第一眼。</p>
+<p>我才是，最早误了终身的人。</p>
+<p>可惜，不久后，意外先不期而至。</p>
+<p>我娘在边陲惨死，我与如是皆是大受打击。</p>
+<p>不同的是，我自此对刀剑讳莫如深，远离战场杀戮。</p>
+<p>我的长姐应如是，却勤学武艺，终成战功赫赫的巾帼英雄……</p>
+<p>22</p>
+<p>我很累了，我力不从心，几乎拿不动手中的剑。</p>
+<p>我的呼吸渐渐微弱而缓慢。</p>
+<p>我哑着嗓唤齐怀安，只够气力去做最后一件事：「王爷，我妆奁里，有我之前绣的帕子，你去帮我拿来，可好吗？」</p>
+<p>他安置好我，急着步子小跑出去了。</p>
+<p>接了我的鸳鸯帕子，就要做一对鸳鸯。</p>
+<p>如是，也算是如意了吧。</p>
+<p>（全文完）</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/28-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89-_-%E7%A1%AE%E5%AE%9A%E4%BA%A7%E5%93%81%E7%9A%84%E5%95%86%E4%B8%9A%E5%8C%96%E6%A8%A1%E5%BC%8F/" title="知乎盐选 _ 确定产品的商业化模式">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">知乎盐选 _ 确定产品的商业化模式</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/27-%E6%9C%89%E6%B2%A1%E6%9C%89%E5%A5%B3%E4%B8%BB%E5%8F%88%E7%BE%8E%E5%8F%88%E9%A3%92%E7%9A%84%E6%96%87/" title="有没有女主又美又飒的文？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">有没有女主又美又飒的文？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青梅微甜 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/08/16-%E9%9D%92%E6%A2%85%E5%BE%AE%E7%94%9C/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/08/16-%E9%9D%92%E6%A2%85%E5%BE%AE%E7%94%9C/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="青梅微甜">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-16T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+  <meta name="twitter:title" content="青梅微甜">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="青梅微甜">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-08-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="10039">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">青梅微甜</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-08-16T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-08-16T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%9d%92%e6%a2%85%e5%be%ae%e7%94%9c&amp;url=https://example.com/posts/2024/08/16-%E9%9D%92%E6%A2%85%E5%BE%AE%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/08/16-%E9%9D%92%E6%A2%85%E5%BE%AE%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%9d%92%e6%a2%85%e5%be%ae%e7%94%9c%20https://example.com/posts/2024/08/16-%E9%9D%92%E6%A2%85%E5%BE%AE%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26060.jpg" alt="青梅微甜" />
+      
+
+      <p>青梅微甜</p>
+<p>初恋，旧爱，新欢</p>
+<p>1、</p>
+<p>我叫苏念念，我有一个青梅竹马，叫江晓。</p>
+<p>打我两在娘胎里，我妈和他妈就指腹为婚，性别一样结拜，性别不一样就定娃娃亲。</p>
+<p>江晓妈妈是远近闻名的大美人，跟我妈损友多年，又是邻居。</p>
+<p>所以，她一心想生个儿子，好把闺蜜的女儿娶回家。</p>
+<p>结果……显而易见……</p>
+<p>我这名字一听就是个女孩呀。</p>
+<p>可惜江晓，原本能从娘胎里就当我的未婚夫，结果一生出来就还和我打架，从幼儿园就开始打。</p>
+<p>幼儿园的时候我就是干饭王，所以长得快。</p>
+<p>打架是我单方面打他，都是我把他压制得死死的，就是一整个拿捏住了。</p>
+<p>所以为了能打赢我，江晓也把自己吃成了小胖墩</p>
+<p>我是大哥，他是小弟，老冰棍永远我先吃第一口，游戏机我玩够了他才会玩。</p>
+<p>我和别人玩，他就跟在我屁股后面，跟屁虫一样，甩都甩不掉，也不说话，就是我走哪他跟到哪，我也不会觉得烦，谁会不喜欢屁股后面跟着一个对自己言听计从的团子呢。</p>
+<p>一年级刚开学，看到分班表上——</p>
+<p>一班江晓，一班苏念念后，我绝望了。</p>
+<p>六年都不分班，这就意味着我两六年都得一起上下学。</p>
+<p>江晓似乎很高兴，一直傻乐，当天回家就干了两碗米饭。</p>
+<p>但我不高兴，我才不要小胖墩跟着我。</p>
+<p>妈妈和江晓的妈妈在一个单位上班，她们两每天一起坐公交。</p>
+<p>我和江晓在一个学校上学，我两每天一起坐公交。</p>
+<p>每次放学走去公交站的路上，我故意走得很快，小胖墩跑得气喘吁吁才跟上我。</p>
+<p>「念——念，等等，等等我！」</p>
+<p>他跑起来像长了腿的包子。</p>
+<p>「叫魂啊，我听得见！」</p>
+<p>「念念，你走慢一点呀，我要跟不上了……」</p>
+<p>「那是因为你胖，腿短。」</p>
+<p>伤人的话脱口而出，那时的我没有意识到自己的话伤害到了包子幼小的心灵，江晓的泪水在眼眶里打转，咬住嘴唇拼命不让眼泪掉下来。</p>
+<p>彼时我们女生都喜欢硬汉小生，看到他这样，我更讨厌他了。</p>
+<p>察觉到我的厌恶，小包子只敢远远跟着我。</p>
+<p>每次有不会的题，江晓都会抱着作业本敲开我家的门。</p>
+<p>江晓虽然胖，但还是完美继承了他妈的美貌，胖也是眉清目秀的胖，我妈可喜欢他，我们家他是畅通无阻。</p>
+<p>在我妈面前，我表现得很乖巧，我妈一关上门，我就拿出我的大哥气势。</p>
+<p>「哪道题不会？」</p>
+<p>「这个。」小胖手指出一道写得歪歪扭扭的算数题。</p>
+<p>「这个你也不会？吃的大米饭吃哪去了？我给你三个苹果，我拿走两个，现在你说，剩几个？」</p>
+<p>「剩 0 个。」</p>
+<p>「什么剩 0 个，3－2 是 1 啊，你还有一个苹果。」</p>
+<p>「可是有三个苹果，我都会给念念的呀。」</p>
+<p>放在现在我会感动，但是当时我真的是气不打一处来，这是算数题，给我胡说什么，笨死了他。</p>
+<p>每天晚上都能听见 c 市 b 区某栋楼里，我为了教会江晓算数题发出的怒吼。</p>
+<p>「什么关系，你说是什么关系，你说啊！」</p>
+<p>「家里有 11 颗白菜，吃了五颗，还剩几颗？」</p>
+<p>「0 颗，我会全部吃完。」</p>
+<p>「你抓了 25 只蝴蝶，我放走 15 只，你手里还有多少只？」</p>
+<p>「0 只，念念要放走，就全部放走好了。」</p>
+<p>「你有 30 块钱，你给我 20 块，你还剩多少钱」</p>
+<p>「念念，我没有那么多钱……」</p>
+<p>「那你有多少」</p>
+<p>「十块钱，全部给念念买玉米糖！」</p>
+<p>……</p>
+<p>直到六年级，一个暑假没见，江晓瘦了，虽然没有瘦多少吧，但起码看着很匀称。</p>
+<p>他本来就长得好看，瘦了一点美貌优势更明显了，在一群小学生还没长开的时候，有鼻子有眼非常容易脱颖而出，何况是江晓这种有高鼻梁双眼皮的。</p>
+<p>年级里很多女生蠢蠢欲动，胆大的直接邀请他一起回家。</p>
+<p>班花周小君堵住他，羞涩的问他能不能一起回家的时候，我承认我是有点嫉妒了。</p>
+<p>周小君皮肤白，大眼睛双眼皮肉肉脸。</p>
+<p>我六年级的时候还是内双，更要命的是我还是黄黑皮，搞得我很自卑。</p>
+<p>这种自卑体现在我身上，是我羞于参与任何抛头露面的活动。</p>
+<p>而体现在江晓身上时，是我看到他被周小君堵得慌不择路，转头看向我的时候，我视而不见，一个人跑去公交站牌等车。</p>
+<p>「念念，等等我～」</p>
+<p>小包子长成了小少年，他现在和我差不多高。</p>
+<p>自从他瘦了，我就更加自卑。</p>
+<p>他胖的时候，衬托我瘦，现在他不胖了，衬得我又黑又黄。</p>
+<p>六年级的我是自私的，气没地撒我就撒在江晓身上。</p>
+<p>我才不会等他。</p>
+<p>车来了我立马上了车。</p>
+<p>他还是跟了上来，气喘吁吁地坐在我旁边。</p>
+<p>「念念你是不是生气了，我不和周小君回家，我和念念一起回家。」</p>
+<p>江晓盯着我认真地说。</p>
+<p>然后又从兜里掏出来一把玉米糖递给我。</p>
+<p>「大哥请慢用」</p>
+<p>好吧好吧，看在玉米糖的份上，我原谅你。</p>
+<p>我赌气吃掉了全部的玉米糖。</p>
+<p>「一个也不给你留。」</p>
+<p>江晓又从兜里掏出来几个玉米糖。</p>
+<p>「好好好，全部给你。」</p>
+<p>他这怎么像哄小孩？</p>
+<p>虽然我们确实都是小孩……</p>
+<p>啊不对，我是说，我是大哥他是小弟，他怎么能突破阶级，小弟哄大哥怎么能像哄小孩。</p>
+<p>大哥要树立威信。</p>
+<p>所以玉米糖都是大哥的，小弟什么也没有。</p>
+<p>下了车，江晓一如既往想拉起我的手，我躲开了。</p>
+<p>「这条路上有狗。」</p>
+<p>扯吧，六年了，每次都说这条路上有狗，所以要拉手保护我。</p>
+<p>「哪有狗，就算有狗我也不怕。」</p>
+<p>「大哥不怕狗，小弟我怕狗，大哥能不能保护小弟？」江晓盯着我认真地说。</p>
+<p>他一拿这种认真的眼神盯我，我就受不了，还是不忍心伤害他。</p>
+<p>大哥不记小弟过，这就叫大度。</p>
+<p>「手，手伸出来啊！」</p>
+<p>「谢谢大哥～」</p>
+<p>2、</p>
+<p>小学毕业之前，江晓照例来我家。</p>
+<p>「念念，你想上哪所初中？」</p>
+<p>c 市有两所初中，a 中和 b 中。</p>
+<p>「a 中吧。」</p>
+<p>「嗯好。」</p>
+<p>以江晓现在的成绩，他完全可以去 b 市上 b 市第一高中。</p>
+<p>但我从来不会问他的选择，我知道无论我去哪，江晓永远会跟着我。</p>
+<p>我从来不担心他会被抢走，这种心安理得和他对我的放纵，养成了我的任性。</p>
+<p>我几乎从来不会考虑他的感受，因为他永远会把我放在第一位。</p>
+<p>毕业典礼那天我哭得很惨。</p>
+<p>相处六年的同学和老师，我舍不得他们。</p>
+<p>我乐衷于写同学录，班上所有人都为我写了同学录，除了江晓。</p>
+<p>他说我们永远不会分开，不用写同学录。</p>
+<p>「随便你，爱写不写。」</p>
+<p>坐在公交车最后一排，我抱着同学录不停地翻看。</p>
+<p>「我们不会分开的。」</p>
+<p>「你怎么知道我们不会分开，说不定哪天我就不和你玩了。」我没好气地回他。</p>
+<p>「我就是知道～」</p>
+<p>无厘头的话，我刚要抬杠，嘴里就被塞了一颗玉米糖。</p>
+<p>还挺识相，好吧好吧原谅你。</p>
+<p>晚上我们两家为了庆祝我们小学毕业，一起吃了烧烤。</p>
+<p>地点是我们家楼顶，江晓家提供食材，我家提供地方。</p>
+<p>大人们推杯换盏。</p>
+<p>我还是很伤感，一想到再也见不到我的小姐妹和我喜欢的林老师，我就想哭。</p>
+<p>坐在天台边吹风，这个夏天的夜只剩下蝉鸣。</p>
+<p>江晓不知道什么时候来到了我身边。</p>
+<p>「念念，还在伤心啊……」</p>
+<p>「我才没有。」</p>
+<p>「没关系的，你还会有新的朋友。」江晓越来越像个小大人。</p>
+<p>「我有新朋友就忘旧朋友，第一个就忘了江晓。」</p>
+<p>「我们不会分开的！」</p>
+<p>「这句话你都说八百遍了，你怎么知道我们不会分开。」</p>
+<p>江晓只抬头望天。</p>
+<p>半晌，他指着一颗星星对我说：「你看，那是射手座。」</p>
+<p>「哪里有射手座？」</p>
+<p>江晓拉着我的手，指出夜空中一颗正在发光的星星：「那里是天蝎座……射手座和天蝎座是绝配。」</p>
+<p>他怯怯地看了看我，又补充道。「念念是射手，我是天蝎座……念念你看，天蝎的蝎子，是不是在保护射手？所以，我会永远保护念念的。」</p>
+<p>我不知道什么是永远，也许当下即是永远。</p>
+<p>「拉钩，一百年不许变。」</p>
+<p>「谁变谁是小狗。」</p>
+<p>3、</p>
+<p>我:「钥匙。」</p>
+<p>江晓:「你没带？」</p>
+<p>我:「我出门太急，忘了。」</p>
+<p>江晓:无奈扶额：「备用钥匙，给你。」</p>
+<p>我:「算了不用了，我爸我妈这几天都出差，我上你家吃饭，你记得给我留门」</p>
+<p>江晓:「你想吃什么？」</p>
+<p>我:「可乐鸡翅。」</p>
+<p>江晓:「还有？」</p>
+<p>我:「酸辣土豆丝，就咱两人，两个菜够了，再熬个粥吧。」</p>
+<p>「我和我同桌去书店买书，晚点回来。」</p>
+<p>「嗯好。」</p>
+<p>出了教室门，同桌赵林林才收回震惊的表情。</p>
+<p>「你俩，怎么这么默契？」</p>
+<p>「我俩青梅竹马啊，从小一起长大，我妈和他妈也是发小。」</p>
+<p>「哦～这样啊……」赵林林露出意味深长的表情。</p>
+<p>「你想什么呢。」</p>
+<p>「你俩，不会早恋吧？」</p>
+<p>我和江晓？！怎么可能。</p>
+<p>「我俩？我俩怎么可能早恋，怀疑谁也不能怀疑我俩好吧。」</p>
+<p>「好好好，你俩没有早恋。但是，你看江晓看你那眼神，快拉丝了，真怨不得我怀疑你。」</p>
+<p>我努力回想了一下江晓的眼神，拉什么丝。</p>
+<p>「说真的，江晓好像小娇妻啊，做好饭等你回家吃」</p>
+<p>「娇妻？他才初一就有一米七，我可没见过长得比我还高的娇妻。」</p>
+<p>「哈哈哈哈，确实哦。咱们班的男生都没抽条呢，他就一米七了，他是不像娇妻，但你像天天不着家的男人。」</p>
+<p>「好你个赵林林，你说我像男人，你完蛋啦」</p>
+<p>「哈哈哈哈哈，就是像男人～」</p>
+<p>「才不是！」</p>
+<p>七点半，我敲开江晓家的门。</p>
+<p>「念念回来啦。」</p>
+<p>「嗯。」</p>
+<p>吃饭的时候，我仔细观察了江晓的眼神，也没拉丝啊……</p>
+<p>「看我干什么？」</p>
+<p>「你好看。」</p>
+<p>江晓顿时语塞，只能埋头扒饭。</p>
+<p>过了一会儿，他轻声说：</p>
+<p>「好看那就多看……」</p>
+<p>「啊？你说什么我没听清。」</p>
+<p>「我什么也没说。」他本来长得就白，脸红得肉眼可见。</p>
+<p>「好吧，你厨艺见长啊，醋溜土豆丝绝了，」</p>
+<p>「好吃那就一直做给你吃。」</p>
+<p>「一直吃土豆丝？不行不行，那不得把我吃成土豆啊，居心叵测啊江小弟。」</p>
+<p>「大哥说的是，大哥以后想吃什么，小弟都给大哥做。」</p>
+<p>「这还差不多。」</p>
+<p>吃干抹净我就回家睡觉。</p>
+<p>夏天的雨来的太突然，没有一点预兆地就下起了大暴雨。</p>
+<p>打小我就害怕闪电和雷声。</p>
+<p>躲在被窝里瑟瑟发抖，闷得我一头汗。</p>
+<p>踌躇片刻，我还是抱着被子和枕头敲响了江晓家的门。</p>
+<p>江晓没睡，身上还穿着校服。</p>
+<p>「害怕打雷？」</p>
+<p>「不是……」</p>
+<p>轰隆轰隆……</p>
+<p>「……好吧我害怕……」本来还想嘴硬的我瞬间认怂。</p>
+<p>安排我睡到他的床上之后，江晓继续坐在书桌前写作业。</p>
+<p>看着江晓的背影，我莫名感到安心。</p>
+<p>他真的很像小娇妻。</p>
+<p>由于我占了他的床，江晓被迫睡了沙发。</p>
+<p>当一缕阳光透过窗户照在我脸上，江晓刚好敲响了门。</p>
+<p>「热了牛奶，起来喝。」</p>
+<p>「嗯嗯。」我一直有起床气，早上起来就不想说话。但我从来不会对江晓发脾气，大哥也不能滥用权力欺负小弟。</p>
+<p>「我靠，是不是迟到了，现在几点了？」今天不是上学吗，我靠我靠。</p>
+<p>「今天星期六。」江晓拉住我，在我头上揉了揉。「睡傻了？」</p>
+<p>我长呼一口气，原来是星期六啊。</p>
+<p>「别叫我，让我睡到地老天荒。」我立刻又蒙上了头。</p>
+<p>看着躺在自己床上睡相惨不忍睹的人，江晓不自觉地勾起了嘴角，从小一起长大，她只会对自己没防备，想到这里，江晓就收不住笑容。</p>
+<p>饭嘛，她睡醒再吃吧。</p>
+<p>在我这里，她想怎样就怎样。</p>
+<p>4</p>
+<p>（江念视角）</p>
+<p>念念今天不高兴。</p>
+<p>英语满分 120，她考了 118，我也 118。</p>
+<p>但是满分 60 的物理她考了 12 分，蒙对了三个选择题。</p>
+<p>她说有进步，上次她才考了 10 分，每次进步 2 分，下次考 14 分，多考几次那不得满分。</p>
+<p>其实本来她很高兴，但是看到我的卷子后她才不高兴，因为我满分。</p>
+<p>看着她垂头丧气地趴在桌子上，我第一次不想学物理，即使我很喜欢物理。</p>
+<p>她和前桌说说笑笑，明明我才是她的同桌，她为什么不和我说话，是我今天讲的那道数学大题太晦涩难懂了吗。</p>
+<p>很烦，希望孙浩自觉一点，不要再和苏念念说话了。</p>
+<p>考物理之前，我给了她我之前的条形码，希望能给她带来好运。</p>
+<p>她最近跟我说她喜欢戳爷，我听不懂什么是戳爷，但是孙浩知道，我很懊悔。</p>
+<p>我应该说知道的，要不然就不会把和她聊天的机会让给孙浩了。</p>
+<p>有点小嫉妒。</p>
+<p>好吧不是小嫉妒，是很嫉妒。</p>
+<p>放学后我查了戳爷，哦，是一个外国歌手。</p>
+<p>每天的大课间广播站都会放歌，今天的大课间，我利用我广播站长的身份给她点了《blue》。</p>
+<p>孙浩做不到吧。</p>
+<p>我做得到。</p>
+<p>可她不知道是我给她点的歌。</p>
+<p>算了，她开心就行了。</p>
+<p>今天校篮球联赛，孙浩会打篮球，他邀请苏念念去看他打球。</p>
+<p>我没办法阻止她去，她并不是我的专属物品，她是苏念念。</p>
+<p>苏念念想做什么都可以。</p>
+<p>我只是怨自己不会打篮球，如果我会，她送水的对象就不是孙浩而是我了。</p>
+<p>苏念念看得很认真，比听我讲题还认真。</p>
+<p>蓝瘦，香菇。</p>
+<p>还好我物理竞赛拿了一等奖，苏念念崇拜的对象很快变成了我。</p>
+<p>孙浩，在绝对的实力下，你还是输了。</p>
+<p>她眉飞色舞地跟路口坐着的李奶奶王奶奶张叔叔钱叔叔，挨个说江晓物理竞赛拿了一等奖。</p>
+<p>嗯，决定了，下次争取数学竞赛也拿奖。</p>
+<p>寒假。</p>
+<p>苏叔叔和苏阿姨出去旅游了，我爸妈长年在外做生意不回家。</p>
+<p>我俩好像留守儿童，有一种相依为命的感觉。</p>
+<p>这些年我的厨艺有很大进步。</p>
+<p>念念前天就念叨着要吃红烧排骨，今天做给她吃。</p>
+<p>苏叔叔和苏阿姨真是一对奇怪的夫妻，他俩在内蒙古大草原驰骋，苏念念感冒了躺在床上哼哼唧唧。</p>
+<p>苏念念说她爸妈是真爱，她就是个意外。</p>
+<p>她不是意外，是我的既定命运。</p>
+<p>苏念念发烧了，整个人都很烫，一整晚我都没敢睡，搬了个椅子坐在她旁边。</p>
+<p>还好她第二天早上退烧了，烧退后她的眸子格外亮，脸蛋微红。</p>
+<p>她抬起头和我说话的时候，我心跳漏了半拍。</p>
+<p>今天守岁，我家大人还是没有回来，苏叔叔苏阿姨现在已经到了海南，他们打视频让苏念念好好照顾自己。</p>
+<p>苏念念怒斥他们不靠谱。</p>
+<p>「你俩是天天过蜜月，这么多年了还是如胶似漆。我呢？哪有父母把孩子丢下不管自己跑出去旅游的啊——」</p>
+<p>「哎呀，我和你妈妈要过二人世界的嘛。再说了，不是还有江晓吗，他比我和你妈靠谱多了，拜拜喽念念。」</p>
+<p>苏念念看着被挂掉的视频一脸无语，我却有点不敢说出口的小开心。</p>
+<p>隔壁李奶奶叫我们去她家吃年夜饭。</p>
+<p>李奶奶和李爷爷是空巢老人。</p>
+<p>念念说我们要多多关怀他们。</p>
+<p>其实她只是想吃李奶奶做的爆炒小龙虾，那盘菜她一个人干完了。</p>
+<p>等回去我就学做爆炒小龙虾。</p>
+<p>苏念念每年都说要守岁，但每次都睡过去。</p>
+<p>今年她说一定要守岁。</p>
+<p>可惜又睡着了。</p>
+<p>晚上她和李奶奶一起睡，我和李爷爷一起睡。</p>
+<p>睡之前，她问我有什么新年愿望。</p>
+<p>没等我回答，她说：「希望我发大财。」</p>
+<p>我被她朴实无华的愿望逗笑了，她很生气，要我许愿她以后发大财。</p>
+<p>「苏念念以后发大财。」</p>
+<p>「这还差不多。」</p>
+<p>其实我的愿望也很朴实无华。</p>
+<p>我希望苏念念岁岁平安。</p>
+<p>还有，不要再和孙浩说话了，多和我说说话吧。</p>
+<p>5、</p>
+<p>开学了，我爸妈也终于从海南回来了。</p>
+<p>他俩是真的不靠谱，一放假就扔下我跑去旅游，美曰其名过二人世界。</p>
+<p>江晓爸妈这几年为了做生意也把孩子扔下不管，这么一看，我跟他还真有点相依为命的感觉。</p>
+<p>爸妈一回来我再也没有理由去江晓家吃饭。</p>
+<p>我爸做饭其实不错，但和江晓一比就是报吃，江晓这几年把我的嘴养刁了。</p>
+<p>我妈会做饭吗？我妈就会和我一样等着吃。</p>
+<p>我妈做饭不行做家务不行，就是嫁了个好男人。</p>
+<p>婚后什么家务活都是我爸干。</p>
+<p>我妈活生生被我爸宠成了废人。</p>
+<p>她每天就是上完班看电视，要么就去和李奶奶聊八卦，和江晓妈妈煲电话粥。</p>
+<p>我决定以后嫁人就嫁我爸这样的。</p>
+<p>我妈说「这不就有个现成的么」</p>
+<p>「谁？」</p>
+<p>「江晓啊，长得还比你爸帅。」</p>
+<p>「闺女，听我的，拿下他。」</p>
+<p>无语，哪有妈妈撺掇女儿早恋的。</p>
+<p>我表示拒绝。</p>
+<p>我和江晓从小长大，是青梅竹马的感情。</p>
+<p>「唉，竹马还是打不过天降啊。」我妈网瘾少女，有时候她嘴里的新奇名词我都没听过。</p>
+<p>什么竹马，什么天降。</p>
+<p>我岔开话题「那……妈，你是怎么拿下我爸的？」</p>
+<p>「我可以拿下好多人，我没拿你爸。」</p>
+<p>「你看我信吗？」</p>
+<p>「好吧，闺女我跟你说，当时你爸还是一个小教师，我也刚当上老师。你爸那时候，虽说没什么钱，但是人长得利落，又温柔又体贴，追他的女孩子从城头排到城尾。」</p>
+<p>「那你是怎么追到我爸的？」</p>
+<p>「我追他？呵，当时是你爸追我，爱我爱的死去活来，我最后是勉为其难的同意了。」</p>
+<p>妈妈说这话的时候，脸上写满了得意。</p>
+<p>等妈妈出门逛街，爸爸说：「当时你妈也是追我的女孩之一，我过生日，别的女孩送我手工，但你妈不走寻常路，她送我一块手表。那个年代手表是三大件之一，谁家有手表那就是有钱。」</p>
+<p>……原来是我妈拿钱砸出来的</p>
+<p>「闺女你可不要这样想我，钱对我来说是身外之物，其实是我有一次出了车祸，追我的女孩听了都对我退避三舍，只有你妈，跑来医院照顾我，从那天起我就发誓一定要对你妈好。」</p>
+<p>我表示好感动。</p>
+<p>但这不是你俩天天在我面前秀恩爱的理由！</p>
+<p>初三第二学期了，我的物理还是一塌糊涂。</p>
+<p>鲜红的 12 分在向我示威。</p>
+<p>身为小学数学老师的爸爸，和教小学英语的妈妈表示爱莫能助。</p>
+<p>孙浩给我发消息说他也很头疼，他这次考了 10 分。</p>
+<p>「咱两真是难兄难弟啊。」孙浩感慨。</p>
+<p>我咬牙：「不行，我要背叛组织，脱离物理困难二人组！」</p>
+<p>「那就留我在物理苦海里沉浮吧。」孙浩发来一个大哭特哭的表情包。</p>
+<p>我点开和闺蜜赵林林的聊天窗。</p>
+<p>「怎么脱离物理困难二人组啊，烦死了。」</p>
+<p>「找江晓啊，他回回物理满分，他家又在你家对面，这么好的机会你确定不利用一下？」</p>
+<p>一语点醒梦中人。</p>
+<p>对哦，还有江晓这个物理学霸呢。</p>
+<p>点开江晓灰灰的头像。</p>
+<p>「在吗」</p>
+<p>原以为他不在线。</p>
+<p>谁知对面秒回。</p>
+<p>「什么事？」</p>
+<p>「我这次物理考了 13 分，好头疼 T﹏T」</p>
+<p>「不是和孙浩的物理难兄难弟二人组很开心吗。」</p>
+<p>蛤？原来这几周他不理我，是因为我每次物理课都和孙浩在一块罚站。</p>
+<p>无语啊，你考满分，我俩又考不了满分。</p>
+<p>对面半天不回。</p>
+<p>我悻悻放下手机。</p>
+<p>小气鬼，不就由于同病相怜，和孙浩关系好点吗。</p>
+<p>滴滴滴。</p>
+<p>手机信息又响。</p>
+<p>「下午六点来我家，帮你补习」</p>
+<p>「好嘞！还是小弟对大哥贴心。」</p>
+<p>对面正在输入中……</p>
+<p>「吃什么？」</p>
+<p>「爆炒小龙虾！」</p>
+<p>「还有？」</p>
+<p>「想喝草莓奶昔！」</p>
+<p>「我不会做。」</p>
+<p>「好吧_」</p>
+<p>「……我试着做。」</p>
+<p>「好耶✌️」</p>
+<p>六点我准时敲开江晓的家门。</p>
+<p>爆炒小龙虾的味道实在太香了。</p>
+<p>「先补课。」</p>
+<p>「哦……」</p>
+<p>江晓连续给我开了三个月小灶后，我考到了 40 分。</p>
+<p>晚自习卷子一发下来我到处炫耀。</p>
+<p>「我宣布，我正式脱离物理二人组哈哈哈哈哈。」我拿着卷子在班里得瑟，然后得瑟到江晓跟前。「江晓你看，40 分耶。」</p>
+<p>还没高兴几秒，我眼前突然一片漆黑。</p>
+<p>「我靠，我是不是瞎了，怎么什么都看不见，江晓，江晓你在哪？！」</p>
+<p>我以为我瞎了。</p>
+<p>黑暗中我乱摸的手被另一只手抓住。</p>
+<p>身边传来熟悉的声音。</p>
+<p>「学校停电了。」</p>
+<p>突然停电，班里乱糟糟的。</p>
+<p>不知道是谁喊了一声：「停电了，不上课，同学们快回家啊！」</p>
+<p>所有人像听见号召似的，抓起书包就往外跑。</p>
+<p>班主任气急了，在后面大喊。</p>
+<p>我反手抓住江晓的手就跑了出去。</p>
+<p>此时不跑更待何时。</p>
+<p>一路上风从耳边呼啸而过，把学校甩在身后好远我才停下来。</p>
+<p>两个人都大口喘着气。</p>
+<p>看着满天的繁星，我第一次感到自己跑赢了光，这大概是我学生时代做过最疯狂的举动，我甚至带着江晓这个学霸一起逃了晚自习。</p>
+<p>初三的升学压力也不小，压抑了大半年，快把我憋出病来了。</p>
+<p>我们在河堤上吹了很久的晚风才回家。</p>
+<p>那晚，我第一次问他：「江晓，你想上哪所高中？」</p>
+<p>「你去哪我就去哪，大哥得罩着小弟。」</p>
+<p>「b 中对我来说太难。」</p>
+<p>「不一定是 b 中，你去哪我就去哪。」</p>
+<p>看着江晓坚定的眼神，我忍不住踮起脚揉了揉他的脑袋。</p>
+<p>「长这么大了还当跟屁虫。」</p>
+<p>江晓被揉了脑袋，并没有生气，反倒笑着说：「对，我是跟屁虫」</p>
+<p>「好吧好吧，我争取考 b 中。」</p>
+<p>6</p>
+<p>由于物理拉了后腿，最终我以超分数线两分的成绩险险进了 b 中，而江晓是 b 中花钱买来的状元。</p>
+<p>我俩一起拖着大箱小箱，离家去 b 市上高中。</p>
+<p>说准确一点，应该是江晓拖着大箱小箱，我背个小书包在他身边晃悠。</p>
+<p>出发的时候，孙浩和赵林林一起来车站送我们，他们俩进了本地高中，而且还分到了一个班。</p>
+<p>看见他俩十指紧扣我就明白了，两个我最好的朋友一起背叛了我。</p>
+<p>「我要把你俩踢出组织，这么这样啊，两个一起脱单……」</p>
+<p>赵林林赶忙求饶：「错了错了，我俩不该瞒着组织老大的……」</p>
+<p>「说！什么时候开始的？」</p>
+<p>孙浩故作坦荡：「哎呀，我两是中考完才在一起的，这不马上就来坦白从宽了嘛。」</p>
+<p>「我是说，你俩什么时候有的奸情！」</p>
+<p>我气死了，这两人一块骗我。</p>
+<p>赵林林红着脸扭扭捏捏，最后孙浩抢先开口。</p>
+<p>「做了三年的好朋友，我不想和她做朋友了，我想做她的男朋友」</p>
+<p>生气归生气，我还是祝福了这两人。</p>
+<p>上车的时候，赵林林冲我眨眼，孙浩冲江晓眨眼。</p>
+<p>这俩冤家，没想到最后在一起了。</p>
+<p>「孙浩也藏得太深了，根本看不出来他喜欢赵林林。」</p>
+<p>我忍不住向江晓吐槽，他并未立刻搭话。</p>
+<p>过了半晌，捧着物理书自己跟自己卷的江晓抬起头来轻声说。</p>
+<p>「靠在火堆旁，怎么会感受不到温暖呢」</p>
+<p>「啊？什么意思你想吃烧烤？」</p>
+<p>……</p>
+<p>篮球馆里，各大高校校草的专属应援声震耳欲聋。</p>
+<p>我没想到江晓会打篮球，明明初中他根本不会打篮球啊。</p>
+<p>直到江晓把正在发呆的我叫醒。</p>
+<p>「水。」</p>
+<p>我没带水，只带了自己的水壶，只好递给他。</p>
+<p>没想到他光速接过。</p>
+<p>「就这个吧。」</p>
+<p>他拿过我的水壶就喝了起来。</p>
+<p>水珠划过少年的下颌线，喉结一动一动的。</p>
+<p>江晓确实长大了啊。</p>
+<p>英语课，我把作业本推给旁边的江晓。</p>
+<p>他转过头来看我在作业本上写。</p>
+<p>「你会打篮球？我怎么不知道？」</p>
+<p>「你不知道的事情还多」</p>
+<p>「比如？」</p>
+<p>「比如英语老师现在正在看你」</p>
+<p>？？！一抬头刚好对上英语老师的视线。</p>
+<p>「你俩，都给我站到门外去！」</p>
+<p>7</p>
+<p>理科排名二百多，文科排名年级前十，我毅然决然在分科的时候选了文科。</p>
+<p>「等大哥拿下文科第一，咱们高处见！」</p>
+<p>我心里还挺高兴的，上了高中后，江晓的迷妹一天比一天多。</p>
+<p>本校的外校的都给他塞情书，作为他同桌的我，自然担当了送情书的任务。</p>
+<p>他总是看都不看，就把那些信推到一边，有的还好，有的就直接把气撒到我身上，埋怨我不给她们递情书。</p>
+<p>搞得我颇为头痛。</p>
+<p>「我不想和他做同桌了，喜欢他的人太多。」</p>
+<p>和赵林林煲电话粥的时候，我终于说出了自己的心里话。</p>
+<p>我没有和江晓说不想和他做同桌，他一定会生气，毕竟这一年来，是他利用自己年级第一的身份让老师安排我俩做同桌。</p>
+<p>「念念，你是不是吃醋了？」</p>
+<p>我马上反驳：「我才没有，我是真的烦，经常有人托我给江晓送情书。」</p>
+<p>「真的？」</p>
+<p>「千真万确。我和他什么关系啊，我是大哥他是小弟，大哥会喜欢小弟吗，再说了，我苏念念也不是没有人追，要吃醋，也是江晓吃醋。」</p>
+<p>「那你跟我说说，有谁追你？」</p>
+<p>「嘶～就彭于晏啊，吴彦祖啊……」</p>
+<p>「你是不是梦见的哈哈哈哈。」</p>
+<p>在阳台打完电话，我打开阳台门，一股泡面的香味扑鼻而来。</p>
+<p>智者不入爱河，铁锅只炖大鹅！</p>
+<p>「泡好了，快来吃快来吃。」</p>
+<p>我们舍友四个拼了一张桌子，舍长不知道从哪掏出来一部 ipad，我们四个边吃泡面边追剧。</p>
+<p>泡面的热气和韩剧真是绝配，韩剧里的男女主要分手的时候，我们四个哭成了泪人。</p>
+<p>当然，如果没有宿管的突然袭击，我相信那晚会是美好的夜晚。</p>
+<p>结果是 ipad 被没收，周一全校通报批评，我们四个被罚扫一周学校大礼堂。</p>
+<p>自修的时候，江晓发过来一条消息「韩剧好看吗？」</p>
+<p>我:「😊好看，学校大礼堂也是真的难打扫。」</p>
+<p>江晓:怎么说？</p>
+<p>我:腰疼手疼。</p>
+<p>江晓:棒。</p>
+<p>我:棒个头啊棒。</p>
+<p>对面正在输入中……</p>
+<p>「下楼，有东西给你。」</p>
+<p>下楼之后，我环顾四周，连个人影都没有，江晓这小子玩我呢？</p>
+<p>突然从我头顶掉下来一个黑乎乎的东西，凭着惯性，我伸手接住了。</p>
+<p>一个星球杯。</p>
+<p>我抬头望去，江晓正靠在栏杆上冲我笑，手里还抱着一个大箱子。</p>
+<p>晚风刚好吹动我的发梢。</p>
+<p>我听见自己的心跳，很快。</p>
+<p>那一刻我心里有烟花炸开</p>
+<p>8、</p>
+<p>我好像喜欢江晓。</p>
+<p>隔壁班长拦住我跟我告白的时候，我心里想的是江晓。</p>
+<p>面前的人，说他从高一就开始注意我了，所以一直在千方百计打听我的消息。</p>
+<p>他诉说着对我的喜欢。</p>
+<p>我只能说一句「抱歉。」</p>
+<p>他听到我的回答后没有失落，只是低头笑了笑。</p>
+<p>我问他是不是很伤心，我说对不起。</p>
+<p>他说没关系，只要我万事顺遂。</p>
+<p>喜欢一个人的感觉是这样的吗，即使对方并不喜欢自己，但还是希望对方会万事顺遂。</p>
+<p>我捂着狂跳的心脏。</p>
+<p>对，不是好像，我喜欢江晓。</p>
+<p>很喜欢很喜欢。</p>
+<p>一路狂奔到篮球馆，我幻想对江晓告白的场景。</p>
+<p>但当我站在观众席准备对场上的江晓招手时，一个身材很火辣的女生跑到他身边给他递水。</p>
+<p>他接了，低头朝向女生。</p>
+<p>在我的视角看，他们像是在接吻。</p>
+<p>我放下手，转身出了篮球馆。</p>
+<p>过了几天，学校传出理科第一和第二恋爱的传闻。</p>
+<p>理科第一是江晓，第二应该是篮球馆那个女生。</p>
+<p>沉默了几天，我选择卸载社交软件。</p>
+<p>他托人来问，我只说是高三太紧张，不玩手机了。</p>
+<p>我开始刻意避开他。</p>
+<p>放假回家我会提前订好票，他敲门我会装作我没有在家。</p>
+<p>高三很累，文综题做到我发呕，我一遍又一遍冲击文科第一的位置。</p>
+<p>高考红榜出来，我的名字和江晓的名字并列。</p>
+<p>江晓来了我家。</p>
+<p>他和以前一样问我，念念，你想去哪。</p>
+<p>我第一次骗他说我想去 q 大。</p>
+<p>其实到最后，我踏上了去 n 市的火车。</p>
+<p>在火车上，我打开 vx，有两条未读。</p>
+<p>都是江晓发的。</p>
+<p>「念念，你为什么不理我了？」</p>
+<p>「念念，我喜欢你。」</p>
+<p>而日期，是一年前。</p>
+<p>我无法去回复他我也喜欢他，毕竟是我先推开他的。</p>
+<p>前几天西瓜故事会火了，大家都在讲自己的故事。</p>
+<p>我想起我自己，我有一个很好很好的青梅竹马，他喜欢过我，我也喜欢过他。</p>
+<p>我们 be 了。</p>
+<p>9</p>
+<p>我写了一篇小说来记录我们的故事。</p>
+<p>故事确实是真的，但结局是假的。</p>
+<p>现在我的男主角正委屈地抱怨我，怎么为我俩选了一个 be 结局。</p>
+<p>我说因为现在意难平的 be 结局很火呀，为了流量嘛，不寒碜。</p>
+<p>好吧好吧，我们 he 了。</p>
+<p>我们重逢了。</p>
+<p>大一第一次回家，接我的人我万万没有想到是江晓。</p>
+<p>他耐心地给我解释他的高中绯闻。</p>
+<p>「那个时候，她给我递水说是给我兄弟的，我就接了，后来传出来那些，我觉得清者自清就没有管，我错了，早知道就应该给你解释。」</p>
+<p>「我一直都喜欢你，到现在，一直一直没有变过。」</p>
+<p>「孙浩当时说不想和赵林林做朋友的时候，我也有不想和你做朋友的冲动，但你和赵林林说你想搞事业不想谈恋爱。」</p>
+<p>「我想等到高考后跟你表白。」</p>
+<p>「谁知道高三你就是故意不理我，我以为你专心学习不想理我。」</p>
+<p>「而且你还骗我。」</p>
+<p>江晓第一次喋喋不休地细数我的罪状。</p>
+<p>我看着他，亲了上去。</p>
+<p>小狗瞬间懵了。</p>
+<p>然后，然后就是我俩开启了甜甜的异地恋啦。</p>
+<p>但那都是后话啦。</p>
+<p>江晓已经睡了，我还在抱着手机更新。</p>
+<p>突然一只手抢走了我的手机。</p>
+<p>江晓在我耳边哑声说「春宵一刻值千金」</p>
+<p>「你什么时候变得这么油腻了？」</p>
+<p>好了好了，后面的内容需要付费观看。</p>
+<p>我的男主角在我的青春里拿了满分。</p>
+<p>所以我们会永远在一起。</p>
+<p>备案号:YXX1pQQ90rJTYYYEP4niNAJ0</p>
+<p>无辣不欢</p>
+<p>​</p>
+<p>​</p>
+<p>初恋，旧爱，新欢</p>
+<p>戎安鸽 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/08/17-%E4%BF%97%E5%A5%B3%E5%87%BA%E8%B5%B0%E9%A3%8E%E6%B3%A2/" title="俗女出走风波">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">俗女出走风波</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/08/16-%E6%97%A0%E8%BE%A3%E4%B8%8D%E6%AC%A2/" title="无辣不欢">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">无辣不欢</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿茶 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/06/28-%E7%BB%BF%E8%8C%B6/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/06/28-%E7%BB%BF%E8%8C%B6/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="绿茶">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25913.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25913.jpg">
+  <meta name="twitter:title" content="绿茶">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="绿茶">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-06-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="7543">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25913.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">绿茶</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-06-28T00:00:00Z</span>
+          
+
+          | <span>16分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-06-28T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%bb%bf%e8%8c%b6&amp;url=https://example.com/posts/2024/06/28-%E7%BB%BF%E8%8C%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/06/28-%E7%BB%BF%E8%8C%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%bb%bf%e8%8c%b6%20https://example.com/posts/2024/06/28-%E7%BB%BF%E8%8C%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25913.jpg" alt="绿茶" />
+      
+
+      <p>⼿撕闺蜜绿茶婊早知婚后，不如结婚前分⼿查看详情⽇防夜防，闺蜜难防。</p>
+<p>我竟然在⽼公的汽⻋后排，翻到了闺蜜赵思思的性感内⾐。</p>
+<p>如果不是最后⼀丝残存的理智告诉我，事情没那么简单，我可能会⽴即杀到郑超的办公室，把⼿上的这个秽物当着他下属的⾯，甩在他脸上。</p>
+<p>但此刻，我需要仔细想想，这条堂⽽皇之出现在⻋⾥污秽之物，究竟是闺蜜和我⽼公乱搞的证据，还是⼀次⽰威？</p>
+<p>⼀个多⽉前，⼤学室友赵思思突然给我打来电话。</p>
+<p>⽬录8评论分享赞同13她说要来北京准备考个试，得住⼀个⽉，想问能不能住我家。</p>
+<p>「我在北京也没个熟⼈，就只能靠你了。</p>
+<p>」毕业后我和赵思思都没有⻅过⾯，只是偶尔在微信上聊⼏句⽼同学的事。</p>
+<p>不过⼤多数时候，都是我在和她说同学的事，毕竟我是她唯⼀还有联系的⼤学同学了。</p>
+<p>也是这个原因，听到她要住⼀个⽉的请求，我虽然有点不情愿，但还是没有拒绝掉。</p>
+<p>挂掉和赵思思的电话，我找⽼公郑超商量了⼀下。</p>
+<p>我原本还担⼼他会拒绝，但郑超却表⽰很理解，「毕竟是你⼤学的好朋友，能帮还是帮⼀下。</p>
+<p>」我⽴⻢将情况告诉赵思思，让她定好⽇期提前和我说。</p>
+<p>「太好了亲爱的，我就知道你不会不管我。</p>
+<p>放⼼我不会⽩住你家的，洗⾐做饭我样样⾏。</p>
+<p>」「得了吧，你向来⼗指不沾阳春⽔，我可⽤不起你。</p>
+<p>」调侃两句挂掉语⾳，我抽空将家⾥的客房收拾出来。</p>
+<p>只是没想到，却为我⾃⼰引来⼀匹饿狼。</p>
+<p>多年没⻅，赵思思还是依然的那么⻛姿绰约。</p>
+<p>⼤学时候她就是我们学院排的上号的美⼥，追求者⽆数。</p>
+<p>那会⼉逢情⼈节⼥神节，带回宿舍的甜品就⾜够我们室友吃个饱。</p>
+<p>倒是她，⾯对学校⾥⾯的男⽣却⽆动于衷。</p>
+<p>不过相⽐较她的这份定⼒，我更佩服的是她的游刃有余。</p>
+<p>被她拒绝的男⼈⽆⼀不像骑⼠⼀样，执着地围绕在她周围，对她嘘寒问暖。</p>
+<p>就在我们以为，赵思思会在她的骑⼠⾥⾯选择⼀个做男朋友的时候，她却找了⼀个⼤叔。</p>
+<p>没错，⼤她将近⼆⼗岁的⼤叔。</p>
+<p>骑⼠们的信仰崩溃了。</p>
+<p>从赵思思⼿机⾥传出的男⽣的哭腔，连我都听得⼼疼。</p>
+<p>但当⼤叔第⼆天开着保时捷到我们宿舍，并拿着三台最新款的iPhone作为⻅⾯礼随时送给我们⼏个室友时……我们才明⽩，公主要的永远不是骑⼠，⽽是王⼦。</p>
+<p>哪怕这个王⼦，有点⽼。</p>
+<p>在和赵思思从机场回家的路上，我随⼝问了⼀下她和⼤叔的近况。</p>
+<p>「嗨，早散了。</p>
+<p>」听她说，毕业后当我们各奔东西的时候，她留在了那个⼆线城市，有着⼤叔的照应，也算⾐⻝⽆忧。</p>
+<p>虽然⼤叔已经有了家室，但赵思思也不求什么名分，倒也相安⽆事。</p>
+<p>但⼀年前⼤叔被查出贪污，锒铛⼊狱后，赵思思的⽣活⽀柱坍塌了。</p>
+<p>毕业后就没有⼯作过⼀天的她，此刻也有点束⼿⽆措，这次来北京考试，正是为了⼊职⼀家公司。</p>
+<p>「还是你们好啊，毕业后就来⼤城市打拼，⼯作能⼒也有，⼩⽇⼦也过的不错。</p>
+<p>」「不像我，这⼏年安稳⽇⼦过的什么能⼒都没有了。</p>
+<p>」听她⾃怨⾃艾的叹息，我也只能安慰，「各有各的想法啦，谁不想安稳呢，我放弃了安稳⽣活的来北京，现在看着⽐你⽼五六岁呢。</p>
+<p>你还是刚毕业的样⼦，我才羡慕你啊。</p>
+<p>」「这有什么好羡慕的。</p>
+<p>⽪囊⽽已。</p>
+<p>我也是这⼀年才感悟到，⼥⼈，嫁得好最重要。</p>
+<p>郑超有能⼒有本事，关键还疼你，你这才是真的⼈⽣赢家啊。</p>
+<p>」「赢个屁，那你是没⻅识过理⼯男的榆⽊脑袋。</p>
+<p>」当初郑超给我求婚，我差点⽓到没答应他。</p>
+<p>那会⼉他刚从美国⻅完投资⼈，赶我⽣⽇那天回国，在机场接到他的时候，他先说了融资顺利的事，接着就在机场⼤厅，随⼿把订婚的戒指递给我说，「佩佩，咱俩结婚吧」。</p>
+<p>是的，没有浪漫惊喜、没有烛光晚餐、连蛋糕也没有。</p>
+<p>就像在说「佩佩，我去个厕所」似的⼝⽓，和我求婚。</p>
+<p>这还不是最⽓的，最⽓的时，他还兴冲冲地给我说，这戒指是在免税店买的，⽐在国内便宜了⼩⼀万呢。</p>
+<p>这事我每次提起来都⼀股⽕⽓，旁边赵思思倒是听得乐不可⽀。</p>
+<p>到家后原本计划着去餐厅吃，赵思思⾮要说亲⾃下厨给我们做⼀顿饭。</p>
+<p>「好⾹啊！」郑超⼀进⻔就喊道，「⽼婆你是在做⽔煮⻥吗？</p>
+<p>怎么以前没做过？</p>
+<p>」我⽩了他⼀眼，「你也是⾼看我了，我哪有这本事给你做。</p>
+<p>」这时赵思思端着⻥刚好出来，「你回来的正是时候，最后⼀个⼤菜了。</p>
+<p>」餐桌上满满⼀桌，⽔煮⻥、红烧⾁、⻥⾹⾁丝、糖醋⾥脊……「这……都是你做的？</p>
+<p>」郑超不可思议地看着赵思思。</p>
+<p>说实话，如果不是亲眼所⻅，我也不相信赵思思能做出这些美⻝。</p>
+<p>「哈哈哈，不然你以为是家有仙妻给你变的吗？</p>
+<p>我这些年虽然没有⼯作，可在厨艺上倒是进步不⼩。</p>
+<p>」赵思思坐在我俩对⾯，认真地看我俩把所有菜品尝⼀遍。</p>
+<p>「怎么样？</p>
+<p>怎么样？</p>
+<p>」郑超满脸陶醉地夸赞道，「饭店⾥的都没这么好吃。</p>
+<p>要能天天吃到就最好了。</p>
+<p>」「天天吃我可保证不了，不过我在的这段时间，你俩的胃我给你们承包。</p>
+<p>」「欧耶，过年了。</p>
+<p>」郑超想个⼩孩⼦⼀样在⼀边欣喜道。</p>
+<p>我⼀记⽆影脚踢了过去，「思思过来是考试的，不是给咱家当保姆的，你嘚瑟什么劲⼉。</p>
+<p>」郑超故作委屈道，「那⽼婆什么时候才能也给我做这么好吃的吃的，这样我下班回来幸福感会爆棚哦。</p>
+<p>」真是受不了⼀个⼤⽼爷们在这⾥装可怜。</p>
+<p>赵思思看着笑道，「你俩结婚这么久还这么恩爱。</p>
+<p>真的好羡慕啊。</p>
+<p>不知道我能不能也找到⼀个像郑超这样的好男⼈。</p>
+<p>」郑超在旁边埋头狂吃，放不下筷⼦。</p>
+<p>我听着赵思思的话，正好看到她的眼神正盯着郑超，我⼼⾥有点不是滋味。</p>
+<p>可能是我胡思乱想，也可能是我⼩肚鸡肠吧。</p>
+<p>赵思思只是眼神正好在郑超⾝上⽽已，她也只是随⼝拿郑超做类⽐吧。</p>
+<p>我内⼼安慰⾃⼰，「思思，你也可以找到更好的，等我遇到合适的男⽣，就给你介绍。</p>
+<p>」郑超这时插嘴道，「我⾝边单⾝的哥们⼉可不少，有机会我挑⼀挑合适的。</p>
+<p>」晚饭后回到屋⾥，郑超还意犹未尽。</p>
+<p>「你觉得赵思思⼈怎么样？</p>
+<p>」我⼼⾥还想着饭桌上的话。</p>
+<p>「什么怎么样？</p>
+<p>她做的饭挺好吃的。</p>
+<p>」⼯作上逻辑缜密管理上杀伐果断的郑超，情商简直是低幼⽔平。</p>
+<p>「没问你饭！我是问你⼈，你觉得好看吗？</p>
+<p>」「就那样吧，有什么好看的啊，⽼婆才最好看啊。</p>
+<p>」好吧，这话我爱听。</p>
+<p>⾄于对赵思思的那⼀丝丝不妥，也懒得去深究了，也就住⼀个⽉⽽已。</p>
+<p>郑超这时抱住我，「⽼婆，⼯作这么累，能放松放松吗？</p>
+<p>」我的脸⼀红，「你给我收敛点⼉，家⾥可是有外⼈在。</p>
+<p>」「那我岂不是⼀个⽉不能和你羞羞了？</p>
+<p>」郑超⼀脸不可置信。</p>
+<p>「反正你先忍着吧。</p>
+<p>」「天呐，我被打⼊冷宫了。</p>
+<p>」听着郑超的哀嚎，我沉思起来。</p>
+<p>赵思思来的这段时间，说实话倒是带来不少便利。</p>
+<p>我和郑超每天上班忙的顾不上家⾥，原本每周打扫⼀次，现在每天晚上到家都⼲⼲净净，⽽且有做好的饭菜。</p>
+<p>她对郑超有意思这件事，难道是我想多了？</p>
+<p>正好这段时间，因为公司西南地区业务的主管离职，⽼板让我出差⼀周去成都，在新负责⼈上任前先安顿⼀下员⼯。</p>
+<p>家⾥⾯赵思思忙着考试，郑超最近要负责新品的上市也是忙得两脚不离地，也没有什么我担⼼的。</p>
+<p>于是第⼆天收拾⾏李，⻜去了成都。</p>
+<p>刚去前两天，郑超早晚都会给我来个电话。</p>
+<p>「每天忙死了，你还不在我旁边。</p>
+<p>」郑超在电话⾥没羞没臊地哼唧起来，「⽼婆，好想你啊。</p>
+<p>」对付男⼈的最重要的就是不能让他们顺杆上爬，听到郑超⼀哼唧，我第⼀反应就是：「你给我乖乖的，⼀个⼈寂寞空虚冷也就罢了，现在家⾥可是还有别⼈在的，你要敢给我动别的念头，⼩⼼给你掰断。</p>
+<p>」我⽐了个⼿指弯下去的⼿势。</p>
+<p>电话那头郑超⽴⻢乖顺说道，「⽼婆你⼲嘛提她啊，我俩这每天就是吃饭照个⾯⽽已，平时连句话都不说。</p>
+<p>」虽然我觉得郑超还是有最基本的⾃律，不然我也不可能决定出差。</p>
+<p>但这预防针可不能不打。</p>
+<p>期间呢，我得空的时候也会和赵思思聊天，问问她最近的考试进度如何，顺便千叮咛万嘱咐，让她别再继续做饭了。</p>
+<p>「你这每天⼤餐备着，我感觉不付你⼯钱我都不好意思了。</p>
+<p>」「我家⽼郑的胃⼝这⼏天被你喂刁了，你⾛了她可就不好好吃饭了。</p>
+<p>」赵思思倒也听得进去，后⾯也就没再做饭了。</p>
+<p>只是临到出差结束前两天，郑超却不给我打电话了。</p>
+<p>发微信过去，不是在开会就是在忙。</p>
+<p>到了夜⾥⼗⼀⼆点，才给我回复⼀句，「刚下班到家，我先睡了。</p>
+<p>」我旁敲侧击地问赵思思，⽼郑这两天是不是都是夜⾥才回家。</p>
+<p>可赵思思却不回复我微信了。</p>
+<p>担⼼也没⽤，原本周六才能到家，我改签到周五，刚下⻜机就⽕急⽕燎的赶回家。</p>
+<p>⼀推开⻔，郑超在客厅的电脑桌前忙着办公，餐厅上摆了两盘刚做好的菜，赵思思在厨房正在熬着粥。</p>
+<p>我把⾏李放在⼀旁，郑超⻅着我到家赶忙起⾝接过⾏李。</p>
+<p>「⽼婆不是说明天才回来吗？</p>
+<p>」「我怕再晚⼀点回来，你⼈都不⻅了。</p>
+<p>」正巧赵思思此时端着⼀碗粥出来。</p>
+<p>「思思，不是给你说你别做饭了么？</p>
+<p>再这么做，我付你⼯钱吧。</p>
+<p>」赵思思先是⼀愣，忙回道，「你家⽼郑说今晚肚⼦不舒服，所以我就给他随便准备了点。</p>
+<p>」我瞪了郑超⼀眼，「你肚⼦不舒服啊？</p>
+<p>我还以为是你嘴巴哑了，这⼏天两个电话都没有。</p>
+<p>」郑超⼀挠头，眉头接着⼀皱，「对不起⽼婆，这⼏天冷落你了，本来上市的产品出了硬件问题，⼀批准备上市的货现在全部返⼚，处理这事成天忙到焦头烂额。</p>
+<p>」接着我看到铺满办公桌的设备图纸。</p>
+<p>郑超是没说谎。</p>
+<p>看来⼜是我多想了。</p>
+<p>本来⽕急⽕燎到家攒着⼀肚⼦的⽕⽓，现在这情况倒是我⾃⼰的不是了。</p>
+<p>就连我看赵思思的眼神都有⼀丝的愧疚。</p>
+<p>好在他们也没有在意我话⾥的不满。</p>
+<p>吃完饭，赵思思从厨房端了⼀杯热⽔，⼿⾥还拿着药，⾛到郑超跟前，「⽼郑你把这药喝了，胃疼就会好点了。</p>
+<p>」郑超⽆所谓地将⽔杯接过去。</p>
+<p>从洗⼿间出来的我看着眼前的这⼀切，⼀股莫名的努⼒⼜腾⼀下起来。</p>
+<p>我拉着郑超回到屋⾥。</p>
+<p>「你是不是对赵思思有意思？</p>
+<p>」我劈头盖脸直接问道。</p>
+<p>「你说什么啊？</p>
+<p>我怎么可能？</p>
+<p>」郑超⼀脸茫然。</p>
+<p>「那你是脑⼦有⽑病吗？</p>
+<p>」我压着嗓⼦冲他骂道，⽣怕外⾯的赵思思听到⾥⾯的动静。</p>
+<p>「于佩佩你有话好好说啊。</p>
+<p>」「那我和你好好说，赵思思给你送药，你就这么⼀股脑⼦就吃了？</p>
+<p>」「不然呢？</p>
+<p>⼈家也是好⼼好意啊。</p>
+<p>」「你们是当我死了吗？</p>
+<p>我的男⼈⽤得着别⼈照顾？</p>
+<p>」我现在真的是要被郑超的脑⼦⽓死了。</p>
+<p>「⽼婆你是不是想太多了，她就是关⼼我⽽已。</p>
+<p>」「好⼀句关⼼你，今天关⼼你肚⼦，给你吃药，明天是不是就能关⼼你⼯作，陪你上下班熬夜，后天没准关⼼你睡眠质量，还要陪你上床？</p>
+<p>你都来者不拒吗？</p>
+<p>」听我说完，郑超却哑然失笑。</p>
+<p>「能不能严肃点！」我⾮常不满地说道。</p>
+<p>「⽼婆，你是不是吃醋了？</p>
+<p>」「你放屁，我吃什么醋？</p>
+<p>我这是在教你什么是分⼨。</p>
+<p>」「好好好，是我不好，但⽼婆你真的想多了。</p>
+<p>赵思思不是我喜欢的类型。</p>
+<p>」「蜂腰肥臀的，我才不信哪个男⼈会不喜欢她那样的。</p>
+<p>」「我啊，我就不喜欢，我就喜欢你这平胸⼩屁股……」没等他说完，我⼀脚直接踹过去，「你骂谁呢？</p>
+<p>」被他这么⼀闹，我的⽓也消了⼀半。</p>
+<p>要说郑超不喜欢赵思思这种美⼥我才不信。</p>
+<p>但他⼜和我说，在我出差的这段时间，赵思思其实已经在约会了。</p>
+<p>约会对象是郑超的哥们⼉，邹海洋。</p>
+<p>「佩佩，我是不是打扰到你了？</p>
+<p>」我刚出卧室，赵思思就站在客厅对着我楚楚可怜地发问。</p>
+<p>毕竟我进⻔时的反应，除了郑超那种榆⽊脑袋，是个⼈都能明⽩。</p>
+<p>「没有没有，思思你别误会，我就是⽣⽓郑超那⼏天不理我，和你没关⼼。</p>
+<p>」「真的吗？</p>
+<p>」赵思思向我确认，「你和郑超是我⻅过最幸福的⼀对了，我蛮害怕最近会影响到你们。</p>
+<p>」「没有啦。</p>
+<p>」没有谁能忍受⼀个美⼥在你⾯前楚楚可怜，即便我是个⼥⼈也不例外。</p>
+<p>但我多少还是能保持⼀丝理智，就是她现在还是有演的成分在。</p>
+<p>⾄于在演什么，我就不想深究了。</p>
+<p>我假装关⼼问了⼀下她和邹海洋的发展。</p>
+<p>从她的回答中，只是知道，她对邹海洋感觉不错，但能不能好，还得在看。</p>
+<p>邹海洋的情况，在郑超的⼀帮朋友⾥⾯，不算好的，虽然在⼤⼚做运营，但快三⼗了，还没有混到⼩组⻓。</p>
+<p>但好在为⼈踏实，重点在北京有⼾⼝有房，后⾯也不乏排队的追求者。</p>
+<p>我不清楚她对邹海洋犹豫的点在哪⾥，于是⼜问她，更喜欢什么样的男⽣。</p>
+<p>可她⽀吾了半天，也没说出⼝。</p>
+<p>想想⼤学时候，她⾝后那⼀帮骑⼠各有千秋，但谁能想到她就是看上了有钱⼤叔呢？</p>
+<p>我不做评价，只是觉得她可能不太清楚⾃⼰要什么。</p>
+<p>反正很快⼀个⽉就要到了，她考完试，⼤概率还是会离开北京吧。</p>
+<p>哪知道没过⼏天，赵思思和我说他们的考试⼜往后延期了，具体延期多久还得过⼏天才知道。</p>
+<p>「不好意思，可能还得再借住⼏天了。</p>
+<p>」住都已经住了，多⼏天也⽆所谓，郑超却哀嚎起来，「还要再憋⼏天啊！」我整个⼈⼤⽆语，男⼈都是下半⾝思考的动物吗？</p>
+<p>但这些天，我的不安却依旧挥之不去。</p>
+<p>最明显的就是赵思思有点过分在意我们，更准确的说，是在意郑超的「需求」。</p>
+<p>有⼀次晚上临睡前，郑超随⼝说了⼀句很久没有吃鸡蛋灌饼，还蛮想这⼀⼝的。</p>
+<p>结果第⼆天⼀早，赵思思就已经买好了三份鸡蛋灌饼，「我就是早上想去晨跑，回来路过时候就想着顺便帮你们带了。</p>
+<p>」合情合理，我也找不出⽑病，只是吃着总觉得不是滋味。</p>
+<p>还有⼀次我们三个⼈出去逛街，逛到乐⾼时，赵思思站在海贼王的乐⾼⾯前就已经挪不开腿。</p>
+<p>先不好奇⼤学四年都没有看过⼀次《海贼王》的赵思思，怎么就突然迷恋上热⾎漫画。</p>
+<p>海贼王死忠粉的郑超已经和赵思思，站在乐⾼店⾥喋喋不休起来。</p>
+<p>他俩聊的其乐融融，我倒是像个第三者，在⼀旁吹冷⻛。</p>
+<p>再接着，有⼏天，连续看到赵思思和郑超晚上⼀起到家。</p>
+<p>「我上培训课的地⽅离⽼郑还蛮近的，我就下课顺便等郑超⼀起回家啦。</p>
+<p>」这是赵思思给我的解释。</p>
+<p>依旧合情合理，但就不是滋味。</p>
+<p>我就是再蠢，也知道这事不对劲了。</p>
+<p>我问了⼀下邹海洋那边的情况，才知道最近⼀个星期，赵思思和他根本没有联系。</p>
+<p>紧接着，我就在郑超的汽⻋后座位下⾯，找到了赵思思的性感内⾐。</p>
+<p>⽽我之所以会知道这条内⾐是赵思思的，还是因为有⼀次她洗完内⾐，问我搭哪⾥⽐较好。</p>
+<p>我找了个架⼦放在客房，她把内⾐晾在屋⾥。</p>
+<p>那时我注意到赵思思的内⾐，怎么说呢，都极尽性感吧。</p>
+<p>各种类型的都有……但我没想到，她已经勾搭到这个程度。</p>
+<p>究竟郑超和她有没有上床？</p>
+<p>在回家路上我反复纠结。</p>
+<p>论说以我对郑超的了解，我实在不相信他会做出这种事。</p>
+<p>但以我对男⼈的了解，我⼜没有把握了。</p>
+<p>最关键这段时间都在家⾥，⻋上倒是他俩发⽣关系的好地⽅。</p>
+<p>所以这条内⾐出现的位置就⾮常合适不过了。</p>
+<p>晚上郑超刚到家，我就⽴⻢拖他进卧室。</p>
+<p>当我拿出那条蕾丝半透明内⾐，他先是⼀懵，接着⼀脸暧昧道：「嘿，⽼婆，你这是⼲嘛呀？</p>
+<p>家⾥现在还有外⼈呢，你这是要引诱我犯罪啊。</p>
+<p>」看着郑超满脸犯贱的表情，不⽤我质疑，我也知道这个榆⽊脑袋根本不知道是怎么回事。</p>
+<p>我⼼⾥松了⼀⼝⽓，看着郑超⽋抽的表情。</p>
+<p>「这是赵思思的，不是我的。</p>
+<p>我在你⻋的后座看到这条内⾐的。</p>
+<p>」「WTF？</p>
+<p>这不可能啊，我啥事也没⼲怎么可能会在我⻋上。</p>
+<p>」「我相信你什么事也没⼲，但你就没发觉，赵思思对你有意思？</p>
+<p>」「她对我有意思⼲嘛？</p>
+<p>我是你⽼公啊，她对我有意思也没⽤啊。</p>
+<p>」呵，没⽤？</p>
+<p>也只有郑超这种男⼈才会觉得没⽤了。</p>
+<p>对赵思思⽽⾔，世上没有挖不动的墙⻆，只看她愿不愿意挖了。</p>
+<p>其实赵思思的这次⼿段最⼤的bug，就是我已经知道，这内⾐是她的。</p>
+<p>假如我不知道，看到这么⼀条内⾐我铁定会认为郑超在外⾯有⼥⼈了。</p>
+<p>按照她的预定的套路，我此刻应该和郑超⼤吵⼀架，然后摔⻔⽽出。</p>
+<p>她⼀边会安慰我，我是不是误会郑超了，也会和我说，男⼈犯错是很常⻅的事，让我不要放在⼼上。</p>
+<p>另⼀边，以她的颜值、以她勾搭男⼈的本事，安抚⼀个委屈的男⼈也是分分钟的事。</p>
+<p>只可惜我知道内⾐是她的，⽽她想挖的墙⻆，⼜是郑超这种情商⼤条的纯直男，她的功夫可算⽩费了。</p>
+<p>「那你打算怎么办？</p>
+<p>赶她⾛吗?」郑超愁容满⾯地问我。</p>
+<p>因为⼀条内⾐就赶⾛她？</p>
+<p>她可以咬死不承认这内⾐是她的。</p>
+<p>然后可怜楚楚地离开。</p>
+<p>想到她可怜楚楚的样⼦，我却有点反胃。</p>
+<p>反正等她考完试也没⼏天了，再陪她耗耗呗。</p>
+<p>出了房⻔，我敲了敲客房的⻔。</p>
+<p>进屋后发现赵思思正在化妆。</p>
+<p>「你这是要出⻔吗？</p>
+<p>」「啊？</p>
+<p>不啊，就是简单补补妆啦。</p>
+<p>」她愣了⼀下，似乎在思索什么，「佩佩，你和⽼郑没事吧？</p>
+<p>我刚刚听到你俩似乎在吵架？</p>
+<p>」我⼼⾥冷哼，发现事情不按套路在发展吧！「没有啦，就是⽼郑新品上市的问题不是解决了吗，他⾮要出去庆祝，我说创业还是⾟苦，就在家⾥吃好了。</p>
+<p>」「但现在家⾥只有你厨艺最好了，我就想看你能不能今晚掌厨做⼀下。</p>
+<p>」赵思思放下粉刷，「没问题呀。</p>
+<p>我还以为什么事呢。</p>
+<p>」⼀桌⼦六个菜，赵思思做完后，汗⽔已经把她的妆容浓花了，粉底浮着显得脸⾊惨⽩。</p>
+<p>我和郑超正在沙发上，⼀边吃着⽔果，⼀边看着电视综艺⼤笑。</p>
+<p>「饭好了，⽼公我们去吃饭吧。</p>
+<p>」我拉郑超起⾝到餐桌。</p>
+<p>看着赵思思浮粉的样⼦有点好笑。</p>
+<p>「⾟苦思思啦。</p>
+<p>」我冲着赵思思说道。</p>
+<p>接着⼜转⾝和郑超说，「⽼公，思思离开后我们就吃不到这么好吃的饭了，你说我们要不要完了找个保姆啊。</p>
+<p>」「那也成，咱俩也省得叫外卖，这样吃还健康点。</p>
+<p>」我内⼼不由得发笑，郑超可能听不出我话⾥的意思，但赵思思肯定是清楚的。</p>
+<p>⼀桌⼦的菜，赵思思没动⼏下筷⼦，就回卧室休息去了。</p>
+<p>赵思思还要在家⾥呆⼏天，但保不⻬她⼜要作什么妖。</p>
+<p>第⼆天我就找⼈在家⾥装了监控。</p>
+<p>以防万⼀。</p>
+<p>这⼏天倒是相安⽆事，我⼼想着她的考试也应该快结束了。</p>
+<p>但我没想到的，监控装好后，这⼏天却让我知道了另外⼀件事。</p>
+<p>当年⼤学毕业，赵思思和那个⼤叔在⼀起第⼆年就⽣下了⼀个孩⼦。</p>
+<p>现在这孩⼦被她丢给她妈在抚养，⼤叔出事后，她就⼀直拒绝承认有这个孩⼦。</p>
+<p>⼀直对外宣称⾃⼰单⾝。</p>
+<p>这点还蛮让我意外。</p>
+<p>⼜想到她最近的考试，我去⼀查，结果发现她要参加的那个考试，上周就已经结束了。</p>
+<p>感情她这些天就我在家占着⽩耗着呢。</p>
+<p>晚上吃饭时，我故意哪壶不开提哪壶。</p>
+<p>「思思你也别太难过，这次考不上，明年继续考。</p>
+<p>」赵思思显然没想到我会说出这句话，「啊，你已经知道了？</p>
+<p>」「这⼜什么不能和我讲的啊，我⼜不会取笑你。</p>
+<p>」「不好意思，打扰你家这么久。</p>
+<p>」「有什么不好意思，都是姐妹。</p>
+<p>」我故意把「姐妹」这俩个字咬的很重。</p>
+<p>事已⾄此，她已经在我家呆不下去了。</p>
+<p>隔天后，她收拾好⾏李准备离开，我原本还客⽓说要送她去机场。</p>
+<p>她执意拒绝。</p>
+<p>想想这些天发⽣的事，和闹剧似得。</p>
+<p>我⽬送她离开后回到屋⾥，郑强⼀脸不怀好意地充着我笑道，「⽼婆，此刻春宵，值千⾦呐。</p>
+<p>」事情到此原本应该结束的。</p>
+<p>只是没想到，半个⽉后，我在隔壁⼩区，看到了赵思思⾝影。</p>
+<p>⼀番打听，我才知道原来她在我家住的那段时间，就在软件上勾搭到我们隔壁⼩区⼀男的。</p>
+<p>离开我家那天，径直就搬去隔壁⼩区。</p>
+<p>只是这次，是她想要的终点站，还是落脚的场所，我就不得⽽知了。</p>
+<p>不过我想到她还有个孩⼦，被她丢在⽼家不管不顾，就让我有点⼼疼。</p>
+<p>您的会员即将到期还剩8天到期，最低9/⽉续费免费参与千场课程⽴即续费评论8写下你的评论…Polaristellme03-072既然赵思思现在有了落脚的场所，就应该和⾃⼰的孩⼦团聚才是。</p>
+<p>我拨通了赵思思她妈的电话，表⽰现在思思在北京稳定下来，也快过⽣⽇了，想让她和孩⼦团聚⼀起过个⽣⽇，当是惊喜。</p>
+<p>然后我和她妈说了赵思思现在的地址，并给她妈转了⻋票钱。</p>
+<p>希望赵思思和他现在的男朋友看到孩⼦不要太感动。</p>
+<p>毕竟，我和她，姐妹⼀场。</p>
+<p>没啦？</p>
+<p>?！意犹未尽。</p>
+<p>。</p>
+<p>。</p>
+<p>狗⾎加狗⾎03-062查看全部评论妈妈也会提前打电话和⼥⼉所要来啊思思肯定不会让她妈妈来啊……这怎么⼿撕？</p>
+<p>？</p>
+<p>展开.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/28-%E5%AE%AB%E9%94%81%E5%87%9D%E7%9C%B8/" title="宫锁凝眸">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">宫锁凝眸</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/28-%E6%9C%89%E6%B2%A1%E6%9C%89%E8%A2%AB%E4%B8%80%E5%8F%A5%E8%AF%9D%E4%BC%A4%E4%BA%86%E5%BE%88%E4%B9%85---%E7%9F%A5%E4%B9%8E/" title="有没有被一句话伤了很久？ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">有没有被一句话伤了很久？ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

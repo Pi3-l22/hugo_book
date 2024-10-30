@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯有杜康 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/09/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/09/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="唯有杜康">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-20T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/5517.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/5517.jpg">
+  <meta name="twitter:title" content="唯有杜康">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="唯有杜康">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-09-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="10812">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/5517.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">唯有杜康</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-09-20T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-09-20T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%94%af%e6%9c%89%e6%9d%9c%e5%ba%b7&amp;url=https://example.com/posts/2024/09/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/09/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%94%af%e6%9c%89%e6%9d%9c%e5%ba%b7%20https://example.com/posts/2024/09/20-%E5%94%AF%E6%9C%89%E6%9D%9C%E5%BA%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/5517.jpg" alt="唯有杜康" />
+      
+
+      <p>唯有杜康</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>我穿书了，穿成一个非常漂亮的路人甲，连个女配的编制都没混上。</p>
+<p>宫女到了一定岁数就能被遣散出宫，于是日子就有了盼头。</p>
+<p>我本想摆烂水完剧情就出宫开启新副本，没想到先等来了我主子淑妃暴毙全宫殉葬的噩耗。</p>
+<p>炮灰我啊，死到临头了捏。</p>
+<p>1</p>
+<p>立夏时节，梨花开得正旺，满园生机。</p>
+<p>皇上和惠嫔同游御花园，皇上亲手择下一支梨花别在惠嫔的鬓角，眉宇间尽是柔情，众人感叹二人的背影看起来真是般配极了。</p>
+<p>我不是皇上，也不是惠嫔，我是众人—-里的一个。</p>
+<p>我是开春刚穿来的，说出去也怪丢人的，别人过来都是贼有存在感的女主女配，我倒好，穿成了一个淑妃宫里的小宫女，连系统都莫得，全靠自由发挥。</p>
+<p>作为一个专业的背景板，我倒也乐得清闲，至少还给了我张吃得开的脸让我不至于混得太惨。</p>
+<p>每天的日常就是混在人堆里傻乐，跟着大伙对男女主的甜蜜互动做出夸张的 reaction，扫扫地啊吃吃瓜啊，必要的时候当个气氛组撑撑场面。</p>
+<p>混吃等死，就是我余生的追求，等到了年纪拿着俸禄出宫，我就能自由自在地过自己想过的生活了。</p>
+<p>「冬枣，愣着干嘛呢，还不赶紧回来插花。」</p>
+<p>我连忙提着篮子一路小跑回到临霞宫，将新鲜带着晨露的梨花插进瓷瓶里，摆到檀木桌上。</p>
+<p>色香味俱全的美味佳肴摆满了一桌子，我毕恭毕敬地退到一旁，淑妃慢悠悠地掀开帘子出来用膳。</p>
+<p>「豆花，怎么没有本宫爱吃的梭子蟹。」</p>
+<p>淑妃是个实打实的吃货，临霞宫上下差役都被她以食物赐名，我暗暗庆幸自己还捞着个正常点儿的名字，同情地看了一眼一旁的猪腰子。</p>
+<p>「娘娘，蟹肉寒性，太医说您最近身子不好，要少吃点。」</p>
+<p>淑妃轻哼一声，随手夹起个鹌鹑蛋放进嘴里。</p>
+<p>我在旁边眼巴巴的瞅着，口水都快下来了，妈的，凭什么我只能吃窝窝头小咸菜，也太欺负人了些。</p>
+<p>许是我炙热的眼神过于直白，淑妃执筷的手一顿，我连忙垂下眼眸。</p>
+<p>别还没熬到出宫快活就丢了脑袋，还是安分点好。</p>
+<p>她将桌上的茯苓糕往我这边推了推。</p>
+<p>「瞅你那没见识的样子，喏，这个本宫不爱吃，赏你了。」</p>
+<p>「皇上怎么还不来。」</p>
+<p>豆花倒吸一口气，我默默攥紧了衣袖。</p>
+<p>「皇，皇上在来的路上正好遇见了惠嫔娘娘，说是在她那用膳了。」</p>
+<p>豆花又将皇上亲手折了梨花给惠嫔的事说给了淑妃，她勃然大怒，一下子将桌上的花瓶摔了个粉碎。</p>
+<p>「这个贱人！」</p>
+<p>我心疼地瞥了眼地上的一片狼藉，这是人家忙活一早上的心血啊呜呜呜。</p>
+<p>不过念及她即将下线，我就勉为其难的原谅她吧。</p>
+<p>没错，作为宫斗本里的女配，她还是逃脱不了领盒饭的命运。书里没说她具体啥时候「暴毙」的，反正快了。</p>
+<p>「都给本宫滚出去！」</p>
+<p>我识趣地远离这片是非之地，还不忘拿走一块茯苓糕。</p>
+<p>2</p>
+<p>没过多久，皇上那边就派人来了临霞宫发来一堆赏赐，说是对淑妃的补偿。</p>
+<p>「本宫不稀罕这些玩意，本宫要见皇上。」</p>
+<p>太监陪着笑，说皇上政务繁忙还请淑妃娘娘理解就不要为难他们了。</p>
+<p>「这是刚进贡来的上好的荔枝，一共才得了十斤给您了足足一篮，皇上心里啊，可一直惦记着您嘞。」</p>
+<p>淑妃这才和缓了脸色，压着嘴角的笑意抓了几个剥开了吃。</p>
+<p>「荔枝，本宫爱吃。」</p>
+<p>大太监走后，她自个儿剥着荔枝小心翼翼地往嘴里塞。</p>
+<p>她从不让我们这些下人帮她剥荔枝，我悠悠地叹了口气，想起以前在家的时候逢季荔枝要多少有多少一下子吃个痛快，哪里还需要这么宝贝着。</p>
+<p>豆花陪着我浣洗脏衣物，我抹了把汗问她出宫以后有没有什么打算。</p>
+<p>她眼睛亮亮的，脸颊上生出几分绯红。</p>
+<p>「不知道，但能找个好人家嫁了，就知足了。」</p>
+<p>豆花脸上有个浅浅的酒窝，笑起来让人见了心情莫名的好，她开心，我也开心。</p>
+<p>「冬枣，你为何这么想出宫啊。」</p>
+<p>其实我也不知，但总觉得外面总比宫里要逍遥些。我也不稀罕嫁人，努力攒钱开个零食铺子，养只小猫，安安稳稳地过着小日子就好，这亦是我穿来前的想法。</p>
+<p>我之前一直在公司当社畜，每天加班加得比谁都晚，卷到最后心肌梗塞直接要了我的小命。</p>
+<p>来这儿要是能实现生前的愿望，倒也挺好。</p>
+<p>想到这儿，我搓衣服的手都更起劲了些，豆花笑了笑。</p>
+<p>「那你可得盼着咱们娘娘长命百岁平平安安的。」</p>
+<p>我一愣，从她这话里听出了别的意思来。</p>
+<p>豆花看着我满脸懵的样子，疑惑地点了点我的脑袋。</p>
+<p>「妃位以上的娘娘要是遭了些不测，咱们都得跟着殉葬。」</p>
+<p>擦，什么玩意？</p>
+<p>我脑子「轰」的一声炸开，只觉两眼发黑双腿一软。</p>
+<p>我的小铺子，我的小金库，好像一瞬间全部化为乌有烟消云散了。</p>
+<p>书里不光没交代殉葬的设定，连淑妃的死都写得不清不楚，我真是想把这个挖坑不填坑的作者揪出来暴打一顿！</p>
+<p>3</p>
+<p>我拎着盛满衣物的篮筐浑浑噩噩地往回走，迎面撞上了一个坚硬的胸膛。</p>
+<p>篮子翻了，衣服袜子什么的狼藉一地，我欲哭无泪仰天长啸，又要重新洗一遍！</p>
+<p>泪花在眼里打转，我抬头见自己撞着的人是杜康，临霞宫的小侍卫。</p>
+<p>以美酒为名，性格却跟个闷葫芦一样，整天凶神恶煞地拿着把剑晃来晃去。</p>
+<p>我冬枣可是以幽默的笑话大王闻名临霞宫的，虽然多少有照搬啊……不，借鉴的嫌疑，但全宫上下就没有听了我的梗不笑的。</p>
+<p>只有他，我看他整日看门无聊得很，好心给他讲了个冷笑话。我自己倒是笑得前仰后合花枝乱颤的，他是一点儿面子也不给我，冰着张脸跟我欠他钱一样。</p>
+<p>离开的时候不小心绊到门槛踉跄一下，身后却传来一声轻笑。</p>
+<p>「这倒好笑。」</p>
+<p>我愤愤地回头刀了他一眼，这梁子就算结下了。</p>
+<p>「摸够了吗？」</p>
+<p>才发觉自己的手还停在他的胸膛，依依不舍地缩了回去，不就摸了一下嘛，真小气！</p>
+<p>我正欲说些什么，他却有些紧张兮兮地变了脸色。</p>
+<p>「你这小女娘，哭什么，不就是不小心撞翻了篮子吗，我帮你捡就是。」</p>
+<p>人类的悲欢并不相通，我哭的是这事嘛，比起生死大事，这点挫折简直不值一提啊。</p>
+<p>杜康动作倒是挺快，蹲在地上将衣物一件一件捡回篮子里。</p>
+<p>他忽的耳尖一红，将最后一件衣服飞快地扔进篮子塞进我怀里，不自在地轻咳两声。</p>
+<p>定睛一看，我的里衣躺在那堆衣物的最上面，怪不得他突然跟做了贼一样心虚的紧。</p>
+<p>我轻叹一声，勾勾手指示意他凑近点。</p>
+<p>「杜康，你是个好人，我得给你一句忠告。」</p>
+<p>他不解地眨眨眼睛，看着我认真的模样真就听话地弯了弯身子。</p>
+<p>「快润。」</p>
+<p>「……什么？」</p>
+<p>「我说，赶紧另谋出路吧，再不跑，就来不及啦！」</p>
+<p>4</p>
+<p>我觉得，淑妃还可以再抢救一下。</p>
+<p>依她这骄纵跋扈的性子，怕是早已树敌无数，谁都有可能噶了她，嫌疑人范围海了去了，竟一时半会儿还锁定不了。</p>
+<p>我初步断定，她极有可能栽在吃的上。</p>
+<p>尚食局送来了中午的膳食，我冲在前面一个箭步拦了下来。</p>
+<p>我拿着那根银针一道一道地试，直到淑妃在里头催促才不情不愿地放了行。</p>
+<p>淑妃每夹一道菜我的心就跟着紧一下，每咽下去一口我的表情就凝重一分。</p>
+<p>她端着茶就要往嘴里送，我想都没想大喝一声。</p>
+<p>「且慢！」</p>
+<p>她吓得一哆嗦，茶水溅出来了几滴，我抬手小心翼翼地用银针试了遍毒。</p>
+<p>她终于忍无可忍地撂下筷子，不悦地看向我。</p>
+<p>「要不你替本宫吃？」</p>
+<p>我倒也想，要我说大家就都别吃了。</p>
+<p>淑妃突然面色凝重，掐着喉咙不住地咳嗽。</p>
+<p>我神色大变立即张罗着去摇人，你看，我就说会栽在吃的上！</p>
+<p>「快，快叫太医！」</p>
+<p>我提着裙摆风风火火地跑去请太医，淑妃在身后伸手制止，我却早已跑没了影。</p>
+<p>「无妨，本宫只是……」</p>
+<p>「噎着了。」</p>
+<p>太医屏息凝神地替淑妃把脉，我在一旁紧张兮兮地等待。</p>
+<p>「娘娘的身体并无大碍，无需太过担心。」</p>
+<p>我犹豫着再三确认。</p>
+<p>「您确定吗？要不再看看？」</p>
+<p>「真的没有事吗，也许是您没查出来呢？」</p>
+<p>淑妃无语地白了我一眼，不忘往嘴里塞口荔枝。</p>
+<p>「本宫好得很，谁知道你突然犯什么神经。」</p>
+<p>……希望你过几天还能说出这话来。</p>
+<p>御花园里的荷花开了，满池绿意，清香扑鼻。淑妃兴致勃勃地带了几块小馒头去喂池里的锦鲤，一边撒着碎屑一边念念叨叨。</p>
+<p>「上天有眼，给本宫一个孩儿吧。」</p>
+<p>她睨了我一眼，分出一小块馒头给了我。</p>
+<p>「本宫大发慈悲，许你也许个愿。」</p>
+<p>我将馒头掰成小块，喂了池中的锦鲤。</p>
+<p>「希望娘娘长命百岁，平平安安的。」</p>
+<p>淑妃拍了拍沾了碎屑的手，勾勾嘴角。</p>
+<p>「溜须拍马。」</p>
+<p>天地良心，这愿望绝对是真心的。</p>
+<p>望向对面，我突然心中警铃大作，惠嫔正和宫女在荷花池边嬉笑喂锦鲤。我连忙挡住淑妃的视线，冤家路窄，可别让这俩祖宗碰到一块去。</p>
+<p>怕什么来什么，淑妃两眼一瞪，稳了稳头上的珠簪，火速进入战斗模式。</p>
+<p>我心惊胆战地跟在她后面，头恨不得埋进地里。</p>
+<p>瞧见我们几人气势汹汹地过来，惠嫔愣了愣，随即绽开一个得体温婉的笑容。</p>
+<p>「臣妾见过淑妃娘娘。」</p>
+<p>嘴上问着好，却并无行礼的意思，得，看来也不是什么善茬。我就说，能当女主的人能是什么简单角色。</p>
+<p>「见到本宫为何不行礼？」</p>
+<p>一番火药味贼重的较量，淑妃毫不客气地发难攻击，惠嫔笑里藏刀不卑不亢，楚楚动人深明大义的小白花形象气得淑妃牙痒痒。</p>
+<p>「冬枣，给本宫打烂她的嘴！」</p>
+<p>突然被 cue 的我一脸惊恐地摆了摆手，娘娘，您是嫌自己凉的不够快吗？</p>
+<p>「愣着干什么，难不成还要本宫亲自动手？」</p>
+<p>我只能磨蹭着上前，英勇就义一样地对着惠嫔的脸蛋敷衍了几下子。</p>
+<p>「没吃饭吗？」</p>
+<p>我咬咬牙，加大了手劲，表情比惠嫔还要狰狞痛苦，惠嫔白皙的脸上出现几道清晰的红印。</p>
+<p>死了死了死了死了…….</p>
+<p>回宫的路上，淑妃心情大好，甚至还哼起了小曲。</p>
+<p>「打得好，今儿本宫心情好，回去给你加餐奖励你最喜欢的红烧肉！」</p>
+<p>您还是奖励我一个棺椁吧。</p>
+<p>炮灰我啊，快变成红烧肉了捏。</p>
+<p>艳阳高照，难得寻着块有树荫的凉快地。</p>
+<p>我端着盘红烧肉愁眉苦脸地蹲在树干前，一想到这可能是我吃的最后一顿好的，就悲从心来毫无胃口。</p>
+<p>树叶沙沙作响，一个小金桔砸中我的脑袋，我吃痛一声摸摸后脑勺，继续啃着肉。</p>
+<p>又一个小金桔砸在我的肩膀上，我有些炸毛地抬头，就看见杜康在树上好整以暇地瞅着我，嘴角噙着抹若有若无的笑。</p>
+<p>他伸手摇了摇树枝，更多的小金桔如雨点般纷纷落下，我只能起身逃窜。</p>
+<p>「杜康，你要谋杀同伙啊？」</p>
+<p>他轻哼一声轻松地从树上跳下来，手里还拿着刚从树上取下来的风筝。</p>
+<p>「谁是你同伙。」</p>
+<p>都是在临霞宫当差的冤种，不是同伙是什么。</p>
+<p>他忽地伸手在我额头上贴了一会儿，被我没好气地拍掉。</p>
+<p>「你怎么了，病了？都没见你讲那些无聊的笑话了。」</p>
+<p>行，说我的笑话无聊，我在心底又给他记上一笔，郁闷地蹲回树荫下。</p>
+<p>「杜康，你说人死了是什么感觉。」</p>
+<p>他坐在我身旁，忽地沉默了一会儿。</p>
+<p>「问这个做什么。」</p>
+<p>「我就问问嘛。」</p>
+<p>「……反正不是什么好滋味，你别瞎想就是了。」</p>
+<p>我幽幽叹了口气，好奇地问他。</p>
+<p>「杜康，如果你发现自己时日无多，临死之前有没有什么愿望啊？」</p>
+<p>他蹙了蹙眉，伸手捶了下我的脑壳。</p>
+<p>「怎么总提这些死不死的，吃你的肉吧。」</p>
+<p>我死皮赖脸地缠着他问，他实在被我弄得不耐烦了无奈地挠了挠下巴若有所思。</p>
+<p>「可能，想让人真心夸我一句吧。」</p>
+<p>「我打小就在临霞宫当差了，还没听过有人说过我几句好话。」</p>
+<p>「别的愿望，还没想到，也挺难实现的。」</p>
+<p>我像摸修勾一样疼惜地 rua 了把他脑袋的杂毛。</p>
+<p>杜康一个激灵瑟缩了几分，不自在地轻咳两声。</p>
+<p>我凑近杜康，掰过他的脸仔细端详，彩虹屁那是信手拈来。</p>
+<p>「你长得可真好看，想在哥哥的鼻梁上滑滑梯。」</p>
+<p>他愣了半晌，脸突然肉眼可见地爆红，张了张嘴却没有说话。</p>
+<p>杜康低头理了理衣领，拿着剑跑远了，那几步道让他走得歪七扭八的。</p>
+<p>啧，出息。</p>
+<p>5</p>
+<p>淑妃自从听了惠嫔和梨花的故事后，再也不让我给她择梨花了，改成择荷花了。</p>
+<p>我悲壮地站在池子旁陷入了沉思，这难度系数是一天比一天高了啊。</p>
+<p>池水还算得上清澈，我盯着我晃动的倒影愣了神。</p>
+<p>这么一张俊脸，给我我也不中用啊。</p>
+<p>我越想越伤心，拉丧着脸从土里捡了根树枝踮着脚去够离我最近的那朵荷花。</p>
+<p>一点……还差一点点……</p>
+<p>忽地有人一把揽住我的腰肢，强硬地将我带离了池子，我带着凌乱的新发型愣住。</p>
+<p>杜康紧紧蹙起眉头，语调里带着些许愠气。</p>
+<p>「你脑瓜里一天天的到底都在想些什么。」</p>
+<p>见我没反应，他和缓了一点脸色，拉着我到树荫下坐好。</p>
+<p>「身体发肤，受之父母。」</p>
+<p>「有什么难处你尽管说与我听，何苦想不开？」</p>
+<p>误会，误会了哥哥。</p>
+<p>「你平日里嘴是碎了些，脑子也不太灵光，但……也是有优点的。」</p>
+<p>我立即竖起耳朵，比如？</p>
+<p>「比如……为人挺真诚的，会及时注意照顾到身边人的情绪，挺能干的，长得……也，也挺好看的。」</p>
+<p>我嘿嘿一乐，拍拍屁股起来，跟他解释了来龙去脉。</p>
+<p>杜康盯着我手中的树枝看傻子一样地瞥了我一眼。</p>
+<p>「你就想拿这个摘荷花？」</p>
+<p>他说着轻盈地一跃，飞身而上，脚尖点过池子，眨眼之际手里便多了几朵开得正艳的荷花。</p>
+<p>哇，轻功！</p>
+<p>我星星眼地接过他的荷花，嘴张得老大。</p>
+<p>「好酷，再来一次！」</p>
+<p>杜康在一声声的夸赞中逐渐迷失了自我，在池子与岸上来回飞窜不亦乐乎。</p>
+<p>直到一声斥呵打断了我们，我一哆嗦手里的花差点没全掉地上。</p>
+<p>「前面什么人，见到惠嫔娘娘还不快行礼。」</p>
+<p>杜康拉着我急忙跪下，我眼珠子滴溜溜地转，默默咽了咽口水。</p>
+<p>怎么说，第一次和女主对戏，有点紧张，这是我一个路人甲可以有的待遇吗？</p>
+<p>惠嫔生得一副清丽模样，倒真像那梨花一样气质卓绝。</p>
+<p>她打量了我半晌，目光落在我怀中的荷花上，识时务者为俊杰，我哆嗦着双手奉上。</p>
+<p>惠嫔轻轻弯了弯嘴角，却没有接过的意思。</p>
+<p>「这荷花倒是开得正盛，但本宫还是更喜爱梨花的清冷。」</p>
+<p>她身旁的小宫女及时地接过话茬。</p>
+<p>「娘娘说的甚是，到饭点了，奴婢特意吩咐尚食局给您做了您最爱吃的樱桃馅饺子，我们快回去吧。」</p>
+<p>樱桃馅……饺子？？我瞳孔地震，嘴角一抽没忍住小声吐槽。</p>
+<p>「依托答辩。」</p>
+<p>惠嫔脚步一顿，神情微变。</p>
+<p>「你刚刚说什么？」</p>
+<p>擦，怎么把心声说出来了，我连忙装作若无其事地低下头，恨不得像鸵鸟一样把自己脑袋埋到地里。</p>
+<p>惠嫔眯了眯眼睛。</p>
+<p>「你是淑妃宫里的？叫什么。」</p>
+<p>我只能如实回答，她没再说些什么，转身离开了。</p>
+<p>如释重负地舒了一口气，杜康在一旁紧蹙眉头递来担忧的眼神。</p>
+<p>「惠嫔娘娘为何要问你姓名？」</p>
+<p>我耸耸肩，没心没肺地咧咧嘴角。</p>
+<p>「可能是因为我长的好看吧。」</p>
+<p>「那也应该问我才是。」</p>
+<p>……看着他一本正经的模样，我竟然一时想不出什么话来反驳。</p>
+<p>6</p>
+<p>次日我正在院里摸鱼，豆花却急急地过来把我叫走。</p>
+<p>我立即心虚地起身，不知所云地忙碌起来。</p>
+<p>「冬枣，娘娘们在御花园一同赏花，说是让你过去。」</p>
+<p>让……我过去？我有些不确定地再次确认了一遍。</p>
+<p>「咱们娘娘也在？」</p>
+<p>「淑妃娘娘在寝宫里歇息呢，你知道，咱们娘娘和惠嫔娘娘一向不太对付。」</p>
+<p>那就是惠嫔的主意了，我沉吟片刻只能往御花园赶。</p>
+<p>我忐忑地攥紧衣袖，老老实实地行礼拜见。</p>
+<p>悄悄抬眼，瞥见凉亭里坐着太后和惠嫔，还有几个我不熟悉的妃嫔。</p>
+<p>惠嫔掩嘴轻轻一笑，竟向着太后介绍起我来。</p>
+<p>「这是在淑妃宫里当差的，据说讲笑话很厉害，今天把她叫过来给各位姊妹逗个趣。」</p>
+<p>？没想到有朝一日我冬枣真的能靠这个鸡肋的技能远近闻名。</p>
+<p>我嘴角微微一抽，迅速头脑风暴，搜刮起记忆里所有能想到的段子和笑话。</p>
+<p>「瞅着倒是挺灵巧的，既然惠嫔都这么说了，那你便讲来听听，讲好了自然有赏赐。」</p>
+<p>我只能硬着头皮开口。</p>
+<p>「知道为什么刚出生的小牛死了吗？因为空腹不能喝牛奶。」</p>
+<p>凉亭一片寂静，我干笑几声，只能又往下换个别的讲。</p>
+<p>「许仙给白娘子买了一顶帽子，结果白娘子戴上之后就不能动了，原来那是一顶压蛇帽。」</p>
+<p>反应依旧平平，只有惠嫔捧场地轻笑几声，其他的人都是一脸疑惑地面面相觑。</p>
+<p>冷汗渐渐将我的衣衫浸透，明明艳阳高照，我却控制不住地瑟瑟发抖。</p>
+<p>我意识到以我现代人的思维，根本讲不出让她们能够理解的段子。</p>
+<p>太后的脸色越来越沉，我声音愈发地低了下去，急中生智。</p>
+<p>索性搬来了几个以前在史书上看到的一些有趣小故事，略微改编一下绘声绘色地讲了起来。</p>
+<p>这回效果总算有所改善，太后琢磨了片刻，终于弯了弯嘴角。</p>
+<p>我双手夸张地比划，做出各种滑稽有趣的表情，把几位娘娘逗得前仰后合。</p>
+<p>喉咙已然嘶哑得厉害，我却根本不敢停下来歇息片刻。</p>
+<p>就像一个跳梁小丑一样尽力扮演着能让她们开心的角色，小心翼翼地观察着每个人的神情，生怕一个不注意就犯了大忌。</p>
+<p>声音变得颤抖，我极力克制着情绪努力扬起笑脸，单薄的衣衫紧紧吸附在我的后背。</p>
+<p>讲到最后，我已然精疲力尽，伏在地上连呼吸都放轻了几分。</p>
+<p>太后满意地点点头，看向身旁服侍的太监。</p>
+<p>「不错，惠嫔有心了，哀家今天心情好多了。喏，给这个小宫女些赏赐罢。」</p>
+<p>我苦涩地行了个大礼，像被抽干了所有力气一样重重地舒了口气。</p>
+<p>「谢太后娘娘恩赐。」</p>
+<p>我再也不想讲笑话了。</p>
+<p>7</p>
+<p>回到临霞宫，正好与豆花打了个照面，她担忧地扶着我上上下下检查了一遍。</p>
+<p>我将太后给的赏赐塞到了她手里，她瞪大了眼睛不解地望向我。</p>
+<p>「豆花，我的那些笑话根本不好笑对不对？」</p>
+<p>她「嘿嘿」地乐出声，拍了拍我的肩膀。</p>
+<p>「其实我很多都没听懂，但你讲的时候眉飞色舞的，我看着就开心。」</p>
+<p>我笑了笑，把那些赏赐全部送给了她，就当她这些天对我的照顾的谢礼了。</p>
+<p>靠着树干缓缓坐下，我小心翼翼地揉着酸痛的膝盖。</p>
+<p>方才跪得太久，膝盖已然青紫，还破了皮，疼得厉害。</p>
+<p>地上忽的多了个影子，杜康蹙着眉慢慢蹲下身子。</p>
+<p>「我听他们说你被娘娘们叫过去了。」</p>
+<p>我歪歪脑袋弯了弯嘴角。</p>
+<p>「你担心我啊。」</p>
+<p>他盯着我的伤口抿了抿嘴，从怀里掏出个小药罐。</p>
+<p>「你还随身带着这些啊。」</p>
+<p>「嗯，我是侍卫，身上有伤难免的。」</p>
+<p>他打开药罐，轻轻地洒在伤口上，我呲牙咧嘴地呼出了声，看着他认真的模样终是没忍住发问。</p>
+<p>「杜康，你很小就在这里当差了吗？」</p>
+<p>他轻轻地「嗯」了一声算作回应。</p>
+<p>「那你有没有什么亲人和朋友啊？」</p>
+<p>他动作一顿，眼神有些许的迷茫。</p>
+<p>「……不清楚。」</p>
+<p>「那你……整日这样不觉得无聊吗，或者……可曾有过不甘？」</p>
+<p>杜康淡淡地垂眸，睫羽轻颤。</p>
+<p>「这就是我的职责，贵人吩咐些什么，便尽管去做。」</p>
+<p>我愣愣地张了张嘴，却不知道该说点什么。</p>
+<p>杜康将药罐拧紧，有些犹豫地低下头。</p>
+<p>「一个跟我相识数年关系还不错的兄台想要提携我去别的宫当差，我不知道该怎么答复他。」</p>
+<p>我眸子一亮，又惊又喜地抓住他的手臂。那杜康岂不是就有机会逃脱殉葬之祸了？</p>
+<p>我认真地盯着他晃动的眼眸，一字一句苦口婆心地劝诫他。</p>
+<p>「那就抓住机会啊，这可不多得，错失或许以后就再也没有了。」</p>
+<p>「可……」</p>
+<p>「杜康，相信我，去吧。」</p>
+<p>他有些落寞地别过头。</p>
+<p>「你就这么不愿和我在一处当差？」</p>
+<p>我怔了怔，杜康起身拍了拍身上的灰，转身离去。</p>
+<p>「知道了。」</p>
+<p>8</p>
+<p>和往常一样去主殿将还沾着露水的花插进陶瓷瓶里，却看到一个有些陌生的面孔正在为淑妃把脉。</p>
+<p>问了豆花才知道，淑妃这么多年一直未孕，特意请了宫外有名的神医来瞧瞧。</p>
+<p>神医蹙着眉头，淑妃小心地观察着他的脸色。</p>
+<p>「怎么了大夫，是有什么问题吗？」</p>
+<p>神医摸着花白的胡须沉吟片刻，询问淑妃有没有吃什么不该吃的东西。</p>
+<p>「本宫的吃食全都是由尚食局精心调配过的，怎么会出问题。皇上给本宫御赐的安胎药也一直在喝，究竟为何一直怀不上孩儿？」</p>
+<p>「这……敢问那药，是否还有残余的药渣？」</p>
+<p>豆花连忙拿来今早剩下的药渣，神医仔细地嗅闻，碾在手里观望，忽地神色一变跪了下来。</p>
+<p>「臣惶恐，这药掺杂了大量的麝香，娘娘确定没有拿错药吗？」</p>
+<p>淑妃呆呆地坐在椅上，颤抖的指尖难以置信地沾了把剩余的药渣。</p>
+<p>「本宫要见皇上。」</p>
+<p>我和豆花愣是没拦住，淑妃提着裙摆踉跄着奔去了大殿。</p>
+<p>待她回来时，还伴着一道禁足三月的圣旨。</p>
+<p>淑妃面无表情地靠在床头，只是眼里有隐约的泪花不停地打转。</p>
+<p>她脸色苍白得吓人，自嘲似的勾了勾嘴角。</p>
+<p>「那御赐的能让我怀上孩儿的神药，竟是避子汤，我一喝就喝了五年，从未有过任何怀疑。」</p>
+<p>「皇上给的，肯定是好东西啊……」</p>
+<p>她喃喃自语着，我不忍地拿来她爱吃的荔枝，盼着能让她开心一点。</p>
+<p>淑妃盯着荔枝出了神，忽地一把将盛着荔枝的碗扣在了地上，撕心裂肺地痛哭出声。</p>
+<p>「荔枝……御前的太监跟我说只有十斤，给了我足足一篮，我供着宝贝似的每日吃一点，舍不得吃完。」</p>
+<p>「明明那余下的荔枝，全都在惠嫔那儿，她要多少有多少，撒个娇便能让皇上亲手给她剥来吃。」</p>
+<p>「为什么……我到底做错了什么？」</p>
+<p>她哭声凄厉，发泄了一通情绪没了力气，安静地躺在床上愣神，从眼角淌下两滴清泪。</p>
+<p>自此，她大病不起，身子一天比一天虚弱。</p>
+<p>我清楚地知道，那一天快来了。</p>
+<p>我提着篮子失魂落魄地回到临霞宫的院子，大雨忽的倾泻而下，不给人任何的反应余地。</p>
+<p>单薄的衣衫被浇了个彻底，发丝湿漉漉地扒在脸颊，狼狈极了。</p>
+<p>天空一片阴霾，乌云蔽日，我想，我可能再也见不到暖和的阳光了。</p>
+<p>脚下一滑，篮子翻了个彻底，我伏在地上浑身泥泞，咸涩的液体滑过下颌，不知是雨水还是泪水。</p>
+<p>肩上被人披上了一件外衣，我怔怔地转过头去正好撞入杜康眼底的那片春湖。</p>
+<p>「杜康，你不是……」</p>
+<p>「我不走了。」</p>
+<p>五脏六腑像被揉在了一起揪着疼，我紧紧抓着他的衣领，语无伦次。</p>
+<p>就差一点，明明就差一点。</p>
+<p>最后一丝仅存的理智也轰然崩塌，我哭得狼狈，为什么，为什么总让我遭受这样的事。</p>
+<p>我抽抽搭搭地控诉，杜康安抚似的将我揽进他的怀抱。</p>
+<p>「杜康……你不明白。」</p>
+<p>我先前二十八年的人生，可谓是过得窝囊至极，一辈子都在兢兢业业地给资本打工。我害怕卷不过同事，担心自己被裁员，没日没夜地工作，就盼着能给自己和家人拼一个更好的未来。</p>
+<p>到最后竹篮打水一场空，上天给了我一次体验另一种人生的机会，但为什么结局还是这样。</p>
+<p>「我只是想熬到出宫安安稳稳地过完这一生，真的很贪心吗？」</p>
+<p>「好没用，我真的好没用，只能永远当一个用来衬托别人的背景板。」</p>
+<p>杜康默默地听着我撕心裂肺的宣泄，一下一下轻拍着我的后背。</p>
+<p>「冬枣，不准妄自菲薄，你明明是这世上最有趣的小女娘。」</p>
+<p>「你整日那么努力的逗我开心，活得潇洒自在，让我看到了生命另一种绽放的形式。」</p>
+<p>「我时常想，明明都是在临霞宫当差，为何你总能笑得那么没心没肺。和你在一起的每一秒，我都由衷地感到幸福快乐。」</p>
+<p>「你才不是什么背景板，是我心中唯一的主角。」</p>
+<p>我怔愣地看着他认真的模样，杜康捧起我的脸，眼眶微红。</p>
+<p>「冬枣，你方才说你的愿望就是能出宫安安稳稳地过完一生。」</p>
+<p>「我，我这人没什么权势，也不会说什么好听的话。但我一定能把你保护的很好，让你下半辈子都开开心心的。」</p>
+<p>「我就问你一句，出宫后可愿意……跟着我？」</p>
+<p>他眼神真诚炽热，声音有些许的发颤。</p>
+<p>我愿意啊，可是杜康，来不及了，真的来不及了。</p>
+<p>9</p>
+<p>淑妃还是死了，死在了她被禁足的第二个月。</p>
+<p>哪里是什么暴毙，是在绝望与寒心里孤独地离开，死在了帝王家的猜忌和博弈中。曾经那朵张扬的娇花，在银杏满地的深秋凋零枯萎。</p>
+<p>临霞宫再也没有了昔日的生机，视线所及之处全是一片扎眼的白。</p>
+<p>离安葬的日子又近了些，我却出奇的平静，安安分分地做着该做的事。</p>
+<p>我和往常一样将屋子收拾得干干净净，提着篮子去御花园折花。</p>
+<p>迎面碰上泪痕未干的豆花，她看着我，忽的扯了扯嘴角，眼里尽是遗憾。</p>
+<p>「冬枣，你的小铺子，我可能去不了啦。」</p>
+<p>我极力克制着眼眶里的泪花，安抚似的摸了摸她的脑袋，攥紧了手中的篮子。</p>
+<p>御花园里秋意正浓，新开了几朵菊花，金灿灿的。</p>
+<p>我出神地望着眼前的景色，却听到了熟悉的歌声。</p>
+<p>脑袋一阵嗡鸣，我难以置信地跟着歌声寻去声音的来源。</p>
+<p>惠嫔，不，现在应该是惠妃了，她悠闲自得地荡着秋千，嘴里哼的竟是某个男团的热门曲子。</p>
+<p>我愣愣地站在原地，浑身冰冷，被无力的感觉紧紧包裹，惠妃注意到身后的目光，慢慢转过头来。</p>
+<p>四目相对，她眼里闪过几丝怜悯和得意的笑意。</p>
+<p>早该想到的，我早该想到的。</p>
+<p>惠妃起身从秋千上下来，慢慢踱步到我的身旁。</p>
+<p>「走吧，去我宫里坐坐。」</p>
+<p>惠妃吩咐宫女给我沏了杯茶，暖和的温度透过杯身传递到我的掌心。</p>
+<p>「你早就知道我是穿过来的，是不是？」</p>
+<p>她微微一笑。</p>
+<p>「本来还不能确定，那日叫你过去讲笑话之后，才确认你跟我一样。」</p>
+<p>我眼眶微红，茶也没有心情品尝。</p>
+<p>「你可知我伏在地上颤抖的时候，有多害怕吗？如果那时我出了什么差错要丢了性命，你会救我还是冷眼旁观？」</p>
+<p>惠嫔沉默半晌，幽幽叹了口气。</p>
+<p>「我必须要将书里的剧情安安稳稳地走下去，不能出别的差错。」</p>
+<p>「你没有发现吗？自从你过来之后，多了些其他的剧情，尤其是在你认识那个什么杜康后，可你原本不应该有这些羁绊，你已经在改变走向了。」</p>
+<p>我有些激动地起身，声音带了丝不可抑止的怒意。</p>
+<p>「你是女主角，结局注定是当上皇后享尽荣华富贵，但我呢？为何我连自己的情绪和故事都不允许拥有，只能当个背景板为你们做衬。」</p>
+<p>「我自知以我渺小的力量对抗吃人的封建社会完全就是天方夜谭，可我只想活下去仅此而已，从不奢求其他。」</p>
+<p>「这也是罪过吗？是我不识好歹异想天开了吗？」</p>
+<p>惠嫔沉吟片刻，定定地抬眸望向我。</p>
+<p>「殉葬的事，我很抱歉，但我可以将你救出来让你免受死亡之祸。」</p>
+<p>「……杜康呢？」</p>
+<p>她把玩着手指上的戒指，勾勾嘴角。</p>
+<p>「我就知道你会提他，将他救出来可以，但有条件。」</p>
+<p>「过几天太后就会出宫静养，你随她一起。如果你能安静撑到故事结局，我就成全你和杜康。」</p>
+<p>我低下头，默默攥紧衣角。</p>
+<p>「好。」</p>
+<p>10</p>
+<p>月明星稀，我心事重重地坐在以前和杜康经常待着的树旁，却半天不见杜康的身影。</p>
+<p>正当我准备回屋歇息的时候，却捕捉到些许细碎的呻吟。</p>
+<p>……杜康？</p>
+<p>我忙不迭地环顾四周，终于发现了匿在黑暗里的他。</p>
+<p>淡淡的血腥味钻入鼻腔，我手足无措地在他身上寻找伤口，却被他一把握住了手腕。</p>
+<p>「没事，我不疼。」</p>
+<p>他傻乎乎地咧着嘴，声音却带着些克制的颤抖。</p>
+<p>「冬枣，我被调去惠妃娘娘宫里当差了，他们说你也要离开临霞宫了。」</p>
+<p>「太，太好了。」</p>
+<p>我忍着哽咽，紧紧攥住他的手。</p>
+<p>「他们欺负你了对不对？」</p>
+<p>「冬枣，等到你到了年纪出宫，我们就一起归隐到乡野里去，开一间你心心念念的小铺子。」</p>
+<p>他所答非问，我一时失语，抬头努力让眼泪倒流回去。</p>
+<p>我知道，这是惠妃给我的警告，她有能力救杜康出来，就亦能置他于死地。</p>
+<p>「再给我讲个笑话听吧，你讲笑话的时候最好看了。」</p>
+<p>我勉强地扬起一个笑容点了点头，他倚在我的肩头呼吸趋于平稳。</p>
+<p>11</p>
+<p>淑妃出殡这天，我作为贴身宫女随太后一同出宫静养。</p>
+<p>近日朝中不太太平暗流涌动，太后皇上母子间也生了嫌隙，为了彻底消除皇上的顾虑，太后自请出宫为皇家祈福。</p>
+<p>上次见面的那个眼里流露出精明，不怒自威的老太太，一夜之间白了头发，连带着整个人都随和慈悲了不少。</p>
+<p>「冬枣，哀家有点冷，你再去取个暖炉过来。」</p>
+<p>我应答一声，四处寻觅却找不着好用的暖炉，索性直接仿照着热水袋的思路做了个暖手宝。</p>
+<p>太后将暖手宝放在掌心颠了颠，弯了弯眼睛。</p>
+<p>「做工比起你之前送哀家那个助睡的香囊好多了，那个兔子让你绣的像个老鼠。」</p>
+<p>「你这些鬼点子都是从哪想出来的，人瞅着娇小主意倒是多得很。」</p>
+<p>我「嘿嘿」一笑，伏在案边歪了歪脑袋。</p>
+<p>「冬枣再接着上回的故事跟您讲。」</p>
+<p>出宫这一待，就是五年。</p>
+<p>我随着太后整日诵经念佛，整个人与世隔绝，偶尔会传来宫里的消息，只不过已经跟我没什么干系了。</p>
+<p>只是，那个令我牵挂的身影总会入我的梦来，有时给我讲宫里的趣事，有时哭丧着脸控诉我不辞而别。</p>
+<p>我试着托人打探过他的消息，只不过，又有谁会去关心一个小侍卫的生死呢？</p>
+<p>初雪这一天，太后与世长辞了。</p>
+<p>和第一次面对淑妃的死不同，我已然成长太多，安静地跟着宫里过来的人将后事一一安顿。</p>
+<p>念及母子情谊，皇上将太后的遗体接了回来，赐了封号风光大葬。</p>
+<p>而惠妃，终于被册封为了皇后，举国欢庆，大赦天下。</p>
+<p>故事已临近尾声，也是我回宫的时候了。</p>
+<p>一路上马车颠簸，我忐忑不已，不知作何心情。</p>
+<p>掀开帘子，宫门还是和原来一样红的扎眼，锁住了斑驳往事。</p>
+<p>心跳如雷，宫门打开，我怔愣在原地。</p>
+<p>杜康站在门口，眼里荡漾温柔的笑意，冲我伸出了手。</p>
+<p>「终于等到了。」</p>
+<p>泪水夺眶而出，我扬起笑颜，由着他攥着我的手，掌心传来温热的触感。</p>
+<p>「走吧，我带你回家。」</p>
+<p>（全文完）</p>
+<p>作者：serein</p>
+<p>备案号:YXX1jppOjBziOOOXEPzTPM3Y</p>
+<p>长公主的奴隶</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>今天你点赞了嘛 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/20-%E4%BD%A0%E5%92%8C%E5%BC%82%E6%80%A7%E6%9C%8B%E5%8F%8B%E5%81%9A%E8%BF%87%E6%9C%80%E6%9A%A7%E6%98%A7%E7%9A%84%E4%BA%8B%E6%98%AF%E4%BB%80%E4%B9%88/" title="你和异性朋友做过最暧昧的事是什么？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">你和异性朋友做过最暧昧的事是什么？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/20-%E9%95%BF%E5%85%AC%E4%B8%BB%E7%9A%84%E5%A5%B4%E9%9A%B6/" title="长公主的奴隶">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">长公主的奴隶</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

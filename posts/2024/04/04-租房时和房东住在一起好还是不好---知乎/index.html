@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房时，和房东住在一起，好还是不好？ - 知乎 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/04/04-%E7%A7%9F%E6%88%BF%E6%97%B6%E5%92%8C%E6%88%BF%E4%B8%9C%E4%BD%8F%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%A5%BD%E8%BF%98%E6%98%AF%E4%B8%8D%E5%A5%BD---%E7%9F%A5%E4%B9%8E/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/04/04-%E7%A7%9F%E6%88%BF%E6%97%B6%E5%92%8C%E6%88%BF%E4%B8%9C%E4%BD%8F%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%A5%BD%E8%BF%98%E6%98%AF%E4%B8%8D%E5%A5%BD---%E7%9F%A5%E4%B9%8E/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="租房时，和房东住在一起，好还是不好？ - 知乎">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-04T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta name="twitter:title" content="租房时，和房东住在一起，好还是不好？ - 知乎">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="租房时，和房东住在一起，好还是不好？ - 知乎">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-04-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-04-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="4345">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">租房时，和房东住在一起，好还是不好？ - 知乎</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-04-04T00:00:00Z</span>
+          
+
+          | <span>9分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-04-04T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%a7%9f%e6%88%bf%e6%97%b6%ef%bc%8c%e5%92%8c%e6%88%bf%e4%b8%9c%e4%bd%8f%e5%9c%a8%e4%b8%80%e8%b5%b7%ef%bc%8c%e5%a5%bd%e8%bf%98%e6%98%af%e4%b8%8d%e5%a5%bd%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e&amp;url=https://example.com/posts/2024/04/04-%E7%A7%9F%E6%88%BF%E6%97%B6%E5%92%8C%E6%88%BF%E4%B8%9C%E4%BD%8F%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%A5%BD%E8%BF%98%E6%98%AF%E4%B8%8D%E5%A5%BD---%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/04/04-%E7%A7%9F%E6%88%BF%E6%97%B6%E5%92%8C%E6%88%BF%E4%B8%9C%E4%BD%8F%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%A5%BD%E8%BF%98%E6%98%AF%E4%B8%8D%E5%A5%BD---%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%a7%9f%e6%88%bf%e6%97%b6%ef%bc%8c%e5%92%8c%e6%88%bf%e4%b8%9c%e4%bd%8f%e5%9c%a8%e4%b8%80%e8%b5%b7%ef%bc%8c%e5%a5%bd%e8%bf%98%e6%98%af%e4%b8%8d%e5%a5%bd%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%20https://example.com/posts/2024/04/04-%E7%A7%9F%E6%88%BF%E6%97%B6%E5%92%8C%E6%88%BF%E4%B8%9C%E4%BD%8F%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%A5%BD%E8%BF%98%E6%98%AF%E4%B8%8D%E5%A5%BD---%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25859.jpg" alt="租房时，和房东住在一起，好还是不好？ - 知乎" />
+      
+
+      <p>租房时，和房东住在一起，好还是不好？</p>
+<p>来上海的第一年，我住静安区，租的是月租900的精装双卧房。</p>
+<p>那天，房东一脸暧昧，跟我说：「你才十八岁，这就值3000啦。</p>
+<p>」我愣了一会，才明白他的意思。</p>
+<p>租房软件上，这间房的次卧租金，是3900一个月。</p>
+<p>02我叫郭丛笑，十八岁。</p>
+<p>刚到上海，住35块一天的青年旅社。</p>
+<p>十二人寝。</p>
+<p>每天在汗臭中醒来，去洗永远洗不上的热水澡。</p>
+<p>接着，去找住的地方，或者一份包住的工作。</p>
+<p>张子明，或许是我命中的贵人。</p>
+<p>我做梦也没想过，合租，900块，能租到那么好的房子。</p>
+<p>他三十多岁，是一名艺术品中介。</p>
+<p>整租了一套两居室，要将次卧出租。</p>
+<p>这套房子有宽敞的客厅，干净的卫生间，一扇硕大的洗漱镜下，还做了双人洗手台。</p>
+<p>次卧里还贴着上任租客留下的粉色壁纸，和猫咪挂画。</p>
+<p>而这一切，比青年旅社还要便宜100块。</p>
+<p>我读着合同上看不懂的条款，张子明贴心地问我怎么没去读大学，刚成年就出来打工。</p>
+<p>刹那间，所有委屈都涌了上来。</p>
+<p>我死死地攥着笔，告诉他：「我考了啊，我明明考上了大学的。</p>
+<p>」576分，足够上个不错的大学。</p>
+<p>但爸妈却把我关在家里阻止我报志愿，只留给我两个选择。</p>
+<p>要么打工，要么嫁人。</p>
+<p>我没得选，我只能跑，跑到一个我可以自由呼吸的地方。</p>
+<p>我在合同上签下名字。</p>
+<p>一笔一划，力透纸背。</p>
+<p>我咬着牙说：「我死也不会回去了。</p>
+<p>」张子明叹了口气，轻声说：「没关系，以后有事就跟明哥说，乖啊。</p>
+<p>」他拿起合同，拍了拍我的后背，便一身轻松地离开了。</p>
+<p>我站在原地，身体僵硬。</p>
+<p>因为他拍我的动作，像是在摩挲。</p>
+<p>温柔地、爱怜地、不容拒绝地，摩挲一只小猫。</p>
+<p>似乎在告诉我，那是折扣掉的三千块钱，所赋予他的权利。</p>
+<p>03那天之后，张子明总会在不经意间越线。</p>
+<p>递水杯时，会轻轻摸一下我的手。</p>
+<p>吃饭时，会突然帮我擦嘴。</p>
+<p>会在我上厕所时，假装若无其事地过来开门。</p>
+<p>甚至半个月后，我晾在阳台的内衣裤，也开始莫名丢失了。</p>
+<p>我鼓起勇气问了张子明。</p>
+<p>得到的也只是「可能被风吹走了」之类的离谱回答。</p>
+<p>但我没有再追究，我不敢。</p>
+<p>张子明总是喝醉，一米八的个头，眼睛布满血丝。</p>
+<p>我太害怕了，怕他身上那股原始的压迫感。</p>
+<p>我只能安慰自己，尽快找到工作，换个房子，一切就都会结束了。</p>
+<p>可张子明没留给我太多时间。</p>
+<p>那天我面试回来，刚准备入睡，就听到了一声异响。</p>
+<p>我猛地看向门锁。</p>
+<p>那是钥匙插入锁芯的声音。</p>
+<p>有人在开我的门锁？</p>
+<p>是张子明？</p>
+<p>「明哥！？</p>
+<p>」我强装镇定喊了一声，没得到任何回应。</p>
+<p>开锁声停止了。</p>
+<p>我赤脚下床，用椅背抵住门锁，半蹲，手里捏一把剪刀，死死盯着门外。</p>
+<p>十分钟。</p>
+<p>足足过了十分钟，我再次听到了声音。</p>
+<p>那是一道轻微的脚步声，正从我门前移开。</p>
+<p>就是张子明！他刚才……一直守在门外！04这一晚，我没有睡觉。</p>
+<p>我的小腿已经蹲得发麻，我将厚重的实木床头柜移开，挪到门口堵上椅子。</p>
+<p>这时，一个日记本从床头柜后掉在了地板上。</p>
+<p>我没有细看，只是一直死死盯着床头柜。</p>
+<p>直至天明。</p>
+<p>听到张子明出门的声音后，我才钻进卫生间，草草洗漱一番，对着镜子画好淡妆，出门面试。</p>
+<p>下午再回到出租屋时，我带回了一把锋利的水果刀。</p>
+<p>我悄悄开门，踮着脚环顾一周，张子明似乎还没回来。</p>
+<p>我松了口气，连忙卸妆洗澡，回到卧室，反锁房门，喝了口床头的凉白开，一头扎到床上。</p>
+<p>盖好被子，关掉顶灯，闭上眼睛。</p>
+<p>我只希望，能好好睡上一觉。</p>
+<p>但让我彻底毛骨悚然的事，发生在仅仅几个呼吸后。</p>
+<p>我察觉到屋子中的异样，接着屏住了气息。</p>
+<p>然后我听到，床下，传来了另一个人的呼吸声。</p>
+<p>是张子明！他一直藏在我的床下！！05我不禁握紧枕头下的刀，将它揣进怀里。</p>
+<p>接着，我发出一声微弱的呓语。</p>
+<p>我要装作腹痛，去上厕所，离开这间卧室。</p>
+<p>我下了床。</p>
+<p>可脚刚落在地面上，我就意识到坏了。</p>
+<p>他一定会发现，我全身都在抖。</p>
+<p>我连拖鞋都没穿，快步向门口走去，轻轻打开门。</p>
+<p>客厅暖黄色的灯光洒在我脸上。</p>
+<p>与此同时，我听到了人生中最绝望的一句话。</p>
+<p>「笑笑，你带刀干什么？</p>
+<p>」06绝望，在全身蔓延。</p>
+<p>我不敢回头，只能拔腿向外跑。</p>
+<p>仅仅两步，张子明就追了上来。</p>
+<p>他直接将我拽入了卫生间，把我粗暴地推倒在地。</p>
+<p>疼痛瞬间袭来。</p>
+<p>手里的刀，也被压下来的张子明打飞。</p>
+<p>明晃晃的灯光下，张子明居高临下地看着我，狰狞大笑。</p>
+<p>他压着嗓子，恶狠狠地说：「郭丛笑，你早知道，会有这么一天的。</p>
+<p>」「你没在等这一天吗？</p>
+<p>」「你难道，不是一直在等这一天吗？</p>
+<p>！」「小贱人！」张子明重复着这句话，腐臭的酒气喷在我的脸上，紧接着，他低下头，用力侵犯我的脖颈。</p>
+<p>我的双手，只能无意义地扭曲摆动。</p>
+<p>刀，滑到了卫生间的最边缘。</p>
+<p>身边没任何重物。</p>
+<p>只有张子明的手，牢牢钳制住我。</p>
+<p>那是我人生中，最无力的三十秒。</p>
+<p>直到，我摸到了还带着水珠的浴帘。</p>
+<p>我瞬间意识到，这张廉价的塑料浴帘，是我唯一的救命稻草。</p>
+<p>我拼尽全力地往下拽，就在张子明撕开我上衣的那一刻，撕拉！浴帘被我一整个扯下来，罩在了张子明的头上，紧接着，我用手死死搂住张子明的头。</p>
+<p>他疯狂挣扎，双手时不时抽在我身上。</p>
+<p>我忍着疼痛，继续将浴帘缠绕在张子明的脖子上。</p>
+<p>我开始用力，用力，再用力。</p>
+<p>07张子明的头，裹着浴帘，躺在我白皙的膝盖上。</p>
+<p>他死死盯着我，一脸的惊恐无助。</p>
+<p>我只是埋下头，靠近他的耳边。</p>
+<p>「我确实在等这一天呀，还好没等太久。</p>
+<p>」我用平静的、安慰的语气，轻声说。</p>
+<p>「我知道的，你在浴室里装了摄像头，对吗？</p>
+<p>」「狗杂种。</p>
+<p>」08那天，我看见了。</p>
+<p>那本掉落的日记本上，记录了上一任租户，是如何被张子明用「以性换租」的方式侮辱的。</p>
+<p>也记录了，她是如何被张子明用卫生间的偷窥录像威胁的。</p>
+<p>张子明该死。</p>
+<p>而我，也想让他死。</p>
+<p>白天洗澡的时候，我在升腾的水汽中，将浴帘的挂钩一个个掰松。</p>
+<p>确保我能一把拉下。</p>
+<p>接着我买了刀，等待着和张子明博弈。</p>
+<p>逃跑，也是故意的。</p>
+<p>是为了引着张子明来到卫生间，然后让墙角的摄像头，记录下这一切。</p>
+<p>09张子明的呼吸渐渐停息了。</p>
+<p>他眼中的绝望，比我十分钟前演出来的还多。</p>
+<p>多得多。</p>
+<p>我轻轻说：「亲爱的，别担心。</p>
+<p>」「这是一场完美的正当防卫。</p>
+<p>」终于，张子明模糊的瞳孔失去了焦点，双手无力地垂下来。</p>
+<p>我装作惊恐地起身，想去房间拿手机报警。</p>
+<p>我会没事的，我是完美的受害者。</p>
+<p>但刚起身，一股莫名的失重感顿时涌了上来。</p>
+<p>大脑嗡嗡作响，眼前的景象开始逐渐模糊。</p>
+<p>怎么回事？</p>
+<p>我想起床头那杯白开水。</p>
+<p>张子明在里面下了药？</p>
+<p>可惜，他太心急，露出的破绽太多。</p>
+<p>我看着张子明的尸体，扯出微不可见的冷笑，随即晕倒在冰冷的地砖上。</p>
+<p>10我是被窗外的汽车鸣笛声吵醒的。</p>
+<p>脑袋还有点疼，但已经彻底清醒过来。</p>
+<p>我费力起身，准备赶紧报警。</p>
+<p>刚迈了一步，我转头回来。</p>
+<p>不对……不对！浴帘被挂了回去，刀子摆在地上。</p>
+<p>尸体……尸体不见了。</p>
+<p>11我有些慌了，忙洗了一把脸，让自己冷静下来。</p>
+<p>我检查了一下，身上青一块紫一块的，还留有搏斗的痕迹。</p>
+<p>晚上发生的一切，是真实的。</p>
+<p>但如果张子明没死，还先我一步醒来，他没理由放过我啊？</p>
+<p>他的房间，我的房间，客厅，厨房，都没有人。</p>
+<p>猛然间，我想到了最关键的东西——那个藏在卫生间天花板一角的摄像头。</p>
+<p>我搬来凳子，拨开天花板那块松动的瓷砖。</p>
+<p>后面，除了一个狭窄的洞口，再无他物。</p>
+<p>本该摆在这里的摄像头，不见了。</p>
+<p>就在这时，兜里的手机响了。</p>
+<p>我点开手机。</p>
+<p>看到，竟然是张子明，给我发了一段视频。</p>
+<p>那是一段被剪辑过的视频，只剪出了我闷死他的过程。</p>
+<p>12他说：「笑笑，继续住在这里吧。</p>
+<p>」我吸了口气，皱眉回复：「你什么意思？</p>
+<p>」「二十四小时。</p>
+<p>只要你离开这房子二十四小时，视频就会移交给公安局。</p>
+<p>」这是张子明发给我的最后一条消息。</p>
+<p>后面无论我发什么，他都没有再回复了。</p>
+<p>现在我既不知道张子明的情况，也不知道他究竟想干什么，我只能继续住在这个空旷的两室一厅里。</p>
+<p>渐渐地我发现，自己无论干什么，都有一种被凝视的感觉。</p>
+<p>是凝视，不是监视。</p>
+<p>就像有人默默地看着你，不干涉，也不离开。</p>
+<p>我检查了每一个角落，按照网上的方法试了又试，都没有再发现任何一个摄像头。</p>
+<p>凝视的感觉，却一直存在。</p>
+<p>直到有一天，我洗完澡在浴室吹头发，忽然断电了。</p>
+<p>一刹那间，吹风机的声音，排气扇的风声，都消失了。</p>
+<p>我吓了一跳，又很快恢复过来，打开手电筒，在镜子前，慢悠悠地用毛巾包好了头发。</p>
+<p>但是，我听到了。</p>
+<p>我真的听到了。</p>
+<p>在陷入寂静的那一瞬间，在一片漆黑中，在倒映我裸体的镜子后面，传来了东西掉落的声音。</p>
+<p>13谢传秋我画过最满意的画，是一副女人的裸体肖像。</p>
+<p>她是我的室友，住在对面那套两居室的室友。</p>
+<p>两年前，我租下这套房子，闭关画画。</p>
+<p>但我越画越烂，每一幅都过不了自己这关。</p>
+<p>终于有一天，我崩溃了。</p>
+<p>在一个雷雨夜，压抑太久的我，打砸家具，胡乱发泄。</p>
+<p>卫生间的镜子碎了，镜子后面，露出了一个暗屋。</p>
+<p>特别小，不足四平米，还留有一些水泥、木板之类的装修器材。</p>
+<p>我翻了进去，看到暗屋对面的墙上，有个半人高的窗口被一面镜子封上了，那应该是邻居家卫生间的镜子。</p>
+<p>我记得，邻居家是个还没有租户的出租屋。</p>
+<p>我萌生了一个大胆的想法。</p>
+<p>后几天，我将邻居家卫生间的镜子拆了下来，换上了一面我买来的双面镜。</p>
+<p>对面的人，看到的是一面正常的镜子；而在我眼中，那只是一面透明的玻璃。</p>
+<p>14起初，一个男人搬了进来。</p>
+<p>我看他埋摄像头，看他下药，看他威逼利诱每一个租户。</p>
+<p>我愤恨不已，又兴致勃勃。</p>
+<p>后来，一个叫郭丛笑的女孩搬进来了。</p>
+<p>她不算标准的美人，但她是我见过，最有力量的女孩。</p>
+<p>我有预感，她是不一样的。</p>
+<p>那天，我坐在暗屋里，看着正在沐浴的郭丛笑，脑海里勾勒出了一幅裸体肖像。</p>
+<p>及格了，但还不够。</p>
+<p>远远不够。</p>
+<p>她像一座沉默的火山，内里岩浆滚烫，迫不及待地想要喷发。</p>
+<p>我想要更多。</p>
+<p>于是当那个变态畜生自言自语说要对郭丛笑下手的时候，我没有干涉。</p>
+<p>一整天，我都守在暗屋里，等待着镜子那边的进展。</p>
+<p>终于，那个瞬间到来了！在那个瞬间，郭丛笑被张子明压在身下，刀被甩开，双手被钳制，郭丛笑眼中喷薄出汹涌的恨意……太、太美了！！！我屏住呼吸，整个身体却为之激动。</p>
+<p>五分钟后，我的激动，变成了一身冷汗。</p>
+<p>我眼睁睁看着郭丛笑，亲手用浴帘闷死了那个畜生。</p>
+<p>「狗杂种。</p>
+<p>」15她昏过去了。</p>
+<p>110。</p>
+<p>暗室中，我想过报警。</p>
+<p>但我明白，一旦报警，郭丛笑就会永远地从我视线中消失。</p>
+<p>我悄悄处理了一切。</p>
+<p>卫生间已经一片干净。</p>
+<p>我的真命模特郭丛笑，还悠哉地生活在那里。</p>
+<p>我还享受着，只有我知道的，二人时光。</p>
+<p>我知道她找到工作了，在一家外企做前台。</p>
+<p>知道她有了几个追求的对象，也有了几个闺蜜。</p>
+<p>知道她没有放弃学业，还在准备着成人高考。</p>
+<p>我不仅仅是一个观察者，她也不仅仅是一个被我凝视的对象。</p>
+<p>我确信我正和她生活在一起，隔着一面镜子的距离。</p>
+<p>今天是星期六，按习惯，她会在洗完澡后，去客厅听网课。</p>
+<p>但她没有。</p>
+<p>她赤裸地站在镜子前，披上了一件我从没见过的，真丝材质的黑色睡衣。</p>
+<p>我知道她讨厌黑色。</p>
+<p>接着，她拿起一把水果刀，揣进了睡衣的内兜。</p>
+<p>她走出了浴室。</p>
+<p>她要干什么？</p>
+<p>畏罪自杀？</p>
+<p>三分钟后，我的门铃被人摁响了。</p>
+<p>我连忙从窗口翻出来，整理好镜子，来到门前。</p>
+<p>「谁啊？</p>
+<p>」「你好，我是你对门的邻居。</p>
+<p>」门外，是我再熟悉不过的声音。</p>
+<p>是郭丛笑。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/04/04-%E6%9C%89%E4%BB%80%E4%B9%88%E8%AE%A9%E4%BA%BA%E5%90%AC%E4%BA%86%E8%83%8C%E8%84%8A%E5%8F%91%E5%87%89%E7%9A%84%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" title="有什么让人听了背脊发凉的恐怖故事？ - 知乎(1)">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">有什么让人听了背脊发凉的恐怖故事？ - 知乎(1)</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/04/03-%E5%92%8C%E4%BA%B2/" title="和亲">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">和亲</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

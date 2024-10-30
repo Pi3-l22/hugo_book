@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有没有特别的故事？ - 知乎(1) | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/05/25-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/05/25-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="有没有特别的故事？ - 知乎(1)">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-25T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta name="twitter:title" content="有没有特别的故事？ - 知乎(1)">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="有没有特别的故事？ - 知乎(1)">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-05-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-05-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="8669">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">有没有特别的故事？ - 知乎(1)</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-05-25T00:00:00Z</span>
+          
+
+          | <span>18分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-05-25T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%9c%89%e6%b2%a1%e6%9c%89%e7%89%b9%e5%88%ab%e7%9a%84%e6%95%85%e4%ba%8b%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29&amp;url=https://example.com/posts/2024/05/25-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/05/25-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%9c%89%e6%b2%a1%e6%9c%89%e7%89%b9%e5%88%ab%e7%9a%84%e6%95%85%e4%ba%8b%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29%20https://example.com/posts/2024/05/25-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E7%9A%84%E6%95%85%E4%BA%8B---%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26302.jpg" alt="有没有特别的故事？ - 知乎(1)" />
+      
+
+      <p>有没有特别的故事？</p>
+<p>我的堂姐不太正常。</p>
+<p>她总对我说，存在另一个世界。</p>
+<p>大家权当她疯了。</p>
+<p>只有我知道，这不怪她。</p>
+<p>故事要从很多年前讲起。</p>
+<p>那时她上小学，个子是女生里最高的。</p>
+<p>因此还当了班长。</p>
+<p>突然有一天，班上新转来一个同学，叫森林。</p>
+<p>老师告诉他们，森林同学的脑袋受过伤。</p>
+<p>大家要对他多加照顾。</p>
+<p>一席话毕，班里暗自沸腾，老师还是太低估了小孩子的恶。</p>
+<p>不提不要紧，这一提，反而打开了潘多拉的魔盒。</p>
+<p>这下，所有人都知道了，森林是个弱智。</p>
+<p>于是纷纷对他开始了「照顾」。</p>
+<p>比如偷偷在他的水杯里，撒下粉笔末。</p>
+<p>然后骗他喝下去。</p>
+<p>比如课间操的时候，猛地扒下他的裤子，然后一群人哈哈大笑。</p>
+<p>再比如趁他不注意，把他推进女厕所，然后听里面的女生惊声尖叫。</p>
+<p>或许，森林他真的是智力低下。</p>
+<p>面对这些「照料」，他没有丝毫的不适，仿佛一切都和他无关一样。</p>
+<p>偶尔看大家笑，他也傻呵呵地跟着别人一起笑。</p>
+<p>很多年以后，堂姐告诉我说，那是一种后天养成的钝感。</p>
+<p>用于切断感情连结，以此来抵御外界伤害。</p>
+<p>很多犯罪型人格都会有。</p>
+<p>但那个时候，谁懂这个，堂姐只觉得森林傻得可怜。</p>
+<p>于是仗着男生还没发育。</p>
+<p>她利用自己的身高优势，替森林出了几次头。</p>
+<p>原本只是行侠仗义，打抱不平，却不想惹了祸端。</p>
+<p>从那以后，她被厄运缠身。</p>
+<p>书桌里总是出现各种奇怪的东西。</p>
+<p>有还在扭动的毛毛虫，有带着鲜血的卫生纸。</p>
+<p>甚至还有大量的避孕套和污言秽语。</p>
+<p>堂姐被弄哭了好几次。</p>
+<p>朋友看不惯，帮她告了老师。</p>
+<p>老师很震怒，专门开了班会调查此事。</p>
+<p>当时，气氛压抑且沉重，全班默不作声，没人承认。</p>
+<p>后来老师想了个办法，采取了匿名投票的方式，让大家举报始作俑者。</p>
+<p>最后的结果是，森林几乎全票当选。</p>
+<p>老师当场从他的书包里，搜出了还没用过的避孕套，以及大量黄色图片和小说。</p>
+<p>也就是这个时候，大家也才开始慢慢讨论起森林的所作所为。</p>
+<p>有人说，他看到课间操的时候，森林偷偷跑回教室，亲吻堂姐的椅子。</p>
+<p>还有人说，他看到森林趁没人的时候，偷偷舔过堂姐的课本。</p>
+<p>更有甚者，他看到森林曾经拿着堂姐的外套，疯狂蹭自己的下体。</p>
+<p>这件事把堂姐恶心坏了，她第一次感受到人性之恶。</p>
+<p>当场嚎啕大哭。</p>
+<p>之后的一个星期里，可能是得了某种心理疾病。</p>
+<p>无论家人怎么劝说，她都不愿意去上学。</p>
+<p>直到班主任带着一帮同学去探望。</p>
+<p>并告诉她说，森林这件事学校已经严肃处理。</p>
+<p>他的父母办了转校手续。</p>
+<p>以后绝对不会再有类似的事情发生。</p>
+<p>在多方保证和劝说下，堂姐最终决定回学校上课。</p>
+<p>没有了森林，自然也不会再有类似的骚扰。</p>
+<p>一场风波，就这么慢慢平息。</p>
+<p>只是从那时起，堂姐的心理阴影，从来没有消散过。</p>
+<p>她经常向我们描述她梦中的情况。</p>
+<p>在漆黑的夜晚，有一双眼睛，在死死盯着她无论怎么跑，都跑不出对方的视线。</p>
+<p>也正是这么个原因，在花一样的年纪，堂姐不敢穿漂亮的衣服。</p>
+<p>不敢在天黑后和朋友逛街。</p>
+<p>不敢做在她那个年纪，爱美的女生会做的一切。</p>
+<p>但人算不如天算，在她高三的一次晚自习，一切都发生了变化。</p>
+<p>那天暴雨来袭，暴雷阵阵。</p>
+<p>如同有人在渡劫一样，天气恶劣得吓人。</p>
+<p>那天叔叔说好了，会去接堂姐。</p>
+<p>可车半路熄火，被困在了路上。</p>
+<p>而恰巧堂姐手机坏了，于是就在学校门口傻站着，等了很久。</p>
+<p>人越来越少，雨越来越大。</p>
+<p>最终堂姐拿着伞，一个人冲进了雨里，决定走回去。</p>
+<p>那时候街上的人，已经很少了。</p>
+<p>平时回家，堂姐都要穿过一条阴暗的小路。</p>
+<p>但那天她没有，她绕过了一切可能发生危险的地方，尽可能地走大路。</p>
+<p>即便要多花些时间。</p>
+<p>但即使如此，也无济于事，因为在堂姐的身后，出现了一个男人。</p>
+<p>他在很远的地方，和堂姐刻意保持着距离。</p>
+<p>在街边橱窗的反光上，他的身影一闪而过。</p>
+<p>堂姐进他进，堂姐停他停。</p>
+<p>用余光轻瞥，堂姐看到他穿着一身黑衣服，还带了帽子，帽檐被刻意压低，看不到脸。</p>
+<p>那时四下无人，堂姐一身冷汗，头皮发麻。</p>
+<p>那段时间，刚发生过几起连环奸杀案，凶手至今都没抓到，且对方尤其喜欢在雨天作案。</p>
+<p>僵持了片刻，对方像是做好了准备，在朝堂姐走来，两人的距离在一点点缩短。</p>
+<p>巨大的恐惧之下，堂姐用尽了最后一丝理智与气力。</p>
+<p>朝拐角一家小超市跑了去。</p>
+<p>喘着粗气，破门而入。</p>
+<p>把店主吓了一跳。</p>
+<p>还以为她是来砸场子的。</p>
+<p>堂姐上气不接下气，带着哭腔告诉他。</p>
+<p>有人跟踪我。</p>
+<p>话音刚落，那个中年大叔立刻就明白了其中的意思。</p>
+<p>立刻推门出去，查看情况。</p>
+<p>果然，那个人还在那里，远远站着。</p>
+<p>一动不动。</p>
+<p>大叔怒喝一声，「干嘛呢你！」见那人犹豫了片刻，转身离开了。</p>
+<p>然后店主大叔不断安慰堂姐。</p>
+<p>还说要帮她打电话联系家人。</p>
+<p>只是风雨太大，加上爆雷闪电。</p>
+<p>所有的通讯，都受到了奇怪的干扰。</p>
+<p>电话怎么也打不通。</p>
+<p>于是大叔主动提出，要送她回家。</p>
+<p>说自己本来也是准备要关门了。</p>
+<p>这个鬼天气，不可能有人来的。</p>
+<p>结果，两人在路上，出了意外。</p>
+<p>刚到街口的一个分叉，大叔提议走更近的一条路。</p>
+<p>可还没等堂姐作出决定。</p>
+<p>一个人影从暗处闪出，狠狠地撞向他们。</p>
+<p>没等堂姐反应过来，那人已经跑远。</p>
+<p>剩下的，就是一声响彻云霄的尖叫。</p>
+<p>堂姐站在那里，身边的大叔躺在地上。</p>
+<p>血水混着雨水在地上晕开。</p>
+<p>一阵闪电，一道白光。</p>
+<p>刹那间，四周恍如白昼。</p>
+<p>而大叔躺在地上，直勾勾地看着堂姐。</p>
+<p>嘴里喘着粗气，嘴皮上下翻动，终究没能说出什么。</p>
+<p>堂姐说，她永远都忘不掉那个的眼神。</p>
+<p>复杂得难以言说。</p>
+<p>从那以后，堂姐的精神就变得不太正常。</p>
+<p>最终那年的高考，她没能参加。</p>
+<p>而杀死大叔的凶手，也一直没能找到。</p>
+<p>之后很久，这个心结，堂姐都没能化开。</p>
+<p>第二年复读，成绩一落千丈。</p>
+<p>她去了一所，我们想都不敢想的垃圾学校。</p>
+<p>入学不到半个月，她就选择了退学，想要重读高三。</p>
+<p>结果考了几年，她的成绩都没什么提升。</p>
+<p>反而是心理疾病越来越严重。</p>
+<p>每逢雨天，就躲在屋子里，疯言疯语。</p>
+<p>我们的关系很好，到后来，也只有我愿意听她讲些胡话。</p>
+<p>她告诉我说，她等了十年，在等一个重来的机会。</p>
+<p>掐指一算，那个日子很近了。</p>
+<p>天气预报说，那天会是暴雨。</p>
+<p>果然，几天后，暴雨将至。</p>
+<p>堂姐说，这场雨，会和十年前那天，一样大。</p>
+<p>我不信。</p>
+<p>但紧接着，一阵雷响。</p>
+<p>暴雨如约而来，大得吓人。</p>
+<p>我一脸惊恐，问她是怎么知道的。</p>
+<p>她说因为十年前的今天，她接到过一个电话。</p>
+<p>那时已经放学，人来人往，雨声，嘈杂声，不绝于耳。</p>
+<p>手机的信号很差，声音断断续续的。</p>
+<p>电话里那个人告诉她，她会有危险。</p>
+<p>一定要找人帮忙。</p>
+<p>紧接着，人群中，她被撞了一下，手机掉在地上，被雨水淋坏。</p>
+<p>她觉得那通电话，有些莫名其妙，并没有在意。</p>
+<p>还是依旧站在学校门口等父亲来接她。</p>
+<p>随着时间推移，人越来越少。</p>
+<p>她才开始慢慢有些慌张。</p>
+<p>本想找人结伴回家，但早已没什么人在。</p>
+<p>一番犹豫，她打着伞，冲进雨里。</p>
+<p>之后她遇到了小超市的老板。</p>
+<p>紧接着，发生了一切。</p>
+<p>所以……我在一旁，安静地听完，然后问她。</p>
+<p>那通电话是谁打的？</p>
+<p>「我。</p>
+<p>」她平静地说。</p>
+<p>「什么？</p>
+<p>」我以为是自己听错了。</p>
+<p>「是我自己打的。</p>
+<p>」我记得来电显示，是家里的固定电话。</p>
+<p>说罢。</p>
+<p>我看向堂姐家的电话。</p>
+<p>那是一台破旧的固定座机，已经很久没人用了。</p>
+<p>但是这么多年，堂姐一直固执地坚持，不让拆除。</p>
+<p>为什么……我也不知道，所以一直等到今天。</p>
+<p>说着，堂姐抬头看了一眼表。</p>
+<p>如果猜得没错的话，这通电话，可以改变很多事情。</p>
+<p>于是她拿起电话，拨下了那串号码。</p>
+<p>「喂，听着，按我说的做。</p>
+<p>」堂姐的语气带着毋庸置疑。</p>
+<p>「十秒后，会有一个人从你背后冲出来，撞掉你的手机。</p>
+<p>你要小心。</p>
+<p>」「别说话！听我的！」一阵短暂的沉默后，堂姐突然喊道：「回头！」我在一旁看着堂姐的样子，大气都不敢喘一口。</p>
+<p>只见她表情严肃。</p>
+<p>「嗯，好，现在，拿好你的手机，不要挂断。</p>
+<p>我接下来要说的事情，非常重要，你要……」话说到一半，堂姐停下来。</p>
+<p>暗骂一句：「真他妈的犟！」我问怎么了。</p>
+<p>堂姐告诉我，十年前的自己不信，把电话给挂了。</p>
+<p>正抱怨着，突然，堂姐闭上眼，紧皱眉头。</p>
+<p>我有些关切的上前，但刚碰到她的手。</p>
+<p>她猛得睁眼，吓我一跳。</p>
+<p>「事情不一样了。</p>
+<p>」她若有所思地说。</p>
+<p>「嗯？</p>
+<p>」「因为手机没有坏，所以我联系上爸爸了。</p>
+<p>」「他说他不能来接我，我就没有在门口等他，和朋友一起结伴回家了。</p>
+<p>」那很好啊，不是一切都改变了么？</p>
+<p>但看堂姐的样子，好像没有那么的开心。</p>
+<p>她还陷在自己的回忆里，没有走开。</p>
+<p>「我在学校门口，看到了我最好的闺蜜。</p>
+<p>她也没有人接。</p>
+<p>」「我俩的家是一个方向的，于是打着一把伞回家的。</p>
+<p>」「因为没有了最开始那通电话的提醒，我没有在意，身后是不是有人跟着我们。</p>
+<p>只记得，路过那家小超市的时候，老板刚好准备关门。</p>
+<p>我俩对视了一眼，但没什么特别的印象。</p>
+<p>」「那他现在，还活着吗？</p>
+<p>」虽然越听越玄乎，但我还是顺着堂姐的思路问。</p>
+<p>「嗯。</p>
+<p>活着。</p>
+<p>」她说。</p>
+<p>听到这里，我松了一口气。</p>
+<p>感觉她的心结终于打开了。</p>
+<p>但还没容我说什么。</p>
+<p>堂姐的眼泪掉了下来。</p>
+<p>我顿时觉得，事情好像并没有那么简单，应该是发生了更严重的事情。</p>
+<p>「月月跟我分开后，走了另一条路。</p>
+<p>那天，凶手的下一个目标，是她。</p>
+<p>」堂姐的眼泪止不住地往下流。</p>
+<p>「那凶手呢？</p>
+<p>」「不知道，案子一直没破。</p>
+<p>」突然，堂姐就像想起了什么一样，说，她知道凶手是谁了！「是森林。</p>
+<p>」是她的小学同学，梦魇一样的男人。</p>
+<p>当年，森林转校之后，就再没了音讯。</p>
+<p>但奇怪的事情并没有停止。</p>
+<p>堂姐教室的门窗上，经常会遭到莫名的破坏。</p>
+<p>不是被打坏玻璃，就是被撬坏了门锁。</p>
+<p>偶尔还会有红色的油漆，泼在地上，很是瘆人。</p>
+<p>大家一致认为，是森林心怀不满，恶意报复。</p>
+<p>每天上下学，都人心惶惶的。</p>
+<p>甚至还有好事者，编造鬼故事来吓人。</p>
+<p>说森林已经死了，会化成变态鬼来缠着大家。</p>
+<p>之前欺负过他的小男生们，听到这种消息，吓得腿都软了。</p>
+<p>堂姐自然不信，但心里多少有些害怕，所以平时上下学都会要求爸妈接送。</p>
+<p>本以为上了初中，事情会有好转。</p>
+<p>结果第一个学期，就出事了。</p>
+<p>据当时住宿的同学反映，很多女生的内衣被人偷了。</p>
+<p>老师们怎么查，都没有查出凶手。</p>
+<p>后来有人放出消息说，是森林干的。</p>
+<p>还添油加醋道，「他其实没有死，现在已经变成了一个变态王。</p>
+<p>，专门跑去别人学校，偷人内衣。</p>
+<p>」一时间，流言传得沸沸扬扬。</p>
+<p>刚开始，大家只当做是谈资，多少带了调侃的性质。</p>
+<p>可后来，森林真的出现了。</p>
+<p>在一个不起眼的小胡同里，和人打了一架。</p>
+<p>对方是堂姐的另一个小学同学，曾经欺负过森林。</p>
+<p>据说，偷内衣的事情，就是他传出去的。</p>
+<p>当时他躺在胡同里，头破血流，伤得不轻。</p>
+<p>而森林早已没了踪迹。</p>
+<p>这件事情最后不了了之，对方也没有报警。</p>
+<p>但森林这个人，成了那时候，所有女生的噩梦。</p>
+<p>尤其是堂姐。</p>
+<p>因为那天，在胡同口，堂姐碰见过他。</p>
+<p>当时他满脸是血，眼睛通红，带着杀意。</p>
+<p>他们相遇的时候，他愣了一下，堂姐也愣在原地。</p>
+<p>随后他冲上来，对着堂姐的脸亲了一口。</p>
+<p>亲得十分用力，还带着浓浓的血腥味，然后一句话没说，就跑开了。</p>
+<p>堂姐当时就傻了，半天才反应过来，吓得哇哇大哭。</p>
+<p>脸上还带着那个沾满血渍的唇印。</p>
+<p>而胡同的里面，那个被他打伤的人，就在那里躺着，像死了一样。</p>
+<p>堂姐说，她这辈子也往不掉那个画面，当晚回家，就做了噩梦。</p>
+<p>梦的主题，永远是一个阴暗角落里，被人死死盯着，怎么也逃不开。</p>
+<p>再后来，初二那年，我们这所城市发生了一起震惊全国的奸杀案。</p>
+<p>一个十一岁的初中女孩，被人残忍奸杀。</p>
+<p>刚出这事儿的时候，所有人都以为是森林干的。</p>
+<p>那段时间是堂姐最崩溃的时候。</p>
+<p>不管她在哪里，在什么地方，都感觉有人在背后注视着她一样。</p>
+<p>如同得了森林恐惧症。</p>
+<p>所到之处，皆是森林。</p>
+<p>好在后来破案，凶手是个偷电动车的蠢贼。</p>
+<p>可堂姐却并没有因此松上一口气。</p>
+<p>从那之后，森林成了堂姐青春记忆里，抹不去的阴影。</p>
+<p>只见堂姐猛地看向墙上的钟表。</p>
+<p>「还来得及！」说着又是一通电话。</p>
+<p>「喂，听着，我是十年后的你。</p>
+<p>现在在你身边的，是你最好的闺蜜。</p>
+<p>一个小时后，她会死。</p>
+<p>只有你能救她。</p>
+<p>」堂姐顿了一下，感觉这次，对面并没有挂断电话。</p>
+<p>于是，她继续斩钉截铁道。</p>
+<p>「过一会，你要留意你们身后的人。</p>
+<p>」「那个人叫森林，是你的小学同学。</p>
+<p>他会做一些不好的事情。</p>
+<p>你要逃！」说着一阵闪电，房间里恍若白昼。</p>
+<p>堂姐失落地放下电话。</p>
+<p>我问她怎么了。</p>
+<p>她说信号不稳，断掉了。</p>
+<p>紧接着，她又是双眼紧闭。</p>
+<p>看起来十分痛苦的样子。</p>
+<p>「现在呢？</p>
+<p>这次怎么样了？</p>
+<p>」「那天我和月月出了校门以后，身后果然有人。</p>
+<p>所以路过那家小超市的时候，我跟月月向小超市的老板求助。</p>
+<p>老板心好，答应送我们回家。</p>
+<p>一路上他聊了很多，说自己有个儿子，成绩很好，前几年考取了一所很棒的大学。</p>
+<p>」「他还说，自己年轻时候的梦想其实是当飞行员，只不过高考落榜，自己的人生被彻底改变。</p>
+<p>」「他以为自己这辈子就这样了。</p>
+<p>，没想到儿子会这么争气。</p>
+<p>言语间，全是慈祥与善意。</p>
+<p>」「直到我们来到一个胡同口。</p>
+<p>这时，突然冲出了一个人。</p>
+<p>消瘦，挺拔，一身黑色的衣服。</p>
+<p>」昏暗中，他拿着一把匕首。</p>
+<p>对着老板的脖子就是一下。</p>
+<p>干净利索。</p>
+<p>鲜血喷了我们一身。</p>
+<p>月月惊声尖叫，而我则下意识地脱口而出。</p>
+<p>森林！那人明显一愣，转过头来。</p>
+<p>一道闪电来袭。</p>
+<p>我看清了他的脸。</p>
+<p>冷酷无情，透着杀意。</p>
+<p>没错，就是森林。</p>
+<p>即使许久未见。</p>
+<p>我还是认出他了。</p>
+<p>转而他走向我，一把抱住。</p>
+<p>狠狠地吻了我，用力之深，让人恐惧。</p>
+<p>我已经忘记了要如何挣扎。</p>
+<p>幸亏月月在旁边反应过来。</p>
+<p>拿着手中的伞，狠狠戳向森林背。</p>
+<p>或许是真的戳到了要害，又或许是这里的响动，终于吸引到了偶尔路过的汽车。</p>
+<p>总之森林没有再做下一步的动作。</p>
+<p>他跑掉了。</p>
+<p>「月月从那以后受了惊吓。</p>
+<p>没有再参加高考。</p>
+<p>」「后来情况变得比我还严重，家里人放弃治疗，把她送进了精神病院。</p>
+<p>」此时，堂姐的表情，已经变得有些淡漠。</p>
+<p>像是饱经沧桑。</p>
+<p>我不知说什么好。</p>
+<p>两人在房间里，沉默不语。</p>
+<p>此时窗外的暴雨，还在下着。</p>
+<p>偶尔一声惊雷，让人脊背一紧。</p>
+<p>「姐，你还要打么？</p>
+<p>」堂姐咬着下嘴唇，犹豫了很久。</p>
+<p>至少目前而言，每一通电话，都会让事情变得更糟。</p>
+<p>我不知道堂姐，还有没有勇气，打下一通。</p>
+<p>片刻之后，堂姐说她渴了。</p>
+<p>就在我乖乖听话，去给她倒水的时候。</p>
+<p>我听到她又拿起了电话。</p>
+<p>「喂，你听着，无论如何，这次的电话都不要挂断。</p>
+<p>」我把水端了过去，小心翼翼地，尽量不发出声音。</p>
+<p>「过一会，你们路过小超市的时候，会看到那家店的老板，准备关门回家。</p>
+<p>」「你要跑过去，告诉他，今天躲在超市里，不要回家。</p>
+<p>」「然后你跟着月月改道，去最近的派出所报案。</p>
+<p>告诉他们，森林就是连环杀手。</p>
+<p>」「记住！一定走大道，用最快的速度！」堂姐的电话没放，一直在耳边。</p>
+<p>我在一旁，不敢打扰。</p>
+<p>突然堂姐有些焦急，她对电话喊道：「你把电话给他，我跟他说！」看起来是那个小超市老板，不太相信十年前的堂姐。</p>
+<p>「叔叔，您听我说，可能您不太相信，但我来自十年以后。</p>
+<p>」堂姐的语速很快，生怕对方挂断电话。</p>
+<p>「您有个儿子，他的成绩很好，考取了一所很棒的大学。</p>
+<p>您年轻的时候，梦想是当飞行员，但是落榜了。</p>
+<p>」「我来自十年后。</p>
+<p>您一定要相信我！」「我们今天会遇到那个连环杀手。</p>
+<p>所有人都会有危险。</p>
+<p>」表姐接着说，「您躲在超市里，千万不要出来。</p>
+<p>我们这就去派出所报案。</p>
+<p>」突然，堂姐顿了一下，「但，但您会有危险啊!」一阵沉默后，堂姐语气变得缓和。</p>
+<p>「嗯，好，明白了，谢谢您。</p>
+<p>」电话那头的大叔平静地说。</p>
+<p>显然，超市大叔相信了堂姐的话。</p>
+<p>并且主动提出，要护送她们一起去派出所。</p>
+<p>毕竟相比于一个成年男性，两个小姑娘才更危险一些才是。</p>
+<p>一路暴雨，路很难走。</p>
+<p>一行三人，走得很慢。</p>
+<p>堂姐在电话这头，千叮咛万嘱咐。</p>
+<p>一定要走大路，要小心身后。</p>
+<p>但一旁的大叔却毫不在意的样子。</p>
+<p>浑身散发着有他在，什么都不用怕的自信。</p>
+<p>对即将来临的危险，漠不关心。</p>
+<p>反倒是更关心十年后的堂姐。</p>
+<p>因为堂姐一直在不停地解答十年后的世界，是什么样子。</p>
+<p>比如那个连环杀手并没有被抓到，比如未来的检测技术越来越发达。</p>
+<p>很多遗留的案件，都会逐渐告破等等等等。</p>
+<p>终于，他们一行三人，走到了那个「致命」的路口。</p>
+<p>大叔提议，走更近的那条。</p>
+<p>因为天气实在恶劣。</p>
+<p>早一分钟报案，就少一分的危险。</p>
+<p>可近路，是条胡同。</p>
+<p>狭长幽深，怎么看，怎么像是吞人的深渊。</p>
+<p>就在犹豫的档口，电话又断了。</p>
+<p>堂姐愣在那里，半天没有回过神来。</p>
+<p>「怎么了，姐？</p>
+<p>又出什么事了？</p>
+<p>」我着急地问她。</p>
+<p>可她一动不动，没有回应。</p>
+<p>我看向窗外，外面的雨，小了许多。</p>
+<p>或许不久之后，雨就会停。</p>
+<p>这时堂姐好像才如梦初醒一般。</p>
+<p>发疯一样地拨打电话。</p>
+<p>可是她连打了几次，好像都没能打通。</p>
+<p>堂姐一脸颓然。</p>
+<p>有气无力的，一脸绝望。</p>
+<p>「完了，一切都完了。</p>
+<p>」「到底怎么了？</p>
+<p>」我对事情的结果，表示出极大的好奇，追问道。</p>
+<p>堂姐告诉我说，当年，电话是被大叔故意挂断的，借口是信号不好。</p>
+<p>再然后，他们走了那条小路。</p>
+<p>小路长，且昏暗。</p>
+<p>三个人越走越深。</p>
+<p>而大叔的步子，也越来越慢。</p>
+<p>到了深处，堂姐突然反应过来，好像不太对劲。</p>
+<p>为什么这么久，手机都一直没响。</p>
+<p>结果她偷偷看了一眼，发现关机了。</p>
+<p>根本不是信号不好，是大叔有意在切断她和未来的联系。</p>
+<p>但是为什么呢？</p>
+<p>那时的堂姐只是疑惑，还不明白。</p>
+<p>于是趁大叔没注意，偷偷开了机。</p>
+<p>也就是在这个时候。</p>
+<p>大叔的步子彻底停了下来。</p>
+<p>一道闪电，一阵白光。</p>
+<p>大叔的样子，看起来有些阴森。</p>
+<p>「手机给我。</p>
+<p>」声音低沉吓人，像是从地底发出的。</p>
+<p>没等堂姐反应过来。</p>
+<p>手机就被大叔给夺走。</p>
+<p>然后使劲摔在了地上，碎掉了。</p>
+<p>只要切断了和未来的联系。</p>
+<p>过去就不会再发生变化。</p>
+<p>那晚，发生了恐怖的事情。</p>
+<p>大叔的变脸，让她们措手不及。</p>
+<p>他从口袋里掏出一根红色的绳子，把堂姐的手脚绑住。</p>
+<p>一如那些被奸杀的女孩们。</p>
+<p>而此时，月月已经腿脚发软，吓傻在原地。</p>
+<p>就像被宰前的羔羊，忘记了如何逃跑。</p>
+<p>在制服堂姐后，大叔不慌不忙地走向月月。</p>
+<p>像抓小鸡一样，把她拎在了一旁。</p>
+<p>然后当着堂姐的面，开始施展他的暴行。</p>
+<p>雨声雷声嘶喊声，它们夹杂在一起，是如同地狱一般的声音。</p>
+<p>堂姐没有过多地描述令人绝望的画面。</p>
+<p>只说到了后来，月月昏死过去，没了声音。</p>
+<p>这时从暗处冲出来一个人。</p>
+<p>堂姐认得，那是森林。</p>
+<p>他朝大叔跑去。</p>
+<p>手里还拿着一把匕首。</p>
+<p>可就离大叔还差半个身位的时候。</p>
+<p>大叔突然转身。</p>
+<p>森林僵在原地。</p>
+<p>匕首掉在了地上。</p>
+<p>原来，大叔早有防备，森林的匕首，比大叔的，慢了一步。</p>
+<p>说起来，还要「感谢」十年后的堂姐，如果不是她通风报信。</p>
+<p>森林不会死，月月也是。</p>
+<p>但森林没有死在当时。</p>
+<p>在他被捅之后。</p>
+<p>他死死抱住大叔。</p>
+<p>不知哪里来的那么大力气。</p>
+<p>大叔竟一时无法挣脱。</p>
+<p>两人摔倒在地上，在雨水里厮打挣扎。</p>
+<p>森林这是在用命，为她争取时间。</p>
+<p>堂姐没有浪费，慢慢捡起森林掉落的匕首。</p>
+<p>一点一点割断了绳子。</p>
+<p>然后用尽最后的气力，跑出胡同。</p>
+<p>她得救了，大叔被抓。</p>
+<p>新闻轰动一时。</p>
+<p>森林因为重伤不治身亡，一起去世的，还有月月。</p>
+<p>而这样的结局，十年后的堂姐，没办法再改变。</p>
+<p>最让堂姐不能接受的是，一直以来，她都误解森林了。</p>
+<p>当年，恶作剧并不是他。</p>
+<p>他书包里的东西，和那些坏孩子的污蔑一样。</p>
+<p>是设计好的。</p>
+<p>这种污名化，一直持续到了初中。</p>
+<p>所有的坏事，无一例外都可以算到森林头上。</p>
+<p>即便是他想要证明，也无济于事。</p>
+<p>暴力的手段，只会坐实一切。</p>
+<p>于是他沉默着，沉默着。</p>
+<p>永远活在了暗处。</p>
+<p>但有一点，我不太明白。</p>
+<p>我看着堂姐，问道：「为什么在一开始，他要杀掉超市老板呢？</p>
+<p>」堂姐显然一愣。</p>
+<p>对啊，他怎么会知道？</p>
+<p>除非……我紧皱眉头，接话道：「除非他也接到了来自未来的电话。</p>
+<p>」接着，我俩都陷入了沉默。</p>
+<p>因为或许在森林的那个未来。</p>
+<p>发生不好事情的那个人，是堂姐。</p>
+<p>沉默没有持续太久。</p>
+<p>突然，堂姐眼里放出光。</p>
+<p>「所以说，不管谁的手机都可以！」说着，堂姐激动地拿起手机，播出一串号码。</p>
+<p>而号码的主人，就是超市老板。</p>
+<p>她曾经用老板的手机，给爸爸打过电话。</p>
+<p>原本因为愧疚，这串号码，她记到现在。</p>
+<p>没想到，在这里用上了。</p>
+<p>于是电话那头，手机响起。</p>
+<p>大叔凶相毕露，正准备摔烂堂姐的手机。</p>
+<p>结果突然走了神。</p>
+<p>趁这个机会，堂姐转身就跑。</p>
+<p>边跑边喊，尽可能想引起人们注意。</p>
+<p>可惜巷子太深，雨又太大。</p>
+<p>哪怕声嘶力竭，也未见回应。</p>
+<p>求生意志让堂姐如同一匹羚羊，矫健而迅速。</p>
+<p>在雨水中，快速穿梭。</p>
+<p>而在她身后的，是一匹独狼。</p>
+<p>带着杀意。</p>
+<p>紧紧几个健步，就把她扑倒在了地上。</p>
+<p>堂姐拼死挣扎，奈何气力悬殊。</p>
+<p>她的脖子，被死死掐着。</p>
+<p>就在死生一线间。</p>
+<p>突然，大叔的后背被戳了一下。</p>
+<p>他猛地回头，是月月拿着伞，用尽全身力气，扎在了他的腰上。</p>
+<p>这时大叔的手机还在响着。</p>
+<p>因为剧烈的打斗，手机已经露出口袋一半。</p>
+<p>趁他回头准备对付月月的时候。</p>
+<p>堂姐趁其不备，拿到了手机。</p>
+<p>提醒森林！他口袋里有刀！话音刚落，手机就被大叔抢了回去。</p>
+<p>大叔拿出绳子，把堂姐捆住，扔在地上。</p>
+<p>然后像拎小鸡一样，拎起月月。</p>
+<p>就在这个档口，一个黑影冲了出来。</p>
+<p>堂姐想都没想，大喊到：「森林，他有刀！」黑影显然是一愣，放慢了脚步。</p>
+<p>大叔转过身来，手里果然拿着匕首。</p>
+<p>两个人就这么面对面地对峙起来。</p>
+<p>这时堂姐继续大喊：「月月！跑！」已经被吓傻的月月好像突然反应过来了一样，用玩了命的速度，跑了出去。</p>
+<p>大叔不敢去追。</p>
+<p>因为只一回身，黑衣少年就会扑上来。</p>
+<p>但继续对峙下去，等月月喊来了人，就一定会被抓。</p>
+<p>于是她放手一搏。</p>
+<p>朝森林扑了过去。</p>
+<p>一番激战，鲜血流了一地。</p>
+<p>两人都倒在地上。</p>
+<p>森林把匕首，朝堂姐扔了过去。</p>
+<p>堂姐隔断绳子，连忙过来查看情况。</p>
+<p>老板虽然五大三粗，体型要大上一圈。</p>
+<p>但毕竟森林年轻，无论是精力还是反应，都胜上一筹。</p>
+<p>看起来老板伤得要重一些。</p>
+<p>堂姐抱着森林的脑袋，许久没有说话。</p>
+<p>这时，手机再次响起。</p>
+<p>堂姐从老板的口袋里，拿出手机，按下接听键。</p>
+<p>「替我谢谢森林。</p>
+<p>一直以来，辛苦了。</p>
+<p>」雨开始变小。</p>
+<p>以至慢慢停了。</p>
+<p>停得无比突然，就像来得那般突然一样。</p>
+<p>手机的信号，也恢复了正常。</p>
+<p>堂姐和过去的连接彻底中断。</p>
+<p>我在一旁，看完了所有的经过。</p>
+<p>不知道该说些什么。</p>
+<p>心中只有无限的感慨。</p>
+<p>因为我知道，堂姐手中那个所谓的电话。</p>
+<p>其实早就被叔叔剪断了线。</p>
+<p>只是个摆设罢了。</p>
+<p>每到雨天，她都会来这么一出。</p>
+<p>但我还是小心翼翼地问道：「姐，那对方有说什么么？</p>
+<p>」堂姐突然看向我，直勾勾地盯着我的眼睛。</p>
+<p>然后笑了。</p>
+<p>「他说他不叫森林。</p>
+<p>一直以来都是我搞错了。</p>
+<p>」堂姐跟我说。</p>
+<p>「那他叫什么？</p>
+<p>」我问。</p>
+<p>「深林，深不见底的深。</p>
+<p>」话音落闭，窗外暴雨停歇。</p>
+<p>堂姐脸上，是久违的满足。</p>
+<p>不知是心结化开，还是终于逻辑自洽总之从那之后，她开始变得正常。</p>
+<p>而那晚她说的，我竟一时分不出真假。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/05/25-%E6%96%B0%E7%9A%87%E7%99%BB%E5%9F%BA/" title="新皇登基">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">新皇登基</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/05/25-%E7%9C%9F%E5%AE%9E%E8%BA%AB%E4%BB%BD/" title="真实身份">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">真实身份</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

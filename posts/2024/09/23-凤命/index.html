@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凤命 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/09/23-%E5%87%A4%E5%91%BD/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/09/23-%E5%87%A4%E5%91%BD/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="凤命">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-23T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26625.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26625.jpg">
+  <meta name="twitter:title" content="凤命">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="凤命">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-09-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="11002">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26625.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">凤命</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-09-23T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-09-23T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%87%a4%e5%91%bd&amp;url=https://example.com/posts/2024/09/23-%E5%87%A4%E5%91%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/09/23-%E5%87%A4%E5%91%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%87%a4%e5%91%bd%20https://example.com/posts/2024/09/23-%E5%87%A4%E5%91%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26625.jpg" alt="凤命" />
+      
+
+      <p>凤命</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>公主要杀我，我无奈吞下假死药。</p>
+<p>谁知救我的人竟然是和我有婚约的平王，暧昧之际，妹妹顶替我嫁给太子的事情，眼看就要败露了。</p>
+<p>我是丞相嫡女。</p>
+<p>出生时，道长说我天生凤命。</p>
+<p>这话传到了皇帝耳里，他立即为我和太子赐婚。</p>
+<p>毕竟，国势渐微，内忧外患，他要给德高望重的丞相一些诚意。</p>
+<p>生母早逝，父亲没多久就迎娶了长公主。</p>
+<p>长公主天姿国色，但毕竟是深宫中出来的人，心肠不够柔软。</p>
+<p>都说没娘的孩子像根草，哪怕我是京城贵女也不例外。</p>
+<p>乱世之中，各种势力斗得狠厉，朝中正乱。</p>
+<p>我突然染了重病。</p>
+<p>娘亲留下的心腹查出，这病与长公主脱不了干系。</p>
+<p>安插在她院里的婢女也告诉我，长公主已决心要我的命了。</p>
+<p>我攥紧被角，剧烈咳着嗽，直把眼泪也呛了出来。</p>
+<p>看来，我这徒有虚位的嫡长女，是斗不过她这有权势的当家主母了。</p>
+<p>小桃眼角含着泪：「夫人恩宠正盛，只想让二小姐顶了你的婚约，丞相怕是知道了实情也不会责罚她。」</p>
+<p>我咳得更厉害了，手帕上都染了血。</p>
+<p>难，如今的处境实在是太难了。</p>
+<p>王嬷嬷示意小桃退下。</p>
+<p>「小姐，老奴有一计。」</p>
+<p>我拭了拭唇，虚弱地朝她笑。</p>
+<p>「嬷嬷请讲。」</p>
+<p>「此计凶险，而且——」</p>
+<p>她看着我，语气虽平静，但面上是掩饰不住的心疼。</p>
+<p>「而且还得看小姐舍不舍得了此处的富贵。」</p>
+<p>我眸色晦暗，惨淡一笑：</p>
+<p>「命都快没了，还管什么荣华富贵？」</p>
+<p>嬷嬷忍住悲戚，附在我旁耳语。</p>
+<p>父亲下朝回家了。</p>
+<p>新帝刚继位，父亲在朝中本就威望极高，又在这次的宫城之战中立了大功，新帝为稳固皇位，对他极其看重。</p>
+<p>好不春风得意。</p>
+<p>偏丞相府一片寂静，气氛凝重。</p>
+<p>长公主哭啼啼地奔向他。</p>
+<p>「夫君，兰儿她——」</p>
+<p>说着她便掩面而泣。</p>
+<p>这些月，她百般阻挠父亲来看我，说我这病会传染。</p>
+<p>先帝久病，临王逼宫，平王救驾，太子登基，内忧外困……</p>
+<p>父亲忙着一件又一件大事，身体是绝对不能垮的，便一次也没来探望过我。</p>
+<p>如今听此噩耗，他眼中闪过悲痛，不过马上顾虑起我和新帝的婚约。</p>
+<p>在家族利益面前，个人生死总是渺小的。</p>
+<p>长公主用手帕掩住笑容，待手帕移开时，她又是泪眼涟涟的模样。</p>
+<p>「这些年乱，我们一直将兰儿养在深闺中，鲜少有外人见过她。而且她病时，我们也并未对外宣扬。」她望着父亲，欲言又止。</p>
+<p>「你是说——」</p>
+<p>「水儿与兰儿年岁相差不大，容貌又有几分相似。我们何不将她们对换一下？」她的语气藏着急切。</p>
+<p>「这可是欺君大罪啊。」</p>
+<p>嘴上虽这样说着，父亲却在思考夫人的话，明显有动摇之色。</p>
+<p>长公主笑着摇头：「你我心知肚明，重要的不是当年的卦象，而是娄氏与皇室的联姻。新帝需要的不是有凤命的女子，而是丞相府的扶持！」</p>
+<p>当晚，京城尽知，丞相次女娄雾水年幼夭折，丞相悲痛至极。</p>
+<p>但念及战乱刚止，民生劳苦，丧事一切从简。</p>
+<p>睁眼，一片黑暗。</p>
+<p>好痛！</p>
+<p>假死药的药效已过，嗓子里全是血的味道。</p>
+<p>外面哭号声很大，我有些发抖，不让自己跟着哭。</p>
+<p>王嬷嬷说，眼泪是最不值钱的。而且现在一哭，就会暴露自己。</p>
+<p>棺木的味道很重，裹挟着腐朽与死亡的气息，空间又小，根本动弹不得。好在事先派人在棺材上戳了微孔，我大口地呼吸，才不至于憋死。</p>
+<p>不过，除了能感知到难受，我和死人倒真没什么区别。</p>
+<p>没有食物，没有水，还病魂缠身，昏沉与梦魇便成了抵御害怕的良方。</p>
+<p>不知伴着哀乐昏睡了多久，棺材移位的响动将我惊醒，慌乱中，我感受到自己被抬起、运送，然后掩埋。</p>
+<p>泪从眼角滑落，恐惧潮水般涌来。</p>
+<p>外面更大的哭声朝我袭来，刺得我捂住耳朵。</p>
+<p>一铲铲黄土打在棺材板上，像一双双在拍打的手。</p>
+<p>我握紧衣角。</p>
+<p>好冷啊。</p>
+<p>现在该是被埋在地下了吧，周围躺着的都是娄家的长辈们，不知道娘亲离我近不近。</p>
+<p>娘，气孔被堵住了，兰儿呼吸不过来，该怎么办啊！</p>
+<p>闷痛一阵阵从胸口传来，像是有人掐住了我的脖子，我快要把肺咳出来了，吐出的血沾在我脸上。</p>
+<p>泪眼蒙眬间，我看到了光亮，可伸手去碰时，又只能触到冰冷的棺材板。</p>
+<p>我终于昏死过去。</p>
+<p>耳畔是淅沥的雨声，睁眼，却是破落的屋顶，和一位陌生的姑娘。</p>
+<p>我们在城郊的破庙。</p>
+<p>「小姐，你醒了！」她的眼圈很红，像是哭了很久。</p>
+<p>「你就是王嬷嬷的义女吧。」</p>
+<p>我嘴角咸苦，强撑着坐起，但身子绵软无力，还是她将我扶起。</p>
+<p>「我叫映云，小姐唤我云儿就好。」</p>
+<p>云儿。</p>
+<p>她不是奴婢，却甘愿陪我逃难，我欠王嬷嬷的又多了。</p>
+<p>我握紧她的手，嗓子却被刀割一般痛。</p>
+<p>咳嗽间，我才发现门口还立着一位人。</p>
+<p>他眉头紧锁，本在听雨，见我醒了，便转身，向我微微颔首。</p>
+<p>那人穿着气度不凡，眉宇间既有文人的儒雅，又有武将的威严。</p>
+<p>「他是——」</p>
+<p>我眼里闪过慌乱。</p>
+<p>按照当时的安排，现在陪在我身边的应该只有云儿和一位侍卫，而这人俨然一副王侯将相气，绝不会是我的侍卫。</p>
+<p>我们还是被发现了吗？</p>
+<p>「小姐别怕，那是我们的救命恩人。」云儿见我脸色惨白得很，连忙帮我抚背。</p>
+<p>那人也收好手中的剑，向我走来：</p>
+<p>「不必害怕，本……咳，我不是坏人。」</p>
+<p>声音十分稳重，让人莫名觉得安心。</p>
+<p>但我仍紧盯着他深色的瞳孔，不肯放松一丝警惕。</p>
+<p>「小姐你是不知道，我打开棺材板，你的面色已如死人一般灰白，嘴唇发紫，脉搏也几乎探不到了。」</p>
+<p>云儿开始谈论当时的凶险，她心思单纯，不懂在外人前要有所避讳。</p>
+<p>「去医馆，郎中都摇头，你那侍卫也觉得小姐活不了，就自己逃了。我一个人，都不知道怎么办才好。」</p>
+<p>云儿说着泪珠子就掉了下来，她虽然比我高大强壮不少，但年岁和我相仿，都只是十几岁的小姑娘。</p>
+<p>不过她马上破涕为笑：</p>
+<p>「还好碰到了这位公子。」</p>
+<p>我的目光总算柔和了些。</p>
+<p>他其实年岁不大，眉心有一点朱砂痣。可再望了望他腰身，并没有悬着令牌。</p>
+<p>「朱砂点黛剑眉，东风拂槐玉树」。</p>
+<p>我想到一个人。</p>
+<p>还在深闺时，就常听人讲他的潇洒快意：丰神俊朗，惊才风逸，还爱民如子，是大良的少年英雄。</p>
+<p>他是先帝最宠爱的小儿子，先帝崩后，临王当夜发动宫变，登基做了皇帝，还囚禁了当时的太子——也就是我名义上的未婚郎君，现在的新帝。</p>
+<p>他当时在边塞，听闻此事后，立即与诸王联手，率兵回京。再加上京城有我父亲做内应，临王的龙椅还没坐热，就殒了命。</p>
+<p>这都是前不久才发生的事。</p>
+<p>察觉到我审视的目光，他也以打量的目光回敬，不过神色依旧平淡。</p>
+<p>我低头，错开他的视线。</p>
+<p>沉默了好一会儿，我咬牙，跪倒在他面前，眸子闪着水光。</p>
+<p>「多谢平王搭救之恩。」</p>
+<p>他正欲扶我的手顿住了，嘴角不自觉浮起笑意。</p>
+<p>那笑容像安神香，不带恶意。</p>
+<p>「我竟不知娄氏幼女这么聪慧。」</p>
+<p>我瞥了云儿一眼，这丫头怎么什么都往外说！</p>
+<p>只能赌一把了。</p>
+<p>我又咳嗽起来，头重重地磕在地上：</p>
+<p>「殿下宅心仁厚，此次回边塞，会经过阳州，恳请殿下捎民女二人一程。」</p>
+<p>我舅舅是阳州刺史，虽然势力薄弱了些，却是唯一可护我周全的人。</p>
+<p>见他不为所动，我心一横，眼泪掉落在地板上，一个接一个地磕着响头，血从额间渗出，好痛。</p>
+<p>云儿也跟着我跪下。</p>
+<p>「民女自知逾越，但如果殿下不帮，我们绝对活不过三日。」</p>
+<p>「求殿下救我们！」</p>
+<p>平王似有动容。</p>
+<p>他背手转身——明明比我大不了几岁，却显得那么老成。</p>
+<p>「你们跟着本王，只会更加凶险。」</p>
+<p>我想起他藏起的令牌。</p>
+<p>他故意隐瞒身份，难道也是在逃？</p>
+<p>平王终究是平王，不忍两个半大孩子白白送命。</p>
+<p>他转过身来。</p>
+<p>「不过，你们不怕的话，本王也不阻拦。」</p>
+<p>说话间雨早已停了。</p>
+<p>我本就身子虚，现在又磕出了伤，只觉头晕目眩，腿脚发软，站不起来。</p>
+<p>云儿连忙扶我出庙。</p>
+<p>庙外不知何时聚了一批人，寻常百姓装扮掩饰不住他们身上的煞气。</p>
+<p>我连忙抬头去看平王。</p>
+<p>「没事的。」</p>
+<p>他察觉到了我的不安，轻声安慰我。</p>
+<p>那些人并无杀意，见到平王皆下跪。</p>
+<p>平王示意云儿。</p>
+<p>「你和他们走，我们分头行事。」</p>
+<p>说着他转身，目光柔和：</p>
+<p>「你和本王去医馆。」</p>
+<p>我下意识摇头，唯恐暴露身份。</p>
+<p>他看出我的顾虑，浅浅一笑：</p>
+<p>「别怕，那是我旧友开的医馆。」</p>
+<p>说着向我靠近，神色有些复杂。</p>
+<p>「而且看脉象，你不是染病，而是中了慢性毒。这毒我会解，不过需要医馆的药材。」</p>
+<p>脉象？他为我诊了脉？</p>
+<p>在家中，郎中号脉时都要隔着帘子，还要在我腕上搭一块薄纱，不能直接接触碰我的手。他……</p>
+<p>我有些吃惊，他别过头错开我的目光，声音带着点心虚。</p>
+<p>「咳…当时情况紧急，本王不是有意逾矩。」</p>
+<p>我努力上马，怎么也够不到马背。</p>
+<p>犹豫再三，他忍笑，轻轻把我抱上了马。</p>
+<p>我本身长得显小，在他眼里，我到底也只是个小丫头，没那么多男女间的顾虑。</p>
+<p>马背太簸，我身子又弱，纵把缰绳拉得紧紧的，还是撑不住往下滑。</p>
+<p>他下意识就分出一只手搂住我。</p>
+<p>我僵住，一动也不敢动，连呼吸也变得不自然，整个耳尖都烧红了。</p>
+<p>从记事起，我就没被人抱过。</p>
+<p>平王果真是个心慈的人，在如此境遇下，竟陪着一个素不相识的丫头，在乡间医馆留了三日。</p>
+<p>「无妨，」他见我眼中满是愧意，柔声道，「丞相为大良竭尽心力，阳州刺史更是位忠臣，你是娄氏嫡长女，本王当全力守护好。」</p>
+<p>他猜出了我的身份。</p>
+<p>「殿下不怕吗？」</p>
+<p>毕竟，我是有凤命的人。要是被人知道和平王在一起，会对他不利的。</p>
+<p>他被我紧张兮兮的样子逗笑了。</p>
+<p>「你都不怕，本王有何畏惧？」</p>
+<p>也是，我揉眉，他是世间传颂的英雄，怎么会怕呢？</p>
+<p>上过战场的马就是快，没过五日，我们就到了阳州。</p>
+<p>云儿早早地就在候着我。</p>
+<p>我虽还是有点虚，但气色已大好，也不怎么咳嗽了。</p>
+<p>从马上下来，就和云儿一起站到平王跟前，朝他行了个大礼。</p>
+<p>他星眸含笑，给我们留下一个兵，就挥手别过。</p>
+<p>我望着远去的王，日光将他的影子拉得很长，黑色的线条勾出将王的霸气。</p>
+<p>不出意外的话，此生不会再见到他了。</p>
+<p>我额角有块胎记，很小，旁人不知，舅舅却是清楚得很。</p>
+<p>这个凭证让我进了刺史府，我终于可以稍微松一口气了。</p>
+<p>听闻我的遭遇，外祖母抱着我悲泣，舅舅则安慰我：</p>
+<p>「兰儿，你放心，只要舅舅在，就没人会再欺负你。」</p>
+<p>我含泪点头。</p>
+<p>可乱世之中，安稳的日子哪能长久？</p>
+<p>新帝励精图治，但野心过大，手段也狠厉，他有意削藩是好，只是政策推得过于急躁。</p>
+<p>阳州藩王早已暗中招兵买马，架空刺史权力，斩断他与外界的联系。</p>
+<p>舅舅已经压不住他了。</p>
+<p>但他没想到，藩王动手竟那么快。</p>
+<p>那晚我感觉心里不踏实，睡不着，便披了件衣服去庭外赏月。</p>
+<p>百无聊赖中，我听到有错落的脚步声，还没还来得及去告诉别人，前院传来兵刃相接声，还有婢女的尖叫与哭喊。</p>
+<p>我深吸一口冷气，来不及逃，便躲进一旁灌丛中。</p>
+<p>云儿从屋内跑出，像是在寻我，可她还没喊出声，便被飞箭射中。倒地后，她挣扎着要爬走，可许多兵冲了过来，向她……补刀。</p>
+<p>血水四溅，身边不断有人在死去。</p>
+<p>云儿……</p>
+<p>我捂住耳朵，瑟瑟发抖，不敢哭出声来。</p>
+<p>士兵将这屋里的死人都拖出来，堆在院里。</p>
+<p>躲在这里迟早会被发现。我眼中闪着泪光，有些茫然地向四周望去。</p>
+<p>他们都一窝蜂地涌进屋里哄抢东西了。</p>
+<p>我努力定心，快步跑进院里，将婢女的血抹在自己身上，然后拔下云儿心口上的箭，咬着牙，狠心朝自己的胸口刺去。</p>
+<p>好痛啊！</p>
+<p>伤口不深，但看起来很致命。</p>
+<p>我就这样一动不动地躺在死人堆里。</p>
+<p>别人的脚踩在我身上，我也不吭声。</p>
+<p>「都烧了吧。」</p>
+<p>「是！」</p>
+<p>叛军撤出府外，拿箭向府内射火种，火舌迅速舔舐整个刺史府，映红了半个阳州。</p>
+<p>我爬起，热浪涌卷，我披散着乱发，跳进了院中的水井。</p>
+<p>冷水浸透了我的血衣。</p>
+<p>这井水不深，仅及我腰。</p>
+<p>舅舅和我提过，这是个很好的藏身之处。</p>
+<p>胸口好痛，心也好痛，漫天火光中，我咬住衣袖，哭得快噎了气。</p>
+<p>阳州反了。</p>
+<p>平王对此早有猜测，大批军队不动声色地驻扎在附近的离州，就等着瓮中捉鳖。</p>
+<p>没过两日，平王就收复了阳州。惹得世人啧啧称奇。</p>
+<p>被人从井里打捞出来时，我以为我已经死了。</p>
+<p>「殿下，这有个活口！」</p>
+<p>「带过来。」</p>
+<p>鼻腔里是消散不去的腐臭之气，嘴里还有血的苦味，我吃力地睁眼，正对上他惊讶的目光：</p>
+<p>「传军医！」</p>
+<p>一年未见，我们都长高了好多。</p>
+<p>他的王者风范也更足了。</p>
+<p>他还记得我。</p>
+<p>我扯了扯嘴角，眼前逐渐坠入黑暗。</p>
+<p>没能瞧见他脸上转瞬即逝的无措</p>
+<p>总是在做梦。</p>
+<p>梦见现在是太平盛世，没有战乱。</p>
+<p>梦见我是普通人家的女儿，没有那么多的勾心斗角。</p>
+<p>还梦见了他，梦见他在喂我喝药。</p>
+<p>我苦笑，这些怎么可能实现。</p>
+<p>可睁眼，平王确确实实守在我榻前。</p>
+<p>「是本王食了言。」他放下药碗。</p>
+<p>他指的是当初承诺「守护娄氏嫡女」一事。</p>
+<p>我摇摇头，发不出声音。</p>
+<p>「赵刺史鞠躬尽瘁，忠义一生，本王已派人厚葬。你不能回丞相府，又没有更亲近的人可投靠。若不嫌弃，就跟着本王回开州吧。」</p>
+<p>我眼睛亮了亮，以为是烧迷糊了。</p>
+<p>他见我迟疑，便重新端起边上的药碗。</p>
+<p>「我自己来！」</p>
+<p>我连忙挤出声音，可双手根本无力接碗。</p>
+<p>平王并不在意，只是舀起一勺药，放在嘴边吹凉，然后小心翼翼地喂我。</p>
+<p>有时药沾在嘴角，他会拿手帕轻轻为我擦拭。</p>
+<p>好温柔的一位王。</p>
+<p>药很苦，但我不觉得难喝。</p>
+<p>「开州荒远，本王不做强人所难的事。给你时间慢慢思考。」</p>
+<p>他仔细掩好我的被褥，出去了。</p>
+<p>我成了平王府的一位客人。</p>
+<p>我本是想做王府婢女的，毕竟我是来投靠他的。</p>
+<p>「相府嫡女给别人做奴？」他眉眼带笑，「你是想气死你爹吗？」</p>
+<p>「他又不知道。」我小声嘀咕。</p>
+<p>他摇摇头，坚决不同意。</p>
+<p>我原以为王府没有王妃，但侍寝之人应当还是有的。</p>
+<p>可看了一圈，连婢女都很少见。</p>
+<p>他以为我是疑惑王府的空荡，便解释：</p>
+<p>「边线战事吃紧，西齐频频来犯，我平日不住王府。」</p>
+<p>我点了点头，突然有点心疼他。</p>
+<p>明明威名在外，身份如此尊贵，身边却连个嘘寒问暖的人也没有，府邸也这么冷清。</p>
+<p>「想什么呢？」</p>
+<p>他见我走神，便俯下身子，平视我。</p>
+<p>视线对上的那一刻，我只觉心脏漏了一拍。</p>
+<p>偏他察觉不到我的异样。</p>
+<p>「我不在，就把自己当王府主人，大可放肆些。」</p>
+<p>王府主人吗？</p>
+<p>我低下头，怕他看见我烧红的脸。</p>
+<p>这种话该是对未来王妃说的。</p>
+<p>平王果然是没娶过妻的人，说话一点都不注意！</p>
+<p>平王最近在王府小住。</p>
+<p>我听到消息，连忙去厨房做菜。</p>
+<p>这儿的厨子只会做当地美食，而平王自幼在京城长大，他应当和我一样，常常思念家乡的味道。</p>
+<p>「你做的？」他眸中带着惊异。</p>
+<p>「殿下不会以为，贵族女子都十指不沾阳秋水？」</p>
+<p>他不答，只是伸出筷子，夹了一块肉，尝了一口，笑了。</p>
+<p>「真的很久没吃过这道菜了。」</p>
+<p>「我也是，」我为他倒了一杯酒，「很久很久。」</p>
+<p>两个有家不能回的人，共同漂泊在离都城最远的开州，竟也有种他乡逢故人，酒醉遇知己的相惜之感。</p>
+<p>大概是酒太醉人了，又或者是我早就被鬼迷了心窍。</p>
+<p>我伏在桌上，痴痴地望着他笑，他也被我逗乐了，拿手在我眼前晃了晃，来探探我有没有醉倒。</p>
+<p>看着他近在咫尺的脸，我像是受了蛊惑一般，伸出手指，点了点他的唇。</p>
+<p>这样铁骨铮铮的人，唇竟这般软。</p>
+<p>他愣住了，目光望着我，怔怔地，有点可爱。</p>
+<p>意识到逾矩，我打了个喷嚏，跌跌撞撞站起，连礼都忘记行，就往门外走去。</p>
+<p>平王站起身来。</p>
+<p>可没走几步，我就被门槛绊倒，重重地摔在地上。</p>
+<p>真的被摔痛了。</p>
+<p>醉后，我不再擅长隐忍，泪珠子哗啦就流了下来。</p>
+<p>我从地上爬起，噘着嘴，一转头，就看到他悬在空中的手，还有脸上不加掩饰的心疼。</p>
+<p>好久没有被心疼了，仿佛久旱的人遇见了清泉。</p>
+<p>心中微动，我从地上爬起，小跑着把摔破皮的手送到他面前。</p>
+<p>「你吹吹。」</p>
+<p>我委委屈屈的。</p>
+<p>他凝滞了半刻，然后轻握我的手，俯身，小心翼翼地吹着气。</p>
+<p>那副认真模样，好像对待的是一件稀世珍宝。</p>
+<p>我鼻子更加酸了，顾不上什么礼仪君臣，一把抱住了他，哭得号啕。</p>
+<p>从未见过我如此软弱，他身体僵硬了半刻，手缓缓地抚上了我的肩，哑声说：</p>
+<p>「别怕。」</p>
+<p>在他怀抱里哭累了，我沉沉地睡去。</p>
+<p>凝望着我的睡颜，他喉结滚动，用指腹拭去我的泪痕，然后将我抱起，送我回房。</p>
+<p>第二天，我头疼欲裂地起了床。</p>
+<p>「小姐醒了，这是殿下命人熬制的醒酒汤，喝了会好受些。」</p>
+<p>我接过，抿了口，是甜的。</p>
+<p>「小姐，殿下来看你了。」</p>
+<p>看我？</p>
+<p>我放下汤，看见他走了进来。</p>
+<p>我忙行礼。</p>
+<p>「好些了吗？」</p>
+<p>我点头。</p>
+<p>他看着我，欲言又止。</p>
+<p>我揉眉，昨晚的事历历在目，他不提，我便装什么也不记得。</p>
+<p>「还没逛过集市吧？」</p>
+<p>我摇头，但随即说：</p>
+<p>「改日让春儿陪我去。」</p>
+<p>春儿是他特意为我挑的侍女。</p>
+<p>她原是宫里人，胆大心细，武功还十分了得，太后便让她随平王来了开州。</p>
+<p>「不必麻烦，本王今日陪你去。」</p>
+<p>我疑惑地望着他，心却跳得很快。</p>
+<p>在深闺十几年，我从未见识过京城的繁华。可来开州才半年，我已见识了这座城的大半烟火气。</p>
+<p>我像个孩子一样四处张望，</p>
+<p>人潮拥挤，纵使商铺上的小玩意儿再怎么吸引人，我也不敢离开平王半步。</p>
+<p>飘散的目光总是落在他袖角，想揪住又不敢。</p>
+<p>「怕走丢？」</p>
+<p>我咬唇，轻轻点头。</p>
+<p>他清浅一笑：</p>
+<p>「放心，我绝不会把你弄丢。」</p>
+<p>说着还递给我一袋钱币，柔声说：</p>
+<p>「想要什么就自己买。」</p>
+<p>我眼里放出欣喜的光，高兴地小步跑开了。</p>
+<p>逛累了，平王递给我水。</p>
+<p>「兰儿，我带你去一个地方。」</p>
+<p>这是他第一次唤我名字。</p>
+<p>抬眸，我正对上他的炯炯目光。</p>
+<p>他带着我上了一条船。</p>
+<p>泛舟碧水上，两岸青山如画，的确美不胜收。</p>
+<p>我把手放河里，水从指尖划过，凉凉的很舒服。</p>
+<p>他望着我，不自觉地笑了。</p>
+<p>「王府住得还习惯吧？」</p>
+<p>我点头。</p>
+<p>「每次出征前，我都会来这儿看看。」</p>
+<p>我转头望他，他眸子是一湖平静的水。</p>
+<p>「我十五岁开始征战，死在我剑下的亡魂不计其数。我的血该是比这湖水还冷些。」 他也把手放入水中。</p>
+<p>「你没有。」我眉头微蹙，「冷血的话，当年你就不会救我和…云儿。」</p>
+<p>他眼里映出我的倒影。</p>
+<p>「那不是我第一次见你。」</p>
+<p>我睁大眼。</p>
+<p>「怎么可能？」</p>
+<p>「皇兄还是太子时，曾命我偷偷去看过你。」</p>
+<p>我的眼睛睁的更大了。</p>
+<p>对上我眼里大大的疑惑，他扑哧一声笑了。</p>
+<p>「我知道这不合礼数，但少年人总是很好奇的。」</p>
+<p>我想起那天，黄昏，我待在院内树下乘凉，半梦半醒间，有极轻的吵闹声惊醒了我。</p>
+<p>我睁眼，正对上屋檐上一双黑亮的眸子。</p>
+<p>我还没来得及喊人，那少年就朝我笑笑，消失不见了。</p>
+<p>「那你……是怎么和你皇兄说的？」</p>
+<p>「我说，你美若谪仙。」</p>
+<p>我低头，脸又红了。</p>
+<p>「再见面那天，你也是在逃难吗。」</p>
+<p>我不看他，只是低头玩水。</p>
+<p>「是。」</p>
+<p>我叹了口气，看他的目光带着怜悯。</p>
+<p>我一向谨言慎语，不该问的从不多问。但我又不傻，怎么会不知道平王有多难。</p>
+<p>临王当年手握京城重兵，乘机造反。皇上是借平王的兵马上位，感激他的同时又十分忌惮他。</p>
+<p>把他留京城那么久，估计就在伺机杀他。</p>
+<p>最是薄情帝王家，我端起小桌上的一杯酒，递给了平王。</p>
+<p>船缓缓向对岸靠去。</p>
+<p>「临王自幼丧母，他是我母后抚养长大的，我们以前感情极好。」</p>
+<p>苦涩蔓延，他的眼尾染上微红。</p>
+<p>「临王、太子还有我，我们曾有过约定。」</p>
+<p>他晃着杯中的酒，然后举起，仿佛是对着地底的那个人说话：</p>
+<p>「他做明君，你当贤臣，我则为大良守疆土。」</p>
+<p>可是，他亲手杀死了临王，成为一些党羽眼中不忠不义的弑君之人。</p>
+<p>而他一母同胞的皇兄，不仅猜忌他，还起了杀心。</p>
+<p>这些，他不说，我也知道。</p>
+<p>船靠了岸，他饮尽壶中酒，站起身来。</p>
+<p>他又变成了那个无坚不摧的王。</p>
+<p>「我们回去吧。」</p>
+<p>「你何时再回来？」</p>
+<p>我紧紧跟在他身后，小声问。</p>
+<p>他停下来。</p>
+<p>「不知道…怕是赶不回来参加你的笄礼了。」</p>
+<p>及笄礼？他竟还在意我这个。</p>
+<p>「不…不碍事的。」</p>
+<p>我挤出一个微笑。</p>
+<p>漂泊之人，能有人记得我的生辰就已经很好了。</p>
+<p>平王已经走了两月有余了。</p>
+<p>雨点纷纷，春儿为我撑伞，我头上插着一只精美的簪子，那是他送给我的生辰礼。</p>
+<p>今年的雨，下得有点多？</p>
+<p>我自顾自地数着院里被打落的花瓣。</p>
+<p>怕我无聊，春儿便给我说最近发生的趣事。</p>
+<p>「小姐，听说京城出了件大事。」</p>
+<p>她夸张的语气并没有勾起我丝毫兴趣。我仍在专心致志数数。</p>
+<p>「什么大事。」</p>
+<p>「真假皇后的大事。」</p>
+<p>我一脚踩空，幸好春儿扶住了我。</p>
+<p>新帝是个能干的人，上位几年后，羽翼丰满起来，便不满丞相的强势。</p>
+<p>相府嫡长女及笄，皇帝亲自为她插簪子。那是他们第一次见面。</p>
+<p>可礼成后，陛下大怒，说他们拿假长女糊弄皇上。</p>
+<p>春儿掌握很多八卦消息。</p>
+<p>「陛下有嫡长女的画像，而且，那画像还是咱殿下画的。」</p>
+<p>「他？」</p>
+<p>看见我惊讶，春儿得意极了。</p>
+<p>「是啊，殿下年少便能飞檐走壁，耐不住自己皇兄央求，就偷溜去丞相府，仔细端详那嫡长女的真容，又回来画了像，这才算交了差。」</p>
+<p>「画像上的美人，额头上有胎记。」</p>
+<p>「而那假嫡长女，她确实也有胎记，可形状大小不同。一查，果然是后来刺上去的。」</p>
+<p>我垂眸，抚摸额头。</p>
+<p>平王留了个心，让我平日用脂粉把胎记盖住。</p>
+<p>「就不能是画像出了错吗？」我指的是胎记的形状。</p>
+<p>「怎么可能，我们殿下的过目不忘可是出了名的，画工也极好。」</p>
+<p>我想起那双黑亮的眼睛，不自觉咬紧了下唇。</p>
+<p>「那陛下打算怎么罚？」</p>
+<p>「有下人说，嫡长女当年是诈死，现在应该还活着。陛下下旨，如果小姐能找到，他可以既往不咎，否则，严惩不贷。」</p>
+<p>「你说陛下对她可真是一往情深啊！」</p>
+<p>「情？」我皱眉，我和皇帝根本未曾谋面，哪里来的情。</p>
+<p>回屋后，我捧着热茶，怎么也不得心安。</p>
+<p>按春儿的说法，现在陛下下令在全大良找我，生要见人，死要见尸。</p>
+<p>毕竟有当年那个预言，若是被人发现我和平王在一起，他怕是又会遭些罪的。</p>
+<p>这样想着，我放下手中茶，执笔写了一封信。</p>
+<p>在王府的这一年多，我和平王待在一起的时间真的不算多。但他总是很细心。</p>
+<p>我那次只是和春儿说，馋樱桃了，不知怎的他就知道了，立了战功，不要真金白银，只要皇上把那年最好的樱桃赏给平王府。</p>
+<p>他在府里时，会教我习武，说可以防身。</p>
+<p>出征了，也不忘让春儿继续督促我。现在我竟也能使出三脚猫功夫了。</p>
+<p>他的好，真的是说也说不尽……</p>
+<p>我在饭菜里下了蒙汗药。</p>
+<p>夜色遮住我滚烫的泪珠，看着周围人都沉沉睡去，我收拾好包袱，离开了王府。</p>
+<p>骑马赶了很久的路，硬是出了他的封地，我才敢去找当地的州官。</p>
+<p>死去的人我已经无法补偿，但活着的，我要尽我所能护他们周全。</p>
+<p>听闻平王又打了胜仗，不知道我压在梳妆盒里的那封信，春儿寄给他看了没有。</p>
+<p>坐在回京城的轿子上，哭成泪人，我才发觉，我有多舍不得他。</p>
+<p>不知道，他在眺望边塞的月亮时，会不会想起我这个爱哭鬼。</p>
+<p>滴血验亲后，他们就直接把我带到了皇帝跟前。</p>
+<p>我伏跪在地。</p>
+<p>「你就是娄雾兰？」</p>
+<p>「是。」</p>
+<p>「这些年，你躲在哪里？」</p>
+<p>「臣女四处漂泊。」</p>
+<p>「噢，竟是居无定所吗？朕还以为，你已为人妇呢！」</p>
+<p>皇帝的声音激动起来，引起他阵阵咳嗽。</p>
+<p>只是，这声音听起来，怎么有些苍老？</p>
+<p>「臣女不敢。」</p>
+<p>「抬头。」</p>
+<p>他沉声道。</p>
+<p>我抬头，却暗自吃了一惊。陛下不过比我大十多岁，可为何看起来如此衰老？白发丛生，脸上还有沟壑。</p>
+<p>「不错，倒是应了承昭的那句话，美若谪仙。」</p>
+<p>承昭是平王，平王全名李承昭。</p>
+<p>听到这个名字，不知怎的，我心里一痛。</p>
+<p>两年未来京城，家里已变了样。</p>
+<p>小桃赎回了自由身，已经嫁人当娘了。</p>
+<p>王嬷嬷则被召入宫中侍奉我——皇上不允我回丞相府。</p>
+<p>自古帝王心难猜，皇上费尽千辛万苦将我带回宫，但丝毫要成婚的意思也没有，反倒封大皇子做了太子。</p>
+<p>陛下 15 岁就娶了贤妃，太子只比我小两岁。</p>
+<p>这些天，太子生母——贤妃娘娘常来看我。</p>
+<p>见我心不在焉，贤妃娘娘使了个眼色，奴仆纷纷退下。</p>
+<p>「兰儿是不是在猜陛下接下来的打算？」她端起茶盏，端庄淑雅。</p>
+<p>「臣女不敢。」</p>
+<p>「兰儿，你看当今太子如何？」</p>
+<p>「太子殿下一看就是个有福气的人。」</p>
+<p>「那当他的妻，也不委屈你吧？」</p>
+<p>我没拿稳，热茶洒在手上，烫出一片红色。</p>
+<p>「怎么这么不小心。」 贤妃拿手帕给我擦拭，说着怒斥下人：</p>
+<p>「你们是眼瞎了吗？快传太医！」</p>
+<p>「娘娘，」我声音有些发抖，「这是陛下的意思吗？」</p>
+<p>贤妃点头。</p>
+<p>「陛下的状况，你也看到了。临王囚他的时候，用了毒，太医无能，解药一直没研制出来……」贤妃说着眼圈就红了，「陛下时日不多了。」</p>
+<p>「你是有凤命的人，是有福之人，定能助太子坐稳皇位。」</p>
+<p>有福之人？</p>
+<p>太医手忙脚乱地给我擦药。</p>
+<p>身不由己，也是有福？</p>
+<p>11．</p>
+<p>走在路上，右眼皮一直跳，我揉眼，余光瞥见拐角处有人来。</p>
+<p>反正这宫里就我身份最低，那人还没靠近，我就预备行礼。</p>
+<p>「兰儿？」</p>
+<p>这声音？</p>
+<p>我猛地抬头，朝思暮想的人就这样立在我面前。</p>
+<p>可，他为什么来京城了！</p>
+<p>我嘴唇微张，眼中闪过慌乱，随即酸意涌起。</p>
+<p>周围都是人，我们不能说更多的话。</p>
+<p>「兰儿见过殿下。」</p>
+<p>我用目光记牢他现在的模样。</p>
+<p>他看上去憔悴了很多，脸上还添了新伤。</p>
+<p>刀剑无眼，他当时该多疼啊。</p>
+<p>我的泪憋不住了。</p>
+<p>他也似有千言万语哽在喉间。</p>
+<p>但，这里不是开州，皇宫耳目众多，他只能和我一样，装作彼此不熟，然后擦肩而过。</p>
+<p>「别怕。」</p>
+<p>我好像听到他这样对我说。</p>
+<p>心有不安，晚上，怎么也睡不着。</p>
+<p>像是有什么期盼似的，我站起身来。</p>
+<p>推门，却看见了门外的他。</p>
+<p>银辉落在身上，映得他有些苍白。</p>
+<p>不知道，他站在外面多久了。</p>
+<p>我捂嘴，又惊又喜，竟直接拉他进房，把门掩得死死的，生怕被人看到。</p>
+<p>「你好大的胆子。」</p>
+<p>明明是开玩笑的语气，我的眼圈却红得不像话。</p>
+<p>他温柔地拭去我眼角的泪，一把抱住了我，抱得很紧，好像下一秒，我就会消失不见。</p>
+<p>「李承昭，我想回开州。」</p>
+<p>这是我第一次喊他的名字。</p>
+<p>「兰儿……」</p>
+<p>语气满是无奈与心酸。</p>
+<p>不可一世的平王，也会有无能为力的一天。</p>
+<p>我摇摇头，挤出一个笑：</p>
+<p>「没事的，我只是想想。」</p>
+<p>说着，我去翻盒子里的药瓶子：</p>
+<p>「我向太医讨的，上好的。」</p>
+<p>说着，都递给他。</p>
+<p>「现在就回开州，你快回去。」</p>
+<p>他依旧沉默，脚步不稳，似乎有些虚弱。</p>
+<p>「为什么……」我噙住眼泪。</p>
+<p>「你是顾及兄弟深情，想见陛下最后一面吗？那现在也见到了，你就快回去吧。」</p>
+<p>他不回答，只是仰起头，不让我看见他眼里的泪：</p>
+<p>「兰儿，如果可以，我真的不愿意你哭。」</p>
+<p>我撅起小嘴，朝他扮鬼脸：</p>
+<p>「就不，我就要哭，呜！呜！呜！」</p>
+<p>说着还装模作样的擦起眼泪来。</p>
+<p>他笑了，可，污血从他唇角渗出。</p>
+<p>他再也撑不住，半跪在地，红着眼眶，望着我，眼中有千般万般不舍。</p>
+<p>「兰儿，我一定要保佑你，保佑你平安喜乐…」</p>
+<p>他想拭去我脸上的泪，可手怎么也抬不起。</p>
+<p>我看到，他眸中的光，随泪珠一同滴落。</p>
+<p>我不可置信地用手去探他的鼻息。</p>
+<p>冰冷的，我却好像被烫伤了。</p>
+<p>我抱住他，哭不出声来。</p>
+<p>我最爱的王，陨落了。</p>
+<p>外面的侍从早就准备好，任凭我撕心裂肺，他们还是带走了他。</p>
+<p>我拉不住他的手。</p>
+<p>戎马一生的功臣，最后被安上了叛国和行刺的罪名。</p>
+<p>死后还被枭首示众，投入乱葬岗。</p>
+<p>他一生短暂如烟火。</p>
+<p>开州等几个州发大水，京城不给赈灾，反倒一再密信催促平王进京，说陛下缠绵病榻，对亲弟弟思念得紧。</p>
+<p>其中意味，不必言说。</p>
+<p>看着瘟疫盛行，百姓忍饥挨饿，平王终究是赴了这鸿门宴。</p>
+<p>直到后来，我才知道，那天白日，有侍从觉得我俩相望的眼神不一般，便报告给了陛下。</p>
+<p>「承昭，这杯酒，你和她，总得有一个人喝吧。」</p>
+<p>皇帝以为平王望他的眼神会充满憎恶。</p>
+<p>但承昭神色平淡，像是早就料到有这一天。</p>
+<p>「那南方百姓，和娄氏长女……拜托陛下了。」</p>
+<p>他拿起酒，一口饮尽。</p>
+<p>争权的路上，必定要踏着血亲的尸骨，他这是帮自己的皇儿除了大患。</p>
+<p>帝王笑出了眼泪。</p>
+<p>没想到，他这个弟弟，竟傻到这个地步。</p>
+<p>「还有一个时辰，承昭，朕准你和她道别。」</p>
+<p>我和太子很快成婚了。</p>
+<p>因为陛下对我说：</p>
+<p>「朕能把平王枭首示众，也就能让他永世不得超生。你不要让朕为难。」</p>
+<p>心如刀绞，我咬牙忍泪。</p>
+<p>我还得为他平反。</p>
+<p>壮士死节，他高风亮节，不能让史官污蔑他！</p>
+<p>未满一年，太子即位，我当上了皇后。</p>
+<p>新帝年少，太妃娘娘垂帘听政，手段狠厉，与先帝比，有过之无不及。</p>
+<p>又一次从梦里哭醒，泪水朦胧间，我看到了他。</p>
+<p>「别怕。」</p>
+<p>他对我说。</p>
+<p>太子即位时只有 14 岁，外戚干政，朝堂被弄得乌烟瘴气。</p>
+<p>新帝看上去软弱无力，可我比谁都知道，他不甘心做傀儡，他想要权力。</p>
+<p>我们很快达成了协议——我帮他夺权，他为皇叔平反。</p>
+<p>很久没见到父亲了，楼氏虽不如之前风光，但根基犹在。</p>
+<p>丞相不是好父亲，但他是忠臣。</p>
+<p>他负责在朝堂拉拢人心。</p>
+<p>平王旧部还在，现在的统领姓万，我以前见过的。我派人给他带了一封信。</p>
+<p>一切都准备妥当，只欠一把火。</p>
+<p>在赵氏一族想开始清杀反羽时，朝堂元老纷纷罢官相逼。</p>
+<p>开州也联合附近几个州，以造反施压。</p>
+<p>新帝更是亲手斩了御林军统帅，直接带人闯进寝宫，囚禁了母妃。</p>
+<p>太妃迫于种种压力，求陛下下旨，削了母族的势。</p>
+<p>新帝是个守信用的人，他还了李承昭一个清名。</p>
+<p>诏书下达，平王的棺木被移入皇陵。万里之外的开州，百姓奔走相告，挥洒热泪，祭奠英魂。</p>
+<p>而我，独坐深宫，伴着远处万家灯火，品他喝过酒，饮他尝过的毒。</p>
+<p>乱世之中，我们终归是有缘无份，有心无力。</p>
+<p>李承昭，我才不要你保佑我。</p>
+<p>我要去有你在的地方。</p>
+<p>作者：即将困死</p>
+<p>（全文完）</p>
+<p>备案号:YXX1Bee1pmtwwwKzxYi3Z0b</p>
+<p>杏花误</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>猫猫 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/24-%E5%A8%93%E5%A8%93%E9%81%93%E6%9D%A5/" title="娓娓道来">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">娓娓道来</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/23-%E7%94%B7%E7%94%9F%E5%A4%B1%E5%8E%BB%E4%BA%86%E5%BE%88%E5%A5%BD%E7%9A%84%E5%A5%B3%E7%94%9F%E4%BC%9A%E5%90%8E-%E6%82%94%E5%90%97/" title="男生失去了很好的女生会后 悔吗？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">男生失去了很好的女生会后 悔吗？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

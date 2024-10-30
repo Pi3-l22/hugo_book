@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌奴复仇记 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://example.com/posts/2024/09/21-%E6%AD%8C%E5%A5%B4%E5%A4%8D%E4%BB%87%E8%AE%B0/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://example.com/posts/2024/09/21-%E6%AD%8C%E5%A5%B4%E5%A4%8D%E4%BB%87%E8%AE%B0/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="歌奴复仇记">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-21T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26666.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26666.jpg">
+  <meta name="twitter:title" content="歌奴复仇记">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://example.com/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">一个汇集网络文章的平台</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="歌奴复仇记">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-09-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="11236">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26666.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">歌奴复仇记</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-09-21T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-09-21T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%ad%8c%e5%a5%b4%e5%a4%8d%e4%bb%87%e8%ae%b0&amp;url=https://example.com/posts/2024/09/21-%E6%AD%8C%E5%A5%B4%E5%A4%8D%E4%BB%87%E8%AE%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://example.com/posts/2024/09/21-%E6%AD%8C%E5%A5%B4%E5%A4%8D%E4%BB%87%E8%AE%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%ad%8c%e5%a5%b4%e5%a4%8d%e4%bb%87%e8%ae%b0%20https://example.com/posts/2024/09/21-%E6%AD%8C%E5%A5%B4%E5%A4%8D%E4%BB%87%E8%AE%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26666.jpg" alt="歌奴复仇记" />
+      
+
+      <p>歌奴复仇记</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>我本是永安侯府的歌奴。</p>
+<p>过着伺候侯爷，被侯爷调戏，和侯爷生闷气的快活日子。</p>
+<p>就在我等着被抬成侍妾混吃等死的时候，当今皇帝逼死了承诺收复北地就给我名分的侯爷。</p>
+<p>我卷着铺盖速速入宫。</p>
+<p>既然侯爷为罪人，那这祸国妖妃，</p>
+<p>我当定了。</p>
+<p>我名单字一个泠，善琴。</p>
+<p>是侯府豢养的歌奴，侯爷总说不够文雅让我自称乐伎。</p>
+<p>乐伎就乐伎吧，反正都是这回儿事。</p>
+<p>「小泠儿，你发什么呆呢。给爷添杯茶。」</p>
+<p>侯爷年少时在战场上伤过嗓子，声音清冽却带着点嘶哑，总有人恭维道什么这是玉石之音。</p>
+<p>我私认为，还是拨弦带出来的颤音更像。</p>
+<p>「喂，小懒鬼儿。回回神，现在真是越来越使唤不动你了」</p>
+<p>侯爷轻轻敲了敲我的脑门，骤然放大的脸让我猛的回神不禁被他吓了大一跳。</p>
+<p>我惊呼出声，猛得向后一仰被矮凳绊了个正着。</p>
+<p>「侯爷，您又拿奴家逗乐子。」</p>
+<p>他终于憋不住似的笑出声来,起身扶起了呆坐在原地的我。</p>
+<p>「傻丫头。」</p>
+<p>眼前的侯爷，垂眸看着我，眼里带着浓浓的笑意。</p>
+<p>我总觉得面前的男子并不像身经百战的武夫。</p>
+<p>他身着一袭青衫头上并未束冠，满身戎甲被我好生安置在屋里。笔墨纸砚铺了一桌，手边还放着半杯文人最爱的方山露芽。</p>
+<p>「现在就使唤不动了，以后可怎么办啊。岂不是要骑到爷的头上来，嗯？」</p>
+<p>他故作严厉冷了冷脸，目不转睛的看着我微微上扬的尾音暴露了它一颗想要调戏我的心。</p>
+<p>「那也得侯爷先抬了奴家做妾室再说啊。」</p>
+<p>我红着一张脸，不甘示弱的呛了回去。</p>
+<p>侯爷对着我勾唇笑了笑，锐利的眸子微微上挑。</p>
+<p>活脱脱一幅美人面，我看得有些痴了。</p>
+<p>难怪王爷的头盔带着面罩，不然这岂不是胜之不武。</p>
+<p>对着敌军一笑，能把人笑得晃下马去。</p>
+<p>魂都勾走了，还打什么仗啊。</p>
+<p>「真没追求啊，泠儿。」</p>
+<p>「等爷收复北地，就卸甲归田。娶你如何？」</p>
+<p>侯爷斜了我一眼，故作轻佻的道了出来。耳尖却微微红了。</p>
+<p>我无法不为之动容，溺毙在这双眸子里一瞬却又清醒过来。</p>
+<p>「爷别开奴家玩笑了，您是战功赫赫的大将军应当加官进爵，迎娶美娇娘的。奴家不过是一介孤女，跟了王爷伺候就是三生有幸了。」</p>
+<p>他也清醒了过来，喃喃道：</p>
+<p>「对啊，我是手握兵权战功赫赫的大将军啊。」</p>
+<p>他的目光看向远方，好像能穿过层层叠叠的城墙一直望到大漠去。</p>
+<p>不知是想起了什么，低下头苦笑了一声喝了一口冷茶。我下意识的想给侯爷添一杯热的，他兴致淡淡的拦住了我的手。温柔的对我笑着，刚刚那不着调的人荡然无存。勾唇一笑就好像用尽了全身力气，低声道</p>
+<p>「泠儿，给爷弹支曲吧。」</p>
+<p>我应声起身，抱起了我的琴。</p>
+<p>泠泠的琴声响了满院，侯爷倚在廊下吃酒听我唱着曲。</p>
+<p>我的琴声或许传到了广寒宫之上，老管家悄悄点上了灯。</p>
+<p>灯下的侯爷眼角绯红，不知是醉了还是被烛火映了满脸。顺着我的琴声哼起了个塞外小调。那调子温柔至极，像是春风唤醒着大地,又像是月色之下哄着孩童安睡的母亲。</p>
+<p>「泠儿。」</p>
+<p>他呢喃着我的名字:</p>
+<p>「给爷满上吧。」</p>
+<p>声落，侯爷缓缓抬头看着我，用眼神描绘着我的面庞。他醉得厉害，看不清便又伸手抚上我的脸庞仔细揣摩着。</p>
+<p>我给侯爷满上了酒，他拉着我不肯放开。最后深深看了一眼我，帮我整理好了袖子。</p>
+<p>「泠儿，变天了。夜也深了，回去睡吧。」</p>
+<p>我应声负着琴一步一回头的望着他，侯爷就在廊下含笑目送着我。不知何时披上了那件先帝赐的白毛狐裘，我突然发现他清瘦了许多。全身上下好像就剩一幅傲骨撑着了。</p>
+<p>侯爷有时像满嘴之乎者也的文人，有是又像放荡不羁的纨绔子弟。现在这样又像说书人口中那失意的主角，他什么都像却唯独不像那战无不胜的大将军，大林的永安侯。</p>
+<p>「走水了 快来人啊，走水了！」</p>
+<p>我猛然惊醒，发现自己正被人绑在马车上。</p>
+<p>我拼命滚到车门边，却看见侯府一片火海。</p>
+<p>远远的看见侯爷一袭戎甲伫立在火海中，那件雪白的狐裘正盖在我身上。</p>
+<p>我喊不出声来，只能沙哑的嘶吼着。老管家从前车走过来捂住了我的嘴，火光映红了他的双眼。</p>
+<p>是睡前侯爷让老管家的送来的那碗甜汤。</p>
+<p>我咬住了他的手，挣扎着想要下车。</p>
+<p>「小姐！」老管家的手已经被我咬穿了，血混合着我的泪滴落在狐裘上。</p>
+<p>「我的小姐啊！」</p>
+<p>「我的小姐啊！」</p>
+<p>他悲鸣着，一遍一遍重复着我的名字。</p>
+<p>「王伯！」</p>
+<p>血与泪糊了我满脸，我哀嚎着老者的名字。</p>
+<p>王伯的泪水顺着他那沟壑纵深面庞缓缓滑落。</p>
+<p>「侯爷要我送你走，他想让你好好活着！」</p>
+<p>「我求求你，小姐别回去，别回去啊！」</p>
+<p>临安十二年，永安侯霍淮安畏罪自焚。</p>
+<p>帅印空悬，兵权归于帝王家。</p>
+<p>侯府上下百余人全部发买，念北地蛮族频犯我大林国土其旧部戴罪立功即日启程塞北。</p>
+<p>我负着琴，被连夜送到了齐王府。</p>
+<p>进府时，齐王正披着外袍匆匆向外走去。</p>
+<p>原来是丑时将至，朝廷上只只饿狼开始商量着怎么分食侯爷的尸骨了。</p>
+<p>齐王见我负着琴，微微一愣。片刻之后对我微微俯身，将腕上的一串佛珠塞进了我手里。</p>
+<p>「红枫红柳，先送泠姑娘去偏院。」</p>
+<p>我跪下欲对王爷叩首，他弯腰想要扶起我，我执意要叩他便僵硬着生生受了这一跪。</p>
+<p>「齐王殿下仁慈，预祝殿下此去一帆风顺，事事如意料。」</p>
+<p>他面露惊色，我垂眸不去看他。</p>
+<p>「殿下，天快亮了对吗？」</p>
+<p>我一眼望穿了宫墙内，竟直直望到那不知道在何人身上宣淫的帝王，望到了颠沛流离的百姓，望到了漠北极寒交迫的将士。</p>
+<p>「是啊，天快亮了。」</p>
+<p>永安侯府的火光映红了夜空，烧亮了整片暮色。</p>
+<p>我的琴声传到火海传到前朝传到百姓家家户户。</p>
+<p>火越烧越旺，烧到了云幕之上。琴弦断了，可天却越来越亮。</p>
+<p>齐王带着一身早秋的露水回到了府中，换下朝服之后又匆匆出门去了。</p>
+<p>红柳给我端来了一碗肉粥，放在了窗边的小桌上。</p>
+<p>「阿泠吃一些吧。」</p>
+<p>「王爷吩咐厨房做的，说是听候…霍公子念过的想必是合你口味些。」</p>
+<p>我舀了一勺热粥放进嘴里 ，煮至化开的稻米混合着浓烈的肉香冲击着我的味蕾。</p>
+<p>我强迫着自己一勺接一勺的喝完了一小碗肉粥，对着红柳安抚的笑了笑。</p>
+<p>她亲密的过来挽着我，让我靠在她的肩上。</p>
+<p>不等她开口，我就一把推开了她。猛的朝屋外跑去，吐了个昏天暗地。</p>
+<p>不知怎得，这味道太像霍淮安在篝火前煮出来的味道了。</p>
+<p>我跪坐在地上愣神。</p>
+<p>当年跟随侯爷出征，晚上营地里肉粥的香气四溢，我和全营的将士都流着口水眼巴巴地盯着那一小锅粥。</p>
+<p>他笑骂一声：</p>
+<p>「都滚滚滚，东西都在那，自己去煮。别盯着我这一碗啊！」</p>
+<p>将士们看着连锅端走的侯爷，都笑着起哄,互相编排着几个霍淮安的风流趣事，一边打打闹闹的煮粥去了。</p>
+<p>那一锅粥放在了我的面前，他笑着看着我：</p>
+<p>「泠儿太瘦了。」</p>
+<p>「阿泠，你这是怎么了」</p>
+<p>红柳急匆匆的拿着湿帕子，朝我这赶来。</p>
+<p>我掩了掩泛红的眼框，抱歉的对着红柳眨眨眼睛，她满不在意的把帕子递给我扶着我坐在长廊下。</p>
+<p>「你这是怎的了。怎么一口都吃不下？」</p>
+<p>我也不知道我这是怎么了，只能试图胡乱搪塞过去。</p>
+<p>「我没事，只是吃的有些快了。」</p>
+<p>我坐在铜镜前打量着我的脸，白皙的面容在晨光下透出玉般的光泽。</p>
+<p>鼻梁高耸，眼窝深邃睫毛长而密，但嘴唇却在我这三四天食不下咽变得有些苍白。</p>
+<p>妥妥一幅楼兰妖妃的长相啊，我在心里叹道。不愧是流着半身外族血，瘦了下来竟如此的显眼。</p>
+<p>我拿起了桌上的青黛细细的描起了眉眼 ，铜镜内的少女娇俏艳丽一颦一笑百媚生。</p>
+<p>红柳有些看得呆了，帮我梳头的手顿住了。</p>
+<p>「美吗？」我开口问到</p>
+<p>「好看是好看，就是不太像你了。」</p>
+<p>「和当朝贵妃娘娘比如何？」</p>
+<p>红柳思考了片刻，没想出个所以然打量着我的的周身。</p>
+<p>「容貌倒是不知，但是贵妃娘娘可不会像你穿着如此寒酸。」</p>
+<p>她看着一袭素衣，挽着素髻的我有些不解，随后像是突然回过来神似的。</p>
+<p>「抱歉啊…」</p>
+<p>我不在意地笑笑 ，扯裂了干涸的嘴角。血顺着唇流进嘴里，血腥味充斥了口腔。</p>
+<p>看着镜子里的自己，我亲手挽上了那支王爷拿来赎我的玉簪。</p>
+<p>好像还差点什么，我左右打量着镜子里的脸。</p>
+<p>起身回到枕边拆开了包袱，我的包袱是王爷替我收拾的除了衣物和银两还有一盒用来哄我用的胭脂。</p>
+<p>他总是这样，惹恼了我就偷着买盒胭脂送我。</p>
+<p>我把胭脂点在唇上，镜中人已经不再是那个小美人了。</p>
+<p>「阿泠，你现在简直像画本里的妖精。」红柳呆呆的看着我。</p>
+<p>我轻挑了红柳的下巴，饶有兴致看着她红着脸躲开了。</p>
+<p>一个人抱着那把断弦琴，朝正院走去。</p>
+<p>正院里，腰肥燕瘦莺莺燕燕的站了一院，我抱着琴走到了队尾的位置。</p>
+<p>管事拿着名册看着我一脸难办地看向主位的齐王。</p>
+<p>「泠姑娘这是作何？」</p>
+<p>齐王装傻地问道。</p>
+<p>我冷冷看着满院娇女，一言不发的放了琴跪在了地上。</p>
+<p>「小姐啊，你这是何苦呢！」管事急忙想要扶起我，扶不动又为难的看看齐王。</p>
+<p>齐王走到我面前，想要轻声劝我离开却被我抬头的容貌晃得愣了神。</p>
+<p>「你…」齐王语塞地看着我的脸，眼底闪过丝丝惊艳。</p>
+<p>「殿下需要我不是吗？」</p>
+<p>「当今圣上酷爱异族美人，满院的娇女哪怕梳妆得再像也不及我这个流着楼兰血的半分啊！」</p>
+<p>「不是这个道理，你先起来。」</p>
+<p>齐王知道被我看穿了，皱着眉恼火得伸手拉我。</p>
+<p>「皇上越发器重贵妃母家，你快撑不住了不是吗？」</p>
+<p>「够了 1」齐王猛地打断了我，甩袖而去留下满院的娇女和管事的面面相觑。</p>
+<p>我抱着琴起来，看来效果达到了。</p>
+<p>「管事的，麻烦您给我找把琵琶吧。」</p>
+<p>这几日我一直在偏院闭门不出，专心致志练着我的琵琶，又夹了夹嗓子唱着一首又一首楼兰调的小曲。</p>
+<p>齐王来找我时，我正在抱着琵琶调弦。</p>
+<p>「泠姑娘，安好。」</p>
+<p>推开院门，阳光撒了满地我抬眸看着齐王一拐一拐的走来。</p>
+<p>「殿下这是怎么了？」我打上下打量了他的周身，几日不见怎么腿还坡了。</p>
+<p>「无碍无碍，昨日早朝张少傅说错了话惹那位大怒差点让人拖下去斩了，我们这帮着说话的连我这个皇兄都跟着挨了板子。」</p>
+<p>齐王肉疼的回忆着昨日朝廷之上。</p>
+<p>「少傅虚年五八，早年辅佐先帝老了又辅佐小皇帝。是妥妥的一片衷心一心为国啊，要是斩了他可是真伤了老臣们的心。」</p>
+<p>说到这齐王又叹了一口。</p>
+<p>我笑了起来，心照不宣眼神妩媚地勾着齐王。</p>
+<p>「殿下不用点我，你我不是都清楚吗。」</p>
+<p>齐王还不习惯我的转变，离我远了两步躲避着我的目光。</p>
+<p>我不在意地起身，扯起滑下肩头的狐裘。丝丝乌发垂在耳侧，不听话得随风飘动着。</p>
+<p>「时候到了对吗？」</p>
+<p>我不带任何情绪的看向齐王，他躲闪着我的目光沉思了片刻缓缓开口道。</p>
+<p>「我昨晚梦见淮安了……」</p>
+<p>听到这我的表情有一丝凝固，抿了抿唇不自觉的揣摩着玉簪。</p>
+<p>「梦见什么了。」</p>
+<p>我竟有些紧张。</p>
+<p>「梦里淮安提着剑架在我脖子上，怪我没护好你。骂我背信弃义，说要杀了我。」</p>
+<p>齐王无奈地笑了笑，这梦过于真实了，霍淮安这斯绝对能干出来这事。</p>
+<p>我也僵硬地扯了扯嘴角，颤颤巍巍的把玉簪插回发髻。</p>
+<p>「泠姑娘，何必呢？霍淮安给她留下的银两足够你潇洒一生，甚至养几个小倌都是绰绰有余的，何苦如此呢？」</p>
+<p>齐王有些困惑。</p>
+<p>「奴家的命是侯爷的。」我坚定地看向齐王，想起侯爷时眼里总是泛起淡淡水雾。</p>
+<p>「从侯爷用一支玉簪赎我那天起就是了。」</p>
+<p>「奴家愿追随侯爷。」</p>
+<p>齐王摇了摇头，片刻后竟对我俯身致礼。</p>
+<p>「林某替诸位谢过姑娘！」</p>
+<p>他看着逆光之中的我出了神，微风吹起我鬓边的发丝卷住了溜走的晨光。</p>
+<p>落叶被风吹了满天，我发自内心的绽开了一抹笑容。</p>
+<p>我以王府乐侍的名义被送进了宫，齐王惹恼了陛下送来几个美人赔罪并不引人注目。</p>
+<p>皇帝见都没见，看在齐王的份上直接封了才人，入住钟秀宫。</p>
+<p>钟秀宫的主位是皇帝的淑妃，名唤苏湘南长得灵动秀丽温婉至极。性子也是极好的，亲切的拉着我坐在美人榻上。</p>
+<p>「妹妹名唤什么呀，今后你我就是姐妹了！」</p>
+<p>我装作惶恐的答道。</p>
+<p>「名唤秦泠，奴乃齐王府乐伎出身。身份卑贱，怎敢与娘娘姐妹相称。」</p>
+<p>淑妃一时愣了愣。</p>
+<p>「进了宫就是自家姐妹，万万不可作践自己啊。齐王…可好？」</p>
+<p>她声音减弱，小心翼翼地看了我一眼。</p>
+<p>「回娘娘的话，一切安好。」</p>
+<p>齐王说得不错，提起他淑妃必会庇佑我。</p>
+<p>「小四请母妃安，秦娘娘安。」</p>
+<p>远处传来的童声打断了我们的谈话，一个走路踉跄的稚童跪在美人榻前规规矩矩的行礼。我急忙扶起了四皇子，淑妃笑嘻嘻着看着都觉得受宠若惊的我俩。</p>
+<p>「妹妹，以后就唤你小泠儿吧。小远下次记得唤泠娘娘！」</p>
+<p>「走吧，小泠儿也留下用膳吧。」</p>
+<p>看着眼前笑意盈盈的美人和可爱知礼的四皇子，我开始真心有点喜欢他们了。</p>
+<p>我正在铜镜前描眉，侍女抱袖匆匆拿着密函进来了。</p>
+<p>她是王府安插进来的人，负责我与王爷通信。这宫墙森森，竟是全然隔绝了朝堂上的阵阵风波。</p>
+<p>抱袖将密函交到我手上后，就站在我身后替我梳妆。</p>
+<p>「河堤偷工，众臣上书，尽快承宠务必再乱。」</p>
+<p>齐王做了推手，而我要做的就是趁着现在勾走帝王心。</p>
+<p>我将密函放在烛火之上点燃了，幽幽的火光照应在我的脸上。</p>
+<p>萧贵妃失宠，我的机会来了。</p>
+<p>抱袖尤为擅长梳妆 ，我那有些锋利的五官在胭脂的修饰下全然成了异域风情的娇媚。看着铜镜中的自己，我满意的笑了笑。</p>
+<p>趁着月色刚好去，我抱着琵琶朝御花园走去。</p>
+<p>已是深秋，御花园一片萧条。几只残荷竖立在一坛湖中，秋风阵阵卷起地上的干枯红叶。在月光之下倒是有几分异样的色彩，我坐在亭内抱着琵琶。远处的宫人闲聊着点起了灯，映了我满脸媚色。</p>
+<p>一阵阵清脆的琵琶声从我手里向外传去，我又开始哼起来呢喃软语般的楼兰调子。</p>
+<p>这咿咿呀呀的调子传了满园，自然也传到了从御书房出来透口气的皇帝耳里。</p>
+<p>我花银两买通了皇上身边的大太监，今晚我必定能见到皇上能不能留住他就看我的造化了。</p>
+<p>「这歌唱得极好，当赏！」我装作被吓了个正着的样子，假装慌乱的抱着琵琶飞快的往外跑，刻意的摔在了皇上面前然后娇着身子软软的跪下。</p>
+<p>他看着眼前瑟瑟发抖的我，起了极大的兴趣，缓缓伸手抬起了我的下巴，逼迫着我与他对视。</p>
+<p>我把握着最娇媚的眼神含情脉脉地与皇上对视，这一眼眼前的男人与我记忆里重叠了。</p>
+<p>那时皇上刚刚登基，亲自前往北大营犒军。</p>
+<p>关外条件艰苦，就在将军帐内设了宴君君臣臣混了一桌好不乐乎。</p>
+<p>年幼的我带着面纱坐在屏风后抚琴，铮铮的琴声像是战曲带着关外狂卷的风沙拂过了帐内君臣的心。</p>
+<p>「这琴弹得极好，你叫什么名字？当赏！」</p>
+<p>少年天子大口喝着边关粗酿的劣酒，操着变声期的公鸭嗓一边笑着开口。</p>
+<p>我惶恐的跪在地上，一边磕头一边偷偷的朝侯爷靠近。</p>
+<p>霍淮安摸了摸我的头，将我护在身后。</p>
+<p>我探出半个身子偷偷打量着面色潮红的少年天子。</p>
+<p>「霍将军这楼兰乐伎技艺极高，可否割爱赠予朕？」这话一出吓得我缩回了侯爷身后，悄悄拉住了他的衣袖。</p>
+<p>「陛下，这小奴年幼技艺不精。」霍淮安对这小皇帝笑了笑，眼里带着疼爱得摇了摇头。</p>
+<p>副官喝多了酒胆子也大了起来竟然开始打趣起了小皇帝。</p>
+<p>「陛下，那弹琴的可是大帅的贴身婢女，未来的枕边人啊！」</p>
+<p>小皇帝意识到了不妥，轻咳了一声赏了我一把金叶子。</p>
+<p>侯爷顺势让我离帐了，临走时我抱着琴小心翼翼的看了小皇帝一眼。</p>
+<p>他对我轻笑了一下，想要说些什么，我对他眨了眨眼飞快的跑了。</p>
+<p>猛然回神，皇帝惊艳地看着我的脸。</p>
+<p>「朕怎么不知道后宫竟有如此美人！」</p>
+<p>他的手劲极大，捏红了我的双颊。我故意红了红眼眶带着哭腔：</p>
+<p>「奴婢惊了圣驾罪该万死，求陛下饶恕。」</p>
+<p>一滴泪水恰到好处的从眼角滑落到，帝王的手上。</p>
+<p>一脸楚楚可怜伪装的分毫不差。</p>
+<p>「你叫什么名字？」记忆里的画面在我脑海里闪过，我愣了愣神。</p>
+<p>「奴婢名唤秦泠。」</p>
+<p>大太监在旁边小声提醒着，「这是陛下新封的才人。」皇帝才回过神来。</p>
+<p>「秦灵？好名字。」</p>
+<p>说完就一把打横抱起了我，故意惹我一声惊慌</p>
+<p>大太监看着皇帝怀里的娇窝着的我，感叹地摇摇头。</p>
+<p>可能他也知道，这宫里就要变天了。</p>
+<p>皇帝抱着我一路走到了寝宫，抱袖早已烧好水侯着了。</p>
+<p>坐在浴桶里，我把玩着摘下来的玉簪发呆。</p>
+<p>抱袖轻轻敲着我的肩膀：</p>
+<p>「小主，皇上等你呢。快些洗吧，别让皇上等得急了」</p>
+<p>我披上了那件准备好的纱衣，遣散了宫人，抱起琵琶去了内室。</p>
+<p>皇帝坐在床上看着美人步步朝自己走了，我特意选得那件纱衣随着我的走动泄出点点春光。</p>
+<p>我将手里端着的甜酒一含入口中，渡给了皇帝。</p>
+<p>他意犹未尽的吧了吧嘴，来追我的唇。</p>
+<p>我却又不依莹莹的笑了起来，皇帝假意有些恼了我就顺势跪在地上。</p>
+<p>「奴婢知错了，罚奴给陛下唱曲吧，就唱一首娇女吟。」</p>
+<p>说完我抱着琴一边弹唱一边有眼神勾着皇帝的心。</p>
+<p>笑声乐声尖叫声混了满室，真正躺在皇帝身下的那一刻我是麻木的。</p>
+<p>这之前的每一步都经历过我无数次的推演，眼泪悄悄的落了下来。</p>
+<p>皇帝像是感受到了我情绪的异常，有些不悦但也耐着性子地哄道。</p>
+<p>「跟了朕，以后朕疼你！」眼前的帝王和侯爷的脸重叠在了一起。</p>
+<p>吃醉的侯爷，将我压在身下看着满脸的泪痕的我温柔的说过同样的话，却又在感受到我巍巍颤抖的身躯后悬崖勒马。</p>
+<p>窗纸外，烛火映着抱袖守夜的影子。我把眼泪咽进了肚子，主动吻上了皇帝。</p>
+<p>皇帝待我倒是极好的，甚至在意乱情迷之时让我唤他的姓名。</p>
+<p>当日请安，皇后不咸不淡的训诫着我教导着我无外乎一些本分守几，早日诞下皇嗣之类的赏完东西，就打发这一众妃嫔离开了。</p>
+<p>淑妃抱病，我独自回宫的路上与陈贵妃和静嫔撞了个正着。</p>
+<p>陈贵妃看了静嫔一眼，静嫔立刻出言嘲讽道</p>
+<p>「御花园景色萧条，妹妹真是好兴致！」</p>
+<p>终于来了，我装作无辜怯生生的看向她俩。</p>
+<p>陈贵妃冷笑一声，</p>
+<p>「皇后体弱无力教导下人，我今天就来替皇后教导教导秦才人什么是规矩，来人给我拖下去打！」</p>
+<p>我故意大声哭啼，陈贵妃看着我的样子满意的走了。</p>
+<p>行刑的宫人早就被我用银钱买通，他打着我叫着配合的天衣无缝。</p>
+<p>这一闹，就传到了皇帝的耳朵里。他心疼的来看我，对着太医大发雷霆。</p>
+<p>「是奴婢的错，贵妃娘娘教训的是。奴婢不应该奢求陛下的爱，求陛下处罚！」</p>
+<p>说完就又假哭两声埋到皇帝怀里闭目养神。说实话刚开始挨的那几下真还挺疼的。</p>
+<p>果然不过正午，皇上就下旨进我为嫔封号为灵。从衣着到摆件通通赏了个遍，还亲自赶来陪我用了晚膳。</p>
+<p>淑妃看着爬在床上的我，心疼的给我擦洗着。</p>
+<p>「小泠儿，你下次可不得跟她们对上了啊！」我对淑妃笑了笑，不在意的点点头</p>
+<p>四皇子站在殿外，低声地唤着我。</p>
+<p>小小年纪的他早已有了男女之分，奶声奶气的跟宫人说着把点心转交送给泠娘娘。</p>
+<p>「齐王，最近如何？」淑妃知道我与齐王来往频繁，终于忍不住的问到。</p>
+<p>「殿下一切安好，让我替他问娘娘安。衣食可安否？」</p>
+<p>淑妃听到这话竟缓缓落了泪，像是伤心又像是喜极而泣。</p>
+<p>她缓缓躺在了我的身侧，靠在了我的背上。</p>
+<p>「我与齐王自幼熟识暗许终身本是天定良缘。」苏湘南喃喃开口。</p>
+<p>「齐王是庶长子，本就遭嫡系忌惮定万万不可见苏府与齐王联合。皇后母族暗中出手算计了我父亲，我爷爷为保我父亲仕途无恙便告老还乡。齐王势微，父亲值得把我送入太子妃做侧妃。」</p>
+<p>「我父亲被贬前夜，齐王与我留了书信。说是整治完水患就回来求先皇赐婚。」</p>
+<p>苏湘南平静得向我诉说着爱人分离的惨剧，悲伤又平静眼泪好像早已流干。</p>
+<p>我翻过身忍住伤口的疼痛，抱住了她。</p>
+<p>「一开始我也是恨的，后来有了小远日子才渐渐有了盼头。他和他父亲一点也不像，小远虽然年幼但知事明礼…」苏湘南说着说着就睡着了。</p>
+<p>我看着她，年少的皇帝又何尝不是如此呢。</p>
+<p>我俩依偎着渐渐睡着了。</p>
+<p>接连三月皇帝独宠我一人，惹得陈贵妃更是越发对我不顺眼。</p>
+<p>陈贵妃的大皇子更是一有机会就出言嘲讽小远，小远好不在意此事仍是一得空就跑来偏殿。</p>
+<p>「泠娘娘，母后让我送荷包给娘娘！」</p>
+<p>小远开春过后就四岁了，穿得厚厚实实的小胖墩在门口重重的拌了一跤。眼泪却在看到我的那一刻换成了大大的笑容。</p>
+<p>我拉着他的手起来一边吩咐抱袖拿点心了一边拿着汤婆子往这孩子怀里塞。</p>
+<p>小远不好意思的笑了笑，小口吃着碟子里的点心。</p>
+<p>他好奇的看着拨弄乐弦的我，我的琵琶实在不精为了避免皇帝起疑只好日夜加以练习。</p>
+<p>抱袖塞给我了封信，我脸色一变打发着小远回宫去。</p>
+<p>小远走后我打开了信，里面洋洋洒洒一大篇。</p>
+<p>「泠姑娘安好，见字如面。」</p>
+<p>「…」</p>
+<p>先是客套地问了问我最近的情况，表达一下诸位对我的关心。后面短短几行才是重点</p>
+<p>「风波渐平，陈家参你祸国之罪。可否有子嗣？」</p>
+<p>看着火焰卷吞噬了信件，我拔下了头上玉簪，将被火烤的通红的脸颊贴在冷玉上。</p>
+<p>「抱袖，替我备药吧。」</p>
+<p>「小泠儿，小远在你这吗？」</p>
+<p>淑妃焦急的声音把我把我拉了回来，我向外看去发觉天已经渐渐黑了夕阳的余晖笼罩着整个院子。</p>
+<p>「远儿？四皇子正午之后就已经离开了啊？」</p>
+<p>我也跟着有些着急，这孩子已经离开我两个时辰了，没道理不回主殿去去。</p>
+<p>淑妃急得都要哭了，我连忙安慰她带着宫人一起去找。我们顺着钟秀宫的附近找了个遍，还是没有远儿的踪迹。</p>
+<p>我冥冥之中有一种预感，大喊道</p>
+<p>「娘娘叫太医！」随后朝着御花园奔去，离那池残荷越近我的心越慌。</p>
+<p>看见一个小人躺在湖边更是心脏猛的停跳了，凑近一看小小的人儿微弱的喘息着我才缓了一口气瘫坐在地上大声呼缓着太医。</p>
+<p>回到宫里小远儿就发来了高热，太医们战战兢兢的跪了一地。</p>
+<p>皇帝来了便大发雷霆，身边的宫人全部致了看管不利的罪名拉下天牢等待发落。</p>
+<p>小远儿烧了三天几度病危，终于缓缓的醒了起来。</p>
+<p>孙太医送了一口气，瘫软在地上。我叫我端来一碗姜汤，孙太医感激的对我道谢。</p>
+<p>「四皇子如何了？」淑妃焦急的问道。</p>
+<p>孙太医放下汤碗。</p>
+<p>「醒来就是没事了，身体慢慢调理。四皇子年幼，不会留下病根的。」</p>
+<p>话音刚落，淑妃大哭出声。压了三四天的恐惧自责终于在此刻爆发了…</p>
+<p>「母妃…泠娘娘。」我让孙太医先行去配药，和满脸泪痕的淑妃凑在小远儿枕边</p>
+<p>「大…皇兄，他叫孩儿…去御花园帮他捡风筝…然后他推了孩儿一把，回来迟了让母妃和娘娘担心了。」</p>
+<p>小远儿他才七岁啊，他才七岁啊！</p>
+<p>我和淑妃对视了一眼，随即转开。</p>
+<p>陈贵妃这是冲着小远儿的命来的。</p>
+<p>后宫之中二皇子早夭，三皇子年少时坡了一条腿。</p>
+<p>中宫只有一个长公主，储君定是在大皇子和小远儿身上产生的。</p>
+<p>皇帝忌惮外戚势力定时不可能立大皇子为储，真是一手好算盘啊。</p>
+<p>我有了一个天衣无缝的计划。</p>
+<p>天助我，我有孕了。</p>
+<p>淑妃担忧的摸了摸我的肚子，我俩看着床上瘦的有些脱相小远儿目光转为坚定。</p>
+<p>「都准备好了。」</p>
+<p>抱袖将包裹着藏红花粉末的纸包塞到我手里。</p>
+<p>「请小主万事小心。」</p>
+<p>语毕，她轻轻的摸上了我的肚子，露出了惋惜的神色。</p>
+<p>我大肆宣扬了我的有孕，陈贵妃果然按耐不住了。</p>
+<p>皇帝因我的有孕大喜，竟在朝中设宴。</p>
+<p>我有些惊讶，但却暗暗窃喜这事越多人见证越好。</p>
+<p>宴席上，佳肴如流水般送入桌前。我忍着恶心，笑着喂皇帝吃着葡萄。</p>
+<p>皇帝竟当着重臣面，拉我入怀。</p>
+<p>看着台下齐王赞赏的眼神和老臣们失望的神色，我暗暗勾了嘴角。</p>
+<p>妃嫔们饮着酒，而我旁边是宫女递上了一碗红豆汤。</p>
+<p>看着这碗红豆汤，我腹中的胎儿竟猛的踹了我一下。</p>
+<p>我的眼泪竟滴了下来，这是第一次胎动。</p>
+<p>侯爷的旧部跟齐王搭着话，他们看了我一眼。</p>
+<p>那一眼我就知道他认出我来了，那少年人是侯爷一手带大的，连喝酒的姿势都像足了霍淮安。</p>
+<p>大皇子被陈贵妃养的娇蛮无理坐在我的前侧正被宫女喂着吃食，看见我面前冒着热气的红豆汤他好奇的问身边的待者</p>
+<p>「那女人喝的是什么？」</p>
+<p>侍者为难的看向自己的小主子，这汤可是御赐的。</p>
+<p>「大皇子，是红豆汤。」</p>
+<p>「我也要喝！」</p>
+<p>「那不合规矩啊，大皇子。那是圣上的恩典，赐给泠主子。」</p>
+<p>大皇子一听不乐意了，立刻开始撒泼</p>
+<p>「我不管我不管，那个贱女人都能喝。小爷我也要喝！」</p>
+<p>上钩了。</p>
+<p>大皇子想要跑到我的跟前，皇帝想要开口训斥被我一个娇滴滴的眼神堵了回去。</p>
+<p>侍者没拦住，竟让他直直跑到了我的面前推了我一把。</p>
+<p>我的肚子狠狠的撞到了地上，这完全出乎了我的意料。</p>
+<p>我根本没料到大皇子会走到我跟前，本想着等他闹起来就求让陛下开口我与他分食…</p>
+<p>大皇子以掩耳不及之时喝下了我桌上的红豆汤，陈贵妃来不及阻拦大皇子就已经七窍流血躺在了地上。</p>
+<p>我的小腹下坠般疼痛，血顺着腿流了一地。</p>
+<p>齐王震惊我望着我，晕倒之前我的眼里只剩混乱之际掉在我面前的玉簪。</p>
+<p>我醒了已经是三日后了，孩子没了大皇子也没了。</p>
+<p>我颤抖着看着淑妃，淑妃也因为恐惧白了脸色。</p>
+<p>我们本没想着要大皇子的性命的，两人分食定不会致死的。</p>
+<p>孙太医宽慰着我们，说药是陈贵妃下的已经查出来了，大皇子的死和我没有任何关系，让我好好修养。</p>
+<p>可是我的孩子呢，哪怕是借了他人之手我也还是亲手杀死了我的孩子不是吗。</p>
+<p>我和淑妃整日抄着佛经，希望能得到一丝慰藉。</p>
+<p>半月后，忙得焦头烂额的皇帝来看我来。</p>
+<p>他宽慰着我说孩子以后还会有的，说陈贵妃已经处死了，陈家也被以蓄意谋杀皇嗣之名流放了。</p>
+<p>我淡淡地对他笑了笑，依偎在他怀里却已在心中将他千刀万剐。</p>
+<p>四年后，我被封为灵妃居永安宫主位。</p>
+<p>永安宫倒真是讽刺啊，我看着牌匾上的永安两字拔下了头上的玉簪。</p>
+<p>我最近总是没缘由的心慌，不知道为什么总觉得有些难过。</p>
+<p>小远儿已经成长为一个翩翩小少年了，顶着公鸭嗓尝试议论着朝政，齐王也在密函里多次夸奖着小远儿是帝王之才。</p>
+<p>淑妃近两年身体不好，总是时不时发高热，已经成长为太医院之首的孙太医也束手无策。</p>
+<p>「小泠儿。」苏湘南唤我，我连忙走到她的跟前。</p>
+<p>「姐姐，怎么了？」</p>
+<p>「我梦见阿恒。」苏湘南的眼角已经有了淡淡细纹，入了这红墙十来年早已经消磨了她全部的神气。</p>
+<p>我不知阿恒是谁，但是苏南湘嘴角含笑露出如同少女般的娇羞，想必是齐王的名字了吧。</p>
+<p>「他来看我了，说等晚上从太学偷着溜出来给我带一串街角的糖葫芦。」</p>
+<p>说完就痴痴的笑了起来。</p>
+<p>小远儿放轻着脚步进来，竟被苏湘南认成了阿恒猛的抱了上去。</p>
+<p>我对着错愕着要推开苏湘南的远儿摇了摇头。</p>
+<p>「姐姐阿恒来哄你睡觉了，快睡吧！」</p>
+<p>半月后，淑妃病逝追封为淑仪皇贵妃风光下葬。</p>
+<p>小远儿被立为太子，暂留在珍淑宫独居。</p>
+<p>一年前皇后去世了，皇帝的身体也越发地差了。</p>
+<p>我被晋为皇贵妃，暂理六宫。</p>
+<p>抱袖面色沉重地拿着密函朝走来，我心中了然</p>
+<p>「天该亮了。」看着纸上的字，我如释重负的笑了笑。</p>
+<p>「抱袖这么多年来辛苦你了。」</p>
+<p>抱袖对我淡淡回笑。</p>
+<p>「这么多年辛苦泠姑娘了。」</p>
+<p>「请泠娘娘安！」</p>
+<p>早已是弱冠之年的远儿下朝归来，皇帝身体大不如从前便早早叫远儿上朝议政。</p>
+<p>看着眼前的俊郎少年，我心中暗暗下了决定。</p>
+<p>「远儿，你准备好了吗？」我郑重的问了远儿。</p>
+<p>远儿坚定地望着我，眼中早就有了答案。</p>
+<p>「交给我吧那就。」</p>
+<p>等远儿反应过来我这句话时，早已被齐王和我哄骗着出京了。</p>
+<p>「泠姑娘，可准备好了？」两鬓花白的齐王看着我。</p>
+<p>「真怀念啊！」我久违的抚着我那把旧琴，弹起了初见帝王之时的那首战曲。</p>
+<p>齐王起身向抚琴的我深深行了一礼，我淡淡的看向他手里的琴停下来。</p>
+<p>「泠姑娘，我欠你一句道歉。」</p>
+<p>「当年淮安本想着收复北地平定之后就挂印回乡的，让你拜秦少卿做义父再向皇帝求个恩典赐婚的。」</p>
+<p>我释然的笑了笑。</p>
+<p>「我已经不在乎了。」</p>
+<p>「我早就已经不单单是为了给侯爷复仇了。」</p>
+<p>齐王看着我出了神。</p>
+<p>「天快些亮起来吧。」</p>
+<p>我继续抚着琴，开口呢喃着多年前霍淮安喜爱的那首塞外小调。</p>
+<p>躺在病榻皇帝不可置信的看着眼前拿着刀的我。</p>
+<p>「灵贵妃你要做什么？」我冷漠的看着他并不应答。</p>
+<p>「朕这一辈子有何对不住你？」皇帝惶恐的蠕动着，竟传来一阵尿骚味。</p>
+<p>我提着刀慢慢靠近他，试图在他脸上找到曾经将军帐内对我微笑少年的痕迹。</p>
+<p>「皇上你可还记得您登基的第一年，在将军帐内的歌奴？」</p>
+<p>我微笑着看向皇帝，将刀扔在枕边，转身抱起来我的琴开始奏着那首战曲。</p>
+<p>他猛然醒悟，泪珠嘀嘀嗒嗒地落在枕边。</p>
+<p>「是你…」</p>
+<p>「是你啊…」</p>
+<p>「我怎么会想不到，世界上竟会有两双一模一样的眼睛。」</p>
+<p>他的眼里一瞬间闪过很多画面，有眷恋有恐惧有年少时的意气风发有中年时的力不从心。他猛的大喊</p>
+<p>「来人啊！来人啊！」</p>
+<p>我笑滢滢地欣赏着皇帝的丑态，手上又从战曲弹到了娇女吟。</p>
+<p>曲毕，我拆下了一根琴弦，缓缓走向皇帝，慢慢伸手抚平了他脸上凌乱的发丝。</p>
+<p>「侯爷他在下面等你呢，去和他道个歉吧。」</p>
+<p>我坐在永安宫里，把玩着那枚玉簪。</p>
+<p>「泠姑娘？不走吗。」</p>
+<p>抱袖已经换了一身寻常夫人的衣裳，正不解地看着一袭红衣盛装打扮着的我。</p>
+<p>「晚些就走，包姑娘帮我把琴带给王爷吧。」</p>
+<p>时至今日我才知道抱袖名唤包秀秀，是王府管事的女儿。</p>
+<p>包秀秀一脸不解不地的应下了，抱着琴离开了长安宫。</p>
+<p>一身孝衣的远儿沉默地在殿外望着我。</p>
+<p>「远儿，会恨我吗？」我如多年前那样笑着问他，少年红了眼眶。</p>
+<p>「泠娘娘，你为什么不能等一等我。」</p>
+<p>「我马上就能带你过上好日子了。」</p>
+<p>「秦泠，秦泠。」</p>
+<p>少年失态地唤着我的名字，我笑着看向他。</p>
+<p>「我名单字一个泠字，善琴，是永安侯府的歌奴，是侯爷的枕边人。」</p>
+<p>「小殿下。」我从未如此唤过远儿。</p>
+<p>「很抱歉骗了你，今后要听你皇叔的话，看在你娘的面子上他定会护你周全。」</p>
+<p>「我不在乎！」</p>
+<p>「我不在乎！」</p>
+<p>远儿崩溃地大喊着，被宫人强行带离了。</p>
+<p>窗外的光点，轻抚着我的脸颊。</p>
+<p>我点起了桌边的蜡烛，火焰蔓延到了整个宫殿。</p>
+<p>热焰轻吻着我，恍惚间侯爷的身影出现在火焰中心，他对我伸出了手：</p>
+<p>「小泠儿，不要怕。」</p>
+<p>「跟了爷，爷疼你！」</p>
+<p>我拉住了霍淮安的手，我们拥吻着，在热浪里沉沦。</p>
+<p>火焰烧上了云端，直直烧亮了暮色。</p>
+<p>作者名：痛得受不了</p>
+<p>备案号:YXX1jKKJEmdcxxxRKMOC9ldw</p>
+<p>何幸今宵再逢郎</p>
+<p>​</p>
+<p>​</p>
+<p>评论</p>
+<p>红颜逝：犹记情浓画眉时</p>
+<p>今天你点赞了嘛 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/22-%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89-_-%E5%AE%A0%E4%BB%96%E5%BA%A6%E6%97%A5/" title="知乎盐选 _ 宠他度日">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">知乎盐选 _ 宠他度日</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/09/21-%E4%BD%95%E5%B9%B8%E4%BB%8A%E5%AE%B5%E5%86%8D%E9%80%A2%E9%83%8E/" title="何幸今宵再逢郎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">何幸今宵再逢郎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
