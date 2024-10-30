@@ -24,7 +24,7 @@ class ArticleCrawler:
         if not os.path.exists('logs'):
             os.makedirs('logs')
         
-        log_file = 'logs/crawler.log'
+        log_file = 'logs/spiders.log'
         handler = RotatingFileHandler(log_file, maxBytes=1024*1024, backupCount=5)
         logging.basicConfig(
             level=logging.INFO,
@@ -233,9 +233,10 @@ class GitManager:
 
     def commit_and_push(self):
         """执行 Git add、commit 和 push 操作"""
+        current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
         commands = [
             'git add ../',
-            'git commit -m "Python Program Crawling Commit"',
+            f'git commit -m "Python Spiders Commit {current_time}"',
             'git push'
         ]
         
