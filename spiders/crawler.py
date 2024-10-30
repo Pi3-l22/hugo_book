@@ -189,7 +189,7 @@ class ArticleCrawler:
                 logging.info(f"正在爬取第 {page} 页")
                 if not self.crawl_page(page_url):
                     logging.error(f"爬取第 {page} 页失败")
-                time.sleep(2)  # 页面间延时
+                time.sleep(5)  # 页面间延时
                 
         except Exception as e:
             logging.error(f"爬取过程中出现错误: {str(e)}")
