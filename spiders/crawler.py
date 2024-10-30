@@ -234,7 +234,7 @@ class GitManager:
     def commit_and_push(self):
         """执行 Git add、commit 和 push 操作"""
         commands = [
-            'git add .',
+            'git add ../',
             'git commit -m "Python Program Crawling Commit"',
             'git push'
         ]
