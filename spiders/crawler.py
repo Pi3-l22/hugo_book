@@ -46,6 +46,7 @@ class ArticleCrawler:
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             content = soup.find('div', class_='markdown-body')
+            date = soup.find('time').get_text().split()[0].strip()
             if content:
                 # 获取所有文本内容，保持原有的段落格式
                 text_content = []
@@ -54,7 +55,7 @@ class ArticleCrawler:
                         text = element.get_text().strip()
                         if text:
                             text_content.append(text)
-                return '\n\n'.join(text_content)
+                return '\n\n'.join(text_content), date
             return "无法获取文章内容"
         except Exception as e:
             logging.error(f"获取文章内容失败: {str(e)}")
@@ -76,7 +77,7 @@ class ArticleCrawler:
     def save_article(self, title, date, content):
         try:
             # 创建年月目录
-            date_match = re.match(r'(\d{4})-(\d{2})-(\d{2})', date)
+            date_match = re.match(r'(\d{4})年(\d{2})月(\d{2})日', date)
             if date_match:
                 full_year, month, day = date_match.groups()
                 # year = "24"  # 简化年份格式
@@ -148,11 +149,11 @@ class ArticleCrawler:
             for article in articles:
                 try:
                     title = article.find('div', class_='list-group-item-title').text.strip()
-                    date = article.find('time').text.strip()
+                    # date = article.find('time').text.strip()
                     article_url = f"https://onehu.xyz{article['href']}"
                     
                     # 获取文章内容
-                    content = self.get_article_content(article_url)
+                    content, date = self.get_article_content(article_url)
                     
                     # 保存文章
                     if self.save_article(title, date, content):
