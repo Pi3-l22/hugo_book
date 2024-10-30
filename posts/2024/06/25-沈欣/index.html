@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沈欣 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/06/25-%E6%B2%88%E6%AC%A3/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/06/25-%E6%B2%88%E6%AC%A3/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="沈欣">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+  <meta name="twitter:title" content="沈欣">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="沈欣">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="6881">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">沈欣</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-06-25T00:00:00Z</span>
+          
+
+          | <span>14分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-06-25T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%b2%88%e6%ac%a3&amp;url=https://mohai.us.kg/posts/2024/06/25-%E6%B2%88%E6%AC%A3/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/06/25-%E6%B2%88%E6%AC%A3/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%b2%88%e6%ac%a3%20https://mohai.us.kg/posts/2024/06/25-%E6%B2%88%E6%AC%A3/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26080.jpg" alt="沈欣" />
+      
+
+      <p>沈欣</p>
+<p>鬼缠人：凶宅保命实录</p>
+<p>难道还有其他鬼魂被牵扯进来？</p>
+<p>现在沈欣的弟弟死了，他身体里的那个鬼魂又去了哪？</p>
+<p>原本的思路被忽然出现的状况彻底打乱。</p>
+<p>只隐约意识到，我似乎忽略了什么很重要的东西。</p>
+<p>正打算把这情况告诉许子恒，卧室门却开了。</p>
+<p>我爸从卧室里走出来，见到客厅里的我们几个，愣了一下。</p>
+<p>「什么时候回来的？」我爸问。</p>
+<p>「昨天晚上。」</p>
+<p>我爸被那些人带走，恐怕也知道了一些状况。</p>
+<p>但这事复杂，我一时还真不知道该怎么解释。</p>
+<p>但好在，我爸没追问昨晚的事，只是看向了沙发上擦头发的人。</p>
+<p>「这位是？」</p>
+<p>「他是我朋友……的弟弟。」</p>
+<p>许子恒脸长得显嫩，一头卷发，又染了颜色，看起来就比我小，这么说也不违和。</p>
+<p>我爸恍然，「这是小欣的弟弟？」</p>
+<p>「小欣是……」</p>
+<p>我一愣，不知道我爸在说什么。</p>
+<p>还是沈欣反应快，把我挤到一边，开口：「是啊叔叔，这是我弟弟，昨天庄宇忙，叫我送您回来，我家里没人，就叫我弟弟也过来了。」</p>
+<p>我爸点点头，「这么回事啊，那麻烦你们姐弟俩了。」</p>
+<p>我这才回神，原来我爸嘴里的小欣，指的是沈欣。</p>
+<p>不过，她什么时候跟我爸这么熟了？</p>
+<p>「叔叔您早上吃什么？要不把昨天晚上的粥热一下吧？」</p>
+<p>「不用麻烦你，叫那小子做饭就行。」</p>
+<p>「没事，热个粥又不麻烦。」</p>
+<p>说着话，沈欣已经进了厨房。</p>
+<p>我爸见状有点着急，用胳膊肘怼了我一下，「去帮忙啊，别叫客人做饭。」</p>
+<p>我这才回神，开口解释，「不是，爸，咱没时间吃饭了，等会就得出门。」</p>
+<p>许子恒说要带我去他师父那，既可以保障我爸的安全，又可以弄清楚我被换命要怎么解决。</p>
+<p>他说他师父在的小区有房子空着，我跟我爸可以租下来常住。</p>
+<p>所以我们得在被人发现之前，赶紧出发。</p>
+<p>但听我这么说，我爸却很意外。</p>
+<p>「去哪？你们年轻人出去玩，我跟着干吗？」</p>
+<p>我艰难地解释：</p>
+<p>「不是玩……是有点事要办，您得跟着……走吧，咱爷俩先去收拾东西。」</p>
+<p>我爸被我半推着进了卧室，依旧将信将疑。</p>
+<p>等门关上之后，才开口：</p>
+<p>「小宇，你跟爸说实话，是不是惹上什么麻烦了？」</p>
+<p>我动作一僵，没出声。</p>
+<p>却听我爸继续开口，「是因为我要做手术的事吧？」</p>
+<p>「没有，不是这个事。」</p>
+<p>「唉，」我爸叹了口气，声音沙哑，「你是不是欠了人家钱？」</p>
+<p>「啊？」</p>
+<p>我实在不知道我爸从哪得出了这个结论，「没有啊。」</p>
+<p>「别装了，爸都知道，昨天那些催债的人找过我。」</p>
+<p>昨天的事，我爸都记得。</p>
+<p>我心里咯噔一声，问：「那……他们都做了什么？」</p>
+<p>我爸拧起眉心，「他们把我眼睛蒙上了，但反正就是装神弄鬼的，感觉精神不太正常，还说养什么乌龟。」</p>
+<p>养乌龟，鬼，养小鬼……</p>
+<p>但我爸这么说，我反而松了口气。</p>
+<p>还好，我爸只当那些人是神经病，没把他们的话当真。</p>
+<p>我索性将计就计，承认现在确实是在躲债，得先离开这个地方。</p>
+<p>这么一说，我爸虽然自责，觉得他的病给我惹了麻烦，但到底比告诉他，我跟一个恶鬼签了冥契，要好得多。</p>
+<p>情况说清楚，之后再收拾行李就快多了。</p>
+<p>充电线，洗漱用品，几件换洗衣物。</p>
+<p>走到客厅，我想了想，把墙上的那个相框也摘下来，装进了背包里。</p>
+<p>薛姑娘虽然不用借助相框跟随，但这相框里说不定藏着线索，带上也好。</p>
+<p>等收拾好东西，沈欣和许子恒也准备就绪。</p>
+<p>我就掏出手机打车。</p>
+<p>却被沈欣拦下了。</p>
+<p>「还打车干什么，坐我的车不就得了？」</p>
+<p>「你开车来的？」</p>
+<p>「你有车？」</p>
+<p>我跟许子恒同时出声。</p>
+<p>下楼之后才发现，她真有车。</p>
+<p>还是辆体积不小的越野车。</p>
+<p>沈欣开车门，扶着我爸上了车。</p>
+<p>而许子恒站在路边倒吸了口冷气，「大……大 G？」</p>
+<p>我跟他对视一眼，在彼此眼里，都看到了一模一样的羡慕。</p>
+<p>怪不得，沈欣把跟对方同归于尽，说得那么轻描淡写。</p>
+<p>原来天真的不是她，而是我。</p>
+<p>沈欣转头，见我俩还一动不动地站在原地，笑笑解释道：</p>
+<p>「因为那个的原因，能看到太多不想看的，所以我不太喜欢待在人多的地方，这些年都待在野外，拍摄纪录片，上车吧。」</p>
+<p>※</p>
+<p>上午十点钟，路上正是车少的时候。</p>
+<p>沈欣照着导航开，反而距离市内越来越近。</p>
+<p>全程四十分钟，等到目的地附近的时候，周围已经都是住宅区了。</p>
+<p>便利店，菜市场，公车站，还有路边拄着拐棍晒太阳的老人家。</p>
+<p>这地方生活气息十足，实在不像个世外高人住的地方。</p>
+<p>沈欣把车在路边停稳。</p>
+<p>怕找不到停车位，所以没敢往小区里开。</p>
+<p>沈欣扶着我爸下车。</p>
+<p>许子恒在后备箱搬行李。</p>
+<p>我赶紧凑过去问他：「你师父就住在这种地方？我以为得有个道观什么的。」</p>
+<p>许子恒摇头，「你不懂，这叫大隐隐于市。」</p>
+<p>说完，许子恒带路，往小区里面走。</p>
+<p>我们几个人在后面跟着。</p>
+<p>这小区老人居多，花坛绿化改成了菜地，两棵大树之间，也架了绳子，晒着床单。</p>
+<p>才刚走到 11 号楼，许子恒脚步还没停，沈欣就出了声：</p>
+<p>「你师父住这栋楼对吧？」</p>
+<p>「你怎么知道？」</p>
+<p>沈欣认真解释，「因为很干净。」</p>
+<p>我爸接话，「是打扫得挺干净。」</p>
+<p>但我很清楚，沈欣口中的干净，跟我爸说的干净，根本不是一回事。</p>
+<p>她开了天眼，觉得干净是因为在这附近没看到鬼魂。</p>
+<p>许子恒在我爸背后小声解释，说他师父在这附近布了阵，很安全。</p>
+<p>4 门 602。</p>
+<p>因为楼层高，所以就叫沈欣陪我爸在楼下休息。</p>
+<p>我跟许子恒上楼，见他师父。</p>
+<p>但我俩走到他师父家门口才发现，钥匙就挂在门把手上，旁边还贴了一张纸条。</p>
+<p>「这是……什么意思？你师父不在？」</p>
+<p>可人不在家，哪有把钥匙挂门上的道理？</p>
+<p>许子恒看完纸条，表情比我还茫然。</p>
+<p>「师父不在，但他说这件事是我命定的历练，所以不能插手。」</p>
+<p>「钥匙是三楼空房的，他已经租下来了，房东联系方式和合同，都在楼下，还有……」</p>
+<p>我追问：「还有什么？」</p>
+<p>「师父说，跟你换命的，是这个人。」</p>
+<p>说着话，许子恒把那张纸递了过来。</p>
+<p>宣纸上写的是硬笔字，最底下，是两行生辰八字。</p>
+<p>其中一行年月日是我的，所以我一眼就认了出来。</p>
+<p>而另一行——</p>
+<p>1995 年 9 月 29 日 00：17。</p>
+<p>许子恒侧身，问我：「你身边有没有这个时间出生的人？」</p>
+<p>他表情凝重，认真解释，「其实普遍来看，借运、借势的状况层出不穷，但直接换命的，却很少，一来步骤烦琐，难度极大，还容易被命主发现，另一方面，这办法也极为阴损，直接更换运势，只要原主活着一日，运势就会被源源不断地借走，打压。」</p>
+<p>我对上他的视线，拼命在记忆里搜寻相关信息。</p>
+<p>1995 年出生，现在是 26 岁。</p>
+<p>根据年龄找人根本是大海捞针。</p>
+<p>但忽然间，脑子里闪过了一个念头。</p>
+<p>程飞，今年刚好 26。</p>
+<p>阻拦，跟踪，威胁，他那些怪异举动，也应该都有目的。</p>
+<p>想到这，我不由捏紧了手里那张纸条。</p>
+<p>※</p>
+<p>许子恒注意到我的表情变化，问：「你猜到是谁了？」</p>
+<p>我没答话，反问他：「换命的步骤，一般都有哪些？」</p>
+<p>我不知道程飞出生的具体时间。</p>
+<p>而仅凭一个年份，笃定换命的人是他，确实有些草率。</p>
+<p>但许子恒说换命的步骤烦琐复杂，如果真是程飞的话，那肯定还会有别的证据。</p>
+<p>许子恒看出我的目的，开口，「具体操作我也不清楚，但唯一能确定的，需要血液交融，以及很长一段时间的朝夕相处，来骗过天道，调换运势，也是因为这样，换命的要求非常严苛，不光容易被命主察觉，还得换命两人血型一致。」</p>
+<p>许子恒说完，我就沉默了。</p>
+<p>因为我想起了一件事。</p>
+<p>那大概是三年前，程飞出车祸，失血过多被送进了医院，医生打电话通知我，说联系不上他的家属。</p>
+<p>我俩那时候还不算太熟，只是一块喝过几次酒。</p>
+<p>刚接到电话的时候，还觉得奇怪，这种事怎么会联系我？</p>
+<p>但只当他刚从小平台跳槽过来，所以这边没朋友。</p>
+<p>也是因为那次，我俩彻底熟了起来。</p>
+<p>之后他房子的租约出现问题，出院了也是在我家养病救急……</p>
+<p>许子恒皱眉，打断了我的回忆，「你当时给他输血了？」</p>
+<p>「是啊。」我苦笑。</p>
+<p>「当时知道我俩血型吻合，我还以为是凑巧。」</p>
+<p>但现在回想，分明是刻意安排。</p>
+<p>我忽然想起一种可能。</p>
+<p>「那如果，在我没发现被换命的情况下，我的状况，会对他有影响吗？」</p>
+<p>「有。」许子恒肯定地点头，「因为本质上运势还是你的，只是被人借走了而已，所以你的生活状况跟运势本身息息相关。」</p>
+<p>「也就是说，只有我好好活着，对方才能继续借命是吧？」</p>
+<p>「没错。」</p>
+<p>那就对了。</p>
+<p>怪不得后来我的数据彻底凉透，玩得好的主播都淡了联系，只有他没疏远我，反而隔三差五叫我出去喝酒。</p>
+<p>现在看来，恐怕只是为了确认我的境况。</p>
+<p>至于鬼屋签约，他恐怕也不知道什么内情。</p>
+<p>劝我不要签约的原因，也很简单，是怕我被恶鬼缠身，会影响他的运势。</p>
+<p>可这样的话，也就说明程飞跟鬼屋直播，其实并无关联。</p>
+<p>那陈喜的背后到底是谁？他们的目的，又是什么？</p>
+<p>见我半天没出声，许子恒有点担心，问道：「你没事吧？」</p>
+<p>我摇头，「没事，不过被借命的话，有没有破解的办法？」</p>
+<p>不管怎么样，总得先把我自己的运势抢回来。</p>
+<p>许子恒表情纠结，「师父知道，可他现在不在……不过我可以问问师兄，看他有没有办法。」</p>
+<p>他拍拍我的肩膀，跟我一起往楼下走。</p>
+<p>「你放心，我一定帮你把命抢回来。」</p>
+<p>「咱们先把叔叔安顿好，然后我马上就去找师兄。」</p>
+<p>出了楼门，一眼就看到我爸跟沈欣在树底下坐着，不知道在聊什么。</p>
+<p>等我俩走近，沈欣才问：「怎么样？」</p>
+<p>我知道她想问什么，但顾忌我爸在，不好解释。</p>
+<p>所以只是说，「钥匙拿到了，先上楼。」</p>
+<p>许子恒师父租的房子，不算大，但也不小。</p>
+<p>两室一厅。</p>
+<p>估计是为了通风，所以灶台在阳台上，紧挨着厨房。</p>
+<p>我爸刚做完手术没多久，路走多了容易累，所以就去卧室休息了。</p>
+<p>许子恒去请他师兄。</p>
+<p>而我则继续整理房间，沈欣也跟着帮忙，导致我有些不好意思。</p>
+<p>「你休息吧，我来拖地。」</p>
+<p>毕竟她是来给弟弟报仇的，哪能叫她跟着干活？</p>
+<p>「没事，我这么长时间都居无定所的，忽然一收拾房间吧，还挺怀念的。」</p>
+<p>我直了直腰，「啧」了一声，「你这叫什么爱好？」</p>
+<p>她笑笑，「可能是想家了吧。」</p>
+<p>「那就回去看看呗。」</p>
+<p>「我也想回，但是现在没人欢迎我了。」</p>
+<p>说完这话，她低头拖地，避开了我的视线。</p>
+<p>再之后，给我讲了一个故事。</p>
+<p>从前，有个小女孩。</p>
+<p>她是胎生天眼，从小就能见鬼，尤其年龄大一些，能开口说话之后，她就经常对着空气自言自语。</p>
+<p>父母以为她精神状况不正常，几次冒出扔孩子的想法。</p>
+<p>还是找算命先生看过后，说她命格带福，会给家里带来好运，她父母才将信将疑把她留了下来。</p>
+<p>不过说起来也神奇，从她出生之后，她家里的生意确实蒸蒸日上。</p>
+<p>因为这个，父母对她的态度好了许多。</p>
+<p>沈龙，也就是她弟弟，是在她六岁那年出生的。</p>
+<p>沈欣性格怪异，没什么朋友，父母对她也不亲切。</p>
+<p>除了当初的算命先生以外，就只有弟弟沈龙，愿意跟她说话。</p>
+<p>因为怕她的自言自语会吓到客人，所以她的房间在阁楼，平时不许随便下来。</p>
+<p>只有沈龙会去敲门，问她在干什么，趁父母不注意的时候，偷偷把零食和玩具放在门口。</p>
+<p>沈欣深吸了口气，隐隐带了哭腔。</p>
+<p>「算命先生说，小龙就是因为经常跟我待在一起，命格才会越来越虚弱，不然也不会被那些人盯上，都是我害了他，如果不能给他报仇的话，那我活下去也没什么意义了。」</p>
+<p>不在乎脚上的怨气，原来是觉得内疚。</p>
+<p>我把挡着她拖地的凳子挪到墙边。</p>
+<p>劝说，「你不能这么想，无论如何，你弟弟肯定都不希望你出事。」</p>
+<p>她放下拖把，扯出了个笑容。</p>
+<p>「嗐，别担心，我暂时还不会想不开。」</p>
+<p>可话虽然是这么说，她眼里的决绝却丝毫没减少。</p>
+<p>我总觉得不放心，还想再劝，但她已经背过身，拿起抹布擦桌子了。</p>
+<p>兜里的手机震动。</p>
+<p>我掏出来，发现是许子恒的电话。</p>
+<p>「喂？」</p>
+<p>「是我，小庄哥，我知道怎么解决你的问题了，你来六楼吧，我在这等你，顺便叫那个谁，也过来，我想试试能不能给她处理入体的怨气。」</p>
+<p>「好，我们马上就来。」</p>
+<p>三楼到六楼不远，爬楼梯没一会就到了。</p>
+<p>门半敞着，我伸手推开。</p>
+<p>屋内装修整洁明亮，略仿古，进门就是客厅，沙发电视一应俱全。</p>
+<p>贴墙放着一套檀木材质的桌椅板凳。</p>
+<p>「哥，你帮忙关一下门。」</p>
+<p>许子恒的声音，是从里面的房间传出来的。</p>
+<p>我把门关好，往里走。</p>
+<p>这间房是次卧大小。</p>
+<p>但里面没有床。</p>
+<p>地上是草编的蒲团，小的矮桌，桌上有一个香炉，正燃着香。</p>
+<p>墙上挂了几幅看不清落款的山水画，最里面的角落，摆了两排红木色的书架。</p>
+<p>许子恒换了道袍，卷毛用发圈扎起来束在脑后，露出了干干净净的额头，盘腿坐在蒲团上。</p>
+<p>抄着毛笔在纸上画符。</p>
+<p>场景一换，竟然也有几分仙风道骨的意味。</p>
+<p>许子恒头都没抬，就对我俩说：</p>
+<p>「坐吧。」</p>
+<p>沈欣凑过去观察，问他：「你画什么呢？」</p>
+<p>「净化符，能救你命的东西。」</p>
+<p>沈欣啧啧称奇，「你这一换上衣服，还挺像样的。」</p>
+<p>「那可不。」</p>
+<p>许子恒挺直了腰板，但得意还没持续几秒，就被沈欣接下来的话打断了。</p>
+<p>「就是你这黄毛，看着有点违和。」</p>
+<p>许子恒攥着毛笔的手一紧，符差点画歪。</p>
+<p>眼看俩人又要吵起来，我赶紧调停。</p>
+<p>问：「子恒，你师兄没来吗？」</p>
+<p>「没，我刚才亲自去找人才发现，师兄不在，而且竟然也跟师父一样，给我留了张纸条。」</p>
+<p>他一张符画完，小心地抬起来，放到一边晾干。</p>
+<p>之后从袖子里，摸出了一张纸条递了过来。</p>
+<p>上面只写了一行字，「解铃还需系铃人，筋骨血肉当奉还。」</p>
+<p>我看完却更蒙了。</p>
+<p>筋骨血肉，难道指的是我当初在医院，输给程飞的那些血？</p>
+<p>可这要怎么归还？难道还把他抓起来放血吗？</p>
+<p>只能问许子恒。</p>
+<p>他听了我的猜测连连否认，「师兄应该不是这个意思，他是想提醒你，从换命之后，那个叫程飞的人，有没有给过你什么东西，叫你随身带着。换命是需要媒介的，到底是逆天而行，除了作法之外，还需要被换命人随身携带一样包含换命人血脉的信物，掩盖本气。」</p>
+<p>「有。」</p>
+<p>随身携带，媒介。</p>
+<p>这两个词加在一起，叫我不由自主地想起一件事。</p>
+<p>程飞从我那搬走的前一天，确实给了我个东西。</p>
+<p>是个香囊形状的钥匙扣，他说是粉丝送的，平安符，随身带着能保平安。</p>
+<p>我当时还不信那些。</p>
+<p>只是因为确实缺个钥匙扣，没多想就拿来用了。</p>
+<p>而且也没怀疑过那玩意有什么不对。</p>
+<p>但现在，亲眼看着许子恒把那个钥匙扣剪开，并从填充棉里掏出了一个指节长短的透明玻璃瓶时，我还是控制不住地起了一身鸡皮疙瘩。</p>
+<p>瓶子外面裹着黄符。</p>
+<p>把符纸拨开，能看到晃动的血红色液体。</p>
+<p>那是什么东西，不言而喻。</p>
+<p>而我竟然把那个玩意贴身带了两年。</p>
+<p>我压住恶心，问许子恒：「接下来要怎么做？把这个瓶子还回去？」</p>
+<p>他却摇头，「那样不行，对方也不会接受的，得让他主动切断换命才行，你别急，我有其他办法。」</p>
+<p>可我再追问什么办法时，他却只是摇了摇头，视线像在看我，又像是在透过我看别人。</p>
+<p>再之后，把那张黄符用香给引燃，烧成了一小撮灰。</p>
+<p>到这会儿，许子恒刚刚写好的那张符，也已经晾干了。</p>
+<p>「那个，你把裤腿挽起来。」</p>
+<p>看样子是打算给沈欣祛除怨气。</p>
+<p>但他语气别扭，显然在记恨沈欣刚刚管他叫黄毛。</p>
+<p>沈欣「扑哧」笑了，还是逗他，「你这小孩，怎么没礼貌呢，我比你大那么多，不应该叫姐姐吗？」</p>
+<p>许子恒抿着唇准备材料，不作声。</p>
+<p>沈欣觉得逗他好玩，也不生气，笑眯眯地卷起了裤脚，把腿伸了过去。</p>
+<p>昨天看到的那个掌印，又扩大了一圈。</p>
+<p>乌青的黑气蔓延，一路爬到了她的小腿上，连膝盖都开始泛青。</p>
+<p>越仔细端详，越触目惊心。</p>
+<p>我下意识皱眉，「你不疼吗？」</p>
+<p>「有一点，但能忍。」沈欣头也不抬，看着许子恒往她腿上涂东西，「这是什么？怎么还有酒味？」</p>
+<p>许子恒没回答，反而格外严肃地开口：</p>
+<p>「我之前没给人祛过怨气，所以根本不熟练，要不是师父和师兄赶不回来，我肯定不会亲自动手的，万一……万一……」</p>
+<p>他话没说完，显得格外紧张。</p>
+<p>沈欣没等他说完就摆手，「没事，反正我都要死了，你就死马当活马医呗，你放心，就算你把我治死了，我变成鬼之后也不会打扰你的。」</p>
+<p>「其实，」许子恒默了默，「治死是不会治死的，只是有可能会残疾，跛脚什么的。」</p>
+<p>「没事，我不在……等等，你刚才说什么？」</p>
+<p>沈欣不在乎地说了半截，猛地瞪着许子恒。</p>
+<p>「既然这样我就开始了，你别乱动。」</p>
+<p>「不，我后悔了，我不治！」</p>
+<p>许子恒低头忙活，当没听见，「小庄哥，你帮我按住她。」</p>
+<p>我伸手，把沈欣张牙舞爪的胳膊摁住，之后跟她大眼瞪小眼。</p>
+<p>她急吼吼争辩，「你别按我啊，我这人孤寡命，死了还干净利落，要是瘸了没人照顾那就真完蛋了。」</p>
+<p>一口气说完，连气都没喘。</p>
+<p>「得了，他逗你呢。」我无奈开口。</p>
+<p>许子恒到底没憋住，咳嗽一声掩饰笑意，「老实点，别乱动。」</p>
+<p>沈欣恨得牙痒痒。</p>
+<p>「你这小孩，心眼真小。」</p>
+<p>说话间，许子恒已经把符纸点燃了，朝着沈欣腿上乌青的巴掌印凑近。</p>
+<p>「有点疼，忍着哈。」</p>
+<p>火苗靠近即燃，但在朱砂混酒覆盖下的皮肤，却并没被波及。</p>
+<p>反而是涌动在皮肤下的乌青区域，在缓缓缩小。</p>
+<p>沈欣闷声忍着，满头大汗。</p>
+<p>下唇被咬出了血痕，猜也知道，痛感肯定很强烈。</p>
+<p>我把手伸到她面前。</p>
+<p>「你可以捏我胳膊，别咬嘴。」</p>
+<p>她艰难地掀起眼皮看了我一眼，配合地攥住了我的手腕。</p>
+<p>过程不短。</p>
+<p>符纸上的火也一直没燃尽。</p>
+<p>许子恒低声念咒，控制火苗大小，屋里不热，但他额头上却沁出了细密的汗珠。</p>
+<p>等终于结束的时候，沈欣已经疼得晕了过去。</p>
+<p>许子恒按灭火苗之后，才长出了一口气，直接坐在了地上。</p>
+<p>确认沈欣只是劳累过度，需要休息之后，我赶紧凑过去看许子恒。</p>
+<p>「你没事吧？」</p>
+<p>他摇头，嗓子哑得厉害，「没事，就是有点累。」</p>
+<p>之后我俩一起把沈欣抬到客厅沙发上休息。</p>
+<p>之后许子恒问我：「叔叔一个人在楼下？」</p>
+<p>「应该是。」</p>
+<p>我俩上楼的时候，我爸还在睡觉，所以没跟他说去哪。</p>
+<p>按理说应该早睡醒了，但也没给我打电话。</p>
+<p>「我下去看看。」</p>
+<p>「我跟你一起。」</p>
+<p>给沈欣留了张纸条，之后我俩就轻手轻脚下了楼。</p>
+<p>我掏钥匙开门。</p>
+<p>门刚推开，就刚好撞上了我爸的视线。</p>
+<p>他戴着老花镜，手里还拿着剪刀，不知道在干什么。</p>
+<p>「爸，你醒了怎么没给我打电话？」</p>
+<p>我爸压下老花镜，扫了我一眼，「打什么电话，你又不是不回来了？」</p>
+<p>之后继续专心手上的动作。</p>
+<p>「这是干什么呢？」</p>
+<p>我走近了才发现，他竟然在剪纸。</p>
+<p>还是用红纸，比着一张照片。</p>
+<p>那张照片里赫然是个扎着麻花辫的小女孩，穿着白裙子，双眼直勾勾地盯着镜头。</p>
+<p>我心里一颤。</p>
+<p>「爸，你这照片是哪来的？」</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/25-%E6%B2%88%E9%BE%99/" title="沈龙">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">沈龙</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/06/25-%E7%A8%8B%E9%A3%9E/" title="程飞">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">程飞</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

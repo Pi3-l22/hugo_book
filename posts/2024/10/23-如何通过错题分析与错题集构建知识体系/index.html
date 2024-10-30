@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何通过错题分析与错题集构建知识体系？ | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/10/23-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E9%94%99%E9%A2%98%E9%9B%86%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/10/23-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E9%94%99%E9%A2%98%E9%9B%86%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="如何通过错题分析与错题集构建知识体系？">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-23T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+  <meta name="twitter:title" content="如何通过错题分析与错题集构建知识体系？">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="如何通过错题分析与错题集构建知识体系？">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-10-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3486">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/881.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">如何通过错题分析与错题集构建知识体系？</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-10-23T00:00:00Z</span>
+          
+
+          | <span>7分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-10-23T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a6%82%e4%bd%95%e9%80%9a%e8%bf%87%e9%94%99%e9%a2%98%e5%88%86%e6%9e%90%e4%b8%8e%e9%94%99%e9%a2%98%e9%9b%86%e6%9e%84%e5%bb%ba%e7%9f%a5%e8%af%86%e4%bd%93%e7%b3%bb%ef%bc%9f&amp;url=https://mohai.us.kg/posts/2024/10/23-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E9%94%99%E9%A2%98%E9%9B%86%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/10/23-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E9%94%99%E9%A2%98%E9%9B%86%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a6%82%e4%bd%95%e9%80%9a%e8%bf%87%e9%94%99%e9%a2%98%e5%88%86%e6%9e%90%e4%b8%8e%e9%94%99%e9%a2%98%e9%9b%86%e6%9e%84%e5%bb%ba%e7%9f%a5%e8%af%86%e4%bd%93%e7%b3%bb%ef%bc%9f%20https://mohai.us.kg/posts/2024/10/23-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E9%94%99%E9%A2%98%E9%9B%86%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/881.jpg" alt="如何通过错题分析与错题集构建知识体系？" />
+      
+
+      <p>如何通过错题分析与错题集构建知识体系？</p>
+<p>高中数学提分手册：明晰高考套路，学习事半功倍</p>
+<p>高中学习的方法你可能听说过一万种，但咱们要是投票选一个「最著名」的学习方法，那肯定就是做错题集。</p>
+<p>知乎上有一个问题叫《如何做错题本》，居然有 31W 个同学浏览过它！</p>
+<p>这节内容，我就要告诉你：绝大多数同学做的错题集都纯属自我感动。</p>
+<p>错题集的本质不是让你把答案抄一遍，而是要你从 3 个角度对一道错题进行复盘分析，这三点没做对，你做错题集就是在用战术上的勤奋，掩盖战略上的愚蠢。</p>
+<p>1、分析 1 道错题，关键要看这 3 个关键点</p>
+<p>大部分同学感觉错题集做起来很费劲、很无聊、成就感也很低，主要原因是你所谓的「错题集」只不过是把自己做错的题目答案重新抄在本子上，这跟小学老师让你把课文抄一遍没有什么区别，就是一种单纯的体力劳动。</p>
+<p>其实真正有效的错题集，它的核心不是去抄题，而是要你分析题目出错的原因，然后你要在错题集上呈现你的分析结论，留作日后做题的经验——这个过程对你才是最有意义。</p>
+<p>那对于高中数学而言，在你做错题分析时，主要应该关注 3 个点：条件转化，思路构建，结果运算，这也正是我们高考数学题目解答的基本框架：</p>
+<p>…</p>
+<p>分析角度 1 ：条件转化</p>
+<p>在你整理错题集时，你要做的第一件事就是反思：我这道题做错，是不是因为某个条件没转化清楚？</p>
+<p>我举个例子，2020 年秋季，教育部为了给新高考改革区的考生做适应性练习，搞了一个八省联考，在这次联考中数学试卷第 15 题就很有新意：</p>
+<p>…</p>
+<p>——条件给的是一个正方形对角线的斜率为 2，问两条直角边的斜率分别是多少？</p>
+<p>很多同学不会做这道题的原因就是弄不清楚这个「对角线的斜率为 2」的条件说的是什么意思。</p>
+<p>结果打开答案一看，上面写着：对角线斜率为 2，说明这条直线的倾斜角是 45°。</p>
+<p>因为斜率是有几何含义的，每条直线的斜率就是倾斜角的正切值，这是个知识点。</p>
+<p>所以这道题你应该做的是把题目整理出来，圈出答案中的这句话，划一道线，旁边写上：「直线斜率的几何意义：倾斜角的正切值」。</p>
+<p>以后你就知道，看到一个斜率，它不是一个单纯的数字，这个数字背后是一个角度，这个常数只不过是这个角度的正切值。</p>
+<p>你只有把问题分析到这个层次，这道题才算是对你真的有价值，下次遇到类似的条件你才会转化。</p>
+<p>所以这是今天我要说的第 1 句话：每一个你不会转化的条件，背后都是一个你不会用的知识点，错题分析就是帮你把这些不会用的知识点给学会。</p>
+<p>分析角度 2 ：解题思路</p>
+<p>除了条件转化，还有一些题目你不会做，是因为不知道这是什么思路。</p>
+<p>我再举个例子，在立体几何的大题里，你也许看到了一道题目，让你证明 A、B、C、D 四点共面。</p>
+<p>这种题如果你第一次见，肯定是非常陌生的，因为我们讲立体几何都是讲线、面之间的位置关系，很少讲四点共面是怎么证的，这个思路你不具备。</p>
+<p>所以打开答案，结果一看，答案说：你可以取其中的三点，然后用第四个点和其他一个点构造一条直线，从而把四点共面的问题转化为线、面平行的问题。</p>
+<p>比如用 A、B、C 构成一个平面，然后用 D 和 A 相连，你只要能证明平面 ABC 平行于直线 AD，那么这道题也算是证明完毕。</p>
+<p>换言之：四点共面的问题只不过是线、面平行证明的一个变形而已。</p>
+<p>那你这道题做错题集，就应该在这个本子的边缘处记：通过证明线面平行，可以证明四点共面。</p>
+<p>这就也是一个很重要的收获。</p>
+<p>这道题不重要，但是这个思路你学会了，下次看到四点共面，你就会了，这才是错题集真正有用的地方。</p>
+<p>分析角度 3 ：代数运算</p>
+<p>当然在我们数学这个科目，读懂了条件、想对了思路，这还不能保证你把题做对，最后一步还要执行运算，有很多题你可能就是在这一步出错了。</p>
+<p>计算错误有很多，比如有些时候是你粗心算错了，三九二十六，这就不是你错题分析的时候要关注的东西，你粗心能分析出个啥；你要关注的是那些知识性的运算错误，什么意思呢？</p>
+<p>我再举个例子：</p>
+<p>…</p>
+<p>比如 2020 年北京卷这道解析几何的压轴大题。</p>
+<p>你算到最后，这个算式这么麻烦一大坨，这种计算问题它就不是你说我认真一点就能解决的。</p>
+<p>我相信这道题你算不下去，绝对不是因为你粗心。</p>
+<p>因为这道题考到了一个非常重要的代数结构，老师是要在课堂上专门给你讲的，叫做二元函数的非对称结构，有些老师管它叫非对称韦达定理。</p>
+<p>这种计算问题，肯定也是你要关注的对象，因为它很常见。</p>
+<p>比如我的这个错题集，核心就是用马克笔把这个特定的代数结构给圈住了，你读答案自习看好这一步人家是把韦达定理逆向带回题目，然后就把一个非对称的结构给变对称了。</p>
+<p>然后你看，我在旁边写上「逆韦达定理」，这就又是一个全新的积累，以后我见到这样的代数结构，自己也能想到把韦达定理逆代进去。</p>
+<p>所以我希望能通过今天的这几个例子告诉大家：</p>
+<p>错题集不是让你抄题，错题集的核心是引领你从「条件转化、结果分析、代数运算」这三个角度，对自己的题目进行一个微观分析。</p>
+<p>2、通过错题集构建知识框架</p>
+<p>在分析完错题之后，我们接下来一定要把你分析的结果整理成册。</p>
+<p>​不过我知道，大部分同学做过的错题集基本上都是躺在课桌抽屉里吃灰，最初整理错题的时候吭哧吭哧，里头的题目记的是一盘散沙，东一榔头西一棒槌；</p>
+<p>而且抄完就完、从来不看，最多只在考试之前拿出来临时抱佛脚；</p>
+<p>你要是真要说从这种一盘散沙的知识里能总结出什么对考试有用的方法，那可算是勉为其难，最多也就是在最后关头起到一个心理安慰的作用。</p>
+<p>错题集的归纳整理：消消乐，连连看</p>
+<p>你有没有想过：为什么自己辛苦整理出来的错题集，却从来不用？</p>
+<p>答案很简单，你不用，是因为它不好用。</p>
+<p>而它之所以不好用，是因为你从最开始制作时就没打算要拿他干点什么事，所以就拿一个本子，从第一页开始一道接一道地抄题，既没有体系，也没有分类。</p>
+<p>你只是「制作」了一个错题集，却从来没有「整理」过它。</p>
+<p>换言之，你只是积攒了一堆原材料，一盘散沙的题目是不能带给你系统思考的，如果你想提升自己的解题能力，那就必须把自己记录的无数「道」错题，总结为几「类」模型。</p>
+<p>这个整理的过程也很简单，我经常称之为「连连看」或「消消乐」。</p>
+<p>我不知道你还有没有听过这两个名词，它是上个时代手机硬件还非常不发达时的两款单机游戏，核心是把屏幕上一系列相似的图形或者相同颜色的方块，按照一定规则放在一起，那么它们就会消除；当你把整个屏幕上的所有图形都消除掉后，游戏即告结束。</p>
+<p>你的错题整理过程，也应该是一次「消消乐」。</p>
+<p>在做了一段时间题后，你把这段时间的错题都拿出来，问自己两个问题：</p>
+<p>1、 有哪些关键方法，在不同的题目中都有应用？</p>
+<p>比如我们刚才提到的 2020 年八省联考的 T15，这道题用到的考点就是直线斜率的几何含义；</p>
+<p>但是我担保你肯定不止在这一道题里漏用了这个知识点：</p>
+<p>比如，解析几何的题目里也有直线斜率，是不是也会用到直线斜率的几何意义？</p>
+<p>再比如，导数也跟直线斜率有关联，一个函数在某点处的导数值就是函数图像在该点处的切线斜率，你有没有这方面的错题？</p>
+<p>——我的意思是，你一定可以从自己的错题集中把涉及同一个知识点的不同题目找出来，提取它们之间的共同点，加深自己对这个知识点在不同问题情境中的理解。</p>
+<p>2、有哪些不同的解题思路，可以解决同一类问题？</p>
+<p>比如函数的零点分析。</p>
+<p>你一翻自己的错题，有些题目问的是函数零点，但是题目是是通过单调性分析，用零点的存在性定理来做的；</p>
+<p>还有一道题，是把一个函数的零点问题转化成两个函数的图像交点；</p>
+<p>这两道题目很明显也应该放在一起，以后看到题目问零点，你就知道要从两个方向思考。</p>
+<p>再比如四点共面，我们上期视频里说到过一种方法是转化为证明线面平行；</p>
+<p>但是也许你后来又碰到了一道四点共面，但是题目是用平面向量基本定理来证的，四个点，可以连出三个向量，你如果能把其中一个向量写成另外两个向量的线性组合，这也可以证明四点共面。</p>
+<p>错题集不是一个本，而是一堆纸</p>
+<p>题目是做不完的，但是高考中题目的类型是有限的。</p>
+<p>那怎么从无限的题目当中去归纳这些有限的模型和套路？</p>
+<p>就是你要把同一类的错题放在一起，题以类聚。一旦你完成了题目的聚类，当你考前复习的时候，这个错题集里就不是几百道题，而是二三十个类型，你复习起来就会非常有体系。</p>
+<p>所以这就引出了我们最重要的建议：你的错题集，一定要用活页纸！</p>
+<p>我相信这篇文章里我说的这些东西很多同学都懂，但为什么你的错题集就是一盘散沙，你也不去整理和复习呢？</p>
+<p>就是你一开始用的是一本固定的本子，第一页记了一道题，用线、面平行证四点共面；第十八页又记了一道题，用平面向量基本定理证明四点共面。</p>
+<p>本来这两道应该放在一起的，可是你总不能把本子给撕了吧？</p>
+<p>这个物理实体，就限制了你去实践这套方法。</p>
+<p>所以，一定要用活页纸完成自己的错题整理。</p>
+<p>备案号:YX01wAgQQLm0reDWB</p>
+<p>高三阶段如何通过刷题快速提分？</p>
+<p>​</p>
+<p>​</p>
+<p>高中数学提分手册：明晰高考套路，学习事半功倍</p>
+<p>Heshawn</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/23-%E5%A6%82%E4%BD%95%E6%94%BB%E5%85%8B%E5%8E%8B%E8%BD%B4%E9%A2%98/" title="如何攻克压轴题？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">如何攻克压轴题？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/23-%E6%80%9D%E5%90%9B%E8%BE%9E/" title="思君辞">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">思君辞</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

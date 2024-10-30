@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霸凌往事 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/07/22-%E9%9C%B8%E5%87%8C%E5%BE%80%E4%BA%8B/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/07/22-%E9%9C%B8%E5%87%8C%E5%BE%80%E4%BA%8B/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="霸凌往事">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+  <meta name="twitter:title" content="霸凌往事">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="霸凌往事">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="9936">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">霸凌往事</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-07-22T00:00:00Z</span>
+          
+
+          | <span>20分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-07-22T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%9c%b8%e5%87%8c%e5%be%80%e4%ba%8b&amp;url=https://mohai.us.kg/posts/2024/07/22-%E9%9C%B8%E5%87%8C%E5%BE%80%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/07/22-%E9%9C%B8%E5%87%8C%E5%BE%80%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%9c%b8%e5%87%8c%e5%be%80%e4%ba%8b%20https://mohai.us.kg/posts/2024/07/22-%E9%9C%B8%E5%87%8C%E5%BE%80%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26590.jpg" alt="霸凌往事" />
+      
+
+      <p>霸凌往事</p>
+<p>红男绿女：真爱没有结局</p>
+<p>我的亲生父亲，害死了我最喜欢的男生的父亲。</p>
+<p>于是，那个男生对我的霸凌开始了。</p>
+<p>从校园，到家里。</p>
+<p>1</p>
+<p>我的亲生父亲，害死了我最喜欢的男生的父亲。</p>
+<p>从妈妈口中得知这个消息后，我疯了一样冲出家门，冲向那个我再熟悉不过的地方。</p>
+<p>当我气喘吁吁抵达齐闻墨家时，眼中皆白，耳中灌满了被极尽压抑的啜泣。</p>
+<p>我呆滞地站在他家门口。</p>
+<p>看到了哭得摇摇欲坠的齐妈妈，看到了那些唉声叹气前来吊唁的左邻右舍。</p>
+<p>看到了，双眼猩红攥紧拳头，却没有掉一滴泪的齐闻墨。</p>
+<p>「齐……」</p>
+<p>突然。</p>
+<p>齐闻墨似有所觉般猛地扭头，对上了我的视线。</p>
+<p>他的眼中，涌现出前所未有的恨意与戾气。</p>
+<p>我从未有一刻，比现在更加清晰明了地体会到他的心情。</p>
+<p>齐闻墨。</p>
+<p>这个我喜欢了三年的男生。</p>
+<p>他想杀了我。</p>
+<p>2</p>
+<p>「砰！」</p>
+<p>我的脑袋，被人重重按到厕所墙壁，那冰冷的瓷砖上面。</p>
+<p>剧痛，伴随着脑海中巨大的嗡鸣声，瞬间蔓延至了我的全身。</p>
+<p>「乔柒柒，听说，你爸是杀人犯啊？」</p>
+<p>充满恶意的声音，在我耳边响起，我挣扎着想要反抗，可下一秒，肚子上就被人狠狠打了一拳。</p>
+<p>「唔……」</p>
+<p>我闷哼着，捂着肚子蜷缩在了墙角。</p>
+<p>也直到这时我才看清了打我的人是谁。</p>
+<p>哦，原来是林幼安。</p>
+<p>是我们学校远近闻名的女混混。</p>
+<p>她和我一样，也一直暗恋着齐闻墨。</p>
+<p>我抱着肚子坐在卫生间肮脏的地上，沉默地看着她。</p>
+<p>她这是在给齐闻墨出气。</p>
+<p>不过短短两天，我亲生父亲害死齐闻墨爸爸的消息，已经传遍了整个学校。</p>
+<p>林幼安微微俯身，一把抓住了我的头发，迫使我抬头看向了她。</p>
+<p>少女眼中满是厌恶，她盯着我瞧了很久，才松开我的头发，嫌恶地在我校服上擦了擦手。</p>
+<p>「不愧是杀人犯的女儿，真够恶心。</p>
+<p>「小杀人犯，以后离齐闻墨远点儿，别再不知廉耻地缠着他了，听到了吗？」</p>
+<p>林幼安抱臂站在我面前，居高临下地俯视着我。</p>
+<p>我没有开口，依旧沉默地看着地面，头发从脸颊两侧垂下来，遮住了我的大半张脸。</p>
+<p>「听见了吗？以后离齐闻墨远点儿！」</p>
+<p>可能是由于没有得到我的回应，林幼安怒从心头起，一脚狠狠蹬在我的肩膀上。</p>
+<p>我猛地扑倒在地，手边是用来打扫厕所的拖把和笤帚。</p>
+<p>那上面，散发着令人作呕的味道。</p>
+<p>我依旧一言不发。</p>
+<p>3</p>
+<p>林幼安气急了，她再度上前扯住我的头发，把我从地上狠狠拽了起来。</p>
+<p>「啪！」</p>
+<p>她抡圆了胳膊，在我脸上甩了狠狠一耳光。</p>
+<p>与此同时，还不停咒骂我。</p>
+<p>「你还嫌害齐闻墨害得不够吗？像你这种垃圾，就该跟你那杀人犯爹一样赶紧去死！</p>
+<p>「我警告你，如果你再敢缠着齐闻墨，我见一次，就打你一次，听见了吗？」</p>
+<p>咒骂完，她又在我另一侧脸颊上，甩下了重重一耳光。</p>
+<p>这一巴掌打得结结实实。</p>
+<p>耳鸣声中，我猜测我的脑袋，现在肯定已经肿成了猪头样。</p>
+<p>「幼安，有老师过来了，走吧！」</p>
+<p>恍惚间，我听到林幼安的跟班低声催促她。</p>
+<p>林幼安意犹未尽地「啧啧」两声，将扇过我巴掌的手，在我校服上蹭了两下，带着她的几个跟班威风凛凛地离开了。</p>
+<p>我趴在厕所冰冷的地面，不知过了多久，耳边忽然响起惊慌失措的声音。</p>
+<p>「同学！同学你怎么样！」</p>
+<p>4</p>
+<p>那天的事情，最后闹到了学校的教导处。</p>
+<p>但无论老师们怎么问，我都没有说出林幼安的名字。</p>
+<p>老师们对始终沉默不语的我没有办法，到最后，老师们失望地摇摇头，不再管我了。</p>
+<p>未免回家后被妈妈看出什么，我找校医要了冰袋。</p>
+<p>直到脸颊两侧的红肿彻底消下去后，才离开了医务室。</p>
+<p>我亲生父亲成为杀人犯的事情，早就在学校里面传开了。</p>
+<p>同学们看向我的眼神，无一不是惊恐中带着厌恶。</p>
+<p>大部分人都尽可能地绕开我走，好像我是什么行走的病原体。</p>
+<p>至于剩下的那少部分人……</p>
+<p>回到教室，我准备从桌肚里拿出下节课要用的课本。</p>
+<p>可刚一伸进手去，我就察觉到自己好像戳破了什么东西，摸到了一片黏黏糊糊。</p>
+<p>我立刻把手抽出来。</p>
+<p>紧接着，就看到桌肚里淌出大片黏腻的红。</p>
+<p>那汩汩流出的红，像极了人血。</p>
+<p>我眼皮一跳，猛地从座位上弹起，手足无措地望向教室里的其他人。</p>
+<p>目及之处，是几道满是恶意的视线，以及其他人的漠不关心。</p>
+<p>「哎哟！」</p>
+<p>我听到有人怪声怪调地喊道。</p>
+<p>「大家快看嘿！小杀人犯刚刚又去杀人，血都带回教室了！」</p>
+<p>那人话音一落，刚刚还对我漠不关心的同学们，此时全都倏地扭头看向了我，所有人都皱着眉头，好像我的存在对他们来说，就是一种莫大的侮辱。</p>
+<p>我的眼眶又酸又胀，却只能手忙脚乱地擦着桌肚中流出的黏腻沉红。</p>
+<p>刺鼻的腥臭味，伴随着淌出的沉红，在教室里逐渐弥漫开来。</p>
+<p>「乔柒柒，你到底把什么东西带进教室了？太他妈臭了！」</p>
+<p>「乔柒柒，你怎么这么恶心！」</p>
+<p>「乔柒柒，这里是学校不是你们杀人犯的家！」</p>
+<p>「乔柒柒，你就是个垃圾堆里长出来的臭虫，赶紧滚出我们班！」</p>
+<p>「乔柒柒……」</p>
+<p>此起彼伏的污言秽语，源源不断涌入我的耳朵。</p>
+<p>5</p>
+<p>等我终于清理完那摊黏稠的红。</p>
+<p>齐闻墨走进了教室。</p>
+<p>他先是在门口顿了下。</p>
+<p>估计是已经闻到遍布整个教室的恶臭，他的视线在教室里逡巡一圈后，最终落在了我的身上。</p>
+<p>然而，齐闻墨的视线只在我身上停留了不到一秒，就已经转开了。</p>
+<p>曾几何时，他是那样一个开朗善良，好像小太阳似的存在。</p>
+<p>而现在，他变得阴郁沉默，身上裹着浓稠到化不开的遮日乌云。</p>
+<p>「啧，真臭。」</p>
+<p>路过我身边时，他脚步再次停下脚步，垂眸冷冷看向我。</p>
+<p>6</p>
+<p>那天之后，孤立我的人从班级蔓延至了整个年级。</p>
+<p>他们打着正义的旗号，对我这个「杀人犯的女儿」肆意侮辱谩骂。</p>
+<p>我的桌肚变成了我最恐惧的存在。</p>
+<p>因为我不知道，新的一天出现在里面的，究竟是七零八落的虫子，还是被开膛破肚的老鼠。</p>
+<p>学校里，我不止一次被锁在厕所隔间、器材教室，以及无人问津地老旧仓库。</p>
+<p>上下学的路上，林幼安也不止一次，带着她的那几个跟班，在我回家的必经之路上拦下我。</p>
+<p>她们会扇我巴掌，对我拳打脚踢。</p>
+<p>虽然也曾有好心的过路人，想阻止她们对我行凶。</p>
+<p>可一旦这些路人被告知，我是杀人犯的女儿，他们就会对我的遭遇视若无睹。</p>
+<p>更有甚者，那双看向我的眼睛里，神色还会从同情转变为嫌恶。</p>
+<p>「乔柒柒，你还要不要脸，齐闻墨的爸爸都被你爸害死了，你居然还有脸缠着他！」</p>
+<p>林幼安一边打我，一边不停说着我最害怕听到的话。</p>
+<p>偶尔她们围殴我的时候，齐闻墨会路过。</p>
+<p>起初，林幼安还担心齐闻墨会不满她的粗鲁行径。</p>
+<p>可渐渐地，齐闻墨每一次的视若无睹，都让她越发笃定：</p>
+<p>这个之前曾救过我的少年，已经彻彻底底厌恶了我。</p>
+<p>而我，却只能抱着齐闻墨曾经对我流露出来的那点微末善意，咬牙硬撑下来。</p>
+<p>7</p>
+<p>「乔柒柒。」</p>
+<p>这天，我用几乎被剪成破布的书包，包着课本一瘸一拐走在回家路上。</p>
+<p>骑着单车的少年，倏地在我面前停了下来。</p>
+<p>用冰冷而讥诮的眼神，上下打量着我。</p>
+<p>「就保持现状，不要反抗，听到了吗？这是你欠我的。」</p>
+<p>说完这句话。</p>
+<p>齐闻墨就踩着单车离开了。</p>
+<p>夕阳在他身后，拖出一道长长的影子。</p>
+<p>8</p>
+<p>齐闻墨的加入，让校内针对我的霸凌行为愈演愈烈。</p>
+<p>被撕个粉碎的随堂测试卷。</p>
+<p>被打翻在地，还要被踩上几脚，才会被重新放回盘子里，并且威胁我一定要吃掉的饭菜。</p>
+<p>还有那一桶桶，散发着刺鼻古怪气味，被一次次兜头浇到我身上的污水。</p>
+<p>被扔进厕所的课本作业。</p>
+<p>被涂在座椅上的胶水。</p>
+<p>还有那些在教室过道里伸出来，让我摔到鼻青脸肿的脚。</p>
+<p>霸凌我。</p>
+<p>成了全校的狂欢。</p>
+<p>「乔柒柒，听说你还喜欢我？」</p>
+<p>每当有人欺负了我，齐闻墨就会以高高在上的姿态出现。</p>
+<p>他眼神鄙夷地看着狼狈不堪的我。</p>
+<p>一遍又一遍问出让我钻心刺骨的问题。</p>
+<p>「啧，你真是我见过，最恶心的人。」</p>
+<p>齐闻墨看向我时的目光，充斥着让我绝望的冷意。</p>
+<p>9</p>
+<p>齐闻墨亲手剪掉了，他曾说过漂亮的，我那一头乌黑顺滑的长发。</p>
+<p>他剪得随心所欲，我却连一声「疼」都不敢说出口。</p>
+<p>「卧槽！齐大学神，还是你会玩儿啊！」</p>
+<p>「齐大学神手艺可以啊！简直就是当代抽象派名家啊！」</p>
+<p>「太丑了太丑，我都不忍直视了！」</p>
+<p>「少扯淡，齐大学神亲自操刀怎么可能会丑！」</p>
+<p>五分钟后。</p>
+<p>齐闻墨将手中的剪刀往地上一扔，扫扫手站了起来。</p>
+<p>我抱着腿缩在墙角，几乎不敢去想我现在的样子，我甚至能感觉到，深秋冷风吹过我头皮时，带来的森森寒意。</p>
+<p>「得了，完工。」</p>
+<p>齐闻墨毫无情绪起伏的声音，在周围的喧嚣声中格外刺耳。</p>
+<p>「走吧，我请大家喝汽水。」</p>
+<p>「齐哥大气！」</p>
+<p>「哇！齐闻墨你真是太好了！」</p>
+<p>「那我要喝桃子味儿的！」</p>
+<p>「我要青柠味儿的！」</p>
+<p>众人簇拥着齐闻墨，吵吵嚷嚷地渐行渐远了。</p>
+<p>10</p>
+<p>被齐闻墨亲手剪掉头发的那天，未免妈妈看到担心，我去理发店剪了个寸头。</p>
+<p>没办法，如果不这样的话，我当时的样子根本没办法见人。</p>
+<p>可没想到第二天。</p>
+<p>我就又一次被拖进了那间最臭气熏天的厕所。</p>
+<p>「把衣服脱了。」</p>
+<p>林幼安站在我面前，颐指气使地下令。</p>
+<p>我瞳孔皱缩，不由自主看向她。</p>
+<p>「啪！」</p>
+<p>她现在扇我巴掌，已经到了炉火纯青的地步。</p>
+<p>我的脑袋被打歪到一边，口中满是铁锈味儿，这已经不是她第一次，把我嘴巴打出血了。</p>
+<p>「看什么看，让你脱就脱，赶紧地，别浪费大家时间！」</p>
+<p>林幼安不耐烦地瞪着我。</p>
+<p>我看到，站在她身后的一个女生，拿出口袋中的手机对准了我。</p>
+<p>她们要拍视频！</p>
+<p>我脑海中陡然闪过这个念头。</p>
+<p>伴随而来的，是我第一次生出想要反抗的勇气。</p>
+<p>「滚开！」</p>
+<p>我声嘶力竭地吼了一声，猛地冲向离我最近的林幼安。</p>
+<p>可是，她们的人实在太多了，我很快被按在了地上，我的脸紧紧贴在厕所湿冷的地面。</p>
+<p>前所未有的恐慌，将我密不透风地包裹起来，不断蚕食着我摇摇欲坠的勇气。</p>
+<p>「动作快点儿啊，马上要到上课时间了。」</p>
+<p>突然，一道清冽的男声，穿过层层叠叠的人，落入我的耳中。</p>
+<p>我挣扎着抬头看去，目光钉在了那个站在厕所门口的少年身上。</p>
+<p>他甚至在笑。</p>
+<p>齐闻墨！</p>
+<p>11</p>
+<p>「给脸不要脸，居然敢推我！把她衣服给我扒了！」</p>
+<p>林幼安被我的反抗激怒了。</p>
+<p>她用力踩在我脑袋上，我被迫转开了望着齐闻墨的视线。</p>
+<p>可他仍旧站在厕所门口。</p>
+<p>事不关己地围观我被按在地上。</p>
+<p>围观林幼安和她的跟班粗暴地扯开我的校服。</p>
+<p>围观她们拽掉我的背心裤子。</p>
+<p>…………</p>
+<p>12</p>
+<p>身上最后一片布料，即将被林幼安扯下的时候。</p>
+<p>我听到了齐闻墨再次响起的话音。</p>
+<p>「差不多行了，全脱了也够恶心的。」</p>
+<p>他阻止了林幼安接下来的动作。</p>
+<p>林幼安恶狠狠朝着蜷缩在墙角的我，恶狠狠「啐」一口。</p>
+<p>我的衣服被当作破布一样，被她们远远踢开，皮肤紧贴着厕所还有残留水渍的地面。</p>
+<p>「咔嚓！咔嚓！」</p>
+<p>林幼安和她的跟班将手机镜头对准我，疯狂按下快门。</p>
+<p>我只能尽量把自己缩起来，在绝望中等待着她们的偃旗息鼓。</p>
+<p>「视频录好了吗？」</p>
+<p>拍完照片后，我听到林幼安问了一句。</p>
+<p>「放心吧林姐，都拍好了，这回准保能让她一炮而红！」</p>
+<p>充满嘲弄的话语，无遮无拦地撞入我耳中。</p>
+<p>林幼安发出巨大的讥笑声。</p>
+<p>她最后又踹了我一脚，才心满意足地转身离开。</p>
+<p>我心如死灰地趴在地上，目光却又不自主地，朝着齐闻墨刚刚出现的方向看去。</p>
+<p>齐闻墨此时正背对着厕所，林幼安扑到他身上，亲亲热热地挽住了他的胳膊。</p>
+<p>「闻墨，咱们走吧。」</p>
+<p>林幼安的声音，甜得好像能淌出蜜来。</p>
+<p>原来如此。</p>
+<p>我闭上眼，不想再去看他们的亲密无间。</p>
+<p>13</p>
+<p>我做了一场冗长的梦。</p>
+<p>梦里，我那个常年家暴我妈和我，经常把我们打到遍体鳞伤，甚至还不止一次想要侵犯我的生父，早早就酒精中毒猝死了。</p>
+<p>齐闻墨的爸爸没有被他害死，仍旧平安健康地活着。</p>
+<p>我和齐闻墨，当然也没有来到那个岔路口。</p>
+<p>他依旧会每天跟我一起上下学，会在有人欺负我的时候替我出头，会在我最怕的雷雨天，将我揽入他宽厚温暖的怀抱。</p>
+<p>梦中的齐闻墨，还是那个小太阳般开朗热情的少年。</p>
+<p>「柒柒，我一定会永远保护你的。」</p>
+<p>这是他曾给我的承诺。</p>
+<p>在一个春光灿烂的日子，他牵起我的手，让我做他的女朋友。</p>
+<p>我们成为了众人艳羡的情侣，一起考入向往的大学，找到理想的工作。</p>
+<p>我们拥有一个幸福美满的三口之家。</p>
+<p>这个梦实在太美好了。</p>
+<p>美好到，我几乎想就此一睡不醒。</p>
+<p>14</p>
+<p>三个月后，我遭遇校园霸凌的事情，最终还是被妈妈知晓了。</p>
+<p>在医院醒来时，我看到了妈妈通红的眼眶，以及她不知什么时候生出来的白发。</p>
+<p>「对不起柒柒，是妈妈对不起你……」</p>
+<p>妈妈用力把我揽入她怀中。</p>
+<p>一开始，她还只是小声啜泣着，可后来，她终究还是忍不住放声痛哭了起来。</p>
+<p>我微微发颤的身体倚在妈妈温暖的怀抱。</p>
+<p>有种终于解脱了的感觉。</p>
+<p>不知是被妈妈传染了还是怎么地，我也开始掉泪了。</p>
+<p>接连不断的眼泪落下，很快洇湿了妈妈胸前的衣服。</p>
+<p>妈妈死死抱着我，哽咽道：「柒柒，妈妈会尽快给你办理转学，妈妈带你离开这里，我们再也不回来了！」</p>
+<p>我没有开口，只是沉默地点了点头。</p>
+<p>长久以来的默不作声，似乎让我忘记该怎么开口说话了。</p>
+<p>15</p>
+<p>妈妈擦干眼泪，轻柔地扶着我躺回病床上。</p>
+<p>「柒柒，你放心，妈妈绝不会放过那些伤害过你的人！」</p>
+<p>妈妈在病床边坐下。</p>
+<p>一遍一遍，轻抚着我已经被理成寸头的头发。</p>
+<p>她的眼眶依旧红得吓人，眼泪很快再次汇聚在她眼中。</p>
+<p>我多想安慰她，说我没事，让她不要难过。</p>
+<p>可最终，我半点声音都没能发出来。</p>
+<p>我好像真的，说不出来话了。</p>
+<p>没办法，我只能艰难地撑起一个虚弱的笑，想用实际行动告诉她：</p>
+<p>我真的没关系。</p>
+<p>可看着神色恹恹，虚弱到几乎睁不住眼睛的我，妈妈的眼泪终究还是决堤了。</p>
+<p>16</p>
+<p>之后的一个月，我住进了妈妈安排好的疗养院。</p>
+<p>这个曾经无数次，将我从酒鬼生父手中救下来的女人，再次一往无前地为我冲进了战场。</p>
+<p>疗养院非常安静。</p>
+<p>这里有被精心照料的花朵。</p>
+<p>有被好心的医生护士收留的流浪猫和流浪狗。</p>
+<p>我真的好喜欢这里。</p>
+<p>经过医生诊断，我的失声并非外力造成，而是由心理疾病引起的。</p>
+<p>只能通过心理干预进行治疗。</p>
+<p>得知这样的结果，我反而还松了口气。</p>
+<p>从那之后，妈妈似乎把过去将近二十年没有流过的泪，全部都流完了。</p>
+<p>虽然她大多数时间，都会避开我，可她的掩饰实在太不走心了，每次都会被我看到她泛红的眼眶。</p>
+<p>可眼睁睁看着妈妈因为我的病而日渐憔悴，我最终还是接受了心理医生的调解。</p>
+<p>开始治疗我的失语症。</p>
+<p>17</p>
+<p>至于齐闻墨。</p>
+<p>我住进疗养院之前，齐妈妈曾带着他来看过我一次。</p>
+<p>齐妈妈是个非常温柔的女人。</p>
+<p>小时候，因为生父家暴的缘故，她会经常收留我在齐家过夜，给我做香香软软的小蛋糕。</p>
+<p>会告诉齐闻墨，无论在哪里，都一定要保护好我。</p>
+<p>她还会经常拉着妈妈出去逛街。</p>
+<p>会给我买很多很多礼物。</p>
+<p>妈妈几乎对她知无不言，唯独没有把生父曾经想要侵犯我的事情告诉她。</p>
+<p>齐妈妈一度以为，妈妈和生父离婚，只是因为受够了对方的家暴。</p>
+<p>可惜，自从齐爸爸去世后，她就再没有和妈妈有过任何往来了。</p>
+<p>「柒柒，你……」</p>
+<p>齐妈妈欲言又止地望着我。</p>
+<p>或许是见我的状况真的太过糟糕，她没忍住落了泪下来。</p>
+<p>我张了张嘴，想要安慰面前这个温柔的女人。</p>
+<p>可最终也没能发出半点声音。</p>
+<p>18</p>
+<p>「阿竹，柒柒这是……」</p>
+<p>齐妈妈满眼震惊望向妈妈，眼中流露出显而易见的心疼。</p>
+<p>看着站在面前的母子俩，妈妈的胸口剧烈地起伏着，我知道，这是她发火的前兆。</p>
+<p>她好像一头发怒的母狮，目光灼灼盯住站在齐妈妈身后的齐闻墨，咬牙切齿道：</p>
+<p>「柒柒怎么了？你不应该问我，而是应该去问问你的好儿子！」</p>
+<p>妈妈像是终于找到发泄口，她一步步逼近齐闻墨，双眼变得猩红。</p>
+<p>「齐闻墨，我承认是我前夫对不起你们家！你有什么恨什么怨尽管冲我来！为什么要报复在我女儿身上！</p>
+<p>「放任全校学生针对她孤立她霸凌她，还亲手剪掉柒柒的头发，替给柒柒拍裸照和视频的人把风，甚至不让柒柒反抗！</p>
+<p>「齐闻墨！你还是人吗！」</p>
+<p>我眼看着妈妈想冲上去对齐闻墨动手。</p>
+<p>连忙去拉她的胳膊，结果一不小心从病床上摔了下去。</p>
+<p>「砰！」</p>
+<p>巨大的响动，惊醒了病房里其余三人。</p>
+<p>我看到齐闻墨眼中一闪而过的痛楚和后悔，看到他见我摔下床后想过来把我扶起来。</p>
+<p>可现在，我实在太怕他了。</p>
+<p>光是看到他有靠近我的打算，都忍不住会瑟瑟发抖。</p>
+<p>我张开嘴，想喊妈妈过来，可无论我怎么用力，都没办法发出任何声音。</p>
+<p>只能眼睁睁看着齐闻墨离我越来越近。</p>
+<p>救命。</p>
+<p>谁来救救我。</p>
+<p>19</p>
+<p>「离我女儿远一点！」</p>
+<p>妈妈一把推开齐闻墨，几步来到我身边，小心翼翼将我从地上拉起来扶到了床上。</p>
+<p>「柒柒别怕，妈妈在这儿呢。」</p>
+<p>她轻柔地抚了抚我的脸颊，极尽温柔地抚慰着我的不安。</p>
+<p>在妈妈的安慰下，我终于冷静了下来，可我依旧害怕，于是死死攥着妈妈的衣角不敢松手。</p>
+<p>齐闻墨就这样怔怔地看着我，似乎不敢相信。</p>
+<p>当初那个热烈爱笑的女孩，会变成现在这副瑟缩胆怯的样子。</p>
+<p>哦，我想起来了。</p>
+<p>他从不知道，我曾经过着怎样水深火热的生活。</p>
+<p>或许他真的以为，像我这样爽朗的女孩，就算被全校霸凌了，也能够很快恢复过来。</p>
+<p>「欠你们家的我会还，求你们母子以后离我女儿远一点。」</p>
+<p>妈妈硬邦邦地下了逐客令。</p>
+<p>齐妈妈急切地往前走了两步，眼中满是痛楚。</p>
+<p>「阿竹，你别这么说，那个男人当初那样对你和柒柒，他做什么都跟你们没有关系了！我之前、我之前就是过不去心里那个坎儿才会不知道该怎么面对你，我、我怎么都没想到，闻墨他会做出……做出这种事情，阿竹，我——」</p>
+<p>「够了！」</p>
+<p>妈妈打断了齐妈妈的话，她紧紧抱住我，嗓音发颤地再次下了逐客令。</p>
+<p>「请你们出去！」</p>
+<p>20</p>
+<p>「那个男人，当初对柒柒怎么了？」</p>
+<p>很突兀的。</p>
+<p>齐闻墨嘶哑的声音在病房中响起。</p>
+<p>我心有余悸地看向他，见他双手死死攥成拳头，俨然一副气急败坏的模样，不由自主又往妈妈身后躲了躲。</p>
+<p>可在他的质问下，妈妈和齐妈妈却全都沉默了下来。</p>
+<p>「说啊妈，当初到底发生了什么！」</p>
+<p>齐闻墨握住齐妈妈的肩膀，发出了兽吼般的咆哮。</p>
+<p>齐妈妈别开头不愿去看自己的儿子。</p>
+<p>可最终，还是没有抗住齐闻墨不停的追问，将当年我和妈妈被生父家暴的事情，全部和盘托出了。</p>
+<p>21</p>
+<p>听完齐妈妈的讲述，齐闻墨先是在原地发了会儿呆，之后又猛地扭头看向了我。</p>
+<p>他的眼神，好像是愤怒的公牛。</p>
+<p>我真的怕极了，身体又不受控制地开始发抖，拼命往妈妈身后躲。</p>
+<p>「为、为什么不早告诉我，为什么！！！」</p>
+<p>齐闻墨嘶吼着，我竟然从他的喊叫中，听出了几分情真意切的后悔。</p>
+<p>我不知道他现在在想什么。</p>
+<p>可我的本能告诉我，要尽可能地离他远一点。</p>
+<p>「如果我早知道，我就不会那样对柒柒，我也不会怪她，更不会让同学欺负她！</p>
+<p>「我一定能保护好他，绝不让她受到半点伤害！</p>
+<p>「为什么你们当初都不早点告诉我！！！」</p>
+<p>齐闻墨发了疯似的吼叫着。</p>
+<p>我的身体颤抖地越来越厉害，原本还算顺畅的呼吸，也变得越发艰难起来。</p>
+<p>最终，在他的一声声咆哮下，我彻底昏死了过去。</p>
+<p>22</p>
+<p>在疗养院中的生活非常平静。</p>
+<p>我只能偶尔从照顾我的护士口中，得知学校后来发生了什么。</p>
+<p>听说，林幼安还有她那几个跟班全都被警察抓了起来。</p>
+<p>她们手机中我的那些衣不蔽体的照片。</p>
+<p>在得到警察的同意后，全部都被妈妈亲手删除了。</p>
+<p>无论是相册中的，还是早已经被储存到云端的。</p>
+<p>听说，学校其他霸凌我的学生，在听说我曾经被生父家暴的事情后，全都无一例外对我生出了愧疚。</p>
+<p>他们似乎想要当面向我道歉，却都被妈妈拒绝了。</p>
+<p>我还听说，齐闻墨突然又像是变了个人。</p>
+<p>每天在学校寻衅滋事、打架斗殴，因为在学校几次三番的警告后，他仍旧不知悔改。</p>
+<p>甚至变本加厉地，把几个男生打到住院。</p>
+<p>而那几个男生，就是曾经除了林幼安之外，欺负我最狠的几个人。</p>
+<p>最后被学校开除了。</p>
+<p>23</p>
+<p>在我即将离开家乡的前一天。</p>
+<p>鹅毛大雪中。</p>
+<p>我再次见到了齐妈妈和齐闻墨。</p>
+<p>齐闻墨瘦了一大圈，人也比之前齐爸爸刚去世时阴鸷了许多。</p>
+<p>对他的恐惧，依旧残留在我体内。</p>
+<p>时过境迁，我已经不再像当初那样，需要躲在妈妈身后。</p>
+<p>我终于可以平静地面对他了。</p>
+<p>可惜，虽然已经接受了一个月的心理疏导，但我依旧发不出任何声音。</p>
+<p>「这次离开，我和柒柒就不会再回来了。」</p>
+<p>妈妈面无表情地看着面前两人，说话时的语调没有丝毫起伏。</p>
+<p>我看到齐妈妈的眼眶迅速变得通红。</p>
+<p>她或许是在后悔吧。</p>
+<p>如果她当初能够及早发现齐闻墨对我做的事情。</p>
+<p>事情就不会发展成现在这样了。</p>
+<p>「你们在那边，一定要好好的。」</p>
+<p>齐妈妈哽咽着开口。</p>
+<p>上车前，我尽量撑起个还算和煦的笑容，冲着齐妈妈挥了挥手。</p>
+<p>24</p>
+<p>「柒柒。」</p>
+<p>正当我要上车的时候，齐闻墨忽然嗓音干涩地叫出了我的名字。</p>
+<p>应激反应之下，我身体狠狠打了个颤。</p>
+<p>可能是看到了我的条件反射，原本想朝我走来的齐闻墨，硬生生止住了步伐。</p>
+<p>他站在原地，满布红血丝的眼睛里充斥着痛苦和歉疚。</p>
+<p>「柒柒，对不起。」</p>
+<p>过了好半天，我再次听到了他的声音。</p>
+<p>我避开了他看向我的目光，拉开车门坐进了温暖的车厢中。</p>
+<p>车子很快发动了，齐闻墨却忽然扑倒车窗前，用力敲打起布满雾气的车窗。</p>
+<p>「柒柒，对不起！」</p>
+<p>车轮碾过积雪，发出「吱吱」的声响。</p>
+<p>我双手放在膝盖上，紧紧攥成了拳头，我从未想过，齐闻墨有朝一日会向我道歉。</p>
+<p>可此时此刻，他追在汽车外面，迎着风雪声嘶力竭地冲我大喊：</p>
+<p>「柒柒，对不起，对不起，对不起！！！」</p>
+<p>车子越开越快，没用多久就将齐闻墨抛在了后面。</p>
+<p>我最终还是没忍住，回头看了眼依旧狂奔在雪中的他。</p>
+<p>突然，他脚下一个踉跄，狠狠摔进了雪中。</p>
+<p>我看到他满身狼狈地挣扎着爬起来，半跪在地上，发出最撕心裂肺的大喊：</p>
+<p>「对不起！！！」</p>
+<p>他的喊声越过风雪，穿过车厢，准确无误落入了我耳中。</p>
+<p>我捏了捏拳，眼眶忽然变得湿润起来。</p>
+<p>嗯，我听到了。</p>
+<p>可是，我没办法再原谅你了呀。</p>
+<p>我曾经最喜欢的少年。</p>
+<p>25</p>
+<p>去到新的城市。</p>
+<p>新城市四季如春，就连空气中都满是温暖的味道。</p>
+<p>在经过长达三个月的心理治疗后，我终于能再次开口说话。</p>
+<p>「对不起妈妈，让你担心了。」</p>
+<p>倚在抱着我喜极而泣的妈妈怀中，我总算说出了那句从事情发生后，就一直想对妈妈说的那句话。</p>
+<p>妈妈只是抱着我，她哭得实在太凶了。</p>
+<p>我只能一下一下轻抚着她不停颤抖的脊背。</p>
+<p>又在家休养了一段时间。</p>
+<p>我在新城市的新学校，重读了高二。</p>
+<p>彻底放下过去的我，很快投入到了繁重的课业当中。</p>
+<p>埋头苦读两年。</p>
+<p>我终于考入了理想的大学。</p>
+<p>站在大学校门口的那天，我忽然想起在一切还未发生时，齐闻墨曾满面温柔地告诉我，这所大学就是他理想中的大学。</p>
+<p>那时的我也曾在心底暗下决心，一定要努力学习，这样才能跟他考入同一所大学。</p>
+<p>26</p>
+<p>「同学，你是新生吗？」</p>
+<p>忽然，我耳边响起一道温和的男声。</p>
+<p>我从冗长的回忆中脱身而出，回头朝着声音传来的方向望去。</p>
+<p>不远处，一个笑容明媚，长着一对小虎牙的男生，正满目星辰地望着我。</p>
+<p>我微微勾了下嘴角，小幅度地点了点头。</p>
+<p>男生大步流星朝我走来，在我身前两步的位置站定。</p>
+<p>「我是负责这次迎新的大三学生，我叫顾琅，很高兴认识你。」</p>
+<p>我定定地看了他好一会儿。</p>
+<p>这是一个，跟齐闻墨完全截然相反的男生。</p>
+<p>「同学？」</p>
+<p>可能是见我好半天没有回应，顾琅伸手在我面前晃了晃。</p>
+<p>我回过神来，露出久违的明媚笑容。</p>
+<p>「学长好，我叫乔柒柒。」</p>
+<p>27</p>
+<p>四年后。</p>
+<p>我从大学毕业，进入了我梦寐以求的公司工作。</p>
+<p>当初相处过一段时间后，顾琅顺理成章成为了我的男朋友。</p>
+<p>在确认关系之前，我将当年发生的所有向他和盘托出。</p>
+<p>尽管我无意卖惨，可在听完我的讲述后，顾琅还是心疼坏了。</p>
+<p>他温柔地将我揽入怀中，轻吻着我的额头。</p>
+<p>虽然他什么都没说，但我感受得到，他是真的很心疼我。</p>
+<p>我笑着将他推开。</p>
+<p>又同他讲了我与齐闻墨间的事情。</p>
+<p>他虽然吃醋，却没有把他口中这个「小混蛋」放在眼里。</p>
+<p>28</p>
+<p>我跟顾琅举行婚礼的那天，见到了久违的齐妈妈。</p>
+<p>还有，齐闻墨。</p>
+<p>几年的风霜洗礼，让这个原本最是柔软不过的女人身上，多了几分坚韧。</p>
+<p>「柒柒，恭喜你啊。」</p>
+<p>齐妈妈笑着向我伸出手来。</p>
+<p>我握住了她的手，随后，看到她身后几步开外的齐闻墨。</p>
+<p>他跟几年前已经截然不同。</p>
+<p>我后来也听妈妈提起过。</p>
+<p>在我们搬离家乡后，齐闻墨又因为好多次跟人打架斗殴，进了好几次派出所。</p>
+<p>别说考大学，就连高中都读不下去了。</p>
+<p>没有一所学校，会愿意收留像他这样，热衷于逞凶斗狠的学生。</p>
+<p>无论当初的他学习成绩有多么优异。</p>
+<p>还是后来齐妈妈跟他大吵了一次。</p>
+<p>他才没再继续找人打架。</p>
+<p>但是，他的状态却并没有因此好转。</p>
+<p>不再打架斗殴的齐闻墨，染上了酗酒的毛病，每天抱着酒瓶醉生梦死。</p>
+<p>齐妈妈无力再管他。</p>
+<p>索性将他赶出家门，再不理会他的生死。</p>
+<p>这次，也是他不知道从哪里打听到我要结婚的消息，才死缠烂打着齐妈妈带着他一起过来。</p>
+<p>29</p>
+<p>跟我过去多少次的设想不同。</p>
+<p>这次见到齐闻墨。</p>
+<p>我心中不仅没有产生任何波动，甚至还生出一种恍如隔世的陌生感。</p>
+<p>他脸色枯黄，佝偻着背缩着肩膀。</p>
+<p>哪里还有半分，当年齐大学神意气风发的模样。</p>
+<p>「柒——」</p>
+<p>他刚开口，就猛地停了下来，这个对他来说无比顺口的名字，如今俨然已经不再合适从他口中喊出，毕竟，那显得太过亲昵了。</p>
+<p>「恭喜，新婚快乐。」</p>
+<p>齐闻墨局促地伸出手，眼中满是忐忑。</p>
+<p>我垂眸看了眼，他那只生出不少老茧的手，最终也没有握上去。</p>
+<p>他窘迫地收回手去，眼神躲闪着不敢再看我了。</p>
+<p>我倚在顾琅怀中，不想再理会这个不请自来的人。</p>
+<p>「不好意思，柒柒胆子小，你最好还是离她远一点吧。」</p>
+<p>顾琅那样聪明，当然早就猜出了齐闻墨的身份。</p>
+<p>他压低眉心紧紧揽住我，无遮无拦地向齐闻墨表达出了他的不满。</p>
+<p>我看到齐闻墨猛地打了个颤。</p>
+<p>紧接着。</p>
+<p>他踉跄着步步后退，几步后，倏地转身跑出了酒店。</p>
+<p>「闻墨！」</p>
+<p>齐妈妈大喊一声，慌慌张张将包好的红包塞进我手里后，追着齐闻墨跑了出去。</p>
+<p>看着她很快消失的背影，我心下稍松，缓缓吐出口气。</p>
+<p>就这样吧。</p>
+<p>我真的不想再见到这个，曾在我生命中，留下无数伤疤的男人了。</p>
+<p>30</p>
+<p>「柒柒。」</p>
+<p>顾琅牢牢牵住我的手，眼中盛满担忧望向我。</p>
+<p>「进去吧，典礼马上就要开始了。」</p>
+<p>我冲着他柔柔一笑，回握住他干燥温暖的大手：「好。」</p>
+<p>婚礼非常盛大。</p>
+<p>我和顾琅在上百宾客的见证下，说出结婚誓言，为对方带上婚戒，在聚光灯中拥吻在一起。</p>
+<p>从今往后，我和齐闻墨，真的就只是两个毫不相干的陌生人了。</p>
+<p>我不会再记起那些，曾与他有关的痛苦过去。</p>
+<p>也由衷地希望——</p>
+<p>他再也不会出现在我的生活中。</p>
+<p>备案号:YXX1Bee1PvyCwwwKzxYi3Z0b</p>
+<p>​</p>
+<p>赞同</p>
+<p>​</p>
+<p>评论</p>
+<p>红男绿女：真爱没有结局</p>
+<p>陌陌不爱吃香菜 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/07/23-%E8%BF%BD%E5%A6%BB/" title="追妻">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">追妻</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/07/22-%E5%8D%8A%E5%A5%97%E6%88%BF/" title="半套房">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">半套房</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
