@@ -203,7 +203,7 @@ class ArticleCrawler:
         except Exception as e:
             logging.error(f"读取封面图片列表失败: {str(e)}")
             # 返回一个默认的封面图片列表，以防文件读取失败
-            return ["https://cdn.jsdelivr.net/gh/Pi3-l22/pico_rep/img/1729586345679.gif"]
+            return ["https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Crossed-Out%20Eyes.png"]
 
 class GitManager:
     def __init__(self):
