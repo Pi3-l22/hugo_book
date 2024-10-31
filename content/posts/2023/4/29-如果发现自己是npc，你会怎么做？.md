@@ -1,7 +1,7 @@
 ---
 title: 如果发现自己是npc，你会怎么做？
-date: 2023-4-29
-lastmod: 2023-4-29
+date: 2023-04-29
+lastmod: 2023-04-29
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-4-29true
+# nolastmod: 2023-04-29true
 # draft: false
 ---
 

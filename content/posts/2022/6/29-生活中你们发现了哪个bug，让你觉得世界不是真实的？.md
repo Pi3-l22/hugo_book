@@ -1,7 +1,7 @@
 ---
 title: 生活中你们发现了哪个 bug，让你觉得世界不是真实的？
-date: 2022-6-29
-lastmod: 2022-6-29
+date: 2022-06-29
+lastmod: 2022-06-29
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2022-6-29true
+# nolastmod: 2022-06-29true
 # draft: false
 ---
 

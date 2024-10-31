@@ -1,7 +1,7 @@
 ---
 title: 当游戏 NPC 人设全崩后
-date: 2023-5-5
-lastmod: 2023-5-5
+2023-05-05
+lastmod: 2023-05-50
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-5-5true
+# nolastmod: 2023-05-5true
 # draft: false
 ---
 

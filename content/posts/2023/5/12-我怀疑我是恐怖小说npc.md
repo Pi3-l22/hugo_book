@@ -1,7 +1,7 @@
 ---
 title: 我怀疑我是恐怖小说 npc
-date: 2023-5-12
-lastmod: 2023-5-12
+date: 2023-05-12
+lastmod: 2023-05-12
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-5-12true
+# nolastmod: 2023-05-12true
 # draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 如何以「这是我穿成女配的第十六（n）年，我好像喜欢上男主了」为题写一个 HE 文？
-date: 2023-1-14
-lastmod: 2023-1-14
+date: 2023-01-14
+lastmod: 2023-01-14
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-1-14true
+# nolastmod: 2023-01-14true
 # draft: false
 ---
 

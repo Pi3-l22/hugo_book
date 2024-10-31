@@ -1,7 +1,7 @@
 ---
 title: 什么是假性亲密关系（Irrelationship）？ - 知乎(1)
-date: 2024-6-3
-lastmod: 2024-6-3
+2024-06-03
+lastmod: 2024-06-30
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2024-6-3true
+# nolastmod: 2024-06-3true
 # draft: false
 ---
 

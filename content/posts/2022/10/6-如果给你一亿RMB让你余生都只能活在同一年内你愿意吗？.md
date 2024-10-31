@@ -1,7 +1,7 @@
 ---
 title: 如果给你一亿RMB让你余生都只能活在同一年内你愿意吗？
-date: 2022-10-6
-lastmod: 2022-10-6
+2022-10-06
+lastmod: 2022-10-60
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun

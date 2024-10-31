@@ -1,7 +1,7 @@
 ---
 title: 人类的身体存在哪些bug
-date: 2022-9-3
-lastmod: 2022-9-3
+2022-09-03
+lastmod: 2022-09-30
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2022-9-3true
+# nolastmod: 2022-09-3true
 # draft: false
 ---
 

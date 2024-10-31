@@ -1,7 +1,7 @@
 ---
 title: Siri有什么令人毛骨悚然的问题回答？
-date: 2023-7-19
-lastmod: 2023-7-19
+date: 2023-07-19
+lastmod: 2023-07-19
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
 authorlink: https://blog.pi3.fun
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-7-19true
+# nolastmod: 2023-07-19true
 # draft: false
 ---
 
