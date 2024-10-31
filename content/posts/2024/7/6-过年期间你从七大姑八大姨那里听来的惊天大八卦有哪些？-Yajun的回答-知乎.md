@@ -1,6 +1,6 @@
 ---
 title: 过年期间你从七大姑八大姨那里听来的惊天大八卦有哪些？ - Yajun 的回答 - 知乎
-2024-07-06
+date: 2024-07-06
 lastmod: 2024-07-60
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2024-07-6true
+nolastmod: true
 # draft: false
 ---
 

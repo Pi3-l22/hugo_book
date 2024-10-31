@@ -1,6 +1,6 @@
 ---
 title: 怎么以「王爷叫道：“救侧妃”，王妃不再挣扎，潜入水底」为开头写一篇沙雕HE_ - 知乎
-2024-04-01
+date: 2024-04-01
 lastmod: 2024-04-10
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2024-04-1true
+nolastmod: true
 # draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 有哪个瞬间让你觉得这个世界出bug了？
-2022-07-06
+date: 2022-07-06
 lastmod: 2022-07-60
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2022-07-6true
+nolastmod: true
 # draft: false
 ---
 

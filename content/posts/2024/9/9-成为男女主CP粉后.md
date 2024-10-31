@@ -1,6 +1,6 @@
 ---
 title: 成为男女主CP粉后
-2024-09-09
+date: 2024-09-09
 lastmod: 2024-09-90
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2024-09-9true
+nolastmod: true
 # draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 有哪一瞬间你觉得男朋友或老公很陋（low）？ - 知乎(1)
-2024-05-08
+date: 2024-05-08
 lastmod: 2024-05-80
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2024-05-8true
+nolastmod: true
 # draft: false
 ---
 

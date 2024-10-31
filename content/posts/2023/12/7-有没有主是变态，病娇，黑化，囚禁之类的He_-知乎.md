@@ -1,6 +1,6 @@
 ---
 title: 有没有主是变态，病娇，黑化，囚禁之类的He_ - 知乎
-2023-12-07
+date: 2023-12-07
 lastmod: 2023-12-70
 author: Robot
 avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
@@ -12,7 +12,7 @@ categories:
   - Robot
 tags:
   - 网文
-# nolastmod: 2023-12-7true
+nolastmod: true
 # draft: false
 ---
 
