@@ -247,7 +247,7 @@ class GitManager:
         return True
 
 if __name__ == "__main__":
-    # crawler = ArticleCrawler()
-    # crawler.crawl_all_articles()
+    crawler = ArticleCrawler()
+    crawler.crawl_all_articles()
     gitmanager = GitManager()
     gitmanager.commit_and_push() 

@@ -5188,3 +5188,20 @@
  create mode 100644 "content/posts/2024/6/3-\346\234\211\346\262\241\346\234\211\351\202\243\347\247\215\347\224\267\344\270\273\346\232\227\346\201\213\345\245\263\344\270\273\345\276\210\344\271\205\357\274\214\344\270\200\346\255\245\346\255\245\345\274\225\350\257\261\345\245\263\344\270\273\347\210\261\344\270\212\350\207\252\345\267\261\347\232\204\345\260\217\350\257\264\357\274\237-\347\237\245\344\271\216.md"
 2024-10-31 03:17:49,432 - ERROR - Git命令执行失败: fatal: could not read Username for 'https://github.com': No such device or address
 2024-10-31 03:17:49,433 - ERROR - Git操作失败，停止后续操作
+2024-10-31 11:23:26,152 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-10-31 11:23:26,152 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-10-31 11:23:26,152 - INFO - 定时任务已启动
+2024-10-31 11:23:26,154 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-10-31 11:23:26,154 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-10-31 11:23:26,154 - INFO - Scheduler started
+2024-10-31 11:23:54,516 - INFO - 定时任务已停止
+2024-10-31 11:28:39,840 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-10-31 11:30:22,352 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-10-31 11:30:22,353 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-10-31 11:30:22,353 - INFO - 定时任务已启动
+2024-10-31 11:30:22,354 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-10-31 11:30:22,355 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-10-31 11:30:22,355 - INFO - Scheduler started
+2024-10-31 12:03:11,768 - INFO - Running job "CrawlerScheduler.crawl_job (trigger: cron[hour='12', minute='0'], next run at: 2024-10-31 12:03:11 CST)" (scheduled at 2024-10-31 12:03:11.767634+08:00)
+2024-10-31 12:03:11,811 - INFO - 未检测到新文章，当前文章数: 6078
+2024-10-31 12:03:11,812 - INFO - Job "CrawlerScheduler.crawl_job (trigger: cron[hour='12', minute='0'], next run at: 2024-11-01 12:04:03 CST)" executed successfully

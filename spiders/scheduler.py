@@ -124,3 +124,5 @@ class CrawlerScheduler:
 if __name__ == '__main__':
     scheduler = CrawlerScheduler()
     scheduler.start() 
+    # count = scheduler.get_current_article_count()
+    # scheduler.save_article_count(count)

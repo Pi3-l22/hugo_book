@@ -6,18 +6,24 @@ theme = "hugo-theme-dream"
 enableRobotsTXT = true
 hasCJKLanguage = true
 paginate = 20
+rssLimit = 20
 
-# [services]
-# [services.disqus]
-# shortname = ""
-# [services.googleAnalytics]
-# ID = ""
+[services]
+[services.disqus]
+shortname = "mohai"
+[services.googleAnalytics]
+ID = "G-15FB092M49"
 
 [params]
 # zenMode = true
 
-lightTheme = "emerald"
-darkTheme = "forest"
+# lightTheme = "emerald"
+# lightTheme = "lemonade"
+# lightTheme = "garden"
+# darkTheme = "forest"
+# darkTheme = "dracula"
+lightTheme = "retro"
+darkTheme = "night"
 
 # backgroundImage = ""
 # backgroundImageDark = ""
@@ -32,7 +38,7 @@ footerBottomText = " "
 
 rss = true
 
-utterancesRepo = "Pi3-l22/hugo_book"
+# utterancesRepo = "Pi3-l22/hugo_book"
 
 # valine = true
 # LEANCLOUD_APP_ID = ""
