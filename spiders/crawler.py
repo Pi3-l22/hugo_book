@@ -98,7 +98,7 @@ class ArticleCrawler:
                 content = self.format_content(content)
                 
                 # 准备模板数据
-                full_date = f"20{year}-{month}-{day}"
+                full_date = f"20{year}-{int(month):02}-{int(day):02}"
                 cover_image = self.get_random_cover()
                 
                 # 替换模板中的变量
