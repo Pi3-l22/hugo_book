@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>死对头 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/23-%E6%AD%BB%E5%AF%B9%E5%A4%B4/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/23-%E6%AD%BB%E5%AF%B9%E5%A4%B4/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="死对头">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/12401.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/12401.jpg">
+  <meta name="twitter:title" content="死对头">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="死对头">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10592">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/12401.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">死对头</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%ad%bb%e5%af%b9%e5%a4%b4&amp;url=https://mohai.us.kg/posts/2023/5/23-%E6%AD%BB%E5%AF%B9%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/23-%E6%AD%BB%E5%AF%B9%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%ad%bb%e5%af%b9%e5%a4%b4%20https://mohai.us.kg/posts/2023/5/23-%E6%AD%BB%E5%AF%B9%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/12401.jpg" alt="死对头" />
+      
+
+      <p>死对头</p>
+<p>打死不说我是龙</p>
+<p>1</p>
+<p>盛夏午后的风吹得人昏昏欲睡。</p>
+<p>燥热的空气里只剩下逻辑学老师的声音。</p>
+<p>混合着后门轻轻悄悄被推开……</p>
+<p>「所以，这道题目应该……」</p>
+<p>教授隔着厚厚的镜片，锐利的目光扫向了后排。</p>
+<p>「那位准备偷偷混进来的同学，你来回答这个问题。」</p>
+<p>被突然 cue 到的林苒在众目睽睽之下被迫挺直了腰板。</p>
+<p>露出一个尴尬而又不失礼貌的微笑。</p>
+<p>「教授下午好。」</p>
+<p>「多余的寒暄还是少一点儿吧。说答案。」</p>
+<p>「额……我觉得应该是选 A 吧。」</p>
+<p>在全班吭哧吭哧的忍笑声中，教授挤出一个假笑。</p>
+<p>「这位同学你到底是什么时候溜进来的？这道填空题我都讲解十多分钟了。」</p>
+<p>教授低头看了一下花名册，扫了一眼班上零零散散坐着的人，无比准确地喊出了她的名字。</p>
+<p>「林苒是吧？你这次的出勤分和课堂分都没了。」</p>
+<p>林苒一脸悲痛地找好位子坐下。</p>
+<p>教授扭头看向前排：「薛直，你来回答。」</p>
+<p>林苒这边气都还没有喘匀，旁边的姜萌叹了口气。</p>
+<p>「姐妹，不是我不帮你，今天是薛直帮教授点到，我根本糊弄不过去。」</p>
+<p>听见「薛直」这两个字，林苒太阳穴突突了两下。</p>
+<p>磨了磨后槽牙，小声骂了一句。</p>
+<p>「干脆直接把他吃掉算了！</p>
+<p>坐在她旁边的姜萌没有听清楚，刚想问，很快班上爆发出一阵掌声——</p>
+<p>无需多说，薛直这道题目答对了。</p>
+<p>姜萌很快被分去了注意力，由衷感慨。</p>
+<p>「你说大家都是人，怎么薛直这家伙就这么完美？长得又帅成绩又好……就是性格冷淡了一点儿。」</p>
+<p>林苒冷笑一声，不置可否。</p>
+<p>人，她可不是人。</p>
+<p>至于薛直，虽然是人，但向来不干人事。</p>
+<p>2</p>
+<p>她跟薛直的「仇恨」。</p>
+<p>可以追溯到开学第一天她翻墙出去买东西被当场抓包说起。</p>
+<p>当时她准备翘课出去。</p>
+<p>刚翻过墙头，就看见薛直站在那儿。</p>
+<p>那双深邃的眼眸直勾勾地盯着她，眉眼间透着说不出的冷淡。</p>
+<p>重点是，另一只手上还勾着她刚扔过去的背包。</p>
+<p>林苒有一瞬间想要跑。</p>
+<p>还是硬着头皮说：「那个，咳咳……我的书包没有砸到你吧？」</p>
+<p>薛直摇了摇头。</p>
+<p>她那个时候真傻，还不懂「人心险恶」这四个字。</p>
+<p>满心以为薛直是好心帮她捡书包的同学。</p>
+<p>于是跨坐在墙头就跟对方唠嗑。</p>
+<p>「大兄弟，没有想到还有你这么见义勇为，拾金不昧的。这个包是我的，真的，不信你可以翻翻看，里头写着我的名字。」</p>
+<p>薛直仰起头看着她，真的闷头翻包，然后突然笑了。</p>
+<p>少年眉头轻展，精致的眉眼微动，噙着淡淡的笑意：「林苒是吧？」</p>
+<p>「对对对！」</p>
+<p>千穿万穿，马屁不穿。</p>
+<p>林苒当机立断：「大兄弟，你长得这么帅，心肠还这么好。不用客气，你把包放在墙边就行，我等会儿自己跳下来拿。」</p>
+<p>「没有记错的话，现在是晚自习时间，作为大二学生，你应该在教室。」</p>
+<p>林苒眨眨眼，对帅哥还抱有美好的幻想。</p>
+<p>「你这么帅，不会做出告状这么没品的事情吧？」</p>
+<p>薛直歪头看向她，修长的手指从领口处勾出一个牌子。</p>
+<p>学生会纪检部六个大字格外显眼。</p>
+<p>她骑在墙头彻底傻眼了，顿时多了几分骑虎难下的意味。</p>
+<p>舍不得自己的背包，也舍不得被扣操行评定分。</p>
+<p>坐在墙上试图跟薛直求情。</p>
+<p>「不是，大哥，咱们俩能够相遇也是一种缘分。我这次是真的有急事！真的，你大人有大量，就放过我这一次行不行？」</p>
+<p>口干舌燥游说了半天。</p>
+<p>好赖话说尽了。</p>
+<p>对方一句冷冷淡淡的：「你先下来。」</p>
+<p>没有半点儿松口的意思。</p>
+<p>林苒当时也是被猪油蒙了心，突然往下一跳。</p>
+<p>本来是想要趁着薛直没有防备之时，趁机夺包而逃。</p>
+<p>没有想到的是，薛直已经觉察到了她的意图。</p>
+<p>只见他后退两步，长手一揽，就将她稳稳地扣在了怀里。</p>
+<p>她几乎是直直砸进了薛直的怀里。</p>
+<p>鼻梁撞着对方硬邦邦的胸膛，差点儿疼哭。</p>
+<p>更让她想哭的是。</p>
+<p>连人带包，被薛直抓了个正着。</p>
+<p>扣了操行分不说，还被罚了义务劳动两天。</p>
+<p>之后不知道到底是她命里和薛直犯冲，还是那家伙真就盯上了她。</p>
+<p>每次想翘课的时候，总会被薛直逮个正着。</p>
+<p>于是，两个人不仅结下了梁子，还越结越深。</p>
+<p>更让林苒觉得丢人的是，她当时以为薛直会手下留情，说了他不少好话，马屁都拍遍了。</p>
+<p>以至于现在一想怼薛直。</p>
+<p>对方就会用那张帅脸，面无表情地背诵她当时夸薛直的那些彩虹屁。</p>
+<p>尬的她当场脚趾头抓地，恨不得找缝钻。</p>
+<p>现在因为怼不过薛直而流的泪水，都是当初拍马屁时候脑子里进的水！</p>
+<p>3</p>
+<p>林苒回忆起和薛直的那些破事，气得牙痒。</p>
+<p>小声骂了一句：「孽缘！绝对是孽缘！」</p>
+<p>姜萌才没有管林苒的心情变化。</p>
+<p>她半撑着脑袋，又欣赏了一会儿薛直的帅脸，才突然反应过来。</p>
+<p>「诶，你今天去哪儿了？」</p>
+<p>林苒眨巴眨巴眼，含糊着没有说话。</p>
+<p>口袋里的手机不停地震动，来来回回信息的内容只有一个——</p>
+<p>「你再好好考虑一下。」</p>
+<p>林苒索性直接把手机关机，有些烦躁地抬起头，正对上薛直的那双眼睛。</p>
+<p>少年不知道是偶然还是有意，那双漆黑的眸子像是深邃的夜空，就这么沉沉地盯着她。</p>
+<p>看什么看？</p>
+<p>没有见过美女迟到？</p>
+<p>四目相对之间，林苒示威一般地握紧拳头晃了晃。</p>
+<p>薛直看在眼里，抿了抿嘴，很快转头过头去。</p>
+<p>林苒有些莫名其妙。</p>
+<p>不知道为什么，她刚刚好像看见薛直弯了弯嘴角，似乎是笑了？</p>
+<p>笑什么？</p>
+<p>嘲笑她吗？</p>
+<p>想到这，她的拳头握得更紧了。</p>
+<p>一下课，林苒就打算开溜。</p>
+<p>只可惜她的速度没有薛直的速度快。</p>
+<p>少年似乎是看穿了她要跑路的打算，赶在她起身之前开了口。</p>
+<p>「请林苒同学留一下，这里还有你没有完成的课堂作业。」</p>
+<p>越是帅的男人越是心狠手辣。</p>
+<p>林苒觉得这句话完全可以当做薛直这家伙的人生简介。</p>
+<p>她生无可恋地停住了脚步。</p>
+<p>在姜萌同情的眼神里一步步挪向了薛直，挤出一个笑。</p>
+<p>「谢谢学长。」</p>
+<p>「不客气。」薛直也学着她的样子勾着嘴角，「没有多的了，正好你跟我一起去复印店一趟。」</p>
+<p>林苒内心张牙舞爪地把薛直骂了一遍。</p>
+<p>面上低眉顺眼，完全是一个乖巧小学妹的样子。</p>
+<p>「好的，谢谢学长。」</p>
+<p>薛直扫了她一眼，低头无声地笑了。</p>
+<p>林苒并不知道。</p>
+<p>她心里的那些腹诽，都被那双小鹿似的眼睛给泄密了。</p>
+<p>薛直忍着笑给林苒复印课堂练习。</p>
+<p>林苒看着那些乱七八糟的文字和符号就头疼。</p>
+<p>再加上手机不停地弹消息，更是让她烦躁得要命。</p>
+<p>手机上又收到了署名为「管理局」的新消息：</p>
+<p>【最后通牒。你要是再不接受我们安排的看守员，将被取消在人类社会的资格。你自己选。】</p>
+<p>林苒气到险些要捏碎自己的手机。</p>
+<p>还选个屁，这摆明了就是威胁。</p>
+<p>看管员是吧？</p>
+<p>行啊！</p>
+<p>她倒要看看谁能管得住她这条叛逆的龙。</p>
+<p>林苒按键的动作很大。</p>
+<p>要不是她现在还是人类的手指，手机屏幕一定会被她直接戳烂。</p>
+<p>【行，看管员是吧，我接受了。你让那家伙过来吧。】</p>
+<p>能不能熬过两个月的试用期还是个问题呢。</p>
+<p>呵，她倒要看看管理局那里还会派出什么样的人来管她。</p>
+<p>4</p>
+<p>她这边刚发完短信给管理局，几乎是下一秒，薛直的手机就响了。</p>
+<p>对方低头看了一眼屏幕，眼神有些古怪，抬头看了看兀自生气的林苒。</p>
+<p>林苒正在气头上。</p>
+<p>想起自己和薛直的那点儿「不愉快」。</p>
+<p>自认为十分有气势地双手叉腰。</p>
+<p>「看什么看？没看过美女生气啊？」</p>
+<p>薛直噗嗤一声笑了。</p>
+<p>而后笑声像是刹不住车。</p>
+<p>一开始还压得低低的，之后在林苒困惑的注视下已经有些肆无忌惮了。</p>
+<p>笑了好一会儿薛直才直起身。</p>
+<p>抿着嘴将打印好的课堂作业递了过去。</p>
+<p>「不好意思，没忍住。」</p>
+<p>林苒现在已经不能称作是美女生气了。</p>
+<p>她觉得自己现在是火山爆发的状态：「你……」</p>
+<p>到嘴边的话还没有说完，薛直摸了摸鼻梁，慢条斯理地打断了她的话。</p>
+<p>「这个作业明天早上八点就要交。」</p>
+<p>林苒这座小火山瞬间熄了火。</p>
+<p>苦着一张脸把那几张纸来来回回地翻了一遍。</p>
+<p>看见那些逻辑推理的题目只觉得一个头两个大。</p>
+<p>只能无力地摆了摆手。</p>
+<p>「行行行，我会记得交的。学长再见。」</p>
+<p>「恩，等会儿见。」</p>
+<p>薛直盯着她看了片刻，吐出一句含糊不清的话。</p>
+<p>林苒很快就知道这句话究竟是什么意思了。</p>
+<p>她穿过小吃街之后才发现，薛直一直跟在她身后，眼瞅着都要走到小区门口了。</p>
+<p>警惕地回头，正对上薛直的那双黑曜石一般的眼睛。</p>
+<p>林苒第一反应就是护住了手上的臭豆腐。</p>
+<p>「你干嘛跟着我？」林苒拧眉，「你是不是还有什么作业没有告诉我？」</p>
+<p>「不是。」</p>
+<p>「上次逃课的事情我不是已经做过检讨了吗？义务劳动也满了五个小时，应该能把分数抵消了吧？难道我又被扣分了？不应该啊，难道是我上次点奶茶外卖被发现了？」</p>
+<p>薛直眼看着林苒皱着眉头已经开始「自我检举」了，忍着笑。</p>
+<p>「打住，别『自爆』了。我也正好要走这条路。」</p>
+<p>林苒时刻保持警惕：「那你先走。」</p>
+<p>薛直歪头看了她一眼。</p>
+<p>「林苒？你是不是怕我？」</p>
+<p>「我怕你？」林苒深吸一口按捺住自己想骂人的心，「我确实怕你。我好怕我一个失手打死你！」</p>
+<p>林苒浑然不觉，自己现在这副张牙舞爪的样子，有多么的像一只凶巴巴的小奶猫在亮爪子。</p>
+<p>自以为凶，其实毫无威慑力，奶得要命。</p>
+<p>薛直突然凑近了一步，低下头。</p>
+<p>那双眼睛透过额前的碎发直直地看着林苒：「真的吗？」</p>
+<p>林苒被吓得倒退了一步，不出意外地听见薛直的笑声。</p>
+<p>林苒咬牙切齿，压低了声音。</p>
+<p>「你真的应该感谢管理局！」</p>
+<p>要不是他们规定了龙不能随便欺负人。</p>
+<p>她现在就拿这家伙配刚买的冰可乐喝！</p>
+<p>恶龙超凶！嗷嗷嗷！</p>
+<p>眼看着薛直走远，林苒不自觉地松了一口气。</p>
+<p>从袋子里掏出拿瓶冰可乐吨吨吨了小半瓶才勉强压下自己砰砰的心跳。</p>
+<p>林苒用带着水珠的手蹭了蹭自己泛红的脸。</p>
+<p>努力将记忆里薛直那张放大了的俊脸忘到一边。</p>
+<p>好不容易爬上了六楼。</p>
+<p>林苒看见一个熟悉的身影站在自己家门口，就像是军训罚站似地站得笔直。</p>
+<p>林苒简直不敢相信自己的眼睛。</p>
+<p>「薛直？你，你怎么在这里？」</p>
+<p>她捏着喝剩下的可乐瓶子摆出防卫的姿势。</p>
+<p>「你跟踪我？」</p>
+<p>薛直偏头看向她，唇边带笑。</p>
+<p>「我在前面你在后面，怎么不说是你跟踪我呢？」</p>
+<p>「我信了你的邪！」</p>
+<p>林苒挥舞着可乐瓶颇有几分挥舞手榴弹的气势。</p>
+<p>「我真是看错你了！你这家伙长得这么帅居然这么变态！衣冠禽兽！呸！」</p>
+<p>林苒的注意力完全放在了薛直的身上，没有注意到手机短信的提示音。</p>
+<p>薛直扶额，显得有些无奈：「你先把汽水瓶放下……」</p>
+<p>「你说，你到底有什么目的？」</p>
+<p>林苒回忆起自己这段时间跟薛直结下的那些梁子，越想越觉得对方是包藏祸心。</p>
+<p>薛直垂着眼看着她咋咋呼呼了好一会儿。</p>
+<p>眼看着她已经要掏出手机报警了，叹了口气。</p>
+<p>「林苒，我就没有见过你这么胆小的龙。」</p>
+<p>「你才胆小，我这是谨……」</p>
+<p>那个慎字还没有说完。</p>
+<p>林苒后知后觉地反应过来薛直这句话的重点。</p>
+<p>整条龙都不好了。</p>
+<p>「你，你刚刚说什么？」</p>
+<p>薛直指了指林苒的手机。</p>
+<p>「自我介绍一下，我是管理局分配给你的看守员。」</p>
+<p>林苒如遭雷劈。</p>
+<p>好一会儿才反应过来。</p>
+<p>一把抓住了薛直在她眼前晃动的手。</p>
+<p>对方被她的动作吓了一跳。</p>
+<p>脸上一红。</p>
+<p>但没有甩开被抓着的手。</p>
+<p>他的声音绷得很紧，像是怕泄露什么情绪。</p>
+<p>「林苒，你这是在干什么？」</p>
+<p>「你别说话，我研究一下你的手相。」</p>
+<p>林苒看得很认真，回答得也很认真。</p>
+<p>「我觉得我们两个可能八字不合。还是说，老话讲的冤家路窄真的没错？不然怎么解释我们……」</p>
+<p>薛直脸上那点儿温度彻底冷了下来去。</p>
+<p>恢复了平时那副冷漠的脸色。</p>
+<p>把手挣脱出来。</p>
+<p>「你的报告里还要再添上一条封建迷信，我等会儿就加上去。」</p>
+<p>靠！简直欺龙太甚！</p>
+<p>林苒咬牙切齿：「我这就跟管理局说，除了你，谁来当我的看管员都行。」</p>
+<p>薛直微微拧眉。</p>
+<p>「我不建议你这么做。</p>
+<p>「你已经有过赶跑了两任看管员的记录了。</p>
+<p>「现在在管理局的档案属于 C，基本没有管理员愿意接手。</p>
+<p>「而你要是现在就把我赶走，很容易掉到 D 档，那就会被强制转移。」</p>
+<p>「你说吧，管理局到底给了你多少钱让你看着我。」</p>
+<p>林苒的表情很是心痛，一副循循善诱的样子。</p>
+<p>「薛直，有些钱没有必要赚，真的。你想想，咱们俩可是死对头，你这不是给自己添堵吗？」</p>
+<p>薛直一低头，就能看见林苒一脸「我这都是为了你着想」的笃定神情。</p>
+<p>他抿了抿嘴角，非常努力地把笑容压了下去：「咳咳，我觉得还好。」</p>
+<p>「啊？」</p>
+<p>「我觉得人生还挺无聊的。所以给自己添点儿堵也很是一件很有意思的事情。」</p>
+<p>薛直回答的一本正经。</p>
+<p>这是什么离谱的发言？！</p>
+<p>林苒：……喂，警察吗？这里有个变态。</p>
+<p>注意到了林苒已经飞上了天的白眼。</p>
+<p>薛直很认真地反问了一句：「难道是因为，你每次都斗不过我，所以害怕……」</p>
+<p>「饭可以乱吃，话不可以乱讲哈！什么叫我每次都斗不过你？我那是……好龙不跟男斗！我是在让着你，听懂没？」</p>
+<p>「既然如此，那你还在排斥什么？」薛直语气轻松，「反正就两个月的试用期。」</p>
+<p>说的倒也有点儿道理。</p>
+<p>林苒的内心有点儿动摇了。</p>
+<p>薛直一直不动声色地觑着她的脸色，这个时候再补上最后「一击」。</p>
+<p>「而且，我住进来的话，你的那些作业我也可以教你。毕竟作为你的看管员，要确保你顺利完成学业。」</p>
+<p>林苒果断点头：「成交！」</p>
+<p>没有办法，这一条的诱惑力实在是太大了。</p>
+<p>微积分，逻辑学简直太难了！</p>
+<p>人类到底是怎么研究出来的？</p>
+<p>她一条龙真的理解不了啊！</p>
+<p>猜到了林苒会松口答应，但是没有想到她答应得这么快。</p>
+<p>他眼底浮出笑意，向后撤了一步。</p>
+<p>「那，请开门吧。我的被监护人。」</p>
+<p>5</p>
+<p>林苒还有点儿抗拒.</p>
+<p>「这么快？你不，不得收拾收拾行李吗？」</p>
+<p>「我的东西全部都打包好了，现在正在快递过来的路上。」</p>
+<p>薛直笑了笑，意有所指。</p>
+<p>「熟练运用人类社会的一切便利服务也是你需要多学习的内容。」</p>
+<p>林苒：……好气，但是不知道该怎么反驳。</p>
+<p>同意薛直成为她的看管员的第三分钟里。</p>
+<p>她已经开始隐隐后悔了。</p>
+<p>进了家门之后。</p>
+<p>几乎是林苒开灯的那一瞬间。</p>
+<p>薛直被强光刺激的眼前一白，差点儿以为自己上了天。</p>
+<p>「这，这是……」</p>
+<p>薛直第一次如此失语，盯着林苒屋子的装修半晌憋不出什么好词。</p>
+<p>「你是天天在这里办 party 吗？」</p>
+<p>他还以为自己误入了藏宝洞。</p>
+<p>客厅的灯不是普通的灯，而是镶满了华丽水镜的那种吊球灯。</p>
+<p>周围的装潢也是极尽闪耀，甚至在一些地方安上了玻璃，一开灯就折射光线。</p>
+<p>总之，到处都亮晶晶地闪着。</p>
+<p>林苒啧啧两声。</p>
+<p>「你没有审美，我懒得跟你解释。这些可都是我精心设计好的。你不觉得到处都闪着光特别好看吗？」</p>
+<p>薛直那句「不觉得」都已经挂在嘴边了。</p>
+<p>对上林苒那双亮晶晶的眼睛。</p>
+<p>鬼使神差地说了一句违心话。</p>
+<p>「还，咳咳，还可以。」</p>
+<p>林苒心满意足，充满爱怜地摸了摸水晶吊灯上垂下来的那几根闪着光的吊饰。</p>
+<p>那表情，感觉下一秒就能拉着那几块发着光的东西坠入爱河了。</p>
+<p>薛直无奈地笑了笑。</p>
+<p>「林苒，你的尾巴出来了。」</p>
+<p>龙族的本能里，有一条就是格外中意这种又华丽又 bulingbuling 发着光的东西。</p>
+<p>在极端放松或是情难自禁的时候会露出原型。</p>
+<p>当然，这一条完全是针对像林苒这样还没有完全融入人类社会的龙类。</p>
+<p>这也是管理会急于要给她找一位看管员的原因。</p>
+<p>因为林苒的状态并不稳定。</p>
+<p>反观林苒，倒是一副破罐子破摔的态度。</p>
+<p>「有什么关系，反正是在你面前。」</p>
+<p>从薛直说他是看管员的那一刻，其实就已经被林苒划分到自己人的范畴里来了。</p>
+<p>都已经被揭开了「马甲」，那她还费劲掩藏也没啥意义。</p>
+<p>只不过，她顺嘴说完这句之后，无意瞟到了薛直的神情。</p>
+<p>有点儿好奇。</p>
+<p>「是天气太热了吗？你脸红什么？」</p>
+<p>薛直迅速低头，下一秒面色如常：「你作业还没写。」</p>
+<p>林苒：……</p>
+<p>答应薛直成为自己看管员的第十分钟。</p>
+<p>林苒这位青春靓丽的女大学生被迫从袋子里拿出作业埋头苦干。</p>
+<p>和微积分斗智斗勇，和逻辑学一争高下。</p>
+<p>林苒现在的心情就是后悔，相当后悔。</p>
+<p>薛直叹了口气，主动坐了过去。</p>
+<p>「哪题不会？」</p>
+<p>「你应该问我哪道题会。」</p>
+<p>「那你哪道题会？」</p>
+<p>「我没一道题会。」</p>
+<p>林苒理不直气也壮。</p>
+<p>薛直被气笑了：「一道也不会。那你刚刚握着笔在这儿看半天题目，是在祈祷吗？」</p>
+<p>要论嘴毒，还是薛直的嘴巴毒。</p>
+<p>教了好一会儿，总算是带着林苒理清了一团乱麻的思绪。</p>
+<p>没过多久，薛直的包裹就到了。</p>
+<p>看了一眼还在认真做题的林苒。</p>
+<p>薛直认命地拎起行李箱，去给自己打扫客房。</p>
+<p>几乎是房间的灯刚打开，薛直就倒吸了一口凉气——</p>
+<p>和客厅一模一样的吊球款式流苏的水晶灯。</p>
+<p>简直要亮瞎了他的眼睛。</p>
+<p>「林，苒！」薛直从牙缝里挤出这个名字，「你的客房为什么也打扮成这样？」</p>
+<p>停了一会儿。</p>
+<p>林苒的声音从客厅传来。</p>
+<p>「不好看吗？」</p>
+<p>好看不好看是一回事。</p>
+<p>但是这个灯放在小小的客房里头，显得实在是太亮了。</p>
+<p>薛直扶着额头。</p>
+<p>「这样的亮度，我还以为自己进的是浴室，开的是浴霸。你这个灯是仿着太阳来做的吗？」</p>
+<p>薛直默默叹了口气。</p>
+<p>「算了，你认真做题目吧。我收拾完了就来做晚饭。」</p>
+<p>林苒眼前一亮：「你居然还会做饭？好耶！」</p>
+<p>她总算是发现薛直当看管员的好处了。</p>
+<p>别的不说，至少她的饭有着落了！</p>
+<p>6</p>
+<p>等到薛直硬顶着那闪亮的光线把自己的东西收拾好.</p>
+<p>出了客厅之后才发现，林苒已经趴在桌子上睡着了。</p>
+<p>半边脸肉乎乎地压在那本摊开的 A4 纸上，眼看着就要流口水了。</p>
+<p>薛直的动作比他大脑的反应还要快。</p>
+<p>等他回过神来的时候，已经掏出手机按下了拍照的按键。</p>
+<p>几乎是下一秒，林苒突然睁开了眼睛——</p>
+<p>「你站在这儿干什么？」</p>
+<p>林苒虽然睡得有些迷糊了，但还是一眼就看见了绷着身子站在那里的薛直。</p>
+<p>「不是说好要弄饭的吗？」</p>
+<p>薛直平生第一次有了这种做贼心虚的表情。</p>
+<p>他眼神有些飘忽：「啊？哦哦哦。」</p>
+<p>林苒盯着他的表情，瞬间皱起了眉头：「你是不是……」</p>
+<p>「怎，怎么了？」</p>
+<p>薛直默默捏紧了手机。</p>
+<p>心已经提到嗓子眼了。</p>
+<p>「你是不是不会做饭？在这儿骗我？」</p>
+<p>林苒觉得自己发现了真相。</p>
+<p>半眯着眼睛看向薛直。</p>
+<p>「年轻人，有些谎话是不能说的，知道吗？」</p>
+<p>薛直：……</p>
+<p>他暗暗舒了一口气。</p>
+<p>收起手机，干脆走进厨房。</p>
+<p>十分自如地打开了冰箱拿出了仅剩的那点儿食材开始展现真正的技术。</p>
+<p>林苒看着看着，又有点儿犯困了。</p>
+<p>没有办法。</p>
+<p>虽然只做了两道逻辑题，但是她总有一种人生过了一大半的错觉。</p>
+<p>实在是太难了。</p>
+<p>但很快，厨房里飘出的味道就让她支棱起来了！</p>
+<p>「肉！」</p>
+<p>林苒兴致勃勃地冲进厨房。</p>
+<p>「我尝尝我尝尝！」</p>
+<p>作为龙，对肉真的有割舍不掉的爱。</p>
+<p>小小的厨房一下子站了两个人。</p>
+<p>薛直围着花边小围裙，有些无奈。</p>
+<p>「别瞎凑热闹……嘶！林苒！你洗手了吗？就敢直接往锅里伸手！出去把手洗干净！」</p>
+<p>林苒一条快乐龙被吓得一缩脖子。</p>
+<p>「凶什么凶？！」</p>
+<p>话虽然这么说，还是乖乖地去洗了手。</p>
+<p>很简单的一顿晚餐。</p>
+<p>一盘回锅肉，一盘清炒白菜，一碗西红柿鸡蛋汤。</p>
+<p>林苒的视线半点儿也没有往那盘绿油油的白菜上放。</p>
+<p>专心致志地吃了两大块肉之后才发现，薛直正在在本子上写着什么。</p>
+<p>她向来好奇心很重，探头一看，气得牙痒。</p>
+<p>薛直正在写她的观察报告。</p>
+<p>除了刚才的「封建迷信」之外，还新加了一条「挑食，不爱吃蔬菜。」</p>
+<p>林苒磨牙：「这是什么？幼儿园小朋友观察日记？」</p>
+<p>她本意是想嘲笑薛直，屁大点的事还要做记录。</p>
+<p>没有想到对方放下笔，笑眯眯地给她夹了一筷子白菜。</p>
+<p>「恩，确实是幼儿园小朋友，你还挺有自知之明的。吃吧，小朋友。」</p>
+<p>林苒后知后觉地反应过来。</p>
+<p>气得直咬牙。</p>
+<p>把那颗白菜嚼得嘎嘣作响，发泄情绪。</p>
+<p>到了睡觉时间，林苒憋了半天。</p>
+<p>「那个……半夜要是听到什么动静也别出来，听见没？」</p>
+<p>「为什么？」</p>
+<p>林苒结结巴巴给不出理由，扔下一句。</p>
+<p>「反正美女的事你少管！安心睡着就行！」</p>
+<p>薛直半垂着眼，没有说话。</p>
+<p>不仅听见了林苒关房门的声音，还清楚地听见了房门反锁的声音。</p>
+<p>第二天早上，林苒迷迷糊糊地一睁眼，和少年清明的目光四目相对。</p>
+<p>薛直语气随意：「早。」</p>
+<p>「早……啊啊啊！」</p>
+<p>林苒突然意识到自己现在和薛直躺在一张床上。</p>
+<p>整个龙都不好了。</p>
+<p>7</p>
+<p>着急忙慌地跳下床，颤巍巍的手指着薛直。</p>
+<p>「你，你做了什么？」</p>
+<p>薛直慢条斯理地从床上坐起来。</p>
+<p>将被蹭上去的衣摆扯平。</p>
+<p>「这句话该我问你。林苒，是你昨晚，自己过来的。」</p>
+<p>林苒如遭雷劈。</p>
+<p>「不，不可能啊！我疯了我往你这儿跑？我最多就是躺到沙发上！」</p>
+<p>薛直避开眼神，掩住那一瞬间的不自然。</p>
+<p>将话题转移。</p>
+<p>「说吧，你是不是一直都有梦游这个毛病？」</p>
+<p>林苒昨天晚上确实是梦游坐在了沙发上。</p>
+<p>天气太冷了。</p>
+<p>他又担心放着林苒一个人会有危险。</p>
+<p>只能用一点小手段把林苒弄到自己的房间里守着。</p>
+<p>林苒本来还想狡辩一下。</p>
+<p>「没有啊……可能真的是咱们俩八字不合呢！不然怎么你一来我就染上这个毛病了？」</p>
+<p>薛直看着满脸写着『信誓旦旦』的林苒。</p>
+<p>成功被她气笑了。</p>
+<p>「行，林苒，甩锅是吧？」</p>
+<p>他干脆掏出手机找到了昨天的视频。</p>
+<p>「不如，你先看完证据再想想怎么狡辩？」</p>
+<p>视频里的林苒睁着眼睛正站在薛直的床边。</p>
+<p>哪怕她穿着海绵宝宝的睡衣，都不能抵消这份诡异。</p>
+<p>林苒都不知道，原来她在梦游的时候这么乖巧，几乎是薛直问什么，她就回答什么。</p>
+<p>视频里的薛直声音很轻。</p>
+<p>「你这个梦游的毛病，多久了？」</p>
+<p>一开始，林苒并没有说话。</p>
+<p>直到薛直掏出了一根荧光棒。</p>
+<p>白色的荧光棒，在暗色的夜晚显得格外亮眼。</p>
+<p>林苒清楚的看见视频里的自己果断伸手把那根亮晶晶的东西抢了过来。</p>
+<p>当宝贝似的晃了半天：「很久了，记不清。」</p>
+<p>这就是在回答薛直刚才的那个问题。</p>
+<p>只是一根荧光棒，她就被梦游中的自己给出卖了？！</p>
+<p>林苒气得直咬牙。</p>
+<p>下意识地看向床头那根荧光棒。</p>
+<p>本来想直接扔掉，但到底没有舍得。</p>
+<p>捏着那一根。</p>
+<p>「对，我就是有梦游的毛病，怎么了？你要是想汇报给上头，你就写报告呗。」</p>
+<p>最坏的结果就是她被遣返回龙族世界。</p>
+<p>大不了她再偷偷逃出来就是了。</p>
+<p>薛直一挑眉。</p>
+<p>「你真的是这么想的？」</p>
+<p>对上薛直那双眼睛，林苒咽了口口水。</p>
+<p>果断认怂了。</p>
+<p>「不是……哥，要不你说个要求，我要能做到，我一定为你赴汤蹈火。只要你别把这件事捅到上面去。」</p>
+<p>一旦被遣返，再想回到人类社会根本就是不可能的事情！</p>
+<p>她再怎么叛逆，要是没有身份证，也没法儿在人间扑腾啊！</p>
+<p>做龙，还是要能屈能伸的！</p>
+<p>「赴汤蹈火？」薛直忍不住笑了。</p>
+<p>「当然，那个……违法乱纪的事我可不做。做龙和做人都是有底线的。」</p>
+<p>「那行，你把这个签了吧。」</p>
+<p>薛直淡定地从抽屉里掏出一份文件。</p>
+<p>林苒盯着封面上的四个大字。</p>
+<p>「室友协议？这是个什么？」</p>
+<p>「为了确保两个月的实习期我不会像之前那两个管理员一样被你刁难。</p>
+<p>「所以，我们签个君子协定。</p>
+<p>「两个月之后你要是对我不满意，我自动离开。</p>
+<p>「但是，你也得保证，不会刻意刁难我。」</p>
+<p>薛直说完，递给林苒一支笔。</p>
+<p>「你把这个签了，那份观察报告，我保证，不该出现的字，管理局绝对不会看见。」</p>
+<p>别说，这个条件确实很诱人。</p>
+<p>横竖是要相处这两个月的。</p>
+<p>等过了实习期，她再找理由让薛直知难而退主动辞职。</p>
+<p>不仅能落得自在，还不会降等级。</p>
+<p>林苒大手一挥：「没问题，我这就签！」</p>
+<p>8</p>
+<p>她没有想到，很快，薛直就会用实际行动给她上一课。</p>
+<p>课程的内容叫：:人世险恶，签合同的时候一定要看清楚条款。</p>
+<p>等她交完作业回来的时候才发现。</p>
+<p>家里的格局发生了微妙的改变。</p>
+<p>水晶球灯还是她爱的那个。</p>
+<p>但是能够折光的墙壁没有了，取而代之的是暖黄色的墙体。</p>
+<p>看上去很温馨。</p>
+<p>但是不够闪亮！</p>
+<p>林苒咬牙切齿地推开薛直的房间门。</p>
+<p>「你对我的屋子做了什……」</p>
+<p>话还没有说完，被屋子里的「风景」生生掐住了话茬。</p>
+<p>天地良心，她真的不知道薛直此时此刻正在里头换衣服。</p>
+<p>薛直上身都脱光了，露出坚实的背部线条，还有那紧绷的腰线……</p>
+<p>宽肩窄胯，简直就是一绝！</p>
+<p>「你看够了没？林苒，你，你进房间都不敲门的吗？」</p>
+<p>如果林苒仔细听。</p>
+<p>就会发现薛直的声音一反常态地有些抖。</p>
+<p>耳朵尖尖都红了。</p>
+<p>她一愣。</p>
+<p>果断地在已经打开了的房门上敲了敲。</p>
+<p>「现在可以了吗？」</p>
+<p>这回轮到薛直愣住了。</p>
+<p>他快速套好衣服。</p>
+<p>深吸了几口气。</p>
+<p>才转过身。</p>
+<p>「咋咋呼呼的，有什么事？」</p>
+<p>林苒这才想起正事。</p>
+<p>「你说！你为什么把我的精心设计改掉？」</p>
+<p>她一边说着，注意到薛直的房间也被改了。</p>
+<p>「你还改了这里？我闪亮的灯球去哪儿了！」</p>
+<p>薛直有些无奈。</p>
+<p>「林苒，室友协议里头写的很清楚，我对房间拥有改造权。而且，太亮了对眼睛不好，你就算是喜欢，也不能长期处于曝光过度的环境里，会损伤视力。」</p>
+<p>林苒咬牙看着不再到处反光的客厅，眼睛确实是好受了很多。</p>
+<p>但是心里难受。</p>
+<p>「不听不听，王八念经！」</p>
+<p>薛直摊了摊手，指着那一条合约。</p>
+<p>「林苒，这白纸黑字写得清清楚楚。你们龙族，不是最讲这种契约精神吗？」</p>
+<p>林苒看见那份合同，下意识一缩脖子，气焰全无。</p>
+<p>确实，龙族是很看重这些的。</p>
+<p>合约精神几乎刻进了骨血里。</p>
+<p>所以，林苒就算再生气。</p>
+<p>既然已经签了字，也只能按照白纸黑字的规则办事。</p>
+<p>「你分明就是趁人，哦不对，趁龙之危！」</p>
+<p>「噗。」薛直很不给面子的笑了，「林苒，成语是你这么改的吗？」</p>
+<p>「你，你等着！」</p>
+<p>林苒十分有气势地扔下这一句之后，就钻进了自己的房间。</p>
+<p>薛直忍不住低头笑了笑。</p>
+<p>把那份合约稳妥地锁进了保险柜里。</p>
+<p>他猜到以林苒的叛逆程度，肯定会「报复」他。</p>
+<p>说实话，他对此还挺期待的。</p>
+<p>只不过，薛直怎么也想不到。</p>
+<p>林苒这条小笨龙，会用这么笨的方法。</p>
+<p>当天深夜。</p>
+<p>他听见房门有响动。</p>
+<p>下意识以为是林苒又梦游了。</p>
+<p>正准备起身把她牵引到床上来好好休息一下的时候。</p>
+<p>注意到了少女亮晶晶的眼睛。</p>
+<p>噗……薛直硬忍着笑。</p>
+<p>闭上眼睛躺在床上装睡。</p>
+<p>暗暗观察林苒到底想作些什么幺蛾子。</p>
+<p>黑暗之中，龙拥有绝佳的夜视能力。</p>
+<p>林苒扫了一眼看上去睡得很安稳的薛直。</p>
+<p>到底没有忍住，悄咪咪地想要把他被子给扒下来。</p>
+<p>嘴里小声嘟囔。</p>
+<p>「冻死你！」</p>
+<p>开着空调，晚上要是没有被子确实会很冷。</p>
+<p>但是，有一个重点林苒不清楚。</p>
+<p>那就是——薛直睡觉的时候习惯裸着上半身。</p>
+<p>于是，当林苒暗戳戳地把被子扯下去一半之后。</p>
+<p>凭借着龙的视力。</p>
+<p>她一眼扫到了少年硬邦邦的胸膛和藏在被子边缘。</p>
+<p>若隐若现的腹肌。</p>
+<p>林苒瞪圆了眼睛。</p>
+<p>扯被子的手像是被烫着了一样，二话没说撒开手捂住了眼睛。</p>
+<p>夭寿了！</p>
+<p>老一辈的常说，看了不该看的东西，眼睛会长东西！</p>
+<p>她作为一条龙，是不是已经不干净了？</p>
+<p>林苒有些僵硬地挪开了视线，再也没有往床上瞟一眼。</p>
+<p>其实，如果她此刻看向薛直的话。</p>
+<p>就会发现，少年那张俊俏的脸上，完全是绷不住的笑容。</p>
+<p>薛直一开始也没有想到林苒居然会用这么幼稚的手段。</p>
+<p>林苒扯他被子的时候，他第一反应是不能暴露自。</p>
+<p>于是干脆继续躺在床上「装死」。</p>
+<p>本来还觉得挺尴尬的，结果差点儿被林苒自欺欺人的捂眼睛动作逗笑……</p>
+<p>只不过，确实挺冷的。</p>
+<p>薛直忍着想要打喷嚏的冲动，偷偷抬眼观察林苒的动作。</p>
+<p>林苒怎么也想不到。</p>
+<p>自己鬼鬼祟祟地翻东西的时候，薛直也在鬼鬼祟祟地偷看她。</p>
+<p>她很快从薛直的书包里找到了想要的东西——薛直的电脑。</p>
+<p>然后又掏出手机，开始对着薛直拍照。</p>
+<p>只不过，拍了几张之后。</p>
+<p>林苒对出来的照片效果很是不满意。</p>
+<p>小声嘀咕：「睡着了都这么帅？薛直这家伙睡着了之后，难道不会张嘴流口水之类的吗？」</p>
+<p>薛直差点儿被气得要笑出声来，暗暗腹诽。</p>
+<p>张嘴流口水？</p>
+<p>他可不会。</p>
+<p>倒是某条笨蛋龙有这个坏毛病。</p>
+<p>林苒也很气，翻遍了那些照片。</p>
+<p>「该死的，就没有更难看的吗？这种死亡角度都能 hold 住，薛直这家伙真的是人类吗？不会是志怪小说里头的狐狸精吧？」</p>
+<p>薛直无语。</p>
+<p>感觉自己被夸了，但是好像又没有完全被夸。</p>
+<p>最后，林苒十分无耻地半蹲下来。</p>
+<p>从下往上仰拍薛直的脸，争取给他拍出了个双下巴。才心满意足地点点头。</p>
+<p>然后果断打开电脑。</p>
+<p>把自己刚才拍的那几张「丑照」插在了薛直做好的课件里头。</p>
+<p>明天的逻辑学课上，薛直有一个作业展示。</p>
+<p>到时候在众目睽睽之下，薛直展示到一半，弹出来他自己的这几张照片。</p>
+<p>哇，想想就尴尬！</p>
+<p>林苒一套操作行云流水，然后心满意足地离开了薛直的房间。</p>
+<p>还不忘夸赞自己：「我真是一条聪明龙！」</p>
+<p>直到房门被关上，薛直再也忍不住，用被子盖住了自己。</p>
+<p>整个人钻进被窝里头笑成了震动模式。</p>
+<p>他还以为林苒这家伙会有什么了不得的手段呢。</p>
+<p>就这？</p>
+<p>薛直眼睛亮亮地，盯着黑乎乎的窗外，像是在自言自语。</p>
+<p>「笨蛋龙。」</p>
+<p>备案号:YXX1Abb88Z6tddd1ayEtRlKX</p>
+<p>看守员</p>
+<p>​</p>
+<p>​</p>
+<p>打死不说我是龙</p>
+<p>匿名用户 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/27-%E6%AD%BB%E5%9C%B0/" title="死地">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">死地</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/18-%E6%AD%BB%E5%AF%B9%E5%A4%B4%E8%B7%9F%E6%88%91%E5%8E%BB%E5%92%8C%E4%BA%B2%E5%90%8E/" title="死对头跟我去和亲后">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">死对头跟我去和亲后</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

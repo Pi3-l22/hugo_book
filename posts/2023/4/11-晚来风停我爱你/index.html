@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚来风停我爱你 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/11-%E6%99%9A%E6%9D%A5%E9%A3%8E%E5%81%9C%E6%88%91%E7%88%B1%E4%BD%A0/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/11-%E6%99%9A%E6%9D%A5%E9%A3%8E%E5%81%9C%E6%88%91%E7%88%B1%E4%BD%A0/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="晚来风停我爱你">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta name="twitter:title" content="晚来风停我爱你">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="晚来风停我爱你">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="7411">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">晚来风停我爱你</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>15分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%99%9a%e6%9d%a5%e9%a3%8e%e5%81%9c%e6%88%91%e7%88%b1%e4%bd%a0&amp;url=https://mohai.us.kg/posts/2023/4/11-%E6%99%9A%E6%9D%A5%E9%A3%8E%E5%81%9C%E6%88%91%E7%88%B1%E4%BD%A0/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/11-%E6%99%9A%E6%9D%A5%E9%A3%8E%E5%81%9C%E6%88%91%E7%88%B1%E4%BD%A0/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%99%9a%e6%9d%a5%e9%a3%8e%e5%81%9c%e6%88%91%e7%88%b1%e4%bd%a0%20https://mohai.us.kg/posts/2023/4/11-%E6%99%9A%E6%9D%A5%E9%A3%8E%E5%81%9C%E6%88%91%E7%88%B1%E4%BD%A0/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/153.jpg" alt="晚来风停我爱你" />
+      
+
+      <p>晚来风停我爱你</p>
+<p>爱你如一：四季不灭的爱恋</p>
+<p>我在淘宝上下单了一日男友服务。</p>
+<p>没办法，我是被逼急的。</p>
+<p>我那个想抱孙子想疯的母亲竟然带着相亲对象过来体检，这严重影响到了我的工作。</p>
+<p>平常也就算了，但今天是市里篮球队第一批队员过来体检的日子，人多口杂。</p>
+<p>他们是海军疗养院里的大客户，可我妈带着相亲对象，在我给一男队员做心电图时直接拉开了窗帘。</p>
+<p>我倒不至于吓到，倒是那男队员，刚把衣服撩上去，冷不丁窗帘被拉开，结结实实被吓了一跳。</p>
+<p>「陈晚，我这到处找你呢！」</p>
+<p>我心中叹了口气，只好对那男队员说了句稍等，便重新拉上窗帘走出去。</p>
+<p>相亲对象其实不丑，是某上市公司的金领，但在我看来，却是十分的蠢。</p>
+<p>「我妈犯毛病你也跟着犯？没看见我在工作？这里是哪你们不知道么，有事情等我下班再说，再闹我让保安来赶人了。」</p>
+<p>我冷着脸又重新拉上窗帘，脸色恢复如常，男队员有点发怵，他忍不住问：「医生，你还好吧？」</p>
+<p>我摇头，「没事，衣服撩上去吧。」</p>
+<p>1</p>
+<p>我是单亲家庭，父亲很早就因病过世了，母亲一人把我拉扯大，也没有再嫁，导致她把寄托全都放在了我身上，我年纪到了就开始催婚，退休后每天的事情就是光顾各大婚姻介绍所，给我找相亲对象。</p>
+<p>时间一长，我都觉得她有点神经质了。</p>
+<p>但她一般都有分寸，我也不会去过多说她，毕竟也是老人家的盼头，但今天是真的闹过了头。</p>
+<p>不过男队员能明显感觉到小小空间里气压骤降，待眼前的女医生抬起他的腿往上夹设备时，他试探着出主意，「医生，你可以去淘宝租那种男友服务啊，用来应对父母，网上很火的。」</p>
+<p>我咧咧嘴角，没什么表情，「你试过？」</p>
+<p>我妈这么费尽心思给我找相亲对象，也是因为我一直单身，从小到大成绩名列前茅，十指不沾阳春水，朋友们一个个成家，到最后就剩我一个，闺蜜们都调侃我是不是性冷淡。</p>
+<p>晚上躺在床上玩手机，我在闺蜜群里说了我妈白天来医院闹腾的事，几个姐妹又聒噪似的聊开了。</p>
+<p>不知怎么地，我就想到了白天那个男队员说的玩笑建议，想了想，我退出群聊，进了某宝，挑选了一家综合评价最高的商铺，点了进去。</p>
+<p>系统给我索引，我根据自己的需要将一些基本条件要求一一输进去，很快，系统转人工服务。</p>
+<p>「亲，请问您需要什么职业的男友呢？」</p>
+<p>我想了想，输入：「你们这边的『男友』职业是模拟现编的，还是说是真实职业？」</p>
+<p>客服说：「亲，我们这边的服务人员都是真实职业哦，亲可以放心购买。」</p>
+<p>我看着这对话，怎么看怎么奇怪，犹豫了一会，「能不能让我选下？」</p>
+<p>客服很快给了我选项。</p>
+<p>「上市公司老板——30000 元/天；企业金领——25000 元/天；公务员——22000 元/天；医生——20000 元/天；运动员——15000 元/天；教师——12000 元/天；健身教练/企业白领/（具体职业请询问客服）具体议价。」</p>
+<p>什么鬼？明码标价也太太太诡异了……</p>
+<p>鬼使神差地，我竟然真的开始思索起这个价格来。</p>
+<p>太贵没必要，反正也只有一天；我再看了眼，除了运动员，似乎其他的职业我妈都差不多介绍过。</p>
+<p>再怎么样，也得找个不一样的。</p>
+<p>最终我选择了运动员。</p>
+<p>一万五啊，操，真贵。</p>
+<p>睡前我不忘给她发了条消息，「明天带男朋友回来，别给我找有的没的了。」</p>
+<p>2</p>
+<p>第二天早上，我看手机就有一条新的朋友验证。</p>
+<p>微信名字叫「杨风停」，头像是科比投篮的照片。</p>
+<p>我想起来了，昨天在运动员分类里选了篮球来着，为什么选篮球，纯粹是脑子里还停留上午的病人们都是篮球运动员，眼熟就选了这个。</p>
+<p>我通过好友验证，杨风停名字后边加了个括号：淘宝一日男友。</p>
+<p>杨风停先发了句你好。</p>
+<p>我自然也礼貌回应，虽然感觉不大自在。</p>
+<p>杨风停说：「我这边以你的时间为主，我会跟店铺那边说，计时到时候会开始的。」</p>
+<p>我：「……好的。白天我要上班，下班我找你。」</p>
+<p>杨风停回：「好的，早上我也有事情，队里要去体检。」</p>
+<p>我腾地坐起来，卧槽，不会吧？世界这么小？</p>
+<p>我问：「海军疗养院？」</p>
+<p>杨风停说是。紧接着又问：「你怎么知道？」</p>
+<p>「说来你可能不信，我是那的医生，昨天就检查过你们第一批的队员了。昨天也是你们队员推荐我说找淘宝的。」</p>
+<p>杨风停回：「哦，我有跟他们提过我在赚外快。那，等会见？」</p>
+<p>我挺早到了医院，自上班以来就已经养成了生物钟，早上会给自己泡杯咖啡，提神醒脑，但今儿个，肚子不上不下，胃胀胃痛都不是，但总归是不大舒服。</p>
+<p>我竟然有点紧张。</p>
+<p>去茶水间碰到了同样来倒水的小护士，想起什么，我叫住护士，「小美，把今天上午过来体检的运动员资料给我看下，我等会来护士台。」</p>
+<p>资料都是按照姓氏字母来排的，我直接翻到后面几张。</p>
+<p>很快找到了杨风停的名字。</p>
+<p>竟然是 96 年的，足足比自己小了 6 岁。</p>
+<p>我放下咖啡，眼睛扫过去杨风停的资料——</p>
+<p>24 岁，身高两米零二，体重九十二公斤，籍贯云南丽江。</p>
+<p>云南丽江？</p>
+<p>我顿了一会，有些遥远的记忆像是破掉的沙漏，一点点从脑子里渗透了出来。</p>
+<p>那是我为数不多的放纵。</p>
+<p>我不是性冷淡，曾经也有过男人的。</p>
+<p>就在丽江。</p>
+<p>只不过谁都没提起罢了。</p>
+<p>我思绪很快回神，合上资料还给小美，「谢谢，时间快到了，工作准备起来吧。」</p>
+<p>过来体检的人时间不一，我空下来的时候在心电图室翻着医学用书，这时，窗帘又被拉开，我合上书，没看病人，只是说：「躺上去吧，体检表给我。叫什么名字？」</p>
+<p>那人沉默很久都没有反应，我奇怪地回头看他，不由也愣住了。</p>
+<p>四年前的那个晚上，虽然灯光暗，但我仍然记得那个给我快乐的年轻男孩的模样，我没问那个男生的名字，因为只是一夜，没必要了解那么透彻。</p>
+<p>现在他褪了稚嫩，是男人的样子了。</p>
+<p>我暗叫一声不好。</p>
+<p>但表面我声音还是很稳，敛下情绪，低头去看体检表，杨风停三个大字让我眼骨有点痛。</p>
+<p>「杨风停？」</p>
+<p>「是。」</p>
+<p>确实是同个声音。</p>
+<p>看这样子，八成是认出我来了。</p>
+<p>反正我不管，这么尴尬狗血的场景都能被我碰到，说什么都不能承认，而且昨晚淘宝花了钱的，一万五可不能浪费。</p>
+<p>我冷静地抬起下巴，「躺上去吧。」</p>
+<p>「行。」</p>
+<p>撩起衣服，我的脑袋还是嗡嗡响，昨天给那么多身材好的运动员做检查都没感觉，但杨风停撩起衣服露出腹肌那瞬间，我就知道自己不能以正常医生看病人的目光去看待这副肉体了。</p>
+<p>腹肌排排成列，比当年更加紧致有型。</p>
+<p>夹子要夹他的皮肤，可他肌肉紧绷，夹子竟然弹掉了。</p>
+<p>我眉角抽搐，良久才说：「你，能不能放松，夹子夹不上了。」</p>
+<p>看他似乎是调整了呼吸，过了几秒，肌肉变得稍微软一些，器械夹了上去，几秒间的一系列动作，让我脑子都有些炸了。</p>
+<p>杨风停倒没有再说什么，我签了字，还给他，让他可以去下一个了。</p>
+<p>杨风停踌躇了两步，又退回来问：「你认识陈晚医生吗？」</p>
+<p>我一时间无言，下意识去看他的体检表，就我那龙飞凤舞的签名，认出来才怪。</p>
+<p>我没看他，冷静说：「哦，她在忙，你有事可以等到她下班再说。」</p>
+<p>「谢谢。」</p>
+<p>杨风停走出去的时候还带上了门。</p>
+<p>我听到关门声，才长长吐气，一摸额头，都冒冷汗了。</p>
+<p>3</p>
+<p>没等到中午，我看了眼名单，这边的工作就已经全部完成了，于是收拾好仪器打算回办公室。</p>
+<p>屁股都还没坐热，就听见有人敲门。</p>
+<p>我抬头，脸部表情不由自主地抽了抽。</p>
+<p>这就找来了？服务态度这么好？</p>
+<p>杨风停进来后，我不得已端着身段，示意他坐。</p>
+<p>「你刚刚就知道是我了？」</p>
+<p>「看到你的名字就知道了，淘宝上的那个，一日男友。刚才在工作，不好意思。」</p>
+<p>杨风停背着双肩包，红色篮球背心里穿了一件白色的短袖，篮球短裤里有条黑色紧身运动裤，白色篮球鞋。</p>
+<p>他双手掌心朝下，不停磨蹭着裤腿，见到陈晚那一刻，手心汗冒个不停。</p>
+<p>他指的不是这件事啊，是另外一件，是……四年前那件。</p>
+<p>但听陈晚的话，她好像早忘了。</p>
+<p>她忘了，杨风停没理由再提了。</p>
+<p>陈晚是他接的第二单，上一单是个胖胖的女孩，她是为了给拒绝她同时背地里说她是肥猪的男生一个下马威，杨风停完美地给足了那女孩面子，因为头单客户给了五星好评，杨风停空的时候也会让店铺给自己留意单子。</p>
+<p>虽然写着一万五一天，杨风停和店铺五五分成，拿到的也不少。按照他的话来说，赚双篮球鞋的价格。</p>
+<p>可世界也太小了，这第二单竟然是陈晚。</p>
+<p>杨风停敛下心神，接着她的话说下去，「我们什么时候开始呢？」</p>
+<p>我看了眼时间，还得将病人的报告整理出来，估计要到中饭后，「我还要整理报告，可能要到中午，不介意的话我们可以中午吃个饭，开始计时。不耽误你训练时间吧？」</p>
+<p>杨风停说：「不耽误，接下去是周末，我在门口等你。」</p>
+<p>我点头，「我尽快。」</p>
+<p>杨风停在外边走廊来回踱步，偶有几个队友碰见，问他一不一块走，杨风停摇头，「你们先走吧，我还有点事要问医生。」</p>
+<p>队友问：「你没事吧？」</p>
+<p>杨风停笑，「有个屁事儿，你们走吧，今天晚上回来可能比较迟，宿管来了给我遮下啊。」</p>
+<p>一个小时不到，办公室门打开，我余光瞥见走廊长椅上的人已经站了起来，压我一头的感觉，落下一片阴影。</p>
+<p>下班了，我换回了自己的衣服，一件松垮垮的浅色长西装，窄脚裤，显得身材更加窈窕了，锁门的时候同时说：「我下午没班了，走吧。」</p>
+<p>「去哪？」杨风停傻傻得问。</p>
+<p>我一脸茫然回看过去，「你现在是我男朋友，你就按照你擅长的来啊，你以前怎么服务的，就这么带我去就好了。哦对了，晚上你要跟我回家吃顿饭，见见我妈，得把老人家哄开心了，你的任务就完成了。」</p>
+<p>我本想说开我的车走，但杨风停先开口，「我有车。」</p>
+<p>这么年轻就买车了啊？</p>
+<p>然后紧接着到了停车场。</p>
+<p>我凌乱了。</p>
+<p>果然是小年轻，竟然是一辆牛逼哄哄的机车。</p>
+<p>他甚至贴心的带了两个头盔，他递给我，「给。」</p>
+<p>我接过，戴进去的时候把头发给搞乱了，东一簇西一簇翘了起来。杨风停见状，轻轻说了句别动，随即抬手温柔地将我的发丝一缕一缕给压平，我手抬着都来不及放下，杨风停的指腹有一下没一下碰到了我的指尖。</p>
+<p>我觉得有点飘，随即轻咳，赶忙抽回了手。</p>
+<p>杨风停带我去了莲大，我下车摘头盔，杨风停很自然地接过，他挠挠头，「带你去吃食堂不介意吧，我们这边还挺好吃的。」</p>
+<p>「不介意，我也很久没回学校了。」我避免尴尬，先快步走了。</p>
+<p>杨风停就跟在后边，和我保持刚刚好的距离。</p>
+<p>校门口走到餐厅是很长的一段路，来往的学生不少，周五下午基本上都没有课，餐厅吃饭的人不多，该回家的回家，该泡图书馆的早就在里面占了位子。</p>
+<p>靠近餐厅的另一边是篮球场，路上不少男生拿着球成群向篮球场走。</p>
+<p>我目不斜视单手插袋走在宽阔的道路上，身杆挺得笔直，本来就不矮，再加上一双细高跟的凉鞋，那是人群里拔尖的拔尖了，不意外，很多年轻气盛的男生会回头看我。</p>
+<p>杨风停终究是忍不住叫了一声：「陈晚。」</p>
+<p>我回头。</p>
+<p>果不其然，他问我：「你去过云南丽江吗？」</p>
+<p>我反问：「去没去过很重要吗？」</p>
+<p>杨风停怔愣，他只是呆呆地点头，一下，又一下，像个机器人。</p>
+<p>我说：「去过。」</p>
+<p>4</p>
+<p>陈晚是美的。</p>
+<p>这是杨风停初见她时就认定的道理。</p>
+<p>那年他大二，寒假回云南老家，他自己家是在市区，爷爷奶奶一直生活在乡下，回家后，杨爸跟他说，有队医疗志愿组下乡免费去乡下周边村做医疗服务，爷爷奶奶生活的村子也在服务范围内，他们一家也打算回去看看。</p>
+<p>因为车直达不了，停在山下，还有差不多两公里的山路要走。</p>
+<p>天气的原因，前几日刚下过雨，山路泥泞不堪，女医生们穿的鞋子大都不是防滑的，走两步，滑三脚，一路相互搀扶着走。</p>
+<p>他长得高，我一眼就瞧见了他。</p>
+<p>杨家老人讲的是方言，我听不大懂，村里的翻译不多，都是几个位置来回跑。</p>
+<p>在我有些为难时，眼前有过一面之缘的男生已经从旁边找了条凳子坐在我身边给我临时充当起翻译了。</p>
+<p>从头至尾，杨风停没有跟我搭与医疗无关的话题，我说什么，他就把意思传达给病人，病人说什么，他组织好语言再告诉我。</p>
+<p>我对他印象挺好的，腼腆又有礼貌，傍晚结束他们村的服务后我甚至单独叫住他说了感谢，但我没有问他的名字。</p>
+<p>对我来说，这只是生命中一个小小的过客，他给予了我帮助，我会记得这样一个好人。</p>
+<p>杨风停看着陈晚很快挤出人群，心里空落落的。</p>
+<p>顾辛荷拍拍他的胳膊，汗涔涔的，她道：「行了专心比赛吧，人临时有工作没办法，抽时间过来看比赛的。」</p>
+<p>杨风停发了条微信过去，便被教练叫去商量战术了。</p>
+<p>为了下半场能稳住方才上半场的局势，教练特别叮嘱让杨风停调整状态，他爆发力和步法皆稳，由防守改为进攻，能单打拿分的，直接上，不要客气。</p>
+<p>下半场对局呈现白热化趋势，杨风停接连两个三分都没中，比分渐渐拉近。</p>
+<p>一着急，杨风停犯规，罚球。</p>
+<p>队友给他打气，「风子，稳住，我们能赢。」</p>
+<p>一个漂亮的投篮，球进了。</p>
+<p>杨风停稳住状态，想着教练教他的战术，重振旗鼓。</p>
+<p>最终，莲大以杨风停一个完美的，决定胜负的三分球，微弱比分胜出，拿了高校篮球赛冠军。</p>
+<p>8</p>
+<p>我看到消息时，已经是傍晚快六点的时候了，接连着两场会议，放下笔时，手腕都是酸的。</p>
+<p>杨风停拍了比分的照片，莲大赢了。</p>
+<p>再上一条，杨风停说：「比赛结束能来找你吗？」</p>
+<p>我缓了好一会，手有劲了，才开始打字：「行，你过来吧，我好了。」</p>
+<p>杨风停秒回：「我就在医院大厅坐着呢。」</p>
+<p>我看到这话，心都抖了，「那你等会。」</p>
+<p>我走出来的时候，就见到杨风停背着书包站在大厅医护人员一览表前看着什么，我不着急叫他，慢慢走过去。</p>
+<p>杨风停没注意到后面，他仔仔细细看着，像是在找什么。</p>
+<p>「唉，找着了。」他突然惊喜道。</p>
+<p>紧接着从裤兜里摸出手机，对准一张照片，手机按在屏幕上调整聚焦，尽量不把其他照片拍进去。</p>
+<p>我循着方向看去。</p>
+<p>是我的照片。</p>
+<p>「咳咳。」我咳嗽提醒。</p>
+<p>杨风停慌得像只小鹿，将相机退了出去，回头时尴尬抬手，来了一句：「嗨！」</p>
+<p>「走吧。我还不饿。」我说。</p>
+<p>杨风停想了会，说：「那你说吧，你想干嘛去？」</p>
+<p>我挑眉，「想打篮球。还有力气吗？」</p>
+<p>杨风停拍拍胸脯：「再打一场球赛都没问题。」</p>
+<p>杨风停自然是高兴的，当然他有私心，他不想去人多的地方。</p>
+<p>他带我去了一个小区里面的灯光篮球场，小区居民这个时间都在吃饭，我们到的时候，一个人都没有。</p>
+<p>「你想怎么打？」</p>
+<p>我手里掂着篮球，看看杨风停又看看篮筐，我说：「那个三分球怎么投？力气是不是要很大。」</p>
+<p>杨风停接过球，站到三分球界限，给我示范，两脚掂量着，准备起跳，「三分球对于力量要求比较高，不用刻意掌握，瞄准点一般是篮框的远距离点，角度得找好，还是要多练吧。那我们比赛的时候一般更多的是肌肉记忆。」</p>
+<p>「咻——」球触碰到篮框，划了一圈，完美掉进框里。</p>
+<p>「你试试，过来站到我的点。」</p>
+<p>杨风停退后两步，让我站到他前面，刚抬手，他就握住我的手到一个合适的位置，手掌好宽厚，也温热，我觉得自己的手在他面前就像是拇指姑娘的手，小的不行。</p>
+<p>他也真的太会了。</p>
+<p>会而不自知？</p>
+<p>谁知道呢。</p>
+<p>「就这个角度，你投出去吧，可以跳跃助力。」</p>
+<p>我知道自己姿势不大好看，但也来不及了。</p>
+<p>篮球是被我扔出去的，显而易见，没掌握好节奏，在离篮框还有一段距离的地方，球掉下来了。</p>
+<p>「没事，已经很好了。」杨风停上前跑两步，轻松捡球。</p>
+<p>往回跑的时候，杨风停眼睛一亮，他说：「想不想扣篮？」</p>
+<p>我睁大眼睛，「扣篮？」</p>
+<p>「想不想试试？」</p>
+<p>我看他，眯眼：「抱着我扣？」</p>
+<p>杨风停摇头，依旧笑眯眯的，「不是。骑我脖子上。」</p>
+<p>我微讶，「啊？啊——」</p>
+<p>突然脚腾空，一瞬间有股失重的感觉，我下意识抱住了杨风停的头。</p>
+<p>我惊慌失措，「你跑慢点，我要掉下去了。」</p>
+<p>果然杨风停慢了下来，单手抱住我的双腿，来到篮框下，另一只手把球递给我。</p>
+<p>「来吧，扣多少下都没问题。」</p>
+<p>我哼哼，「带几个女孩子这么玩过了？」</p>
+<p>杨风停委屈：「对天发誓，你是第一个。」</p>
+<p>陈晚这么一个尤物放着，后边遇见多少个女孩都觉得差点意思。</p>
+<p>我又说：「扛着我能来深蹲吗？」</p>
+<p>「当然可以啊，你很轻诶。」</p>
+<p>说来就来，一上一下，把我给掂得有些晕乎乎，我连忙打住，「够了够了。放我下来吧。」</p>
+<p>杨风停站直身子，但没有立马有所动作，而是嗯嗯憋了几声，明显是有话要对我说。</p>
+<p>「陈晚，那个那个那个……」</p>
+<p>「什么这个那个？」</p>
+<p>「你看我也找到你了，就我其实也第一次，因为第一次遇见的，就那么好了，所以你说的带几个女孩子来玩过，这些事情都是不存在的，所以吧，你懂我意思吗？」</p>
+<p>我点头：「懂。」</p>
+<p>杨风停有些着急，「然后呢？」</p>
+<p>他豁出去了，要是陈晚今晚不给他个痛快，他就不放陈晚下来了。</p>
+<p>我再一次将篮球扣进篮框，空了手。</p>
+<p>眼波流转，盯着男孩的头顶，沉默了好一会，紧接着，那股强烈的旋涡感又来了，我忽然很想很想回到四年前。</p>
+<p>三十岁了，应该要疯狂一次，再者，我没有理由不心动啊，上午球赛那会，场上的杨风停每当停下来时，总会往工作台的方向看，虽然很快，可能就半秒时间，但我还是注意到了。</p>
+<p>在啦啦队叫着杨风停的名字时，在所有女孩都在为他呐喊时，他记挂的却只有我一人。</p>
+<p>满足到极致。</p>
+<p>也心动到极致。</p>
+<p>我想，我们是从哪个事情结束的，那就从哪个事情重新开始吧。</p>
+<p>于是，我伏下来一点，刚好可以轻轻抱住他的头，凑近他的耳朵，对他说：「停车坐爱枫林晚，霜叶红于二月花。这一回，不打算走了。」</p>
+<p>9</p>
+<p>这个晚上，我很迟才睡，不是我的原因，是杨风停那小孩，激动地睡不着觉，他非要让我亲口说出我们在一起的事实他才安心。</p>
+<p>我们煲电话粥，一直聊到我没有意识为止。</p>
+<p>第二天醒来的时候我看到电话竟然还没有断，将近六个小时，我电话里叫了一声。</p>
+<p>对面传来一声被惊醒的「嗯」。</p>
+<p>我失笑：「我睡着了你怎么不挂电话？」</p>
+<p>杨风停打着哈欠，「我忘了呢。」</p>
+<p>我虽然没谈过恋爱，但一些年轻男孩追女孩的方式我也听身边朋友说的多了，于是我说：「杨风停，你其实很会。」</p>
+<p>杨风停不否认，不过他还是问了一句，「你不喜欢啊？」</p>
+<p>我摇头，下一秒反应过来他是看不见的。「我不是这个意思，我这是夸你。」</p>
+<p>聊了一会，我看了眼时间，该起床去上班了，本来是调休的，但和科室同事换了班，她去拍婚纱照了，她比自己还小两岁，可肚子都有三个月了，她说要趁没显怀的时候把照片都拍好，不然就不好看了。</p>
+<p>正准备挂电话之际，杨风停叫了我的名字，「陈晚。」</p>
+<p>「嗯？」</p>
+<p>「我是认真的，请你相信我。年龄差根本不是问题，我不需要你照顾我，我是个男人，我足够有力量来保护你，我会变得和你一样优秀。」</p>
+<p>不知为何，虽然我们相差六岁，我吃的盐比他吃的饭还多的多，但我仍是一个女人，我其实也很容易心软和触动，就像现在。</p>
+<p>心脏最柔软的部分塌陷了一块。</p>
+<p>他走了进来。</p>
+<p>我回答他：「我知道。」</p>
+<p>三十岁是道坎，同样也是一道新机遇，我觉得，既然上道了，就先走走看吧，是前途光明，还是头破血流，总得试试。</p>
+<p>这段话，我后来在我们的婚礼上同样复述了一遍。</p>
+<p>杨风停听完，沉思了几秒，接过我手上的话筒，另一只手更加抓紧了我。</p>
+<p>他没有看台下，只是望着我。</p>
+<p>然后，缓缓开口——</p>
+<p>「我说过，我们之间，年龄永远都不是我考虑的范围，我考虑的，是如何强大，如何与你并驾齐驱，如何不让你不把我当小孩，如何让所有人信服，我是可以给你幸福的。你的三十岁，是我人生的新起点，也是新机遇，我们一起上道了，肯定就能一起携手走向光明的未来。」</p>
+<p>作者：不喜芦苇</p>
+<p>备案号:YX01YM5NJy75Y4NVP</p>
+<p>还剩 13 天到期，最低 9/月续费免费参与千场课程</p>
+<p>弟弟好像很爱脸红</p>
+<p>​</p>
+<p>​</p>
+<p>爱你如一：四季不灭的爱恋</p>
+<p>白日桃野 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/31-%E6%99%9A%E9%A3%8E%E6%9C%AA%E8%90%BD/" title="晚风未落">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">晚风未落</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/15-%E6%99%9A%E6%98%9F/" title="晚星">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">晚星</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

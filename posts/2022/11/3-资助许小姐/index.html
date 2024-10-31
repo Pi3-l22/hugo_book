@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资助许小姐 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/11/3-%E8%B5%84%E5%8A%A9%E8%AE%B8%E5%B0%8F%E5%A7%90/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/11/3-%E8%B5%84%E5%8A%A9%E8%AE%B8%E5%B0%8F%E5%A7%90/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="资助许小姐">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26116.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26116.jpg">
+  <meta name="twitter:title" content="资助许小姐">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="资助许小姐">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10022">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26116.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">资助许小姐</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%b5%84%e5%8a%a9%e8%ae%b8%e5%b0%8f%e5%a7%90&amp;url=https://mohai.us.kg/posts/2022/11/3-%E8%B5%84%E5%8A%A9%E8%AE%B8%E5%B0%8F%E5%A7%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/11/3-%E8%B5%84%E5%8A%A9%E8%AE%B8%E5%B0%8F%E5%A7%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%b5%84%e5%8a%a9%e8%ae%b8%e5%b0%8f%e5%a7%90%20https://mohai.us.kg/posts/2022/11/3-%E8%B5%84%E5%8A%A9%E8%AE%B8%E5%B0%8F%E5%A7%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26116.jpg" alt="资助许小姐" />
+      
+
+      <p>我资助的女孩抢走了我的男朋友，还当面嘲讽我又丑又穷。</p>
+<p>我一气之下断了给她的高额生活费。</p>
+<p>笑死，不是姜氏集团大小姐吗？继续装啊。</p>
+<p>大学开学第一天，我男朋友拖着我的行李箱把我送到了宿舍门口。</p>
+<p>「哇，玥玥，照你那么说你一毕业就可以继承家产啊！」</p>
+<p>「对呀，不过你不要告诉别人哦。」</p>
+<p>我和季辰刚到宿舍门口，就听见了这段对话。</p>
+<p>我没有在意，只当是和一个大小姐住一个宿舍罢了，推门进去后，季辰居然开始起了介绍自己。</p>
+<p>「你们好，我是大三的季辰，是学生会主席，学妹们有不懂的事情可以问我。」</p>
+<p>我疑惑地踢了季辰一脚，不明白他为什么要介绍自己。于是讪笑着说：</p>
+<p>「啊，这是我男朋友。」</p>
+<p>说完，我看向姜玥，她的目光一直在季辰身上，看得我有点不舒服，白了她一眼后，把季辰推了出去。</p>
+<p>「去帮新生吧，拜拜。」</p>
+<p>谁知道姜玥居然拦住了我，说想加季辰个微信。</p>
+<p>我不懂她的意思，但季辰已经掏出了手机，打开自己的二维码，两人就这样当着我的面加上了微信。</p>
+<p>一个星期后，季辰跟我说了分手，第二天就和我的室友姜玥在一起了。</p>
+<p>我象征性地问了一下他为什么和我分手，没想到他直接不装了，全盘托出了一切。</p>
+<p>「玥玥是姜氏集团的大小姐，和她相比，你就像个小丑。」</p>
+<p>看着季辰发来的微信，我疑惑地笑了。</p>
+<p>姜氏集团的大小姐，明明是我啊……</p>
+<p>她们在一起的第二天，姜玥一大早就兴冲冲地开始化妆，噼里啪啦的声音把我吵醒了。</p>
+<p>我趴在被窝里，吼道：</p>
+<p>「姜玥！你小声点！」</p>
+<p>话一出，果然床帘外就没有了声音，在仔细一听，是女生的抽泣声。</p>
+<p>我忍着心中的怒气，扒开帘子朝下看了一下，姜玥居然坐在桌子旁哭了。</p>
+<p>我瞬间就不困了。</p>
+<p>另外两个室友也闻声起床，看着抽泣的姜玥，她们立马走到姜玥身旁安慰：</p>
+<p>「玥玥，怎么了怎么了？」</p>
+<p>「别哭啊玥玥，你怎么了？」</p>
+<p>姜玥看见两个狗腿室友，哭得更大声了：</p>
+<p>「没事，可能是我昨天和阿辰在一起了，小念有点生气吧。」</p>
+<p>听了姜玥的话，我差点把昨天晚上吃的饭给吐了出来：</p>
+<p>「姜小念，你没必要这样对玥玥吧。」</p>
+<p>「就是啊，再说了你跟季辰都分手了，玥玥和季辰是正常恋爱，你自己没那个福气还朝玥玥发脾气。」</p>
+<p>笑死了，好一个正常恋爱，这两个狗腿子可真会说。</p>
+<p>姜玥还在抹眼泪，我索性不理她，躺在床上继续睡。</p>
+<p>就在我快要再次入睡的时候，电话铃声突然响了起来，我不耐烦地接通了电话。</p>
+<p>「姜小念，你不要太过分了。」</p>
+<p>季辰带着怒气的声音传来，我直接睡意全无。</p>
+<p>「你为什么要为难玥玥，有什么事冲我来。」</p>
+<p>季辰继续咄咄逼人，我被气笑了。</p>
+<p>「冲你来是吧，行啊。」</p>
+<p>我挂了电话后，给我舅舅又打了一个。</p>
+<p>然后开开心心地去食堂吃了顿饭，上完课回到宿舍后，姜玥她们已经回来了。</p>
+<p>「玥玥，这个包好好看呀！肯定不便宜吧。」</p>
+<p>进了宿舍后，我看着姜玥放在桌子上的 lv 包，皱了下眉，这个包好熟悉。</p>
+<p>「还行吧，就几万块，是阿辰送给我的。」</p>
+<p>姜玥笑吟吟地回应，一脸的幸福。</p>
+<p>听到季辰的名字，我的记忆瞬间被唤醒。</p>
+<p>我突然想起半个月前和季辰一起出去旅游，我的一个 lv 包不翼而飞，和姜玥的这个一模一样。</p>
+<p>我直接走过去拿起了姜玥放在桌子上的包。</p>
+<p>「哎，你干什么？」</p>
+<p>室友 a 好像比姜玥还急，起身就要把包抢回来。</p>
+<p>「没事，小菲，可能小念只是没见过那么贵的包，想拿过去看一下吧。」</p>
+<p>姜玥一副善解人意是样子，我却笑了，把包放了下来。</p>
+<p>这就是我的包，当时把包带过去的时候，包内被我不小心划了一个小口，所以丢了我也没有在意。</p>
+<p>「是吗？我没见过那么贵的包？你这个包，好像是二手的哎。」</p>
+<p>姜玥一听，脸色瞬间变了。</p>
+<p>「你瞎说什么呢，吃不到葡萄就说葡萄酸？」</p>
+<p>说完，姜玥的身体倒是很诚实，拿起包里外翻了一遍，果然看见了那个小口。</p>
+<p>本以为她会给季辰打电话问是怎么回事，没想到她居然朝我泼起了脏水。</p>
+<p>「姜小念，你是不是故意的，划我的包！」</p>
+<p>姜玥的狗腿陈小菲和纪含立马围了上去，发出了惊呼。</p>
+<p>「我划你的包？」</p>
+<p>我脸一黑，直接给季辰打了个电话。</p>
+<p>「你要不要脸，拿我的包送你的小情人。」</p>
+<p>电话那头愣了一下，姜玥也愣了。</p>
+<p>「什么你的包……那是我给玥玥买的新包，你别血口喷人，姜小念，我真没想到你是这种人，满口谎言，我之前真是瞎了眼了才能看上你。」</p>
+<p>因为我开的是免提，所以姜玥也听到了，她又恢复了那副咄咄逼人的样子。</p>
+<p>听着季辰的话，我张开就要开骂，季辰却直接挂了电话。</p>
+<p>「姜小念，你不想赔就算了，还污蔑我男朋友？」</p>
+<p>姜玥也反应了过来，继续倒打一耙。</p>
+<p>「我划的是吧？那你报警吧？」</p>
+<p>话刚说完，姜玥的电话就响了，她跑出去接了个电话，回来就也没有再让我继续赔偿。</p>
+<p>「阿辰说看在你们在一起过的分上不让我跟你计较，毕竟你也赔不起。」</p>
+<p>我无视姜玥，打了报警电话。</p>
+<p>警察来到之后，我说明了情况，他们就戴着手套把包拿走了，说是会检查一下包内的指纹。</p>
+<p>姜玥显然没想到我就这样做，全程都垮着脸，丝毫不配合警察。</p>
+<p>警察离开后，姜玥一脸的不屑。</p>
+<p>「都说了不让你赔了，你怎么还自讨苦吃。」</p>
+<p>我翻了个白眼，转身离开，准备出去吃顿火锅来缓解一下心情。</p>
+<p>刚到火锅店，我一直资助的女孩许玥给我发来了一条语音。</p>
+<p>「姐姐，我大学开学一个星期了，什么都挺好的，就是我有一个又穷又丑的舍友，她还把我的包给划了。」</p>
+<p>这是我资助许玥这些年来第一次收到她的语音，我点开后听了一遍。</p>
+<p>可这个声音，怎么那么熟悉。</p>
+<p>我刚打算再听一遍，对面就又发来了一条。</p>
+<p>「姜姐姐，那个室友把我的包划破了后还不赔我……所以那个，就是，我想买个包可以吗？</p>
+<p>听了新的语音后，我愣了，立马发信息问她在哪个学校上学。</p>
+<p>「a 大呀姐姐。」</p>
+<p>a 大，许玥，包被划，姜氏集团大小姐，姜玥。</p>
+<p>脑海中突然浮现出一个个关键词，我蓦然醒悟。</p>
+<p>这个姜玥，不会就是我资助的那个穷学生吧。</p>
+<p>「玥玥，给我拍一张你们宿舍的照片吧，我看看你们的宿舍环境怎么样。」</p>
+<p>我抱有一丝希望问许玥要了宿舍照片，一分钟后，对面发来了一个小视频。</p>
+<p>「姐姐，你看，这是独立卫浴，这是我的宿舍……</p>
+<p>「这就是那个划我包的女生的床位。」</p>
+<p>视频里，她仔仔细细地介绍这宿舍，等到了一个熟悉的床位前时，她停了一下，不屑的语气险些溢出了屏幕。</p>
+<p>看完视频，火锅汤底已经被服务员端上来了，热气腾腾的烟雾冒了上来，我却浑身发冷。</p>
+<p>没想到，我资助了七年的穷学生，竟然是嘲笑我是又穷又丑的室友。</p>
+<p>菜已上齐，我看着汤底出了神。</p>
+<p>七年前，我和爸爸去山村做慈善。</p>
+<p>发物资的时候，有一个小女孩胆怯地坐在一旁不敢上前，一问才知道她的爸爸前两天刚过世，妈妈也跟别人跑了，她可怜巴巴的样子让我萌生了要资助她的念头。</p>
+<p>一开始，我以姜氏集团的名义寄钱去她家，却得知钱都被她舅舅拿走了。</p>
+<p>我一气之下给她在 a 市租了套房子，把她接了出来，还记得那天，她拿着管家的手机给我打电话，哭着说谢谢姐姐的时候，我也跟着哭。</p>
+<p>就这样，我承担了她的一切费用，也会把爸妈给我的生活费打给她一半。</p>
+<p>她并没有见过我，只知道我是姜氏集团大小姐，也不知道我们同龄，一直喊我姐姐，我也没有纠正，因为在我心中她一直是那个胆怯的小女孩。</p>
+<p>「小姐，您一个人需要我们在您旁边放一个玩偶吗？」</p>
+<p>思绪被打断，服务员弯着腰问我，我摇了摇头，看着眼前的一桌子菜心内五味杂陈。</p>
+<p>叮咚——</p>
+<p>手机提示音响起，打开后是许玥发来的消息。</p>
+<p>「姐姐，这个爱马仕的包包才十万，我上大学了也想要一个。」</p>
+<p>我看着她发来的图片，没有回应，十几秒后，对面又发来了一条信息。</p>
+<p>「要不然姐姐你有没有不想背的包，送给我一个也可以，嘻嘻。」</p>
+<p>看完信息后，我低头笑了。</p>
+<p>明明几年前她看见一千块钱都震惊得不敢接，没想到几年后她开口就敢管我要十万。</p>
+<p>「好啊，那你过两天来我家挑一个。」</p>
+<p>「真的吗！谢谢姐姐！」</p>
+<p>看见她秒回的信息，我关上了手机。</p>
+<p>姜玥，好戏还在后头呢。</p>
+<p>我回到宿舍后，看见了姜玥立马从床上爬了下来，故意很大声地在宿舍里说了句话。</p>
+<p>「我过两天准备换个爱马仕，你们来帮我挑挑款式怎么样。」</p>
+<p>话音一落，陈小菲和纪含立马也跑了下去，一脸的羡慕。</p>
+<p>「哇，爱马仕我都没见过，玥玥你也太有钱了。」</p>
+<p>「对啊玥玥，哎，玥玥家里是干嘛的呀，我看你姓姜，不会跟姜氏集团有什么关系吧。」</p>
+<p>姜玥一听纪含说到姜氏集团，立马就害羞地低下了头。</p>
+<p>「啊呀，其实姜氏集团的是我爸爸的产业。」</p>
+<p>陈小菲和纪含一听，立马发出了惊呼，却被姜玥拦下了，在嘴边比了个嘘。</p>
+<p>「我爸爸不想让我暴露的，因为怕会遭！人！嫉！妒！」</p>
+<p>姜玥特地强调了「遭人嫉妒」这四个字，目光还看向了我。</p>
+<p>「也是，就比如咱们宿舍这个爱装杯的，哈哈哈哈哈。」</p>
+<p>陈小菲顺着姜玥的目光看去，不禁大笑出声。</p>
+<p>「上次阿辰送我的那个 lv 包才几万块，就当送给某个又穷又丑的人了。」</p>
+<p>姜玥也得意地笑了，抱着双手继续挖苦我。</p>
+<p>「哇，你是姜氏集团大小姐，那我可以去你家看看吗，听说姜氏集团有一座私人城堡，不对外开放，好想去看看呀。」</p>
+<p>看着逐渐上头了的姜玥，我笑了，故意装出一副羡慕的样子。</p>
+<p>话一出，姜玥的笑容僵在了脸上，陈小菲和纪含也露出了惊喜的神色，表示也想去看看。</p>
+<p>「怎么？这都不行？你不会是在骗人吧。」</p>
+<p>我不屑地开口，乘胜追击，她果然上钩了，立马回应我。</p>
+<p>「可以啊，怎么不行。」</p>
+<p>听到了她坚定的语气，我转身离开了宿舍，心情大好。</p>
+<p>刚走到宿舍楼下，季辰就给我打了个电话，接通后，他破口大骂。</p>
+<p>「姜小念，你是不是有病？你是不是找人把我的学生会主席给撤掉了。」</p>
+<p>好事还真是一个接一个地来，我用轻飘飘的语气回复他。</p>
+<p>「不是你让我冲你来？我来了啊？」</p>
+<p>季辰听到我的声音后，沉默了两秒，又恢复了刚刚的语气。</p>
+<p>「姜小念，你得意什么，不就是在学校有个亲戚吗，神气什么？我现在就去告你靠关系滥用职权。」</p>
+<p>听完他的话，我笑了出来。</p>
+<p>「我当然要得意了，你快告吧。」</p>
+<p>说完，电话那头沉默了。</p>
+<p>「你敢惹我，等着吧你。」</p>
+<p>季辰留下这句话后就挂了电话。</p>
+<p>两天后，我又收到了姜玥给我发的信息。</p>
+<p>「姐姐，你今天有时间吗。」</p>
+<p>不用想就知道姜玥今天准备来我家挑包。</p>
+<p>「有时间。」</p>
+<p>「就是上次那个包的事情……」</p>
+<p>对面秒回，随后我给她发了一个地址。</p>
+<p>「你去这里吧，里面是我放闲置衣服的地方，密码是 9009。」</p>
+<p>那套房子确实是我放闲置物品的地方，还有一些珍藏的包也在房子里的其中一个房间里。</p>
+<p>但那个房间我上了锁，姜玥进不去。</p>
+<p>「姐姐，你不陪我吗？」</p>
+<p>姜玥发了个害羞的表情。</p>
+<p>「嗯。」</p>
+<p>「那我自己去啦姐姐！」</p>
+<p>我当然不打算去，毕竟我去了，姜玥就没办法装杯了。</p>
+<p>再说，房间里各个角落我都放了监控，线上偷窥才爽呢。</p>
+<p>放下手机后，我就听到姜玥在宿舍里喊了一句。</p>
+<p>「我今天下午回家去拿个包来背，你们要一起去吗？」</p>
+<p>狗腿陈小菲一听，立马爬下了床。</p>
+<p>「我要去我要去！」</p>
+<p>纪含爬了下来，跟着附和。</p>
+<p>「好，那你们收拾收拾。」</p>
+<p>姜玥仰着头，得意得不行。</p>
+<p>「姜小念，你要不要跟着一起去见见世面。」</p>
+<p>想笑，见世面？</p>
+<p>我的房子我还要见世面。</p>
+<p>「不去。」</p>
+<p>我淡淡地回了她一句，她却好像被讽刺到了一样。</p>
+<p>「不识好歹，你错过这次见世面的机会可就没有下次了。」</p>
+<p>「滚。」</p>
+<p>受不了了，我爆了句粗口。</p>
+<p>「不去算了，真没素质。」</p>
+<p>姜玥跺了一下脚，然后带着陈小菲和纪含离开了。</p>
+<p>她们走后，我拿起电脑打开了闲置房的监控，嗑着瓜子等着她们进来。</p>
+<p>二十分钟后，房子的门被打开。</p>
+<p>「啊啊啊我去，玥玥，你这房间全是奢侈品啊。」</p>
+<p>陈小菲刚进房间就尖叫出声，姜玥也被眼前的场景吓了一跳。</p>
+<p>确实，毕竟没人会在进门的玄关处和客厅里放满人台和玻璃柜。</p>
+<p>人台上全是各个品牌的成衣礼服，玻璃柜里是各种各样的常规款包包。</p>
+<p>「啊，对，这只是冰山一角呢。」</p>
+<p>姜玥故作镇定，双手抱胸，一副女主人的姿态。</p>
+<p>「我去，玥玥，你这个房间里好多首饰。」</p>
+<p>已经跑进房间里的纪含也发出了惊呼。</p>
+<p>姜玥随着声音找了过去。</p>
+<p>这个房间是我用来放饰品的地方，不太贵的手表也放在了这里。</p>
+<p>「对，我比较喜欢收集好看的首饰。」</p>
+<p>姜玥撩了一下头发，对纪含说。</p>
+<p>纪含看了一圈后，眼神停留在了玻璃柜里的一对耳环上。</p>
+<p>「玥玥，我好喜欢这个。」</p>
+<p>纪含趴在玻璃柜前，眼睛都看直了，她说的这句话是人都懂是什么意思。</p>
+<p>姜玥有一点慌，也是，毕竟她答应我只是去拿个包。</p>
+<p>我饶有兴致地看着监控里的姜玥，她开口了。</p>
+<p>「喜欢就拿走吧。」</p>
+<p>我震惊了，喜欢就拿走，真当这是自己的东西了。</p>
+<p>「啊啊啊！谢谢你玥玥，随后，纪含打开了玻璃柜，取下了那副耳环，陈小菲也在经过姜玥同意后，顺走了一条项链。</p>
+<p>看着她们开心到飞起的样子，我拿出手机给姜玥发了条信息。</p>
+<p>「挑好了吗？我等会要过去拿个东西。」</p>
+<p>监控里，姜玥看见信息后有些慌，把陈小菲和纪含喊出了首饰间，自己进去把空了的位置胡乱地补了一下。</p>
+<p>跑出房间，她也没挑，直接在展示柜里拿了个镶满钻的包，带着陈小菲和纪含离开。</p>
+<p>笑死了，果然肤浅，那个包虽然看着钻很多，可是价格还不及她旁边那个包的一半。</p>
+<p>「姐姐，我已经拿好了。」</p>
+<p>看着姜玥发来的信息，我关上了手机，把电脑里的监控保持了下来。</p>
+<p>欠我的，可是要还的。</p>
+<p>姜玥回到宿舍后，看见我还在床上，把包放在了宿舍中间的桌子上。</p>
+<p>「一个 lv 还抢来抢去的，也只有没钱的人会这样做咯。」</p>
+<p>听着姜玥的话，我也是时候发条信息吓唬一下她了。</p>
+<p>我拿起手机，给姜玥发了条信息。</p>
+<p>「玥玥，你拿我的耳环了？我怎么少了一对耳环和戒指。」</p>
+<p>信息发出去后，姜玥立马低头看手机，然后默默地爬到了床上。</p>
+<p>一分钟后，我收到了姜玥的回复。</p>
+<p>「姐姐，我没拿呀，你是不是记错了。」</p>
+<p>我本来还以为，姜玥会对这个一直资助她的姐姐坦诚一点，没想到她真就是个白眼狼。</p>
+<p>「没事，可能是我记错了。」</p>
+<p>关上手机后，我掀开了床帘，对着姜玥的床位大喊了一声。</p>
+<p>「姜玥，你不是说带我们去看那个城堡吗？什么时候才能去啊。」</p>
+<p>话一出，陈小菲和纪含又来了兴致。</p>
+<p>「对啊！玥玥，我好想去哪里看一下呀！」</p>
+<p>「我也是！我也是！」</p>
+<p>床帘内迟迟没有回应，我又添油加醋地问。</p>
+<p>「怎么不理人呀，你是不是在吹牛呀。」</p>
+<p>这招果然管用，姜玥立马就把床帘掀开，吼我。</p>
+<p>「我怎么没理人，过两天就带你们去。」</p>
+<p>我挑眉，哦了一句，然后拉上了床帘。</p>
+<p>床帘里，我憋不住笑了。</p>
+<p>坏点子已经在我脑海飘了一圈。</p>
+<p>第二天一早，我被姜玥的信息吵醒了。</p>
+<p>「姐姐，我有一个事想求你。」</p>
+<p>怕宿舍里的姜玥察觉，我把手机调了静音。</p>
+<p>「怎么了？」</p>
+<p>「就是，听说你有一个私人的城堡？」</p>
+<p>不出所料，她开始求我了。</p>
+<p>「嗯。」</p>
+<p>我确实有一套像城堡的房子，不过没那么夸张。</p>
+<p>只是盘下了一块地盖了栋比较大的房子罢了。</p>
+<p>「姐姐，我想去参观一下可以吗！」</p>
+<p>虽然我会同意，可是我还是决定逗她一下。</p>
+<p>「？」</p>
+<p>我打了个问号。</p>
+<p>「姐姐，我就是想见见世面，毕竟我现在在大学……」</p>
+<p>扑哧——</p>
+<p>我很满意她的回答，不过在被窝里憋笑真的很难受。</p>
+<p>「好啊，密码你到了之后我再给你。」</p>
+<p>对面发来了一个鞠躬的表情包，我在被窝里笑得肚子疼。</p>
+<p>下午，姜玥和季辰出去约会。</p>
+<p>姜玥回来后，我就收到了季辰的短信。</p>
+<p>「姜小念，你等着被开除吧，我已经告诉玥玥你干的那些事了，玥玥说会让她爸爸把你开除的。」</p>
+<p>看到信息时的我正在吃外卖，一口面就这样被我笑喷了出来。</p>
+<p>「你现在求求我，我还可以让你留在学校里。」</p>
+<p>我放下筷子，捂着肚子，回了他一句。</p>
+<p>「那你快开除我吧，我早就不想上了。」</p>
+<p>发完信息，姜玥就推门进来了。</p>
+<p>她这次并没有撒泼，直接爬上了床。</p>
+<p>我在心里倒数了三个数。</p>
+<p>3.2</p>
+<p>叮咚——</p>
+<p>手机响了。</p>
+<p>「姐姐……我想求你个事。」</p>
+<p>我怕自己会憋不住，爬到了床上。</p>
+<p>「你说。」</p>
+<p>发完信息，姜玥的昵称一直都是对方正在输入中……</p>
+<p>过了很久，我收到了一句。</p>
+<p>「没事姐姐，就是我现在可不可以问你要一下密码。」</p>
+<p>哦哟，居然没开口让我开除我自己。</p>
+<p>「0909.」</p>
+<p>我随便发了几个数字给她，毕竟我都没怎么去过的房子怎么可能真的让她带一群人进去糟蹋。</p>
+<p>今天是星期五，下午有一节班会。</p>
+<p>我昏昏沉沉地开完班会，准备快点回家去找我爸妈，姜玥和陈小菲却在老师走了后关上了教室的门。</p>
+<p>我疑惑地看着站在讲台上的姜玥，只见她清了清嗓子。</p>
+<p>「大家周六都有时间吗。」</p>
+<p>班里还是有一些有明事理的，抱怨姜玥堵门。</p>
+<p>「是这样的，我们玥玥呢准备在周六邀请大家去她的城堡玩，问问大家有没有时间。」</p>
+<p>纪含代替姜玥说完后，班级里的同学开始窃窃私语。</p>
+<p>「城堡？我记得咱们 a 市有城堡的只有姜氏集团的那个大小姐。」</p>
+<p>「对啊，好像是她爸爸送给她的十八岁生日礼物。」</p>
+<p>「不是吧，姜玥好像也姓姜啊！」</p>
+<p>「我去，难道说姜玥就是姜氏集团大小姐？！」</p>
+<p>我还是有点困，姜玥这个操作虽然奇葩，但我也能接受，毕竟她可是想取代我的女人。</p>
+<p>我一心想回去睡觉，就打开了教室的门，姜玥一看，叫住了我。</p>
+<p>「姜小念，你也来，我带你见见世面也好。」</p>
+<p>我无语得不行，没理她就走了。</p>
+<p>我当然会去，我不去，怎么看你狼狈的样子。</p>
+<p>离开教室后，我加快脚步想快点回家睡觉，路过操场时，我看见了正在打球的季辰，心里暗暗骂了一句晦气，绕过他准备回家。</p>
+<p>「哟，姜小念。」</p>
+<p>得，还是逃不过。</p>
+<p>我没理他，继续走。</p>
+<p>「姜小念，你不用那么怕我吧，我说了，你求我，我就可以让你继续留在学校。」</p>
+<p>季辰球都不打了，急忙跑过来挑衅我。</p>
+<p>「我怕你？你也不过就是个吃软饭都吃不明白的弱 zhi，你不是说让姜玥开除我，我怎么到现在都没收到通知。」</p>
+<p>我转过身，现在的我比鬼的怨气还重。</p>
+<p>「你……你给我等着。」</p>
+<p>切，连骂人都不会骂。</p>
+<p>我不屑地转身离开，走之前还不忘朝季辰吐了口水。</p>
+<p>晚上回到家后，我收到了警察局的电话。</p>
+<p>「姜小姐，我们对比了采集到的指纹，有你的和你室友的，另外出现得最多的就是一个男性指纹。」</p>
+<p>好事都一起来了。</p>
+<p>我心情大好：「好，包给我寄到我家就好。」</p>
+<p>挂了电话，我久违地泡了个澡。</p>
+<p>明天就是大喜的日子，我当然要好好打扮一下。</p>
+<p>洗完澡后，我又把姜玥和陈小菲纪含去我房间拿走东西的视频发给了我叔叔一份。</p>
+<p>我叔叔是 a 市警察局总局，得到叔叔的答复后，我安然入睡。</p>
+<p>刚睡两分钟，我又被姜玥的信息吵醒。</p>
+<p>「姐姐，你还记得我上次那个室友吗？」</p>
+<p>我不耐烦地打开手机，看见信息后，我估计是季辰今天被我羞辱，又找姜玥哭去了。</p>
+<p>「记得，怎么了？」</p>
+<p>姜玥又是正在输入，两分钟后，我收到了她的一大段回复。</p>
+<p>「姐姐，她昨天打了我一巴掌，我到现在左脸都很疼，我不想和她一个班级了。</p>
+<p>她还偷东西，我的包就被她偷走了。」</p>
+<p>诬蔑，姜玥还真是有一套。</p>
+<p>如果我不知道她说的是我，我可能现在已经炸毛了，因为我之前一直把她当自己的亲妹妹。</p>
+<p>「我给你换个专业？」</p>
+<p>我故意发了这条信息，对面又犹豫了很久。</p>
+<p>「姐姐，你可以把她开除吗，姜氏集团那么厉害，开除她肯定很简单吧。」</p>
+<p>果然还是开口了。</p>
+<p>「明天说吧，我困了。」</p>
+<p>第二天，我起得很早。</p>
+<p>班级群里都在讨论去城堡穿什么，姜玥假惺惺地拍了一张正在吃早饭的照片。</p>
+<p>照片里，早饭种类很多，咖啡旁边，放着她从我家拿走的那只包。</p>
+<p>化好妆后，我开车前往城堡，我到了之后，门口已经站了很多人了。</p>
+<p>所有人的拿着手机在拍照，门外的保安一脸懵逼。</p>
+<p>这时，一辆法拉利停在了我面前。</p>
+<p>姜玥穿着一身红裙子走了下来，旁边是穿着西装的季辰。</p>
+<p>季辰看见我，还瞪了我一眼。</p>
+<p>她一下来，身旁的陈小菲就开始拍她的马屁。</p>
+<p>「玥玥，你好美！」</p>
+<p>同学们也都朝她走了过去，姜玥撩了一下头发，开口。</p>
+<p>「你们怎么不进去。」</p>
+<p>一个女生回应她：「有保安，保安说没有她们小姐的允许不能进去。」</p>
+<p>顿时，姜玥慌了。</p>
+<p>我不紧不慢地给保安使了个眼色，门开了。</p>
+<p>「欢迎小姐回家。」</p>
+<p>保安九十度鞠躬，姜玥一下受宠若惊。</p>
+<p>我站在姜玥身后，保安的礼是给我行的，只不过大叫都觉得是姜玥。</p>
+<p>进去后，我给叔叔发了条信息。</p>
+<p>城堡的院子很大，姜玥一边走一边介绍，虽然听不懂她在说什么。</p>
+<p>把月季说成玫瑰，栀子说成兰花。</p>
+<p>「这个不是月季吗。」</p>
+<p>有一个女生指出了姜玥的错误，她立马回头。</p>
+<p>「这是玫瑰，高级品种，你没见过别瞎说。」</p>
+<p>顿时，女生被怼得不再说话，我后面不停地翻白眼。</p>
+<p>真的很尴尬。</p>
+<p>到了门口，姜玥等了一会，然后打开了密码锁的盖子，输起了密码。</p>
+<p>所有人都凑过去看，纪含护住姜玥。</p>
+<p>「不许看不许看，玥玥输密码呢。」</p>
+<p>「滴——密码错误。」</p>
+<p>智能锁的声音很大，同学们转过头有些疑惑。</p>
+<p>「我输错了，不好意思。」</p>
+<p>姜玥急忙解释，转身又输了一遍。</p>
+<p>「嘀——密码 错误。」</p>
+<p>同学又转头，姜玥又解释。</p>
+<p>「太久没来有一点忘了。」</p>
+<p>「嘀——密 码 错 误。」</p>
+<p>我站在人群后，笑的脸疼。</p>
+<p>「嘀——密码 嘀——」</p>
+<p>姜玥又输了两遍，都是密码错误，所有人都开始窃窃私语。</p>
+<p>「什么情况啊，自己家的密码都记不住？」</p>
+<p>「好尴尬啊，她不会是装的吧。」</p>
+<p>「应该不会，刚刚保安喊她小姐呢。」</p>
+<p>姜玥也听见了这些话，我也收到了一条信息。</p>
+<p>「姐姐，密码不对啊，你是不是记错了。」</p>
+<p>我拿起手机，看着信息，又放下了。</p>
+<p>「姐姐，密码错了。」</p>
+<p>我还是不回。</p>
+<p>「姐姐，你人呢！」</p>
+<p>这句信息后，姜玥给我打了语音通话。</p>
+<p>接通后，姜玥立马开口。</p>
+<p>「姐姐，密码是什么，密码错了。」</p>
+<p>说完，我的手机里也响起了姜玥的声音。</p>
+<p>我淡定地推开人群，一步一步往姜玥那走。</p>
+<p>「密码 在这呢。」</p>
+<p>我对着听筒说了一句话，姜玥的手机里回荡着我的声音。</p>
+<p>她蒙了，猛地坐在了地上。</p>
+<p>「姜小念，你拿姐姐的手机干什么！」</p>
+<p>姜玥还真是没脑子，到现在都没搞清楚状况。</p>
+<p>身后的人已经拿起手机开始录像。</p>
+<p>我推开姜玥，输入了大门的密码。</p>
+<p>「密码正确，欢迎你，小念。」</p>
+<p>姜玥愣了，身后也没人敢吱声。</p>
+<p>「不是要来城堡玩吗，我请你们怎么样？」</p>
+<p>我双手抱胸，还坐在地上的姜玥突然朝我冲了过来。</p>
+<p>就当她的手要打到我时，我叔叔来了，警察瞬间控制住了姜玥。</p>
+<p>我走到姜玥面前，看着她。</p>
+<p>「姜玥，哦不对，是许玥。」</p>
+<p>我在她身边走了两圈，继续说。</p>
+<p>「是不是我对你太好了，让你忘了你本来是什么样子。」</p>
+<p>门外，所有人都不敢说话。</p>
+<p>姜玥双眼猩红，季辰站了出来。</p>
+<p>「姜玥，你……你骗我！」</p>
+<p>看来他也不傻。</p>
+<p>「小念，我跟你说，我早就知道姜玥她在冒充你，我是故意跟她在一起的。」</p>
+<p>季辰见状，对着我解释，姜玥哭了。</p>
+<p>「阿辰，你说你是喜欢我才和我在一起的不是吗，你怎么能骗我。」</p>
+<p>季辰嫌弃地看了她一眼，然后转头眼巴巴地看着我。</p>
+<p>我只觉得恶心。</p>
+<p>「姜玥，你居然忘了自己是什么身份，那我就把你送回去让你好好再回忆一下。」</p>
+<p>姜玥不可置信地瞪着我。</p>
+<p>「姜小念，你凭什么把我送回去，你自己说的，你会资助我，你这个骗子！」</p>
+<p>「我凭什么？就凭你现在的一切都是我的，懂了吗。」</p>
+<p>姜玥闻声，拼命地挣扎着，可她哪里挣得过两个警察。</p>
+<p>「叔叔，我的 lv 包上面的指纹，是他的，你把他们一起带回去吧。」</p>
+<p>说完，我转身离开，门外的同学也终于停止了录像，被警察赶了回去。</p>
+<p>姜玥被带走后，我也紧接着跟着她到了警局。</p>
+<p>审讯室里，姜玥双眼无神。</p>
+<p>我开口：「许玥，从今天起，我停止对你的资助。」</p>
+<p>姜玥听完，又发了疯似的骂我。</p>
+<p>「你凭什么！你不配！我才是姜氏集团的大小姐！你凭什么赶走我。」</p>
+<p>我下意识地就觉得姜玥可能是疯了。</p>
+<p>「我给你个收拾东西的机会，你现在回到宿舍把你的东西收拾干净，不然我直接把你送回你舅舅家。」</p>
+<p>姜玥仿佛听不见我说话，还是不停地骂。</p>
+<p>我摇了摇头，转身去了另一边。</p>
+<p>季辰看见我，哭了。</p>
+<p>「小念，对不起，你原谅我吧，我爱你。」</p>
+<p>啪——</p>
+<p>刚打开的门就被我摔上了。</p>
+<p>指纹采样和之前我和季辰去旅游的监控也被调了出来。</p>
+<p>季辰趁我睡觉偷了我的包后，把包寄回了他家。</p>
+<p>「让他赔吧。」</p>
+<p>和警察交代好后，我回了一趟宿舍。</p>
+<p>到了宿舍后，陈小菲和纪含看见我，就像一开始知道姜玥说自己说姜氏集团大小姐时的反应一样，毕恭毕敬的。</p>
+<p>我在她们面前，摊开了手。</p>
+<p>「什么意思啊，小念。」</p>
+<p>纪含问。</p>
+<p>「还给我，你拿的项链，你拿的耳环。」</p>
+<p>我说完，纪含的眼神撇开了，陈小菲也坐到了一旁。</p>
+<p>见她们这样，我拿出了手机。</p>
+<p>「不给我是吧，那你们和季辰一起蹲局子去吧。」</p>
+<p>陈小菲见状，跑过来拦住了我。</p>
+<p>「你别报警，那个我……」</p>
+<p>「我什么我，你不会说话啊？」</p>
+<p>见她支支吾吾的，我问道。</p>
+<p>「被纪含给卖了，她说这个能卖好多钱。」</p>
+<p>陈小菲语出惊人，纪含一听，跑到陈小菲面前吼道。</p>
+<p>「你说什么呢，明明是你要卖了的！你污蔑谁啊！」</p>
+<p>陈小菲也不愿意了，反驳纪含。</p>
+<p>「就是你，是你说要卖的，都是你去挂的二手平台。」</p>
+<p>我并不想看她们俩吵，只淡淡地说了一句。</p>
+<p>「卖了多少？」</p>
+<p>「一共三千。」</p>
+<p>我梗住了，继续说。</p>
+<p>「你们拿的时候是全新的，赔我一个全新的。」</p>
+<p>纪含拿的耳环已经绝版，现在再去买全新的只能高价收，现在的价格，在二手平台高达九万，还需要靠抢才能买到。</p>
+<p>陈小菲的项链，官网价也要十一万，现在也在断货。</p>
+<p>「十天内我要看到东西，要不然你们就跟季辰做伴去。」</p>
+<p>说完，我转身离开。</p>
+<p>那天之后，有人把姜玥被打脸的视频发到了学校贴吧，闹得有些大，所有人都在骂姜玥。</p>
+<p>说她虚荣、骂她不要脸、骂她不知足，明明那么幸运还不知道珍惜。</p>
+<p>姜玥也被校方已影响学校风气的理由开除了。</p>
+<p>开除她的第二天，我就把姜玥送回了她的老家。</p>
+<p>她一路上都疯疯癫癫的，但好在没怎么闹腾。</p>
+<p>到了她老家后，她舅舅嫌弃得不行。</p>
+<p>我本想转身就走，她舅舅却伸手问我要钱。</p>
+<p>「你得给我们钱，你也不能让我们帮你白养。」</p>
+<p>我汗颜；「姜玥的监护人现在还是你，我只是不想资助她了，所以给你送了回来，你也没资格管我要钱。」</p>
+<p>解释完后，她舅舅还是不依不饶，我索性直接转身离开。</p>
+<p>他想追，我身后的保镖站到了他面前，他只能灰溜溜地又退了回去。</p>
+<p>走了一段路后，姜玥家传出了巴掌声，随后就是姜玥哭天抢地的叫声。</p>
+<p>我的心抽了一下。</p>
+<p>说不心疼是假的，可姜玥好像早就不是我记忆中的那个小声喊我姐姐的那个女孩了。</p>
+<p>我回头看了一眼姜玥家的房子，从包里掏出了一张卡，递给了身旁的保镖。</p>
+<p>「这里有两万块钱，给她舅舅送过去吧。」</p>
+<p>保镖点了点头，他进去后，屋内的巴掌声停了。</p>
+<p>我转过头，离开了这里。</p>
+<p>这场闹剧，终于画上了句号。备案号:YXX12eo1P4ZtwA5QxoyC3K3Q</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/11-%E8%B5%84%E6%9C%AC%E5%AE%B6%E5%B7%B2%E7%BB%8F%E6%8B%A5%E6%9C%89%E5%A4%A7%E9%87%8F%E8%B5%84%E4%BA%A7%E4%BA%86%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E5%89%A5%E5%89%8A%E6%97%A0%E4%BA%A7%E9%98%B6%E7%BA%A7/" title="资本家已经拥有大量资产了，为什么还要剥削无产阶级？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">资本家已经拥有大量资产了，为什么还要剥削无产阶级？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/5/23-%E8%87%AA%E5%BD%93%E5%B0%BD%E5%BF%A0/" title="自当尽忠">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">自当尽忠</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

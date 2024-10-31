@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笙歌如秀 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/20-%E7%AC%99%E6%AD%8C%E5%A6%82%E7%A7%80/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/20-%E7%AC%99%E6%AD%8C%E5%A6%82%E7%A7%80/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="笙歌如秀">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+  <meta name="twitter:title" content="笙歌如秀">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="笙歌如秀">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12393">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">笙歌如秀</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%99%e6%ad%8c%e5%a6%82%e7%a7%80&amp;url=https://mohai.us.kg/posts/2023/4/20-%E7%AC%99%E6%AD%8C%E5%A6%82%E7%A7%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/20-%E7%AC%99%E6%AD%8C%E5%A6%82%E7%A7%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%99%e6%ad%8c%e5%a6%82%e7%a7%80%20https://mohai.us.kg/posts/2023/4/20-%E7%AC%99%E6%AD%8C%E5%A6%82%E7%A7%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26662.jpg" alt="笙歌如秀" />
+      
+
+      <p>笙歌如秀</p>
+<p>帝宠：深宫的爱，妃子的恨</p>
+<p>好好过日子就是我会每天和你一起吃饭，一起睡觉，一起看春烟柳绿，你亭前舞枪，我提笔作画，举案齐眉，白头到老。</p>
+<p>不离不弃。</p>
+<p>1</p>
+<p>永安九年，淮国梁都，江山大定，花好月圆。</p>
+<p>这一年，梁都出了两个状元郎，一文一武，一男一女，一个叫陆之笙，一个叫荆如秀。</p>
+<p>金銮大殿上，武状元荆如秀人如其名，端得眉清目秀，巾帼风采，出口间却是惊了满堂。</p>
+<p>「如秀不求金山银海，荣华富贵，唯求陛下赐婚如秀与文状元陆之笙。」</p>
+<p>话一出，站于荆如秀旁边的一道身影便颤了颤，煞白了一张脸，正是自觉何其无辜的文状元陆之笙。</p>
+<p>他狠狠瞪向堂前的荆如秀，眸欲喷火，若这仍是在陆家，恐怕那句怒吼早已脱口而出——</p>
+<p>「荆如秀，你这是逼婚！」</p>
+<p>江山如秀，笙歌遍舞。</p>
+<p>水墨蜿蜒的折扇上，八个大字写得风流俊逸，落款赫然盖着「陆」、「荆」两家的印鉴，是为结亲信物。</p>
+<p>半年前，荆如秀就是拿着这把折扇，关了镖局，背着父亲的骨灰，千里迢迢来到梁都，找上了城中贵族陆家。</p>
+<p>亲事是十七年前就定下的，那时陆家尚未搬到梁都，与荆家的镖局比邻而居，互相交好。</p>
+<p>在荆如秀摆满月酒的那一天，两家长辈喝到兴起，陆之笙的父亲在折扇上挥毫写就，洋洋洒洒间便定了这门娃娃亲。</p>
+<p>只是后来陆家搬去了梁都，山高水远，与荆家渐渐失了音信，而陆老爷又在几年前去世，这桩婚事便没了着落。</p>
+<p>所以当荆如秀拿着折扇，谨遵父亲遗愿，前来投靠她的未婚夫时，她名义上的「夫君」一口茶水喷出，二话不说地差人将她扫地出门。</p>
+<p>「荒唐，好一个女骗子，竟敢骗到我陆家头上！」</p>
+<p>陆家如今的当家人便是陆之笙，才华横溢，斯文俊秀，将偌大家业打点得井井有条，是满梁都名媛心底的意中人。</p>
+<p>这样一个梁都新贵，众星捧月，正要与丞相千金谈婚论嫁的时候，竟然冒出一介山野村姑，拿着不知哪来的陈年旧物，说是他从小定下的未婚妻，简直就是滑天下之大稽，像足了茶馆里说书人唱烂的戏本！</p>
+<p>但就是这么烂的戏本，主角竟还真是他，当荆如秀的身份被府中老管家证实后，陆之笙如遭霹雳，天旋地转下几乎都要站不住了，还是荆如秀手疾眼快地扶住了他。</p>
+<p>「夫君小心！」</p>
+<p>这声「夫君」叫得陆之笙心肝一颤，两眼一黑，差点背过气去：「谁是你夫君！」</p>
+<p>一片鸡飞狗跳中，荆如秀就这样在陆家住了下来，名不正言不顺地，成了陆之笙抛也抛不掉的一个烫手山芋。</p>
+<p>终于，在科考将至，陆之笙挑灯夜读之时，他叫住了前来送汤的荆如秀。</p>
+<p>「不是我不认账，知道什么叫门当户对吗？」</p>
+<p>灯火摇曳间，他们四目相接，一个欣喜莫名，一个居心叵测。</p>
+<p>居心叵测的陆之笙笑得格外阴险，京中都知道他要考个状元郎，拱手作为迎娶丞相千金的聘礼，如今面对半路杀出的荆如秀，他不得不放大招了。</p>
+<p>「若你也能考个状元回来，我便娶你，如何？」</p>
+<p>淮国风气开明，允许女子考科举，入朝为官，但真正有才，且愿意抛头露面的却极少。</p>
+<p>灯下一击掌，陆之笙眉飞色舞，觉得自己把斗字不识的荆如秀忽悠到了。</p>
+<p>但当日后荆如秀以一柄长枪，力拔山兮气盖世的姿态，一举夺下武状元时，他才知道，被忽悠的那个是他自己。</p>
+<p>文胜武衰的淮国，从不缺文官才子，最稀罕的倒是能带兵打仗的大将军，面对一柄银枪舞如龙，横空出世的荆如秀，皇上简直视若珍宝。</p>
+<p>金銮大殿上，龙颜大悦，看着那把作为信物的折扇，直呼天意，不仅封了荆如秀女将军，还大手一挥，赐婚她与陆之笙，成其美事一桩。</p>
+<p>满朝文武的声声恭贺中，陆之笙咬牙切齿，才知晓什么叫搬起石头砸了自己的脚。</p>
+<p>2</p>
+<p>大婚那天，烟花满城，处处欢喜热闹，唯独一个地方冷冷清清，那便是将军府的新房里。</p>
+<p>荆如秀罩在红盖头下的一颗心，从紧张到期盼，再从期盼到忐忑，最终在陆之笙掀开她盖头的那一瞬，从云端跌至了谷底。</p>
+<p>陆之笙喝得醉醺醺的，修长的手指挑起她的下巴，啧啧打量了她一番后，对着大气都不敢出的她嗤声一笑，极尽嘲讽：</p>
+<p>「有意思吗？大将军荆如秀，有意思吗？」</p>
+<p>四目相接，鼻息以对，荆如秀一根筋的脑子一时回转不过来，只嗫嚅着开口：「你，你说过的，若我考了状元就娶我……」</p>
+<p>「对，我说过的。」陆之笙怒极反笑，一字一句无比刻薄，「我还说过永远不会喜欢你，你记得吗？」</p>
+<p>荆如秀身子一颤，陆之笙却不打算放过她，一张俊脸缓缓凑近，笑得比毒蛇还冷：</p>
+<p>「永、远、不、会！」</p>
+<p>伴随着窗外一记烟花绽放，荆如秀眼皮一跳，像一个噩梦炸开在头顶，回过神时，那身喜服已是拂袖而去，头也不回。</p>
+<p>新婚第一夜，冷冷清清的房里，荆如秀靠在床边，看了半宿烟花，等到天方既白时，陆之笙也没有再回来。</p>
+<p>于是她酝酿了好久的那声「夫君」，到最后也没能说出来。</p>
+<p>因着圣旨，陆之笙几乎是以入赘的姿态住进了将军府，孑然一身，只带了一个老管家和一些衣物，还有一头叫作「遥遥」的雪白小狐狸。</p>
+<p>看着陆之笙把小狐狸抱在怀中，百般疼惜，甚至碰都不让人碰一下的模样，荆如秀讪讪收回了手，莫名想到一个词，睹物思人，不，是睹「狐」思人。</p>
+<p>思谁？自然是小狐狸的另一位主人，差一点就要和陆之笙成亲的丞相千金，颜水遥。</p>
+<p>「你与她，简直是云泥之别。」</p>
+<p>为小狐狸收拾好的小窝旁，陆之笙毫不客气地讥讽着荆如秀，荆如秀原本是想来搭把手，却被赶到一边，此时听到这句话不由愣了愣。</p>
+<p>老管家尴尬地咳嗽两声，知道她没听懂，也不好点拨，只报以同情的目光。</p>
+<p>当夜回去后的荆如秀辗转难眠，没过几天就请了一个教书先生，扔了银枪，握起笔杆，跟着先生从头学起。</p>
+<p>她问的第一个问题就是：「先生，云泥之别是什么意思？」</p>
+<p>从先生那得到答案后，荆如秀开始变得忙碌起来。</p>
+<p>她把往常练武的时间全用来学习了，除了功课外，她还要学煲汤，学绣花，学做衣裳……甚至是学着喂狐狸。</p>
+<p>「遥遥，遥遥，来吃东西了……」</p>
+<p>府里的下人经常可以看到，荆如秀不顾形象地蹲在狐狸窝旁，拿着食物一脸讨好，卑躬屈膝得叫人无语凝噎。</p>
+<p>小狐狸却是又金贵又傲气，哪管谁家地盘，一口利牙就往荆如秀胳膊上咬，咬得她都不敢用力甩，强憋着一身武艺，等到陆之笙赶来才脱困。</p>
+<p>就像雄鹰甘愿折断翅膀，堂堂一个大将军，硬生生把自己作践成了小妇人，满府私下议论纷纷，连陆之笙的老管家都唏嘘不已。</p>
+<p>而这些陆之笙自然也看在眼中，嘴上虽不屑一顾，心里倒也有几分感慨。</p>
+<p>他也许并不知道，荆如秀是极喜欢他的，她从小就听爹爹提起他，说得和天上仙一般。</p>
+<p>儒雅、俊秀、有学问……朴实的荆父直接按着陆之笙的父亲来描述，听得荆如秀满怀崇仰，再看向镖局里的一干粗老爷们时，暗自就有了比较。</p>
+<p>她在心里给自己画了一个小人儿，在跋山涉水来到梁都，进了陆府见到陆之笙的那一刻，耳边一声嗡，眼前的身影就和心中的那个小人儿对上了。</p>
+<p>毫不夸张地说，陆之笙当真是荆如秀见过的最好看，最聪明，最与众不同的男子。</p>
+<p>她在陆府住了半年，就默默仰慕了他半年，直到她终于成为他的妻子，在新房里忐忑不安地等他时，他却头也不回地走了。</p>
+<p>明明有信物，明明他自己说过的，明明他们还击了掌，荆如秀抿着唇，有委屈有难过，却没有一点办法生陆之笙的气。</p>
+<p>她只能望着窗外的烟花叹息，这就是喜欢和不喜欢的区别。</p>
+<p>许是精诚所至，金石为开，在又一次为陆之笙送去亲手煲好的汤时，陆之笙竟然拉住了荆如秀的手，脸色有些不大自然。</p>
+<p>「后天便是花灯节，你收拾收拾，随我出去看花灯。」</p>
+<p>足足愣了好一阵，荆如秀才反应过来，欣喜得几乎不敢相信，陆之笙却支吾着不愿对上她的眼。</p>
+<p>3</p>
+<p>梁都的花灯节一向热闹非凡，荆如秀在出门前照了又照镜子，直到为她悉心打扮的丫鬟在身后捂嘴偷笑：「夫人今天可美了，再不出去姑爷就该等急了。」</p>
+<p>荆如秀这才绯红着脸急急出门，陆之笙果然已经等在府前，他望向她的目光一亮，紧接着却别过头，轻咳两声。</p>
+<p>荆如秀傻傻牵住陆之笙的手，仰头问道：「夫君，就，就我们俩？」</p>
+<p>陆之笙点了点头：「对，就我们俩。」</p>
+<p>烟花当空绽放，夜市人流如织，盏盏河灯飘在水面，飘得很远很远。</p>
+<p>荆如秀从没见识过梁都的花灯节，兴奋地左顾右盼，身旁的陆之笙却有些心不在焉，他们停在一处小摊前挑选面具时，他忽然没头没脑地在她耳边问了一句：</p>
+<p>「喂，你记得回将军府的路吧。」</p>
+<p>荆如秀正挑得仔细，随口应了一声，拿起两个面具抬眼笑道：「夫君你看！」</p>
+<p>身旁却空无一人，像一阵风拂过，陆之笙无声无息地消失不见了。</p>
+<p>荆如秀望着熙熙攘攘的人群，眨了眨眼，好半天没动弹，耳边蓦然响起那句「你记得将军府的路吧」，记得，她当然记得……</p>
+<p>夜风拂过眼角眉梢，她终于确定，陆之笙把她扔了下来，毫无预兆地扔了下来。</p>
+<p>不……或许是早有预谋。</p>
+<p>在护城河边看见那对依偎的背影时，荆如秀才恍惚明白了什么。</p>
+<p>这应当是她第一次见到颜水遥，或者说是「云泥之别」里的「云」，即使只是月色下一个朦胧背影，也依旧那样美丽动人，看起来和陆之笙是那般匹配。</p>
+<p>轻轻放下挑好的两个面具，荆如秀拢了拢衣裳，选择不去打扰他们，转身悄悄走了。</p>
+<p>头顶的烟花依旧那样璀璨，穿过袖间的寒风却凛冽非常，吹着空荡荡的心头，一片虚无。</p>
+<p>陆之笙在送颜水遥回去后，自己在外头逛了半宿，摩挲着怀中的面具，有种说不上来的心虚。</p>
+<p>他喝得醉意朦胧，三更半夜才回了将军府，却没想到一抬头，看见门前一道光，荆如秀披着衣裳，提灯坐在风中等着他。</p>
+<p>一见他，她便抿了唇站起，上前去扶他。</p>
+<p>「夫君，小心点。」</p>
+<p>那是种心照不宣的感觉，他们谁也没有点破，偏偏她越是不说话，他就越是莫名烦躁，有股火无处宣泄，他宁愿她破口大骂，指责他为何要中途扔下她，为何要借着她作掩护去会旧情人。</p>
+<p>可荆如秀只是沉默，直到陆之笙忍无可忍推开她，刚想开口时，她却低着头忽然道：「夫君，我知道『云泥之别』是什么意思了。」</p>
+<p>她长睫微颤，不敢再凑近他，便提灯走在前头为他带路。</p>
+<p>陆之笙怔了怔，只见前方那道纤秀的背影，浮浮沉沉如水面上一朵清荷，声音飘渺传来：</p>
+<p>「……可是我会努力的，努力配上夫君你，努力去做云，虽然，虽然我现在还是泥巴……」</p>
+<p>醉醺醺的脑子花了会功夫才消化了这番话，陆之笙明白过来后有些忍俊不禁，胸口却又微微酸胀着，他望向前方那道背影，唇角微扬，一句低喃飘入风中：</p>
+<p>「傻泥巴。」</p>
+<p>4</p>
+<p>如冰雪消融，春暖花开，有些东西在不知不觉间就发生了改变。</p>
+<p>陆之笙不再总是对荆如秀冷言冷语，看她舞银枪时也会有赞许的笑意涌上，有时甚至还会喝上几口她为他做的羹汤，就在一切朝着美好的方向发展时，一个突如其来的意外却发生了——</p>
+<p>在陆之笙和颜水遥踏青回来的那一天，小狐狸遥遥被毒死了。</p>
+<p>不知从什么时候起，颜水遥开始出入将军府，起先打着拜访淮国第一女将军的名头，一口一句「如秀姐姐」、「巾帼英豪」，热情得叫荆如秀措手不及，根本无从拒绝，甚至还稀里糊涂地答应了颜水遥的相邀，在陆之笙的陪同下一起赴约出游，赏花踏青。</p>
+<p>等到荆如秀觉察出不对时，奇怪的三人组合已然形成，别扭得让荆如秀觉得自己是多余的，实在待不下去，只好推病主动退出。</p>
+<p>这次踏青她便没去，陆之笙临走前还伸手摸了摸她的额头，语带关怀：「不舒服就早点歇息，等我们回来。」</p>
+<p>她倚在门边，闷声应了一句，仿佛自己真的病了。</p>
+<p>回到房后她便躺了下来，裹在被子里昏沉睡去，睡得额头越来越烫，如坠梦魇。</p>
+<p>直到窗外夕阳西下，房门被人一脚踹开，一只手狠狠将她拽出了被窝，她才迷迷糊糊地睁开眼，却只对上一双可怕的眸，像瞬间坠入了另一个噩梦中。</p>
+<p>她从没见过那样可怕的陆之笙，狂怒得似头要吃人的猛虎。</p>
+<p>「荆如秀，竟不料你这般狠毒！」</p>
+<p>连衣服都来不及穿上，她披头散发着，在满府围观中，被陆之笙一路踉踉跄跄地拖到了后院。</p>
+<p>后院围满了人，当中一抹倩影蹲在狐狸窝旁，正是哭得梨花带雨的颜水遥，她抱着嘴角漫出鲜血的小狐狸，声声泣唤着：「遥遥，遥遥……」</p>
+<p>荆如秀脑中一片混乱，一时分不清眼前状况，直到陆之笙一拽她手腕，把她狠狠摔在了地上，她耳边才骤然响起颜水遥的哭诉：</p>
+<p>「如秀姐姐，你为什么要毒死遥遥？！它是我和阿笙哥哥一手带大的，你为什么要这么残忍……」</p>
+<p>荆如秀身子一颤，霍然抬眼，瞪着气息已绝的小狐狸，难以置信。</p>
+<p>陆之笙要荆如秀认账，承认她是趁他们出去踏青，喂了遥遥掺毒的食物。</p>
+<p>「如果你诚心认错，我愿意相信……你是失手。」</p>
+<p>夜色下的将军府冷风呜咽，房里烛火摇曳，陆之笙死死望着床上那道身影，尽力控制着自己翻滚的情绪。</p>
+<p>荆如秀散着一头长发，搂着被子坐在床头，薄唇紧抿，像一尊坐化的佛像。</p>
+<p>她盯着红烛，声音轻轻而坚定，她说：「不，我不会认的。」</p>
+<p>虽然她的确在他们出去后喂了食物，但她没有掺毒，更没有像颜水遥在院里哭诉的那样：</p>
+<p>「我知道都是我的错，不该再缠着阿笙哥哥，让姐姐心里不痛快，只能拿遥遥撒气……」</p>
+<p>遥遥「亲妈」的控诉，满府异样的目光，人证、物证、动机一应俱全，她狠毒「后妈」的罪名彻底坐实，没有人相信她，更遑论已气疯了头的陆之笙。</p>
+<p>可只有她自己知道，事情不该是这样的，即便再委曲求全，她也不该白担这样的罪名。</p>
+<p>他可以不爱她，但不能践踏她的一颗真心。</p>
+<p>风拍窗棂，面对隔烛相望的陆之笙，荆如秀第一次没有退步，她挺直了脊背，强忍住泪光，定定地与他对视着，倔强得不像之前那个温顺的小妇人：</p>
+<p>「你冤枉我，没有做过的事情我不会认，也不想认。」</p>
+<p>「你可以不喜欢我，但你不能冤枉我。」</p>
+<p>语气并不激烈，却带着无以名状的孤勇，伴着那张因发烧而潮红的脸颊，在烛光下仿佛染了一层凄色。</p>
+<p>5</p>
+<p>陆之笙一时间什么话也说不出来了，心口莫名地揪疼，他努力抑制下紊乱的气息，颤声开口：</p>
+<p>「若玉石俱焚也是你爱我的方式，我宁愿不要！」</p>
+<p>不知想逃避些什么，他一刻也不想再待下去，转身就走，只留下决绝的一句——</p>
+<p>「我会暂时搬回陆府，你好自为之。」</p>
+<p>荆如秀瞬间惨白了一张脸，瞪大的眸中水雾弥漫，眼睁睁地看着陆之笙夺门而去，头也不回得就像那个留她一人的新婚夜。</p>
+<p>只是这一次，她知道，他不会再回来了。</p>
+<p>苦苦支撑的身子再也不堪忍受，在剧烈的咳嗽中蜷缩下去，五指死死抓住仅有的被子，那是她仅有的温暖，夺眶而出的泪水终于汹涌了整个世界。</p>
+<p>「夫君，夫君你信我，你别走……」</p>
+<p>她哭得压抑而委屈，从指尖到心尖都在泛疼，可那道身影早已远去，再也不会听听她的倾诉。</p>
+<p>她在泪流不止中忽然忆起，他来时便孑然一身，如客登门，其实那时便做了打算，从没想过要留在将军府一辈子罢。</p>
+<p>只是她一厢情愿，千方百计想留住他，做她一辈子的夫君。</p>
+<p>6</p>
+<p>荆如秀卧病在床，足足养了两个月，期间陆之笙没有回来过一次，只留下那个心思缜密的老管家照料着将军府上下。</p>
+<p>她每天每天地问，问得老管家都心酸地不愿回答了。</p>
+<p>世间千般万般求不得，总要有人先低头。</p>
+<p>荆如秀在病好后，抱着煲好的汤，立于风中，在陆府门口等陆之笙，却等来了颜水遥。</p>
+<p>她是来找陆之笙去西郊狩猎的，见到荆如秀后莞尔一笑，似乎毫不意外：「如秀姐姐消瘦了。」</p>
+<p>荆如秀微垂了眸，并不接话，只紧了紧怀里的汤。</p>
+<p>陆之笙开门走出时，府前的两人同时抬头望去，他明显怔了怔。</p>
+<p>还不待颜水遥那句「阿笙哥哥」喊出口，陆之笙便略一迟疑，信步走到了荆如秀身旁，低声问她：「你……身子大好了？」</p>
+<p>他们挨得很近，荆如秀「嗯」了一声，气息缭绕中，陆之笙又问：「那你……知道错了吗？」</p>
+<p>荆如秀抬首望去，恰对上陆之笙复杂的目光，她心头一颤，大片酸涩漫开，迫得她赶紧低下头，抱紧怀中的羹汤。</p>
+<p>「不，如秀没错，如秀是来接夫君回家的。」</p>
+<p>声音极轻，又极坚定，却叫前一刻还眸含怜惜的陆之笙一顿，乍然变色。</p>
+<p>空气霎时冷了下来，他一甩袖，眉眼陡厉：「我不会喝你的汤，你走吧，我怕你给我下毒！」</p>
+<p>说着他越过荆如秀，携颜水遥的手同上了马车，绝尘而去。</p>
+<p>马车驶向西郊，荆如秀看着它远去，一点点搂紧怀里的汤，不知哪来的一股冲动，竟径直回了将军府，拿了银枪驾了马，一口气跟了上去。</p>
+<p>不是要狩猎吗？她就陪他狩，她是他明媒正娶的妻子，他凭什么一次次扔下她！</p>
+<p>大风烈烈，衣袂飞扬，荆如秀心跳如雷，握紧银枪。</p>
+<p>若说之前跟来只是想赌口气，那么在赶到西郊看到那一幕时，荆如秀就只有庆幸——</p>
+<p>还好她跟了过来！</p>
+<p>林中鸟雀惊飞，杀气凛然，不知哪来的一群黑衣人，将陆之笙和颜水遥团团包围住，情势危急。</p>
+<p>「夫君！」荆如秀高声唤道，一枪挥去，落叶纷飞，直朝陆之笙奔去。</p>
+<p>陆之笙带去的人手不多，此刻正与刺客打得吃力，他遥遥望见奔来的荆如秀，瞳孔骤缩：「如秀，快走！」</p>
+<p>这次中的埋伏恐怕来头不小，他早该提防的。</p>
+<p>7</p>
+<p>两个月前他奉旨下到江南，密查贪污案，得罪了不少盘根错杂的势力，此番一回来果真就遭到了报复。</p>
+<p>一场不可避免的恶战一触即发。</p>
+<p>颜水遥已经吓得花容失色，躲在陆之笙怀里不住颤抖，她冲着那道掠来的丽影尖叫道：「如秀姐姐救命！」</p>
+<p>大病初愈的荆如秀银枪在手，势不可挡，为陆之笙和颜水遥辟开一条生路。</p>
+<p>「夫君，你们快走，这里有我，快去搬救兵！」</p>
+<p>形势刻不容缓，一片混乱中，陆之笙顾及着颜水遥，终是咬咬牙，突出重围，掠马向城中的方向逃去。</p>
+<p>直到看着他们安全离开后，荆如秀才真正松了口气，却是身下的骏马嘶啼，鲜血四溅，她被狠狠地摔在了地上，一波紧接一波的刺杀如潮水般袭来。</p>
+<p>刀剑声急，血染长空。</p>
+<p>「夫君，你可一定得回来……」</p>
+<p>她低喃着，一枪刺去，鲜血溅了满脸。</p>
+<p>陆之笙到底没能及时赶回。</p>
+<p>许是太过害怕，半路上颜水遥突发心疾，陆之笙分身乏术，找了最近的医馆安顿好她，再回城搬救兵时，已是两个时辰后了。</p>
+<p>两个时辰，足以发生太多太多事情了。</p>
+<p>陆之笙心急如焚，浑身都在发颤，简直不敢想象。</p>
+<p>当他带着人马赶到西郊时，暮色四合，残阳如血，林中的那场恶战早已结束。</p>
+<p>遍地横尸，草木尽斩，扑鼻而来的血腥气，一切只能用「惨烈」二字来形容。</p>
+<p>撑在血泊里的那道身影几乎看不清模样了，手里的银枪都快握不住了，但那瘦削的脊背却依旧挺得笔直，不知在苦苦坚持着什么。</p>
+<p>陆之笙不会知道，在斗得几近脱力，快撑不下去，却怎么等也没能等到人来援救时，荆如秀才真正感到钻心的害怕。</p>
+<p>血珠模糊了眼前，无一处不在疼痛地叫嚣，她害怕得止不住地发抖，生平从没那样乞求过，乞求他快点回来。</p>
+<p>她不怕死，她只怕被遗忘，被她的夫君抛下。</p>
+<p>可他竟真的抛下了她。</p>
+<p>那大抵是被逼至绝境下的爆发吧，没有人能救她，她只能靠自己了。</p>
+<p>银枪如龙，不去想不去听，在袖间开出一朵朵修罗血花，染红了半边天。</p>
+<p>直到斜阳西沉，林中一片久久的死寂后，她依旧跪在血泊里，凝固了身形。</p>
+<p>「如，如秀……」</p>
+<p>喉头哽咽，陆之笙呼吸急促，颤着身子一步步走近那道血影。</p>
+<p>荆如秀僵硬地一点点抬头，木然而恍惚，直到落入陆之笙的怀抱时，才似回了魂，眼眶一涩，有什么怆然而下，伴着鲜血浸湿衣裳。</p>
+<p>「夫君，我还以为，还以为……你不要我了。」</p>
+<p>8</p>
+<p>将军府，陆之笙站在床前，望着昏迷不醒的荆如秀，语调微颤。</p>
+<p>「你说的……当真属实？」</p>
+<p>身旁的老管家重重点头，面含愧色：「绝不会错，老奴之前多有顾虑，若是早点说出来，夫人不至于受这么多苦……」</p>
+<p>两个月前，圣上密旨，派陆之笙赴江南查案，恰巧撞上小狐狸被毒死的事情，他愤怒加失望，索性借口搬回将军府，掩人耳目，暗访江南。</p>
+<p>老管家怕那节骨眼上让他分心，便未将发现的真相说出来，如今看着躺在床上，遍体鳞伤的荆如秀，老管家再也忍不住，终是和盘托出。</p>
+<p>他当日无意撞破，亲眼所见，毒死小狐狸的不是荆如秀，而是后来抱着小狐狸哭得死去活来的丞相千金，颜水遥。</p>
+<p>「老奴不敢声张，亦顾及少爷与颜小姐的情意，只不想却害苦了夫人……」</p>
+<p>一番迟来的真相叫陆之笙手脚发冷，如坠冰窟。</p>
+<p>他耳边蓦然响起，曾在烛光下咄咄逼问她，她始终倔强抿唇：「你可以不喜欢我，但你不能冤枉我。」</p>
+<p>他自始至终都没有相信过她，更没有怀疑过昔日青梅，如今种种细枝末节，前后一想，竟叫人不寒而栗。</p>
+<p>天真俏丽的面孔下，究竟藏了些什么，那突如其来的心疾拖住了他，若不出意外，荆如秀恐怕早就死在了林中……</p>
+<p>心头墨浪翻滚，再望向榻上那张苍白的脸时，陆之笙不禁酸涩了眼眶。</p>
+<p>他后怕地握住她的手，又愧又悔，缓缓倾身贴在她耳边，气息氤氲：</p>
+<p>「如秀，如秀你快点醒来，我不会……不会再扔下你一个人了。」</p>
+<p>像做尽了噩梦，老天爷终是仁慈挥挥手，赏来好梦一场。</p>
+<p>荆如秀不仅在陆之笙的贴心照料下养好了伤，陆之笙竟然还对她说，他要和她好好过日子。</p>
+<p>好好过日子是什么意思呢？荆如秀呼吸不稳，几乎以为陆之笙在和她开玩笑，但他却是那样认真，望着她一字一句，笑得温柔而调侃：</p>
+<p>「好好过日子就是我会每天和你一起吃饭，一起睡觉，一起看春烟柳绿，你亭前舞枪，我提笔作画，举案齐眉，白头到老。」</p>
+<p>顿了顿，笑意更深，亦更认真：「不离不弃。」</p>
+<p>荆如秀心跳得格外快，有些难以置信，却像想起什么，傻傻问道：「那，那遥遥呢？」</p>
+<p>陆之笙笑意一顿，却用力拥住了眼前的傻姑娘，深吸了口气：「遥遥死了，过去的都过去了。」</p>
+<p>两个「遥遥」都死了，同那些前尘往事一道埋葬，从今以后，只有江山如秀，笙歌遍舞。</p>
+<p>那大概是荆如秀最快乐的一段时光。</p>
+<p>她和陆之笙一武一文，在朝堂同上同下，辅佐君王，比肩不离。</p>
+<p>她看他处理公文，笔墨泓然，桩桩案件有条不紊，府衙之上断如明镜；</p>
+<p>他去她军营探望，见她立于高台练兵，秀眉雪肤，一袭戎装英姿飒爽。</p>
+<p>他们隔着人群相望，对视而笑，有胆大的新兵偷偷回头，荆如秀便脸色一红，两声咳嗽，拔高语调掩饰纷乱的心跳：</p>
+<p>「看什么看，通通都给我站好了，谁也不许动！」</p>
+<p>英明神武的陆大人绷不住笑，也跟着狐假虎威地调侃：「听见没，都好好听大将军的话！」</p>
+<p>满场应声如雷：「是，将军郎！」</p>
+<p>因陆之笙身份特殊，乃淮国第一女将的郎君，朝野之上便传出了「将军郎」的雅号，越叫越广，名满梁都。</p>
+<p>台上的荆如秀脸更红了，台下的「将军郎」却笑得更欢了，满眼的狡黠。</p>
+<p>风过也，雁掠长空，只道天凉好个秋。</p>
+<p>9</p>
+<p>在初冬即将来临之际，陆之笙迎来了自己的生辰。</p>
+<p>荆如秀早就开始准备，她要为他办一场盛大的宴席，以陆夫人的身份，庆贺他年年有今日，岁岁有今朝。</p>
+<p>陆之笙心里乐开了花，嘴上还假模假样地疼惜，怕荆如秀累坏了身子。</p>
+<p>荆如秀倚在他怀里，纤手勾着他的脖子，同他一起坐在长廊上赏月。</p>
+<p>夜风中，她忽然转头望向他，一双眼眸水汪汪的，扬着唇角小声对他道：</p>
+<p>「夫君，以后你的下一个生辰，下一个的下一个生辰……以后你每一年的每一个生辰，我都陪你过，都为你庆贺，好不好？」</p>
+<p>声音软酥软酥的，听得陆之笙的心都要化掉了，他重重点头，情不自禁地俯下身，轻轻吻住了荆如秀的唇。</p>
+<p>身影交叠，辗转深入，如饮醇酒，美得比月色还要醉人。</p>
+<p>烟花绽放，觥筹交错，那一天的将军府果然一派热闹。</p>
+<p>宾客络绎不绝，在入夜时分，竟然还悄无声息地来了一个大人物，荆如秀又惊又喜，同满院文武跪了一地：「参见吾皇。」</p>
+<p>皇恩浩荡，天子亲自来为陆之笙庆贺，这是多大的面子啊。</p>
+<p>荆如秀瞥向门外，望眼欲穿，只等着陆之笙快些赶回。</p>
+<p>这段时日苏地水患，灾情严重，陆之笙忙得焦头烂额，有时甚至在公堂熬上通宵，荆如秀心疼不已，此次庆生还特意嘱咐他早点回家，好好放松一番。</p>
+<p>但当夜色愈深，酒宴都要开席了，陆之笙却还没有出现，派去寻他的小厮回来说大理寺无人，四处也找不着姑爷。</p>
+<p>荆如秀坐不住了，不动神色地唤来老管家，嘱他招待好宾客，自己则悄悄出了后门，驾马奔入了夜色中。</p>
+<p>风声飒飒，寒意逼人，她心跳如雷，唯恐陆之笙出了什么事。</p>
+<p>可却在奔到护城河边时，她远远便望见了两盏河灯，在水面上起起伏伏。</p>
+<p>心头登的一声，荆如秀下了马，屏气凝神，牵着缰绳缓缓靠近。</p>
+<p>「阿笙哥哥，遥遥就知道你没变，你还是遥遥的阿笙哥哥……」</p>
+<p>借着夜色的掩护，荆如秀听到了女子的娇声，河边那两道熟悉的身影紧紧拥吻着，酒气熏天，夹杂着灼热的情意。</p>
+<p>荆如秀忽然就懵住了，双腿僵直，一时分不清东南西北。</p>
+<p>「夫君，一定要早点回家啊！」</p>
+<p>风中仿佛回荡着她的声声嘱咐，却轻缈地压不过河边的喘息，夜风一吹，就烟消云散，像个易碎的笑话。</p>
+<p>「云泥之别，云泥之别……」失神喃喃着，荆如秀颤着脚步，牵马转身离去。</p>
+<p>眼眶涩涩的，但就是流不出什么东西，反而将身后不堪的缠绵听得愈发清楚。</p>
+<p>每一步都走得那样沉重，如踏刀尖，一幅幅画面闪过脑海，碎成无数片。</p>
+<p>今夕何夕，老天爷的仁慈到了尽头，她的好梦终于要醒了。</p>
+<p>有什么堵在胸口，汹涌漫上，恶心得她再也忍不住，奔到一棵柳树下，吐得翻江倒海。</p>
+<p>而那些憋在眼眸里的水雾，也终于能无所顾忌地夺眶而出，在夜风中怆然落下，瞬间浸湿了她整个世界。</p>
+<p>云泥之别，云泥之别，原来她努力了那么久，却还是……他弃之不要的泥巴。</p>
+<p>10</p>
+<p>开场得绚丽，收场得狼狈，宴席草草结束，荆如秀堆出的笑脸几乎都要僵住。</p>
+<p>百官们踏出门时，无不遗憾摇头：「既然陆大人抱病在身，也不便打扰，他忧心万民，鞠躬尽瘁，夫人可一定得照顾好啊。」</p>
+<p>唯独皇上并无扫兴，反而在群臣散去，对最后送他出门的荆如秀道：「朕今日前来，一为陆郎庆生，二却是醉翁之意，在将军也。」</p>
+<p>荆如秀霍然抬头，却见龙颜凝重，眸含忧虑：「将军恐怕不知，昨日战报传来，边关遭袭，满城被困。」</p>
+<p>这是一场淮国不在预料的劫难，却来势汹汹，情况复杂得叫人措手不及，皇上在万般头疼中，想到了他亲封的第一女将。</p>
+<p>「此行凶险万分，朕最后再问将军一遍，将军当真……不后悔？」</p>
+<p>连皇上都未想到，荆如秀竟会答应得那般痛快，简直像是迫不及待，恨不能立刻赶赴边关，远远地离开梁都。</p>
+<p>圣心大感欣慰，在漫天烟花下，对着跪下的荆如秀郑重道：</p>
+<p>「好，荆将军接旨，朕命你择日挂帅，整军出发，一挫北狄！」</p>
+<p>陆之笙在第二天清晨回到了将军府，一身酒气，衣裳凌乱。</p>
+<p>他脚步踉跄地去找荆如秀，一推开房门，荆如秀正坐在桌边擦拭银枪，闻声抬头，眼圈隐隐泛红，却对着他展颜一笑：「夫君，你回来了。」</p>
+<p>陆之笙心头跳动，一时不知该说什么好，酝酿了好久他才颤声开口。</p>
+<p>「如秀，我，我……有事要和你商量。」</p>
+<p>他伸手上前想按住她的肩头，犹豫着坦白一切：「昨晚我没回来是因为……」</p>
+<p>「夫君，这是我送给你的生辰礼物，你喜不喜欢？」</p>
+<p>荆如秀忽然开口打断，拿出那个做了许久的香囊，望着陆之笙一笑，若无其事地为他系在了腰间。</p>
+<p>陆之笙一颤，动也不再动，任由荆如秀挨近他，发丝贴身。</p>
+<p>拿惯了银枪的手大抵真的不适合拿针线，香囊做得丑丑的，陆之笙却摩挲着爱不释手，将荆如秀拥在怀里，有些话一时竟不想说出口。</p>
+<p>就让温存再久一点，再久一点。</p>
+<p>房中霎时静了下来，呼吸缭绕，不知过了多久，却还是荆如秀推开了陆之笙，她随手揉了揉眼眶，取过桌上炖好的汤，望着陆之笙温柔笑道：</p>
+<p>「夫君，我要先去校场练兵了，你喝了汤好好睡一觉，有什么话等我回来再说好吗？」</p>
+<p>陆之笙心乱如麻，点了点头，却又拉住要出门的荆如秀：「如秀，等你回来，回来……我有事情要和你商量。」</p>
+<p>背过身的荆如秀鼻头一酸，咬紧唇应了一声，拿着银枪快步踏出了门，那些忍不住的水雾终于模糊了眼前。</p>
+<p>「夫君，再见。」</p>
+<p>风一阵，终是吹散满院落梅，徒留旧时香。</p>
+<p>那是陆之笙最后一次见到荆如秀。</p>
+<p>他喝下放了药的安神汤，足足昏睡了两天，醒来时便只看到一封休书，是她替他拟好的，只等他签下名姓，就能休了她，搬出将军府。</p>
+<p>她已经会写很多字了，虽然每一个字都写得那样艰难，几番沾泪写不下去。</p>
+<p>她说不会让他为难，她知道他要和她商量什么，她虽然没有勇气去听，但她愿意成全。</p>
+<p>成全他的海阔天空，放他自由，让真正的有情人终成眷属。</p>
+<p>毕竟她还是那样感谢他，即使是曲意逢迎，他也陪她做了一场美好至极的梦。</p>
+<p>陆之笙傻掉了，捧着休书难以置信：「不是，不是这样的……」</p>
+<p>他彻底慌了神，却连一个解释的机会都没有，此刻的荆如秀早已跨马提枪，奔赴千里之外的战场。</p>
+<p>他知道那夜她一定是撞见了什么，否则不会这样，可天知道来龙去脉有多荒唐，荒唐得连他自己也无法原谅自己。</p>
+<p>11</p>
+<p>那一夜，他原本是要赶回将军府，却在半路上被颜水遥截住了。</p>
+<p>昔日天之骄女的丞相千金，哭得两眼红肿，拉着他的衣袖苦苦哀求，说想陪他过最后一个生辰，日后就不会再来打扰他了。</p>
+<p>他心头一软，想着也好，藕断丝连，不如就此将话说清楚，彻底放下前尘往事。</p>
+<p>谁知在河边他喝了颜水遥带的酒后，头脑昏沉，浑身燥热，竟然克制不住自己的举动。</p>
+<p>等到在客栈中醒来时，大错已然铸成。</p>
+<p>「阿笙哥哥，遥遥真的不得已才出此下策，事已至此，你不能一走了之……」</p>
+<p>床上的颜水遥哭得泣不成声，陆之笙却是痛不欲生，他几乎恨不得掐死她。</p>
+<p>可即便是设计陷害，他也的确坏了她的名节，再不想认也只能负责到底。</p>
+<p>他当时犹豫着想和荆如秀商量的事情，正是要将颜水遥娶进门，他说不出口，却也不想骗她，他原本想调整好心绪，等她回来后就坦白一切，让她相信自己，无论如何也要求得她的原谅。</p>
+<p>可她居然留下一纸休书，一声不吭地去了边关，连道别的机会都没有留给他。</p>
+<p>谁要她自作主张的？为什么不问问他？真是个傻泥巴！</p>
+<p>伸手触到腰间的香囊，陆之笙一个激灵，悲从中来，将手中的休书撕得粉碎。</p>
+<p>「荆如秀，你别想让我搬出将军府，你能躲上战场，我也能追到边关！」</p>
+<p>12</p>
+<p>永安十二年，战事告急，边关，睢城。</p>
+<p>烽火狼烟中，在接连的战报里，夹杂着一个从梁都传来的消息。</p>
+<p>尚书大人陆之笙要迎娶丞相千金颜水遥，婚礼大肆筹办，满城瞩目。</p>
+<p>胃里翻江倒海，荆如秀恶心蹙眉，忍不住又想吐酸水，她按住腹部，苍白着脸对身旁侍从道：「以后梁都传来的消息，不用再呈上来了。」</p>
+<p>两军对垒，已是决一死战的关键时刻，她不能分心，更不想伤心。</p>
+<p>「阿笙哥哥，娶了我你才能走，否则你以为我父亲会放手让你去边关吗？」</p>
+<p>颜水遥的那句话不断回荡在陆之笙耳畔，他浑浑噩噩地试着喜服，只想赶紧举行完那场该死的大婚，然后奔向沙场，奔向他的傻泥巴。</p>
+<p>他寄出的书信都被原封不动地退了回来，她根本就没看，他越来越慌，恨不能立刻飞到她身边，将一切都解释清楚。</p>
+<p>寒冬已经来临，漫天雪花纷飞，天地间白茫茫的一片。</p>
+<p>那时的陆之笙望着窗外，等着远方那道身影归来，即便忐忑却依旧憧憬，他想着过了冬便是春，满岸的柳树都绿了，他要带她骑马踏青，看长风掠过浮云，水波荡漾。</p>
+<p>他们还有许许多多的日子，说好的白头到老还有那么远。</p>
+<p>可却不知，世事无常，迟一步，迟一生。</p>
+<p>大红灯笼在风中摇晃，陆府的那场大婚只拜到一半，便被仓皇奔来的老管家一声打破。</p>
+<p>他老泪纵横，急得摔倒在地：「少爷，夫人，夫人……战亡了！」</p>
+<p>仿佛晴天霹雳，陆之笙一个剧颤，震在了堂前。</p>
+<p>马蹄嘶鸣，风雪愈急。</p>
+<p>穿着还来不及脱下的喜服，陆之笙疯了一般地驶向城郊，在十里处终于迎上班师回朝的军队，抬棺材的士兵们认出他来，纷纷哽咽了喉头：</p>
+<p>「将军郎，请……节哀顺变。」</p>
+<p>血红了眼推开棺材，在亲眼见到那具面目如生的尸体后，陆之笙仍不敢相信，她竟然，竟然真的离他而去了！</p>
+<p>「如秀——」</p>
+<p>凄厉的呼喊划破长空，久久回荡在白雪纷飞的天地间。</p>
+<p>铁骨铮铮的将士们俱哭了，决战原本都已经打胜了，岂料荆将军忽遭偷袭，坠下战马，不知为何竟用手护住腹部，才让敌将有机可乘，一剑刺去。</p>
+<p>后经军医诊出，众人才知，原来荆将军已经怀了三个月的身孕。</p>
+<p>三个月，正是她写下休书，赶赴战场的日子，她居然，居然都没有告诉他！</p>
+<p>颤抖着双手，陆之笙目眦欲裂，不管不顾地抱紧了那具尸体，嘶声恸哭：「不！」</p>
+<p>拉扯间衣襟散乱，从那怀里掉出一把折扇，摊开在了雪地里——</p>
+<p>江山如秀，笙歌遍舞。</p>
+<p>从梁都赶赴沙场，荆如秀只带了这一样东西，刻骨的痛楚过去后，只剩下无尽的思念，每当午夜梦回，她听着外头的号角，只能紧紧抓住这把折扇，才能在无边的黑暗中继续入眠。</p>
+<p>风拍营帐，耳边仿佛回荡着那些曾经的温言。</p>
+<p>「好好过日子就是我会每天和你一起吃饭，一起睡觉，一起看春烟柳绿，你亭前舞枪，我提笔作画，举案齐眉，白头到老。」</p>
+<p>「不离不弃。」薄唇轻喃，泪水滑过眼角，无声无息地浸湿了枕巾。</p>
+<p>备案号:YX01NPmadWjZ3DVa7</p>
+<p>公主不易</p>
+<p>​</p>
+<p>​</p>
+<p>285</p>
+<p>帝宠：深宫的爱，妃子的恨</p>
+<p>深夜情感研究所 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/30-%E7%94%9F%E7%9C%9F%E7%9A%84%E4%B8%8D%E6%87%82%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%BF%E8%8C%B6%E5%90%97-%E7%9F%A5%E4%B9%8E1-35da2d8a49bb/" title="生真的不懂什么是绿茶吗？ - 知乎 (1)-35da2d8a49bb">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">生真的不懂什么是绿茶吗？ - 知乎 (1)-35da2d8a49bb</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/9-%E5%9C%A3%E4%B8%BB%E6%9C%9D%E6%9C%9D%E6%9A%AE%E6%9A%AE%E6%83%85/" title="圣主朝朝暮暮情">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">圣主朝朝暮暮情</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

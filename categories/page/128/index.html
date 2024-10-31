@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+
+所有分类 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/categories/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。" />
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/categories/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="Categories">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="website">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Categories">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">所有分类</h1>
+    <p class="text-sm">1分类</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+      <a href="/categories/robot/" class="badge h-6 no-underline hover:badge-primary">
+        Robot
+      </a>
+      
+    </div>
+  </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+    <div class="dream-grid">
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/1/10-%E9%82%A3%E6%A0%B7%E7%9A%84%E4%B8%96%E7%95%8C%E6%88%91%E4%B9%9F%E5%A5%BD%E6%83%B3%E7%9C%8B%E4%B8%80%E7%9C%8B/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26125.jpg" alt="那样的世界，我也好想看一看" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">那样的世界，我也好想看一看</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>24分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/4/22-%E4%B9%83%E6%98%86%E7%9A%84%E4%B8%8B%E5%9C%BA/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26599.jpg" alt="乃昆的下场" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">乃昆的下场</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>15分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/6/8-%E5%A5%B6%E7%8B%97%E5%BC%9F%E5%BC%9F%E6%98%AF%E7%99%BD%E6%9C%88%E5%85%89%E6%9B%BF%E8%BA%AB/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26581.jpg" alt="奶狗弟弟是白月光替身" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">奶狗弟弟是白月光替身</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>21分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/1/16-%E5%A5%B6%E5%A5%B6%E6%9D%A5%E4%BA%86/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26640.jpg" alt="奶奶来了" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">奶奶来了</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>23分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/5/29-%E7%94%B7%E7%9A%84%E5%96%9C%E6%AC%A2%E7%BB%BF%E8%8C%B6%E6%98%AF%E4%B8%8D%E6%98%AF%E6%9C%89%E7%97%85-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/283.jpg" alt="男的喜欢绿茶是不是有病？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男的喜欢绿茶是不是有病？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>18分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/7/5-%E7%94%B7%E4%BA%8C%E6%94%BB%E7%95%A5%E6%89%8B%E5%86%8C/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26626.jpg" alt="男二攻略手册" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男二攻略手册</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>38分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/5/22-%E7%94%B7%E5%AD%A9%E5%AD%90%E6%98%AF%E7%9C%9F%E7%9A%84%E4%BB%8B%E6%84%8F%E5%A5%B3%E7%94%9F%E7%9A%84%E9%95%BF%E7%9B%B8%E5%90%97-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/5517.jpg" alt="男孩子是真的介意女生的长相吗？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男孩子是真的介意女生的长相吗？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>24分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/7/8-%E7%94%B7%E5%A5%B3%E4%BA%A4%E5%BE%80%E6%9C%80%E5%BF%8C%E8%AE%B3%E4%BB%80%E4%B9%88-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/18297.jpg" alt="男女交往最忌讳什么？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男女交往最忌讳什么？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>21分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/10/4-%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%89%E7%BA%AF%E5%8F%8B%E8%B0%8A%E5%90%97/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26659.jpg" alt="男女之间有纯友谊吗？" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男女之间有纯友谊吗？</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>22分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/3/29-%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%89%E7%BA%AF%E5%8F%8B%E8%B0%8A%E5%90%97-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26125.jpg" alt="男女之间有纯友谊吗？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男女之间有纯友谊吗？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>22分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/5/25-%E7%94%B7%E6%9C%8B%E5%8F%8B/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/25528.jpg" alt="男朋友" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>24分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/7/14-%E7%94%B7%E6%9C%8B%E5%8F%8B%E4%B8%8D%E5%9B%9E%E6%B6%88%E6%81%AF%E6%80%8E%E8%83%BD%E8%87%AA%E6%88%91%E8%B0%83%E8%8A%82%E5%95%8A-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/24970.jpg" alt="男朋友不回消息怎能自我调节啊？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友不回消息怎能自我调节啊？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>14分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/6/10-%E7%94%B7%E6%9C%8B%E5%8F%8B%E5%BE%88%E4%BC%9A%E6%98%AF%E4%BB%80%E4%B9%88%E4%BD%93%E9%AA%8C-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26668.jpg" alt="男朋友很会是什么体验？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友很会是什么体验？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>68分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/3/3-%E7%94%B7%E6%9C%8B%E5%8F%8B%E5%AE%B6%E7%A6%81%E5%BF%8C%E5%A4%9A/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/25978.jpg" alt="男朋友家禁忌多" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友家禁忌多</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>23分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/7/11-%E7%94%B7%E6%9C%8B%E5%8F%8B%E8%BA%AB%E8%BE%B9%E6%9C%89%E4%B8%AA%E7%BB%BF%E8%8C%B6%E5%A9%8A%E6%80%8E%E4%B9%88%E5%8A%9E-%E7%9F%A5%E4%B9%8E/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26624.jpg" alt="男朋友身边有个绿茶婊怎么办？ - 知乎" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友身边有个绿茶婊怎么办？ - 知乎</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>24分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2022/11/5-%E7%94%B7%E6%9C%8B%E5%8F%8B%E6%9C%89%E4%BB%80%E4%B9%88%E6%97%B6%E5%88%BB%E8%AE%A9%E4%BD%A0%E8%A7%89%E5%BE%97%E5%BF%83%E5%AF%92/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26027.jpg" alt="男朋友有什么时刻让你觉得心寒？" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男朋友有什么时刻让你觉得心寒？</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>31分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/9/5-%E7%94%B7%E4%BA%BA%E5%9C%A8%E4%B9%8E%E5%A5%B3%E4%BA%BA%E8%83%96%E5%90%97/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26615.jpg" alt="男人在乎女人胖吗？" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男人在乎女人胖吗？</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>40分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/2/17-%E7%94%B7%E7%A5%9E%E6%8A%8A%E6%88%91%E5%BD%93%E5%85%84%E5%BC%9F/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/26640.jpg" alt="男神把我当兄弟" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男神把我当兄弟</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>42分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2022/7/12-%E7%94%B7%E7%94%9F%E7%9A%84%E6%89%8B%E6%9C%BA%E7%9C%9F%E7%9A%84%E6%B2%A1%E4%BA%BA%E8%83%BD%E7%AC%91%E7%9D%80%E7%9C%8B%E5%AE%8C%E5%90%97/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/25392.jpg" alt="男生的手机真的没人能笑着看完吗？" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男生的手机真的没人能笑着看完吗？</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>35分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2022/8/3-%E7%94%B7%E7%94%9F%E5%AF%B9%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%8D%A0%E6%9C%89%E6%AC%B2%E9%83%BD%E5%BE%88%E5%BC%BA%E5%90%97/">
+  
+  <figure>
+    
+    <img src="https://wallpapershome.com/images/pages/pic_h/5346.jpg" alt="男生对女朋友的占有欲都很强吗？" />
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">男生对女朋友的占有欲都很强吗？</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">0001-01-01T00:00:00Z</span>
+    
+    </p>
+
+    
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Robot</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>36分钟阅读</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+    </div>
+    
+
+    
+    <div class="flex justify-center pt-8">
+      <div class="join grid grid-cols-2">
+  
+  <a href="/categories/page/127/" title=上一页 class="join-item btn btn-outline btn-sm">
+    上一页
+  </a>
+  
+  
+  <a href="/categories/page/129/" title="下一页" class="join-item btn btn-outline btn-sm">
+    下一页
+  </a>
+  
+</div>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再遇见（番外两则） | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81%E7%95%AA%E5%A4%96%E4%B8%A4%E5%88%99/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81%E7%95%AA%E5%A4%96%E4%B8%A4%E5%88%99/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="再遇见（番外两则）">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25392.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25392.jpg">
+  <meta name="twitter:title" content="再遇见（番外两则）">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="再遇见（番外两则）">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="4715">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25392.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">再遇见（番外两则）</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>10分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%86%8d%e9%81%87%e8%a7%81%ef%bc%88%e7%95%aa%e5%a4%96%e4%b8%a4%e5%88%99%ef%bc%89&amp;url=https://mohai.us.kg/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81%E7%95%AA%E5%A4%96%E4%B8%A4%E5%88%99/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81%E7%95%AA%E5%A4%96%E4%B8%A4%E5%88%99/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%86%8d%e9%81%87%e8%a7%81%ef%bc%88%e7%95%aa%e5%a4%96%e4%b8%a4%e5%88%99%ef%bc%89%20https://mohai.us.kg/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81%E7%95%AA%E5%A4%96%E4%B8%A4%E5%88%99/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25392.jpg" alt="再遇见（番外两则）" />
+      
+
+      <p>再遇见（番外两则）</p>
+<p>不自觉心动：陷入热恋的我们</p>
+<p>周昀番外：口琴曲</p>
+<p>我妈带着姐姐离开这个家时，什么都收拾干净了。</p>
+<p>只留下了一把口琴。</p>
+<p>很早以前，那时我爸还没有出轨，家里还没有变得面目全非。</p>
+<p>那时候我妈会让我和姐姐并排坐在沙发上，吹口琴曲给我们听。</p>
+<p>那些曲子大多温柔婉约，以至于后来她满脸恨意地指着我，骂我周家的垃圾血脉时，我吓得怔在了原地。</p>
+<p>「白芽，我们走。」</p>
+<p>她丢给我一个厌恶的眼神，再也没有回过头。</p>
+<p>后来我试着捡起那把口琴，但怎么也吹不出她当时吹过的曲子。</p>
+<p>她离开后，周家就变成了我的噩梦。</p>
+<p>家里的产业，我从十七岁开始，用了九年时间，一步步纳为己有。</p>
+<p>成为公司最大的股东之后，我爸只能从我这里拿钱去养他的老婆孩子，态度一下子变了很多。</p>
+<p>不能让他爱我，</p>
+<p>很多年后我和程宁宁缩在酒店里，围着同一条毯子，看《哈利·波特》。</p>
+<p>电影里的哈利波特住在楼梯下方的杂物间，有人上下楼梯时掉落的灰尘，让我想起自己被关在壁橱里，蜷缩着度过的每一个夜晚。</p>
+<p>程宁宁不小心碰到我，惊诧地说：「你的手好凉。」</p>
+<p>我张了张嘴，还没来得及开口，她就抓着我的手，从自己衣摆下方探进去。</p>
+<p>「来，帮你暖暖。」</p>
+<p>柔软、温热的触感，像是落在春天枝头的风，好像一眨眼的时间，就吹圆润了嫣红的樱桃。</p>
+<p>灯光落进她眼睛里，一片水淋淋的光泽。</p>
+<p>她笑着凑过来吻我，顺手把 iPad 息屏，反扣在桌面上：「不看了……先陪我玩吧，老婆。」</p>
+<p>她总喜欢换着称呼叫我，这已经是最正常的一个，更多千奇百怪的，都留在那些错乱颠倒的夜晚里。</p>
+<p>那种时候，她往往肆意妄为到极点，什么都敢说也敢做。</p>
+<p>会用领带绑住我的手，逼我叫出那些奇怪的称呼。</p>
+<p>会打漂亮又牢固的蝴蝶结，把我逼到极限才肯解开。</p>
+<p>还会……</p>
+<p>但是白天，她又会恢复没精打采的样子，像只又怂又好色的，皱巴巴的松鼠。</p>
+<p>这种矛盾又奇异的组合，对我有种莫名又致命的吸引力。</p>
+<p>会让我想起第一次见到她的时候。</p>
+<p>酒店刚通知我们隔离的事项，去楼下大厅领物资。</p>
+<p>她穿着毛茸茸的兔耳朵睡衣，缩在电梯角落里发呆。</p>
+<p>领到物资后，旁边有两个小女孩，父母把唯一一盒酸奶给了妹妹，姐姐慢吞吞地落在后面，一脸羡慕，想哭又不敢哭的样子。</p>
+<p>她翻出自己的酸奶，扫了一眼：「怎么是这个牌子啊，我最不喜欢喝这玩意儿了，齁甜。」</p>
+<p>然后把酸奶塞给姐姐，冷着脸命令她：「你，帮我把我不喜欢的酸奶解决了。」</p>
+<p>然后第二天晚上，我就在隔壁阳台看到她。</p>
+<p>她身上穿的还是那件毛茸茸的大睡衣，站在阳台发了会儿呆。</p>
+<p>我听到她在自言自语：「好馋酸奶啊，不知道明天还发不发了……」</p>
+<p>「算了，我怎么能跟小女孩抢东西喝，我已经长大了。」</p>
+<p>隔着玻璃，我看到她抬起拳头，锤了锤自己的心口，然后从睡衣口袋里拿出了一把口琴。</p>
+<p>我不知道她要吹什么曲子，好奇地看着她。</p>
+<p>然后她吹了……好汉歌。</p>
+<p>吹完之后，还顺了气似的拍了拍阳台扶手：「路见不平一声吼，该出手时就出手。话都已经说出去了，不能反悔。」</p>
+<p>我愣在玻璃窗后，看着她毛茸茸的背影进入室内，消失在视线里。</p>
+<p>后来，我们在一起了。</p>
+<p>我不经意地提起那天的口琴，她不好意思地看了我一眼：「呃……那是吹着玩的，我统共也没几首会出的曲子。」</p>
+<p>「你要喜欢听的话，我还能给你吹个天空之城。」</p>
+<p>第二首曲子她吹得磕磕绊绊，其实真的没有很好听。</p>
+<p>到最后放下口琴，又扑在我身上，哼哼唧唧：「老婆老婆，给你吹曲子了，要怎么奖励我？」</p>
+<p>很奇怪的，那天之后，我再也没有梦到过小时候不知名的口琴曲，和往后十多年里暗无天日的壁橱。</p>
+<p>我想和她结婚。</p>
+<p>这个念头才出现，酒店解封了。</p>
+<p>只不过一夜的工夫，她就不见了。</p>
+<p>我给她发消息，很多条，她好久之后才回我：「分手吧周昀。」</p>
+<p>我一瞬间呆在原地，那些让我彻夜未眠的关于求婚的忐忑和未来漫长人生的幻想，一秒钟就碎成泡影。</p>
+<p>我强迫自己冷静下来，问她：「原因呢？」</p>
+<p>她给了我两个看起来就像是随口编出的借口，然后直接拉黑了我。</p>
+<p>我托人去查，但不论是薛以宁这个名字，还是她给我的地址和公司，都查不到。</p>
+<p>我和我姐见了一面，她吹了吹新做的指甲，嘲笑我：「人家根本就不信任你。我对我那些小男朋友也这样，玩玩而已，要是给了真信息，被缠上了，可就甩不掉了。」</p>
+<p>是这样吗？</p>
+<p>我不肯相信，固执地望着她：「钻石帮我留着。」</p>
+<p>「总有一天，我会把她找出来的。」</p>
+<p>她翻了个白眼：「老树开花就是麻烦，你连张照片都没有，能找到就有鬼了。」</p>
+<p>时间一天天过去，三年里我没有再见过她一次。</p>
+<p>直到过年。</p>
+<p>公司群里很多人在秀年夜饭，我坐在车里随手滑了几张，然后就看到了她。</p>
+<p>坐在角落的位置，脊背微微弓着，正在专心致志地啃着手里的排骨。</p>
+<p>看上去表情好像很谦卑，但我们曾经日夜不离地相处过两个月，我几乎一眼就能察觉到她眼底的厌烦。</p>
+<p>发照片的人叫程瑶，是公司几个月前新招的员工。</p>
+<p>如果我没记错的话，简历上还有点问题。</p>
+<p>于是我问到地址，装作也在那里吃饭，然后以最快的速度驱车赶到。</p>
+<p>推门进去的下一秒，就对上她震惊不敢置信的目光。</p>
+<p>她抓起那个三年前就在背的破帆布包，转头就要走：「我突然有点事，先走了。」</p>
+<p>「程宁宁，你给我过来，坐下！」</p>
+<p>旁边那个冷着脸呵斥她的女人，眉眼和她有着几分相似，大概是她妈妈。</p>
+<p>但是看她的眼神里，没有爱意。</p>
+<p>就更别提那群你一言我一语，当着我的面就肆无忌惮贬低她的亲戚。</p>
+<p>我三年前的直觉没有出错。</p>
+<p>她和我，就是同一种人。</p>
+<p>她离开后我慢吞吞地回到车里，指尖还残留着她身上那股淡淡的温暖的香气，一下子就把我拖回过去温存的很多个夜晚。</p>
+<p>床头只点着一盏昏暗的灯，她喘着气支起身子，把领带勾过来，蒙住我眼睛。</p>
+<p>视觉被剥夺，一片黑暗里，其他感官体验被无限放大。</p>
+<p>那些粗俗又轻佻，甚至下流的话从她嘴里吐出来，更像是某种压抑后的宣泄。</p>
+<p>她一个人犹嫌不够，还要拉着我一起。</p>
+<p>可拉我沉沦后，她又独自逃开了。</p>
+<p>我的确对她有过怨恨，但最初的恨过后，再浮上来的，就只有想念。</p>
+<p>我频繁地梦到她，梦到有几个白天她坐在窗边写着什么。</p>
+<p>我问她，她就笑眯眯地说：「是工作相关的东西啦，公司让我做个表。」</p>
+<p>还有第一次和她搭话的时候，我其实有点紧张，但她坦坦荡荡地伸手过来：「我叫薛以宁。」</p>
+<p>「今年二十二岁，在春景公司工作，就是个小职员啦。」</p>
+<p>某天工作人员帮我们买了酒，她喝得有点醉了，突然凑过来亲我，然后从口袋里拿出一个小盒子。</p>
+<p>「其实，我还托他们帮忙买了这个，要不要和我一起用，嗯？」</p>
+<p>心跳忽然加速起来，但对上她醉意弥漫的眼睛，我忽然很担心，</p>
+<p>担心这只是她的一时兴起。</p>
+<p>可她用温软的手捧起我的脸，低声呢喃：「那就谈恋爱，好不好？很正式的。」</p>
+<p>这些，所有她告知我的信息，都是假的。</p>
+<p>她从来就没想过和我有以后的可能。</p>
+<p>如同那只忘记带走的口琴，其实从来不属于我，只不过恰巧被我捡到。</p>
+<p>可又像一场令人沉溺的虚幻美梦。</p>
+<p>我开始意识到：就算一辈子都找不到她。</p>
+<p>我也不会再忘记她了。</p>
+<p>所幸，我的运气还算不错。</p>
+<p>在那天晚上的月色下，玻璃花房的温泉池里。</p>
+<p>她颤抖着吻过来。</p>
+<p>四溅的水花里，熟悉的触感一瞬间吞没我。</p>
+<p>第二天，她终于肯说她喜欢我。</p>
+<p>那句话出口后，我就意识到，其实一直以来，我都只想让她把我放进她的未来里。</p>
+<p>只要她还喜欢我，过去的一切我都不在意。</p>
+<p>我竭尽全力探出黑暗的壁橱，看到了另一颗伤痕累累的星星。</p>
+<p>虽然黯淡无光，却仍然照亮过我一瞬。</p>
+<p>而我抓住了，就不会再松手了。</p>
+<p>婚后番外：钢琴曲</p>
+<p>在给我花钱这件事情上，周昀有着旁人无法理解的狂热。</p>
+<p>那天晚上我缩在沙发上刷视频，正好看到某款新车上市的消息。</p>
+<p>觉得颜色蛮好看，顺手点了个赞。</p>
+<p>隔天吃晚饭的时候，他突然说：「我预定了。」</p>
+<p>我咬着半只虾一脸茫然地抬头：「预定什么？」</p>
+<p>他把剔好的蟹肉放在我盘子里，淡淡地说：「亮粉色的那款法拉利，你不是喜欢吗？正好有预订名额，我就用了。」</p>
+<p>几百万的东西让他说的像买杯咖啡一样简单。</p>
+<p>我心惊胆战：「能退吗？」</p>
+<p>「为什么要退？」</p>
+<p>「太嚣张了，你不知道，我现在开那辆帕拉梅拉去上班，就已经被谣传成千金小姐出来体验生活了。还有人说，我升职这么快，是因为我是董事长的千金。」</p>
+<p>太荒谬了。</p>
+<p>我爸哪有这种本事。</p>
+<p>上次那事，他花了十几万，才让对方松口，答应私下和解。</p>
+<p>回去后和我妈大吵一架，闹了半天离婚，去民政局领证当天，就出车祸截了一条腿。</p>
+<p>为了有人照顾，他又拒绝离婚，就这么和我妈互相耗着。</p>
+<p>我妈还试图来找我帮忙，好在别墅区和公司的安保都不错，没让她进来。</p>
+<p>至于程瑶。</p>
+<p>她最后勉强进了一家小公司，熬到三十岁，匆匆嫁了人，男方没什么本事，婚前给自己吹得天花乱坠，婚后还得靠她那几千块的工资生活。</p>
+<p>两个人一个月吵二十回架，她天天回娘家快，最后，叔叔婶婶不得不拿出每个月的退休金接济他们。</p>
+<p>周昀夹了块红糖糍粑给我：「嫉妒你的工作能力而已，上次我和你们公司合作的时候看过你做的方案，最资深的项目经理也挑不出什么错来。」</p>
+<p>「不要转移话题。」</p>
+<p>我瞪他，周昀就无奈地笑了笑：「你那辆车开了好几年了，换一辆也正常啊。」</p>
+<p>「我们赚这么多钱，又不打算要孩子，不给你花，难道以后要留给程瑶的儿子？」</p>
+<p>他这么一说，我顿时感觉十分有道理。</p>
+<p>于是周末休息的时候，就拖着周昀去逛街了。</p>
+<p>出门前，布丁眼泪汪汪地咬着我的裤腿，不啃松口。</p>
+<p>我试图跟它讲道理：「宝贝，妈妈真的不能带你出去，商场不让带宠物进……」</p>
+<p>结果周昀直接黑着脸蹲下身：「松口。」</p>
+<p>「你知道打扰别人二人世界约会是会没有罐头吃的吗？」</p>
+<p>布丁不理他，只哀怨地瞪着我。</p>
+<p>我只好抛出诱惑：「回来的时候再给你带两只毛绒熊玩偶。」</p>
+<p>它低头思索片刻，心不甘情不愿地松了口。</p>
+<p>周昀坐在副驾上，一边拉安全带一边问我：「老婆想买什么？」</p>
+<p>我笑眯眯地说：「去了再看。」</p>
+<p>其实我给他准备了份礼物。</p>
+<p>毕业六年，我现在也终于挤进了年薪百万的群体。</p>
+<p>很早之前，我就想给周昀送点什么。</p>
+<p>车在市中心商业街旁停下，我拉着周昀直奔 skp 一楼，先给他挑了块表，买了双鞋子，然后又转去了对面的乐器店。</p>
+<p>我提前雇好的乐队，正在那里等着我们。</p>
+<p>「你在这里坐，我给你准备了节目。」</p>
+<p>眼看周昀很乖地坐在了椅子上，我满意起身，在一旁的钢琴前落座。</p>
+<p>第一个音落下，吉他贝斯和鼓声也跟着响起来。</p>
+<p>然后，是我苦练了两个多月的歌。</p>
+<p>「希望今后你只梦到我的钢琴曲。」</p>
+<p>「唯一写给你的钢琴曲。」</p>
+<p>这首唱完，周昀仍然坐在原位，动也不动，就那样望着我。</p>
+<p>他的眼睛像是映着阳光的波光粼粼的湖面。</p>
+<p>乐队成员们很自觉地退了下去。</p>
+<p>我坐在琴凳上，干咳了一声：「你不打算说点什么吗？」</p>
+<p>他低声道：「所以前段时间，你总是晚回家，还跟我说在加班，就是在练这个吗？」</p>
+<p>「是啊。」</p>
+<p>我点头，</p>
+<p>「你不知道没有基础的人练琴多费劲儿，而且这歌我专门雇人写的，一个理科生，用尽毕生文艺细胞，参与了填词工作，最后的成果我还挺满意的，但又怕你不喜欢。」</p>
+<p>我说着，老脸一红，「毕竟你一个总裁，不缺钱不缺物的，我送你别的就显得很没有诚意。」</p>
+<p>周昀目不转睛地望着我：「你看到放在柜子里的那把口琴了，是吗？」</p>
+<p>我点点头。</p>
+<p>其实因为白芽的关系，周昀妈妈和他的关系，如今已经缓和了不少。</p>
+<p>但那不闻不问的十几年，带给周昀的伤害，是永远不可能被消解的。</p>
+<p>我只是希望他能开心一点。</p>
+<p>因为他是我在这个世界上最喜欢的人。</p>
+<p>我装作没看到周昀拿花挡住发红的眼角，挽着他的手回到车里。</p>
+<p>回去是周昀开车。</p>
+<p>回家前，他特意把手搭在方向盘上，拍了几张照片。</p>
+<p>然后我立刻就在朋友圈刷到了他的动态，连续三条。</p>
+<p>「老婆送的表。」</p>
+<p>「老婆买的鞋子。」</p>
+<p>「老婆亲手包的花。」</p>
+<p>白芽在评论区忍无可忍：「妈的，死恋爱脑。」</p>
+<p>周昀就当没看到。</p>
+<p>他说回卧室洗澡，却又半天没有动静。</p>
+<p>我在楼下看了半部电影，正要上楼看看，就收到了他的消息。</p>
+<p>是一张照片，和一条语音。</p>
+<p>镜子里映衬出半透明的黑白女仆装的一角。</p>
+<p>我之前买回来，他一直不肯穿。</p>
+<p>我点开那条语音。</p>
+<p>「你一直想要的绳子，就放在门口，上来吧。」</p>
+<p>上楼时灯光昏黄暧昧。</p>
+<p>我一边走一边想：原来送礼物还有这种好处。</p>
+<p>以后，要多送送。</p>
+<p>备案号:YXX14RRzz9btYYYJb8NiMmJy</p>
+<p>公主的金皇冠</p>
+<p>​</p>
+<p>​</p>
+<p>不自觉心动：陷入热恋的我们</p>
+<p>巧克力阿华甜</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/15-%E5%86%8D%E9%81%87%E8%A7%81/" title="再遇见">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">再遇见</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/1/20-%E5%86%8D%E6%88%98%E7%99%BB%E4%BA%91%E5%8F%B0/" title="再战登云台">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">再战登云台</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

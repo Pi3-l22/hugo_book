@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苟住！我变成了半只丧尸 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E5%8F%98%E6%88%90%E4%BA%86%E5%8D%8A%E5%8F%AA%E4%B8%A7%E5%B0%B8/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E5%8F%98%E6%88%90%E4%BA%86%E5%8D%8A%E5%8F%AA%E4%B8%A7%E5%B0%B8/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="苟住！我变成了半只丧尸">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26595.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26595.jpg">
+  <meta name="twitter:title" content="苟住！我变成了半只丧尸">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="苟住！我变成了半只丧尸">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10545">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26595.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">苟住！我变成了半只丧尸</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%8b%9f%e4%bd%8f%ef%bc%81%e6%88%91%e5%8f%98%e6%88%90%e4%ba%86%e5%8d%8a%e5%8f%aa%e4%b8%a7%e5%b0%b8&amp;url=https://mohai.us.kg/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E5%8F%98%E6%88%90%E4%BA%86%E5%8D%8A%E5%8F%AA%E4%B8%A7%E5%B0%B8/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E5%8F%98%E6%88%90%E4%BA%86%E5%8D%8A%E5%8F%AA%E4%B8%A7%E5%B0%B8/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%8b%9f%e4%bd%8f%ef%bc%81%e6%88%91%e5%8f%98%e6%88%90%e4%ba%86%e5%8d%8a%e5%8f%aa%e4%b8%a7%e5%b0%b8%20https://mohai.us.kg/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E5%8F%98%E6%88%90%E4%BA%86%E5%8D%8A%E5%8F%AA%E4%B8%A7%E5%B0%B8/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26595.jpg" alt="苟住！我变成了半只丧尸" />
+      
+
+      <p>苟住！我变成了半只丧尸</p>
+<p>苟住！末日生还者</p>
+<p>我被一个丧尸咬了半口。</p>
+<p>那只丧尸刚咬破我的皮，就被身后的方随行烧成了灰烬。</p>
+<p>我哭得很大声。</p>
+<p>方随行看看我，安慰道：「还能哭，问题不大。」</p>
+<p>我哭得更大声了。</p>
+<p>1</p>
+<p>我爸妈出差半个月后。</p>
+<p>我的竹马方随行突然哐哐敲开了我家的大门：「世界末日了。咱爸妈去拯救世界了。」</p>
+<p>他神色认真，但我脑子正常。</p>
+<p>我问：「你清醒了吗？」</p>
+<p>他靠着门框，笑了一下，一双眼弯成月牙。</p>
+<p>「实话告诉你，我是奥特曼转世，只要你给我转 88 块我就能拯救世界和你，我不玩游戏也不知道什么是新皮肤。」</p>
+<p>又是那套说辞。</p>
+<p>我面无表情地推了一下门。</p>
+<p>他在我关门之前强行挤了进来，长吁一口气：「这次是真的，没出新皮肤。」</p>
+<p>2</p>
+<p>一进门，他就把门窗全锁了，连灯都关了。</p>
+<p>他说这是怕丧尸寻着光爬过来。</p>
+<p>我连给他找哪家医院看病都想好了，谁知道，我们开黑到深夜的时候，丧尸真聚集在楼下了。</p>
+<p>因为一楼熬夜修仙的那位哥还亮着灯。</p>
+<p>我和方随行趴在窗户边上，看一群翻着白眼、皮肤溃烂的丧尸聚集在楼下，不断拍打着窗户。</p>
+<p>我们听到一声尖叫。</p>
+<p>「焯，熬夜熬出幻觉了？好刺激！」</p>
+<p>我：「……」</p>
+<p>我转过头去问方随行：「转世奥特曼，这能救吗？」</p>
+<p>我有点害怕。</p>
+<p>是颤抖着手抓着他的衣袖的。</p>
+<p>方随行看了眼他的夜光手表：「熬到了凌晨两点，这至少是个金丹修士啊。不用担心。」</p>
+<p>我：「？你中二期该过了吧。」</p>
+<p>出乎意料的是，一楼那位，也是个中二病患者。</p>
+<p>大喊了一声：「剑来！」</p>
+<p>借着微弱的路灯光。</p>
+<p>我看到那群丧尸訇然倒地。</p>
+<p>心口插着一只吃泡面用的叉子。</p>
+<p>我的世界观都被颠覆了。</p>
+<p>方随行说：「我看出来，他也是个异能者。」</p>
+<p>也？</p>
+<p>方随行：「你相信光吗？」</p>
+<p>还没等我答话。</p>
+<p>他手掌上倏然红光一闪，他将一朵火苗丢了下去。</p>
+<p>那些丧尸，瞬间被烧成灰烬。</p>
+<p>3</p>
+<p>我内心不平了。</p>
+<p>因为目前看来，好像只有我没有异能。</p>
+<p>在丧尸横行的世界，只能作为主角的绊脚石。</p>
+<p>方随行往我的手里塞了一个东西。</p>
+<p>「别担心，这是你的。」</p>
+<p>我低头看了看。</p>
+<p>一个巴拉拉小魔仙的变身器。</p>
+<p>我面无表情地抬头看他。</p>
+<p>他一本正经：「你是巴拉拉小魔仙，这是你以前自己说的。你说你要拯救世界，我还给你打了 88 块作为你回魔仙堡的路费。」</p>
+<p>搬起石头砸自己的脚。</p>
+<p>我不想说话了。</p>
+<p>方随行挑了挑眉：「念个咒语试试？」</p>
+<p>我竭力压下内心的羞耻感。</p>
+<p>小声说：「巴拉拉能量，乌卡拉卡，小魔仙变身。」</p>
+<p>无事发生。</p>
+<p>方随行：「哈哈哈哈哈哈哈哈哈哈哈。」</p>
+<p>我狠狠捶了他一下。</p>
+<p>这死男人！</p>
+<p>4</p>
+<p>方随行道：「收拾收拾东西，我们准备逃难了。」</p>
+<p>我问：「异能者也需要逃难吗？」</p>
+<p>他道：「你知道能量条吗？还有，放技能也是要 CD 的。」</p>
+<p>……好吧。</p>
+<p>他说话还挺有道理的。</p>
+<p>我问：「逃哪儿？」</p>
+<p>他摊了摊手：「不知道，天涯海角吧，是不是听着挺浪漫的？」</p>
+<p>被丧尸追杀到天涯海角。</p>
+<p>有够浪漫。</p>
+<p>我挑拣着东西，我身边的方随行指手画脚。</p>
+<p>「把那个放下，带上充电宝。我不能没有游戏。」</p>
+<p>我拳头硬了：「你自己怎么不带啊？」</p>
+<p>他抖了抖背包。</p>
+<p>一阵哐啷声。</p>
+<p>他道：「都是。」</p>
+<p>这游戏瘾。</p>
+<p>真是没得救了。</p>
+<p>方随行解锁手机：「开一把生化模式，积累积累经验，上线。」</p>
+<p>我：「哦哦。」</p>
+<p>5</p>
+<p>打到一半，四处捡枪支子弹的我突然想起来：「末日不是要囤物资吗？」</p>
+<p>方随行边开枪，边十分冷静地说：「我在我家窗户边上看到第一只丧尸，我就知道来不及了。你这么能吃，一定囤了很多，所以我来了。」</p>
+<p>我：「……」</p>
+<p>游戏里，我愤愤朝他丢了个雷。</p>
+<p>6</p>
+<p>游戏打到凌晨。</p>
+<p>我的肚子叫了一声。</p>
+<p>方随行侧目，问我：「吃的还剩多少？」</p>
+<p>我答：「……其实，我准备今早去囤货来着。」</p>
+<p>方随行：「……」</p>
+<p>我们晒干了沉默。</p>
+<p>又默契地低头。</p>
+<p>开下一把。</p>
+<p>7</p>
+<p>天彻底亮了的时候。</p>
+<p>我和方随行顶着黑眼圈，立在窗边。</p>
+<p>街上已经没什么人了，只有几只丧尸，跟开了 0.5 倍速似的行动迟缓，漫无目的地在居民楼下转着。</p>
+<p>方随行抄起棒球棒：「走吧，下楼吃早饭。」</p>
+<p>我拿起晾衣杆，跟在他身后。</p>
+<p>他动作迅速又果决地把大门一开。</p>
+<p>「哐」的一声，还带着重物倒地的声音。</p>
+<p>我一脚踏出去，猝不及防跟门后一只丧尸对视上了。</p>
+<p>他被方随行用门夹扁了。</p>
+<p>一对惨白的眼珠子被门挤压成圆饼状，一动不动地盯着我。</p>
+<p>血盆大口张了张。</p>
+<p>「……淦！」</p>
+<p>我一惊。</p>
+<p>手中的晾衣杆下意识地捅进了丧尸的嘴里。</p>
+<p>这丧尸。</p>
+<p>血条好像挺薄的。</p>
+<p>方随行说：「牛批。」</p>
+<p>我说：「那可不。我可是市服赵子龙，在峡谷里宛若天神下凡一把亮银枪七进七出。」</p>
+<p>方随行做了个收尾工作。</p>
+<p>火葬。</p>
+<p>给那只面目全非的丧尸最后的体面。</p>
+<p>8</p>
+<p>在解决一只丧尸之后。</p>
+<p>一股自信感油然而生。</p>
+<p>我和方随行大摇大摆地走进已经空无一人的超市。</p>
+<p>各自拿东西之前，方随行说：「别走太远。」</p>
+<p>我点点头。</p>
+<p>刚和他分隔一个货架。</p>
+<p>我就在转角跟一只丧尸对视上了。</p>
+<p>距离很近。</p>
+<p>我甚至能清晰地看到他溃烂皮肤上的黑头。</p>
+<p>淦！</p>
+<p>犹豫就会败北。</p>
+<p>出枪的速度只慢了一秒。</p>
+<p>我就被咬了。</p>
+<p>我懵了一下。</p>
+<p>那只丧尸已经在方随行的火中被烧成灰烬。</p>
+<p>他走上前，面带关切地看着我刚刚破皮的伤口。</p>
+<p>我没忍住。</p>
+<p>眼泪汹涌而出。</p>
+<p>方随行不太会安慰人，上学那会，我考试发挥失常时，他只会说：「嗨呀，虽然没考好，但你这进步空间挺大的。」</p>
+<p>这次，他看了看我，安慰道：「还能哭，问题应该不大。」</p>
+<p>我哭得更大声了。</p>
+<p>9</p>
+<p>哭了十几分钟，我抱着一堆吃的，抽噎着走回了家。</p>
+<p>方随行往沙发上一瘫，说：「上线。」</p>
+<p>我照着镜子，被咬的那块肌肤已经开始溃烂。</p>
+<p>我又开始哭了。</p>
+<p>方随行：「……」</p>
+<p>他叹了口气，放下手机，走到我身边。</p>
+<p>他仔细看了看伤口，然后说：「我在峡谷当了好几年医生了，信我，问题真不大。」</p>
+<p>玩了几年扁鹊而已。</p>
+<p>他懂个锤子。</p>
+<p>接下来。</p>
+<p>我们就像历史上那个冤种扁鹊和蔡桓公一样。</p>
+<p>他说：「君无疾。」</p>
+<p>我说：「寡人之病在肌肤，不治将益深。」</p>
+<p>他揉了揉太阳穴，重复了一遍：「君无疾。」</p>
+<p>我说：「寡人之病在肠胃，不治将益深。」</p>
+<p>他：「……快一个小时了，你瞅瞅，除了这块烂了，你还有事吗？」</p>
+<p>我又照了照镜子：「变白了。」</p>
+<p>他道：「这不比你买的那些美白产品效果好？」</p>
+<p>这么说，好像也是哦。</p>
+<p>10</p>
+<p>我冷静了一会，坐下来，和方随行开了把生化模式。</p>
+<p>只是里面的丧尸，越看，长得和我越像。</p>
+<p>小东西长得真别致。</p>
+<p>我拉大屏幕，看着那个丧尸奇怪的五官，说：「单身久了，看丧尸都觉得眉清目秀。」</p>
+<p>方随行「嗤」了一声：「你旁边就坐着帅哥，你怎么不好好看看？」</p>
+<p>我瞥了他一眼。</p>
+<p>他皮肤冷白，眼睛边上带着明显的黑眼圈，有种颓丧的味道。分明是下垂眼，眼里却流转着狡黠的光。</p>
+<p>「你不觉得，绿皮肤更酷吗？」</p>
+<p>方随行呛我一句：「这酷皮肤给你你要不要啊？」</p>
+<p>我看着白到近乎发青的手背。</p>
+<p>眼眶又红了。</p>
+<p>方随行：「……就当我刚刚什么都没说成吗？」</p>
+<p>11</p>
+<p>丧尸对我和方随行几乎没什么影响。</p>
+<p>末世来临之前，我和方随行也是在家里打游戏打得天昏地暗。因为上学那会，我们爸妈管我们特别严，导致成年以后报复性补偿。</p>
+<p>和方随行像从前一样在家里宅了几天之后，手机上突然接收到一条短信。</p>
+<p>要求幸存者在天黑之前集中起来。短信还附了一条地址。</p>
+<p>经过几天的变异，街上的丧尸已经升级成绿皮了，就算是白天，也有 1 倍速的行动速度了。</p>
+<p>还好，我还是泛青的白皮。</p>
+<p>方随行在关键时刻还是挺靠谱的嘛。</p>
+<p>出发之前，我和方随行收拾好了四个包裹的东西。</p>
+<p>他面色凝重地说：「有些东西要藏好。」</p>
+<p>他看了看我。</p>
+<p>我往后一退：「藏哪？」</p>
+<p>他指了指我的肚子。</p>
+<p>……</p>
+<p>最终，我从一个年方二十一的妙龄少女变成了怀胎七个月的孕妇。</p>
+<p>方随行从一个清瘦的颓废青年变成了啤酒肚肥宅。</p>
+<p>12</p>
+<p>我们下楼，在停车场里看到了方随行已经被一只丧尸霸占了的车子。</p>
+<p>那个绿油油的丧尸迟缓地转过头，张了张嘴。</p>
+<p>我认得她。</p>
+<p>她是隔壁楼那个卖菜经常送人一把葱的阿姨。</p>
+<p>但现在，她已经面目全非了。</p>
+<p>手中的晾衣杆突然就挥不动了。</p>
+<p>我说：「姨，你让让。」</p>
+<p>她从车顶上下来了。</p>
+<p>但因为我被咬过了，她没有奔我而来，而是去追方随行。</p>
+<p>方随行被丧尸阿姨追赶着，当场表演了个秦王绕柱走位。</p>
+<p>终于找到了上车的机会。</p>
+<p>我和方随行窜上车，迅速关门后，丧尸阿姨扒拉着车门，一张绿油油的脸紧紧贴着车窗。</p>
+<p>方随行敲了敲车窗：「姨，危险。」</p>
+<p>不知道是不是车窗太滑，她挂不住。</p>
+<p>总之，她慢慢滑了下去。</p>
+<p>我有些难过地问方随行：「她还能变回人吗？」</p>
+<p>方随行沉默了一下，才缓缓说道：「不能了。」</p>
+<p>13</p>
+<p>方随行开车带我到了避难所，我们在门口接受一个幸存者的盘问。</p>
+<p>他看了看方随行，又看了看我。</p>
+<p>「你夫人？」</p>
+<p>「嗯。」</p>
+<p>「怎么这么白？」</p>
+<p>「她不爱晒太阳。」</p>
+<p>「怎么脸色还发青？」</p>
+<p>「她才二十一岁，挺青涩的。」</p>
+<p>「……那锁骨上那片红色怎么说？」</p>
+<p>方随行脸不红心不跳：「我咬的。」</p>
+<p>幸存者顿了顿，才问：「有物资吗？」</p>
+<p>方随行晃了晃背包。</p>
+<p>「二十四个充电宝。」</p>
+<p>幸存者：「？」</p>
+<p>我提了提一个帆布袋：「还有吃的。」</p>
+<p>我的食物上交了，方随行的充电宝留下来了。</p>
+<p>14</p>
+<p>进了避难所，我才发现，异能者根本没有想象中的那么多。我知道的，也只有玩火的方随行和那个用泡面叉子攻击丧尸的金丹期修士。</p>
+<p>其余的，都是端着加特林的物理系战士。</p>
+<p>方随行是个随遇而安的人，一进门就找了个沙发瘫着，说：「上号。」</p>
+<p>我们点开游戏，才发现，断网了。</p>
+<p>方随行和那个同样没游戏玩的金丹期修士对视着，眼中充满了痛苦。</p>
+<p>方随行：「哥，有单机游戏吗？」</p>
+<p>金丹期修士：「有。」</p>
+<p>方随行：「咱俩换着玩玩呗？」</p>
+<p>金丹期修士：「成。」</p>
+<p>于其他人的焦虑不安不同，他们似乎特别轻松。</p>
+<p>甚至还交流了一下游戏经验。</p>
+<p>15</p>
+<p>夜晚的时候，我和方随行被分到了一个小房间。</p>
+<p>因为地方不够大，而且我们是明面上的夫妻。</p>
+<p>但，这就很尴尬了。</p>
+<p>房间里只有一张床。</p>
+<p>地板的面积小到躺不下一米八几的方随行。</p>
+<p>五岁以后，我跟方随行就没睡过一张床了。</p>
+<p>和方随行同床共枕，我一点都睡不着。在仅容纳两个人的床上翻来覆去，吵得方随行不得安宁。</p>
+<p>他摁住我的一边肩膀：「睡觉了行不行？」</p>
+<p>看到他这副无所谓的模样。</p>
+<p>我突然就不忸怩了。</p>
+<p>躺着一动不动，等困意让我睡着。</p>
+<p>16</p>
+<p>半夜，我饿醒了。</p>
+<p>方随行也醒着。</p>
+<p>他的脸近在咫尺，墨色的瞳孔清澈，倒映着月光里的我。</p>
+<p>……怪吓人的。</p>
+<p>我小声说：「我饿了。」</p>
+<p>他给我拆了一块原先藏好的面包。</p>
+<p>吃完了，我才发现，我不是饿，是嘴巴寂寞了。</p>
+<p>总想咬点什么东西。</p>
+<p>我盯着他看。</p>
+<p>我想我现在的瞳孔可能都在发绿。</p>
+<p>方随行被我看得发毛：「虽然我是个帅哥，但也不用这么看吧？让我怪不好意思的。」</p>
+<p>我说：「我想咬人。」</p>
+<p>他把手伸出来。手腕上的青筋和骨头都很明显。</p>
+<p>我说：「都是骨头，口感不好。」</p>
+<p>方随行：「……你可真挑剔。」</p>
+<p>他在食物中给我拿出了婴幼儿的磨牙饼干：「将就一下吧。」</p>
+<p>方随行躺下去，继续睡了。</p>
+<p>我啃了一晚上的饼干。</p>
+<p>越来越精神。</p>
+<p>甚至，还有点想咬方随行。</p>
+<p>我怀疑，我要变成丧尸了。</p>
+<p>17</p>
+<p>清晨的时候，方随行是被我哭醒的。</p>
+<p>他迷迷糊糊地揉了一下眼睛：「我被丧尸咬死了？」</p>
+<p>我：「？」</p>
+<p>他坐起身：「那你哭什么丧啊，一大早的。」</p>
+<p>他定了定神，再看看我。又轻轻叹了口气，说：「算了，哭吧，要我我也得哭。」</p>
+<p>我被他的话吓了一跳。</p>
+<p>摸出我的小镜子照了照。</p>
+<p>和昨天基本没什么区别，只是眼睛旁边有一圈青黛色，熬夜熬的。</p>
+<p>我：「你说的什么猪话？」</p>
+<p>他懒懒道：「本来就脑子不聪明，变成丧尸以后，就更没脑子了，看上去就不太聪明。」</p>
+<p>这狗男人。</p>
+<p>我气到了。</p>
+<p>脑子一下子被半个丧尸的本能支配了。</p>
+<p>我扑上去，咬了他肩膀一口。</p>
+<p>他轻轻抽了口气，然后问我：「咬了人，是不是感觉好多了？」</p>
+<p>确实哦。</p>
+<p>我说：「但现在大家都是丧尸了。」</p>
+<p>他还是那副毫不在乎的样子：「问题不大，你是半个丧尸，我才是四分之一个。」</p>
+<p>一个想法突然涌上心头。</p>
+<p>「那你咬别人半口，是不是八分之一的丧尸？这样下来，到最后，可能是万分之一的丧尸，几乎没有什么影响，但可以避免被丧尸咬。」</p>
+<p>方随行看着我：「……你搁这用牙打疫苗呢？」</p>
+<p>18</p>
+<p>今早，方随行罕见地拒绝了金丹期修士的游戏邀约。而是一个人静坐着，思考这事的可行性。</p>
+<p>过了一会，他对那个百无聊赖的金丹期修士招了招手：「老哥，我能咬你一口吗？」</p>
+<p>金丹期修士：「你犯病了？刚好我失业之前是个医生，现在可以给你看看。」</p>
+<p>方随行：「不开玩笑的。」</p>
+<p>于是他俩凑一块，聊了点我听不懂的。</p>
+<p>那个吊儿郎当的老哥面色逐渐凝重。</p>
+<p>然后主动伸出手：「来吧，咬吧。」</p>
+<p>方随行看着他圆润的手，犹豫了一会。</p>
+<p>金丹期修士挑了挑眉：「没事，你咬吧，我不怕。」</p>
+<p>方随行：「哥，你能洗洗手吗？」</p>
+<p>金丹期修士：「……哦行。」</p>
+<p>19</p>
+<p>现在，有多了个八分之一的丧尸。</p>
+<p>方随行与他面对面坐着，问：「感觉有什么不一样？」</p>
+<p>金丹期修士答：「感觉行动迟钝了。」</p>
+<p>方随行「哦」一声，然后说：「你那纯粹是懒的。」</p>
+<p>对于熟人，方随行的嘴一向很欠。</p>
+<p>「还有什么感觉？」</p>
+<p>「感觉想咬你。」</p>
+<p>「哦，那是我比较欠而已。」方随行指了指我。「你想咬她吗？」</p>
+<p>金丹期修士摇了摇头：「不想。」</p>
+<p>方随行在备忘录上记下：八分之一的丧尸，很少丧尸特征。</p>
+<p>金丹期修士说：「你这不严谨啊。」</p>
+<p>他道：「没办法，没有实验室。」</p>
+<p>20</p>
+<p>咬过方随行之后，我咬人的欲望下降很多。</p>
+<p>只是忍不住要咬其他东西。</p>
+<p>比如说桌脚。</p>
+<p>当我把茶几啃得掉木屑的时候，一个幸存者察觉了不对劲，对方随行说：「你夫人怎么……」</p>
+<p>方随行答道：「怀孕的人口味就是要奇怪点，你说是吧老哥？」</p>
+<p>金丹期修士点点头：「我爱人怀孕的时候，甚至想啃墙皮。」</p>
+<p>「……可是，她脸色也太苍白了吧。」</p>
+<p>方随行说：「这是没有营养。」</p>
+<p>金丹期修士与他一唱一和：「是的，我就是医生，没人比我更了解了。」</p>
+<p>幸存者抹了把汗，看了看方随行肩上那一块被咬破的地方：「可是，她都开始咬你了。」</p>
+<p>方随行：「夫妻情趣，你个单身的懂什么？」</p>
+<p>那个幸存者被伤到了，直接闭嘴。</p>
+<p>21</p>
+<p>但避难所的消息总是很灵通的。</p>
+<p>专家新得出的消息是，有一些人被丧尸咬了之后，仍会保留思想，但具有部分丧尸特征。</p>
+<p>综合我之前的怪异行为，大家看我的眼神都带着警惕了。</p>
+<p>方随行揽着我的肩，虽然有些紧张，还是笑嘻嘻地开玩笑，想把这个话题绕过去：「哪个专家？这不一定专业。我爸就是个院士，他说这事根本不可能。」</p>
+<p>一个幸存者缓缓说：「方林文方院士。」</p>
+<p>哦豁，是方随行他爸。</p>
+<p>方随行的笑僵了一下：「淦啊。」</p>
+<p>他反应极快，迅速指了指窗外：「看，救援队来了。」</p>
+<p>在所有人都转头去看时，他拽着我就往外跑。</p>
+<p>幸存者的反应也是很快的。</p>
+<p>方随行的举动坐实了我是半个丧尸，身后响起了枪声。</p>
+<p>我慌乱地被他抓着手腕跑，身后枪声接连响起，他的脚步却一直未停。</p>
+<p>一直跑到车边，他才停下，喘了口气，笑着说：「完球了，我们要去流浪了。」</p>
+<p>我用目光将他从头到脚仔细扫了个遍：「你没受伤吧？」</p>
+<p>他说：「没事，有我老哥在呢。」</p>
+<p>挡回所有子弹的金丹期修士喃喃道：「你们真不当人啊，我应该在车底？」</p>
+<p>22</p>
+<p>方随行开车几乎绕了全城，终于找到一个有信号的地方。给他爸打了个电话。</p>
+<p>「我发现一个，不会被丧尸咬的方法。」</p>
+<p>他爸疲惫的声音一下子变得迫切而兴奋起来：「说说看？」</p>
+<p>「先被丧尸咬一口。」</p>
+<p>「？」</p>
+<p>「——嘟嘟。」</p>
+<p>他爸挂断了。</p>
+<p>方随行很无奈地看看我。</p>
+<p>我拨了他爸的电话，开了免提。</p>
+<p>一接通，劈头盖脸一顿骂：「你个混小子不知道你老子现在正忙着吗，等这事解决了我回去一定把你抽成陀螺。」</p>
+<p>我小声说：「方叔，是我。」</p>
+<p>他声音一下子柔和起来：「离离啊，什么事？」</p>
+<p>方随行小声 bb：「双标。」</p>
+<p>「我被丧尸咬了。属于是，有意识且有丧尸特征的那种。」</p>
+<p>那边沉默了一会。才缓缓问：「你咬人了吗？」</p>
+<p>「……嗯，咬了您儿子。」</p>
+<p>「方教授？教授您怎么了？特效救心丸呢？」</p>
+<p>我和方随行面面相觑，无语凝噎。</p>
+<p>金丹期修士感叹道：「好家伙，有你们这儿子儿媳，真是家门不幸。」</p>
+<p>我想解释：「其实，我们不……」</p>
+<p>电话又响了。</p>
+<p>23</p>
+<p>方林文的声音颤抖了：「你们现在还好吗？」</p>
+<p>我怕再把他吓厥过去，一口气把话说完了：「就是我们现在跟正常人一样而且方随行是四分之一的丧尸不会失去意识咬人的我们发现他咬过的人不会再被丧尸咬。」</p>
+<p>他冷静道：「好，我知道了。」</p>
+<p>我继续：「所以，我觉得这可能也是个方法，类似于疫苗那种。」</p>
+<p>他道：「如果迫不得已，你们就试试吧。反正结果也不会更糟了。」</p>
+<p>24</p>
+<p>在路上，我们遇见了一群被丧尸追赶的人。</p>
+<p>方随行像个土匪头子，打开车门，拿着大喇叭，对着人喊：「前面的人听着，被丧尸咬，或者被我身边这个玉树临风……呕……的美男子咬，你们只有一个选择。」</p>
+<p>这话说的，跟包围了所有人似的。</p>
+<p>玉树临风的肥宅金丹期修士撩了撩头发，露出两颗虎牙。</p>
+<p>虽然看着很不可置信。</p>
+<p>但人在危难之中往往愿意抓住可能的救命稻草。</p>
+<p>人群往这边涌来。</p>
+<p>还喊着：「咬我！」</p>
+<p>最终，金丹期修士咬了一个看着比较干净整洁的人。</p>
+<p>然后造成了人咬人的景象。</p>
+<p>被咬过的人，无一例外，都不再会被丧尸接近。</p>
+<p>金丹期修士说：「我是医生，听我的没错。我建议遇到陌生人，先咬一口。」</p>
+<p>23</p>
+<p>最近，互相咬的人都是人类。</p>
+<p>在大街上，人们见面的第一句，从「吃了吗」变成了「咬了吗」。</p>
+<p>还有幸存者专门请被金丹期修士咬过的人咬他。</p>
+<p>因为，大家一致认为。十六分之一的丧尸最好看。白得刚刚好，眼白也不太多，还有股冷艳的气质。</p>
+<p>这让我这个白里透青的二分之一丧尸有点伤心。</p>
+<p>但至少，大家现在都挺安全的。</p>
+<p>丧尸也变成了街边流浪猫狗一样的存在。</p>
+<p>和方随行回家时，我们在门口又发现了一只绿油油的丧尸。</p>
+<p>他两只快掉下来的眼珠子古溜溜地转着，小得几乎不存在的鼻孔拼命地吸着。</p>
+<p>也没发现什么异常。</p>
+<p>于是脑袋一歪，继续靠在我家门上。</p>
+<p>我说：「好兄弟，让我回家。」</p>
+<p>丧尸：「嗷嗷。」</p>
+<p>但丝毫没有挪开的意思。</p>
+<p>方随行摊开手，手掌冒出一窜火苗：「再不挪位置，烧死你。」</p>
+<p>丧尸可能不是人。</p>
+<p>但方随行是真的狗。</p>
+<p>那只丧尸连滚带爬地跑了。</p>
+<p>我发现，经过这么久，丧尸好像又升级了。</p>
+<p>甚至，有点意识了。</p>
+<p>24</p>
+<p>手机里又收到了群发的短信：方院士称：丧尸疫苗已进行动物试验。</p>
+<p>但他的实验好像赶不上丧尸进化的程度。</p>
+<p>某一天，我出门囤货时，一只丧尸对我说话了。</p>
+<p>「你不是真丧尸。」</p>
+<p>我从货架上拿下一包薯片：「那又怎么样呢？」</p>
+<p>他笑得阴森森的：「我要把你们都变成完全的丧尸。」</p>
+<p>说着，他张着嘴就扑过来。</p>
+<p>我把购物车往前一推。</p>
+<p>不偏不倚，他卡进去了。</p>
+<p>一只畸形细长的手卡在了格子里。</p>
+<p>我站在他面前，威风凛凛地说：「实话告诉你，我乃常山赵子龙，你要是再敢乱来，我就用亮银枪把你捅穿，吊在电风扇上转。」</p>
+<p>虽然，我是不敢捅会说话的丧尸的。</p>
+<p>但口嗨谁不会呢。</p>
+<p>他闷闷不乐的，不说话了。</p>
+<p>25</p>
+<p>一群有智慧的丧尸卷土重来了。</p>
+<p>原本逐渐恢复的生活秩序再次被打乱。</p>
+<p>方随行的家里挤满了人。</p>
+<p>他平时太张扬了，所有人都知道他是个异能者，都想得到他的庇护。</p>
+<p>他有点无语地瞥了一眼那群人。</p>
+<p>「不是我说，你们怕什么？咱这么多人，几个人锤丧尸一个不成问题吧？」</p>
+<p>「可是，」有人弱弱地说。「这不讲武德啊。」</p>
+<p>「能群殴，何必单挑呢？」</p>
+<p>丧尸通常是一群一起行动的。所以会让人难以招架。</p>
+<p>方随行说：「你们平时抢物资的时候，都能发生踩踏事件了，一人一脚踩不死他们？」</p>
+<p>26</p>
+<p>小区里原本跳广场舞的地被有智慧的丧尸占了两天了。</p>
+<p>在方随行说完那番话后，大妈们当场成立了舞王战队，立即扛着擀面杖下楼了。</p>
+<p>在广场舞的音乐中，把那群丧尸撵得嗷嗷叫。</p>
+<p>「喂！懂不懂尊老啊？年轻丧尸真没素质！」一个花白泡面头大妈如是说。</p>
+<p>「第一，我不叫喂，我叫丧尸。第二，你这是道德绑架丧尸！」一个丧尸不甘示弱。</p>
+<p>「哎哟哟，这小丧尸怎么说话的，给我心脏病气犯了。翠花，快，快来扶扶奶奶。」</p>
+<p>翠花是个性格泼辣的小姑娘，恶狠狠地瞪了那丧尸一眼：「气到我奶奶了，还想走？」</p>
+<p>一个十六分之一丧尸围上去调解：「这点事，至于吗？要我说，大家各退一步。」</p>
+<p>丧尸和百分之一丧尸异口同声说：「你到底是哪边的！」</p>
+<p>场面十分混乱。</p>
+<p>我和方随行站在阳台上隔岸观火，不禁感叹：</p>
+<p>「好家伙。」</p>
+<p>27</p>
+<p>有个有野心的少年丧尸还在挥手高喊：「毁灭人类！占领世界！」</p>
+<p>被他身后一个中年妇女丧尸猛踹了一脚：「我告诉你，就算丧尸占领了世界，你也要读书也要中考！」</p>
+<p>少年丧尸的头垂下去了。</p>
+<p>「哦，这样啊。那我不参加了，兄弟们拜拜。」</p>
+<p>28</p>
+<p>混乱的秩序逐渐恢复稳定。</p>
+<p>许多社畜顶着一张又青又白的丧尸脸去上班了。</p>
+<p>据说，这张脸跟他们连续加班一星期后没什么两样。</p>
+<p>世界充满了丧尸，除了封闭在实验室中的方随行他爸。</p>
+<p>听到消息时，我正坐在方随行家里的沙发上打游戏。</p>
+<p>靠在我身侧的方随行抬头对我说：「我有一个好消息和一个坏消息，你想听哪个？」</p>
+<p>我想了想：「先说好的吧。」</p>
+<p>「我爸研发出丧尸疫苗了。」</p>
+<p>「那坏的？」</p>
+<p>「除了他们在实验室里和外界隔离，外面已经没有一个人了，他给谁打？」</p>
+<p>我噗嗤一声，笑了。</p>
+<p>方随行继续说：「他当场血压升高昏迷过去了，要回家休养。」</p>
+<p>我说：「对伯父的不幸遭遇我表示非常同情。」</p>
+<p>话刚说完，我的赵子龙就一个大招扎了地板。</p>
+<p>然后死于围殴。</p>
+<p>方随行：「……对你的不幸去世我也表示非常同情。」</p>
+<p>29</p>
+<p>方随行他爸回来了，而内心非常坚强的我爸妈还留在实验室，继续研究那个丧尸病毒。</p>
+<p>他一进门，光秃秃的头反射的光好像让客厅里又亮了几分。</p>
+<p>方院士看见我和方随行坐着打游戏，这会儿倒是没骂他，只是笑眯眯地问：「听说你娶媳妇了？」</p>
+<p>方随行头都没抬：「道听途说。」</p>
+<p>他爸：「无风不起浪。」</p>
+<p>方随行：「三人成虎。」</p>
+<p>他爸：「……几个月不打你皮又痒了？」</p>
+<p>他的手掌落下来之前，方随行往后一躲：「离离还在呢，给我留点面子？」</p>
+<p>我站起来，很识相地走到门口，开门、闪到楼道里，一气呵成：「我走了，伯父您打吧。」</p>
+<p>方随行：「？」</p>
+<p>30</p>
+<p>他长腿一迈，也跟着我走了出来，倚在墙边：「你好狠的心。」</p>
+<p>我低头看了眼手机：「还有更狠的。」</p>
+<p>方随行：「？」</p>
+<p>我把手机拿在他眼前晃了晃：「我妈说，实验室人手不够，咱闲着也是闲着，不如去帮她做实验。」</p>
+<p>「……」</p>
+<p>方随行仰头说：「实不相瞒，我是爱小白鼠人士，我一看见小白鼠被抓就心如刀绞，看见小白鼠流血更是心痛得要昏迷过去」</p>
+<p>呵，男人。</p>
+<p>他当初做青蛙心脏复跳实验的时候，用镊子夹一颗血淋淋的心脏都面不改色。</p>
+<p>他的心态还很好，当晚能继续吃牛蛙。</p>
+<p>我真想给他脑壳上来一下：「说人话。」</p>
+<p>「我还差两颗星就荣耀了。」</p>
+<p>「……」我转身就走。「那我自己去。」</p>
+<p>他跟在我身后，慢悠悠地晃下楼：「别呀，我就开个玩笑，我肯定得跟你一起的。」</p>
+<p>31</p>
+<p>我在实验室见到了穿白大褂的我妈。</p>
+<p>和方院士的研究方向不同，自从发现部分丧尸能保持意识后，她就开始研究如何清除人体内的丧尸病毒。</p>
+<p>为了做实验，她从街上带回来一只丧尸研究。</p>
+<p>结果和我一样，不慎被咬。但当时她做好了防护，只被咬破了皮。</p>
+<p>现在，她也是一只二分之一丧尸。</p>
+<p>不是一家人，不进一家门。</p>
+<p>一只又青又白的半丧尸手拿试管。</p>
+<p>场面就，挺惊悚的。</p>
+<p>我妈转过头，用眼白过多的眼把我打量了一遍，对我爸说：「看，咱女儿还是长得像我。」</p>
+<p>我爸：「……嗯。」</p>
+<p>方随行在面对我爸妈时，很能装。</p>
+<p>他一改原先的吊儿郎当，垂着眼，神色温和而谦逊：「伯父伯母好。」</p>
+<p>我妈还没说话，方随行就很自然地套上手套：「伯母，有什么需要我做的吗？」</p>
+<p>我怀疑他被魂穿了。</p>
+<p>但我没有证据。</p>
+<p>32</p>
+<p>这项研究的主力还是我爸妈。</p>
+<p>方随行负责抓小鼠，我负责记录数据。</p>
+<p>首先，要给当事小白鼠注射丧尸病毒。</p>
+<p>方随行看了看我。</p>
+<p>那个眼神，我怀疑要不是实验不允许，他会让我去咬一口小白鼠。</p>
+<p>小白鼠被注射了病毒后，开始变得狂躁了起来。方随行面不改色，提着它的颈部，顺手给它做了个脊椎脱臼。</p>
+<p>接下来，另外几只小鼠也没能逃过脊椎脱臼的命运。</p>
+<p>丧尸鼠只能瞪着红眼睛，</p>
+<p>无能狂怒。</p>
+<p>他边给白鼠注射不同浓度的药，边跟我说：「长得好像你。」</p>
+<p>我：「？像我什么。」</p>
+<p>「像你那副看不惯我又打不过我的样子。」</p>
+<p>我说：「等我练缝合的时候，必然先缝上你的嘴。」</p>
+<p>33</p>
+<p>事情的进展意外地顺利。</p>
+<p>药物在小鼠身上明显见效，副作用也很微小。</p>
+<p>但我妈说：「要投入使用，还得经过人体实验。」</p>
+<p>很巧，</p>
+<p>实验室里，有三个感染丧尸病毒的人。</p>
+<p>我要迈出一步时，方随行用手箍着我的手腕把我拉了回来。</p>
+<p>他上前一步：「我感染了四分之一的丧尸病毒，我来吧。」</p>
+<p>我说：「我是二分之一，应该现在我身上试。」</p>
+<p>方随行又道：「我是异能者，试药对我来说没有副作用。」</p>
+<p>方随行向来是很能讲的，一张嘴叭叭的能给人洗脑。</p>
+<p>权衡利弊后，我们最终选择了用方随行来试药。</p>
+<p>但我也瞒着我爸妈和方随行，悄悄给自己注射了。</p>
+<p>一个样本哪够呢。</p>
+<p>34</p>
+<p>方随行看着我：「你注射药物了？」</p>
+<p>我一惊，有种当年历史考不及格被爸妈抓住了的紧张感，下意识地问：「你怎么知道？」</p>
+<p>方随行气笑了：「因为你变黑了。」</p>
+<p>我：「……」</p>
+<p>这就去下单美白产品。</p>
+<p>方随行也没原先白了，由惨白变成了那种略带病弱感的苍白。</p>
+<p>方随行抽了我好几管血，美其名曰「为了实验」。</p>
+<p>我怀疑他就是公报私仇。</p>
+<p>方随行拿着那几管血不断地验，直到连性激素指标都显示正常，他才舒了口气：「没有问题。你有没有感觉哪里不舒服？」</p>
+<p>我坐在高脚凳上晃着腿：「现在不想咬东西，胃口变差了，算吗？」</p>
+<p>他长眉轻蹙：「饕餮吃不下东西了，这问题有点大啊。」</p>
+<p>我：「……」</p>
+<p>真是嘴欠界的无冕之王。</p>
+<p>我吵不过他，</p>
+<p>但我默默拿起了针线。</p>
+<p>他连连后退：「你来真的啊？」</p>
+<p>他压低嗓音，表演了一个男版夹子音：「你忍心让这么好听的声音在世界上消失吗？」</p>
+<p>虽然端腔的声音磁性又低沉。</p>
+<p>但我还是「yue——」了一声。</p>
+<p>不能太给他面子。</p>
+<p>他却两步走上前：「是药物的副作用吗？」</p>
+<p>「不，是你夹得太恶心。」</p>
+<p>35</p>
+<p>从实验室回去后不久，清除丧尸病毒的药物推广开来。</p>
+<p>病毒清除后，异能者的异能也突然消失了。</p>
+<p>那个金丹期修士老泪纵横地握着方随行的手说：「没想到今日，我灵根被废。」</p>
+<p>方随行也一脸忍辱负重：「三十年河东三十年河西，莫欺少年穷。」</p>
+<p>两个戏精。</p>
+<p>36</p>
+<p>据说，保留了神智的丧尸在被清除病毒后完全不记得自己在丧尸形态时做了什么。</p>
+<p>听到这个消息后，方随行问我：「还记得你当初做了什么吗？」</p>
+<p>我回想了一下，发现我的记忆确实有些模糊了，很多细节都想不起来了。</p>
+<p>我摇摇头：「记不太清了。」</p>
+<p>方随行笑得很促狭：「你说我很帅，还说要嫁给我，你硬说咱俩是夫妻，街坊邻里都知道了。」</p>
+<p>我：「……我是记不清，又不是失忆！」</p>
+<p>「哦，那我哪点说错了？」</p>
+<p>「每一点。」</p>
+<p>他瘫在沙发上：「怎么办，你还是不愿意跟我在一起。」</p>
+<p>我：「？！」</p>
+<p>他看了看我：「为什么？」</p>
+<p>我怀疑我真的失忆了。</p>
+<p>到底有什么是我不知道的。</p>
+<p>他说：「高考完我跟你表白过一次。」</p>
+<p>「……那我是真失忆了，当晚我喝酒了。」</p>
+<p>他问：「那现在呢？你……」</p>
+<p>说实话，我有点害羞。</p>
+<p>虽然他这人嘴欠，但关键时候都很靠谱，对我也很好。</p>
+<p>但我妈说了，女孩子要矜持，不能太快答应。</p>
+<p>我扭忸怩怩道：「可是秃头是从性遗传。」</p>
+<p>方随行他爸是秃头，他大概率也是个秃头。</p>
+<p>这是我第一次成功气到方随行。</p>
+<p>无心插柳柳成荫。</p>
+<p>他的脸都变黑了，沉默地坐着。</p>
+<p>我妈给我讲的欲擒故纵若即若离被我完成了若即若离离离离离。</p>
+<p>我坐到他身边，拉着他的衣袖问：「我是不是说错话了？」</p>
+<p>他道：「这是道开放题，没有标准答案。但参考答案是『我愿意』。」</p>
+<p>「我愿意。」</p>
+<p>（完）</p>
+<p>备案号:YXX1jppO095FOOOXEPzTPM3Y</p>
+<p>苟住！我靠钞能力</p>
+<p>​</p>
+<p>​</p>
+<p>苟住！末日生还者</p>
+<p>飞飞鱼阿清 等</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/4/5-%E8%8B%9F%E4%BD%8F%E7%94%9C%E7%94%9C%E8%A6%81%E5%81%9A%E6%95%91%E4%B8%96%E4%B8%BB/" title="苟住！甜甜要做救世主">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">苟住！甜甜要做救世主</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/4/12-%E8%8B%9F%E4%BD%8F%E6%88%91%E9%9D%A0%E9%92%9E%E8%83%BD%E5%8A%9B/" title="苟住！我靠钞能力">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">苟住！我靠钞能力</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

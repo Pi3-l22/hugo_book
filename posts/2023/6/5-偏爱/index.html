@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偏爱 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/6/5-%E5%81%8F%E7%88%B1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/6/5-%E5%81%8F%E7%88%B1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="偏爱">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26612.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26612.jpg">
+  <meta name="twitter:title" content="偏爱">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="偏爱">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9274">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26612.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">偏爱</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>19分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%81%8f%e7%88%b1&amp;url=https://mohai.us.kg/posts/2023/6/5-%E5%81%8F%E7%88%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/6/5-%E5%81%8F%E7%88%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%81%8f%e7%88%b1%20https://mohai.us.kg/posts/2023/6/5-%E5%81%8F%E7%88%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26612.jpg" alt="偏爱" />
+      
+
+      <p>偏爱</p>
+<p>第几个 100 天，也像刚热恋</p>
+<p>「早说你喜欢啊。」我被人推进沈江亭的怀里，「让给你了。」</p>
+<p>醉意朦胧间，沈江亭揽住我的腰，低笑：「谢谢顾总。」</p>
+<p>这一刻，我居然有一丝「得逞了」的庆幸感。</p>
+<p>他可能以为我是猎物。</p>
+<p>但最好的猎手，不是往往以猎物的姿态出现吗？</p>
+<p>1</p>
+<p>剧组饭局，我一个新入行的女演员，果不其然被灌了酒。</p>
+<p>红酒后劲大，那个不怀好意的投资人顾总还总让我掺着喝，没几杯下去我就倒了，走路也晃得厉害。</p>
+<p>司马昭之心路人皆知。</p>
+<p>就在顾总强行坐到我旁边时，我终于忍不住，向沈江亭投去了求助的目光。</p>
+<p>沈江亭是这部戏的导演。</p>
+<p>也是我哥的发小。</p>
+<p>还是我暗恋了很多年的人。</p>
+<p>虽然，我们平时在剧组里都装作彼此不熟。</p>
+<p>沈江亭走到那个油腻投资人的身旁，笑得施施然。</p>
+<p>「顾总，我陪您喝一杯。谢谢您赏识宁宁。」</p>
+<p>短短一句话，投资人瞬间会意。</p>
+<p>他的目光在我和沈江亭那张带着淡淡笑意的脸上徘徊了许久，然后突然大笑起来，把我推进了他的怀里。</p>
+<p>沈江亭一下子揽住了我的腰肢。</p>
+<p>「早说你喜欢啊！让给你了。」</p>
+<p>还顺手丢给了沈江亭一张顶楼套房的房卡。</p>
+<p>沈江亭顺理成章带我离席，我腿有些发软，但意识暂时还清晰。</p>
+<p>一进电梯，他脸上的笑意就褪去了，摆出一副要教训我的样子。</p>
+<p>「不知道自己的酒量？喝不了还乱喝？」</p>
+<p>「那不是因为你在么……」我有些委屈。</p>
+<p>沈江亭松了松领带。</p>
+<p>他一身白衬衫，黑色西裤，西装外套挂在另一只胳膊上，一双长腿笔直而惹眼。</p>
+<p>那张脸更是招人得很，一对风流多情的眼睛，眼角微微上挑，堪称妖孽。</p>
+<p>他把我送到了房间，就准备转身离去。</p>
+<p>我却不知道哪里来的勇气，拉住了他的手。</p>
+<p>「怎么了？」沈江亭回过头，俯下身看我，语调放温和了一些。</p>
+<p>我却揽住了他的脖子，直接吻了上去。</p>
+<p>他起先是惊讶，而后眸光忽明忽暗，我看到他黑色的瞳孔里倒映我泛红的面孔，干脆破罐破摔地想：管他呢，喝醉了的人有理由发酒疯。</p>
+<p>反正我是因为他才考的北电，因为他才面试的这个剧组。</p>
+<p>我分明就是冲着他来的，虽然他不知道。</p>
+<p>「宁宁。」沈江亭的嗓音有些哑，「你在做什么？」</p>
+<p>我没有回答，却搂着他的脖子不肯松手。</p>
+<p>他的视线向下，落在我的眼睛，鼻梁，嘴唇，锁骨。</p>
+<p>然后不轻不重地咬了一口我的脖子。</p>
+<p>我吃痛，皮肤也瞬间泛了红。</p>
+<p>2</p>
+<p>我喜欢沈江亭，是一个我自己藏了很久的秘密。</p>
+<p>我初中的时候，他替我哥来接我下舞蹈班，因为提前来了十几分钟，便在门口静静地等着。</p>
+<p>彼时，整个练功房的小姑娘们都忍不住看向他那张颇为妖孽的面孔，搞得老师的课都上不下去。</p>
+<p>他只是笑笑，对老师道：「来接我家小朋友。」</p>
+<p>「你家小朋友是谁？」</p>
+<p>「……是我。」我讪讪举起了手。</p>
+<p>出门以后，我义正严辞地对他说：「我不是你家小朋友，你不要乱讲。」</p>
+<p>他低声笑笑，眼尾下垂：「只是不想让你老师把我当不法分子。」</p>
+<p>一晃七年。</p>
+<p>我刚从电影学院毕业，他却已然是数个奖项在手的知名导演，在圈子里炙手可热。</p>
+<p>同学们既想进他的剧组，又感叹他这张脸不自导自演着实可惜。</p>
+<p>我也跟着大家去面试他新片女三号的角色。</p>
+<p>然后，被制片人挑中了。</p>
+<p>在剧组里，他装作不认识我。</p>
+<p>沈江亭好像对所有人都很好。笑容如春风拂面，有礼节，但又坚持自己的想法，总是平衡投资方的要求和电影创作的需要。</p>
+<p>唯独对上我，克制得很刻意。</p>
+<p>……分明我才是跟他最熟悉的那一个。</p>
+<p>翌日清晨，我从沈江亭怀里醒来、并意识到自己做了什么的时候，我开始选择赖帐了。</p>
+<p>沈江亭尚还慵懒地躺在床上，我却飞速穿好衣服，结结巴巴道：「我我我、我昨晚认错人了！」</p>
+<p>「认错人了？」他支着头，眼尾微微上挑。</p>
+<p>「我把你认成了我暗恋的男孩子。」我偏过脸。</p>
+<p>太丢人了。</p>
+<p>怎么能这样。</p>
+<p>他一直把我当小孩子，我心里清楚得很。</p>
+<p>「谁？」沈江亭直接把我拉了回去。</p>
+<p>他手劲儿真大。</p>
+<p>「你不认识。」我不敢看他。</p>
+<p>「洛宁，你出息了。」他的语调有些冷。</p>
+<p>3</p>
+<p>剧组都在传：1.我把沈导睡了。2.他对我不满意。</p>
+<p>好吧，前者是事实，但后者有待商榷。</p>
+<p>我总不能去问他对我满不满意。</p>
+<p>可能娱乐圈中的男女关系在大家眼中都是很正常的事情，所以我的日常拍戏甚至没有遭受任何影响。</p>
+<p>这让我心里直接警钟大作。</p>
+<p>以沈江亭时至今日的行业地位，以及那张从我小时候就霍霍了一群女孩子的脸，还有昨天晚上他的态度……他是不是有很大的概率来者不拒？</p>
+<p>一想到这一点，我心里就发紧。</p>
+<p>原来我只是和那些人一样，没有任何区别。</p>
+<p>偏偏，还是我自己鼓足了勇气。</p>
+<p>工作时，沈江亭对我的态度又恢复了往日的「不太熟」，但比起不熟，似乎还多了几分不想搭理我的情绪。</p>
+<p>心里的酸涩感蔓延了开来，我却没有把脆弱显在脸上，而是依旧敬业地完成了当天的拍摄。</p>
+<p>作为女三号，又是新人小演员，我不像女主角那样即拍即走。大多数时间我都在保姆车里等待着——而且是多位配角共用的保姆车。</p>
+<p>保姆车里，我和男二号魏远有一搭没一搭的闲聊。</p>
+<p>魏远是我的大学同学，有千万粉丝的抖音号，本身就具备一定的粉丝基础，加上有人捧，一上来就演上了男二。</p>
+<p>他对我道：「宁宁，过会儿我们去吃火锅吧？」</p>
+<p>「哪一家？」我问道。</p>
+<p>「就学校附近那家。你还别说，毕业了真的会想那个味道。」</p>
+<p>我被他说得勾起了馋虫。</p>
+<p>毕业半年，确实没回去吃过。</p>
+<p>就在这时，沈江亭出现在了我们保姆车门外。</p>
+<p>我甚至不知道他打哪儿冒出来的。</p>
+<p>他只是斜斜靠在车门边，对我道：「不是说好了今晚带你去吃日料么？你忘记了？」</p>
+<p>「……有这回事？」我讪讪道。</p>
+<p>魏远当即会意：「原来你约了沈导啊！那我们改天吧，改天。」</p>
+<p>我百口莫辩。</p>
+<p>「走吧。」沈江亭对我道，「棚里已经收工了。」</p>
+<p>我就这么上了沈江亭的车。</p>
+<p>他对我的态度算不上好，棱唇紧抿，视线一直盯着前方的道路，一个余光都不给我。</p>
+<p>……什么小气的男人。哪有刚春风一度完就这样的。</p>
+<p>他对其他的女孩子也这样吗？</p>
+<p>一不小心，我把内心的想法小声嘀咕了出来。</p>
+<p>「什么其他女孩子？」沈江亭瞥了我一眼。</p>
+<p>「没。」我立刻正襟危坐。</p>
+<p>「你喜欢的人，就是魏远？」</p>
+<p>「啊？」</p>
+<p>「你说『认错了』，那就是昨天席上的人。我盘了一圈，发现只有那小子可能性最高。」沈江亭冷声道，「小朋友，你什么眼光。」</p>
+<p>「你搞错了。」我立刻反驳道，「你也不要乱猜，我不会告诉你是谁的。」</p>
+<p>「行。随你。」</p>
+<p>什么嘛，对别人都那么彬彬有礼，对我就这么凶。</p>
+<p>我鼻子有些发酸。</p>
+<p>果然不告诉他我喜欢他是正确的决定。</p>
+<p>「洛宁，昨天晚上的事情我想了一天。」沈江亭的语调带着不容拒绝的意味，「虽然你把我认错了，但作为你哥，也是看着你长大的人，我得对你负责。」</p>
+<p>我：「？？？</p>
+<p>——还有这种好事？！</p>
+<p>可是，他并不喜欢我。</p>
+<p>所以……</p>
+<p>「我并不想要这种负责。」我偏过脸，「都什么年代了，还搞这一套，迂腐死了。」</p>
+<p>「哦，我就是这么迂腐一个人。」他瞥向我，「既然不要我对你负责，那麻烦你对我负责。」</p>
+<p>4</p>
+<p>沈江亭是真的有约人吃日料。</p>
+<p>和室包间里已经有三个人等待着了，其中两位我一眼就认了出来，圈子里的金牌编剧，以及接连爆了两部正剧的大导演苏导。剩下的那位，沈江亭介绍说是副导演盛导。</p>
+<p>「介绍一下。」他把我推向了前方，「我们家小朋友，洛宁。之前跟你们提过的。」</p>
+<p>「各位老师好。」我连忙微微鞠躬。</p>
+<p>「来来来，坐。」苏导笑得很和蔼，「江亭早说要介绍给我们认识。」</p>
+<p>——什么情况？</p>
+<p>——为什么是早就要介绍？</p>
+<p>我跟着沈江亭落座，他在我耳畔低声道：「苏导的新剧要开机，正在选角，让我推荐候选人。我今天把你的简历发给了他。」</p>
+<p>我顿时明白了。所谓早就要介绍，不过是一句客套话，眼前的场面更类似于一场熟人内推的面试，我立刻正襟危坐起来。</p>
+<p>这顿饭吃完时，我顺利地加上了三位老师的微信。</p>
+<p>其中负责选角的副导演直接给我发来了新片的介绍和人物小传，让我抽空准备一下正式的面试。</p>
+<p>「后天面试……」我看向沈江亭，「可是后天我有戏啊？」</p>
+<p>「早就帮你调整时间了。」沈江亭道，「这个组都是我的熟人，但你自己也要小心，娱乐圈这种名利场，什么牛鬼蛇神都有，特别是那些投资人，要绕道走，明白？必要时报我名字。」</p>
+<p>他就像是在叮嘱一位小朋友。</p>
+<p>……好吧。他果然是把我当小朋友。</p>
+<p>我跟着沈江亭后面上了车，没忍住问他道：「你是不是因为昨天的事情对我有负罪感，所以今天才给我介绍角色？「</p>
+<p>沈江亭的手搭在方向盘时，眼睛斜睨着看我，兀自成一股风流姿态。</p>
+<p>「宁宁，我真得跟你谈谈。」</p>
+<p>然后他没有送我回片场，而是直接驶向了他家。</p>
+<p>我是第一次来沈江亭的住处。</p>
+<p>一进门我就看见了沈江亭和我哥洛川的合影，照片被洗了出来，端端正正放在书桌上。上面的两个少年人还在读大学，背后是北京电影学院的大门，而我居然也乱入了进去，从他俩身后疯跑而过，整个儿虚了焦，模糊成一片。</p>
+<p>老实说，糊成这样，我是靠衣服的颜色才识别出自己的……那天因为要跟在哥哥屁股后面见沈江亭，我特意穿了条嫩鹅黄的连衣裙，这段记忆绝对称得上是历历在目。</p>
+<p>但此时此刻，我在沈江亭家的沙发上坐下，和他面对面。</p>
+<p>我还在求证刚才的猜测：「所以，你不会真因为愧疚，给我介绍了角色吧？不是，江亭哥，没必要……」</p>
+<p>我知道自己几斤几两，怕给你丢人啊。</p>
+<p>我来面试现在这个剧组都没敢让你知道，因为不想被说开后门，总希望自己是通过实力走到你面前的。</p>
+<p>……这样的小心思，又怎么可能说得出口。</p>
+<p>「没必要？」他挑起眉反问我。</p>
+<p>「你不用太当回事，非要给我点好处才安心什么的。」我叹了口气，「其实昨天的事情，咱们可以当没发生过。」</p>
+<p>他会给其他的女演员这样介绍角色么？</p>
+<p>作为「报酬」什么的。</p>
+<p>「小朋友，你在想什么呢？」他冷笑了一声，「你知道这个角色值多少钱么？非要论娱乐圈的价格，昨天一次可能不够。」</p>
+<p>「……」我有些发懵。</p>
+<p>「怎么样，要不要再来一次？」他的下巴微微上扬，眼尾更加招人。</p>
+<p>我也不知道为什么，分明今天晚上没喝酒，可结局还是我俩滚到了一起。我被他反复地亲吻，从眼睛到鼻子到嘴唇到锁骨，他有的时候喊我「宁宁」，有的时候喊我「小朋友」，无论怎么样都很动听。</p>
+<p>还真的是……色令智昏。</p>
+<p>当然，我指我自己。</p>
+<p>5</p>
+<p>老古话说得好：人不作死，就不会死。</p>
+<p>但还有一句话也说得很好：知道很多道理，依旧过不好这一生。</p>
+<p>……我踏马真是过不好的真实写照。</p>
+<p>清晨，老男人餍足地赖床，我还得去拍戏。</p>
+<p>拍他的戏。</p>
+<p>沈江亭有文艺座谈会要出席，今天我和女主的对手戏由副导演来盯。确实这场戏也没那么重要，主要就是我作为一个被女主反杀的妃子，寒冬腊月大半夜跪在她宫门前认错，然后她对我一阵嘴炮输出，大雪纷纷扬扬。</p>
+<p>结局就是：我差点儿被冻死。</p>
+<p>我得说，今天晚上是真的冷。</p>
+<p>而且更惨的是，场务准备的暖宝宝不够了。</p>
+<p>副导演对我说：「洛宁你忍忍，你白天主要在休息，但人家女主拍了一天了，晚上还得接着熬夜，暖宝宝先供她用，否则她撑不住。」</p>
+<p>听上去很有理有据。</p>
+<p>但问题是，我白天也没闲着，要给女主当背景板；而且剧情里我在她宫门口脱簪谢罪，服装本来就单薄，她穿得比我厚啊。</p>
+<p>我委婉地表达了我撑不住这件事。</p>
+<p>副导演严肃道：「洛宁，你不能因为攀上了沈导就不好好拍戏啊，沈导一向是质量导向的，他不吃你这一套你知道吗？」</p>
+<p>我：「……」</p>
+<p>一顶不敬业的帽子直接给我扣了下来，我快气吐血了。</p>
+<p>虽然我恨不得翻白眼说我真闹起来你看沈江亭怎么处理，可该死的，我并不想给沈江亭添麻烦。</p>
+<p>而似乎是因为我一开始没有乖乖配合这件事惹到了副导演，这场戏他 NG 了不知道多少次。最后我冻得整个人都快木了，在镜头里倒的确是很出效果、很楚楚可怜，周围人都说这一条可以了，而副导演大手一挥，喊了声「再保一条！」。</p>
+<p>我：「………………」</p>
+<p>这场戏拍完，第二天，我果不其然低烧了。</p>
+<p>6</p>
+<p>就算发烧了，我也得去另一个剧组试镜。</p>
+<p>我擦了十八层粉才勉强遮住病容，几乎是勉强着完成了试镜，毕竟是女二号的角色，还押上了沈江亭的声誉，我无论如何也不能给他丢人。</p>
+<p>其实这也是我入行以来一直不想依靠他的原因。我自己搞砸了就搞砸了，反正我自己背锅，但如果他给我推荐角色，我搞砸了，就会让他口碑受损。</p>
+<p>我哥总对我说：「宁宁你就是太倔了啊，依靠别人一下没什么不好的。」</p>
+<p>可是越是在意的人，你越是不想给他添麻烦。</p>
+<p>不过倔强的性格还是给我带来了一点儿优势，比如在这种场合下也能强撑得下去。试镜我表现得不错，前天吃饭的苏导和盛导都对我微笑点头示意，我心里终于松了口气，然后紧跟着就腿软了。</p>
+<p>没办法，人类就是这么脆弱的碳基生物，心里提着的那口气一下子松了下去，身体也会给出非常诚实的反应。</p>
+<p>我是扶着墙去的洗手间。低烧带来的反胃让我忍不住想呕吐，也跟着头晕目眩。我在洗手台上趴了好一会儿，看着镜子里的自己，感觉可以用惨到奄奄一息来形容。</p>
+<p>沈江亭终于想起来给我发消息了。</p>
+<p>「试镜结束了吗？怎么样？」</p>
+<p>应该还行吧，我想。</p>
+<p>只是没什么力气回复你。</p>
+<p>你又不来接我……</p>
+<p>一想到这儿，莫名就有些埋怨。</p>
+<p>就在这时，洗手间的门被推开了。</p>
+<p>我看到已经定下的女一号施施然走进来补妆，接着她看见了我，有些惊讶道：「哎呀，你不是今天试镜的那位……诶，你没事吧？」</p>
+<p>我摇摇头：「没事，就是有点儿低血糖。」</p>
+<p>低血糖确实是一个很好用的借口。</p>
+<p>「给你这个。」她从手包里翻了翻，递出一颗薄荷糖给我。</p>
+<p>我低声道谢。</p>
+<p>她接着道：「你是沈导介绍的吧？我今天还挺惊讶的，之前一直都说是柳原来试镜呢。」</p>
+<p>我的大脑里瞬间「嗡」的一声。</p>
+<p>我又想到了苏导那句「江亭早说要介绍给我们认识」。</p>
+<p>原来对方说的，真的不是我？</p>
+<p>骗子。都是假的。临时找这种事儿来哄我，我还信了他的鬼话。</p>
+<p>其实这种事儿就是这样，你知道越了红线就是朋友都没得做，大家先意乱情迷，再藕断丝连，最后天涯各路。</p>
+<p>「你怎么了？没事吧？」旁边的女主角还在关切地询问我。</p>
+<p>我摇摇头，对她道了声谢。</p>
+<p>沈江亭的消息又发过来了。</p>
+<p>「苏导和我说你表现得不错。」</p>
+<p>「你在哪儿？我去接你。」</p>
+<p>我看着屏幕，脸上没有太多表情。</p>
+<p>明明刚才我还在暗暗期待着他会说出这句话。</p>
+<p>可是现在，都不重要了。</p>
+<p>7</p>
+<p>我病得人都在发懵，以至于经纪人送我回家以后，我吃了药倒头就睡。</p>
+<p>这一觉直接睡到第二天清晨。我是被一股食物的香气唤醒的。</p>
+<p>迷迷瞪瞪的醒来，我看到沈江亭把两片刚烤好的全麦面包，连带着水煮鸡蛋和牛奶，一起用托盘端到了我房间里。</p>
+<p>「醒了？」他看向我，「起来刷个牙，吃早饭。」</p>
+<p>我把被子一蒙，准备继续睡死过去。</p>
+<p>——连梦都他妈变得不对劲了，沈江亭怎么会出现在我家，还给我做早饭……</p>
+<p>「宁宁？」他把我的被子掀开一角，大手又摸上了我的额头，「这会儿烧退了啊？要不再用体温计量一下？」</p>
+<p>我的心里突然一下子变得酸涩。</p>
+<p>明明就是因为你这个讨人厌的家伙，才烧成了这样。</p>
+<p>「你怎么会在这里。」我哑声道。</p>
+<p>「昨天我给你发消息不回，打电话也不接，后来联系上你经纪人，才知道你发烧了。」</p>
+<p>「她放你进来的？」</p>
+<p>「没有，我自己来的。」沈江亭看向我的表情有些玩味，「密码我试了三回，你的生日，你哥的生日，还有我的生日。宁宁，你猜怎么着？居然……」</p>
+<p>我一下子从床上蹦了起来，捂住他的嘴：「够了！」</p>
+<p>该死的，他怎么会试出来我家的密码？那他不就知道我对他早有企图了吗？偏偏是这个时候……我最不想让他知道的时候……</p>
+<p>他却托着我的手，啄了一下：「宁宁，你果然是在骗我。那天晚上你根本没有认错人，对不对？」</p>
+<p>我的手像触电一般收了回来，手心滚烫。</p>
+<p>可我却偏过了脸，声音倔强：「不要你管。」</p>
+<p>「怎么就不要我管了？」沈江亭挑眉，「这我还能不管？」</p>
+<p>我心一横，直截了当地问道：「你原先准备推荐给苏导的人，是柳原对吧？」</p>
+<p>他一愣：「你怎么会……」</p>
+<p>「还真是啊？」我忍不住嗤笑了一声，打断了他。</p>
+<p>确实在笑自己。</p>
+<p>真难受，亲口确认这种事情……仿佛心脏都绞成了一团。</p>
+<p>「她确实找过我，让我帮忙推荐，但我还没给她回复。」沈江亭的眉头微微蹙起，「不过，你怎么会知道的？」</p>
+<p>「已经进组的人告诉我的。」我没有说出具体的名字，但却面无表情地看向沈江亭，「所以你还是不要对我说谎了。」</p>
+<p>他的眉头皱得更深了。</p>
+<p>「如你所见，我因为你病成了这幅鬼样子……我认了。但是沈江亭，我和那些人不一样。你千万别把我当成她们。」我嗓音沙哑，眼尾泛红，目不转睛地看着他，「之前都是我冲动，我认错。拍完你的戏，咱俩以后各走各路吧。」</p>
+<p>「因为我才病的？为什么？」他似乎有些不解。</p>
+<p>「别把你当成她们？她们是谁？」沈江亭再度重复。</p>
+<p>「以后各走各路？」他的语调甚至拔高了一些，似乎在生气。</p>
+<p>最后，沈江亭沉默了一会儿，对我道：「既然你不想我在这儿，我先走，你起床后记得吃点儿东西。柳原的事儿，我会给你一个交代。你别只信别人不信我，明白么？」</p>
+<p>我抿紧了嘴唇。</p>
+<p>也对，我起码应该听他解释。</p>
+<p>「知道了。」我低声道。</p>
+<p>沈江亭穿上外套准备离去，可走到门口又折返了回来，斜靠在我卧室门边，直直看向我。</p>
+<p>「宁宁，我觉得有件事，我必须跟你讲清楚——那天晚上你喝多了，可我完全没有，我看到你的眼睛，觉得你应该是喜欢我的，才没有控制住自己。」</p>
+<p>我一愣。</p>
+<p>8</p>
+<p>第二天烧退了，我马不停蹄进组拍戏，根本没空理沈江亭。</p>
+<p>沈江亭也不恼。我一边化妆一边背台词，他就在我旁边，慢条斯理地剥橘子。</p>
+<p>周围的工作人员很识趣地该干嘛干嘛，不去管我和沈江亭之间的迷之气场，甚至刻意离我们几米远。</p>
+<p>沈江亭把剥好的橘子递给我：「我问清楚了，柳原借着我的名义私下接触了苏导，才造成了误会。」</p>
+<p>「她干嘛借着你的名义？」我瞥了他一眼。</p>
+<p>「因为想往上走，所以什么手段都想用用。」沈江亭用手支着头，「她又不像我们宁宁，坐拥这么好资源，亲哥和男朋友都上赶着给她送角色。」</p>
+<p>我：「……」</p>
+<p>什么鬼。</p>
+<p>我分明是自己努力试镜进的这个组好不好，你也就给我送过这一个角色。</p>
+<p>至于我哥，一个拍主旋律扶贫纪录片的，我每次出镜都是工具人一个。</p>
+<p>还有，你是谁男朋友？我怎么不知道？</p>
+<p>我懒得理他，继续背台词。</p>
+<p>就在这时，经纪人抱着一大堆暖宝宝进了化妆间。</p>
+<p>「宁宁，我买了好多。这次不担心不够用了。」</p>
+<p>沈江亭皱着眉看向她：「场务那儿不是有吗？」</p>
+<p>经纪人解释道：「沈导，场务那儿的不够用，而且都供着女主角，我们宁宁用不上啊。」</p>
+<p>「什么？」沈江亭的脸色一下子变得不好。</p>
+<p>我的经纪人小姐颇有绿茶的天赋。</p>
+<p>注：此处纯属褒义。</p>
+<p>总之她摆出一副茶里茶气的样子，一半无奈一半自嘲，把我前几天拍戏冻到生病的事情添油加醋地描述一遍，仿佛我就是一朵风中摇曳的小白花。</p>
+<p>「毕竟我们宁宁是个新人，演的就是个女三号，哪怕稍微提点儿合理要求，也会被认为是靠大山而显得飞扬跋扈，哎，娱乐圈就是这样啊，没办法的事情……」</p>
+<p>我心想好了好了，姐姐你别说了，我自己都觉得起鸡皮疙瘩。</p>
+<p>而沈江亭愣在那里，看了看我，又看了看她，最后陷入了沉思。</p>
+<p>9</p>
+<p>轮到我的戏份时，沈江亭特意走到了监视器旁，一条一条地跟进。他要求很严格，我 NG 次数依旧很多，但在这方面我相当没脾气，因为他的要求都十分合理，不像上次副导演故意折腾我。</p>
+<p>最后他满意地点了点头，喊我来看：「宁宁，这条不错，光打在你侧脸上非常漂亮，这个摇镜也很有感觉。」</p>
+<p>又对我经纪人道：「到时候可以给这个片段专门买条热搜。我觉得能出圈。」</p>
+<p>周围的人都对我投来半嫉妒半羡慕的目光，可能觉得我当真攀上了高枝儿，沈导对我的戏份亲力亲为，还关心我的宣传问题。</p>
+<p>我感觉更糟了。</p>
+<p>我不想给大家留下我在攀高枝的印象。我要真想借着他的东风扶摇直上，早在刚进北电的时候我就可以这么做了。结果如今却比裙带关系还不如，大家还以为我是睡出来的机会。</p>
+<p>监视器上，刚刚的那一条还在回放。</p>
+<p>沈江亭自然而然地掏出了手机，自然而然地录了下来，自然而然地点开微信……</p>
+<p>「宁宁，我发给叔叔阿姨了。」</p>
+<p>我：「？」</p>
+<p>周围人：「？？？」</p>
+<p>「我把你拍这么好看，我得去邀个功。」沈江亭轻描淡写。</p>
+<p>旁边的副导演终于绷不住了。</p>
+<p>「不是吧沈导，你们这才几天，就见家长了？」他一脸难以置信。</p>
+<p>沈江亭「嗯？」了一声，非常理所当然道：「什么几天？她哥哥是我兄弟。她小时候学舞蹈，都是我接她放学呢。」</p>
+<p>又开始扯淡了。你才接过我几次啊。</p>
+<p>可是沈江亭却笑了起来，一对多情的眼睛相当妖孽，以至于让我有些移不开视线。</p>
+<p>他一副开玩笑的样子，拍了拍副导演的肩，语调却很认真：「稍微照顾一下我们家小朋友。」</p>
+<p>我当然知道他是故意这么说的。</p>
+<p>他知道有人为难我，就用成年人的方式替我解决问题。</p>
+<p>没有打脸也没有兴师问罪，一点儿也不爽文。沈江亭就是那种人，永远不会让谁下不来台，但短短几句话就能把意思表达到位。副导演看我的神情立刻就尴尬了起来，估计也想起了几天前那个把我冻够呛的夜晚。</p>
+<p>我立刻接道：「路导对我很好的，之前雪夜那场拍特好。」</p>
+<p>「是吗？那就好。」沈江亭依旧是笑。</p>
+<p>副导演的尴尬略微消了一点儿，又开始夸我敬业，NG 那么多次都不叫累。</p>
+<p>10</p>
+<p>我想了想，好像这么多年来，沈江亭一直都在用他惯用的方式来保护我。</p>
+<p>不管是面对糟心的投资人，还是给我介绍角色，抑或者解决我在剧组里面临的问题，他从来都是春风化雨一般把事情搞定，既成熟又克制。</p>
+<p>我总是觉得他太成熟太克制太理智，所以遥遥望着他，觉得他只把我当朋友的妹妹，当家里的「小朋友」，觉得他不喜欢我。</p>
+<p>他对我的宠溺，偏偏是我自己，每每都选择视而不见。</p>
+<p>下午的戏在一个山洞里拍。</p>
+<p>初春，深山老林里温度很低。不靠谱的场务这次依旧没有准备足够的物资，又派人下山去买热水袋和军大衣。</p>
+<p>分物资的时候，沈江亭拒绝了场务给他的热水袋：「优先给演员用，他们穿得少。」</p>
+<p>得亏我这次自己有准备暖宝宝。</p>
+<p>我想了想，还是拿了几片，朝他走了过去。</p>
+<p>「喏。」我丢他怀里就要走。</p>
+<p>沈江亭却在下一秒拽住了我的手，把我拉了回来。</p>
+<p>「不生气了？」他笑着问我，那对眼睛招人得很。</p>
+<p>我一看他就容易沦陷，是以偏过脸不睬他。</p>
+<p>趁着还没开始拍戏，他把我拉了过来，在我耳旁道：「这个圈子太小，又惯喜欢踩高捧低，我不是不想给你找回场子，但你以后还要往上走的，我想着尽量少替你得罪人。」</p>
+<p>「……我知道啊。」</p>
+<p>我是真的知道。</p>
+<p>可他还是那么耐心给我解释。</p>
+<p>周围的乱糟糟的，分物资的人分物资，走位的走位，打光的打光。喧闹声中，没有人注意到我们所在的小小角落。</p>
+<p>万般复杂的情绪上涌，我忍不住问道：「沈江亭，你到底喜不喜欢我啊？」</p>
+<p>他一愣，然后反问我：「你觉得呢？」</p>
+<p>「我觉得好像有一点儿。」我低下头，「但我又不确定……你又没告诉过我。」</p>
+<p>「那你呢？」</p>
+<p>「啊？」</p>
+<p>「宁宁会喜欢我吗？」</p>
+<p>「……你不是明知故问么。」我踢了踢脚尖，「我家门锁密码都是你生日。」</p>
+<p>沈江亭的眸光好像暗了暗。</p>
+<p>似乎在克制些什么。</p>
+<p>「什么时候的事情？」他再度发问。</p>
+<p>「大二的时候意识到的。」我低声道，「反正单相思三四年了，我都习惯了。」</p>
+<p>我好像突然之间，就变得坦率了。</p>
+<p>连我自己都觉得惊讶。</p>
+<p>沈江亭略微沉思了一会儿，然后叹了口气道：「那我比你早一点。」</p>
+<p>我一愣，倏然间抬眸。</p>
+<p>「你大一的时候我就觉得你可爱得不行，但是犯罪感过强，想着自己家的小朋友，怎么能瞎动心思呢？」他又笑了起来，眉眼下弯，「你进我的剧组也不告诉我，又跟我装不认识，我只能配合你啊。」</p>
+<p>我怔怔看向他。</p>
+<p>光是他的第一句话，就足以让我破防了。</p>
+<p>可他还是接着道：「宁宁，是我的错。我没有早点发现。」</p>
+<p>他牵过我的手，摇了摇。</p>
+<p>「原谅我好不好？」</p>
+<p>后知后觉的我终于意识到发生了什么，脸上一下子烧红。</p>
+<p>但还是没有抽出被他握住的手。</p>
+<p>「……我要跟我哥告状。」我偏过脸，「说你勾引我。」</p>
+<p>「随你咯。大不了被揍一顿。」沈江亭耸了耸肩，「我该的，行吧？」</p>
+<p>「那还是算了。」我摇摇头。</p>
+<p>我舍不得。</p>
+<p>趁着周围无人注意，我突然拽过沈江亭的衣领，在他的嘴角轻轻啄了一口。</p>
+<p>他蓦然间错愕，随即又扬起一个笑容来。</p>
+<p>十分宠溺和动人。</p>
+<p>在小小的角落里，时光宛若慢镜头一般拉长。</p>
+<p>真好。</p>
+<p>兜兜转转好多年才知道，我喜欢的人，原来一直都属于我。</p>
+<p>备案号:YXX1y665zAeCggga4wziP0X4</p>
+<p>​</p>
+<p>​</p>
+<p>第几个 100 天，也像刚热恋</p>
+<p>晴夕Victoria 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/3/7-%E8%AD%AC%E5%A6%82%E4%BB%8A%E6%97%A5%E7%94%9F/" title="譬如今日生">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">譬如今日生</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/8/2-%E5%81%8F%E5%AE%A0/" title="偏宠">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">偏宠</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

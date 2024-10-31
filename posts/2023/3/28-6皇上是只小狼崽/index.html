@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6皇上是只小狼崽 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/3/28-6%E7%9A%87%E4%B8%8A%E6%98%AF%E5%8F%AA%E5%B0%8F%E7%8B%BC%E5%B4%BD/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/3/28-6%E7%9A%87%E4%B8%8A%E6%98%AF%E5%8F%AA%E5%B0%8F%E7%8B%BC%E5%B4%BD/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="6皇上是只小狼崽">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+  <meta name="twitter:title" content="6皇上是只小狼崽">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="6皇上是只小狼崽">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12152">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">6皇上是只小狼崽</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=6%e7%9a%87%e4%b8%8a%e6%98%af%e5%8f%aa%e5%b0%8f%e7%8b%bc%e5%b4%bd&amp;url=https://mohai.us.kg/posts/2023/3/28-6%E7%9A%87%E4%B8%8A%E6%98%AF%E5%8F%AA%E5%B0%8F%E7%8B%BC%E5%B4%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/3/28-6%E7%9A%87%E4%B8%8A%E6%98%AF%E5%8F%AA%E5%B0%8F%E7%8B%BC%E5%B4%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=6%e7%9a%87%e4%b8%8a%e6%98%af%e5%8f%aa%e5%b0%8f%e7%8b%bc%e5%b4%bd%20https://mohai.us.kg/posts/2023/3/28-6%E7%9A%87%E4%B8%8A%E6%98%AF%E5%8F%AA%E5%B0%8F%E7%8B%BC%E5%B4%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25528.jpg" alt="6皇上是只小狼崽" />
+      
+
+      <p>我一直不知道自己竟然不是人类。</p>
+<p>直到我给皇帝戴绿帽后，在冷宫生下了两只崽。</p>
+<p>01</p>
+<p>看着床上三天前生下的小狗崽。</p>
+<p>我陷入了沉思。</p>
+<p>穿越到冷宫已经半年了。</p>
+<p>直到生下崽子那刻才知道，我这个废后，其实就不是个人！</p>
+<p>「娘娘，您怎么又把小狗放在被子上，弄脏了怎么办。这可是唯一一条冬天能御寒的被子啊。」</p>
+<p>看到唯一还服侍我的嬷嬷就要提着狗崽扔出去。</p>
+<p>我连忙阻止：「嬷嬷，这好歹是我的孩子，怎能嫌弃。」</p>
+<p>嬷嬷眼神怪异地看着我。</p>
+<p>好半晌才难受地叹了口气。</p>
+<p>「娘娘，老奴知道丞相府被满门抄斩后，您一直接受不了事实……唉，算了，您说是就是吧。今年天气不对劲，老奴去多劈点过冬的柴火。」</p>
+<p>我看出来了，嬷嬷以为我和其它冷宫妃子一样疯了。</p>
+<p>两个月前我说自己怀孕时，嬷嬷就觉得很离谱了。</p>
+<p>说冷宫平时连只蚊子都不愿意飞进来。我一个人还能有感而孕怎么地？</p>
+<p>嬷嬷并不知道，两个月前的中秋宫宴，我偷跑出冷宫喝醉了。</p>
+<p>迷糊间强了一个特别挺拔修长的美男，成功给病秧子小皇帝戴了绿帽。</p>
+<p>02</p>
+<p>嗷呜、呜呜呜~</p>
+<p>两只崽又哼哼唧唧难受了。</p>
+<p>我大声喊道：</p>
+<p>「嬷嬷，羊奶还没准备好吗？孩子饿了。」</p>
+<p>嬷嬷特别嫌弃地看了一眼我僵硬又轻柔地抱在怀里的小狗崽。</p>
+<p>面无表情地吐槽：「娘娘您醒醒，你早就不是皇后了，别说羊奶，就连饭都快吃不起了。」</p>
+<p>我十分疑惑。</p>
+<p>「不对啊，小福子还没把母羊送过来？他不是收了本宫改造的半自动拖地机吗，敢坑到本宫头上来了？！」</p>
+<p>我在冷宫里，只能靠些小发明换点食物被子之类的。</p>
+<p>「娘娘，您别傻了，您当初把整个皇宫的人都得罪狠了，谁会接济您。就连隔壁住的那些弃妃们，都还记恨您害她们进冷宫，恨不得来踩您一脚呢！」</p>
+<p>有点惆怅，原主当初仗着丞相府，在宫里太不知收敛，得罪太多人。</p>
+<p>要不是冷宫太偏僻太晦气，早就有人前仆后继来弄死我了。</p>
+<p>「算了，嬷嬷，先给孩子弄点米糊吧。」</p>
+<p>喂完孩子后，我拿出自制的木哨，吹响和小福子约定的信号。</p>
+<p>03</p>
+<p>一天后，外面才传来了脚步和说话声。</p>
+<p>「怎么办，还没找到陛下？」</p>
+<p>「是呀，陛下明明被刺客重伤还昏迷着，怎么会突然不见了呢！」</p>
+<p>「别说了，快找吧，听说那刺客还躲在宫里没抓到，陛下可千万别是……」</p>
+<p>我竖起耳朵，刚要细听。</p>
+<p>「嗷~」</p>
+<p>一声特别微弱的叫声，在旁边的干枯杂草中响起。</p>
+<p>我好奇地扒开一看，一只浅灰色的杂毛小奶狗奄奄一息地躺在狗洞里。</p>
+<p>「我的大儿、不对，二儿？」</p>
+<p>算了，我到现在还没分清两个孩子谁大谁小。</p>
+<p>我赶紧抱起了贪玩跑出来的孩子。</p>
+<p>摸到了一手鲜血，孩子的肚子上，竟有一个还在冒血的血洞！</p>
+<p>哪个龟孙子敢伤我的孩子！</p>
+<p>心疼地忙抱着浑身冰冷的孩子回房间包扎好。</p>
+<p>放回两个孩子休息的床上。</p>
+<p>我突然瞧着不太对劲。</p>
+<p>一、二……三？</p>
+<p>我怎么多了一只狗、不是，孩子！</p>
+<p>这三个孩子，还长得尤其像！</p>
+<p>难道我那天其实一共生了三个孩子？</p>
+<p>04</p>
+<p>「娘娘，明日要断粮了……」</p>
+<p>嬷嬷端来一大碗米糊，看着又多出来的一张嘴，很无奈。</p>
+<p>人都没得吃了，还乱捡狗。</p>
+<p>嬷嬷怎么都不信，三个孩子都是我怀胎两个月生下来的。</p>
+<p>为了孩子不饿肚子，我是时候使出杀手锏了。</p>
+<p>来到隔壁院子，我猛地推开门。</p>
+<p>看着三个头上插着草衣裳凌乱的疯女人，对怀里的孩子开口。</p>
+<p>「快，叫姨姨。」</p>
+<p>三人三狗顿时目瞪狗呆。</p>
+<p>我自顾自说道：「都是姐妹，给小外甥们一些见面礼吧。我会让你们欲罢不能，满头大汗，爱不释手，浑身舒畅。我们可以三人玩、四人玩、十人都能玩！」</p>
+<p>「啊！流氓、变态！你、你不知羞耻、厚颜无耻、寡廉鲜耻、恬不知耻！」</p>
+<p>她们突然尖叫羞骂，动作齐一的护胸后退防色狼的标准姿势。</p>
+<p>连我怀里受伤的那只崽，都突然抬起狗头看向我。</p>
+<p>一副随时要龟裂的模样。</p>
+<p>不是，你们脑补什么了？</p>
+<p>我满头问号地拿出一副自制扑克牌。</p>
+<p>「我说的是教你们炸金花、斗地主啊！」</p>
+<p>05</p>
+<p>刚从三弃妃那边讹到崽子们的吃食。</p>
+<p>小福子牵着一头欠我的母羊姗姗来迟。</p>
+<p>还带来一个消息。</p>
+<p>说陛下已经找到了，但刺客仍未抓到。</p>
+<p>我并不关心这些。</p>
+<p>第一场雪簌簌落下时，按崽子的个头大小，我终于分清了大宝二宝三宝。</p>
+<p>我裹着被子，将大宝提溜在面前打量着。</p>
+<p>嬷嬷搓着手臂，在我房间取暖。</p>
+<p>「见鬼，今年太冷了。娘娘，您怎么还举着狗看个不停？别瞧了，大宝真的是公的。二宝也是公的，只有三宝不是。」</p>
+<p>大宝羞耻地拼命想合拢后腿，恨不得把自己缩起来。</p>
+<p>「老实交代，你昨天是不是偷跑出去玩了？！」</p>
+<p>我突然质问出声。</p>
+<p>大宝浑身一僵，心虚地看着我。</p>
+<p>果然，我早就发现大宝经常不见狗影，没想到真的偷跑出去玩了！</p>
+<p>我冷笑一声，严厉教育。</p>
+<p>「胆肥了啊，伤还没好全，又偷溜出去玩？你生怕别人不知道你娘我给皇帝戴绿帽子生下了你们三兄弟？」</p>
+<p>刚说完，就感觉空气一阵凝滞。</p>
+<p>大宝顿时晴天霹雳般、用狗眼控诉地瞪着我。</p>
+<p>06</p>
+<p>啊湫！</p>
+<p>嬷嬷突然打了个喷嚏，抽搐着嘴角道：</p>
+<p>「放心吧娘娘，您就是抱着三只狗子绕皇宫一圈，也没人知道这是您的孩子。」</p>
+<p>「嗷！嗷嗷呜~嗷呜嗷呜。」</p>
+<p>大宝闻言，委屈地焦急嗷叫，像极了被戴绿帽的是它。</p>
+<p>我松了口气：「对啊，差点忘了，我压根就不是人。」</p>
+<p>没理会大宝瞪大狗眼，惊讶我狠起来自己都骂的呆滞表情。</p>
+<p>我发现嬷嬷发抖的脚，想起昨晚被冻醒的难受。</p>
+<p>当即拍板道：「趁天刚开始冷。盘炕吧！」</p>
+<p>拆了冷宫的一堵墙，花了半个月，用床炕设计图从小福子那讹了不少墙粉。</p>
+<p>终于刷好又大又平整的炕床。</p>
+<p>寒潮突然而至，温度瞬间降了十几度。</p>
+<p>躲在暖和的炕床上，面对嬷嬷看天才一样看我的眼神。</p>
+<p>我顿时虚荣心得到满足，没忍住显摆了一下。</p>
+<p>「只是一个炕算什么。要是条件允许，信不信我能让全京城的人都在寒潮中活下来。」</p>
+<p>三个孩子闻言齐刷刷抬起可爱的小狗头，好奇地看着我吹牛。</p>
+<p>也许牛吹得太大，寒潮刚过。</p>
+<p>冷宫里突然出现一个意想不到的人！</p>
+<p>「皇上驾到！」</p>
+<p>房门被推开。</p>
+<p>我傻傻地看着裹着寒风进来的一大群人，竟是皇上和一群朝臣，小福子也在。</p>
+<p>07</p>
+<p>为首的明黄色身影踱步走向我。</p>
+<p>他长得十分俊美，五官精雕细琢过一般，身材也修长，就是单薄了点，脸色苍白没什么血色。</p>
+<p>这还是我第一次亲眼见到传说中的病秧子皇帝。</p>
+<p>「放肆！见过陛下，还不下跪！」</p>
+<p>皇帝君无渊身边公公突然尖锐呵斥。</p>
+<p>吓得我差点把怀里的两个孩子扔出去。</p>
+<p>我忙单膝跪下行礼。</p>
+<p>脸色倏地一变。</p>
+<p>完蛋！难道我给皇帝戴绿帽子的事，被他知道了？</p>
+<p>正忐忑着，怀里的两只小崽子却一反常态。</p>
+<p>活泼地冲着皇帝方向又是呜呜叫又是摇尾。</p>
+<p>我不敢抬头，没看到皇帝看向我怀里的崽子时，意味深长的目光。</p>
+<p>悄悄地镇压着怀里的崽子。</p>
+<p>便听到头顶响起磁性好听的清冽声音。</p>
+<p>「朕听说废后才思敏捷，即使在冷宫，也时不时造出各种小玩意。前段时间，还设计出炕床这等有效御寒的好东西。」</p>
+<p>君无渊停顿了一下，才悠悠感慨，「废后真是令人大开眼界啊。朕竟不知，废后这般能干。」</p>
+<p>不用抬头，我都能感觉到所有人落在我头顶的审视目光。</p>
+<p>我反而松了口气。</p>
+<p>一脸娇羞地回道：「陛下，罪妾在冷宫太想念您的体温，才能乱造出这炕床。只要躺在上面，就像陛下一直拥抱着罪妾，这都是陛下的功劳！」</p>
+<p>我自己都佩服我拍马屁的能力多强！</p>
+<p>只是皇帝和大臣们，怎么一脸被雷劈的样子？</p>
+<p>君无渊突然啧了一声。</p>
+<p>「朕听明白了。既然如此，那朕便给废后一个机会。」</p>
+<p>「十日内想出能让全京城百姓都扛过寒潮的办法。朕便满足你侍寝的愿望。但若做不到，废后的脑袋，可要搬家了。」</p>
+<p>我下巴脱臼地目送离开的君无渊。</p>
+<p>不是，谁说要侍寝了？！</p>
+<p>08</p>
+<p>嬷嬷又惊又喜地恭喜我。</p>
+<p>我却只想揍一顿又不知去哪里玩够了跑回来的大宝。</p>
+<p>考虑了三天，决定将大宝提回房单独教育。</p>
+<p>「你娘我随时要跑路了，你这段时间再乱跑，别怪我到时候丢下你啊！」</p>
+<p>大宝突然满脸震惊地看着我，焦急嗷叫，又咬我袖子。</p>
+<p>一看就是吓到了。</p>
+<p>我这才满意地将它送出房门，「去找你两个弟弟玩去，我要规划一下逃跑路线了。」</p>
+<p>反正让我侍寝不可能，毕竟原主和皇帝还没同房过。</p>
+<p>给皇帝戴绿帽子的事揭发，我脑袋一样会搬家！</p>
+<p>我刚关上门。</p>
+<p>突然浑身一僵，脖子上抵着寒光闪闪的剑。</p>
+<p>身后不知何时，竟出现了一个人。</p>
+<p>「佩服，都成废后了，竟还能让皇上召你侍寝。」</p>
+<p>一个陌生的年轻男人声音在身后响起。</p>
+<p>我慢慢转身。</p>
+<p>看到的是一身黑衣人装扮、面容还算俊逸的二十多岁男子。</p>
+<p>「啧，原来是皇帝的男姘头？放心吧，我对你的皇上的没兴趣，别嫉妒了，今晚我就会离开。」</p>
+<p>黑衣人顿时目瞪口呆，反应过来后，翻了个白眼。</p>
+<p>「你！你是傻子吧？」</p>
+<p>外面突然传来惊讶喧闹。</p>
+<p>「咦、皇上万岁万岁万万岁！」</p>
+<p>黑衣人吓了一跳，收剑转身就要跳后窗离开。</p>
+<p>我猛地狠狠撞上他的腰，一把将他按倒在地，死死掐住他后脖子。</p>
+<p>特别愤怒。</p>
+<p>「我长这么大，就没人敢侮辱我的两百八的智商。立刻给我道歉！」</p>
+<p>砰！</p>
+<p>门唰的打开。</p>
+<p>「刺、刺客！快！抓起来！」</p>
+<p>君无渊身边的公公声音尖锐地指着被我坐在地上的黑衣人大喊。</p>
+<p>09</p>
+<p>整个皇宫一片喜气洋洋。</p>
+<p>藏了一个月的刺客，终于抓到了。</p>
+<p>我徒手抓刺客立了大功，皇帝直接宣旨恢复我皇后的身份。</p>
+<p>住回了凤栖宫。</p>
+<p>禁卫军将我的寝宫护得严严实实。</p>
+<p>这下别想偷跑了。</p>
+<p>一群嫔妃们架势十足地前来恭喜我。</p>
+<p>尤其是一直最受宠的柳贵妃，被簇拥着前来还凤印。</p>
+<p>阵仗比我这个皇后大多了。</p>
+<p>「皇后娘娘，您的手段真是高啊，臣妾佩服的五体投地。」</p>
+<p>柳贵妃说得好听。</p>
+<p>那眼神，却满是蔑视。</p>
+<p>我正在烦恼嬷嬷总想让我三个崽子去看门的事。</p>
+<p>闻言下意识道：「哦，那你倒是五体投地给本宫看看啊。光说不做假把式。」</p>
+<p>气氛一阵凝滞。</p>
+<p>柳贵妃微眯着眼审视着我。</p>
+<p>突然笑了。</p>
+<p>「娘娘心狠手辣的本事，臣妾自愧弗如，也不怪连墨王爷都对您赞赏有加。」</p>
+<p>「只是据说陛下让您想出为全京城百姓御寒的好办法，就剩五日期限。希望五日后，娘娘你还能这般伶牙俐齿。」</p>
+<p>我一听这话，顿时不乐意了。</p>
+<p>「要夸本宫就该当面夸！柳贵妃你和墨王爷背地里偷偷说小话过分了吧。」</p>
+<p>我话音还没落下，气氛直接死寂了。</p>
+<p>柳贵妃脸色大变，色厉内荏地吼道：</p>
+<p>「皇后请您慎言！您再污蔑臣妾与王爷的名誉，臣妾只能请陛下做主了！」</p>
+<p>我倏地瞪大眼睛，看着几乎落荒而逃的柳贵妃。</p>
+<p>不是吧，柳贵妃这心虚样，该不会真和皇帝的胞弟有什么吧？</p>
+<p>这就刺激了！</p>
+<p>10</p>
+<p>离皇帝说的期限，只剩下四天。</p>
+<p>为了先保住头上的脑袋。</p>
+<p>我将暖宝宝的制作方法和制作新型隔热保温布的方法和手工机床呈给皇帝。</p>
+<p>君无渊立刻找大臣们商议去了。</p>
+<p>完全忘记让我侍寝的事。</p>
+<p>我刚想庆祝逃过一劫</p>
+<p>没想到，刺激的事，跑我身上来了！</p>
+<p>「华儿，你可真调皮。本王心尖上的人是谁，你不是最清楚吗？」</p>
+<p>逆着光走来一个身材挺拔有力的蟒袍男子。</p>
+<p>给我莫名的熟悉感。</p>
+<p>随着他越走越近，我的心越来越不安。</p>
+<p>「别吃醋了，本王与贵妃真是清白的。你才是本王心尖上的人儿。」</p>
+<p>君无墨一脸深情地看着我。</p>
+<p>我却如晴天霹雳。</p>
+<p>夭寿啊！</p>
+<p>崽子他爹竟然是王爷君无墨！</p>
+<p>虽当时醉眼迷蒙，但这衣服颜色，这身材，这五官轮廓。</p>
+<p>绝对是那晚被我强行扑倒的绿帽！</p>
+<p>仔细一看，君无墨不愧是皇帝的亲胞弟，长得有五六分像。</p>
+<p>只是他说的话，总感觉十分油腻。</p>
+<p>「墨王爷手眼通天啊，一挥手就能遣开本宫宫里的人！」</p>
+<p>真扫兴，但凡我那晚少喝两杯，也不会眼瘸扑倒他。</p>
+<p>还不如病秧子皇帝好看呢。</p>
+<p>君无墨看出我不待见他。</p>
+<p>深情中带着一丝难过。</p>
+<p>「华儿，唉，你果然还在怪本王没有救下丞相一家。你要清楚，皇兄决定要谁死，本王亦无能为力。能做的，便是替丞相尽量护住你罢了。」</p>
+<p>啧啧。</p>
+<p>君无墨是在提醒我，皇帝和我有不共戴天之仇。</p>
+<p>「王爷的意思是，孩子养在我身边会有危险？我不配带着孩子？！」</p>
+<p>说了一堆借口，不就是得知我生了崽子，想来抢抚养权。</p>
+<p>果然是渣男。</p>
+<p>「什么孩子？」</p>
+<p>君无墨满脸懵逼。</p>
+<p>看我的眼神，好似在看……天才？</p>
+<p>「嗷嗷呜呜」</p>
+<p>憨萌可爱的二宝三宝追在大宝身后，玩闹着跑进来。</p>
+<p>见君无墨眼睛皱眉不悦地盯着它们。</p>
+<p>我一把捞起孩子戒备护在怀里。</p>
+<p>没看到大宝狗眼深沉地看着君无墨。</p>
+<p>「你死心吧，有本宫在的一天，谁都别想抢走本宫的孩子。」</p>
+<p>我护犊子的行为，似乎终于让君无墨不耐烦和我周旋了。</p>
+<p>他嫌弃地看了一眼我怀里的崽子。</p>
+<p>临走时提醒道：「皇兄随时会让你侍寝，你好好想想本王说的。」</p>
+<p>皇帝早忘记侍寝的事，我要想什么？</p>
+<p>简直莫名其妙。</p>
+<p>11</p>
+<p>「奉天承运，皇帝召曰。淑华皇后钟灵毓秀，所上呈护暖包、护暖布御寒效果卓绝，在寒潮之中拯救万千百姓性命。」</p>
+<p>「今赏赐金银珠宝、绫罗绸缎若干，特准今晚为朕侍寝，钦此。」</p>
+<p>侍寝圣旨下来的那刻。</p>
+<p>我整个人差点裂开了。</p>
+<p>侍寝这事还特地写了个圣旨。</p>
+<p>我要是拒绝，岂不是等于是抗旨？</p>
+<p>不拒绝，今晚皇帝就会发现他被戴绿帽，同样是死。</p>
+<p>嬷嬷不知我多担忧，把崽子们都带走了。</p>
+<p>风风火火地招呼宫人为我沐浴更衣，打扫寝宫。</p>
+<p>还让老天保佑我，一举怀上龙种。</p>
+<p>眼看皇帝马上要进来。</p>
+<p>一个面生的宫女出去前，悄悄塞了一颗药丸在我手里。</p>
+<p>「娘娘，王爷说希望您别让他失望。」</p>
+<p>我没看清那转身就离开的宫女长什么模样。</p>
+<p>皇帝就穿着一身玄色长袍走进来。</p>
+<p>不知是不是烛光的问题。</p>
+<p>总觉得没穿龙袍的君无渊，身材修长挺拔了不少。</p>
+<p>他闲庭信步走向我的那刻。</p>
+<p>我恍惚间想起了中秋夜，令我色心大起……不是、怦然心跳的身影。</p>
+<p>「朕就这般好看？」</p>
+<p>连声音都磁性魅惑，一点不油腻。</p>
+<p>像极了那晚的男妖精。</p>
+<p>看着君无渊精雕细琢的俊美五官凑近。</p>
+<p>我后悔当初扑错人了。</p>
+<p>如今面对美色。</p>
+<p>我只能绞尽脑汁想着怎么逃过这一劫。</p>
+<p>「陛下，其实侍寝这种事，特别耗费精力，无聊又浪费时间。不如臣妾……」</p>
+<p>我边说边慌张地起身，想要离他远一点。</p>
+<p>谁知脚下一崴，没站稳就扑进了君无渊的怀里。</p>
+<p>一颗药丸咕噜噜滚落在地。</p>
+<p>君无渊似有所觉，转头要去看。</p>
+<p>我顾不得其它，猛地往下扑。</p>
+<p>动作太大，直接把君无渊扑倒在地。</p>
+<p>「皇后似乎很喜欢这样？嘴上说着不要，身体……」</p>
+<p>还没说完，君无渊转头就看到旁边显眼的药丸。</p>
+<p>空气陷入了死一般的寂静。</p>
+<p>12</p>
+<p>「回陛下，已经检验清楚，这是一颗壮阳药。」</p>
+<p>太医的话，让我想死的心都有了。</p>
+<p>众人看着衣衫不整的皇上，全都意味深长地看着我。</p>
+<p>不过一天时间。</p>
+<p>整个皇宫都在流传我是丧心病狂的色魔。</p>
+<p>对陛下又是扒衣又是扑倒，还想给皇帝偷用壮阳药。</p>
+<p>我打算躲在宫里装死。</p>
+<p>「不好了娘娘，您的宠物狗在御花园咬伤了柳贵妃。柳贵妃说要乱棍打死它们。」</p>
+<p>我用了这辈子最快的速度跑到御花园。</p>
+<p>还没进去就听到崽子们凄厉的嗷嗷叫。</p>
+<p>十几个宫人和嬷嬷，围着崽子。</p>
+<p>大笑着乱棍一直打着惨叫躲避的狗子。</p>
+<p>地上还有不少鲜血！</p>
+<p>「住手！」</p>
+<p>我大喝一声，目眦欲裂地冲上去。</p>
+<p>奄奄一息的二宝三宝看到我。</p>
+<p>艰难地朝我呜咽出声。</p>
+<p>我双手发抖蹲下来。</p>
+<p>却不敢去抱身上沾着血污的两个孩子。</p>
+<p>怕有骨折错位，只能等太医前来。</p>
+<p>我心疼地轻轻抚摸着两个孩子。</p>
+<p>它们无力地闭着眼。</p>
+<p>我倏地站起来，眼神冰冷地射向被嫔妃们簇拥的柳贵妃。</p>
+<p>「是你将我孩子伤成这样的？」</p>
+<p>柳贵妃嗤笑一声，「孩子？皇后娘娘，您说什么笑话呢？不过就是两只小畜生。敢咬坏臣妾的裙摆，大卸八块都是便宜它……啊！你干嘛？」</p>
+<p>她还没说完，就惨叫着被我一把按在地上狂扇巴掌。</p>
+<p>啪！啪啪啪啪！</p>
+<p>「你说谁是小畜生？你想把谁大卸八块！！」</p>
+<p>「啊！救命！啊、快救我啊！良淑华你住手、我可是陛下最宠爱的贵妃、啊！」</p>
+<p>一群人要把我拉开。</p>
+<p>我咬紧牙齿，死死抓着柳淑妃的领子，继续狠狠扇着巴掌。</p>
+<p>要被彻底拉开那刻。</p>
+<p>一道威厉的声音响起：</p>
+<p>「住手！你们在干吗？」</p>
+<p>「皇上快救救臣妾！啊！皇后她疯了，她打得臣妾好疼！啊！住手，你快住手啊！」</p>
+<p>我什么都不管。</p>
+<p>掐着柳贵妃的脖子继续扇。</p>
+<p>13</p>
+<p>一个有力的肩膀，按在我肩上：</p>
+<p>「太医来了。朕会处理的，相信朕，好吗？」</p>
+<p>他的声音有些喘，明显是跑过来的。</p>
+<p>没到下朝时辰，皇帝为了柳贵妃，倒是够关心的。</p>
+<p>我紧紧攥拳才忍住没发飙。</p>
+<p>起身眼珠通红地看向君无渊。</p>
+<p>「若是我的孩子出事。我要她百倍奉还！」</p>
+<p>柳贵妃和一群嫔妃们觉得我疯了。</p>
+<p>太医诊断的很快，「陛下，它们有多处骨折，内脏出血。」</p>
+<p>柳贵妃闻言，顿时委屈地开口：「皇上，您可要为……」</p>
+<p>「闭嘴！把柳贵妃打入天牢！涉事妃嫔全都打入冷宫！动手的宫人，全部乱棍打死！」</p>
+<p>君无渊突然暴怒出声。</p>
+<p>深不见底的眸子嗜冷地射向柳贵妃。</p>
+<p>所有人都说从来没见过皇帝发那么大的火。</p>
+<p>一群朝臣不管怎么求情，君无渊都无动于衷。</p>
+<p>宫里人悄悄议论说我疯得太厉害，竟把狗当成孩子。</p>
+<p>凤栖宫。</p>
+<p>我守着床上快被包成木乃伊的两个孩子，目光沉沉。</p>
+<p>「呜嗷呜」</p>
+<p>野够了的大宝，试探着立起身，小心翼翼地来蹭我的手。</p>
+<p>我不理它。</p>
+<p>大宝焦急地又蹭又叫，狗眼里满是慌乱。</p>
+<p>我心里一软。</p>
+<p>生气地抱起它就打屁股。</p>
+<p>「你是大哥，你怎么能抛下两个弟弟！」</p>
+<p>大宝一声不吭，任由我打，愧疚地蹭我的手。</p>
+<p>我突然鼻子一酸，紧紧抱住它。</p>
+<p>「对不起，明明不是你的错还打你。幸好、幸好你没事。」</p>
+<p>哭够了，我抱着大宝趴在床前睡了过去。</p>
+<p>迷迷糊糊中，我总感觉脸颊有点痒。</p>
+<p>有人在我耳边呢喃，「抱歉，是朕没保护好你们……」</p>
+<p>14</p>
+<p>三天后。</p>
+<p>两个崽子终于精神了些，对着我抢食撒娇。</p>
+<p>大宝安分了两天，又不知乱跑去哪里了。</p>
+<p>我刚喂完它们羊奶。</p>
+<p>君无墨突然来找我。</p>
+<p>「皇后！你到底怎么回事？为了两只畜生，故意针对柳如烟？你嫉妒也要分时候！你知不知道陛下要刺死柳如烟。你赶紧去求陛下放柳如烟出来！」</p>
+<p>我差点被他气笑。</p>
+<p>双眼锐利地射向他，「君无墨，你是什么狼心狗肺的东西？柳如烟把你两个孩子伤成这样，你还想护着你姘头？！」</p>
+<p>君无墨差点被我气得吐血：</p>
+<p>「良淑华，你又疯言疯语什么？什么本王的孩子？你不会真和传言一样，在冷宫待疯了！」</p>
+<p>我彻底怒了。</p>
+<p>「中秋宫宴那晚，柳竹林假山，你记不记得！」</p>
+<p>君无墨脸色大变，「你怎么知道？等下！那次竟然是你坏了本王的好事，枉本王那天故意装病没进宫……」</p>
+<p>我倏地瞪大眼。</p>
+<p>「你说什么？你那天没有进宫？！」</p>
+<p>怎么可能，那那晚是谁……</p>
+<p>君无墨懒得回答，只是警告我。</p>
+<p>「良淑华，你最好想办法把柳贵妃弄出来。否则别怪本王无情！」</p>
+<p>15</p>
+<p>三日后。</p>
+<p>柳如烟被灌了一杯毒酒赐死了。</p>
+<p>我心里一点波动都没有。</p>
+<p>谁知嬷嬷突然惊慌地冲进来。</p>
+<p>「娘娘，不好了，那刺客招供说是您让他刺杀陛下的！就连之前的壮阳丹，太医也说检测出毒药！」</p>
+<p>我还没反应过来。</p>
+<p>一群禁卫军冲了进来，要把我抓去天牢。</p>
+<p>「我要见陛下！」</p>
+<p>以为见不到。</p>
+<p>君无渊却真的来了。</p>
+<p>他一进来。</p>
+<p>原本床上乖巧养伤的两只崽子看到他，就莫名活泼。</p>
+<p>甚至还对他呜叫摇尾。</p>
+<p>我打量着君无渊。</p>
+<p>虽然荒谬，却不得不承认一个事实。</p>
+<p>那晚我扑倒的人，不是君无墨，而是龙椅上的皇帝。</p>
+<p>崽子们天然亲近他，应该也是血缘天性。</p>
+<p>「听说皇后要见朕，是不愿意认罪？」</p>
+<p>君无渊的话拉回我的思绪。</p>
+<p>他的眼睛很深邃，让人看不透心里想什么。</p>
+<p>我摇头，单膝跪在他面前。</p>
+<p>「我只想说一句话，它们是我的亲生孩子，包括大宝。求陛下在调查清楚真相前，务必善待它们。」</p>
+<p>君无渊没有直接回答。</p>
+<p>直到被抓走那刻，我听到一声叹息：「好。」</p>
+<p>16</p>
+<p>平生第一次体验坐牢。</p>
+<p>我还算淡定。</p>
+<p>毕竟，罪魁祸首君无墨，正站在牢房外威胁我。</p>
+<p>「良淑华，你该感谢本王，三番两次坏本王的好事，让本王到现在还没坐上龙椅，本王却一直没要了你的命！」</p>
+<p>「哦。那不是因为你一开始就没本事坐龙椅吗？」</p>
+<p>君无墨的脸都狰狞了一瞬。</p>
+<p>愤怒开口：「你一个无知妇人懂什么！就只是因为他是嫡长子，他就是皇帝，我就只能是闲散王爷！我哪里比他差？！」</p>
+<p>我就不喜欢这么没自知之明的人。</p>
+<p>「比他丑。」</p>
+<p>我直接提醒。</p>
+<p>君无墨一噎，后悔对我说这么多了。</p>
+<p>「良淑华，陛下似乎对你很不一般，亲自把你的两只狗接去了乾清宫。本王给你一个活的机会如何？」</p>
+<p>两只？</p>
+<p>大宝呢！</p>
+<p>它又跑哪里去了？</p>
+<p>「什么机会？」</p>
+<p>我声音平静地问道。</p>
+<p>君无墨拿出一个瓶子。</p>
+<p>「我这里有一只虫子，你只要在侍寝时，让它成功钻进皇兄的脖子里。我不但会护你周全。还会让你成为本王的皇后，你满意了吧？」</p>
+<p>17</p>
+<p>君无墨的手段，比我想象的更高。</p>
+<p>两天后，我被无罪释放。</p>
+<p>回到了凤栖宫。</p>
+<p>嬷嬷告诉我，皇帝为了弥补我被冤枉的委屈，答应今晚让我去乾清宫侍寝。</p>
+<p>但我下午就去御书房找君无渊了。</p>
+<p>推开门。</p>
+<p>里面不少大臣，君无墨也在。</p>
+<p>被我打扰，他们都皱眉不悦。</p>
+<p>我却不管，直接问君无渊：</p>
+<p>「陛下，孩子们可还好？大宝二宝三宝，都在吗？」</p>
+<p>听到我的话，有大臣立刻斥责我没有一点规矩。</p>
+<p>君无渊似乎也不耐烦，却还是点点头：</p>
+<p>「三只，都好好的。」</p>
+<p>我安心笑了，我不知道君无渊怎么看待我和孩子们的。</p>
+<p>但他有好好照顾它们就够了。</p>
+<p>我倏地跪在君无渊面前，开口道：「陛下，我要认罪！不管是壮阳药还是刺客的事，都是君无墨王爷指使我做的。他还给我这个蛊虫，要让我侍寝的时候，放进你的脖子里。」</p>
+<p>大臣们不敢置信地看着我手里的瓶子。</p>
+<p>「你、皇后你血口喷人！」</p>
+<p>君无墨反应过来，跳脚似的指着我骂道。</p>
+<p>我冷笑一声，自顾自的继续。</p>
+<p>「不仅如此，柳尚书和柳如烟一直也是王爷的人！还有我那被抄家斩首的父亲，一直支持王爷谋朝篡位！」</p>
+<p>「陛下，君无墨一直不满您当皇帝，就连中秋宫宴那晚，在柳竹林也设了埋伏。这些陛下都可以立刻调查。去君无墨的府里搜，一定能找到罪证！」</p>
+<p>君无渊瞳孔骤缩，深眸异常复杂地看着我。</p>
+<p>「皇后，你可清楚自己说这些话，会有什么下场？」</p>
+<p>18</p>
+<p>下场就是再次锒铛入狱呗。</p>
+<p>我高兴的是，君无墨就关在我隔壁。</p>
+<p>「你这个贱人、疯子！你怎敢如此对待本王！」</p>
+<p>我自动屏蔽他的骂声。</p>
+<p>只等结果。</p>
+<p>可没过几日，我失望了。</p>
+<p>「今大理寺卿查明，未在墨王爷府上发现任何谋逆罪证。皇后身为一国之母，污蔑皇亲国戚、陷害忠良，意图谋害陛下，罪无可赦！三日后，赐鸩酒一杯，行刑示众！！」</p>
+<p>君无墨得意地被接出牢房。</p>
+<p>面容扭曲地对我威胁道：</p>
+<p>「良淑华，你可真蠢，以为这样就能害得了本王？现在死的只有你。为了回敬你，这三天，本王会让人好好招待你的！对了，还有你的狗，我会好好享用的。哈哈哈哈哈。」</p>
+<p>我死死抓着铁栏栅。</p>
+<p>目眦欲裂地瞪着他嚣张离开的背影。</p>
+<p>我失算了。</p>
+<p>君无墨隐藏的太好，竟然没有留下一点把柄。</p>
+<p>可我已经没有任何办法。</p>
+<p>君无墨的报复来得很快。</p>
+<p>狱卒故意将穷凶极恶的犯人和我关在一起。</p>
+<p>面对他们淫笑着靠近我、揪住我衣领的恶心模样，我闭上眼睛。</p>
+<p>我只知道，我还不能死。</p>
+<p>我还有话，要和君无渊说。</p>
+<p>19</p>
+<p>呃！</p>
+<p>砰、砰砰砰！</p>
+<p>揪住我领子的手，莫名一松。</p>
+<p>有什么重重倒在地上声音。</p>
+<p>我睁眼，是一群双目大瞪、死不瞑目的恶徒。</p>
+<p>他们的脖子上，插着流血的暗器。</p>
+<p>环顾四周，没有见到任何人的身影。</p>
+<p>三天后一大早，我被带出牢房时，依旧不知道，谁是救了我。</p>
+<p>但不重要了。</p>
+<p>我被带去好好梳洗了一番，甚至吃了一顿饱饭。</p>
+<p>宫女和禁卫军，押着我前往金銮殿。</p>
+<p>走进大殿里。</p>
+<p>竟然空无一人。</p>
+<p>我正疑惑着。</p>
+<p>「嗷！嗷呜嗷呜~！」</p>
+<p>激动的叫声传来。</p>
+<p>三只皮毛油光水滑小崽子兴奋地从侧门冲进来。</p>
+<p>对着我又蹭又咬。</p>
+<p>身形也大了一圈，一看就被养得很好。</p>
+<p>我无比想念地抱起了它们，为它们顺毛。</p>
+<p>大宝不知怎么回事，突然跳下我的怀抱，从侧门钻走了。</p>
+<p>没一会儿，一双金线皇靴出现在我面前。</p>
+<p>我抬头看到穿着龙袍显得有些单薄的君无渊。</p>
+<p>他脸上没什么血色，还是一副带病的模样，似乎还瘦了点。</p>
+<p>「谢谢你，让我走前，还能看看孩子们。」</p>
+<p>君无渊深深地看着我。</p>
+<p>那眼神里似乎包含了很多情绪，又好似什么情绪都没有。</p>
+<p>半晌后，他才问了一句。</p>
+<p>「你后悔吗？」</p>
+<p>我毫不犹豫地摇头，「我只后悔，无法亲自找出他谋逆的铁证。」</p>
+<p>君无渊突然闭了闭眼。</p>
+<p>「抱歉，朕护不住你。」</p>
+<p>我竟然觉得这话有点甜。</p>
+<p>君无渊傻不傻，我那样的做法，大罗神仙来了也护不住我。</p>
+<p>何况他本就因为身体不好，得不到太多大臣的支持，还被君无墨虎视眈眈盯着命。</p>
+<p>20</p>
+<p>半个时辰后。</p>
+<p>文武百官都站在金銮殿前的广场。</p>
+<p>我站在台阶之上。</p>
+<p>君无墨张狂地朝我比了个抹脖子的得意表情。</p>
+<p>宫人将酒端在我面前。</p>
+<p>我摇头：</p>
+<p>「我想要陛下亲自为我端酒。」</p>
+<p>众人特别厌恶我要死了还作妖。</p>
+<p>君无渊却真的端着酒，走到了我面前。</p>
+<p>也不知是不是我的错觉。</p>
+<p>我感觉他的手，微微颤抖。</p>
+<p>那一刻，我莫名感觉君无渊真的挺帅的。</p>
+<p>有些心动。</p>
+<p>早知道这么快死，就该在之前多扑倒他几次。</p>
+<p>等他近在咫尺，我接过酒，突然揪着他的衣领拽向自己。</p>
+<p>所有人大惊失色，对我抽出刀剑。</p>
+<p>我没理会，在他耳边轻轻说道：「陛下，我其实不是人，孕期只有两个月。那三个孩子，就是中秋宴会柳竹林，我扑倒你那次的礼物。真想多扑倒你几次，可惜没机会了。」</p>
+<p>说完我一把推开他。</p>
+<p>毫不犹豫地将鸩酒一饮而尽。</p>
+<p>倒下时，总感觉君无渊深眸尤其复杂地凝视着我。</p>
+<p>21</p>
+<p>「嗷呜~母、母后，醒嗷、醒来！」</p>
+<p>我猛地坐起身，身边是两个三四岁的精致龙凤胎。</p>
+<p>特别可爱。</p>
+<p>我却特别迷茫地扫视陌生的房间。</p>
+<p>我难道又穿越了？</p>
+<p>「母后，你醒了，嗷呜，开心！」</p>
+<p>小男孩扑向我。</p>
+<p>我下意识去接，下一刻差点把怀里的崽子扔出去。</p>
+<p>小男孩竟在我面前，活生生变成了熟悉的狗崽子。</p>
+<p>我知道自己不是人。</p>
+<p>但孩子这突然能变身的能力……好羡慕！</p>
+<p>「崽儿，能不能告诉母后，你们怎么变身的？」</p>
+<p>两个孩子狗头顶着问号，无法理解我的意思。</p>
+<p>咳，变身这事不急。</p>
+<p>「你们大哥呢？」</p>
+<p>他们似乎更疑惑了。</p>
+<p>用了半个月。</p>
+<p>我彻底明白，自己在京城郊外的一个小庄子里。</p>
+<p>拥有一大箱金银珍宝和银票。</p>
+<p>估计是君无渊的手笔，大宝应该也在他身边。</p>
+<p>已经不在皇宫，这就好办了。</p>
+<p>我向来睚眦必报。</p>
+<p>君无墨等着接受我的怒火吧。</p>
+<p>一年后。</p>
+<p>墨王府举办赏花宴那日。</p>
+<p>所有参加宴会的宾客们，亲眼目睹了墨王府被炸成废墟的全过程。</p>
+<p>连同一丈深的大型地下暗室。</p>
+<p>连我都差点被暴露在堆积成山的金银珠宝和古董字画闪瞎眼。</p>
+<p>「嘶！这、这么多金子？得有几千万啊！」</p>
+<p>「快看这衣服，怎么会是龙袍，天哪，墨王爷他私藏龙袍！」</p>
+<p>「信、好多信！前丞相手信？柳尚书密信？王都尉的私印信？竟然还有边鞑皇子的信！」</p>
+<p>君无墨慌乱地想让人毁尸灭迹。</p>
+<p>皇上似乎早就让人盯着王府。</p>
+<p>一大群禁卫军飞快地出现，控制了局面。</p>
+<p>22</p>
+<p>翌日。</p>
+<p>「君无墨勾结朝臣，残害皇上，通敌卖国，意图谋反，证据确凿，判斩立决。」</p>
+<p>百姓们无不拍手叫快，直呼君无墨坏事做尽，遭了天谴。</p>
+<p>府里才会出现震耳欲聋的霹雷。</p>
+<p>涉事的所有官员，全部被君无渊一锅端，甚至连根带泥揪出了不少暗桩。</p>
+<p>这些支持君无墨一派的贪官们，一个都没落得好下场。</p>
+<p>刑场上。</p>
+<p>君无墨颓败地跪在地上。</p>
+<p>我掀开斗笠下的白纱，出现在他面前的那刻，他惊骇得差点厥过去。</p>
+<p>「你竟然没死？！」</p>
+<p>我笑容灿烂：</p>
+<p>「你都没死，我怎么可能会死。我的招待，你还满意不？」</p>
+<p>君无墨瞬间五官狰狞，愤怒无比。</p>
+<p>「是你！一切都是你搞得对不对！你到底怎么做到的？那些巨响是怎么回事！」</p>
+<p>「哦，就是造出来点小玩意儿，想借你府上试验一下威力。目前看威力还不错，应该能成为守护大好河山的好东西。放心，百姓们会记住你的王府做出的贡献的。」</p>
+<p>在刀砍下那一刻。</p>
+<p>君无墨不甘的扭曲表情，永远定格。</p>
+<p>我也终于报仇完成。</p>
+<p>就剩下最后一件事了。</p>
+<p>23</p>
+<p>我化了个自己都认不出自己的易容装。</p>
+<p>来到皇宫门口进献藏宝图。</p>
+<p>君无渊亲自接待了我。</p>
+<p>一年多不见。</p>
+<p>他成熟稳重了，声音都更有磁性了。</p>
+<p>说不日就会派人随我一起去挖藏宝图。</p>
+<p>我假借醉酒留宿宫中。</p>
+<p>在乾清宫外转了一整晚，都没看到大宝。</p>
+<p>也没听到大宝的声音。</p>
+<p>我心里有很不好的预感。</p>
+<p>第二天。</p>
+<p>故意在君无渊面前询问。</p>
+<p>「陛下，您是不是养了狗，草民昨个儿半夜迷糊中，好似听见了犬吠声。」</p>
+<p>君无渊目光霎时变了变。</p>
+<p>特别锐利地将我全身上下扫了个遍。</p>
+<p>我装作一脸疑惑，手心有点冒汗。</p>
+<p>总觉得有点抵挡不住他的审视了。</p>
+<p>他不知怎么，突然气势一收，轻笑了一声。</p>
+<p>如同冰雪消融，昙花乍然绽放。</p>
+<p>我第一次知道，原来美男笑起来，也能如此勾魂。</p>
+<p>「王壮士许是听错了。朕宫里没有狗。」</p>
+<p>我脸色大变。</p>
+<p>大宝不在宫里？</p>
+<p>这怎么可能！</p>
+<p>我彻底茫然无措，都没注意君无渊让我明日就带队出发去挖宝藏的话。</p>
+<p>24</p>
+<p>浑浑噩噩地带着一群禁卫军出宫。</p>
+<p>我正想找借口再见君无渊一面。</p>
+<p>马车车厢里，传来一声若有似无的有些陌生又熟悉的「嗷呜」叫声。</p>
+<p>我眼睛一亮，按捺住激动。</p>
+<p>和禁卫军闲聊，「马车里怎么有狗？」</p>
+<p>「哦，陛下让找来的，说是能嗅到人嗅不到的东西。」</p>
+<p>即使禁卫军这样说，我却一下就认出，绝对是我的大崽儿！</p>
+<p>后面的几日，我老老实实领着禁卫军，往藏宝洞的方向而去。</p>
+<p>也终于确定了，马车里的的确是大宝。</p>
+<p>只是我无法靠近马车。</p>
+<p>直到这日夜里要起大雾。</p>
+<p>我见时机成熟，将早就准备好的迷香草点燃。</p>
+<p>等禁卫军们昏昏欲睡。</p>
+<p>我打开马车，在大宝震惊的狗眼下，抱起已经二十多斤的它，骑上马跑了。</p>
+<p>卸下伪装，租了辆马车。</p>
+<p>我抱着怀里的大宝哈哈大笑。</p>
+<p>「你娘我聪明不？这都能把你从他们手里偷回来。之前为什么没有和二宝三宝一起出现，是不是你又贪玩让人找不到了？！」</p>
+<p>我边说教边用手戳它的狗叫教育：「你说说你怎么这么贪玩。二宝三宝都能变身了，就你还这副蠢样，你好意思当他们大哥不！」</p>
+<p>我正说得高兴。</p>
+<p>只感觉突然怀里一重，被什么猛地扑倒。</p>
+<p>低沉磁性的声音，在耳边酥麻响起。</p>
+<p>「皇后，你错了，朕不是大哥，朕是他们亲爹。」</p>
+<p>对上君无渊那双含笑的深眸时，我差点社会性死亡。</p>
+<p>傻傻张着嘴，心脏都吓得差点骤停。</p>
+<p>脑袋也一片空白。</p>
+<p>25</p>
+<p>我的大崽儿怎么变成君无渊了！</p>
+<p>下意识地要推开身上的君无渊。</p>
+<p>触手一片紧实有力的胸膛。</p>
+<p>「你变态啊！为什么不穿衣服！」</p>
+<p>面对我的控诉。</p>
+<p>君无渊反而笑容更深了。</p>
+<p>「你不是跟朕说过，后悔没多扑倒朕几次吗？朕给你送机会来了。」</p>
+<p>这不是我喝毒酒那日耍的嘴皮子吗。</p>
+<p>君无渊记性真棒。</p>
+<p>我脸上突然爆红。</p>
+<p>眼珠子乱转，生硬地转移话题。</p>
+<p>「你太过分了，竟然冒充我儿子，你良心不会痛吗？前些日子还骗我宫里没狗。早知道你这么不矜持，我才不扑倒你。」</p>
+<p>「朕可从未骗你，也从来没说是你儿子，朕和孩子们是狼不是狗。而且皇后不也骗朕藏宝图的事？」</p>
+<p>竟然是狼？</p>
+<p>稍稍回想一下，的确是她理所当然地把大宝当成自己儿子了。</p>
+<p>等下！</p>
+<p>「你什么意思？其实不是人的一直是你，不是我？！」</p>
+<p>看着君无渊忍笑点头的诚恳模样。</p>
+<p>我恨不得立刻钻地缝里去。</p>
+<p>恼羞成怒地说道：「本来藏宝图是真的，但里面我送你的那些宝贝，你一个也别想得到了！还有孩子们，既然是我生的，就和你一点份都没有！」</p>
+<p>26</p>
+<p>「好皇后，朕真的错了。朕一年没见大宝二宝，甚是想念他们。我们快去接孩子们回宫吧。」</p>
+<p>君无渊道歉了三天。</p>
+<p>我也想孩子们了。</p>
+<p>勉为其难地带着他去安顿孩子们的地方。</p>
+<p>路上，君无渊告诉我，他从小身体一直不好，是因为出现他身上出现狼血返祖现象，身体不太能承受那么大的变化。</p>
+<p>被刺客重伤后因祸得福变成了狼崽，身体终于慢慢恢复健康。</p>
+<p>两个孩子已经是四岁模样，自从能变成人后，生长速度与人类无异。</p>
+<p>他们一看到君无渊，当着我面就变成了狗崽……狼崽子，欢快地扑向了他，撕咬他衣角玩闹。</p>
+<p>我看着有点嫉妒。</p>
+<p>语气比柠檬更酸。</p>
+<p>「不愧是陛下生的白眼狼，亲娘都能视而不见。」</p>
+<p>君无渊立刻凑上来：「皇后，朕心里眼里，只有你一个。」</p>
+<p>往后的岁月里。</p>
+<p>君无渊真的做到了眼里心里只有我一人。</p>
+<p>我也是后来才知道，君无渊以前一直疑心重，加上身体不是很好，从未招人侍寝过。</p>
+<p>在接我回宫前，便已经遣散了后宫。</p>
+<p>一次宫宴醉酒，君无渊无比珍惜又感慨地紧紧抱住我。</p>
+<p>「朕一直很庆幸皇后你愿意回到我身边，朕亲自送假死的你离开时，曾以为，就算我斗倒了君无墨，也再无法寻回你们。谢谢你进宫来找我了。你和孩子是我失而复得的唯一珍宝。」</p>
+<p>就连后来，我们都白发苍苍了，他咽气前，依旧紧紧抓住我的手。</p>
+<p>「皇后，别这么快和朕在黄泉碰面。朕会在下面等你。下辈子，朕依旧只要你！」</p>
+<p>作者：元宝九</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/24-6%E9%98%BF%E6%B3%A2%E9%82%A3%E7%8E%9B%E9%9B%85%E9%87%8C%E7%9A%84%E7%83%9F%E7%81%AB/" title="6阿波那玛雅里的烟火">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">6阿波那玛雅里的烟火</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/24-6%E6%A2%A8%E5%9B%AD%E5%BE%80%E4%BA%8B%E6%B2%A6%E4%B8%BA%E7%8E%A9%E7%89%A9%E7%9A%84%E5%B9%B4%E8%BD%BB%E6%88%8F%E5%AD%90/" title="6梨园往事：沦为「玩物」的年轻戏子">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">6梨园往事：沦为「玩物」的年轻戏子</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

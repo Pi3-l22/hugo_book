@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第32节思杳 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC32%E8%8A%82%E6%80%9D%E6%9D%B3/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC32%E8%8A%82%E6%80%9D%E6%9D%B3/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="第32节思杳">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26583.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26583.jpg">
+  <meta name="twitter:title" content="第32节思杳">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第32节思杳">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11412">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26583.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">第32节思杳</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac32%e8%8a%82%e6%80%9d%e6%9d%b3&amp;url=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC32%E8%8A%82%E6%80%9D%E6%9D%B3/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC32%E8%8A%82%E6%80%9D%E6%9D%B3/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac32%e8%8a%82%e6%80%9d%e6%9d%b3%20https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC32%E8%8A%82%E6%80%9D%E6%9D%B3/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26583.jpg" alt="第32节思杳" />
+      
+
+      <p>分手后来医院拔牙，结果我的牙医梁医生不仅跟我说牙齿很可爱不需要拔，还暗地里「跟踪」我，不允许我吃甜食。</p>
+<p>就在我很疑惑的时候，梁医生委屈着脸给我看当年我在他手腕上留下的七歪八扭的牙印。</p>
+<p>1</p>
+<p>前段时间刚和段景分手，我在家拉着窗帘，不人不鬼地过了一个星期，最后被我闺蜜程舒带着物业的人找上门来了。</p>
+<p>「喻思杳，麻烦你看看你现在什么样子，别人搂着新欢逍遥快活，你现在就像个行尸走肉。」我刚打开门，程舒就扯着我的胳膊把我拉到了卫生间，掰着我的脸，让我直视镜子里的自己。</p>
+<p>她开了灯，我一时还没有适应，眯上了眼睛。</p>
+<p>「你看到他了？」我淡淡开口，哭了一周，声音还有些嘶哑。</p>
+<p>「我不用看也能直到他在干什么。」程舒站在我身侧，环手抱胸，语气满是不屑。</p>
+<p>我对着镜子扯了一个比哭还难看的笑容。</p>
+<p>我看着我的两个小虎牙，突然想到段景对我说的话。</p>
+<p>「喻思杳，你这虎牙看起来又傻又蠢。」</p>
+<p>然而他在最开始追我的时候，却说我笑起来的时候两颗小虎牙迷人又可爱。</p>
+<p>我闭了闭眼，转过身对着程舒郑重其事道，「我要去拔牙。」</p>
+<p>程舒倒是不意外，毕竟她老说这个虎牙很影响我散发女人味。</p>
+<p>她立马打开手机，边翻边说：「我跟你说，我前几天去补牙在市口腔医院碰上了一个大帅哥，我拍了他的资料卡，是里面的牙科医生。」</p>
+<p>她举起手机对着我。</p>
+<p>我瞧了瞧，确实很帅，眉清目秀，气质清冷，还带着眼镜，至少能迷死一条街吧。</p>
+<p>旁边显示着名字，梁锴。</p>
+<p>人如其名啊。</p>
+<p>我抬眼又看着程舒，有些疑惑，「这你不冲？」</p>
+<p>程舒翻了个大白眼，「姐姐我已经盯上一个小弟弟了，还是个奶狗，这个就留给你吧。」</p>
+<p>我眨了眨眼，有些不明所以。</p>
+<p>「喻思杳，走出一段感情的唯一方式就是快速进入下一段感情。」</p>
+<p>所以这就是她半年换三个的原因吗？</p>
+<p>我没搭理她。</p>
+<p>但我还是去了市口腔医院，并且挂上了正畸科室梁锴医生的号。</p>
+<p>我真的想拔牙，不仅仅是想把段景这个人随着我的虎牙彻底从我的人生中拔出去，还因为这凸出来的虎牙总是在我吃饭的时候咬到我的口腔，满嘴血腥味，反反复复。</p>
+<p>带来疼痛的东西，总归是要扔掉的。</p>
+<p>虽然已经看过他的照片了，但当我见到梁锴本人的时候，我还是不由得心里感慨一句，真的帅。</p>
+<p>帅到我心里突然有些小后悔，今早出门的时候怎么没化妆，随便抹了把脸戴个鸭舌帽就出门了，现在头发都被压得乱糟糟的。</p>
+<p>「喻思杳？」梁锴动了动嘴皮子，声音低沉磁性。</p>
+<p>「对。」我理了理头发。</p>
+<p>「笑一个我看看。」梁锴转过来看着我，镜片反射着诊室里青冷的灯光。</p>
+<p>我顿时有些紧张，但还是硬挤出了一个笑容。</p>
+<p>「我想拔掉这两颗虎牙。」我作出了解释。</p>
+<p>梁锴定定地盯着我的虎牙看，目光如炬，就在我以为他能把我的虎牙就这么看化掉的时候，他终于抬眸对上了我的视线。</p>
+<p>「不算特别挤，没有拔的必要。」</p>
+<p>「不，我不喜欢它们了，还是帮我拔掉吧梁医生。」</p>
+<p>许是我一脸诚恳，梁锴盯着我看了一会后，起身去拿了东西。</p>
+<p>「那先做个牙模吧。」</p>
+<p>梁锴拿了一个上面粘着类似口香糖的模具过来。</p>
+<p>「把嘴巴张到最大，塞进去之后咬紧。」</p>
+<p>我看着这么大的模具，一时有些难以开口，但是想了想我的虎牙，我还是尽可能张大了嘴，在梁锴的面前，把这个东西完全塞进了我的嘴巴。</p>
+<p>「可以，等会来叫你。」梁锴检查了一下便出了诊室。</p>
+<p>我拿起手机对着黑屏照了照，真像只大马猴啊，怪不得梁锴要走，简直丑得没眼看。</p>
+<p>时间一点点过去，我的腮帮子被撑得开始发酸，并且我能感觉到我的口水在疯狂分泌。</p>
+<p>好在梁锴及时赶来，取出了模具，并且从我的嘴巴拉出了一条长长的口水丝。</p>
+<p>我擦着下巴上的口水，尴尬地笑着开口：「还挺有弹性。」</p>
+<p>梁锴手指头上还捏着我另半截口水丝，听到我的话，明显身形一顿，看了我一眼，随后拿着模具又出去了。</p>
+<p>我看着他颀长的白色背影，恨不得咬舌自尽。</p>
+<p>手机突然震了震。</p>
+<p>「杳杳，怎么样，是不是很帅？」程舒给我发来消息。</p>
+<p>「嗯。」</p>
+<p>确实很帅，我也确实很倒霉，刚分手没多久，就在大帅哥面前丢了面子，并且这个帅哥还不给人台阶下。</p>
+<p>想着想着梁锴又回来了，「牙齿确实有些挤，拔完之后正畸会慢慢恢复。」</p>
+<p>我没敢看他的眼睛，盯着他手里的资料点了点头。</p>
+<p>「你的虎牙，很可爱，可以不用拔。」梁锴冷不丁说了这句话，我抬眼看了看他，镜片上的反光依旧让我看不清他眼里的情绪。</p>
+<p>现在医生连送上门的生意都不做吗？</p>
+<p>「如果你要做的话，戴牙套大概要一年半。」梁锴估计看出了我的决心，又补了一句。</p>
+<p>「好的。」</p>
+<p>「那先拔牙吧。」梁锴带我去拍片子采血。</p>
+<p>2</p>
+<p>虽然我已经下定决心拔掉我的两颗小虎牙，但是内心还是有些恐惧，之前就在网上搜了不少拔牙帖子，当我看到拔牙仪器的时候，一下子心慌腿软。</p>
+<p>「怕了？你还有时间反悔。」梁锴坐在椅子上，看我面露难色，善意劝导。</p>
+<p>「拔。」我手脚麻利地躺上手术椅，闭上双眼，双手紧紧捏着我的包，一副大义凛然的模样。</p>
+<p>还好，我的牙医是个帅哥，美貌在一定程度上可以减轻痛苦。</p>
+<p>不知道是不是我的错觉，我听到梁锴好像轻轻笑了一声。</p>
+<p>「准备打麻药了，会有点痛，忍一忍。」梁锴离得很近，温柔清晰的声音附在我的耳边，我突然就没那么害怕了。</p>
+<p>不害怕归不害怕，但是疼是实打实的疼啊。</p>
+<p>麻药针绕着我的小虎牙，在牙龈上一共戳了四次，钻心的痛。</p>
+<p>都说十指连心，那牙龈一定连脑吧，疼得我头皮发麻。</p>
+<p>等麻药劲上来之后，我听到两声肉体的撕裂声，梁锴手脚利索地已经把我的两颗虎牙给拔了，在缺少的位置塞了两团棉花。</p>
+<p>「拔完了。」</p>
+<p>我缓缓睁眼，瞄了眼躺在铁盘上血淋淋的牙齿，心头突然一阵轻松。</p>
+<p>「如果需要，牙齿你可以带走。」梁锴望着我，声音比最开始柔和了许多。</p>
+<p>我含着棉花，摇了摇头。</p>
+<p>如果现在段景回头求复合的话，我也一样会摇摇头。</p>
+<p>梁锴给了我联系方式，嘱咐一些注意事项后，就让我回去了。</p>
+<p>刚到家一会，程舒就赶来了。</p>
+<p>「哈哈，喻思杳，你现在这个样子好滑稽。」程舒刚看到我就毫不留情地嘲笑我。</p>
+<p>我拿起手机愤愤给她打字，「笑屁，你知道我现在有多疼吗，麻药劲快没了，现在疼得脑袋嗡嗡响。」</p>
+<p>「好了好了，我可怜的小杳杳，怎么样，跟梁医生有戏吗？」程舒望着我，两眼放光。</p>
+<p>「你根本就不是关心我的牙齿！」</p>
+<p>「两颗牙齿而已，帅哥才是要紧大事啊。」</p>
+<p>「没戏，我这样子这么丑，怎么可能有戏。」我突然想到自己嘴里塞着膜具的样子，以及那根长长的口水丝，脸顿时有些发烫。</p>
+<p>「我看也是，也不知道打扮打扮自己。」程舒微微叹了口气。</p>
+<p>我还记得段景以前跟我说，杳杳，你素颜都比那些浓妆艳抹的女人好看。</p>
+<p>然后转头他的衬衫领口就多了个口红印。</p>
+<p>看着他手脚慌乱，连像样的理由都找不出来的模样，我只觉得可笑。</p>
+<p>程舒倒也算有良心，看我疼得只能躺床上发呆，帮我煮了点粥，看着我喝完才走。</p>
+<p>「有事儿</p>
+<p>我点点头，突然想起来梁锴今天给我的手机号，我试着搜了搜，还真搜到了他的</p>
+<p>一个字母，L。</p>
+<p>估计这会下班了，那边很快就同意了我的好友申请。</p>
+<p>「梁医生，我是喻思杳，今天还没约具体的复诊时间。」</p>
+<p>「下周的这个时候过来吧。」</p>
+<p>「好的。」</p>
+<p>「现在还出血吗？」</p>
+<p>我去照了照镜子，「还有一点。」</p>
+<p>「记得更换我给你的棉花。」</p>
+<p>「好。」</p>
+<p>「这会应该挺痛的，做点别的事转移一下注意力，记得饮食清淡。」</p>
+<p>梁医生人看着清冷，没想到还挺会关心人的，怪不得他诊室门口坐着得都是年轻小姑娘。</p>
+<p>3</p>
+<p>到了复诊的日子，拔牙的洞口也差不多愈合了，我对着镜子咧了咧嘴，看着原本虎牙的位置，此刻空空荡荡，说心里一点儿都不酸涩是假的。</p>
+<p>我画了个妆，特意涂上了口红。</p>
+<p>上次盯着哭肿的眼睛邋里邋遢地就去了，好歹梁锴也是个帅哥吧，最起码留个好印象。</p>
+<p>叫到我的号的时候，我敲门进了科室。</p>
+<p>「梁医生。」</p>
+<p>梁锴闻言转了过来，眼神在我涂了口红的嘴唇上停留了一会。</p>
+<p>我有些不自在地抿了抿嘴唇，难道我这个色号不好看？</p>
+<p>好在梁锴没说什么，让我躺下后就帮我粘金属牙套。</p>
+<p>当我感觉到他把我的嘴唇扯来扯去的时候，我就觉得，牙科医生一定不会喜欢上自己的患者，在见过这么丑的样子后还能跟患者谈恋爱的，恐怕是真爱吧。</p>
+<p>漫长的等待后，我的牙套终于戴了上去，我抿着嘴，还没完全适应嘴里的异物。</p>
+<p>我发出别扭的声音向梁锴道了谢，准备开门离开的时候，梁锴叫住了我。</p>
+<p>「喻思杳。」这是他第一次叫我名字，说不出来的好听。</p>
+<p>我转过身去，疑惑地看着他，他脸上的神情有些难以描述。</p>
+<p>「下次来最好不要涂口红。」说完还递给了我几张面纸。</p>
+<p>我脸一热，顿时有些羞愧，难道我这色号这么不好看？连男生都看出来不好看。</p>
+<p>我心头发堵，点了点头，悻悻离开。</p>
+<p>我去卫生间准备擦掉口红，当我看到镜子里的那一刻，差点没叫出声。</p>
+<p>原本乖乖呆在嘴唇上的口红，此刻已经蔓延到我的下巴、人中、鼻头，甚至脸颊，不知道的还以为我流鼻血，糊了半张脸。</p>
+<p>我说怎么刚刚好像瞄到梁锴的手套指尖处发红。</p>
+<p>想到刚刚梁锴面露难色的样子，我闭上了双眼，毁灭吧。</p>
+<p>我拿着面纸对着镜子火速处理干净，拎着包匆匆逃离这个伤心地。</p>
+<p>回去的路上隐约感觉小腹有下坠感，我算了算日子，大姨妈差不多就是这个时候，我便顺道去了趟超市。</p>
+<p>当我手里刚拿上一包姨妈巾的时候，我听到了熟悉的不能再熟悉的名字。</p>
+<p>「段景，我姨妈好像要来了。」这女生我也熟，大学同班同学，陆音。</p>
+<p>「那买点带回去。」听到曾经常常附在我耳边的声音，我的心还是会突然咯噔一下。</p>
+<p>不过没有引起什么波澜，心里深处的记忆早就随着我的虎牙一起被丢弃了。</p>
+<p>我挪了挪脚，准备悄无声息地离开，却听到一声带着疑惑的试探。</p>
+<p>「杳杳？」</p>
+<p>我身形一顿，缓缓转过身，面无表情地看着他，和他的新欢。</p>
+<p>段景松开陆音的手，往我这儿迈了一步。</p>
+<p>「杳杳，你怎么瘦了这么多？」语气紧张得好像我还是他女朋友一样。</p>
+<p>「跟你没什么关系吧。」我淡淡开口，眼睛却瞄到陆音的脸白得发青，我猜她一定很紧张吧，毕竟是撬了我的墙角，偷了我的人。</p>
+<p>「你拔牙了？」段景满脸写着震惊。</p>
+<p>我抿了抿嘴，决定不再跟他扯皮，抬腿转身就走。</p>
+<p>「杳杳……」段景还想说点什么，被陆音使着性子拉住了。</p>
+<p>段景是我的大学男朋友。</p>
+<p>那会儿我刚大三，趿拉着拖鞋经过篮球场的时候，倒霉地被一个篮球砸中。</p>
+<p>我捂着剧痛的鼻梁蹲在地上，几乎是下一秒，篮球的主人就跑了过来。</p>
+<p>「同学，对不起，你有没有事啊？」声音慌乱中带着好听。</p>
+<p>我揉了揉鼻梁骨，摇着头，慢慢站了起来。</p>
+<p>当我跟他对视的时候，我一愣，随即感觉鼻腔一热，我随手摸了一把，满手鲜红。</p>
+<p>段景二话不说就拉着我去了校医院。</p>
+<p>后来他满眼揶揄，笑着调侃我，「喻思杳，你当时不会是被我帅到流鼻血吧？」</p>
+<p>我冲他翻了个白眼。</p>
+<p>但是我承认，段景挺帅的，嘴巴也挺甜的，以至于后来就轻而易举地把我骗到了手。</p>
+<p>但是我不明白，明明前段时间还抱着我说好喜欢我的人，下一秒就能说「你好蠢」，紧紧抿着的薄唇，此时好看又刻薄。</p>
+<p>4</p>
+<p>发现段景出轨是我无意间瞟到了他的</p>
+<p>上面的备注叫「音音」。</p>
+<p>在这之前，我只听他叫过我「杳杳」。</p>
+<p>我起了点心思，拿到了他的手机，去卫生间里把门反锁，逐字逐句地看完了他们的聊天记录。</p>
+<p>心动得有迹可循，暧昧得点到为止。</p>
+<p>两个聪明人。</p>
+<p>我从马桶上站起来，打开门，看到门外站着的段景。</p>
+<p>他额头冒了一层密密的汗，不知道是因为刚刚敲门太久，还是因为心虚紧张。</p>
+<p>「杳杳，你听我解释，我跟她只是朋友。」段景的声音还是那么好听，以前在一起的时候我曾一度迷恋他的声音，低沉磁性，他给我发过的语音全放在我的收藏里，想他的时候我就会戴上耳机，反反复复，满心欢喜。</p>
+<p>「你怎么知道我看的是什么？」</p>
+<p>我牢牢地盯着他看，他一时哑口无言，心慌得移开了眼神。</p>
+<p>我跟他这样，真像爱情里的猫和老鼠游戏，你追我赶，胜负难定。</p>
+<p>心中突然升起一股莫名的无力感，我不想再从他脸上看出什么破绽，我把手机塞给他，不顾他的解释求饶，把他从我家里赶了出去。</p>
+<p>没想到再见时，他已经牵上了陆音的手。</p>
+<p>「一共 158 元。」</p>
+<p>「等下，再算上这盒糖。」我看到收银台下的荷式，突然有些嘴馋。</p>
+<p>心情不好的时候就得吃点甜的。</p>
+<p>回家的路上，我打开手机准备把收藏里段景的语音全都删了，正好收到了梁锴的消息。</p>
+<p>「喻思杳，别吃糖了。」</p>
+<p>我心下一惊，舌头顿时老实了。</p>
+<p>刚才那么丢人的场面不会也被梁锴看到了吧？</p>
+<p>我下意识抬头在路边张望，看了好几圈也没发现梁锴。</p>
+<p>「你看到了？」我手指头有些颤抖，不会吧，前男友带着新欢与我对峙的场面也能被他撞到。</p>
+<p>「嗯，今天看到了，你的蛀牙。」</p>
+<p>我轻轻松了口气。</p>
+<p>「额，我从小就爱吃糖，所以一直有蛀牙。」</p>
+<p>「那为什么不去补？」</p>
+<p>「我怕疼。」</p>
+<p>「……」对面沉默了一会，发来一串省略号。</p>
+<p>「主要是，我怕我补了牙之后，又给吃蛀上了。」</p>
+<p>好了，这下对面直接不回我了。</p>
+<p>「梁医生？有什么问题吗？」我试探性地发了个问号。</p>
+<p>「下周挑个时间来补牙。」</p>
+<p>我愣住，现在牙科医生竞争激烈到还要拉回头客吗？</p>
+<p>「我帮你补，不疼。」梁锴又补上了一句。</p>
+<p>「喻思杳，我看你俩这是有戏啊？」程舒盘着腿坐在我家沙发上，边吃西瓜边看我和梁锴的聊天记录。</p>
+<p>「你哪看出来有戏了。」我眨眨眼，不理解。</p>
+<p>「好歹人家梁锴医生那个诊室门口天天蹲着不少小姑娘呢，人家会闲得没事做还要拉你回去给你补牙？」程舒挥着勺子，听起来有理有据。</p>
+<p>我下意识舔了舔后槽牙上蛀掉得洞，脑子里又浮现那天口红蹭得嘴巴周围都是的狼狈模样，我觉得梁锴极有可能是想赚我的钱。</p>
+<p>「喻思杳，听姐的，去补牙，说不定还能顺便填补你空荡荡的心。」</p>
+<p>这下我才突然意识到，我已经不会再下意识想到段景这个人了。</p>
+<p>好像放下他，真的就像拔掉牙齿那样干净利索，毫不拖泥带水。</p>
+<p>拔掉的牙，现在已经到了某个垃圾桶里，段景这个人同样也退回人海，牵起某个人的手，然而这一些都已经不重要了。</p>
+<p>5</p>
+<p>我捂紧了口袋，颤颤巍巍又去挂上了梁锴的号。</p>
+<p>「梁医生，你也会补牙？」我试探性地问了问。</p>
+<p>梁锴填单子的手一顿，偏过头来瞥了我一眼，镜片上依旧反射着诊室里白的发青的灯光。</p>
+<p>他低声「嗯」了一句，不知道是因为低着头还是因为戴着口罩，声音听起来低沉醇厚，尾音有些发哑，磨得人耳朵有些发痒。</p>
+<p>「我听人说蛀牙了好像还要清理神经，会很疼。」我捏了捏衣角。</p>
+<p>「没事，等会帮你看看神经有没有完全坏死。」</p>
+<p>「好。」</p>
+<p>梁锴确实很适合做医生，毕竟他说的话总是能让我很安心。</p>
+<p>梁锴起身，带着我去了另一个诊室。</p>
+<p>我自觉躺到椅子上，看着梁锴在一旁整理器械。</p>
+<p>梁锴的手很大，骨节分明，青筋凸起，指甲修剪得非常干净，修长的手指捏着泛着冷光的金属器材，有着说不出来的性感。</p>
+<p>他撸了下袖口，我这个角度看过去，正好能看到他手腕上方有着不深不浅的印记，看起来七歪八扭但能分辨出来牙印。</p>
+<p>我心下一惊，这不会是哪个患者疼极了直接咬上去的吧！</p>
+<p>正在我瞪大双眼的时候，梁锴突然转过身，手里拿着不明物体，语气清冷又不容拒绝。</p>
+<p>「张嘴。」</p>
+<p>我缓缓张开嘴，感觉他拿着东西在我的牙洞上戳来戳去。</p>
+<p>「有感觉吗？」梁锴对上我的眼睛。</p>
+<p>我摇了摇头。</p>
+<p>「那就不会痛了，简单补个牙就行。」</p>
+<p>梁锴俯身低着头，认真地帮我补牙，这个角度刚好能透过眼镜上方的空隙看到他清澈的眼睛和纤长的睫毛。</p>
+<p>梁锴的眼睛生得很好看，眼尾有些上挑，睫毛又直直地垂下来，这样一看，眼尾处倒有些像蜻蜓的翅膀。</p>
+<p>「闭眼。」梁锴冷不丁冒了句话，让正盯着他发呆的我属实吓到了。</p>
+<p>现在牙科医生还会被患者影响吗？</p>
+<p>我闭上眼，脑子里却不自觉浮现他眼下那颗痣，有些发青，又有些发红，还有些，勾人。</p>
+<p>「可以了。」</p>
+<p>我伸舌头舔了舔已被填好的后槽牙，居然真的不疼。</p>
+<p>「梁医生，要不我请你吃个饭吧。」</p>
+<p>我心头一动，有些期待他的反应。</p>
+<p>梁锴迟疑了两秒，「下次吧，你刚补完牙。」</p>
+<p>不知为何，我心里一下子有些失落，不知道梁锴是不是只是客套话。</p>
+<p>「好。」</p>
+<p>从医院出来后，太阳快要下山了，空气又闷又湿。</p>
+<p>刚巧医院附近就有麦当劳，我打算去甜品站买个华夫筒，不过可惜，不能有第二个半价。</p>
+<p>排队的人有些多，我站在队伍后面，低着头玩手机。</p>
+<p>「杳杳？」我抬头一看，是段景，手上还举着两个华夫筒，看着我的眼神有些错愕。</p>
+<p>我没搭理他，继续低头看着手机。</p>
+<p>「杳杳，你别把我从黑名单放出来好不好？」段景的话带着求饶的语气。</p>
+<p>我深吸一口气，抬头看向他，「段景，我们已经分手了。」</p>
+<p>「杳杳，你听我解释，我跟陆音一开始真没有……」</p>
+<p>「你的冰淇淋要化了。」我打断段景的话，看着他着急慌忙想要跟我解释的样子，我只觉得他很滑稽。</p>
+<p>他手里还举着给陆音买的冰淇淋，嘴上却还要跟我解释。</p>
+<p>我越过他，上前去点单。</p>
+<p>我接过华夫筒，准备把手机塞到口袋里，转身感觉有人站在我身侧。</p>
+<p>我有些不耐烦，「段景，你能不能别来纠缠我了。」</p>
+<p>「喻思杳。」旁边的人开了口，我赶紧抬头，怎么是梁锴？</p>
+<p>「额，原来是梁医生啊，不好意思哈。」我倒抽一口气，一时有些尴尬。</p>
+<p>「梁医生也来买华夫筒吗？」</p>
+<p>「下班路过，你没看到我给你发的消息？」梁锴扶了扶镜框，语气有些不悦。</p>
+<p>「啊？」我又把手机掏出来，刚刚被段景一耽误，我还没来得及点开。</p>
+<p>我点近聊天框，看到了梁锴十分钟前给我发的消息。</p>
+<p>「这一周先别吃坚硬生冷以及过甜的食物。」</p>
+<p>「等下周我可以请你吃饭。」</p>
+<p>嘶，我举着华夫筒的手，一时有些局促。</p>
+<p>「梁医生，这个，我刚刚没看到消息。」我眨了眨眼，小心翼翼地看向梁锴。</p>
+<p>「吃一口，扔了吧。」梁锴看了看我手中的冰淇淋，又把视线移回我的嘴巴上。</p>
+<p>「还有，以后叫我梁锴就行。」</p>
+<p>我愣愣地点了点头，愣愣地咬了口冰淇淋，愣愣地看着梁锴接过冰淇淋丢劲一旁的垃圾桶里。</p>
+<p>「难道吃一口没关系吗？」我脱口问了一句。</p>
+<p>「有关系，但我感觉你好像很馋。」梁锴抿了抿嘴，嘴角有些不可抑制地上扬。</p>
+<p>难道我把「馋」字写在了脸上？</p>
+<p>「我送你回去吧，这会儿估计打车也不方便。」梁锴侧身看着我，身上这件宝蓝色的衬衫衬得他唇红齿白，实在让我很难拒绝。</p>
+<p>「好。」</p>
+<p>6</p>
+<p>梁锴让我在原地等他，随后他便开来了辆黑色宝马，确实挺符合他低调的性格。</p>
+<p>「家住哪？」梁锴单手握着方向盘，转过头来看着我。</p>
+<p>「御景园 23 栋 902。」我低着头，系上安全带，想也没想一连串报上了地址。</p>
+<p>梁锴轻轻一笑，在安静的车厢里，他的鼻息声格外明显。</p>
+<p>「报这么详细，不怕我是坏人？」梁锴微微勾着唇，嘴角旁挤出一个小括号一样的弧度。</p>
+<p>「不怕，梁医生是好人。」我嘿嘿一笑，也感觉刚才自己有些好笑。</p>
+<p>梁锴把车驶进隧道，车子里的光线一下子暗了下来，我大着胆抬眼偷偷打量他。</p>
+<p>今天还是我第一次见他穿私服。梁锴的鼻梁很高，上面架着副金丝眼镜，下颌处的线条锋利流畅，凸起的喉结上还有颗痣，今天衣领不算很高，隐隐约约还能看到他精致的锁骨。</p>
+<p>车上淡淡的香味绕在鼻尖，我忍不住轻吸一口气，这个人身上的禁欲气质实在也是有些勾人，勾得我恨不得现在就把他衣服扒了仔细数数他到底有多少颗痣。</p>
+<p>就在我愈发想入非非的时候，车子已经停了下来。</p>
+<p>「到了。」</p>
+<p>「好，谢谢梁医生。」我松了安全带，感觉脸还有些发烫的余温。</p>
+<p>「以后叫我梁锴就行。」他的语气不容拒绝。</p>
+<p>「好，谢谢，梁锴。」</p>
+<p>梁锴深深地盯着我看，眸子漆黑浓烈，里面的情绪一时让我读不懂。</p>
+<p>我咬了咬唇，匆匆挥手便上了楼。</p>
+<p>进了电梯之后，我看着镜子里的自己，这才意识到自己的脸有多红，唇角翘得有多高，眉梢尽是说不清道不明的少女春色，说我对梁锴没点什么意思，估计也就骗骗我自己吧。</p>
+<p>电梯到了 16 楼，我低头在包里翻钥匙，手腕突然被一只手大力握住，把我吓一跳，是段景。</p>
+<p>「杳杳，我一直在等你。」段景的脸陷在暗处，瞧不出神色。</p>
+<p>我试图挣开他的束缚，有些不耐烦：「段景，你听不懂人话吗？我们已经分手了，我不需要你的解释。」</p>
+<p>「杳杳，对不起，重新给我一次机会好不好？」段景的手依旧牢牢地抓住我，他上前一步，试图揽上我的腰。</p>
+<p>「你不去找陆音，过来找我做什么？」</p>
+<p>「杳杳，陆音她没你好，她有公主脾气，而且她还有些看不起我。」我听着段景的话，心生烦躁，以前从没觉得他说的话这么让我恶心。</p>
+<p>段景那年考研没考上，心灰意冷，我耐着性子安慰了他很久他才愿意出去找工作。</p>
+<p>后来的我的工作能力以及薪水一直比他高，段景总是会有意无意地说些酸溜溜的话。我知道男人都好面子，所以平时我跟他说话时都尽量在意自己的语气，生怕自己说了什么伤害到他的自尊心。</p>
+<p>因为喜欢他，我才愿意委身折软，但他好像已经把我对他的好当作了理所当然。</p>
+<p>陆音家境也算不错，也许一开始就是想跟段景搞搞暧昧，但是真正在一起后可能就发现段景也不过是个一事无成的人，哪里能满足她的各种需求。</p>
+<p>我冷着眼，看着段景满脸的讨好和卑微，好像看见了以前的自己，一下子恶心到胃里一阵翻涌。</p>
+<p>「你跟陆音怎么样不关我的事，总之，我们没可能，你别来骚扰我。」</p>
+<p>「你跟刚刚那个男人就有可能是吗？喻思杳你是不是早就跟他好上了？」段景皱着眉，满脸的气急败坏。</p>
+<p>我倒抽一口气，只觉得不可思议，当初我怎么会被这种人骗到手，还喜欢了他这么久。</p>
+<p>我的怒气一下子上来，奋力甩开他的手，转身准备下楼，却不想又被段景抓住，就在我准备用力推开他的时候，一只温暖有力的大手附上了我的腰。</p>
+<p>我有些错愕，转过头一看，是梁锴，他还没走么？</p>
+<p>「麻烦你松手，否则我就报警了，恶意骚扰。」梁锴沉着声，压着怒气，透着眼镜都能看出来他眼里的寒意。</p>
+<p>「喻思杳，你真跟他在一起了，那你有什么资格说我出轨？」段景瞄了眼我腰上的大手，嘴角扯出一个嘲讽至极的笑容。</p>
+<p>「我是正大光明追求她，与你无关。」梁锴淡淡开口，嗓音贴着我的右耳，我的心头为之一动。</p>
+<p>段景看着我们俩，冷哼一声，转身坐电梯下楼去了。</p>
+<p>7</p>
+<p>梁锴松开我的腰，转过头来看着我，眼里透着关心，「他没对你怎么样吧？」</p>
+<p>我摇摇头，心情有些复杂，我不希望这么狼狈的模样被他看到。</p>
+<p>「没事，谢谢你梁锴，你怎么还没回去？」</p>
+<p>「我在楼下等了会，发现楼上的灯一直没亮，我有些担心就上来看看。」</p>
+<p>梁锴很高，我的脑袋堪堪只到他胸口处，他的胸口微微起伏着，我听着他的声音，心情渐渐平复了下来，说实话，刚才我真的有些怕了，我害怕段景一时失态对我造成伤害。</p>
+<p>梁锴拍了拍我的肩头，我抬头对上他的视线，他好看的眉头轻轻拧着，鼻息一时也有些重，「以后不要随便把家庭住址告诉别人了，女生一个人住不安全。」说完他愣了下，又补上一句，「我不一样。」</p>
+<p>我没忍住，噗嗤一声笑了出来。</p>
+<p>「进去吧，锁好门，如果他再来找你，给我打电话。」梁锴的声音不大不小，不管是拔牙时候的安抚，还是现在的叮嘱，每次都能让我很有安全感。</p>
+<p>进门后，我乖乖锁好门，然后去阳台那儿看向楼底下的车。</p>
+<p>梁锴下楼后，靠在车上，抬头看着我的方向，低头思索了一会儿才开车驶离。</p>
+<p>我打开冰箱，拿出一罐冰可乐，灌了几口，试图冷静，又去冲了个澡，然而当我一直睁眼到天亮的时候，我才发现，我心中那股异样的感觉并没有褪去。</p>
+<p>我抓起床头柜上的手机，给程舒发了句话。</p>
+<p>「怎么追梁锴？」</p>
+<p>我意识到，我完了。</p>
+<p>我正躺在床上闭眼回忆梁锴的模样的时候，程舒直接给我打来了电话。</p>
+<p>「喻思杳，你终于上道了啊！」程舒比我还激动，好像她才是当事人。</p>
+<p>「嗯，所以怎么追啊？」我有些不好意思，毕竟这还是我第一次主动追男生。</p>
+<p>「你先给我讲讲你们的进展如何了？」</p>
+<p>我一五一十给程舒汇报了下最近的情况，没想到程舒越听越激动。</p>
+<p>「你笨啊，人梁锴都说了是在正大光明追你，你答应不就成了！」</p>
+<p>「他应该只是当时帮我解围吧。」我又回想细细品味了下。</p>
+<p>「你真是笨，算了，你们不是要约饭吗？你就去主动找他请人家吃饭。」</p>
+<p>「好。」</p>
+<p>挂完电话，我点开和梁锴的聊天框，反反复复打了好几次才把话发出去。</p>
+<p>「昨天晚上的事谢谢你，下周我请你吃饭吧。」</p>
+<p>我咬着指甲，紧张等待那边的回复。</p>
+<p>「可以，下周我不忙。」</p>
+<p>梁锴很快就回复了，我松了一口气，随后又提了口气上来，我到时候穿什么呢？</p>
+<p>我跳下床把衣柜里的衣服都拿了出来，挨个试了近一个小时都没挑出来穿哪件，最后没有办法，只好再次求助程舒。</p>
+<p>「姑奶奶，你别折腾了，到时候我去你家帮你挑，顺便帮你化个妆。」</p>
+<p>到了约定的那一天，梁锴开车来楼下接我。</p>
+<p>我在电梯里对着镜子理了理衣服，脸上是程舒帮我画的淡妆，两抹腮红显得我楚楚可怜，恰到好处。</p>
+<p>出了单元门，梁锴正好靠在车门上，他今天穿了件简单的白 T，一条修长的深色牛仔裤，摘掉了眼镜，看起来倒像个下一秒就会出现在篮球场的男大学生。</p>
+<p>我冲他挤出一个练习了好几天的微笑，梁锴挑了挑眉，神色有些意外。</p>
+<p>他帮我打开车门，轻轻说了声，「你今天很好看。」声音磨得我耳根子瞬间发软发烫。</p>
+<p>餐厅是提前预定好的，菜品也很快就上了。</p>
+<p>氛围也没有我想象中的那么尴尬，梁锴主动跟我谈起他的大学时代，意外发现我们俩还有不少共同爱好。</p>
+<p>我忘记自己还在戴牙套，吃了点金针菇，还没下咽我就感觉金针菇牢牢地挂在我的牙套。</p>
+<p>我紧紧抿着嘴，心里悔恨万分，就在我想办法在不开口的情况下去洗手间的时候，桌旁来了一个人，发出了熟悉的声音。</p>
+<p>「梁锴，你也在这？」我一愣，缓缓抬头看去，竟然是陆音，她怎么也认识梁锴？</p>
+<p>梁锴轻轻点了点头，但是眼睛却一直盯着我看，他察觉出我有些不对劲。</p>
+<p>「梁锴，上次我妈还说让我们一起吃饭呢。」我瞥了眼陆音，她显然是对我也在这儿是有些意外的，但她还是一脸平静地看着梁锴。</p>
+<p>我想转身直接去洗手间，但又不想显得自己好像落荒而逃，但此刻我又没法张嘴讲话，一时又急又羞，脸都快涨红了。</p>
+<p>「再说吧，」梁锴抬眼看了看她，随后起身递了几张面纸给我，「杳杳，你先去趟洗手间吧。」</p>
+<p>我如蒙大赦，拿着面纸捂着嘴就去了洗手间，对着镜子清理了半天总算清理干净，我正擦点嘴巴上的口红时，陆音走了进来。</p>
+<p>「没想到，咱俩还挺有缘。」她笑得一脸假，当年我怎么没看出来她这么绿茶呢？</p>
+<p>是挺有缘的，前脚跟我抢段景，后脚又故意在我面前跟梁锴套近乎。</p>
+<p>我没吱声，扔了面纸，转身走了出去。</p>
+<p>没想到陆音脸皮比我想象地还要厚，她竟然追了上来，试图叫住我，没成想梁锴就站在洗手间门旁。</p>
+<p>梁锴轻轻拉住了我的手，转向后面跟上来的陆音，「陆音，喻思杳现在是我的女朋友，麻烦你和你男朋友不要再来骚扰。」</p>
+<p>声音冷若寒霜，毫不留情面，我看着陆音一会白一会红的脸，心中一阵暗爽。</p>
+<p>8</p>
+<p>梁锴把我牵出了餐厅外，我才发现他另一只手上还提着我的包。</p>
+<p>「那个，好像还没结账呢。」我捏了捏他的手。</p>
+<p>「我结过了，不想你吃得不开心。」梁锴偏过头，眸子里的情绪再也掩饰不住。</p>
+<p>「不好意思，我也没想到会遇见她，你怎么知道她跟我前男友的事啊？」我忍不住好奇，按理说梁锴不应该认识段景才对。</p>
+<p>「那天我在超市碰见你们了。」梁锴低着头，眸子漆黑浓烈，仿佛下一秒就能把我吸进去。</p>
+<p>「所、所以你是真看到我买糖了？」我有些心虚。</p>
+<p>「嗯。」</p>
+<p>「喻思杳，所以，你愿意做我女朋友吗？」</p>
+<p>我一时愣住，眼神开始飘忽不定，心跳加快，甚至感觉鼻尖都冒了层密密的汗。</p>
+<p>「我……」</p>
+<p>「这样，你请我看电影，就当刚刚那顿饭的补偿。」</p>
+<p>「好。」</p>
+<p>我低下头，发现梁锴始终没有松开我的手，我就这么晕乎乎地被他牵到了电影院。</p>
+<p>电影讲了什么我完全不知道，我全部的注意力都在我和他牵在一处的手上，和我即将跳出胸腔的心上。</p>
+<p>好在梁锴没说什么，电影结束后把我送回了家。</p>
+<p>我松开安全带，准备开车门的时候，梁锴突然拉住了我。</p>
+<p>「怎么样，考虑好了吗？」梁锴的声音有些沙哑，沾着几分暧昧和勾引的意味。</p>
+<p>我身形一顿，大气不敢出。</p>
+<p>「做我女朋友好不好？」</p>
+<p>我咬着唇看着他，我怀疑他今天就是故意不戴眼镜，我好几次差点迷失在他勾人的桃花眼里。</p>
+<p>「好。」</p>
+<p>我慢慢点了点头，一时有些恍惚，市口腔的梁锴医生就这么他的患者拿下了？</p>
+<p>梁锴突然伸手掐了一把我脸上的肉，语气宠溺又无奈，「喻思杳，你当真不记得我了？」</p>
+<p>「啊？」我在大脑里飞快检索了一下「梁锴」这个名字，毫无印象。</p>
+<p>「小舀子。」</p>
+<p>好熟悉的称呼，我的身体像被什么电了一下，一下子怔住。</p>
+<p>「你不是凉白开吧！」我惊呼道。</p>
+<p>「嗯。」梁锴勾着唇，点了点头。</p>
+<p>小时候在我搬家之前，隔壁院里有个又矮又胖的小男生，肉脸肉手，完全一副勾引人欺负的模样。</p>
+<p>我问他叫什么，他也不说话，就知道拿着树枝在泥土上画他的名字。</p>
+<p>那会儿我小，也不认得字，只听过他妈妈叫他的名字，又说的是方言，我总叫他「凉白开」。</p>
+<p>我经常拽着他的耳朵教育他，「凉白开，你得听我话，因为你不听话，我这个小舀子就会把你舀走！」</p>
+<p>小男生估计真的害怕了，回回都任我差遣。</p>
+<p>还记得那是个闷热的夏天傍晚，我刚被我妈一顿打，蹲在地上又气又恼。</p>
+<p>小男孩过来安慰我，伸出肉胳膊帮我擦眼泪，我气不打一处来，抓着他的手狠狠地咬了下去。</p>
+<p>等我尝到嘴巴里的腥甜味儿时，我才反应过来，松了他的手，抬头看到小男孩已经疼的满眼是泪。</p>
+<p>「你是哑巴吗？就这么让我咬。」我心生愧疚，又害怕他去告状，赶紧从家里偷了几根火腿肠出来。</p>
+<p>「凉白开，你别哭了，我以后肯定不会舀你，我会对你负责的。」</p>
+<p>后来因为他爸妈工作的原因，他被咬得伤口还没结疤就走了。</p>
+<p>我万万没想到，多年后我会成为他的患者。</p>
+<p>「那你手腕上……」我眨了眨眼，有些心虚。</p>
+<p>「嗯，上次故意露给你看，没想到你还是没想起来。」梁锴撇着嘴，有些委屈巴巴。</p>
+<p>「我、我忘了嘛。」</p>
+<p>「那你不补偿我一下吗？」</p>
+<p>「什么？」</p>
+<p>还没等我反应过来，梁锴的唇已经覆了上来，辗转研磨，末了还轻轻咬了一下。</p>
+<p>「扯平了。」迷糊中又听到他贴着我的耳垂，轻笑了一声。</p>
+<p>谁能想到，当年那个一声不吭的傻小胖，如今能把人撩得如此晕头转向呢？</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC30%E8%8A%82%E9%99%AA%E4%BD%A0%E8%B8%8F%E8%BF%87%E5%B1%B1%E5%B7%9D/" title="第30节陪你踏过山川">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">第30节陪你踏过山川</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC35%E8%8A%82%E4%BB%96%E6%8A%8A%E6%88%91%E5%BD%93%E5%85%84%E5%BC%9F/" title="第35节他把我当兄弟">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">第35节他把我当兄弟</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子力学可信吗？ - 知乎 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/5/4-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%8F%AF%E4%BF%A1%E5%90%97-%E7%9F%A5%E4%B9%8E/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/5/4-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%8F%AF%E4%BF%A1%E5%90%97-%E7%9F%A5%E4%B9%8E/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="量子力学可信吗？ - 知乎">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta name="twitter:title" content="量子力学可信吗？ - 知乎">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="量子力学可信吗？ - 知乎">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="4890">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">量子力学可信吗？ - 知乎</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>10分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%87%8f%e5%ad%90%e5%8a%9b%e5%ad%a6%e5%8f%af%e4%bf%a1%e5%90%97%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e&amp;url=https://mohai.us.kg/posts/2024/5/4-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%8F%AF%E4%BF%A1%E5%90%97-%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/5/4-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%8F%AF%E4%BF%A1%E5%90%97-%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%87%8f%e5%ad%90%e5%8a%9b%e5%ad%a6%e5%8f%af%e4%bf%a1%e5%90%97%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%20https://mohai.us.kg/posts/2024/5/4-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%8F%AF%E4%BF%A1%E5%90%97-%E7%9F%A5%E4%B9%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25859.jpg" alt="量子力学可信吗？ - 知乎" />
+      
+
+      <p>量子力学可信吗？</p>
+<p>量子力学的出现，和许多江湖门派的成立一样，看似悄无声息，实则刀光剑影，充满了混战和统一。</p>
+<p>纷争的源头，要追溯到一个古老的问题——光的本质是什么？</p>
+<p>几百年来，关于这个问题的答案，有两个主流的看法，因此产生了两个水火不容的门派——两个门派的战斗过程跌宕起伏，有碾压有逆袭有反转。</p>
+<p>简单说起来可以分为三个阶段。</p>
+<p>第一阶段：微粒派好牛波动派和微粒派互相抬杠好多年，一开始谁都没说服谁，直到一对死对头的出现，才暂时分出了个高低。</p>
+<p>他们就是结下了万年梁子的：如果说胡克站队，是出于纯粹地科学推测；那么牛顿的站队，则出于纯粹地恶心胡克。</p>
+<p>这本是一场势均力敌的对抗，可是后来牛顿站到物理江湖的顶点，成为一方霸主。</p>
+<p>他背后的微粒派也跟着沾了光，波动派也就此被按在地上摩擦了一百年。</p>
+<p>据说，牛顿甚至特意在胡克去世后写了本畅销书，来宣传自己的光学研究成果。</p>
+<p>此时的波动派群龙无首，一个能打的都没有，这就导致他们毫无还手之力。</p>
+<p>那微粒说真的无法撼动吗？</p>
+<p>第二阶段：波动派逆袭风水轮流转，一百多年后，波动派出现了一名英国的眼科医生，单枪匹马挑战权威。</p>
+<p>这个人就是托马斯·杨。</p>
+<p>话说杨少侠，也是个天才，两岁读书，四岁背诗，六岁刷完两遍《圣经》，十四岁精通多国语言。</p>
+<p>原以为一代文豪就此诞生，可谁知杨少侠路子跑偏了，任性地选择转专业，开始研究起光学。</p>
+<p>然后他随随便便做了个实验，一不小心就青史留名。</p>
+<p>这就是著名的杨氏双缝干涉实验。</p>
+<p>实验其实很简单，只需要：如果牛顿说得对，光真的是粒子，就算它笔直地通过了第一扇门……也会因为自个儿太耿直，而撞上第二堵墙。</p>
+<p>所以理论上来说，最后的屏幕上应该是一片漆黑。</p>
+<p>可实际上呢？</p>
+<p>最终在屏幕上出现的，却是明暗相间的条纹。</p>
+<p>这就说明，光根本不是粒子，而是一种波！小杨小眼一眯，不得了！这不正是支持波动派的证据吗？</p>
+<p>果然，实验结果一出，铁证如山，打得微粒派猝不及防，波动派就此崛起。</p>
+<p>后来大家都知道，麦克斯韦预言了光是一种电磁波，赫兹又用实验证明了这事儿，微粒派这下算是心服口服了。</p>
+<p>是不是看上去，光是一种波这件事，已经板上钉钉、毋庸置疑了？</p>
+<p>第三阶段：波粒统—关于光的本质之争，并没有就此完结，托马斯·杨肯定想不到，又过了百来年，自己这个杨少侠的名头快要顶不起了。</p>
+<p>针对波动说，有几个大爷，站出来表示不服。</p>
+<p>这下，不仅解释了光的本质，还搞出了一个令物理学界震三震的新学说——量子论。</p>
+<p>具体怎么一回事呢？</p>
+<p>咱们把镜头往前推一推。</p>
+<p>话说当年，赫兹除了验证了电磁波之外，还瞄到了一个神奇的现象。</p>
+<p>这种见光跑的现象，就是光电效应。</p>
+<p>补充一点，准确来说，赫兹做实验的时候，还没有发现电子。</p>
+<p>他只是看到金属板被光照了以后，会带正电。</p>
+<p>这个现象迅速霸占了头条，科学家们扎堆来凑热闹，但是大家很快发现，经典物理在这里根本说不通！根据经典物理理论：如果光是一种波，高能的光照在原子上，电子就会跑得飞快！如果是低能的光，那也没关系！波的特点，是能量连续不断。</p>
+<p>光波会对电子产生持续性的刺激，能量可以累积，所以只要熬得久，电子就能攒够能量跑路。</p>
+<p>可理论归理论，实验结果却不是这样！从实验结果来看，甭管低能的光照多久，电子就像个钉子户，不跑就是不跑！这该如何解释呢？</p>
+<p>爱蹭热点的爱因斯坦，陷入了沉思。</p>
+<p>正当他百思不得其解，突然大眼睛一瞟，瞟到了一个靓仔：量子祖师爷·马克斯·普朗克普朗克，德国人，会弹会唱会作曲，平平无奇的大帅哥。</p>
+<p>原本靠颜值就能当个人生赢家，走向人生巅峰，可普帅很任性，偏要靠才华，死磕物理学。</p>
+<p>在他刚准备闯荡物理江湖的时候，有一名物理老师曾劝他：开个玩笑，其实是当时的物理学家们认为，物理界差不多被研究秃了，仅剩的几根毛也是可有可无。</p>
+<p>可普朗克偏偏不信这个邪。</p>
+<p>别看普帅的颜值一路跌停，人家的学术成就却是高歌猛进。</p>
+<p>而他研究的课题，就是两朵乌云之一的——具体啥是黑体辐射，解释起来太过复杂，混子哥就不在这里展开了，有兴趣的可以自行了解。</p>
+<p>但咱们要记住的，是普朗克为了解释这个问题，所得出的一个冲击三观的结论。</p>
+<p>话说在经典物理的世界观里，大家觉得能量是可以无限分割的。</p>
+<p>可为了解释黑体辐射，普朗克做了个大胆的假设：能量是不能无限分割的，切到最小要卡壳！这个不可再分的最小单位，普朗克叫它能量子，也就是量子的雏形。</p>
+<p>用这个假设，就可以完美解释黑体辐射问题。</p>
+<p>可那个年代还是经典物理的天下，普帅的理论，无疑被看作歪门邪道，他本人都不咋信。</p>
+<p>甚至之后的许多年，他都在努力打自己脸，试图推翻自个儿。</p>
+<p>但他万万没想到，自己顺口一提的玩意儿，居然还挺好使，一不留神给小爱提供了光电效应的解题思路。</p>
+<p>咱们前面提过，光电效应中遗留了一个问题：为什么有些光波射得够久，能量累积得够多，也打不出电子呢？</p>
+<p>看到了普帅的能量子假设，小爱灵光一闪：真相只有一个！光可能不是波，而是一种粒子！哈意思呢？</p>
+<p>打个比方，如果光是一种波，那它会对电子施加连续不断的能量，能量不断累积，电子就会移动。</p>
+<p>可如果光是一种粒子，那它产生的能量就不是连续的，而是一份一份的！要是光的能量不够强劲，那电子死都不会走。</p>
+<p>而只要光的能量足够强，那就会让电子跑路！爱因斯坦把这种一份份的光，叫作光量子，简称光子。</p>
+<p>爱因斯坦的这个假设完美解释了光电效应的问题。</p>
+<p>不久后，美国科学家密立根，完成了验证光电效应的实验，和爱因斯坦的理论完全吻合。</p>
+<p>爱因斯坦也因此获得了1921年的诺贝尔物理学奖。</p>
+<p>爱酱也因为将量子理论发扬光大，被咱们称为——言归正传。</p>
+<p>按照小爱的理论，光又从连续的波，变成了不连续的粒子，这岂不是证明牛顿还是对的吗？</p>
+<p>既然杨氏双缝干涉实验验证了光的确有波动性，而光电效应实验也验证了光的确有粒子性。</p>
+<p>爱因斯坦提出光电效应的光量子解释，使得当时的科学家逐渐意识到光同时具有波和粒子的双重性质。</p>
+<p>这就是传说中的：波粒二象性。</p>
+<p>这就好比形容一个人，既是男的，又是女的。</p>
+<p>更可怕的是，这个结论不是瞎想，而是经过科学家的精密实验，亲测有效的。</p>
+<p>既然光有波粒二象性，有一名科学家就在这个基础上进一步推测，提出了一个更大胆的猜想。</p>
+<p>这个人就是法国贵族德布罗意。</p>
+<p>话说德亲王的脑瓜子离谱到啥程度呢？</p>
+<p>在他看来，波粒二象性，并不是光的独门秘籍。</p>
+<p>像原子啊、电子啊，甚至世间万物，都有波粒二象性！也就是说，你以为的实物粒子，其实都有波动性。</p>
+<p>这种波被称为物质波，也叫德布罗意波。</p>
+<p>虽然德亲王最初只是不负责任地瞎猜，但谁知后来科学家们竟然真用实验证实了，许多微观粒子都具有波的性质。</p>
+<p>这也坐实了德布罗意的猜想。</p>
+<p>所有微观粒子，都具备波粒二象性！于是，后来的科学家们针对微观粒子的运动状态进行了研究。</p>
+<p>这就衍生出了一个全新的学说，这个学说就是传说中的——量子力学量子论建立之后，一时成为热门学科，许多人蹭上了热度，开始了量子力学的研究。</p>
+<p>其中有个特别厉害的学派，叫作哥本哈根学派。</p>
+<p>好了，言归正传。</p>
+<p>量子论要研究微观粒子的运动状态，那就得选个研究对象。</p>
+<p>可这次科学家们不研究光了，而是把目光投向了一个新对象——电子。</p>
+<p>针对电子的运动，哥本哈根学派里的两位大神，先后提出了令人怀疑人生的两大观点。</p>
+<p>咱们一个个来说。</p>
+<p>1.不确定性原理话说很久以前，有个叫卢瑟福的大爷，他曾经给原子画过画像。</p>
+<p>在他看来，世间万物都是共通的，比如原子核和电子的关系，应该跟太阳和地球的关系差不多。</p>
+<p>这就是卢瑟福提出的「原子的太阳系模型」，电子绕着原子核转。</p>
+<p>后来，他的徒弟在这个模型的基础上，做了点补充。</p>
+<p>这个徒弟就是哥本哈根学派的带头大哥——玻尔。</p>
+<p>没错，就是前面提过的那个。</p>
+<p>在玻尔看来，世间万物也是共通的，比如原子，其实就跟北京的环路差不多。</p>
+<p>原子核外有固定的轨道，电子会在不同的轨道里绕着原子核跑圈。</p>
+<p>那电子的运动，真是这样的吗？</p>
+<p>后来，科学家们通过实验发现，玻尔的原子模型也不太靠谱。</p>
+<p>于是有一名科学家站了出来。</p>
+<p>他认为，轨道这玩意儿看不见摸不着，会不会是玻尔空想出来的，其实压根不存在？</p>
+<p>这就是哥本哈根学派的海森堡。</p>
+<p>他提出了矩阵力学，奠定了他「量子力学之父」的地位。</p>
+<p>那在海爸爸眼里，电子是怎么运动的呢？</p>
+<p>话说，当时有一些科学家通过实验分别观测到了电子的位置和速度。</p>
+<p>基于这些数据，海森堡总结了一套理论。</p>
+<p>他觉得，电子这个玩意儿，跑位非常风骚，到什么程度呢？</p>
+<p>它就像一个社恐的忍者。</p>
+<p>电子并没有老老实实按照轨道绕原子核跑圈，而是极度自嗨，在原子核外面随机蹦跶。</p>
+<p>你根本摸不清它的套路。</p>
+<p>更神奇的是，当我们想知道它的确切位置好观测它的时候，它就突然消停下来，一脸蒙。</p>
+<p>所以我们永远无法同时知道不观测时电子的位置和动量……这就是不确定性原理。</p>
+<p>虽然很难理解，但科学家们已经通过实验验证了不确定性原理是靠谱的。</p>
+<p>其中最著名的，就是参照杨氏双缝干涉实验设计的电子双缝干涉实验。</p>
+<p>我们朝一块有两条缝的挡板，射出电子。</p>
+<p>因为电子有波动性，所以它会发生衍射，并最终在屏上呈现明暗相间的条纹。</p>
+<p>可一旦我们想观测电子是怎么穿过这两个孔的时候，实验结果居然发生了变化！这时它就不像波一样传播了，而是像粒子一样穿过。</p>
+<p>屏上只有两条亮纹。</p>
+<p>是不是很神奇！同时，电子双缝干涉实验也进一步验证了微观粒子的波粒二象性。</p>
+<p>也就是说，微观粒子的状态既有波动性，也有粒子性。</p>
+<p>既然电子的运动这么神奇，那它真的是那么随心所欲吗？</p>
+<p>2.概率解释话说和海森堡同时期，还有一名科学家，从另外一个角度也得出了上面类似的结论。</p>
+<p>他就是浪量子力学的奠基人之一——薛定谔。</p>
+<p>此人性别男，爱好女，物理界里独一档的渣男，人送外号：渣渣薛，具体多渣就不让播了。</p>
+<p>渣渣薛提出的理论叫波函数，我们就不展开讲了。</p>
+<p>为啥不展开呢？</p>
+<p>因为连他本人都是一头雾水，说不出个所以然来。</p>
+<p>好在哥本哈根学派的另一位大牛——玻恩，站出来替他解了围。</p>
+<p>玻恩是这么解释波函数的：其实电子的位置吧，它就是一团概率，随机起来不是人。</p>
+<p>不过，虽然我们没法确定它的走位，但电子在每个位置出现的概率，却是可以计算出来的。</p>
+<p>这就是玻恩提出的概率解释。</p>
+<p>综上所述，不确定性原理和概率解释，共同构成了量子力学的核心——哥本哈根学派解释的主要内容。</p>
+<p>虽然这个解释完美解决了很多问题，可大家的三观着实被碾得稀碎。</p>
+<p>所以质疑也随之而来，很多人表示，说微观粒子的运动是随机的，这事儿也太扯淡了！于是，支持方和反对方，就借几次团建，来了几场争斗。</p>
+<p>我们挑几次重点的来看。</p>
+<p>一、第五届索尔维会议首先出场的是，由玻尔领头的哥本哈根学派。</p>
+<p>另一方在爱因斯坦带领下，质疑哥本哈根学派的研究，我们叫他们斩草除根派。</p>
+<p>还有一拨围观群众，也个个大牌。</p>
+<p>好了，对话开始。</p>
+<p>双方就微观粒子的运动到底是否随机这个问题，进行了激烈的讨论。</p>
+<p>反正扯了半天也没啥结果，谁也说服不了谁。</p>
+<p>插一嘴。</p>
+<p>大家一顿争吵之后，没有结论，觉得反正闲着也是闲着，加上难得聚一回，于是就一起排排坐，来了一张合影。</p>
+<p>没错，就是这张著名的照片。</p>
+<p>后来，爱神和玻神又吵了好几架，依然没啥结果。</p>
+<p>当然，不仅带头大哥们使劲掐，小弟们也没闲着。</p>
+<p>二、薛定谔虐的猫作为爱因斯坦的小弟，薛定谔也站出来，怒喷哥本哈根学派。</p>
+<p>他提出了一个丧心病狂的思想实验——薛定谔的猫简单解释一下。</p>
+<p>可一旦它们发生衰变，就会触发锤子，敲碎毒药瓶，释放毒气，把猫毒死。</p>
+<p>所以薛定谔认为，根据哥本哈根学派的解释，如果原子是叠加态，那猫也应该处于——既死又活的叠加态。</p>
+<p>对地球人来说，一只猫既死又活，根本无法理解。</p>
+<p>所以薛定谔认为哥本哈根学派非常荒谬，就是在瞎扯淡。</p>
+<p>当然，后来人们发现，这个实验并不严谨，有很多问题，所以没法参考。</p>
+<p>聊了这么多，其实关于量子力学的争论，直到今天都没有结束。</p>
+<p>但是依照后来的一些实验来看，哥本哈根学派的理论，目前更加站得住脚。</p>
+<p>和相对论相比，量子力学的发展，在这一百年内，让人类文明发生了翻天覆地的变化。</p>
+<p>比如芯片、核磁共振、超导、激光等技术，都是在量子力学的基础上发展起来的。</p>
+<p>不过，科学也是一把双刃剑，利用量子力学人类也造出了一些奇怪的东西，比如：好了，量子力学的故事就先聊到这里，而我们科学史的正片部分，也在这里告一段落了。</p>
+<p>最后，我们用一张图，总结一下整个科学史的发展结构。</p>
+<p>该电子书共12章，91%未读继续阅读电子书半小时漫画科学史3陈磊·半小时漫画团队共12节会员专享¥45.00发布于05-21.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/15-%E4%B8%A4%E5%BF%83%E7%9F%A5/" title="两心知">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">两心知</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/9-%E6%92%A9%E5%88%B0%E4%B8%80%E4%B8%AA%E7%99%BD%E6%97%A0%E5%B8%B8/" title="撩到一个白无常">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">撩到一个白无常</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

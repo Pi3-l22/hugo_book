@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？ | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/2/4-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%B0%BC%E9%87%87%E8%AF%B4%E9%81%93%E5%BE%B7%E5%8F%AA%E6%98%AF%E4%BD%8E%E7%AD%89%E4%BA%BA%E7%BE%A4%E4%BD%93%E7%94%A8%E6%9D%A5%E9%98%BB%E7%A2%8D%E9%AB%98%E7%AD%89%E4%BA%BA%E7%9A%84%E8%99%9A%E6%9E%84%E4%BA%8B%E7%89%A9%E8%BF%99%E5%8F%A5%E8%AF%9D%E6%AD%A3%E7%A1%AE%E5%90%97/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/2/4-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%B0%BC%E9%87%87%E8%AF%B4%E9%81%93%E5%BE%B7%E5%8F%AA%E6%98%AF%E4%BD%8E%E7%AD%89%E4%BA%BA%E7%BE%A4%E4%BD%93%E7%94%A8%E6%9D%A5%E9%98%BB%E7%A2%8D%E9%AB%98%E7%AD%89%E4%BA%BA%E7%9A%84%E8%99%9A%E6%9E%84%E4%BA%8B%E7%89%A9%E8%BF%99%E5%8F%A5%E8%AF%9D%E6%AD%A3%E7%A1%AE%E5%90%97/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26182.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26182.jpg">
+  <meta name="twitter:title" content="如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="3194">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26182.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>7分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a6%82%e4%bd%95%e7%9c%8b%e5%be%85%e5%b0%bc%e9%87%87%e8%af%b4%ef%bc%9a%e3%80%8c%e9%81%93%e5%be%b7%e5%8f%aa%e6%98%af%e4%bd%8e%e7%ad%89%e4%ba%ba%e7%be%a4%e4%bd%93%e7%94%a8%e6%9d%a5%e9%98%bb%e7%a2%8d%e9%ab%98%e7%ad%89%e4%ba%ba%e7%9a%84%e8%99%9a%e6%9e%84%e4%ba%8b%e7%89%a9%e3%80%8d%ef%bc%9f%e8%bf%99%e5%8f%a5%e8%af%9d%e6%ad%a3%e7%a1%ae%e5%90%97%ef%bc%9f&amp;url=https://mohai.us.kg/posts/2023/2/4-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%B0%BC%E9%87%87%E8%AF%B4%E9%81%93%E5%BE%B7%E5%8F%AA%E6%98%AF%E4%BD%8E%E7%AD%89%E4%BA%BA%E7%BE%A4%E4%BD%93%E7%94%A8%E6%9D%A5%E9%98%BB%E7%A2%8D%E9%AB%98%E7%AD%89%E4%BA%BA%E7%9A%84%E8%99%9A%E6%9E%84%E4%BA%8B%E7%89%A9%E8%BF%99%E5%8F%A5%E8%AF%9D%E6%AD%A3%E7%A1%AE%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/2/4-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%B0%BC%E9%87%87%E8%AF%B4%E9%81%93%E5%BE%B7%E5%8F%AA%E6%98%AF%E4%BD%8E%E7%AD%89%E4%BA%BA%E7%BE%A4%E4%BD%93%E7%94%A8%E6%9D%A5%E9%98%BB%E7%A2%8D%E9%AB%98%E7%AD%89%E4%BA%BA%E7%9A%84%E8%99%9A%E6%9E%84%E4%BA%8B%E7%89%A9%E8%BF%99%E5%8F%A5%E8%AF%9D%E6%AD%A3%E7%A1%AE%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a6%82%e4%bd%95%e7%9c%8b%e5%be%85%e5%b0%bc%e9%87%87%e8%af%b4%ef%bc%9a%e3%80%8c%e9%81%93%e5%be%b7%e5%8f%aa%e6%98%af%e4%bd%8e%e7%ad%89%e4%ba%ba%e7%be%a4%e4%bd%93%e7%94%a8%e6%9d%a5%e9%98%bb%e7%a2%8d%e9%ab%98%e7%ad%89%e4%ba%ba%e7%9a%84%e8%99%9a%e6%9e%84%e4%ba%8b%e7%89%a9%e3%80%8d%ef%bc%9f%e8%bf%99%e5%8f%a5%e8%af%9d%e6%ad%a3%e7%a1%ae%e5%90%97%ef%bc%9f%20https://mohai.us.kg/posts/2023/2/4-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%B0%BC%E9%87%87%E8%AF%B4%E9%81%93%E5%BE%B7%E5%8F%AA%E6%98%AF%E4%BD%8E%E7%AD%89%E4%BA%BA%E7%BE%A4%E4%BD%93%E7%94%A8%E6%9D%A5%E9%98%BB%E7%A2%8D%E9%AB%98%E7%AD%89%E4%BA%BA%E7%9A%84%E8%99%9A%E6%9E%84%E4%BA%8B%E7%89%A9%E8%BF%99%E5%8F%A5%E8%AF%9D%E6%AD%A3%E7%A1%AE%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26182.jpg" alt="如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？" />
+      
+
+      <p>如何看待尼采说：「道德只是低等人群体用来阻碍高等人的虚构事物」？这句话正确吗？ -</p>
+<p>真正的德行并不需要语言上的高言大义, 而是要有付出代价的行动来爱人如己。</p>
+<p>一、 人有无资格进行道德谴责</p>
+<p>人当然有资格进行道德谴责, 只是不要轻易地抡起道德的大棒。</p>
+<p>有许多人会误解, 既然不要抡起道德大棒, 那么对于他人的言行举止, 我们都 「不要指责」, 都应当 「宽容」, 甚至应当视而不见, 保持缄默。</p>
+<p>这显然是错误的, 如果人无是非对错之分, 不分好歹, 那么人类社会也就不复存在。</p>
+<p>每个人的心中都有一个 「理想人」 的范例, 用柏拉图的术语来说这叫作人的 「共相」。这种 「理想人」 有着高尚、勇敢、 知恩图报等诸多美德。</p>
+<p>当他人的行为举止严重违反了 「理想人」 的标准, 就会激起我们内心的愤怒。 这种愤怒本身是正常的。</p>
+<p>虽然有很多人说人的 「共相」 ( 「理想人」 范例) 并不存在, 它只是一种假设, 但我更愿意相信「共相」 不是假设, 而是一种客观实在。 正如人类无论用任何仪器都无法画出一个完美的圆, 但 「圆」 这个概念是客观存在的。</p>
+<p>正是这种 「理想人」 的范例激起我们的道德意识, 也让我们一生可以不断行走在德行之路, 高山仰止, 虽不能至,心向往之。</p>
+<p>有人说, 没有什么是绝对的对, 也没有什么是绝对的错, 所以我们没有资格对他人说三道四。这种「相对主义」的观点是错误的。</p>
+<p>相对主义告诉人们没有绝对的对错, 存在的就是合理的。 但这个世界一切的败坏, 根源都是相对主义。 相对主义让人完全失去了批判罪恶的能力。如果没有绝对对错, 那么吃人也就只是一种口味问题, 杀人也不过是一种娱乐方式。</p>
+<p>因此, 人当然有资格进行道德谴责。</p>
+<p>二、 人为什么会进行道德谴责</p>
+<p>那么, 人为什么会进行道德谴责呢 动机多种多样, 我想至少有如下理由。</p>
+<p>很多时候, 父母对孩子最大的惩罚就是对其不管不问, 任其堕落。 当人们出于无伪的爱心对他人发出真诚的批评时, 其实还是希望他人可以悔改, 而不是任其在堕落中走向毁灭。</p>
+<p>这种人就像望远镜一样, 永远用小镜头看待别人的错, 放得很大很大, 但却习惯于用大镜头看待自己的错, 总是缩得很小很小。 这种人很容易发现他人的问题, 但却忽视自己的问题。</p>
+<p>人在指责他人中会获得快感, 获得道德上的优越感。 当我们指出他人的失败, 叫人无地自容, 这会让我们觉得自己高人一等, 从而不断地助长我们的骄傲和自大。</p>
+<p>很多时候, 当我们在他人身上发现了自己也有的缺点, 我们会竭力地批评论断。</p>
+<p>一方面, 在批评他人的过程中, 我们可以获得自以为是的快感, 而这种快感会让我们根本无须为自己的过错悔改。</p>
+<p>另一方面, 越是严厉批评, 越是可以在众人面前掩盖我们自己同样的罪行。 所以, 贪腐分子往往对贪腐的指责是最严厉的, 越是淫乱的人越是习惯于指责他人淫乱。 对此, 上一篇小文有过详细的说明。 当然, 这主要是针对某些 「网络大 V」 的。</p>
+<p>4.其他。人们进行道德谴责, 还有其他许多动机, 如博人眼球、营销造势、消费他人的痛苦等。</p>
+<p>前面两种动机是善意的, 但后面两种动机则是恶意的。当我们对刘某进行谴责时, 我们到底出于何种动机呢 人心诡诈, 很多时候, 我们自己都不知道自己内心的动机。有时可能是诸多动机的混杂。 因此, 每当我们抡起道德大棒, 一定要三思而后行, 也应该留有足够的余地自我反省。</p>
+<p>网络上铺天盖地对江歌案中刘某的谴责, 人们是希望将其置之死地, 彻底 「搞臭搞死」, 还是希望她能改过自新呢</p>
+<p>即便是刑罚, 也是希望在惩罚的基础上能够让罪犯洗心革面, 重新做人。西汉文帝之所以废除肉刑, 就是因为肉刑断人肢体, 毁人容貌, 是对人格的侮辱, 也彻底断绝了罪犯改过自新的可能。</p>
+<p>所以当缇萦救父, 上书文帝, 缇萦短短数语, 戳中文帝泪点——— 「妾父为吏, 齐中称其廉平, 今坐法当刑, 妾切痛死者不可复生, 而刑者不可复续, 虽欲改过自新, 其路莫由。妾愿入身为官婢, 以赎父刑罪, 使得改行自新也。」 (我的父亲做官吏, 齐地的人都说他清廉公平, 如今犯法应当获罪受刑。</p>
+<p>我为受刑而死的人不能复生感到悲痛, 而受过刑的人不能再长出新的肢体, 即使想改过自新, 也没办法了。 我愿意舍身做官府中的女仆来赎父亲的罪过, 让他能改过自新」 ) 文帝后在废肉刑的诏书中直接援引少女缇萦之语———「虽欲改过自新, 其路莫由也。」</p>
+<p>刑罚是国家最严厉的惩罚措施, 但是它依然要在惩罚的同时让罪犯改过自新。 因此, 刑罚不仅不能亵渎罪犯作为人的尊严, 反而要让罪犯重新体会到人的尊严, 邀请 「理性人」 重新住进自己的心中。</p>
+<p>甚至死刑也是对罪犯的尊重, 用黑格尔的话来说 「刑法被包含着犯人自己的法, 所以处罚他, 正是尊敬他是理性的存在。」 杀人偿命, 天经地义, 杀人犯知道这种律令, 却依然实施犯罪, 那么如果不处死他, 就是对他的不尊重。 ( 「别人杀人都判死刑, 为什么我杀人不判死刑 瞧不起我吗 把我当精神病人吗」 )</p>
+<p>在黑格尔看来, 如果一个杀人犯能够勇敢地去接受死刑, 并因为死刑而痛悔, 那么他就重新找回自己的尊严。 相反, 如果他选择 「好死不如赖活着」, 则是对其尊严最大的亵渎。</p>
+<p>因此, 所有的道德谴责都不应该随意侮辱他人的人格, 诸如 「人渣」 「狗男女」 「禽兽」 这种情绪化的表达在亵渎他人的同时也侮辱了自己。 同时, 将他人在道德上彻底 「批臭批死」 也从此堵住了他人改过自新的可能。</p>
+<p>虽欲改过自新, 其路莫由也。 难道, 这是我们所乐见的吗</p>
+<p>三、 如何开启道德谴责</p>
+<p>道德与法律不同, 它主要是一种自律。 因此, 在开启道德谴责的阀门时, 一定也要进行自我的反省, 这样才能让本能的愤怒在正确的渠道中运行并产生积极的作用, 而不至于像洪水一般, 泛滥成灾。</p>
+<p>老实说, 对于江歌案, 任何人都会感到愤怒, 人不能做到 「太上而忘情」。 但是, 当我陷入愤怒时, 心中的 「理想人」 告诉我要勇敢、 要感恩、 要知耻之时, 我首先把这种声音作为是对我自己的提醒。</p>
+<p>当我批评他人懦弱的时候, 我真的希望自己能够勇敢一点, 我心中的 「 理想人」 告诉我, 「你真的不够勇敢。当你批评某个热点案件的当事人时, 除了加入集体情绪狂欢以外, 你还做了什么 你敢不敢付出代价走出书斋, 去帮助弱者, 去对抗不公, 去匡扶正义, 与悲伤的人一路同行」</p>
+<p>当我批评他人忘恩负义的时候, 我真的希望自己能够多些感恩。 我心中的 「理想人」 告诉我, 「好多人你都忘了去感谢, 甚至你对你的父母都缺乏感恩, 难道你只在节假日才想起打电话吗 只在特定节日才想起感恩吗」</p>
+<p>每一次对他人恶行的谴责, 我都希望能够真正地提升我自己的道德水平。我希望我的愤怒不仅仅是一种感性的表达, 而能够产生积极后果。</p>
+<p>针对江歌案的文章发出后，有不少网友斥责我是 「人渣」 「没有良知」 「枉为人师」, 我接受这些批评, 对比心中 「理想人」 范例, 这些批评非常准确到位。</p>
+<p>我确实在德行上离理想状态差得太远。 所以, 我会像溺水之人抓住救命稻草一般抓住能够带我出离邪恶深渊的力量。</p>
+<p>有人说, 法律人优点 (或是缺点, 端看你采取何种立场) 之一, 便是他既不相信口号, 也不相信群众。 那些立场鲜明、 非此即彼的口号式论说最容易获得民心, 但这种单极化的思维在人类历史上却带来了无数浩劫。</p>
+<p>因此, 法律的训练让我对任何口号都心存警惕。</p>
+<p>至于群众, 并不是说法律人不应该傲慢到不听取民意, 而是说他必须超越民意的偏见。</p>
+<p>托克维尔在 《论美国的民主》 中一再提醒人们警惕多数人的暴政, 并认为这是民主制度的悖论, 如果不妥善处理好这个问题, 民主将会被其自身所摧毁。</p>
+<p>但是, 托氏很高兴地发现, 在美国, 对抗这种多数暴政最有效的武器就是法律界, 「当美国人民任其激情发作, 陶醉于理想而忘形时, 会感到法学家对他们施有一种无形的约束, 使他们冷静和安定下来。</p>
+<p>法学家秘而不宣地用他们的贵族习性去对抗民主的本能, 用他们对古老事物的崇敬去对抗民主对新鲜事物的热爱, 用他们的谨慎观点去对抗民主的好大喜功, 用他们对规范的爱好去对抗民主对制度的轻视, 用他们处事沉着的习惯去对抗民主的急躁。」① 这句话值得法律人深思。</p>
+<p>愿我们能够付出代价真正走入江妈妈的生活之中, 帮助她走出悲伤与仇恨。</p>
+<p>也愿刘某及其家人能够勇敢地面对一切。</p>
+<p>① [法] 托克维尔《论美国的民主 (上) 》, 董果良译, 商务印书馆 1997 年版, 第 309 页。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/16-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E7%94%98%E8%82%83%E7%99%BD%E9%93%B6%E8%BF%9E%E7%8E%AF%E6%9D%80%E4%BA%BA%E6%A1%88%E5%AB%8C%E7%96%91%E4%BA%BA%E8%90%BD%E7%BD%91/" title="如何看待甘肃白银连环杀人案嫌疑人落网？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">如何看待甘肃白银连环杀人案嫌疑人落网？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/8-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E6%99%AE%E9%80%9A%E5%AE%B6%E5%BA%AD%E7%9A%84%E5%A5%B3%E5%AD%A9%E5%AB%81%E5%85%A5%E8%B1%AA%E9%97%A8%E6%97%A5%E5%AD%90%E4%BC%9A%E5%A5%BD%E8%BF%87%E5%90%97_-%E7%9F%A5%E4%B9%8E/" title="如何看待普通家庭的女孩嫁入豪门 日子会好过吗_ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">如何看待普通家庭的女孩嫁入豪门 日子会好过吗_ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

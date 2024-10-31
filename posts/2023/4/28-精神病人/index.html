@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精神病人 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/28-%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/28-%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="精神病人">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26042.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26042.jpg">
+  <meta name="twitter:title" content="精神病人">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="精神病人">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10378">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26042.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">精神病人</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%b2%be%e7%a5%9e%e7%97%85%e4%ba%ba&amp;url=https://mohai.us.kg/posts/2023/4/28-%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/28-%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%b2%be%e7%a5%9e%e7%97%85%e4%ba%ba%20https://mohai.us.kg/posts/2023/4/28-%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26042.jpg" alt="精神病人" />
+      
+
+      <p>精神病人</p>
+<p>恶有恶报：最亲密的人，捅下最锋利的刀</p>
+<p>「姓名？」</p>
+<p>「安灵珊。」</p>
+<p>「年龄？」</p>
+<p>「28 岁。」</p>
+<p>「车里的是你什么人？」</p>
+<p>「是我前夫。」</p>
+<p>「21 号凌晨三点你们开车去哪里？」</p>
+<p>「去山顶看日出，他当时喝醉了。」</p>
+<p>「为什么中途停车？」</p>
+<p>「他想吐，我就停下了，然后就发生了意外。」</p>
+<p>「你把车停在一个后方是河流的上坡路段，车里有一个没有行为能力的人？」</p>
+<p>「当时天黑，没有在意……」</p>
+<p>「安灵珊，你这是谋杀！」</p>
+<p>「警官，凡事讲证据。」灵珊抬起头，眼睛是一片灰烬。</p>
+<p>两年前。</p>
+<p>「老公，明天上午 8 点陪我去做 B 超，别忘了请假。」灵珊抚摸着微微隆起的肚子，从果盘里拈起一颗葡萄吃。</p>
+<p>「知道，老婆大人，你在家乖乖的。」丈夫方京满口答应，然后穿好鞋子，出门上班了。</p>
+<p>「嗯嗯。」灵珊吐出葡萄籽，听说怀孕的时候吃葡萄孩子眼睛大。</p>
+<p>灵珊身体不大好，她和方京几经波折才成功怀孕，而肚子里这个宝宝，从怀上开始就先兆流产，吃了多少药打了多少针，这才安安稳稳的在灵珊肚子里安了家。</p>
+<p>对于产检，灵珊自然是小心再加小心。</p>
+<p>方京进了电梯，拿出手机点开微信聊天框，对方头像是个卡通女孩，大眼睛小嘴巴，有些比例失调。</p>
+<p>他发了一条消息:「宝贝儿，明天不能陪你了，我得陪她做产检。」</p>
+<p>那边很快回了一个委屈的表情。</p>
+<p>「这周末好好补偿你，爱你。」</p>
+<p>方京想了想，又发过去一个 520 的红包。</p>
+<p>第二天的妇产科人满为患，好像孕妇们都看准了今天天气好，扎堆儿来做检查。</p>
+<p>「情况还算稳定，这样，我再开些药，你回去按时吃，多卧床，少运动。」医生撕下单子，叮嘱灵珊。</p>
+<p>出了诊室不见丈夫的影子，灵珊只好自己穿过人群跑去一楼拿药，拿药的小护士有些面生，动作也不麻利，大概是实习生吧。</p>
+<p>在大厅坐了一会，方京才出现，他抱歉地笑笑，哭泣手机，「客户的电话。」</p>
+<p>「客户重要我重要？」灵珊委屈地要哭出来。</p>
+<p>「你，当然是你了！我这不是为了给儿子攒奶粉钱嘛。」</p>
+<p>「油嘴滑舌。」</p>
+<p>「好了好了，不生气了，我们回家。」方京搀扶着灵珊，一边走一边哄。</p>
+<p>门外，阳光明媚。</p>
+<p>周六晚上，方京在公司加班，灵珊吃过药就早早睡下了，她做了一个奇怪的梦，梦里有个大眼睛的人在卖西瓜，她问西瓜甜吗？那人把瓜捧给她，却哗的一声摔在地上，瞬间一片殷红。</p>
+<p>灵珊被惊醒了，心神不宁，她爬起来倒水喝，脚下一滑坐在地上，她心里一凉，打开大灯看，自己坐过的地方有一摊血迹。</p>
+<p>这个时候，灵珊才感觉自己的肚子刀绞一般的疼。</p>
+<p>打电话给丈夫，无人接听，她只好又打给 120。</p>
+<p>救护车来得很快，孩子也没的很快，那条小生命像是恨极了灵珊，一刻也不想在她肚子里待着。</p>
+<p>方京赶到时，灵珊正哭得像个泪人儿。</p>
+<p>「对不起老公，我不小心摔了一下，对不起。」灵珊的眼泪成了串儿，滴滴答答的浸湿了被子。</p>
+<p>「别难过，怪我，怪我没陪着你。」方京抓着灵珊的手，心里跟着疼了一下。</p>
+<p>好不容易安抚着睡下，天都亮了，护士叮嘱方京去买些流食，产妇需要补充能量。</p>
+<p>方京手里的早点还烫手，灵珊却进了抢救室，流产引发的大出血，他左手拎着小米粥，右手拿起笔签字。</p>
+<p>灵珊的子宫摘除了。</p>
+<p>她再也生不了孩子了。</p>
+<p>灵珊看着窗外的白杨树，她想，人落下去和树叶落下去一样吗？</p>
+<p>灵珊的公婆来住了几天，嘴上在安慰，眼睛里却是失望，夜里时候，他们把偷偷儿子叫到房间，悄悄地关上了门。</p>
+<p>听到关门声，灵珊的眼泪哗的一下涌了出来，孩子没了可以再怀，子宫没了去地里种一个出来吗？</p>
+<p>和父母深夜谈话后，方京好像忽然忙了起来，他加班的时候越来越多，加班的时间也越来越长，很多时候，灵珊打给他的电话都是无人接听。</p>
+<p>听着手机里冷冰冰的语音提示，灵珊更多的是愧疚，如果不是自己身子弱，如果不是自己不小心，如果不是大出血，或许孩子就不会掉了，或许他们还能再有一个孩子。</p>
+<p>夫妻之间的那根绳索好像突然断了。</p>
+<p>孩子流产后，灵珊像变了一个人，以前的她开朗大方，爱说爱笑，好像没什么烦恼，现在她就像是屋子里一株盆景，或者是一把椅子，静静地，无声无息，许久才动动眼睛。</p>
+<p>灵珊的心死了。</p>
+<p>她时常看着窗纱被风吹的飘起来，她想着，脚踩上去是不是像踩在白云上，她看着楼下来往的车辆，她想着，轮子碾过去身上会不会有清晰的车辙印。</p>
+<p>她看着阳台上的围栏，越看越像小时候跳竹竿舞时的竹竿。</p>
+<p>「灵珊！」方京回家大喊一声，把她从阳台边上抱了下来。</p>
+<p>18 楼，从开着的窗子望下去，夜晚是无尽的深渊。</p>
+<p>「我们离婚吧。」灵珊捧着手里的热水。</p>
+<p>方京眼睛里闪过一丝光，很亮也很短暂，却被灵珊看得一清二楚。</p>
+<p>「说什么傻话。」方京避开眼神。</p>
+<p>「我是认真的，我知道你喜欢孩子，可是我……」</p>
+<p>「灵珊…」方京还想着说什么，口袋里的手机响了起来，他走到浴室，一边喂一边关上了门。</p>
+<p>灵珊看着浴室的玻璃门，上面有细碎的反光，她想着，浴缸那么白又那么亮，把割破的手腕放进去，颜色会不会更鲜艳？</p>
+<p>离婚手续办的很快，没有什么财产纠纷，灵珊裹了一件风衣，拖着一只黑色的旅行箱，脚上是一双低跟的鞋子，鞋底上不知什么时候沾了一块黑色的污渍。</p>
+<p>她穿过小区大门，走过人行横道，坐上公共汽车，空气里有一股粉尘味。</p>
+<p>灵珊的父母惊讶地看着女儿，当看到她手里的离婚证时，他们的眼睛瞪得更圆了。</p>
+<p>「你这孩子，怎么不跟家里人商量？」</p>
+<p>「是啊，这么大的事儿，怎么自己做决定？」</p>
+<p>「你们是不是吵架了？」</p>
+<p>「不行，我打个电话问问方京到底怎么回事！」</p>
+<p>……</p>
+<p>父母你一言我一语，絮絮不清，灵珊听着他们的声音，有时候很近，有时候又很远，她看着他们的脸，有时候清晰，有时候又像隔了一层雾，深秋里那种白茫茫的大雾。</p>
+<p>「爸，妈，我累了，我想去睡一会儿。」她走近卧室，蒙头大睡。</p>
+<p>晚饭时候，父亲烧了灵珊爱吃的排骨。</p>
+<p>「珊珊啊，起来吃饭啦！」门被反锁了，母亲敲敲门，没人回应。</p>
+<p>屋子里静得很，细听仿佛没有呼吸声。</p>
+<p>「珊珊？珊珊！」还是没有回应。</p>
+<p>气氛开始紧张起来。</p>
+<p>父亲从抽屉里翻出了钥匙，打开门，灵珊睡得正香，床头柜上端端正正地摆着一个药瓶。</p>
+<p>药是新开封的，药瓶里是空的，里面曾经装着一种治疗失眠的药物。</p>
+<p>灵珊只是觉得自己病了，需要吃药，至于什么时候吃，吃多少她也不知道。</p>
+<p>给她洗胃的医生目光漠然，母亲流下的眼泪滚烫，父亲眉头紧锁，花白的头发在医院的白炽灯下很是显眼。</p>
+<p>灵珊不想死在方京家，她觉得，自己在哪里出生，就应该在哪里死亡，生与死，起点也是终点，周而复始。</p>
+<p>灵珊父亲打电话给方京，那头支吾着说自己在出差，背景音很嘈杂，像是在一个很热闹的地方。</p>
+<p>神经科的诊断结果也出来了，灵珊患上了很严重的抑郁症和轻度精神分裂，这也是导致她自杀的直接诱因。</p>
+<p>医生建议住院，这个病人除了会自杀还有很多的不确定性，如果两个老人照看的话，怕会有突发情况。</p>
+<p>灵珊转到精神病院的时候，方京来了，衣服上有一股甜腻的香水味，跟医院的味道有些冲突，他垂着手站在灵珊床边，看着刚从鬼门关回来的前妻，脸上说不出是什么表情。</p>
+<p>那天父母关上门后对他说的话又在耳边响起，</p>
+<p>「孩子没了，子宫都摘了，还有什么以后？」</p>
+<p>「打结婚那会我就不喜欢她，又瘦又小。」</p>
+<p>「你呀，等她出了月子，赶紧离婚！」</p>
+<p>「妈，她又没做错什么，我怎么提呀？」</p>
+<p>「那就耗着她，冷着她，看她能撑多久！」</p>
+<p>「对了儿子，你外头那个有把握吗？」</p>
+<p>……</p>
+<p>方京此刻在医院的心情是轻松的，幸好提前离了婚，不然早晚有一天灵珊要死在自己家，就算不死，被这个神经病黏着，方京一辈子也别想安生。</p>
+<p>他安慰着曾经的妻子，陪着灵珊的父母落了几滴眼泪，而对于离婚的事，他却只字未提。</p>
+<p>灵珊看着方京，慢慢地眯起了眼睛，她只是觉得眼前这个男人很眼熟，可是却怎么也想不起他是谁，她吃下护士端来的药，又懒懒地睡下了。</p>
+<p>住院三个月后，灵珊精神饱满，她笑着对医生道谢，脚步轻快的出院了。</p>
+<p>每天还是要吃很多药，灵珊看着手里花花绿绿的药片，有的有糖衣，有的苦的人要皱眉，她喝下后皱着眉思考，我一直在笑，可是我为什么不快乐？</p>
+<p>午睡的时候听到客厅里父母的絮语，父亲有些愤怒，母亲则带出了哭腔。</p>
+<p>灵珊凑近了听。</p>
+<p>「这才多久，他就要再婚了！」</p>
+<p>「狼心狗肺的，我们珊珊都这样了，他方京还是人吗？」</p>
+<p>「我看，这八成早就勾上了。」</p>
+<p>「怪不得赶着离婚，苦了我们珊珊啊，孩子没了，以后也不能…」</p>
+<p>「嘘——别把女儿吵醒了。」</p>
+<p>灵珊打开了方京的朋友圈，她看到一张大红的请柬，结婚宴席邀请函，新郎是方京，新娘是另一个女人。</p>
+<p>是太兴奋了吧，不然怎么忘记屏蔽灵珊了？</p>
+<p>「我得去参加。」灵珊坐了起来，脑袋里冒出这样一个想法。</p>
+<p>曾经用心爱过的男人啊，灵珊得看看他不属于自己的样子。</p>
+<p>婚礼上，灵珊依旧温婉，美丽，只不过新娘换成了别人，一个叫梅娜的女人，眉心偏左有一颗痣。</p>
+<p>灵珊隐在角落里，听着宴席上人们对新人的夸赞。</p>
+<p>「一个销售经理一个护士，真是般配啊。」</p>
+<p>「对呀，真是郎才女貌啊。」</p>
+<p>……</p>
+<p>婚礼的小游戏环节，新郎新娘去吃吊在绳上的红枣，新娘在新郎脸上印了一个鲜艳的口红印子，台下起哄叫好，司仪拿着话筒，大声地说着:「早生贵子！早生贵子！」</p>
+<p>灵珊跟着人群拍了拍手，心里却是刀割斧砍一样。</p>
+<p>婚礼散场，天色已经发暗，灵珊失魂落魄地走在路上，婚宴上三三两两的人驱车离开。</p>
+<p>滴滴——</p>
+<p>灵珊仿佛没听到，继续走。</p>
+<p>滴滴——</p>
+<p>其实灵珊听到了，她只是突然想知道，车子如果从身上压过去，会留下几道车辙印。</p>
+<p>嘭！</p>
+<p>灵珊在空中极短暂的飞行了一会，像一只笨拙的鸟。</p>
+<p>血从马路上流到了救护车里，又从救护车流到了抢救室，最后，在 ICU 的病床上止住了。</p>
+<p>她的病并没有好，她把脸上装上笑容，只是为了离开医院，去一个容易死的地方。</p>
+<p>重症监护室里的仪器声扰的灵珊心烦，她睁不开眼睛，动不了手指，也说不出话，但她的耳朵却很敏锐，连隔壁病床半夜没有了呼吸她都听得一清二楚。</p>
+<p>灵珊做了一个冗长的梦，梦里光怪陆离，头顶下雪，脚下开花，她走过花田，涉过河流，前方朱紫明黄殷殷召唤，灵珊盯着来往的人群，她说:「我不想死。」</p>
+<p>康复的日子漫长而煎熬，肇事者看着灵珊从重症转到普通病房，心里暗暗松了一口气。</p>
+<p>他那天参加完婚礼，没喝酒也没超速，嘴里还哼着结婚进行曲，心情还沉浸在喜悦里，车头忽然就多了一个人，他把刹车踩到底，女人还是飞了出去。</p>
+<p>肇事者叫汪超，离异，身边带一个女儿。</p>
+<p>四个月后，灵珊出院时候，汪超开车去接，后座的女儿仔细地看着这个陌生的阿姨。</p>
+<p>灵珊不能生孩子，而汪超有一个孩子；灵珊离异，汪超也是单身汉。</p>
+<p>命运的绳索把他们神奇的拴在一起。</p>
+<p>灵珊提出去看看他家里人。</p>
+<p>汪超的家庭很复杂，母亲两嫁，他在同市还有个同母异父的妹妹。</p>
+<p>灵珊站在汪超妹妹的楼下，内心五味杂陈。</p>
+<p>方京打开门看到灵珊，明显的一愣。</p>
+<p>汪超的妹妹就是梅娜，方京的现任妻子。</p>
+<p>梅娜抚着肚子走过来，她双腿浮肿，步态笨拙。</p>
+<p>「真巧啊！」灵珊露齿一笑。</p>
+<p>「啊，真巧。」梅娜笑的勉强。</p>
+<p>饭桌上，气氛微妙尴尬，方京和梅娜鼻尖都沁了汗，汪超却吃得很香，他的女儿梓菡在屋子里来回穿梭。</p>
+<p>「什么时候生啊？」灵珊夹起一只虾，放在梅娜碗里。</p>
+<p>「预产期在下个月底。」方京清清嗓子回答。</p>
+<p>「下个月底…看来我这个舅妈该买礼物了。」灵珊举起饮料。</p>
+<p>「你和我哥，什么时候？」</p>
+<p>「不急。」灵珊握着汪超的手，两个人相视一笑。</p>
+<p>「哥，先恭喜你啦！」</p>
+<p>「哈哈哈！」</p>
+<p>……</p>
+<p>饭桌的气氛逐渐升温。</p>
+<p>而方京嚼着桌上的菜，却尝不出味道来了，他喝了一口果汁，觉得又苦又辣。</p>
+<p>他似乎很介意这种关系。</p>
+<p>而灵珊似乎是忘记了上一段婚姻的不幸，她和汪超成双入对，勤洒狗粮，和梅娜竟然也十分交好，经常来送些自己做的菜。</p>
+<p>「你快尝尝好吃吗？回头我做给你哥吃。」</p>
+<p>「放那儿吧珊珊姐，冰箱有葡萄，你拿出来吃。」</p>
+<p>「唉，你看我新买的大衣好看吗？」</p>
+<p>「好看好看，等我生完了，咱俩一块购物去！」</p>
+<p>方京没想到，自己妻子的哥哥娶了自己的前妻，更没想到，自己的前妻和现任成了最要好的闺蜜。</p>
+<p>命运有时候就是要跟你开开玩笑。</p>
+<p>梅娜的胃口多变，灵珊送来的菜大多都进了方京的肚子。</p>
+<p>一次，灵珊来的时候赶上梅娜在睡觉，方京叫住她。</p>
+<p>「我们谈谈。」</p>
+<p>「好啊。」</p>
+<p>「你…你恨我吗？」</p>
+<p>「啊？」灵珊被问的有些莫名其妙。</p>
+<p>「你没恨过我吗？」</p>
+<p>「开始时有一点，但是后来想通了，孩子的事儿谁都没错，而且我们再纠缠在一起，只会两败俱伤，倒不如好聚好散。」</p>
+<p>「你想通就好。」</p>
+<p>「这场车祸我九死一生，让我明白了很多，也看淡了很多，人有的时候真不能太较真。当然了，最重要的是收获了一个爱我的人。现在你也幸福，我也不错，不是最好的结果吗？」</p>
+<p>一番话，让方京无言以对，他以为灵珊会对他怨恨，他以为灵珊找上梅娜的哥哥是纯粹的为了报复他。</p>
+<p>看来，是方京太狭隘了。</p>
+<p>灵珊离开后，梅娜从卧室出来，她对方京说:「她哪儿是出了车祸，她是换了个人吧？」</p>
+<p>日子轻快平稳地过着，方京的儿子顺利出生，白白胖胖，能吃能睡，灵珊抱过来，粉嫩嫩一团。</p>
+<p>灵珊包了红包，送上几套衣服和几大包纸尿裤，像是在填补自己没有孩子的空缺。</p>
+<p>从翻身到爬行，辰辰除了喜欢妈妈，第二喜欢的就是灵珊了。</p>
+<p>灵珊像是他第二个妈妈。</p>
+<p>汪超看着妹妹肉滚滚的孩子，看着灵珊泛滥的母爱，他觉得，该给灵珊一个家了。</p>
+<p>这天，汪超去了灵珊的父母家，在楼下碰到了灵珊，她手里拎着些火腿肠，还有一些红呼呼的湿嗒嗒的东西。</p>
+<p>「又买这么多肉啊？」楼下的阿婆笑眯眯的打招呼。</p>
+<p>「是啊。」灵珊笑着回答，抬头看到了汪超。</p>
+<p>「你怎么来了？」灵珊对于汪超的突然造访有些慌张。</p>
+<p>「我来商量一下咱们俩的事儿。」</p>
+<p>「怎么不提前告诉我？」</p>
+<p>「惊喜嘛。」汪超手里拎着满满的烟酒礼品。</p>
+<p>「我父母没在家，我们出去吃吧。」</p>
+<p>「这样啊，你怎么买那么多…肉？」</p>
+<p>「我爸最近养了只狗啊，很凶的，你不要进去了。」</p>
+<p>汪超听出了灵珊的敷衍，他吃着服务员推荐的牛排，心里很不是滋味。他甚至觉得，灵珊和他处朋友的目的就是为了接近梅娜，更确切地说，是梅娜的孩子！</p>
+<p>「回去我跟我爸妈说一声，让他们有个准备，你呀，不要太急嘛！」灵珊捏捏汪超的鼻子，撒娇这说道。</p>
+<p>方京的儿子从牙牙学语到蹒跚学步，汪超也终于对灵珊的父母提了亲。</p>
+<p>灵珊买了一件暗红色的大衣准备订婚穿，顺便买了一件明黄色的小外套给方辰，汪超在珠宝店挑了一枚戒指，灯光下，钻石反射的光芒和灵珊眼里的光一样明亮。</p>
+<p>这天，阳光很好，梅娜领着儿子去小区楼下散步，辰辰像个旋转的小陀螺一样，跑得小脸红扑扑的，十分可爱。</p>
+<p>悲剧发生得很突然，一条流浪狗扑向了辰辰，它身姿矫健，它下口精准。孩子尖利的哭声和大人惊恐的叫声混在一起，一时间，和煦温暖的午后成了人间地狱。</p>
+<p>好心人拿着棍子赶来，流浪狗一瘸一拐地跑掉了，梅娜抱起血肉模糊的儿子，黄色衣服上染满了鲜血，像是中午吃的番茄炒蛋。</p>
+<p>梅娜有些想吐。</p>
+<p>狗太大，孩子太小，医生拼尽全力，也是回天乏术，狗牙咬开了脖子，撕裂了皮肉，刺穿了大动脉，一个蹒跚学步的小孩儿能有多少血能流呢？可怜的辰辰永远的闭上了眼睛。</p>
+<p>梅娜撕心裂肺，方京愁眉不展，灵珊也陪着黯然落泪。</p>
+<p>可是，意外怎么能避免呢？</p>
+<p>阴霾笼罩了这一片城市，在方京楼上的屋顶，更是浓的像一团乌云，仿佛随时都会响起一声闷雷。</p>
+<p>两个人之前的争吵愈发频繁，方京泡在公司不回家，每次出差，每次加班他都是积极分子，家对于他而言，更像一个监狱，严严实实的透不过气。</p>
+<p>因为孩子产生的隔阂在夫妻间的矛盾越来越大，日子紧张又漫长的煎熬着，方京的每一天都度日如年。</p>
+<p>而灵珊也因为这次事故，精神状态发生了变化，又开始加大药量，婚礼只好延期。</p>
+<p>而梅娜，孩子的亲生母亲，她却没在孩子的阴影里停留多久，方京去出差后，她坐在镜子前打扮。</p>
+<p>梅娜的年纪不大，样貌和身材因为生了孩子更添风韵，她画好眉，描上眼线，对着镜子浅浅一笑，脸颊有一颗酒窝。</p>
+<p>方京出差回来，梅娜正懒懒地看着电视，垃圾桶里是新换的，里头干干净净。</p>
+<p>他走进卧室，屋里灯光昏黄，水粉色的枕套上有一根头发，弯弯曲曲，像是潮流男士的锡纸烫，方京摸了摸自己日益往后的发际线，眉头紧锁。</p>
+<p>夜晚，他看着熟睡的妻子，眼神里阴晴不定。</p>
+<p>第二天，两个人爆发了一场大战，家里碎碗破瓶，一片狼藉，玻璃渣子铺了一地。</p>
+<p>方京红着眼睛吼叫，梅娜窝在沙发里抹眼泪。</p>
+<p>梅娜不承认也不说话，嘴巴紧的像打了一层胶，方京终于失去了耐心，摔门而去。</p>
+<p>盛夏的天气里，方京的心头空落落的，有些冷。</p>
+<p>灵珊来的时候，屋里已经收拾干净了，只是柜子上，桌上少了很多装饰品，看起来有些冷清。</p>
+<p>「大扫除啊？」灵珊进来看了一眼屋子，手里拎着一个保温桶。「尝尝我的汤？」</p>
+<p>「谢谢。」梅娜拢了拢耳边的头发，露出一块淤青。</p>
+<p>「怎么了这是？」</p>
+<p>「自己摔的…」梅娜别开目光。</p>
+<p>「吵架了？」</p>
+<p>「…」梅娜没回答，她不想让丈夫的前妻看出自己不幸福。</p>
+<p>「两口子，床头打架床尾和嘛，还能生隔夜的气？你就服个软，他就是那臭脾气…」</p>
+<p>「没事儿。」梅娜打断了她的话，心里忽然生出了一阵厌恶。</p>
+<p>「这事儿，我也不好劝——哎呀，你这屋怎么有蚊子？看都咬我一个包了。是不是窗户没关好？」</p>
+<p>「啊？我天天点蚊香。」梅娜抬头看了看四周。</p>
+<p>「我记得书房窗户那儿有个缝儿，修没修好啊？」</p>
+<p>灵珊起身去了书房，墙边有个蚊香盒子，窗台上有个空置的球形鱼缸。</p>
+<p>「鱼缸怎么空着呢？我填上水了，明天再给你买几条鱼。」</p>
+<p>「哦。」梅娜没了耐心，她觉得灵珊有些聒噪。</p>
+<p>「我看你们俩呀，就是压力太大了，赶紧再要个孩子，看你们还有时间吵架？」</p>
+<p>「……」</p>
+<p>「你呀，赶紧打电话服个软，他就是吃软不吃硬，晚上把他叫回来，你俩好好说呗。」</p>
+<p>「……」</p>
+<p>「那汤等他回来你热一下，就说你熬的，要抓住男人的心，首先…」</p>
+<p>「灵珊！」</p>
+<p>「嗯？」</p>
+<p>「我有点累了，要不你先…回去？」</p>
+<p>「哎呀，你看我，一个外人在这儿劝什么？你呀赶紧给他叫回来，你俩好好说！」</p>
+<p>灵珊终于出去了，门咔嚓一声关上，门里的人和门外的人都长出了一口气。</p>
+<p>不一会，方京的手机响了，他接上电话，匆匆忙忙的打车离开公司。</p>
+<p>凌晨时候，方京睡得正香，他接到了警察的电话。</p>
+<p>他又匆匆忙忙打车从临市回来——他在出差。</p>
+<p>家里失火了，梅娜葬身火海，一起抬出来的，还有一个陌生的男人。</p>
+<p>方京盯着白布下鼓起的尸体，内心一阵后怕。</p>
+<p>书房都是书，比那些塑料制品和衣服好烧多了。</p>
+<p>消防车队只保住了房子的框架，屋里的家具电器，都烧得面目全非，如果方京没有砸那些花瓶锅碗，屋里可能还要多一堆灰烬。</p>
+<p>失火的原因锁定了书房的一盘蚊香，蚊香紧挨着墙，窗帘被烧的只剩几个挂钩。</p>
+<p>到底是意外还是蓄意放火？</p>
+<p>警察也不是没怀疑过方京，妻子和情夫都偷到了他头上，他怎么不起杀心？</p>
+<p>早上吵架，中午出差，晚上起火。离开的时候点上蚊香，几个小时后，窗帘就成了最佳燃烧物。</p>
+<p>蚊香的燃烧需要时间，方京没有不在场证明。</p>
+<p>他听着警察的询问，看着警察怀疑的目光，他脑子里浑浑噩噩的，早上还抹泪的妻子，怎么突然就和一个陌生男人一起烧死了？</p>
+<p>早上出门还亮堂堂乱糟糟的客厅，怎么突然就又黑又脏，乱的几乎进不去脚？</p>
+<p>他木然的回答警察的问题，几点出门，几点出差，和妻子有什么矛盾，和妻子的情夫有没有过交集。</p>
+<p>「我不确定，只是怀疑，没抓住过他们。」</p>
+<p>「没什么大矛盾，也没什么财产纠纷，就是夫妻拌嘴。」</p>
+<p>「小区绿化好，蚊虫也多，书房那儿不严实，她就爱在那儿点上蚊香。」</p>
+<p>「没有，这段时间没见她有什么异常。」</p>
+<p>他看着周围来来往往的人，脑海里一阵翻涌，心里空落落的，仿佛缺了一块，先是儿子被狗咬，后来是妻子出轨，再后来房子也被烧了。</p>
+<p>方京心里说不出的难受，他冥冥中觉得这是他的报应，他抛弃了灵珊，抛弃了结发的妻子，这是老天爷对他的惩罚！</p>
+<p>他抱着头坐在地上，想哭，眼眶里却干巴巴的。</p>
+<p>灵珊作为当天到过方京家里的人，也被警察传唤了。</p>
+<p>灵珊说梅娜最近总是心事重重，闷闷不乐，问她也不说，还问过她关于心理医生收费的事儿。</p>
+<p>「她去年没了孩子，可能精神压力太大了。」灵珊眼角泛红。</p>
+<p>「据我了解你是方京的前妻，和死者有过什么积怨吗？」</p>
+<p>「我和他哥哥都订婚了，能有什么积怨？」</p>
+<p>「那她和方京之间有没有什么矛盾？」</p>
+<p>「这个我不大清楚。」</p>
+<p>两个人都没有问出什么，警察对视着摇头，还是没有直接的证据。</p>
+<p>方京和灵珊走出了警局，互相对望一眼，有种同是天涯沦落人的感觉。</p>
+<p>方京无家可归，灵珊邀请他去自己租的房子里。</p>
+<p>「上个月搬出来了，自己一个人住，清净。」灵珊拿出一瓶红酒。</p>
+<p>「谢谢你。」方京苦笑着端起酒杯。</p>
+<p>「谢什么。」屋里的灯是暖光，灵珊脸上挂一点红晕。</p>
+<p>「你和梅娜的哥哥怎么样了？」</p>
+<p>「分开了，我的病总是反复，不想拖累他。」</p>
+<p>「唉，兜兜转转，还是剩我们两个人。」</p>
+<p>「或许，我是说或许，我们当初就不应该分开。」灵珊脸上掠过一丝笑，又给方京倒上一杯。</p>
+<p>方京喝的很多，他们聊的更多，灵珊没有喝，她床头柜上的那些药，都不允许她喝酒。</p>
+<p>虽然灵珊滴酒未沾，双颊却泛红。</p>
+<p>「还记得我们第一次约会的时候吗？」不知道为什么，人总会不经意地回忆起从前。</p>
+<p>「怎么会忘？你说去山上看日出，结果车子半路坏了，又突然下雨，我们等了好久的救援车，哈哈。」方京醉眼蒙眬，时间倒退，退回到那个看日出的夜晚。</p>
+<p>「再去看一次好吗？」灵珊有些激动。</p>
+<p>「好。」</p>
+<p>灵珊握着方向盘，车子穿梭在盘山路上，大概两个小时的车程。</p>
+<p>山不算陡，也不算偏僻，沿路甚至还有几家新开的便利店。</p>
+<p>「不要睡，陪我聊聊吧。」</p>
+<p>「好哇。」方京迷迷糊糊的，酒精在他胃里发酵，在他脑子里游离。</p>
+<p>他的身子软的像一摊泥。</p>
+<p>「还记得我们的孩子吗？」</p>
+<p>「嗯…」方京眼里闪过一丝失望。</p>
+<p>「他跟我无缘，可能觉得我不是个好妈妈。」</p>
+<p>「谁也不愿发生…」</p>
+<p>「对了，还记得你儿子吗？」</p>
+<p>「那些可恶的狗…」方京眼里起了怒火。</p>
+<p>「没有家的狗是流浪狗，我也没有家，是流浪人。」</p>
+<p>「别这样说…」</p>
+<p>「记得那天你儿子穿的，是我送的黄色外套？」</p>
+<p>「我…不记得了。」</p>
+<p>「我还记得，我很喜欢那个颜色，当然了，狗也喜欢。」</p>
+<p>方京察觉了一丝不对劲，可是酒精让他的大脑放慢了速度，他只是觉得哪儿别扭，却又说不出哪里。</p>
+<p>「你…」</p>
+<p>「我以为你会死在火场里。」</p>
+<p>车里的空调很足，凉飕飕的，方京有些眩晕。</p>
+<p>「书房里的书太多了，你说你，读了那么多圣贤书，到头来，不也是学人家出轨？」</p>
+<p>「你什么时候…知道？」</p>
+<p>「我们几月离的婚，你儿子又是几月生的？」</p>
+<p>「我……」一时间，灵珊洗胃后落泪的场景和儿子被咬后抢救的场景，在方京脑子里相互穿插，他陷入了混乱。</p>
+<p>「火是你放的？」方京的脑子稍微恢复了转动。</p>
+<p>「不是。她总爱在窗帘下点蚊香，早晚要出事的，只是可惜了我熬了那么久的汤。」</p>
+<p>「你和那个汪超…」</p>
+<p>「我得有个正当的理由接近你们，他是老天觉得不公，派来帮我的。」</p>
+<p>「你，你怎么能这么做？」方京身上一阵又一阵的恶寒。</p>
+<p>「比起你们，我做的这些算什么？」</p>
+<p>「你一直都想杀了我们是不是？」</p>
+<p>「地狱空荡荡的，我一个人，太孤单了。」灵珊扭头一笑，车里很黑，灵珊的笑声很阴森。</p>
+<p>「停车！我要下车，我要下车！」方京大喊起来，听起来像是一个醉鬼在撒酒疯。</p>
+<p>刚才温婉贤淑的前妻，此刻变成了一个杀人放火的恶魔！</p>
+<p>灵珊猛的踩了一脚刹车，车子停在一个上坡路段，旁边有家便利店。</p>
+<p>便利店的玻璃很明亮，店员正在柜台打瞌睡。</p>
+<p>方京哆嗦着解开了安全带，却怎么也没力气打开车门。</p>
+<p>灵珊侧着头，一动不动地看着他。</p>
+<p>黑暗中，车子在坡路上缓慢滑行，越来越快，越来越快！</p>
+<p>灵珊松开了刹车！</p>
+<p>坡路尽头是挺高的断层，断层下是挺宽的一条河。</p>
+<p>店员在玻璃门后边睡得正香，摄像头在门口冷冷地看着。</p>
+<p>方京和灵珊掉进了水里。</p>
+<p>水不算深，也不算凉，但是在凌晨，淹死两个人还是绰绰有余。</p>
+<p>车子砸出巨大的水花，方京绝望的喊了一声，再无声息。</p>
+<p>「滴——滴——」灵珊泡在水里，灵魂回到了车祸后在 ICU 的那天。</p>
+<p>这天早上，隔壁床新收了一个病人。</p>
+<p>「什么原因？」</p>
+<p>「自己买米索前列醇堕胎，引发大出血。」</p>
+<p>「多大了？」</p>
+<p>「16 岁，还未成年。」</p>
+<p>「唉，现在的小孩，就是不把命当回事。」</p>
+<p>……</p>
+<p>米索前列醇？</p>
+<p>一道闪电划过灵珊的脑海，她想起怀孕时候拿的安胎药里，就有这样一个瓶子！</p>
+<p>她想起那天开药的医生，一直在尽力帮自己保胎，又想起拿药的护士，忽然感到一阵窒息，白衣护士戴着口罩，眉心偏左有一颗痣，她的胸牌挂在上衣口袋上，上头有两个娟秀的小字:梅娜。</p>
+<p>灵珊踏进医院的那一刻就跳进了梅娜的圈套，她要拿掉她的孩子，坐上她的位子！</p>
+<p>梅娜没告诉方京，那是她自己的秘密，她和灵珊的交好，也不过是为了炫耀，灵珊失去的东西，她要带着招摇过市。</p>
+<p>耳边的水声把灵珊拉回现实，她喝了几口河水，味道有点怪。</p>
+<p>水边野钓的人被落水声吓到，他们赶忙报警，熟悉水性的，直接跳了进去，有人砸开了窗户，拉出一只胳膊就往岸上游去。</p>
+<p>灵珊得救了，方京永远醉在了水里。</p>
+<p>警局里，灵珊垂着眼皮，回应着警官的提问，她应该死在河里，可是她又没死。</p>
+<p>「安灵珊，小区监控里这个人是你吗？」</p>
+<p>「看不清楚。」灵珊飞快地扫了一眼，闷声回答。</p>
+<p>「你根本不住在这个小区，为什么频繁出入这个小区？」</p>
+<p>「我和梅娜的关系很好，我们经常在一起。」</p>
+<p>「监控显示，你进入小区后去喂了流浪狗，你手里提着的，是在附近市场买来的生肉。据我们了解，方京的儿子就是被狗咬伤后导致的死亡。」</p>
+<p>「跟我有什么关系？我喂流浪狗也有罪吗？」</p>
+<p>「没关系，我们进行下一个问题。梅娜的尸检结果显示，他们在发生火灾前已经中毒身亡，而我们在保温桶里，检测出了相同的毒物。」</p>
+<p>灵珊捏紧了拳头。</p>
+<p>「监控显示，当天中午你提着保温桶进入了方京家。是你下毒害死了她，而火灾只是意外，对吗？」</p>
+<p>灵珊面色平静，短暂的沉默后，她捏紧的拳头松开了。</p>
+<p>「确切地说，我要杀的是她和方京。我原打算他们死后我就喝药自杀，没想到方京躲过一劫，我就只好自己动手了，如果你们的尸检结果早出来一会，或许方京就不用淹死了。」</p>
+<p>「你把法律放在哪里！」</p>
+<p>「法律？」灵珊冷笑出声，「为什么他出轨就不触犯法律？」</p>
+<p>「那属于个人道德问题，法律是…」</p>
+<p>「给他人人身造成伤害属于违法行为，那么给他人心灵造成伤害怎么就可以逍遥法外？」</p>
+<p>「你不要避重就轻，我们现在讨论的是你故意杀人。」</p>
+<p>「为什么男人出轨几乎没有成本？为什么没有法律去约束？为什么只有道德的谴责而没有实质的惩罚？为什么女人要无条件的承担这一切带来的后果？警官，你口口声声说着法律，法律在哪里？！」</p>
+<p>「安灵珊！你不要把这两者混为一谈！故意杀人就是违反法律！」</p>
+<p>「如果法律不能制裁出轨的人，那法律也不能制裁我。」</p>
+<p>「法律面前，人人平等。」</p>
+<p>「精神病人也平等吗？」灵珊抬起头，露齿一笑，一如她拜访梅娜的那天。</p>
+<p>作者 ：关小年</p>
+<p>备案号:YX01REYOpd70Ppo9R</p>
+<p>后妈的绝杀</p>
+<p>​</p>
+<p>​</p>
+<p>恶有恶报：最亲密的人，捅下最锋利的刀</p>
+<p>核融炉 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/10-%E8%8D%86%E6%A3%98%E4%B9%8B%E4%B8%8A/" title="荆棘之上">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">荆棘之上</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/10-%E7%B2%BE%E7%A5%9E%E5%86%85%E8%80%97%E5%BE%88%E4%B8%A5%E9%87%8D%E6%97%A2%E9%9A%BE%E5%8F%97%E5%8F%88%E8%80%BD%E8%AF%AF%E4%BD%A0%E5%81%9A%E6%AD%A3%E4%BA%8B%E6%80%8E%E4%B9%88%E5%8A%9E/" title="精神内耗很严重，既难受又耽误你做正事，怎么办？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">精神内耗很严重，既难受又耽误你做正事，怎么办？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

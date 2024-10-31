@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番外：回家 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/7/9-%E7%95%AA%E5%A4%96%E5%9B%9E%E5%AE%B6/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/7/9-%E7%95%AA%E5%A4%96%E5%9B%9E%E5%AE%B6/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="番外：回家">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/24954.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/24954.jpg">
+  <meta name="twitter:title" content="番外：回家">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="番外：回家">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="3870">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/24954.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">番外：回家</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>8分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%95%aa%e5%a4%96%ef%bc%9a%e5%9b%9e%e5%ae%b6&amp;url=https://mohai.us.kg/posts/2022/7/9-%E7%95%AA%E5%A4%96%E5%9B%9E%E5%AE%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/7/9-%E7%95%AA%E5%A4%96%E5%9B%9E%E5%AE%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%95%aa%e5%a4%96%ef%bc%9a%e5%9b%9e%e5%ae%b6%20https://mohai.us.kg/posts/2022/7/9-%E7%95%AA%E5%A4%96%E5%9B%9E%E5%AE%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/24954.jpg" alt="番外：回家" />
+      
+
+      <p>1</p>
+<p>那天之后，我找到了我的女儿。</p>
+<p>她躺倒在荒路旁的草垛里，胸口中了弹，血已经干了。</p>
+<p>她再也醒不过来了。</p>
+<p>2</p>
+<p>几天后，我抱着女儿的骨灰，住进了陈钰的家里。</p>
+<p>他家不大，墙上挂着他孩子的遗照，一个胖乎乎的小男孩。</p>
+<p>在他楼下， 就是他的「公司」。摆满了诈骗用的电话，还有多部电脑。二手烟和汗馊的臭味，在楼上都能闻到。</p>
+<p>我蹲在地上，给孩子们烧着纸钱。</p>
+<p>我边上的男人，轻轻地说了一声「抱歉。」</p>
+<p>他是陈钰。</p>
+<p>瘦瘦高高的，穿着花衬衫。</p>
+<p>他仍然不免愧疚，若当日他早些相信我，或许我的女儿，就不会……</p>
+<p>我没有怪他。</p>
+<p>接下来，我会带着女儿回国，我会主动去自首。</p>
+<p>但是在那之前，我还有一件事情要做。</p>
+<p>3</p>
+<p>「你知道吗，现在对所有人来说，我已经死了。」我对他说。</p>
+<p>是的，当我被从地里挖出来之后，我对陈钰的第一句话便是：</p>
+<p>「告诉大使馆，我已经死了。」</p>
+<p>他不理解，但还是照做了。</p>
+<p>今天，我将告诉他我这么做的原因。</p>
+<p>「因为我的死，能让我前夫恐惧。」</p>
+<p>「那恐惧是他上钩的诱饵。」</p>
+<p>4</p>
+<p>还记得先前，我被困在棺材里。</p>
+<p>我录了一段话，揭露我前夫，合伙我闺蜜，谋财害命的录音。</p>
+<p>本意是通过国内的媒体曝光，让躲在国内的前夫无处可逃。接受法律的制裁。</p>
+<p>但是，用陈钰的话说，「时间紧，任务重，实在是腾不出手了」。</p>
+<p>他没来得及发给媒体。</p>
+<p>时间，回到那日。</p>
+<p>我从棺材里被挖出来之后，陈钰载着我，在山路上狂飙，往最近的医院赶。</p>
+<p>新鲜的空气涌进车内，我大脑充血，晕眩得几乎要死去。</p>
+<p>「没事了，已经没事了。」他踩着油门，安抚我，「快到医院了。」</p>
+<p>这时候，他的电话突然响起。他看了一眼，接了起来。</p>
+<p>他听了一会。</p>
+<p>「是的，人在我车上……」他说。</p>
+<p>「大使馆位置在哪啊？不是，我得先把人送医院……」</p>
+<p>是大使馆打来的电话。</p>
+<p>「对，我知道她是被谁埋的……」</p>
+<p>「全部情况？我靠有点复杂啊，你等我捋一捋啊……哦对了！我有个录音，我发给你们你们就懂了！」</p>
+<p>就是在那个时候，模糊之间，我猛然意识到了什么。</p>
+<p>似乎，大使馆也尚不知晓。</p>
+<p>发生的这一切，都是我前夫和我闺蜜谋划的。</p>
+<p>机会。</p>
+<p>让我前夫，血债血偿的机会！</p>
+<p>我半躺在后座，想要让陈钰等一下。</p>
+<p>可是，我很难发出声音。</p>
+<p>终于，我艰难地按开了安全带，身体从后座重重跌下。</p>
+<p>陈钰听见动静，错愕地从后视镜里看我。</p>
+<p>他注意到我，在轻轻地摇着头。</p>
+<p>他反应过来，挂断了电话。</p>
+<p>他停下了车，我喘息了好一会。</p>
+<p>「告诉大使馆……我已经死了……」终于，我能够发出声音。</p>
+<p>他愣住了。</p>
+<p>「还有……那个录音……」我说，「不要发给任何人。」</p>
+<p>说完后，我彻底昏死了过去。</p>
+<p>5</p>
+<p>很幸运，陈钰按我说的做了。</p>
+<p>在医院醒来后，陈钰对我说。</p>
+<p>他告诉了大使馆，我在送医的路上，没挺过去。</p>
+<p>「当然了，他们想要帮助你的尸体回国，给我打了好多电话，我一直拖着……」</p>
+<p>「先不要和他们联络了……」我身体虚弱，但还是想起了什么，「这会给你带来什么麻烦么？」</p>
+<p>「倒不会……我手机号一大堆，查不到我的。但是……」</p>
+<p>「你不让他们知道真相？」他无法理解，「图啥？还想着保护你前夫吗？」</p>
+<p>我摇了摇头。</p>
+<p>答案是，恰恰相反。</p>
+<p>因为通过陈钰的那通电话，我确认了一件事：</p>
+<p>当日，陈钰向大使馆求救的时候。</p>
+<p>他只来得及告诉他们，我被地方武装给活埋了。</p>
+<p>以及武装的势力归属，联系的方式。</p>
+<p>至于活埋的原因，幕后的主使……陈钰时间有限，不得不匆匆挂断，赶着最后那点时间，去围堵我的闺蜜。</p>
+<p>庆幸于，我在昏迷前，最后做下的那些安排，及时阻止了他和盘托出。</p>
+<p>现在除了我和陈钰。</p>
+<p>没有任何人知道，我的前夫是真凶！</p>
+<p>他还是自由的。</p>
+<p>而他的自由，就是我需要的！</p>
+<p>6</p>
+<p>时间回到此刻。</p>
+<p>我们给孩子烧着纸。</p>
+<p>我拿着闺蜜的手机。那上面的聊天记录，止步于我和前夫的对话。</p>
+<p>我伪装成闺蜜，告诉他：</p>
+<p>你前妻的尸体，已经被地方武装，转交给了大使馆。</p>
+<p>国内并不安全，回国有很大风险。</p>
+<p>说不准，地方武装已经透露出了我们的交易。</p>
+<p>跑！越快越好！</p>
+<p>来这里吧，硬盘就在我手里。</p>
+<p>我们足够做土皇帝。</p>
+<p>他想要和我通电话，被我以「你在国内，有可能已被监听」为由，强硬拒绝了。</p>
+<p>他确实有所怀疑。</p>
+<p>但是……</p>
+<p>另一件有趣的事情，如我所料发生了。</p>
+<p>我本人的死讯，通过媒体，传到了国内。</p>
+<p>那么，地方武装为什么没有隐瞒这个秘密？</p>
+<p>地方武装，是否已经供出了我们？！</p>
+<p>这一系列的问题，足够让他日夜惊惧。</p>
+<p>更加耐人寻味的，是大使馆的态度——因为他们既无法证实，也无法证伪，只能强调，生死尚不明确，正在努力寻找我的下落。</p>
+<p>可他早已惊慌失措，在我这里，只能得到更恐怖的解释：</p>
+<p>「他们是想麻痹你，在逮捕你之前——否则怎么会这样模棱两可！」</p>
+<p>「再不跑，就来不及了！」</p>
+<p>手机上，最后的一条，是他出了国门。</p>
+<p>他坐着前来接他的本地摩的，赶赴我和他约定的地点。</p>
+<p>纸钱焚烧殆尽，只剩下干枯的灰烬。</p>
+<p>「因为我的死，能让他恐惧。」我说。</p>
+<p>这里的气候，要比国内湿热很多。</p>
+<p>不知不觉中，我也习惯了凉鞋和花衬衫。</p>
+<p>我坐上了陈钰的车，驶往那个约定的地点。</p>
+<p>杀人的地点。</p>
+<p>7</p>
+<p>天色越来越暗了。</p>
+<p>我们约定的那个地点，是一个没有人烟的荒路。</p>
+<p>陈钰的车，是一辆老旧的越野车。此刻，我们就停在路旁，安静地坐在车里。</p>
+<p>安静地等待着。</p>
+<p>说不紧张，那是假的。</p>
+<p>我的双手都在微微颤抖。</p>
+<p>渐渐地，道路的前方，驶来了那辆本地的摩的。</p>
+<p>司机早就收过我们的钱，催促着后座上的男人下车，随即，便头也不回地驶离了。</p>
+<p>那个抱着包，下来的男人。</p>
+<p>就是我的前夫。</p>
+<p>在这荒无人烟的道路上。</p>
+<p>只有这辆老旧的越野车，静静地等着他。</p>
+<p>「打开双闪。」我对陈钰说。</p>
+<p>车灯闪烁。</p>
+<p>我的前夫，招了招手，朝我们走来。</p>
+<p>然而，这注定是一条让他永生难忘的道路。</p>
+<p>在道路的一旁，有一个提前挖好的深坑；</p>
+<p>我看见，他惊疑不定地望向了那个深坑。</p>
+<p>曾几何时，我也惊恐地在心中自问这个问题：</p>
+<p>那是做什么用的？</p>
+<p>挨着那个深坑的，还有一块地；</p>
+<p>明显被翻过，像是在里面，已经埋过了什么东西，成年人大小。</p>
+<p>陆璐就在里面。</p>
+<p>就在离他不到几米的地方。</p>
+<p>陈钰的车，还在打着双闪。</p>
+<p>我的前夫终于警惕起来，他停在那，给我打来了电话。</p>
+<p>这是我第一次接通。</p>
+<p>「陆璐，下车，让我看见你。」</p>
+<p>我能感受到，他的呼吸里都是恐惧。</p>
+<p>距离已经很近了，足够了。</p>
+<p>我没有说话，拉开车门，下了车。</p>
+<p>他脸上的神情，就仿佛见到了鬼一般。</p>
+<p>「好久不见。」</p>
+<p>我朝他笑起了来。</p>
+<p>他惊惧地丢下电话，慌不择路地逃着。</p>
+<p>天色昏暗，整片天空几乎要压下来。</p>
+<p>他逃不掉的。</p>
+<p>8</p>
+<p>我的前夫，手脚都被捆着，嘴被胶带粘上了。</p>
+<p>后脑勺渗着血，是他转身想逃时，被追上去的陈钰给予的重击。</p>
+<p>我探过了他的鼻息，他还活着。</p>
+<p>我翻检着他身上的所有东西，证件、手机、钱包……</p>
+<p>全部收走后，我用力地拍打着他的脸颊。</p>
+<p>终于，他模糊地睁开了眼睛。</p>
+<p>瞬间，他剧烈地挣扎，嘴里发出了痛苦的呜咽声。</p>
+<p>可是，都是徒劳的。</p>
+<p>他双眼流着泪，祈求地看着我。</p>
+<p>他很想说话吧，那个时刻，有无数求饶的话，有无数的交易想提出。</p>
+<p>只要我能放他一马。</p>
+<p>「知道吗，我的女儿，在这里，第一次开口说话了。」我说。</p>
+<p>「可是没有人在乎她说什么。」</p>
+<p>「没有人肯给她活下去的机会。」</p>
+<p>「你害的。」</p>
+<p>他流着泪，脑袋在地上碰撞着，像是在给我磕头。</p>
+<p>我沉默了好一会。</p>
+<p>「你毕竟是孩子的父亲……我毕竟爱过你……陆璐也说过，你的打算，是让孩子活着回国……」我说。</p>
+<p>他的眼睛里，爆发了新的生机。疯狂地磕着头，用力地呜咽着。</p>
+<p>「如果你诚心悔过，我可以放你一马……」</p>
+<p>或许他也没有想到，我撕下了他嘴上的胶带。</p>
+<p>在那之后，他仿佛一只受惊的动物，声嘶力竭地，说了无数忏悔的话。</p>
+<p>说他对不起我们娘俩，说他不是人，说他没想害死女儿，说他看错了陆璐。</p>
+<p>我只是平静地等他说完。</p>
+<p>最后，在他惊恐地目光中，重新粘回了胶带。</p>
+<p>「嘘——嘘——安静」我安抚着他，「你忏悔得很好。」</p>
+<p>「只是，我女儿听不见了。」</p>
+<p>「你的忏悔，没有意义。」</p>
+<p>9</p>
+<p>他沉重的身躯，被我推进了深坑。</p>
+<p>执着铁锹，往他身上，填埋泥土。</p>
+<p>我特意留了神，所有抛下的泥土，都避开了他的脸，他的眼睛。</p>
+<p>我要让他看着自己，一点点被活埋。</p>
+<p>他原本还在挣扎，但泥土越来越多，凭他的力气，已无法挣脱。</p>
+<p>突然，觉得很讽刺。</p>
+<p>原本，这是他给我设置的结局才对。</p>
+<p>陈钰在一旁抽着烟，思考着什么。</p>
+<p>先前他想帮我搭把手，但是被我拒绝了。</p>
+<p>这是我和前夫之间的事，只能由我来完成最后一步。</p>
+<p>「真打算回国？」陈钰问我。</p>
+<p>他是知道的，回国后，等待我的是什么。</p>
+<p>「嗯……我要送女儿回家。」</p>
+<p>「我代替你呢？……」旋即，他也意识到了，对于一个母亲而言，陪孩子的最后一段路，只能是她自己走完。</p>
+<p>他挠了挠头，叹了口气，「一起回吧。」</p>
+<p>我填埋着泥土，愣了一下。</p>
+<p>「我也想回去看看孩子了。」他说。</p>
+<p>「我的房子，大概率也是保不住了，肯定会被司法拍卖。」我说，「但我这些年的工资是合法的，加一起，也是一笔积蓄。」</p>
+<p>「咋还谈钱呢？」</p>
+<p>「不全归你，我会给你一个地址——我和女儿，以前住的那个次卧。」</p>
+<p>「那房子挺偏的，不值多少钱，帮我把整套房子买下来，加钱也要买下来。」</p>
+<p>我说，「收拾干净，让我女儿回到那里吧。」</p>
+<p>就好像，时间回到起点。</p>
+<p>我还在加班，她还在那里等我回家。</p>
+<p>终有一天，我会回到那里。</p>
+<p>抱住她。</p>
+<p>她等到了我，我重新回到她身旁。</p>
+<p>「这要是一直没人住，得积老多灰了。」他挠了挠头。</p>
+<p>我看向他。</p>
+<p>他踌躇着，「……我打扫收拾也是很拿手的。」</p>
+<p>「你确定？你公司和你家乱成那个样子？」</p>
+<p>他尴尬地笑起来，「多练练就好了，业务水平总得花时间练嘛。」</p>
+<p>「……」</p>
+<p>「……」</p>
+<p>我们沉默了很久。我回过头，专心地填埋最后那些泥土。</p>
+<p>厚实的泥土，再看不到我前夫的痕迹。</p>
+<p>只有铁锹翻动的声音。</p>
+<p>「……你会等很长时间的哦。」我说。</p>
+<p>「嗯，我会在那里等你的。」</p>
+<p>很奇怪，明明我们正在活埋杀人，却聊起了未来。</p>
+<p>10</p>
+<p>……</p>
+<p>无人的荒道，被掩埋的深坑。</p>
+<p>覆盖上了枯草，无人知晓。</p>
+<p>我们乘坐着老旧的越野车，在路上慢慢行驶着。</p>
+<p>天色已晚，前路黑暗。</p>
+<p>车上的灯却将眼前照亮。</p>
+<p>黑夜的尽头，似乎也没那么可怕。</p>
+<p>—end</p>
+<p>备案号:YX01jeXzDoNxvKqKG</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/10/3-%E7%95%AA%E5%A4%96/" title="番外">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">番外</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/10/6-%E7%95%AA%E5%A4%96%E7%A7%8B%E6%84%8F%E6%B5%93/" title="番外：秋意浓">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">番外：秋意浓</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

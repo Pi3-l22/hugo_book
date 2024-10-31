@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恰好心动 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/8-%E6%81%B0%E5%A5%BD%E5%BF%83%E5%8A%A8/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/8-%E6%81%B0%E5%A5%BD%E5%BF%83%E5%8A%A8/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="恰好心动">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+  <meta name="twitter:title" content="恰好心动">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="恰好心动">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10145">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26624.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">恰好心动</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%81%b0%e5%a5%bd%e5%bf%83%e5%8a%a8&amp;url=https://mohai.us.kg/posts/2023/5/8-%E6%81%B0%E5%A5%BD%E5%BF%83%E5%8A%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/8-%E6%81%B0%E5%A5%BD%E5%BF%83%E5%8A%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%81%b0%e5%a5%bd%e5%bf%83%e5%8a%a8%20https://mohai.us.kg/posts/2023/5/8-%E6%81%B0%E5%A5%BD%E5%BF%83%E5%8A%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26624.jpg" alt="恰好心动" />
+      
+
+      <p>男朋友和别的女⽣⼀起吃饭，给她夹菜不说，还贴心地把鱼刺给挑出来。</p>
+<p>看见我，江淮愣了愣。</p>
+<p>他脸色很难看地放下筷子，良久才说⼀句：「淼淼，我们先分开⼀段时间吧，要是还互相喜欢，等你实习完，我再追你。」</p>
+<p>我笑了笑，冲他伸出中指，「6」。</p>
+<p>01</p>
+<p>我没想到那个女孩子会突然起身，泼我⼀身水，「你自己留不住男⼈，有什么好嚣张的。」</p>
+<p>水从我额前的发丝嘀嗒下来，打湿了我的 D-WHITE 围巾，给我气笑了。</p>
+<p>我反手抄起桌子上的⼀杯水就朝她泼了回去，然后挤出两滴眼泪来，「撕心裂肺」的嚷嚷。</p>
+<p>「江城财经管理学院计算机专业 2102 班江淮同学，我们恋爱四年，你怎么能背着我找三儿呢？」</p>
+<p>江淮⼀时间愣在了原地，支支吾吾说不出话。</p>
+<p>我又转头，「痛心疾首」的看向小绿茶。</p>
+<p>「这位勾引我男朋友的三小姐，你就是江城财经管理学院商务英语专业 2101 班的李欣妍同学吧」</p>
+<p>我把⼀只手背在背后挥了挥，示意我躲藏在餐厅各个角落的媒体离近点。</p>
+<p>而我那两嗓子嚎下去，餐厅里的⼈都纷纷侧目，对着他们指指点点。</p>
+<p>李欣妍环顾⼀周，愈发觉得脸上挂不住，竟然不管不顾的朝我冲了过来。</p>
+<p>我轻轻侧开身，她越过我撞到了桌角上。</p>
+<p>江淮急忙上前⼀步扶起李欣妍，满脸的担心，问她有没有事，而后⼀脸怒气的望着我。</p>
+<p>「周淼，是我不喜欢你了，与欣妍没有关系，你要打要骂冲我来。」</p>
+<p>我顺从的点点头，余光瞥到身旁⼀个拿棍子的少年，顺手夺了过来，便往江淮身上招呼去。</p>
+<p>打完后掏出⼀沓现金砸在了江淮脸上，「报警吧，我私了。」</p>
+<p>警察局里，拿棍子的少年和我⼀起被带了进来，做笔录的警察⽤指关节敲了敲桌面。</p>
+<p>「你没事带根棍子进餐厅干嘛?你俩⼈到底是不是⼀伙的?」</p>
+<p>那少年足足 188，眉清目秀，长长的睫毛在眼下投出⼀片阴影，满脸的震惊，好似还没缓过神来。</p>
+<p>良久才支支吾吾道，「不……不是，我不认识她，我他妈是来捉奸的。」</p>
+<p>他指了指李欣妍。</p>
+<p>那警察显然不信，冷哼⼀声，「你说你是来捉奸的，那怎么就她⼀个⼈出手啊?」</p>
+<p>我也好奇的望着这个帅哥，不然男女混合双打多有意思啊。</p>
+<p>他不好意思的挠了挠脑袋，「看的太起劲了，给忘了……」</p>
+<p>警察：「……」</p>
+<p>我下手不重，江淮捡起了地上的钱，又不予追究。最终我们只是被批评教育了⼀番。</p>
+<p>「周淼，⽅渐知。你俩下不为例。」</p>
+<p>我们乖巧的点了点头，出去时迎面撞上了江淮和李欣妍。</p>
+<p>江淮扬了扬手里的钱，故作惋惜，「哎呀淼淼，下次不要那么冲动，这⼀沓钱可够你在饭店兼职好几天呢。」</p>
+<p>李欣妍则是神情倨傲的牵着江淮的手，不屑的望着⽅渐知，「怎么，不出手是怕把⼈打残了赔不起钱吗？真是个窝囊废。」</p>
+<p>⽅渐知长叹了⼀口气，双手插兜「是啊，我还要去送外卖呢。」</p>
+<p>出了警察局，我和⽅渐知挥手打了个招呼，我指了指左边的路对他道，「我先回去了，我家就在这边，走两步就到了。」</p>
+<p>⽅渐知点点头，「我家也是差不多二十分钟的路程，那你路上小心。」</p>
+<p>我和⽅渐知朝两个⽅向走去，差不多十分钟后，我遇到了开劳斯莱斯来接我的司机。</p>
+<p>而我不知道的是，⽅渐知与此同时上了⼀辆玛莎拉蒂。</p>
+<p>在媒体的⼤肆推动下，江淮出轨李欣妍的事情很快闹得沸沸扬扬。</p>
+<p>再加上我故意纰漏了二⼈的身份，这个视频很快便火到了江城财经管理学院的论坛上。</p>
+<p>李欣妍也由商务英语专业的「最美⼀姐」，被⼈戏称为「最强三姐」。</p>
+<p>由于影响恶劣，两⼈都被叫去批评了。</p>
+<p>当晚江淮为了哄好李欣妍，就给她送了个包，是 CHANEL19 ⼤号口盖包。</p>
+<p>我是怎么知道的呢?</p>
+<p>当晚江淮发了个朋友圈，配图是这只包，文字是：送欣妍宝贝的 CHANEL，希望宝贝喜欢。</p>
+<p>而这个包，⼀眼假。</p>
+<p>我无语的翻了个白眼，「操蛋，忘了把他拉黑了，这个点儿，阿姨也该睡了，浅浅点个外卖吧。」</p>
+<p>我没想到我点只鸡会点到⽅渐知。</p>
+<p>我的鸡翅久久不到，而我本⼈已经饿趴在床上了，点开外卖软件⼀看，我的骑手还在绕圈。</p>
+<p>这已经是他绕的第三圈了。</p>
+<p>我有些语塞，被饿得只剩下⼀口气，我就凭借这⼀口气，点开了和骑手的会话。</p>
+<p>「请问我的订单还要多久送达?」</p>
+<p>我发完这⼀句后，手机突然响个不停。</p>
+<p>「妈的，没意思」</p>
+<p>「不知道」</p>
+<p>「送完你这单不干了。」</p>
+<p>「烦死了，别催」</p>
+<p>「你怎么点了 20 个鸡翅，那么多?」</p>
+<p>「我能吃⼀个吗？」</p>
+<p>我被饿得已经没有力气跟他计较了，认命的叹了口气，也不知道这是哪家⼤少爷出来体验⽣活的。</p>
+<p>「吃吧吃吧。」</p>
+<p>反正我也不差这⼀个鸡翅，想了想，我又给他发了个消息，「你快点送来，别忘了」</p>
+<p>对⽅很快回了消息，语气软和了不少，「嗯嗯，知道，光华路嘛。」</p>
+<p>我见此松了⼀口气，把手机丢到⼀边，仰面朝天躺在床上等我的外卖。</p>
+<p>过了两分钟，响起消息提示音。</p>
+<p>我的骑手问我，「光华路在哪?」</p>
+<p>我真服了这个老六了。</p>
+<p>索性打电话过去给他⼀通指挥，电话那头是个年轻小哥哥，嗓音低沉有磁性，甚至有点耳熟。</p>
+<p>皇天不负有心⼈，二十分钟后，门铃想起，我兴冲冲的跑过去开门，然后与⽅渐知⼤眼瞪小眼。</p>
+<p>气氛诡异的沉默了良久，还是⽅渐知率先出声，「你……住别墅?」</p>
+<p>我瞄了⼀眼装修的富丽堂皇的家，讪讪笑了笑，「我在这兼职给⼈当保姆，晚上就住雇主家。」</p>
+<p>很快我就笑不出来了，因为我看到了⽅渐知身后那辆闪瞎我钛合金狗眼的豪车。</p>
+<p>「你开玛莎拉蒂送外卖?」</p>
+<p>⽅渐知愣了愣，随即笑着将鸡翅递给我，「那是别⼈的，老子的车停路口了。」</p>
+<p>我们点点头，都对对⽅的话表示信服。</p>
+<p>我比江淮小⼀岁，当初因为喜欢他，我便报了他那所⼤学，同⼀个专业。</p>
+<p>如今开学他⼤二，我⼤⼀。</p>
+<p>可我万万没想到，⽅渐知和我⼀个专业，还是⼀个班的。</p>
+<p>「你也比李欣妍小⼀岁?」</p>
+<p>⽅渐知摇摇头，「没有，我因病休学了⼀年，所以今年才刚上⼤⼀。」</p>
+<p>我点点头，心中暗自庆幸，还好我下车下的早，不然⽅渐知看见我坐劳斯莱斯，他却冒着太阳与风雨去送外卖。</p>
+<p>他该有多难受啊。</p>
+<p>我叹了口气摇了摇头，抬头正对上⽅渐知满是同情的眸子，他⼀双剑眉紧蹙。</p>
+<p>「你既要在饭店兼职，又要去别墅打扫卫⽣⼀定很辛苦吧?」</p>
+<p>我还没来得及说话，⽅渐知把⼀沓钱放到了我手上，「这是我送外卖赚的钱，你先拿着⽤。」</p>
+<p>我还未来得及说话，就见他拍了拍我的肩膀，「⼀定要收着，我不缺……咳，暂时不缺这点钱。」</p>
+<p>没容我反驳，⽅渐知把钱往我手里⼀塞，转身就走，看都没看⼀眼我身边成堆的⾏李。</p>
+<p>其实我也能理解他，天底下被绿的⼈不多，恰巧⼀个他，⼀个我，同病相怜罢了。</p>
+<p>我没想到我会再次遇到江淮和李欣妍。</p>
+<p>疫情封校原因，我家司机进不来，迎新学长们又忙不开，就在我⼀筹莫展的时候，江淮揽着李欣妍恰巧路过。</p>
+<p>李欣妍⼀脸鄙夷的扫了眼我的⾏李，翻了个白眼，「不会真的有⼈开学跟搬家⼀样吧，啧啧，这么⼀堆怕是把家里的野鸡，鸭蛋特产都给背来了。」</p>
+<p>江淮则是望着李欣妍⼀脸宠溺的笑。</p>
+<p>?</p>
+<p>什么时候我的海蓝之谜，SKⅡ成了地⽅土特产了?</p>
+<p>路上的⼈也是⼀脸鄙夷的回头看我，李欣妍扔不满意，上前⼀步踢了两脚我的⾏李。</p>
+<p>「咦，阿淮，这种乡下佬的东西会不会有病毒啊?真是脏死了。」</p>
+<p>李欣妍看我的眼神像是看见了什么恶心的东西，还后退几步，拉着江淮的胳膊⼀脸挑衅。</p>
+<p>江淮也嫌弃的瞥了⼀眼我的⾏李，「周淼，你还是赶紧把你这堆垃圾收起来吧，你⼀个月打⼯的钱估计也没有多少吧，这些土特产够你吃⼀阵子的。」</p>
+<p>我这时看了⼀眼我的⾏李，由于我的琐碎东西比较多，⾏李箱装不下，爱马仕没有那么⼤的包。</p>
+<p>于是我的保姆阿姨给我准备了⼀个蛇皮袋。</p>
+<p>而此时我的蛇皮袋正在渗水！</p>
+<p>我连忙解开蛇皮袋，发现我的 SKⅡ被李欣妍踢碎了！</p>
+<p>我心底的怒火蹭蹭的直冲脑门，捏起 SKⅡ残碎的瓶身在李欣妍眼前晃了晃，「你打算怎么赔?」</p>
+<p>周边围了⼀堆看热闹的⼈，⽅渐知竟也在其中，李欣妍嗤笑。</p>
+<p>「哟，周淼，你还⽤假货啊?」</p>
+<p>江淮直接破口⼤骂，「周淼你穷疯了吧你，想⽤假货碰瓷妍妍?真不要脸啊」</p>
+<p>⽅渐知上前⼀步挡在我前面，眯着⼀双眸子望着江淮。「你说谁不要脸的，你把⼈家东西打碎了就说是假货?空口鉴假的能力蛮强啊」</p>
+<p>我没闲情陪他们唠，直接亮出了购买记录。</p>
+<p>没错，我因为懒根本没去专柜，这是我在官网买的，李欣妍，抵赖去吧。</p>
+<p>李欣妍显然有些慌了，却仍是嘴硬。</p>
+<p>「周淼你可真是虚荣啊，饭店打⼯买⼤牌」</p>
+<p>我还没说什么，⽅渐知显然有些不耐烦了。</p>
+<p>「管你啥事啊，⼈家买护肤品⽤的也是自己赚来的钱，就这⼀瓶，你爹怕是镰刀抡烂了都买不来吧。」</p>
+<p>李欣妍神情倨傲，「不好意思，我爹⼀年二十万，这算什么?」</p>
+<p>⽅渐知：「算你爹抡的快。」</p>
+<p>在⼀众新⽣学长围观的目光中，李欣妍不情不愿的推了推江淮。</p>
+<p>「还愣着干什么，付钱给她，又不是赔不起。」说完还白了⼀眼⽅渐知。</p>
+<p>江淮脸色顿时很难堪，迟疑了好久，才⼀咬牙掏出手机，「⼀半现金，⼀半微信。」</p>
+<p>我真的被气笑了。</p>
+<p>思政课上老师谈起⼤学⽣恋爱，让我们上台说⼀下自己的另⼀半是个怎样的⼈。</p>
+<p>在⼀众惊诧的目光中，我缓缓举起了手。</p>
+<p>我提着小裙子走上讲台鞠了个躬。</p>
+<p>「不好意思老师，我要讲的是我的前男友」</p>
+<p>「我前男友是这个学校⼤二计算机专业 2102 的，叫江淮，他对我真的很好。」</p>
+<p>「他从来不让我猜他的喜好，而是直接告诉我，他想要 switch，想要 AJ，看上⼀条 lv 的围巾……」</p>
+<p>「他也从来不会忘记我的⽣日，给我送拼多多买的情书胶囊，给我送 24 元的玩偶，甚至自己给我画了⼀副画！」</p>
+<p>「多么的⽤情至深啊！」</p>
+<p>我故作羞涩的笑了笑，「他还很暖心，暑假和他出轨的女孩子⼀起吃饭时，还知道帮⼈家把鱼刺挑出来。」</p>
+<p>「我怎么会有那么好的男朋友啊~」</p>
+<p>思政老师冲我招了招手，「好了，说的挺好的，下次别说了。」</p>
+<p>然后她缓缓走上讲台，在黑板上提笔写下：计算机专业 2102 江淮。</p>
+<p>「好了，都别再讨论了，下⼀位同学。」</p>
+<p>我则是缓缓走向自己的座位，在经过⽅渐知身边的时候，我⼀脸纠结的开口：</p>
+<p>「⽅同学，你前女友出轨我前男友本来就不是什么光彩的事情，你就别说了吧。」</p>
+<p>⽅渐知嘴角上扬，挑了挑眉。</p>
+<p>很快我便听到他身后有⼈问起，「谁啊谁啊」。</p>
+<p>「哎呀，江淮出轨的那女的就是商务英语专业的李欣妍啊，这事都火到学校论坛了，你不知道?」</p>
+<p>我心里乐开了花，表情却愈发无措，摆了摆手无奈的咬着下嘴唇，「你们不要再说欣妍姐姐了好不好，她也是要面子的⼈。」</p>
+<p>底下舆论声愈演愈烈。</p>
+<p>「要面子还去当三?」</p>
+<p>「呸，真是恬不知耻。」</p>
+<p>声音愈发鼎沸，眼看着不可收拾，思政老师冷喝⼀声，「都不准再讨论了，上课时间！」</p>
+<p>我吐了吐舌头，等我回到座位上，发现黑板上又多了⼀⾏字：商务英语专业李欣妍。</p>
+<p>思政老师这波我单走⼀个 6。</p>
+<p>不知道有没有计算机专业的朋友。</p>
+<p>鞋又鞋不会，丁又丁不懂，洗了蒜了。</p>
+<p>我⼀听不懂就后悔选了这个专业，⼀想到是为江淮选的这个专业我就⽣气。</p>
+<p>于是我买了江淮最爱吃的麻薯，还有两⼤袋子零食去找他了。</p>
+<p>江淮看见我则是⼀脸鄙夷的笑，「周淼现在知道过来求我了?」</p>
+<p>我甜甜⼀笑，将麻薯塞进江淮手里，「阿淮，呐，你最喜欢吃了。」</p>
+<p>随即我又把提来的两⼤袋零食分给了他的同学，眼看着⼈群渐渐聚拢过来，忽然⼀个女孩子高声嚷道：</p>
+<p>「江淮不是有女朋友吗，⽤得着你送零食?」</p>
+<p>我⼀拍脑袋，「恍然⼤悟」道，「对，我忘了你出轨了，视频还贴在学校论坛呢」</p>
+<p>⼈群顿时骚动起来，不少⼈拿出手机开始扒拉，我则是⼀把把麻薯夺了过来。</p>
+<p>「拿来吧你。」</p>
+<p>没成想⼀转身就和⽅鸿渐撞个满怀。</p>
+<p>我摸着被撞的泛红的鼻尖，不觉有些委屈，「你怎么来了?」</p>
+<p>⽅渐知顿时红了眼眶，长睫扑朔，⼀双狗狗眼水汪汪的望着我，「我……我想来看看勾走我女朋友的那个男孩子有多优秀。」</p>
+<p>我「掩面哭泣」拍了拍⽅渐知的肩膀，「你也别难过了，只要欣妍和江淮幸福就好，我给他花了那么多钱，不也没说什么吗？」</p>
+<p>⽅渐知在我的鼓励下破涕为笑，「嗯，对，欣妍说我是个穷鬼，配不上她」⽅渐知说着，握紧了小拳头。</p>
+<p>「但是我⼀定会努力赚钱，让她看得起我的。」</p>
+<p>那个⼀开始叫嚷江淮有女朋友的女孩子气的把薯片往桌子上⼀摔，「她李欣妍还要不要脸啊，直接说想找 ATM 机呗。」</p>
+<p>⽅渐知⼀脸讶然的摆手，「姐姐你不要这样说欣妍好不好，欣妍说了，我是农村出身的配不上她，她能跟我谈⼀段时间都是给我脸了。」</p>
+<p>我掩面看着⼈群中的讨伐声愈发响亮，回过头则看见⽅渐知朝我眨了眨眼睛，而后粲然⼀笑，露出两颗尖尖的小虎牙。</p>
+<p>他张了张嘴，虽然没有出声，但是嘴型分明在说，「姐姐，我棒不棒?」</p>
+<p>我只觉得心弦⼀颤，脸顿时又红又烫。</p>
+<p>他叫我姐姐哎。</p>
+<p>我心情⼤好，⼀蹦⼀跳的转身欲走，江淮却面目狰狞的要过来拉我，被⽅渐知擒住了手腕。</p>
+<p>江淮挣了挣，没挣开，直接破口⼤骂，我则是悄悄打开了手机录音。</p>
+<p>「周淼你怎么那么不要脸啊，我没给你花钱吗，我带你吃黄焖鸡，打车不都是我付钱的吗？」</p>
+<p>我⼀脸受伤的表情，握着手机的指尖发白，甚至有些站不稳的往后退了几步，⽅渐知堪堪扶住我。</p>
+<p>我「太过震惊」，「心痛的难以呼吸」，以至于「说不出话」。</p>
+<p>⽅渐知则是⼀脸心痛的表情怒斥渣男，「江淮，你怎么能这样说淼淼呢，她为了攒钱带你吃米其林，为了给你买球鞋，为了送你 lv 围巾……」</p>
+<p>江淮下意识的摸了摸脖子，但是这是夏天，围巾他没带，这才有了些许底气。</p>
+<p>⽅渐知痛心疾首，「她开学都吃了好久的馒头泡饭了，那馒头都发霉了她都舍不得扔……」</p>
+<p>这轮到我震惊的望着⽅渐知了。</p>
+<p>他怎么那么能编。</p>
+<p>⽅渐知察觉到我的视线，⼤手往我面前⼀晃而下，我便又换上了心碎的表情。</p>
+<p>江淮冷笑，「那是她自己要倒贴的，跟我有什么关系，她没有钱还买护肤品，真是虚荣」</p>
+<p>⽅渐知表情愈发「难过」，他伸出右手颤抖的指着江淮，「你……你怎么能这样说呢，你和李欣妍作为学校迎新学长学姐，却踢⼈家学妹的⾏李，还打碎了⼈家护肤品。」</p>
+<p>⽅渐知长叹⼀声，「唉」</p>
+<p>我则是适时关了录音，只听得见周围鄙夷的声音和看向江淮的厌恶的视线。</p>
+<p>「真是不要脸啊，吸女朋友血。」</p>
+<p>「是前女友，出轨了，真是恶心。」</p>
+<p>「果然，没有谈不长的恋爱，只有下不完头的男⼈。」</p>
+<p>江淮脸上青⼀阵白⼀阵，良久他好像突然想到什么似的指着我欣喜道，「她周淼是个乡下⼈，哪来的钱请我吃什么米其林，她根本就没有什么钱，她自己还在饭店打⼯！」</p>
+<p>死不认账?</p>
+<p>很好。</p>
+<p>我扒拉出来了给江淮的转账，前前后后竟有⼤几万，因为我并不想露富，所以给江淮转账都不是很多。</p>
+<p>我捂着心口⼀脸林妹妹模样，「江淮，米其林是你请我吃的……所以衣服礼物什么的我送你了也就不要了，可是转账你总该还给我吧。」</p>
+<p>「……毕竟我只是个乡下来的穷学⽣啊，你也知道我还在饭店打⼯呢」我掏出转账截图，「这些钱你还⼀下吧。」</p>
+<p>江淮脸上霎时惨白，张了张嘴想要说什么，却被我抢先。</p>
+<p>「对了江淮，你总共就给我发了⼀个红包，就是去年我过⽣日的时候，给我发了 52。」</p>
+<p>⼈群里⼀阵嗤笑声。</p>
+<p>我把江淮丛黑名单拉出来，把这 52 发了过去，然后摇了摇手机，「我还给你了哦，我的钱你也尽快还给我吧。」</p>
+<p>江淮看我的眼神像是淬了毒的刀子恨不得将我凌迟，我恍若未见，冲他甜甜⼀笑。</p>
+<p>「那么多学长学姐在，你总不能抵赖吧，哦……对了，你请我吃的米其林，真的很好吃哦~」</p>
+<p>江淮⼀愣，随即狞笑，「好吃就⾏。」</p>
+<p>我笑着离开了那，如此，就不打扰他们开团课了。</p>
+<p>⽅渐知⼤手覆在我的头顶，揉了揉我的脑袋，被我抬手拍掉了。</p>
+<p>他也不恼，「江淮那么抠搜，真的请你吃过米其林?」</p>
+<p>我嘿嘿⼀笑，「可以成为他请的。」</p>
+<p>⽅渐知说李欣妍有翻男朋友手机的习惯，尤其是扒拉朋友圈，我则迟迟没有删江淮。</p>
+<p>毕竟我还等着他给我微信转账呢。</p>
+<p>当晚我找出了和江淮⼀起去米其林餐厅吃饭时拍的合照，配文：谢谢你曾经带我吃过，你对我真的很好~</p>
+<p>第二天我带着⽅渐知在离学校最近的⼀家米其林餐厅蹲点，果不其然看见李欣妍揽着江淮走了出来。</p>
+<p>只不过李欣妍满脸笑意，江淮却⼀脸的肉疼，脸色很是难看。</p>
+<p>于是我今晚又晒出了新买的⼀块表，配文：这个表我真的好喜欢，与你的回忆♥</p>
+<p>天地良心，我可没说这是江淮买的。</p>
+<p>至于第二天有⼈看见李欣妍带了⼀块新的手表，那纯纯是她自己意淫的。</p>
+<p>第三天我直接发了 CHANEL19 的真假对比图，配文：笑死，不会有⼈ CHANEL 的包包是从微商那儿买的吧。</p>
+<p>然后我又把那天的录音打包成两份，⼀份发给了他俩辅导员，⼀份投稿给了表白墙。</p>
+<p>没多久就听说他俩分手了，江淮的奖学金也泡汤了，李欣妍则是把那个包包拍照发了朋友圈，配文：下头男江淮。</p>
+<p>哈哈哈哈哈哈哈哈哈哈哈哈嘎。</p>
+<p>我本来想着要不要给李欣妍介绍个有钱男朋友，毕竟我爹身边多的是有钱地中海。</p>
+<p>后来想想算了，她只不过从我身边顺走⼀个垃圾，我没必要对⼀个二十来岁的姑娘赶尽杀绝。</p>
+<p>李欣妍在学校的名声已经臭了，她和江淮评党评优都不可能了，这也很，学校本身就是选拔能力强，素质好的⼈才的地⽅。</p>
+<p>这般素质……真是 duck 不必。</p>
+<p>江淮和李欣妍分手后，竟然闹到了他们专业要李欣妍还钱。</p>
+<p>李欣妍则是当众和他撕了起来，我没想到江淮会打李欣妍巴掌，也没想到李欣妍会和他闹进警察局。</p>
+<p>算⼀算李欣妍的确花了他不少钱。</p>
+<p>为了庆祝江淮……啊呸，为了庆祝开学，我和⽅渐知相约在露天烧烤店喝酒。</p>
+<p>没想到喝多了……</p>
+<p>⽅渐知视角：</p>
+<p>周淼说要请我喝酒，结果两杯下肚自己先醉了，我准备好的花被她插进了筷子笼里，我准备好的话都还没来得及说出口。</p>
+<p>周淼拿出三双筷子，塞给我三根，嚷嚷着要跟我结拜为兄弟，然后往橘子里⼀插，晕了过去。</p>
+<p>我本来想把她送回别墅，突然想到⼀个保姆喝的醉醺醺的回去雇主家也不好。</p>
+<p>于是把她带回了我家。</p>
+<p>⼀进门周淼就吐了我⼀身，脸蛋醺红的趴在我肩头，嚷嚷着手机没电了，要给手机充电。</p>
+<p>我长叹了⼀口气，这纯纯是给自己找了个祖宗，于是让保姆帮她洗澡。</p>
+<p>我则是帮淼淼把衣服洗了，给她换上新的床单被罩，和柔软的蚕丝被。</p>
+<p>别说，二百平米的⼤床铺起来还怪费劲的。</p>
+<p>周淼洗完澡穿着睡衣，⼀脸茫然的坐在床上，小脸像熟透的苹果，看着就想咬⼀口。</p>
+<p>她拿着充电线不住的往里面怼，口中念念有词，「怎么就插不进去呢？」</p>
+<p>我笑了笑，向这个小可爱伸出手，「来，淼淼，我帮你。」</p>
+<p>周淼抬头⼀脸茫然的看着我，然后乖顺的把手机和充电线递给我。</p>
+<p>我这才发现充电头断在充电口里面了……</p>
+<p>果真⼤力出奇迹。</p>
+<p>淼淼还在不停的让我把充电器给她插上充电，眉头紧皱⼀副要⽣气的样子。</p>
+<p>怎么能让老婆⽣气呢？</p>
+<p>于是我揉了揉她的脑袋，耐心的跟她解释，「淼淼，充电头断里面了，没法充电了。」</p>
+<p>恰巧这时保姆上来给淼淼送醒酒汤，喝了醒酒汤她明显清醒多了，乖巧的点点头。</p>
+<p>「嘿，siri，把充电头吐出来。」</p>
+<p>「……」</p>
+<p>我醒来时只觉得头痛欲裂，只记得昨晚拉着⽅渐知喝酒，醒来却什么都不记得了。</p>
+<p>而⽅渐知此时正支楞着脑袋坐在床边看着我，他穿着⼀身灰色家居服，眉毛浓密，睫毛长而纤细，皮肤像是细腻的瓷器⼀般。</p>
+<p>「⽅渐知，你长的真好看啊，为啥李欣妍会和你分手啊?」</p>
+<p>⽅渐知眨了眨眼睛，单手托腮，⼀脸思索。</p>
+<p>「她可能是想找个有能力的，会单手转⽅向盘的」我听出来了他话里的心酸，摸了摸他的脑袋。</p>
+<p>「⽅渐知你别难过，你好好送外卖好好学习，我好好在饭店打⼯好好学习，我们都有美好的未来。」</p>
+<p>这时我又打量了⼀眼房间，装璜的很是漂亮，是黑色的极简风，足足二百多平。</p>
+<p>「⽅渐知，你家好⼤呀。」</p>
+<p>「这是我房间。」</p>
+<p>「?」</p>
+<p>⽅渐知满脸心疼的摸了摸我的头，「淼淼你别去饭店打⼯了，我养你吧，其实我爸是⼀家上市公司的总裁，我送外卖只是乐趣而已。」</p>
+<p>我⼀愣，这不跟我爸⼀样吗?</p>
+<p>总裁，旗下好多家五星级连锁酒店。</p>
+<p>⽅渐知看见我惊讶的表情，显得有些无措，「淼淼你是不是⽣气了?我不是故意骗你的。」</p>
+<p>我⼀时竟然不知道该说些什么，只能抓过床边桌子上的橙子，自顾自吃了起来。</p>
+<p>我嘴里塞了东西，你不能让我强⾏说话吧?</p>
+<p>其实我也不傻，⽅渐知的话我听得懂，他想问我要不要跟他在⼀起，可是我的确对他有好感，但根本算不上喜欢。</p>
+<p>思索良久，我拿出手机看了⼀眼。</p>
+<p>「今天肯德基疯狂星期四，v 我 50，我检验⼀下你是不是真的有钱。」</p>
+<p>不⼀会，微信转账 50000 元。</p>
+<p>抬头对上⽅渐知略带歉意的眸子，他不好意思的摸了摸后脑勺，「限额了……」</p>
+<p>我则是已经在心里有了答案，我现在还不想结婚，那我就打算让⽅渐知知难而退。</p>
+<p>于是我⼀脸看见财神爷的表情紧紧抱住了⽅渐知的手臂，「哇哦，好多钱，以后可以再转给我⼀些吗？」</p>
+<p>⽅渐知愣了愣，果然，他⼀定认为我和李欣妍⼀样是⼀个贪慕虚荣的女⼈。</p>
+<p>为了把贪慕虚荣这个⼈设贯彻到底，我要求⽅渐知开豪车送我上学。</p>
+<p>车库里⼀排排豪车险些闪瞎我的眼，⽅渐知随手⼀指，「挑⼀个吧。」</p>
+<p>我咬着苹果，随手指了⼀辆兰博基尼，就它吧，还不忘加上⼀句「反正以后我们结婚了，这些车不都是我的?」</p>
+<p>我转头去看⽅渐知的脸色，他唇角微勾，笑着伸出骨节分明的⼤手在我脑袋上揉了揉。</p>
+<p>这……肯定是他还没反应过来。</p>
+<p>兰博基尼停在了校门口，我在⼀众围观且窃窃私语的群众的注视下走进校门。</p>
+<p>很快有⼈认出来了我。</p>
+<p>「这不是周淼吗，就是前几天我让你看的那个抓奸视频里，江淮渣了的前女友。」</p>
+<p>「哎，你看，是⽅渐知哎。」</p>
+<p>「⽅渐知是谁?」</p>
+<p>「就是那个最强三姐李欣妍的前男友，他俩在⼀起了，竟然开玛莎拉蒂！」</p>
+<p>「有没有⼀种可能，这是兰博基尼?」</p>
+<p>在舆论的发酵下，很快消息传到了李欣妍那，李欣妍踩着细高跟向⽅渐知扑了上来。</p>
+<p>⽅渐知⼀脸嫌弃的后退三米远。</p>
+<p>李欣妍也不恼，依旧眼中含泪，⼀脸爱恋缱绻的望着这个被她绿了的前男友。</p>
+<p>「渐知，你怎么不早说你有兰博基尼啊，你之前送外卖，我都心疼死了。」</p>
+<p>⽅渐知⼀脸无语凝噎，伸出⼀根手指戳了戳我，「周淼，你说句话。」</p>
+<p>「?」我捧着⽅渐知刚刚给我买的提拉米苏，吃的不亦乐乎。</p>
+<p>「我说什么?」</p>
+<p>⽅渐知脸色⼀变，伸出手捏住了我的腮帮子，「周淼啊周淼，你怎么就知道吃。」</p>
+<p>李欣妍怒了，⼤喊着我是勾引她男朋友的不要脸的贱⼈，然后朝我冲了过来。</p>
+<p>⽅渐知⼀脚把她绊倒在地，李欣妍直接跪倒了我面前，我无法，只得颤着手掏出⼀张五十的给她。</p>
+<p>李欣妍打掉了我的钱，面露阴狠的望着我。</p>
+<p>「周淼你是不是早就知道他有钱，才会死皮赖脸黏着他?」</p>
+<p>我惊的目瞪口呆，指了指自己。</p>
+<p>⽅渐知则是蹲下掐住李欣妍的脖子，眉眼阴戾，「你再敢说她试试。」</p>
+<p>李欣妍不停的扒拉⽅渐知的手，良久⽅渐知才放开了她，掏出湿纸巾擦了擦手。</p>
+<p>「李欣妍你最好别再出现在我面前，不然的话，我绝对让你上不好这个学。」</p>
+<p>李欣妍踩着细高跟愤愤的离开了。</p>
+<p>为了再度刷⼀遍我贫穷且爱财的⼈设，我⼀脸委屈的对⽅渐知说，「哥哥，我想喝 office。」</p>
+<p>⽅渐知：「……」</p>
+<p>江淮约我见面了。</p>
+<p>我把⽅渐知支使去买咖啡，我则是去见江淮。</p>
+<p>江淮此时坐在我的对面眼神瞥向我手里正把玩的兰博基尼车钥匙。</p>
+<p>他⼀脸深情的望着我，「淼淼，你过得还好吗？」</p>
+<p>我点了点头，看看他还能憋出来什么屁。</p>
+<p>江淮搓了搓手，「那我欠你的钱……」</p>
+<p>「还啊，继续还。」</p>
+<p>江淮脸色⼀变，面色铁青，「周淼，我们好歹在⼀起了四年，你就只顾着钱?」</p>
+<p>我点点头，「啊对对对。」</p>
+<p>江淮脸色愈发难看，竟然哭了出来。</p>
+<p>「周淼，我真的还不起了，李欣妍那个贱⼈把我的存钱的花光了，你现在也不缺钱，就别让我还了，我跪下求你了。」</p>
+<p>我没拦着他，江淮下跪的姿势⼀僵。</p>
+<p>我笑了「你要是真的跪了，我还真不让你还了。」</p>
+<p>江淮道「男儿膝下有黄金」然后⼀咬牙跪了下来，「那我提现点怎么了?」</p>
+<p>我他妈愣了，好像有道理。</p>
+<p>江淮继续道，「⼈不能为了尊严，连钱都不要了！」</p>
+<p>这波你爹我单走⼀个 6</p>
+<p>我摆摆手，说那笔帐⼀笔勾销了，反正我也不差这点钱，江淮却直勾勾的望着我的车钥匙。</p>
+<p>「淼淼借我玩会呗。」</p>
+<p>为了让⽅渐知厌恶我，我随手把钥匙扔给了他，「拿去玩吧。」</p>
+<p>⽅渐知知道肯定会⽣气的，嘿嘿嘿。</p>
+<p>天地良心，我是真没想到江城会突发⼤雨。</p>
+<p>思政课上我听着周围同学讨论雨有多⼤，车门都打不开，没到了小腿。</p>
+<p>想着江淮还在车上，不觉笑出了声。</p>
+<p>随后又⼀脸歉意的望向⽅渐知，「我把车给江淮玩了，你会不会⽣气啊」</p>
+<p>⽅渐知 rua 了 rua 我的脸，「怎么会，你高兴的话，把它砸了都⾏。」</p>
+<p>「……」</p>
+<p>思政课下课后，我急忙跑到走廊去看，只见雨水的确已经有半米深了，我笑的合不拢嘴。</p>
+<p>思政老师不知道啥时候走到了我身边。</p>
+<p>于是我故意皱着眉头对她说，「老师，江淮还在车里下不来，怎么办啊，急死我了。」</p>
+<p>思政老师瞥了我⼀眼，幽幽开口：「你急也没⽤啊，现在雨还下不⼤，水位涨不了那么快，还不是庆祝的时候。」</p>
+<p>「……」</p>
+<p>因为我是本地⼈，周末便回了家。</p>
+<p>没想到我爹要我去参加酒会，这感情好啊，我最喜欢去高级餐厅吃饭了。</p>
+<p>没错，我在那里遇见了⽅渐知。</p>
+<p>⽅渐知看见我明显愣了愣，然后转头看向我爸，「周叔叔，这位是……」</p>
+<p>我爸乐呵⼀笑，把我从他身后拽了出来，「这个是我女儿周淼，不如⽅少爷聪慧，学有所成啊。」</p>
+<p>「?」我和⽅渐知⼀个学校的，怎么他就学有所成了?</p>
+<p>⽅渐知笑的⼀脸意味不明，「原来是淼淼啊，真是漂亮啊，不知道有没有男朋友。」</p>
+<p>这⽅渐知分明是在怪我骗了他。</p>
+<p>我闻言恶狠狠的剜了他⼀眼，没想到被⽅渐知的父亲看了个正着。</p>
+<p>他乐呵⼀笑，「这俩年轻⼈真是关系好啊，老周啊，我看咱们两家倒是可以结个亲家。」</p>
+<p>我爹举杯敬他，「那敢情好啊。」</p>
+<p>好个屁。</p>
+<p>饭吃到⼀半，我爹醉意上头，突然推了推我，「周淼，去，给⼤家表演个才艺。」</p>
+<p>「?」</p>
+<p>我本来想拒绝的，但是看⽅渐知似笑非笑的望着我，索性站了起来扭。</p>
+<p>「擦玻璃，擦擦玻璃，擦玻璃……」</p>
+<p>这⼀顿饭吃的⼤家谁脸色都不好看。</p>
+<p>我爹看见我跳舞的时候，酒气醒了⼀半，皮笑肉不笑的让我回家去书房等他。</p>
+<p>⽅渐知的父亲却笑着说，「淼淼和渐知是⼀个学校的吧，真是可爱的紧啊，肯定喜欢小动物吧」</p>
+<p>我点点头，「对啊，路虎，宝马……」</p>
+<p>我爹暗搓搓掐了我⼀把。</p>
+<p>回家后，⽅渐知给我发来消息，「下楼。」</p>
+<p>我下来才发现他不知道从哪儿弄来两捆仙女棒，⽅渐知手里拿着⼀根点好的递给我。</p>
+<p>星星火光衬的他的眉眼格外温和，他穿着⼀身灰色卫衣站在满天星光下朝我走来。</p>
+<p>「周淼，你确定不想跟我在⼀起。」</p>
+<p>我想点头，想说不想，但是心底又顿感空落落了⼀块，于是嘴硬道，「跟你在⼀起，你收买我啊」</p>
+<p>⽅渐知悄悄往我手里塞了个东西，我接过来⼀看是枚闪闪发亮的钻戒。</p>
+<p>「淼淼，等你年纪够了，我们就结婚。」</p>
+<p>（全文完）备案号:YXX1MKQQ1PFL6PEDndiDbDG</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/7/30-%E6%81%B0%E9%80%A2%E6%A1%83%E8%8A%B1/" title="恰逢桃花">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">恰逢桃花</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/1/31-%E5%8D%83%E9%87%91%E5%A4%A7%E4%BD%AC%E7%9A%84%E5%8F%8D%E5%87%BB/" title="千金大佬的反击">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">千金大佬的反击</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

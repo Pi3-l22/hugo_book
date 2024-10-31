@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你们相信命吗？ | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/7/25-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/7/25-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="你们相信命吗？">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta name="twitter:title" content="你们相信命吗？">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="你们相信命吗？">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="4733">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">你们相信命吗？</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>10分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%bd%a0%e4%bb%ac%e7%9b%b8%e4%bf%a1%e5%91%bd%e5%90%97%ef%bc%9f&amp;url=https://mohai.us.kg/posts/2022/7/25-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/7/25-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%bd%a0%e4%bb%ac%e7%9b%b8%e4%bf%a1%e5%91%bd%e5%90%97%ef%bc%9f%20https://mohai.us.kg/posts/2022/7/25-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26679.jpg" alt="你们相信命吗？" />
+      
+
+      <p>我们抢救过一个女孩，从普通感冒症状到停止呼吸，短短一天。</p>
+<p>解剖结果让我们大吃一惊。因为理论上这种情况很难发生。</p>
+<p>事情发生在 11 年前，当时我在外地实习，轮转的科室恰好是急诊科。</p>
+<p>由于我喜欢急诊，急诊科老师也喜欢我，所以我当时在急诊科待了整整 3 个月。</p>
+<p>这 3 个月来我遇见了上千个病人，其中这个 23 岁的女性患者，在我的记忆里打上了烙印。</p>
+<p>病人姓许，2 周前她开始有咳嗽，并且觉得周身乏力。</p>
+<p>以为是普通感冒，自己到药店买了药，吃了效果不好，在室友的陪同下又去当地诊所就医。</p>
+<p>诊所医生初步考虑也是上呼吸道感染，给予口服药物处理。</p>
+<p>但病人仍然有咳嗽、乏力，咳嗽严重时感觉到有心慌，觉得整个心脏要跳出来了一样。</p>
+<p>诊所医生提高了警惕，考虑不排除心肌炎可能，尤其是病毒性心肌炎。</p>
+<p>要知道，普通的感冒是不可能有心慌的。</p>
+<p>普通感冒是局限于上呼吸道的感染，多数是咽痛、发热、乏力、咳嗽等症状。</p>
+<p>一旦出现胸闷、心慌，一定要警惕可能是心脏的毛病，尤其是心肌炎。</p>
+<p>诊所医生是这样分析的。</p>
+<p>口服药物是不行的了，心肌炎需要休息，也需要用些护心的药物，得静脉用药。</p>
+<p>于是在诊所打点滴。</p>
+<p>打了 2 天，还是没效果。</p>
+<p>诊所医生建议病人到市医院（我实习所在地）去检查，做心电图、心脏彩超等，还要抽血查心肌酶、肌钙蛋白、血常规、肝肾功能、电解质等。</p>
+<p>但即便是确诊了心肌炎，也没有非常好的药物。</p>
+<p>这个病多数是病毒引起的，我们都没有很好的抗病毒药物，只能够对症支持治疗。</p>
+<p>绝大多数心肌炎都是可以自己好的，不用太担心。</p>
+<p>只要不是爆发性心肌炎（重症心肌炎）就没问题。</p>
+<p>病人不懂什么叫爆发性心肌炎，诊所医生进一步解释了，说以前在大医院学习的时候见过这种病，来势凶猛，是最严重的心肌炎，胸闷、呼吸困难、气喘、休克，根本来不及抢救人就没了。</p>
+<p>病人被说怕了，当天就急急忙忙去了市医院。</p>
+<p>但由于当天市医院人太多，病人怕麻烦，加上本身也没有太不舒服，以为可以忍忍，就没去医院，又回到了诊所。</p>
+<p>诊所医生重新开了些辅助心脏的药物，又开了几个中成药。</p>
+<p>嘱咐她好好休息，不要活动，让心脏有个恢复的时间，并且再让患者回到市医院，排队也要排进去，不可大意。</p>
+<p>但患者刚大学毕业，没找到工作，钱不多，想到医院花费可能更高，又想到诊所医生说心肌炎绝大多数都是轻症的可以自愈，也没打算去医院住院了。</p>
+<p>在诊所拿了药的当天下午，患者咳嗽突然加剧，并且出现胸闷气促。</p>
+<p>室友见她情况不妙，赶紧打了 120。</p>
+<p>恰好，就是我跟我上级医师一起出的车。</p>
+<p>我们的车来到病人身旁时，她已经意识模糊了。口唇青紫，一看就是缺氧。</p>
+<p>我当时经验浅，没见过大场面，有点被病人的状况吓到了。</p>
+<p>上级医师则经验老道，立即安排吸氧、心电监护、开通静脉通道，并且准备接回医院急诊。</p>
+<p>病人的室友也陪同上车，病史都是她提供的。</p>
+<p>这几天她们俩都待在一起，所以她很熟悉病人情况。</p>
+<p>我们在病人手机找到了她父母的电话，联系了他们，让他们赶往医院。</p>
+<p>路上，综合病人之前的发病情况，上级医师考虑是爆发性心肌炎，或者重症肺炎，只有严重的心肺疾病才会导致这么明显的缺氧、发绀。</p>
+<p>但由于病人手头上没有任何检查资料，我们也只能靠猜。</p>
+<p>在车上我们能做的就是给她吸氧，做心电图，常规补液。</p>
+<p>我给她拉心电图时，能感受到她四肢都是冰凉的，血压也是偏低，上级医师说她已经休克了，必须加紧补液抗休克，同时督促司机，车速可以放快一点。</p>
+<p>一路上我都心跳很快，一直死死盯着患者，盯着心电监护，生怕她一口气上不来人就没了。</p>
+<p>大家没搭过 120 车，可能不知道 120 车司机开车有多猛。</p>
+<p>平时我搭他们车都会晕车的，如果不是很急我都会让他们开慢点，转弯缓一点，否则我会吐司机一脸。</p>
+<p>但那天，我希望司机能开得快一些，再快一些。</p>
+<p>因为我甚至能感觉到，病人的气息似乎在减弱，虽然生命体征还能维持，但我真的特别担心她可能下一秒就不行了。</p>
+<p>由于我精神高度集中，那次飙车我竟然没有任何晕车感觉。</p>
+<p>但没想到，意外还是发生了。</p>
+<p>在距离医院还有十分钟左右路程时，病人突然全身抽搐，大小便失禁。</p>
+<p>这把她室友吓了一跳，也吓了我一跳。</p>
+<p>那是我第一次这么近距离地观察一个全身抽搐的病人，整张床都在抖动着。</p>
+<p>同时心电监护也发出尖锐的报警声，我一瞅心电监护，室颤了，然后很快就心跳呈一直线。</p>
+<p>上级医生见势不妙，一触摸颈动脉，没搏动，确认了心跳骤停的存在。</p>
+<p>急急忙忙在车上给她气管插管，由于车子开得太快，摇晃有些厉害，上级医师平时 10 多秒就完成的插管操作，那次楞是花了差不多一分钟。</p>
+<p>我记得不是太清楚了，反正就是比平时的时间要长。</p>
+<p>我也着急忙慌地抓起呼吸球囊，赶紧进行辅助通气。</p>
+<p>护士负责推药，主要是肾上腺素，我跟上级医师就轮流胸外按压和球囊通气。</p>
+<p>在车厢这么一个密闭的环境里做心肺复苏我是头一回，本身我就有些紧张，再加上车子摇晃，没几下子我就全身湿透了。</p>
+<p>那十分钟，过得非常漫长。</p>
+<p>上级医师啥话也不说，就是拼命地按压，他的汗水比我还严重，额头、手臂、手掌也全部湿透了。</p>
+<p>好不容易回到了急诊室，我们急急忙忙把病人转运到抢救室。</p>
+<p>虽然我们一刻也没有停止胸外按压，但病人检查仍然没有生命迹象，又换人继续按压了几十分钟，反复推各种抢救药，均没有效果。</p>
+<p>病人脸色惨白，手掉在床外，指甲异常紫绀，那是我第一次这么近距离地观察一个死亡病人。</p>
+<p>病人父母终于来了。</p>
+<p>上级医师跟家属沟通完后，他们嚎啕大哭。</p>
+<p>然后我们停止了胸外按压，检查病人的瞳孔已经极度散大，心音听不到，动脉搏动触不到，没有自主呼吸，全身发绀。</p>
+<p>一个年轻的生命，没了。</p>
+<p>上级医师好再次回顾了病人的发病情况，考虑是爆发性心肌炎可能性大。</p>
+<p>只有爆发性心肌炎，才能解释她如此迅速的病情进展，缺氧，休克，甚至心跳停止等。</p>
+<p>在 120 车上发生的抽搐，应该是阿斯综合征了，由于严重的心律失常导致心脏泵血不出，大脑严重缺血，所以会造成抽搐、大小便失禁等脑功能障碍表现。</p>
+<p>由于患者病情太过危重，即便及时气管插管辅助呼吸，仍然无济于事。</p>
+<p>患者的疾病本质在心脏，是心脏衰竭了，根本来不及抢救。</p>
+<p>这跟之前诊所医生告诉患者的一模一样。</p>
+<p>患者就这么倒霉，遇到了极少见的爆发性心肌炎。</p>
+<p>上级医生感慨，病毒性心肌炎见得多了，绝大多数都是轻微的，病人只有一点胸闷，顶多有点气不够感觉。</p>
+<p>但一般休息一段时间，用点药物，慢慢就会好，很少见过这么严重的爆发性心肌炎。</p>
+<p>真的是束手无策。</p>
+<p>病人舍友吓傻了。</p>
+<p>病人父母也瘫死了几次，他们不能明白为什么平时活蹦乱跳的女儿，会突然这样走掉。</p>
+<p>他们不得不接受了现实。</p>
+<p>很快他们反应过来了，尸体不能火化，不能签字，要个说法。</p>
+<p>为什么孩子会无缘无故死掉，医院处置有没有问题，之前的诊所用药有没有问题。</p>
+<p>不查个清楚，我们也宁可一起死掉了。</p>
+<p>这件事闹大了。</p>
+<p>上级医生很无辜，反复跟家属说接到病人的时候病人已经快不行了。根本没机会诊治，一来就是抢救，不存在任何过错。</p>
+<p>家属找了熟人，估计也是医生，出主意，质疑为什么我们上了 120 车等到发生抽搐了才气管插管，为什么不早一些时候插管，是不是延误了最佳的抢救时机。</p>
+<p>我们百口莫辩，只能说现场病人还是有呼吸的，而且现场环境复杂，也没办法马上就气管插管，转移至 120 车上评估进一步处理是没问题的。</p>
+<p>先给吸氧也是合适的，万一气管插管不顺利，病人挣扎等，反而造成更大的缺氧。</p>
+<p>各执一词。</p>
+<p>多说无益，尸体解剖吧，先搞清楚患者的死因，是不是爆发性心肌炎。</p>
+<p>万一有药物过敏可能呢，诊所的药物，急诊科医生的药物，都有过敏可能。</p>
+<p>「另外，还查到诊所医生开了中成药，有没有中药中毒可能。」专家说。</p>
+<p>另外，病人这个属于猝死，说不定会有心肌梗死、主动脉夹层、肺栓塞、脑栓塞等可能呢。只不过时间太紧迫，来不及诊断。</p>
+<p>死者父母异常激动，就差在我们急诊科拉横幅了。</p>
+<p>那就尸体解剖吧，做好打官司的准备。</p>
+<p>尸体解剖结果等了很久才出来，当时我已经离开急诊科了。</p>
+<p>但我的上级医师把结果告诉了我，结果是出乎所有人意料。</p>
+<p>死者肺动脉干、左右肺动脉都有大量血栓堵住，肺动脉分支也有不少血栓栓塞住。</p>
+<p>进一步检查发现，患者的下腔静脉、双侧髂总静脉内有血栓形成。</p>
+<p>心脏本身没有梗死，而且不符合爆发性心肌炎改变。</p>
+<p>真相大白了。</p>
+<p>病人根本不是爆发性心肌炎，</p>
+<p>而是死于严重的肺栓塞！</p>
+<p>血栓一下子把肺动脉主干分支都堵死了，血液流不过去，没办法跟肺泡的氧气进行氧合。</p>
+<p>患者会迅速缺氧，表现为喘憋、气短、呼吸困难，如果这个栓塞不及时解除，患者很快就会出现休克、昏迷、乃至死亡。</p>
+<p>遗憾的是，这样大面积的肺栓塞，根本不可能自己溶解掉。</p>
+<p>除非医生马上诊断出是肺栓塞，然后第一时间用溶栓药，但从诊断、拿药、推药、等药物起效这个过程，最快最快都要 1 个小时以上。</p>
+<p>别说 1 个小时，即便是 1 分钟，对患者来说都已经是无法忍受的了。</p>
+<p>大脑缺血超过 5 分钟就会死亡。</p>
+<p>有人要问了，那马上开胸手术，切开血管把血栓掏出来不行吗？</p>
+<p>行，但是这个耗时更多，患者根本等不及。</p>
+<p>而且这个手术创伤这么大，很有可能会因为严重出血而死掉。</p>
+<p>所以，手术拿血栓也不现实。</p>
+<p>这么突然发病的大面积肺栓塞，任何治疗手段都不会是及时的，等待患者的只有一个选项。</p>
+<p>死亡。</p>
+<p>家属接受了女儿死于肺血栓栓塞的事实。</p>
+<p>那这个血栓怎么来的？</p>
+<p>尸体解剖结构也告诉大家了，是因为下腔静脉、髂静脉里头长了血栓，这些深静脉长了血栓，血栓如果足够大了，随时可能脱落，一旦脱落就会循着血流进入肺动脉，造成肺动脉栓塞。</p>
+<p>好端端的，我女儿怎么会有这么严重的深静脉血栓形成呢？</p>
+<p>一调查，还真被查出来了。</p>
+<p>死者生前吃了 3 个月的避孕药。</p>
+<p>避孕药？避孕药就会导致她这么严重的血栓形成吗？大家都不敢相信。</p>
+<p>避孕药的主要成分就是雌激素和孕激素，避孕药会增加血栓形成的风险，不是说一定会形成。</p>
+<p>避孕药本身是非常好的东西，能减少不必要的怀孕，减少流产率，但是极少数人口服避孕药会有这样那样的风险，而且风险因人而异，死者不幸运，她吃避孕药就引起了血栓形成。</p>
+<p>这是猜测。</p>
+<p>但是这种猜测是符合逻辑的。</p>
+<p>尸体解剖结果出来后，诊所医生一直认为的诊断被证明是错误的。</p>
+<p>病人不是心肌炎，更加不是爆发性心肌炎。</p>
+<p>病人一开始可能就是肺栓塞，只不过刚开始脱落的血栓不多，肺动脉没有完全堵死，所以仅仅表现为咳嗽、胸闷、甚至有点气短、心慌的表现，这时候如果医生足够警惕，应该建议做心脏彩超或者胸部 CTA，就能看得出病人是有肺栓塞的了。</p>
+<p>可惜死者第一次来我医院时没有去成，室友是这么说的。</p>
+<p>一切都是命。</p>
+<p>到后来，血栓突然一下子都脱落了，就跟雪崩一样，迅速堵死了肺动脉主干，血液再也流不过去了，然后悲剧就发生了。</p>
+<p>科普小课堂：如何避免肺栓塞的发生？</p>
+<p>避孕药这么凶险吗？还敢吃避孕药吗？</p>
+<p>当然敢，这样的病例是极其少见的，避孕药的好处远远大于坏处，如果已婚女性暂时不想要孩子，可以用口服避孕药，当然，这样一来风险都在女性这边。我个人想法是建议男方戴避孕套，这是最安全最无副作用的办法。</p>
+<p>大家不要被个例吓到了，现实中很多妇女吃避孕药都是没有明显不良反应的，前提是在医生的指导下使用。</p>
+<p>爆发性心肌炎真那么恐怖吗？</p>
+<p>恐怖。幸运的是，绝大多数心肌炎都是普通的心肌炎，轻症的，不致命。经过休息、保守治疗就能恢复。问题是我们要观察，随时发现有转变为重症心肌炎可能。</p>
+<p>重症心肌炎，顾名思义心脏肌肉炎症很厉害，导致心脏的泵血功能障碍，没办法泵血，那就会休克，也没有特异性治疗，重点是对症支持治疗，包括用上 ECMO 等手段。</p>
+<p>肺栓塞是什么？如何避免肺栓塞的发生？</p>
+<p>简单地说，任何东西堵住肺动脉，都算是肺栓塞，但是最常见的栓子是血栓，所以肺栓塞通常指的是肺血栓栓塞症。</p>
+<p>肺栓塞有很多危险因素，任何导致静脉血液瘀滞、静脉内皮损伤、血液高凝状态等因素都可能会诱发肺栓塞，比如创伤/手术、脑卒中、肾病综合征、吸烟、妊娠/产褥期、血小板异常、恶性肿瘤、口服避孕药、长途航空或者乘车旅行等。</p>
+<p>要想预防肺栓塞，那就得从上数原因做起，说起来简单，做起来难。普通人一般不会发生肺栓塞，多数是有基础病因的病人容易肺栓塞。备案号:YX11PMDG8QY</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/12-%E4%BD%A0%E4%BB%AC%E7%8E%A9%E5%89%A7%E6%9C%AC%E6%9D%80%E6%9C%80%E8%87%AA%E9%97%AD%E7%9A%84%E7%BB%8F%E5%8E%86%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84-%E7%9F%A5%E4%B9%8E1/" title="你们玩剧本杀最自闭的经历是怎样的？ - 知乎(1)">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">你们玩剧本杀最自闭的经历是怎样的？ - 知乎(1)</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/16-%E4%BD%A0%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%91%BD%E5%90%97/" title="你们相信命吗？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">你们相信命吗？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

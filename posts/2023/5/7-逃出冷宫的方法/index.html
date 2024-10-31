@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃出冷宫的方法 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/7-%E9%80%83%E5%87%BA%E5%86%B7%E5%AE%AB%E7%9A%84%E6%96%B9%E6%B3%95/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/7-%E9%80%83%E5%87%BA%E5%86%B7%E5%AE%AB%E7%9A%84%E6%96%B9%E6%B3%95/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="逃出冷宫的方法">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+  <meta name="twitter:title" content="逃出冷宫的方法">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="逃出冷宫的方法">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11159">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26590.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">逃出冷宫的方法</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%80%83%e5%87%ba%e5%86%b7%e5%ae%ab%e7%9a%84%e6%96%b9%e6%b3%95&amp;url=https://mohai.us.kg/posts/2023/5/7-%E9%80%83%E5%87%BA%E5%86%B7%E5%AE%AB%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/7-%E9%80%83%E5%87%BA%E5%86%B7%E5%AE%AB%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%80%83%e5%87%ba%e5%86%b7%e5%ae%ab%e7%9a%84%e6%96%b9%e6%b3%95%20https://mohai.us.kg/posts/2023/5/7-%E9%80%83%E5%87%BA%E5%86%B7%E5%AE%AB%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26590.jpg" alt="逃出冷宫的方法" />
+      
+
+      <p>逃出冷宫的方法</p>
+<p>穿成女配后我只想搞事业</p>
+<p>「皇上，奇变偶不变？」</p>
+<p>皇上大手一挥：</p>
+<p>「最烦你们这些穿越的，没啥用还想得美。扔到冷宫去。」</p>
+<p>我大惊，到了冷宫一看，全是穿越的。</p>
+<p>「爱妃，这大通铺你可以随意挑选一个空床位。」</p>
+<p>这谁能想到。</p>
+<p>冷宫还是集体宿舍。</p>
+<p>皇上说这个叫集中隔离，统一管理，免得我们这些穿越女整幺蛾子。</p>
+<p>1</p>
+<p>穿越第一天，我在冷宫有了一个床位。</p>
+<p>后悔。</p>
+<p>当事人现在就是很后悔。</p>
+<p>我早该在看到皇上一脸的络腮胡的时候就明白。</p>
+<p>我穿的不是什么言情小说的世界。</p>
+<p>更不应该像小说剧情里写的那样，轻易暴露自己的穿越者身份。</p>
+<p>可惜我脑子转得太慢。</p>
+<p>还没从这打击中回过神来。</p>
+<p>李贵人已经挤开我一个滑铲跪在了皇帝脚边。</p>
+<p>「皇上，皇上你可来了。臣妾想你……」</p>
+<p>沈才人也捏着手绢娇羞道：</p>
+<p>「皇上，臣妾今日又想起来一个酿酒的法子……」</p>
+<p>这竞争，真的激烈。</p>
+<p>皇上不耐烦道：「那法子朕早知道了，再想点有用的。」</p>
+<p>他挑挑拣拣地翻了李贵人牌子，然后点了乖顺的王美人教我规矩。</p>
+<p>临走的时候看我的眼神里透着轻蔑：</p>
+<p>「你俩都是没用的大学生，有共同话题。」</p>
+<p>2</p>
+<p>王美人长着一张娃娃脸，笑起来有两个可爱的梨涡，</p>
+<p>她亲切地握着我的手：</p>
+<p>「宝，你是什么专业的？」</p>
+<p>「法语。」</p>
+<p>王美人嫌弃地松开了我的手：</p>
+<p>「跟我一样废，我学计算机的。」</p>
+<p>看着她明显失望的表情，我努力搜刮自己的优点。</p>
+<p>「我还是特长生。」</p>
+<p>王美人眼睛一亮：</p>
+<p>「你会跳舞？是会什么乐器？」</p>
+<p>我摇摇头。</p>
+<p>「我是体育特长生。」</p>
+<p>「……」</p>
+<p>「游泳贼牛逼！」</p>
+<p>王美人翻了个白眼：</p>
+<p>「那或许你可以从井里游出宫去。」</p>
+<p>3</p>
+<p>除了刚被带走的李贵人，屋里算我一共剩四个人。</p>
+<p>王美人说以后我们就是冷宫五朵金花。</p>
+<p>她拉着我的手一一给我介绍。</p>
+<p>躺在最里头床位蒙着被子抽抽噎噎的是静妃。</p>
+<p>「年纪小，还在上高中，穿过来俩月了，想家，天天以泪洗面。」</p>
+<p>另一位则是沈才人。</p>
+<p>「沈姐姐以前是做生意的，脑子活，经常能想到些新奇玩意。除了李贵人，皇上最宠幸的就是她了。」</p>
+<p>沈才人长得温婉贤淑，闻言对我一笑，就继续望着空气发呆。</p>
+<p>王美人说那是在思考。</p>
+<p>「知识改变命运，懂不？」</p>
+<p>她沉痛地说：「要么有才艺，要么有能力。哄皇上高兴了，咱才能过上好日子。」</p>
+<p>我点头称是，积极提问：</p>
+<p>「李贵人为何受宠？」</p>
+<p>「她唱跳俱佳。」</p>
+<p>我肃然起敬：</p>
+<p>「难道她是传媒学院的？」</p>
+<p>王美人摇摇头：</p>
+<p>「不，她是练习时长四年半的 KTV 练习生。」</p>
+<p>4</p>
+<p>「在这皇宫里，最重要的事情就是听话。千万别以为自己是女主，万一惹了皇上不高兴，就是一个脑袋搬家。」</p>
+<p>王美人严肃地说：</p>
+<p>「也别想着逃跑，皇宫守备森严，外面都是巡逻的禁军。之前有个穿越的姐妹受不了冷宫的日子，偷偷跑了出去。后来……」</p>
+<p>「后来……」我听得一愣一愣的。</p>
+<p>「后来就被埋在院子里了。」</p>
+<p>偌大皇宫，非要埋在冷宫院子里，这可不就是对我们的警示么。</p>
+<p>我正要再问些具体的，肚子突然叫了一声。</p>
+<p>「饿了？」</p>
+<p>我点头。</p>
+<p>王美人说还没到晚膳的时候，到点儿了会有奴才过来送饭。</p>
+<p>顿了顿，她又补充道：「运气好的话是这样。」</p>
+<p>我又问那运气不好的话呢。</p>
+<p>她冷笑一声：</p>
+<p>「运气不好就喝西北风。狗奴才最会见风使舵落井下石。」</p>
+<p>5</p>
+<p>今天运气还行。</p>
+<p>不多时奴才就送了晚膳来。</p>
+<p>我打开一看，是馒头配杂菜粥。</p>
+<p>杂菜粥还有点馊，我吃了一口，差点呕出来。</p>
+<p>关键时刻王美人一个箭步捂住了我的嘴。</p>
+<p>「呕……额。」</p>
+<p>我咽回去了。</p>
+<p>王美人沉痛地教训我：</p>
+<p>「浪费粮食可耻。一天就这一顿呢。」</p>
+<p>我环顾一周，发现大家都狼吞虎咽地吃完了。</p>
+<p>连年纪最小的静妃都把碗舔得锃亮。</p>
+<p>我很绝望。</p>
+<p>「咱冷宫这伙食……一直都这样吗？」</p>
+<p>王美人点点头。</p>
+<p>我不死心：</p>
+<p>「难道就没别的能吃了？」</p>
+<p>她说有的。</p>
+<p>我又燃起一丝希望。</p>
+<p>王美人将我带到门外，指着院子里唯一一棵飘摇残破的树苗。</p>
+<p>「看到没。」</p>
+<p>「看到了。」</p>
+<p>「那是梨树。」</p>
+<p>我点点头：</p>
+<p>「梨呢？」</p>
+<p>王美人郑重承诺：</p>
+<p>「运气好的话，过两年还没饿死，应该就能吃上了。」</p>
+<p>6</p>
+<p>除了王美人，其他几位姐姐妹妹都不太愿意搭理我。</p>
+<p>……也不是不搭理我，她们每日忙于自己的事情，互相都不太交流。</p>
+<p>李贵人每日忙于整理自己的容貌，是我们冷宫女团的颜值担当。</p>
+<p>沈才人每日忙于发呆思考，研究一些实用的生活小妙招，算是智力担当。</p>
+<p>静妃每日哭哭啼啼，不是想家，就是想死。</p>
+<p>我大胆推测，说不定这二者殊途同归，死了就能回家了，她信以为真，差点上吊。</p>
+<p>为此王美人把我按在地上揍了一顿。</p>
+<p>我觉得很不合理：</p>
+<p>「你们学计算机的不都应该是手无缚鸡之力的阿宅吗。」</p>
+<p>她摸着一头乌黑的秀发问我：</p>
+<p>「秃吗？」</p>
+<p>我摇头，恍然大悟：「你是想说你不够强，所以不秃也不宅？」</p>
+<p>她翻了个白眼：</p>
+<p>「我的意思是那些都是刻板印象。」</p>
+<p>7</p>
+<p>皇上今日召静妃侍寝。</p>
+<p>静妃不愿意，大哭大闹，哭得直冒鼻涕泡。</p>
+<p>皇上黑了脸，身边跟着的大太监一巴掌把静妃扇倒在地。</p>
+<p>扇得她当场吐了一口血。</p>
+<p>李贵人娇滴滴地说：</p>
+<p>「皇上，臣妾最近新编了个舞，臣妾想跳给皇上看……」</p>
+<p>皇帝不耐地皱了皱眉。</p>
+<p>「滚。」</p>
+<p>李贵人扑通跪下，不敢再说话。</p>
+<p>片刻沉寂后，几个太监拖走了地上尸体一般的静妃。</p>
+<p>皇帝想让谁侍寝，那人是断没有拒绝的权力的。</p>
+<p>谁也无法改变他的决定。</p>
+<p>大太监对我说：</p>
+<p>「娘娘好好准备，过几日侍寝可别像静妃娘娘一般不识抬举，徒遭皮肉之苦。」</p>
+<p>我把头埋在地上抖得厉害。</p>
+<p>8</p>
+<p>静妃是被抬着送回来的。</p>
+<p>直接给扔在了院子里。</p>
+<p>太监说：</p>
+<p>「御前失仪，不懂规矩，罚禁食七日。」</p>
+<p>我们跪了一地，好不容易等人都走了，才敢抬头。</p>
+<p>静妃呆呆傻傻，睁着眼一动不动地躺在地上，像个尸体。</p>
+<p>我和王美人合力才把她挪到床上。</p>
+<p>「她……」</p>
+<p>我张张嘴，又不知道该说什么。</p>
+<p>王美人摇了摇头：</p>
+<p>「各人有各命。你还不如担心一下自己。」</p>
+<p>9</p>
+<p>静妃日渐消瘦，躺在床上像在等死。</p>
+<p>我每天饿得眼睛发绿，但还是从不多的食物中省下了一些。</p>
+<p>王美人很不赞同：</p>
+<p>「她不争气，你再帮她也没用。」</p>
+<p>她嘴上这么说，却跟我一样藏了两口吃的。</p>
+<p>趁着别人不注意，我们偷偷喂到静妃嘴里。</p>
+<p>但她连咽也不愿意咽。</p>
+<p>「再不吃东西可能活不了两天了。」</p>
+<p>我劝道：</p>
+<p>「能活一天是一天，万一运气好，明天又穿回去了呢。」</p>
+<p>静妃仍旧不为所动。</p>
+<p>王美人却侧头看我：</p>
+<p>「真的吗。」</p>
+<p>我很诚恳：</p>
+<p>「真的吧。」</p>
+<p>她伸手捏住我的嘴：</p>
+<p>「宝，我不允许你叫我爸。」</p>
+<p>10</p>
+<p>冷宫不见天日，也没什么消遣。</p>
+<p>和王美人混熟以后。</p>
+<p>我俩每天最大的娱乐就是等其他人睡着之后。</p>
+<p>偷偷蹲在院子里吹风扯淡。</p>
+<p>听她叼着叶子给我讲她是如何从一个农村土妞一步步逆袭成大学生的。</p>
+<p>说着说着还会激动地猛拍大腿。</p>
+<p>「以前天天在家种地，我寻思上大学一定要学个一看就很潮、很新时代的专业，就选了计算机。早知道我还不如继续种地……」</p>
+<p>我恍然大悟：</p>
+<p>「怪不得你一个计算机系的死宅身体如此强壮。」</p>
+<p>她撸起袖子，拳头紧握。</p>
+<p>我立刻改口：</p>
+<p>「妹妹真是弱柳扶风人间黛玉……」</p>
+<p>她翻了个白眼：「你不是体育特长吗，怎么这么弱。」</p>
+<p>喀，我有点不好意思：</p>
+<p>「那不是后来天天躺着么……」</p>
+<p>11</p>
+<p>就这么混了几天。</p>
+<p>皇上终于召我侍寝。</p>
+<p>王美人握着我的手泪眼汪汪，反复叮嘱道：</p>
+<p>「我教你的你都学会了吗。」</p>
+<p>「学会了。」</p>
+<p>「我们的目标是，不求有功，但求无过。」</p>
+<p>我很感动，没想到王美人这么担心我。</p>
+<p>「放心吧，师父！我不会忘了你的恩情的。」</p>
+<p>她飞快地松开我的手：</p>
+<p>「那倒也不必，要是惹皇上生气了，你别牵连到我头上就行了。」</p>
+<p>12</p>
+<p>「那我走了。」</p>
+<p>她沉默点头。</p>
+<p>我心里其实很害怕。</p>
+<p>走了两步忍不住回过头，看到她站在原地看着我。</p>
+<p>一副快哭出来的样子。</p>
+<p>……好像又没那么害怕了。</p>
+<p>那天晚上，我抖得像第一次侍寝的安陵容。</p>
+<p>好在皇帝喝多了酒，并不是很在意。</p>
+<p>13</p>
+<p>结束后，皇上命人把我送回了冷宫。</p>
+<p>我一路闭口不言。</p>
+<p>等人都走后，直奔那棵小破梨树。</p>
+<p>王美人担心得一夜未睡，听到动静跑出来看我。</p>
+<p>我「哇」的一下，扶着树吐了。</p>
+<p>王美人大惊：</p>
+<p>「这么快就怀上了？」</p>
+<p>我声音发颤：</p>
+<p>「你怎么没告诉我，皇上还有狐臭，呕……」</p>
+<p>王美人愣了半天才说：</p>
+<p>「不好意思，我有鼻炎。」</p>
+<p>14</p>
+<p>我把胃里的东西吐了个干净。</p>
+<p>然后脱力倒在了王美人的怀里：</p>
+<p>「你没让皇上发现吧？」</p>
+<p>我虚弱地摇摇头。</p>
+<p>她松了一口气。</p>
+<p>我们就这样照着月光，沉默地靠在一起。</p>
+<p>她摸了摸我的头：</p>
+<p>「没事，哭吧，哭完就好了。我刚来的时候天天哭呢。」</p>
+<p>连日紧绷的情绪终于在此刻崩溃。</p>
+<p>我怕哭得太大声，被外面的侍卫听到。</p>
+<p>只能抓着她的衣服，把头埋进她的颈间。</p>
+<p>她身上有淡淡的草木香气……</p>
+<p>王美人抱着我，轻轻地拍着我的背。</p>
+<p>夜风里，我听到她温柔又冷漠的声音：</p>
+<p>「你是不是把鼻涕都擦我身上了？」</p>
+<p>15</p>
+<p>等我平静下来，</p>
+<p>王美人欲言又止。</p>
+<p>我笑笑：</p>
+<p>「你有什么事就直说吧。我承受得住。」</p>
+<p>她眼神飘到梨树下我吐的那一团马赛克，皱着眉说：</p>
+<p>「你吐到那个逃跑的姐妹头上了，她不会找我们麻烦吧？」</p>
+<p>16</p>
+<p>第二天皇上来的时候，我困得要死。</p>
+<p>原因无他，前一天连夜在梨树下打扫卫生。</p>
+<p>皇上摸着我的小手说：</p>
+<p>「昨日朕喝多了都没好好和爱妃温存。」</p>
+<p>看我的眼神就像在看马戏团的新鲜玩意。</p>
+<p>「朕还没听过那什么法语，爱妃说两句听听。」</p>
+<p>这个我熟，逢年过节见亲戚的必要环节。</p>
+<p>我立刻来了一段法语绕口令。</p>
+<p>皇上很满意，大手一挥说今晚还挑我侍寝。</p>
+<p>气得李贵妃在暗处翻了我十几个白眼。</p>
+<p>我真的想说这福气要不还是给她吧。</p>
+<p>17</p>
+<p>好在我从小到大看了无数言情。</p>
+<p>理论知识非常丰富。</p>
+<p>一回生，第二回我直接妲己附身。</p>
+<p>皇帝用完都说好。</p>
+<p>大太监送我回宫的时候问我要什么赏赐。</p>
+<p>我脑子里一下子闪过肉的十几种形态……</p>
+<p>开口的时候却变成了：</p>
+<p>「……来五个红薯。」</p>
+<p>正值深秋初冬，风吹得脸有些干疼。</p>
+<p>我突然非常想念热乎乎的红薯香甜软糯的温暖。</p>
+<p>最重要的是，还顶饱。</p>
+<p>「喀，娘娘还可以提更多一点要求。」</p>
+<p>我受宠若惊：</p>
+<p>「那……那八个？」</p>
+<p>太监满脸无语地看着我。</p>
+<p>不行吗？</p>
+<p>我忍痛还价：</p>
+<p>「那六个，不能再少了。」</p>
+<p>18</p>
+<p>最终他给我弄来了十个红薯。</p>
+<p>我抱着红薯堆站在冷宫萧瑟的空地上幸福地流泪。</p>
+<p>王美人很震惊：</p>
+<p>「你是怎么一夜之间克服狐臭的？」</p>
+<p>我打了个喷嚏：</p>
+<p>「我鼻子也堵了。」</p>
+<p>19</p>
+<p>我俩把院子里的落叶扫到一堆，把红薯埋在里面。</p>
+<p>沈才人笑盈盈地帮忙，搬了几块大石头作椅子。</p>
+<p>连静妃都有了些精神。</p>
+<p>说想坐在外头一块坐一会。</p>
+<p>我们把她扶到了唯一的椅子上，怕她凉，给她搭了几件衣服作毯子。</p>
+<p>李贵人翻了个白眼：</p>
+<p>「不就是几个红薯吗，跟没见过好东西似的。」</p>
+<p>语气极其不屑。</p>
+<p>我忍不住在心里吐槽。</p>
+<p>那你为什么第一个坐在石头上等啊！</p>
+<p>为什么要用那么深情的眼神看红薯啊！</p>
+<p>你看皇上的时候都没这么真诚，你知道吗。</p>
+<p>王美人说：</p>
+<p>「没想到吧，她是傲娇啊。」</p>
+<p>20</p>
+<p>红薯烤的恰倒好处，外皮略焦，轻轻撕开，露出里面橙黄还有些泛红的软肉，像黄昏的霞光。</p>
+<p>白气冒个不停，熏到人脸上，也有一丝甜意。</p>
+<p>冷宫一下子很热闹。</p>
+<p>我们几个倒霉的穿越女围成一圈。</p>
+<p>聊着乱七八糟的事情。</p>
+<p>穿过来之前的生活，以前的家人。</p>
+<p>穿过来之后的遭遇，皇帝莫名其妙的癖好。</p>
+<p>李贵人一边吹红薯，一边大夸海口。</p>
+<p>说要教我们唱跳 rap。</p>
+<p>「我要是得宠了，可以把赏赐分给你们！」</p>
+<p>「……但是，你们可不准跟我抢皇上啊。」</p>
+<p>我和王美人都不是很理解她怎么能看上皇帝那个络腮胡子的。</p>
+<p>「你们以前都过的好日子，当然不懂了，我什么客人都见过……现在只伺候皇帝，很好啦。」</p>
+<p>沈才人烫得吸气，</p>
+<p>被王美人笑是猫舌头。</p>
+<p>静妃倒是很安静，一直默默地小心啃着。</p>
+<p>破天荒地吃完了整整两个红薯。</p>
+<p>我妈说过，冷天吃红薯是最幸福的事。</p>
+<p>我以前不觉得，现在倒有些明白了。</p>
+<p>白烟照着大家朦胧扭曲的笑脸。</p>
+<p>我恍恍惚惚地觉得我们好像都还活在原来的世界一般。</p>
+<p>21</p>
+<p>第二天醒来的时候。</p>
+<p>静妃已经没气了。</p>
+<p>她嘴角还有一丝笑意。</p>
+<p>身上深深浅浅的伤口早早地开始发烂发臭。</p>
+<p>好像她不是死在今天。</p>
+<p>而是已经死了很多天了一样。</p>
+<p>皇帝过来看了一眼。</p>
+<p>什么也没说。</p>
+<p>太监处理得很快。</p>
+<p>把她也埋在了梨树下。</p>
+<p>22</p>
+<p>「真好，她应该已经穿回去了吧。」</p>
+<p>王美人看着梨树发呆。</p>
+<p>我点点头说：「是啊，穿回去刚好高考。」</p>
+<p>「……话说回来，这也算肥料吧？那梨树会不会长快一点？明年能吃上吗？」</p>
+<p>王美人一巴掌拍在我头上：</p>
+<p>「扣 1 佛祖也不会原谅你。」</p>
+<p>我：「11111。」</p>
+<p>23</p>
+<p>感冒好了之后，我的鼻子又开始工作。</p>
+<p>为此，我专门请教了两位姐姐，如何克服皇上的体味的。</p>
+<p>李贵人说：「姐见得多了，他那根本不是事儿。」</p>
+<p>好重口，我倒吸一口气，心生敬佩。</p>
+<p>沈才人微微一笑，从兜里掏出两个布条。</p>
+<p>把两个布条团吧团吧，塞进了鼻子里。</p>
+<p>我：……大家都是身怀绝技的。</p>
+<p>24</p>
+<p>皇帝过了那个新鲜劲之后。</p>
+<p>就不再常常翻我牌子了。</p>
+<p>还是李贵人和沈才人比较受宠。</p>
+<p>李贵人有时候喜欢要一些玩乐的小玩意。</p>
+<p>沈才人每次要的都是吃的用的，拿回来好给我们分。</p>
+<p>王美人和我就靠着两位姐姐分来的赏赐和宫里难吃的晚膳凑合过日子。</p>
+<p>闲暇所有时间都用来跟李贵人学唱跳。</p>
+<p>王美人天赋好，身体软，学得飞快。</p>
+<p>沈才人比较僵硬，但也勉强跟上。</p>
+<p>只有我，四肢极其不协调。</p>
+<p>她们齐齐说我跳舞像手骨折且前一晚落枕的猩猩，抱在一起笑得上气不接下气。</p>
+<p>我气鼓鼓地说：「你们礼貌吗？」</p>
+<p>李贵人说：「还愿意教，是我最大的礼貌。」</p>
+<p>沈才人说：「说猩猩还是太过分了。」</p>
+<p>我泪目，果然还是沈才人温柔。</p>
+<p>沈才人说：「比较像水族馆跳舞的海豹。」</p>
+<p>我：……</p>
+<p>25</p>
+<p>最近感觉皇帝越来越小气。</p>
+<p>我和王美人偷偷咬耳朵：</p>
+<p>「感觉翻牌子的次数都少了。」</p>
+<p>「连抠搜得晚膳也减量了。」</p>
+<p>「你说皇帝是不是国库空虚了。」</p>
+<p>「往好了想，我觉得说不定是这个封建朝代不行了。」</p>
+<p>我大惊：</p>
+<p>「你怎么想得这么美。」</p>
+<p>她害羞：</p>
+<p>「毕竟我是美人，想得美的人啊。」</p>
+<p>正说着，皇帝突然驾到，还点了沈才人的名字：</p>
+<p>「今日设宴，沈才人陪朕去。」</p>
+<p>还让她准备个节目。</p>
+<p>皇帝笑得猥琐：</p>
+<p>「穿越女这种新鲜玩意，朕见惯了，也是时候让众爱卿也见识见识。」</p>
+<p>我背后发凉，直觉这是鸿门宴。</p>
+<p>但也没什么办法。</p>
+<p>沈才人说没事，正好跟李贵人学了舞，就当个汇报演出。</p>
+<p>26</p>
+<p>沈才人走后，</p>
+<p>我朝地上吐了口口水：</p>
+<p>「你说皇帝怎么这么变态，就喜欢折磨人是吧。」</p>
+<p>王美人倒是很冷静，说：「这下我确定皇帝应该遇到困难了。」</p>
+<p>「怎么说？」</p>
+<p>她没有立刻回答，而是反问我：</p>
+<p>「要是你没穿越，有一天得到了一只会讲人话的猴子，你会怎么做？」</p>
+<p>我不假思索：</p>
+<p>「立刻开一个巡演，让大家来参观，我收门票赚钱。」</p>
+<p>「那不就是了。」</p>
+<p>我心里一凉：</p>
+<p>「你是说我们就是皇帝会说人话的猴子？」</p>
+<p>王美人点点头：「以前皇上不缺钱，就养着我们玩，现在皇上遇上事了，就该拉我们出去表演了。」</p>
+<p>我很惊讶：「不会吧……怎么说他也是皇帝啊……还用得着讨好别人吗？」</p>
+<p>王美人说：「你知道我们在的这个朝代是个什么情况不？」</p>
+<p>我摇摇头，穿来的第一时间，我就被皇上发现了身份，直接扔到了冷宫。</p>
+<p>没有任何消息来源。</p>
+<p>皇上身边的人也绝不可能跟我说些什么。</p>
+<p>王美人说她也不知道，她问了其他人，大家都不知道。</p>
+<p>……</p>
+<p>一个未知的时代，</p>
+<p>发生什么样的事情都不奇怪。</p>
+<p>王美人说：「我现在最担心的事情就是沈才人不只是去表演这么简单，如果是要表演，为什么不让李贵人去呢？她才是跳得最好的。」</p>
+<p>她抬头，天黑沉沉的，今夜没有月亮，也没有一丝光。</p>
+<p>「希望是我想多了。」</p>
+<p>27</p>
+<p>人世间的事情就是这样，</p>
+<p>越不希望发生的，就越会发生。</p>
+<p>沈才人当夜没回来。</p>
+<p>第二天早上也没回来。</p>
+<p>第二天下午也没回来。</p>
+<p>我们三个坐在门口像三个望夫石。</p>
+<p>直到晚上她才被人抬回来。</p>
+<p>脸上和脖子上青青紫紫，全是痕迹。</p>
+<p>让人一看就明白，她一定是遭遇了很可怕的事情。</p>
+<p>我们扑上去，想握她的手。</p>
+<p>但她手上也到处是伤口。</p>
+<p>我没忍住，哭个不停。</p>
+<p>李贵人哭得更大声，她和沈才人是最早穿来的。</p>
+<p>两个人更亲近些。</p>
+<p>沈才人没哭，还笑我们。</p>
+<p>说我们都哭得像猴子，</p>
+<p>她主动牵了一下我的手，手心很暖。</p>
+<p>沈才人笑笑说：</p>
+<p>「还好去的不是你们。」</p>
+<p>28</p>
+<p>沈才人上吊了，就在梨树上。</p>
+<p>她留下一封遗书，几个清隽的小字和她的人一般秀丽。</p>
+<p>「对不起，忍不住先穿回去了。」</p>
+<p>我们都不知道她是什么时候偷偷起来的。</p>
+<p>就连上吊的绳子也是用没法再穿的衣服做的。</p>
+<p>她在信上说：</p>
+<p>「冬天冷，我的被子还可以分给你们。」</p>
+<p>29</p>
+<p>以前我总觉得穿越很浪漫。</p>
+<p>可以让我逃避现实的烦恼。</p>
+<p>不用上学，不用上班，只需要和一个帅哥来一场轰轰烈烈的恋爱。</p>
+<p>帅哥后宫佳丽三千只取我这一瓢。</p>
+<p>穿过来后，也只觉得——</p>
+<p>皇帝丑是丑了点，日子惨是惨了点，但总归能过。</p>
+<p>哪怕静妃死的时候，我都会想着，只要我忍着，一直忍着就可以活下去。</p>
+<p>直到现在我才明白——</p>
+<p>在没有法律草菅人命的朝代，被一个陌生人掌握生杀大权，像蝼蚁一样随意玩弄。</p>
+<p>是一件多么可怕的事情。</p>
+<p>皇帝比我以为的还要残忍。，</p>
+<p>我不是三千弱水中独特的一瓢，而是一只随时会被轻松肢解的蚂蚁。</p>
+<p>我们都会一个一个地死在冷宫里。</p>
+<p>无声无息地埋在这棵梨树下面。</p>
+<p>……我要逃走。</p>
+<p>我必须要逃走。</p>
+<p>30</p>
+<p>我没瞒着她们。</p>
+<p>更何况这么大个皇宫，我什么也没有，要逃也瞒不了她们。</p>
+<p>我以为王美人会骂我一顿。</p>
+<p>谁知她点点头很平静：</p>
+<p>「我早就这样想了，我们一起走。」</p>
+<p>但是李贵人拒绝了，她不想冒这么大的风险。</p>
+<p>「……但我会尽量帮你们。」</p>
+<p>李贵人说：</p>
+<p>「之前刚来的时候好奇，求着皇上带我出去走走，皇上有次心情特别好就同意了……」</p>
+<p>她给我画了一个简笔图。</p>
+<p>「我记得顺着这边跑到头，有面墙围着，但也不是特别高，两个人搭梯子能爬上去。其他的就不太清楚了，皇上不让我走太远。」</p>
+<p>我和王美人围着那张图。</p>
+<p>真的抽象。</p>
+<p>我沉默了一会说：「我是路痴。」</p>
+<p>王美人说：「我也是。」</p>
+<p>李贵人说：「之前那个逃跑的姐妹就是我给画的图。」</p>
+<p>我：「……她也是路痴？」</p>
+<p>王美人：「不，她不是。」</p>
+<p>我俩齐齐地看着李贵人沉默。</p>
+<p>「……她被抓到跟我这图没关系，刚跑出门就被巡逻的抓了。」</p>
+<p>31</p>
+<p>一番讨论，我们两个路痴决定找机会去踩踩点，</p>
+<p>要获得这个机会只能讨好皇上。</p>
+<p>于是，我们开始花更多时间学唱跳。</p>
+<p>冷宫里一时充斥着她俩的骂声：</p>
+<p>「抬右手！右手！……你的手是卤鸡爪吗？」</p>
+<p>「……为啥是卤的？」</p>
+<p>「……因为我馋了。」</p>
+<p>「摸大腿！摸大腿！不是搓澡好吗？」</p>
+<p>「弯腰！你的腰是铁的吗？」</p>
+<p>……</p>
+<p>好不容易终于跳会一段。</p>
+<p>王美人评价说：「我八岁的弟弟跳广播体操都比你顺溜。」</p>
+<p>李贵人诚恳地说：「皇上若问起，千万别说我教的你。」</p>
+<p>我：「……行。」</p>
+<p>32</p>
+<p>结果皇上根本不上套。</p>
+<p>我一番挥汗如雨的表演。</p>
+<p>皇上沉默半晌：「跳得好，下次别跳了。」</p>
+<p>我改变思路，当场来了一段法语说唱 rap。</p>
+<p>皇上顿时龙心大悦。</p>
+<p>果然术业有专攻，隔行如隔山啊。</p>
+<p>一番云雨，皇上摸着我的脸问我想要什么赏赐。</p>
+<p>我靠在他的胸前，娇滴滴地说：「臣妾想在宫里转转，透透气。」</p>
+<p>结果狗皇帝突然翻脸。</p>
+<p>一巴掌把我扇下了床。</p>
+<p>「透气，看来是朕让你觉得憋闷了。」</p>
+<p>我浑身颤抖，赶紧爬起来跪好。</p>
+<p>「臣妾不敢！」</p>
+<p>他紧紧捏着我的脖子，捏得我喘不过气来。</p>
+<p>「爱妃不会是想逃跑吧？」</p>
+<p>我挤出一个讨好的笑：「怎么会……」</p>
+<p>他冷哼一声，把我提到床上。</p>
+<p>「只要进了宫，爱妃死也得死在宫里……</p>
+<p>「在这皇宫里……就算是一只鸟飞出去了，朕也要把它抓回来……」</p>
+<p>33</p>
+<p>看到我脸上的巴掌印，</p>
+<p>李贵人翻了个白眼，从袖子里摸了个苹果给王美人。</p>
+<p>我：「……你俩搁这拿我打赌是吧。」</p>
+<p>李贵人气死了，苹果是她好不容易得的，一直没舍得吃。</p>
+<p>「你怎么这么不争气！」</p>
+<p>王美人得意洋洋，两个梨涡里都含着对我的嘲笑：「我就知道，她那广播体操有用才有鬼了。」</p>
+<p>她一撩头发，妖娆地摸了一下大腿：「还得姐来。」</p>
+<p>我很不服气。</p>
+<p>结果不出两天，王美人就证明了自己。</p>
+<p>那天她一回宫，就兴冲冲地拿了纸笔。</p>
+<p>画了一小块详细的地图。</p>
+<p>虽然只有一小段，但好在绝不会认错路。</p>
+<p>我立刻肃然起敬。</p>
+<p>「师父，你是怎么做到的？」</p>
+<p>明明我法语 rap 的表演也获得了皇上的肯定，但皇上还是拒绝了我的要求。</p>
+<p>「你说要出去转转，那肯定是不行的。」</p>
+<p>「……so？」</p>
+<p>她半掩面，故作娇羞：</p>
+<p>「我说在外面侍寝更刺激。」</p>
+<p>？</p>
+<p>她咂咂嘴，一副颇为遗憾的样子。</p>
+<p>「唉，可惜了，再多来几次还能解锁更多地图。可惜皇上不太行。」</p>
+<p>「……」</p>
+<p>34</p>
+<p>临近过年，天气越发地冷了。</p>
+<p>抠门皇帝没发新衣服，我们几个冻得缩手缩脚。</p>
+<p>只能把被子叠在一块，团在一起睡觉。</p>
+<p>每天夜里——</p>
+<p>我怀里搂着王美人，背后贴着李贵人。</p>
+<p>当真是坐享齐人之福。</p>
+<p>唯一的缺点就是每天被迫第一个上床给二位姐姐暖床。</p>
+<p>本来这个暖床的角色是大家一起石头剪刀布决定的。</p>
+<p>但她俩每次都出的一样。</p>
+<p>我严重怀疑她们偷摸串通好了，但是没有证据。</p>
+<p>王美人理直气壮地说：「你睡中间，中间最暖和，你不暖床谁暖床。」</p>
+<p>皇帝说过年的时候宫里要举行宫宴，让我们三个出一个节目。</p>
+<p>特意言明不准我跳舞。</p>
+<p>……真好，反正我也不想再学了。</p>
+<p>李贵人说可以让我在旁边唱法语 rap 给她俩配乐。</p>
+<p>我说我词汇量就那么多，已经编不出来了。</p>
+<p>王美人怒斥我是大笨蛋。</p>
+<p>「你就瞎唱，他一个古代人还能指出你的语法错误吗？」</p>
+<p>也是。</p>
+<p>我们一合计。</p>
+<p>打算就在宫宴那天跑路。</p>
+<p>平时冷宫门关得紧，出不去。</p>
+<p>而那天我们都在外头，大家注意力又在表演上。</p>
+<p>宫里守备应该也没往日那么严，算是最好的时机。</p>
+<p>35</p>
+<p>通过李贵人的指引和王美人的不懈努力。</p>
+<p>终于拼出了一个较为完整的路线图。</p>
+<p>每一小段路都有狗皇帝和王美人打卡的记录……</p>
+<p>王美人脸色苍白：「这真是我一辈子都忘不了的噩梦。」</p>
+<p>我握着她的手信誓旦旦：「组织回去一定给你发个奖牌，纯金的。」</p>
+<p>她翻了个白眼：「倒也不必，又不是什么光荣的事情，给我忘掉，谢谢。」</p>
+<p>按照王美人的计划。</p>
+<p>我们跑到宫墙边，我先踩着她爬上去，然后扔绳子给她，把她拉上去。</p>
+<p>为了保证计划的事实，她俩开始给我魔鬼训练……</p>
+<p>早上跑步，中午撸铁，晚上攀岩。</p>
+<p>王美人折了跟梨树枝当鞭子跟在后头抽我。</p>
+<p>她柔情脉脉地摸着那根梨树枝，说那是死去姐妹们的鞭策。</p>
+<p>抽一下老疼了。</p>
+<p>我蹿得飞快。</p>
+<p>要是高中的时候训练能有这么拼命。</p>
+<p>此时此刻我应该人已经在国家队了吧。</p>
+<p>「明明你身体也很强壮，怎么不是你先爬上去啊！」</p>
+<p>我以为她会像往常一样装柔弱。</p>
+<p>谁知道她格外正经，小声嘟囔着说：「我害怕。」</p>
+<p>「我只是力气大点，耐力不行……」</p>
+<p>她从背后抱着我，把脸贴在我的背上。</p>
+<p>「我怕我爬不过去。我怕做不好……把你也害死……」</p>
+<p>36</p>
+<p>梨树下突然长了一朵白色的小野花。</p>
+<p>寒风瑟瑟，脆弱的花骨朵摇摇欲坠。</p>
+<p>王美人把它小心地围了起来，说它是住在树底下三位姐妹发来的新年祝福。</p>
+<p>我问她俩：「如果穿回去了你们想干啥。」</p>
+<p>李贵人说：「好好洗个澡吃个饭，然后喝酒喝到天亮。」</p>
+<p>王美人说：「想在家里的床上睡个三天三夜。」</p>
+<p>「就没有更长远一点想做的事情吗？」</p>
+<p>李贵人挠挠脸，有点不好意思：「想去试试成人高考。」</p>
+<p>王美人说：「那我给你当家教吧。到时候帮你选专业，咱就是说远离计算机……」</p>
+<p>李贵人很开心，又问她：「那你自己呢？」</p>
+<p>王美人思索片刻：「我要转专业，计算机滚呐。我要学法律，为建设法制社会发光发热……</p>
+<p>「我还要去买一百个小人诅咒狗皇帝。」</p>
+<p>「……」</p>
+<p>「然后学一个拳击、跆拳道什么的，杀尽天下负心汉。」</p>
+<p>「……」</p>
+<p>「加入反穿越者协会。」</p>
+<p>「……」</p>
+<p>「研究穿越阻断机，原天底下没有穿越女！」</p>
+<p>37</p>
+<p>狗皇帝又召我侍寝。</p>
+<p>我过去一看，发现还有个胖老头也在。</p>
+<p>「爱妃，李丞相仰慕你的法语 rap 已久，朕今日特地设宴，让爱妃来表演一段。」</p>
+<p>胖老头笑得眼睛眯成一条缝，一双肥得流油的猪蹄就往我腿上摸。</p>
+<p>「早就听闻娘娘才貌双绝，今日一见果真是天上人呐……」</p>
+<p>我看看他的猪蹄，又看看狗皇帝。</p>
+<p>狗皇帝笑得猥琐，一点儿没有阻止的意思。</p>
+<p>「爱妃向来识大体。今日难得，就多陪李丞相喝几杯吧。」</p>
+<p>38</p>
+<p>回去的时候我摇摇晃晃。</p>
+<p>差点被院子里的石子绊个狗吃屎。</p>
+<p>一路强忍的欲望瞬间击溃了我。</p>
+<p>「哇」的一声吐了一地。</p>
+<p>吐到没有任何东西能吐，我还在干呕个不停。</p>
+<p>王美人扶着我，轻轻拍着我的背。</p>
+<p>李贵人赶紧给我打了水漱口。</p>
+<p>我笑嘻嘻地趴在她的背上：「我喝醉了。」</p>
+<p>王美人点点头说：「我知道。」</p>
+<p>「我喝醉了，做了个噩梦。」</p>
+<p>她紧紧抱着我说：「嗯，你还没醒，这都是梦。」</p>
+<p>「……你也是梦吗？」</p>
+<p>「是的，我也是。我们都在梦里。」</p>
+<p>许久，我说：「这次没吐在姐妹们头上哦。」</p>
+<p>「是的，你好棒哦。」</p>
+<p>她声音颤抖地夸我。</p>
+<p>什么嘛，阴阳怪气的，肯定是嫉妒我惊人的进步速度。</p>
+<p>39</p>
+<p>那天晚上久违地做了一个梦。</p>
+<p>梦到了很多以前讨厌的事。</p>
+<p>没放筷子的外卖、一写就断的铅笔、三百秒的广告。</p>
+<p>快到期限的论文、吵个不停的父母……</p>
+<p>……还有离家出走的我。</p>
+<p>现在想起来依然会觉得很讨厌。</p>
+<p>我到这个世界上到底是来干什么的呢？</p>
+<p>「醒醒……」</p>
+<p>我迷蒙地睁开眼，看到王美人皱成一团的小脸，和她湿透的衣领。</p>
+<p>「抱抱我……」</p>
+<p>我轻声呢喃，然后隐约听见她说等出去之后要跟我一直在一起。</p>
+<p>「我们一起租一个小房子，会有很多红薯、苹果、炸鸡……」</p>
+<p>……在温柔的草木气息间我又睡了过去。</p>
+<p>40</p>
+<p>宫宴当日。</p>
+<p>我把提前搓好的绳子缠在腿上，藏在衣服里面。</p>
+<p>做好了能做的所有准备，我们三个人第一次一同踏出了冷宫的大门。</p>
+<p>外面的空气很冷。</p>
+<p>我的身上却不停地冒着汗。</p>
+<p>皇帝红光满面地坐在首座，底下觥筹交错、鼓瑟齐鸣，热闹得紧。</p>
+<p>我们的节目平平，不出彩，也没出什么错。</p>
+<p>皇帝还算满意。</p>
+<p>唯一的意外，就是他突然要我上前陪他喝酒。</p>
+<p>我愣在原地。</p>
+<p>如果我坐到他身旁去，那今晚就再也脱不了身了。</p>
+<p>皇帝挑挑眉说：</p>
+<p>「爱妃不愿意？」</p>
+<p>我抖个不停，说不出话来。</p>
+<p>关键时刻，李贵人挡在我前面说：</p>
+<p>「皇上，她昨夜不小心吹了凉风，身体不适，怕传给皇上就不好了。况且妹妹酒量小，不如让臣妾陪您更能尽兴。」</p>
+<p>皇帝盯着我，我低着头，无法呼吸。</p>
+<p>半晌，才听到他悠悠地说：</p>
+<p>「也罢，那就李贵人来吧。」</p>
+<p>41</p>
+<p>我们跑出去之后，李贵人会受到怎样的处罚？</p>
+<p>……我不敢去想。</p>
+<p>脑子里混乱一片，我只能按照原计划那样，趁皇帝喝酒的间隙溜出宴会。</p>
+<p>「那边！」</p>
+<p>我拉着王美人的手，避开巡逻的侍卫。</p>
+<p>一路狂奔。</p>
+<p>喘气声交错，脚步不停。</p>
+<p>尽管我们足够小心。</p>
+<p>快到边缘的时候，还是被一个落单的侍卫发现了。</p>
+<p>「什么人！」</p>
+<p>他拔刀紧紧地跟在我们后面。</p>
+<p>就快到了。</p>
+<p>远远地已经看到宫墙的影子了。</p>
+<p>我拉着王美人拼命地往前跑。</p>
+<p>跑到墙边，按照计划那样。</p>
+<p>踩在她身上借力，咬牙翻上了围墙。</p>
+<p>我转过身。</p>
+<p>侍卫的影子已经出现在那头。</p>
+<p>「快点！」</p>
+<p>「快抓住绳子！」</p>
+<p>今日久违的有月亮。</p>
+<p>她站在墙底下抬头看着我，盈盈月光照在她娇小可爱的脸上。</p>
+<p>她在说什么……</p>
+<p>「……来不及了。」</p>
+<p>「砰！」</p>
+<p>是宫里跨年的烟花。</p>
+<p>盛大的烟火在空中炸开，五颜六色的光芒如梦似幻地照亮了阴暗的皇宫。</p>
+<p>王美人眼睛亮亮的，嘴角的梨涡盛着流光。</p>
+<p>落下的花火像喷涌而出的岩浆，灼伤了我的眼睛。</p>
+<p>「张晴！」</p>
+<p>围墙的阴影里，王美人把手放在脸边，用力地喊我。</p>
+<p>「张晴！你一定要跑出去！」</p>
+<p>她抓住绳子，用力扔到墙的另一头。</p>
+<p>然后头也不回地转身向那个侍卫跑去。</p>
+<p>光芒熄灭的时候。</p>
+<p>侍卫举起了佩刀。</p>
+<p>42</p>
+<p>发生了什么？</p>
+<p>我无法思考。</p>
+<p>只能凭借着身体的本能，翻下墙拼命往前跑。</p>
+<p>跑。</p>
+<p>要一直跑。</p>
+<p>跑出去，跑到有人的地方去。</p>
+<p>我紧紧地握着拳，指甲深深地刻进肉里。</p>
+<p>肺部剧烈地刺痛，浓重的血腥味淹没了大脑。</p>
+<p>我不行了……</p>
+<p>她的声音在我耳边再次响起。</p>
+<p>「张晴，你一定要跑出去。」</p>
+<p>恍惚间，我看见她的脸上分明满是泪水，嘴角却笑吟吟的。</p>
+<p>「一直跑到有人的地方，我们就能回去啦。</p>
+<p>「要是我们谁被抓住了，另一个人绝对不要犹豫。</p>
+<p>「张晴，不管怎么样都要活下去。」</p>
+<p>……</p>
+<p>等我。</p>
+<p>拜托，等我。</p>
+<p>43</p>
+<p>新年的那天，</p>
+<p>镇子里按惯例放了烟火。</p>
+<p>热闹的集市上突然冲进来一个疯子。</p>
+<p>衣服破破烂烂，浑身染血。</p>
+<p>她在人群间大喊大叫：</p>
+<p>「救命！救救她们！</p>
+<p>「我穿回来了！她们还在那里……」</p>
+<p>嘴里念叨着什么「皇宫」「妃子」的。</p>
+<p>是个精神失常的神经病。</p>
+<p>围观的人赶紧报了警。</p>
+<p>没想到因此牵扯出一场大案来。</p>
+<p>警方了解情况后，立刻前往案发现场，当场抓获了嫌疑人黄某。</p>
+<p>遗憾的是，其余受害者均已被黄某残忍地杀害……</p>
+<p>44</p>
+<p>根据媒体报道，嫌疑人黄某在镇子周边人迹罕至的地方建了一个秘密基地，将其作为自己的「皇宫」，并于几年间拐卖绑架多名无辜女子，将她们囚禁在「皇宫」中，作为自己的后宫妃子，供自己享乐。</p>
+<p>黄某对被拐卖来的女子进行了惨无人道的侵犯和虐待，并利用她们不断进行违法表演获取金钱。</p>
+<p>由于受害人的顺从，黄某渐渐放松了警惕，于跨年那晚，带了酒菜与受害人共赏烟花，美名约举办「宫宴」。在吃饭时，被害人李某对其不断劝酒。另外两人趁机逃跑，不幸还是被黄某发现。黄某先杀害李某，后追赶另外两人。</p>
+<p>被害人王某用生命阻挡黄某，为张某争取了逃跑的时间。张某得以顺利跑到镇子上求救。</p>
+<p>唯一的幸存者张某精神失常，将自己假想为穿越者，坚持认为自己穿越到了古代，黄某就是皇帝，而其余的受害人同她一样是穿越者，并幻想了侍卫、太监等存在。</p>
+<p>张某认为自己获救是成功穿越回到了现代，而其余的被害人只是留在古代无法回来……</p>
+<p>最终，黄某被判处死刑，后被执行枪决。</p>
+<p>（全文完）</p>
+<p>备案号:YXX1jKKJBwCxxxRKMOC9ldw</p>
+<p>老祖宗驾到</p>
+<p>​</p>
+<p>​</p>
+<p>穿成女配后我只想搞事业</p>
+<p>穿拖鞋的菠萝o 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/12-%E9%80%83or%E6%9D%80/" title="逃 or 杀">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">逃 or 杀</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/7/1-%E9%80%83%E8%BF%87%E8%AF%88%E9%AA%97%E5%8D%B4%E9%80%83%E4%B8%8D%E8%BF%87%E7%88%B1%E6%83%85%E9%99%B7%E9%98%B1%E7%9A%84%E5%A5%B3%E7%94%9F/" title="逃过诈骗，却逃不过爱情陷阱的女生">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">逃过诈骗，却逃不过爱情陷阱的女生</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

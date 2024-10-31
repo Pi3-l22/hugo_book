@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太过谨慎到底是不是好事？ | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/9/4-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/9/4-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="太过谨慎到底是不是好事？">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26641.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26641.jpg">
+  <meta name="twitter:title" content="太过谨慎到底是不是好事？">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="太过谨慎到底是不是好事？">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="7562">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26641.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">太过谨慎到底是不是好事？</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>16分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a4%aa%e8%bf%87%e8%b0%a8%e6%85%8e%e5%88%b0%e5%ba%95%e6%98%af%e4%b8%8d%e6%98%af%e5%a5%bd%e4%ba%8b%ef%bc%9f&amp;url=https://mohai.us.kg/posts/2022/9/4-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/9/4-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a4%aa%e8%bf%87%e8%b0%a8%e6%85%8e%e5%88%b0%e5%ba%95%e6%98%af%e4%b8%8d%e6%98%af%e5%a5%bd%e4%ba%8b%ef%bc%9f%20https://mohai.us.kg/posts/2022/9/4-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26641.jpg" alt="太过谨慎到底是不是好事？" />
+      
+
+      <p>关键时候能救命。</p>
+<p>一位反复心悸、胸闷的病人在好转后，</p>
+<p>自己要求留观，没想到这举动救了自己一命。</p>
+<p>那天我在急诊科夜班，来了一个 32 岁的年轻男性患者，他告诉我，自己刚刚经历了一次濒死感，非常害怕。</p>
+<p>当时他在埋头编程（病人是个程序员），突然觉得一阵心慌，心跳就好像千军万马冲过来一样，抵挡不住。</p>
+<p>同时全身冒冷汗，好像整个人就要不行了一样。</p>
+<p>他非常害怕，赶紧停下来休息，幸运的是，这种情况持续没几分钟就逐渐缓和下来了。</p>
+<p>更要命的是，这种情况已经发生好几次了。</p>
+<p>之前那几次没这次这么严重，所以一直不是太重视，以为是劳累过度引起的。</p>
+<p>但这次的确是吓到他了，老婆连夜开车把他送来急诊。</p>
+<p>其实来的路上已经缓和了，等到我给他听诊心脏的时候，已经听不到任何的异常。</p>
+<p>我又给他扎了指尖血糖，也是正常的，没有低血糖。</p>
+<p>还给他拉了心电图，前后拉了两次，都是正常的，看不到任何心律失常的蛛丝马迹。</p>
+<p>但这也不代表不是心脏的问题，我告诉他，很多心律失常发作是突发突止的，就是一下子发生，然后很快就消失。</p>
+<p>这种情况，心电图没办法捕捉到异常，要想进一步检查，只能做 24 小时动态心电图。</p>
+<p>他很慌张，问我他会不会突然不行啊。</p>
+<p>我明白他的意思，他想问我的是，会不会突然猝死。</p>
+<p>但在老婆面前，他不想把猝死这两个字说出来，怪吓人的。</p>
+<p>不过我还是得实话实说，工作压力大、经常熬夜，又有这样的心脏表现情况，真的有可能发生意想不到的情况，得好好查一查。</p>
+<p>他问我，能不能今晚把所有检查都做了。</p>
+<p>那当然不行，急诊做不了心脏那一系列的检查，动态心电图、心脏彩超等都得白天才能做，晚上我们做不了。</p>
+<p>晚上我只能给他拉心电图，同时给他抽了几管血，都是常规项目的检查。</p>
+<p>他心有余悸，说那种发作的感觉太难受了，整个人就要不行了一样，心跳很快，感觉心脏要从胸口蹦出来一样，人很虚弱，全身冒汗，没力气。</p>
+<p>我知道，最有可能就是发生了阵发性室上性心动过速。</p>
+<p>这是什么意思呢？</p>
+<p>正常人的心跳一般都是 60-100 次/分，当这种心律失常发生时，心跳可能到了 150-250 次/分。</p>
+<p>这么快的心跳肯定是很难受的，有些严重的可能还会有剧烈胸痛、晕厥甚至休克的。</p>
+<p>他愁眉苦脸，问我该怎么办。</p>
+<p>我把心内科医生也喊下来会诊，看看有没有其他的意见。</p>
+<p>心内科医生看完后，也认为阵发性室上性心动过速可能性最高。</p>
+<p>这个病的特点就是突发突止，你在家的时候发生了，但休息几分钟或者来到路上就已经好了，所以医生做心电图没办法发现它。</p>
+<p>那该怎么办呢？</p>
+<p>只能多做几次 24 小时动态心电图，希望下一次发作时恰好戴了心电图机子，那就可以「人赃并获」，得出诊断。</p>
+<p>治疗呢，要么是长期口服药物控制，要么就是做射频消融术，把心脏里面的异常组织烧掉。</p>
+<p>听说要做手术，病人就有些抵触了，说现在工作忙，可能安排不了时间住院手术。</p>
+<p>心内科医生也不着急，说现在诊断还没搞清楚，不一定要做手术，先把相关检查完善了再说。</p>
+<p>由于当时病人情况已经完全好转了，抽血结果出来也没有任何的异常，我就没给他药，直接让他走了。</p>
+<p>走之前，我还教他一个刺激迷走神经的方法：</p>
+<p>当下一次再有类似发作时，可以深吸气后屏住气、再用力做呼气动作，就好像便秘时猛用力的样子，这个叫 Valsalva 的动作，能刺激迷走神经，减慢心率，或许可以终止心律失常发作。</p>
+<p>我还告诉他，得尽快抽空来医院做检查，或者住院，把这件事情搞清楚，否则下一次发作可能更严重，甚至晕厥休克，那就麻烦了。</p>
+<p>我以为这件事就这样完了。</p>
+<p>半个月后，我竟然再次见到了他。</p>
+<p>也是一个夜班的晚上，他很快就认出了我，问我还记不记得他。</p>
+<p>虽然值班会遇到形形色色的病人，但我对他的印象还是蛮深刻的。</p>
+<p>他苦着脸告诉我，刚刚在家又发生上次那样的事情了，这次发作时间有差不多 5 分钟。</p>
+<p>本想迅速赶到医院让医生帮忙做心电图的，没想到路上又缓解了，估计这时候做心电图，也看不到什么异常了。</p>
+<p>「这次发作有用到我教给你的 Valsalva 动作吗？」我问他。</p>
+<p>他说做了，但是好像没效果，是过了几分钟才逐渐缓解的。</p>
+<p>我还是给他拉了心电图，结果正如我们所料，没什么异常。</p>
+<p>他告诉我，上次出了急诊后，第二天就来医院看了医生，做了很多检查，包括 24 小时动态心电图、心脏彩超、胸部 CT 等，结果都是好的。</p>
+<p>后来医生给开了美托洛尔片（一种能减慢心率的药物），起初吃了几天感觉还不错，但后来又发生过一次心悸、出汗，不过那次持续时间很短，也就没来医院。</p>
+<p>没想到今晚这次来得很猛烈，感觉整个人都要晕了，老婆也吓坏了，赶紧开车送来医院。</p>
+<p>我看了他所有的报告单，的确没有发现什么大问题。</p>
+<p>但他的发作，真的很符合阵发性室上性心动过速。</p>
+<p>这种病是因为心脏的电传导系统出了点问题，导致心脏突然跳得很快，然后很快又会恢复。</p>
+<p>反反复复这样折腾，病人通常很害怕，变得焦虑，失眠，严重影响生活工作质量。</p>
+<p>这个病真的就跟小偷一样，偷偷摸摸地发作，拿它没办法。</p>
+<p>我告诉他，如果美托洛尔效果不好，可能要回去复诊，让医生加大剂量或者调整药物。</p>
+<p>并且可能需要进一步做心电生理检查了。</p>
+<p>心电生理检查，就是伸一根电极到食管里面，那里最靠近心脏，然后放电刺激心脏，看看能不能诱发出心律失常。</p>
+<p>如果可以，说明是有问题的，那就做射频消融术，烧掉病变组织就好了。</p>
+<p>他告诉我，心内科医生也让他做这个检查，但他暂时不想住院，也不想手术，所以没答应。</p>
+<p>那没办法，不检查清楚是很难治疗的。</p>
+<p>而且每次一发作就来急诊也帮不到他，唯一能帮到他的就是心理安慰。</p>
+<p>他跟我说，特别害怕会猝死，尽快赶到急诊，就有更大的活命机会。</p>
+<p>还说这个疾病已经困扰他好几个月了，再这样下去，非疯了不可。</p>
+<p>我把各种利益关系跟他说了，不进一步检查是不行的，万一到时候真的猝死了呢？</p>
+<p>该住院就得住院，该手术就得手术，除非不想活命。</p>
+<p>后来他被我说动了，答应过两天就去住院，先把手头上的工作安排好。</p>
+<p>我其实很好奇他这个病，也想了各种可能性，还跟他说，下一次看医生时，可以把胃镜一并做了，急诊做不了普通胃镜，得白天才能做。</p>
+<p>有些人可能是胃食管反流引起的心慌、出汗、濒死感，查个胃镜如果没事那就放心。</p>
+<p>另外，我看他整个人比较焦虑，情绪不大稳定，怕他有甲亢，也让他到时候把甲状腺功能一起查了。</p>
+<p>后来他就回去了，这次我没给他抽血。</p>
+<p>走之前他还问我有没有一种药，能在关键时刻保住命的，类似救心丸那种。</p>
+<p>我哑然失笑，没有，现代医学没有那么玄乎。</p>
+<p>速效救心丸是用来对付冠心病的，而且也不总是有效，病人这个属于心律失常，用那些药物是无效的。</p>
+<p>非说要起效，还是得靠 Valsalva 动作，或者抠喉，抠喉也能刺激迷走神经，减慢心率，缓解症状。</p>
+<p>他说难受还是次要的，最怕的是猝死，为了这事，近段时间休息都不大好。</p>
+<p>我劝他尽快把检查都做了吧，以免心惊胆战的。</p>
+<p>那是我第二次见到这个病人。</p>
+<p>3 个星期后，我再次见到了他。</p>
+<p>好巧不巧，又是一个夜班，我也纳闷了，为什么他老是晚上发病，白天没有发病呢？</p>
+<p>他自己说也搞不清楚，这次是跟老婆晚餐后在公园散步，突然胸口就不舒服了，心跳快得不得了，跟之前的发作一样。</p>
+<p>而且浑身冒汗，那种感觉，真跟就快要驾鹤西去了一样。</p>
+<p>由于他们家跟我们医院距离比较近，所以还是来了我们急诊。</p>
+<p>跟前面两次一模一样，到了急诊就好了，除了上衣湿透（出汗多）以外，他没有其他的异常。</p>
+<p>他告诉我，在这之前已经住过院了，刚出院没几天，期间做了心电生理检查，结果也是正常的。</p>
+<p>心内科医生说，他这个不是心脏的原因。</p>
+<p>后来他听了我的话，也做了胃镜，结果也是正常的，没有我说的胃食管反流等问题。</p>
+<p>所有抽血化验都是正常的，甲状腺功能也是正常的。</p>
+<p>我都不敢相信，怎么可能都正常呢？</p>
+<p>但他给我看的辅助检查结果，真的都是正常的。</p>
+<p>花了这么多钱，做了这么多检查，却没发现问题，这说不过去。</p>
+<p>住院期间还有过一次发作呢，后来医生没办法了，找了心理科医生会诊。</p>
+<p>心理科主任评估后，给出了诊断，惊恐发作！</p>
+<p>惊恐发作？我讶异。</p>
+<p>惊恐发作也称为急性焦虑发作，这是一种心理精神疾病。</p>
+<p>典型表现是：患者正在进行日常活动时，突然出现强烈的恐惧感，伴随有心悸，好像心脏要蹦出来一样；胸前有压迫感，部分人会有呼吸困难，有濒死感，好像马上就要死过去了一样。</p>
+<p>部分人还会有头晕、面部潮红、多汗、手脚麻木等症状。</p>
+<p>我恍然大悟，怪不得患者的心电生理检查、甲状腺功能、胃镜等检查都没异常，原来是精神心里方面疾病，所有的症状都是精神因素引起的，并不是真的有器质性问题。</p>
+<p>我越看越像，病人真的是太焦虑了，而且每次来急诊都一脸恐惧。</p>
+<p>我只怪自己在精神心理领域涉及不多，没能及早想到这方面的可能，真给我涨了经验。</p>
+<p>但我还有疑惑，既然是惊恐发作，那么病人有吃精神相关的药物吗。</p>
+<p>他告诉我说，自从上次出院后，就一直有吃氟西汀。</p>
+<p>氟西汀是一种抗精神方面药物，能治疗抑郁症，当然对这个惊恐发作也是有帮助的。</p>
+<p>本来病人还是很抵触吃这个药的，因为吃这个药，就坐实了自己有精神方面的异常。</p>
+<p>他一直不相信自己有精神障碍，但医生反复跟他解释了，各种检查结果也摆在了眼前。</p>
+<p>老婆也开导他、安慰他，说近几年家庭压力大，又生了二胎，经济压力、工作压力倍增，出现焦虑也是可以理解的，关键是要积极治疗。</p>
+<p>问题是，为什么吃了氟西汀后，今晚还会有惊恐发作呢？</p>
+<p>这是他问我的问题，我当时也答不上来。</p>
+<p>我本想找精神科医生跟他解释，但夜班精神科没人值班，只能让他第二天再回去复诊，看看需不需要调整治疗药物。</p>
+<p>「可能是药物还没彻底起效，或者是药物剂量不够，或者是你对这个药物不敏感。」</p>
+<p>我大体把一些能想到的原因都跟他说了一下，也算有个交代。</p>
+<p>但我也跟他坦白，精神障碍方面我不擅长，给不了太多说法和建议了。</p>
+<p>他说人还是比较累，想在急诊科多休息一下再回去。</p>
+<p>我明白他的担忧，他不相信自己有精神障碍，还是觉得自己是有病的，害怕会猝死，所以不放心，想多留一会。</p>
+<p>我说目前心脏看不到任何病变，没有心肌炎、心肌病、冠心病、心律失常等，不大可能猝死，可以回家休息的。</p>
+<p>我也明确跟他说，焦虑症不是什么大不了的疾病，躯体疾病是病，精神方面疾病也是病，都是病，都得治疗。</p>
+<p>同时安慰他，不必要有任何的心理负担，放松自己，配合药物治疗，说不定很快就能走出低谷。</p>
+<p>但他还是觉得留观一个晚上比较好，毕竟那种惊恐发作的感觉真的难受，在急诊科他安心一些。</p>
+<p>我就给他办理了留观。</p>
+<p>没想到，这次阴差阳错的安排，终于解决了困扰大家几个月的难题。</p>
+<p>我给病人办理了留观以后，就去处理其他病人。</p>
+<p>凌晨 4 点左右，规培医生急急忙忙找到我，说 XXX（就是这个病人）又惊恐发作了，让我过去看看。</p>
+<p>我放下手头工作，赶紧跟了过去。</p>
+<p>第一眼看到他的时候，我终于明白，他为什么这么害怕这个惊恐发作了。</p>
+<p>因为他真的很难受。</p>
+<p>当时他躺在病床上，双手捂住胸口，表情难受，满头大汗，全身软绵绵的样子。</p>
+<p>见到我后，他指着胸口说心跳很快。</p>
+<p>他老婆也是非常担心。</p>
+<p>我赶紧让规培医生推心电图机过来，立即给他拉个心电图。</p>
+<p>我有些兴奋，这回总算抓到了一个现场发作了，看看心电图有没有特殊的发现。</p>
+<p>心里也想着，这次留观总算是对了，他来了三次急诊，这是第一次被我们现场逮住了发作。</p>
+<p>我看他满头大汗，有气无力的样子，也怕他低血糖，赶紧让护士过来测量了一个血糖。</p>
+<p>先是心电图结果出来了，就是一个窦性心动过速，心率差不多 140 次/分，跟我们之前想的不大一样。</p>
+<p>我以为他会是室上性心动过速，结果不是。</p>
+<p>我有点失望，但这也跟患者之前做的检查结果相一致，我只能认了。</p>
+<p>可随之而来的血糖结果，让我后背狂冒冷汗。</p>
+<p>病人血糖只有 1.9mmol/L。护士瞪大了眼睛拿给我看。</p>
+<p>会不会搞错了？</p>
+<p>我不大相信，让她重新测量了一个。</p>
+<p>结果出来差不多，1.8mmol/L。</p>
+<p>这回我是真的要骂娘了，患者竟然真的是低血糖啊。</p>
+<p>赶紧给他喝葡萄糖，同时静脉推 40ml 高浓度葡萄糖，必须尽快把血糖提上来，否则就棘手了。</p>
+<p>正常人空腹血糖是 3.9-6.1mmol/L，现在是凌晨 4 点多，患者也差不多是空腹状态了，不应该有这么低的血糖的。</p>
+<p>如果有这么低的血糖，一定是出了问题。</p>
+<p>我首先怀疑是不是护士搞错了，给病人用了胰岛素，因为我当时给另外一个糖尿病的病人用了胰岛素。</p>
+<p>但是我们反复核对，药物没用错，病人的低血糖跟我们无关。</p>
+<p>护士手脚麻利，葡萄糖马上到位。</p>
+<p>我问病人，「以前有过低血糖吗。」</p>
+<p>他一脸困惑，「从来没有过低血糖啊。」</p>
+<p>的确，他每次来急诊我都给他测量过血糖，包括这次一来我也给他常规测了血糖，但都是正常的。</p>
+<p>我还翻看了他上次住院的报告，几次血糖都是正常的。</p>
+<p>我告诉他，这么低的血糖，完全可能引起心慌、手抖、胸闷、出汗的啊。</p>
+<p>又问他，这次的惊恐发作跟之前的是不是一样。</p>
+<p>他点头，告诉我说几乎是差不多的，都是有濒死感、全身冒汗、心跳很快。</p>
+<p>葡萄糖推上去以后，他很快就恢复了正常，心率也开始慢了，人也开始舒服了。</p>
+<p>我现在终于明白，为什么病人吃氟西汀都还是有惊恐发作了。</p>
+<p>因为他很可能不是什么惊恐发作，不是焦虑症，也不是心脏疾病、甲亢、胃食管反流等。</p>
+<p>所有症状的真正病因，可能是低血糖。</p>
+<p>低血糖？？病人不敢相信。</p>
+<p>因为他从来没有过低血糖，也没有糖尿病。</p>
+<p>「你有过低血糖的，只不过不知道而已。」我告诉他。</p>
+<p>病人每次发作都是在家里，那时候应该是有低血糖的，但他在家没有测量血糖，都是到医院了，我才给他测量血糖。</p>
+<p>不过那时候他已经恢复了，血糖估计也已经升上来了，所以我们一直没有察觉到低血糖曾经发生过。</p>
+<p>住院期间也查了几次血糖，但都是在没有惊恐发作的时候抽的血，所以也没有察觉到低血糖。</p>
+<p>而今晚这次血糖，恰好是在他发作的时候测量的，就那么巧，低血糖被我们捕捉到了。</p>
+<p>1.9mmol/L 的空腹血糖已经是很低了，低于 3.9mmol/L 就算是低血糖了，这个病人是比较严重的，所以会有一系列难受的症状。</p>
+<p>及时补充葡萄糖能迅速缓解症状，也证实了这一点。</p>
+<p>他也恍然大悟。</p>
+<p>这真的是太巧合了，如果不是他害怕猝死要执意留观，我是不会把他留下来的。</p>
+<p>因为我一直以为他是心律失常发作，后面又以为是焦虑症，都不需要留观。</p>
+<p>又恰好在留观期间，他再次惊恐发作，我们才捕捉到了发作当时的心电图和血糖。</p>
+<p>心电图没有发现很多，但是血糖却让我们倍感意外。</p>
+<p>那为什么会有低血糖发生呢？他又疑惑了。</p>
+<p>好端端的怎么会低血糖呢，平时吃的也不少，也不感觉到饥饿啊。</p>
+<p>我也纳闷。</p>
+<p>患者反复发生低血糖，本身又没有糖尿病，没有长期吃降糖药，那我唯一能想得到的疾病，就是他体内的胰岛素多了。</p>
+<p>人体能升高血糖的激素很多，但能降低血糖的激素只有一个，那就是胰岛素。</p>
+<p>胰岛素，是由胰腺里面的胰岛组织分泌的一种激素，能把血液里面的葡萄糖送入组织细胞，让组织细胞利用起来，所以胰岛素能降低血糖。</p>
+<p>如果患者的胰岛组织增生了，或者长了肿瘤，导致胰岛素分泌增多，那是完全可能导致低血糖的。</p>
+<p>而胰岛素可能是间歇性分泌增多的，所以导致患者间歇性发生低血糖，所以才会有后面一系列发作，让我们误以为是心律失常或者惊恐发作。</p>
+<p>如果患者的胰腺组织真的有问题，那么做腹部彩超应该多少能有所提示。</p>
+<p>可患者前后做过两次腹部彩超，都没有发现胰腺方面的异常。</p>
+<p>我只能跟他解释说，可能是这个胰岛增生或者肿瘤不算太明显，彩超看不清楚，可以做一个 CT，或者直接做胰腺血管造影，或许能有所发现。</p>
+<p>但今晚是不可能做的了，只能转给内分泌科，让内分泌科医生继续跟进，看看是不是这方面疾病。</p>
+<p>「这个病会是绝症吗？」病人问我。</p>
+<p>那倒不会，如果真的是胰岛细胞瘤，通过手术切除肿瘤是可以治愈的。</p>
+<p>「这是个良性肿瘤，不算绝症。」我跟他说。</p>
+<p>「那就好，起码比焦虑症强。」他松了一口气说。</p>
+<p>第二天一大早，我就联系内分泌科，把他转了过去。</p>
+<p>内分泌科看了他的情况后，也怀疑是胰岛细胞的问题，于是安排了一系列检查。</p>
+<p>几天后我接到他们电话，说患者查了胰岛素水平，又做了腹部 CT 和造影，明确是胰岛细胞瘤。</p>
+<p>那一瞬间，我异常激动。</p>
+<p>我为病人开心，也为自己感到庆幸。</p>
+<p>这个先后三次在我班上出现的病人，前后折腾了这么久，做了这么多检查，最后被认为是焦虑症、惊恐发作。</p>
+<p>如果不是他自己执意要留观，估计我们一直都没办法发现他的真实病因，又不知道要拖到什么时候了。</p>
+<p>更可怕的是，他可能会一直吃氟西汀，这虽然是个好药，但对他又会有什么帮助呢？没帮助。</p>
+<p>因为他的病因是胰岛细胞瘤，是因为身体里面胰岛素分泌增多了，才引起的低血糖，治疗的办法就是切掉这个肿瘤，连根拔起，自然可以解决问题。</p>
+<p>后来他转到肝胆胰腺外科，顺利做了手术。</p>
+<p>我职业生涯中见过几个胰岛细胞瘤的患者，这个病历算是非常曲折的了，好在结局还是好的。后来随访，半年内再无惊恐发作。</p>
+<p>当然不会再有，因为贼窝被端了。</p>
+<p>科普小课堂：反复心悸、胸闷、出汗，会是什么病？</p>
+<p>反复心悸、胸闷、出汗会是什么病？</p>
+<p>就好像文中所说的一样，最常见的是心脏的疾病，阵发性室上性心动过速最常见，通常最 24 小时心电图、心电生理检查等能明确诊断，治疗可以采用药物也可以射频消融术。</p>
+<p>此外，甲亢、胃食管反流也会有类似表现。当患者心脏检查不能发现问题时，记得做甲状腺功能检查，同时完善胃镜检查，胃食管反流通常会有烧心、胸痛症状，但不总是有，少部分人就是会有心悸、胸闷、出汗的表现，需要鉴别。</p>
+<p>而惊恐发作是一种焦虑症，也会有上述表现，但属于精神障碍疾病，诊断惊恐发作之前，要排除躯体疾病，只不过躯体疾病这么多，有时候难以完全排除。这就需要医生综合评估了。</p>
+<p>低血糖当然也会有心悸、胸闷、出汗的表现。只不过由于文中的病人每次来到急诊时都已经结束了发作，所以测量血糖并不低。如果不是最后一次正好是发作期测的血糖，估计很长时间也没能发现真正病因。</p>
+<p>惊恐发作是什么病？</p>
+<p>惊恐发作也叫惊恐障碍，是一种急性焦虑发作，以反复出现的惊恐发作为特征，表现为显著的呼吸困难、心悸、震颤伴有濒死感等症状。</p>
+<p>惊恐发作的病因也是不确切的，可能跟遗传因素有关，也跟大脑本身病变有关。</p>
+<p>研究发现，很多神经递质参与了惊恐发作的过程，比如 5-羟色胺、去甲肾上腺素等。</p>
+<p>还有研究认为惊恐发作跟心理因素有关，说惊恐发作患者在之前可能真的经历过真实的恐惧，或者有重要的人际关系丧失。</p>
+<p>正因为如此，治疗惊恐障碍首先要考虑心理治疗，通过想象和行为训练，实现对恐惧感的分层暴露等，其次要给予药物治疗。</p>
+<p>胰岛素瘤是什么病？</p>
+<p>顾名思义，发生在胰岛细胞的肿瘤就是胰岛素瘤，也叫胰岛细胞瘤，胰岛是胰腺里面的一些不规则的细胞群，这些细胞有内分泌功能。</p>
+<p>胰岛素瘤患者临床上有典型的低血糖症状，起病缓慢，反复发作，进行性加重。</p>
+<p>一般在空腹早餐前发作低血糖，也可在中餐晚餐前发作，极个别是餐后发生。</p>
+<p>运动、饥饿、发热、饮酒、经期等可以诱发低血糖，病情大多数由轻渐重，由偶尔发作到频繁发作。发作时间长短不一，最短的可能只有几分钟，最常的可能有几个小时甚至数天。</p>
+<p>文中病人就是几分钟的发作。</p>
+<p>胰岛素瘤通常比较小，彩超未必能够发现，数据显示彩超阳性率只有 30%。</p>
+<p>为了能够发现胰岛素瘤，CT 是必须做的，CT 是常规术前定位方法，阳性率有 70%。</p>
+<p>治疗则靠手术切除，手术切除是最根本、最有效的方法，只要能及早发现及早手术，一般预后良好。</p>
+<p>但如果很长时间都是误诊的，反复低血糖发生的，尤其是造成低血糖昏迷的，那神经细胞损伤可能比较严重了，预后就比较差。备案号:YX11lvWD0pr</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/25-%E5%A4%AA%E8%BF%87%E8%B0%A8%E6%85%8E%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B/" title="太过谨慎到底是不是好事？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">太过谨慎到底是不是好事？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/2-%E5%A4%AA%E5%90%8E%E5%8D%81%E4%B8%83%E5%B2%81/" title="太后十七岁">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">太后十七岁</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

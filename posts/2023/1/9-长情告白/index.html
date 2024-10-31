@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长情告白 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/9-%E9%95%BF%E6%83%85%E5%91%8A%E7%99%BD/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/9-%E9%95%BF%E6%83%85%E5%91%8A%E7%99%BD/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="长情告白">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26068.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26068.jpg">
+  <meta name="twitter:title" content="长情告白">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="长情告白">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11312">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26068.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">长情告白</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%95%bf%e6%83%85%e5%91%8a%e7%99%bd&amp;url=https://mohai.us.kg/posts/2023/1/9-%E9%95%BF%E6%83%85%E5%91%8A%E7%99%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/9-%E9%95%BF%E6%83%85%E5%91%8A%E7%99%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%95%bf%e6%83%85%e5%91%8a%e7%99%bd%20https://mohai.us.kg/posts/2023/1/9-%E9%95%BF%E6%83%85%E5%91%8A%E7%99%BD/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26068.jpg" alt="长情告白" />
+      
+
+      <p>刷到定位某高档小区富家少爷运球的视频。</p>
+<p>我在评论区玩梗：</p>
+<p>「这运球姿势也太拉了吧，这样吧，富爷转我 50，教你个库里都直呼 6 的大招。」</p>
+<p>随后——</p>
+<p>「支付宝到账五万元。」</p>
+<p>我靠，少爷你是真有元子啊！</p>
+<p>刷到一个定位在某小区的视频。</p>
+<p>视频中的男生穿着一双我这种土狗看不出牌子的球鞋，运球的动作利落帅气。</p>
+<p>流畅的小腿肌肉线条让人直呼：少年好腿。</p>
+<p>本以为大家都和我一样看腿，没想到大家才没我这么肤浅。</p>
+<p>评论区直接炸开了锅：</p>
+<p>「我靠，能住这小区，那是真富爷啊！」</p>
+<p>「天空一声巨响，老奴自带音响。」</p>
+<p>「少爷，你倒是有钱住大房子了，留我一个人在村里放羊。」</p>
+<p>「少爷，我已经收拾好行李了，什么时候带我看看保姆房的环境啊。」</p>
+<p>……</p>
+<p>评论直逼 10W+</p>
+<p>我懵逼地搜了下这个小区。</p>
+<p>差点闪瞎我贫穷的双眼。</p>
+<p>对不起，打扰了，何德何能让少爷逗我开心。</p>
+<p>就连视频中平平无奇的背景花瓶都价值千金。</p>
+<p>少爷的每根腿毛好像都散发着金钱的味道。</p>
+<p>眼红得我后槽牙都要咬碎了。</p>
+<p>靠，世界上多我一个千金大小姐会死吗？</p>
+<p>我在评论区激情开麦：</p>
+<p>AAA 专业抬杠祝姐：「这运球姿势也太拉了吧，这样吧，富爷转我 50，教你个库里都直呼 6 的大招。」</p>
+<p>我的评论快速被淹没。</p>
+<p>结果没过几分钟来了条私信。</p>
+<p>「你在质疑我的运球技术？」</p>
+<p>一众吹捧者当中只有我对少爷的技术表示质疑。</p>
+<p>我说瞎话不打草稿，丝毫不慌张。</p>
+<p>「没见过这么拉的运球，三蛋都比你厉害。」</p>
+<p>「谁是三蛋？」</p>
+<p>「我二大爷他四舅姥家的狗。」</p>
+<p>「……」</p>
+<p>不小心给少爷整无语了。</p>
+<p>「我六岁开始玩球，去年还代表校队拿了省赛冠军，你说我运球不如一条狗？」</p>
+<p>「哦，是吗，我不信。」</p>
+<p>他被气得直接语音跟我交流。</p>
+<p>他嗤笑一声，咬牙切齿道：</p>
+<p>「说说，我哪里运得差？」</p>
+<p>你让我说我就说，我不要面子的吗？</p>
+<p>我开玩笑回复：「这是另外的价钱，欲听菜鸡操作请转我 50，支付宝账号……」</p>
+<p>「菜鸡？」</p>
+<p>这彻底激怒了少爷的自尊心。</p>
+<p>「五十？我的技术分析就值五十？」</p>
+<p>不然嘞，五十都给不起？</p>
+<p>「要不然，三十？」</p>
+<p>对面不说话了。</p>
+<p>「实在不行，二十，啊不，十块也行，少爷好歹让我吃碗麻辣烫呀。」</p>
+<p>随后我的支付宝响起清脆的声音：</p>
+<p>「支付宝到账五万元。」</p>
+<p>不是！多少？</p>
+<p>一定是我耳朵出问题了。</p>
+<p>我拿起手机数了又数。</p>
+<p>个、十、百、哥、爷！</p>
+<p>「一千倍，希望你能说出个一二三，让我直呼 6，否则，我让你再也喊不了 6。」</p>
+<p>他阴恻恻的语气听得我心慌。</p>
+<p>不是，他怎么来真的啊，谁家少爷这么单纯。</p>
+<p>我哪里会什么运球，我那都是瞎说的啊。</p>
+<p>而且少爷的动作就是教科书级别的标准啊，哪里来的问题。</p>
+<p>我颤抖着小手打字：</p>
+<p>「少爷您稍等哈，小的给您做个 PPT，详细分析您存在的问题。」</p>
+<p>我有点小慌张。</p>
+<p>这个时候就该我万能的闺蜜来救场了。</p>
+<p>冤种闺蜜像块砖，哪里需要哪里搬。</p>
+<p>她认识那么多打篮球的体育生，一定能看出点问题的。</p>
+<p>我扔下 iPad，抓起手机刚要发消息，就被闺蜜拉到了王者峡谷。</p>
+<p>「救命！」</p>
+<p>「你先救救我，带我上分，其他等会儿说。」</p>
+<p>这小妮子是油盐不进，非要我先带她上王者。</p>
+<p>行吧，浅玩一局，缓解下紧张的心情吧。</p>
+<p>都怪她技术太菜，我好胜心太强。</p>
+<p>这一玩就是一下午。</p>
+<p>少爷早被我晾一边去了。</p>
+<p>中途休息喝水的时候我俩闲聊。</p>
+<p>闺蜜说，她听小道消息说隔壁院院草网上冲浪被骗了五万块钱。</p>
+<p>顾祁？</p>
+<p>好像打篮球很厉害，把我们院小姑娘迷得神魂颠倒的，我之前还被闺蜜拉去看过他打球。</p>
+<p>但没想到脑子不太好。</p>
+<p>「这年头还有人被网络诈骗？刷单还是裸聊？」</p>
+<p>真是要颜值有颜值，要智商还有颜值。</p>
+<p>「都不是，好像是和别人赌气，主动给骗子转了五万。要我说，这骗子手段也不高，才五万，顾祁住 XX 豪华小区都富得流油，不得狠狠敲一笔。」</p>
+<p>我一口水喷了出去。</p>
+<p>等等，哪里？</p>
+<p>我现在听到这几个字就应激反应。</p>
+<p>我脑子不太好，好像忘记了什么事……</p>
+<p>糟糕，少爷！</p>
+<p>我的 iPad 一直静音，这期间顾祁给我发了几百条消息。</p>
+<p>「你人呢？」</p>
+<p>「你做的 PPT 呢？」</p>
+<p>「你不会卷钱跑了吧！」</p>
+<p>「我要技术分析，人呢？」</p>
+<p>「死骗子。」</p>
+<p>……</p>
+<p>「别让我逮到你，不然，我让你连人带铺盖滚出中国。」</p>
+<p>看完消息，我整个人瑟瑟发抖。</p>
+<p>闺蜜说顾祁气得嫌丢人没报警，准备自己动手找黑客，说是掘地三尺也要把骗子挖出来。</p>
+<p>闺蜜还在兴奋地吃瓜。</p>
+<p>「你怎么不笑呢？」</p>
+<p>「我生来就不爱笑。」</p>
+<p>「你说他找到骗子会怎么做啊，想想就刺激。」</p>
+<p>我：「……」</p>
+<p>「滚出中国，我没开玩笑。」</p>
+<p>欲哭无泪，真的。</p>
+<p>我胆战心惊地发消息。</p>
+<p>「少爷，我来了。」</p>
+<p>随后一段长达六十秒的语音弹了出来。</p>
+<p>还没听就知道骂得有多脏了。</p>
+<p>还是不听了，耳朵会流产的。</p>
+<p>「我说我去上厕所忘带手机，你信吗？」</p>
+<p>顾祁：「……」</p>
+<p>「死亡微笑 JPG」</p>
+<p>「上厕所上七个小时，你在里面摆满汉全席吗？」</p>
+<p>我心一横。</p>
+<p>「你说是就是吧。」</p>
+<p>「……你可真是好样的！」</p>
+<p>我谢字刚打一半，消息弹出：「别让我看到你回谢谢。」</p>
+<p>我默默删除。</p>
+<p>「栓 Q」</p>
+<p>好家伙，又一个六十秒语音。</p>
+<p>他好像知道自己声音很好听。</p>
+<p>哎，跑偏了。</p>
+<p>「那个，这个 6 我就先说为敬哈。少爷，经过我几个小时反复观看您的视频，发现您的球运技术相当牛掰，是我之前眼睛出了问题，无功不受禄，那五万块钱我还是给您退回去吧。」</p>
+<p>「呵呵，晚了，我在你宿舍楼下，限你三分钟站在我面前。」</p>
+<p>他话音陡然一转。</p>
+<p>「否则，你将为你的行为付出惨重的代价，我没开玩笑。」</p>
+<p>宿舍……楼下！</p>
+<p>这么迅速吗？</p>
+<p>吓得我捞起外套就朝楼下跑去。</p>
+<p>这叫什么事啊，我再也不在网上大放厥词了。</p>
+<p>我默默在心里给自己点了根香。</p>
+<p>顾祁黑着脸站在女生宿舍楼旁那棵歪脖子树下面。</p>
+<p>我顶着鸡窝头咬了咬牙视死如归地朝他走去。</p>
+<p>突然，我听到顾祁大叫一声。</p>
+<p>一坨鸟屎不偏不倚地落在了顾祁那一缕呆毛上。</p>
+<p>树上的鸟被顾祁的声音惊得乱飞。</p>
+<p>顾祁手上青筋暴起。</p>
+<p>我从没在一个人脸上看到过这么复杂的神情。</p>
+<p>生气、无措、不可置信、撞死世界……</p>
+<p>平时看到他都是冷着一张脸，好像全世界欠他一百万似的。</p>
+<p>如今万分鲜活，有种高岭之花跌落神坛的感觉。</p>
+<p>我一不小心笑出了声。</p>
+<p>顾祁冷峻的目光箭一般落在我身上。</p>
+<p>我意识到自己笑得太大声，忙噤了声。</p>
+<p>这正是我戴罪立功的好机会，此时不冲更待何时，我连忙上去帮忙。</p>
+<p>我掏出纸，在他刚要接过去的时候我缩回手。</p>
+<p>他一脸疑问。</p>
+<p>我试探着询问：「这能算得上救命之恩吗？」</p>
+<p>顾祁已经到了崩溃的边缘。</p>
+<p>「算！」</p>
+<p>我又喜滋滋跑到旁边商店买了水和湿巾给他。</p>
+<p>顾祁用力擦拭，恨不得把头发薅秃。</p>
+<p>碰巧有人给我打了个招呼。</p>
+<p>顾祁停下手上的动作，声音都高了几度。</p>
+<p>「等等，你叫祝余？那个骗子祝余？」</p>
+<p>我极不情愿地点点头。</p>
+<p>别说这么难听嘛，一口一个骗子。</p>
+<p>矿泉水瓶被他捏变形，看得我脖子一紧。</p>
+<p>顾祁皮笑肉不笑道：「我的钱好骗吗？」</p>
+<p>怎么不好骗呢？</p>
+<p>我当然不敢这么说，我赔笑道歉。</p>
+<p>「顾同学，对不起，看在我帮你清理鸟屎，当你救命恩人的情分上，你就原谅我吧，我当着你的面把钱给你转回去，再多转你五十作为补偿。」</p>
+<p>「闭嘴，你还敢提鸟屎！要不是为了找你算账，我会遭受这无妄之灾吗？」</p>
+<p>我意识到自己又踩到顾祁的雷区了。</p>
+<p>我心虚没敢说话。</p>
+<p>他把水瓶塞我怀里，跟拎小鸡仔似的揪起我的后衣领。</p>
+<p>「五十？五万我都不缺，我现在不要钱，就要你为你的话付出代价。」</p>
+<p>我：「？」</p>
+<p>什么意思？</p>
+<p>他拖着我的后衣领大步向前。</p>
+<p>「顾祁你别冲动啊，杀人犯法，你还有大好的钱途呢，家业还要你继承呢！」</p>
+<p>「你给我闭嘴。」</p>
+<p>「……」</p>
+<p>随后我就一脸懵地被顾祁拎到了篮球场。</p>
+<p>他要我看他现场打球，观摩他的技术，做点评。</p>
+<p>如果我说不出个所以然，就等着和三蛋当着全学校的面表演胯下运球吧。</p>
+<p>三蛋可能会，但我对篮球是一窍不通啊。</p>
+<p>我怎么就那么不开眼，去作死嘲讽一个热爱篮球的少年的技术啊，我真该死。</p>
+<p>顾祁去更衣室换衣服，让我在外面等他。</p>
+<p>「你要是敢跑，我就报警说你诈骗，五万块要是被定罪，缝纫机都能踩冒烟了。」</p>
+<p>我：「……」</p>
+<p>多可怕呐，我站在更衣室门口瑟瑟发抖。</p>
+<p>我在门口来回踱步，一不小心栽到了正要出门人的怀里。</p>
+<p>「没长眼睛啊。」</p>
+<p>对方怒气冲冲。</p>
+<p>我抚着额头连连道歉。</p>
+<p>抬头发现是郑启源，前几天要加我微信的那个男生。</p>
+<p>几天前我在网上发的日常视频小火一把。</p>
+<p>郑启源私信我，说和我是校友，想要加我微信交个朋友。</p>
+<p>我婉拒了。</p>
+<p>毕竟我只是想在互联网上自由自在地发疯，并不想和现实有什么联系。</p>
+<p>没想到这一拒直接打开了潘多拉魔盒。</p>
+<p>郑启源直接连发十条消息：</p>
+<p>「哦，行吧。」</p>
+<p>「其实我也没有很想加。」</p>
+<p>「笑死。」</p>
+<p>「其实我有女朋友。」</p>
+<p>「图片（合照）」</p>
+<p>「我这么帅，你应该看得出来吧。」</p>
+<p>「所以我真觉得你就一般般。」</p>
+<p>「真配不上我。」</p>
+<p>「哈哈哈哈。」</p>
+<p>「你真的很装。」</p>
+<p>我当时满脑袋问号，谁家狗没拴绳就跑出来了。</p>
+<p>我不就说了「不好意思，不加。」这几个字吗？</p>
+<p>不知道的还以为我在人家坟头蹦迪了。</p>
+<p>所以，我断定这人有病，反手就把他拉黑了。</p>
+<p>没想到冤家路窄，现实中遇到了。</p>
+<p>郑启源也认出了我。</p>
+<p>他靠在墙上揣了揣下巴，上下打量我。</p>
+<p>随后满脸神气道：「跟我玩欲擒故纵？后悔拒绝我，都跟踪我到篮球场了，煞费苦心啊。」</p>
+<p>我：「？」</p>
+<p>他在狗叫什么？</p>
+<p>我面无表情反驳他：「不好意思，我不是在等你。」</p>
+<p>郑启源勾起唇角，自信十足。</p>
+<p>「嘴硬什么，都来给我送水了。」</p>
+<p>他直接抽出我怀里的水瓶猛灌一口。</p>
+<p>「真甜。」他发出餍足叹喟的同时看了我一眼。</p>
+<p>那一眼油得我浑身不舒服。</p>
+<p>忍不了了，我想一瓶子抡上去，牙给他打飞。</p>
+<p>「那瓶口粘鸟屎了。」我提醒道。</p>
+<p>郑启源瞪大眼睛连忙擦嘴。</p>
+<p>擦什么擦，鸟屎都没你嘴臭，我翻了个白眼。</p>
+<p>「呵，得不到就毁掉，是吗？」</p>
+<p>他到底在想什么，我拳头硬了。</p>
+<p>这时，他的兄弟出来了。</p>
+<p>他们看到我，一脸鄙夷。</p>
+<p>我不明白为什么他们用那种眼神看我。</p>
+<p>「她又来纠缠你了。」其中一个人盯着我道。</p>
+<p>纠缠？</p>
+<p>这个词怎么听怎么别扭。</p>
+<p>郑启源一脸心虚，拉着说话的人就要走。</p>
+<p>那人甩开他的手义愤填膺冲着我吼道：「像你这人不检点的人怎么好意思来找启源。」</p>
+<p>我不检点？</p>
+<p>他这个兄弟刚毅，郑启源拉都拉不住。</p>
+<p>从郑启源的反应来看，这事和他脱不了干系。</p>
+<p>我抱着胳膊淡定问：「我怎么不检点了，你说我听。」</p>
+<p>那人没想到我「脸皮这么厚」，一五一十说了些和我相关的「不堪往事」。</p>
+<p>他口中的我又是勾引这个又是撩拨那个，大写的不要脸。</p>
+<p>倒是郑启源好男人一个，我虚荣心作祟跪舔他。</p>
+<p>听着我就笑了，这么会造谣啊。</p>
+<p>这样的谣言可以说是毁掉一个女生最恶毒的办法。</p>
+<p>我拧开水瓶把水泼在郑启源的脸上，用空水瓶在他嘴上抽了一巴掌。</p>
+<p>「乱遭黄谣，棺材反光。」</p>
+<p>我被怒气冲昏头脑，却没考虑到自己一个人根本不是这几个壮汉的对手。</p>
+<p>郑启源握紧拳头上前两步，声音无比愤怒。</p>
+<p>「你敢打我？」</p>
+<p>我退后两步，伺机而动准备逃跑。</p>
+<p>刚转身，郑启源揪住了我的头发。</p>
+<p>我的头皮生疼，头皮都有种被揪掉的感觉。</p>
+<p>仅仅几秒钟痛感消失。</p>
+<p>顾祁捏住郑启源的手腕强行让他松开了手。</p>
+<p>「打女人算什么本事啊。」</p>
+<p>顾祁一脸的云淡风轻，而郑启源已经痛得弯下了腰。</p>
+<p>「你说你招惹疯狗干吗？」他转过头看了我一眼。</p>
+<p>「你也说了，这是疯狗，逮住谁咬谁那种。」我揉着后脑勺。</p>
+<p>郑启源的兄弟上前推开了顾祁。</p>
+<p>「姓顾的，你给我少管闲事。」</p>
+<p>郑启源捂着发痛的手腕，声音都有些颤。</p>
+<p>「你们的恩怨我是管不着，但你单方面对一个女生动手，是个人都不会坐视不管。」</p>
+<p>我直接拿出手机报警。</p>
+<p>郑启源一脸心虚要来抢我的手机，被顾祁拦住。</p>
+<p>郑启源的兄弟还被蒙在鼓里要帮他。</p>
+<p>「想好了吗，你们是在帮一个罪犯，都想做帮凶吗？」</p>
+<p>我把我和郑启源的聊天记录给他们看。</p>
+<p>「一直都是郑启源单方面纠缠，我和他根本不熟，所有的一切都是他凭空捏造的。」</p>
+<p>郑启源眼神飘忽，满脸羞愤。</p>
+<p>「你胡说。」</p>
+<p>「我是不是胡说，警察会下定论的。」</p>
+<p>「造谣可以构成诽谤罪，要负法律责任的。」</p>
+<p>郑启源的兄弟们脸都绿了，不可置信地看着他们嘴里的「正人君子」郑启源。</p>
+<p>顾祁一脸鄙夷：「你还真是个……垃圾。」</p>
+<p>没过多久，警察就来了。</p>
+<p>我们一行人都被带去警察局做笔录。</p>
+<p>一开始，郑启源还拒不承认，反说我心思不纯诬陷他。</p>
+<p>巧舌如簧，都能去打辩论赛了。</p>
+<p>直到我拿出录音，他兄弟刻薄的话语回荡在警局，这才狠狠打了他的脸。</p>
+<p>郑启源尽力为自己开脱：「她肯定就是那样的人，要不然，她怎么会拍那种露腿视频发到网上，谁家好女孩这么做。」</p>
+<p>他还活在清朝吗？</p>
+<p>顾祁也忍不住反驳：「你小脑被裹了吧。」</p>
+<p>我穿短裙跳舞拍视频是我的自由，我没有露任何不该露的地方，没有任何暗示性话语。</p>
+<p>「看你脾气这么暴，你应该杀过人吧。」我盯着他信誓旦旦道。</p>
+<p>郑启源气急败坏站起来道：「你胡说什么，你有证据吗？」</p>
+<p>「你也知道说话要讲求证据，那你怎么就凭空捏造说我干了那些事！」</p>
+<p>「这还用证据吗，我就是知道。」</p>
+<p>「不要脸。」顾祁暗骂。</p>
+<p>郑启源眼睛闪过一丝暗芒，指着我俩鼻子开骂：「我看你俩也不清不楚吧，你俩……」</p>
+<p>话没说完，他就被警察呵斥住：「闭嘴，在警局你也敢胡说八道。」</p>
+<p>他一声不敢再吭。</p>
+<p>最后，因为这些谣言只是小范围传播，没有造成太大损失，郑启源被拘留了十五天。</p>
+<p>他的兄弟们向我道了歉。</p>
+<p>郑启源的光辉事迹在学校里也就传了一天就消失得无影无踪。</p>
+<p>听说是他家里找了关系，压了下来。</p>
+<p>为了报答顾祁，我特意让闺蜜打听了顾祁的行踪，准备去篮球场找他，请他吃顿大餐。</p>
+<p>要不是他，以郑启源的疯劲儿，我可能现在全身裹绷带躺医院了。</p>
+<p>想想就让人脊背发凉。</p>
+<p>在篮球场找了半天，我才找到那抹飞驰的身影。</p>
+<p>我站在场外看他投进了一个三分球。</p>
+<p>忙给他鼓掌。</p>
+<p>我就像个没感情的鼓掌机器，看不懂没关系，闭眼夸就行了。</p>
+<p>「顾祁，666！」</p>
+<p>看他过人，鼓掌。</p>
+<p>看他运球，鼓掌。</p>
+<p>其实我心思一点都不在球上。</p>
+<p>满球场的长腿、好腰，这谁顶得住啊。</p>
+<p>人在曹营心在汉。</p>
+<p>我的心早就飘到旁边球场帅哥的身上了。</p>
+<p>顾祁没进球，但我凭着肌肉记忆，仍然热烈鼓掌。</p>
+<p>「好！」</p>
+<p>顾祁一个趔趄，生气地看向我。</p>
+<p>「好……一个出其不意。」我连忙刹车。</p>
+<p>「祝余眼睛都看直了，你到底给谁鼓掌呢？」</p>
+<p>「当然是给你啦。」</p>
+<p>再见了，隔壁场的帅哥。</p>
+<p>中场休息，旁边同社团一起吃过饭的学妹突然递给我一封信。</p>
+<p>「不好意思学姐，能麻烦你把这给顾祁吗，我肚子疼，拜托。」</p>
+<p>一溜烟人就没影了。</p>
+<p>我：「……」</p>
+<p>不是，学妹，你这也太草率了吧，情书让我给你递。</p>
+<p>死道友不死贫道，让我社死！</p>
+<p>毕竟那学妹帮过我一次，我又不好直接把信扔掉。</p>
+<p>我把信揣兜里，趁顾祁在休息区喝水，我蹑手蹑脚走过去。</p>
+<p>把信塞他怀里。</p>
+<p>「代为转交，认真看啊。」</p>
+<p>话音刚落，顾祁叫了一声：「祝余，你给我的什么？」</p>
+<p>信呀，还能是什么。</p>
+<p>这时旁边走过一个人戏谑道：「顾哥还用这东西啊，痔疮破了？」</p>
+<p>什么？</p>
+<p>顾祁得痔疮了，还敢剧烈运动，勇士。</p>
+<p>他瞪了说话人一眼：「滚。」</p>
+<p>顾祁把手里的东西捏成一团，怒气冲冲地盯着我。</p>
+<p>我这才发现自己掏错兜了，太紧张把卫生棉当成信送出去了。</p>
+<p>「错了错了。」</p>
+<p>我手忙脚乱抽回他手里的东西，把真正的信递了过去。</p>
+<p>「你写的？我不收信。」</p>
+<p>我怎么可能给别人写信，作业我都不写，还写信。</p>
+<p>没等我反驳，旁边的人就展开了信。</p>
+<p>「播音腔念信我在行。」</p>
+<p>顾祁皱紧眉头，要抢信被那人躲开。</p>
+<p>「你别犯贱。」</p>
+<p>那人自顾自开始念：</p>
+<p>「尊敬的顾同学你好，我真是个人剑合一的大混蛋，我是大渣男？」</p>
+<p>突然那人捏紧信不说话了。</p>
+<p>我、顾祁：「？」</p>
+<p>怎么还这么诚恳地骂自己啊。</p>
+<p>顾祁把信夺过来。</p>
+<p>看着信笑出了声。</p>
+<p>秉持着吃瓜态度，我凑过去瞧了一眼。</p>
+<p>乐死我，小学妹啊，你可真行。</p>
+<p>「尊敬的顾同学你好，我是个混蛋（省略谩骂二百字）。不好意思顾同学，久仰大名（省略夸赞一百字），看在我这么夸你的情分上，拜托你一件事，请你打球的时候对 4 号千万千万不要手下留情，狠狠撞他，碰他，撞烂他，无须担心，我会支付医药费。」</p>
+<p>好家伙，这是雇打手来了。</p>
+<p>4 号怎么伤我小学妹的心了啊。</p>
+<p>「最后，我知道以 4 号的犯贱程度，一定会看，还会朗读，所以开头冒犯了，再补一句，4 号垃圾。」</p>
+<p>小学妹是 4 号肚子里的蛔虫吧，把他每一步都拿捏精准。</p>
+<p>一旁的 4 号，这会儿不看热闹了，满脸难堪。</p>
+<p>当然笑容不会消失，只会转移。</p>
+<p>转移到了我俩身上。</p>
+<p>顾祁调笑：「这是哪里欠下的风流债啊，都拜托到我这里了，下次我可不会手下留情了。」</p>
+<p>「靠，这小辣椒。」</p>
+<p>4 号风风火火朝着墙狠狠一撞，胳膊擦伤一片。</p>
+<p>把我和顾祁都看呆了。</p>
+<p>他乐呵呵的，我都怀疑他撞到头了。</p>
+<p>「我去要医药费了。」</p>
+<p>紧接着他抽出顾祁手里的信。</p>
+<p>「我女朋友给我写的，你个单身狗看什么看。」</p>
+<p>顾祁：「……」</p>
+<p>他边走边抽气嘟囔：「再买盒车厘子带着吧，还有烤鸭……」</p>
+<p>我和顾祁对视一眼，那是只有单身狗才能看得懂的震惊，单身狗懂不了的情趣。</p>
+<p>我请顾祁吃饭，答谢他的帮助。</p>
+<p>「算你有良心。」</p>
+<p>「那之前我骗你的事……」</p>
+<p>他瞟了我一眼，眼里隐隐透出怨气。</p>
+<p>「下个月我有比赛，要训练，你就每天给我带饭送水，作为补偿。」</p>
+<p>「五万块绰绰有余，剩下就归你了。」</p>
+<p>这怎么好意思啊。</p>
+<p>「保证完成任务。」</p>
+<p>正愁找不到兼职呢，这不是到嘴的肥羊。</p>
+<p>我还想着带顾祁去哪个高档餐厅呢，顾祁大手一挥。</p>
+<p>门口巷子那家烧烤摊。</p>
+<p>「这你吃得惯吗？」</p>
+<p>我发出质疑。</p>
+<p>毕竟在我想象中，他这个消费层级的人怎么会吃这种路边摊。</p>
+<p>他白了我一眼。</p>
+<p>「别让我再听到你问这么蠢的问题，我只是看起来生活质量高一点，并不是不食人间烟火。」</p>
+<p>「哦。」</p>
+<p>我去点东西，回来就看到几个女生围着顾祁要联系方式。</p>
+<p>顾祁坐得直直的，看着极不情愿。</p>
+<p>我在一旁看热闹。</p>
+<p>一瞬间，我和顾祁视线交汇。</p>
+<p>他给我眼神示意让我帮他。</p>
+<p>「好处。」我无声道。</p>
+<p>「半个月。」</p>
+<p>跑半个月腿。</p>
+<p>那行吧。</p>
+<p>我「扑腾」蹲在顾祁旁边。</p>
+<p>顾祁：「？」</p>
+<p>「哥，爸妈的医药费都被你败光了，你就别再赌了，嫂子也被你打跑了，这可怎么办啊？」</p>
+<p>顾祁都惊了，一时间说不出话。</p>
+<p>我二十年电视剧可不是白看的。</p>
+<p>我拉着旁边震惊的女生发问：「你是喜欢我哥吗？太好了，我又有新嫂子了。」</p>
+<p>「哥，你说句话呀？」</p>
+<p>「对。」顾祁极不情愿配合。</p>
+<p>女生赶紧甩开我的手：「我……我不喜欢他。」</p>
+<p>「我哥多好看啊，求求你了，你就当我嫂子，帮我家还债吧。」</p>
+<p>小姐姐怕了，拉着小姐妹飞奔着离开，生怕被我缠上。</p>
+<p>顾祁黑着脸，语气低沉：「我是败家子？」</p>
+<p>「别管过程，目的达到就行了。」</p>
+<p>顾祁捏了捏眉骨，闭眼有些无奈。</p>
+<p>「那你看看周围。」</p>
+<p>周围人的目光皆是打量，像在看什么稀有物种。</p>
+<p>我盯着隔壁桌窃窃私语咧嘴笑的大哥。</p>
+<p>「大哥，你这么关注我们，要接济我们吗，支持微信转账哦，一万两万不嫌多。」</p>
+<p>我露出笑容，吓得大哥连连摆手。</p>
+<p>「妹子，我没手机。」</p>
+<p>这下周围人都不看了，生怕这死亡问题落在自己身上。</p>
+<p>连打广告的人都绕开了我们这桌。</p>
+<p>顾祁默默竖了个大拇指。</p>
+<p>出门在外，经历都是自己造的。</p>
+<p>吃烧烤就是要配小啤酒。</p>
+<p>我哐哐两杯下肚，顾祁不甘示弱，非要比一比。</p>
+<p>结果一瓶就倒。</p>
+<p>还说自己没醉，这小趴菜浑身上下都软了，只有嘴还是硬的。</p>
+<p>我跟驮了半扇猪肉似的，搀扶着他回学校。</p>
+<p>差点把我累瘫。</p>
+<p>要不是看在那五万块钱的情分上，我一定把他扔大街上。</p>
+<p>他喝醉了，脸看起来没平时那么冷，乖乖的。</p>
+<p>好吧，我收回刚刚那句话。</p>
+<p>因为到了校门口，他开始发酒疯了。</p>
+<p>「妹妹，爸妈的医药费可怎么办啊，钱都被你拿去给男朋友还债了，天杀的渣男啊。」</p>
+<p>顾祁一把鼻涕一把泪，比真金还真。</p>
+<p>我：「？」</p>
+<p>好家伙，戏精上身了。</p>
+<p>这剧情怎么还逆转了呢？</p>
+<p>他红着脸醉醺醺拉住保安大叔的手，语重心长：「叔，怎么办呀，怎么治治我妹妹的恋爱脑啊。」</p>
+<p>我：「……」</p>
+<p>这锅我不背！</p>
+<p>「孩子，快回去洗洗睡吧。」保安大叔吓得抽回手。</p>
+<p>「你是我的亲哥，我送你回宿舍睡觉，好不好，你别丢人了。」</p>
+<p>我扯住顾祁胳膊，他纹丝不动。</p>
+<p>再不走，别人会当我俩是神经病的，一会儿保安大叔拿叉子给我俩叉出去。</p>
+<p>「妹妹，你受苦了。」</p>
+<p>他拍拍我的手，语气都是怜惜。</p>
+<p>我隐隐有种不好的预感。</p>
+<p>随后他把保安大叔的手当麦克风开始唱歌。</p>
+<p>又唱又跳。</p>
+<p>「你算什么男人，算什么男人……」</p>
+<p>开始 diss 那个不存在的渣男。</p>
+<p>「妹妹，来一起唱。」他掰着我的脸。</p>
+<p>我唱你个大头鬼。</p>
+<p>人是彻底丢光了。</p>
+<p>第二天，顾祁发酒疯唱歌的视频被挂在了学校表白墙上。</p>
+<p>「这是被男人伤了？」</p>
+<p>「咱学校还有这歌神？」</p>
+<p>「楼上的，听说好像是妹妹被渣男骗了，替妹妹抱不平。」</p>
+<p>「真是好哥哥啊。」</p>
+<p>「不是，这好像是我同学，他没妹妹啊，不确定再看看。」</p>
+<p>「……」</p>
+<p>这高清的黑历史我都不愿意再回想第二遍。</p>
+<p>还好，我当时戴了口罩，才不至于那么社死。</p>
+<p>至于顾祁……</p>
+<p>红是他的命。</p>
+<p>我给顾祁去送饭，刚踏进篮球场。</p>
+<p>就听到雄浑的歌声：</p>
+<p>「你算什么男人，算什么男人……」</p>
+<p>一堆损友围在顾祁身边唱歌。</p>
+<p>魔音灌耳。</p>
+<p>听着我就已经脚趾抠地了。</p>
+<p>顾祁捂着耳朵，脸一阵青一阵白。</p>
+<p>我蹑手蹑脚刚想把饭放下就跑不去触霉头，还是被他逮住了。</p>
+<p>我是无辜的啊。</p>
+<p>他抓住我的手腕，拉着我坐到了他旁边。</p>
+<p>4 号起哄：「你的恋爱脑妹妹来了。」</p>
+<p>我、顾祁：「滚！」</p>
+<p>该说不说，这嘴真贱。</p>
+<p>顾祁活像个怨妇，垮着张脸。</p>
+<p>我安慰他：「其实你应该谢谢我。」</p>
+<p>顾祁：「？」</p>
+<p>「要不是我拦着，今天就不是你的单曲发布会了，是演唱会。毕竟你还要唱伤不起、爱情买卖……」</p>
+<p>「好了，别说了，算我求你。」</p>
+<p>他后槽牙都要咬碎了。</p>
+<p>我拍拍他的肩，给他鼓励。</p>
+<p>「其实你唱歌挺好听的，演技也不错，要不然，你考虑考虑出道吧。」</p>
+<p>他撕咬着鸡腿，笑了笑。</p>
+<p>「好啊，我出道，你出殡，我们都有光明的未来。」</p>
+<p>大可不必哈。</p>
+<p>我给顾祁跑了半个月的腿。</p>
+<p>他一有时间就在篮球场训练，每天都大汗淋漓。</p>
+<p>我很佩服他的毅力。</p>
+<p>看得出他真的很热爱篮球。</p>
+<p>他说，小时候父母工作忙，没人陪他玩。</p>
+<p>他就一个人抱着表哥送的篮球玩。</p>
+<p>从最开始笨拙到控不了球，到之后的游刃有余。</p>
+<p>是篮球陪着他长大。</p>
+<p>在这个过程中，他会忘记孤独、丢掉烦恼。</p>
+<p>篮球于他而言，像是朋友，也是精神寄托。</p>
+<p>所以，他对于每一场比赛都会付出百分之百的努力，不留遗憾。</p>
+<p>一转眼就到了篮球比赛当天。</p>
+<p>顾祁特意给我找了第一排的位置，让我近距离观赏他的技术。</p>
+<p>坚持要露一手给我看。</p>
+<p>足以见得我那句话给他留下了多大的阴影。</p>
+<p>「加油，我看好你。」</p>
+<p>赛前我给他打气。</p>
+<p>「等着看我拿冠军吧。」</p>
+<p>他和我碰了下拳头，胸有成竹走到赛场。</p>
+<p>赛前热身我才知道和顾祁他们队对阵的是郑启源他们队。</p>
+<p>隔着人海我都能感觉到郑启源阴毒的目光落在我身上。</p>
+<p>听说他从警局出来后被爸狠狠教育了一顿。</p>
+<p>对我应该说是怀恨在心了。</p>
+<p>郑启源在路过顾祁的时候狠狠撞了他一下。</p>
+<p>不知在顾祁耳边说了什么，顾祁握紧了拳头差点冲上去。</p>
+<p>还是被队友拦了下来。</p>
+<p>我的心莫名地慌张，好像有什么事要发生。</p>
+<p>比赛开始。</p>
+<p>对方攻势很猛，防守也很有水平。</p>
+<p>但架不住顾祁身手敏捷，率先进了一球。</p>
+<p>稳稳的三分球。</p>
+<p>全场欢呼，旁边的一众迷妹差点把我耳朵吵聋。</p>
+<p>他确实有这个资本，赛场上的他好像自带光芒。</p>
+<p>流畅的肌肉线条，利落的过人投球，冷峻帅气的面庞，每一项都让比赛更具观赏性。</p>
+<p>顾祁朝我比了个手势。</p>
+<p>好了好了，知道你厉害，我也跟着鼓掌。</p>
+<p>对方知道顾祁厉害，及时调整了战略。</p>
+<p>几个人一起防顾祁。</p>
+<p>对方恶意满满，起码在我看来，郑启源不是在打球，而是在打人。</p>
+<p>他不止一次巧妙地撞击顾祁，耍阴招。</p>
+<p>我的心被揪起。</p>
+<p>比赛进入白热化阶段，郑启源猛地一个冲撞，顾祁跌坐在地。</p>
+<p>郑启源紧接着上前一步，他的目标是顾祁的脚！</p>
+<p>在裁判吹哨的那一刻，郑启源的脚狠狠踩在了顾祁的脚背上。</p>
+<p>顾祁发出痛苦的吼声，额头上青筋凸起，冷汗划过紧蹙的眉头。</p>
+<p>「顾祁！」</p>
+<p>我站起身惊恐地叫出声。</p>
+<p>郑启源假意跑到顾祁身边搀扶他。</p>
+<p>「真是对不起啊，我不是有意的。」他说着嘴角含笑。</p>
+<p>顾祁直抽冷气，完整的话都说不出来。</p>
+<p>比赛暂停，顾祁被换了下来送往医院。</p>
+<p>我匆匆赶到医院时，顾祁被送进了手术室。</p>
+<p>经过几个小时漫长等待，顾祁被推了出来。</p>
+<p>顾祁的父母都在外地出差，第一时间知道消息的人也不多。</p>
+<p>病房出奇地安静，顾祁静静躺在病床上，眉宇间是化不开的痛苦。</p>
+<p>此时医生进来检查，叹了口气摇了摇头。</p>
+<p>顾祁伤的是脚腕，粉碎性骨折。</p>
+<p>我心一下子就慌了。</p>
+<p>「他……不能正常走路了？」</p>
+<p>我不是一个很爱哭的人，但不知为何，不自觉红了眼眶。</p>
+<p>他那么骄傲的一个人，怎么能承受这样的打击。</p>
+<p>医生忙安慰我，说走路没问题，只是以后可能再也打不了篮球了。</p>
+<p>听到这话，我「哇」的一声哭了。</p>
+<p>轻飘飘一句话给顾祁的半生的热爱判了死刑。</p>
+<p>让一个热爱篮球，把篮球视作生命的人再也不能打球，这太残忍了。</p>
+<p>此时，顾祁醒了，我抹了眼泪走到病床前。</p>
+<p>可眼泪跟不要钱似的，大颗大颗涌出。</p>
+<p>他看我哭得厉害，抬手擦掉了我的眼泪。</p>
+<p>「哭什么？」他的声音沙哑中带着虚弱。</p>
+<p>我摇摇头。</p>
+<p>他问我比赛结果。</p>
+<p>「大获全胜。3：1」</p>
+<p>「可惜了，之前还承诺会把奖杯捧给你看一看。结果就打了半场，我的水平确实有限……」</p>
+<p>我摇摇头。</p>
+<p>「没有，在我心里你就是最厉害的，你是 MVP。」</p>
+<p>顾祁笑了一下，那笑容里藏着淡淡的忧伤。</p>
+<p>住院期间，很多队友都来看望他。</p>
+<p>都没有和他提伤情。</p>
+<p>但我知道顾祁什么都清楚。</p>
+<p>他那么聪明的人早就猜到了一切。</p>
+<p>他为了不让任何人当这个残忍的人，他主动揭开伤口。</p>
+<p>「以后你们要带领咱们队好好努力，拿下全国冠军，我去现场给你们摇旗呐喊，给你们摆庆功宴。」</p>
+<p>他以开玩笑的口吻做着嘱托。</p>
+<p>队员眼里闪着泪花，一一承诺。</p>
+<p>所有人都知道顾祁和赛场再没有缘分了。</p>
+<p>顾祁高大的背影一下变得有些单薄。</p>
+<p>我不由自主走向前给了他一个拥抱。</p>
+<p>我的肩颈湿湿的、凉凉的。</p>
+<p>我们俩谁都没说一句话。</p>
+<p>或许，无言才是最好的回应。</p>
+<p>郑启源恶意犯规，造成顾祁伤势严重，违背体育道德。</p>
+<p>顾祁向组委会申诉。</p>
+<p>郑启源根本不在乎，反而来到顾祁病房冷嘲热讽。</p>
+<p>「谁让你来的，出去。」看着这个人我都犯恶心。</p>
+<p>顾祁放下书，冷眼看着郑启源。</p>
+<p>「你来干什么？」</p>
+<p>「我呀，我来告诉你，你就别白费力气了，你申诉再多次也没用，你就该被我踩在脚下。」</p>
+<p>他撇撇嘴，一脸小人得志的样子。</p>
+<p>我拿起厕所的马桶刷子驱赶他，专往他嘴上戳。</p>
+<p>吓得他连连后退。</p>
+<p>顾祁不急不躁意味深长地看了他一眼。</p>
+<p>「是吗，那就等着看吧。」</p>
+<p>「别气了。」</p>
+<p>顾祁给我削了个苹果。</p>
+<p>「他也太不是东西了。」</p>
+<p>「他猖狂不了多久。」</p>
+<p>郑启源家里动用了关系准备压下这件事，却没想到顾祁一个电话过去，对方立马改口。</p>
+<p>顾祁在学校低调，旁人对他的印象就是小康家庭，生活比较富足。</p>
+<p>根本不知道他家庭实力的雄厚，他自己已经能独当一面，根本不忌惮郑启源。</p>
+<p>本想堂堂正正等组委会给结果，没想到对方耍阴招。</p>
+<p>反倒是郑启源家里不过是做些生意，到处炫耀耍大牌，让人巴结他，自以为可以一手遮天。</p>
+<p>丝毫不知自己的愚蠢暴露无遗。</p>
+<p>第二天，处罚结果就下来了。</p>
+<p>郑启源暴力犯规，道德品质恶劣，直接被开除学籍，终生禁赛，并配合调查。</p>
+<p>听说他在组委会门口闹了一天，最后直接被保安扔了出去。</p>
+<p>他还想闹，被他爸强行押到医院来给顾祁道歉。</p>
+<p>他一脸的不屑，还叫嚣着要顾祁好看。</p>
+<p>他爸气得一脚踢在郑启源小腿骨，他「噗通」跪倒在地。</p>
+<p>心不甘情不愿地道歉。</p>
+<p>可道歉又有什么用呢，顾祁再也不能肆意地打球了。</p>
+<p>恣意的身影都留在了那个黑暗的下午。</p>
+<p>没过几个月，郑启源家的公司就因周转不利宣告破产。</p>
+<p>没了家庭的庇佑，他因为人品问题找工作四处碰壁。</p>
+<p>穷困潦倒再没翻身。</p>
+<p>这场闹剧落下帷幕。</p>
+<p>意气风发的少年可能会因梦想偏离轨道而失忆怅然。</p>
+<p>但绝不会一蹶不振。</p>
+<p>顾祁毕业后自己办了个篮球俱乐部，做得风生水起。</p>
+<p>俱乐部的第一条规矩就是：牢记体育精神，尊重对手。</p>
+<p>凡是有恶意违规、不尊重对手的学员都会被强制开除。</p>
+<p>那天，我在俱乐部看他们打球，无意中看到一个打球的男生。</p>
+<p>那股冲劲儿、敏锐果敢和顾祁大学时风格很像。</p>
+<p>中场休息，我和他聊天。</p>
+<p>「周扬，你认为我怎么样啊。」</p>
+<p>周扬跟见鬼似的，差点一口水喷出去。</p>
+<p>「什么怎么样？」</p>
+<p>「做你女朋友呀。」</p>
+<p>单着单着也就想找个男朋友，体验一把甜甜的恋爱。</p>
+<p>周扬咳得上气不接下气。</p>
+<p>我刚想给他拍一拍，他往后一闪，跟我身上有病毒似的。</p>
+<p>「姐，你是联合老板来考验我的吧，我敢和老板抢老板娘，我疯了不成，我还想在这儿多待两年呢。」</p>
+<p>说着，他看向我背后，一脸惊恐地走到了最边的场次。</p>
+<p>我一头雾水，这年头拒爱的理由这么复杂吗？</p>
+<p>不知道什么时候顾祁站在我身边。</p>
+<p>「喜欢？」</p>
+<p>他的声音低沉而富有磁性。</p>
+<p>「你不觉得他打球很帅吗，细看还有你大学时的风采。」</p>
+<p>「是吗？」他轻笑一声。</p>
+<p>「这么说来，你是喜欢我咯。」</p>
+<p>我平静的心湖像是被投进一颗小石子，泛起道道涟漪。</p>
+<p>不知什么时候起，他矫健的背影就刻在了我记忆的深处。</p>
+<p>我心有些乱，没敢抬头看顾祁的眼睛。</p>
+<p>人总会在在乎的人面前变得小心翼翼，甚至胆怯。</p>
+<p>「也……也不是，我有事，先走了哈。」</p>
+<p>刚走没两步，就被顾祁勾着后衣领拽到他臂弯里。</p>
+<p>有种梦回大学那个闯祸的下午。</p>
+<p>他居高临下看着我，那张不苟言笑的脸闪现出局促。</p>
+<p>「我不确定你对我的态度，但我知晓自己的心，我喜欢你。」</p>
+<p>我心跳得飞快，像是要冲破胸膛蹦他脸上。</p>
+<p>「我并不是一个很会表达爱意的人，也并不是一个一眼终生的人，我对于所爱，都需要时间的沉淀，这才更能让我看清自己的心。篮球如此，对你我更坚定。」</p>
+<p>他一字一句：「我始终相信，陪伴是最长情的告白。」</p>
+<p>我义无反顾地抱紧他。</p>
+<p>记忆与现实重合，少年依旧是那个少年，而此刻多了一个归属——我的少年。</p>
+<p>（全文完）备案号:YXX1GnmrGJ4hOyPB5lGcpQpK</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/13-%E9%95%BF%E6%83%85/" title="长情">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">长情</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/8/4-%E9%95%BF%E7%94%9F%E5%8A%AB/" title="长生劫">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">长生劫</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

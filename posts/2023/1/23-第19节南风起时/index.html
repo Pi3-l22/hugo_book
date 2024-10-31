@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第 19 节 南风起时 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC19%E8%8A%82%E5%8D%97%E9%A3%8E%E8%B5%B7%E6%97%B6/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC19%E8%8A%82%E5%8D%97%E9%A3%8E%E8%B5%B7%E6%97%B6/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="第 19 节 南风起时">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25533.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25533.jpg">
+  <meta name="twitter:title" content="第 19 节 南风起时">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第 19 节 南风起时">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10569">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25533.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">第 19 节 南风起时</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac%2019%20%e8%8a%82%20%e5%8d%97%e9%a3%8e%e8%b5%b7%e6%97%b6&amp;url=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC19%E8%8A%82%E5%8D%97%E9%A3%8E%E8%B5%B7%E6%97%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC19%E8%8A%82%E5%8D%97%E9%A3%8E%E8%B5%B7%E6%97%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac%2019%20%e8%8a%82%20%e5%8d%97%e9%a3%8e%e8%b5%b7%e6%97%b6%20https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC19%E8%8A%82%E5%8D%97%E9%A3%8E%E8%B5%B7%E6%97%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25533.jpg" alt="第 19 节 南风起时" />
+      
+
+      <p>你有过新上司是高中死对头的经历吗？</p>
+<p>我有。</p>
+<p>初恋前男友，分手不美好。</p>
+<p>但我没想到，有一天宿醉，醒来发现，他在我床上。</p>
+<p>早上九点，总经理办公室门口。</p>
+<p>我忐忑地叩门，摆出一张人畜无害的笑脸。</p>
+<p>「陆总，早啊！」</p>
+<p>「你迟到了。」里面的人声音堪称冰冷</p>
+<p>嗯？</p>
+<p>这冰封万里的声音……</p>
+<p>昨晚同学会太嗨，早上起晚了。</p>
+<p>试用期规矩，迟到早退扣三百。</p>
+<p>紧接着董秘宣旨，新皇登基，宣召我这个基层奴婢来面见。</p>
+<p>我踩着上周刚买的恨天高，一瘸一拐站在门口。</p>
+<p>偌大的电脑屏幕阻隔了那张传说中贼帅贼帅的脸。</p>
+<p>「进来，关门。」</p>
+<p>我赶紧快步走进，小心关上门，忽然发现脚后跟有点疼。</p>
+<p>哎，破皮了。</p>
+<p>对方声音微沉，带着一丝浓淡恰到好处的鼻音，说不出的好听，又莫名……有点熟悉。</p>
+<p>「你知道规矩。」</p>
+<p>我忙不迭点头，拂去心头的杂念：「迟到扣三百。」</p>
+<p>「扣六百。」</p>
+<p>「啊？可公司规矩一向是迟到扣三百的。」 我脱口而出。</p>
+<p>「是吗？」</p>
+<p>对面轻飘飘过来两个字，直棱棱往我脑门上砸。</p>
+<p>像一只无形的手捏住我的心口，我的心被提起到了嗓子眼。</p>
+<p>日理万机的陆总终于从文件堆里抬起头。</p>
+<p>他双手交叉，手肘轻轻搁在桌面上，戴着一副金丝眼镜，衬衫的袖口微微卷起，嘴角扯着冷淡的弧度，标准的精英阶层斯文败类的英俊模样。</p>
+<p>四目相视的瞬间，我的世界崩塌了。</p>
+<p>他是我整个学生时代的噩梦，一直延续到了今天。</p>
+<p>见到他的那一刻，我捏住了双手，指甲抠进了肉里。</p>
+<p>我在微微颤抖。</p>
+<p>人呐，在激动的时候，真的会发抖。</p>
+<p>陆南风！</p>
+<p>你特喵还有脸回来！</p>
+<p>还有脸颐指气使扣我六百块大洋！</p>
+<p>你是个人嘛！</p>
+<p>我恨不得抄起李逵大锤，奔过去给他两锤子。</p>
+<p>我表面维持微笑，心理活动激烈，问候了他祖上一百八十遍！</p>
+<p>陆南风镇定自若，没表现出老情人，啊呸，老同学见面的热络，仿佛第一次见面一样。</p>
+<p>「在这个公司里，我就是规矩，迟到扣六百。」</p>
+<p>「可我……」</p>
+<p>他摘下金丝眼镜，露出一双会吃人的眼睛，深邃又好看，好像宇宙黑洞。</p>
+<p>「要解释？」</p>
+<p>还解释你妹啊！</p>
+<p>「不不不，您是领导，您说了算。」</p>
+<p>我摇头，迟到是事实。</p>
+<p>「你是不是觉得不公平，为什么扣你六百。」</p>
+<p>我决定躺平，经济基础决定脸皮厚度，把他当领导，一脸假笑。</p>
+<p>「您就是规矩。」</p>
+<p>他有一瞬间愕然，不愧为表情管理十级大师，很快镇定自若。</p>
+<p>「很好。」</p>
+<p>我皮笑肉不笑。</p>
+<p>「谢谢陆总肯定。」</p>
+<p>他拿起一叠 A4 纸，我瞟眼过去，那是我的个人简历。</p>
+<p>他不戴眼镜的时候人很硬朗，乌黑柔亮的短发在阳光下熠熠生辉。</p>
+<p>就像高二那年的盛夏，他在灿烂的阳光下冲我笑，我眯着眼看他，他整个人像带了滤镜一样光彩夺目。</p>
+<p>我的脸又有点潮热。</p>
+<p>我承认，他确实长得很对我的胃口，不管是七年前，还是现在。</p>
+<p>我捂着额头，不安地扭了扭。</p>
+<p>「怎么？」他抬头打量了我一眼，「骨质疏松，站不住了？」</p>
+<p>我强行按捺住扭他耳朵的冲动。</p>
+<p>「不是。」</p>
+<p>气氛诡异，他似乎用这种沉默的方式在对我凌迟。</p>
+<p>过了好一会儿，他放下我的简历。</p>
+<p>「为什么迟到？」</p>
+<p>「车破了，临时挤地铁和公交上班，来不及了。」</p>
+<p>「不能早点起床？」</p>
+<p>「昨天回家晚了。」</p>
+<p>「为什么晚？」</p>
+<p>「高中同学会。」</p>
+<p>「哦。」</p>
+<p>「老江他……老江他大病初愈，想见见我们。」</p>
+<p>我口干舌燥，声音越来越小，「不过，您没来。」</p>
+<p>「哦。」 他不带感情。</p>
+<p>我只想赶紧结束这冗长又尴尬的谈话。</p>
+<p>「陆总，要是没什么事，那我……出去了？」</p>
+<p>陆南风突然问：「你未婚？」</p>
+<p>我睁大眼，「嗯啊。」</p>
+<p>「没离异？」</p>
+<p>「啊？」</p>
+<p>我都快被他惊奇的脑回路气笑了。</p>
+<p>「我人生中的确有那么一次差点脱单的机会，不过嘛，操狗了。」</p>
+<p>他的声线柔和下来：「顾筝。」</p>
+<p>可我却穿上了一身芒刺。</p>
+<p>「陆总，您是我领导，您要是工作上有什么吩咐，我义不容辞。但是希望您别对我的生活品头论足，谁年轻时候没有遇到过几个渣。哦不，一个渣，极品大人渣。」</p>
+<p>陆南风的嘴唇抿成一条线，男人唇薄，就是薄情。</p>
+<p>我哼了声：「您要是没有吩咐，我出去工作了。」</p>
+<p>我一扭一拐走到门口，身后传来一声嫌弃。</p>
+<p>「不会穿高跟鞋就别穿。」</p>
+<p>我深呼吸，转头赔笑：</p>
+<p>「还不是公司规矩嘛，女员工要穿职业装上班。得，您就是规矩，我马上去换拖鞋。」</p>
+<p>董秘书在门边诧异地看我。</p>
+<p>「你吃错药了，这么跟陆总说话，我可跟你说句实话，这公司是陆总家开的，你得罪了他，试用期啊，过不了。」</p>
+<p>「啊？来头这么大！」</p>
+<p>这年头找个工作不容易，我枯坐在位置上，想起这些年的遭遇，空悲切啊！</p>
+<p>要不是陆南风那厮不辞而别抛弃我，我的成绩怎么可能一落千丈，在二本学校都挂科！</p>
+<p>后来大二时奋起直追，好不容易考上 211 大学硕士研究生！</p>
+<p>毕业入职全市最顶尖的设计公司，结果上司是前男友，分手还极其不欢喜！</p>
+<p>抛弃我的人，不仅羞辱我的人格，还践踏我的荷包！</p>
+<p>我打开一看，陆南风被同学拉进群。</p>
+<p>班主任老江第一时间发言。</p>
+<p>「南风回国了啊。」</p>
+<p>「哇，我们班两大校草南风和林珩都回来了啊。」</p>
+<p>「必须再搞个同学会才行。」</p>
+<p>「大帅哥，你这次回来是旅游啊，还是定居啊。」</p>
+<p>陆南风简单回了两字：「创业。」</p>
+<p>「稳了。」</p>
+<p>「以后可关照同学们啊。」</p>
+<p>「陆总威武。」</p>
+<p>后面是同学们的一串彩虹屁。</p>
+<p>陆南风发了抱拳表情。</p>
+<p>群里跳出了三个红包，同学们蜂拥猛抢。</p>
+<p>紧接着，一个卡通女孩跪地磕头「谢谢老板」的表情迅速刷屏。</p>
+<p>闺蜜刘希希马上跟我私聊。</p>
+<p>「还不快抢红包。」</p>
+<p>我回：「不要。」</p>
+<p>「陆南风发了六百的红包。」</p>
+<p>「呵呵。」伤害性不大，侮辱性极强。</p>
+<p>「你知道他这六百块咋来的？」</p>
+<p>「啥？」</p>
+<p>我熄灭了屏幕，赶紧工作。</p>
+<p>刘希希看我长久没有回复，急不可耐给我打电话。</p>
+<p>「顾筝，陆南风回来了，你们有没有旧情复燃啊？你苦守寒窑这么多年，总算拨雾见日了啊。」</p>
+<p>「希希，我总算知道得尴尬癌有多痛苦了，你别打扰我工作，我今天要加班，赚加班费，非要把六百块给挣回来。」</p>
+<p>「别啊，再聊两句啊！陆南风啊，你初恋啊，人家还是个富二代啊，你这辈子脱贫机会不多，抓紧啊。」</p>
+<p>我抓着电话，手指骨骼攥得很用力。</p>
+<p>「希希，我的人格很贵，他配不上我！」</p>
+<p>刘希希纳闷。</p>
+<p>「你咋这么恨他啊？」</p>
+<p>我咬牙切齿，惺惺作态。</p>
+<p>「我不恨他。他教会我成长。」</p>
+<p>「他该不是……」</p>
+<p>刘希希已经脑补出十八禁画面了。</p>
+<p>我连忙斩钉截铁，把她拉回阳光下。</p>
+<p>「不是！没有！好好上班！挂了！」</p>
+<p>「别啊！他是不是把你给日了啊……」</p>
+<p>我不留情面挂了电话。</p>
+<p>刘希希又发挥钉钉子的精神，语音电话再次突袭。</p>
+<p>「刘希希，听着，没日！」</p>
+<p>「那怎么？」</p>
+<p>「被狗啃了！」</p>
+<p>刘希希得到了梦寐以求的答案，我终于通过出卖隐私换得一上午的宁静。</p>
+<p>我的精神高度集中在电脑屏幕上画图，隔壁的胡晨敲了敲隔板。</p>
+<p>「阿筝，隔壁开了家日料店，吃不吃？」</p>
+<p>「日料？人均多少？」</p>
+<p>胡晨眨眼，「六百。」</p>
+<p>「吃不起，告辞。」</p>
+<p>「别慌，不用你买单。」</p>
+<p>「真的？」</p>
+<p>「陆总请客，算是团建。」</p>
+<p>我拒绝的话脱口而出：「不去。」</p>
+<p>「为啥？」</p>
+<p>我赶紧给自己找个冠冕堂皇的理由。</p>
+<p>「我养生，不吃生冷的东西。」</p>
+<p>大部队像海水退潮一样，流向隔壁日料店那片沙滩。</p>
+<p>我托腮叹气。</p>
+<p>「顾筝啊顾筝，面子有这么重要嘛。」</p>
+<p>如果那个夏天，什么都没发生过。</p>
+<p>那么七年后，见到陆南风这个优秀精致体面的老同学，我一定不要尊严抱大腿跪舔，求他升职加薪。</p>
+<p>可偏偏……</p>
+<p>我过不了自己那关。</p>
+<p>那年暑假，陆南风约我在图书馆。</p>
+<p>我们肩并肩坐在角落里。</p>
+<p>他的笔尖落在纸面上，轻轻地划过，好像在我心上一点点碾压，然后慢慢勾勒成陆南风的样子。</p>
+<p>他勾起嘴角问我：「你在看书，还是看我？」</p>
+<p>我不承认，打趣道：「你不看我，怎么知道我在看你？」</p>
+<p>他突然侧过脸，乌黑的眉、浓密的睫毛、星辰般的眼。</p>
+<p>他的鼻子很挺，笑起来很灿烂，仿佛一整季节的夏花都怒放在他脸上。</p>
+<p>「我在看你。」</p>
+<p>我咽了下口水。</p>
+<p>我有点后悔，这个吞咽动作有点欲啊。</p>
+<p>他笑了。</p>
+<p>「你能不能收敛下你的口水。」</p>
+<p>「我没有。」我坚决否认，「我就是口渴。」</p>
+<p>「出去买饮料？」</p>
+<p>「好。」</p>
+<p>走出自习室，他过来拉我的手，我本能地缩了一下。</p>
+<p>「害怕？」</p>
+<p>「不是。」我笑起来眉眼弯弯，「我家很保守的。」</p>
+<p>他站在我对面，比我高一个头，身上带着洗发水的清香。</p>
+<p>「有多保守？」</p>
+<p>我嘴角上扬。</p>
+<p>「我妈跟我爸说，执子之手与子偕老，你牵我的手，我就要嫁给你，你怕不怕？」</p>
+<p>「后来你爸就牵了你妈的手？」</p>
+<p>我笑嘻嘻地看他。</p>
+<p>「我爸可怂了，牵手是一个月以后的事情了，我爸整整考虑了一个月。」</p>
+<p>「所以，你爸妈是初恋结婚。」</p>
+<p>我不假思索：「是啊。」</p>
+<p>在我眼里，这就是最好的爱情。</p>
+<p>掌心温热，五指被握紧，我低头看，陆南风抓住我的手，提上来扬了扬。</p>
+<p>「怕不怕？」</p>
+<p>「哎？你这小流氓？你不再考虑考虑啊？」</p>
+<p>「考虑什么，毕业就结婚咯！」</p>
+<p>那天我们笑得很灿烂，躲在图书馆背阴的榕树下，第一次认真的拥抱。</p>
+<p>过去兄弟相称掩饰暧昧，偶尔擦边的勾肩搭背。</p>
+<p>他的手叩在我的后脑勺，我的头埋在他肩窝。</p>
+<p>陆南风勾起我的下颌。「顾筝。」</p>
+<p>「小流氓。」</p>
+<p>「我认真的。」</p>
+<p>「嗯，认真耍流氓。」</p>
+<p>他认真看我的眼睛，我也回应看他。</p>
+<p>「好不好看？」</p>
+<p>我嘴硬：「凑合。」</p>
+<p>「你真好看。」</p>
+<p>「当然啊。」我嘚瑟，「x 大的小可爱啊。」</p>
+<p>「你将来有什么心愿吗？」</p>
+<p>「有啊。」我扬唇一笑，爽朗道，「有猫有狗，还有陆南风。」</p>
+<p>话音未落，温热的唇落上一个轻轻的吻。</p>
+<p>我承接那个吻，闭着嘴，但又舍不得推开他。</p>
+<p>半晌，他的唇跟我分开了稍许。</p>
+<p>我故作镇定，其实脸早就红成熟虾。</p>
+<p>「喂，你拖进度条了。」</p>
+<p>「我保证目前进度条就卡这里，以后我会规矩的。」</p>
+<p>说完，他揩油似的，低头又啜了口。</p>
+<p>记忆被拉回，我想到他说过的话。</p>
+<p>「规矩？」我冷笑三声，「去你娘的规矩。」</p>
+<p>我一时激动打翻了手上的茶，连忙去茶水间找拖把。</p>
+<p>等我拿着拖把回来，桌上多了一个外卖盒。</p>
+<p>「小晨晨，鳗鱼饭是你给我打包的？」</p>
+<p>胡晨一脸得意：「当然啊，远亲不如近邻嘛。」</p>
+<p>我的五脏六腑早就唱起空城计，扒拉着鳗鱼饭，发出直冲天灵盖的惊叹。</p>
+<p>「太好吃啦！这是我这辈子吃过最好吃的鳗鱼饭！小晨晨，么么哒！」</p>
+<p>胡晨探过脸：「当然好吃，188 一份。」</p>
+<p>「啊？你这么舍得，晚上我陪你睡。」</p>
+<p>「陪睡？188 一晚？」</p>
+<p>咦，这声音？</p>
+<p>我瞬间石化，这声音不就是骗我初吻的那个流氓陆南风嘛。</p>
+<p>我咽下一口饭，肚里热热的，没来由有了底气。</p>
+<p>「陆总，胡晨给我买了午饭，我向她表达谢意。」</p>
+<p>陆南风的眼神玩味地在我身上转了圈，落在我的唇上。</p>
+<p>老流氓想干嘛？</p>
+<p>难道……莫非……他想在光天化日之下对我……</p>
+<p>他一抬手，含笑指了指我嘴角。</p>
+<p>「饭粒，注意形象。」</p>
+<p>「是！」</p>
+<p>我大脑充血，连忙摘掉嘴角的饭粒塞到嘴里。</p>
+<p>「吃好饭，洗把脸，下午一点陪我出去见客。」</p>
+<p>「洗脸？不行，我今天化妆了。」</p>
+<p>「化妆？」陆南风直男的眼神在我脸上逡巡，「没看出来，还是黑丑黑丑的。」</p>
+<p>陆南风绝尘而去。</p>
+<p>我内心抓狂。</p>
+<p>我抓住胡晨的爪子，怒吼：「他什么意思？这都没看出我化妆？我六百的粉底液啊，我有这么残嘛？」</p>
+<p>胡晨按住即将暴走的我。</p>
+<p>「阿筝，拿人家手短，吃人家嘴软，你忍一忍，毕竟是领导。」</p>
+<p>「吃人家的？」我猛地咬了口鳗鱼，急赤白脸地吞下去。</p>
+<p>「这鳗鱼饭不是你买单的？」</p>
+<p>「188 一份啊，我买得起嘛？我跟男票存钱买房，哪有闲钱养你。乖，找个有钱人嫁了吧，别说鳗鱼，东星斑、象拔蚌当早饭吃。」</p>
+<p>我哭丧着脸：「也是。」</p>
+<p>下午一点。</p>
+<p>我认怂，敲了敲陆南风总经理办公室的大门。</p>
+<p>门从里向外开了一缝，看见一张明光四射的脸，是孙菲。</p>
+<p>她是我们的校花，曾经追求者无数。</p>
+<p>后来与陆南风双双留学海外，据路边社消息，两人青梅竹马，门当户对，在海外过上没羞没躁的同居生活。</p>
+<p>她如今俨然一副总经理夫人的口吻：「南风，没想到啊，顾筝跟你一个公司的。」</p>
+<p>陆南风扣好衬衫上衣扣子，我只觉得五雷轰顶。</p>
+<p>他们在办公室干嘛呢？</p>
+<p>光天化日之下，白日宣淫吗！</p>
+<p>真的没眼看！</p>
+<p>「陆总，您要是不方便，我去楼下等您？」</p>
+<p>不管他方不方便，反正我是待不下去了。</p>
+<p>我转身就走。</p>
+<p>「等下。」</p>
+<p>陆南风的大长腿迈了两步，人停在我面前，居高临下地看我。</p>
+<p>他把车钥匙递给我：「地库等我。」</p>
+<p>「我开车？」</p>
+<p>「难道我开？」</p>
+<p>「哪能呢。」我连忙狗腿堆笑，「您相信我的车技，那就我来开。」</p>
+<p>「你车技好不好？」</p>
+<p>「开玩笑，我老司机啊！」</p>
+<p>「是吗？」他忽然笑了，语气裹了层暧昧的砒霜。</p>
+<p>我在车里等了他十分钟。</p>
+<p>心乱如麻。</p>
+<p>陆南风你跟孙菲有完没完，兽性大发就回家，别把公司搞得乌烟瘴气的。</p>
+<p>我那个气……</p>
+<p>突然，副驾驶座门一开，陆南风悠闲地坐上来。</p>
+<p>「去南山雅郡。」</p>
+<p>豪宅区。</p>
+<p>我点头，开车启动。</p>
+<p>「您完事儿了啊。」</p>
+<p>「完事儿？」</p>
+<p>他起初一愣，倏然明白我话里带颜色的意思。</p>
+<p>他哼哼一笑：「十分钟，怎么可能完事，嗯？」</p>
+<p>「那您就这么半道撤退，夫人没意见吗？」</p>
+<p>「夫人？孙菲？」他忽然转头看我，露出磨牙般的冷笑，「你想知道吗？」</p>
+<p>我举起右手摇一摇。</p>
+<p>「对不起，我不该打听领导的私事。」</p>
+<p>旁边车辆加塞，我一个急刹车，陆总往前搡了搡。</p>
+<p>「这车是我私人的，银灰色宝马 840i。」</p>
+<p>「所以呢。」</p>
+<p>「撞坏了要赔。」他冷笑道，「你 188 陪一晚，你自己算算，得陪几个月？」</p>
+<p>我急坏了。</p>
+<p>「188 那是陪胡晨的价。」</p>
+<p>陆南风歇斯底里地坏笑。</p>
+<p>「那陪我呢？」</p>
+<p>「我……陆总……」我支吾了半天，「我很保守的，不卖身。」</p>
+<p>说罢，又是一个急刹车。</p>
+<p>红灯。</p>
+<p>他往前一撞，保险带把他又勒了回来。</p>
+<p>「顾筝。」</p>
+<p>「唉唉唉，我知道了，我开慢点。」</p>
+<p>南山雅郡，清一色的联排、别墅，在城区边缘，绿化率 75%，物业费六块八一平方。</p>
+<p>「你以后跟着我。」</p>
+<p>「嗯？陆总，我主要是做什么工作？」</p>
+<p>他又戴上金丝眼镜，表情肃然：「非常重要的工作。」</p>
+<p>我被他气势压倒。</p>
+<p>「是什么样重要的工作？」</p>
+<p>「拎包。」</p>
+<p>「啊？」</p>
+<p>「这个工作还不够重要？」</p>
+<p>「非常重要！！」</p>
+<p>但凡不动脑子的工作，都很重要，比如拎包，拿水。</p>
+<p>陆南风一身手工西装，小羊皮软底皮鞋，整个人气度弘雅，一看就是金山银山堆出来的。</p>
+<p>我是他下属，屁颠屁颠跟在后面拎包。</p>
+<p>「你去测量面积，然后给我出一份设计草图。」</p>
+<p>我哦了声，顿时发现不对。</p>
+<p>「陆总，不跟业主讨论下装修风格、设计思路什么吗？」</p>
+<p>他言简意赅：「按你的想法来设计，直接出图。」</p>
+<p>三百五十平方的东边排屋，地下室一百五，花园三百。</p>
+<p>我都快哭出来了，这是我打一辈子工，也买不下的豪宅啊。</p>
+<p>一幢豪宅，我一个人单枪匹马量面积，工作量大到直接把我榨干。</p>
+<p>直到太阳落山，我还没有忙完。</p>
+<p>陆南风道：「回去吧。」</p>
+<p>我如蒙大赦，差点掸袖子，给他来一声「嗻」。</p>
+<p>我实在累坏了，可又不能不懂规矩，只好开了副驾驶室的门，比了个请的姿势。</p>
+<p>「陆总，您请上车。」</p>
+<p>他瞟了我一眼，径直开门上驾驶位。</p>
+<p>然后，干净利落一声，「上车。」</p>
+<p>「谢谢老板！」</p>
+<p>「嗯？」他笑了笑。</p>
+<p>我挠了挠头，差点融化在他温柔的目光里。</p>
+<p>陆南风开车很优雅，一个漂亮的三角掉头，打灯、变道、转弯，都有预判性，像他的气质一样从容。</p>
+<p>我坐在车上忍了半天，还是没忍住，低头看了一下自己的脚</p>
+<p>我的脚后跟被磨破了，血肉淋漓，实在很痛。</p>
+<p>「陆总，我能脱个鞋吗？」我小声问。</p>
+<p>他蹙着眉：「脱。」</p>
+<p>我小心觑他脸色。</p>
+<p>「我怕有味儿，要么您先通个风？」</p>
+<p>他从善如流开了窗，夜色中空气微凉。</p>
+<p>凉风拍在脸上，我有点怅惘。</p>
+<p>「哎，起风了。」</p>
+<p>这些年日思夜想的人就在身旁，可身份隔了天堑似的。</p>
+<p>「陆总，这个点您回公司，还是回家？」</p>
+<p>他没理我，直接停车，潇洒摔门下车。</p>
+<p>莫名其妙又生气了？</p>
+<p>几分钟以后，陆南风拎着透明塑料袋回来，把东西扔给我。</p>
+<p>「把创可贴贴上，你没事穿什么高跟鞋，走高跷似的。」</p>
+<p>他说得难听，可我没往心里去，只是心里涩涩的。</p>
+<p>我麻溜扯开胶布，往伤口一贴。</p>
+<p>「陆总，您要是方便，能不能在路口把我放下？」我看着路边的街景越来越清晰，咬了下唇。</p>
+<p>陆南风眉峰一扬：「嗯？」</p>
+<p>我指了指路口的方向：「我家就在拐角的小区。」</p>
+<p>他面无表情打右转向灯，车子滑出一个完美的小转弯。</p>
+<p>我又堆起笑没心没肺的笑。</p>
+<p>「谢谢陆总，我明天保证不迟到。」</p>
+<p>停好车后，陆南风抓了我的手肘，眼神往车屏幕时间上一扫。</p>
+<p>「这个点，你不请你上司去家里吃个便饭？」</p>
+<p>我有一种触电般的感觉，从手肘直冲脑门，脸又涨红了。</p>
+<p>「您家里人没准备饭吗？」</p>
+<p>他自动过滤掉我的问题。</p>
+<p>「我作为给你发工资的领导，都不配让你挽留吃一顿饭？」</p>
+<p>「当然不是这个意思啊。」我的嘴角尴尬地扬起又放下。</p>
+<p>「哎呀，小筝，回来了？」</p>
+<p>父亲大人遛狗，经过我和陆南风，他弯腰往车里打量，看到陆南风的一刻，眼角的喜悦都快压不住了。</p>
+<p>敢情女婿大人上门啦！</p>
+<p>我不得不残忍地打碎父亲大人的美梦。</p>
+<p>「爸啊，他是……」</p>
+<p>父亲大人兴奋地口不择言，对着狗喊：「南风，叫人啊，打个招呼。」</p>
+<p>陆南风顿时挽起得体的笑容。</p>
+<p>「嗨，伯父，我是……」</p>
+<p>被我爸称为「南风」的大黄狗蓦地冲着陆南风汪汪两声。</p>
+<p>下一秒……陆南风和大黄狗「顾南风」面面相觑。</p>
+<p>我父亲大人拍了拍大黄狗的脑门：「乖，南风，没给咱顾家丢人。小筝，快介绍介绍，你男砰……」</p>
+<p>我做梦也没想到，会遇到这种社死场面。</p>
+<p>陆南风修养极好，嘴角扯了扯，下车摸了摸南风得意的小脑门。</p>
+<p>「顾筝，你家的狗真精神，叫……南风？」</p>
+<p>「是啊，南风是狗。」</p>
+<p>我的心都快跳出嗓子眼了，捂着脸，原地风化。</p>
+<p>陆南风犀利的眼神，快把我戳瞎了。</p>
+<p>「爸，这是我公司的老板，陆总，以后我跟着他，他会教我的。」</p>
+<p>「是啊，伯父，我会倾囊相授的。」</p>
+<p>陆南风把教字踩得很重：「我一定会让她毕生难忘。」</p>
+<p>「原来是小筝的上级领导啊。」</p>
+<p>父亲大人显然有点失望，但瞬间又打起鸡血。</p>
+<p>「领导还没吃饭吧，我家饭做好了，能不能赏脸来寒舍吃一顿便饭？」</p>
+<p>陆南风假装征询：「方便吗？」</p>
+<p>「当然方便，求之不得！」</p>
+<p>在父亲大人眼里，这餐晚饭有着极高的公关意义。</p>
+<p>他牵着南风，麻溜在前面开道。</p>
+<p>我快步跟上，又被陆南风拎回他跟前。</p>
+<p>「你家的狗叫什么名字，你再跟我说一遍。」</p>
+<p>「叫……」</p>
+<p>反正砍头一刀缩头一刀。</p>
+<p>「叫……南风……」</p>
+<p>「陆总，您听我解释，我家南风是狗，东风是猫，西风是乌龟，北风是金鱼！我爸爱打麻将，所以起这些名字，跟你无关。」</p>
+<p>陆南风嘴唇翕动：「你确定？」</p>
+<p>「啥啊，还不是你死活要叫大黄南风。」父亲大人突然扭过头，不背这锅，忙不迭解释，「我说叫大黄，你妈说叫小黄，你非说南风是狗，就叫南风。从此咱家所有宠物都以这个规格起名字，风雅。」</p>
+<p>「原来如此啊。」陆南风不动声色，「伯父，忘了向您自我介绍，我叫陆南风。」</p>
+<p>「啊这。」</p>
+<p>父亲大人脸色一僵，半晌说不出话。</p>
+<p>「南风……南风？」</p>
+<p>「没事，你俩不同姓！」</p>
+<p>陆南风顿时朝我飞来一个狠厉的眼神。</p>
+<p>吃饭的时候，父亲大人破天荒上了珍藏多年的茅台。</p>
+<p>「陆总，这茅台我藏了七八年了，今儿咱们把它开了，刚才的误会就当粉笔字抹了。」</p>
+<p>「伯父别，这酒贵，今天就是便饭。」</p>
+<p>父亲大人一叹气：「原打算留到咱们小筝找到对象后，她第一回带对象上门，我跟她对象喝，看看他的底，结果……」</p>
+<p>陆南风突然说：「咱们喝！」</p>
+<p>父亲大人倒了两小杯，两人一碰杯，我尴尬至极。</p>
+<p>心说陆南风你家这么有钱，你来骗我爹的茅台喝。</p>
+<p>都说肥水不流外人田，怎么也不能给你个骗子占便宜。</p>
+<p>我眼疾手快抢了陆南风手上的小杯子，一饮而尽。</p>
+<p>「陆总，一会儿还要开车回家，开车不喝酒，喝酒不开车，这杯属下小顾替您挡了。」</p>
+<p>父亲大人面色赧然。</p>
+<p>「小筝不懂事，喝多了不怕，咱们有客卧，让陆总在家休息，明天正好一起上班。」</p>
+<p>「伯父，别叫我陆总，叫我南风就好。」</p>
+<p>坐在桌旁啃骨头的大黄顾南风以为喊它，连忙松口抬头，汪汪汪。</p>
+<p>母亲大人趁机问了声：「陆总一表人才，结婚了吗？」</p>
+<p>「没有。」陆南风回答。</p>
+<p>我翻了他一个结结实实的白眼。</p>
+<p>呵呵两声，又不能当面戳穿。</p>
+<p>母亲大人继续发出灵魂拷问：「有对象了吗？」</p>
+<p>陆南风朝我瞥了眼。</p>
+<p>「等她点头。」</p>
+<p>我低头往他耳边一贴，酒气轰然上头：「你跟孙菲那点事儿当我不知道吗？我妈问你对象的事呢，你看我干吗？」</p>
+<p>这时，父亲大人的小酒杯又递过来了。</p>
+<p>「南风啊。」</p>
+<p>我家的狗又叫了，汪汪汪。</p>
+<p>「呃。」</p>
+<p>场面一度僵化。</p>
+<p>父亲大人赶紧调整了称呼：「小陆啊，咱话不多，都在酒里了。」</p>
+<p>「伯父，我会照顾好小筝的，您放心。」</p>
+<p>「放心？」我拿过酒杯又一饮而尽，酒精醇香上头。</p>
+<p>我整个人火烧火燎，但莫名有点亢奋。</p>
+<p>「爸啊，妈啊，他就是一个骗子，骗了我七年的感情，你们现在还用茅台招呼他，你们得用鹤顶红啊。」</p>
+<p>父亲如临大敌：「小陆，这到底怎么回事啊？」</p>
+<p>陆南风一把托起我支撑不住肩膀。</p>
+<p>「我也想知道是怎么回事。」我撒酒疯，「你说过毕业跟我结婚的，结果呢，你跟孙菲去留学双宿双栖了。」</p>
+<p>我扯着喉咙，捶胸顿足：「我算什么，王宝钏吗？啊？」</p>
+<p>父亲大人的酒是喝不下去了。</p>
+<p>「小陆啊，你跟那个小孙什么关系，你这可得说清楚啊。」</p>
+<p>我一抹两汪眼泪，又给自己倒了杯茅台。</p>
+<p>「话说，爸啊，咱家这条件，你啥时候囤得茅台啊？」</p>
+<p>陆南风架起我，看我软泥似的往下坠，他索性打横把我抱起来。</p>
+<p>「伯父，小筝喝多了，我扶她进去休息，一会儿陪您喝，不醉不归。」</p>
+<p>酒醉三分醒。</p>
+<p>陆南风把我放在床上，给我脱了外套和鞋子，盖上被子。</p>
+<p>然后，关门，他走了。</p>
+<p>我心里空落落，缺了一块。</p>
+<p>过了会儿，有人给我洗脸。</p>
+<p>「顾筝。」</p>
+<p>「嗯。」</p>
+<p>「谈过恋爱吗？」</p>
+<p>「谈过啊。」</p>
+<p>「几个？」</p>
+<p>「一个？两个？没有十八个……也有十五吧。」</p>
+<p>「就凭你？」</p>
+<p>「是啊，你可别不信，我是当年 x 大小可爱啊，喜欢我的人海了去了。」</p>
+<p>「那你喜欢的人呢？」</p>
+<p>我哇的一声，哭了出来。</p>
+<p>「他跟小妖精跑了，不要我了。」</p>
+<p>「如果他回来找你，你会原谅他吗？」</p>
+<p>我闭着眼，只觉得眼泪往耳边流，凝固成两条白线。</p>
+<p>「当然……不会。」</p>
+<p>「为什么？」</p>
+<p>「他身边有人了。」我顿了顿，半晌翕动嘴唇，「那个人……不是我。」</p>
+<p>陆南风突然低下身，他温热的吻，像春日的细雨，落在我的眉心、鼻梁、唇上，继而又落到了脖颈上，我心里泛起了渴望。</p>
+<p>我想挣脱，又舍不得这酥麻的触感。</p>
+<p>「我……」我捂着脸。</p>
+<p>「怎么了？」</p>
+<p>「我这是要做春梦了吗？」</p>
+<p>陆南风的声音循循善诱。</p>
+<p>「春梦？做过吗。」</p>
+<p>我呜了声，咬唇：「……」</p>
+<p>「梦里和谁？」</p>
+<p>我闭着眼，只觉得潮湿从四面八方席卷上来，我连忙拉扯被子裹住头顶。</p>
+<p>少顷，又被一双手从被窝里挖了出来。</p>
+<p>「和谁？」</p>
+<p>「和……」我声如蚊呐，「陆南风。」</p>
+<p>那双手突然像着了火，带着微微的颤抖，陆南风低低说：「我满足你，好不好？」</p>
+<p>我没有力气，但本能搭着他的手腕。</p>
+<p>「不好，你不是……陆南风。」</p>
+<p>「只有陆南风可以吗？」</p>
+<p>「嗯，我妈说，执子之手与子偕老。」</p>
+<p>陆南风似乎哽咽了一下。</p>
+<p>我慢慢睁开了眼，隔着雾蒙蒙的云山雾海，我好像看到陆南风在对我笑，一如七年前那么年少。</p>
+<p>「顾筝。」</p>
+<p>「嗯？」</p>
+<p>他说：「我要拉进度条了。」</p>
+<p>浑身战栗，做梦的感觉太他妈真实了。</p>
+<p>我一个激灵醒过来，发现自己枕在陆南风怀里。</p>
+<p>「我……你这个老流氓！」</p>
+<p>陆南风揉了揉惺忪的睡眼，大手把我揽过去，将我抱在怀里。</p>
+<p>「快闭上眼，你还在做梦呢。」</p>
+<p>门外传来顾南风的汪汪声。</p>
+<p>我欲哭无泪。</p>
+<p>「你……你居然潜规则女下属。」</p>
+<p>陆南风强行抱我，把我禁锢在他遒劲有力的臂弯里。</p>
+<p>「顾筝，别闹了。」</p>
+<p>我不敢大声疾呼，怕把我爸妈引过来，这个场面任谁都不好解释。</p>
+<p>「你喝我爸的酒，还欺负我爸的女儿，你……」</p>
+<p>我一时词穷。</p>
+<p>「茅台是我孝敬给岳父的，我睡的是自己老婆，怎么，犯法？」</p>
+<p>「我什么时候成你老婆了，你个老流氓，还想重婚啊。」</p>
+<p>「孙菲是我表妹，什么同居，都是谁瞎传的，造谣一张嘴，辟谣跑断腿。」</p>
+<p>陆南风脸上闪过一丝凝重。</p>
+<p>「那你跟林珩什么关系？」</p>
+<p>「林珩？」我不疑有他，「普通同学。」</p>
+<p>陆南风眼中流露一丝精光，他仔细辨认，就差要吃人了。</p>
+<p>「他跟我说，你们在交往，还给我看了你写给他的情书，我认识你的笔迹。」</p>
+<p>我满脑子浆糊，半晌回过神，捂着脸。</p>
+<p>「那不是写给他的啊。」</p>
+<p>陆南风有明知故问的嫌疑。</p>
+<p>「那是写给谁的？」</p>
+<p>我从指缝里露出一只眼。</p>
+<p>「写给陆南风的。」</p>
+<p>他明媚一笑，低头吻我的唇。</p>
+<p>「七年前，我爸妈在海外做生意，他们一直想带我过去一家团聚，但我不想走，因为这里有你，我亲你的第二天，林珩来找我，给我看了你写的情书，所以……」</p>
+<p>我挣了挣他结实的臂弯，表达出愤怒的情绪：「所以，你就不分青红皂白出国了？太草率了吧，你连问都不问我一声？」</p>
+<p>「我不敢。」</p>
+<p>我的表情管理失控了，一排牙咬住他的肩窝。</p>
+<p>「你不敢问我，但你敢欺负我。」</p>
+<p>他忍着痛，笑出了声：「我已经拜过码头了。」</p>
+<p>我松开牙口。</p>
+<p>「什么意思？」</p>
+<p>「昨天你量的那套房子，写的是你的名字。房产证已经给你爸妈了，我还给你爸送了两箱茅台，两箱富春山居，他觉得我很有诚意……」</p>
+<p>我抢白：「我爸卖女儿啊？」</p>
+<p>陆南风赶紧补充。</p>
+<p>「还有你妈。」</p>
+<p>我一时无语，满脑子问号。</p>
+<p>「你怎么会有我的身份证？」</p>
+<p>「你工作第一天，身份证上交给人事部门办手续，你还记得吗？」</p>
+<p>幸福来得太突然了。</p>
+<p>「你心机可忒深啊。」</p>
+<p>「我离开你七年了，回来可不得抓紧。」陆南风笑着拥紧我：「我每天都想你……。」</p>
+<p>「呃？」我把我埋下去，声音渐渐衰弱。</p>
+<p>「那天同学会，你为什么没去？」</p>
+<p>「分身不暇，我正在拜见岳父岳母大人。」</p>
+<p>「你们……团伙作案啊。」</p>
+<p>我把脸埋进被窝。</p>
+<p>「那……我们现在怎么办呀？」</p>
+<p>「结婚啊。」</p>
+<p>「可我们恋爱都没谈过啊！」</p>
+<p>他又孜孜不倦把我挖出被窝。</p>
+<p>「先婚后爱嘛。」</p>
+<p>「这也行。」</p>
+<p>他粲然一笑：「当然。」</p>
+<p>朝南的房间盛满了阳光。</p>
+<p>「松开我，都八点了，又要迟到了。」</p>
+<p>陆南风一脸慵懒。</p>
+<p>「怕什么？」</p>
+<p>我着急，谈钱就抓心。</p>
+<p>「迟到扣三百啊，不对，六百。」</p>
+<p>他一手撑头，笑得晃眼。</p>
+<p>「那是昨天的规矩，今天改了。」</p>
+<p>「改什么了？」</p>
+<p>「顾筝，因彻夜陪伴领导而迟到，一次加六百。」</p>
+<p>「啊？还能这样？」</p>
+<p>我的耳垂吃痛，又被咬了一口。</p>
+<p>他说：「我就是规矩。」</p>
+<p>我嘤嘤点头。</p>
+<p>他暴风雨式狂放热吻，扑面而来，我反抗不过，立刻躺平，任凭命运把我翻过来翻过去摆布。</p>
+<p>再次睁开眼，已经十点了。</p>
+<p>陆南风看着我，眼中笑容满溢。</p>
+<p>「怎么样？」</p>
+<p>我已经连抬手捂脸都没力气了。</p>
+<p>「什么怎么样？」</p>
+<p>他和我十指紧握，突然用手机自拍对准我们。</p>
+<p>「我要去高中群里发照片了，让林珩这小子看清楚，你顾筝和我陆南风在一起了。」</p>
+<p>「不行！别发！太丢人了！」</p>
+<p>我挣不过陆南风的力气，他单手掌控，在群里编辑了一大段话。</p>
+<p>啪嗒，发送成功。</p>
+<p>我捂着一张没脸没皮的老脸。</p>
+<p>群里又炸开锅，我打开一看，清一色的跪谢老板。</p>
+<p>陆南风捏住我的手臂，放回被窝里。</p>
+<p>「小心着凉，我没发自拍照，我就是发了红包，还跟他们说，下个月组织一场同学会，我做东，我还圈了一下林珩，让他务必要来。」</p>
+<p>我悻悻然哦了声，慢着。</p>
+<p>「你做东？那可不得好几万啊？」</p>
+<p>「是啊，几万哪够啊。」</p>
+<p>「你有钱也不能这么烧吧，刚买了房子，还要装修。」</p>
+<p>「嗯，我错了，可已经撤不回了。」</p>
+<p>他揉了揉我的眉心：「顾筝，我终于回来了，谢天谢地，你心里还有我。」</p>
+<p>我叹了声：「我也不想的，可就是忘不掉你，还能怎么办呢。」</p>
+<p>「嗯，你要对我负责的。」</p>
+<p>「啊……」</p>
+<p>反驳的话来不及出口，又被他以吻封缄。</p>
+<p>外头起风了。</p>
+<p>窗外的小雏菊迎风而立。</p>
+<p>我还记得那年夏天，他在图书馆的大榕树下牵着我的手，一笑露出两个酒窝，好看得让我移不开眼睛。</p>
+<p>那时我的心跳一震一震的，听见他说。</p>
+<p>「顾筝。」</p>
+<p>「嗯？」</p>
+<p>「如果我是风筝，我生命的线头永远在你手上，你一拉，我就回来了。」</p>
+<p>我还记得我鼓起勇气，踮了踮脚尖。</p>
+<p>「好啊，我会拉着你，陆南风，我们一起走过四季。」</p>
+<p>……</p>
+<p>庭院静谧，大黄狗蹲在房门外，汪汪汪大叫。</p>
+<p>岁月静好，微风和煦，一如南风起。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/6/23-%E7%AC%AC18%E8%8A%82%E5%A4%A7%E5%82%80%E5%BC%82%E7%81%BE/" title="第 18 节大傀异灾">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">第 18 节大傀异灾</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/6/23-%E7%AC%AC19%E8%8A%82%E8%99%B9%E6%A1%A5%E7%9A%84%E5%B0%BD%E5%A4%B4/" title="第 19 节虹桥的尽头">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">第 19 节虹桥的尽头</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

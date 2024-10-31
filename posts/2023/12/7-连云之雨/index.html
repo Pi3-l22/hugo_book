@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连云之雨 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/12/7-%E8%BF%9E%E4%BA%91%E4%B9%8B%E9%9B%A8/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/12/7-%E8%BF%9E%E4%BA%91%E4%B9%8B%E9%9B%A8/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="连云之雨">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+  <meta name="twitter:title" content="连云之雨">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="连云之雨">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10852">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25528.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">连云之雨</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%bf%9e%e4%ba%91%e4%b9%8b%e9%9b%a8&amp;url=https://mohai.us.kg/posts/2023/12/7-%E8%BF%9E%E4%BA%91%E4%B9%8B%E9%9B%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/12/7-%E8%BF%9E%E4%BA%91%E4%B9%8B%E9%9B%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%bf%9e%e4%ba%91%e4%b9%8b%e9%9b%a8%20https://mohai.us.kg/posts/2023/12/7-%E8%BF%9E%E4%BA%91%E4%B9%8B%E9%9B%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25528.jpg" alt="连云之雨" />
+      
+
+      <p>连云之雨</p>
+<p>刺客爱人：甜虐反转的古言故事</p>
+<p>我是个自私自利的雨神。</p>
+<p>有人找我求雨，我漠然处之。</p>
+<p>直到他一步一跪，膝头磨得只剩两块白骨，朝我叩首。</p>
+<p>那是北齐最后的皇帝，当年把我关到水牢里囚禁十二年的未婚夫。</p>
+<p>「云芝，为了黎庶百姓，我求你。」</p>
+<p>我表情不变，抬手布下万层云雨，洪水把北齐淹没。</p>
+<p>这个曾经以数万铁骑南下践踏、生吃我国人血肉的国家，本就不应存在。</p>
+<p>1</p>
+<p>我是南明唯一的公主。</p>
+<p>幼时长于宫廷，被父母捧为掌上明珠。</p>
+<p>嫡出兄长为太子，兄嫂对我疼爱有加。</p>
+<p>我本以为我会平安顺遂地度过这一生。</p>
+<p>直到北上的使团带来两国结盟的婚书。</p>
+<p>北齐皇帝拓跋昱求娶我，愿与南明永结秦晋之好。</p>
+<p>父皇和母后舍不得我去，当场便冷了脸色，斥责拓跋昱不知好歹。</p>
+<p>我却褪下华服花钗，朝他们叩首。</p>
+<p>「孩儿愿孤身北上，与北齐联姻。」</p>
+<p>搀扶起我，母亲哭得眼泪四溢。</p>
+<p>「云儿，阿母不愿你去赴那刀山火海啊。」</p>
+<p>而我摇了摇头，眼神坚定。</p>
+<p>作为南明公主，既享常人不可得之荣华，自然也要担负起相应的责任。</p>
+<p>集结了一支浩浩荡荡的送婚队，我卡着盟书上最后的日子出嫁了。</p>
+<p>出国都时，满城百姓都来送我。</p>
+<p>过长亭十里，他们泪眼潸然。</p>
+<p>「公主，此去千里，多多保重。」</p>
+<p>我朝他们挥手，眼里也有滚热的泪。</p>
+<p>横跨南北两千里，过秦岭长江，从温暖的南国到湿冷的北国。</p>
+<p>兄长亲自领队去送我。</p>
+<p>待跨过秦岭，他便顿在了原地，不能再进一步。</p>
+<p>北齐的国土，容不得南明皇子的进入。</p>
+<p>秋风朔朔，生平勇武的南明太子竟淌下两行泪来。</p>
+<p>他望着我，一字一句地道：</p>
+<p>「小妹，哥哥一定会接你回来的。」</p>
+<p>而我朝他含泪一笑：「兄长，我等你。」</p>
+<p>2</p>
+<p>等到了北齐，我见到了自己名义上的未婚夫。</p>
+<p>人倒是和画像上长得差不多。</p>
+<p>眉飞入鬓，龙章凤姿，翩翩如画中人。</p>
+<p>然而好好的人，身边却腻着一堆衣着清凉的美妾，还有个一身素白的小白莲。</p>
+<p>美妾们妖娆多姿，鄙夷地打量着我。</p>
+<p>小白莲低头怯怯看我，眼里有藏不住的嫉妒。</p>
+<p>拓跋昱朝我伸出手，俊美的脸上露出笑容。</p>
+<p>「云芝，我是你的夫君。」</p>
+<p>我愣了下，没搞懂这「夫君」是从哪来的。</p>
+<p>我们之间的关系分明还没到这一步。</p>
+<p>但北齐太后派来的礼官还在后面记着什么东西。</p>
+<p>我犹豫了下。</p>
+<p>最后还是将手放在了拓跋昱朝上的手心上。</p>
+<p>拓跋昱微微一笑，牵住我的手。</p>
+<p>随我而来的使臣也松了口气。</p>
+<p>两国礼官交接，预备筹办两月之后的大婚。</p>
+<p>这场彻头彻尾的政治婚姻，本就应该以我们两人的牺牲为开始。</p>
+<p>但倘若是以黎民万众的平安幸福为收尾，我甘之如饴。</p>
+<p>3</p>
+<p>隔天我便去拜见了北齐太后。</p>
+<p>看起来拓跋昱是遗传自他母亲的美貌。</p>
+<p>这位名动北齐的毒美人曾以二嫁之身登临后位。</p>
+<p>引得满朝官员哗然，却又稳稳地坐在这个位置上。</p>
+<p>垂帘听政十二载，抚育幼子登基，最后以太后之尊号令天下。</p>
+<p>极尊极贵。</p>
+<p>我对她的手段极为钦佩，奉上大礼拜见她。</p>
+<p>然而太后却命人将我的礼物扔出来。</p>
+<p>又发落了引见我的小太监。</p>
+<p>她的脸上带着浓重的不悦。</p>
+<p>「哀家当初便说了，不必娶南明女。」</p>
+<p>我怔愣看着价值千金的玉如意被摔得四分五裂，带来的各色礼物被扔得零落。</p>
+<p>太后的声音冷淡，肃穆而严苛：</p>
+<p>「既嫁给我北齐帝，便要恪守规矩。」</p>
+<p>「明日卯时起，随我到小佛堂抄经静心。」</p>
+<p>我忍着满腹心酸，让贴身宫女去把礼物捡回来。</p>
+<p>在一片静默中告退了。</p>
+<p>路上遇到小白莲，她一身素白，更衬得俏脸雪白，粉面桃腮。</p>
+<p>穿了一身白，手里还拿一枝白梅。</p>
+<p>她笑吟吟朝我见礼：「云芝姐姐，姑母脾气不好，你别介意！」</p>
+<p>「她这人向来疼我，就希望我和昱哥哥在一起，如果对你有什么不好的，你别伤心。」</p>
+<p>我没正面回她：「太后待我很好，训诫我礼仪。」</p>
+<p>小白莲故作天真地眨了眨眼：「我都知道，你就不用藏着掖着了！来，这只白梅给你赔罪！」</p>
+<p>然后便一蹦一跳地走了。</p>
+<p>我看着手里的秃白梅，不知该说什么是好。</p>
+<p>那天夜里，拓跋昱特地过来安慰我。</p>
+<p>「我听说了白天你的事，母后性子不好，你多理解。」</p>
+<p>「霜儿天真可爱，不懂那些世俗之事，你要多体谅。」</p>
+<p>我按捺下心头怒火，不想与他争执。</p>
+<p>拓跋昱满意走了。</p>
+<p>天蒙蒙黑，我赶在卯时前起床。</p>
+<p>太后未起，我一人在佛堂前抄经到天明。</p>
+<p>直到日上三竿，才听到佛堂外小白莲银铃般的笑声。</p>
+<p>「姑母之前给的佛经很好烧，但听说云芝姐姐写得一手好字，有她的佛经供着，佛祖想来更青睐霜儿呢。」</p>
+<p>我冷着脸把笔一撂，不顾佛堂外姑侄俩的脸色，径直回了我的葳蕤宫。</p>
+<p>后来，南明的礼官来劝我。</p>
+<p>北齐的礼官拿礼法来压我。</p>
+<p>拓跋昱在我门外诚恳言语了三天。</p>
+<p>我想着父皇母后，想着北齐与南明的联姻，忍了这口恶气。</p>
+<p>满宫莺莺燕燕权当看不见。</p>
+<p>我打算等大婚后再慢慢料理收拾这些事情。</p>
+<p>毕竟那时的我身为北齐皇后，收拾拓跋昱的这些姬妾也更有说服力。</p>
+<p>当时的我，天真地以为只要我忍过一时，之后便是一条坦途。</p>
+<p>可人生世事难料。</p>
+<p>4</p>
+<p>大婚之夜，突发变故。</p>
+<p>北齐骤然发难，南明礼官被当众斩首。</p>
+<p>我被关进水牢，拓跋昱的小白莲表妹穿上嫁服，替我成婚。</p>
+<p>当天，北齐铁骑跨过秦岭天堑，犹如阎罗般屠尽边境居民。</p>
+<p>这只铁甲寒光的精锐之师，其中尚且有我带来的铸铁锁衣之术。</p>
+<p>如今却堂而皇之地率着骏马强兵，肆意南下践踏。</p>
+<p>狱卒每隔一小时就来禀告北齐铁骑的战况。</p>
+<p>不到十二时辰，强军疾行，斩我南明十五城。</p>
+<p>那一夜小白莲婉转承欢，我在水牢里心急如焚。</p>
+<p>血染的地图展在阴暗的地牢里。</p>
+<p>狱卒露着黄牙，手指蘸了口水点了点南明都城。</p>
+<p>「昭明公主，不需一月，南明国便要破了。」</p>
+<p>第二天，小白莲一身华服，命人剜去了我的腿骨，朝我柔柔弱弱地笑。</p>
+<p>她鬓边插着凤钗，那是我从南明带来的嫁妆。</p>
+<p>「云芝姐姐，这份大婚之礼，你喜欢吗？」</p>
+<p>她拂过乌发鬓角，眼波流转间已有了一丝初为人妇的媚意。</p>
+<p>一低头，宛若清风拂过娇水莲，有不胜凉风的羞意。</p>
+<p>但眼底却毫不保留地展现着嘲讽。</p>
+<p>「昱哥哥对我很好呢。」</p>
+<p>「从今以后，我就是北齐的皇后了。」</p>
+<p>我心中郁气百结，心头如被烈火焚烧，声音喑哑：</p>
+<p>「赫连霜……你……」</p>
+<p>她轻轻拍了拍我的脸颊：「姐姐不要吵哦，听我慢慢跟你说。」</p>
+<p>「按昱哥哥的设想，你这个蠢女人是应该爱上他的，然后他灭掉南明，你成为他的皇后。」</p>
+<p>「而你呢，应该夹在母国和北齐的中间，最后选择了我们北齐，背尽了骂名。」</p>
+<p>赫连霜甜蜜地笑了下，为这样的设想感到愉悦。</p>
+<p>「而且这样折磨你，听起来也很有趣呢。」</p>
+<p>我的十指深深地抠入地面：「你……」</p>
+<p>赫连霜叹气道：「可惜，谁让云芝姐姐你没有爱上昱哥哥呢。」</p>
+<p>「你这个蠢女人啊，现在只能被关在地牢里。而我，将代替你，成为『连云芝』。」</p>
+<p>她拍了拍手：「哦对了，以后我就叫『连云霜』了，姐姐你瞧，我们连名字都是天作之合呢。」</p>
+<p>我胸口起伏，抓起一把土扔到她脸上。</p>
+<p>「你休想！」</p>
+<p>赫连霜漂亮的脸上扭曲了一瞬间。</p>
+<p>她捂着脸，眼神阴鸷可怖。</p>
+<p>女人咯咯笑了起来：「我要顶着姐姐的名头挨骂呢。你不感谢我吗？」</p>
+<p>「云芝姐姐，你就亲眼看着你的母国是怎么被灭掉吧。」</p>
+<p>5</p>
+<p>南明在两个月后被灭。</p>
+<p>此后，我被关在水牢十二年。</p>
+<p>肌骨溃烂，膝头空洞，无法行走，终日活在愤恨中。</p>
+<p>我被折磨成了一个「疯女人」。</p>
+<p>狱卒每日都来跟我说南明余部反抗又被扑杀的故事。</p>
+<p>又说起南明旧民生活在北齐的快乐。</p>
+<p>据说他是受拓跋昱的指使。</p>
+<p>这个男人的手段比他母亲还要阴毒可怕。</p>
+<p>合纵连横千里，假意迷惑南明，却趁其不备猛攻要害。</p>
+<p>北齐马肥兵壮，有普天之下最好的铁骑与军队。</p>
+<p>南明因为联姻放松了警惕心，边防有所削弱。</p>
+<p>北齐铁骑就趁机撕下进攻南方的口子来。</p>
+<p>打下南明后，北齐将民众分为四等人，南明人是最后一等人。</p>
+<p>和奴隶同等地位，被人欺压迫害。</p>
+<p>南明的少女被当街强抢，壮劳被奴役至死。</p>
+<p>昔年繁华富庶的扬州路，如今燃起烹煮两脚羊的烽烟。</p>
+<p>拓跋昱的生活倒是滋润非常。</p>
+<p>他和赫连霜恩爱非常，孕育两子一女，琴瑟和谐。</p>
+<p>在他们准备举行封禅大典向天下展示恩爱时，我死在阴暗的水牢里。</p>
+<p>临死前，老鼠爬行过我的身体，尖锐的啮齿啃噬我的身体。</p>
+<p>狱卒啐着骂了声晦气，打扰他讨赏。</p>
+<p>一卷草席，我被抛在了荒凉郊外。</p>
+<p>尸体被盘旋的秃鹫啄食，被雨水浸润，溶解在北齐的土地里。</p>
+<p>然而，他们不知道的是，我在三天后承受天恩，成了雨神。</p>
+<p>掌世间云雨，能够调动风雷，肆意操控整个疆域的天气和收成。</p>
+<p>翻手为云，覆手为雨。</p>
+<p>我能让他们干旱而竭，也能让他们在洪涝中溺死。</p>
+<p>而拓跋昱即将在封禅大典上朝我叩拜——</p>
+<p>祈求北齐的风调雨顺。</p>
+<p>6</p>
+<p>北齐的封禅大典在泰山举行。</p>
+<p>拓跋昱在十二年内四处征战，统一南北。</p>
+<p>如今便按捺不住，要向上天祭告自己的功绩。</p>
+<p>殊不知他的功绩里全是尸骨累累。</p>
+<p>泰山上，万事俱备。</p>
+<p>我站在云端。</p>
+<p>看着礼官在祭坛里烧着奉天书。</p>
+<p>那万余字的奉天书里写着拓跋昱的彪炳战绩。</p>
+<p>写着我南明万众流着的血泪。</p>
+<p>我看着那得意的文字。</p>
+<p>一挥手。</p>
+<p>密布的乌云下骤然降下一道闪电。</p>
+<p>祭坛上五雷轰顶。</p>
+<p>拓跋昱皱起了英挺的眉毛。</p>
+<p>礼官猛然抬头，颤着声音：</p>
+<p>「这……上天不满！」</p>
+<p>他遽然伏下身来，浑身抖如筛糠：</p>
+<p>「还请上天明示！」</p>
+<p>明示？</p>
+<p>泰山顶下起了瓢泼大雨。</p>
+<p>豆大的雨点里，我悠然从云端降下。</p>
+<p>一挑眉。</p>
+<p>「拓跋昱，别来无恙？」</p>
+<p>「连云芝？」拓跋昱皱紧了眉头，藏在衮衣下的手握紧。</p>
+<p>「你怎么会在这里？你不是……」</p>
+<p>「我不是死了吗？」我微微一笑。</p>
+<p>「不好意思，让你和赫连霜失望了。」</p>
+<p>我转身，一步步走上祭坛最高处。</p>
+<p>皇命受命于天。</p>
+<p>而我如今是他求着的「天」。</p>
+<p>我迎着风，朝他莞尔一笑。</p>
+<p>「听说你要祈求北齐的风调雨顺？」</p>
+<p>「那么，求我吧。」</p>
+<p>拓跋昱仍然不太相信。</p>
+<p>但他显然更震惊于死人居然会出现在他面前。</p>
+<p>他皱着眉思索了一二。</p>
+<p>「当年狱卒没有杀了你？」</p>
+<p>我朝他摊手：「他杀了，但我没死。」</p>
+<p>山顶的雨下得更大了，我朝他一笑。</p>
+<p>「我现在是雨神。」</p>
+<p>「如果你现在跪下来求我，我倒是可以考虑满足你的愿望。」</p>
+<p>「跪满三天，叩满一千九百八十一个头，再剜去自己的腿骨，这个要求怎么样？」</p>
+<p>拓跋昱抬手：「来人，把她捉下来。」</p>
+<p>礼官道：「陛下，待活捉了她，我们还可以把她当作祭品献给上天。」</p>
+<p>拓跋昱抚掌道：「大善！」</p>
+<p>我摇了摇头，叹息了下。</p>
+<p>拓跋昱啊拓跋昱，真是冥顽不灵。</p>
+<p>「既然如此，就不要怪我无情了。」</p>
+<p>拓跋昱表情不变，沉声道：</p>
+<p>「活捉。」</p>
+<p>我笑了下，心念一动。</p>
+<p>数条雷电从云端降下，把祭坛劈得四分五裂。</p>
+<p>天地间疾风骤雨，呼啸而来。</p>
+<p>云层降低，黑压压的，宛若噬人的巨兽。</p>
+<p>礼官浑身颤抖，跌坐在地上：「她……她说的不会是真的吧？」</p>
+<p>拓跋昱攥紧拳，脸色难看地大步离去。</p>
+<p>下一刻，整个泰山被洪水淹没。</p>
+<p>我站在山顶，任大雨冲刷我透明色的身体。</p>
+<p>我冷眼看着礼官被洪水冲走。</p>
+<p>冷眼看着拓跋昱踩着他的身体登舟。</p>
+<p>冷眼看着一脸震惊的小白莲被拓跋昱扇了一巴掌。</p>
+<p>他们登上了不知从哪里找过来的破筏子，急急忙忙地逃走了。</p>
+<p>我好笑地摇了摇头。</p>
+<p>「逃？逃不掉的。」</p>
+<p>他不知道，未来整个北齐都将不会有雨水降下。</p>
+<p>被囚禁在水牢里的十二年磋磨了我。</p>
+<p>亡国失爱之痛让我的心充斥了仇恨。</p>
+<p>被老鼠啃噬身体的痛让我的灵魂扭曲。</p>
+<p>泰山之巅风凉雨重。</p>
+<p>我明明不是人了，却还能感受到那股痛彻心扉的冷意。</p>
+<p>曾经我也是个游走于民间的公主。</p>
+<p>替百姓制造出耕田的器具，带他们走出荒瘠的深山。</p>
+<p>惩治贪官，教训污吏，赏识儒生。</p>
+<p>当时我能做的远比现在多。</p>
+<p>现在的我只能活在仇恨中。</p>
+<p>唯有看到那些曾经的仇人痛苦着死去，我才能解脱。</p>
+<p>站在泰山之巅，可望到千山百域。</p>
+<p>半个北齐尽在眼帘中。</p>
+<p>云雨散去，太阳当空。</p>
+<p>但未来他们再也不会下雨了。</p>
+<p>大旱即将来临。</p>
+<p>7</p>
+<p>在两个月大旱后，拓跋昱终于支撑不住了。</p>
+<p>他独自来了泰山顶求我。</p>
+<p>而我掀了掀眼皮：「条件不变。」</p>
+<p>拓跋昱一咬牙，掀袍跪下：「连云芝，这下你该满意了吧！」</p>
+<p>我嘲讽地笑了下：「这可真是够屈尊的啊。」</p>
+<p>「拓跋昱，这就是你的诚意吗？」</p>
+<p>拓跋昱扎扎实实给我叩了个首。</p>
+<p>再抬头，额头上鲜红的一个印记。</p>
+<p>他咬牙，声音像是硬挤出来般：「我求你……」</p>
+<p>「跪满三天，叩满一千九百八十一个头，再剜去自己的腿骨。」我轻声道。</p>
+<p>「这是第一个叩首，还有一千九百八十个。」</p>
+<p>话音刚落，后面冲出来一个人。</p>
+<p>衣衫散乱，神情仓皇，声音尖厉。</p>
+<p>是小白莲。</p>
+<p>「连云芝，你休想！」</p>
+<p>我看着她已经不复年轻的体态和面容，挑眉一笑。</p>
+<p>「我休想？」</p>
+<p>「赫连霜，皇后之位待得很舒服吧。」</p>
+<p>「再待一待，因为很快就没有机会了。」</p>
+<p>「你什么意思！」赫连霜尖声道。</p>
+<p>我笑着说：「因为北齐很快就要灭国了啊？」</p>
+<p>「你闭嘴！你这个蠢女人怎么可能——」</p>
+<p>她喋喋不休的声音戛然而止。</p>
+<p>女人裹着华丽衣袍的臃肿身体被扇歪了一下。</p>
+<p>拓跋昱一脸阴鸷地看着她。</p>
+<p>赫连霜捂着脸，脸色一点点变白。</p>
+<p>我拍手称快，看着他们狗咬狗。</p>
+<p>看啊，这就是色衰爱弛。</p>
+<p>昔年疼爱如宝的小青梅，如今也能毫不犹豫地扇巴掌。</p>
+<p>果真是人心易变。</p>
+<p>拓跋昱跪直了身体，冷声说：「连云芝，希望你能记住你说的。」</p>
+<p>我笑着摇了摇头：「我改变主意了。」</p>
+<p>「刚才那些要求不变，你从台阶下开始，一步一跪。」</p>
+<p>拓跋昱攥紧了拳头，挥出一道凌厉的风声。</p>
+<p>他忍了再忍。</p>
+<p>但最后还是忍了。</p>
+<p>「好。」</p>
+<p>他从泰山下一步一跪。</p>
+<p>一跪一叩首。</p>
+<p>泰山为封禅之地，台阶修得陡又长。</p>
+<p>三千阶，他跪到一半，膝头就磨得只剩两块白骨了。</p>
+<p>我冷眼看着他跪上来。</p>
+<p>这是北齐最后的皇帝，当年把我关到水牢里囚禁十二年的未婚夫。</p>
+<p>「云芝，为了黎庶百姓，我求你。」</p>
+<p>但在他跪上来的一瞬间，他布好的天罗地网骤然发难。</p>
+<p>无数道士和尚冲出来，嘴中念念有词。</p>
+<p>各种灵光闪现着，牢牢困住我。</p>
+<p>拓跋昱撕了假面，被人搀扶着，恶狠狠地朝我笑。</p>
+<p>「连云芝，你这个贱人，没想到吧。」</p>
+<p>我表情不变。</p>
+<p>拓跋昱毁约也好，省得我再与他虚与委蛇。</p>
+<p>呵。</p>
+<p>以凡人之躯困神，堪称蚍蜉撼树。</p>
+<p>我抬手布下万层云雨，洪水把北齐淹没。</p>
+<p>拓跋昱脸上的得意神色一点点消失。</p>
+<p>我看着他「砰」地倒在了地上。</p>
+<p>我看向乌云密布的天空，笑了下。</p>
+<p>这个曾经以数万铁骑南下践踏、生吃我国人血肉的国家，本就不应存在。</p>
+<p>8</p>
+<p>大旱后大涝。</p>
+<p>各地开始凭空出现我的雕像。</p>
+<p>我不知道我是因何而成神。</p>
+<p>但这些雕像的凭空出现倒像是上天的旨意——</p>
+<p>当皇权无用，人们开始偷偷祭拜雨神。</p>
+<p>但我却没有感受到分毫的信仰之力。</p>
+<p>也是，神明之于民众，不过是遇难时才想起来的虚物。</p>
+<p>虔诚信众少之又少，因而信仰之力也少得可怜。</p>
+<p>我没有希望，自然也没有失望。</p>
+<p>我只是冷静地把伤害过我的人都淹死在了这场洪水里。</p>
+<p>这笔账，我记了十二年。</p>
+<p>以秦岭为界，我在北齐的疆土上肆意施展雨水。</p>
+<p>曾经关押我的狱卒在洪水涌来时吓得目眦欲裂，满身腥臊味。</p>
+<p>我冷静地看着他一点点沉没。</p>
+<p>北齐当年肆意烧杀抢掠的士兵，也被洪水淹没。</p>
+<p>我毫不手软地把恨意和怒火发泄在这些人的身上。</p>
+<p>他们一个个死去。</p>
+<p>满怀着绝望死去，不明不白地死去。</p>
+<p>宛若当年无辜的南明万众。</p>
+<p>我感觉世间清静了许多。</p>
+<p>「也许该收手了。」</p>
+<p>我自言自语，往泰山巅走去。</p>
+<p>直到我的雕像被愤怒的民众推倒在洪水里，四分五裂。</p>
+<p>9</p>
+<p>他们的眼里燃烧着仇恨。</p>
+<p>我低头，却发现脚下尸骨累累，手上沾满了鲜血。</p>
+<p>洪水冲破了北齐人的瓦屋，淹没了他们的田地。</p>
+<p>他们的亲人死去，瘟疫和饥荒开始爆发。</p>
+<p>老弱没有庇护，青壮死伤大半。</p>
+<p>当祈求的雨神没有带来庇护，愤怒的民众推倒了雕像。</p>
+<p>「邪神！」</p>
+<p>「什么雨神？根本就是邪神！」</p>
+<p>「杀了这个神，大水就能停了！」</p>
+<p>「还我麦子呜呜呜……我今年刚种的麦子……」</p>
+<p>雕像倒在洪水里。</p>
+<p>悲悯的神像被泥水浸染。</p>
+<p>衣衫褴褛的民众满脸悲愤，泪水黏结在枯黄的脸上。</p>
+<p>那是灾难侵袭数年、饥荒和大洪折磨在他们脸上留下的痕迹。</p>
+<p>横来竖去，划在他们的脸上。</p>
+<p>也划在我的心上。</p>
+<p>我茫然地站在世间。</p>
+<p>万人悲呼，他们看不见我。</p>
+<p>我却能看见他们痛苦的内心——</p>
+<p>我做的和当年北齐做的有什么区别呢？</p>
+<p>当年我家乡被北齐铁骑屠戮的时候，民众是不是也是这样流着泪？</p>
+<p>我……是邪神吗？</p>
+<p>他们明明是最无辜的人，却成为了上位者权力撕扯的牺牲品。</p>
+<p>他们被裹挟在命运的洪流里，饱受折磨与苦痛。</p>
+<p>最后只能愤而反抗，意图创造新的历史。</p>
+<p>「水可载舟，亦可覆舟。」</p>
+<p>这是父皇曾经跟我讲述过的道理。</p>
+<p>我曾经似懂非懂。</p>
+<p>如今却透彻地理解了。</p>
+<p>一片撕裂的痛苦中，我竟恍惚感受到当年被硕鼠啃噬的剧痛。</p>
+<p>此时痛更胜当时痛。</p>
+<p>10</p>
+<p>我的雕像被砸得稀巴烂，神力几近于无。</p>
+<p>洪水慢慢平息下来。</p>
+<p>夜深人静，一个面相愁苦的老妇人把雕像的碎片捡了回家。</p>
+<p>她抱着碎片，边拭泪边在屋檐下借月光修补。</p>
+<p>雕像在她手下显现了雏形。</p>
+<p>她心疼得眼泪直流，往裂痕上吹气。</p>
+<p>「公主啊，咱们不疼，咱们不疼。」</p>
+<p>她认得我？</p>
+<p>我心头一跳，拼着微弱的神力，覆在雕像的身上。</p>
+<p>「您是南明人吗？」</p>
+<p>月光落下来，泥雕像上显出我痛苦而茫然的神韵。</p>
+<p>「公主？」老妇人睁大眼睛，一滴泪滚了下来。</p>
+<p>「嗯。」我轻轻地说，「阿嬷，我是连云芝。」</p>
+<p>老妇人抱着我的雕像呜呜哭了起来。</p>
+<p>「您还活着……您还活着……」</p>
+<p>我轻声说：「阿嬷，我已经死了。」</p>
+<p>老妇人擦干了眼泪，倔强地摇头：「不，您没死。」</p>
+<p>「我们南明人都惦记着您，您不会死。」</p>
+<p>她喃喃道：「公主出生那年，大旱里就下起了雨，后来您长成，咱们南明就一直风调雨顺……」</p>
+<p>「我们都说你是雨神，是福星……您怎么会死呢？」</p>
+<p>我欲言又止。</p>
+<p>心头却泛过一丝酸楚。</p>
+<p>「阿嬷，对不起，我没能护住你们。」</p>
+<p>我忐忑地问：「阿嬷，这么多年，你们是怎么过来的……」</p>
+<p>老妇人擦了擦眼角涌出来的泪。</p>
+<p>「当年您远嫁北齐，我们都为你高兴，说是公主终于能母仪天下，我们也能过过安生日子了……」</p>
+<p>我咬着唇才没让泪落下来。</p>
+<p>远嫁的公主被囚十二年，死在异国他乡。</p>
+<p>联姻的盟国铁骑南下，践踏南明诸城。</p>
+<p>他们所心心念念的和平，不过是一场破碎的美梦。</p>
+<p>「您嫁到北齐后，北齐人就打了过来，那群畜生，欺压我们南明人……」</p>
+<p>老妇人想起伤心事，浑身发抖，像个小孩般诉苦。</p>
+<p>「陛下和娘娘被他们逼死了，太子也战死了。」</p>
+<p>老妇人说：「太子妃带着少帝跳海了，随行十万民众，我当时也去了。」</p>
+<p>「但是儿媳妇有了身子啊……是我儿的遗腹子。」</p>
+<p>她有些自豪地说：「我们南明人的孩子。」</p>
+<p>她又哭又笑：「我儿十八从军，儿媳妇有了身子，上天知道我们的苦，我这不中用的人啊，也合该活下来，为咱们的孩子做打算。」</p>
+<p>「我和儿媳妇被掳到北边，老头子却还在老家，如今也不知道一把老骨头还在不在。」</p>
+<p>「后来听说您成了北齐皇后，又改了名，和那北齐皇帝恩恩爱爱的——」</p>
+<p>老妇人啐了一口：「呸，我才不信！」</p>
+<p>「我们公主十岁起就为民间施粥，咱们南明多少人见过你啊，怎么可能认那个冒牌货！」</p>
+<p>「您尊名连云芝，陛下说过，是取自『连云之雨』的意思，怎么可能叫连云霜！」</p>
+<p>我脸上的泪又慢慢淌了下来。</p>
+<p>「连云之雨，可济苍生。」</p>
+<p>我叫连云芝，本就是取自其意。</p>
+<p>可如今，我却忘记了这句话。</p>
+<p>两道裂痕从泥偶的脸颊上落下来，有隐隐的水意。</p>
+<p>老妇人见状赶快给我擦泪。</p>
+<p>她蒲扇般的大手泡得发白，覆在我脸上时却有令人心安的温暖。</p>
+<p>老妇人像是哄孩子般哄着我。</p>
+<p>「公主，我们不伤心，我们不伤心。」</p>
+<p>「南明没了没关系，我们记得你，我们记得你。」</p>
+<p>我在这样的安慰里放声大哭。</p>
+<p>乌云把月亮遮蔽，雨声淅沥，仿佛回到十八年前。</p>
+<p>穿过花草葳蕤的宫廷，是我回不去的青春年少。</p>
+<p>多年前母后也曾在午后抚摸着我的发。</p>
+<p>「我们小云芝啊，一定要嫁自己想嫁的人，过自己想过的生活。」</p>
+<p>11</p>
+<p>我的灵魂飘摇在大江南北。</p>
+<p>只要有人捡起我的雕像，我就能看到他们。</p>
+<p>但神力所剩无几，我无法像之前那样与他们交谈。</p>
+<p>洪水渐渐消失，但雨也毫无踪影。</p>
+<p>世间的天气开始失衡。</p>
+<p>在愈发炎热的天里，我穿梭在北齐的诸地。</p>
+<p>家里的男人像猪一样打着呼噜。</p>
+<p>少妇从木摇篮下取出雕像的碎片，慢慢地修补着。</p>
+<p>她美丽的脸上带着愁苦，手指上满是伤痕。</p>
+<p>摇篮里的婴儿朝她笑，她握着雕像，露出一个比哭还难看的笑。</p>
+<p>但总归是在笑。</p>
+<p>「蓝儿，阿妈不哭，阿妈在修公主呢。」</p>
+<p>……</p>
+<p>头发花白的老人小心翼翼地从衣服夹层中取出一点泥土。</p>
+<p>对着这点土，他老泪纵横，慢慢修补着雕像。</p>
+<p>「这土是老头子临走前从南明偷偷带的，公主不要嫌弃啊。」</p>
+<p>「咱们土在人在，永远不忘根。」</p>
+<p>……</p>
+<p>荒山上的无字衣冠冢前。</p>
+<p>一个瘦弱的少年对冢叩首，苍白的脸上眼神却乌黑透亮。</p>
+<p>他对着稀淡的日光修补着雕像。</p>
+<p>「公主，你一定会回来的，对吗？」</p>
+<p>……</p>
+<p>分布在北齐土地上的南明人执着而倔强地捡起我的雕像。</p>
+<p>他们修补着，坚信有一天我会回来。</p>
+<p>我走过他们的生活。</p>
+<p>流了一遍又一遍的泪。</p>
+<p>但他们已经很好地适应了新生活，并竭力生存着。</p>
+<p>但，最令我意想不到的，是最后一个捡起我雕像的人。</p>
+<p>12</p>
+<p>香山别苑的佛祠里，我见到了北齐太后。</p>
+<p>她瘦了很多，脊背却依旧挺直。</p>
+<p>昔年艳冠天下的脸已有了岁月的痕迹，两鬓苍白。</p>
+<p>侍女的托盘上呈着被修补后的雕像。</p>
+<p>太后伸出手，轻轻抚过雕像的面容。</p>
+<p>佛珠冰凉，沁过一丝冷意。</p>
+<p>她衰老的眼里涌过一抹感伤的情绪。</p>
+<p>「哀家当年便说过，不必娶南明女，不必用这样的手段。」</p>
+<p>「万事总有因果轮回，他这样做，总归是害人又害己。」</p>
+<p>侍女劝她：「娘娘，陛下做事自有谋断。」</p>
+<p>太后摇了摇头：「我自己的孩子我知道。」</p>
+<p>「昱儿勇武多谋，但下手过于狠绝，极伤阴私。」</p>
+<p>她的眼里闪过一丝悲哀。</p>
+<p>「只是可惜了昭明公主，这孩子哀家当年瞧着也很好，只是死得早了些。」</p>
+<p>侍女又劝她：「当年您要保昭明公主，已是仁慈之举了。」</p>
+<p>「昭明公主在大婚之夜就死了，陛下娶了霜小姐，亲上加亲，也是一桩美谈。」</p>
+<p>「美谈？」太后冷笑了一声。</p>
+<p>「若是美谈，这些年他就不必弄出那些宠妾灭妻的丑事来。」</p>
+<p>「当年哀家劝了他，他便将我软禁在这香山别苑里。」</p>
+<p>我一愣。</p>
+<p>宠妾灭妻？软禁？</p>
+<p>拓跋昱竟心狠如此？</p>
+<p>太后冷笑着摔了佛珠。</p>
+<p>「拓跋昱啊拓跋昱，到底还是更像他老子。」</p>
+<p>「自作孽，不可活。我倒要看看，这场大戏，他该怎么收场。」</p>
+<p>13</p>
+<p>我终于积攒出了点力气。</p>
+<p>但北齐却再没有雨水了。</p>
+<p>我想像从前那样肆意地行云布雨。</p>
+<p>却感受到难以动弹的滞涩。</p>
+<p>为什么？我不是雨神吗？</p>
+<p>我惶惑着回到泰山巅，那是我复生的地方。</p>
+<p>我想弄清楚一些事情。</p>
+<p>站在泰山之巅，望着茫茫四野，我忽然了悟了一件事。</p>
+<p>原来我不是雨神。</p>
+<p>也不是上天垂怜我。</p>
+<p>是南明万众夜以继日的祈祷感动了上苍。</p>
+<p>他们将信仰之力贯于我一身，使我拥有了排云布雨的能力。</p>
+<p>然而被他们信任的我，却没有好好地践行自己的力量。</p>
+<p>天地自有循环，之前我肆意宣泄的洪水，本就应该分布在这数年前。</p>
+<p>一朝之间倾泻干净，之后却留下无尽的干旱与炎热——</p>
+<p>最后所有的人都会死。</p>
+<p>我开始思索该如何挽救这垂危的世间。</p>
+<p>最后在泰山祭坛下的古碑上找到了答案。</p>
+<p>碑上说，取之于民，用之于民。</p>
+<p>江海的水来自河泽。</p>
+<p>如果想让河泽丰盈起来，就得让江海枯竭。</p>
+<p>我想：</p>
+<p>民众祈愿的信力是河泽。</p>
+<p>而我的生命是江海。</p>
+<p>「也许是该到走的时候了。」</p>
+<p>14</p>
+<p>拓跋昱又来找我了。</p>
+<p>他气喘吁吁地爬上泰山之巅，脸色青灰。</p>
+<p>烈日炙烤着他，他已不复年轻时的俊美。</p>
+<p>北齐帝王放下了引以为傲的自尊，伏在地上求我。</p>
+<p>他低声说：「云芝，住手吧，这样下去这世间都会完蛋的！」</p>
+<p>我沉默着坐在山岩上，无动于衷。</p>
+<p>拓跋昱脸色灰败，却遽然被出现在身后的女人捅了一刀。</p>
+<p>赫连霜杀了他。</p>
+<p>她笑得花枝乱颤，上了年纪的脸上已没有了年轻时的风韵。</p>
+<p>「拓跋昱，你宠妾灭妻，让那两个孽种代替我孩子的位置，死在我手上也不亏。」</p>
+<p>拓跋昱捂住伤口，不可置信地看着赫连霜。</p>
+<p>赫连霜放声大笑：「不敢相信？人总是会变的，你变了！我不能变？」</p>
+<p>说罢，她拔出刀，一脚把拓跋昱踹到山崖下。</p>
+<p>喷溅的血染红山岩。</p>
+<p>她毫不犹豫地给了自己一刀。</p>
+<p>我看着她，心头微受触动。</p>
+<p>赫连霜大笑着，把血抹在唇上，似胭脂般的红。</p>
+<p>「连云芝，你不就是想我们死吗？」</p>
+<p>「我杀了他，再自杀，你不就满足了吗？」</p>
+<p>「你不就满足了吗！」她声嘶力竭地吼着。</p>
+<p>下一刻，身体如折翼的飞鸟般，直直地朝悬崖下坠去。</p>
+<p>她的声音回荡在山谷里，盘旋不息：</p>
+<p>「连云芝，放过天下人吧。」</p>
+<p>我站起身，看着山岩上的血。</p>
+<p>两个生命转眼消逝。</p>
+<p>但他们不会死。</p>
+<p>这世上的人都不会死，除了我。</p>
+<p>我开始走过这座使我复生的山。</p>
+<p>当年南明万民给予我的力量，我要还给这世间众生。</p>
+<p>我的裙袂拂过山间秃岩。</p>
+<p>断断续续地哼唱着一支南明小调：</p>
+<p>「青春受谢，白日昭只。」</p>
+<p>「春气奋发，万物遽只。」</p>
+<p>「冥凌浃行，魂无逃只。」</p>
+<p>走路间，天上下起了雨。</p>
+<p>死去的人又从泥土里醒了过来。</p>
+<p>春风吹又生，野草蔓原。</p>
+<p>万物复苏，一切仿佛都如同之前一般。</p>
+<p>万物生则有其命，所有的人都该为自己的恶行付出代价。</p>
+<p>我们都死过一次。</p>
+<p>但再醒过来的人，已经被雨水冲刷了恶意。</p>
+<p>一路走过北齐的十六州，跨过南明的三十五城。</p>
+<p>我走到了东海里。</p>
+<p>海里浮现出南明万众，他们含着泪，朝我叩首。</p>
+<p>父皇母后站在最前面，欣慰地看着我。</p>
+<p>我朝他们微笑，然后消散在天地里。</p>
+<p>世间再无连云芝。</p>
+<p>15</p>
+<p>香山上也下起了雨。</p>
+<p>疾风扑朔，吹得窗棂簌簌抖动。</p>
+<p>侍女问静坐在榻上的太后要不要把窗户关上。</p>
+<p>太后道：「把窗户开着，哀家要听雨声。」</p>
+<p>侍女说：「听说干旱的地方又下起了雨，那里的人们还在欢呼。」</p>
+<p>「他们说雨是从泰山上下来的，现在正往泰山上去。」</p>
+<p>太后疲乏地合上眼，摆了摆手：「哀家知道了。」</p>
+<p>侍女应声告退后。</p>
+<p>太后睁开眼，望着窗外扑袭而来的雨，轻轻叹了口气：</p>
+<p>「纵有连云之志，也抵不过世间风吹雨打去。」</p>
+<p>（完结）</p>
+<p>番外</p>
+<p>我是南明人，却长在北齐。</p>
+<p>阿奶说我是阿爹的遗腹子，当年她和阿娘因为在肚子里的我才没去赴死。</p>
+<p>她说南明人本该堂堂正正地走，但活下来的人都有不得已的理由。</p>
+<p>阿娘嫁给了北齐人。</p>
+<p>我娶了北齐人。</p>
+<p>但我们仍然认为自己是南明人。</p>
+<p>我少年时，天上大旱，后来发起了大洪，人们颠沛流离，受苦得很。</p>
+<p>我跟着阿娘和阿奶，往高处走，一直没被大洪淹掉。</p>
+<p>但阿奶说，冥冥之中是公主在保护我们。</p>
+<p>她要我记住一个名字。</p>
+<p>昭明公主连云芝，是我们南明最后的荣光。</p>
+<p>阿奶哭着说：「公主是金枝玉叶的贵人，却从小往民间跑，咱们国都的人都见过她，和她说过话。」</p>
+<p>她说：「公主是个好人。」</p>
+<p>后来，北齐的各地出现了雨神雕像。</p>
+<p>南明人不会这么高调。</p>
+<p>这些都是北齐人做的。</p>
+<p>他们希望通过神明来实现自己的愿望。</p>
+<p>但阿奶说，这世间的人就是喜欢高高捧起一个人来，再狠狠把她砸下来。</p>
+<p>公主的雕像被砸了。</p>
+<p>阿奶心疼得直淌泪，趁夜色把雕像捡回了家。</p>
+<p>那一晚我不在家，但后来，她和我说见到了公主。</p>
+<p>我从未见过她这么容光焕发，就没敢跟她说，她可能是老眼昏花。</p>
+<p>阿奶说：「你不要不相信，阿奶从来不说谎，除了小时候哄你不吃糖。」</p>
+<p>我们把雕像修补起来，偷偷藏在供柜里。</p>
+<p>听说南明人都藏着雕像。</p>
+<p>我们见面时心照不宣，只暗地里指了指天。</p>
+<p>后来天又热了起来，天上久久不下雨。</p>
+<p>人们没水喝，就煮之前的雨水喝。</p>
+<p>阿奶说：「公主肯定遇到了什么问题，她不会不管我们的。」</p>
+<p>然而当天上真正下起了雨，她却又哭了起来了。</p>
+<p>「公主啊，公主啊……」</p>
+<p>她一声声地喊着。</p>
+<p>「你这又是何苦啊？」</p>
+<p>声音喑哑，宛若泣血的老鸦。</p>
+<p>邻居家死在大洪里的人又回来了。</p>
+<p>他步履蹒跚，脸上带着茫然，回了家就摔了盔甲，抱住家里的女人：「我、我以后再也不打你了……」</p>
+<p>天上下着雨，阿奶哭着拉着我往山里赶。</p>
+<p>人间大乱，但南明人都往山里赶。</p>
+<p>山里有神龛，这是南明人设的神龛。</p>
+<p>我们要供我们的公主成神。</p>
+<p>但神龛却消失了，烧香，香抖了几次，没烧成。</p>
+<p>南明人都哭着跪在空地上，朝老天磕头。</p>
+<p>公主死在了这世间。</p>
+<p>我们也救不了她。</p>
+<p>但阿奶擦干了泪痕：「公主一定是去了另外一个世界。」</p>
+<p>「在那里，她一定能和陛下、娘娘、太子殿下团聚。」</p>
+<p>南明人有了希望，把眼泪都擦干，连连点头。</p>
+<p>阿奶说：「我们送送公主吧。」</p>
+<p>我们朝青山绿水叩首，送我们南明人的公主。</p>
+<p>北齐帝回来后，起初还算得上勤政。</p>
+<p>但后来渐而懈怠了，老年时，他也成了昏君，丢了好不容易打下的江山。</p>
+<p>那个在边疆平凉府养马的少年，最后成了这天下的主人。</p>
+<p>烽火四起，这些年里，我度过无数个雨天，也曾无数次想起少年时的经历。</p>
+<p>到八十二岁这年我寿终正寝合眼时，我仍记得我是个南明人。</p>
+<p>我告诉床前哭啼不休的儿女，我下辈子仍要当个南明人。</p>
+<p>饮水要记得水发源的地方，河泽要承江海的情。</p>
+<p>只要有雨水在的地方，南明的血脉不会断。</p>
+<p>备案号:YXX1R55xJyNHwwwkl5piEYdo</p>
+<p>救了个傻书生后我翻车了</p>
+<p>​</p>
+<p>​</p>
+<p>刺客爱人：甜虐反转的古言故事</p>
+<p>释卷懒懒 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/25-%E6%9D%8E%E4%B8%96%E6%B0%91%E7%9C%9F%E7%9A%84%E5%8E%89%E5%AE%B3%E5%88%B0%E7%A9%BF%E8%B6%8A%E6%88%90%E5%93%AA%E4%B8%AA%E4%BA%A1%E5%9B%BD%E5%90%9B%E4%B8%BB%E9%83%BD%E8%83%BD%E6%95%91%E5%9B%9E%E6%9D%A5%E5%90%97/" title="李世民真的厉害到穿越成哪个亡国君主都能救回来吗？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">李世民真的厉害到穿越成哪个亡国君主都能救回来吗？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/9/24-%E8%8E%B2%E8%8A%B1%E7%8F%8D%E7%8F%A0/" title="莲花珍珠">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">莲花珍珠</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

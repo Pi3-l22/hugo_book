@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电脑文件多了，如何管理？ - 知乎(1) | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/5/18-%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E5%A4%9A%E4%BA%86%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-%E7%9F%A5%E4%B9%8E1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/5/18-%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E5%A4%9A%E4%BA%86%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-%E7%9F%A5%E4%B9%8E1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="电脑文件多了，如何管理？ - 知乎(1)">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+  <meta name="twitter:title" content="电脑文件多了，如何管理？ - 知乎(1)">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="电脑文件多了，如何管理？ - 知乎(1)">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="3556">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26582.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">电脑文件多了，如何管理？ - 知乎(1)</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>8分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%94%b5%e8%84%91%e6%96%87%e4%bb%b6%e5%a4%9a%e4%ba%86%ef%bc%8c%e5%a6%82%e4%bd%95%e7%ae%a1%e7%90%86%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29&amp;url=https://mohai.us.kg/posts/2024/5/18-%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E5%A4%9A%E4%BA%86%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/5/18-%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E5%A4%9A%E4%BA%86%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%94%b5%e8%84%91%e6%96%87%e4%bb%b6%e5%a4%9a%e4%ba%86%ef%bc%8c%e5%a6%82%e4%bd%95%e7%ae%a1%e7%90%86%ef%bc%9f%20-%20%e7%9f%a5%e4%b9%8e%281%29%20https://mohai.us.kg/posts/2024/5/18-%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E5%A4%9A%E4%BA%86%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-%E7%9F%A5%E4%B9%8E1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26582.jpg" alt="电脑文件多了，如何管理？ - 知乎(1)" />
+      
+
+      <p>电脑文件多了，如何管理？</p>
+<p>像你这种如何管理文件的问题。</p>
+<p>其实文件管理有三个阶段，这是根据你想要达到的文件管理的效果和深度来划分的：第一个阶段最初步，但它只能解决眼前的问题，第三个阶段需要平时的积累和注意，但一旦做成功，它可以覆盖你的所有文件。</p>
+<p>你在使用电脑的过程中也许经常碰到这些的情况：忘了文件的位置、找不到历史文件、还有交接工作，别人甚至不知道这一堆东西都是什么。</p>
+<p>这一切根源，就在这一次又一次的随手放置、寻找文件、删除文件的过程中，你不知不觉就被杂乱的文件给吞噬了。</p>
+<p>文件整理还取决于一个人的专注力和行动力。</p>
+<p>很多人觉得文件整理麻烦，其实这种感觉的根源恰恰是一时兴起的整理。</p>
+<p>没有统一的文件管理思路，往往会造成更大的混乱，就好比一遍又一遍地犯下同样的错误。</p>
+<p>不如从现在开始，列出一个简单的计划表，先理清桌面，再整理硬盘。</p>
+<p>这样就不会把时间浪费在「我要整理！啊整理好麻烦」这种反复纠结上了。</p>
+<p>搞定文件管理的3个阶段我把文件管理分为三个阶段：第一是初步整理、第二是高效管理、最后一个是深度整理。</p>
+<p>初步整理我们先来讲讲适用于每个人的初步整理——关键词有两个：「整理桌面」和「管理常用文件」。</p>
+<p>大多数人在处理文件之前，没有一个统一的分类标准，存到哪儿就是哪儿。</p>
+<p>很多人的心态是：既然桌面那么方便，那文件都放在桌面吧。</p>
+<p>久而久之，因为日积月累的未整理文件数量越来越庞大，导致最后即使想整理也有心无力。</p>
+<p>因为文件的增加和减少是一个连续的过程，那么在管理桌面时，我建议你做到以下三点：第一，给文件好好取个名字：下载文件到桌面时，随手给它们起一个看得懂的名字。</p>
+<p>从源头上解决文件名问题。</p>
+<p>文件名可以包括很多部分，常用的有「编号、修改日期、关键词、文件类型、文件内容、更多备注」等等。</p>
+<p>就像豆瓣上给电影的命名方式一样：「电影」-「美国」-「科幻」-「星际穿越」-乔纳森诺兰-169分钟-「2014-11-12」.mov，通过这种方式，我们确实可以完整的描述一个文件。</p>
+<p>在搜索时只要搜索任意一个标签就能找到它。</p>
+<p>但是，我们通常没有时间把所有文件都按这个规则命名一遍。</p>
+<p>实际上，从这些模块中选择一些需要的元素就行了。</p>
+<p>我习惯只用两到三个元素来描述一个文件。</p>
+<p>比如把刚编辑完的文档命名为2017-10-05-文件管理-01.md。</p>
+<p>第二，做好关联和归档：在使用中有意识的把相关的文件放在一起，便于对整体做进一步的操作。</p>
+<p>同时把过期的文件进行归档，保持桌面整洁。</p>
+<p>我通常会把完成的稿件和其中用到的图片放进一个以时间为开头的文件夹内，这一步就是有意识的关联文件。</p>
+<p>再把这个文件夹放进硬盘中存放同类文件夹的目录中，就完成了归档。</p>
+<p>第三，合理安排文件夹：花一点时间安排好文件分类，之后就不要轻易改动这个分类了。</p>
+<p>宁愿等有空再整理桌面文件，也不要图省事儿把所有内容塞进同一个新建文件夹。</p>
+<p>在我的桌面上常驻的只有文档库的快捷方式，用于快速归档和查看文件。</p>
+<p>其他文件一完成就会被归档进硬盘。</p>
+<p>如果你的工作文件较多，不妨多设置几个文件夹的快捷方式，直到可以快捷地打开所有位置。</p>
+<p>高效管理然后我们再讲讲如何管理常用文件。</p>
+<p>这一步的核心是利用好快捷方式、快速访问库、标签等功能，将常用的文件聚集在一个触手可及的位置，提高访问常用文件的速度。</p>
+<p>macOS中的「标签」可以将同类型文件跨越文件夹地聚集起来。</p>
+<p>Windows中的「库」则可以把不同文件夹聚集在一起。</p>
+<p>最后达到的效果是一样的。</p>
+<p>标签可以大致分为两类，一类是为文件本身定性的，比如「文档」「素材」。</p>
+<p>这些标签贴上之后很长时间内都不用修改，定性的标签可以丰富一点，对检索文件帮助很大。</p>
+<p>另一类是临时性的，比如「正在处理」「待归档」「待完善」之类的，需要根据工作进度做增减。</p>
+<p>它一般用于快速进入工作，比如每当完成一项工作，就应该对标签进行更新。</p>
+<p>最后，我希望你反复查看这几个小习惯。</p>
+<p>在养成习惯的初期，建议用便利贴把它们贴在桌上，每当不想整理文件的念头占据脑海，就用这张便利贴让自己清醒一下。</p>
+<p>完成初步整理之后的文件具有了一定的组织性，你可以清楚地知道桌面文件、常用文件在哪里，不太可能发生找不到某文件的情况了。</p>
+<p>文件管理不仅限于整理，你还需要提高文件使用效率，这就不得不提到「高效管理」文件了。</p>
+<p>这一步可以利用一些简单高效的工具，比如快速搜索软件Everything可以快速找到电脑中的任意文件。</p>
+<p>Everything与慢性子的系统自带搜索不同，它利用了USN日志索引，能够通过关键词、正则表达式搜索到PC中的任意一个文件。</p>
+<p>比如我想找一份半年前的重要人事调动表格，直接用Everything搜索「人事调动」和「.xlsx」这种模糊的关键词，即可在茫茫文件中瞬间检索定位出想要的文件。</p>
+<p>自动整理文件的软件DropIt，可以自定义规则和自动监控文件变化对文件进行整理。</p>
+<p>比如想把桌面上的文件按类型自动分类到不同的文件夹，在DropIt中创建一个自动分类的规则，下载完即可完成归类。</p>
+<p>如果不愿意每次都执行这个操作，还可以让DropIt自动监控文件变化，比如监控下载文件夹，自动把文档类的小文件复制到桌面，便于快速进入工作。</p>
+<p>自动把压缩包文件解压，打开下载目录就能看到压缩包内部的内容。</p>
+<p>深度用户还可以选用TotalCommander等第三方文件管理器来快速管理文件，TotalCommander丰富的快捷键能让你仅靠键盘就完成文件相关的所有操作，如果是新手，一时还达不到这个境界，没有关系，TotalCommander也提供了简单易用的收藏夹、标签等功能。</p>
+<p>在管理文件时拥有全新的体验和更高的效率。</p>
+<p>对比、选择趁手的软件，习惯快捷的操作之后，就可以用这些软件对文件进行长期有效的管理了。</p>
+<p>深度整理如果不满足于整理现在的文件，希望将历史文件也整理地井井有条，那就需要进入深度整理阶段了。</p>
+<p>第一步，将那些完全看不懂的文件名改为最符合自己需求的形式，比如把依赖时间的文件命名为「日期+文件名」这样的格式。</p>
+<p>命名文件的最低要求也是让自己在不打开这个文件的情况下就能知道文件的大致内容。</p>
+<p>如果你有耐心，也可以为文件名添加更为详尽的说明，比如将精选的照片命名为「时间+地点+事件+人物」这种形式。</p>
+<p>接下来，就要建立统一完整的文件夹层级，将不同类型的历史文件归档，为每一种类型的文件做出符合文件特性的微调，使整台电脑中的文件井然有序。</p>
+<p>在这一步中，尽可能考虑到所有可能需要的目录，将磁盘划分为几个大类，比如「工作」「学习」「娱乐」。</p>
+<p>但这种粗糙的分类是经不起时间检验的。</p>
+<p>更好的分类方式，应该是细分到「一眼就知道这个文件放在哪里」，比如你喜欢从网上下载图片，也喜欢备份照片。</p>
+<p>那就不要将两者混在同一个文件夹中，而是将其分为「图片」和「照片」，这样每次备份照片，第一反应是找「照片」而不是别的什么文件夹。</p>
+<p>除了第一级分类，文件夹的层级最好不要多于三层，过于详尽的分类也会消磨整理的想法。</p>
+<p>宁愿在多建一些文件夹，也不要建立第四第五层文件夹。</p>
+<p>完成了重命名和文件夹层级的划分，就要讲讲归档了。</p>
+<p>归档与备份归档就是把那些不再经常使用的文件整理归类。</p>
+<p>你需要挑出对将来有参考价值的文件，进行统一归档。</p>
+<p>这一步也是对文件进行分拣的过程。</p>
+<p>将三种类型的文件删除，可以节约硬盘空间。</p>
+<p>分别是没有保留价值的文件、可以轻易从网上下载到的文件、已过期或者有时效性的文件。</p>
+<p>删除后剩下来的文件大都是自己工作的精华，或是对将来有参考价值的文件。</p>
+<p>将它们移入移动硬盘或者网盘内。</p>
+<p>完成最后一步的备份工作。</p>
+<p>还有，不要听那些所谓的「断舍离」理论，这对于极简生活或许有用，但是硬盘就是用来存放文件的，没有必要自绝后路，等他们想回头找文件就找不到了。</p>
+<p>做完了上面的这些整理，这时你再回过头看看井井有条的文件仓库，我想内心一定是满满的成就感。</p>
+<p>在完成上面这些通用的步骤之后，你需要结合自己的实际情况，定制一套使用流程，并严格遵守。</p>
+<p>其实你可以在很多地方看到别人分享的文件管理经验，但是别人的经验未必适合你。</p>
+<p>因为文件管理需要结合使用习惯，比如别人喜欢下载视频，我不喜欢。</p>
+<p>那我根本就不需要为视频建立专属的文件夹。</p>
+<p>你更应该做的，是建立一套属于自己的工作流程，从文件管理的层面为自己搭建一个舒适的工作环境。</p>
+<p>例如写稿，需要找资料、然后进行写作、还有可能要处理配图。</p>
+<p>记录这些流程后，想办法提高文件的关联程度。</p>
+<p>比如将常用的软件快捷方式、参考资料、稿件、配图素材放在同一个库中。</p>
+<p>每次工作只需打开这个工作文件夹即可。</p>
+<p>再比如我将桌面的所有文件进行云同步，以便在任何设备上都能处理文件。</p>
+<p>即使人不在PC前，别人问我要近期的文件，我一样可以在5分钟内找到并发送给他。</p>
+<p>这就是文件管理，这就是效率。</p>
+<p>所以文件管理并不复杂，只要有心，将功夫用在平时。</p>
+<p>我们每个人，都可以管理好自己的文件。</p>
+<p>学会使用这些好方法和好工具，让你的工作从混乱变到有序。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/24-%E7%94%B5%E8%84%91%E7%97%85%E6%AF%92%E7%86%8A%E7%8C%AB%E7%83%A7%E9%A6%99%E5%BD%93%E5%B9%B4%E6%9C%89%E5%A4%9A%E5%87%B6%E6%AE%8B-%E7%9F%A5%E4%B9%8E/" title="电脑病毒「熊猫烧香」当年有多凶残？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">电脑病毒「熊猫烧香」当年有多凶残？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/2/24-%E6%AE%BF%E4%B8%8B%E7%9A%84%E6%AC%A2%E5%96%9C%E5%86%A4%E5%AE%B6/" title="殿下的欢喜冤家">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">殿下的欢喜冤家</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

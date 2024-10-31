@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小哭包徒手抓NPC | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/6/2-%E5%B0%8F%E5%93%AD%E5%8C%85%E5%BE%92%E6%89%8B%E6%8A%93npc/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/6/2-%E5%B0%8F%E5%93%AD%E5%8C%85%E5%BE%92%E6%89%8B%E6%8A%93npc/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="小哭包徒手抓NPC">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25958.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25958.jpg">
+  <meta name="twitter:title" content="小哭包徒手抓NPC">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="小哭包徒手抓NPC">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11213">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25958.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">小哭包徒手抓NPC</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%b0%8f%e5%93%ad%e5%8c%85%e5%be%92%e6%89%8b%e6%8a%93NPC&amp;url=https://mohai.us.kg/posts/2023/6/2-%E5%B0%8F%E5%93%AD%E5%8C%85%E5%BE%92%E6%89%8B%E6%8A%93npc/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/6/2-%E5%B0%8F%E5%93%AD%E5%8C%85%E5%BE%92%E6%89%8B%E6%8A%93npc/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%b0%8f%e5%93%ad%e5%8c%85%e5%be%92%e6%89%8b%e6%8a%93NPC%20https://mohai.us.kg/posts/2023/6/2-%E5%B0%8F%E5%93%AD%E5%8C%85%E5%BE%92%E6%89%8B%E6%8A%93npc/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25958.jpg" alt="小哭包徒手抓NPC" />
+      
+
+      <p>小哭包徒手抓NPC</p>
+<p>非分之想：恰情动时见你</p>
+<p>我凭着「小哭包」人设，以选秀冠军的名次成功地出道。</p>
+<p>两年后，女团解散，我成功地从神坛华丽地跌下。</p>
+<p>经纪人为了热度，给我签了个密室逃脱的恐怖综艺。</p>
+<p>「听我说谢谢你，因为有你，温暖了四季……」</p>
+<p>众人只知我「哭包」，却不知我是密室高玩。</p>
+<p>01</p>
+<p>《逃脱吧，朋友》的官宣阵容公布后，关于我的热搜霸榜了。</p>
+<p>【小哭包江鹿常驻《逃脱吧，朋友》】</p>
+<p>【江鹿逃脱吧】</p>
+<p>【江鹿泪腺有多发达？】</p>
+<p>……</p>
+<p>甚至还有人创建了「江鹿今天吓尿了吗？」的超话，浏览量「噌噌」地往上涨。</p>
+<p>所有人都在等着看我的笑话。</p>
+<p>苍了天了。</p>
+<p>再怎么说我入娱乐圈之前，也是密室圈的大佬好吗？</p>
+<p>吓尿？不存在的。</p>
+<p>他们还是担心一下 NPC 比较好。</p>
+<p>要不是我去旅游被星探发现，说不准已经把密室分店开到海外了。</p>
+<p>经纪人跟我说，这个综艺是我最后的工作，不要压抑自己的天性。</p>
+<p>只要我顺利地录制完这档综艺，就和我解除合同，放我自由。</p>
+<p>我也没傻到听信她画的大饼，签综艺合同的同时，就签了解约合同。</p>
+<p>合同在手，天下我有。</p>
+<p>还装什么「小哭包」，姐要翻身把歌唱。</p>
+<p>我悄咪咪地建了个小号，名字就叫「一头铁鹿」。</p>
+<p>再搞个超话：「江鹿今天抓了几个 NPC」。</p>
+<p>02</p>
+<p>正式录制前一天直播，我被工作人员带到餐厅。</p>
+<p>当红小花林雪儿和偶像歌手程正杰，以及知名学霸博主马博晏坐在沙发上，有一搭没一搭地聊天。</p>
+<p>见我进来，林雪儿热络起身，笑盈盈道：「天啊，鹿鹿没想到你还真来了。」</p>
+<p>林雪儿是出了名的嗲精。</p>
+<p>不管认识不认识，都一副相见恨晚的模样，见到男人更是恨不得整个人都扑上去。</p>
+<p>我看不惯她，但也不能撕破脸。</p>
+<p>只能假笑道：「这不是听说雪儿姐会来，我来跟你做伴。」</p>
+<p>好像谁不会两副面孔似的。</p>
+<p>房间门再次被打开了，另外两个常驻也来了。</p>
+<p>一个是搞笑博主，人称军哥。</p>
+<p>另一个是正当红的影视剧男主，温凯深。</p>
+<p>四男两女，六位常驻全部集齐。</p>
+<p>就在我们寒暄时，「咔嚓」一声门锁落下，随即灯全部熄灭。</p>
+<p>03</p>
+<p>一片漆黑中，大家都不敢轻举妄动。</p>
+<p>林雪儿一把抓住我的胳膊，伸手捂住我的眼睛。</p>
+<p>「鹿鹿别怕，姐姐保护你。」</p>
+<p>姐你个大头鬼，能不能把我撒开？手电筒都拿不出来。</p>
+<p>此时的弹幕：</p>
+<p>【不是吧不是吧，关个灯就吓哭了？】</p>
+<p>【大家理解一下，小哭包嘛，人设不能崩。】</p>
+<p>【就烦她哭哭啼啼的，节目组真会挑人。】</p>
+<p>【快来「江鹿今天吓尿了吗」超话签到领积分，能兑换豪礼！】</p>
+<p>「雪儿姐，你松开我，胳膊不过血了，再捏着就进医院了。」</p>
+<p>我也没拐弯抹角，挣脱开她的束缚，从兜里掏出手电筒。</p>
+<p>「啪」的一声，光芒万丈。</p>
+<p>我打量房间，发现墙上的画有些奇怪。</p>
+<p>手里拿着手电筒不方便摘画，刚回头，就对上温凯深的双眸。</p>
+<p>「你要做什么？我帮你。」他上前两步。</p>
+<p>我指了指墙上的画，他长臂一伸，从我身后穿过。</p>
+<p>淡淡的栀子花的味道飘过鼻尖。</p>
+<p>「这画怎么了？」</p>
+<p>「左边是条龙，右边是……云和彩虹？」温凯深微微地皱眉，「什么意思？龙腾四海？」</p>
+<p>04</p>
+<p>「如果我没猜错的话，应该是首歌——」</p>
+<p>我话还没说完，林雪儿得意地打断我。</p>
+<p>「我觉得不像歌，应该是个单词才对，而且是五个字母组成的单词。」</p>
+<p>她从餐桌下面抱出一个小木盒，上面有个五位字母密码锁。</p>
+<p>其他人纷纷点头，她更自豪。</p>
+<p>我手里的手电筒被她一把夺走。</p>
+<p>「鹿鹿，你乖乖地坐着，别乱跑，解题的话，我们来就行。」</p>
+<p>她这是打算孤立我，好让自己成为团宠？</p>
+<p>那她怕是要失望了。</p>
+<p>我从来不惯孩子。</p>
+<p>拿过盒子，慢条斯理地转动字母锁。</p>
+<p>「咔」的一声。</p>
+<p>开了。</p>
+<p>里面静静地躺着一把钥匙。</p>
+<p>虽然只是先导片，但节目组也不至于如此敷衍吧。</p>
+<p>在其他人还在找线索的时候，我拿着钥匙，慢悠悠地打开门，顺手打开灯。</p>
+<p>灯光亮起，我站在门口，揉着被林雪儿捏红的胳膊，眼眶泛红。</p>
+<p>「我天，你可以啊，老妹儿，咋整开的？」军哥笑道。</p>
+<p>「我就自己随便地试了试，没想到真的开了。」</p>
+<p>我微红着眼眶，装作不经意地将泛红的胳膊对准摄像头。</p>
+<p>还不忘搭上一句：「就是碰巧罢了，不像雪儿姐姐聪明。」</p>
+<p>我解放天性后，致力于用魔法打败魔法，走绿茶的路，让她无路可走。</p>
+<p>「所以，究竟是什么？」马博晏眼中放光。</p>
+<p>我「嘿嘿」一笑，唱道：「全场动作必须跟我整齐划一。」</p>
+<p>「来左边儿跟我一起画个龙，在你右边儿画一道彩虹。」</p>
+<p>几人笑着跟我一起合唱，弹幕都笑疯了。</p>
+<p>【我知道我知道，是《野狼 Disco》。】</p>
+<p>【这么简单的吗？我还以为要解很长时间。】</p>
+<p>【这玩意儿也太洗脑了，我都不自觉地唱起来了。】</p>
+<p>05</p>
+<p>之前定的是录播，在开始录制前一周，突然通知改成了直播。</p>
+<p>原因无他，先导片时弹幕的热度爆表，导演想趁机炒作。</p>
+<p>这期主题是《古堡庄园》欧式吸血鬼风格。</p>
+<p>上车之前，导演组让我们自发地选出一名队长。</p>
+<p>林雪儿自告奋勇。</p>
+<p>男生们又都很有绅士风度，自然不会跟她争。</p>
+<p>我顺水推舟：「队长，那你一定要挡在我们前面，保护好队员呀。」</p>
+<p>她笑道：「我作为队长，命令你们，保护我！」</p>
+<p>戴好眼罩，我们排队下了车。</p>
+<p>听到提示音，摘下眼罩。</p>
+<p>一片漆黑，阴森诡异。</p>
+<p>我掏出事先准备好的小手电：「有人要手电筒吗？」</p>
+<p>「一人一个，人人有份。」我把迷你手电筒分给每一个人。</p>
+<p>站在我后面的温凯深笑道：「你可真行，竟然没被导演组搜走。」</p>
+<p>「我学过变戏法。」我信口胡诌。</p>
+<p>弹幕：</p>
+<p>【真的假的，江鹿还会变戏法？】</p>
+<p>【导演组：咋就没防住她，下次重点搜她。】</p>
+<p>【等着看江鹿泪流成河。】</p>
+<p>【建议不要戴耳机观看，以免被江鹿喊聋。】</p>
+<p>06</p>
+<p>有了亮光，就不那么恐怖。</p>
+<p>我刚准备去看看门在哪里，就听到身后一道尖锐的叫声。</p>
+<p>回头一看，林雪儿已经一头扎进了程正杰的怀里。</p>
+<p>「别怕，都是假的。」程正杰带着颤音，脸色煞白。</p>
+<p>我走过去拿手电筒照着窗外。</p>
+<p>突然一道人影闪过，玻璃窗上留下两个血手印。</p>
+<p>我下意识地打开窗户，就听「砰」的一声。</p>
+<p>好像是撞到头的声音。</p>
+<p>我连忙道歉。</p>
+<p>「对不起，对不起，不好意思，我关上，我关上。」</p>
+<p>我可不想节目刚开始，就被网友吐槽是个莽撞人。</p>
+<p>「鹿鹿，你不害怕吗？」林雪儿震惊地看着我。</p>
+<p>我拍着胸口，敷衍两句：「艾玛，我好害怕啊，吓死我了，哎呀呀。」</p>
+<p>林雪儿奇怪也很正常，毕竟我当初走的路子是「小哭包」。</p>
+<p>面对这种血腥恐怖场面，我非但没哭，还极其淡定。</p>
+<p>是个人都会怀疑我是不是精神状态不太好。</p>
+<p>然而，姐不在乎。</p>
+<p>弹幕：</p>
+<p>【神了，江鹿竟然不怕，她竟然没哭！】</p>
+<p>【她不仅没哭，还很有礼貌呢。】</p>
+<p>【鹿鹿好敷衍，但是好可爱啊！】</p>
+<p>【林雪儿好吵，神烦！】</p>
+<p>07</p>
+<p>我好久没玩密室了，兴奋得恨不得跳一段舞。</p>
+<p>六个人里，温凯深和马博晏积极地解谜。</p>
+<p>军哥负责活跃气氛和体力担当。</p>
+<p>我开启地毯式搜索模式，争取见一见所有 NPC，碰一碰所有机关。</p>
+<p>而另外两个人，林雪儿负责「啊啊啊」，程正杰负责哄她。</p>
+<p>分工合理，弹幕刷屏，综艺效果满分。</p>
+<p>密室进程一半的时候，林雪儿的嗓子都喊得沙哑。</p>
+<p>我耳朵都快被震聋，实在忍不住。</p>
+<p>「雪儿姐，快喝点儿水，歇会儿再喊。」</p>
+<p>「鹿鹿，你以前看到虫子都会哭，怎么胆子突然这么大了？」</p>
+<p>她这话说得妙啊。</p>
+<p>要是我说，我本来胆子就大，那肯定会被弹幕往死里喷。</p>
+<p>我装无辜道：「我一直以为雪儿姐天不怕地不怕呢。」</p>
+<p>弹幕：</p>
+<p>【江鹿就是我的荧幕嘴替，真敢说。】</p>
+<p>【她这不惯人的小劲儿什么时候学的，真给力！】</p>
+<p>【鹿鹿老阴阳人了，哈哈哈哈哈！】</p>
+<p>08</p>
+<p>就在聊天的工夫，前方突然出现一个浑身是血的吸血鬼。</p>
+<p>林雪儿一把就把我推了出去。</p>
+<p>我与吸血鬼差点儿当众磕一个。</p>
+<p>很显然，NPC 也没想到我会离他这么近。</p>
+<p>我眼看着他要跑，一手拽住他的胳膊：「别走，你别走！」</p>
+<p>「我抓住了！快来人啊！」我大喊出声。</p>
+<p>我瞄了一眼林雪儿。</p>
+<p>还想逃？</p>
+<p>我腾出一只手，抓住她。</p>
+<p>「雪儿姐，你看看，不吓人，都是假的。」我笑道。</p>
+<p>她哪里顾得上我说什么，拼命地大喊：「有鬼啊！」</p>
+<p>弹幕：</p>
+<p>【神了，她还真徒手抓 NPC。】</p>
+<p>【我要去「江鹿今天抓了几个 NPC「超话打卡。】</p>
+<p>【NPC 小哥哥还好吗？他好像很慌张的样子。】</p>
+<p>【哈哈哈哈，要不要这么莽，我好喜欢！】</p>
+<p>09</p>
+<p>我承认，我就是看不惯林雪儿。</p>
+<p>绿茶心机嗲精，矫揉造作得不行。</p>
+<p>我这算不算是替天行道，让她现出原形？</p>
+<p>突然想唱一句「刚擒住了几个妖，又降住了几个魔，魑魅魍魉怎么他就那么多……」</p>
+<p>NPC 挣脱开我的手，逃命似的消失在黑暗中。</p>
+<p>等到男生们过来的时候，就看到我靠在墙边，眼眶通红。</p>
+<p>我一脸委屈：「我就是想着可能 NPC 会有线索，所以才拉住的……」</p>
+<p>「你们没受伤吧？」温凯深关切地问道。</p>
+<p>我摇摇头：「雪儿姐吓得不轻，还是让她跟你们一起走吧。」</p>
+<p>「嗯，让程正杰和军哥保护她。」马博晏点点头，拉着温凯深继续解谜。</p>
+<p>我可不想再带个拖油瓶探路，刚刚要不是因为她。</p>
+<p>那个 NPC 根本就逃不掉。</p>
+<p>可惜了。</p>
+<p>10</p>
+<p>因着密室逃脱时间较长，直播中间不能剪辑。</p>
+<p>节目前半段直播，后半段剪辑后作为下集在直播的两天后上线。</p>
+<p>录制结束，我还没过瘾。</p>
+<p>温凯深递给我一瓶水：「江鹿，我发现你的胆子是真的大。」</p>
+<p>「失敬失敬，我偷偷地告诉你，这都是我玩剩下的。」</p>
+<p>我拧开瓶盖，喝了一口。</p>
+<p>他的目光扫过瓶子，又看向我。</p>
+<p>「我一直以为，你是一个很柔弱的小姑娘——」</p>
+<p>他的话还没说完，我果断地抬手打断：「都是圈中人，有几个能做自己。」</p>
+<p>温凯深点点头：「也对。」</p>
+<p>我笑了笑，没再继续说下去。</p>
+<p>之前我只在荧幕上见过温凯深，也听周围人提起过他。</p>
+<p>他戏剧学院毕业，跑过龙套，演过话剧，在剧组摸爬滚打了很多年。</p>
+<p>直到最近大火了一部剧，温凯深的名字才被众人所知道。</p>
+<p>说起来，我比他幸运很多。</p>
+<p>但人家是先苦后甜，我是一直都苦。</p>
+<p>不过，马上就要苦到头了。</p>
+<p>11</p>
+<p>直播结束后，我的微博炸了。</p>
+<p>连带着「江鹿今天抓了几个 NPC」的超话一起炸了。</p>
+<p>而林雪儿的微博也炸了。</p>
+<p>只不过她的是炸糊了。</p>
+<p>经纪人给我打电话，威逼利诱要我续约。</p>
+<p>我果断地拒绝。</p>
+<p>吃人不吐骨头的地方，我宁愿退圈，也不当冤大头。</p>
+<p>本期主题《部落遗址》，原始部落的荒岛求生主题。</p>
+<p>节目组包下整个小岛做场地，下了血本。</p>
+<p>规定每人只能带一样物品上岛。</p>
+<p>有了上一期的前车之鉴，这次工作人员搜得格外仔细。</p>
+<p>其他人要么带驱虫药水，要么带手电筒。</p>
+<p>而我不一样。</p>
+<p>我带了个帐篷。</p>
+<p>弹幕：</p>
+<p>【江鹿是准备落地生根？】</p>
+<p>【我觉得她是想开荒，搞基建。】</p>
+<p>【怎么突然还有点儿想看，一人血书，江鹿荒岛求生！】</p>
+<p>12</p>
+<p>这次节目组没有给我们戴眼罩。</p>
+<p>船「突突突」地开向小岛，水天交界处的夕阳甚是好看。</p>
+<p>上岛后，导演组给每人一个紧急求救的信号灯，以防有什么意外发生。</p>
+<p>岛上郁郁葱葱，除了树还是树，看不出有任何人类活动的痕迹。</p>
+<p>我们根据指示牌朝着小岛里面走，越走树木越茂密。</p>
+<p>「你们是谁？来这里做什么？」</p>
+<p>突然一个声音从树上传来。</p>
+<p>那人站在树上，赤着脚，身上画着看不懂的图腾。</p>
+<p>温凯深表明来意，就听那人冲着森林喊了几句听不懂的话。</p>
+<p>紧接着，周围一阵窸窸窣窣的声音。</p>
+<p>还没等我看清是什么，就被温凯深拉着往某个方向跑。</p>
+<p>「快跑，分开跑，别回头！」他高声地喊了一句。</p>
+<p>什么情况？</p>
+<p>怎么就突然开跑了。</p>
+<p>一直到身后没了动静，温凯深才慢慢地停下脚步。</p>
+<p>我回头看去，只有树影，其他什么也没看到。</p>
+<p>「你看到什么了？」我满是疑惑。</p>
+<p>温凯深沉着脸：「那人身上的图腾，我之前在书上看到过，是食人族的。」</p>
+<p>「食人族？」我心潮澎湃，转身就要往回走。</p>
+<p>温凯深再次拉住我，满眼担忧：「你干什么？」</p>
+<p>「我还没见过食人族，去看看。」</p>
+<p>我试图挣脱，奈何他拉得很紧。</p>
+<p>我根本就挣脱不开。</p>
+<p>弹幕：</p>
+<p>【温凯深：这姑娘有毒。】</p>
+<p>【我也想看看食人族，鹿鹿快带我们去看！】</p>
+<p>【鹿鹿就是节目 bug，心疼节目组两秒。】</p>
+<p>【食人族：请离我远一些，谢谢。】</p>
+<p>13</p>
+<p>我拗不过温凯深，被他拉着继续往前寻找线索。</p>
+<p>温凯深带了手电筒，我俩沿着小路一路向西。</p>
+<p>海风轻轻地吹着，舒适、惬意。</p>
+<p>周围安静得只能听到风吹树叶的「沙沙」声，以及上空盘旋的无人机摄像的声音。</p>
+<p>走了大约半个小时，依旧不见任何人影。</p>
+<p>我索性拿出帐篷，正准备找地方安营扎寨。</p>
+<p>突然看到前方有火光。</p>
+<p>荒郊野岭的，肯定是食人族的部落。</p>
+<p>真是踏破铁鞋无觅处，得来全不费工夫。</p>
+<p>「深哥，那边有光！」</p>
+<p>我扔下帐篷，跑出小路，奔着树林而去。</p>
+<p>温凯深在后面紧追上来：「你慢点，小心脚下。」</p>
+<p>靠近火光，那是一片很大的空地。</p>
+<p>我躲在一棵大树后，探头往空地看去。</p>
+<p>几个穿着原始部落衣服的人围着篝火跳舞。</p>
+<p>林雪儿和程正杰被押着走到火堆边。</p>
+<p>温凯深扫了一眼，拉着我蹲下身子，凑近我耳边。</p>
+<p>「那不是林雪儿和程正杰吗？」</p>
+<p>温热的呼吸打在耳畔，低沉微哑的声音像极了香醇的酒酿，令人微醺其中。</p>
+<p>有那么一瞬间失神。</p>
+<p>我侧头看向他。</p>
+<p>借着月光，他半张脸都隐在暗处。</p>
+<p>朦胧中，棱角分明的下颌骨仿佛精雕细琢的艺术品。</p>
+<p>这张脸，真好看。</p>
+<p>「江鹿？」他见我没反应，拍了拍我的肩膀。</p>
+<p>温凯深：「等下我把他们引开，你过去给他们解绑。」</p>
+<p>我回过神：「导演组知道我们在一起的，如果你跑出去，他们肯定不会追，还是我去吧。」</p>
+<p>救人是次要的，我对食人族比较感兴趣。</p>
+<p>说不好还能蹭点儿烧烤吃。</p>
+<p>我担心他不肯，凑到他耳边说道：「不会有事的，都是节目效果。」</p>
+<p>夜幕下，我并未发现他微红的耳廓，以及那双担忧的目光。</p>
+<p>14</p>
+<p>不等温凯深阻拦，我跑到空地上，对着食人族扔了块儿石头。</p>
+<p>「打不过我吧，没有办法，我就是这么强大，啦啦啦啦啦….」</p>
+<p>那群人见我叫嚣，纷纷地抄起木棍。</p>
+<p>我撒腿就跑。</p>
+<p>边跑边唱：「被我打败啦，全都一起上吧，我根本没在怕…」</p>
+<p>跑出去没多远，我就被他们团团围住。</p>
+<p>那场面，相当壮观。</p>
+<p>「咱有话好好说，毕竟五十六个民族，五十六朵花，五十六个兄弟姐妹是一家…」</p>
+<p>NPC 们互相看了一眼，一拥而上。</p>
+<p>「能不戴眼罩吗？」</p>
+<p>「绑手就行了，脚就不用了吧，我又跑不过你们。」</p>
+<p>「嘴还要堵？过分了吧——唔——」</p>
+<p>我被两个人抬走。</p>
+<p>他俩边走边聊。</p>
+<p>「是生吃还是烤着？」</p>
+<p>「我觉得煮了吧，煮着味道鲜美。」</p>
+<p>弹幕：</p>
+<p>【原来食人族也说普通话啊。】</p>
+<p>【深哥快去救鹿鹿啊！我的「林深见鹿」CP，可不能少个人。】</p>
+<p>【小马别解题了，去救鹿鹿。高举「指鹿为马」CP 大旗！】</p>
+<p>【弟弟很好，哥哥也不错，我到底站哪个 CP？好纠结。】</p>
+<p>15</p>
+<p>直播画面切成三个。</p>
+<p>一个是我被绑着，准备下锅的悲惨处境。</p>
+<p>一个是马博晏和军哥在山洞里解题。</p>
+<p>还一个，被解救的林雪儿趴在程正杰肩上哭泣。</p>
+<p>似乎丢了一个人。</p>
+<p>温凯深呢？</p>
+<p>很快地，在我的画面中出现了一道身影。</p>
+<p>温凯深穿着食人族一模一样的衣服，悄悄地绕到我的身后。</p>
+<p>我感觉有人靠近，回头一看。</p>
+<p>见他蓬头垢面却也挡不住帅气，差点儿笑出声。</p>
+<p>「别出声，我帮你松开。」</p>
+<p>他话音未落，我的指尖滑过一抹温热。</p>
+<p>若有若无的碰触，令人心悸。</p>
+<p>他蹲下身子，解开我脚上的束缚。</p>
+<p>趁人不注意，拉着我的手，头也不回地往后跑去。</p>
+<p>骨节分明的大手紧紧地握住我的，满满的安全感。</p>
+<p>这一刻，他是救我于水火的英雄。</p>
+<p>即便我知道，身后就是一群 NPC 罢了，不会有危险。</p>
+<p>也许是因为奔跑，也许不是。</p>
+<p>「扑通扑通」的心跳声，越来越清晰。</p>
+<p>我是来参加恐怖综艺的，这画面怎么像极了偶像剧？</p>
+<p>我们躲在一块儿大石头后面。</p>
+<p>温凯深松开我的手，紧张地看着外面的情况。</p>
+<p>「深哥，你吃吗？」</p>
+<p>「啊？」</p>
+<p>他低头看着我手里的巧克力，微微地一愣。</p>
+<p>「吃点吧，别低血糖。」我把巧克力塞进他的手里，不容他拒绝。</p>
+<p>「你是哆啦 A 梦吗？」他浅笑。</p>
+<p>我也不知道是哪根筋搭错了，顺势接了一句。</p>
+<p>「那你是大熊吗？」</p>
+<p>16</p>
+<p>「那边有动静！」食人族大喝一声。</p>
+<p>温凯深抬手按住我的头。</p>
+<p>我似是依偎在他宽阔的怀抱里。</p>
+<p>微微地抬眼，平直伶仃的锁骨，喉结上下滚动。</p>
+<p>他眼角泛红，幽黑的眸子倒映出我的影子。</p>
+<p>我眼神闪躲，下意识地要躲。</p>
+<p>达咩，我可不是来炒绯闻的。</p>
+<p>我脚下一滑，向后倒去。</p>
+<p>他眼疾手快地托住我的头，倒在地上，整个人罩在我的上方。</p>
+<p>暧昧气氛徒增。</p>
+<p>完了。</p>
+<p>这下解释不清了。</p>
+<p>脚步声由远及近。</p>
+<p>我莫名地不敢动。</p>
+<p>他侧颜绝了。</p>
+<p>脑海中回荡着「是心动啊，糟糕眼神躲不掉，对你莫名地心跳……」</p>
+<p>等脚步声远去，他才撑起身子，温声：「你没事吧？」</p>
+<p>「没事没事。」我的脸烧得通红，下意识地看向别处。</p>
+<p>眼角扫到他护着我头的手，血珠凝在掌心。</p>
+<p>「你受伤了？」我想都没想，拉过他的手。</p>
+<p>这下糟了。</p>
+<p>好歹人家也是当红影星。</p>
+<p>被他的粉丝看到，他因为我受伤，我岂不是罪人了？</p>
+<p>我掏出创口贴，小心翼翼地为他贴上。</p>
+<p>「你先凑合用一下，等出了小岛再好好地处理。」</p>
+<p>温凯深见我认真起来，抬起另一只手，揉乱我额前的发丝。</p>
+<p>轻笑出声：「你还真是什么都有。」</p>
+<p>弹幕：</p>
+<p>【鹿宝儿妥妥的小叮当猫啊。】</p>
+<p>【藏东西小能手。】</p>
+<p>【啊啊啊啊！「林深见鹿」CP 太好嗑了！】</p>
+<p>【一人血书让他们去拍个偶像剧！】</p>
+<p>【只有弟弟在专心解谜的世界达成~】</p>
+<p>17</p>
+<p>我们刚起身，就瞧见几个 NPC 双手环胸地的看着我们。</p>
+<p>尴尬…..是此时的对视。</p>
+<p>「几位大哥，有烧烤吗？我有点儿饿了。」我笑嘻嘻地打破沉寂。</p>
+<p>「烤了你不就有了，都带走！」</p>
+<p>一声令下，我和温凯深又被带回了空地。</p>
+<p>烤火架上串着烤全羊，香气飘飘。</p>
+<p>「想不想吃烤全羊？」我侧头低声对着温凯深说道。</p>
+<p>「你有办法？」他挑了挑眉。</p>
+<p>我嘴角扬起一抹笑：「你绑两个，我绑两个。」</p>
+<p>「行。」</p>
+<p>我没料到他会答应得这么快。</p>
+<p>像他这种沉稳镇定的性子，咋可能做出这种胡闹的事情？</p>
+<p>「我数三二一，我们一起动手。」</p>
+<p>他看起来并不像是在开玩笑。</p>
+<p>「三。」</p>
+<p>「二。」</p>
+<p>他「一」还没说出口，我就听到我旁边的小哥哥急忙打断。</p>
+<p>「别别别，别动手，你们随便烤，等下我们还有任务呢。」</p>
+<p>我「嘿嘿」一笑：「算你识相。」</p>
+<p>NPC 无奈：「你们下次密谋的时候，能不能小点儿声，全国人民都听到了。」</p>
+<p>弹幕被「哈哈哈哈」刷屏。</p>
+<p>马博晏和军哥被抓到空地时，我和温凯深以及 NPC 在高高兴兴地吃烧烤。</p>
+<p>「你们好歹也尊重一下导演组，真的就只有我在解题吗？」</p>
+<p>马博晏气呼呼地坐下。</p>
+<p>我递给他一串儿羊肉串儿：「解题解饿了吧，先吃点儿。」</p>
+<p>「咱上的是同一个综艺吧？」军哥咬了一口羊肉，「为啥画风差距这么大？」</p>
+<p>温凯深皱眉：「程正杰和林雪儿呢？」</p>
+<p>「去录恋综了吧。」我随口一说。</p>
+<p>18</p>
+<p>第二次录制圆满结束，我们的革命友谊增加了不少。</p>
+<p>果不其然，程正杰和林雪儿光明正大地炒起 CP。</p>
+<p>也多亏了他俩，把我和温凯深的那点儿暧昧给遮掩过去。</p>
+<p>接下来的几次录制，我都稳定地发挥。</p>
+<p>导演给我起了个亲切的昵称：「江 BUG」。</p>
+<p>就没有我不敢抓的 NPC，尤其是「丧尸围城」那期。</p>
+<p>我带着 NPC 们集体跳了一段机械舞。</p>
+<p>自此「江 BUG」的名号在江湖上声名鹊起。</p>
+<p>热度「噌噌」地往上涨，收获了一大票小粉丝。</p>
+<p>「江鹿今天抓了几个 NPC」超话每天热闹极了。</p>
+<p>倒数第二次直播的前一天，导演单独地叫我过去。</p>
+<p>「这期给你一个特殊身份，去做卧底，到时候我会安排人接应你。」</p>
+<p>「让我去当 NPC？」我一语道破。</p>
+<p>导演摸摸鼻子：「可以这么说，你的任务就是增加任务难度。」</p>
+<p>「在接应你之前的每一个关卡，都要保证解谜时间在半个小时以上。」</p>
+<p>「任务成功，你会获得一把金钥匙；任务失败，接受惩罚。」</p>
+<p>我笑道：「那我能提个条件吗？」</p>
+<p>「什么？」</p>
+<p>「我被带走之后，要看夜视模式。」我「嘿嘿」一笑。</p>
+<p>导演扯了扯嘴角，硬着头皮答应下来。</p>
+<p>19</p>
+<p>本次主题「消失的神话」，典型的中式恐怖。</p>
+<p>我们六个人换好古装，各自有身份，被安排在不同的院落。</p>
+<p>林雪儿是千金闺秀，我是她的贴身丫鬟。</p>
+<p>因此我俩在一个房间。</p>
+<p>温凯深和程正杰分别是大公子和二公子，军哥是账房，马博晏是侍卫。</p>
+<p>我有暗线任务，要求半个小时以上才能离开这个房间。</p>
+<p>只要我不动，就算给林雪儿一个小时，她也出不去。</p>
+<p>「鹿鹿，你去把那个笔筒拿给我看。」</p>
+<p>林雪儿坐在床榻上，伸手指着离她一米远的桌子上的笔筒。</p>
+<p>「你没事儿吧？」我扯了扯嘴角。</p>
+<p>「鹿鹿，现在我是小姐，你是丫鬟——」</p>
+<p>不等她说完，我转身坐在一旁的贵妃椅上，摆摆手。</p>
+<p>「姐姐入戏太深了吧，这不是拍戏，是密室逃脱。」</p>
+<p>「那也要尊重一下剧情人设。」她冷声道。</p>
+<p>「雪儿姐，你最近是不是光顾着谈恋爱，都没戏拍啊？」</p>
+<p>「你不要乱说，我们还是解谜吧。」林雪儿不再继续聊，找起线索来。</p>
+<p>我躺在贵妃椅上，四下张望。</p>
+<p>见她马上就要拿到关键线索，赶紧转移她的注意力。</p>
+<p>「雪儿姐，你看这是什么？」我拿着一块儿铜镜走到她面前。</p>
+<p>这个镜子是有机关的，按下机关会出现血手印。</p>
+<p>我在看她认真地打量铜镜的时候，按下开关。</p>
+<p>吓得她直接扔了手里的镜子，大叫出声。</p>
+<p>我动作敏捷地接住镜子，一脸无辜。</p>
+<p>这可跟我没关系。</p>
+<p>是导演说无论什么办法都行，只要能拖延时间。</p>
+<p>接下来的半个小时，我都在安慰林雪儿。</p>
+<p>外面响起一阵脚步声，紧接着门就从外面被打开了。</p>
+<p>合着我俩在密室待多久，完全取决于外面的人什么时候帮我们开门。</p>
+<p>20</p>
+<p>林雪儿等来了她的程正杰，开门的一瞬间就扑了上去。</p>
+<p>完全不在乎我们四个锃光瓦亮的电灯泡。</p>
+<p>接下来的关卡，我都按照导演所说，处处增加游戏难度。</p>
+<p>当然，我也不会傻到露出破绽。</p>
+<p>只是每次面对温凯深探究的眼神时，下意识地有些闪躲。</p>
+<p>其他都很完美。</p>
+<p>在离开祠堂后，突然冲出来几个饰演族人的 NPC。</p>
+<p>「水神马上就要来接新娘了，你们还不赶紧给小姐换衣服！」</p>
+<p>我听到暗号，知道是要带我走了。</p>
+<p>我拉住林雪儿的手，想说换我去扮演新娘。</p>
+<p>可还没等我开口，就听到她说。</p>
+<p>「她是小姐，你们把她带走吧。」</p>
+<p>她从身后推了我一把。</p>
+<p>我没反应过来，脚下一个趔趄，掉下台阶。</p>
+<p>要不是温凯深身手敏捷，揽住我的腰。</p>
+<p>我恐怕就要和大地母亲亲密接触了。</p>
+<p>林雪儿还真不怕被粉丝骂，就这么明晃晃地推我出去。</p>
+<p>胆子真大。</p>
+<p>她似乎是察觉到我们看她的目光，赶忙解释。</p>
+<p>「我胆子小，江鹿胆子大。她每次都能跟 NPC 相处得很好，就让她去呗。」</p>
+<p>「不行！」温凯深微恼。</p>
+<p>「我没事的。」我软糯糯地说着。</p>
+<p>他看向我，目光灼灼：「这种危险的事情，我去就行。」</p>
+<p>「你要记住，你是一个柔弱的小姑娘。」</p>
+<p>他这话说的，虽然有些霸总的调调。</p>
+<p>但听上去还蛮暖心的。</p>
+<p>要不是因为答应了导演，说不准这会儿我就答应换他去了。</p>
+<p>还蛮想看温凯深穿女装的样子。</p>
+<p>21</p>
+<p>我换上红嫁衣，被族人带走。</p>
+<p>临走的时候，温凯深往我手里塞了一张纸条。</p>
+<p>到了导演总控室，我背着镜头偷偷地看纸条。</p>
+<p>上面的字苍劲有力：「我马上过去救你。」</p>
+<p>我不自觉地笑了，将纸条放进口袋，转身坐在了导演旁边。</p>
+<p>夜视模式下，温凯深专注解谜。</p>
+<p>对于突然出现的 NPC 视若无睹。</p>
+<p>导演哀嚎：「温凯深开挂了吗？他以前不这样啊。」</p>
+<p>我嗑着瓜子：「我收他为徒了，不错不错，有我一半的风采了。」</p>
+<p>在温凯深和马博晏的积极努力下，破解了一个又一个谜题。</p>
+<p>「他们两个在一起的画面，不错不错。」</p>
+<p>「神马组合，一拍即合。」</p>
+<p>我抿嘴大笑出声。</p>
+<p>弹幕：</p>
+<p>【导演，你碰到了深哥的逆鳞，能不快吗？】</p>
+<p>【我温凯深誓死守护江鹿！】</p>
+<p>【「林深见鹿」大旗永不倒！！】</p>
+<p>【鹿鹿清醒一点，嗑 CP 可不能把老公嗑没了。】</p>
+<p>22</p>
+<p>直播结束，开始下半程的录播。</p>
+<p>「别吃了，快，到你上场了。」导演侧头看向我。</p>
+<p>我放下瓜子，盖上盖头，身上绑着威亚，走到固定的位置，坐在棺材上。</p>
+<p>红灯亮起，我哭哭啼啼地念出导演给的台词。</p>
+<p>「亡灵已魂归深渊，诸位过得可好？」</p>
+<p>接下来是什么台词来着？</p>
+<p>我听到温凯深急切地唤着我的名字，原本记住的台词瞬间忘得一干二净。</p>
+<p>哎呀呀，咋办？</p>
+<p>工作人员还等着我的暗号，不然没办法拉起威亚。</p>
+<p>好像是一首歌的台词我记得。</p>
+<p>好像有「什么飞」来着。</p>
+<p>到底是飞什么呢？</p>
+<p>一道灵光闪过，我急中生智，唱道。</p>
+<p>「我想飞到天上去，去呀去放羊，给我心爱的羊儿吃上几朵棉花糖…」</p>
+<p>嗯？</p>
+<p>怎么没动静。</p>
+<p>「我想站在海面上，捞一个大月亮，挂在屋顶亮呀嘛亮堂堂…」</p>
+<p>威亚有在动，但为什么是左右晃呢？</p>
+<p>应该是我蒙对了。</p>
+<p>「我想任性就任性，我想倔强我也能倔强，看你们谁能把我怎么样？」</p>
+<p>就在我唱得上头时，导演的声音从耳机里大喊一句。</p>
+<p>「江鹿！你给我闭嘴！」</p>
+<p>「我就去个洗手间的工夫，你都在干什么？」</p>
+<p>导演的声音带着颤音。</p>
+<p>我「嘿嘿」一笑，缩了缩脖子。</p>
+<p>「别慌，你看他们不是被我吓得不敢动了吗？」</p>
+<p>「他们哪里是害怕，你看不到他们在憋笑！」</p>
+<p>我摸摸鼻子：「我盖着盖头呢，看不到。」</p>
+<p>「我好歹也是选秀出身，应该没跑调才对。」</p>
+<p>导演崩溃中：「这是重点吗！」</p>
+<p>23</p>
+<p>录制结束，我穿着一身红嫁衣，蹦蹦跳跳地跟在温凯深身后。</p>
+<p>「深哥深哥，我在古墓里唱歌没跑调吧？」</p>
+<p>「没有，很好听。」</p>
+<p>他抬手捏了捏我的脸。</p>
+<p>不知从哪期开始，我和温凯深的关系变得很微妙。</p>
+<p>他看我的眼神好像能拉丝，深情得不行。</p>
+<p>我承认，我是颜狗。</p>
+<p>被这样一个大帅哥盯着，任谁不心动。</p>
+<p>我又不是木头。</p>
+<p>不过，关系没确定之前，我不会主动地去捅破这层窗户纸。</p>
+<p>节目还有最后一个收官就结束了，我们以后应该也不会有合作。</p>
+<p>想到这里，我心情沉重。</p>
+<p>他敏锐地发现我情绪突然低落，关切道：「怎么了？」</p>
+<p>「没——去哪儿？」我被他拉着往前走。</p>
+<p>走到拐角无人处，温凯深松开我的手。</p>
+<p>我能清楚地听到小鹿乱撞的声音。</p>
+<p>他站在我面前，一袭白衫，玉树临风，像极了不谙世事的谪仙。</p>
+<p>而我身着红色嫁衣，凤冠霞帔，鲜艳似火。</p>
+<p>「江鹿。」他喑哑出声，轻唤我的名字。</p>
+<p>温润如玉的声音在我心中渐起一层涟漪。</p>
+<p>「嗯？」我紧张地双手在身后绞着。</p>
+<p>「刚刚吓死我了，虽然我知道都是导演安排的，可我见你被带走，就……」</p>
+<p>「我…..嗯……」他眼神闪烁，红了耳根，犹豫着开口。</p>
+<p>羞涩的他，甚是可爱。</p>
+<p>「你有男朋友吗？」他憋了半天。</p>
+<p>我一颗心提到嗓子，毫不犹豫地否认，「没有——唔——」</p>
+<p>他揽住我的腰，拉近，低头，堵住我的话。</p>
+<p>24</p>
+<p>我们的关系没有公开。</p>
+<p>是我提出来的，温凯深显然很不满意，但拗不过我。</p>
+<p>最后一期杀青宴，导演提出准备节目。</p>
+<p>给我和温凯深安排了一段双人歌舞《危险派对》。</p>
+<p>导演美其名曰，「林深见鹿」CP 的呼声很高，要我们积极地营业。</p>
+<p>我唱跳出身，对我来说完全没问题。</p>
+<p>难点在温凯深。</p>
+<p>没人盯着的时候，每次跳到亲密互动的节拍，他总会亲上来。</p>
+<p>「我警告你啊，正式录制的时候台下可是有观众的，你可别——唔——」</p>
+<p>我话还没说完，他又低下头。</p>
+<p>我捏了一把他的腰：「你给我放老实点儿。」</p>
+<p>「知道啦。」他抱着我，语气带着宠溺。</p>
+<p>可真当录制的时候，音乐响起。</p>
+<p>前半部分都很正常，直到最后一个节拍。</p>
+<p>「把心放你手掌，沦陷在你目光，享受着步调摇晃，我不危险…」</p>
+<p>他嘴角一笑，我暗叫不好。</p>
+<p>原本是借位的吻，却让他变成了真的。</p>
+<p>台下一片惊叫。</p>
+<p>「啊！我嗑的 CP 成真啦！」</p>
+<p>「林深见鹿 YYDS！」</p>
+<p>我微红着脸瞪了一眼温凯深，他得意地笑。</p>
+<p>25（尾声）</p>
+<p>我凭着《逃脱吧，朋友》翻红。</p>
+<p>和原经纪公司解约的消息刚发出来没多久，我的手机就被各种经纪公司打爆。</p>
+<p>为了避嫌，我没有接受温凯深的提议加入他的工作室。</p>
+<p>我在密室逃脱综艺的突出表现，被各大综艺导演看中。</p>
+<p>接综艺接到手软。</p>
+<p>但为了以后的路更宽些，我报了表演班，为影视剧做准备。</p>
+<p>自从我和温凯深的关系曝光之后，他就更黏我了。</p>
+<p>甚至直接买下了我对面的房子。</p>
+<p>他搬家的那天，来敲我家的门。</p>
+<p>「以后我们就是邻居了，还请多多指教。」</p>
+<p>他双手捧着低脂蛋糕，径直走进我家。</p>
+<p>关上门后，他单手解领带，捞起我，放在餐桌上。</p>
+<p>我居高临下地看着他，双手捧着他的绝世美颜。</p>
+<p>他也太好看了吧，不吃掉可惜了。</p>
+<p>参加个综艺还带回来一个男朋友，我简直就是人生赢家。</p>
+<p>我笑容灿烂，目光留恋在他的眉眼处。</p>
+<p>葱白的手指尖微微泛红，从他的浓眉处一路划过，最后停在他的唇瓣上。</p>
+<p>后来，他就再也没住过自己的房子。</p>
+<p>而我的单人床也换成了双人床……</p>
+<p>番外 1：</p>
+<p>温凯深独白：</p>
+<p>我从没想过自己会喜欢上一个小自己很多的女孩子。</p>
+<p>不过，江鹿实在是太可爱了。</p>
+<p>她胆子很大，很喜欢冒险，莽莽撞撞的，但是个心里有主意的人。</p>
+<p>我从来都不信网上的那些「人设」。</p>
+<p>所以在初次见她的时候，也没有很大的偏见。</p>
+<p>女孩子就该被捧在手心里护着，前些年她过得太苦了。</p>
+<p>我希望我的出现能给她带来很多的甜。</p>
+<p>想带她去更多的地方探险，去发现更多的可能。</p>
+<p>一想到今后有这样一个处处有惊喜的姑娘在身边，生活都有了奔头。</p>
+<p>我从来不是一个喜欢藏着掖着的人。</p>
+<p>确定关系的那一瞬间，我就想告诉所有人。</p>
+<p>至于会不会影响事业的问题，我一直都有考虑。</p>
+<p>总不能因为事业，打一辈子光棍吧。</p>
+<p>给女孩子安全感，难道不是应该的吗？</p>
+<p>我想让她无忧无虑的，起码不会因为我乱想些有的没的。</p>
+<p>在认识江鹿之前，我从不相信什么一见钟情。</p>
+<p>见到她之后，我只想快点儿把她留在身边。</p>
+<p>这大概就是占有欲吧。</p>
+<p>天知道我当时有多紧张，好在她那个时候没有男朋友。</p>
+<p>还有，「林深见鹿」YYDS，入股不亏！</p>
+<p>番外 2</p>
+<p>马博晏独白：</p>
+<p>当初接到节目组邀请的时候，我正在打辩论赛。</p>
+<p>想着这么好玩有趣的事情，当然要参加。</p>
+<p>节目刚开始的时候，我被鹿姐的胆量惊到了。</p>
+<p>没想到她一个小姑娘，爆发力竟然如此之强，胆子简直比城墙还厚。</p>
+<p>追着那群 NPC 跑，也是密室独一份吧。</p>
+<p>不过我还是对解谜更感兴趣一点。</p>
+<p>那些从未接触过的逻辑让我沉迷，以至于经常会因为解题而忘记时间。</p>
+<p>还真就不知道深哥和鹿姐是怎么走到一起的。</p>
+<p>由衷地祝福一下下。</p>
+<p>我还要忙着写毕业论文，拜拜~</p>
+<p>（全文完）</p>
+<p>备案号:YXX1OnnrkjJTOOOkd5gTp5ya</p>
+<p>我是有编制的恶毒女配</p>
+<p>​</p>
+<p>​</p>
+<p>非分之想：恰情动时见你</p>
+<p>姜姜 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/11/1-%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%8E%E5%A4%A7%E5%82%B2%E5%A8%87/" title="小可爱与大傲娇">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">小可爱与大傲娇</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/7/17-%E5%B0%8F%E5%A6%88/" title="小妈">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">小妈</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

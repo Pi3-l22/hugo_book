@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后悔不及的前夫 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/16-%E5%90%8E%E6%82%94%E4%B8%8D%E5%8F%8A%E7%9A%84%E5%89%8D%E5%A4%AB/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/16-%E5%90%8E%E6%82%94%E4%B8%8D%E5%8F%8A%E7%9A%84%E5%89%8D%E5%A4%AB/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="后悔不及的前夫">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26620.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26620.jpg">
+  <meta name="twitter:title" content="后悔不及的前夫">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="后悔不及的前夫">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10747">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26620.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">后悔不及的前夫</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%90%8e%e6%82%94%e4%b8%8d%e5%8f%8a%e7%9a%84%e5%89%8d%e5%a4%ab&amp;url=https://mohai.us.kg/posts/2023/5/16-%E5%90%8E%E6%82%94%E4%B8%8D%E5%8F%8A%E7%9A%84%E5%89%8D%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/16-%E5%90%8E%E6%82%94%E4%B8%8D%E5%8F%8A%E7%9A%84%E5%89%8D%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%90%8e%e6%82%94%e4%b8%8d%e5%8f%8a%e7%9a%84%e5%89%8d%e5%a4%ab%20https://mohai.us.kg/posts/2023/5/16-%E5%90%8E%E6%82%94%E4%B8%8D%E5%8F%8A%E7%9A%84%E5%89%8D%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26620.jpg" alt="后悔不及的前夫" />
+      
+
+      <p>后悔不及的前夫</p>
+<p>傲娇一时爽，追妻火葬场</p>
+<p>老公骗我换房子，然后悄悄把别墅给女神住。</p>
+<p>后来签完离婚协议时，他哭红了眼睛：「媳妇，我真的错了……」</p>
+<p>我拍了拍他的肩膀：「站起来说，只是破产而已。」</p>
+<p>「媳妇，那咱们能再婚吗？」</p>
+<p>「抱歉，我已经和别人再婚了。」</p>
+<p>1</p>
+<p>老公给我买了套，两百八十平的大平层。</p>
+<p>我兴奋地发朋友圈秀恩爱。</p>
+<p>正回复着朋友们酸掉牙的留言，闺蜜电话就来了。</p>
+<p>「茜茜，你知道顾腾飞女神回来了吗？我刚才办事的时候，看到你老公把你之前住的那套别墅，送给了她。」</p>
+<p>我兴奋的心情顿时一凉。</p>
+<p>这别墅是我和顾腾飞住了整整三年的蜗居，里面的装修是我亲自盯的，家具也是我精挑细选的，甚至连花园都亲自打理。</p>
+<p>我有多喜欢这个房，顾腾飞不可能不知道。</p>
+<p>结果他却哄骗我，新小区是学区房，以后孩子读书方便。</p>
+<p>到头来却只是给他女神腾位子，我气得牙疼！</p>
+<p>2</p>
+<p>刚到别墅，就看到院子里停着顾腾飞的车子。</p>
+<p>我没有急着进去，而是先给他打了个电话。</p>
+<p>电话响了好一会儿才接通。</p>
+<p>「老公，你也在别墅这边吗？真巧，我过来找东西。你帮我开下门。」</p>
+<p>「你先等我一下。」</p>
+<p>顾腾飞有些慌张地应道。</p>
+<p>我在门口等了半个小时后，顾腾飞才打开了门。</p>
+<p>他那张帅气的脸，是我一如既往喜欢的禁欲风格。</p>
+<p>我走过去，扯着他的领带往前拉，笑了：「怎么衬衫领口都脏了？」</p>
+<p>上面是粉底液的痕迹，我可以断定，女神的妆应该是花了。</p>
+<p>就跟我现在碎了的心一样，残破又狼狈。</p>
+<p>女神能哭，因为她擅长的是表演。</p>
+<p>我不哭，因为我需要的是，冷静处理事情的能力。</p>
+<p>顾腾飞拉住我想要往里走的脚步，说道：「妙龄遇见了点事情回国了，我把这房子卖给她了。你想找什么，我去找。」</p>
+<p>怎么，连遮掩一下都不屑？</p>
+<p>直接摊牌了？</p>
+<p>卖？</p>
+<p>骗小孩儿呢！</p>
+<p>这房子价格不低，她楼妙龄买得起吗？</p>
+<p>「顾腾飞，咱们离婚吧。我不想和别人婚姻。」</p>
+<p>3</p>
+<p>我跑，顾腾飞追。</p>
+<p>结果顾腾飞被撞飞。</p>
+<p>原本在别墅里面的楼妙龄跑了出来，非要跟着一起上救护车。</p>
+<p>车上面，顾腾飞迷迷糊糊地伸出手。</p>
+<p>我按着他的伤口，他抓住了楼妙龄的手。</p>
+<p>他直接惨叫。</p>
+<p>我对着医护人员抱歉一笑：「不好意思失手了，麻烦再给我一些纱布。」</p>
+<p>4</p>
+<p>楼妙龄是顾腾飞的女神，也是顾腾飞的青梅竹马。</p>
+<p>她是歌剧院的大咖，不到二十五岁就闪婚嫁给了上市集团的太子爷。</p>
+<p>我跟顾腾飞是大学同学，遇见都不打招呼那种关系。</p>
+<p>再次遇见，是他暗恋失败喝得酩酊大醉，不小心点了拼车，和我拼单了。</p>
+<p>他喝醉了，抱着我大哭，我无奈把他捡回家。</p>
+<p>谈了半年，顾腾飞就跟我求婚了，说想要和我有个家。</p>
+<p>现在他手牵着她。</p>
+<p>医生也把通知书递给了楼妙龄。</p>
+<p>楼妙龄腼腆地朝我笑了笑：「沈茜，还是你来吧。」</p>
+<p>得，小三给正房让机会。</p>
+<p>我笑着签下名字，然后问楼妙龄：「楼小姐打算以什么身份继续留下来？可惜了，新中国也不许纳妾。要不然，我还能让你继续照顾腾飞。」</p>
+<p>楼妙龄红着眼眶离开，然后隔天卷土重来。</p>
+<p>顾腾飞清醒的第一时间，楼妙龄就冲了上去，对顾腾飞关怀备至，我在旁边默默录视频。</p>
+<p>「顾腾飞，你没事吧？都怪我不好，如果你不是为了照顾我，也不会让你们为难……」</p>
+<p>「要不，我还是回去吧。」</p>
+<p>顾腾飞激动地喊：「不行，你不能回去。你回去的话，你老公再打你怎么办？茜茜是个很好的女人，她肯定会理解你的。我……我只是怕你受伤而已，我会跟茜茜解释清楚的。」</p>
+<p>我在旁边笑出了声。</p>
+<p>真是太可笑了。</p>
+<p>我站在旁边这么久，顾腾飞看不到？还给我发好人卡？</p>
+<p>他是当我死了吗？</p>
+<p>「我不理解，顾腾飞，我沈茜当着你的面清楚地告诉你，我一点也不理解。你不配做我的决定，更不能问也不问我，就把我们的婚房给卖了。」</p>
+<p>我翻白眼，一点儿不客气地当面录像。</p>
+<p>这些都是以后起诉离婚的证据，我得保存好。</p>
+<p>而现在的我，不会像是之前顾腾飞胃病住院的时候一样，对他嘘寒问暖。</p>
+<p>现在他，脏了。</p>
+<p>沾了狗屎的巧克力，就算看不出来。</p>
+<p>我也咽不下去！</p>
+<p>5</p>
+<p>顾腾飞终于发现了我。</p>
+<p>也终于发现对他百依百顺，愿意在家做全职太太的我。</p>
+<p>也有发飙的时候。</p>
+<p>「茜茜，你不要生气。我只是不忍心看到妙龄无处可归，我以为你这么善良肯定会答应……」</p>
+<p>「哈？」我笑出声，走过去眼神冰冷地盯着顾腾飞。</p>
+<p>「腾啊，那是我打理了三年的家，不是你逞英雄的刀。楼妙龄她是国家一级舞蹈演员，她出事可以找他们团，可以找妇联。可以找律师，找警察。</p>
+<p>可她不应该找你，一个已婚男士。好了，再说下去就不礼貌了。</p>
+<p>我在录视频。咱们的关系，离婚冷静期后就结束。不妨碍你二婚的精彩，接盘侠的期待，和你心心念念地初恋了。</p>
+<p>拜。」</p>
+<p>我话说得狠，出了医院以后直奔闺蜜家，大口灌酒。</p>
+<p>闺蜜听我把事情说了，拍了拍我的肩膀说：「妙龄她的确惨，听说要被净身出户。可我查过了，她婚前名下就有三套房子了。她怎么可能真的无处可归……」</p>
+<p>「我知道。是顾腾飞自己倒贴上去的，所以才更恶心，急于离婚。我以为嫁给了真爱，可真爱终究抵不过天降女神。」</p>
+<p>为了顾腾飞能够好好吃饭，我把工作都辞了，每天给他按照三餐做饭。</p>
+<p>他不回来，我就给他送到公司吃。</p>
+<p>公公婆婆每年生日，都是我一个人在张罗安排，顾腾飞出个面就行了。</p>
+<p>我是真的以为，顾腾飞放下了暗恋，选择了我。</p>
+<p>可现在，楼妙龄甚至没跟他发生什么实际上的关系，顾腾飞就把婚房都倒贴上去了。</p>
+<p>楼妙龄勾一勾手指，挤一挤眼泪，比我累死累活做三年都管用。</p>
+<p>「你找她去啊？难道你就这样放弃了？我去帮你出气！」闺蜜豆豆拉着我，想帮我一把。</p>
+<p>我摇摇头：「不用。我现在只想要干脆利落离婚。」</p>
+<p>没想到，顾腾飞脑子不好，还觉得全世界的人都应该跟他一样恋爱脑。</p>
+<p>他跑到我面前，拉着我的手，满脸真诚地说：「茜茜，你大伯家的集团跟妙龄老公家有合作。现在对方一直纠缠妙龄不肯离婚，你能让你们家想想办法吗？」</p>
+<p>6</p>
+<p>我冷漠地看着他，觉得他是不是为了楼妙龄做了颅脑手术。</p>
+<p>专门把他的脑子，给丢掉了。</p>
+<p>「咱们今天来说的，是离婚协议的事情，和分割财产的事情。」</p>
+<p>虽然顾腾飞做的事情伤害了我，也恶心到了我。</p>
+<p>可我想要做个体面人。</p>
+<p>他愿意吃屎，我不愿意和他亲嘴，分开离婚就好了。</p>
+<p>但是我没想到，顾腾飞拿着勺子还想要喂我吃一口屎？</p>
+<p>夫妻患难与共，可不是这么共的！</p>
+<p>「离婚的事情，等解决了妙龄的危险情况以后，咱们再谈，好吗？茜茜，你以前那么善良，遇到喝醉的我，都愿意伸出援手。现在你难道忍心看妙龄挨打受苦吗？」顾腾飞满脸写着正义。</p>
+<p>我也满脸认真地点头：「我当然可以看。你要是现在有楼妙龄挨打的现场直播，你让我坐着看走着看躺着看，我都看得了。」</p>
+<p>对于一个出了事情，就靠在我男人肩膀，住在我婚房里面的女人。</p>
+<p>我怎么可能会看不了她挨打呢？</p>
+<p>同情心用在小三身上？那该看脑科的人就是我。</p>
+<p>我拍了拍顾腾飞的肩膀，递出离婚协议书：「签了，我去申请。还得冷静期呢。我怕到时候楼妙龄的孩子，都赶不上登记出生证了。」</p>
+<p>「我跟妙龄什么事情也没发生，茜茜，你能不能别想那么多？」顾腾飞着急地站了起来，伸手想要抱住我。</p>
+<p>我直接一个达咩拒绝。</p>
+<p>「还是没发生吧？我就问你，她有没有靠在你怀里？你有没有帮她擦眼泪？你们有没有一起待在晚上的房间里面？你还帮她盖被子了吧？」</p>
+<p>顾腾飞完全惊呆了，愣愣地说不出话。</p>
+<p>仿佛是在怀疑，我在家里面装了监视器。</p>
+<p>可我没那么做。</p>
+<p>我只是把顾腾飞对于女神的幻想，给说了出来而已。</p>
+<p>这些事情，是我不小心翻到他年少轻狂写下的日记本，最浪漫的事情。</p>
+<p>他没跟我做。</p>
+<p>跟楼妙龄却全做了。</p>
+<p>顾腾飞喃喃许久，才终于鼓起勇气：「如果我签了这个，你是不是就愿意帮妙龄这个忙了？」</p>
+<p>我冷笑。</p>
+<p>「顾腾飞，你可真伟大。」</p>
+<p>用自己的婚姻，来帮楼妙龄离婚。</p>
+<p>是我的爱，就那么低入尘埃吗？</p>
+<p>懒得跟他掰扯，浪费时间。</p>
+<p>我点头：「好，只要你签了，我去跟我大伯说。」</p>
+<p>顾腾飞拿起笔，慢慢地写下了他的名字。</p>
+<p>我拿着申请直接去递交，回家就去找了我大伯，没说离婚的事情，只说了楼妙龄求到了顾腾飞的面前。</p>
+<p>我大伯直接板着脸，把我的旺仔牛奶给拿走，严肃认真的说：「她的事情，你们小夫妻怎么敢掺和？还不快把人联系方式给我删了。」</p>
+<p>我歪着头，一脸问号地看着我大伯。</p>
+<p>「这事情，知道的人不多。既然你不明白，那我就跟你交个底。这个楼妙龄，她去澳门赌博输了三个亿……」</p>
+<p>好大一个卧槽。</p>
+<p>女神爱赌博，难怪豪门不敢要了。</p>
+<p>我从发现顾腾飞有奸情开始，就心如止水的心态，一下子爆炸了。</p>
+<p>腾的一下就跳了起来：「我的夫妻共有财产啊……」</p>
+<p>输了爱情和婚姻可以。</p>
+<p>可如果顾腾飞把钱给了楼妙龄……我杀了他的心都有！</p>
+<p>7</p>
+<p>我打电话给了顾腾飞公司的会计。</p>
+<p>这些年我虽然没有去公司，可我从小是看着家里面管理基金长大的。</p>
+<p>不可能对钱一点管理概念都没有。</p>
+<p>我可以不用那些钱，我也可以等顾腾飞慢慢赚钱。</p>
+<p>可身为女主人，我也必须知道我口袋里面有多少钱。</p>
+<p>给曾经用两个包包收买的会计大姐打电话，我只问最近转出去多少钱了，公司账面上还有多少钱了。</p>
+<p>会计大姐快速给我调出了账，告诉我说：「茜茜啊，转出去那些钱还不够吗？公司账面上可没多少钱能用了啊。」</p>
+<p>「还不好说。姐，你先跟我说，总共转出来多少的账？」</p>
+<p>「老板从公司转出去的钱，大概是 800 万。」</p>
+<p>我听得脑壳抽抽地疼。</p>
+<p>800 万，对我来说不算全副身家。</p>
+<p>可听到顾腾飞已经给楼妙龄这么多钱，却还打着只是帮助的口号，我彻底服了。</p>
+<p>果然恋爱脑的逻辑，天下无敌。</p>
+<p>他如果承认，钱是拿去包女人了。</p>
+<p>我都觉得他坦荡。</p>
+<p>可现在顾腾飞说拿去「帮助」楼妙龄，那这钱就是肉包子打狗，有去无还啊。</p>
+<p>「如果再也有转账的需求，跟我说一声。」</p>
+<p>挂了会计电话后，我从黑名单翻出来了一个电话，拨了过去。</p>
+<p>电话只响了一声，就被接了起来。</p>
+<p>「喂，你好。」</p>
+<p>「欧阳霆。是我，沈茜。我想跟你谈一谈你前妻，跟我即将离婚的丈夫搞在一块儿的事情。」</p>
+<p>8</p>
+<p>「稍等我一下。」欧阳霆那边应该正在开会之类的，我听到他说会议继续，让秘书做记录的话。</p>
+<p>接着就是脚步声，很快就听到他开口跟我说：「那也是我即将拿到离婚证的前妻。你是为了她，才把我从黑名单放出来的？从那次相亲之后，这还是你第一次和我联系。」</p>
+<p>我原本的怒火，被欧阳霆低沉带着调侃的话，被整成了恼羞成怒。</p>
+<p>「都多少年的事情了，你现在还翻旧账有意思吗？」</p>
+<p>当年我第一次相亲的对象，就是欧阳霆。</p>
+<p>可他上来，就说要和我结婚，直接把我给吓傻了。</p>
+<p>又看他拿出身体报告跟智商检测，基因分析数据……</p>
+<p>我直接当场告辞。</p>
+<p>回家以后跟我爸妈大闹一通，再也不许他们给我安排相亲对象。</p>
+<p>没想到，多年以后我会抓奸到欧阳霆的头上。</p>
+<p>「所以现在是不算旧账，算新账？」</p>
+<p>欧阳霆声音又恢复了冷漠：「我跟楼妙龄已经提交了离婚申请，她和我并无太大的关系了。她用了你们的夫妻财产。这事情，我对你表示充分的同情。」</p>
+<p>「就这？」我被他的语气到了。</p>
+<p>欧阳霆沉默了一会儿，才回答我：「气大伤肝，多喝热水。」</p>
+<p>我明白了。</p>
+<p>彻底明白了。</p>
+<p>我就不能指望一个直男工作狂，懂得我的暗示。</p>
+<p>「欧阳霆，我想要和你合作，保住我的利益不被侵害。」</p>
+<p>我直接摊牌了：「你能互帮互助一下吗？我帮你甩掉那些纠缠不清的债务，你帮我出面做个坏人，收拾我前夫？」</p>
+<p>「你得到的好处，比我的大。」</p>
+<p>我当然知道，现在他已经开始跟楼妙龄走程序了。</p>
+<p>欧阳家这样的豪门，当初肯定给楼妙龄签了婚前协议。</p>
+<p>所以，事情办成了最大受益人肯定是我。</p>
+<p>我正打算再给欧阳霆盘算一下，能给他公司什么好处，欧阳霆忽然说：「其实，我可以帮你。只要你嫁给我。」</p>
+<p>如果不如欧阳锋的语气太正经，我都怀疑他是在开我的玩笑。</p>
+<p>这么多年，这老兄怎么还是这句台词？</p>
+<p>「我还没离婚……」我忽然觉得，这也算是诱饵。</p>
+<p>让小三的老公帮我离婚，顾腾飞要是知道的话，那表情……肯定能让我出口气。</p>
+<p>「我帮你。」</p>
+<p>「那等我离婚了，再谈结婚的事情。现在，你先说一下，你能怎么帮我。」我在脱离了恋爱脑以后，完全清醒了。</p>
+<p>什么也没有自己重要。</p>
+<p>这个婚，必须干脆利落地离掉。</p>
+<p>而且，是让我自己属于不败之地。</p>
+<p>欧阳霆语气依旧非常商业化：「咱们见面详聊。」</p>
+<p>9</p>
+<p>等到我见到欧阳霆的时候，我发现，这家伙一点儿都没变。</p>
+<p>帅是真的帅。</p>
+<p>可一张嘴，就让我想要当场暴走。</p>
+<p>「等你办完离婚协议，咱们就结婚。这是我的体检报告和资产介绍，你看一下……」</p>
+<p>「先让我离婚完成，咱们再谈。」我可以肯定自己的态度非常真诚。</p>
+<p>可欧阳霆一口就拒接了我。</p>
+<p>「之前相亲，你也说回去考虑，之后你就把我拉黑了。还让长辈告诉我，咱们不合适。」欧阳霆拿出谈判的架势，把不知道啥时候起草好的结婚协议递给我。</p>
+<p>我心底大叫，好狡猾。</p>
+<p>他怎么知道我又打算过河拆桥。</p>
+<p>「其实，这次结婚我势在必得。你一旦离婚，家里肯定也会催婚。到时候你会再次被安排结婚对象。有了顾腾飞的这个前夫在，你和家里面的人还会相信你自己选男人的眼光吗？」欧阳霆敲了敲桌子上的结婚协议，把协议朝我面前推了推。</p>
+<p>「你可以看一看，结婚协议。」</p>
+<p>生意场上的结婚协议，不就是划分清楚钱和股份的数学题吗？</p>
+<p>我觉得欧阳霆这次来和见面，嘲讽我的意图，比合作的意图要明显得多。</p>
+<p>生气地把协议拿起来，我瞪大眼睛。</p>
+<p>「你要把你名下的财产，都转移到我名下？你们集团明天要破产了吗？我看起来像是接盘侠？」</p>
+<p>欧阳霆深呼吸一口气：「沈茜，我是把全部身家都给你了。你说我看起来老奸巨猾，这是我表明娶你的诚意。</p>
+<p>我等你大学毕业，第一次跟你求婚准备了三年。可你转头就嫁给了顾腾飞，我娶了家里安排的楼妙龄。现在证明，我不能听家里的安排，你也不适合自己找对象。</p>
+<p>和你结婚，我除了能确保自己喜欢你，不会婚内出轨，钱随便你花。</p>
+<p>其余的，我没有了。你愿意吗？」</p>
+<p>「钱随便我花？」我听着欧阳霆的告白，只觉得整个脑袋都是懵的。</p>
+<p>什么等我大学毕业？</p>
+<p>我跟欧阳霆不就是在我十五岁的成人礼，他被我家里邀请，成为我的舞伴而已嘛。</p>
+<p>从那之后，我就没见过他啊。</p>
+<p>「对。」欧阳霆像是头疼，伸手摁着太阳穴：「所以你愿意嫁给我吗？」</p>
+<p>「等我离婚完，我再回答你。」我咬紧牙关，才控制住自己点头的冲动。</p>
+<p>10</p>
+<p>顾腾飞再找我的时候，我的态度变得非常的好说话：「我打完电话了，对方拒绝了。说知道了你们的奸情，不会再放过楼妙龄。」</p>
+<p>「沈茜，你是怎么跟欧阳霆说的？你别相信他诋毁妙龄的话，他都不算男人。妙龄出了事情他就不管妙龄了，还对妙龄家暴。」顾腾飞在电话那边气得大吼。</p>
+<p>我看了下，敷衍的嗯嗯两声。</p>
+<p>如果欧阳霆不是男人的话，那更好了。</p>
+<p>不用和他睡，还能霸占他的全部财产，世界上还有比这样更好的事情吗？</p>
+<p>老公活着，就可以开始继承他的遗产。</p>
+<p>我感觉顾腾飞这波操作，是在帮欧阳霆助力加分。</p>
+<p>「对了，之前我堂哥介绍你那个项目，你做得怎么样了？」</p>
+<p>之前为了我，家里面项目很多都会介绍给顾腾飞做。</p>
+<p>顾腾飞还以为是他自己牛逼哄哄，年少有为：「做得挺好的。就是……你哥那个项目越做越大。」</p>
+<p>项目越大，需要追加的资金就更多。</p>
+<p>我想到公司账单上，已经被顾腾飞搜刮干净的钱，笑了。</p>
+<p>「那你要好好加油，这个项目可不能落下，要不然公司一整年就都白忙活了。」我跟以前一样，鼓励着他努力。</p>
+<p>可却不再跟以前一样，一听他语气为难，就主动开口说钱的事情。</p>
+<p>「等下。」顾腾飞终于忍不住了：「那个……茜茜，你之前不是说你的定期快到了。现在公司在追加投资，你那边方便吗？」</p>
+<p>「方便什么？」我笑了，顾腾飞终于发现他把公司都掏空了吗？</p>
+<p>「就是现在如果你有钱的话，我觉得你哥的项目还可以做得更好。我不想要现在轻易放弃，能不能先给我转点钱？」</p>
+<p>以前怎么没发现这人脑子有病，不知道我们要离婚了吗？还借钱？想屁吃呢？</p>
+<p>我直接挂断了电话，打开微信开始发消息。</p>
+<p>「有其他电话打进来，不小心挂断了你的电话。公司的钱全部都用完了吗？我怎么记得，前两个月你还跟我说想要转两百万给我？」</p>
+<p>聊天录音现在可不算证据了。</p>
+<p>微信的聊天记录，才是掌握主动权的制高点。</p>
+<p>「我手上也没钱了，要不然我回家去跟我爸妈借钱给你？你要多少？」</p>
+<p>顾腾飞原本还一直显示，正在输入中的聊天框。</p>
+<p>听到我要回娘家，马上就回了我消息：「不用，我自己再想想办法。」</p>
+<p>男人，果然都是爱面子的。</p>
+<p>11</p>
+<p>我打电话给欧阳霆，嫌弃着：「你别给我送燕窝鱼翅了，没人是这么追求的。」</p>
+<p>我看着屋子里面刚刚收到的七八盒东西，无语凝噎。</p>
+<p>钢铁直男年轻的时候，直来直往。</p>
+<p>一上年纪追求女性，就开始在养生的道路上狂奔吗？</p>
+<p>现在给我送续命的人参精华，实属是太早了吧！</p>
+<p>「那你喜欢什么？」</p>
+<p>「我当然是喜欢你把顾腾飞的公司给收了。顾腾飞现在项目上已经没有钱了，他在我这边要不到钱的话，肯定得出去找钱。」</p>
+<p>还有楼妙龄在，顾腾飞现在就是金山银山，也不够照顾江山美人了。</p>
+<p>一边是公司的钱不够，一边是楼妙龄这个红颜知己。</p>
+<p>我这个妻子，不再给他钱装逼了。</p>
+<p>顾腾飞肯定会找外援。</p>
+<p>以前我心疼他的面子，现在我要剥了他的皮！</p>
+<p>「你希望我注入资金给顾腾飞的公司？」欧阳霆问我。</p>
+<p>我笑笑：「不，资金我给。我是希望借由你的名义，把这个公司给买下来。」</p>
+<p>这个公司从一开始，就是我跟顾腾飞熬夜定下来的事业。</p>
+<p>都要你很好，我凭什么出钱出力帮他完成属于他的恋爱脑梦想？</p>
+<p>人脏了，可以不要。</p>
+<p>钱脏了，洗一洗，还是非常好用的。</p>
+<p>「我可以给你重新开一个公司，你喜欢多大的，我都可以给你。」欧阳霆毫不犹豫地说。</p>
+<p>我叹一声。</p>
+<p>这就是有钱人，朴实无华的占有欲吗？</p>
+<p>这也就是我之前不想要嫁进豪门的原因，因为有钱真的可以为所欲为。</p>
+<p>「欧阳霆，你不能这样俗不可耐了。开口闭口就给我开个公司，你是想要累死我吗？我是要靠着自己，夺回原本属于我的一切。你懂吗？」</p>
+<p>「我不懂。」欧阳霆理不直气也壮。</p>
+<p>「那我要这个，我只要这个，没有任何理由就是想要，现在你懂了吗？」我决定不跟他逼赖赖，直接干脆开口说的：「你给不给我！」</p>
+<p>欧阳霆在电话那边沉默了几分钟，才开口说：「我没办法拒绝你。」</p>
+<p>一个星期以后，我从堂哥那边打听出来的消息。</p>
+<p>顾腾飞接了个新项目，对于项目的力度投入了很多。</p>
+<p>因为多了个大项目，我又不再给他钱了，他只能努力工作。</p>
+<p>楼妙龄那边没办法抓住他薅羊毛，对我的小动作不停。</p>
+<p>我收到了楼妙龄给我发过来的好几次道歉短信，都非常的精彩。</p>
+<p>「对不起，沈茜，我不知道我跟顾腾飞接触会让你这么生气，我以为同为女人你会体谅我。」</p>
+<p>「沈茜，顾腾飞照顾我，我只是感激他，才去医院照顾他的。你不要因为我，就不去医院看顾腾飞，可以吗？」</p>
+<p>「顾腾飞好几次都在我面前说起你，你难道不心疼他吗？看着他身上的淤青，我实在是心疼他承担那么多……」</p>
+<p>我直接呵呵。</p>
+<p>用着红颜知己的身份，花了属于我的钱，现在楼妙龄还发这些暧昧短信给我。</p>
+<p>看了他身上的淤青？那就说明顾腾飞脱衣服了。</p>
+<p>同为女人，我只想要让楼妙龄滚远点，对她一点同情也没有。</p>
+<p>所以在能领离婚证的当天，我给楼妙龄发消息。</p>
+<p>「那么想谈，就谈吧。希尔顿酒店下午一点。」把消息给发出去，我蹲在家里吃着老母亲给我炖的补汤。</p>
+<p>我妈看我拿着手机笑出声，问我说：「你最近咋回事？整天吃补品把你吃得跟煮熟的螃蟹一样，红彤彤的。」</p>
+<p>我伸手摸了摸脸，啃着欧阳霆让人送过来的新西兰大苹果，嘿嘿笑说：「我得对自己好一点啊。而且，我还年轻，说不定啥时候养好身体，就能生个孩子了。」</p>
+<p>嫁给顾腾飞这么多年，他一直说等公司稳定了，再生孩子。</p>
+<p>现在要离婚了，那我自己想要怎么生，就能怎么生。</p>
+<p>「生孩子好啊。顾腾飞打电话跟我说了，说你最近在跟他闹脾气。</p>
+<p>既然你当初义无反顾地选择了他，那就好好跟他过日子。</p>
+<p>听说最近他的公司不错。</p>
+<p>你也盯着点，别跟以前一样，只知道在家里头等他。</p>
+<p>女人要是在公司没话语权了，慢慢地在家里也就没了话语权……」</p>
+<p>以前要是我妈跟我说这些，我会觉得她的话太啰唆。</p>
+<p>可现在我忍不住在老母亲的脸颊上，啪唧亲了一口：「妈，我当然会掌握主动权了。」</p>
+<p>顾腾飞这个男人当然是不要的，不过离婚的事情就没必要跟她说了。</p>
+<p>我怕我她知道了楼妙龄的事情，会拿着四十米的长刀去剁了顾腾飞。</p>
+<p>12</p>
+<p>到公司的时候，顾腾飞正焦头烂额。</p>
+<p>「老板，这个文件今天必须转账了，还有这个……」</p>
+<p>「顾腾飞，你忘了今天我们要去领离婚证的吗？」我靠在办公室门口，凉凉的说。</p>
+<p>顾腾飞愣了一下，秘书马上非常聪明的转身走人。</p>
+<p>「什么离婚证？」顾腾飞看着我的表情，很精彩。</p>
+<p>我笑了：「咱们两个人的离婚证，今天可以去领取了。」</p>
+<p>「媳妇，之前咱们不是说好冷静冷静吗？」顾腾飞走过来，想要把我拉到办公室里面。</p>
+<p>我直接一个达咩，拒绝他碰我。</p>
+<p>顾腾飞看我就是保持微笑，却不肯关门，像是才意识到问题的严重性。</p>
+<p>他对我一个多月不回家，都以为我在耍脾气，所以电话也没有一个。</p>
+<p>我呵呵一笑：「走，现在就去。」</p>
+<p>顾腾飞急了。</p>
+<p>「媳妇，我说过了，我跟妙龄是清白的。</p>
+<p>房子给她，只是因为我帮她一个忙而已。</p>
+<p>你知不知道妙龄的前夫，是怎么对她的？要是我的话，妙龄就只有死路一条了。</p>
+<p>你以前明明是那么善良一个人，为什么你就不能同情一下妙龄呢？」顾腾飞满脸写了不明白。</p>
+<p>这些理由说出来的时候，他还用一脸失望的表情看着我。</p>
+<p>「因为我不同情她啊。这不就是理由了吗？离婚吧，你去好好照顾她。」</p>
+<p>我敲了敲手机，提醒说：「九点就可以开始办理离婚手续了，走吧。」</p>
+<p>「我不离婚。」顾腾飞直接回到办公椅上坐下来。</p>
+<p>我就知道，恋爱脑很难清醒。</p>
+<p>除非像是我这样幡然醒悟，遇见人渣，自己打通任督二脉。</p>
+<p>要不然，他这种症状严重的，就只会想要享受齐人之福。</p>
+<p>「离婚。要不然的话，我会用家族的股份，让我堂哥直接撤销你公司的项目。</p>
+<p>这个项目现在公司已经投入了所有了吧？一旦我哥撤销，他可以用违约金来赔。</p>
+<p>你却需要付出巨大的代价。</p>
+<p>甚至公司还会直接破产。</p>
+<p>到时候，你就真的帮不了楼妙龄了。」我叉着腰，非常优雅从容地拿出文件。</p>
+<p>顾腾飞看到公司，刚刚接手的新项目上面，法定代表人是我。</p>
+<p>整个人的表情……就很精彩。</p>
+<p>惊讶，不信，羞愧，接着就是愤怒。</p>
+<p>「你为什么要把公司掏空？为了离婚，你已经不择手段了吗？」顾腾飞气得跳脚。</p>
+<p>「不不不，请你看清楚。」我笑得奸诈：「我这个项目是非常合法的。掏空了公司钱的人，是你。你喜欢帮楼妙龄，就全力去帮助她吧。公司，是我的了。」</p>
+<p>顾腾飞被我气疯了，到处拿东西乱砸泄愤。</p>
+<p>看他发红着双眼瞪着我，我都怀疑他要咬我了。</p>
+<p>结果他没有。</p>
+<p>他坚持说我冤枉了他，误会了楼妙龄，迟早我会发现，我才是那个大错特错的人。</p>
+<p>我耸耸肩：「你要是没钱，就真的没办法去帮助楼妙龄了，到时候希望你跟她能好好共患难。」</p>
+<p>顾腾飞骂我：「你把所有的事情都想得那么龌龊，沈茜，你现在是在用我的事业来威胁我吗？你怎么那么无理取闹呢。</p>
+<p>我在外面努力的时候，你在家里面做全职太太。</p>
+<p>你想过我的辛苦吗？</p>
+<p>你知不知道我有多累？</p>
+<p>连妙龄都能够体谅我创业，你现在用我的事业来威胁我。</p>
+<p>好，离婚就离婚。</p>
+<p>我告诉你。我们夫妻居然走到这样的地步，都是你一手造成的！」</p>
+<p>我打开门，就是为了让顾腾飞难看。</p>
+<p>快刀斩乱麻。</p>
+<p>激怒他是离婚最快的办法。</p>
+<p>13</p>
+<p>很快离婚手续就办完了。</p>
+<p>我看着小本本非常的满意。</p>
+<p>「你会后悔的，到时候，我希望你不要回头求我。」</p>
+<p>我呵呵笑：「好，到时候我绝对不会跪下来求你。」</p>
+<p>「她不会有机会后悔的。」欧阳霆不知道啥时候来的，正在民政局门口等等我。</p>
+<p>话才说完，迈巴赫的后备箱直接打开，满车子的蓝色妖姬散发出了金钱的气息。</p>
+<p>「哇，纯正的蓝色妖姬耶。」旁边有小女生直接喊出来。</p>
+<p>「土豪，好想跟他做朋友。希望等我离婚的时候，也有土豪这样出来为我庆祝单身……」</p>
+<p>我看到小情侣们，都用复杂又期待的眼神看向我们。</p>
+<p>这种尴尬又狗血的剧情，让我尴尬的差点用脚趾抠出三房一厅。</p>
+<p>顾腾飞的眼神在我跟欧阳霆身上转来转去，直到欧阳霆走过来，给我递过来一个保温瓶：「今天刚刚炖好的燕窝，吃吧。」</p>
+<p>「沈茜，你居然出轨？你不要脸。」顾腾飞气得要冲上来。</p>
+<p>不过被欧阳霆的保镖控制住了。</p>
+<p>看着他这被刺激得发狂的样子，我心里倍儿爽。</p>
+<p>我曾经吃过的酸甜苦辣，现在也轮他来吃一次了。</p>
+<p>「准备好了吗？」我问欧阳霆。</p>
+<p>欧阳霆点头，从秘书手上接过来平板递给我，我打开摄像头就看到了包下的酒店房间里面，热闹非凡。</p>
+<p>旁边的顾腾飞还在骂骂咧咧，我打算把平板递给他。</p>
+<p>这种精彩的戏码，其实我恨不能投影到广场显示器上看，可这不太合适。</p>
+<p>我只能可惜地叹了一声。</p>
+<p>看着酒店里面精彩的监控画面，我把平板递给还在不断叫嚣的沈腾。</p>
+<p>「看吧。」</p>
+<p>用那双被糊了狗屎的眼睛，好好看清楚全力帮助的是怎么样的一个女人。</p>
+<p>沈腾满脸愤怒地瞪着我，直到我把平板怼到他脸上。</p>
+<p>他才终于注意到视频里面是他心心念念纯洁无瑕，可怜无助的女神。</p>
+<p>「我会带妙龄走的……」</p>
+<p>「放屁，妙龄一直跟我联系，我们说好之后会结婚的。」</p>
+<p>「妙龄，我已经转给你三千万了，你答应我会跟我回家见父母……」</p>
+<p>大屏幕上，楼妙龄在酒店房间里面被四五个男人围在中间。</p>
+<p>那些男人先是争执，接着就是破口大骂，到最后动手。</p>
+<p>那些男人终于爆发了：「妙龄，难道你真的为了骗我的钱，才跟我联系的吗？」</p>
+<p>「你说话啊……我把我爸的房子都卖了，收到你的短信就来找你。你为什么还有这么多男人……」</p>
+<p>顾腾飞傻傻地看着屏幕：「这是……怎么回事？妙龄……妙龄说她一出事就找我了，她谁也不敢相信，她只相信我能帮助她……」</p>
+<p>我走上去，拍了拍顾腾飞的肩膀：「楼妙龄要了你多少钱？几百万吧？啧啧啧，比起这些人，你还算付出得少的。这样的你，离了婚的你，拿什么竞争过这些男人？」</p>
+<p>欧阳霆在旁边，帮我补刀：「楼妙龄很久以前就有赌瘾了。</p>
+<p>刚结婚，我就发现了，所以马上和她进入了离婚程序。这么长的时间，你是被她骗得最少的一个……」</p>
+<p>「幸亏你没什么钱。」我补充了一句。</p>
+<p>对比起其他被楼妙龄找上的男人，沈腾真的只能算是小虾米。</p>
+<p>我语气里面的嘲讽，简直是毫不掩饰。</p>
+<p>顾腾飞被保镖放开了，看着楼妙龄被几个男人围着，最后哭着跑出酒店的画面。</p>
+<p>「你可以等一下，楼妙龄马上就来。」欧阳霆对着顾腾飞说：「如果你们马上结婚，也不会耽误时间。」</p>
+<p>我看着狡诈如同老狐狸的欧阳霆，感觉他是真的全身心都很期待，顾腾飞跟楼妙龄结婚啊。</p>
+<p>看着完全傻了眼的顾腾飞，我只觉得可悲。</p>
+<p>送上了自己的全部，来弥补女生的赌债，却发现自己只是一颗小石子。</p>
+<p>14</p>
+<p>「咱们走吧……」我对欧阳霆说。</p>
+<p>「媳妇，老婆你别走。我错了，我真的错了……」顾腾飞扑过来要抱住我，被欧阳霆直接挡开。</p>
+<p>就在这时候楼妙龄被带了过来，一看到欧阳霆，就马上跑了过来。</p>
+<p>「啊霆，呜呜，我错了。我保证再也不出门了，我再也不敢了，你原谅我吧……」</p>
+<p>楼妙龄根本没看，被她撞开的人是顾腾飞，抱住欧阳霆的大腿就开始哭。</p>
+<p>「家暴？迫害？楼妙龄，你是想要收律师函吗？」欧阳霆直接把人推开，保镖马上上前把她给拉走。</p>
+<p>「没有，啊霆，你没有打我。都是外面的人在乱说，呜呜你不要和我离婚，我真的很需要你……」楼妙龄表演到一半的时候，终于发现我在旁边了。</p>
+<p>她吓了一跳，接着朝着旁边看过去，就看到满脸发青的顾腾飞。</p>
+<p>而刚才在酒店里面的那些男人，也被欧阳霆的人带过来了。</p>
+<p>他们清楚地听到了楼妙龄的话，我差点就掏出口袋里面的瓜子开始磕起来了。</p>
+<p>不过很可惜，欧阳霆不给我这个机会：「我跟她已经离婚很久了。</p>
+<p>你们谁愿意做接盘侠，请。</p>
+<p>毕竟，我也打算再婚了。」</p>
+<p>然后拉着我上车。</p>
+<p>15</p>
+<p>我跟欧阳霆结婚了，他把名下所有的财产都转移到了我的名下。</p>
+<p>我爸妈对顾腾飞失望透顶，也默许了我的快速再婚。</p>
+<p>从那之后，我只知道顾腾飞破产去国外了。</p>
+<p>至于楼妙龄，据说彻底开始做交际花，到处坑钱还赌债。</p>
+<p>而我，努力在「沈总」的经商路上走出属于自己的一片天。</p>
+<p>再也不要做恋爱脑的傻女人了。</p>
+<p>（全文完）</p>
+<p>备案号:YXX1jKKJkvRUxxxRKMOC9ldw</p>
+<p>​</p>
+<p>赞同</p>
+<p>​</p>
+<p>评论</p>
+<p>傲娇一时爽，追妻火葬场</p>
+<p>洛溪儿</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/2/19-%E5%90%8E%E5%AE%AB%E4%B8%AD%E7%9A%84%E5%A4%A7%E5%B0%86%E4%B9%8B%E6%89%8D/" title="后宫中的大将之才">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">后宫中的大将之才</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/11-%E5%90%8E%E8%AE%B0%E7%8C%AE%E7%BB%99%E4%B8%8A%E5%B2%AD%E6%9D%91%E7%94%B7%E4%BA%BA%E7%9A%84%E4%B8%80%E6%9B%B2%E6%82%B2%E6%AD%8C%E6%88%96%E4%B8%80%E6%9D%AF%E7%94%9C%E9%85%92/" title="后记：献给上岭村男人的一曲悲歌，或一杯甜酒">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">后记：献给上岭村男人的一曲悲歌，或一杯甜酒</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

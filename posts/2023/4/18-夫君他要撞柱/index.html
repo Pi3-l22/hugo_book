@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夫君他要撞柱 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/18-%E5%A4%AB%E5%90%9B%E4%BB%96%E8%A6%81%E6%92%9E%E6%9F%B1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/18-%E5%A4%AB%E5%90%9B%E4%BB%96%E8%A6%81%E6%92%9E%E6%9F%B1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="夫君他要撞柱">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26640.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26640.jpg">
+  <meta name="twitter:title" content="夫君他要撞柱">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="夫君他要撞柱">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11823">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26640.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">夫君他要撞柱</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a4%ab%e5%90%9b%e4%bb%96%e8%a6%81%e6%92%9e%e6%9f%b1&amp;url=https://mohai.us.kg/posts/2023/4/18-%E5%A4%AB%E5%90%9B%E4%BB%96%E8%A6%81%E6%92%9E%E6%9F%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/18-%E5%A4%AB%E5%90%9B%E4%BB%96%E8%A6%81%E6%92%9E%E6%9F%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a4%ab%e5%90%9b%e4%bb%96%e8%a6%81%e6%92%9e%e6%9f%b1%20https://mohai.us.kg/posts/2023/4/18-%E5%A4%AB%E5%90%9B%E4%BB%96%E8%A6%81%E6%92%9E%E6%9F%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26640.jpg" alt="夫君他要撞柱" />
+      
+
+      <p>夫君出征带回一个有孕的女子。</p>
+<p>我让他收为妾室，却听见他心声道：</p>
+<p>【呜呜呜娘子果然不爱我！】</p>
+<p>旁边捧着肚子一脸嚣张跋扈的女子：</p>
+<p>「不是说好让夫人吃醋就放我走的吗，我肚子里连个球都没有，怎么生啊！」</p>
+<p>堂屋内鸦雀无声。</p>
+<p>所有人都目瞪口呆地看着我上前牵起了宋柳的手：</p>
+<p>「宋姑娘既然来了，就好好安顿下来吧，程府自不会亏待你。」</p>
+<p>吧嗒。</p>
+<p>婆婆的茶盏掉在地上碎了。</p>
+<p>吧嗒。</p>
+<p>进门的小厮被绊了一跤摔倒在地。</p>
+<p>只有我勾起了嘴角，笑得天衣无缝。</p>
+<p>我和程奚怀是御赐的姻缘。</p>
+<p>他是本朝最令人闻风丧胆的少年将军，出身名门，武将世家。</p>
+<p>我父亲是皇帝的太傅，一个脾气很臭的倔老头。</p>
+<p>这俩人政见不合，天天在朝堂上拌嘴。</p>
+<p>程奚怀到底年轻，怪会阴阳怪气，常常把我父亲气得要当着文武百官的面撞柱子。</p>
+<p>小皇帝说你们这样吵是吵不死人的。</p>
+<p>遂，将我赐婚给了程奚怀。</p>
+<p>成婚后，我沿袭了父亲的传统，和程奚怀三天一小吵五天一大吵。</p>
+<p>唯一不同是，现在是我让程奚怀赶紧去撞柱子。</p>
+<p>我说我急着当寡妇，我要敛了你们程家的财去万花楼包十个小倌。</p>
+<p>天天在你灵位前与我寻欢作乐。</p>
+<p>程奚怀气得脸都黑了，又不能朝我发泄。</p>
+<p>于是当天就进宫跟皇帝申请去领兵打仗。</p>
+<p>杀他百八十个匈奴泄泄愤。</p>
+<p>听闻当天我爹也在宫里，知道这个消息后大乐。</p>
+<p>还在大殿外精挑细选了最结实的一根柱子，说要送给他最亲爱的女婿。</p>
+<p>或许是我的报应，程奚怀出征后的第三日，我就落水了。</p>
+<p>昏迷了三日，请了无数郎中都不见好。</p>
+<p>眼看着我还没当成寡妇，程奚怀就要成鳏夫了。</p>
+<p>结果三天后，我突然苏醒，康复如初，一点病气都没留下。</p>
+<p>众人都当大梦一场。</p>
+<p>只有我自己知道，这场病后，我竟意外地能听见众人的心声。</p>
+<p>程奚怀凯旋当日，京城传得沸沸扬扬。</p>
+<p>都说他还带了一个形貌昳丽的女子，疑似有孕。</p>
+<p>知道这个消息后我的第一反应是：</p>
+<p>我想当寡妇了。</p>
+<p>就在我犹豫是用我最擅长的大刀，还是直接把他的头摁到大殿外的柱子上，完成我爹此生最大夙愿的时候。</p>
+<p>程奚怀领着女子进门了。</p>
+<p>小厮请我前去堂屋一聚，我怒气冲冲地走到门前，却突然顿住。</p>
+<p>程奚怀站在门边，抱着胳膊，紧拧着眉头看我。</p>
+<p>那女子长得娇娇弱弱，一身白衣我见犹怜，只是扶着那还没显形的肚子，颇有下马威的意味。</p>
+<p>如此一看，两人都像是不怀善意。</p>
+<p>可是我分明听见两道声音蹿入我的脑中。</p>
+<p>女声道：</p>
+<p>【这表情够恶毒了吧，不会被看出我是演的吧？】</p>
+<p>男声道：</p>
+<p>【呜呜呜呜呜呜夫人！我好！想！你！啊！】</p>
+<p>【行军打仗一点也不好，都见不着夫人呜呜呜，下回得偷几件她的衣服走，抱着睡。】</p>
+<p>我走路的脚一歪，差点摔倒。</p>
+<p>猛地抬头，对上程奚怀那双波澜不惊的眼睛。</p>
+<p>你小子玩这么变态呢？！</p>
+<p>宋柳进了程家后，每日都坚持来给我请安。</p>
+<p>字里行间都是暗示与挑衅。</p>
+<p>她用手帕捂着嘴笑道：「近几日程公子夜夜宿在妹妹房间贴身照顾，若非有孕，他可要好一番折腾呢。」</p>
+<p>【这王八蛋天天拉着我讲他的暗恋史，和死皮赖脸求圣上赐婚的过程，整得我三宿没睡好觉，折腾死老娘了！】</p>
+<p>好啊，原来这桩人人嫌弃的姻缘是程奚怀求来的！</p>
+<p>亏得他当初还表现得那么不情愿。</p>
+<p>看我不好好治他！</p>
+<p>我举止从容地给宋柳倒了杯茶：</p>
+<p>「辛苦宋姑娘了，我夫君那方面不太行，我还担心从此程家断子绝孙呢，如今你能怀上也算是奇迹，苍天有眼，没断程家的香火。」</p>
+<p>宋柳嘴角边还挂着白莲花般的笑，听到这话后笑容瞬间僵住。</p>
+<p>空气有一瞬间的凝滞。</p>
+<p>她难以置信地抬起头，弱弱道：「啊？」</p>
+<p>同一时刻，一道充满了怒气的声音从门外传来：</p>
+<p>「姜眠！」</p>
+<p>一道墨色的身影从门口闪现。</p>
+<p>是程奚怀。</p>
+<p>他站在宋柳身后，脸色黢黑。</p>
+<p>黢黢黑黑，黑不溜秋，黑如泥鳅。</p>
+<p>「宋柳还怀着孕，你不要讲些污言秽语刺激她！」</p>
+<p>【所以夫人真的对我不满意吗？这就是她一直想当寡妇的原因？呜呜呜……】</p>
+<p>【真的很不行吗？要不下次找副将比比？他会不会觉得我很变态啊。】</p>
+<p>【不应该啊，好几次她都累晕过去了，难道……她是装的？】</p>
+<p>我脸一热，狠狠剐了程奚怀一眼。</p>
+<p>不过他仍然沉浸在「行与不行」「举与不举」的自我怀疑中，没有发觉。</p>
+<p>至于宋柳，她还保持着刚刚那个震惊的表情没有回过神来，心声倒是很活跃：</p>
+<p>【怪不得要让夫人吃醋才能挽回芳心，原来程小将军不举啊！】</p>
+<p>【可怜的程夫人，受了大苦了……】</p>
+<p>【等等，我知道了小将军的秘密，他不会把我杀人灭口吧。】</p>
+<p>她的脸色唰一下变得惨白，瞳孔颤抖起来。</p>
+<p>我没说话，只是朝着宋柳眨了眨眼睛，抛了个「懂的都懂」的眼神。</p>
+<p>两个人的脸色都变了变。</p>
+<p>一个更黑，一个更白了。</p>
+<p>【我要去撞柱子。】</p>
+<p>【我不会被杀人灭口吧……】</p>
+<p>【我真的要去撞柱子。】</p>
+<p>【我一定会被杀人灭口的……】</p>
+<p>自从我说过程奚怀不太行以后，他就开始处处躲着我。</p>
+<p>但是府里的下人不知内情，还以为我失宠了。</p>
+<p>结合一些我能听到心声后的奇怪表现，府中甚至有传言称，我因为伤心过度而失心疯了。</p>
+<p>这样的谣言愈演愈烈。</p>
+<p>甚至人人都笃定等宋柳生下孩子后，我就会被逐出程府。</p>
+<p>所以我没想到，整个程家最护我的，居然是程奚怀的弟弟，程锦言。</p>
+<p>他是程家唯一从文之人，温润如玉，温柔体贴。</p>
+<p>只可惜他不是我喜欢的类型。</p>
+<p>他不扛揍。</p>
+<p>但我知道他是谁喜欢的类型。</p>
+<p>宋柳。</p>
+<p>我是怎么知道这事的呢？</p>
+<p>某日，宋柳照例来我房间请安。</p>
+<p>她刚说到「程公子近日送了我许多东西呢……」</p>
+<p>就碰上了前来的程锦言。</p>
+<p>程锦言自然也听说了那些风言风语。</p>
+<p>如今面对宋柳的时候，脸色就不太好了。</p>
+<p>他站在我俩中间：「宋姑娘，不管你与我兄长之间如何，但我程锦言此生只会认姜眠这一个嫂子，还请姑娘自重！」</p>
+<p>我十分感动，平时没白疼这小子。</p>
+<p>但是感动之余，还有几分担忧。</p>
+<p>毕竟宋柳只是被程奚怀雇来让我吃醋的，也不是真的外室，这么说会不会伤着她。</p>
+<p>结果下一瞬，我就听见一道如同花痴般的声音响起——</p>
+<p>【啊啊好有魄力，好帅！】</p>
+<p>【能不能再骂我两句？】</p>
+<p>哪来的受虐狂！</p>
+<p>叉出去！</p>
+<p>宋柳捂着脸哭泣离开了。</p>
+<p>哭得眼角都抽抽了。</p>
+<p>不对！我定睛一看——</p>
+<p>能不能装点好的，谁一边哭一边抛媚眼啊！</p>
+<p>程锦言叹了口气，走到我面前坐下：</p>
+<p>「嫂嫂你莫要伤心，我定不会让我哥与你和离的。」</p>
+<p>我点点头，正要表示感动，谁知——</p>
+<p>【你们俩可千万不能离，我娘说了，她喜欢你这个儿媳妇，我哥敢跟你离，就让我娶你，我可打不过……】</p>
+<p>「啊！」程锦言一屁股墩坐在地上。</p>
+<p>风光霁月的谦谦公子瞬间变得满身狼狈。</p>
+<p>「嫂嫂你踹我凳子干什么！」</p>
+<p>我抱着胳膊面无表情：「伤心过度，失心疯了。」</p>
+<p>还是我爹说得对。</p>
+<p>姓程的哪有一个好人呐！</p>
+<p>程家的事情闹得沸沸扬扬，我爹自然也得到了消息。</p>
+<p>本来我还在疑惑，按照他的性格，怎么会对此事毫无反应。</p>
+<p>直到我收到了来自姜府的包裹。</p>
+<p>是厚厚的一沓书籍——</p>
+<p>《如何杀夫后不被官府追究》</p>
+<p>《和离的女人最美》</p>
+<p>《一百零八种无色无味的毒药》</p>
+<p>《万花楼小倌名册》</p>
+<p>每看一本，我的眼角就要抽一下。</p>
+<p>看到最后，我差点一口气喘不上来，径直将包裹扔到了柜子里。</p>
+<p>好家伙，撞柱已经满足不了我爹了。</p>
+<p>他这是要拔起柱子把程奚怀祖宗十八代一齐创飞啊。</p>
+<p>我刚甩上柜门，房门就被敲响了。</p>
+<p>我的第一反应是宋柳又来了。</p>
+<p>这些日子，她登门拜访的次数越来越多。</p>
+<p>没办法，毕竟她没有由头直接去找程锦言，于是就另辟蹊径跑来找我。</p>
+<p>企图在某个时刻拦截到前来看望我的程锦言。</p>
+<p>挨几句骂，抛几个媚眼。</p>
+<p>心里就能乐开花。</p>
+<p>惹得程锦言都忍不住私下问我：「嫂嫂，这位宋姑娘是否患有眼疾？」</p>
+<p>我对这一个傻子一个呆子没什么话好说。</p>
+<p>于是没好气道：「是啊，没点眼疾能看上你哥吗？」</p>
+<p>程锦言深以为然。</p>
+<p>看向宋柳的眼光里都带了几分同情。</p>
+<p>宋柳还以为自己暗送秋波很成功，眼角抽搐得更频繁了。</p>
+<p>「你怎么又来了，都说了程锦言不在……」</p>
+<p>打开门，却是程奚怀的那张阴沉的脸。</p>
+<p>不知道为什么，我莫名地有些心虚。</p>
+<p>程奚怀踏进门，步步紧逼。</p>
+<p>我一步步后退，直到腰间抵到了桌子，才猛然停下。</p>
+<p>程奚怀黑着脸，道：「几日不见，夫人倒是过得很自在啊。」</p>
+<p>他还在逼近，可我已经退无可退。</p>
+<p>那张俊朗的脸庞离我极近，温热的鼻息喷洒在我的脖颈处，引起皮肤阵阵颤栗。</p>
+<p>可是——</p>
+<p>【宋柳能见你，锦言也能见你，就我不能见你，我好！委！屈！】</p>
+<p>【你都不想我！你都不来见我！你不爱我了！】</p>
+<p>……</p>
+<p>旖旎的氛围被某些阻隔不了的撒泼声打破。</p>
+<p>颤栗消失，取而代之的是一阵鸡皮疙瘩。</p>
+<p>我莫名其妙来了底气，用头往程奚怀肩膀上一撞。</p>
+<p>毫无预料的程奚怀还真的被我撞得倒退了几步。</p>
+<p>他露出难以置信的表情来：</p>
+<p>「你……」</p>
+<p>【她撞我？她今天敢撞我，明天就敢撞开万花楼的门去包十个小倌！】</p>
+<p>【她变了，她以前都会直接亲上来的呜呜呜！】</p>
+<p>能不能别呜了！</p>
+<p>【呜呜呜呜呜呜呜呜呜……】</p>
+<p>我被吵得心烦，一把推开程奚怀：</p>
+<p>「能不能好好说话，不能说滚。」</p>
+<p>程奚怀一愣，随后咬着后槽牙连声道：</p>
+<p>「好啊，好得很，既然夫人不待见我，那我便不惹夫人嫌了。」</p>
+<p>说罢，他毅然转身，周遭如黑云压身，气氛沉得让人不敢靠近。</p>
+<p>我扶着额，看着那个逐渐远去的阴沉背影。</p>
+<p>【呜呜呜呜呜呜呜……】</p>
+<p>【呜呜呜呜呜呜呜呜呜呜呜呜呜呜！】</p>
+<p>谁来救救我！</p>
+<p>呜呜怪，啊不是。</p>
+<p>程奚怀在我面前消失的第三天，我收到了野练的请帖。</p>
+<p>这是一个所有将军及副将都会携着家眷参加的活动。</p>
+<p>内容很单一：打架。</p>
+<p>不用武器，单纯的肉搏。</p>
+<p>小皇帝的意思是，你们这群天天坐军营里指点江山的，总不能颠着个大肥肚子、腆着脸上战场吧？</p>
+<p>是不是得拿出点真材实料？</p>
+<p>赢者赏黄金千两，输的人倒是没惩罚。</p>
+<p>就是大概率会被狠狠耻笑一年。</p>
+<p>「哟哟哟，这就是那个野练垫底，肚子大到都快塞不进盔甲里的将军啊！」</p>
+<p>——然后直到下一年的嘲笑对象出来。</p>
+<p>因此，每每快到野练的时候，京城就会出现一支神秘的队伍。</p>
+<p>他们位高权重，战功赫赫。</p>
+<p>每天不干什么事，就是绕着京城哼哧哼哧跑步练体能。</p>
+<p>省得一大把年纪了还晚节不保。</p>
+<p>而程奚怀作为最年轻的大将，自然是要参加的，</p>
+<p>每一年，我都会陪着程奚怀参加。</p>
+<p>不为别的。</p>
+<p>就是他们打到兴奋的时候，喜欢脱衣服。</p>
+<p>好看，我爱看。</p>
+<p>……</p>
+<p>出于家丑不可外扬这条准则，我和程奚怀坐上了同一辆马车。</p>
+<p>车上，他闭目养神，一个眼神都不打算给我。</p>
+<p>然而静谧的车厢中，有一道神秘的声音一直在通过我的耳朵攻击我的大脑。</p>
+<p>【她怎么不跟我说话，好安静，我还以为我们永远有话说。】</p>
+<p>【要不我主动开口？不行！她又骂我怎么办，我会忍不住哭的。】</p>
+<p>【夫人理理我啊夫人理理我啊夫人……】</p>
+<p>我被聒噪得实在是听不下去了：</p>
+<p>「那什么……」</p>
+<p>程奚怀猛地睁开眼睛，皱起眉头，神情中掺杂着一丝不耐。</p>
+<p>你小子在装什么啊！</p>
+<p>我深吸一口气，道：「前两天的事情，抱歉，我不该叫你滚出去的。」</p>
+<p>程奚怀一愣。</p>
+<p>随后淡淡道：「没事，小事一桩，我没放在心上。」</p>
+<p>你没放在心上？</p>
+<p>在一片如鞭炮般噼里啪啦炸裂的心声中，我呵呵一笑。</p>
+<p>程奚怀的副将叫严杉，是个眼睛很大的小伙子。</p>
+<p>比程奚怀小上三岁，与他同生共死出入战场，亲如兄弟。</p>
+<p>我和程奚怀刚进野练场，严杉就看见了我们，挥着手跑了过来。</p>
+<p>怎么感觉周围凉飕飕的……</p>
+<p>我一回头，发现身边这人又开始散发黑气了。</p>
+<p>【就是你……天天在我耳边念『你娘子都不给你寄书信，你娘子不要你喽，你娘子要和你和离喽。』】</p>
+<p>【害得我心慌不已，这才找宋柳来演戏，落得如今连句话都不敢跟夫人说的地步。】</p>
+<p>我默默无语，原来是因为这样。</p>
+<p>转过头，看着那个一无所知、咧着大白牙跑过来的小伙子。</p>
+<p>我诚心祈祷。</p>
+<p>祝你好运，愿大殿前的柱子保佑你。</p>
+<p>「程兄！等你好久了，嫂子好啊！」</p>
+<p>我点点头算作回应。</p>
+<p>严杉一上来就搂住程奚怀的肩膀。</p>
+<p>他的语气跃跃欲试：「怎么着，等会咱哥俩比比？</p>
+<p>「我可是两个月前就开始练武了，今年可不见得会输给你。」</p>
+<p>程奚怀眉一竖，眼睛眯了起来。</p>
+<p>我在心里暗念阿弥陀佛。</p>
+<p>这跟找死有什么区别。</p>
+<p>他凉凉道：「好啊。」</p>
+<p>……</p>
+<p>野练的对手是由抽签决定的。</p>
+<p>一轮比赛淘汰一半人，剩下的人再进行抽签对决。</p>
+<p>严杉敢说和程奚怀比试自然是有道理的。</p>
+<p>作为整个京城最让人闻风丧胆的少年将军，程奚怀的实力有目共睹。</p>
+<p>但是严杉的实力也不容小觑。</p>
+<p>若非程奚怀实在名声太盛，如今整个京城最得意的将军，就该是他了。</p>
+<p>而每个抽到他俩的人，在看到名字的那一刻就已经变得垂头丧气。</p>
+<p>仿佛已经预见到了自己的失败。</p>
+<p>事实也确实如此，几场比试下来，场上就只剩下这两个人。</p>
+<p>自然也成了唯一的对手。</p>
+<p>我有些期待。</p>
+<p>毕竟前几次比试，程奚怀都打得风轻云淡。</p>
+<p>对面大汗淋漓气喘不止，他却如同闲庭散步，慢悠悠地赢了比赛。</p>
+<p>看得我很不爽。</p>
+<p>又被他装到了。</p>
+<p>所以当严杉走上战台的时候，我心里无比激动。</p>
+<p>揍他！狠狠揍他！</p>
+<p>「等下。」严杉满脸严肃。</p>
+<p>随后他走到站台边，一把脱下自己的上衣，还活动了几下筋骨。</p>
+<p>这才转过身，一脸谨慎地走过去，摆出了防御之姿。</p>
+<p>看着阳光下闪闪发光的腹肌，我的眼泪差点从嘴角流下来。</p>
+<p>「哇哦~」</p>
+<p>大概是没控制好音量，惹得前面几个女眷纷纷回头捂嘴偷笑着看我。</p>
+<p>笑什么笑！</p>
+<p>难道你们不想看吗！</p>
+<p>若非有夫君跟着，此时恐怕眼珠子都要挂上去了吧？</p>
+<p>等下……夫君……</p>
+<p>我是不是也有夫君来着……？</p>
+<p>突然，一阵寒风刮过，我忍不住抖了抖。</p>
+<p>抬头就对上程奚怀淡淡的目光。</p>
+<p>完蛋，好像被他听见了。</p>
+<p>「程兄，承让……啊！」</p>
+<p>没有人看清程奚怀是怎么出手的。</p>
+<p>只是随着一身惨叫，严杉就已经如道残影般飞了出去。</p>
+<p>整个人四仰八叉地躺在地上，好笑又狼狈。</p>
+<p>但我笑不出来。</p>
+<p>我总觉得他的悲惨之中，我占了一半的功劳。</p>
+<p>野练场静默了两秒钟，这才响起雷鸣般的掌声：</p>
+<p>「好啊！程小将军果然是好身手！」</p>
+<p>「原本只知道程小将军武力高强，却不知道他强悍如斯，连严副将都接不了他一招。」</p>
+<p>「苍天，感谢程小将军刚刚让我在台上待了一盏茶的工夫才把我打下来，否则老夫可就要颜面尽失了。」</p>
+<p>在一阵感叹中，严杉费力地爬了起来。</p>
+<p>他的心态倒是好，一点都没生气，反而依然笑嘻嘻道：</p>
+<p>「程兄的武功见长，小弟自愧不如。」</p>
+<p>【呜呜呜丢死人了，人家还没娶妻呢，说出去哪家姑娘还看得上我啊呜呜呜……】</p>
+<p>你们军营盛出呜呜怪吗？</p>
+<p>但是看着严杉微笑之下暗藏的落寞，我实在没办法把这句吐槽说出口。</p>
+<p>更何况他今日没有家眷相伴，下了战台还得自己一瘸一拐走回去。</p>
+<p>实在是，惹人怜爱。</p>
+<p>我叹了口气，站起身来，朝严杉的方向走了过去。</p>
+<p>与此同时，看到我走来时眼前一亮，发现我只是路过他后又开始散发黑气的程奚怀：</p>
+<p>【我下手是不是太重了？抱歉严杉，我只是太生气了没忍住，回军营就让你打回来……诶，夫人朝我走过来了！她是不是也觉得我很厉害呀～】</p>
+<p>【……刚刚我怎么没再打狠一点。】</p>
+<p>听到这句话，我扶着严副将的手一哆嗦。</p>
+<p>严杉好不容易平稳了身子，一下子又跌坐回了地上。</p>
+<p>【你们夫妻俩故意的吧！】</p>
+<p>我讪讪笑着，回头对程奚怀道：</p>
+<p>「你过来搭把手啊，我扶不动他。」</p>
+<p>程奚怀「哦」了一声，面无表情地走过来。</p>
+<p>他几乎是把严杉从地上拽起来的，痛得严副将哇哇大叫：</p>
+<p>「胳膊没受伤都要被你拉骨折了！你都拿第一了还在不爽些什么！」</p>
+<p>程奚怀哼哼一声：「我没不爽啊，我都拿第一了还能有什么不爽。」</p>
+<p>我跟在俩人身后，努力了很久才忍住了没翻白眼。</p>
+<p>这就是我朝最有天赋的两个武将？</p>
+<p>爹爹，辞官吧。</p>
+<p>感觉我们王朝要覆灭了。</p>
+<p>毫不意外，今年又是程奚怀捧着千两黄金回了府。</p>
+<p>车厢内，我用手支着脸道：</p>
+<p>「话说，你都赢了三年了，其他将领不会看不惯你，把你暴揍一顿吗？」</p>
+<p>程奚怀抱着手看向窗外，淡淡道：</p>
+<p>「那也得打得过我才行。」</p>
+<p>我：……</p>
+<p>一天不装会死是不是？</p>
+<p>程奚怀转过头来：「那箱黄金你拿走吧。」</p>
+<p>他的表情突然变得有些不自然，磕磕巴巴的：</p>
+<p>「天气凉了，给自己添置点衣服首饰。」</p>
+<p>哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟哟。</p>
+<p>狗嘴里终于吐出象牙了？</p>
+<p>这还是那个天天跟我吵架的程奚怀吗？</p>
+<p>我有意逗他，便道：「那宋姑娘呢？若她拈酸吃醋了该怎么办？」</p>
+<p>程奚怀一愣，似乎才想起还有这号人物。</p>
+<p>他踌躇了一番，随后拧着眉道：「阿姜，其实我……」</p>
+<p>我听到了他的心声，便知道他是打算把事情的真相告诉我了。</p>
+<p>莫名地，我就是想逗逗他。</p>
+<p>于是我插话道：「其实吧，若你真的喜欢宋姑娘，就不要辜负她，等她生完孩子，你要是想与我和离，也不是不行……」</p>
+<p>话还没说完，程奚怀就猛地靠近攥住我的手腕，黑着脸，咬牙切齿道：</p>
+<p>「和离？你是想和谁在一起？严副将吗？」</p>
+<p>关他什么事啊！</p>
+<p>我故作吃痛，拧起眉头：</p>
+<p>「放手，疼！」</p>
+<p>程奚怀一顿，随后松开了手。</p>
+<p>然后眼巴巴地看着我。</p>
+<p>【我不是故意的呜呜呜呜，给夫人呼呼，我就是太生气了，我不想和离哇，夫人你别不要我……】</p>
+<p>我还是没忍住，白了程奚怀一眼。</p>
+<p>有嘴不能直说吗？</p>
+<p>把自己心声说出来很难吗？</p>
+<p>跟我撒个娇怎么了！</p>
+<p>装什么霸道公子！</p>
+<p>正好这时，马车停在了程府门口。</p>
+<p>我拉开帘子头也不回地下了车。</p>
+<p>我怒气冲冲地回了房间，径直甩上门。</p>
+<p>等了很久也没听到关门的声音。</p>
+<p>回头一看，是被程奚怀接住了。</p>
+<p>「你跟来干什么？」</p>
+<p>程奚怀终于不是顶着张臭脸了。</p>
+<p>他的表情稍有柔和，道：「夫人，你的手还疼不疼？我是来道歉的。」</p>
+<p>其实本来也不疼。</p>
+<p>但我还是故作生气，道：「你别过来，我现在不想和你说话。」</p>
+<p>程奚怀眼神求饶般地走近，我撇开脸一步步后退。</p>
+<p>在我的后背撞上柜子的一刹那，我想着时机到了，可以不必再演了。</p>
+<p>我要一脸嚣张地对程奚怀道，哈哈！其实我早就知道宋柳是假的了，被我骗了吧！</p>
+<p>但是程奚怀的眼神突然往下，神色变得很不对。</p>
+<p>让我下意识地没有开口。</p>
+<p>我顺着他的目光往下，只看到一本从柜子里掉落出来的书——</p>
+<p>《万花楼小倌名册》。</p>
+<p>那一刻，我的脑海里只有三个字：</p>
+<p>完、蛋、了。</p>
+<p>程奚怀气笑了，一敛刚刚无辜委屈的表情，嘴角弯起一个危险的弧度：</p>
+<p>「为什么要去找小倌，我让夫人很不满意吗？」</p>
+<p>「不是……你听我说……啊！」</p>
+<p>程奚怀伸手，将我拦腰抱起。</p>
+<p>无视我的惊呼，他的语气意味不明：</p>
+<p>「放心吧夫人，今晚为夫一定让你满意。」</p>
+<p>之前不还躲躲闪闪的吗，怎么突然自信起来了。</p>
+<p>我太心虚了，脑子失去了思考的能力，想到什么便问出了口：</p>
+<p>「你跟副将比过了？」</p>
+<p>程奚怀转过头，终于不再淡定。</p>
+<p>他咬着后槽牙道：「你还知道副将行不行？」</p>
+<p>该死，说漏嘴了。</p>
+<p>他还不知道我能听见他的心声。</p>
+<p>我尴尬地笑笑：</p>
+<p>「呵呵……今天目测了一下。」</p>
+<p>一阵天旋地转，后背触到了柔软的被子。</p>
+<p>程奚怀欺身而上，俊朗的面庞瞬间被放大、再放大。</p>
+<p>他从牙缝里挤出一句：「不许看他。」</p>
+<p>我被堵得话都说不出来。</p>
+<p>抬腿狠狠踹了他一脚，程奚怀这才堪堪停下。</p>
+<p>双手撑在我身侧，居高临下地望下来。</p>
+<p>……吃了炮仗了今天火气这么大。</p>
+<p>我忿忿地擦了擦嘴，怒火之下口不择言：</p>
+<p>「凭什么不能看，我看谁是我的自由！不看他难道还看你的啊！」</p>
+<p>「好。」</p>
+<p>简短的一个单音节，让我都愣住了。</p>
+<p>程奚怀坐起身来，淡淡道：</p>
+<p>「看我的，我给你看。」</p>
+<p>什……什么？</p>
+<p>下一秒——</p>
+<p>「啊啊啊变态啊，不许脱！穿上！我不要看啊啊啊啊啊！」</p>
+<p>翌日，日上三竿。</p>
+<p>我从床上挣扎了三次才爬起来。</p>
+<p>大概是动作幅度有些大，身旁的人也睁开了惺忪的眼睛。</p>
+<p>他侧身支着脑袋，笑道：「这么早就醒了，还有力气？」</p>
+<p>我脸一热，恼羞成怒道：「你滚出去！」</p>
+<p>程奚怀掀开被子看了看，懒洋洋道：「出去了啊。」</p>
+<p>滚啊啊啊啊啊啊啊啊啊啊啊！</p>
+<p>程奚怀见我一副羞到恨不得把头埋进被子里的模样，终于正了正神色：</p>
+<p>「阿姜，我要跟你道歉，其实宋柳没有怀孕，与我也并无关系，只是我找来气你的。」</p>
+<p>我还沉浸在自己的世界里，随声附和道：「哦。」</p>
+<p>程奚怀挑了挑眉：「你不生气？」</p>
+<p>不对！我不该这么平静的！</p>
+<p>我怒目而视，叉腰道：「哈！你居然骗我。」</p>
+<p>程奚怀急了，他翻身将我抱住：</p>
+<p>「我错了，我就是不确定自己在你心里的地位，所以才会想让你吃醋。我也终于尝到苦头了，没有你跟我拌嘴的日子，我真是一天都过不下去。」</p>
+<p>我被这一段袒露的心声砸得头晕。</p>
+<p>怎么回事？</p>
+<p>怎么突然开窍了。</p>
+<p>难道是被严杉刺激到了？</p>
+<p>我心里突然升起几分好笑。</p>
+<p>就这还想让我吃醋呢，如今自己倒是被醋得七荤八素。</p>
+<p>见我不说话，程奚怀更着急了：</p>
+<p>「今日我就让宋姑娘离开，至于母亲那边，我自会给解释的。」</p>
+<p>我有些无奈地看了他一眼：</p>
+<p>「你就没发现你弟和宋柳之间有什么不对？」</p>
+<p>程奚怀的表情有些蒙：</p>
+<p>「啊？」</p>
+<p>「宋姑娘一直这么没名没分地住在家里也不是办法，我和你哥商量着，打算正式将她抬进门了。」</p>
+<p>屋内，程锦言坐在我面前。</p>
+<p>听到这话，他的表情变得有些不自然。</p>
+<p>他小心翼翼试探道：「你同意这事儿？」</p>
+<p>我佯装无可奈何，叹道：</p>
+<p>「不同意又能怎么样，怀都怀了，总得给宋姑娘一个名分吧。」</p>
+<p>程锦言欲言又止，他挣扎许久，才开口道：</p>
+<p>「倘若……宋姑娘没有怀孕呢？」</p>
+<p>「什么？！」</p>
+<p>他怎么知道的！</p>
+<p>程锦言显然把我的惊诧理解成了另一种意思，连忙开口劝慰：</p>
+<p>「嫂嫂你先别生气！其实一开始我也只是怀疑，毕竟宋姑娘月份大了，肚子却始终平坦一如往常，也没有表现出任何不适。</p>
+<p>「我便让郎中在给她调理身子时，偷偷测了一下她的脉，果真毫无有孕的迹象。」</p>
+<p>我大惊。</p>
+<p>这就是学武之人与学文之人的脑子差异吗？</p>
+<p>程家还能生出这么心思缜密的人来？</p>
+<p>亲生的？</p>
+<p>程锦言继续道：「我怕我哥知道这件事情后会对宋姑娘大发雷霆。嫂子你也知道，宋姑娘本来就身有残缺，日子过得如此不易，若是还被赶出程府，那她真是……」</p>
+<p>「等下。」我打断他，「她身有什么残缺了？」</p>
+<p>程锦言接话得理所当然：「眼疾啊。」</p>
+<p>我：……我收回刚刚夸你的话。</p>
+<p>「若真如你所说，宋姑娘是在装孕，那恐怕程家是留不住她了，除非……」</p>
+<p>除非蹦出个什么人，承认自己喜欢她，好让程府容得下她。</p>
+<p>我端起茶盏喝了一口，用高高的杯壁掩盖自己卑鄙的笑容。</p>
+<p>是的，这就是我和程奚怀琢磨了一整日想出来的馊主意。</p>
+<p>用宋柳处境的窘迫，逼得程锦言意识到自己喜欢她。</p>
+<p>「除非我带她私奔！」</p>
+<p>等等……哈？</p>
+<p>程锦言像是做了什么决定，一脸坚毅道：</p>
+<p>「我在朝廷也有一官半职，自立门户不是问题。如今我哥与宋姑娘的事情在京城闹得沸沸扬扬，只有让她隐姓埋名，才能阻隔流言蜚语，也不会有损程府的名声。」</p>
+<p>不是兄弟，这事儿没那么复杂……</p>
+<p>没人在乎程府的名声……</p>
+<p>程府有名声？……</p>
+<p>我擦了擦额上的虚汗，道：「锦言你先别激动，你听嫂嫂说……」</p>
+<p>程锦言一脸严肃地打断我：</p>
+<p>「嫂嫂你不必相劝了，宋姑娘是可怜人，我不能坐视不理，我心意已决，现在就去收拾行李。」</p>
+<p>说罢，他像等不及了一般，头也不回地走出了门。</p>
+<p>留下一脸凌乱的我，还有那只已经伸出，却来不及阻拦的手。</p>
+<p>直到人影消失，我才忍无可忍地深吸一口气，喊道：</p>
+<p>「程奚怀——！」</p>
+<p>屏风后转出一道人影。</p>
+<p>「我在呢夫人。」</p>
+<p>程奚怀抱着胳膊，慢悠悠地走上前来，一脸欣赏地往门外望过去。</p>
+<p>「够痴情，有我当年的风范……啊！」</p>
+<p>他一脸委屈地回头，捂着屁股道：「你踹我干什么？」</p>
+<p>我暗自松了松隐隐犯疼的脚踝。</p>
+<p>这臀，真紧实。</p>
+<p>哪哪都紧实。</p>
+<p>「你弟都要出去自立门户了，还不快追回来？」</p>
+<p>程奚怀一脸无所谓：「有什么好追的，走就走呗，还落了个清静……唉唉别踹了，我去就是！」</p>
+<p>【屁股被踹得一大一小了，娘子还会爱我吗？】</p>
+<p>「赶紧滚啊啊啊！」</p>
+<p>我和程奚怀赶到宋柳的院子时，天色已晚。</p>
+<p>程锦言挎着包袱，看到我们之后，像是做错事被发现的小孩，满脸无措：</p>
+<p>「哥，嫂嫂。」</p>
+<p>虽然如此，他还是将宋柳往自己身后掖了掖。</p>
+<p>程奚怀把一切都看在眼里，正要开口坦白：「锦言，其实……」</p>
+<p>却被程锦言打断：</p>
+<p>「哥，其实宋姑娘没有怀孕，但你先不要生气，我会带着她离开的。</p>
+<p>「况且你与嫂嫂青梅竹马多年夫妻，宋姑娘夹在中间也不会幸福的，与其沦为妾室，不如从此改头换面做个普通人，逍遥快活。」</p>
+<p>这话说完，除了一脸豁出去的程锦言，其余三人都是一脸欲言又止。</p>
+<p>直到宋柳突然反应过来：</p>
+<p>「等下，你要带我走？你喜欢我？」</p>
+<p>程锦言的脸猛地一下子红得像虾头：</p>
+<p>「我……我是看你可怜……怕你受罚罢了！」</p>
+<p>嗯，嘴硬也是他们程家的传统之一。</p>
+<p>可是宋柳不管，她一下子拽住程锦言的袖子：</p>
+<p>「你喜欢我！你就是喜欢我！耶耶你喜欢我！」</p>
+<p>就在这时，程奚怀猛地咳嗽了几下。</p>
+<p>程锦言的表情一下子又变得紧张起来。</p>
+<p>程奚怀看向宋柳，企图用眼神交流。</p>
+<p>【你没告诉他真相？】</p>
+<p>宋柳站在程锦言身后，挤眉弄眼。</p>
+<p>【你没告诉她真相？】</p>
+<p>「行了。」我站出来，「其实你哥和宋姑娘本就没什么关系，只是请她来演一出戏，自然也就没有怀孕一说了。」</p>
+<p>程锦言一愣：「为什么要演戏？图什么？」</p>
+<p>我把目光投向程奚怀，等同于把问题投过去。</p>
+<p>是啊，图什么？</p>
+<p>有本事你就当你弟面承认，你就是幼稚到要用吃醋的方式测试自己夫人的爱。</p>
+<p>这下终于轮到程奚怀脸红得像虾头了。</p>
+<p>又是我出来打圆场：</p>
+<p>「你哥经常做这种不带脑子的事情，你也知道。」</p>
+<p>闻言，程锦言露出了然的神情，一点没再怀疑。</p>
+<p>……你们兄弟俩在彼此心中到底是个什么印象。</p>
+<p>看着眼前两个握着双手互通心意的年轻人，程奚怀凑近轻声问道：</p>
+<p>「你是怎么发觉锦言对宋姑娘有意思的？」</p>
+<p>我抱着胳膊一脸得意：</p>
+<p>「他？以往十天半个月都见不着人影，宋姑娘刚进府那会儿天天找我请安，他就天天往我屋里窜，真当我傻呢？」</p>
+<p>那会儿犯了眼疾的，可不止一个人哦。</p>
+<p>我越想越得意，斜着身子就往一旁的柱子靠。</p>
+<p>却忘了自己正身处庭院的桥中央，哪里有什么柱子。</p>
+<p>扑通一声。</p>
+<p>「夫人！」</p>
+<p>「嫂嫂！」</p>
+<p>「程夫人……啊不，嫂嫂！」</p>
+<p>这次落水并未像上回那么严重。</p>
+<p>只是惹上了风寒，休养几天便好。</p>
+<p>郎中走后，程奚怀凑上来：</p>
+<p>「夫人，身子还好吗？」</p>
+<p>我盯着他的脸愣了几秒，这才意识到耳边变得格外清静。</p>
+<p>「我听不见了。」</p>
+<p>程奚怀急忙扑上来捧着我的脸：</p>
+<p>「落个水还能聋了？</p>
+<p>「傻子，笨蛋，白痴，我骂你你能听见吗？」</p>
+<p>我抬起头狠狠剜了他一眼。</p>
+<p>是我听不见心声了！</p>
+<p>程奚怀见到我的表情，松了一口气：</p>
+<p>「还好没聋，不然以后都听不见我说喜欢你了。」</p>
+<p>我脸一热。</p>
+<p>「差不多得了。」</p>
+<p>「你俩烦不烦。」</p>
+<p>一旁的程锦言和宋柳几乎同时开口。</p>
+<p>程奚怀似笑非笑道：「弟媳的身份还没解决吧？」</p>
+<p>「打扰了！哥哥嫂嫂继续，我们先退下了！」</p>
+<p>门嘭地一声关上。</p>
+<p>俩人像兔子一样跑得飞快。</p>
+<p>还真是一对。</p>
+<p>……</p>
+<p>几日之后，我小病初愈，上街游玩。</p>
+<p>偶然听见街边妇人们的谈话：</p>
+<p>「听说没，前几日程小将军接回去的女子是他的远房表妹，与程家二公子一见钟情，都快订婚了。」</p>
+<p>「是吗？当初不是说那女子还怀孕了吗？」</p>
+<p>「害，我听说啊，就是吃太多了，肚子撑的。」</p>
+<p>「原来是这样，当初到底是谁传出程小将军要纳妾的啊，真是荒唐。」</p>
+<p>几位妇人边说着边走远，只有我如被雷劈般呆在原地。</p>
+<p>远方表妹……吃太多……撑的……</p>
+<p>到底是谁想出这么离谱的辟谣啊！</p>
+<p>程府大婚，张灯结彩。</p>
+<p>老夫人坐在堂前，浅笑吟吟。</p>
+<p>当初我还在思虑，该怎么与婆婆坦白，谁知程奚怀拍拍我的肩：</p>
+<p>「直说就行，我娘内心很强大的。」</p>
+<p>想到这两兄弟的缺心眼程度，这句话莫名地很具有说服力。</p>
+<p>内心不强大，早就被气死了吧？</p>
+<p>所以当程奚怀在她面前提及宋姑娘时。</p>
+<p>老夫人只是微微笑道：「怎么，你要纳妾了？」</p>
+<p>随后，她的目光落在了我身上：</p>
+<p>「眠儿啊，你打算什么时候和离？你看我那二儿子怎么样？」</p>
+<p>程奚怀脸色大变，急匆匆道：「是锦言要娶宋姑娘！」</p>
+<p>老夫人又把眸子转了回去，慢悠悠道：「为什么，她肚子里的孩子不是你的？」</p>
+<p>程奚怀：……</p>
+<p>我：确实很强大。</p>
+<p>孝出强大。</p>
+<p>解释了一番，终于在老夫人面前把事情说通了。</p>
+<p>她拉着我的手，依旧是那副笑眯眯的样子：</p>
+<p>「你看吧，我就说奚怀还是很专一的。」</p>
+<p>……您说是就是。</p>
+<p>成婚当日，我爹也来了。</p>
+<p>他的表情有些不爽：</p>
+<p>「还以为这次你们能和离了，怎么结果是他弟弟娶亲啊？」</p>
+<p>我佯装无奈道：「爹，你还记不记得你寄给我的书？」</p>
+<p>我爹点头，十分理直气壮。</p>
+<p>「那些书被程奚怀发现了，他说你再撺掇我和离，就把它们原封不动地寄给我娘。」</p>
+<p>我爹脸色猛地一变。</p>
+<p>他急得就像是当即要与我割袍断义一般：</p>
+<p>「姜眠，爹爹一直告诉你，奚怀是个好孩子，你可要跟他好好过啊，别老想些有的没的，听到没！」</p>
+<p>我翻了个白眼，对他变脸的速度感到无语。</p>
+<p>于是转身离开，不想听他胡扯。</p>
+<p>还没走出几步，就撞上一个人。</p>
+<p>抬头，是程奚怀。</p>
+<p>他顺手将我揽在怀里：</p>
+<p>「夫人，这样真好。」</p>
+<p>我在他怀里闷笑道：「怎么好了？」</p>
+<p>「我们这样坦诚相待，真好。我发誓，从今往后，我一定什么事都不瞒着你，有什么心事说什么。」</p>
+<p>我沉默了一会儿，笑了。</p>
+<p>程奚怀还以为我不信他，有些着急。</p>
+<p>「你不信？」</p>
+<p>我说：「我信你，所以你能跟我说说，当初是怎么死皮赖脸求圣上赐婚的吗？」</p>
+<p>「你你你你怎么知道？！」</p>
+<p>程奚怀一下子跳开，整个人红彤彤的。</p>
+<p>我像是那种调戏小姑娘的纨绔子弟，一脸坏笑着逼近：</p>
+<p>「不是说什么都不瞒我了？告诉我啊~」</p>
+<p>「这个不行，你问点其他的！」</p>
+<p>「好，那我柜子里那几件衣裙怎么没了，是不是你拿走的？」</p>
+<p>「啊啊啊你别问了！」</p>
+<p>「觉得香？抱着睡？」</p>
+<p>「你怎么知道……不是，你别问了！」</p>
+<p>程奚怀眼见形式不对，撒腿就跑。</p>
+<p>我自然不饶人，跟在他身后追。</p>
+<p>宾客笑，黄昏尽。</p>
+<p>此生安好。</p>
+<p>番外：</p>
+<p>「你撒手！」</p>
+<p>「你先撒手！」</p>
+<p>草地上，我与程奚怀互揪着头发，谁也不肯让谁。</p>
+<p>我瞪着程奚：「男子汉大丈夫，你这么欺负一个女孩，长大后肯定连媳妇儿都讨不到！」</p>
+<p>程奚怀也不甘示弱：「你算哪门子爱猛踹人家屁股的女孩！这么暴力，长大后肯定没人娶你！」</p>
+<p>「你！」</p>
+<p>「你！」</p>
+<p>两个人又一起用力，直到齐齐跌倒，四仰八叉着躺在地上大喘气。</p>
+<p>这时，一个小奶团子走上前来。</p>
+<p>他衣袍干净，与我和程奚怀形成强烈对比。</p>
+<p>小奶团子伸出手：「哥哥，起。」</p>
+<p>我往旁边瞪了一眼：</p>
+<p>「看见没，你弟都比你懂事。」</p>
+<p>程奚怀冷哼一声，没搭理我。</p>
+<p>他借着程锦言的力爬了起来。</p>
+<p>程锦言拉起他哥，又把手伸向我：</p>
+<p>「嫂嫂，起。」</p>
+<p>我刚要伸出去的手一缩，像被踩中了尾巴似的跳了起来：</p>
+<p>「谁是你嫂嫂，不许乱叫！」</p>
+<p>程奚怀也急了：「谁会喜欢她啊！不许叫！」</p>
+<p>我自顾自爬起来，脸还在发热：</p>
+<p>「不跟你们玩了！我要回家了！」</p>
+<p>程奚怀的脸也红：「谁要跟你玩！赶紧走！」</p>
+<p>我三步并作两步，只想赶快离开，压根没细想自己如此着急的原因。</p>
+<p>自然也没听到那段被我甩在身后的对话。</p>
+<p>程奚怀弯下身子，似乎在教训程锦言：</p>
+<p>「以后不可以叫姜眠嫂嫂，听见没，我不喜欢她。」</p>
+<p>程锦言皱起小脸，似乎很是不解：</p>
+<p>「可是哥哥书房里挂着的，都是姜姐姐的画像啊，还是哥哥亲手画的……唔！」</p>
+<p>程奚怀飞快捂住弟弟的嘴巴，急急忙忙往身后看了一眼，确认已经没有人后，才松了口气般将手放了下来。</p>
+<p>他像是终于承认了自己的心事，松了肩膀，败下阵来：</p>
+<p>「至少……现在不许叫。」</p>
+<p>小程锦言歪头：</p>
+<p>「那什么时候可以叫？等哥哥娶姜姐姐吗？」</p>
+<p>程奚怀再一次捂住他的嘴，脸红到快要滴血：</p>
+<p>「谁要娶她啊，不许问了，不许问了！」</p>
+<p>树林里静默了几瞬，这才传来轻轻的一句：</p>
+<p>「你真是……跟她一样讨厌。」备案号:YXX1DM9yla4i0D1wX6liZaZm</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/18-%E5%A4%AB%E5%90%9B%E9%80%81%E6%88%91%E4%B8%80%E4%B8%AA%E6%96%B0%E5%A9%9A%E7%94%B7%E5%AE%A0/" title="夫君送我一个新婚男宠">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">夫君送我一个新婚男宠</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/11/3-%E5%A4%AB%E4%BA%BA%E7%9A%84%E8%AF%BB%E5%BF%83%E6%9C%AF/" title="夫人的读心术">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">夫人的读心术</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总会遇到那束光 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/2/22-%E6%80%BB%E4%BC%9A%E9%81%87%E5%88%B0%E9%82%A3%E6%9D%9F%E5%85%89/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/2/22-%E6%80%BB%E4%BC%9A%E9%81%87%E5%88%B0%E9%82%A3%E6%9D%9F%E5%85%89/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="总会遇到那束光">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+  <meta name="twitter:title" content="总会遇到那束光">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="总会遇到那束光">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12128">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25982.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">总会遇到那束光</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%80%bb%e4%bc%9a%e9%81%87%e5%88%b0%e9%82%a3%e6%9d%9f%e5%85%89&amp;url=https://mohai.us.kg/posts/2023/2/22-%E6%80%BB%E4%BC%9A%E9%81%87%E5%88%B0%E9%82%A3%E6%9D%9F%E5%85%89/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/2/22-%E6%80%BB%E4%BC%9A%E9%81%87%E5%88%B0%E9%82%A3%E6%9D%9F%E5%85%89/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%80%bb%e4%bc%9a%e9%81%87%e5%88%b0%e9%82%a3%e6%9d%9f%e5%85%89%20https://mohai.us.kg/posts/2023/2/22-%E6%80%BB%E4%BC%9A%E9%81%87%E5%88%B0%E9%82%A3%E6%9D%9F%E5%85%89/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25982.jpg" alt="总会遇到那束光" />
+      
+
+      <p>我妈突发脑梗，被送入手术室抢救。</p>
+<p>男朋友却发来一段视频，他正在酒吧和别的女孩儿贴身热舞。</p>
+<p>这是他用来刺激我，逼我服软的惯用伎俩。</p>
+<p>想让我好放下一切去哄他。</p>
+<p>可在我心里，这段感情已经进入了倒计时。</p>
+<p>「患者暂时脱离了生命危险。」</p>
+<p>手术室大门打开，医生从里面走出。</p>
+<p>「但做完开颅减压手术后，她短期内可能会出现偏瘫失语，需要住院观察。」</p>
+<p>看着被护士缓缓推出，插着呼吸机、紧闭双眼的我妈。</p>
+<p>我腿就是一软，险些栽倒在地。</p>
+<p>失而复得的庆幸和后怕交织在一起，身体控制不住地轻颤。</p>
+<p>还好。</p>
+<p>还好我妈还在。</p>
+<p>在病床前守了一夜，反复和医生确认我妈的病情还算稳定后。</p>
+<p>小姨就催促我先回家，去收拾一些换洗衣物和日常用品。</p>
+<p>走出医院，刺眼的日光晃得眼睛生疼。</p>
+<p>坐上出租车，司机从后视镜瞥到了我有些苍白的脸色。</p>
+<p>他将车窗升上去，「小姑娘，身体才是革命的本钱，要多注意才行啊。」</p>
+<p>我勉强地扯了扯嘴角，轻声应了一句。</p>
+<p>就在这时，秦昀打来电话。</p>
+<p>接通后，那头却传来了一个娇滴滴的女声：</p>
+<p>「哎呀……秦昀，我好像不小心按到你的手机了。」</p>
+<p>「没事，挂了就行。」</p>
+<p>秦昀淡淡的声音过后，电话被挂断。</p>
+<p>下一秒，手机震动。</p>
+<p>他发来了短信：</p>
+<p>「打错了。」</p>
+<p>我面无表情，看着手机屏幕。</p>
+<p>这三个字，和昨晚手术室门口的地板一样。</p>
+<p>让人浑身发冷。</p>
+<p>而类似的短信，已经不知道收到过多少次了。</p>
+<p>每次秦昀发脾气，只要我没有第一时间放下一切去哄他，那诸如此类的把戏就会层出不穷。</p>
+<p>以往，我要锲而不舍地给他打电话。</p>
+<p>在连续挂断十几次后，他才能稍稍消气一些。</p>
+<p>等我彻底将他哄好，秦昀的语气才会软下来。</p>
+<p>他像一只受伤的小兽，委屈地用脸颊蹭我：</p>
+<p>「江妍，我接受不了冷战的。」</p>
+<p>「我一旦难过，你要及时哄我。」</p>
+<p>「等我情绪平复下来，再加倍对你好，补偿你。」</p>
+<p>但现在，我妈还昏迷不醒地躺在医院里。</p>
+<p>甚至，连呼吸都孱弱无比。</p>
+<p>一整夜不合眼的忐忑担忧，让我心力交瘁。</p>
+<p>根本没有多余的心思去陪他进行感情拉扯。</p>
+<p>大概是因为久久等不来安抚，在我拎着收纳袋下楼时，秦昀找上了门。</p>
+<p>他堵在楼道口，冷着脸：</p>
+<p>「你知不知道昨天是我的生日？！」</p>
+<p>「我等了你那么久，没有一句祝福也就算了，短信还已读不回。」</p>
+<p>「是不是就算我和别人亲近，你也不会在乎？」</p>
+<p>「江妍，想分手就直接说，不用这么作践我！」</p>
+<p>「没了你，多的是人想和我在一起……」</p>
+<p>他咬牙切齿，就像刺猬一样竖起了全身的尖刺。</p>
+<p>面对这样的秦昀，我只觉一股深深的无力感涌遍全身。</p>
+<p>但想到昨天，还是开口尝试向他解释：</p>
+<p>「我没忘记你的生日，只不过我妈生病了……」</p>
+<p>没等说完，就被打断。</p>
+<p>面前的人怒不可遏，「够了！这个理由就那么好用吗？」</p>
+<p>「上次不用你怎么哄，我轻而易举地原谅了你。」</p>
+<p>「是不是只要破过一次例，你就没完了？」</p>
+<p>我只觉一窒，剩下的话全被哽在了喉间。</p>
+<p>像极了砂石，磨得血腥气蔓延。</p>
+<p>上次。</p>
+<p>他说的是我陪我妈去医院输液，没及时回复信息的那次。</p>
+<p>忙着挂号、缴费。</p>
+<p>和医生询问我妈的情况。</p>
+<p>也就错过了秦昀发来的手指受伤的照片。</p>
+<p>他切水果的时候，不小心划了个小口。</p>
+<p>因为我没有第一时间表示心疼，他越想越委屈。</p>
+<p>一气之下拉黑了我所有的联系方式。</p>
+<p>并且在朋友圈上传自拍，配上文字：</p>
+<p>「没人心疼的单身汪一枚，求认领！」</p>
+<p>等他知道原委后，拎了一堆营养品和水果上门看我妈。</p>
+<p>那是第一次。</p>
+<p>第一次我没哄，他就主动低了头。</p>
+<p>当时也让我觉得，秦昀只是平时傲娇了些。</p>
+<p>那都不是他的本意。</p>
+<p>可如今，我的解释还未出口。</p>
+<p>秦昀就下意识地觉得我是在故技重施。</p>
+<p>那是不是说明，其实那次的低头，对他来说，也就无异于偶尔施舍般的退让。</p>
+<p>而我，不能因此得寸进尺。</p>
+<p>楼道间有些暗。</p>
+<p>照不明朗的灯光映在秦昀的眼眸里。</p>
+<p>斑驳不清。</p>
+<p>我一下子抿紧了唇，努力抑制住在心里横冲直撞的情绪。</p>
+<p>不断重复告诉自己：</p>
+<p>「任何时候，都不要在气头上说话或行动。」</p>
+<p>拎起收纳袋，侧身避过秦昀。</p>
+<p>现在最重要的是去医院，守着我妈。</p>
+<p>她要是醒来没看到我，那该有多难过啊。</p>
+<p>但我不过才走出两步，手中的袋子就被大力扯住。</p>
+<p>「你要去哪儿！我生气了你知不知道……」</p>
+<p>和秦昀的质问声一同响起的，是收纳袋的撕裂声。</p>
+<p>衣服撒落一地。</p>
+<p>包括那条我妈最喜欢的碎花长裙。</p>
+<p>是我毕业后，用拿到的第一笔正式工资给她买的。</p>
+<p>都快要一年了，裙子看起来却还像是崭新的。</p>
+<p>我妈很爱惜它。</p>
+<p>虽然在医院里得穿病护服，这裙子就算拿去也穿不上。</p>
+<p>但我就是想，有它在。</p>
+<p>说不定我妈就会很快醒来，她才舍不得放它自己孤零零地挂在衣橱里呢。</p>
+<p>秦昀怔了一下，他潜意识后退两步。</p>
+<p>不过又再次上前：「我只是……」</p>
+<p>他有些急切，就连脚踩上了那条长裙也没发觉。</p>
+<p>「走开！」我终是没忍住，马上蹲下身去捡起裙子。</p>
+<p>上面的灰尘脚印清晰可见。</p>
+<p>秦昀被这一句话定在原地，他眼神里有些不敢置信。</p>
+<p>随即被愤怒和懊恼充斥：</p>
+<p>「你怎么能这样和我说话！」</p>
+<p>「是，我是不小心把袋子弄破了，踩到了裙子，但那又有什么大不了的？！」</p>
+<p>「别忘了，先犯错的人可是你……」</p>
+<p>我倏然抬头看他。</p>
+<p>有些话几乎就要倾泻而出。</p>
+<p>但在目光掠过眼前人的手臂时，突然就失了声。</p>
+<p>最后我什么也没说，捡起地上散落的衣服，径直离开了。</p>
+<p>秦昀没有追上来，他的声音发紧：</p>
+<p>「你不能——」</p>
+<p>「你怎么能用那种眼神看我？！」</p>
+<p>可是明明。</p>
+<p>这一年来，每次吵架。</p>
+<p>他就总是这样看我的啊。</p>
+<p>去医院的一路上，我脑子乱成了一团浆糊。</p>
+<p>秦昀左手臂上的那道伤疤，在他后背也有一道。</p>
+<p>大四那年。</p>
+<p>我妈和我爸离婚了。</p>
+<p>我逼的。</p>
+<p>从小，我爸就好酗酒。</p>
+<p>他清醒的时候，还有个人样。</p>
+<p>只是一旦喝醉，回来就会对我妈拳打脚踢。</p>
+<p>小小的我哭着跑过去，也会被他一脚踢开。</p>
+<p>我妈总会扑过来，把我护在身下。</p>
+<p>那隐忍的闷哼声就会在耳边响起。</p>
+<p>第二天，我爸酒醒。</p>
+<p>他又会跪倒在我妈面前，痛哭流涕地求原谅。</p>
+<p>他说，他不是故意的。</p>
+<p>只是喝醉了，不受控制。</p>
+<p>那时，我妈总会看着我。</p>
+<p>她的眼神有些迷茫，又有些挣扎。</p>
+<p>最后归于平静，归于忍耐。</p>
+<p>就这样，我妈忍到我上了大学。</p>
+<p>我知道，她还打算忍。</p>
+<p>因为怕单亲家庭的女孩儿会遭到另一半家里的嫌弃。</p>
+<p>直到我拿着刀抵在自己的脖子上，说如果自己的存在会成为禁锢她的枷锁，那活着也没什么意义。</p>
+<p>我妈才妥协了。</p>
+<p>她身上经年累月的伤痕，无疑是家暴的确凿证据。</p>
+<p>所以即便是我爸不同意，法院也很快判了离。</p>
+<p>因为他是过错方，房子被判给了我妈。</p>
+<p>离婚后，我爸对我恨之入骨。</p>
+<p>在一个酩酊大醉的晚上，他堵在我宿舍楼下。</p>
+<p>电话里口口声声威胁我下来，如若不然他就去找我妈。</p>
+<p>原以为，他也就是想找我撒撒气。</p>
+<p>可没想到，我爸在酒精的刺激下，竟直接掏出了怀里的尖刀刺向我。</p>
+<p>他说，如果不是我这个丧良心的，我妈才不会离开他。</p>
+<p>闪着寒光的刀刃，近在咫尺。</p>
+<p>来不及躲避，我下意识闭上了双眼。</p>
+<p>可下一瞬。</p>
+<p>耳边响起了熟悉又陌生的闷哼声，有人挡在了我的身前。</p>
+<p>是秦昀，他拥我入怀。</p>
+<p>我毫发无伤，他的手臂和背上的伤口却是整整缝了五十二针。</p>
+<p>之后，我爸因故意伤害罪被判刑。</p>
+<p>在我的请求下，他没能从秦昀那里取得谅解轻判。</p>
+<p>而作为感谢，在秦昀住院期间，我几乎是全程陪护。</p>
+<p>每次换药，他都会可怜兮兮地冲我喊疼。</p>
+<p>等看到我眼神里流露出心疼后，他就又笑得像偷吃了糖的小孩儿。</p>
+<p>满足又得意。</p>
+<p>之后在一起，也是顺理成章，水到渠成。</p>
+<p>临出院的前一个晚上，秦昀向我表白了。</p>
+<p>他把偷偷藏在病床底下的九十九朵紫丁香递到我面前。</p>
+<p>「紫丁香的花语，是初恋。」</p>
+<p>「江妍，看到你的第一眼起，我的初恋就开始了。」</p>
+<p>秦昀的眼神，亮晶晶的，他又指了指自己的手臂：</p>
+<p>「看，五十二针。」</p>
+<p>「就连缝的针数，都在说我爱你。」</p>
+<p>我看着他，看着他深邃的眼眸。</p>
+<p>如果有个人，在危险来临时会奋不顾身挡在你的身前。</p>
+<p>那他的爱意，你恐怕难以拒绝。</p>
+<p>那时我以为，秦昀和我妈很像。</p>
+<p>都是会毫不犹豫、坚定保护我的人。</p>
+<p>但慢慢地，我却发现。</p>
+<p>他和曾经那个拥我入怀的少年，好像渐行渐远。</p>
+<p>吵架前后的秦昀，完全就是两个人。</p>
+<p>就如同我爸。</p>
+<p>在清醒和醉酒后，判若两人。</p>
+<p>因为我妈在术前就陷入了昏迷。</p>
+<p>医生说这种情况，术后需要一个星期甚至更长的时间才能恢复清醒。</p>
+<p>之后的几天里。</p>
+<p>我白天正常工作，晚上去医院替换小姨，让她回家休息。</p>
+<p>昼夜连轴转，身体难免有些吃不消。</p>
+<p>在赶完最后一个策划案后，我刚走出公司大门，眼前就是一黑。</p>
+<p>眩晕感袭来，世界天旋地转。</p>
+<p>下一秒，有人接住了即将倒地的我。</p>
+<p>「江妍！」</p>
+<p>缓了好一会儿，我才勉强睁开眼。</p>
+<p>看向身边站着的人。</p>
+<p>白衬衫、搭配笔挺的休闲西装，让他的身形显得愈发修长。</p>
+<p>是祁衍言。</p>
+<p>我的直属上司。</p>
+<p>年纪轻轻，能力却不是一般的强，堪称业界翘楚。</p>
+<p>还有传闻说，公司董事长是他的小叔。</p>
+<p>平时我们接触不多，对他的印象也就停留在工作严谨上。</p>
+<p>其实说起来，祁衍言和我也算是校友，只不过高了我两届。</p>
+<p>可能也是因为这个缘故，刚进公司那会儿，我一度觉得他有些面善。</p>
+<p>对上我的目光后，祁衍言抿了抿唇，皱起眉：</p>
+<p>「你脸色很差。」</p>
+<p>「还是去医院检查一下吧，我送你。」</p>
+<p>还没等拒绝，他就搀扶着我往外走。</p>
+<p>虽说是搀扶，但整个过程中却是很有界线地与我保持着距离。</p>
+<p>我努力稳了稳身形，手脚还有些使不上力气：「谢谢。」</p>
+<p>「不过还是不麻烦您了，我自己打个车就好——」</p>
+<p>只是还没说完，眼前倏然多了道身影。</p>
+<p>那人举起拳头就重重地挥向一旁的祁衍言。</p>
+<p>原本只要他松开搀扶我的手，侧身就能躲过的。</p>
+<p>但祁衍言也不知道是没反应过来，还是怎么的，硬生生受下了那一拳。</p>
+<p>我全身乏力，和他在力道的作用下齐齐往后栽去。</p>
+<p>砰——！</p>
+<p>没有传来想象中的疼痛，只觉头部被人用手牢牢护住了。</p>
+<p>耳边祁衍言哑声问道：「还好吗？」</p>
+<p>我抬眸，看见他额间渗出细细的汗珠。</p>
+<p>心下一凛，忙想看看他的手有没有受伤。</p>
+<p>但转瞬却被人猛地拉起，远离了祁衍言。</p>
+<p>秦昀红着眼，咬牙切齿质问我：「江妍，你们大庭广众下搂搂抱抱还要不要脸了！」</p>
+<p>「好啊，我算是知道你这几天为什么态度大变了。」</p>
+<p>「原来是找到下家了——」</p>
+<p>他话音未落，脸上就挨了一拳。</p>
+<p>整个人被打得往后踉跄了几步。</p>
+<p>祁衍言甩了甩手，脸色冰冷：「不知事情全貌之前，嘴巴还是放干净些好。」</p>
+<p>我勉强站稳，抬头就撞进了秦昀那仿若在看十恶不赦罪人的眼神里。</p>
+<p>他忍了又忍，最后从嗓子里挤出几个字：</p>
+<p>「好，江妍。」</p>
+<p>「我给你机会，解释！」</p>
+<p>我看着他，看着那张满布委屈怨愤，又无比傲慢的脸。</p>
+<p>在这几天里，秦昀一如既往。</p>
+<p>满心只沉浸在自己被冷落的情绪中。</p>
+<p>他没有想过去探寻我妈是不是真的生病了。</p>
+<p>亦如现在，我身形不稳，脸色煞白。</p>
+<p>他也没有想过我是不是身体不舒服。</p>
+<p>在自己的委屈没被抚平前，其他的一切都是无关紧要的。</p>
+<p>他看不到，也不想看到。</p>
+<p>我有些晃神，一时之间竟开始分不清。</p>
+<p>之前挡在自己身前的那个少年，真的存在过吗？</p>
+<p>秦昀见我不说话，愈发生气：「怎么？现在连搪塞我都不愿意了么？」</p>
+<p>「好歹再借口说一句你妈病了——」</p>
+<p>瞬间，我耳边嗡鸣声大作。</p>
+<p>双手攥紧，指甲几近陷进肉里。</p>
+<p>似乎有什么东西，正在一点一点，慢慢地崩塌。</p>
+<p>看着不远处的人嘴巴张张合合，良久才回过神来。</p>
+<p>我语气平静，平静得连自己都有些不可置信。</p>
+<p>一字一句地说道：「你说得对，没什么好解释的。」</p>
+<p>「秦昀，我们分手吧。」</p>
+<p>此时正是下班的高峰期。</p>
+<p>不远处的马路上熙熙攘攘，车辆川流不息。</p>
+<p>而秦昀却好像被人扼住了咽喉一样，突然失声。</p>
+<p>他一脸的怒气将化未化，就那样凝在了面上。</p>
+<p>满眼愕然：「你……你说什么？」</p>
+<p>我没有理会，扭头看向一旁的祁衍言。</p>
+<p>看到他原本整洁的白衬衫脏污一片，左脸还微微地有些红肿。</p>
+<p>那是刚刚没躲开，挨了秦昀一拳造成的。</p>
+<p>「真的抱歉，你脸上的伤——」</p>
+<p>我还没说完，祁衍言就淡淡打断：「没事，正好要送你去医院。」</p>
+<p>「待会让医生帮忙消一下肿就行。」</p>
+<p>这话一出，我原先想拒绝他自己打车的话就说不出口了。</p>
+<p>轻点了一下头，心里想着等会还可以把医药费付了。</p>
+<p>毕竟人家一片好意，却因为我遭受了无妄之灾，受了伤。</p>
+<p>只还没动身，手腕就被一把拽住。</p>
+<p>是秦昀。</p>
+<p>他下意识避开我之前说的话，像只被主人抛弃的小狗：</p>
+<p>「江妍，你是我女朋友！」</p>
+<p>「光看到别人受伤，就看不到我嘴角也被打破了吗？」</p>
+<p>我目光移到他脸上，那是他口不择言时被祁衍言打的。</p>
+<p>秦昀性子冲动，就算是和身边的朋友也打过架。</p>
+<p>以前他挂了彩，自己还不觉得怎么样，我却心疼得不行。</p>
+<p>总要按着他，仔仔细细地给伤口消毒上药。</p>
+<p>他边听着我埋怨，边喊疼。</p>
+<p>偏偏又龇牙咧嘴地乐个不停。</p>
+<p>但现在，面对他的控诉，我只是忍不住蹙起了眉：「放手。」</p>
+<p>秦昀双眸一下子变得通红，非但没有松开，攥着的力度更重了。</p>
+<p>没等我疼得呼出声，他的手就被扯开。</p>
+<p>祁衍言一脸冷色：「她摔倒的时候，手腕处擦破了皮。」</p>
+<p>「你没看到吗？」</p>
+<p>似曾相识的话，问得秦昀一愣。</p>
+<p>他下意识看向我的手腕，那里正渗着血。</p>
+<p>「我……我没看到，江妍——」</p>
+<p>秦昀有些慌乱，立刻想要上前。</p>
+<p>我扯了扯嘴角，躲开了他伸过来的手。</p>
+<p>心里意外地没有感觉到有多失望。</p>
+<p>早就已经习惯了。</p>
+<p>秦昀怎么会看到呢？</p>
+<p>一旦我们之间发生矛盾争吵，他就只会看到他自己。</p>
+<p>平日里对我的关心和爱意，就像是浓暮薄烟。</p>
+<p>一触即散。</p>
+<p>伤口处传来些许火辣辣的疼，我直视秦昀：「或许，我们真的不合适。」</p>
+<p>「就到此为止吧。」</p>
+<p>可能是我的表情太过于平静，甚至带着些自己都没察觉的轻松。</p>
+<p>秦昀开始意识到，这不是气话。</p>
+<p>他猛地后退了两步，死死盯着我：「你跟我说分手？」</p>
+<p>「你怎么能提——」</p>
+<p>我倏然打断了他：「为什么不能？」</p>
+<p>「这一年里，每次吵架你都会和我提分手。」</p>
+<p>「秦昀，究竟有什么事情——」</p>
+<p>「是你能做，而我不能做的。」</p>
+<p>「又到底有什么，是我必须要看到，而你却可以视而不见的？」</p>
+<p>后视镜内，秦昀的身影飞速倒退、消失。</p>
+<p>就好似一些东西也随之远去了。</p>
+<p>到医院后，祁衍言先让医生给我处理了一下手上的擦伤。</p>
+<p>而后才开始给他开口服的消炎药。</p>
+<p>护士又给祁衍言进行了冰敷。</p>
+<p>过程中，医生调侃道：「啧，是谁这么狠心，舍得对这张脸下手啊？」</p>
+<p>我不由得有些尴尬。</p>
+<p>祁衍言不经意地看了过来，随即淡淡开口：</p>
+<p>「不要紧，我当场就还回去了。」</p>
+<p>「算是扯平。」</p>
+<p>他的话，让医生和护士都忍不住笑笑。</p>
+<p>同时也悄无声息地驱散了我的不自在。</p>
+<p>我看着他一脸的云淡风轻，任旁人折腾也不喊疼。</p>
+<p>不像秦昀。</p>
+<p>哪怕是一丁点儿的伤口，他也要靠在我肩头撒娇卖乖许久。</p>
+<p>甚至连上药，也要哄着。</p>
+<p>有时候我会想，明明秦昀才是那个被家里娇宠长大的孩子。</p>
+<p>可他却表现得比我还渴求关注，渴求爱。</p>
+<p>微微走神时，手机突然震动。</p>
+<p>是小姨打来的。</p>
+<p>「妍妍，你到医院了吗？」</p>
+<p>「你妈妈她……」</p>
+<p>我心顿时咯噔了一下，噌地从椅子上站起。</p>
+<p>还没听完小姨的话，就不管不顾地往二楼住院部跑。</p>
+<p>我害怕。</p>
+<p>太害怕了。</p>
+<p>无数不好的想法瞬间涌了出来。</p>
+<p>数十年如一日挡在我身前的妈妈，她在，我才有家。</p>
+<p>等推开病房的门，看到我妈安然无恙躺在病床上。</p>
+<p>那几乎淹没我的恐慌才退去，留下一阵战栗。</p>
+<p>正要伸手去扶门框，身侧却传来一股支力。</p>
+<p>祁衍言不知道什么时候，无声地跟了过来。</p>
+<p>他手心的暖意，撕裂了那晚手术室前地板的冰冷。</p>
+<p>小姨看我脸色煞白，忙道：「傻孩子，话都没听全就净吓唬自己。」</p>
+<p>「我是想要告诉你，你妈醒了！」</p>
+<p>我三步并作两步到了床前，我妈已经睁开了眼。</p>
+<p>她清醒后，没有出现失语。</p>
+<p>只是有些偏瘫，医生说症状较轻，后续通过康复训练就会好转的。</p>
+<p>刚醒过来，我妈视力也受到了些许影响。</p>
+<p>但我的声音一出，她就柔柔地笑了：「妍妍啊，别怕，妈妈在呢。」</p>
+<p>这句话，瞬间让我的泪水决堤。</p>
+<p>我趴在她身侧，呜咽声不断。</p>
+<p>从小到大，我妈就没怎么听我哭过，她心疼又无措：「不哭，不哭。」</p>
+<p>「小秦啊，快劝劝妍妍，眼睛一会儿都要哭肿了。」</p>
+<p>她慌乱下一把拉过祁衍言的手，将其覆在了我的肩处。</p>
+<p>两人的身形差不多。</p>
+<p>我妈视力模糊，又看到他站在我身边，竟直接将他认成了秦昀。</p>
+<p>这下，我失控的情绪一滞。</p>
+<p>刚想开口解释，肩上就被安抚般地轻拍了两下。</p>
+<p>祁衍言声音温润：「阿姨，别担心。」</p>
+<p>「她这是太高兴了，等会儿我找护士要一些冰块。」</p>
+<p>「用毛巾包着敷一下，眼睛就不会肿了。」</p>
+<p>秦昀总共也就上了一次门，我妈对他的声音并不熟悉。</p>
+<p>她听到祁衍言这么说，倒是放心了不少。</p>
+<p>又满意地点点头：「妍妍，有小秦在你身边，妈妈就不担心了。」</p>
+<p>我看着我妈安心的神情，再三踌躇。</p>
+<p>最终还是没有开口。</p>
+<p>这个时候，让我妈静心养病才是最重要的。</p>
+<p>我和秦昀的事，说出来只怕她又要多想。</p>
+<p>之后。</p>
+<p>医院走廊座椅上，我再次向祁衍言表达了歉意和感激。</p>
+<p>他把包着冰块的毛巾递给我：「举手之劳而已。」</p>
+<p>「阿姨刚刚醒过来，你这样昼夜连轴转也不是办法。」</p>
+<p>「我批你一个星期的假。」</p>
+<p>我妈后续住院所需的费用不少，所以我一直也没向公司请假。</p>
+<p>毕竟有不少重要的项目都在我手上。</p>
+<p>祁衍言看出我的犹豫，他勾了勾唇：「放心吧。」</p>
+<p>「你手上的项目我亲自跟。」</p>
+<p>我抬头，撞进那双格外柔和的星眸中。</p>
+<p>一时有些恍惚，就好像近日所有焦躁和劳累都在这两句平淡的话语中被抚平了。</p>
+<p>毕业后，我选择了直接就业。</p>
+<p>而秦昀家境殷实，他选择了继续读研。</p>
+<p>我们确定关系后，他带我去见了他妈妈。</p>
+<p>虽然没有明说，但我能感觉到，他家对我是不满意的。</p>
+<p>当我和秦昀提出，要好好重新考虑一下我们之间的关系时。</p>
+<p>他紧紧揽住我：「江妍，你不能放弃我。」</p>
+<p>「况且，我喜欢的人这么优秀，我爸妈他们总有一天会看到的。」</p>
+<p>面对秦昀满眼的热切和信赖，我再也说不出别的话了。</p>
+<p>只能不断地努力，再努力。</p>
+<p>为了我妈，也为了不放弃他。</p>
+<p>而现在，有人告诉我。</p>
+<p>江妍，你也会累。</p>
+<p>累的时候，是可以停下来休憩的。</p>
+<p>祁衍言起身，他说刚刚跟我走得急，医生开的消炎药还没拿。</p>
+<p>我原想跟着一块儿去把医药费付了，但手机响了。</p>
+<p>是王磊，秦昀的发小。</p>
+<p>他语气焦急：「妍姐，你快来接秦昀吧！」</p>
+<p>「他喝醉了，嘴里一直喊着你，这会儿正耍酒疯呢。」</p>
+<p>每次都是这样。</p>
+<p>吵架后，如果我没有第一时间哄他，他就会去找朋友诉苦。</p>
+<p>秦昀酒量不好，被放倒后他的发小就会给我打电话。</p>
+<p>再气，再累。</p>
+<p>我终归也还是会担心他，怕他醉酒后出意外，最后马不停蹄地去接他。</p>
+<p>每次秦昀都可怜兮兮地倚在我身上，「江妍。」</p>
+<p>「你为什么不哄我？」</p>
+<p>说完，就难受地蹲在路边吐。</p>
+<p>我不得不心软，轻声哄着。</p>
+<p>慢慢地，这变成了秦昀逼我服软的又一手段。</p>
+<p>他酒醒后，会主动给我打电话：「江妍，我就知道你是心疼我的。」</p>
+<p>「真好，我永远有避风港。」</p>
+<p>但这次，我揉了揉发疼的太阳穴。</p>
+<p>对着王磊说：「我和秦昀，已经分手了。」</p>
+<p>「你还是联系一下他爸妈吧。」</p>
+<p>刚准备挂断，手机那头就一片嘈杂。</p>
+<p>紧接着秦昀的声音传出，他像是抢过了手机：「江妍，我不同意！」</p>
+<p>「我给你机会，收回分手的话——」</p>
+<p>没等他说完，我不再理会直接挂断了。</p>
+<p>看着手机，莫名感觉有些讽刺。</p>
+<p>都想避风的话，谁来当港呢？</p>
+<p>起身想回病房，却发现旁边座椅上放着祁衍言的手机。</p>
+<p>怕是不小心落下了。</p>
+<p>我拿起来，就往护士站走去。</p>
+<p>路过之前看诊的科室，医生的声音从里面传出：</p>
+<p>「你这也太能忍了，手腕都扭伤了怎么之前不说？」</p>
+<p>紧接着就是祁衍言低低的吸气声。</p>
+<p>护士补了一句：「是怕女朋友担心吧？」</p>
+<p>过了会儿，才听到男生笑了笑：「她知道了，怕是心里又要过意不去。」</p>
+<p>「反正也是意外，她没受伤就好。」</p>
+<p>我怔在门口，想起摔倒时护在自己头部的手。</p>
+<p>原来祁衍言在那会儿就伤到了，却是一直没表现出来。</p>
+<p>他一言不发送我到医院，还在病床前安慰我妈。</p>
+<p>突然就感觉有些茫然，又有些荒谬。</p>
+<p>毕竟作为我男朋友的秦昀，他正喝得烂醉。</p>
+<p>等着我去接他。</p>
+<p>他甚至幼稚又傲慢地说，要给我机会。</p>
+<p>我还在晃神，科室门被打开。</p>
+<p>祁衍言走了出来，右手上还缠着绷带。</p>
+<p>他看到门口的我，明显愣了愣。</p>
+<p>半晌才开口：「你……你都听到了？」</p>
+<p>我默默地点点头，把他的手机递过去。</p>
+<p>眼前的人扶了一下额，「你不用放在心上，是我自己想帮你的——」</p>
+<p>说着说着，祁衍言倏然停住。</p>
+<p>我和他都意识到，这话中表露的意思太过于明确了。</p>
+<p>气氛一下子有些凝滞。</p>
+<p>我垂眸，正想着怎么转移话题。</p>
+<p>眼前的人却像是看穿了一般，他无奈地叹了口气：「其实，我挨秦昀那一拳也不冤。」</p>
+<p>「江妍，我喜欢你。」</p>
+<p>没等我开口，祁衍言又稍稍后退了一步。</p>
+<p>他眸色认真：「我知道，你现在不想谈这些。」</p>
+<p>「我不会对你造成困扰的。」</p>
+<p>或许是我这次的态度太过于冷漠和坚决。</p>
+<p>第二天，秦昀找来了医院。</p>
+<p>他去我公司没堵到人，问了我的同事后才知道我妈真的生病了。</p>
+<p>为了不惊扰到我妈，我没让他进病房。</p>
+<p>医院前面的树荫下，秦昀拎着一堆营养品，神情小心翼翼。</p>
+<p>「江妍，对不起。」</p>
+<p>「我以为你忘了我的生日，还不哄我，心里就很委屈。」</p>
+<p>「我不知道那天你妈妈突发脑梗了……」</p>
+<p>他低着头，双手紧紧扯住衣角。</p>
+<p>见我不说话，又想要来拉我的手：「你别跟我提分手，好吗？」</p>
+<p>阳光透过树叶间隙，落在秦昀身上。</p>
+<p>我恍惚中想起，自己当初怎样被他吸引的。</p>
+<p>少年挡在身前，眸中有光。</p>
+<p>我以为，我将告别黄昏，挣脱藏身的黑暗，向他的光里坠落。</p>
+<p>但事实却只是我以为。</p>
+<p>直到现在，秦昀的话里话外，下意识还在提他的生日。</p>
+<p>还在耿耿于怀我没哄他。</p>
+<p>他没有关心过一句我妈的情况。</p>
+<p>和好这件事对秦昀来说，是第一要紧的。</p>
+<p>我深吸一口气，尽量平静道：</p>
+<p>「秦昀，没有人会突然离开，都是深思熟虑。」</p>
+<p>眼前的人不可置信地瞪大眼睛，他好半晌才摇着头说：「不……不是的。」</p>
+<p>「江妍，我知道是我不对，但已经跟你说对不起了啊！」</p>
+<p>「而且，那天晚上你应该告诉我——」</p>
+<p>我冷冷地打断他：「我怎么和你说？」</p>
+<p>「我妈被送进手术室后，我瘫坐在门口地板上。」</p>
+<p>「还没拨通你的电话，你在酒吧和别的女孩儿贴身热舞的视频就发了过来。」</p>
+<p>「隔天想和你解释，你信了吗？」</p>
+<p>秦昀哑口无言，他嘴唇嚅动几下，突然满眼乞求：</p>
+<p>「江妍，我那只是想气气你，我只喜欢你的！」</p>
+<p>「别离开我……对，我救过你——」</p>
+<p>他像是抓住了救命稻草，将手臂上的伤疤举到我面前。</p>
+<p>我看着看着，却有些想发笑。</p>
+<p>「秦昀，你以前说过，连缝的针数都在说你爱我。」</p>
+<p>「可每次一吵架，你就会和其他女孩儿在一起气我。」</p>
+<p>「分手这两个字，你说过不下百次。」</p>
+<p>「我不明白，你爱我的方式，就是靠伤害我来证明吗？」</p>
+<p>我点了点那道狰狞伤疤，抬头看他：</p>
+<p>「今天我明白了，为什么有的事情，你可以做，我不行。」</p>
+<p>「因为打从一开始，你就不认为我和你是平等的。」</p>
+<p>「你救了我，所以你就算有再大的不是，再大的过错，也越不过这份恩情，对吗？」</p>
+<p>「你救了我，我为你做出让步，做出妥协，就是理所应当的，对吗？」</p>
+<p>秦昀张了张嘴，却发不出声音。</p>
+<p>我继续说：「如果是那样的话，我给你递刀。」</p>
+<p>「大不了用这条命还你好了。」</p>
+<p>「至少这样，我还是我自己，不会因为去爱一个人而变得面目全非。」</p>
+<p>这番话一出，秦昀踉跄了两步。</p>
+<p>他手里的东西，稀里哗啦地落了一地。</p>
+<p>就好比我们之间的关系，再也抓不住了。</p>
+<p>我不想再僵持下去，把兜里的小礼盒拿出来。</p>
+<p>「那天，本来想给你的……」</p>
+<p>「迟到的生日礼物，就算是全了我们这一年多的缘分。」</p>
+<p>「不管怎么样，秦昀，谢谢你救了我。」</p>
+<p>「但我们，再无可能了。」</p>
+<p>那天，秦昀在医院门口站了很久。</p>
+<p>直到日暮，天空开始下起淅淅沥沥的小雨。</p>
+<p>又渐渐落成大雨。</p>
+<p>他还是一动不动。</p>
+<p>固执又天真地在等些什么。</p>
+<p>手机震动，是他发来的短信：「江妍，下雨了。」</p>
+<p>我帮我妈翻了个身，开始给她做腿部按摩。</p>
+<p>随手编辑发送：「离开吧，别等了。」</p>
+<p>「我们就停在这儿了。」</p>
+<p>透过窗户上的雨幕看出去，秦昀整个人被淋湿。</p>
+<p>他挺直的身形晃了晃，最后蹲在雨中。</p>
+<p>头埋在膝盖上，两臂之间。</p>
+<p>而我却是不再关注了。</p>
+<p>两天后，祁衍言来医院换药。</p>
+<p>他买了不少的水果、营养品，放在了我妈的床头。</p>
+<p>「江妍，我认识一个针灸很厉害的中医。」</p>
+<p>「回头让他来给阿姨调理一下吧。」</p>
+<p>我谢过他，又有些欲言又止。</p>
+<p>没等开口，病房门被推开。</p>
+<p>一个娇俏女孩儿走了进来：「江妍，你太过分了！」</p>
+<p>是李嫣。</p>
+<p>她才大二，之前总在秦昀身边打转。</p>
+<p>我下意识看向病床，我妈这会儿闭目睡着了。</p>
+<p>「出去！」</p>
+<p>李嫣被我毫不客气的这句话弄得就是一愣，她眨了眨眼睛，还要开口。</p>
+<p>祁衍言却是直接迈步挡在了她身前：「病房内别大声喧哗，有事还是出去说吧。」</p>
+<p>他个子很高，再加上此时隐隐透露着强硬的气势。</p>
+<p>李嫣倏然闭了嘴，没再发泄自己的情绪。</p>
+<p>等我将被子给我妈盖上，又往床头的杯子里添了些温水后，才走出病房。</p>
+<p>「说吧，什么事。」</p>
+<p>李嫣伸手就要来拽我：「你让秦昀在雨里淋了那么久，他当天就发起了高烧。」</p>
+<p>「现在人都要烧迷糊了，但嘴里就只念叨着要见你，你快和我去看看他！」</p>
+<p>我侧身躲过，冷脸看向她：「病了就找医生，找我有什么用？」</p>
+<p>「而且，我和他已经分手了，以后还是别再来打扰我了。」</p>
+<p>李嫣瞪大眼睛，突然又看了看一旁的祁衍言。</p>
+<p>她目光里多出几分愤怒和鄙夷，「好啊，江妍！」</p>
+<p>「你这是有了新欢，就不管旧人死活了对吧？！」</p>
+<p>「我真为秦昀感到不值，他之前豁出命来救你——」</p>
+<p>我还没说话，祁衍言就轻笑一声。</p>
+<p>他的笑意不达眼底：「再怎么说，这也是秦昀和江妍之间的事。」</p>
+<p>「外人来评头论足的，有些不太好吧？」</p>
+<p>李嫣一噎，她还想说些什么。</p>
+<p>我直接送客：「请你转告秦昀，都是成年人了。」</p>
+<p>「自己的身体，自己总该能负责的。」</p>
+<p>李嫣看出我的冷淡，只好放弃纠缠。</p>
+<p>她走后，我低垂着头坐在走廊座椅上。</p>
+<p>看着冰冷的地板，怔怔出神。</p>
+<p>祁衍言忽然出声：「还是担心他吗？」</p>
+<p>「不是。」我动了动身子，略微有些茫然，「就是觉得自己挺狠心的。」</p>
+<p>毕竟秦昀身上的伤疤，不是假的。</p>
+<p>身旁的人却突然站起来，微微前倾看向我：「江妍，你要知道。」</p>
+<p>「你妈妈拼尽所有去保护你，不是想看着你因为别人委曲求全的。」</p>
+<p>「那样，她做的一切就没有意义了。」</p>
+<p>祁衍言的话，就像汹涌黑暗大海中的一盏灯，也像炎炎夏日里的一缕清风。</p>
+<p>让我混乱纠结的内心，得以稍稍平息。</p>
+<p>只是下一瞬，我抬头迎上他的目光。</p>
+<p>「你怎么知道……」</p>
+<p>我好像从来就没有和祁衍言说过，我妈为了我，忍受数十年苦楚的事。</p>
+<p>他是怎么知道的。</p>
+<p>祁衍言顿了顿，声音低沉：「江妍，我对你的喜欢，很久以前就开始了。」</p>
+<p>「以后有机会，我再告诉你吧。」</p>
+<p>之后的一段时间里，秦昀没有再出现在我的生活里。</p>
+<p>我在医院和公司之间往返，分派给我的项目越来越重要。</p>
+<p>我妈的偏瘫也有了好转。</p>
+<p>只是她的视力还需要时间恢复，以至于总把人认错。</p>
+<p>每次都喊祁衍言作小秦。</p>
+<p>是的，他来医院的次数很勤。</p>
+<p>今天找来针灸的中医，明天找来调理膳食的营养师。</p>
+<p>我曾正色跟他说过：「祁衍言，我现在真的没有心思考虑别的事。」</p>
+<p>「况且，我开始觉得——」</p>
+<p>「爱上一个人，就好像创造了一种信仰，侍奉着一个随时会陨落的神。」</p>
+<p>祁衍言挑眉，神色郑重。</p>
+<p>「江妍，没有人可以成为你的信仰，你永远都是你自己。」</p>
+<p>「紫罗兰盛放在荒原，我不会强迫她溺死于深海。」</p>
+<p>「而我所做的一切，都只是顺从本心。」</p>
+<p>他勾了勾唇，眼里狡黠之色一闪而过：「你总不能剥夺我爱人的权利，不是吗？」</p>
+<p>我有些无奈，实在是不知道再说些什么了。</p>
+<p>毕竟这段时间里，我妈的病情得以稳定，他花了不少心思和出了不少力。</p>
+<p>就这样，祁衍言好似温水煮青蛙一般。</p>
+<p>悄无声息地慢慢融进我的生活。</p>
+<p>他的分寸总是把握得刚刚好，不会让人心生不适。</p>
+<p>在天晴的时候，祁衍言就会张罗推着我妈到处走走。</p>
+<p>不知道从什么时候起，只要有他在，我就会觉得很安心。</p>
+<p>三个月后的某一天，我刚出公司门口。</p>
+<p>就被熟悉又陌生的面孔拦住了。</p>
+<p>秦昀不复之前的阳光，不止头发看起来很久没打理了，就连胡子好像也没怎么刮。</p>
+<p>他脸上带着宿醉之后的憔悴，整个人看起来又丧又颓废。</p>
+<p>我吓了一跳，「秦……秦昀？」</p>
+<p>他看向我，目光炙热且贪婪。</p>
+<p>一寸、一寸，扫过我的眉眼。</p>
+<p>就好似久久挣扎在沙漠中的人，突然看见了清澈泉水一般。</p>
+<p>见他这样，我敛眸侧身打算避过。</p>
+<p>秦昀就急了，伸手拦我。</p>
+<p>他拽出自己脖子上的项链，上面挂着一个素圈戒指。</p>
+<p>是我最后送的生日礼物。</p>
+<p>他声音沙哑：「江妍，我有话跟你说。」</p>
+<p>我长呼出一口气，还是停下了脚步。</p>
+<p>怎么说也一起度过了一年多的时光，不想弄得太难看。</p>
+<p>秦昀抹了下脸，「我……我研究生读不下去了。」</p>
+<p>「这段时间，没有一刻不想起你。」</p>
+<p>「就只能用酒精来麻痹自己，导师对我很失望。」</p>
+<p>我讶然。</p>
+<p>他自嘲般地笑笑：「我家打算送我出国镀金。」</p>
+<p>说完，眼里又带上了些希冀。</p>
+<p>「江妍，如果你可以再给我一次机会，我会求我爸妈让我留下。」</p>
+<p>「我一定改掉之前所有不好的地方，会努力工作——」</p>
+<p>我打断了他：「不，秦昀。」</p>
+<p>「我们已经结束了，都往前走吧。」</p>
+<p>眼前的人突然就噤了声，他有些控制不住地轻颤。</p>
+<p>下一刻，哽咽溢出。</p>
+<p>我静静看着，坦然地感受着这最后的离别。</p>
+<p>许久，秦昀的情绪稍稍平复。</p>
+<p>他努力抑制哀伤：「我知道了。」</p>
+<p>「江妍，对不起。」</p>
+<p>我摇了摇头，示意都过去了。</p>
+<p>秦昀却是抿紧唇，好似用尽了所有力气一样：「其实……」</p>
+<p>「我很卑劣，之前护在你身前挡刀不过是因为惊慌之下踩空了。」</p>
+<p>「但在医院那段时间，我喜欢上了你。」</p>
+<p>「我怕你知道后，可能会拒绝我的心意。」</p>
+<p>我脑袋轰地一下，就空白了。</p>
+<p>原来。</p>
+<p>我以为的奋不顾身的爱意，从一开始就不存在。</p>
+<p>所以，后来相处中的少年才会那般判若两人。</p>
+<p>一直都是我自己的臆想罢了。</p>
+<p>最后。</p>
+<p>祁衍言打断了我纷扰的思绪，他从公司里走出。</p>
+<p>很自然地打开副驾驶车门，立在马路边等我。</p>
+<p>秦昀眼里的光更黯淡了，强挤出笑容：「江妍，不管怎么样——」</p>
+<p>「我都真心地希望你能幸福。」</p>
+<p>我回过神，颇为平静真挚：「秦昀，说到底那你也是救了我的。」</p>
+<p>「我同样，希望你能幸福。」</p>
+<p>「不再见了。」</p>
+<p>事后，我跟祁衍言简单讲述了一下。</p>
+<p>他却是淡淡开口：「秦昀踩空，我都看到了。」</p>
+<p>我疑惑地看过去，不太明白是什么意思。</p>
+<p>祁衍言轻吸一口气，将车停在路边：「我原本是想着以后再说的。」</p>
+<p>「其实那天，我也在。」</p>
+<p>我瞪大眼睛：「你是说——」</p>
+<p>他点点头：「那天，我打算回校看望一下老师。」</p>
+<p>「正好路过你的宿舍，看到了你爸爸拿着刀——」</p>
+<p>他顿了顿，又接着说：「我没有秦昀幸运，没能第一时间挡在你身前。」</p>
+<p>「最后只勉强控制住了你爸爸。」</p>
+<p>随着这话一出，我脑海中模糊的记忆复苏。</p>
+<p>那天太过混乱，加上秦昀满身鲜血。</p>
+<p>我根本没注意到制服我爸的是谁。</p>
+<p>「那你说很久以前就开始的喜欢……」</p>
+<p>祁衍言转头，定定看向我：「嗯，就是从那天开始。」</p>
+<p>「你应该不记得了，我也跟着上了救护车，当时制住你爸的时候手上虎口被刀划伤了。」</p>
+<p>「车上，你异常冷静，捂着秦昀的伤口没有半分畏惧。」</p>
+<p>「那时，我就移不开落在你身上的目光了。」</p>
+<p>「只是后来，听别人说你和秦昀在一起了，我只能克制自己的感情，不随意惊扰到你。」</p>
+<p>我愣愣的，好一会儿才消化这番话。</p>
+<p>第一时间拉过了身旁人的手，上面一道疤痕清晰可见。</p>
+<p>我声音艰涩：「你怎么一直没告诉我……」</p>
+<p>祁衍言笑了笑，他神色虔诚：「江妍，我不想你被所谓的恩情束缚。」</p>
+<p>「你喜欢我，我们就在一起。」</p>
+<p>「若是不喜欢——」他轻咳一声，「那我就努力让你喜欢上我。」</p>
+<p>我看着他，心底有细细密密的情绪涌上来。</p>
+<p>爱意，在荒芜的世界里肆意生长。</p>
+<p>恰逢此时，我妈打来电话。</p>
+<p>「妍妍啊，你和小秦什么时候过来啊？」</p>
+<p>「今天你小姨下厨，做了好多好吃的呢。」</p>
+<p>我嘴边漾开一抹笑，主动与身旁的人十指相扣。</p>
+<p>「妈，不是小秦。」</p>
+<p>「他叫祁衍言，以后别认错啦。」</p>
+<p>这话一出，我的手被握得更紧。</p>
+<p>祁衍言突然俯身过来，他的气息如其人，清冽温润。</p>
+<p>我闭上了眼，放纵自己的呼吸被掠夺。</p>
+<p>车内电台传出：</p>
+<p>「你总会遇到那束光。」</p>
+<p>「或早或晚。」</p>
+<p>备案号:YXX1ogBKkmc5DMdkp1sdPdj</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/9-%E6%80%BB%E8%A3%81%E6%9C%80%E8%BF%91%E6%9C%89%E5%A4%A7%E7%97%85/" title="总裁最近有大病">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">总裁最近有大病</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/1/30-%E6%80%BB%E6%98%AF%E5%A4%AA%E6%95%8F%E6%84%9F%E6%83%B3%E5%A4%AA%E5%A4%9A%E6%80%8E%E4%B9%88%E5%8A%9E-%E7%9F%A5%E4%B9%8E/" title="总是太敏感想太多怎么办？ - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">总是太敏感想太多怎么办？ - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

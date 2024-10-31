@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泥石流永不吃亏 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/12-%E6%B3%A5%E7%9F%B3%E6%B5%81%E6%B0%B8%E4%B8%8D%E5%90%83%E4%BA%8F/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/12-%E6%B3%A5%E7%9F%B3%E6%B5%81%E6%B0%B8%E4%B8%8D%E5%90%83%E4%BA%8F/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="泥石流永不吃亏">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26673.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26673.jpg">
+  <meta name="twitter:title" content="泥石流永不吃亏">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="泥石流永不吃亏">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11259">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26673.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">泥石流永不吃亏</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%b3%a5%e7%9f%b3%e6%b5%81%e6%b0%b8%e4%b8%8d%e5%90%83%e4%ba%8f&amp;url=https://mohai.us.kg/posts/2023/5/12-%E6%B3%A5%E7%9F%B3%E6%B5%81%E6%B0%B8%E4%B8%8D%E5%90%83%E4%BA%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/12-%E6%B3%A5%E7%9F%B3%E6%B5%81%E6%B0%B8%E4%B8%8D%E5%90%83%E4%BA%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%b3%a5%e7%9f%b3%e6%b5%81%e6%b0%b8%e4%b8%8d%e5%90%83%e4%ba%8f%20https://mohai.us.kg/posts/2023/5/12-%E6%B3%A5%E7%9F%B3%E6%B5%81%E6%B0%B8%E4%B8%8D%E5%90%83%E4%BA%8F/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26673.jpg" alt="泥石流永不吃亏" />
+      
+
+      <p>泥石流永不吃亏</p>
+<p>穿成女配后我只想搞事业</p>
+<p>当我在恋综上准备选择我地下男友陆知行当心动对象时。</p>
+<p>我突然意识到自己只是书中的一个恶毒女配。</p>
+<p>「我选择……贺祈言。」</p>
+<p>我口中呼之欲出的名字陡然一转变成了我明确在直播间对他表示过无感的人，如今炙手可热的年轻影帝贺祈言。</p>
+<p>至于那一直把我当踏板的渣男和一旁的绿茶，就从这个节目开始给我糊下去吧。</p>
+<p>1</p>
+<p>我大学毕业便独自一人在娱乐圈打拼，唱跳不敢说一绝，但也绝对拿得出手。</p>
+<p>结果短短三年，没凭唱跳出圈，反而因自身毒舌的秉性，摇身一变成为了娱乐圈的泥石流。</p>
+<p>大概就红到与别家明星同个框，他家粉丝都能来我微博底下骂退退退的地步。</p>
+<p>好不容易谈了个恋爱，准备上个恋综给粉丝打个预防针。</p>
+<p>结果就在综艺里选择心动对象时，我脑子里倏然一阵刺痛传来，随之大量文字在我脑中浮现。</p>
+<p>原来我只是书中的恶毒女配罢了，一个毫不讲理、只会仗着家势欺人的恶毒女配。</p>
+<p>而书中的男主正是地下男友陆知行，女主则是在我身旁端坐着的娱乐圈新晋小花林星鸾。</p>
+<p>陆知行之所以追我，也无非是想借机在这个恋综踩我上位并借机为他的心上人林星鸾报我在媒体面前说她绿茶的仇罢了。</p>
+<p>照小说描写，如果我选择的心动对象是他的话，那我不仅会遭到他犀利的拒绝，还会输给他选择的林星鸾。</p>
+<p>但凡我因此而在节目中大发脾气，不用想也知道明天的头条会是什么。</p>
+<p>#宋卿时心动表白被拒#</p>
+<p>#宋卿时表白被拒恼羞成怒后耍大牌#</p>
+<p>#宋卿时心动对象竟喜欢她曾嘲过的新晋小花#</p>
+<p>#宋卿时恶人自有恶人磨#</p>
+<p>有我那庞大黑粉的引流，陆知行和林星鸾但凡操作得好，那自此一炮而红也不是不可能。</p>
+<p>可惜了，想踩着我拿流量上位，怕不是以为我是泥捏的，没有脾气？</p>
+<p>思及此，我扫视了对面的几位男嘉宾几眼，最终还是做出了决定。</p>
+<p>「我选择……贺祈言。」</p>
+<p>一个我明确在直播间对他表示过无感的人，如今炙手可热的年轻影帝贺祈言。</p>
+<p>节目一共邀请了三个男嘉宾，三个女嘉宾。</p>
+<p>其中还有一对也是抱着给粉丝打预防针的情侣，自己自然不能横插一脚。</p>
+<p>那除了渣男陆知行，也就贺祈言能选了。</p>
+<p>不过正好我和他流量相当，说不准他还能从我这又捞到一批心疼他与我同框的粉丝呢，他不亏。</p>
+<p>反正不管怎样，那一直把我当踏板的渣男和一旁的绿茶别想蹭上我一丢丢的热度。</p>
+<p>2</p>
+<p>我选择的话语一出，陆知行原本扬着的唇一时僵住，眼神满是惊讶。</p>
+<p>「我本来就是他粉丝，对他心动再正常不过了。」还没等在座众人反应过来，我又对着镜头坦然一笑地解释道。</p>
+<p>节目里的众多嘉宾闻言也都纷纷看向了贺祈言。</p>
+<p>他还是一如既往地镇定，只是颇有意味地看了我两眼便没了下文。</p>
+<p>可镜头外的观众就没那么镇定了，弹幕不出一会便迅速侵占了直播间的整个屏幕。</p>
+<p>【泥石流，离我家哥哥远一点。】</p>
+<p>【粉丝？死黑粉吧？】</p>
+<p>【如果我没记错的话，不久前你还在直播间对他表示过无感。】</p>
+<p>【故意的吧？存心恶心人？】</p>
+<p>一时节目直播间热度一度升到了最高。</p>
+<p>节目组见状笑容就没下来过，不怕嘉宾搞事情，就怕节目没爆点，急忙地将镜头全部转向了我和贺祁言这边。</p>
+<p>陆知行此时脸色早已黑得不行，霎那间见镜头全部移向了我俩，眉毛都蹙成了一条直线，但碍于综艺是采用直播录制的方式，他只能把气往肚子里咽了回去。</p>
+<p>「卿时姐也是贺影帝的粉丝吗？我也是，不知道卿时姐是从什么时候开始喜欢贺影帝的?」林星鸾是知道我曾经在直播间表示过对贺影帝无感的，这突然的提问无非就是想让我出丑。</p>
+<p>「没出道前就喜欢了。」</p>
+<p>这下不止林星鸾愣住了，直播间的弹幕也一时布满了问号。</p>
+<p>「那……」林星鸾欲言又止，但在场没有人不知道她的意思。</p>
+<p>贺祈言则是一脸看戏的样子望着我。</p>
+<p>既然这样了，那就让暴风雨来得更猛烈些吧！</p>
+<p>「哦，爱而不得，心生怨怼。」我悠然自若地说了出来，仿佛并无不妥一般。</p>
+<p>这一回答彻底堵住了林星鸾的嘴，但也在直播间里引起了轩然大波。</p>
+<p>【宋卿时竟是贺影帝粉丝？】</p>
+<p>【这一行为不可行啊。】</p>
+<p>【黑粉不可怕，粉转黑才可怕。】</p>
+<p>其中还穿插着我粉丝的弹幕，全部呼着宋卿时 666。</p>
+<p>我家粉丝诡异的弹幕成功让所有网友都沉寂了下来。</p>
+<p>毕竟跟一堆只会喊 666 的人吵会显得自己傻得不行。</p>
+<p>全部网友便再次将关注点移回了节目里面。</p>
+<p>热度够了，节目组便开始继续 cue 接下来的流程。</p>
+<p>导演组便问起了最后一个没说心动男嘉宾的林星鸾：「你的心动嘉宾是？」</p>
+<p>3</p>
+<p>林星鸾闻言一脸羞涩地低下头，视线反复在贺祈言和陆知行之间来回移动。</p>
+<p>随后又看向了我，神色还略带了些许为难。</p>
+<p>「看我干什么？难不成你要选我？就算你喜欢我，我也不会喜欢你的！」</p>
+<p>见她那模样，我状似随意开口。</p>
+<p>这种小把戏自己见多了，就这段位，还想误导网友？</p>
+<p>林星鸾似是没预料到我会这么说，表情怔了一会，但很快便反应过来讪笑道：「卿时姐说笑了，我喜欢的是男生。」</p>
+<p>「我选择陆知行。」说着便冲着那渣男莞尔一笑。</p>
+<p>陆知行因事情超出他预料而冷着的脸因此有了些许缓和，眸中都带上了些许柔情。</p>
+<p>估计是遇到爱情眼睛都瞎了吧，竟也没注意到林星鸾时不时投在贺祈言身上的眼神。</p>
+<p>那叫一个温柔似水，含情脉脉，就是不知道这里边的情有几分真几分假。</p>
+<p>我含着笑走到贺祈言身边，「我很专情的，偶像，绝对不会吃着碗里的看着锅里的，妥妥的死忠粉。」</p>
+<p>贺祈言怀疑地看了我一眼，嘴角带了抹笑意。</p>
+<p>无声胜有声，妥妥的不信任我。</p>
+<p>嗯……不信任也对，毕竟我自己都不信，不过这话网友会解读，效果达到就好了。</p>
+<p>节目工作人员适时地出声：「目前看来，女嘉宾选的心动对象都不尽相同呢？那么能否就此顺利匹配呢？接下来我们进入到男嘉宾的反选环节。」</p>
+<p>「女嘉宾们请闭眼，男嘉宾可在一分钟的时间内走到心仪对象身后，互选成功的将在接下来的三天两夜录制中成为对方的短期情侣。」</p>
+<p>「现在请女嘉宾们闭眼。」</p>
+<p>听到这我冲贺祈言挑了挑眉，意思再明显不过。</p>
+<p>闭上眼的那一分钟，工作人员不断地在跺脚走动，令我试图通过脚步声判断的算盘落了个空。</p>
+<p>一分钟结束后，睁眼的刹那，我仿佛感受到了气氛的凝滞，这可不是什么好的预感。</p>
+<p>我没等工作人员指示便猛地回头一看。</p>
+<p>嗯，就有点出乎预料。</p>
+<p>傅淮安站江晚霜后面我能理解，两人本就是一对。</p>
+<p>陆知行那渣男站林星鸾身后我也能理解，毕竟两人渣男配绿茶，配得慌。</p>
+<p>可贺祁言这个男人为什么站在林星鸾身后？</p>
+<p>这年头男的都吃她那套？</p>
+<p>喜欢到明知道结果不可能和她一组也要选择她表明心意？</p>
+<p>我一脸悲愤地望向他，单手靠着椅子咬牙切齿道：「贺影帝，你不宠粉呐。」</p>
+<p>队友没了不要紧，但镜头必须在我这。</p>
+<p>林星鸾也没想到贺祈言会站在她身后，面上的惊讶不亚于我，不过眼眸随之而带着的得意看着是真让人不爽。</p>
+<p>导演是了解我的脾气的，生怕我因此丢了面便罢录，便疯狂地指挥工作人员赶紧跳过这一部分。</p>
+<p>「傅淮安和江晚霜互选成功，陆知行与林星鸾互选成功，则余下的贺祈言和宋卿时将自动暂时组成一组情侣。」</p>
+<p>「希望大家都能在接下来的相处中感受到恋爱的甜蜜，请各位嘉宾到节目为大家准备的房子里稍作休息一晚，明天再开始节目的正式录制。」</p>
+<p>「今天直播也到此结束，明天早上八点与大家不见不散。」</p>
+<p>4</p>
+<p>甜蜜不甜蜜不知道，反正我现在气倒是挺大的。</p>
+<p>没想到自己没被陆知行和那林星鸾气到，反而被这贺祈言啄了眼。</p>
+<p>自己拉着早放在车上的行李箱气哼哼地就往节目组给的房子走。</p>
+<p>连贺祈言欲帮我抬行李的手也被我躲开了。</p>
+<p>现在他在我心中是妥妥的林星鸾那一营的。</p>
+<p>「脾气那么大呀？宋小姐。」贺祈言一直跟在自己的身后，语气上扬，不但没听出厌烦嫌恶，反而莫名地让人有点宠溺的感觉。</p>
+<p>俨然忘记了他自己刚才的选择，不愧是影帝，情绪收放自如。</p>
+<p>我根据提示，三两下就将行李提到了贴着我名字的卧室前。</p>
+<p>瞅着还跟在我身后的贺祈言，我停下了准备开门的动作，皱着眉不禁冷声开口:「贺影帝还跟着我干吗？现在又没录节目，我跟你也没有什么可以叙旧的地方吧？」</p>
+<p>「你之前不是跟陆知行谈恋爱了吗？为什么心动对象选我？」贺祈言收回了一开始的嬉皮笑脸，反而抿着唇，一脸认真注视着我。</p>
+<p>闻言，我眼底闪过轻微的诧异。</p>
+<p>陆知行的事我虽然没想着掩藏，但也不见得连一个我不熟的演员都知道吧？</p>
+<p>我掩下心中的疑惑，不想与他纠结于此，「随意选的，贺影帝倒也不用执着于此，您老人家还是多关心关心自己的心动对象吧，不用顾及我，说不定还能挖到墙脚呢？」</p>
+<p>贺祈言似是没听到我说的话般，自顾自地说着自己的猜测：「分手了？」</p>
+<p>我没有再吭声，我可不觉得我有义务跟他说那么多。</p>
+<p>转头便打算进房躲个清静。</p>
+<p>「我心动对象没选你是没错，但这也并不代表我就喜欢林星鸾。」</p>
+<p>行李推了进去后，反手留下了个「哦」便将房门锁上了。</p>
+<p>所以呢？存心气我？</p>
+<p>我晃了晃脑袋将这事抛诸脑后，躺在床上刷起了微博。</p>
+<p>节目是三点开始的，经过六位嘉宾的短时交流和心动对象选择再到现在，也才过了三个多小时而已。</p>
+<p>#宋卿时与贺祈言#这一提条此时却早已高高地挂在了娱乐榜的第一，而提及陆知行和林星鸾他们的寥寥无几。</p>
+<p>倒也在意料之中，可这远远不够泄我心中之愤。</p>
+<p>我拿起手机就狂发几条消息给经纪人，我要在节目过后给他们个大大的惊喜。</p>
+<p>书中说的是他们凭着这个节目有了高热度我才奈何不了他们，可现在情况可不一样了。</p>
+<p>跟经纪人交代清楚后，心情愉悦的我便准备去我的微博底下挑几个粉丝发福利。</p>
+<p>结果反而让我刷到了贺祈言粉丝在我微博底下的留言。</p>
+<p>5</p>
+<p>【要是我，都没脸留在节目里。】</p>
+<p>看见这些发言，自己不表一下态都感觉对不起我泥石流的称号，手起字落：你倒是想来，可惜没人稀罕你来。</p>
+<p>【癞蛤蟆想吃天鹅肉。】</p>
+<p>我：想说我是天鹅不用这么委婉！！！</p>
+<p>还有许多评论，我懒得与她们吵，便动用了我专门花重金请人写的编程。</p>
+<p>一旦在自己微博底下识别到有不好的留言，统统自动回复：宋卿时真好看！！！</p>
+<p>贺粉：【宋卿时滚出娱乐圈！】</p>
+<p>系统自动回复：【宋卿时真好看！！！】</p>
+<p>贺粉：【呵呵，识相就主动离我家哥哥远一点。】</p>
+<p>系统：【宋卿时真好看！！！】</p>
+<p>贺粉：【有病啊？】</p>
+<p>系统：【宋卿时真好看！！！】</p>
+<p>…………</p>
+<p>来一条回一条，我就看着她们和只会回一句话的数据吵起来。</p>
+<p>然后看着她们因为没有发泄口而逐渐抓狂。</p>
+<p>欲赢其兵，必先扰其斗志，反正憋得慌的不是我。</p>
+<p>见差不多了，我心情愉悦地发了条微博:</p>
+<p>【明天见，我亲爱的粉丝们！哦，对了，还有贺粉，记得看直播哟。】</p>
+<p>怎么搞人心态我是懂的，刺激不死她们。</p>
+<p>等完事后，我简单地收拾了一下自己的行李，见时间不早了，便准备下楼弄点吃食填肚子。</p>
+<p>谁料一开门便看到陆知行站在门口。</p>
+<p>我眼皮微抬，望着他那阴沉的脸，实在想不通他怎么还敢来我面前晃悠。</p>
+<p>上下打量了他一番后，越想越觉得当初同意和他在一起的自己真是疯魔了。</p>
+<p>我在娱乐圈里虽不能说是艳压群芳，但也算能排得上号。</p>
+<p>可惜就是长了张嘴，说出的话每每都能让经纪人哆嗦几下。</p>
+<p>在一档采访节目里。</p>
+<p>「宋卿时小姐，你对这个最近很火的选秀节目怎么看呢？」</p>
+<p>「无聊又没新意，也就用钱砸出来的罢了。」</p>
+<p>我思考片刻，又加以补充道：「里面的人要实力没实力，要长相没长相，是我就自己主动退出节目再回家练练吧。」</p>
+<p>作为这档节目和选秀节目的共同主办方：「……」</p>
+<p>…………</p>
+<p>在其他粉丝在网上疯狂夸他家爱豆努力上进爱岗敬业并试图拉踩我时，我反手就开了个直播细数他家爱豆矫揉造作的各种作为，与他家粉丝斗了个三百回合，不死不休，直到它们骂骂咧咧地哭着走出我的直播间为止。</p>
+<p>…………</p>
+<p>一来二去，圈子里泥石流的名声便常伴左右。</p>
+<p>名声太大，以至于我一度认为这辈子我都要孤独终老了。</p>
+<p>谁料上个月，同娱乐公司的师弟，也就是陆知行却忽然对我展开了攻势。</p>
+<p>我对外人一向都是冷言冷语，但陆知行恰恰相反，他待人热情，哪怕我一开始对他拒之千里，他对我的追求依旧不断。</p>
+<p>鲜花，短信层出不穷，一直母胎 solo 的我有点动摇了。</p>
+<p>找不到自己爱的，能找个爱自己的也不差。</p>
+<p>结果就这么一念之差，差点就被当作别人的踏脚石了。</p>
+<p>思及此，我忍不住倚着门开口讥讽：</p>
+<p>「来我这干吗？不得趁着这段时间赶紧去跟你雇的水军商量商量该怎么踩我上位？」</p>
+<p>说着说着我佯装才反应过来的样子：「我忘了，我没选你，你原有计划都乱了吧？真是对不起呢。」</p>
+<p>陆知行眼眸闪过了一丝惊慌，但还是冷静地开了口：「宋卿时，在这段感情里你就没有错吗？今天你之所以那么冷静，不就恰恰证明你压根就没有爱过我吗？」</p>
+<p>我真的是从来没见过这么无耻的人，在阴损招数不好使的时候，就想把错怪在我身上。</p>
+<p>「我是有错。」我扬起手顺势往下就给了他一巴掌，「错在现在跟你扯这些，就应该一开始就扇你两巴掌。」</p>
+<p>我这巴掌用的力度不小，发出的声音都十分响脆，刹那间，一道红色巴掌印便挂在了他脸上。</p>
+<p>「你……」陆知行先是不敢置信，反应过来后面带怒色地瞪着我。</p>
+<p>我神情冷清，语气比刚才多了些威迫感:「把别人都当傻子呢？我不吃你这一套，陆知行，敢算计我，希望你不会后悔。」</p>
+<p>不等对方反应过来，我便头也不回地往楼下走去。</p>
+<p>节目组给嘉宾准备的是一栋坐落于郊外的小洋房，这几日所有嘉宾都会住在这。</p>
+<p>到一楼客厅时，毫不意外地碰见了一样居住在这的林星鸾。</p>
+<p>沙发上还坐着贺祈言，正聆听着林星鸾给他的生活趣事。</p>
+<p>见我下来，两人的交谈瞬间停了下来，林星鸾面上带笑，略带得意地望着我。</p>
+<p>反观贺祈言则是局促地站起了身，「宋……」</p>
+<p>「你们继续。」我先一步打断了贺祈言的话，毕竟跟他们多说一句话我都感觉是在浪费我自己的时间。</p>
+<p>转头便往厨房走。</p>
+<p>6</p>
+<p>厨房里，傅淮安和江晚霜正在厨房里准备晚餐，见我进来，都怔了一会儿，好半晌江晚霜才糯糯开口：「卿时姐，晚饭等会就好了，你先坐沙发上休息会吧。」</p>
+<p>看着傅淮安一直默默在给江晚霜打着下手，我站在厨房门口竟一时有着些许局促。</p>
+<p>但比起看见客厅那两人，我宁愿在厨房当个透明人。</p>
+<p>「我拌个沙拉，你们当我不存在就行。」</p>
+<p>等饭菜都端上桌后，那三人才缓缓在饭桌上落座，跟大爷似的。</p>
+<p>但鉴于傅淮安和江晚霜都没说什么，我也没过多开口。</p>
+<p>大家心里都各怀心思，再加上我全场冷着个脸，所以这一顿晚饭吃得格外缄默。</p>
+<p>翌日早晨，节目组开始了正式的录制。</p>
+<p>早上八点门铃声不断，我挣扎着从床上醒来，一开门就看到镜头直往脸上怼。</p>
+<p>我揉了把脸，示意他们稍等片刻，快速洗漱了一番，随手拿了一套运动服装换了后便跟着工作人员到了今天的录制地点。</p>
+<p>到达指定地点后，我才发现所有人都在那里等着了。</p>
+<p>林星鸾明显是早起特意精心准备过的，妆容精致，整个人站在那里十分惹眼。</p>
+<p>有一说一她是真的挺好看的，可惜就是心眼太多。</p>
+<p>我跟傅淮安和江晚霜打了声招呼后，便站到了贺祈言身边，至于另外两位，无所谓打不打招呼了。</p>
+<p>贺祈言见我便一直在耳边絮絮叨叨的，我没有什么反应，甚至连听都没听得进去。</p>
+<p>「为了增进彼此之间的了解，节目组今天为大家准备了几个小游戏，赢的那一方将会获得丰厚奖励，最后一名将要接受节目组给予的惩罚。」</p>
+<p>导演组适时地出来讲明今天的录制任务。</p>
+<p>「这第一个游戏名字叫『你的喜欢我知道』，节目组准备了八十种水果汁和蔬菜汁，男女双方交替选择五种给对方喝，如果选中一样对方喜欢的，那就积一分。」</p>
+<p>话音刚落，节目工作人员便将一众水果蔬菜汁抬了上来。</p>
+<p>我总算知道录先导片时节目问的那些问题是用来干吗的了。</p>
+<p>男生们都很有默契地准备先上，速度很快，不到 3 分钟就挑好了。</p>
+<p>我瞥了眼前的水果汁一眼，不得高看了贺祈言一眼，这些确实都是我喜欢的。</p>
+<p>不过，我可不会因此有什么感动。</p>
+<p>轮到女嘉宾的时候，我挑了许久，始终做不下选择，毕竟在几十种选择里挑出几种他讨厌的可不是简单的事，毕竟自己对他一点了解都没有。</p>
+<p>见我面上染上了几分纠结，林星鸾喜不胜收。</p>
+<p>随即一副胜券在握的样子朝我走来，仿佛在宣示她会成为胜利者一般。</p>
+<p>见我拿起了柠檬汁，她便装作惊讶道：「贺影帝不喜酸，卿时姐不知道吗？这个是粉丝都应该清楚吧？」</p>
+<p>声音之大，整场人都听到了。</p>
+<p>这是侧面炫耀她了解贺祈言的爱好，又暗示我是假粉？</p>
+<p>7</p>
+<p>我停下了手中的动作，眼眸含笑地望向她道：「看来你对贺影帝很了解啊，对他有好感，怎么昨天不直接选他当心动对象啊？」</p>
+<p>一番话说得真切，仿佛只是无意中的询问，可我这话却让陆知行和林星鸾神情顿了一下。</p>
+<p>尤其是陆知行，原本以前一直在镜头里营造阳光男孩的他笑意直接僵住。</p>
+<p>「不聊这种题外话了，还是继续挑吧，想必你都能了解到贺祈言的喜好，那作为你短期情侣的陆知行肯定你也非常了解，真羡慕你，能轻轻松松直接拿满这五分。」</p>
+<p>我乘机将林星鸾架到了高处，看好戏般地看着她由果断到怀疑自己的选择。</p>
+<p>江晚霜早已笑意盈盈地捧着她选择的几款果汁到傅淮安面前，我紧随其后。</p>
+<p>只不过我拿的是香菜汁和苦瓜汁以及柠檬等口味极其独特的。</p>
+<p>贺祈言的表情可以用目瞪口呆来形容，与一旁掩着笑意的傅淮安形成了鲜明的对比。</p>
+<p>但基于比赛规则，贺祈言还是忍着恶心将这些全部喝了下去，表情瞬时皱得面目全非。</p>
+<p>贺粉应该感激我让她们见到了偶像的另一面。</p>
+<p>这种游戏还得来多点才好。</p>
+<p>第一场，男生都拿到了满分，只有女生的稍有不佳。</p>
+<p>我，妥妥的零分，导演组们看到我选品的时候就一脸不忍直视的样子，就我这钻规则漏洞公报私仇的，不倒扣我分就是看在规则的份上了。</p>
+<p>而满分的女嘉宾只有江晚霜，林星鸾受到了我话语的影响，犹豫半天，最后只选对了四样。</p>
+<p>就这点心理承受能力，我不禁怀疑这朵小白花到底是怎么在娱乐圈立足的。</p>
+<p>虽然林星鸾只选错了一样，但这也足以让陆知行不爽了，以至于后半段节目里他的目光总时不时地瞥向贺祈言，警惕的样子简直好笑至极。</p>
+<p>节目里各位嘉宾再怎么有问题还是会装作一派和平，可直播间的粉丝就不一定了。</p>
+<p>在我问出林星鸾为什么不选贺祈言的那时，贺祈言那一大批女粉便疯狂地攻击起了林星鸾。</p>
+<p>无不是骂她没有眼光的，辜负了她家哥哥。</p>
+<p>更有甚者直接对她进行了人身攻击。</p>
+<p>哪怕有些许林星鸾的粉丝想将锅盖在我身上的也迅速被那些失去理智的狂粉压了下去。</p>
+<p>就连陆知行的粉丝也怨起了她，毕竟也没有哪个粉丝能接受自己的偶像成为对方的备胎。</p>
+<p>现在她可以说是两边都不讨好，里外不是人。</p>
+<p>自然也有些粉丝攻击我故意给贺祈言挑那些他不喜欢的，说我是黑粉。</p>
+<p>不过这些估计她们粉丝早已有了心理接受过程，毕竟我可是早在以前直播间就公开说过对他无感的，哪怕昨天我说了是他粉丝，别人也只会当作是客套话罢了。</p>
+<p>直播间再怎么风起云涌，节目还是会照常进行下去。</p>
+<p>「想必这次过后大家应该都会对彼此的饮食喜好有了一定的了解，现在我们的下一个游戏呢就考虑大家的默契，下一个游戏叫『无声胜有声』，一人根据节目组给的词语无声开口，另一人根据对方口形猜词语，猜中多少个就积多少分。」</p>
+<p>导演组话音刚落，我直接开口：「贺影帝，我来猜吧。」</p>
+<p>8</p>
+<p>江晚霜和林星鸾两组进行游戏的时候还是比较正常的，但到了我这里，画面开始逐渐走偏。</p>
+<p>口形：我爱你。</p>
+<p>我蹙着眉猜道：「王爱玲？我烦你？」</p>
+<p>口形：林星鸾。</p>
+<p>我：「你是谁？你真弱？」</p>
+<p>直到贺祈言的视线瞥向林星鸾，我才假装茅塞顿开道：「哦，是林绿茶呀。」</p>
+<p>现场有人在使劲憋笑，也有人火上心头。</p>
+<p>其实对口形这玩意我熟练得很，但就是想谋私过过瘾罢了，总不能让他们在节目太得意。</p>
+<p>林星鸾勉强扯了扯笑，掩饰自己的尴尬。</p>
+<p>但最终还是在全场人异样的眼光中慢慢沉下了脸。</p>
+<p>功成身退的我在接下来的几个对口形中都能快速而准确地答出，与一开始的频繁猜错截然不同。</p>
+<p>林星鸾气得铁青，而一直在她身边充当护花使者的陆知行更是将脸拉得忒长。</p>
+<p>甚至到了第三场游戏的时候直接就想为她报仇。</p>
+<p>节目组第三个安排其实压根也算不上游戏，算是一个运动项目。</p>
+<p>网球双打，说什么在运动中可以增进两人之间的感情。</p>
+<p>三组分别交替比赛，赢一局五分。</p>
+<p>我本就不太注重这所谓的输赢，便坐在看台上让其他两组先上场。</p>
+<p>自己等会再走个过场就完事。</p>
+<p>结果正眯着眼睡觉呢，忽然一只网球就凶猛地往我这边飞来，直中下巴。</p>
+<p>我痛呼出声，一睁眼便察觉到陆知行那挑衅的眼神。</p>
+<p>林星鸾此人更是假模假样地上前询问：「卿时姐，没事吧？对不起啊，刚刚那球本来是落在我身上的，知行也是关心则乱，为了救我才没注意方向。」</p>
+<p>这话，狗都不信。</p>
+<p>我用舌顶了顶脸颊，没接她的话。</p>
+<p>朝着节目组那边开口；「把顺序再调一下吧，我现在上场，早打完早去找医护人员看看我的下巴。」</p>
+<p>节目组还未回应，我已经兀自起身接过了江晚霜手上的网球拍，随后淡漠出声：「来吧，两位。」</p>
+<p>陆知行和林星鸾迫于镜头的压力，不好多说什么，便只能站上了赛场。</p>
+<p>「对面小心点哈，我可不会手下留情。」</p>
+<p>此话一出，对方眼里闪过了一丝轻蔑。</p>
+<p>怎么总有人祸到临头不自知呢？</p>
+<p>我摸了摸手中的球，凌空一跃挥了出去。</p>
+<p>来回不到一分钟，球便直接狠狠地砸到了陆知行的左肩。</p>
+<p>「再来。」</p>
+<p>下一球，劲道十足地往他肚子砸了过去。</p>
+<p>陆知行捂着肚子，不服气地喘着粗气继续道：「再来。」</p>
+<p>这一局他防守得比前两局要好，不过自己的对手可不只有一位。</p>
+<p>我假装眼睛盯着他，随后以迅雷不及掩耳之势往林星鸾那边挥拍一击。</p>
+<p>「啊……」网球疾速降落，正中她下巴。</p>
+<p>林星鸾直接跌倒在地，整个场瞬间响起了她的呜咽声。</p>
+<p>9</p>
+<p>我大步走近她，「没事吧？不好意思呀。我是真没想到你们接不到……」</p>
+<p>陆知行在察看林星鸾的伤势，见我这如同嘲讽般的道歉，头一撇，看向我的眼神里多了几分凶狠。</p>
+<p>导演组的工作人员早在林星鸾倒地的那一刹那便全部涌了上来，镜头自然而然也全都聚集到了这一处。</p>
+<p>他的眼神被直播间的所有人察觉到了。</p>
+<p>见此，陆知行直接破罐子破摔，当着所有镜头的面直接对我发难：「宋卿时，从一开始你就一直在针对我和林星鸾，欺负比你出道晚的后辈会让你很有成就感吗？」</p>
+<p>果然他的脑子还是拎不清。</p>
+<p>导演见事情发展到这个地步，便匆忙喊工作人员关闭直播间。</p>
+<p>「不用关。」</p>
+<p>工作人员望了望我又望了望导演，见我坚持，导演也只能应了我这一要求。</p>
+<p>我用眼神示意那关联直播间的镜头对着我，最好一个镜头都不要落下。</p>
+<p>随后一步步逼近陆知行，在他没反应过来之际再次利落地扇了他一巴掌：「欺负后辈不会让我有成就感，但欺负渣男和绿茶会有。」</p>
+<p>全场一片愕然，都一副吃瓜的表情。</p>
+<p>「你在和我谈恋爱的时候就和林星鸾暗度陈仓，骗我上恋综就是打算踩我上位，只不过我没上钩罢了。」</p>
+<p>「你在说什么胡话？」陆知行显然没想到我会直接将这事抖了出来。</p>
+<p>偶像谈恋爱崩了都怕说出来影响往后的发展，可他是不是忘了，我可是娱乐圈的泥石流呀，又怎会顾忌这些。</p>
+<p>我冷哼一笑，「陆知行，你不妨猜一猜我手里有没有你雇水军准备害我的证据。」</p>
+<p>「本来打算给节目导演点面子，勉强等节目结束再算账，可你们怎么就非要一而再再而三地主动来招惹我呢？」</p>
+<p>原本一直在一旁委屈的林星鸾见场面失控，恐怕危及她自己，连忙开口：「卿时姐，我没有，我不知道你说的这些。」</p>
+<p>我将手中的网球拍递给了一旁的工作人员，拍了拍手，冲着镜头扬起了笑：「这话你们信吗？」</p>
+<p>林星鸾还欲解释些什么，就被打断了：「别装了，之前一起参加过一次节目，我就已经说过你有点茶了，怎么就不带改的呢。」</p>
+<p>话都说到这了，剩下的自有神通广大的网友去验证，我跟导演致歉后便不再理会他们，起身就往球场出口走去。</p>
+<p>直播间此时一片静默无言，突然屏幕中飘过的一句【这瓜吃得好香】打破了这一局面，众人开始纷纷发表起了自己的看法。</p>
+<p>【惹谁不好，惹娱乐圈泥石流，这主可是啥都敢爆的。】</p>
+<p>【确实，这人不好惹。】</p>
+<p>【昨天我是被她弄的那个『宋卿时真好看！！！』搞怕了，惹不起惹不起。】</p>
+<p>有些许几个林星鸾和陆知行的粉丝还在为自己的正主发声：【别都是宋卿时自己胡编的吧。】</p>
+<p>【楼上怕不是个傻子吧！】</p>
+<p>【附议！】</p>
+<p>【说这话的估计是那两人的粉丝无疑了。】</p>
+<p>【但凡混娱乐圈的都知道宋卿时那泥石流说的话虽然不中听，但基本都没有假话。】</p>
+<p>随后直播间就开始细数我以往发言都被证实的例子。</p>
+<p>原本还准备为自己正主控评的宋粉见舆论都往自己这边倒，便默默收起了手中的键盘。</p>
+<p>…………</p>
+<p>走在回去路上的我听着身后的脚步声，终还是忍不住回头冲着一直跟着自己的贺祈言开了口：「贺影帝，你一直跟着我到底想干什么？」</p>
+<p>10</p>
+<p>贺祈言默默地站住了脚步，原本一直低着的头终于抬了起来，「宋卿时，我不知道后期节目你还参不参加，但我都想告诉你，我喜欢你。」</p>
+<p>我冷对着他那深邃的双眸，悠然道：「贺祈言，你应该知道我们不是一路人。」</p>
+<p>「昨天你为什么没选我？无论什么原因都恰巧证明了你在你所谓的爱情里都会权衡利弊，爱情是可以被放弃的那个，对吧？」</p>
+<p>林星鸾后边有人撑着，而且能助贺祈言在演戏道路上走得更远，所以他不介意用这种小事来为自己谋个好印象。</p>
+<p>「既然选择了利，就不要再妄想被你放弃的，这个道理贺影帝还是该懂的。」</p>
+<p>他被我说得一时哑口无言，为了彻底绝了他的心思，我直接将所有都摆在了明面上。</p>
+<p>「我很早就在一次直播间说过对你无感，那不是玩笑话，是真的，我们的爱情观凑不到一起。至于昨天选你当心动对象完全是无奈之举，我们没有什么太大恩怨，所以就这样吧。」</p>
+<p>「你总是与圈子里其他人不一样，不过……」</p>
+<p>贺祈言低垂下了眼眸，顿了顿又轻笑出声道：「还是想告诉你一声罢了，既然如此，那就只能祝你在圈子里越发肆意了！」</p>
+<p>说开了这对我倒算是一件好事，就怕遇上那种死缠烂打的。</p>
+<p>回到房间后，我直接就私发消息给了节目组导演，我在娱乐圈一直装作跟他不熟的小姑父。</p>
+<p>「姑父大人，热度搞够了就发公告暂停这期节目的录制先，违约金请找你的节目赞助方，我的金主爸爸付——爱你的小侄女留」</p>
+<p>「知道了知道了，我会处理好的。」</p>
+<p>得到节目导演准许的我果断收拾行李踏上回家的道路。</p>
+<p>结果还没来得及踏进家门，便被经纪人连环十八 call 通知赶紧到公司。</p>
+<p>经过半小时的高层约谈，大约意思就是陆知行可以随我的意思处置，但我要将林星鸾从这件事中择出来。</p>
+<p>「如果我不同意呢？」</p>
+<p>「那么接下来的商演、代言估计都要再考虑一下人选了。」身处高位久了的人总是习惯用权力压人，我在娱乐圈混了几年，都是自己一人单打独斗，以至于让别人都以为我没背景好拿捏了。</p>
+<p>「那就准备解约吧，后续我会让我的代理律师来谈。」我没有丝毫犹豫就做下了决定。</p>
+<p>一出办公室我就叫经纪人把收集到关于林星鸾的八卦统统都发到我的手机上以备不时之需。</p>
+<p>娱乐圈里的热闹总是传得飞速，不到一会儿就直接发酵到热榜第一。</p>
+<p>林星鸾在直播事件过后就已经发了声明，大段言辞说她在娱乐圈一直兢兢业业地工作，一步一步靠着自己的努力才走到今天，至于我在直播间所说的事她一概不知，还说什么行得正，坐得端。</p>
+<p>我向来吃软不吃硬，但凡她今天好好公开道个歉，我也就不追究了，这种背地使着强硬手段，表面又装着一副无辜样式的，那我就只能让她要锤得锤了。</p>
+<p>11</p>
+<p>一组林星鸾与某知名大导演的亲密照片成功将她送上了名人榜，其后还附着她倚靠这个导演从别人手里生抢资源的证据。</p>
+<p>不管对方与林星鸾到底是何种关系，行得正，做得端这样的词都只能说和对方不搭。</p>
+<p>而且这个导演估计也是劝动公司高层威胁我的元凶，我可不会放过能教训他的机会，所以连码都不给他打。</p>
+<p>据后面经纪人给我带的小道消息，因为我那些照片，林青鸾被导演妻子顺藤摸瓜查到她是其丈夫的私生女，正闹离婚闹得不可开交。</p>
+<p>林星鸾的名声是彻底毁了，以后再想在娱乐圈走得顺遂那就是难如登天，何况还有一个名义上的「妈」一直死死盯着她不放。</p>
+<p>当然这些都是后话了，此刻的我正带着我那腰缠万贯的父亲在公司高层的办公室里喝茶。</p>
+<p>看着原本还在我面前趾高气扬的高层此刻对着自己卑躬屈膝道歉的样子，那叫一个爽。</p>
+<p>「宋老板，你什么时候将这个公司收购的，也不跟我说一声，好让我耀武扬威一下。」一出办公室，我便忍不住调侃起了许久未见的父亲。</p>
+<p>父亲睨了我一眼，没好气地道：「自打你准备进娱乐圈时就收购了，还不是某个没良心的，搞得好像自己家给她丢人似的，愣是到现在都没公开过我们这些家里人。」</p>
+<p>「那父亲你都不特意向那些公司高层介绍一下我是你女儿的吗？我可是差点就被自家公司给坑了耶。」</p>
+<p>「呵呵，是谁说靠自己的，都不认家，还想家认你？」此时的父亲一脸傲娇。</p>
+<p>早就知道父亲会这么说的，我了然一笑：「既然这样的话，老宋，通知你一声哈，你女儿我还是要解约的，我要出去单干。」</p>
+<p>不等父亲反应过来骂人，我就一溜烟跑了。</p>
+<p>闯娱乐圈，还是自己单打独斗才好玩。</p>
+<p>…………</p>
+<p>自这件事后，我在圈里名声更甚往日。</p>
+<p>一档采访节目里。</p>
+<p>「陆知行和林星鸾两位的退圈，您对此有什么看法呢？」</p>
+<p>「我能对被封杀的人有啥看法，拍手叫好？」我一如既往地不着调。</p>
+<p>采访记者见势问道：「您到现在还没谈恋爱，是不是被陆知行吓出阴影了？」</p>
+<p>我：「你想太多了，就是懒得将就罢了。」</p>
+<p>记者还欲再问，我连忙打断：「别提那些晦气的人了，各位观众粉丝朋友们，记得看我后天的演唱会啊！」</p>
+<p>记者:「……」</p>
+<p>不着调的娱乐圈泥石流总是不易被掌控的。</p>
+<p>…………</p>
+<p>（完）</p>
+<p>备案号:YXX16yABnlPCEpPO3MUrpnK</p>
+<p>穿成小鹦鹉后，我努力保命！</p>
+<p>​</p>
+<p>​</p>
+<p>穿成女配后我只想搞事业</p>
+<p>GREYS 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/4/5-%E8%83%BD%E5%86%99%E4%B8%80%E4%B8%AA%E6%B8%A9%E6%B6%A6%E5%A4%A7%E5%B0%8F%E5%A7%90x%E5%86%9B%E9%98%80%E7%9A%84%E6%95%85%E4%BA%8B%E5%90%97_-%E7%9F%A5%E4%B9%8E1/" title="能写一个温润大小姐X军阀的故事吗_ - 知乎(1)">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">能写一个温润大小姐X军阀的故事吗_ - 知乎(1)</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/21-%E4%BD%A0%E8%A2%AB%E5%90%93%E5%BE%97%E6%9C%80%E6%83%A8%E7%9A%84%E4%B8%80%E6%AC%A1%E6%98%AF%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5/" title="你被吓得最惨的一次是什么情况？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">你被吓得最惨的一次是什么情况？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

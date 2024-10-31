@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>做这一切有什么用 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/16-%E5%81%9A%E8%BF%99%E4%B8%80%E5%88%87%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/16-%E5%81%9A%E8%BF%99%E4%B8%80%E5%88%87%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="做这一切有什么用">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+  <meta name="twitter:title" content="做这一切有什么用">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="做这一切有什么用">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9211">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26662.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">做这一切有什么用</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>19分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%81%9a%e8%bf%99%e4%b8%80%e5%88%87%e6%9c%89%e4%bb%80%e4%b9%88%e7%94%a8&amp;url=https://mohai.us.kg/posts/2023/4/16-%E5%81%9A%E8%BF%99%E4%B8%80%E5%88%87%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/16-%E5%81%9A%E8%BF%99%E4%B8%80%E5%88%87%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%81%9a%e8%bf%99%e4%b8%80%e5%88%87%e6%9c%89%e4%bb%80%e4%b9%88%e7%94%a8%20https://mohai.us.kg/posts/2023/4/16-%E5%81%9A%E8%BF%99%E4%B8%80%E5%88%87%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26662.jpg" alt="做这一切有什么用" />
+      
+
+      <p>「宝珠，宝珠？」</p>
+<p>我听见有人在叫我，却好一会才反应过来。</p>
+<p>我眼睛虚了一下焦才看清是哥哥。</p>
+<p>「宝珠。」</p>
+<p>哥哥好像整个人都拧巴到了一起，有万般的情绪理不清，抬起一只手抓住我的胳膊，安抚性地摩挲了几下：「你还好么？」</p>
+<p>「我……我还好……」</p>
+<p>我不知道我现在是什么表情，但从我发出的声音里，我想，大概很不好。</p>
+<p>我该庆幸我前面早就把情绪渲染到位了，所以这一刻不会显得太突兀。</p>
+<p>哥哥不忍极了，他连叹气都是抖的。</p>
+<p>从前他看外来人，仿佛这天地万物都是灰白的，只有那一点颜色。</p>
+<p>如今那颜色破碎，重新将这黑白万物渲染，他才终于发现，那些注意不到的灰色原来早就伤痕累累。</p>
+<p>虽然听不到系统的播报，但我想这一刻被无数情绪充斥的哥哥，好感度一定在剧烈地波动着。</p>
+<p>「楚涵！」他重重地叫了一声金楚涵的名字：「你太让我失望了，你做错事连承认的勇气都没有么！」</p>
+<p>金楚涵整张脸都埋在枕头里，一动不动。</p>
+<p>我知道她是真的没辄了，本来还寄望于系统，系统却帮不了她。</p>
+<p>这三个都是攻略对象，她站出来说她跟沈牧一点感情没有，爱的是顾泽言，那沈牧那条线就完了，要是不否认跟沈牧的关系，顾泽言又无法交代，至于哥哥，不管她选择谁，他被伤害都已成定局了。</p>
+<p>说多错多，她只能什么也不说，期望着等私下再挨个解释试试。</p>
+<p>「你既然不爱我，为什么要跟我订婚，是你先说喜欢我的。」</p>
+<p>顾泽言始终没有回头。</p>
+<p>从沈牧来了以后，他狼狈的像只不肯承认被抛弃的流浪狗一样，大声的吠叫是他强撑的尊严。</p>
+<p>「我为你付出得还不够么，一开始我跟你在一起的时候，是违抗了金顾两家的婚约，我几乎众叛亲离，如果不是后来发现了你真正的身世，我都为了你离开顾家了。这么久以来，我对你什么时候不是百依百顺，我从来没有怀疑过你跟我说的每一句话，金成一跟金宝珠都跟我说没有见过你，他们给我发那张照片的时候，我还在心里给你找理由开脱，那也许是个路人，也许是什么地方出了差错。可你呢，你连一句解释都不肯跟我说，我在你心里算什么。」</p>
+<p>「不是的，泽言，我是爱你的！」金楚涵慌了神，她顾不得别的了，抬头挣扎着坐起来想下床。</p>
+<p>顾泽言扭头深深看了我一眼，轻轻说了句：「对不起。」</p>
+<p>说完这句他迈步往外走去，金楚涵踉跄着想追出去，却被沈牧一把抓住。</p>
+<p>「这就想走？话还没说清楚呢，你骗我这笔账我还没跟你算呢。」</p>
+<p>金楚涵大概是从没有见过沈牧笑眯眯的面具下真正的模样，在他手里抖得像个落水鸡一样。</p>
+<p>沈牧对她可是一点怜惜都没有，毫不客气地追问着她，冒充小月牙的身份来接近他有什么目的，明明有未婚夫还装喜欢他到底是想干什么。</p>
+<p>金楚涵除了哭就是哭，眼看着要被沈牧逼崩溃了，只能一个劲叫着哥哥。</p>
+<p>到底是他的妹妹，虽然没有血缘关系，但对哥哥来说爱护金家的孩子似乎是刻进他骨子里的誓言。</p>
+<p>哥哥于心不忍上去制止沈牧的咄咄逼人。</p>
+<p>一时间吵架声，哭声混杂在一起跟个菜市场一样。</p>
+<p>系统的声音再出现时，我都差点没分辨出来。</p>
+<p>【我检查了金宝珠的手机，没找出什么异样，她平时除了会跟金成一联系一下就没什么人了，她是从网上刷到了那个博主的博文截图发给了金成一，聊天记录我也都看了，目前没什么异常。】</p>
+<p>我万万没想到系统会说出这样一番话。</p>
+<p>只能看到这个？没发现我跟沈牧的联系？不可能啊……</p>
+<p>熟悉的诡异感又浮现了上来，跟那个莫名其妙的坐标一样，我又在险些要暴露的关头被拉了回来。</p>
+<p>为什么？简直像是故意在帮我一样！</p>
+<p>那个坐标跟这一次的手机探查，肯定是有关联的，系统再衰败也不可能这么巧的在我身上一而再地犯错误。</p>
+<p>而且从系统迄今为止的反应来看，这些事绝对不是出于他的手笔。</p>
+<p>是有什么没被系统发觉的东西在为我掩盖痕迹，是什么人？又是出于什么目的？！</p>
+<p>我向来不是一个幸运的人，特别是外来人跟系统出现在我的生活中后，我简直像是在走钢丝绳，生怕一个不小心坠入深渊。</p>
+<p>现在却有这么大的一个意外惊喜砸在我的头上，我甚至无法为此感到愉悦，反而觉得心情沉重了起来。</p>
+<p>因为我无法确定这个意外惊喜究竟从何而来，这世界上很难有无缘无故的善意，但是恶意往往隐藏得很深。</p>
+<p>那边还在闹着，没有多少时间给我在这里胡思乱想。</p>
+<p>我只能像过去的每一次那样暂时压下心里的情绪跟猜测，硬着头皮去把这场戏演下去。</p>
+<p>我走上前，试图分开混乱的三人。</p>
+<p>「好了，楚涵你不是说不舒服么，那就先在医院呆着吧。沈先生，我是金楚涵的姐姐，你跟楚涵的事，不仅仅关乎你们两个人，还关乎到了金家的颜面，我们单独聊一会吧，哥哥，你先陪一下楚涵，我很快回来。」</p>
+<p>在场的几个人其实都在等一个台阶，一个能短暂结束闹剧的台阶，我给了，所有人都顺着下来了。</p>
+<p>我将沈牧带到了老地方。</p>
+<p>他看着我的模样很是咬牙切齿。</p>
+<p>「你对自己下手还挺狠。」</p>
+<p>沈牧气不顺，斜着眼睛围着我转了一圈，摆明了要我好好哄他，不然这事没完。</p>
+<p>「做戏嘛总得豁得出去，我没想到你会来的这么快，难为你刚才忍着火气陪我演戏了，做得很好。」</p>
+<p>「哼，你都哭成那样了，我要是不帮你一把，我看你都恨不得从这楼上跳下去了，真没用，就刚才几个人也值得你要死要活的，全杀了算了。」</p>
+<p>沈牧抓了抓头发，暴躁得不行。</p>
+<p>「你这个女人从一开始就是利用我！先是拿小月牙名头来接近我，接近不成，就干脆勾引我！让我觉得你有意思把你留在身边，然后等金楚涵来找我，你知道我肯定会玩她一阵子，就将计就计配合着我，放任着我，等的就是今天，利用我让所有人都知道金楚涵是个什么玩意。」</p>
+<p>「这种事你不是从一开始就知道了，我看你玩的也挺高兴的，反正你平时那么无聊，就算我不出现，金楚涵那个老鼠也得被你玩得团团转。」</p>
+<p>我抚了两下他的脊背，哄孩子一样拍了拍。</p>
+<p>沈牧瞪了我一眼，却没躲开我的手，龇牙咧嘴的：「别以为我不知道，你就是吃准了我喜欢哪一套，所以故意在我面前装出那个样子，拿我当小孩，你跟金楚涵那个家伙一路货色，只是手段比她高罢了。」</p>
+<p>「我要真的只是手段比她高，你才不会这么容忍我，是我比他们所有人都聪明都有耐心，我愿意花心思去了解你，接近你。」</p>
+<p>我笑着轻轻凑近了沈牧，他个子很高，我仰起头也只能够到他的下巴。</p>
+<p>他的呼吸很热隐隐落到了我的唇上。</p>
+<p>「更何况，你不也是明明知道一切，却放纵了自己么，你看看你，跟我刚认识你的时候，可是有些不一样了，现在这个你，是你装出来的所有正常的你当中，你最喜欢的那个吧。」</p>
+<p>我短暂地把心扯了出来，让这具身体贴到沈牧的身上，抬手用指尖从沈牧的眼角顺着蹭到他的唇角。</p>
+<p>「你也很享受跟我在一起的感觉，不是么？」</p>
+<p>我们两个离得很近，近得好像浑身的温热都纠缠到了一起。</p>
+<p>每当我给沈牧这些若即若离的身体接触时，沈牧的眼睛会微微眯起来，他很喜欢。</p>
+<p>但是如果再近一些。</p>
+<p>就像现在，我们两个离亲吻还差一指的距离。</p>
+<p>他的绿眼睛会像动物一样瞳孔收缩，呼吸沉重，不是欲望，是厌恶是想撕碎一切的冲动。</p>
+<p>在跟沈牧相处的每一天，即便是知道他的过往，我仍在试探摸索着他的那根线在哪里。</p>
+<p>他喜欢甚至是渴望皮肤接触，但是这个接触要浅。</p>
+<p>就好像亲吻一个伤口，轻轻地，如果重了，他会痛，会发怒。</p>
+<p>我想他身上大概是藏着什么资料上没有提到过的事情，是一个不需要告诉外来人，一旦告诉她甚至可能对攻略起反作用的东西。</p>
+<p>我从沈牧身上退了下来，沈牧眼中呼之欲出的某种东西也瞬间撤了回去。</p>
+<p>他的喉结上下滚动了几下，不轻不重地拿眼刺了我一下，才慢吞吞地开口：「是啊，所以在我享受够之前，你敢出什么岔子，我一定会让你知道什么叫比死还痛苦。」</p>
+<p>「知道了。」</p>
+<p>我看着他滚动的喉结，突然想起一件往事。</p>
+<p>其实上一世我跟在那个外来人身边的时候，她几乎已经将所有的攻略对象都拿下了。</p>
+<p>每天不是跟这个厮混，就是跟那个厮混。</p>
+<p>但是跟沈牧一起过夜的次数很少。</p>
+<p>我非常讨厌看到这些事，所以大多数时候我都是闭着眼，恨不得能直接消散。</p>
+<p>只有偶尔几次我听到了别的动静才会看一眼。</p>
+<p>几乎每次都是沈牧。</p>
+<p>每一次的画面基本都很雷同。</p>
+<p>他会把外来人掐着脖子摁在枕头上，从后面动作的时候，下颚到脖子上的青筋紧紧绷着，脸色阴沉，呼吸粗重，眼角泛着红。</p>
+<p>厌恶跟欲望交织在一起，像是嗜血的杀人犯压抑着本能用另一种方式发泄。</p>
+<p>有的时候下手重了，外来人就会乱喊但却不敢反抗。</p>
+<p>能感觉到外来人是不怎么敢招惹沈牧的。</p>
+<p>其他攻略对象个个顺着外来人，但沈牧是需要别人去迁就他的。</p>
+<p>那时候我以为沈牧只是个单纯的变态罢了。</p>
+<p>但是现在……</p>
+<p>我想我知道他最痛的地方是什么了。</p>
+<p>「沈牧，那个俄罗斯女人呢？」</p>
+<p>「找到了，昨天晚上就给你找回来了，暂时让我关庄园里了，随你处置吧。」</p>
+<p>沈牧提起这个似乎心情不太好，眉毛一下子就压了下来，他看了我一眼，又补了一句：「我没动她，好好关着呢。」</p>
+<p>「我知道，你既然答应我了就一定会把事办妥的，沈牧，这边的事先告一段落，你先回去吧，等事情处理好我会回去找你的。」</p>
+<p>「你不跟我走？！」</p>
+<p>沈牧说生气就生气。</p>
+<p>「我要先处理这边的事情。」</p>
+<p>「真是麻烦死了，你要处理多久。」</p>
+<p>我耐着性子去哄他。</p>
+<p>「我会尽快地，都废了这么多功夫了，总不能功亏一篑吧，你先回去，这两天留意下顾泽言的动静，他要是有什么动作，你要告诉我，好么？」</p>
+<p>「……真烦，知道了。」</p>
+<p>……</p>
+<p>我把沈牧哄走了，掉头回了病房。</p>
+<p>金楚涵半坐在病床上，抱着哥哥的腰哭泣。</p>
+<p>哥哥静静地站着，双手虚放在金楚涵身侧，没有碰到她，垂着眼不知道在想什么，神情很淡。</p>
+<p>「哥哥，我跟沈先生谈好了，他暂时先回去了，但是这个事情他坚持要我们给一个交代，我也查过了，他的身份不简单，如果这件事处理不好，可能我们几个都有危险，要不要先跟爸说一下。」</p>
+<p>「辛苦你了。」哥哥眉眼带着厌倦疲惫：「爸那边我会去说的，一会我去找一下泽言，跟他好好谈谈，如果泽言要退婚，我们这边肯定是要配合的，至于这位沈先生……」</p>
+<p>他伸手推了一下抱着他哭的金楚涵，没推动，反而让金楚涵抱得更紧了。</p>
+<p>「哥哥，我有个想法，既然楚涵是跟泽言订婚后，又隐瞒身份来到这位沈先生身边，看来她更喜欢沈先生，正好沈先生也说了，虽然楚涵骗了他，但他还是很在意楚涵的，不如干脆成全他们吧。」</p>
+<p>「不行！我只是一时糊涂！我不爱沈牧的。」</p>
+<p>金楚涵大概是想清楚了，相比于负好感的沈牧，抓紧顾泽言才是唯一的办法。</p>
+<p>「哥哥，你带我去找泽言好不好，我刚才只是一下子被吓住了，我还有话跟泽言说得，我可以解释的。」</p>
+<p>我安静的站着，等着听金楚涵的心声。</p>
+<p>可是却等来了一片寂静。</p>
+<p>只有金楚涵嘴上对哥哥的哀求。</p>
+<p>为什么？是她忙着演戏没工夫在心里嘀咕么？</p>
+<p>没有了那些嘈杂的吵嚷，我的耳边一下静了下来。</p>
+<p>但这份静却让我觉得心慌。</p>
+<p>等金楚涵哭求到了哥哥的点头，准备出院，在哥哥的陪伴下去找顾泽言的时候。</p>
+<p>这份心慌达到了顶点。</p>
+<p>我听不到，我什么都听不到。</p>
+<p>我们三个人离开了医院，出发去酒店。</p>
+<p>前后几个小时，我什么都听不到。</p>
+<p>没有系统，没有外来人的心声。</p>
+<p>什么都没有。</p>
+<p>为什么，是彻底发现我了么？</p>
+<p>我强迫自己冷静下来，却挡不住铺天盖地袭来的焦虑。</p>
+<p>我浑身发冷，手心一阵阵出汗，每一次呼吸都变得沉重吃力。</p>
+<p>为什么，为什么我什么都听不到……</p>
+<p>心声一直以来是我的最大的依仗，我就是靠着这些东西才能处处抢占先机，如果我听不到了，那我岂不是又变成了案板上的鱼！</p>
+<p>「你没事吧，怎么脸色这么难看。」</p>
+<p>金楚涵哭了很久，鼻子通红，瓮声瓮气地缩在车座上，瞪大了眼睛看着我，水汪汪的。</p>
+<p>好像刚才一切混乱不过是下过的一场雨，雨水冲刷后湖泊更清澈了。</p>
+<p>「没什么，楚涵……不管怎么说我们到底是一家人，过去的事情我就不跟你计较了，但是我希望以后你不要再做这样的事情了，我们一家人好好相处。」</p>
+<p>我强打起精神，试图用话语挑拨起她心底压抑的怒火。</p>
+<p>可是我等来的是她吸了吸鼻子，委屈又无辜地说：「我知道错了，是你以前老是那么高傲看不起我，欺负我，加上我在外面受了很多苦也跟你有关系，所以我心里老是有火气这才跟你作对的，以后不会了。」</p>
+<p>听不到，还是什么听不到，我眼前浮动的全是金楚涵虚伪的脸，虚伪的话。</p>
+<p>为什么，到底为什么，在我离开病房时，我听到的是系统分析我的手机没有异常的声音。</p>
+<p>难道她们那个时候就发现了我的不对劲，故意说那句话给我听？等我离开以后再商量好对策怎么对付我，然后像现在这样打我一个措手不及？</p>
+<p>可他们是怎么发现我能听到心声的，我的手机里应该只有我跟沈牧的一些联系，还有我的一些计划部署，我一直很小心，没有在任何地方泄露出我能听到不该听东西的痕迹。</p>
+<p>她们现在是封闭了对话不让我听到，还是别的什么原因？</p>
+<p>我又不可自控的想起之前出现的两个差错，跟系统嘴里的上级。</p>
+<p>那些我本已梳理清楚的计划方针突然被全盘打乱，被各种猜测裹挟着变成了一个巨大的毛线团。</p>
+<p>到处都是线头，揪住想拽出来却都是打在一起的结。</p>
+<p>「到了，金宝珠，你要跟我一起过去么？」</p>
+<p>金楚涵噘了噘嘴，将有隔阂却别别扭扭想和好的小女生姿态拿捏得恰到好处。</p>
+<p>我从没有像此刻这么后悔过，我为什么当时要离开病房，在我离开的那短短的二十分钟到底发生了什么。</p>
+<p>金楚涵整个人突然变得镇定了起来，不，也许不是她变得镇定了，是我乱了阵脚。</p>
+<p>「一起过去吧，泽言今天那么激动，我怕一会出什么事情，我们在门口守着也行。」</p>
+<p>我勾出了一个浅淡的笑容，却感觉到顺着这个小小弧度，我的体内刮起了一阵龙卷风，将我的五脏六腑都搅烂，搅碎。</p>
+<p>哥哥大概也是觉得我脸色难看，安抚地摸了摸我的脊背，以一种虚扶的姿态护着我下车。</p>
+<p>我们三人进了酒店，找到了顾泽言下榻的房间号。</p>
+<p>是哥哥出面叫开了门。</p>
+<p>门一开，金楚涵就跟泥鳅一样钻了进去。</p>
+<p>在门要关上的那一刻，我拿脚垫了一下，点出了一线缝隙，静静地站在门外听着里面的吵闹。</p>
+<p>哥哥深深看了我一眼，最后什么也没说，陪着我一起在门口等。</p>
+<p>我能听到顾泽言冷漠的呵斥，金楚涵的哭泣声跟模糊小声地解释。</p>
+<p>明明只有两个人在说话却因为沾了感情，变得像是闹市街头的小吃车，爆炒着辣椒，热油噼里啪啦，热气滚着拥挤，顶的人脑血上涌。</p>
+<p>房门有一半是金属贴面。</p>
+<p>我能从上面看到我的倒影。</p>
+<p>我突然发现我瘦了很多，穿着风衣瘦长的像是一杆芦苇，脸颊都有点凹下去了。</p>
+<p>明明穿着发型都很整齐，却像被狂风吹过透着凌乱疲惫呆滞的气息。</p>
+<p>难怪，连金楚涵刚才都会问我脸色为什么那么难看。</p>
+<p>是真的不好看。</p>
+<p>屋里的争吵声渐渐变小了，我有些听不清里面在说什么。</p>
+<p>我站了很久，站得有些恍惚了，恍惚到里面的俩人开门走出来，我都不知道避让，傻傻站在原地，还是哥哥拉了我一把，我才回过神。</p>
+<p>金楚涵今天哭了太多太多次，眼睛肿得通红，没有眼泪也像是在嚎啕，看上去可怜极了。</p>
+<p>她半躲在顾泽言的身后，一只手紧紧揪着顾泽言的衣角，像是受惊的孩子。</p>
+<p>「成一哥，这件事先别跟家里说了，我跟金楚涵刚订婚，我们金顾两家还因此外宣了好几个合作项目，现在要是解除婚约肯定有影响，面子上也都不好看，先缓缓吧。」</p>
+<p>顾泽言说话时，眼皮轻轻垂着没有直视任何人。</p>
+<p>他疲惫的像是刚跑完了一场马拉松却发现跑错了路，茫然四顾站在原地不知道是该折返还是将错就错跑到终点。</p>
+<p>哥哥张了好几次嘴，才终于吐出一句话：「嗯……这件事说到底还是你们两个人的事情，不管你做出什么决定，我都会站在你这边的。」</p>
+<p>他们后面在说什么我已经听不到了。</p>
+<p>我盯着金楚涵那张无辜的脸，却好像又看到了另一张一模一样的脸在她身侧浮现。</p>
+<p>那张脸上挂着傲慢恶毒，一张一合地说着难听的话。</p>
+<p>过去每一次被我强压下的恐惧，疑惑，焦虑，震惊，痛苦，仇恨，突然在这一刻爆发了。</p>
+<p>我本以为情绪的爆发会是一场突如其来的海啸。</p>
+<p>原来不是，它像突然涌起的雾，一瞬间，眼前的一切都变成了白茫茫，空荡荡，什么也没有。</p>
+<p>我好像被这场雾包裹消化，变成了一声长长的叹息，不知是泣还是诉。</p>
+<p>我不知道身边的人是谁，在干什么。</p>
+<p>我只看到我的身体跟在这几个人身边，跟他们一起说着话。</p>
+<p>说完了，站在一起的男女回了房间，我跟另一个人走啊走啊，走出了酒店。</p>
+<p>我们两个说了会话，我独自一人坐上了计程车离开了。</p>
+<p>那计程车开了很远，很远，最后在一片海岸停下。</p>
+<p>海岸沙滩上散落着一些垃圾被风吹得滚来滚去，没什么人，有一个木制长椅看上去脏兮兮的。</p>
+<p>但我还是在长椅上坐了下来。</p>
+<p>天色慢慢暗了，我也慢慢回到了这具身体，手脚被海风吹得发麻。</p>
+<p>「你在这干什么？」</p>
+<p>我花了一分钟才认出站在我旁边，问我话的人是沈牧。</p>
+<p>「我在手机定位上看到你一直待在这个鸟不拉屎的地方，我还以为你被人杀了埋沙子里了。」</p>
+<p>他不知道是从哪里来，坐下来的时候，身上蓬松的热气让我有些失神。</p>
+<p>「你怎么了？」</p>
+<p>他伸出手在我眼前晃了晃，眉毛快要拧在一起了。</p>
+<p>「自从那几个人出现，你就变得皱巴巴的，一点意思都没有了。」</p>
+<p>他不耐烦的样子让我想起了我们刚认识的时候。</p>
+<p>「沈牧。」</p>
+<p>「嗯？」</p>
+<p>「我以为我最难的日子已经过去了，原来才刚刚开始，但是我已经快把自己榨干了。」</p>
+<p>我以为我说出这句话的时候会哭，却没有，它顺畅自然的像是呼吸一样，从口中冒了出来。</p>
+<p>「把他们都杀了不行么？」</p>
+<p>沈牧托着腮帮子，眼睛在昏暗的夜色里很亮，像是天真的少年在讨论哪个口味冰淇淋好吃。</p>
+<p>「杀不了，杀了他们还会回来，回来疯狂的报复我，我只会变得更凄惨。」</p>
+<p>「那就再杀一次，你管他们会不会回来，只要现在能痛快就好了。」</p>
+<p>他说这句话的时候笑了一下，变得有些兴奋，他如果是蛇，现在大概是瞳孔竖立，嘶嘶吐着舌头。</p>
+<p>不，不是蛇，现在的他像是被拍飞的篮球，重重地撞在我的心脏上，撞得很用力很用力，用力到让我又找回了疼痛的感觉。</p>
+<p>我突然笑了起来，笑得弯了腰，笑出了眼泪。</p>
+<p>没有人明白我在说什么，也没有人明白我面对的是什么。</p>
+<p>痛快，我也想痛快，但这背后的代价，足以碾碎我的灵魂。</p>
+<p>「沈牧，你抱抱我吧。」</p>
+<p>我把自己当成一片叶子像沈牧递过去。</p>
+<p>在我最痛苦的时候，我能依靠的却是一个曾带给我深切羞辱的男人。</p>
+<p>我已经不知道该笑我自己什么了。</p>
+<p>沈牧难得老实，不闹不乱说话，用合拢的双手为我这片被吹得摇摇欲坠的叶子拢起一小块安宁。</p>
+<p>真奇怪，沈牧这样残忍的人，胸膛却也是暖和的。</p>
+<p>我闭上了眼睛，让自己疲惫的神经短暂地放松在这片温暖中。</p>
+<p>直到整个沙滩都暗了下来，连岸边的波浪都看不到，只剩下簌簌海水抚来的声音。</p>
+<p>我才离开了这一小块安宁地。</p>
+<p>「沈牧，你说得有道理，我想好了，我还是要往前走，赢不了也没关系，如果赢不了，我就杀了他们，就算会受到报复也没关系，最起码有一次，有一次我痛快了。」</p>
+<p>「这才对嘛。」</p>
+<p>夜色太黑，即便是贴得很近，我也看不清他的脸，只能看到模糊的轮廓。</p>
+<p>沈牧，我本想亲手了结你的，但看在今晚这片刻的温柔份上，我会换一种方式。</p>
+<p>「沈牧，那个俄罗斯女人呢？带我去见见她吧。」</p>
+<p>……</p>
+<p>再见到那个俄罗斯女人，我却更难过了。</p>
+<p>她被沈牧安置在庄园的客房，有保姆守着。</p>
+<p>她不再脏兮兮了，洗过澡，穿着牛仔裤白毛衣，头发有点乱，看起来像是 T 台上节食严重瘦削的白人模特。</p>
+<p>只是她的精神状态仍然不太好，像一只受惊的动物。</p>
+<p>坐在椅子上手脚瑟缩着，不停地吞咽口水，明明不敢看我，却逼着自己瞪大眼睛盯着我，整个人因为紧绷而在微颤。</p>
+<p>我想跟她说说话，但我不确定这个房间里有没有针孔摄像头。</p>
+<p>我跟她面对面坐着，像在照镜子。</p>
+<p>直到沈牧在外面等的不耐烦，拍了拍门，我才回过神。</p>
+<p>只见那女人被拍门声吓得从椅子上弹跳了起来，抖得更厉害了，喉咙克制不住挤压出一些奇怪的气音。</p>
+<p>她对沈牧的恐惧太深了，深到已经抽掉了她的脊骨，我不确定她还能不能站起来。</p>
+<p>……试试吧，也没有其他人可以用了。</p>
+<p>我从沈牧手里要走了她，直接让人送回了国内接受心理治疗。</p>
+<p>放在美国，我的那些算计很难说会不会被沈牧发现。</p>
+<p>哥哥在酒店一别后，就直接回了子公司，临别时甚至都没有跟我见面。</p>
+<p>我知道他这一次受的打击不小，也没有强求，只是从他嘴里听说，金楚涵这几日一直缠着顾泽言。</p>
+<p>我早就想过顾泽言不会那么轻易地跟金楚涵断了。</p>
+<p>他不同于其他人，他已经爱上了金楚涵。</p>
+<p>爱之一字太复杂了，就好像黏在手上干掉的胶水。</p>
+<p>洗不掉，搓不掉，就算一点点地撕扯，都不一定能撕得干净。</p>
+<p>我本该趁热打铁继续实施我的计划，但是现在情况不同了，我不能轻举妄动。</p>
+<p>本来为了保险起见，我应该离开沈牧，回到公寓去住。</p>
+<p>但是意外发生得太快，打乱了我的步伐，我还没来得及安抚好沈牧，现在贸然离开，只会惹怒他，所以我只能留下。</p>
+<p>我在庄园陪了沈牧几天，我没着急，他却先急了。</p>
+<p>「你天天在家呆着干嘛？你不去找金楚涵的麻烦么？」</p>
+<p>他说这话的时候刚把一个办事不利的手下打了一顿，手骨节上都是血，大步流星地闯进客厅，眼睛扫了一圈，拿起我手边的水杯，对着血迹浇了下去，血水全泼到了地毯上。</p>
+<p>我抽了几张纸巾给他擦了擦，没有回答他的问题，只是叫保姆把地毯收拾一下。</p>
+<p>再抬头去看他的时候，他笑得跟大尾巴狼似的。</p>
+<p>他高兴的时候总是很像个小孩子，他弯下腰把脑袋往前凑了凑，都快贴到我的额头上了，声音很低很轻，有几个音都像是被他含在嘴里吞进去了。</p>
+<p>「你还没回答我呢」</p>
+<p>「我也很想去找她麻烦，只是还没想好怎么找。」</p>
+<p>「这有什么难得，你把她那点破事往外一传，那什么顾也是有头有脸的，肯定会跟她退婚的。」</p>
+<p>很简单粗暴，但也很有用的法子。</p>
+<p>我之前想过这么做，甚至都想好了要先过谁的手，再借谁的嘴，让这件事闹得满城风雨都查不到我的身上。</p>
+<p>但现在我不敢，我不知道系统那边的打算，我怕她们正等着我这么干，好抓我的把柄。</p>
+<p>那么我前面所有的布置就都毁了，金楚涵还是那个楚楚可怜的受害者，我又变成了别有心计的恶毒女人。</p>
+<p>「金宝珠，你想要的到底是什么？是想着把那个女人赶走，然后你就可以继续当金家的大小姐，过着从前的日子么？」</p>
+<p>我没有回答他，却想到了另一个问题：「你有没有想过金楚涵为什么要煞费苦心接近你。」</p>
+<p>「谁知道，我又不在乎。」</p>
+<p>他直起腰，伸手抓了几下头发，突然又开口说道。</p>
+<p>「你这个人太硬了，想得太多了，不想做的事情就不要做，不想见的人就不要见，过去的事情就是过去了，想都不要往回想，什么快乐做什么不好么？」</p>
+<p>这大概是我从沈牧嘴里听到过最正经的一句话。</p>
+<p>也许是我脸上的诧异太明显，沈牧的眼睛变得安静了起来。</p>
+<p>他看了我一会，像是想说什么又没说。</p>
+<p>他的安静很短暂仿佛是飘过的柳絮，很快就散了，又涌上有些癫狂的雀跃，跑去做自己的事情了。</p>
+<p>我却被他这句话搞得有些恍惚。</p>
+<p>我想要的到底是什么？</p>
+<p>一开始的时候我是想阻止外来人破坏我的家，伤害我的父母亲人，所以我试图赶走她。</p>
+<p>后来我知道了一切，我不想再沦落到那样的下场，所以我绞尽脑汁想要打败她，毁掉她。</p>
+<p>如果我赢了，那之后呢？</p>
+<p>我还能跟以前一样跟大家相处吗？或者说经历了这一切，我还能像个普通人一样拥有正常生活的勇气吗？在每一个安睡的夜晚我难道不会因为恐惧着她们再回来而辗转反侧吗？</p>
+<p>如果我输了，那之后我的下场只会比我想象得更凄惨，不仅是这一世，可能还有接下来的每一世我都会变成一个可怜虫，我甚至还会清醒地知道那些细节是什么样子的。</p>
+<p>为什么会是我？为什么偏偏是我要经历这一切？</p>
+<p>我不敢再深想下去，太痛了，这痛会彻底击碎我的。</p>
+<p>我只能把这些东西拼命地推挤出脑海，让自己不要胡思乱想。</p>
+<p>却又忍不住觉得冷，觉得凄凉。</p>
+<p>「傻站着干嘛呢，我饿了，吃饭去吧。」</p>
+<p>沈牧又不知道从哪钻出来。</p>
+<p>他就跟黑白哑剧里突然飘进来的彩色气球一样。</p>
+<p>「……吃什么？」</p>
+<p>沈牧摸了摸下巴，外面起了风，从四面大开的窗户涌进来，吹得沈牧身上那件花花绿绿的衬衣像是旗帜一样鼓动着晃了晃。</p>
+<p>「不知道，吃冬阴功吧，还是吃海鲜……」</p>
+<p>沈牧絮絮地念叨着。</p>
+<p>有那么一瞬间我庆幸我此刻是站在这里，而不是那间空荡荡的公寓。备案号:YXX1v6M5vO1tg2pRw9AFPjP1</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/10-%E5%81%9A%E6%B8%A3%E5%A5%B3%E5%BC%80%E5%BF%83%E5%90%97/" title="做渣女开心吗？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">做渣女开心吗？</span>
+          </div>
+        </a>
+        
+
+        
+        <div></div>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

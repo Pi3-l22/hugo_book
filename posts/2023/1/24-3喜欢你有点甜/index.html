@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3喜欢你有点甜 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/24-3%E5%96%9C%E6%AC%A2%E4%BD%A0%E6%9C%89%E7%82%B9%E7%94%9C/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/24-3%E5%96%9C%E6%AC%A2%E4%BD%A0%E6%9C%89%E7%82%B9%E7%94%9C/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="3喜欢你有点甜">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+  <meta name="twitter:title" content="3喜欢你有点甜">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="3喜欢你有点甜">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9533">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26060.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">3喜欢你有点甜</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>20分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=3%e5%96%9c%e6%ac%a2%e4%bd%a0%e6%9c%89%e7%82%b9%e7%94%9c&amp;url=https://mohai.us.kg/posts/2023/1/24-3%E5%96%9C%E6%AC%A2%E4%BD%A0%E6%9C%89%E7%82%B9%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/24-3%E5%96%9C%E6%AC%A2%E4%BD%A0%E6%9C%89%E7%82%B9%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=3%e5%96%9c%e6%ac%a2%e4%bd%a0%e6%9c%89%e7%82%b9%e7%94%9c%20https://mohai.us.kg/posts/2023/1/24-3%E5%96%9C%E6%AC%A2%E4%BD%A0%E6%9C%89%E7%82%B9%E7%94%9C/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26060.jpg" alt="3喜欢你有点甜" />
+      
+
+      <p>我被人挂在了表白墙，附丑照。我被人挂在了表白墙，附丑照。</p>
+<p>照片上两个女生，一前一后在食堂排队打饭。</p>
+<p>底下只有简短的一句话：</p>
+<p>「今天有青椒炒肉丝，姐姐一定很爱吃。」</p>
+<p>还单押了。</p>
+<p>哪个混蛋！</p>
+<p>你表白就表白吧，为什么把我拍得那么丑！</p>
+<p>照片上。</p>
+<p>油油的刘海贴额头，下巴还有一颗痘。</p>
+<p>抓拍还拍出了白眼停留！</p>
+<p>岂可休！</p>
+<p>我可是要竞选校花的人！</p>
+<p>手里排了半小时队，打包回宿舍的猪脚饭突然就不香了。</p>
+<p>我刚要私信墙，揪出这个混蛋，闺蜜佩佩就发来消息：「卧槽！你居然被表白了？」</p>
+<p>这孩子真是看得起我。</p>
+<p>撇撇嘴，我秒回：「排我前面的人是校花顾茗，你确定我是被表白的那个？」</p>
+<p>那边停顿几秒，恍然大悟：「对哦。」</p>
+<p>我咬牙切齿，还得继续实事求是：「而且我也不爱吃青椒。那个表白的蠢货难道会连自己喜欢的人不喜欢吃什么都不知道？」</p>
+<p>「是哦……」</p>
+<p>我缓缓呼出一口沉闷之气。</p>
+<p>算了，当务之急是联系表白墙把照片删了，这已经严重影响我竞选校花、耽误我脱单了好吗！</p>
+<p>「墙墙宝贝~ 本人是照片上的当事人之一，可不可以删下照片啊（哭哭）形象不好，有点难过呢（哼哼）。」</p>
+<p>没想到我的友好私信，却换来表白墙的冷漠拒绝。</p>
+<p>「装可爱也打咩。本墙有责任捍卫追爱人的权力。」</p>
+<p>「那也不能把无关人等给拖下水啊！」</p>
+<p>「同学乐观点嘛！也许人家要追的就是你啊！」</p>
+<p>「……」</p>
+<p>说这话你不昧良心吗！</p>
+<p>「这样吧，过几天要是没啥动静了我再删，这样也显得我比较有操守。既服务了恋爱，也规避了丑照，怎么样？」</p>
+<p>「……」</p>
+<p>还能怎么办？</p>
+<p>我要是因为一句「丑照」不依不挠骂回去，也许就再无删照的可能了。</p>
+<p>我忍。</p>
+<p>这时佩佩发了语音过来。</p>
+<p>「卧槽卧槽！江荔荔，你快进我邀请你的群！你喜欢的小学弟林锦也在群里，他在为你说话呢！」</p>
+<p>林锦，我喜欢的人。</p>
+<p>他大二，我大三。</p>
+<p>他是理工男，我是设计狗。</p>
+<p>本来系别不同、专业不同、八竿子打不着的我们却在半年前相遇了。</p>
+<p>那天我去图书楼，隔着一排排的书架找书，书还没找到，就瞥见了一个高大的身影站在角落里。</p>
+<p>挺拔瘦削，却不显单薄。</p>
+<p>最重要的是那张侧脸——下颌线性感流畅，鼻梁高挺，简直太帅了！</p>
+<p>在这充满知识的海洋里，我看呆了。</p>
+<p>突然听到有人在啜泣。</p>
+<p>那声音轻轻的，惹人怜惜。</p>
+<p>我动动脚，歪歪脖子。</p>
+<p>发现原来不只有林锦站在那里，他的身侧还有一个娇小的身影，恰巧被他挡住。</p>
+<p>正是校花顾茗。</p>
+<p>我顿时脑补出一堆情侣争吵的情节。</p>
+<p>就在这个时候，林锦也看到了我。</p>
+<p>他笑了笑，伸出手将食指抵到他看上去很好亲的唇边，朝我比了个噤声的「嘘」。</p>
+<p>我心脏猛地一跳。</p>
+<p>太他妈撩了。</p>
+<p>在他的蛊惑（提醒）下，我连连退后几步，落荒而逃。</p>
+<p>那天，我很确定，自己喜欢上了这个陌生的学弟。</p>
+<p>至于要不要撬墙角，我打算先观望一波。</p>
+<p>接下来的日子里，我多方打探，把这份陌生渐渐变成了单方面的熟悉。</p>
+<p>林锦喜欢打篮球。</p>
+<p>林锦喜欢杨枝甘露。</p>
+<p>林锦是学生会里最年轻的成员。</p>
+<p>林锦不出意外会成为这一届的校草。</p>
+<p>重点是，他单身！</p>
+<p>顾茗不是他的女朋友！</p>
+<p>不管那天是什么情况，反正林锦现在单身！可撩！</p>
+<p>……</p>
+<p>综上所述，得出结论：这就是我想要竞选新一届校花的理由。</p>
+<p>我想要配得上林锦。</p>
+<p>所以当进了</p>
+<p>林锦：「明明是拍照人技术不行，怎么可以甩锅给女生？据我所知，江学姐优秀能干，是值得被表白的。」</p>
+<p>林锦说我值得！</p>
+<p>我哆哆嗦嗦地打字，删删减减，想要激情表个态，发现手指不受控制，就喊出了 Siri。</p>
+<p>「Siri。」</p>
+<p>「我在。」</p>
+<p>一句「谢谢你为我说话的」的「谢」字还在嘴边摩擦，我就被突然闯进来的佩佩给吓了一跳。</p>
+<p>「荔荔！我等你好久了，你怎么不在群里冒个泡啊，这可是绝佳拉近距离的好机会！」</p>
+<p>我这不是正打算这么做吗！</p>
+<p>我低头。</p>
+<p>Siri 已经替我发送了消息。</p>
+<p>「shit」</p>
+<p>撤回已经来不及了。</p>
+<p>「……」</p>
+<p>「……」</p>
+<p>「……」</p>
+<p>每个省略号都能勒死我一次。</p>
+<p>我转身想要掐死佩佩，亲手埋葬这个祸害，她眼疾手快举起手机怼到我面前，「林锦加你了！」</p>
+<p>我慌忙拿过手机仔细看。</p>
+<p>「学姐，加你</p>
+<p>这是要干什么！</p>
+<p>难道是生气了？</p>
+<p>那我该不该通过？</p>
+<p>通过了会不会就失去了爱情？</p>
+<p>「你好烦啊，当然是通过啦。」</p>
+<p>佩佩扒拉开我的脑袋，动动手指，帮我通过了申请。</p>
+<p>只过两秒，林锦就发了消息过来。</p>
+<p>「学姐你好，可以约你见一面吗？」</p>
+<p>我深呼吸：「见面是……」</p>
+<p>林锦：「有件事需要当面找你说一下，如果麻烦的话……」</p>
+<p>我：「不麻烦！什么时间？什么地点！」</p>
+<p>过了足足一分钟，就在我快要动手薅头发的时候，林锦才再次回复。</p>
+<p>「那就后天吧，周六。我请学姐吃饭。」</p>
+<p>「好。」</p>
+<p>迅速答应后，我摸着屏幕，咧嘴笑。</p>
+<p>笑着笑着，顺手就礼貌性回了个「晚安」过去。</p>
+<p>佩佩看我像看智障：「现在才…… 七点半。」</p>
+<p>「……」</p>
+<p>我又想撤回了。</p>
+<p>但最终没有撤回成功。</p>
+<p>不是时间超过了两分钟。</p>
+<p>而是林锦给我发来了两秒的语音。</p>
+<p>「晚安。」</p>
+<p>我整整失眠了两个晚上。</p>
+<p>周六这天傍晚出门前，我用了厚厚的遮瑕，这才勉强盖住了黑眼圈。</p>
+<p>和林锦约好在校门口见，我提前了半个小时从宿舍出发。</p>
+<p>一路上我长发飞扬，连衣裙裹着小蛮腰，脚踩细高跟，自我感觉良好地蹦跶过去。</p>
+<p>林锦已经在等我。</p>
+<p>他穿着简约素净的连帽衬衫，配一条运动长裤，手上正拿着两杯杨枝甘露，见了我就对我露出了清爽的笑容。</p>
+<p>我矜持地走到他身边，尽量动作自然地接过饮料。</p>
+<p>林锦笑笑：「学姐好，我叫林锦。」</p>
+<p>「咳…… 我知道。」</p>
+<p>「之前说了请学姐吃饭，学姐吃海鲜吗？」</p>
+<p>我点点头。</p>
+<p>他笑着带路，我们并肩而行。</p>
+<p>很快到了餐厅。</p>
+<p>店面不大，客人却不少。</p>
+<p>林锦是熟客，和老板娘打个招呼就领着我落了座，期间帮着浸洗餐具，还主动点菜。</p>
+<p>他问我不吃什么的时候，我直接回话：「豆角、韭菜、青椒。」</p>
+<p>我感觉到林锦手上一顿，接着挑眉抬头看我一眼。</p>
+<p>「怎、怎么了……」我说错什么了吗？</p>
+<p>他笑盈盈地说：「没事，我记下了。」</p>
+<p>我脸一红，低下头，过了一会儿又悄摸地去看林锦，得逞了又偷偷移开视线。</p>
+<p>林锦嘴角弯起的弧度越来越深。</p>
+<p>「学姐……」</p>
+<p>「啊，你也可以叫我名……」</p>
+<p>我话还没说完，就看见了一个不速之客。</p>
+<p>顾茗。</p>
+<p>她和几个朋友进了店，看到我们时有一瞬的吃惊，接着大方地走过来和我们打招呼。</p>
+<p>「真巧啊。」</p>
+<p>我脑中条件反射地闪过几帧图书馆的画面。</p>
+<p>突然感到胸闷。</p>
+<p>「你怎么在这儿？」林锦自然地回应。</p>
+<p>「吃饭啊，打扰到你们了？」顾茗伸手拍拍林锦的肩，眼神示意，表情微妙。</p>
+<p>哼…… 那是百分百的打扰了。</p>
+<p>林锦摇摇头，站起身来摸摸顾茗的头：「吃你的去。」</p>
+<p>乖。</p>
+<p>我在心里默默替他补了一个字。</p>
+<p>我用怨念的眼神扫过顾茗这个电灯泡。</p>
+<p>人家却俏皮地拍开林锦的手，还对我眨眨眼：「你多吃点，学弟有钱。」</p>
+<p>说完，她就走开了。</p>
+<p>转身的霎那，我闻到了她发梢上缱绻的香柔。</p>
+<p>跟林锦身上的味道很像，清爽柠檬味。</p>
+<p>而我是柠檬精。</p>
+<p>一顿饭的时间，我发现林锦朝顾茗那里看了好几次。</p>
+<p>我安静地吃虾饼、喝鱼汤，再啃个蟹腿。</p>
+<p>一边吃一边忍不住想——</p>
+<p>明明和我同级，顾茗却哪里都比我优秀。</p>
+<p>我忍不住叹气，呛了一口，咳得面红耳赤。</p>
+<p>林锦赶紧给我倒了杯水，挨到我身边，帮我顺气：「荔荔学姐慢慢吃，我有钱，我不跑。」</p>
+<p>他叫我什么？</p>
+<p>我瞪大了眼睛看着他。</p>
+<p>林锦停了动作，重新坐到我对面，一手托腮，目光灼灼，「刚才，不是你让我叫你名字的吗？荔荔？」</p>
+<p>他居然听到了……</p>
+<p>我连忙掩饰般地低头喝水。</p>
+<p>吃完饭，林锦结了账，我说下次再请回他。</p>
+<p>这一来二去，不就又能见面了嘛。</p>
+<p>谁知，林锦却说不用客气。</p>
+<p>「本来就是有求于你。」</p>
+<p>「啊？」</p>
+<p>「学生会招新，希望荔荔学姐能帮我们设计一幅宣传海报，就像我在群里说的，学姐你优秀能干。」他对我眨了眨眼睛，开玩笑般，「我觊觎你的才能很久了。」</p>
+<p>「啊…… 这就是你约我见面的原因？」</p>
+<p>「是啊。」</p>
+<p>走回学校的路上，我停了脚步，林锦回头不解地看我。</p>
+<p>我明白了。</p>
+<p>只是这样而已。</p>
+<p>我强颜欢笑地赶了几步。</p>
+<p>只是这次微微错开了他的肩，走在他的侧后方。</p>
+<p>「承蒙学弟看得起，这事包在学姐身上！」我大剌剌地说着。</p>
+<p>「谢谢你，荔荔…… 学姐。」林锦放慢脚步，侧过脸朝我道谢。</p>
+<p>我装作轻松地摆摆手。</p>
+<p>我以为这就是结果了。</p>
+<p>但我没想到，隔天表白墙又有了更新。</p>
+<p>仍旧是一张照片，拍的是海鲜大排档的内部环境。</p>
+<p>照片底下也仍旧是一句话：「海鲜好吃，人好看。杨枝甘露不错。」</p>
+<p>就是我昨天和林锦去过的那家！</p>
+<p>杨枝甘露…… 这不是昨天林锦买给我喝的吗？</p>
+<p>难道……</p>
+<p>上次那张照片里，被表白的真的是我？</p>
+<p>可是…… 也许昨天顾茗也刚好喝杨枝甘露了呢？</p>
+<p>佩佩停下在各个群里吃瓜的行为，啧啧几声：「你是不是喜欢林锦喜欢傻了？怎么这么不自信？我告诉你，顾茗从来不喝这些，她是红茶爱好者！」</p>
+<p>「那…… 就是我了？」我还是不相信，「我不爱青椒啊！」</p>
+<p>佩佩拿起枕头打回来：「你还在纠结这个？难道不可以不小心搞错吗！欸，你要不回应下这位爱慕者，约出来见见？要是长得不赖，干脆放弃林锦得了！」</p>
+<p>其实她怂恿过我好几次去主动表白，表白墙也是一个看似鸡肋其实促成不少姻缘的选择。</p>
+<p>只是我没有勇气，才一拖再拖。</p>
+<p>我给自己找退路：「忙死了，没时间风流。过几天竞选那事就要进行校内公投了，我得好好准备才艺 Po 到校娱论坛文娱版，才能多得些票。我不是说了嘛，只要选上了，我就立刻、马上去表白！」</p>
+<p>这个理由，连我自己都很难被说服。</p>
+<p>佩佩翻了个大白眼：「是啊大忙人，你还得帮某人搞海报呢，慢慢头秃吧。我去买杨枝甘露了。」</p>
+<p>我挥挥手，让她赶紧滚。</p>
+<p>这时，墙突然私信了我。</p>
+<p>得意洋洋地问我看到后续开不开心，我冷笑，没回他。</p>
+<p>过了一会儿，他又问我想不想知道跟我表白的人是谁，他说他掌握了的一手资料，约我面谈，为了满足我的好奇心，我矜持地同意了。</p>
+<p>我倒要看看他究竟想整什么幺蛾子！</p>
+<p>第二天，图书馆二楼。</p>
+<p>我趴在栏杆上往下瞧，说好在西楼梯见面，可现在距离约好的时间已经过去半个小时了，他居然放我鸽子！</p>
+<p>我正生着气，连身后有人走近都没有发现。</p>
+<p>直到一只手拍上了我的肩。</p>
+<p>嘿，你还知道赶过来！</p>
+<p>我用劲把那只手按住，扳着他的手腕一扭，转身就想把人给撂倒。</p>
+<p>「林锦？？？」</p>
+<p>一张忍痛的帅脸贴到了我眼前。</p>
+<p>我赶紧松了力，急忙中手往后甩撞上了栏杆，痛得我往前一个踉跄，扑倒了林锦。</p>
+<p>哇呜。</p>
+<p>没想到林锦是穿衣显瘦、摸胸管够的类型。</p>
+<p>我艰难地移开扒在他胸膛上的手，麻溜起身。</p>
+<p>没想到速度太快，崴了脚。</p>
+<p>救命！</p>
+<p>「荔荔学姐，还好吗？」林锦扶住我，见我苦着一张脸想要假装无事，没忍住笑了。</p>
+<p>「笑什么…… 有那么好笑吗？」</p>
+<p>「我没有嘲笑你的意思，嗯…… 我是觉得有点可爱。」</p>
+<p>我的脸瞬间爆红，僵着身体不敢动弹，怕接下来每一个动作都可能暴露自己的心怀不轨。</p>
+<p>「我背你。」</p>
+<p>林锦蹲了下来。</p>
+<p>「这……」</p>
+<p>「上来。」。</p>
+<p>我咬咬嘴唇。</p>
+<p>好吧。</p>
+<p>「那我重的话，就放我下来哦。」</p>
+<p>我紧张地攀上去，心脏都被甜蜜灌满，完全忘记了来这里的初衷。</p>
+<p>在林锦面前，那都不重要了。</p>
+<p>「学姐，我们得去趟校医办。」</p>
+<p>「啊，不用，我的脚热敷下就好。」</p>
+<p>「其实是我的手腕有点痛，宿舍没有跌打药，我需要去拿一些。」</p>
+<p>学过防身术的我力气太大，真是对不起呢。</p>
+<p>到了校医办，趁林锦不注意，我终于摸出了从刚刚就一直震动不停的手机。</p>
+<p>「临时有事过不去！」</p>
+<p>「你可别生气！」</p>
+<p>「哎呀，你为啥不回我啊？」</p>
+<p>「真的这么小气吗？」</p>
+<p>罗里吧嗦的。</p>
+<p>我现在可没工夫搭理它。</p>
+<p>「手抬一下。」</p>
+<p>林锦向值班的老师拿了点药酒，折返回来后打算帮我检查手肘。</p>
+<p>我听话地照做。</p>
+<p>他轻笑一声，我顿时犯了别扭：「你又笑什么？」</p>
+<p>「就是觉得学姐你反差萌啊，刚刚明明防范意识挺强，现在却很听话。」</p>
+<p>我默默转过脸去，问他，「你怎么会到那里去？」</p>
+<p>「去图书馆还能干什么？」林锦检查完我的手，站直了身子，直视我的眼睛，继续说，「去学习啊，难道还能去谈恋爱？」</p>
+<p>我呆了呆，又听他说：「要谈也没对象啊。」</p>
+<p>「胡说！」</p>
+<p>冲动下脱口而出的话，说完我就尬住了，笨嘴拙舌地解释，「不是有顾茗么…… 你们看起来很熟，一定关系不错吧。」</p>
+<p>林锦点头承认：「是啊，关系很好，好到…… 有时也挺烦她的。」</p>
+<p>我不想说话了，安静了下来，晃着腿，让沉默蔓延开来。</p>
+<p>「学姐的手没有问题了，脚的话待会回去记得热敷。」</p>
+<p>「哦，知道了。」</p>
+<p>「那你能不能帮我擦点药。有点痛。」</p>
+<p>我就是太容易心软了！</p>
+<p>见他主动伸出手，又递出药油，我当然只能助人为乐。</p>
+<p>他的手腕真细，皮肤真白。</p>
+<p>我一边揉捏一边感慨，不经意间手就越了界，差点摸到掌心。</p>
+<p>他笑盈盈地看了我一眼。</p>
+<p>「好了。」</p>
+<p>我赶紧收回手，假装正经地要他活动活动手腕。</p>
+<p>「应该暂时还好不了。」林锦微微扭动手，皱了眉。</p>
+<p>「啊？」这么严重？</p>
+<p>我急了：「要不去医……」</p>
+<p>「要不，学姐给点甜头？可能就不疼了。」</p>
+<p>我一呆，脑中顿时浮想联翩，局促地问：「什么甜头？」</p>
+<p>「请我喝杯杨枝甘露吧。」</p>
+<p>就这？</p>
+<p>我在心里咬牙切齿，勉强点头：「好…… 啊。」</p>
+<p>「你看起来有点失望？」林锦挑眉。</p>
+<p>「谁失望了！我只是觉得可以换换口味！」</p>
+<p>「其实甜头也可以换成别的。」林锦沉吟片刻，抬起头看我，眼里盛满明晃晃的笑意。</p>
+<p>我咽咽口水：「换成什么？」</p>
+<p>「甜甜的恋爱。怎么样？」</p>
+<p>顾不上脚痛，我逃回了宿舍。</p>
+<p>接着闷头盖被，与世隔绝。</p>
+<p>直到三天后，佩佩狂怒地踹开大门把我拉起来。</p>
+<p>「你室友说你离死不远了，让我来给你收尸！」</p>
+<p>「哎……」</p>
+<p>「信不信我现在虐尸给你看？」</p>
+<p>「…… 我跟你说，我摊上大事了。」</p>
+<p>我把所有细节讲给佩佩听，得到了她的中指还有「无可救药」的表情凌虐。</p>
+<p>「江荔荔，要不你直接去尼姑庵吧。」</p>
+<p>「哼唧。」</p>
+<p>「你不主动就算了，这回人家主动了，你却退缩了！怎么？你还想选个良辰吉时再谈恋爱吗？那我能择日不如撞日，今天就把你埋了吗！」佩佩气绝，捶胸顿足。</p>
+<p>「我这不是…… 觉得这事太不真实了吗？我怀疑他是逗着我玩，也许是和别人打赌要攻略我呢？或者是看中我的才能想要霸占我的技术呢！」</p>
+<p>「……」</p>
+<p>我犹豫了老半天，憋出一句：「他真的喜欢我？」</p>
+<p>这次换佩佩叹气了，她伸手想安抚地揉我的脑袋，迟疑停住，最后收回了手：「你洗洗头吧。」</p>
+<p>「……」</p>
+<p>「咳，其实我是来提醒你，今天下午你就需要上传竞选内容到文娱版了，人家顾茗可早就有动作了。」</p>
+<p>「……」</p>
+<p>法克！</p>
+<p>我把这事给彻底忘记了。</p>
+<p>「还有一件事，你答应人家的招新海报，林锦说联系不上你，特意让我过来问问，明天可以去交一下初稿吗？」</p>
+<p>说着，佩佩把手机扔给我，把林锦和她的对话给我看。</p>
+<p>我看了。</p>
+<p>认认真真，一字不漏。</p>
+<p>一来一回的对话里都是他关心我的言辞。</p>
+<p>小心翼翼，温柔得体。</p>
+<p>是他一贯温和待人的态度。</p>
+<p>而我怎么会把他想的那么不堪？</p>
+<p>什么逗我…… 什么打赌……</p>
+<p>看着看着，眼泪就流下来了。</p>
+<p>我说喜欢他，我说想要成为校花才配得上他。</p>
+<p>但是到头来，如果他其实也是喜欢我的，我为什么要逃避呢？</p>
+<p>我的不自信，是不是只会让自己难过，还伤害了他？</p>
+<p>我终于翻出枕下的手机开机了，无意外地接收到无数的信息。</p>
+<p>我往下翻。</p>
+<p>找到了林锦。</p>
+<p>「学姐，你还好吗？是我吓到你了吗？」</p>
+<p>「联系我好吗？我很担心你。」</p>
+<p>「对不起，我收回那天的话。」</p>
+<p>别收回啊！</p>
+<p>我刚想回应。</p>
+<p>表白墙的私信来了。</p>
+<p>「我是顾茗，我想和你聊聊。」</p>
+<p>什么情况？</p>
+<p>表白墙…… 居然是顾茗？</p>
+<p>「此帖为假，已联系管理员删帖，抱歉。」</p>
+<p>与此同时，表白墙删除了先前的内容，评论区炸开了锅，都是讨伐和谩骂。</p>
+<p>战火蔓延不休。</p>
+<p>我看了眼时间，赶紧退出下线，换了件衣服就赴约去了。</p>
+<p>如果墙真的是顾茗，她到底有什么目的？</p>
+<p>没想到，出了宿舍楼，迎面却撞上了来这里的林锦。</p>
+<p>我们两人同时一怔，虽然有许多话想说，碍于赶时间，我只能选择下次再和他表明心迹。</p>
+<p>见我打了招呼就要走，林锦蹙眉挡到了我面前。</p>
+<p>「别走，我们聊聊。」</p>
+<p>语气是很少见的低沉，看样子心情不好到了极点。</p>
+<p>这样的林锦，真是让人想要一把抱住。</p>
+<p>但是……</p>
+<p>「我有点事，回来我立刻联系你。还有初稿，佩佩和我说了，今晚我赶赶工，明天给你送过去。」</p>
+<p>「你为什么要竞选校花？」林锦突然问。</p>
+<p>「啊？我…… 这……」我不想现在表白啊！</p>
+<p>「是因为想要配得上喜欢的人吗？」</p>
+<p>「什…… 你怎么会知道？」</p>
+<p>「还真是。」</p>
+<p>林锦低垂眉眼，脸色沉闷，像在积蓄什么，又像想要发泄什么。</p>
+<p>最后他说：「为什么要喜欢江瑞封？你喜欢他什么？」</p>
+<p>啊？</p>
+<p>江瑞封是谁？？</p>
+<p>我也想知道，为什么在林锦眼中，我是喜欢他的！</p>
+<p>等等…… 难道……</p>
+<p>林锦说的是那个和他一起打篮球的队友，小江？</p>
+<p>这误会可就大了啊！</p>
+<p>他只是我为了打听林锦的情况而勾搭上的合作伙伴啊，虽然一个星期碰头一次请他喝杯饮料套情报，但我还真没记住他名字。</p>
+<p>而他愿意帮我，其实是因为他想追佩佩，我答应他事成之后给他们制造点机会。</p>
+<p>所以……</p>
+<p>「林锦，你听我说，事情不是你想的那样。」</p>
+<p>狗血言情档的台词出现了。</p>
+<p>而林锦不负众望，不愿意听我的解释，黯然道：「算了，那天学姐那么害怕地逃开，我就知道自己没戏。以后…… 我不会打扰你了。」</p>
+<p>等一下……</p>
+<p>不打扰了？</p>
+<p>要不要那么快放弃啊？！</p>
+<p>你就不能继续争取、继续追求，拿下我，让我死心塌地吗！</p>
+<p>以上是我的心理活动。</p>
+<p>而现实中，我看着转身越走越远的林锦，只能呆愣在原地，张不开嘴，也迈不动腿。</p>
+<p>爱情，它消失了。</p>
+<p>我的少女心，也破碎了。</p>
+<p>顾茗把我约在学校附近的甜品店里。</p>
+<p>我到的时候，她已经在吃一块慕斯蛋糕了。</p>
+<p>「别吃了，说正事。」我语气不算好。</p>
+<p>顾茗把最后一块吃完，不优雅地打了个嗝，和大家所熟知的形象全然不同。</p>
+<p>我皱了眉：「你怎么……」</p>
+<p>「我怎么了？难道还不能让我放松放松？天天维持高光时刻，不累吗？」</p>
+<p>「……」</p>
+<p>「说回正事。今天找你来，是想要和你道歉的。关于表白墙的事都是我一手策划的。」</p>
+<p>啊？</p>
+<p>我不明白：「为什么啊？」</p>
+<p>「还不是为了我的亲亲表弟。」</p>
+<p>「表弟？」</p>
+<p>「嗯，表弟。林锦。」</p>
+<p>顾茗说着这个名字，观察我的表情。</p>
+<p>「林锦是你的表弟？」</p>
+<p>我反应过来，一声惊呼。</p>
+<p>顾茗摊手：「是啊，只是一直以来没有挑破这层关系罢了，毕竟没必要。据我所知，我表弟喜欢你，挺、久、了。」</p>
+<p>「什么？！」</p>
+<p>接下来，顾茗说说停停，都是我不知道但每一句都能在我心里掀起巨浪的程度。</p>
+<p>我才知道，林锦作为大一新生刚到校那天，有几个学姐一起接待了他。</p>
+<p>我就是其中一个。</p>
+<p>那天，我是被佩佩拜托去的，因为欠了一顿饭，所以只能任劳任怨。</p>
+<p>学姐们如狼似虎，忙前忙后帮学弟搞定入学事项后，想要搞定学弟的</p>
+<p>林锦有轻微的社恐，那天坐车来的还有点晕车，不善拒绝的结果就是差点被挤到角落。</p>
+<p>在即将晕眩呕吐的时候，是我解救了他，把一众痴女赶走。</p>
+<p>按林锦当时看来，我就是那个白马天女，美丽又英勇。</p>
+<p>他本来想要和我要</p>
+<p>是佩佩把我叫走的，她在打听另一个学弟的情况。</p>
+<p>我那时急急忙忙的，一点没把这个将鸭舌帽戴的很低的学弟看在眼里。</p>
+<p>「嗯嗯，爱吃蔬菜，青椒、西红柿、苦瓜，都是营养，你也多吃些……」</p>
+<p>看来，青椒这事就是那时他听去的，还记了这么多年。</p>
+<p>殊不知，那是别人的爱好。</p>
+<p>「之后，他努力改变自己不善交际的性格，进学生会也好，打篮球也好，不断逼自己成长，而且一有机会就偷偷看你，跟我夸你，但是无论如何就是不敢踏出表白的那一步。</p>
+<p>直到几个月前他发现你和江瑞封勾肩搭背，他套江瑞封话的时候又只是看他暗搓搓地傻乐，以为他跟你怎么样了，就心情低落地找我倾诉，我看不过去他这别扭的态度，才打算私底下帮他一把。」</p>
+<p>顾茗说表白墙就是她想到的办法，刚好这个月她作为轮值人员，可以在后台操作管理。</p>
+<p>其实林锦一开始知道表白墙这事还很生气，但是苦于自家表姐一片好心，也不好怨责太多。</p>
+<p>因为私心上，他也是希望能引起我注意的。</p>
+<p>「江荔荔，他是真的很喜欢你啊，你呢？」</p>
+<p>我捏捏自己的脸，又掐掐自己的腿，明白这不是一个梦。</p>
+<p>「我当然…… 超级无敌喜欢他啊！」</p>
+<p>已经热泪盈眶了好吗。</p>
+<p>这晚我连夜赶出了招新海报的电子版。</p>
+<p>隔天，我出现在学生会的会议室外，还没敲响，门就被里面的人打开了。</p>
+<p>我一眼就看到林锦趴在桌子上，手腕上还缠着绷带。</p>
+<p>「这是怎么了？」</p>
+<p>他被我的声音吵醒，抬头露出迷茫的神情，见到是我，立刻就想要离开，「我们应该没什么需要说的了。」</p>
+<p>胡说！你明明还喜欢我。</p>
+<p>我挡住他，执拗地要说法：「手怎么了？不说不让走。」</p>
+<p>会议室里的人面面相觑一阵，十分有眼力见地都走了，还帮我们带上了门。</p>
+<p>偌大的室内，只剩下我和林锦。</p>
+<p>林锦叹口气「昨晚打篮球的时候挫伤了。」</p>
+<p>我皱眉：「手腕还需要擦药呢，你就去打篮球？」</p>
+<p>「不打篮球难道……」林锦顿了一下，不说了。</p>
+<p>「难道什么？」</p>
+<p>「……」</p>
+<p>「难道什么！」</p>
+<p>「难道要一直想着你，然后自怨自艾吗！学姐你怎么突然这么咄咄逼人，之前的乖巧都是装的吗！」</p>
+<p>说完，他又后悔起来，微微转了身，不再看我。</p>
+<p>「当然是装的！在喜欢的人面前不就是得装吗！谁喜欢女孩子跋扈泼辣啊！」</p>
+<p>这话一出，我的脸爆红。</p>
+<p>我看了看林锦的侧脸，发现他的耳朵也绯红一片。</p>
+<p>这是…… 明白我的心意了吧？</p>
+<p>我扯扯他的袖子晃了晃，趁热打铁：「1. 你误会我和江瑞封了，我和他顶多算互帮互助的普通战友。2. 我和顾茗见面了，知道你…… 你喜欢我，我很开心。3. 我也喜欢你，很喜欢…… 特别喜欢！4. 你要不要跟我谈个甜甜的恋爱？5.……」</p>
+<p>后面的话全部淹没。</p>
+<p>林锦咬牙切齿地转过身来，一把揽住我的腰，狠狠地亲了下来。</p>
+<p>毫无章法，却甜腻散发。</p>
+<p>我轻轻推开他，拉开一些距离。</p>
+<p>林锦轻笑「学姐，你真的没有情调。」</p>
+<p>「哼，我话还没有说完呢，安分点。」</p>
+<p>「你说。」</p>
+<p>「5. 时间紧迫，你现在要看看招新海报吗？」</p>
+<p>「…… 要。」</p>
+<p>「江荔荔！你到底去哪里了！打你手机也不接！宿舍也找不到人！」</p>
+<p>佩佩揪住我不放，看我露出傻笑，更加懵逼了：「你知道你忘记什么事了吗？」</p>
+<p>「啊？什么事啊，嘿嘿嘿……」我继续乐，躺倒在床上。</p>
+<p>「你要竞选校花啊！你要上传的东西呢！已经超过时间了，你赶紧……」</p>
+<p>「那个啊，我递交了退出申请，无所谓了。」我摆摆手，一把坐起来，脸颊红扑扑地说，「因为我和林锦在一起了，嘿嘿。」</p>
+<p>「什么？？？」</p>
+<p>我满足了佩佩的好奇心，省略了缠绵的吻，把互通信心意的过程讲给她听。</p>
+<p>本以为能得到祝福，却看见佩佩皱着眉，一脸便秘的表情。</p>
+<p>「你不为我开心吗？！」</p>
+<p>「不是，我总觉得，这也太顺利了吧。还有那个顾茗……」</p>
+<p>话没说完，佩佩的手机响了。</p>
+<p>她看了一眼，瞠目结舌：「校花竞选结果出来了……」</p>
+<p>「？」</p>
+<p>「毫无悬念，顾茗。」</p>
+<p>「哦…… 很好啊，连任。」</p>
+<p>「不是，我怎么觉得这里面有什么阴谋啊……」</p>
+<p>我不想让佩佩煞风景，用请她吃一顿堵住了她的嘴。</p>
+<p>没想到，阴谋还真的存在。</p>
+<p>几天后，我去学生会找林锦，会议室里没人，我就溜达到了里间的储存室。</p>
+<p>后来有人来了，我刚想出去，就听到了以下对话。</p>
+<p>「你不打算和荔荔说实话？」</p>
+<p>是林锦的声音，真好听。</p>
+<p>「咳，也不是什么大事啊，不用说了吧……」</p>
+<p>这是顾茗的声音。</p>
+<p>「你这学期反差太大，撕裂自己一直以来的人设给大家看，然后还竞选校花，其实路人缘已经不及以前了，按理来说，校花是荔荔的。」林锦严肃地陈述事实。</p>
+<p>「嗯哼，所以？」</p>
+<p>「所以这就是你要帮我的原因吧，你早就知道她喜欢我，却不和我说，也知道她竞选校花是因为我，却让我故意误会她喜欢江瑞封，让我生气，刺激我们的误会，最后又找她摊牌说你表白墙作假，让误会消除，加快了我们和解谈恋爱的速度，荔荔和我确定关系的那天就是竞选的最后一天，你抓紧时机就是要赌她忘记竞选的事，最后你才能得利。」</p>
+<p>顾茗勾唇一笑，抱臂抬起下巴，「表弟啊，你说你这么聪明，怎么表白就磨磨唧唧的，不管怎么说，我都是帮了你，你要是打算过河拆桥，那我也不会客气。」</p>
+<p>林锦难得犹豫，最后退让：「行吧，知道你喜欢他…… 这次就扯平了，以后不要再随便利用人了。」</p>
+<p>顾茗翻了个白眼，踩着高跟鞋离开了。</p>
+<p>林锦没有走。</p>
+<p>而我正在消化着听来的事，直到林锦也走进储存室里。</p>
+<p>他早就知道我在这里了。</p>
+<p>「你…… 你是故意的？」</p>
+<p>「我可不想你被蒙在鼓里，你优秀能干这件事，值得大家认可喜欢，也值得被你自己知道，不是吗？」</p>
+<p>我鼻头一酸，扑进他怀里。</p>
+<p>手机在震动。</p>
+<p>我抱着林锦，摸出手机看了一眼。</p>
+<p>是顾茗的信息。</p>
+<p>「有空吃个饭啊。」</p>
+<p>我腾不出手回复。</p>
+<p>隔了一会儿，又有信息发来。</p>
+<p>「我还有事和你说，看了也许你会不开心，你自己判断……」</p>
+<p>未解锁的手机悬浮着这句未完待续的话头。</p>
+<p>拥着我的林锦突然把头往下凑了凑，温柔地笑了，「看了会不开心？那还有必要看吗？」</p>
+<p>我沉默，又听他说：「学姐，你又要破坏气氛啊？」</p>
+<p>真是记仇。</p>
+<p>我摇摇头，在他的脸颊上用力亲了一口。</p>
+<p>接着手上划动，删除信息。</p>
+<p>「我觉得我们现在应该……1. 去约会。2. 去约会。3. 去约会。」</p>
+<p>我将头埋进林锦的颈窝，闻他身上清爽的味道。</p>
+<p>林锦摸摸我的头，笑着说「好乖」。</p>
+<p>在我看不见的地方，他摸出手机编辑信息。</p>
+<p>「别说多余的话，我帮你追江瑞封。」</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-3%E6%83%85%E6%8A%95%E9%9A%BE%E6%84%8F%E5%90%88/" title="3情投难意合">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">3情投难意合</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/24-40%E5%A4%AA%E5%90%8E%E6%94%BB%E7%95%A5/" title="40太后攻略">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">40太后攻略</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

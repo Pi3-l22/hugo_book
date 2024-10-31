@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和亲 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/4/3-%E5%92%8C%E4%BA%B2/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/4/3-%E5%92%8C%E4%BA%B2/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="和亲">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26197.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26197.jpg">
+  <meta name="twitter:title" content="和亲">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="和亲">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="7210">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26197.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">和亲</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>15分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%92%8c%e4%ba%b2&amp;url=https://mohai.us.kg/posts/2024/4/3-%E5%92%8C%E4%BA%B2/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/4/3-%E5%92%8C%E4%BA%B2/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%92%8c%e4%ba%b2%20https://mohai.us.kg/posts/2024/4/3-%E5%92%8C%E4%BA%B2/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26197.jpg" alt="和亲" />
+      
+
+      <p>和亲</p>
+<p>这是唐代和亲史中最为神奇的营救——和亲公主在归国的路上被人挟持。将领石雄竟主动把城墙挖了十几个大洞，用牛羊做先锋，成功夺走了公主。</p>
+<p>这位被夺的公主，就是唐宪宗李纯的女儿太和公主。她不幸的半生，就是从嫁到回纥开始的。</p>
+<p>20 年前，她最先出嫁给了新即位的崇德可汗，被册封为可敦（相当于皇后）。4 年后，崇德死，弟弟曷萨特勒即位，她就又成了曷萨特勒的妻子。又过了 7 年，曷萨特勒被部下杀害，侄子胡特勒即位，她就只好改嫁胡特勒。又 4 年，胡特勒被国相掘罗勿杀死，奉盍馺特勒为可汗，她就又成了盍馺特勒的可敦。</p>
+<p>图：太和公主在回纥改嫁图</p>
+<p>…</p>
+<p>图：太和公主在回纥改嫁图</p>
+<p>内部乱了套，外部还有人乘虚而入。</p>
+<p>话说在回纥的西北，有个叫黠嘎斯的部族，唐朝以前从来没跟中原王朝有过接触——距离实在是太远了。</p>
+<p>据记载，这个部落的人长得非常魁梧，「赤发、析面、绿瞳」，与汉人差异极大，以黑发为不祥。但是其中眼睛是黑色的族人，却是另一番景象——他们坚信自己是李陵的后代。</p>
+<p>李陵，西汉名将李广的孙子，出击匈奴被俘，在匈奴生活了 20 年，娶了单于的女儿。也许，黠嘎斯人中的确有相当一部分是李陵的后代，并以此为荣。</p>
+<p>到唐朝中期，黠嘎斯日渐强大，与回纥掐了 20 多年。赶上老天不仁，使回纥遭遇了持续多年的白灾和干旱，内部又乱了套，有人为复仇当了黠嘎斯的向导。黠嘎斯率大军南下，顺利攻陷了回纥牙帐，致使回纥汗国灭亡。</p>
+<p>顺带地，俘虏了一群穿着典雅的人。一问之下，才知道竟是唐人。</p>
+<p>要知道，李陵姓李，唐朝国君也姓李啊！</p>
+<p>这个伟大的发现让他们非常高兴，原来咱是本家！</p>
+<p>在一番亲切的会晤过后，黠嘎斯派遣达干等 10 多人护送公主回长安。</p>
+<p>谁知半路杀出个乌介，把达干等人统统杀害，将公主抢跑了。</p>
+<p>乌介也不算外人，是胡特勒的叔叔。回纥灭国时他率众南逃，偶遇了护送公主的队伍，如获至宝，杀人、抢劫，一气呵成，抢完人以后，又跑到不知道哪里躲着了。</p>
+<p>从此，他常借公主要挟唐朝。</p>
+<p>回纥的饥荒还在持续，乌介就向唐武宗要粮，武宗不得已给了 3 万石。后来他又裹挟公主，越过戈壁，到重镇天德，写信给武宗，说饿，没地方住，得送粮，送牛羊，还得把天德城也送给他，好让他和公主同居。</p>
+<p>像这样无耻肮脏的要求，武宗当然不会答应。</p>
+<p>由于无耻的要求没有被满足，乌介便南下云州、朔方抢掠，并预备打下振武城，这个地方十分紧要，就在呼和浩特南，历来是抵御胡人南下的重要关口。</p>
+<p>因为姑姑在敌营，武宗不敢轻举妄动。</p>
+<p>图：太和公主家庭关系图。唐穆宗有多个儿子先后都当了皇帝，都喊太和公主为姑姑</p>
+<p>…</p>
+<p>图：太和公主家庭关系图。唐穆宗有多个儿子先后都当了皇帝，都喊太和公主为姑姑</p>
+<p>于是，他向李德裕问计。</p>
+<p>李德裕，唐代杰出的政治家、文学家、战略家。用两个字形容他，那就是「天才」。如果用四个字，那就是「万古良相」。大唐经历安史之乱后，居然还能复兴，靠的就是这样优秀的人物！</p>
+<p>对于到底怎么弄死乌介这个问题，李德裕的心中是有答案的，只是没有合适的时机。现在，机会来了。</p>
+<p>他首先安慰武宗说，回纥人打仗的确厉害，但是他们也是怕死的啊。骑马冲锋是他们的强项，但是如果让他们冲不起来呢？乌介这厮之所以这么肆无忌惮，完全是因为手里头有公主啊！如果我们出奇谋把公主抢回来，那么他还有什么可狂的呢？</p>
+<p>万人丛中取人首级，是有过先例的。可是，从万人丛中把人抢回来，还要毫发无损，就比前者更有难度。太和无论如何是不能出事的，这么做是不是太冒险？</p>
+<p>但是，出于对李德裕的信任，武宗把「出奇谋」的任务交给了他。</p>
+<p>李德裕又把任务交给了刘沔。</p>
+<p>刘沔又与副将石雄商量。</p>
+<p>这两个人，可以说是贤能的唐朝官员发掘出来的天纵奇才！刘沔原先是个孤儿，后因战功累迁至大将军，此时已是河东节度使、督镇河朔。而石雄家境也十分贫寒，甚至没人知道他的由来，只知道年轻时就勇猛善战，气盖三军，与士卒同甘苦，为人沉稳智慧，又仗义疏财，可惜一度被小心眼的上司针对。后经唐文宗调整，把他调到了刘沔麾下，终于有了大展拳脚的机会。</p>
+<p>两位不世出的奇才，终将因为接下来的事永垂史册！</p>
+<p>石雄说，这件事义不容辞，就由我来办吧。</p>
+<p>他从马邑（山西朔州）点拨了 3000 精锐，在夜里潜入振武城。第二天，他站在城楼上观察，发现振武城外，乌介的十三部兵马果然十分强盛。在密密麻麻的帐篷中间，有几十辆毡车，旁边的人都穿着红红绿绿的衣服，不像回纥装扮。他怀疑那就是公主的仆从。然而事关重大，为确保万无一失，就派间谍刺探。</p>
+<p>并不知道间谍是如何混入回纥军中的，也不知道他如何就取得了回纥人的信任。总之，回纥人一本正经地告诉他，那是唐朝公主的牙帐，绝对不会错的，如果有假就被天打雷劈。</p>
+<p>间谍回城，把情况汇报给了石雄。果然不出预料，得知了公主的位置，就可以安排他的奇谋了。</p>
+<p>石雄的思路的确不同常人。首先要干的，居然是自毁长城。夜里，莫名其妙地，唐兵把城墙挖了十几个大洞（振武城是个土城），这些洞足够 8 匹马穿行而过，一到白天，肯定会把城池完全暴露在敌人的眼前。更奇怪的是，石将军还让另外一部分人召集百姓开会，请大家把所有的商行、私人、公家的牛、羊、骡、马集中起来。还搞到了大量乐器，凡是带响的，都被拿来当了武器。</p>
+<p>几万头牛羊慢吞吞地到离它们最近的门洞集合，静待明天去外面吃草。每个士兵都骑着马，身上挂着乐器，其中以打击乐为主（锣鼓），知道的说是打仗，不知道的还以为是去当吹鼓手呢。</p>
+<p>天微微亮，振武城四围突然燃起了熊熊的火炬。火炬燃起的那一刻，城墙上竖起了许多猎猎作响的大旗。几乎与此同时，城下迸发出了震天动地锣鼓的响动以及气势恢宏的吼叫。以敲击乐为主，配合着人马的喊叫，3000 人奏响了杂乱而又激进的乐曲。数以万计身材各异的牲口，被铁骑的呼喊和震耳欲聋的锣鼓声驱赶，惊恐万分地朝乌介的牙帐冲去了。它们越跑越快，任谁都拦不住，管不了——古人管这种无法控制的情况叫作「惊奔」。</p>
+<p>扑面而来惊天动地的响动，让还在睡觉的乌介慌了神。他起身出帐，愈发不明白这是怎么了，一时间「惶骇莫测」。向四周张望，发现原来是牙帐被冲了。而振武城上满是火炬和大旗，惊奔的牛羊后面，是数不清的大军，至于到底有多少，谁他妈知道！</p>
+<p>他不知道为什么唐军连公主都不管不顾了，也不知道为何会突然有这么多兵马，不排除自己已经身陷重围。总之，万千牛羊朝着他的牙帐冲来，震天响的锣鼓与喊杀声，吓得身边的兵也乱了套，没头没脑的外围兵卒同这群畜生一起乱撞。有人大喊，说唐军已经开屠了，听到的人惊叫着逃跑，以至于自相践踏。</p>
+<p>恐慌瞬间感染了整个营帐。</p>
+<p>乌介是想找公主的。</p>
+<p>但是找不到。</p>
+<p>原因很简单，公主不想找他。</p>
+<p>于是，眼下的情况变成了乌介尴尬，他需要冒着丢命的风险翻过牛山羊海去找公主。可是，有这时间，咱逃命不好吗？</p>
+<p>想明白这些后，他下了一个非常正确的决定：跑！</p>
+<p>但最后还是被石雄追上了，不过他骑术不赖，玩命抵抗了一阵，身受重伤，靠着数百亲兵的团团维护，成功地脱逃了。</p>
+<p>但是，作为一名自封的可汗，他统御回纥诸部的梦想失败了。他亡国，亡军，亡了希望，等于没有了一切。回纥的最后一点气数都没了，乌介只好负伤而去，前往遥远的东北，投奔寒冷的室韦。过了几年，就被他的国相所杀，而余部则全部被室韦吞并。</p>
+<p>陷入恐慌的回纥士兵没有乌介那么幸运，他们几乎没有跑掉的。石雄率劲骑尾随不舍，生生把乌介的部队追到了杀胡山。几十里间，1 万颗人头落地， 5000 名兵丁被俘。车帐辎重，粮食钱财，牛羊牲口，数不胜数。</p>
+<p>散落在广阔无垠的大草原上的回纥兵马，又被刘沔的大军追捕，具体过程不详，总之，最后朝廷按照唐初李靖征讨颉利可汗的规格赏赐了他。</p>
+<p>太和公主脱险后，武宗非常生气。</p>
+<p>在武宗看来，太和公主是严重渎职的。</p>
+<p>和亲，是两国结盟的仪式，是两国相互影响、相互制约的手段，但和亲者本身也能改变两国彼此之间的态度，极大地影响对外方针。太和公主几乎完全没有做到这一点，因此，武宗对她的表现非常不满。</p>
+<p>和亲公主不是傀儡，不是被绑匪劫持的人质，也不是先秦时代的质子，是带着政治任务的「女性臣使」。虽在异国他乡，人生地不熟，但也要负责离间敌国、笼络和亲国、培养势力的，绝不只是「嫁人」「做傀儡」那么简单。</p>
+<p>草原民族的可敦（皇后）相较于汉唐的女官，可以参与更多政事，甚至可以一力做主，影响大局。西汉时的细君公主、解忧公主在乌孙，昭君及其子女在南匈奴，都在培养亲汉势力，积极维护和平稳定的局面。有时候为了掐灭反汉势力，她们甚至开展一系列的政变和刺杀活动，冒着极大的危险出色地完成任务。</p>
+<p>但是，由于回纥本身局势动荡，加之太和公主个人特质，使她没有做到这一点，反而把日子过得越来越差，处处遭人掣肘，最后还被人拿来当人质，使回纥讹走了那么多东西，还四下抢劫，这让武宗非常生气。</p>
+<p>在李德裕起草的一份诏书中，武宗对太和公主非但没有令回纥不犯边，反而让他们有恃无恐大肆侵略进行了责备。他说，姑姑作为回纥的可敦、大唐的公主，身边那么多的侍从，享受如此的优待，却只说无能为力。骑着高头大马向南望的时候，难道不曾畏惧高祖、太宗的威灵吗？</p>
+<p>不过，武宗也知道责备姑姑实在没有多少道理：她不是自己愿意去的，是朝廷非要选她去。</p>
+<p>太和公主就是唐对外政策的牺牲品之一，为的就是安抚回纥，震慑吐蕃。</p>
+<p>安史之乱后，唐朝国力大衰，命悬一线。原本亲如一家的吐蕃趁机攻入长安烧杀抢掠，作为藩属的回纥救援了唐朝。然而，回纥人在民间的名声并不怎么好。在救援过程中，他们没少抢劫杀戮，两京百姓怨声载道，十分仇视他们。与此同时，回纥与吐蕃也在不断抢夺河西走廊丝绸之路，两国形同水火。</p>
+<p>图：事件发生前三方势力示意图（大略），图底为天地图</p>
+<p>…</p>
+<p>图：事件发生前三方势力示意图（大略），图底为天地图</p>
+<p>就在这时，回纥再三邀约与唐联姻。对于回纥来说，一方面想通过通婚来获取巨额的财富，继续维持边境贸易的不平等交易；一方面是想达成同盟后，便能强强联手，打击吐蕃，而自身短时间内不会被打击。</p>
+<p>起初，宪宗出于对和亲之举的厌恶，没有答应回纥的请求。然而回纥并不死心，几次三番来人恳请（略有要挟的意味），几乎就要成功。等宪宗驾崩，穆宗即位后，他们更是派出了数百人之多的「求婚天团」，包括身披战甲的将领、穿着华丽的回纥公主，以及为数众多身着奇装异服的摩尼教信徒。</p>
+<p>穆宗答应了和亲。</p>
+<p>究其原因，是避免让回纥和吐蕃形成同盟。</p>
+<p>但是，这么做的苦头实在太大了，仅仅是要给的妆奁费，就要付出一个东南大县 25 年的财税（500 万贯），还要赔进去难以估量的人力物力，在边境维持不平等交易。而且还有耻辱铭记在心，昔日，回纥人让唐朝使者下跪磕头，使者不跪，被殴打了一整夜，血肉横飞，不幸离世的恨，至今唐人也不会忘记。他们如此欺凌唐朝的使者，更不要提是如何凌虐百姓的了。</p>
+<p>但是，打，还不到时候。</p>
+<p>差一点就灭国的教训就在眼前，对于一个喘息未定的大国来说，只有暂时的忍辱求生，才能达到最终的目的。</p>
+<p>和亲，就是这样一种操作。</p>
+<p>被安排着去胡地和亲的公主，就是那个「代价」。</p>
+<p>因为唐与回纥和亲，吐蕃着实有点慌。太和公主出嫁的路上，他们奋力阻挠，派兵骚扰。而回纥为了能迎娶公主，派出了 2 万人的部队，分两路阻击闹婚者。</p>
+<p>联姻成功后，回纥与唐朝倒是过了几年安生日子，但回纥本身遭遇了强盛过后极大的打击，天灾人祸不断。与此同时，早几年还气势汹汹的吐蕃，自从回纥闹灾后，日子也是江河日下，灾祸连连。吐蕃贵族倾轧不已，战乱连年。回纥与唐的联合，让他们忐忑不安。眼见抢婚不成，就主动派使者求见，要与唐朝重修旧好，重温 200 年前太宗与松赞干布开创的舅甥关系。</p>
+<p>但是，回纥灭亡后，吐蕃的日子也到头了，苦不堪言的农奴在多地爆发了声势浩大的起义，一波未平，一波又起，使偌大的吐蕃分崩离析。</p>
+<p>很短的时间内，唐朝一下就失去了两个庞大的对手。</p>
+<p>与之对应的，是唐朝内部较为稳定的局面。武宗即位后，仰仗宰相李德裕的参谋，澄清吏治，发展经济，削藩镇乱，拆毁佛寺，扩充税源，使得唐朝从一定程度上恢复了强盛的局面，史称「会昌中兴」。</p>
+<p>其后的唐宣宗李忱，更是明察善断，恭谨节俭。灭亡吐蕃，平定安南，夺回河湟地区，继续了中兴的大局。</p>
+<p>这其中，唐与回纥的联姻本身，起到了休养 20 年的目的，这 20 年，也正是太和公主最悲惨的 20 年。</p>
+<p>太和虽然是个聪慧的人，但于政治却是个十足的生手，根本没有接触过那么复杂的局面，改变大局的能力有限。可是，我们平心而论，无力改变大局，难道不是多数人的常态吗？难道对于太和，就要求全责备吗？</p>
+<p>于是，生怕太和伤心的武宗，又下了另一番安慰诏书。而从这封诏书中，我们似乎可以猜到太和在回纥究竟遭遇了什么。</p>
+<p>书中有云，「失位自伤，宁免《绿衣》之叹」。《绿衣》是《诗经》的篇章，说的是正妻被忽视，而小妾得了势，把正妻踩在脚下凌辱。太和远嫁回纥 20 年，从窈窕淑女变得人老珠黄，又怎能一直保持被众多美人环绕的可汗爱呢？所以太和公主在回纥时是备受冷落的，她不被诸位可汗重视，作为可敦（皇后），又使某位小妾僭越于她之上，针对她，排挤她，令她如坐针毡，无地自容。</p>
+<p>不过，一切都不重要了，人回来了就好。唐朝在政治和军事上已经胜利，就不会在乎公主过去的成败，不会对她进行过分的指责，反而要表彰她的奉献，补偿她的牺牲。</p>
+<p>会昌三年（843）春，长安城外，400 名神策军与连绵不绝的仪仗队，在长乐驿迎接太和公主回家。</p>
+<p>太和被神策军拥护着入城后，又有隆重的迎接典礼。百官集体朝拜，与太和一起到太庙祭拜，告慰宪宗、穆宗的在天之灵。</p>
+<p>因祸得福，返回故乡，让太和「欷歔流涕」。易装后，她到光顺门脱冠请罪，表示在回纥期间「和亲无状」。风云激荡 20 年，却什么都没办成，反倒成了天大的累赘。武宗原谅了她，册封她为定安长公主，群臣大贺。置长公主府，赐钱财、奴仆。</p>
+<p>太和公主的回归，受到了皇帝、百官、万民的热烈欢迎，人们没有不哀悯她的遭遇的。</p>
+<p>然而为难女人的，终究还是女人。</p>
+<p>太和虽然受到了举国的欢迎，但却遭到了阳安、宣城、义昌、义宁、贞源、贞宁、临贞等公主的抱团排斥。</p>
+<p>除了阳安长公主，其他的公主还都是太和的亲姐妹，都是宪宗皇帝的女儿。阳安作为长辈姑妈，对太和的排斥尤其强烈。回归典礼时，她拒不出门。后来皇帝命令来了，又连续两天躲在外面不回家，假装收不到命令，消极抵抗圣命，借以表达对太和的反感。</p>
+<p>史书上并没有说她们为什么这样做，也从没有人给出过解释。</p>
+<p>不过，依我看，应该还是与太和没有完成政治任务有关。另有一种可能，是她们从骨子里鄙夷太和的遭遇。</p>
+<p>首先就是依照胡俗，嫁完这个嫁那个，嫁完叔叔嫁侄子。</p>
+<p>草原上男多女少，妇女横生逆产的概率极高。这导致平民男性娶妻极其困难，家庭内部的策略是，他们会努力使兄长结婚，弟弟则无钱婚配。如果兄长死亡，那么就留下了鳏夫弟弟和一个寡嫂，于是两人重新组成家庭。</p>
+<p>自然还有财货的问题。婚姻财产的分配，历来是个让人头疼的问题。如果无人收继寡妇，寡妇就要把财产带走，嫁给外人，俩人一起消费，等于花着张家的钱，与老王一起快活。为应对这种情况，古今中外的人采取了不同策略，要么鼓励女人守寡，要么鼓励女人家庭内转嫁——草原民族采用的是后者。</p>
+<p>有人会说贵族妻妾成群犯不上这个，是的，但是他们不会因为资产富饶妻妾成群而改变固有的习俗，反而会有所加重。对中原的皇帝和官员们来说，他们的妻妾再多，也不会与任何外间的男子共享，其妻妾不得与外男接触，除非过了生育年龄（49 岁以上）。</p>
+<p>草原上的贵族也是如此，他们不会放任财产外流，多一个不多，少一个却舍不得。于是，儿子或侄子是可以继承父亲除生母以外的所有女人的，没有任何的心理负担。</p>
+<p>自打西汉以来，大多数和亲公主都会被要求改嫁给丈夫同族的近亲男性，这样要求的不光是可汗，还有本国的皇帝。由于太过耻辱，她们会上书恳请皇帝不要下发这样的「恩赐」。但是，为了「顾全大局」，她们的请求都会被驳回。她们也只好先嫁弟弟，再嫁侄子，然后再嫁给叔叔。</p>
+<p>和和亲公主的羞耻感一样，唐朝宗室的其他公主，对出嫁女这种「人尽可夫」的遭遇十分鄙夷。</p>
+<p>其次是太和可能弃亲生儿女于不顾了。</p>
+<p>作为可汗之妻，和亲女子一般都是有自己后代的。譬如解忧公主有 4 个儿子（元贵糜、万年、大乐、鸱靡），2 个女儿（弟史、素光）。昭君则有 1 个儿子（伊屠智牙师），2 个女儿（须卜居次、当于居次）。</p>
+<p>至于其他人的子女，史料往往不去记载，主要是因为没有参与重要事件。但是，自汉代以来，和亲的公主几乎都在异域老死，连探亲都不允许（昭君回乡是民间传说，不是史实，她出塞后再也没回过家）。但凡有生育能力的，就没有不生育的，太和也不会例外。唐朝时，被送回国的公主倒是有一个，正是没有生育过一儿半女的宁国公主。但是，太和显然不是没生育被送回来的，她是被抢回来的。</p>
+<p>我们可以猜想，这 7 位稳坐家中的公主听说这些事后的反应，无非是：「她还回来干什么？」面对一个只有肮脏的错误，没有办成任何事的出嫁女，她们的反感是存在的，付出的行动，就是不去主动欢迎，不出面唾弃就已经算很给面子了。</p>
+<p>武宗的让姐妹姑嫂出迎的敕令来了，也都假装没看见。</p>
+<p>7 个人一起没看见这项非常重要的通知，搁谁都不信啊！外面锣鼓喧天，鞭炮齐鸣，7 个府的上千口子人也都聋了吗？</p>
+<p>真没去。</p>
+<p>武宗听说后，大怒，狠狠罚了她们。还让史官认真把这件事记下来，写上每个不出迎的公主的名字，好让后世的人知道她们是如何的不懂道理的，但凡文字存在一天，这件事就没完。</p>
+<p>太和很感激武宗，时隔 20 年，她得以和太皇太后见面，母女相拥而泣，再也不必在外地受那样的奇耻大辱了。</p>
+<p>其实，自古以来，多数人，尤其是女人的幸福，都是被牺牲的。到了明代，朝廷没有和亲之举，主要也是不屑于用女子做局。与之对应的是公主出嫁水准的严重下降，不仅不用来和亲，也不让她们与任何略有官阶的家庭结婚，只能嫁给低阶官吏甚至平民。</p>
+<p>联姻当然不是为了爱情，是为了获取更多的利益。而国与国之间的和亲也是如此的，有时候的确会对国家社稷有利，甚至能换来几十年、上百年的蓬勃发展。但是，这也不是强迫一人牺牲，而使万人获益的正当理由。</p>
+<p>武宗和李德裕都是明白人，懂得这里边的道理。因此，尽管太和公主不被某些人认可，他们还是要以最隆重的国礼欢迎她的回归。</p>
+<p>而那些永远不可能回来的人，又怎能享受到这些呢？</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/1/23-%E5%92%8C%E5%89%8D%E5%8F%8B%E5%86%8D%E8%A7%81%E9%9D%A2%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89-%E7%9F%A5%E4%B9%8E/" title="和前友再见面是什么感觉？ - 知乎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">和前友再见面是什么感觉？ - 知乎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/3/8-%E5%92%8C%E7%8F%85%E7%9A%84%E8%B4%A2%E4%BA%A7%E5%A6%82%E6%AD%A4%E6%83%8A%E4%BA%BA%E4%B8%BA%E4%BB%80%E4%B9%88%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91%E4%B8%AD%E6%B8%85%E6%9C%9D%E7%AC%AC%E4%B8%80%E8%B4%AA%E6%B1%A1%E5%A4%A7%E6%A1%88%E5%8D%B4%E6%98%AF%E7%94%98%E8%82%83%E7%B1%B3%E6%A1%88-%E7%9F%A5%E4%B9%8E-072720a0e268/" title="和珅的财产如此惊人，为什么百度百科中清朝第一贪污大案却是甘肃米案？ - 知乎-072720a0e268">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">和珅的财产如此惊人，为什么百度百科中清朝第一贪污大案却是甘肃米案？ - 知乎-072720a0e268</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

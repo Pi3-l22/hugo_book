@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃离丧尸校园 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/7-%E9%80%83%E7%A6%BB%E4%B8%A7%E5%B0%B8%E6%A0%A1%E5%9B%AD/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/7-%E9%80%83%E7%A6%BB%E4%B8%A7%E5%B0%B8%E6%A0%A1%E5%9B%AD/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="逃离丧尸校园">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+  <meta name="twitter:title" content="逃离丧尸校园">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="逃离丧尸校园">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="6543">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">逃离丧尸校园</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>14分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%80%83%e7%a6%bb%e4%b8%a7%e5%b0%b8%e6%a0%a1%e5%9b%ad&amp;url=https://mohai.us.kg/posts/2023/1/7-%E9%80%83%E7%A6%BB%E4%B8%A7%E5%B0%B8%E6%A0%A1%E5%9B%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/7-%E9%80%83%E7%A6%BB%E4%B8%A7%E5%B0%B8%E6%A0%A1%E5%9B%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%80%83%e7%a6%bb%e4%b8%a7%e5%b0%b8%e6%a0%a1%e5%9b%ad%20https://mohai.us.kg/posts/2023/1/7-%E9%80%83%E7%A6%BB%E4%B8%A7%E5%B0%B8%E6%A0%A1%E5%9B%AD/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26611.jpg" alt="逃离丧尸校园" />
+      
+
+      <p>班级群突然有人发了张照片。</p>
+<p>校外路口被一人高的铁板围住隔开。</p>
+<p>群里不断有人发问。</p>
+<p>发照片那人却只说了两个字。</p>
+<p>快跑。</p>
+<p>01</p>
+<p>网课还在继续，群里却已经炸开了锅。</p>
+<p>【靠，又怎么回事？今年还能不能回家过年啊？】</p>
+<p>【@刘琦，这照片啥意思啊，又咋了？】</p>
+<p>刘琦就是最开始在群里发照片的人。</p>
+<p>他最先在群里说话，但此时却不管别人怎么@他，他都没有再回消息。</p>
+<p>这时，宿舍群突然「叮咚」一声。</p>
+<p>是前天出校的仲静发了一条视频。</p>
+<p>视频拍摄的内容正是校外路口，拍摄角度是从上往下拍。</p>
+<p>马路中间蹲了一个满身是血的妇女，低垂着头，看不清脸。</p>
+<p>楼上有人在喊话，是本地方言，我有些听不懂。</p>
+<p>只能明白大致意思是让妇女赶快回家，外面不安全。</p>
+<p>妇女听到喊话，缓缓抬起头看向声音传来的方向。</p>
+<p>她抬头的一瞬间，我的心脏似乎都停了一拍。</p>
+<p>妇女半张脸被掏空，几乎能看到裸露在外的牙龈和脑袋内的结构。</p>
+<p>听到声音的她摇摇晃晃站了起来。</p>
+<p>朝小区的方向走了过来。</p>
+<p>视频到这里戛然而止，围在手机周围的我们三人却连大气都不敢喘。</p>
+<p>仲静的消息还在继续。</p>
+<p>「视频看没？这是我朋友发我的，就咱们外边儿这儿。」</p>
+<p>「听说不止咱们这儿，好多地方都出现了这种东西。」</p>
+<p>「这东西见人就咬，还打不死。」</p>
+<p>「我和刘琦现在往车站赶呢，你们也赶紧准备准备走吧！」</p>
+<p>「别声张！」</p>
+<p>不知道是谁的手，又点开了那个视频。</p>
+<p>妇女可怖的面孔重新出现在屏幕上。</p>
+<p>我听到我身边的王晓咽了口唾沫。</p>
+<p>「我靠，这……什么情况？真出现丧尸了？？」</p>
+<p>曹怡拿着手机的手抖得厉害。</p>
+<p>我拍了拍她的脊背，安抚她的情绪，又伸手把视频关闭。</p>
+<p>视频的内容让我到现在还有些后怕，但是当务之急是赶快收拾东西离开这里。</p>
+<p>「你俩去找咱们的身份证，别拿箱子了，把证件拿上就行，我给咱订票。」</p>
+<p>说话的档口，我已经翻到了高铁订票页面。</p>
+<p>网络很慢，我退出几次重新载入后才加载出来。</p>
+<p>最近的一趟车程是在下午四点十五，我点了进去准备选座，却突然显示页面错误。</p>
+<p>再次点开，一整页车程已经写满了「候补」。</p>
+<p>「没车了！」</p>
+<p>王晓已经拿好了我们三个人的身份证。</p>
+<p>她把手上的外套递给我。</p>
+<p>「先想办法出学校吧，实在不行咱找个车走高速。」</p>
+<p>宿舍楼内的学生似乎已经有人知道了这个消息。</p>
+<p>开门关门的声音不断响起。</p>
+<p>我和曹怡、王晓三人往楼下冲。</p>
+<p>宿舍门口的阿姨也不见了踪影。</p>
+<p>一路畅行无阻跑到楼下，楼下已经聚了一小群人。</p>
+<p>大家心照不宣地往校门口赶。</p>
+<p>校门口的人比我预料得更多。</p>
+<p>熙熙攘攘的人群从校门口一直挤到了小花坛附近。</p>
+<p>我和宿舍其他三人跟在人群后方，看不清前面的情况，也听不到前方的任何声音。</p>
+<p>只能从周围零零散散的声音中拼凑出个大概情况。</p>
+<p>学校门口被铁皮包住，用铁板竖在门前，把门口封了起来。</p>
+<p>有学生想要从上面翻出去，但是太高，这个方法根本不可行。</p>
+<p>学校周围又全是水，唯一有路的地方墙上还挂了电网。</p>
+<p>如果没人打开校门，我们这群人就相当于被彻底封死在了学校。</p>
+<p>「怎么办？」</p>
+<p>王晓拉住我的手悄悄问了句。</p>
+<p>「别急，总有办法。」</p>
+<p>我翻开手机，准备给仲静发消息询问外面的情况。</p>
+<p>却发现就在刚刚她又给我们发了几条消息。</p>
+<p>「高铁停了，飞机也停了！高速路口也被封了！」</p>
+<p>「别出校了现在，出来也没地方去，我和刘琦不回来了，准备先去找个落脚地儿！」</p>
+<p>心脏有一瞬间梗住。</p>
+<p>我深呼吸了几口气，拉着王晓和曹怡悄悄溜出人群。</p>
+<p>走到人群最后方，我才压低声音说：</p>
+<p>「仲静说走不了，现在出去也没用。咱们现在趁他们还围在门口没反应过来，赶紧去超市囤点东西！」</p>
+<p>学校有三个超市，离我们最近的超市正好在宿舍和校门口中间。</p>
+<p>往超市跑的空当，我喘着粗气按开手机拨通了妈妈的电话。</p>
+<p>02</p>
+<p>没响几声，妈妈就接通电话。</p>
+<p>我还没来得及张口，妈妈慌张的声音就从电话那头传来：</p>
+<p>「欣欣，你们那边出什么事情了吗？今天有好多新闻报道，说是出现了新的病毒，还封城了，你怎么样？」</p>
+<p>妈妈语气里满是担心，但能听出来目前只有我们这里情况比较严重，妈妈那边还是安全的。</p>
+<p>我松了口气，一直悬着的心也往回放了一些，最先看到视频的时候，我最担心的就是爸妈。</p>
+<p>「妈我没事，别担心。先听我说，现在出现了一种新病毒，感染的人会变成丧尸一样的东西，见人就咬！你快和我爸请个假，去楼下囤点东西，记得门窗也要加固！弄好后就别再出门了。」</p>
+<p>我妈心大，为了让她把这件事放在心上，我专门往严重说了说。</p>
+<p>说完，我怕妈妈不懂丧尸的意思，又补充了句：</p>
+<p>「丧尸就是咱们之前看的电影中，那种全身腐烂，吃人打不死的怪物！」</p>
+<p>妈妈被我说得愣了愣，但还是在电话里连连答应，又嘱咐我许久后，才挂断电话去采购东西。</p>
+<p>说话间，我们三人也到达了超市。</p>
+<p>超市不大，但种类还算齐全。</p>
+<p>现在时间紧迫，只能采取就近原则，否则等别人缓过神来，再想买东西就难了。</p>
+<p>只和同学抢还好说，就怕会有人对超市动歪心思。</p>
+<p>进入超市，我们三人兵分三路。</p>
+<p>我和王晓负责购买食物，曹怡去采购一些必备用品。</p>
+<p>学校的超市没有米面油这些东西，只能买些泡面、面包、饼干、罐头这类东西。</p>
+<p>拿架子上零散着放的东西比较麻烦，我们直接找阿姨要了整箱的。</p>
+<p>最初阿姨觉得我们要得太多，不肯卖，好话说尽又加钱，阿姨这才同意。</p>
+<p>曹怡那边的东西也买得差不多。</p>
+<p>她拿过来时，我大致扫了几眼，看到了放在最上面的小刀、贴身衣物和卫生巾。</p>
+<p>我暗暗点头，曹怡比我们心细，若是让我去采购，我根本想不到这些。</p>
+<p>付账时，我突然看到收银台旁放着的几个空桶。</p>
+<p>脑袋一抽，突然觉得这个东西用来装水正合适！</p>
+<p>拿了桶，又转念一想，返回到架子上拿了几面镜子。</p>
+<p>小刀数量有限，镜子摔烂后锋利程度和刀有一拼，必要时候绝对能派上用场。</p>
+<p>也幸亏这几天是月初，又封校，我们才能有钱买这些东西。</p>
+<p>走出超市的时候，校门口的人群已经散了一大半。</p>
+<p>有人看到拿满东西的我们，仿佛突然醒悟，转头就朝超市冲过去。</p>
+<p>看着越来越多的人流量，我们加快步伐返回宿舍。</p>
+<p>宿舍在四楼，不高，但带着这么多东西爬楼也累得够呛。</p>
+<p>把东西搬回宿舍又把门反手关住后，我这才彻底放下心。</p>
+<p>网课还在继续，但已经没人听得进去。</p>
+<p>平日看了那么多丧尸囤货的小说，但轮到我自己时，脑袋却一片空白。</p>
+<p>喘了口气，我们才把刚买的水桶拿到隔壁的水房接满水，又把宿舍的两个装了纯净水的空桶也全接满，这才作罢。</p>
+<p>说来也奇怪，我们接水的动静不算小，但是楼道却不见一个人。</p>
+<p>平日热闹喧嚣的楼道此刻只剩死一般的寂静。</p>
+<p>我心慌得厉害，把门反锁还觉得不够，又踩着凳子把门上的小窗用纸糊住，这才作罢。</p>
+<p>刚从凳子上下来，站在阳台往操场张望的王晓突然低声招呼我们过去。</p>
+<p>只见原先在校门口挤成一团的人群突然如鸟兽散。</p>
+<p>尖叫和哭嚷、叫骂充斥整个操场。</p>
+<p>我取来眼镜戴上，才看到校门口前的空地上洒满了鲜血。</p>
+<p>不远处还躺着一个浑身是血的人。</p>
+<p>已经分不清是男是女，因为这人的头皮被整张掀起，不知去向。</p>
+<p>按理说，这人此刻应该已经死得不能再死。</p>
+<p>但是我只是揉了揉眼睛的时间，这人居然扶着脑袋从地上缓缓站起。</p>
+<p>「我靠。」</p>
+<p>王晓震惊又略带颤抖的声音从我耳边响起。</p>
+<p>「幸亏张欣你刚才拉着我们离开了，不然，现在下面跑的就是咱们。」</p>
+<p>我摇了摇头，正要说话。</p>
+<p>宿舍门却突然传来了敲击声。</p>
+<p>「啪！啪！啪！」</p>
+<p>声音急促，每一下都仿佛敲击在我的心上。</p>
+<p>「救救……我」</p>
+<p>03</p>
+<p>王晓捏住我的手，身子有些微颤。</p>
+<p>「这……怎么办，要开门吗？」</p>
+<p>我摇摇头，示意她俩别出声，走到门口，趴在猫眼往外看了一眼。</p>
+<p>门外的人我认识，是楼上的同学，偶尔碰面会打招呼。</p>
+<p>她慌里忙张站在门外，神色间全是惊恐，抬着一只手捂住脖子。</p>
+<p>我看得清楚，她的脖子处一大块皮肉消失得无影无踪。</p>
+<p>血淋淋的皮下组织裸露在空气中。</p>
+<p>即使有手捂着，还是有大量血液从指缝淌出来。</p>
+<p>「救救我！」</p>
+<p>她语气哀凄，仿佛将我们当作了她最后一丝救命稻草。</p>
+<p>但是我不敢开门。</p>
+<p>她说话的这几秒，脖子处的伤口已经迅速腐烂，太阳穴附近的青筋暴起，眼球也开始充血。</p>
+<p>「开门啊！救救我啊！」</p>
+<p>门外的声音突然变得尖锐，她敲门的动作也变为砸门。</p>
+<p>我没忍住往后退了几步，曹怡和王晓迎上来扶住我。</p>
+<p>宿舍门是钢质门，质量不算差，一般来说只要没人开门，我们就是安全的。</p>
+<p>但是门外撕心裂肺的尖锐叫声太吓人，即使隔着门板，也会害怕她闯进来。</p>
+<p>我们三人互相扶着，没几分钟，门外的声音小了下来。</p>
+<p>几秒后，敲门声又在隔壁宿舍门口响起。</p>
+<p>这短短几分钟，我们就像在鬼门关走了一趟。</p>
+<p>脖子有些凉，摸了一把，全是汗。</p>
+<p>我们宿舍正对楼梯，能理解楼上的姐们儿为什么会第一时间选择我们宿舍开刀。</p>
+<p>绕过随意摆放在地上的东西，我有些脱力般虚虚坐在地上。</p>
+<p>电视里看丧尸和亲眼目睹同学变成丧尸的恐怖程度完全不同，后者带给人的恐惧是直击心灵的。</p>
+<p>一时间宿舍没人敢开口说话。</p>
+<p>我喘了几口气，睁开眼睛，就看到曹怡竖起食指放在嘴前，又指了指门的方向。</p>
+<p>我仔细听，楼梯处似乎有脚步声传来。</p>
+<p>脚步声越来越大，还夹杂几声交谈。</p>
+<p>似乎有人从楼梯上来了。</p>
+<p>门外楼梯的交谈声音与脚步声越来越清晰。</p>
+<p>「咱们就抢了这么点儿东西，会不会有点少？」</p>
+<p>「没办法啊，抢这么点都已经很不容易了。听说去得晚的那些，超市都空了，什么都没买到。」</p>
+<p>「那咱们还算幸运。」</p>
+<p>门外楼上的姐们也似乎听到了声音，拍门的动静也停了下来。</p>
+<p>没几秒，门外响起几声拖沓的脚步声。</p>
+<p>仿佛腿脚不便的人，拖着一条腿，往楼梯方向走去。</p>
+<p>我们三人大眼瞪小眼，连呼吸也不由得放轻。</p>
+<p>下一秒。</p>
+<p>「啊！！！」</p>
+<p>因恐惧而破音的尖叫响起，伴随着野兽般的嘶吼。</p>
+<p>脚步声开始乱了起来，有人往楼上跑，有人往楼下逃。</p>
+<p>有人似乎被按倒在地，连喊救命，但很快就只剩「嗬、嗬」的声音。</p>
+<p>喉咙好像被咬断了。</p>
+<p>啃食声与咀嚼声接连响起。</p>
+<p>我抬头看了王晓一眼，她吓得脸色发白，下嘴唇都在颤抖。</p>
+<p>我摸了一把头上的冷汗。</p>
+<p>我知道我现在和她的状态差不多。</p>
+<p>不知道这样呆坐了多久，门外的动静渐渐平静。</p>
+<p>我撑着双腿在猫眼偷瞄了一眼。</p>
+<p>楼道和楼梯没有人，只有喷溅了满地满墙的鲜血诉说这方才发生了什么。</p>
+<p>我转身摇了摇头，示意王晓和曹怡外面没人了。</p>
+<p>她俩这才互相扶持站了起来，一屁股坐在桌前的椅子上。</p>
+<p>网课已经结束，电脑屏幕还在亮着。</p>
+<p>我跪坐在电脑前，抖着手在搜索栏输入「丧尸」。</p>
+<p>04</p>
+<p>校园网有些卡，我断开重新连了热点。</p>
+<p>搜索圈圈转了好久才停了下来。</p>
+<p>在「丧尸」的词条下，出现无数国内外的丧尸电影和丧尸小说。</p>
+<p>我逐条往下翻，没找到任何我想知道的消息。</p>
+<p>于是删除词条，又登录 WB，看近期热点。</p>
+<p>点进去后，关住那一栏有更新提示。</p>
+<p>是我之前兼职过的店铺老板。</p>
+<p>【邻居突然发疯吓死我，和我正说话呢突然翻白眼儿，还要扑我，幸亏我敏捷跑回家。】</p>
+<p>这条评论点赞挺高，底下也有很多回复，我挑几条看了几眼。</p>
+<p>【被人咬伤要去打狂犬疫苗吗？还是破伤风？】</p>
+<p>【公司一同事今天也突然发疯，怎么回事，今天是什么比较特殊的日子吗？】</p>
+<p>剩下的评论大同小异，都是在讨论突然发疯的朋友，亲人。</p>
+<p>越看越心惊。</p>
+<p>这些突然暴起伤人的家伙几乎都是从前几天开始就一直身体不适。</p>
+<p>有人发烧，有人呕吐吃不下饭。</p>
+<p>好不容易身体好转一些，谁能料到又会发生这样的异变。</p>
+<p>我又继续翻了翻，再没发现什么有用的消息。</p>
+<p>于是又翻出班级群，想要看看有没有人说话。</p>
+<p>结果从那会儿到现在，没有任何人发言。</p>
+<p>抹了一把脸，抬头看其他两人。</p>
+<p>她们也都抱着手机，表情沉重。</p>
+<p>但能看得出来，大伙现在从刚才的那一幕中缓过来了一些。</p>
+<p>我张了张嘴，突然不知道该说些什么。</p>
+<p>还是王晓打破了沉默。</p>
+<p>「先收拾收拾东西吧。」</p>
+<p>方才回宿舍太过匆忙，从超市买来的东西没来得及整理，只是随意摆放在宿舍地上。</p>
+<p>现在缓过了神，才记起来收拾。</p>
+<p>东西算不上多，时间紧迫，我们也拿不了太多，只能挑重要的买了些。</p>
+<p>现在一收拾归类，才发觉这些东西只是看起来多，其实也供不了我们三人多久。</p>
+<p>曹怡把泡面箱子垒在门后，看了几眼，又弯腰塞到床下。</p>
+<p>「应该再多买些的。」</p>
+<p>王晓站在阳台关窗户。</p>
+<p>「时间不够，再说买得多了，咱们带不回来，反而麻烦。」</p>
+<p>「能联系到其他人吗？」</p>
+<p>我摇摇头：「联系不到，事发突然，大家现在都慌了，或许没看手机。」</p>
+<p>「仲静她们呢？」</p>
+<p>「仲静和刘琦找了个落脚的地儿，现在好像去采购东西了。」</p>
+<p>曹怡从床底下爬了出来，拍拍身上的土。</p>
+<p>「外面难道不严重吗？咱们宿舍楼现在都有丧尸了。」</p>
+<p>「好像是分区的，不是集中爆发。」</p>
+<p>王晓从阳台进到宿舍，一屁股坐到凳子上。</p>
+<p>「那咱们现在怎么办？」</p>
+<p>「先在宿舍苟着，晚会儿试试联系其他人。」</p>
+<p>时间一分一秒地过去。</p>
+<p>傍晚六点多，北方的天色已经见晚。</p>
+<p>还是联系不上其他人。</p>
+<p>但好在还能和我妈联系，我妈给我发消息说已经购置了很多物资，让我不要担心，中途说过多次要来找我，都被我拒绝。</p>
+<p>操场已经没什么人影。</p>
+<p>偶尔路过几个晃晃悠悠残缺不全的人影。</p>
+<p>曹怡买了热得快，插在壶里就可以热水。</p>
+<p>比没有热水强得多。</p>
+<p>我们三个人团团坐在宿舍中央泡了三包泡面。</p>
+<p>吃饭途中没有任何人说话，死一般的寂静让我有些心慌。</p>
+<p>「官方发通知了。」</p>
+<p>王晓把手中的泡面桶放下，拿起手机仔细看，看完才总结似的说。</p>
+<p>「这次丧尸是分区爆发的，有些区域严重，现在已经完全沦陷，有些区域却没有发现丧尸的踪影，目前暂时不知道爆发的原因。」</p>
+<p>「封城是因为咱们这里太严重，算是目前国内最严重的地区，为了防止丧尸外溢，不得已才这样。但国家已经开始进行救援、设立安全区。」</p>
+<p>王晓放下手机。</p>
+<p>「咱们学校算是严重的，目前最重要的就是活下去，等待救援，或者去安全区。」</p>
+<p>「咱们的这些东西最多够咱们在宿舍躲两周左右，等待救援或许不太合适。寻找安全区也太危险……」曹怡顿了顿，继续说。</p>
+<p>「也不知道其他人怎么样了。」</p>
+<p>05</p>
+<p>或许是今天精神太过紧绷，我们三个人就这么互相依偎着躺在床上，连什么时候睡了过去都不知道。</p>
+<p>再次惊醒是在半夜。</p>
+<p>宿舍楼内不知道什么位置突然传来一声扯着嗓子撕心裂肺的尖叫。</p>
+<p>我被吓得一哆嗦，从床上坐了起来。</p>
+<p>王晓和曹怡感受到我的动作，也撑起身子。</p>
+<p>奇怪的是，那声音只叫了一声，便消失不见，仿佛刚才只是我在做梦。</p>
+<p>窗外的天已经漆黑，月亮也被云遮住，隐隐约约看不真切。</p>
+<p>下一秒，嚎叫混杂尖锐的哭声从楼上传来，叮叮哐哐似乎弄倒了柜子，踢翻了凳子。</p>
+<p>整栋楼的人好像陷入了什么魔咒，除去楼上的动静，再无一丝声音。</p>
+<p>或许是楼内太过安静，我居然能隐隐听清楼上哭喊的内容。</p>
+<p>「小荣小荣你怎么了，你别吓我啊小荣，呜呜呜小荣啊！」</p>
+<p>尾音变成了尖叫，像被掐住心脏的鸭子，声音痛苦又嘶哑。</p>
+<p>我咽了口唾沫。</p>
+<p>如果我没记错，楼上这位小荣我是认识的。</p>
+<p>隔壁 2011 班学生，开朗又热情。</p>
+<p>楼上的动静没持续多久，约莫几分钟后，声音就小了下来。</p>
+<p>看来宿舍其他三人已经被「小荣」解决掉了。</p>
+<p>没人知道「小荣」变异的契机是什么，或许是她不小心被校门口的那位咬伤，又或许是别的什么原因，让她在今天晚上异变，咬死了对她不设防的室友们。</p>
+<p>突然地，一种兔死狐悲的情绪涌上心头。</p>
+<p>我们都不是丧尸片中天赋异禀的主角，我只是一个普通又无能的学生。</p>
+<p>我真的能活到被救援吗。</p>
+<p>…………</p>
+<p>躲在宿舍的日子过得很快，眨眼间一周就已经过去。</p>
+<p>食物和水已经消耗了一半左右，庆幸宿舍有独立卫生间，不然如厕将会是一个大问题。</p>
+<p>网络开始时好时坏，不如之前流畅，甚至还会断网。</p>
+<p>这三天来，唯一的好消息就是我妈她们那边情况并不严重，伤亡较小，目前已经得到有效控制。</p>
+<p>仲静和刘琦也只联系上了一次，得知她俩正苟在小宾馆里，周围全是丧尸。</p>
+<p>除此之外，我们再没有得到其他任何人的消息。</p>
+<p>不知道学校外面的城市具体情况如何，甚至连学校的具体情况也不清楚。</p>
+<p>只知道每天都有惨叫从各个方向传来。</p>
+<p>每天都能看到不同的学生在各个角落被啃食殆尽。</p>
+<p>我们拉住了窗帘，关闭了阳台门，仿佛这样就能把外面的惨状和我们隔离开。</p>
+<p>新一周的早上，六点。</p>
+<p>沉寂许久的校园群突然弹出来一个消息。</p>
+<p>【匿名：有没有人有食物，救救我，我快饿死了。】</p>
+<p>这是这几天来，第一个发出消息的人。</p>
+<p>曹怡有些激动，把这条消息来来回回看了好多遍。</p>
+<p>「还有活人，还有活人！她在求救，我们能不能帮帮她！」</p>
+<p>王晓按住了曹怡：</p>
+<p>「先看看再说。」</p>
+<p>我也点头同意王晓的话。</p>
+<p>曹怡这才冷静下来，坐回床边和我们一起看群里的回复。</p>
+<p>【20 物流：靠还有活人！我也没食物，这两天喝水充饥呢。】</p>
+<p>【匿名 2：学校现在什么情况了？】</p>
+<p>【19：我前天看新闻，咱们学校是重灾区。】</p>
+<p>【22 本：不清楚，我只知道丧尸挺多的，每天都能看到，我连声儿都不敢出。】</p>
+<p>【匿名 3：说起来，食堂和超市应该还会有食物吧？有没有人和我组队？我不想饿死。】</p>
+<p>【20 物流：算我一个。】</p>
+<p>下面跟了好几个加一。</p>
+<p>群里的人就如何潜去食堂讨论得热火朝天，就连几个年轻老师也加入了进去。</p>
+<p>却就在这时，一个顶着【二楼三窗口辉哥】名字的账号说了一句话。</p>
+<p>【谁敢来，我们就砍死谁。】</p>
+<p>随后发了一张照片。</p>
+<p>照片里是一把滴着血的菜刀，和两具死得不能再死的尸体。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/9/2-%E9%80%83%E7%A6%BB%E6%9A%B4%E9%9B%A8%E6%9C%AB%E4%B8%96/" title="逃离暴雨末世">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">逃离暴雨末世</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/3/18-%E9%80%83%E7%A6%BB%E7%86%8A%E5%AD%A9%E5%AD%90/" title="逃离熊孩子">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">逃离熊孩子</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9构象病 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/24-9%E6%9E%84%E8%B1%A1%E7%97%85/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/24-9%E6%9E%84%E8%B1%A1%E7%97%85/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="9构象病">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/5323.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/5323.jpg">
+  <meta name="twitter:title" content="9构象病">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="9构象病">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="2854">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/5323.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">9构象病</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>6分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=9%e6%9e%84%e8%b1%a1%e7%97%85&amp;url=https://mohai.us.kg/posts/2023/1/24-9%E6%9E%84%E8%B1%A1%E7%97%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/24-9%E6%9E%84%E8%B1%A1%E7%97%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=9%e6%9e%84%e8%b1%a1%e7%97%85%20https://mohai.us.kg/posts/2023/1/24-9%E6%9E%84%E8%B1%A1%E7%97%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/5323.jpg" alt="9构象病" />
+      
+
+      <p>这颗星球上诞生的一切奇迹从折叠开始。</p>
+<p>若非五个月前那次金矿考察之旅，我不会发现这个残酷而简洁的事实。</p>
+<p>巴布亚新几内亚东北部的索马雷岛是座人迹罕至的贫瘠岛屿，直至一名渔夫修理渔船时在椰子树下捡到手掌大小的鳞片状金矿石。根据我所在矿产公司与巴新矿业部的合作协议，我带领四人小组从北京飞抵莫尔比斯港，辗转来到索马雷。</p>
+<p>初步探明黄金储量 40 至 60 吨，开采品位 4g吨以上，预计投资 4 亿美元，探查结果令所有人振奋不已。我留在索马雷，帮助巴新地质勘探局撰写勘探报告，其间得知岛上并非无人居住，高山区曾有福雷族人出没的迹象。</p>
+<p>一次取样之行，我在山峦中找到那个小小的福雷族部落：几座坍颓的茅屋，数十具散落的白骨。我不是人类学家，但也明白这种规模的封闭群落难以延续基因的多样性，他们已被世界遗忘。于是我亲手埋葬那些遗骸，堆起潦草的坟茔——这个举动在巴新人看来古怪至极。</p>
+<p>我错了。</p>
+<p>回国后不久，我陷入周期性的节律失调，手脚震颤，失眠多梦，在排除传染病和寄生虫的可能性后，公司以精神障碍为由强制我休带薪假。我的健康随时间流走，精神科医生束手无策。记忆开始混乱，我逐渐记不起半个小时前吃过的午饭是什么菜色。</p>
+<p>病重之时，在生物科技公司供职的好友前来探望，我语无伦次地叙述着身上发生的改变。痛苦总会消逝，但我经历的是另一种折磨：我在退化成某种未知的生物，一只躲在黑暗角落、牙齿咯咯作响的兽，食欲和性欲都消失了，我狭窄世界里唯一准确的事情只有白天与黑夜的变化。</p>
+<p>好友取走我的血样埋头于实验室，我不确定他能听懂我的呓语，可他很快找到某些线索。</p>
+<p>库鲁病，20 世纪初在巴新东北部高原福雷族部落发现的致命退行性疾病，震颤，瘫痪，死亡，无有效药物，死亡率 100%。病原体是福雷族内部食用亲人尸体进行祭祀而诞生的朊病毒，作用于神经系统，导致脑海绵状变性，从感染到死亡，一般 6 到 9 个月。</p>
+<p>自从 1962 年巴新政府禁止食用尸体后，库鲁病已经基本绝迹。</p>
+<p>这不科学。</p>
+<p>在我神志清醒的间隙，好友对我宣判死刑，然后说他所不能理解的是，朊病毒只能通过患病生物或血源性传播，作为一种感染性蛋白质，它们不可能在陈年尸骨中独活。</p>
+<p>我不在乎。</p>
+<p>我反锁屋门，在白天与黑夜的交替中等待死亡来临。</p>
+<p>讽刺的是，病情开始好转了。</p>
+<p>在度过濒临死亡的三天后，我拖着发烫的身体爬出卧室，打开冰箱，喝下一桶冰凉的橙汁，我能感觉到酸和甜作用于味蕾，胃壁因刺激而抽搐，我的心脏在蹦跳，身体在疼痛。我再次直立行走，使用火种，学会语言，慢慢进化成名为「智人」的野兽。</p>
+<p>恢复对手指的控制之后，我打开搜索引擎，试图查明为何命运对我开了这么大的玩笑。作为矿业工程师，我对生物科学一无所知，于是很快震惊于人类这种造物的精巧与脆弱：</p>
+<p>库鲁病与克雅氏症等被称为构象病，因为朊病毒作用于蛋白质的折叠构成。蛋白质从一条结构松散的多肽链折叠成具有天然空间结构的蛋白质分子，这一过程叫作蛋白质折叠。</p>
+<p>以我工科生的视点来看，就是一维信息向三维信息的转化。一切生物的活性都来自于蛋白质的三维构象，从基因到氨基酸链，从链到三维结构，蛋白质折叠是生物的第二遗传密码。</p>
+<p>蛋白质的三维结构若出现变化，即使氨基酸序列完全一致，也无法发挥相应活性，这就是构象病。蛋白质的可能构象无穷无尽，但它们的折叠过程是能量与熵的博弈，它们总在寻求能量最低的方向，以最精妙的方式折叠成正确而稳定的结构，而这些正确的结构，在漫长的进化史中决定了世界的模样。</p>
+<p>错误的折叠意味着灭顶之灾，朊病毒即是作用于折叠过程，使蛋白质形成另一种构象。</p>
+<p>无用的构象。</p>
+<p>死亡率 100%，因为最微小的生命单元变成了另一种东西。</p>
+<p>但我为什么活着？</p>
+<p>我飞快打开一个又一个网页，扫过一篇又一篇论文，我记起四岁时在幼儿园第一次尿裤子后女同学拿出的手帕上有红色刺绣的小猫图案，也能在一瞥中数清面前的一页书有 673 个字符。《雨人》中达斯汀·霍夫曼几秒钟数清散落的牙签，单次最大识数是 82，此前我能在一瞬间识别的最大个数，是 5。</p>
+<p>我们是否真的是万千次失败进化所淬炼出唯一正确的答案？</p>
+<p>分子生物学的中心法则是「旨在详细说明连串信息的逐字传送，遗传信息不能由蛋白质转移到蛋白质或核酸之中」。</p>
+<p>DNA→DNA（复制），DNA→RNA（转录），RNA→蛋白质（翻译），这是现代生物学最重要的基本规律和理论基石。遗传信息一旦传导至蛋白质之后，既不能从蛋白质传导至蛋白质，也不能从蛋白质逆转至核酸分子，信息依靠一套极其复杂的翻译机构从核酸传往蛋白质，这种翻译无法逆向进行。核酸是遗传密码的载体，蛋白质组成生命体，两类分子泾渭分明。</p>
+<p>我的思考毫不止歇。</p>
+<p>朊病毒的发现曾被认为是对中心法则的颠覆性冲击，它是蛋白质，却能够自我复制并传播疾病。</p>
+<p>1991 年布鲁希纳阐明朊病毒的发病机制，指出朊病毒是由人体正常基因编码的特殊蛋白，通过改变正常 PrP 蛋白的构象来自我复制并传播，并非携带遗传物质的生命体，因此不应称为朊病毒，准确名称应为朊粒或朊蛋白。由此而论，中心法则并未受到挑战。</p>
+<p>我关闭网页。</p>
+<p>我回忆起大学时坐在电脑机房里，CRT 显示器上是 Win95 的开机画面，一滴汗水从计算机原理课李老师宽阔的鼻翼流下，风扇转动，吹得我脚上的蓝色塑料袋沙沙作响。李老师用肩头蹭去鼻尖汗水，说有一种程序，能够借软盘为载体，在不同计算机之间自我复制，破坏操作系统和软件，这种程序，叫作计算机病毒。</p>
+<p>计算机病毒是一种承载意识的存在吗？</p>
+<p>生命体的奇妙在于有序复杂性、目的性、动态特征性以及远离平衡态的状态。在漫长的演化过程中生命自组织形成秩序，蛋白质同样在自组织下完成折叠。生命演化的无数自组织临界点，是世代更迭、物种涨落，蛋白质在三维空间中的错误折叠，是这一过程的微观具现。</p>
+<p>敲响键盘，我的指尖开始麻木，微微颤抖。</p>
+<p>存在无需意志。</p>
+<p>或许有这么一种蛋白质多肽链，在一次不符合热力学第二定律的折叠之后，以朊病毒的名字存在于世间，它耐受高温与辐射，抵抗蛋白酶消化，能够通过皮肤接触与空气进入人体，悄然改变同源蛋白质的折叠方式，使神经细胞变异，带来震颤、瘫痪和死亡。但在演化的潮汐之中，它是临界点的那一粒水珠，蛋白质构象的微渺改变，使神经细胞产生了新的色泽。经历死亡的考验之后，神经细胞的钠钾离子泵效率提升了，神经元焕发出前所未有的活力，使人类能以更高效的方式观察、思考、回忆与判断。</p>
+<p>它带来了进化。</p>
+<p>或许因为个体耐受性或缺氧的原因，这些高效的神经细胞逐渐开始死去，但它们曾闪烁出智人 20 万年进化史中从未出现的耀眼火花。</p>
+<p>这种朊病毒带来的构象病，是人类演化的相性临界点。</p>
+<p>它会带来多少死亡，或造就多少天才？它不会回答，我无法回答。</p>
+<p>我正在失去身体，我正贪婪地享用智力的余晖，就像《献给阿尔吉侬的花束》，一切将归于虚无。</p>
+<p>我写完这段话之后，会把邮件发送给你，将笔记本电脑折叠起来，回到我的卧室，等待黑暗来临。潮涨潮落，无论所有的生命，人类，抑或我自己的一生，都是童年时、戈壁滩上、落日下、风沙里那些默默工作的抽油机，低下头，再抬起来，如此如此，无止无休。</p>
+<p>你不必为我，为自己，或为人类悲伤。</p>
+<p>这颗星球的一切奇迹从折叠开始，接下来，你和其他人要做的，只是等待。</p>
+<p>□ 张冉.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-9%E6%8A%B1%E8%96%AA/" title="9抱薪">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">9抱薪</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/24-9%E5%A5%B3%E5%BE%B7%E4%B9%8B%E7%97%9B%E5%A6%BB%E5%A6%BE%E6%9D%80%E5%A4%AB%E8%83%8C%E5%90%8E%E7%9A%84%E8%A1%80%E6%B3%AA%E7%9C%9F%E7%9B%B8/" title="9女德之痛：妻妾杀夫背后的血泪真相">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">9女德之痛：妻妾杀夫背后的血泪真相</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

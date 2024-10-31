@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老妈独美 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/9/29-%E8%80%81%E5%A6%88%E7%8B%AC%E7%BE%8E/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/9/29-%E8%80%81%E5%A6%88%E7%8B%AC%E7%BE%8E/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="老妈独美">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26584.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26584.jpg">
+  <meta name="twitter:title" content="老妈独美">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="老妈独美">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12035">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26584.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">老妈独美</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%80%81%e5%a6%88%e7%8b%ac%e7%be%8e&amp;url=https://mohai.us.kg/posts/2022/9/29-%E8%80%81%E5%A6%88%E7%8B%AC%E7%BE%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/9/29-%E8%80%81%E5%A6%88%E7%8B%AC%E7%BE%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%80%81%e5%a6%88%e7%8b%ac%e7%be%8e%20https://mohai.us.kg/posts/2022/9/29-%E8%80%81%E5%A6%88%E7%8B%AC%E7%BE%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26584.jpg" alt="老妈独美" />
+      
+
+      <p>我爸的白月光回来了。</p>
+<p>我和我妈被扫地出门。</p>
+<p>奶奶不让我们带走一分钱。</p>
+<p>堂妹嘲讽我从此凤凰变野鸡。</p>
+<p>然而。</p>
+<p>我妈牵着我的手，上了首富外公的车。</p>
+<p>1</p>
+<p>我大二那年。</p>
+<p>我爸和旧情人破镜重圆，愉快出轨。</p>
+<p>连续半个月不回家——</p>
+<p>向来不喜欢我妈的奶奶，趁机逼妈妈离婚。</p>
+<p>「曹如霜回来了！人家现在可是有名的演员！」</p>
+<p>「你个穷山沟出来的闺女，还有脸霸占顾太太的位置啊！」</p>
+<p>我听见这些话，咬牙切齿。</p>
+<p>不满的话呼之欲出。</p>
+<p>我妈却冲我摇头。</p>
+<p>她不动声色地插花，盯着花瓶底下的死水，面色清冷。</p>
+<p>「离婚可以，让他亲口跟我说。」</p>
+<p>祁明远一走半月。</p>
+<p>妈妈也联系过他。</p>
+<p>但任何话，都没这句有效。</p>
+<p>没有「同意离婚」有效……</p>
+<p>下午，他就来了。</p>
+<p>我站在房门外，听见他决绝的声音。</p>
+<p>「今天就去办离婚手续，越快越好，我不想让如霜等太久。」</p>
+<p>我妈静静的，许久没出声。</p>
+<p>他等不及了，又说：</p>
+<p>「实话实说吧，如果不是当年如霜跟我闹分手，我也不会一气之下向你求婚，你本来只是我们公司的小小员工，做了这么多年董事长夫人，也该知足了。」</p>
+<p>……我妈终于开口了，「拿上证件，现在就去民政局。」</p>
+<p>她说得果断，能听得出对这段婚姻的绝望。。</p>
+<p>但很快又整理好情绪，坚定地说：「舟舟必须跟我。」</p>
+<p>祁明远毫不犹豫地答应了，「可以！我和如霜也有一个女儿，我只想好好补偿那孩子。」</p>
+<p>我脑袋嗡嗡的。</p>
+<p>他说他还有个私生女。</p>
+<p>他说他只想好好补偿那个私生女。</p>
+<p>那我呢？</p>
+<p>我祁舟舟不是他女儿？</p>
+<p>「啪——」</p>
+<p>房间传来响亮的巴掌声。</p>
+<p>老妈帮我狠狠打了他。</p>
+<p>打得好！</p>
+<p>2</p>
+<p>离婚手续很快办完。</p>
+<p>祁明远给了我妈一笔钱，让她带着我离开别墅。</p>
+<p>可是我妈早就开始打包行李了。</p>
+<p>而且，她还不要钱。</p>
+<p>我很郁闷。</p>
+<p>虽然听见渣爹那番话后，我对这个破家已经没有留念。</p>
+<p>但钱不要真的好吗？</p>
+<p>这不是便宜了渣爹？</p>
+<p>我妈无奈地冲我摇头，「他那点钱，有什么好稀罕的，要拿你拿，我嫌重。」</p>
+<p>「银行卡不重吧？」</p>
+<p>「嫌膈！行了吧。」</p>
+<p>我：……</p>
+<p>妈妈，你是豌豆公主吗？</p>
+<p>等等，好奇怪。</p>
+<p>老妈对金钱风轻云淡的样子，咋像极了电影里的 old money?</p>
+<p>感觉完全不是我奶奶口中的乡下丫头呀。</p>
+<p>嗯……</p>
+<p>看来，不愧是我妈，气质不一般！</p>
+<p>好吧，我也只能忍痛割钞票了。</p>
+<p>我回房间里收拾东西。</p>
+<p>到一半的时候，堂妹祁露忽然闯进我房间。</p>
+<p>「出去——」</p>
+<p>「拽什么？这以后都不是你房间了！我来替小菲来监督你！」</p>
+<p>「小菲……」</p>
+<p>「你还不知道？大伯和如霜阿姨的女儿啊！她以后会搬进这个卧室，这个卧室的摆设都是她！你只许整理自己的衣服，其他的不准乱拿！」</p>
+<p>知道了——</p>
+<p>私生女登门入室对吧。</p>
+<p>「祁舟舟，你以后可不是大伯的掌上明珠了。」</p>
+<p>「大伯有了如霜阿姨，也不会再管你们。」</p>
+<p>「你只能跟你的穷妈过苦日子了……」</p>
+<p>祁露挤眉弄眼地看着我，「以后在学校碰见，可千万别跟我打招呼呀！」</p>
+<p>我翻白眼，我啥时候跟她打过招呼。</p>
+<p>祁露见我不理她，转了转眼珠子，又想挑衅。</p>
+<p>我烦不胜烦，直接将她推开，「滚一边去！」</p>
+<p>祁露没站稳，被我推到地上。</p>
+<p>她顿时炸了。</p>
+<p>「奶奶——」</p>
+<p>「祁舟舟欺负我！」</p>
+<p>祁老太一听，很快过来骂我。</p>
+<p>「一点教养也没有！」</p>
+<p>「不像小菲，又乖又懂事。」</p>
+<p>「当初就不该把你妈娶进门，嚯嚯我家基因！」</p>
+<p>我简直无语——</p>
+<p>我妈长得美，又聪明，会画画会弹琴会书法，甩她这个暴发户几条街！</p>
+<p>本想反驳她……</p>
+<p>我妈温温柔柔地叫住了我。</p>
+<p>「舟舟，收拾好了就走吧，你外公要来接我们了。」</p>
+<p>3</p>
+<p>外公？</p>
+<p>我还有外公？</p>
+<p>咋从没听老妈提起过？</p>
+<p>我正疑惑……</p>
+<p>祁老太忽然冷笑起来，</p>
+<p>「王雯雅，你跟孩子扯什么谎？你爹妈都是乡下人，他们来过几次省城？摸得着我祁家的大门吗？」</p>
+<p>祁露也咯咯直笑，「奶奶，你别戳破伯母呀！乡下人也是要面子的。」</p>
+<p>「什么伯母，她已经不是的。」</p>
+<p>「露露，你记住，不是什么人，都能做你伯母。」</p>
+<p>祁露点点头，「嗯嗯！也不是什么人，都能做我姐妹～」</p>
+<p>她说完，瞅了我一眼。</p>
+<p>我轻哼，「谁稀罕啊，咱俩就不是一个气质。」</p>
+<p>我天生漂亮。</p>
+<p>她已经进过几次整容所了。</p>
+<p>确实不像姐妹了～</p>
+<p>「你……」</p>
+<p>祁露被我戳到痛点，气不打一出来，</p>
+<p>「你得瑟什么？离开祁家，你就是凤凰变山鸡，长得漂亮有什么用？方便以后出来卖？」</p>
+<p>真是好大一张脏嘴。</p>
+<p>怎么好意思吹自己是豪门千金啊！</p>
+<p>我很想再教训她一下。</p>
+<p>可是，又怕给老妈惹麻烦。</p>
+<p>毕竟……</p>
+<p>我们离开祁家后，肯定会大不如前。</p>
+<p>如果得罪他们，我和老妈以后会更加困难。</p>
+<p>忍吧。</p>
+<p>努力忍吧。</p>
+<p>我咬紧唇，正要打碎牙齿吞进肚子。</p>
+<p>「啪——」</p>
+<p>好熟悉的响亮的巴掌声。</p>
+<p>抬眸，我妈已经优雅地将手收回。</p>
+<p>祁露半张脸红透了。</p>
+<p>4</p>
+<p>我妈把祁露打蒙了。</p>
+<p>她半晌没反应过来。</p>
+<p>我妈——</p>
+<p>整个祁家最低调，最温柔。</p>
+<p>她们眼里最好欺负的人，打了她。</p>
+<p>祁露半晌没反应过来。</p>
+<p>倒是祁老太，暴跳如雷，「王雯雅你作死啊？竟然敢对我孙女动手？」</p>
+<p>「她没教养，我替你教。」</p>
+<p>老妈抬起下巴，轻飘飘的说道，</p>
+<p>「还有你，祁老太太，下次再对我们母女指手画脚，别怪我对你不客气。」</p>
+<p>「毕竟，从今天开始，你就不是我长辈了。」</p>
+<p>「我的教养，可不会用在倚老卖老的陌生人身上！」</p>
+<p>老妈目光倨傲，声音清冷。</p>
+<p>祁老太傻了。</p>
+<p>祁露继续蒙。</p>
+<p>我：帅爆了！碉堡了！</p>
+<p>这时，别墅大门打开，一辆宾利开进来。</p>
+<p>我脸色顿时灰冷下来。</p>
+<p>我爸的车——</p>
+<p>副驾驶还坐着一个艳丽女人。</p>
+<p>车停下，后座还下来一个少女。</p>
+<p>艳丽女人挽着我爸，我爸牵着少女。</p>
+<p>真是其乐融融的一家人。</p>
+<p>我爸幸福得像只泥坑里的猪。</p>
+<p>然而，当他见到我和我妈，脸色就变了，「你们还没走？」</p>
+<p>嫌弃的眼神，尤其明显。</p>
+<p>我眼眶直接红了。</p>
+<p>我妈走过来，握住我的手。</p>
+<p>这时。</p>
+<p>我奶奶见到我爸，立刻告状，「明远你可要管管，王雯雅打了露露！」</p>
+<p>5</p>
+<p>我爸看见祁露脸上的红印，当时就火了。</p>
+<p>「王雯雅，原来你一直以来的贤惠都是装的！」</p>
+<p>我气得想抓花我爸的脸。</p>
+<p>我妈抓着我的手，不叫我动。</p>
+<p>这时……</p>
+<p>对面传来娇软的声音，</p>
+<p>「爸爸，她们是谁呀！你原来的老婆女儿吗？那我和我妈算什么？」</p>
+<p>我看向说话的人，黑长直，无辜脸。</p>
+<p>眉眼竟跟我有点相似。</p>
+<p>我无法冷静！</p>
+<p>「你就是我爸的私生女啊？」</p>
+<p>她听见，脸色惨白，抓着她妈林如霜的手就要哭。</p>
+<p>曹如霜看见宝贝女儿受委屈，直接急了。</p>
+<p>「祁明远！这就是你的诚意！你对我们母女的爱？」</p>
+<p>「听听她女儿骂我们菲菲什么？私生女！」</p>
+<p>「你还不撕烂她的嘴！」</p>
+<p>我爸本来就对我不满。</p>
+<p>林如霜这么一说，他直接对我扬起了巴掌。</p>
+<p>他人高马大，比我和我妈都高出许多。</p>
+<p>我妈拦不住他……</p>
+<p>祁家的院子里，我也跑不掉的。</p>
+<p>跑，搞不好还会连累妈妈一起狼狈。</p>
+<p>我还是挨打吧。</p>
+<p>我咬着牙，闭上眼睛。</p>
+<p>祁明远，山不转水转，你今天欺负我和我妈，改日我一定……</p>
+<p>我心理活动进行到一半，忽然听见一声惨叫。</p>
+<p>「啊——」</p>
+<p>睁开眼，只见祁明远面色惨白地捂住膝盖。</p>
+<p>我妈，踹了他——</p>
+<p>此时此刻，我无暇顾及其他人的状态。</p>
+<p>因为我傻了，我妈多爱祁明远，他膝盖不好，为他学针灸，配草药。</p>
+<p>这么多年，尽心尽力照顾着他。</p>
+<p>而现在，妈妈为了我，踹了他的膝盖。</p>
+<p>这一切，祁明远值得。</p>
+<p>「反了……」</p>
+<p>「反了！吃我家的，喝我家的！还竟敢踢我儿子！把行李箱打开！我要检查，绝不让你这个贱人带走我家一分钱！」</p>
+<p>祁老太气疯了。</p>
+<p>我妈冷笑，「你搞错了，自从嫁到你家，我花的每分钱都是我自己的！祁明远每个月给我那点钱，根本不够我半天开支！」</p>
+<p>我：啊？</p>
+<p>祁老太愣了。</p>
+<p>曹如霜看向祁明远，祁明远脸色复杂，</p>
+<p>「王雯雅，你当年嫁给我之前工资才多少？做了二十年富太太，胃口变这么大了？」</p>
+<p>我妈嗤笑，「开什么玩笑？你那点钱，想养大谁的胃口？」</p>
+<p>刚说完。</p>
+<p>随着鸣笛声传来，一排豪车陆续停在别墅门口。</p>
+<p>领头的车上，下来一个西装革履的男人。</p>
+<p>他朝我们走来，接过我和我妈的行李箱，毕恭毕敬地对我妈说：</p>
+<p>「大小姐，我们来接您回家了。」</p>
+<p>6</p>
+<p>这话一出。</p>
+<p>全场震惊。</p>
+<p>我直勾勾地看着我妈。</p>
+<p>您……</p>
+<p>您到底瞒了我什么……</p>
+<p>祁老太半天没反应过来。</p>
+<p>祁明言不可思议的看着我妈，「他们叫你什么？」</p>
+<p>我妈挪开目光，没理睬他——</p>
+<p>而这时，来接我们的叔叔开口了。</p>
+<p>声音正式而慷锵有力。</p>
+<p>「雯雅小姐，是王旬先生的女儿。」</p>
+<p>「首富王家，唯一的大小姐！」</p>
+<p>他说完，鄙夷地看着祁明远。</p>
+<p>仿佛在嘲讽他有眼无珠。</p>
+<p>这一下。</p>
+<p>真是万籁俱寂了。</p>
+<p>祁家人脸色都僵了。</p>
+<p>我也不由倒吸一口凉气。</p>
+<p>王旬？</p>
+<p>首富王旬？</p>
+<p>那个集科技，酒店，餐饮，娱乐的，王氏集团董事长！</p>
+<p>而祁家只是经营着一个酒店而已。</p>
+<p>差了十万八千里啊。</p>
+<p>「妈，他说的，都是真的吗？」</p>
+<p>「你为什么不早说……」</p>
+<p>我也是震惊啊。</p>
+<p>这有啥不能说出口的？</p>
+<p>换作是我，天天挂在嘴边炫耀。</p>
+<p>对不起，肤浅了……</p>
+<p>「嗯。」我妈点头，「待会再跟你解释。」</p>
+<p>可是，我已经管不上啥解释了。</p>
+<p>我已经起飞了……</p>
+<p>我外公居然是首富。</p>
+<p>我该不会是在做梦吧！</p>
+<p>这时，我看向祁露，谁凤凰变山鸡来着？</p>
+<p>祁露咬了咬唇，注满玻尿酸的脸，几乎要扭曲了。</p>
+<p>而这时，曹如霜发出一声冷笑，</p>
+<p>「据我所知，王旬先生的女儿一直在国外生活，你撒谎都不知道事先调查。」</p>
+<p>她满脸鄙夷，一副瞧不起我妈的样子，「真是家庭主妇当久了，把脑子也当掉了！」</p>
+<p>她说得自信满满。</p>
+<p>祁家人也动摇了。</p>
+<p>「如霜阿姨，你说的都是真的吗？你怎么知道首富女儿在哪里？」祁露问。</p>
+<p>有人质疑曹如霜，祁明远立刻接话。</p>
+<p>「当然了，你如霜阿姨刚拿到王氏旗下的代言，还见过王旬先生。」</p>
+<p>祁老太一听，分外惊喜，「这么说，她跟王旬先生很熟了？」</p>
+<p>「还行吧。」曹如霜故作谦虚。</p>
+<p>「那你说的，肯定是真的了！不愧是明星，就是有人脉！」</p>
+<p>祁老太顺了口气，瞪了我妈一眼，「你可真行，还敢来这一出！想骗我们给你下跪啊！」</p>
+<p>「可不是吗？母女俩都很恶心。」祁露附和。</p>
+<p>祁菲也娇娇弱弱地开口，「爸爸以前的妻子，怎么满口谎话。」</p>
+<p>祁明远冲我妈横眉冷对。</p>
+<p>曹如霜轻笑道：「王雯雅，你要是首富大小姐，我就是首富二小姐，劝你快滚，别搁这丢人现眼了。」</p>
+<p>我怒了……</p>
+<p>我握紧了手机，该砸哪一个呢？</p>
+<p>正气得不行呢，我妈却风轻云淡。</p>
+<p>她如画的眉眼，略显几分无奈，吩咐身旁的叔叔，「我爸也来了吧？叫他下车认二女儿了。」</p>
+<p>7</p>
+<p>祁家人笑我妈不死心。</p>
+<p>笑话我妈，是否还找了冒充首富的人？</p>
+<p>而我的渣爹，祁明远更过分。</p>
+<p>他让我妈别那么虚荣。</p>
+<p>就算虚荣……</p>
+<p>也要看自己面对的是谁。</p>
+<p>「你一个家庭主妇，在如霜这种见过世面的女人面前，充什么大脸？」</p>
+<p>他刚说完。</p>
+<p>我妈脸色微微愠怒。</p>
+<p>曹如霜得意非常。</p>
+<p>可是——</p>
+<p>这时，一个身形硬朗的老爷爷，拄着拐杖走下豪车。</p>
+<p>他头发苍白，却梳得整齐。</p>
+<p>一身西装，显得精神抖擞。</p>
+<p>皱纹横生的脸，依旧透着英气。</p>
+<p>这……</p>
+<p>这不就是首富王旬吗？</p>
+<p>那张被各大媒体宣传 n 次的脸，谁不认识？</p>
+<p>「爸……」</p>
+<p>我妈的声音透着哽咽。</p>
+<p>她不管任何人，扑到外公怀里，像个孩子。</p>
+<p>见到此情此景——</p>
+<p>我呆呆地站在原地。</p>
+<p>祁家人在风中凌乱。</p>
+<p>尤其是曹如霜！</p>
+<p>她瞪大了瞳孔，脸色尴尬又慌张，左也不是，右也不是。</p>
+<p>祁老太拉扯着祁明远。</p>
+<p>「我老花，你看清了？」</p>
+<p>「真是首富！？」</p>
+<p>祁明远紧皱着眉，脸色铁青地点头。</p>
+<p>祁老太猛地拍腿，「哎呦！儿子，你是首富的女婿啊！还愣着干嘛？把雯雅追回来啊！」</p>
+<p>曹如霜脸色刷白，气愤地看向祁明远。</p>
+<p>「妈，你说什么呢？我已经和如霜领证了！菲菲还在……」</p>
+<p>渣爹深情了一辈子。</p>
+<p>他可不能在这时掉链子。</p>
+<p>「呸！我就没见过私生女和小三，登堂入室的！」</p>
+<p>「你妈我也是原配！你别打你妈的脸！」</p>
+<p>祁老太变脸，比川剧还厉害。</p>
+<p>曹如霜咬着唇，面如死灰。</p>
+<p>祁菲委屈得泪流满面。</p>
+<p>与之相反。</p>
+<p>祁老太对我慈眉善目了。</p>
+<p>「舟舟呀！以前都是奶奶不对，我鬼迷心窍了。」</p>
+<p>「你跟你妈妈说说，原谅奶奶和爸爸，好不好？」</p>
+<p>「对了！祁露，你也来跟你姐姐道歉！」</p>
+<p>「小小年纪就嘴臭！你大妈扇你是应该的！」</p>
+<p>祁露的脸已经不止是扭曲了。</p>
+<p>她恨不得吃了我……</p>
+<p>8</p>
+<p>祁老太「诚心悔过」，但我妈可不吃这套。</p>
+<p>我外公更不吃——</p>
+<p>「我女儿和祁明远已经离婚了！你们祁家人，少来套近乎！」</p>
+<p>外公的声音，怒中又透着绝对的威严。</p>
+<p>祁老太心虚的低下头……</p>
+<p>而同时。</p>
+<p>外公又看向曹如霜，打量着她。</p>
+<p>「我纳闷……」</p>
+<p>「何时，多出你这么个女儿了？」</p>
+<p>曹如霜垂着脸。</p>
+<p>曾经多么骄傲，现在就有多么无地自容。</p>
+<p>「王先生，我不是故意的……」</p>
+<p>她想解释，但外公完全不听，「行了，王氏跟你的合约，就此取消。」</p>
+<p>曹如霜差点没站稳。</p>
+<p>我知道她干嘛这么紧张。</p>
+<p>她一直在国外发展，不温不火。</p>
+<p>王氏的资源，是她回国后最大的王牌。</p>
+<p>现在，没了。</p>
+<p>「王先生，您这是假公济私！凭如霜的知名度和才华，你们集团不要她，将会是巨大损失！」</p>
+<p>祁明远始终护着曹如霜，像个大情圣。</p>
+<p>因此，我能理解。</p>
+<p>恋爱脑上头的人，是会说一些蠢话。</p>
+<p>对他——</p>
+<p>外公只是冷笑，「时间不早了，我们回家了。」</p>
+<p>他甚至不愿意跟祁明远废话。</p>
+<p>祁明远不死心，甚至叫住我妈，</p>
+<p>「雯雅！我求你阻止你爸！这么多年，对如霜念念不忘的人是我，如霜是无辜的！她努力了那么久，才有今天的事业，我不能让她受任何影响。」</p>
+<p>我妈攥紧了手——</p>
+<p>我好生气，上去就是怼，</p>
+<p>「她无辜，我妈就不无辜？你们真爱无敌，我妈就活该被当傻子忽悠？」</p>
+<p>祁明远怔了一下，像是被我说住。</p>
+<p>但我看不出他任何愧疚之心。</p>
+<p>他依旧坚持他那套，缓缓说道：</p>
+<p>「你妈一个家庭主妇，怎么懂如霜事业上的艰辛？」</p>
+<p>家庭主妇？</p>
+<p>我妈是为了谁做家庭主妇！</p>
+<p>她又美又有才华。</p>
+<p>祁明远还不知道呢！</p>
+<p>我妈经常在家里画画。</p>
+<p>我悄悄看过她的作品参赛。</p>
+<p>意大利名师更是向我妈发来过邀请……</p>
+<p>但我妈无动于衷。</p>
+<p>就为了照顾这个婆家！</p>
+<p>除了我，还有蛮不讲理的婆婆，寄人篱下却麻烦又事多的祁露！</p>
+<p>最后就换来这？</p>
+<p>我转头，看见妈妈眼底红红的。</p>
+<p>我心疼得不行。</p>
+<p>我的妈妈那么好，为什么会碰上这种男人。</p>
+<p>幸好，有外公在。</p>
+<p>我心疼妈妈。</p>
+<p>外公也心疼女儿。</p>
+<p>他带我们离开之前，把保镖都派了进来。</p>
+<p>远远的，我都能听见，祁明远此起彼伏的惨叫声。</p>
+<p>祁老太哭喊着，「不要打我儿子……」</p>
+<p>曹如霜拉着祁菲，不敢上前。</p>
+<p>祁露更是跑得更远。</p>
+<p>总之就是一盘散沙。</p>
+<p>祁明远，以后除了你妈，再也又不会有人爱你了。</p>
+<p>9</p>
+<p>我让妈妈不要哭。</p>
+<p>她笑着说，这是最后一次。</p>
+<p>后来……</p>
+<p>外公带着我们回家了。</p>
+<p>我们真正的家，是一幢超大的花园别墅。</p>
+<p>完全就是现实版的唐顿庄园——</p>
+<p>外公拄着拐杖，陪我高高兴兴地溜达一圈。</p>
+<p>但晚上的时候。</p>
+<p>祁明远竟然联系我了。</p>
+<p>我以为他被打清醒了。</p>
+<p>打电话过来，是道歉。</p>
+<p>虽然我不会原谅他。</p>
+<p>但也想看看，他乞怜的样子。</p>
+<p>电话接通，他果然特别殷勤，「舟舟，在外公家住得还习惯吗？」</p>
+<p>「不习惯，你要来接我回去吗？」我假装哄祁明远玩。</p>
+<p>他果然慌了。</p>
+<p>「额，这个，你如霜阿姨和菲菲已经搬进来……」</p>
+<p>「这样吧，如果你不想住在外公家，爸爸给你买个小公寓，好不好？」</p>
+<p>我去你的吧！</p>
+<p>我真想隔空扇他！</p>
+<p>「不用了！外公家很好，花园很大，房间很大！」</p>
+<p>「我专用的厕所，都比你的卧室大！」</p>
+<p>「也亏我妈受得了，陪你过穷日子！」</p>
+<p>「真是服气！」</p>
+<p>他不觉得我妈天天待在家里，是家庭主妇吗？</p>
+<p>那我就让知道——</p>
+<p>我妈待在他家，那是屈尊降贵。</p>
+<p>他还不识好歹！</p>
+<p>「嗯……」</p>
+<p>「确实委屈你妈了。」</p>
+<p>祁明远坦然承认错误。</p>
+<p>我纳闷。</p>
+<p>他这人很固执，从来不会道歉，尤其对晚辈。</p>
+<p>今天怎么……</p>
+<p>我正疑惑，却听见他说：「舟舟啊，你能不能跟你外公美言几句？别撤如霜阿姨的合约？」</p>
+<p>我哽住。</p>
+<p>难怪了……</p>
+<p>也只有为了小三，他才有这么好的脾气。</p>
+<p>「你让我帮小三说话？！你有病吧！」</p>
+<p>我没按耐住脾气，祁明远差点被我惹怒。</p>
+<p>「你……」</p>
+<p>「你小孩子家家，说话别那么难听！」</p>
+<p>「你如霜阿姨人很好，善良又有智慧，你跟她接触接触就知道了。」</p>
+<p>我气笑了。</p>
+<p>他让我跟小三接触？</p>
+<p>难道我妈不善良，我妈没智慧！</p>
+<p>「对了，你们学校不是要举办编剧大赛了吗？」</p>
+<p>我皱眉。</p>
+<p>编剧大赛，是我们专业最有含金量的赛事。</p>
+<p>评委都是国际大牌编剧。</p>
+<p>他从来不关心我学习，怎么知道？</p>
+<p>「菲菲在国外也是学编剧的，她转去你们学校了。」</p>
+<p>我泄了气。</p>
+<p>哦——</p>
+<p>原来还是为了私生女。</p>
+<p>「如霜阿姨在国外认识很多名编剧，搞艺术的，大多人自命清高，这种人脉，钱是买不来的。」</p>
+<p>「只要你帮帮如霜阿姨，我会让她给你介绍一个名师指导。」</p>
+<p>「我们舟舟至少得拿个第二吧。」</p>
+<p>祁明远故作和蔼可亲，还给我抛出了鱼饵。</p>
+<p>确实挺诱惑人的。</p>
+<p>但——</p>
+<p>他是我爸啊。</p>
+<p>他为我做事，为我找老师，不是理所应当吗？</p>
+<p>竟然要我交换条件……</p>
+<p>而这个条件，竟然是帮小三，伤害自己的妈妈。</p>
+<p>我好寒心……</p>
+<p>「你凭什么觉得我是第二!」</p>
+<p>我很不爽。</p>
+<p>他好像觉得我很没用一样。</p>
+<p>「我就是随便一说。」</p>
+<p>「菲菲也很厉害的，她从小跟她妈在片场，又聪明又讨喜，小小年纪就会帮人改剧本……」</p>
+<p>他字里行间都是对祁菲的骄傲。</p>
+<p>但他不知道，我十岁就获得过小编剧奖。</p>
+<p>祁菲可以的，我也行。</p>
+<p>10</p>
+<p>我到底还年轻。</p>
+<p>没忍住——</p>
+<p>把祁明远的那些话，哭着告诉了妈妈。</p>
+<p>我妈抱着我，久久无言。</p>
+<p>那晚，我们聊了很多。</p>
+<p>我终于知道——</p>
+<p>她这么多年，不告诉我她身世的原因。</p>
+<p>因为她一意孤行嫁给祁明远。</p>
+<p>因为外公却专横独断让她嫁给世交之子。</p>
+<p>一气之下，断绝关系。</p>
+<p>总之……</p>
+<p>两边都有错。</p>
+<p>两边都是狠人。</p>
+<p>转折发生在两月前，外公身体不好，通过管家劝解，我妈床前尽孝。</p>
+<p>父女俩这才冰释前嫌。</p>
+<p>话虽这么说。</p>
+<p>我妈还是很悔恨。</p>
+<p>说到底，还是祁明远不值得。</p>
+<p>「舟舟，编剧大赛，你准备得怎么样？」</p>
+<p>「挺好的……」</p>
+<p>其实，我有点担心。</p>
+<p>我的目标是拿第一。</p>
+<p>其他同学的水准，我都清楚。</p>
+<p>但祁菲，我不知道她是什么水平。</p>
+<p>更重要的是——</p>
+<p>我不想输给她！</p>
+<p>「有什么不顺，可以跟妈妈说说。」我妈贴心地说。</p>
+<p>她永远明白我。</p>
+<p>说到底——</p>
+<p>我还是对自己的内容，不够自信！</p>
+<p>「我觉得我的剧情不够惊艳。」</p>
+<p>「没有让人特别耳目一新的感觉，我怕抓不到评委的心……」</p>
+<p>我经常跟妈妈聊这个。</p>
+<p>她总能给我很好的启示。</p>
+<p>所以……</p>
+<p>以前，我就觉得她是个天才！</p>
+<p>全是祁明远耽误了她！</p>
+<p>但没想到。</p>
+<p>这次更猛。</p>
+<p>「我给你个宝贝。」</p>
+<p>「什么？」</p>
+<p>我正疑惑。</p>
+<p>我妈从抽屉掏出一本笔记。</p>
+<p>我翻开，上面是我妈写的清秀字体。</p>
+<p>再一看内容，我惊呆。</p>
+<p>这都是一些描述精彩的对话和桥段。</p>
+<p>「这些是……」</p>
+<p>我妈脸红红的，有点害羞，「就我灵光一闪做的笔记，你瞧瞧有没有用！」</p>
+<p>「当然有用了！太刺激我大脑了。」</p>
+<p>懂的都懂。</p>
+<p>编不出故意的时候，好作品总能给你启示。</p>
+<p>我妈……简直大师……</p>
+<p>她怎么不去当作家啊？</p>
+<p>她太屈才啦！</p>
+<p>第二天。</p>
+<p>我抱着妈妈的笔记拜读，翻到最后一页。</p>
+<p>我竟发现，右下角写着一个名字。</p>
+<p>「漪华」</p>
+<p>这是一位名作家的笔名。</p>
+<p>她的书，曾经获得过国际多项文学奖。</p>
+<p>过去五年，都挂在全球最畅销的榜单上。</p>
+<p>难道……</p>
+<p>我妈也喜欢她？</p>
+<p>毕竟我也经常，把喜欢的作者笔名写本子上来着。</p>
+<p>11</p>
+<p>周一，我去学校上课。</p>
+<p>果然，祁菲也在。</p>
+<p>她身旁还有祁露。</p>
+<p>她正在拍祁菲的马屁，「菲菲，我真羡慕你，你妈妈是演员，外公是艺术家，简直就是书香门第，演艺世家啊！」</p>
+<p>祁菲被人吹捧，原本满是得意。</p>
+<p>但我一出现，她脸色就变了。</p>
+<p>大概……</p>
+<p>因为我现在是首富外孙女吧。</p>
+<p>祁露马上又说，「菲菲，你是天之骄女，有非凡的人脉，你外公认识的艺术家，那都是清高的人，可不是用钱就能交往到的，你才是真正的贵族！」</p>
+<p>这话说到祁菲心里去了——</p>
+<p>她微微一笑，「你太夸张啦，不过我外公确实认识挺多的人，那个漪华你知道吗？」</p>
+<p>「知道呀！写《秘事》的女作家！全国畅销呀！」</p>
+<p>「好多名人都喜欢她呢！」</p>
+<p>「不过，听说她很低调，从来不接受采访的。」</p>
+<p>祁露如同超级粉丝，霹雳啪啦说一大堆。</p>
+<p>气氛渲染到位了——</p>
+<p>祁菲才傲娇的说：「我外公就认识她——」</p>
+<p>祁露从虚伪的夸赞，转而进阶到真诚的羡慕。</p>
+<p>然后——</p>
+<p>她又把矛头指向我，</p>
+<p>「菲菲家手握这么多文圈人脉，她的指导老师一定很厉害，编剧大赛的冠军，肯定是菲菲的！某些人，就不要妄想啦！」</p>
+<p>我冷笑。</p>
+<p>哦？那就拭目以待。</p>
+<p>有一说一。</p>
+<p>我本来确实有点担心。</p>
+<p>但我自从翻了老妈的笔记后，好像获得了能量加持。</p>
+<p>获益匪浅啊——</p>
+<p>而这时，我看见祁菲眉头轻轻一拧。</p>
+<p>怎么？</p>
+<p>她见我不慌，着急了？</p>
+<p>我正冷笑……</p>
+<p>她忽然扯起嘴角，幽幽地说：</p>
+<p>「外公告诉我，漪华，也是评审团的一员呢。」</p>
+<p>「编剧大赛开始之前，外公会把我引荐给她……」</p>
+<p>我丢！</p>
+<p>她居然想走后门！</p>
+<p>那个神秘的漪华,真的会帮她吗？</p>
+<p>12</p>
+<p>时间很快到了编剧大赛当天。</p>
+<p>我们早已提交了剧本，马上就是公布名次的时候。</p>
+<p>我和几个要好的同学坐在一起。</p>
+<p>这时，场内突然躁动起来。</p>
+<p>「好像有明星来了！」</p>
+<p>「曹如霜和她老公——」</p>
+<p>没一会，全场聚焦点都在他们身上。</p>
+<p>祁明远和曹如霜亲自来给祁菲加油……</p>
+<p>呵。</p>
+<p>从小到大。</p>
+<p>祁明远可从没来学校看过我！</p>
+<p>「爸爸妈妈，你们跟我坐一块吧」</p>
+<p>祁菲拉着他俩，走向台下的位置。</p>
+<p>经过我身边时，我瞥向祁明远。</p>
+<p>他假装没看见我……</p>
+<p>怎么？不敢认？</p>
+<p>怕尴尬？？？</p>
+<p>哼，我偏不让他如愿。</p>
+<p>所以，在祁明远要躲过去的时候，我甜甜地叫了声，「爸爸，你来啦！」</p>
+<p>祁明言脚步一滞，面色惊恐又埋怨地看向我。</p>
+<p>我吐了吐舌头，假装调皮。</p>
+<p>怎么？</p>
+<p>怕我让他丢脸吗？</p>
+<p>怕我让别人知道，他抛妻弃女？</p>
+<p>这时，同学忍不住问我：</p>
+<p>「舟舟，祁氏酒店的董事长，原来是你爸呀？」</p>
+<p>「那你和祁菲是什么关系？」</p>
+<p>祁菲和曹如霜脸色很难看。</p>
+<p>尤其是祁菲——</p>
+<p>她委屈巴巴地看着祁明远。</p>
+<p>我知道，她怕丢脸，怕私生女的身份曝光。</p>
+<p>曹如霜脸绿油油的，恨不得吃了我。</p>
+<p>在其他人询问目光中……</p>
+<p>祁明远扯着僵硬的嘴角，笑着跟别人介绍我，「这是我的干女儿，朋友家的……」</p>
+<p>干女儿……</p>
+<p>我手指陷进座椅里，眼角酸胀，胸口闷得说不上话来。</p>
+<p>曹如霜和祁菲脸色顿时好看了。</p>
+<p>曹如霜还阴阳怪气地问我：</p>
+<p>「舟舟，你妈妈怎么没陪你？今天这么重要，就算她不懂剧本，也应该陪着你啊。」</p>
+<p>我冷嗤。</p>
+<p>我妈不懂剧本？你懂？</p>
+<p>「她怎么懂这些？又不是你。」祁明远接她的话。</p>
+<p>「那可不一定，王家有钱，各种熏陶少不了的。」</p>
+<p>「呵，想太多，她有这份造诣，还能做这么多年全职太太？」</p>
+<p>祁明远陪着曹如霜一唱一和，贬低我妈。</p>
+<p>祁菲趁机推着祁明远离开，「爸！走啦！我们去见见外公！他也是我们学校的受邀嘉宾呢！」</p>
+<p>说完，得意洋洋的冲我看了一眼。</p>
+<p>我眼底几乎要溅出火花。</p>
+<p>正要做些什么时候。</p>
+<p>场面忽然沸腾起来。</p>
+<p>只因有人说，「漪华来了！」</p>
+<p>那个神秘的天才作者。</p>
+<p>多项国际大奖的获得者。</p>
+<p>全球最畅销作家之一。</p>
+<p>大家都想知道她长什么样。</p>
+<p>我下意识回头——</p>
+<p>我妈恰好站在大门中央。</p>
+<p>13</p>
+<p>老妈一改朴素风格。</p>
+<p>她今天穿着长裙，还戴着钻石项链和耳坠，头发高高挽起。</p>
+<p>如同气质典雅的高贵公主。</p>
+<p>我同学也有见过我妈的。</p>
+<p>「宝！你妈妈好漂亮啊！」</p>
+<p>「阿姨简直像仙女下凡。」</p>
+<p>我虚荣心大大受到了满足，立刻奔到我妈怀里。</p>
+<p>别管我了，我就是妈宝女！</p>
+<p>当然，也不知道，是不是老天故意安排。</p>
+<p>我竟然瞥见祁明远微微失神的一瞬间。</p>
+<p>呵！</p>
+<p>总有一天，他得承认自己眼瞎。</p>
+<p>我妈比曹如霜漂亮多了！</p>
+<p>「你好啊！雯雅！」</p>
+<p>「我终于又见到你了！」</p>
+<p>我听见老迈的声音，是祁菲扶着的老人。</p>
+<p>这大概就是她口中的外公。</p>
+<p>可是。</p>
+<p>她认识我妈？</p>
+<p>我眼神奇怪的看着老头子。</p>
+<p>不仅是我——</p>
+<p>曹如霜和祁菲也很奇怪。</p>
+<p>「爸！你认识她？」</p>
+<p>「外公，今天是我的大日子，待会漪华还要来，你注意点……」</p>
+<p>老头子阵阵无语。</p>
+<p>他郑重说道：「她就是漪华啊！」</p>
+<p>瞬间，空气凝滞。</p>
+<p>我也傻了——</p>
+<p>他说什么。</p>
+<p>我妈说漪华？</p>
+<p>「漪华是我见过最有才的人！她不仅会写小说，还会写剧本，我好几个剧本，都有请教过她！」</p>
+<p>然后他就报成了几个名字和内容，全是爆剧和经典桥段。</p>
+<p>这都是出自我妈之手？</p>
+<p>我的天……</p>
+<p>我看着我妈，震惊，激动，膜拜。</p>
+<p>你不是我妈，你！是我的神！</p>
+<p>但你干嘛不早点告诉我！</p>
+<p>我妈，「怕你有压力——」</p>
+<p>我……</p>
+<p>好吧确实！</p>
+<p>与此同时，我的同学都纷纷跑来，让我妈签名。</p>
+<p>老师也不端着了，他们其中也有很多，我妈的书粉。</p>
+<p>「漪华老师！我好喜欢你的文笔！」</p>
+<p>「漪华老师，我能不能求你件事，给书里的***重开一个结局吧！我舍不得他死啊！」</p>
+<p>「漪华！能不能来我们学校做老师！我给你腾位置！」</p>
+<p>「华姐！啥也不说了，可以给我签个名吗？」</p>
+<p>我被挤到了外面。</p>
+<p>这哪是编剧大赛，这简直就是我妈的粉丝见面会！</p>
+<p>这时——</p>
+<p>祁菲的外公还在喋喋不休，炫耀我妈的光荣事迹。</p>
+<p>「漪华还是个全方面开花的天才！」</p>
+<p>「她在书法上也很有造诣！曾经一副防颜真卿字体，被拍出高价！」</p>
+<p>提到造诣——</p>
+<p>祁明远之前怎么说来着？</p>
+<p>我妈但凡有什么造诣，也不会是全职太太？</p>
+<p>呵。</p>
+<p>我就想问，他的脸疼不疼？</p>
+<p>全职太太怎么了？也照样吊打你们。</p>
+<p>我看见曹如霜和祁菲冰冷阴沉的脸。</p>
+<p>还有祁明远——</p>
+<p>他满眼惊诧的看着人群中央的我妈，眼底乍现一抹怅然若失。</p>
+<p>我以为我看错了。</p>
+<p>祁露来回踱步，眼巴巴的望着人群。</p>
+<p>我知道，她也很想要签名。</p>
+<p>她竟然也是我妈的小粉丝呢！</p>
+<p>哈！一群跳梁小丑！</p>
+<p>14</p>
+<p>编剧大赛颁布名次。</p>
+<p>我的剧本凭借剧情精彩又抓人。</p>
+<p>在人气选票和评委打分，拿到了第一。</p>
+<p>祁菲则剧情逻辑不行，只拿到第九，面前进前十。</p>
+<p>呵……</p>
+<p>祁明远还把她当骄傲呢。</p>
+<p>由于编剧大赛广受关注，到场也有不少记者。</p>
+<p>他们蜂拥而至采访我，还有亲爱的妈妈。</p>
+<p>相反，身为明星的曹如霜备受冷落！</p>
+<p>「真是有其母必有其女啊！」</p>
+<p>「母女都这么漂亮又有才华，父亲真是妥妥的人生赢家。」</p>
+<p>「方便透露父亲是谁吗？」</p>
+<p>这时——</p>
+<p>我瞥向祁明远，分明看见他眼神亮了一瞬。</p>
+<p>我嘴角扯过一抹微不可察的讽刺。</p>
+<p>我的父亲，刚刚说我是他的干女儿。</p>
+<p>朋友家的孩子……</p>
+<p>我哪有什么父亲！</p>
+<p>我和我妈心照不宣的对视一眼。</p>
+<p>只道：「很遗憾，他去世了。」</p>
+<p>说完。</p>
+<p>我微笑的看着祁明远。</p>
+<p>他的脸色又黑又红。</p>
+<p>是啊——</p>
+<p>一个从没尽到责任的父亲，可不就是死了！</p>
+<p>15</p>
+<p>这事之后，祁明远越发奇怪了。</p>
+<p>他经常偷偷联系我。</p>
+<p>他比以往更加关怀我。</p>
+<p>问我学习，身体，生活方方面面。</p>
+<p>我会接他的话，不是接受他的转变。</p>
+<p>而是看戏——</p>
+<p>因为，他对我的关心，最终都会绕到我妈身上。</p>
+<p>然而我也会把电话录下来，转发给曹如霜……</p>
+<p>静静地，看白月光，变成了白饭粒。</p>
+<p>还挺好玩。</p>
+<p>但我妈没我这么无聊。</p>
+<p>她开始涉足外公的产业了。</p>
+<p>只是，她这么多年，对集团没你任何功劳。</p>
+<p>集团董事会不信任她，在此之前，她必须接受一次考验。</p>
+<p>考验项目：一个濒死的酒店。</p>
+<p>老妈只要能把酒店救活，盈利增长百分之十，就过关。</p>
+<p>但老妈很有志气。</p>
+<p>她说：「百分之五十。」</p>
+<p>因此——</p>
+<p>她开始早出晚归了。</p>
+<p>有一天，她还没回来。</p>
+<p>我就接到了祁明远的电话。</p>
+<p>「舟舟，你怎么不管管你妈！她现在天天在外面鬼混，跟男人一起吃饭。」</p>
+<p>「注意你的用词。」</p>
+<p>我非常不爽。</p>
+<p>谁鬼混了！</p>
+<p>你特么一个出轨男，凭什么管我妈。</p>
+<p>「你妈最近跟宏胜酒店的老总，走得很近……」</p>
+<p>「她是不是想再婚了？」</p>
+<p>祁明远声音黯然，有点提不起劲的感觉。</p>
+<p>我：哦呵呵，关你屁事。</p>
+<p>当然了——</p>
+<p>祁明远猜得也没错。</p>
+<p>当天晚上，妈妈的确是被人送回来的。</p>
+<p>我趴在窗上瞧瞧看了，那男人四十来岁，英俊挺拔，很有熟男魅力。</p>
+<p>跟我妈，还挺般配的……</p>
+<p>挺好的……</p>
+<p>我希望妈妈离开祁明远后，能过得特别幸福！</p>
+<p>后来。</p>
+<p>我追着老妈问东问西，她就是含糊其辞。</p>
+<p>唉，估计是害羞！以后就好了。</p>
+<p>我就等着——</p>
+<p>等我妈通知我，她找到幸福了。</p>
+<p>然而，半年后。</p>
+<p>恋爱通知没等到。</p>
+<p>我却等到了妈妈把酒店盘活的消息。</p>
+<p>并且，营业额增长百分之六十！</p>
+<p>董事会正式认可她……</p>
+<p>满新闻全是：</p>
+<p>「知名作家成企业女强人。」</p>
+<p>「年度最有能力的家族接班人……」</p>
+<p>不仅如此，妈妈的光荣往事也被趴了出来。</p>
+<p>「王雯雅的全能人生：画作被知名美术馆收藏，书法被拍卖高价，全球知名作家，商业新秀！」</p>
+<p>……</p>
+<p>不要说别人。</p>
+<p>我看得都酸了。</p>
+<p>但是，好像缺点什么！</p>
+<p>美好姻缘呢？那个经常送老妈回家的叔叔呢？</p>
+<p>我可是百度了宏胜酒店！</p>
+<p>他家老板是个隐形富三代，跟我妈挺般配的。</p>
+<p>难道掰了？</p>
+<p>我不甘心，跑去王氏顶层的办公室，问我妈。</p>
+<p>16</p>
+<p>老妈正在看文件，听我提起，似乎才想起来。</p>
+<p>「哦——」</p>
+<p>「他啊，他怎么了？」</p>
+<p>她疑惑的问我。</p>
+<p>我：？？？</p>
+<p>「你不是在跟他谈恋爱？」</p>
+<p>「什么？谁跟你说的？」</p>
+<p>「我看见的呀！他经常送你回家！」</p>
+<p>我妈：「哦，我跟他炒作呢。」</p>
+<p>啥——</p>
+<p>炒作？？？</p>
+<p>「我们走得近，外界就会猜测，两家酒店会不会合并？这样对我们当时快倒闭的酒店，很有好处。」</p>
+<p>「？？？」</p>
+<p>我妈牛啊！！！</p>
+<p>「那个叔叔也知道吗？」</p>
+<p>我妈摇头，「他靠近我，只是为了我的家业，甚至还想从我嘴里套内幕消息。」</p>
+<p>啥？</p>
+<p>那男人看着成熟英俊，居然一肚子坏水。</p>
+<p>呸！真下头！</p>
+<p>「舟舟，妈妈眼瞎了一次，就不会再眼瞎第二次。」</p>
+<p>「为了你，为了外公，更为了我们一家，妈妈会时刻保持清醒，也会更加努力的。」</p>
+<p>此时此刻，我看见妈妈眼里有光。</p>
+<p>自食其力后，我才渐渐明白……</p>
+<p>那束光来自心上。</p>
+<p>它会照亮你想要走的路。</p>
+<p>17</p>
+<p>后来又发生了一些事。</p>
+<p>祁明远从偶尔的打扰，变成经常的打扰。</p>
+<p>刚开始。</p>
+<p>他还只是跟我套老妈的事情。</p>
+<p>后来就变本加厉。</p>
+<p>他居然让我约妈妈！</p>
+<p>他是不是疯了！他都跟曹如霜结婚了唉！</p>
+<p>「你是我女儿，难道你不希望妈妈，跟你自己的爸爸在一起吗？」</p>
+<p>「不希望。」</p>
+<p>我挂了电话。</p>
+<p>又一次，把通过记录发给了曹如霜。</p>
+<p>虽然她每次都会打电话来骂我。</p>
+<p>但我知道，她不会拉黑我的。</p>
+<p>唉——</p>
+<p>我真无聊，真记仇啊。</p>
+<p>终于。</p>
+<p>曹如霜忍无可忍，跑去酒店跟他吵。</p>
+<p>祁家鸡飞狗跳，祁明远生意也受到了影响。</p>
+<p>他做了一次错误的决策，酒店转型失败，濒临破产。</p>
+<p>很多人盯着收购。</p>
+<p>而祁明远只对我妈殷勤。</p>
+<p>她一出手，低价收购了酒店。</p>
+<p>因此，祁明远误以为我妈接受了他的心意。</p>
+<p>幻想能跟我妈重新开始……</p>
+<p>结果我妈：「祁总，我们不是正常做生意吗？」</p>
+<p>「你让我给你那么低的价格……」</p>
+<p>「我做生意还价，有问题吗？」</p>
+<p>祁明远：……</p>
+<p>后来，他拿着剩余资产，陆续投资，想要东山再起。</p>
+<p>又赶上行情不好，他心又大，直接破产了。</p>
+<p>曹如霜天天跟他吵架。</p>
+<p>没钱，没感情。</p>
+<p>白月光变成白饭粒，啥也不是！</p>
+<p>后来，曹如霜被狗仔拍到出轨，名声一落千丈。</p>
+<p>祁菲受不了父母，天天和学校的富二代混在一起。</p>
+<p>也不好好写剧本了……</p>
+<p>想进娱乐圈，又因为她妈老来塌房，导致她门路紧闭。</p>
+<p>毕业后，她不知道去了哪个剧组打杂……</p>
+<p>至于祁露，她一直都很「聪明」的。</p>
+<p>现在正跟好几个有钱人，同时交往。</p>
+<p>其中一个还有正牌女友，来学校找她，骂她是卖的……</p>
+<p>我真的感慨，天道有轮回。</p>
+<p>有一次，我和我妈在车上，看见了祁老太。</p>
+<p>她正在挑菜叶子，看见我们，大喜。</p>
+<p>眼看着就要朝我们追来……</p>
+<p>但绿灯一闪，我们的车开走了。</p>
+<p>她落寞下来——</p>
+<p>最后一次看见祁明远，是我在影视城工作的时候。</p>
+<p>祁菲在小剧组打杂，每天赚得不够花。</p>
+<p>三天两头找他要钱。</p>
+<p>我看见他的时候，祁菲刚把他的钱搜刮去。</p>
+<p>他满眼失望的看着，深受自己喜欢的女儿的背影，连连叹息……</p>
+<p>但没一会。</p>
+<p>他又要回到岗位上。</p>
+<p>大夏天，他穿着太监服，站在太阳底下暴晒。</p>
+<p>看见我时，他尴尬一笑，「我年纪大了，做别的，没人要，只能干这个。」</p>
+<p>我不知道跟他说什么。</p>
+<p>他却很想跟我套近乎，「大家都说，你是年轻编剧里最厉害的，爸爸很为你骄傲。」</p>
+<p>他自称「爸爸」，被其他群演听见了。</p>
+<p>那名群演很惊讶，「不会吧！祁编是你女儿！」</p>
+<p>祁明远意味复杂地笑了笑。</p>
+<p>他刚要说话，我却抢了过去，「干女儿罢了，小时候乱认的。」</p>
+<p>说完，我看见他红了眼眶。</p>
+<p>但我心里毫无波澜。</p>
+<p>你这个爸爸，我早就不要了！</p>
+<p>你给我的伤害，我统统还你！</p>
+<p>剧组杀青，我收到了妈妈的鲜花。</p>
+<p>走出门，见她穿着风衣，戴着墨镜，飒爽的靠着红色法拉利。</p>
+<p>「宝贝，老妈休假，带你自驾游！」</p>
+<p>「太棒了，走——」</p>
+<p>（全文完）备案号:YXX1GnmrXeFOyPB5lGcpQpK</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/3-%E8%80%81%E5%85%AC%E6%9C%89%E9%9A%90%E7%96%BE/" title="老公有隐疾">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">老公有隐疾</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/6-%E8%80%81%E5%A5%B3%E5%AD%A9%E6%9D%80%E6%AD%BB%E9%82%A3%E4%B8%AA%E7%A9%BF%E8%B6%8A%E8%80%85/" title="老女孩：杀死那个穿越者">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">老女孩：杀死那个穿越者</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

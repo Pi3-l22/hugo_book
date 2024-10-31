@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拯救那位病弱三爷 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/6/1-%E6%8B%AF%E6%95%91%E9%82%A3%E4%BD%8D%E7%97%85%E5%BC%B1%E4%B8%89%E7%88%B7/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/6/1-%E6%8B%AF%E6%95%91%E9%82%A3%E4%BD%8D%E7%97%85%E5%BC%B1%E4%B8%89%E7%88%B7/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="拯救那位病弱三爷">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+  <meta name="twitter:title" content="拯救那位病弱三爷">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="拯救那位病弱三爷">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11086">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26611.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">拯救那位病弱三爷</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>23分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%8b%af%e6%95%91%e9%82%a3%e4%bd%8d%e7%97%85%e5%bc%b1%e4%b8%89%e7%88%b7&amp;url=https://mohai.us.kg/posts/2023/6/1-%E6%8B%AF%E6%95%91%E9%82%A3%E4%BD%8D%E7%97%85%E5%BC%B1%E4%B8%89%E7%88%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/6/1-%E6%8B%AF%E6%95%91%E9%82%A3%E4%BD%8D%E7%97%85%E5%BC%B1%E4%B8%89%E7%88%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%8b%af%e6%95%91%e9%82%a3%e4%bd%8d%e7%97%85%e5%bc%b1%e4%b8%89%e7%88%b7%20https://mohai.us.kg/posts/2023/6/1-%E6%8B%AF%E6%95%91%E9%82%A3%E4%BD%8D%E7%97%85%E5%BC%B1%E4%B8%89%E7%88%B7/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26611.jpg" alt="拯救那位病弱三爷" />
+      
+
+      <p>拯救那位病弱三爷</p>
+<p>非分之想：恰情动时见你</p>
+<p>沈氏太子爷阴戾冷漠，唯独对我闺蜜例外。</p>
+<p>但我一心在闺蜜面前抹黑他。</p>
+<p>气得他扔下支票：「说吧，要多少钱你才愿意离开周吟？」</p>
+<p>「一千万。」我试探性地报了个数。</p>
+<p>他讥讽我见钱眼开，区区一千万就能卖了闺蜜。</p>
+<p>但我只听到他说「区区一千万」。</p>
+<p>懂了，还能加价。</p>
+<p>我深吸一口气：「那五千万……」</p>
+<p>我叫季如瑰，娱乐圈十八线小明星。</p>
+<p>勉强靠些擦边舞蹈视频挤进了颜值赛道，是各家都能踩上一脚的存在。</p>
+<p>而我的闺蜜周吟跟我截然相反。</p>
+<p>刚出道就凭借清纯甜美的外貌一跃成为新生代流量花。</p>
+<p>好资源拿到手软。</p>
+<p>我到家时，刚结束一部大制作电影的周吟正躺在沙发上，美滋滋地敷着面膜。</p>
+<p>那款面膜我种草了许久，一直没舍得买。</p>
+<p>周吟听到开门声，惊喜地从沙发上跳起来，一把抱住我。</p>
+<p>我整个人跟冰碴子似的，把她冻得打了个哆嗦。</p>
+<p>「好家伙，你身上怎么这么冷啊？」</p>
+<p>我心想，大冬天穿条吊带裙在雪地里拍了两个小时的变装热舞，能不冷吗？</p>
+<p>周吟一向不喜欢我拍这些视频，所以我很识时务地闭嘴。</p>
+<p>她哈着气，帮我搓了搓手。</p>
+<p>伴随低头的动作，周吟细致如玉的脖颈上，露出一截细细的银链，一颗深天鹅绒色泽的蓝宝石吊坠顺势垂落。</p>
+<p>只一眼，便能让人看出价格不菲。</p>
+<p>我移不开视线。</p>
+<p>「这项链……蛮好看的，是你新买的吗？」</p>
+<p>周吟的动作一顿，有些含糊地答道：「上部电影杀青的时候，投资方沈总……送我的。」</p>
+<p>周吟像是打开了话匣子，但说来说去全是沈谙。</p>
+<p>她被剧组女演员针对时，是沈谙站出来替她主持公道。</p>
+<p>她的哭戏被导演骂时，是沈谙陪她在天台吹风开导她。</p>
+<p>周吟提到他时语气甜蜜，又带着点忐忑。</p>
+<p>「沈总人真好。」</p>
+<p>我心一凉。</p>
+<p>我对周吟太过熟悉——她喜欢上了沈谙。</p>
+<p>沈谙，沈家的天之骄子。</p>
+<p>我曾在酒会上远远地见过他一面。</p>
+<p>当时我正对着一群中年男人点头哈腰，苦兮兮地求人家从指头缝里给我漏点资源。</p>
+<p>他们嘴上调笑着，开的空头支票一张比一张大。</p>
+<p>更有甚者，直接把房卡塞进我手里。</p>
+<p>我却还得赔着笑。</p>
+<p>突然间，一位西装革履的男人走进宴会厅，在场的所有人心照不宣地安静下来，如同众星捧月般向他走去。</p>
+<p>方才在我面前趾高气扬的那些人脸上，挂上了如我相同的谄媚笑容。</p>
+<p>而那个五官形如刀削，精致立体的年轻男人，只是用一双淡漠的丹凤眼不咸不淡地看着他们。</p>
+<p>他的眼神也曾落在我身上。</p>
+<p>极短暂地掠过，仿佛看一粒尘埃。</p>
+<p>后来我才知道，他就是沈谙。</p>
+<p>沈谙阴鸷冷漠，唯独对周吟例外。</p>
+<p>周吟也喜欢他。</p>
+<p>可我不想让他们在一起。</p>
+<p>我鬼使神差地说：「你还记得有次我从酒会上带回来一张房卡吗？</p>
+<p>「那是沈谙塞给我的。」</p>
+<p>周吟惊愕地抬头，她的神色由羞涩变为震惊愤怒。</p>
+<p>她再一次心疼地抱住我。</p>
+<p>骂道：「沈谙那个畜生！」</p>
+<p>她的身上很暖，冲淡了我的寒气。</p>
+<p>我的心里一阵平静。</p>
+<p>骂吧骂吧！</p>
+<p>骂得越狠，你就越不可能和他在一起了。</p>
+<p>等我回到自己的房间，我才发现梳妆台上摆了足足一箱的面膜。</p>
+<p>从小到大，周吟都是这样。</p>
+<p>只要是我想要的，她都会给我。</p>
+<p>她一直对我很好，很好。</p>
+<p>周吟在家没待上几天，就又进组了。</p>
+<p>她前脚刚走，我后脚就发起高烧。</p>
+<p>昏昏沉沉地做了好多梦。</p>
+<p>梦里周吟得了影后，坐在台下的沈谙带头鼓掌，在众人的欢呼声中，他单膝跪地。</p>
+<p>画面一转。</p>
+<p>华贵通明的别墅内，只听得到浴室的水声。</p>
+<p>周吟裹着一身丝质睡袍，愣愣地盯着手机里的照片。</p>
+<p>那是一张我和她的合照。</p>
+<p>下一秒……</p>
+<p>「啊！」</p>
+<p>我从梦中惊醒。</p>
+<p>一身冷汗，精神却好了很多。</p>
+<p>我打开手机。</p>
+<p>周吟嘱咐我要好好休息。</p>
+<p>一直放养我的经纪人李姐破天荒地问我在哪，说今晚有活。</p>
+<p>我认认真真地化好全妆，选好衣裳。</p>
+<p>李姐雀跃地将我送到沅居门口。</p>
+<p>我走进去，主位上坐着沈谙一人。</p>
+<p>他轻轻抬眼：「季小姐，听说我给你塞过房卡？」</p>
+<p>说多错多，我索性一言不发。</p>
+<p>大概是沉默的我像个鹌鹑似的，太没气势。</p>
+<p>沈谙轻笑一声：「说吧，要多少钱，你才肯离开周吟。」</p>
+<p>我深吸一口气，试探性地报了个数：「一千万？」</p>
+<p>沈谙不屑道：「周吟把你当好朋友，为了区区一千万，你就能抛弃她。」</p>
+<p>他像是看到了什么脏东西：「娱乐圈果然都是你这种见钱眼开的女人。」</p>
+<p>但我只听到他说「区区一千万」。</p>
+<p>懂了，还能加价。</p>
+<p>「那五千万……」</p>
+<p>沈谙声音隐含怒气：「你以为我是冤大头吗？」</p>
+<p>「五千万，少一分都不行。」</p>
+<p>我端起面前的冰水，一鼓作气地灌下去。</p>
+<p>沈谙眼神一沉：「季如瑰，别太过分，小心有命挣没命花。」</p>
+<p>「确实。」</p>
+<p>我想起了什么，怔怔地点了点头。</p>
+<p>「不过……」</p>
+<p>我掏出包里的录音笔，轻轻一按。</p>
+<p>从「季小姐听说我给你塞过房卡」到「有命挣没命花」，每一句的音质都清晰又响亮。</p>
+<p>「周吟很相信我，她不会把我说的话告诉你，唯一可以解释你知道这些的理由只有——你在监听她。</p>
+<p>「给美女递房卡的情场浪子或许能让她相信你会回头是岸。</p>
+<p>「但如果是事无巨细地监视她，试图掌控她生活的变态，沈总觉得周吟还会接受你吗？」</p>
+<p>沈谙目光森然。</p>
+<p>我把录音笔收进包里：「现在我想，五千万并不过分。」</p>
+<p>「还是说，沈总已经决定，让我有命挣没命花了？」我攥紧手中的空杯。</p>
+<p>不知过了多久。</p>
+<p>沈谙将一张五千万的支票留在桌上。</p>
+<p>「五千万，从此不准出现在周吟面前。</p>
+<p>「希望你说到做到。」</p>
+<p>他走后，我用食指摩挲了下到手的支票。</p>
+<p>「当然。」</p>
+<p>不过，是在五千万花完前。</p>
+<p>我删掉了周吟所有的联系方式，又向李姐请了长假。</p>
+<p>一出沅居，深夜的寒风凛冽，吹乱了我的头发。</p>
+<p>我随手拦下一辆出租。</p>
+<p>我说我要去的地方不好找，师傅等会走哪条道听我讲就行。</p>
+<p>司机师傅偏不信邪，非让我把地址报出来。</p>
+<p>果然他在导航里，怎么都搜不到。</p>
+<p>最后还是只能靠我口述。</p>
+<p>等红灯时，他有些憨厚地道歉：「不好意思啊，干了这么多年，还是第一回找不到那个地址。」</p>
+<p>我笑着说：「不怪您，要不是上辈子来过，我也找不到这。」</p>
+<p>他被我逗得哈哈大笑。</p>
+<p>只有我心里知道，自己是认真的。</p>
+<p>崎岖的山路绕了又绕，在司机大叔第三次质疑我是不是记错了位置后，我们终于到了一栋古色古香的中式宅院前。</p>
+<p>这栋宅子占地极大，没有名字，就叫沈家祖宅。</p>
+<p>即使在地图上也搜不到它的所在。</p>
+<p>我来这里要找一个人，沈三爷——沈谙的小叔叔。</p>
+<p>门口的保镖一个个西服墨镜，膀大腰圆。</p>
+<p>我还没走近，就已经尽职地要赶我走。</p>
+<p>我抿了抿唇：「劳烦转告沈三爷，我能救他。</p>
+<p>「我知道他需要的心源在哪里。」</p>
+<p>沈家三爷有着先天性心脏病，偏偏又是罕见的熊猫血，合适的心脏供体等了三十年，一直无异于大海捞针。</p>
+<p>他们对我的话将信将疑。</p>
+<p>性子急躁的龙哥快步走进大宅，其余人仍紧盯着我。</p>
+<p>过了会儿，龙哥眼神复杂地回来，打了个手势，众人才散开。</p>
+<p>他上前领路：「请。」</p>
+<p>这里的一草一木，我都极其熟悉。</p>
+<p>现在是冬日，积着厚雪的院子里只有山茶花还在开。</p>
+<p>我想见的人正静坐在庭院中央，手里握着一串佛珠，簌簌的落雪沾湿了他的肩头。</p>
+<p>沈三的脸上苍白而无血色，笑容清润，瞳色明朗。</p>
+<p>他看向我的一刹那，我没能忍住眼泪。</p>
+<p>我太久没有见过他了</p>
+<p>一瞬惊诧后，沈三有些无奈：「哭什么？」</p>
+<p>我抹了把眼泪，想到上辈子最后一次见他，他形销骨立地躺在病床上也在问我哭什么。</p>
+<p>我哭得更厉害了。</p>
+<p>沈三无可奈何道：「小姑娘，你不是说来救我吗，怎么自己还哭上了？」</p>
+<p>我没头没脑地来了一句：「你侄子沈谙太欺负人了。」</p>
+<p>他哭笑不得，头疼般揉了揉太阳穴：「那我替他跟你道歉，沈谙无法无天惯了，确实性格恶劣，我会管束他的。」</p>
+<p>我委委屈屈地「嗯」了声。</p>
+<p>他似乎觉着好笑，难得促狭道：「不过据我所知，季小姐也没吃亏，毕竟从他的账户上划走了五千万。」</p>
+<p>这话一出，领我进门的龙哥以为我在门外说的话都是诓他的，气愤地嚷着：「你说知道心源在哪，不会是故意骗三哥的吧？」</p>
+<p>我吸了吸鼻子：「不是，我真的知道。」</p>
+<p>沈三叹了口气，将身侧的纸巾递给我。</p>
+<p>与此同时，他收敛起笑意：「季小姐，这不好开玩笑，你知道自己在说什么吗？」</p>
+<p>上辈子我和沈三在周吟婚礼上第一次见面后，他从来没有用这种语气跟我讲过话。</p>
+<p>想着我心更酸了。</p>
+<p>又开始抽抽搭搭：「我真的知道。」</p>
+<p>他无奈极了，神色再度软下去。</p>
+<p>「别哭。」</p>
+<p>他戏言道：「不然把沈谙叫回来打他一顿行吗？」</p>
+<p>我有点期待，也不是不行。</p>
+<p>但我最想要的不是这个。</p>
+<p>我郑重地重复了第三遍：「我真的知道。」</p>
+<p>沈三仍旧温和从容，即使事关他的生死。</p>
+<p>「我可以告诉你心源在哪，但我有条件。」</p>
+<p>他唇角上扬的弧度不变，毫不意外我会提出条件：「请说。」</p>
+<p>我鼓足勇气：「我要你跟我结婚。」</p>
+<p>话音一落。</p>
+<p>他的神情迅速冷淡：「不行！」</p>
+<p>我怎么也没想到会是这个答案。</p>
+<p>龙哥在一旁皱眉道：「三哥已经有了未婚妻，你不要痴心妄想。」</p>
+<p>「怎么可能？」我下意识地反驳。</p>
+<p>我看向沈三。</p>
+<p>他眼中是不容置喙的坚定：「我很爱我的未婚妻。」</p>
+<p>「如果是其他条件，我会考虑，但这件事，不行。」</p>
+<p>龙哥像嫌气氛还不够尴尬，小声补充：「三哥对徐小姐一见钟情，你是不会明白的。」</p>
+<p>「一见钟情？」</p>
+<p>我重复着这四个字。</p>
+<p>沈三微微点头，嘴角是温柔的笑意：「是，我对我的爱人一见钟情。」</p>
+<p>我也笑了。</p>
+<p>好啊，上辈子你还说对我一见钟情。</p>
+<p>感情你的一见钟情是批发来的。</p>
+<p>龙哥苦口婆心地劝我：「季小姐是吧？你如果真知道怎么找到心源，三哥是不会亏待你的。何必非盯着沈家女主人的位置……」</p>
+<p>他还想继续，被我打断了。</p>
+<p>我对沈三说：「好，那就换个其他条件，我要一直住在沈家直到……你痊愈。」</p>
+<p>沈三垂眸沉思：「季小姐就这么确定我能痊愈？」不等我回答，「但有一个问题，你一直没有告诉我们。」</p>
+<p>「你所说的心源在哪里？」</p>
+<p>「心脏捐赠者的信息受到政府保护，即使是沈家，也只能向有捐献资格的病人群体寻求匹配，你有什么渠道能知道心源的下落？」</p>
+<p>我直视着他探求的眼神。</p>
+<p>「每个人都有秘密，只要你信，我就能救你。」</p>
+<p>「况且只是让我住在沈家，对你来说，又有什么损失呢？」</p>
+<p>龙哥嘟囔了一句：「谁知道你是不是在觊觎三哥？」</p>
+<p>我不理会他，只是看着沈三。</p>
+<p>良久后，沈三点了点头：「你可以留在沈家，但三楼最左边的那间房你不能动，其他客房可以任选。」</p>
+<p>那是……我上辈子在沈宅的房间。</p>
+<p>沈三告诉过我，从那里的阳台可以看到最好的日落。</p>
+<p>它被他留给了别人。</p>
+<p>「嗯。」</p>
+<p>我径直上楼，一句都不想多问。</p>
+<p>龙哥有些惊喜：「三哥，那间是徐小姐要住进来吗？」</p>
+<p>我加快脚步，不想听沈三回答了什么。</p>
+<p>一切变得不一样，是好事。</p>
+<p>不一样才说明能够改变。</p>
+<p>我要救他,即使……</p>
+<p>我随意走进一间房，整个人困倦得倒在床上。</p>
+<p>即使……</p>
+<p>我们不再相爱。</p>
+<p>大概是终于来到沈三身边，这段日子我难得睡了一个好觉。</p>
+<p>阳光明晃晃地刺亮我眼睛，都没能闹醒我的好眠。</p>
+<p>反倒是后来有人上下楼梯拖拉重物，吵醒了我。</p>
+<p>慢着，还有……女人的娇笑声。</p>
+<p>我猛然睁开双眼。</p>
+<p>楼下的女人是徐濛濛，龙哥嘴里的徐小姐，沈三口中的爱人。</p>
+<p>巧的是，她还是我上辈子的对家。</p>
+<p>之所以是上辈子，是因为我这辈子的咖位还不配和她放一起比较。</p>
+<p>徐濛濛是如今银幕上炙手可热的美艳型花旦，人气极高。</p>
+<p>上辈子我也是拿下一部主流电影的重要角色后才能和她相较，因为资源有冲突，我们私交平平。</p>
+<p>没想到这辈子还能因为男人有冲突。</p>
+<p>我站在二楼转角，看着她和沈三并肩的画面。</p>
+<p>真的很气。</p>
+<p>所以说，他根本不是对我一见钟情，是对同一个类型的女人一见钟情。</p>
+<p>龙哥瞧见了我，他瞪大了眼睛，高声喊道：「季……季小姐，你在干什么？」</p>
+<p>我冷着脸，放下了手中的龙泉官窑双耳瓶：「没什么，拿起来掂下重不重。」</p>
+<p>龙哥好奇地发问：「重吗？」</p>
+<p>我皮笑肉不笑：「挺重的，砸人的话，应该一砸一个准。」</p>
+<p>他闻言警戒地后退一步，正好挡住我看向沈三的目光。</p>
+<p>徐濛濛听见动静回了头。</p>
+<p>她实在生得很漂亮，是我在路上遇到都会忍不住多看一眼的女人。</p>
+<p>但她看我的眼神是不是过于开心了？</p>
+<p>「我靠……」</p>
+<p>「一只龟龟？」</p>
+<p>我的直播账号名……</p>
+<p>给我整不会了：「啊是，你……看过我直播？」</p>
+<p>她骄傲地仰头：「我还给你刷过嘉年华呢。」</p>
+<p>嘉年华是直播间里最贵的礼物之一，我只收到过寥寥几次，很有印象。</p>
+<p>所以她的 id 是……</p>
+<p>我闭上双眼：「AAA 建材徐哥。」</p>
+<p>上辈子一起参加活动，明明都对我很高冷的。</p>
+<p>我俩抢资源的头条不知道养活了多少营销号。</p>
+<p>没想到有些美女白天做着我的对家，晚上就成了我的直播间老铁。</p>
+<p>徐濛濛跟我记忆中很不一样。</p>
+<p>她滔滔不绝地表达着对我的欣赏，为我不算平坦的事业感到惋惜。</p>
+<p>在交谈中，她也会不着痕迹地聊到沈三，说起他们的相遇。</p>
+<p>沈三沉静地倾听着，盈盈带笑。</p>
+<p>宛如一位再合格不过的爱人。</p>
+<p>徐濛濛下午有杂志拍摄，午餐时间前就离开了。</p>
+<p>餐桌上只有我和沈三两个人。</p>
+<p>「你不爱她。」我极其确定地开口。</p>
+<p>沈三冷声道：「季小姐，你这句话非常冒犯。」</p>
+<p>但我的语气甚至称得上轻松愉快：「你不爱她，我很确定，你知道为什么吗？」</p>
+<p>「因为你爱人时的眼神，我见过，不是这样的。」</p>
+<p>餐桌上的菜品很丰盛，尤其是作为主菜的松叶蟹。</p>
+<p>我笑着将筷子伸向蟹肉刺身，夹进嘴里，丰润紧实，唇齿留香。</p>
+<p>并且如愿地瞧见了沈三惊慌的眼神。</p>
+<p>他果然知道。</p>
+<p>我对螃蟹严重过敏。</p>
+<p>既然他欲盖弥彰地摆上这道蟹，我偏偏要吃给他看。</p>
+<p>喉头的肿胀感使我吐字艰难：「你也回来了，是不是？」</p>
+<p>我觉得全身都在发痒，他按住我的手：「别抓，医生就到了。」</p>
+<p>晕过去前，我只记得他的手比我抖得还厉害。</p>
+<p>沈宅不缺医生，夕阳落下时，我便醒了。</p>
+<p>不是昨晚的房间，而是三楼最左边这间。</p>
+<p>薄雾浓云，一寸寸霞光迎风送晚。</p>
+<p>即使无数次从这里看过落日，还是会忍不住感慨，真的很美。</p>
+<p>沈三站在床边，背影孤索，身披逆影。</p>
+<p>「醒了？」</p>
+<p>「嗯。」我有些心虚地应着。</p>
+<p>他转身想走，我跳下床，不顾一切地抱住他的腰。</p>
+<p>「你不准生我的气，要怪就怪你自己的演技太差了。」</p>
+<p>沈三气极反笑：「这么说，倒是我的错。」</p>
+<p>我理直气壮：「就是你的错！」</p>
+<p>「既然你也回来了，为什么不告诉我？还串通徐濛濛一起骗我，你就这么想被当成负心汉吗？」</p>
+<p>晚间风凉，我打了个喷嚏。</p>
+<p>沈三叹了口气，将外套披在我身上。</p>
+<p>他低头帮我系着扣子：「既然能够重来一次，难道你不想要另一种人生吗？上辈子我……走时你那么痛苦，不要再经历了，不好吗？」</p>
+<p>我不说话。</p>
+<p>他停下动作，无奈道：「我上边系你下边解，是想穿到明早吗？」</p>
+<p>我不情愿地把手放下。</p>
+<p>「你会活下来的。」</p>
+<p>沈三理了理我的衣服。</p>
+<p>「好，我会活下来的。」</p>
+<p>我张了张嘴，没再说下去。</p>
+<p>上辈子他离开得太早，后来有太多事情，出乎了我们的意料。</p>
+<p>以至于我说不出口。</p>
+<p>甚至不敢让他知道。</p>
+<p>沈三告诉我，上辈子他死后，再睁开双眼，就发现自己回到了三年前。</p>
+<p>他想到我当时的痛不欲生，下定决心不再让我重蹈覆辙。</p>
+<p>但又忍不住关注我，直到我从沈谙那儿拿走了五千万，他才猜到我也回来了。</p>
+<p>沈三知道我会来找他。</p>
+<p>于是想演一场移情别恋的戏码，让我安心地过自己的人生。</p>
+<p>我用手遮住他的眼睛。</p>
+<p>「做什么？」</p>
+<p>我笑：「只要看到你的眼睛，我就知道你爱我。」</p>
+<p>而且，徐濛濛作为我对家。</p>
+<p>她的演戏套路和台词语气，不好意思，我太熟了。</p>
+<p>龙哥不知道徐濛濛是沈三请来的托。</p>
+<p>但凡我和沈三成双成对，他总阴阳我。</p>
+<p>比如现在。</p>
+<p>「季小姐晚上想吃什么？可别点一辈子只能吃一次的菜了。」</p>
+<p>我思索道：「有道理，那来个素螃蟹。」</p>
+<p>龙哥青着脸去了厨房。</p>
+<p>沈三弹了下我的脑袋：「干嘛非得气他？他性子直，嘴上说不过你。」</p>
+<p>我依偎在他的怀里:「太久没见了，多聊两句开心。」</p>
+<p>他提到周吟：「周吟在托人找你，你还打算躲多久？」</p>
+<p>我想了下：「等《盲青》试完角。」</p>
+<p>沈三若有所思地点头。</p>
+<p>《盲青》这部电影会帮周吟拿下影后，但她选择在事业巅峰期嫁给沈谙，退出娱乐圈。</p>
+<p>「你好像很不希望他们在一起。」</p>
+<p>如我所愿，现在周吟把我的突然消失归咎到沈谙头上。</p>
+<p>《盲青》并非沈氏投资，一旦她进组拍摄，只要周吟不点头，剧组是不会让沈谙见到她的。</p>
+<p>我反问沈三：「你会觉得我这样很过分吗？」</p>
+<p>他摇头：「你有你的理由。」</p>
+<p>「那你不怕你侄子知道后，恨你和我同流合污？」</p>
+<p>他搂紧我，闷笑道：「他自己追不到老婆，关我什么事？我只不过听老婆的话而已。」</p>
+<p>我脸一红，推了他一把。</p>
+<p>「谁是你老婆。」</p>
+<p>他轻声说：「还能是谁？</p>
+<p>「是个说要嫁给我的漂亮小姑娘，是个说完又害羞的漂亮小姑娘。」</p>
+<p>他温柔地笑着。</p>
+<p>「那……答应我吧。」</p>
+<p>我将手放在他心脏的位置。</p>
+<p>答应我吧，这辈子无论如何都要结婚。</p>
+<p>月光寂寂。</p>
+<p>沈三说：「好。」</p>
+<p>我和龙哥的关系逐渐和谐。</p>
+<p>除了他总是神秘兮兮地向我打听心源的下落。</p>
+<p>他似乎认定了沈三是因为心源而不得不向我妥协，所以竭力跟我搞好关系，想早日套出心源渠道，救他的三哥出火海。</p>
+<p>龙哥是沈老爷子收养的孤儿，从小和沈三一起长大，把他看成亲哥哥。</p>
+<p>我嘴上又打起哈哈。</p>
+<p>龙哥冷哼一声，没了耐性：「你其实什么都不知道吧，花言巧语地哄骗三哥！」</p>
+<p>我刚要辩解。</p>
+<p>沈谙竟然来了。</p>
+<p>他一贯不把我放在眼里，径直走向正在看书的沈三：「三叔。」</p>
+<p>想必是在周吟那碰了不少钉子，他脸色十分难看：「三叔，你为什么要帮这个女人？」</p>
+<p>沈三折好书页，很是平静：「沈谙，不要让我生气。」</p>
+<p>沈谙一僵。</p>
+<p>沈三用最平稳的语气爆最大的料：「我已经向如瑰求婚了，很快，你就该称呼她一声小婶婶。」</p>
+<p>沈谙被这消息惊到失语：「她？」</p>
+<p>龙哥同样震惊地看向我：「你？」</p>
+<p>我压低声音：「沈三说谎了。」</p>
+<p>「我就知道！三哥怎么可能要跟你结婚？」</p>
+<p>「不不不……」我笑容灿烂，「我的意思是，明明是我向他求的婚啦。」</p>
+<p>沈谙的脸色比刚进门时还要难看。</p>
+<p>我故意火上浇油：「沈总不会是专程来找我的吧？我可是说到做到，再也没出现在周吟面前了，咱们属于是钱货两讫。」</p>
+<p>他咬牙道：「季小姐，先前是我多有得罪，请你开个价，多少钱才愿意和周吟和好？」</p>
+<p>「如果能和吟吟和好，当然是一分钱不要都可以！」</p>
+<p>沈谙肉眼可见地轻松不少。</p>
+<p>「但是……」</p>
+<p>我无辜地眨眨眼：「如果是瞒下你给我钱让我和她绝交的事，那你还得给我五千万。」</p>
+<p>「你！」沈谙皱起眉头，满是厌恶。</p>
+<p>「沈谙。」沈三淡淡道。</p>
+<p>我嚣张地走到沈三身边。</p>
+<p>沈谙咬牙，撕下一张支票。</p>
+<p>我将支票递给沈三。</p>
+<p>他看了一眼，含笑点头：「没问题。」</p>
+<p>当着沈谙的面，我拨通了周吟的电话。</p>
+<p>我告诉她一切平安。</p>
+<p>她在另一头几乎哭出声来。</p>
+<p>「担心死我了，没事就好。」</p>
+<p>我只让她好好准备《盲青》试角，她没有多问。</p>
+<p>随后我们默契地挂断电话。</p>
+<p>沈谙大概想不到自己前后少了一个亿，连声响都没听到。</p>
+<p>气势汹汹地离开了。</p>
+<p>他走后，沈三拿起书，对着同一页看了很久。</p>
+<p>他问我：「我离开后，沈谙欺负你了，是吗？」</p>
+<p>「怎么可能？你给我留了那么多东西，我欺负他还差不多。」</p>
+<p>我撇撇嘴，钻进他怀里。</p>
+<p>沈三的语气温柔而无奈：「那你怎么在哭呢。」</p>
+<p>我在他面前好像很容易掉眼泪。</p>
+<p>好在沈三并不追问我上辈子发生了什么，我们将一切揭过不提。</p>
+<p>周吟听懂了我的暗示，我们在《盲青》试角现场再度相见。</p>
+<p>她试戏的角色是个烟熏妆酷妹。</p>
+<p>结果因为跟我抱头痛哭，生生哭花了妆，被三次抓进化妆间。</p>
+<p>我和这部电影的导演及编剧一同看完了周吟的表演片段。</p>
+<p>堪称完美。</p>
+<p>这个角色注定是她的，她的光芒不应该被任何人任何理由遮掩。</p>
+<p>回家路上，周吟的保姆车被拦下了。</p>
+<p>果不其然，是沈谙的手笔。</p>
+<p>周吟甚至懒得下车。</p>
+<p>她不耐烦地开窗，脸上是拒人于千里之外的笑容：「沈总，我以为我们之间已经说得很清楚了。」</p>
+<p>或许是看到我也在场，沈谙突然被激怒。</p>
+<p>他撕开假面：「周吟，希望你不要后悔。」</p>
+<p>周吟回道：「希望你不要挡道。」</p>
+<p>我朝她竖起大拇指。</p>
+<p>周吟抓了抓头发：「这畜生不会是想封杀我吧！」</p>
+<p>「何止，天凉王破，他还想搞垮你家的公司。」我淡定开口。</p>
+<p>周吟骂道：「真是倒了八辈子霉，惹上这种神经病。」</p>
+<p>她握住我的手：「还好有你提前告诉我，这段时间我都住在酒店，请专人检查保护，确保那个变态动不了手脚。」</p>
+<p>沅居是沈谙的产业，李姐带我去那，我就猜到是他。</p>
+<p>我打电话给周吟，让她不要出声，安静地听着。</p>
+<p>听完全程的她自然早就认清沈谙的真面目。</p>
+<p>至于我们之间的彻底断联，也是为了迷惑沈谙，继续给他设套。</p>
+<p>周吟咂舌：「真没想到他能拿出整整一个亿。」</p>
+<p>我说：「跟你比起来，一个亿算什么。」</p>
+<p>周吟傲娇一笑：「那是当然！」</p>
+<p>我胸有成竹地盘算着：「他想和你家恶意竞争，只能自损一万伤敌三千，我们用一个亿的资金跟他对砸，等到他赔无可赔时，董事会就会替我们把他踹下去。」</p>
+<p>周吟喃喃道：「这么简单？」</p>
+<p>我肯定地回答：「是的，就这么简单。」</p>
+<p>无非是把我上辈子做成的事，重新来上一遍。</p>
+<p>这段日子，留周吟一个应付沈谙和他背后的庞然大物沈氏，实在是辛苦她了。</p>
+<p>我调暗车内的灯光，她慢慢合上眼睛，开始小憩。</p>
+<p>上辈子沈三去世，我郁郁寡欢地向周吟辞行，独自出国。</p>
+<p>因为时差，我错过了周吟的一通电话。</p>
+<p>第二天回拨却没有人接。</p>
+<p>我找上沈谙，是他秘书接的电话。</p>
+<p>对方告诉我，沈夫人去世了，沈总正在料理她的后事。</p>
+<p>我根本不相信这是真的。</p>
+<p>我联系到周吟的父母，她母亲在知道消息的当天精神失常，她父亲也跟着病倒。</p>
+<p>等我赶回这座城市，甚至没见到她最后一面。</p>
+<p>当时我快疯了。</p>
+<p>我不知道自己做错了什么，上天让我失去爱人后，又失去最好的朋友。</p>
+<p>我歇斯底里地质问沈谙：「怎么会这样？」</p>
+<p>他憔悴邋遢到不成人样。</p>
+<p>是他秘书把我拉到一旁，替沈谙鸣不平：「季小姐，你以为最难过的人是你吗？自从夫人去世，沈总……再也没有说过话。」</p>
+<p>我对着墙面，嚎啕大哭，几乎站不稳。</p>
+<p>「那为什么会这样？周吟怎么会死？」</p>
+<p>「是怀孕导致的抑郁症。」他叹息道，「已经鉴定过了，确实是自杀。」</p>
+<p>「我不信。」</p>
+<p>我们一起长大，她那么明媚张扬。</p>
+<p>怎么会抑郁到要自杀的程度？</p>
+<p>我一遍遍回想那个被我错过的电话。</p>
+<p>周吟在向我求救。</p>
+<p>都是我的错。</p>
+<p>我心灰意冷，没有回沈三留给我的沈宅。</p>
+<p>在我和周吟曾经合租过的房子里，浑浑噩噩地过了几个月。</p>
+<p>有一天，我看着大学合照时周吟蓬勃旺盛的模样，突然想通了，下定决心要认真生活。</p>
+<p>但打扫房间时，却发生一件让我头皮发麻的事。</p>
+<p>大门入户的地毯下，竟然藏着密密麻麻十几个存储卡。</p>
+<p>一同被地毯遮挡住的，还有三个用血写成的数字——326。</p>
+<p>3 月 26 号，当年周吟赚到第一桶金的日子。</p>
+<p>她把这三个数字视作自己的幸运数，只有我和她知道。</p>
+<p>我的身体不由自主地颤抖，为即将知道的周吟身上遭遇的一切。</p>
+<p>沈谙就是个疯子。</p>
+<p>他对周吟有着变态般的掌控欲，可笑的是，他把这叫作一往情深。</p>
+<p>自从周吟和他确定关系，他就以爱为名，要求她结婚后专心做他的太太。</p>
+<p>于是事业如日中天的周吟，义无反顾地退圈嫁人。</p>
+<p>可即使她做了全职太太，他依然监视着她在家里的一举一动。</p>
+<p>直到有一天，被周吟发现了家里的监视器，并且取下里面的一张张存储卡。</p>
+<p>不仅如此，沈三也是被他害死的。</p>
+<p>明明当时匹配到了合适的心源，是他瞒着所有人篡改了结果。</p>
+<p>而这也被他藏在书房的监视器记录下来了。</p>
+<p>周吟得知一切后，趁沈谙没有防备，逃到了这里，但只来得及将存储卡藏好，就被沈谙抓了回去。</p>
+<p>后来，她被沈谙囚禁，彻底失去了跟外界联络的方式，而我错过了她最后一次求救。</p>
+<p>还怀着孕的她绝望地跳楼了。</p>
+<p>我心痛到极点，恨自己没能救她，没能阻止她和沈谙在一起，没能替沈三留住那颗救命的心源。</p>
+<p>我心知这些存储卡并不能成为给沈谙定罪的证据。</p>
+<p>我想让他彻底失去一切。</p>
+<p>我把沈三留给我的东西全都变现，斥巨资请来商业操盘手。</p>
+<p>不计得失，一心针对沈谙。</p>
+<p>在我不要命的攻势下，很快，曾经的天之骄子就被董事会扫地出门。</p>
+<p>大仇得报后。</p>
+<p>我去祭拜沈三和周吟，被发疯的沈谙推下人工湖。</p>
+<p>本不算深的湖水没过我的头顶，我逐渐意识模糊，再睁眼，就发现自己回来了。</p>
+<p>周吟仍旧明媚阳光，沈三还未被病魔折磨到瘦骨嶙峋。</p>
+<p>一切都还来得及。</p>
+<p>后面几天，我将上辈子的手段如法炮制。</p>
+<p>沈谙果然毫无招架之力。</p>
+<p>越是庞大的企业，越是牵一发而动全身。</p>
+<p>等沈谙反应过来自己被摆了一道，已经泥潭深陷。</p>
+<p>他不得已找上沈三这事，还是很久后沈三告诉我的。</p>
+<p>他心不甘情不愿地低头，说知错了。</p>
+<p>并且承诺不会再打扰周吟，甚至软硬兼施，说假如沈三真的娶了我，我也算是他的长辈，低头不见抬头见，何必闹得这么僵。</p>
+<p>我冷笑：「现在知道谁是长辈了？那你怎么告诉他的？」</p>
+<p>沈三说：「我问他，这些年我有对不起他吗？」</p>
+<p>沈谙一愣，摇了头。</p>
+<p>沈老爷子去世后，沈家财产分得清清楚楚。</p>
+<p>沈三一心培养他，从不沾染沈氏的经营权。</p>
+<p>他把这些说给沈三听，表明自己念着他的好。</p>
+<p>沈三听后笑了，也摇了摇头：「怪不得。」</p>
+<p>沈谙不懂：「什么？」</p>
+<p>沈三说：「原来你心里只记得这些蝇营狗苟的事。」</p>
+<p>沈谙失魂落魄地离开。</p>
+<p>他在大门外站了很久，最后深深鞠了一躬。</p>
+<p>沈三没有他表现得那么冷硬。</p>
+<p>他对我讲起小时候的沈谙。</p>
+<p>在他的描述里，那是个乖巧又懂事的孩子。</p>
+<p>知道三叔身体不好，会乖乖地不吵不闹。</p>
+<p>「他小时候踢到花盆，还会对花说对不起，会跟路上遇到的每个人打招呼……本来也是很好的孩子。」</p>
+<p>尽管我什么都没有告诉沈三，但他大抵猜到了，为什么我对沈谙穷追猛打。</p>
+<p>第二天，董事会联名罢免沈谙，我从周吟那得知，他出国了。</p>
+<p>周吟告诉我，沈谙走前向她道了歉，说自己真的爱她。</p>
+<p>她不屑一顾地说，那根本不是爱。</p>
+<p>周吟进组拍摄《盲青》，我回到沈宅把精力都放在寻找心源上。</p>
+<p>静等着视频里，沈谙篡改匹配结果的那个时间点。</p>
+<p>这一次，我一定能救下沈三。</p>
+<p>三年后，我和周吟受邀参加颁奖典礼。</p>
+<p>她一举夺得影后。</p>
+<p>聚光灯下，她是自己的主角。</p>
+<p>不会出现什么求婚博走他人眼球。</p>
+<p>我的周吟，明媚正直，应该拥有最好、最完整的人生。</p>
+<p>她不会再止步于此。</p>
+<p>她生来自由，不会再被人困在囚笼成为金丝雀。</p>
+<p>影后桂冠不应当是她最辉煌的战绩，而应该成为她的序幕。</p>
+<p>我热泪盈眶，和台上的她相视一笑。</p>
+<p>随着等待的那个时间越来越接近。</p>
+<p>我忍不住开始焦虑。</p>
+<p>龙哥更是一天跑来问我八百遍，心源在哪？</p>
+<p>已经过去了三年。</p>
+<p>他认定我当时是胡诌，但又忍不住在我身上寄托一丝希望。</p>
+<p>唯有目前病情意外稳定的沈三仍旧气定神闲。</p>
+<p>我几乎是一刻不离地守着所有联络方式，生怕错过什么。</p>
+<p>龙哥笑话我神神道道，但还总来给我递盘吃食。</p>
+<p>那天一切发生得突然。</p>
+<p>龙哥捂住腹部，整个人蜷缩成一团，倒在地上，额头冒着斗大的汗珠。</p>
+<p>我和沈三被这突如其来的变故惊到，急匆匆地喊来医生。</p>
+<p>医生一进门，刚刚疼到脸色苍白的龙哥，竟然自己好了，前后不过十几分钟。</p>
+<p>医生只能简单问了几句，没什么头绪。</p>
+<p>我哑着嗓子：「龙哥，去趟医院吧。」</p>
+<p>这一路，我整个人像飘在地面上，只感到命运的愚弄。</p>
+<p>检查结果出来后——胰腺癌晚期。</p>
+<p>原来如此……</p>
+<p>上辈子沈三状况不好，我一直守在医院。</p>
+<p>后来龙哥从去得少到没再出现，我都没察觉出不对。</p>
+<p>看来沈谙是彻底隐瞒了这件事</p>
+<p>沈三沉默着，整个人被巨大的孤寂感笼罩。</p>
+<p>主治医生这时走了出来，说龙哥想见我。</p>
+<p>「去吧。」沈三说。</p>
+<p>我低着头，快速擦干净眼泪。</p>
+<p>一向憨厚到有些傻气的龙哥意外精明了一把。</p>
+<p>他问：「是我对不对？</p>
+<p>「你等的心源，其实是我。」</p>
+<p>我因为这句话失控大哭：「对不起，我不知道会这样……对不起……」</p>
+<p>说什么都太残忍了。</p>
+<p>怎么会这样。</p>
+<p>「你知道我为什么会被收养吗？因为我也是熊猫血，沈老爷子留着我给三哥当血袋。</p>
+<p>「一开始我很看不惯他，总跟他找茬，他从来不在意，也从来没有用过我的血……但现在……可能有些人生来就注定为另一些人牺牲……」</p>
+<p>「不是这样的……」我无力地开口。</p>
+<p>「三哥也这样说过。」</p>
+<p>龙哥洒脱一笑：「所以，我这不是为他牺牲，而是保护我的家人。」</p>
+<p>这是龙哥跟我讲过的最后一句话。</p>
+<p>那天过后，他再也没有跟我和沈三见过面。</p>
+<p>尤其是沈三。</p>
+<p>我猜，他想用这种方式减轻我们的内疚。</p>
+<p>但怎么可能呢？</p>
+<p>沈三的病情急剧恶化，他越来越消瘦，清醒的时间越来越少。</p>
+<p>我感觉自己又回到了苦守在病房里的上辈子。</p>
+<p>如果不是周吟陪在我身边，我一定分不清自己是真的重生过，还是一切都源自臆想。</p>
+<p>不仅沈三病危，龙哥同样情况危急。</p>
+<p>就像是他们知道死神只能带走一个人，不约而同地选择了自己。</p>
+<p>我甚至不知道留下来的那个人，是幸运还是不幸？</p>
+<p>这场博弈最终是龙哥赢了。</p>
+<p>他的主治医生告诉我，龙哥签了心脏捐赠书。</p>
+<p>而早在他发病前，更早之前，很久很久之前，他就已经偷偷在医院和沈三做过心脏匹配。</p>
+<p>医生告诉我，胰腺癌患者一般会引发心脏衰竭的并发症，但奇迹的是，龙哥的心脏非常健康。</p>
+<p>就好像他的身体有意识地保护了这颗心脏。</p>
+<p>医生说：「真是个奇迹。」</p>
+<p>沈三从手术室里被推出来，麻药的劲儿还没有完全过去。</p>
+<p>他刚醒就立刻意识到发生了什么。</p>
+<p>我的眼泪滴到他的手背。</p>
+<p>「龙哥说，他不是为你牺牲，而是在保护自己的家人。」</p>
+<p>沈三转过头。</p>
+<p>我知道他在哭。</p>
+<p>我们的手交叠在一起。</p>
+<p>这天过后，在我的一生中，再也没有见过沈三流泪。</p>
+<p>直到夕阳西下，我们白发苍苍。</p>
+<p>备案号:YXX1jKKJKrmcxxxRKMOC9ldw</p>
+<p>​</p>
+<p>​</p>
+<p>非分之想：恰情动时见你</p>
+<p>许成野 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/5-%E6%8B%AF%E6%95%91%E5%A6%88%E5%92%AA/" title="拯救妈咪">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">拯救妈咪</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/26-%E6%8B%AF%E6%95%91%E6%A0%A1%E9%9C%B8/" title="拯救校霸">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">拯救校霸</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骨头架子 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/6/4-%E9%AA%A8%E5%A4%B4%E6%9E%B6%E5%AD%90/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/6/4-%E9%AA%A8%E5%A4%B4%E6%9E%B6%E5%AD%90/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="骨头架子">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+  <meta name="twitter:title" content="骨头架子">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="骨头架子">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10471">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">骨头架子</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e9%aa%a8%e5%a4%b4%e6%9e%b6%e5%ad%90&amp;url=https://mohai.us.kg/posts/2023/6/4-%E9%AA%A8%E5%A4%B4%E6%9E%B6%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/6/4-%E9%AA%A8%E5%A4%B4%E6%9E%B6%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e9%aa%a8%e5%a4%b4%e6%9e%b6%e5%ad%90%20https://mohai.us.kg/posts/2023/6/4-%E9%AA%A8%E5%A4%B4%E6%9E%B6%E5%AD%90/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/24970.jpg" alt="骨头架子" />
+      
+
+      <p>骨头架子</p>
+<p>非分之想：恰情动时见你</p>
+<p>我是实验室里的一副骨头架子，天天对着斯文禁欲的谢衍流口水，有天他皱着眉头看我：「你刚才是不是动了？」</p>
+<p>我情急之下脱口而出：「没有啊！」</p>
+<p>谢衍裂开了：「我靠……你还会说话！」</p>
+<p>谢衍是我的暗恋对象，清隽从容，个高腿长，常年戴一副金丝眼镜。</p>
+<p>显得又冷又俊，斯文败类值拉满了。</p>
+<p>但我知道，我俩是不可能的。</p>
+<p>因为我只是他实验室里的一副骨头架子。</p>
+<p>有天，我突然发现自己有了意识。</p>
+<p>然后一看到谢衍那张俊脸，我就不争气地对他一见钟情了。</p>
+<p>谢衍每天准时地出现在实验室，雷打不动地待八小时。</p>
+<p>但我发现他大部分时间都在摸鱼，甚至无聊到玩扫雷。</p>
+<p>今天他整出了新花样——在实验室用电锅煮螺蛳粉。</p>
+<p>加臭、加辣。</p>
+<p>我全闻出来了！</p>
+<p>螺蛳粉在明亮灯光下泛着一层厚厚的红油，「咕噜咕噜」地沸腾冒泡。</p>
+<p>快煮好前，谢衍接到一个电话。</p>
+<p>随后拿起一份文件走了出去。</p>
+<p>螺蛳粉越煮越开，眼瞅着汤汁就要漫出锅盖。</p>
+<p>我小心翼翼地看了一眼周围。</p>
+<p>直奔那锅螺蛳粉，把温度调到低温，并且弯下腰深深地嗅了一口。</p>
+<p>鲜香诱人的汤底，滑嫩弹牙的米线，裹满汤汁的腐竹、酸笋、木耳……</p>
+<p>馋死我了。</p>
+<p>门外传来指纹解锁的声音。</p>
+<p>我吓了一大跳，连跑带窜地站回原位。</p>
+<p>谢衍推门进来，表情不是很好。</p>
+<p>我感觉自己的冷汗都要冒出来了。</p>
+<p>等他走近我才发现——他衬衫的胸口位置多出一团咖啡渍。</p>
+<p>难怪脸色这么臭。</p>
+<p>谢衍冷着脸开始解纽扣。</p>
+<p>快解到腹肌时，他停下了，小声地嘟囔了一句什么。</p>
+<p>然后，他居然转身了！</p>
+<p>我不着痕迹地同样侧过身，角度刚好够我看到对面的镜子。</p>
+<p>但我忘记了。</p>
+<p>镜子是双向的。</p>
+<p>刚脱下衬衣的谢衍猛然回头，正对上我空洞洞的眼眶。</p>
+<p>这颗科研界冉冉升起的新星，眼里充满迷茫。</p>
+<p>他皱着眉头问：「你刚才是不是动了？」</p>
+<p>我正数着他的八块腹肌，情急之下脱口而出：「没有啊！」</p>
+<p>谢衍生平第一次裂开冰山脸：「我靠……你还会说话！」</p>
+<p>我和谢衍面对面坐着，他始终一言不发。</p>
+<p>螺蛳粉热气腾腾地冒着香味。</p>
+<p>我咽了一口并不存在的口水：「你还不吃螺蛳粉吗？」</p>
+<p>谢衍表情复杂地看我一眼。</p>
+<p>然后端起螺蛳粉，开始当我面嗦粉。</p>
+<p>他的吃相很优雅，速度又快。</p>
+<p>我不由得佩服。</p>
+<p>都这样了，还吃得好香。</p>
+<p>谢衍没有理我。</p>
+<p>从他飞快地嗦粉的架势里，我看出了五个字——破罐子破摔。</p>
+<p>嗦完粉的谢衍被辣出一层薄汗，比平时清清冷冷的模样多了几分烟火气。</p>
+<p>我欢快地给他介绍，我是白骨精。</p>
+<p>他眼里满是对我智力的同情：「尽管你是具人体骨架模型，但材质属于 PVC，跟人骨一点儿关系都没有。」</p>
+<p>「啊？」</p>
+<p>我呆呆地张嘴：「所以我其实……」</p>
+<p>他盖棺定论得很果断：「是块儿塑料。」</p>
+<p>后来几天，我的心情非常低落。</p>
+<p>原来我只是谢衍三百块包邮买来的塑料仿真人体骨骼模型。</p>
+<p>呜呜呜。</p>
+<p>我是不是配不上他了？</p>
+<p>白骨精和塑料精……</p>
+<p>听起来区别也太大了。</p>
+<p>谢衍轻轻地挑唇：「没多大区别，反正都不是人。」</p>
+<p>谢谢，有被安慰到。</p>
+<p>谢衍没再把我留在实验室，而是带我回了家。</p>
+<p>我从纸盒里钻出来，第一眼先看见他家客厅挂着的书法作品，龙飞凤舞的四个大字：「唯物主义」。</p>
+<p>我朝谢衍歪了歪头盖骨。</p>
+<p>第二天，那里挂着的字变成了「不可知论」。</p>
+<p>紧接着，谢衍开始了漫长的居家办公。</p>
+<p>一开始我是很开心的。</p>
+<p>但我发现，谢衍竟然不摸鱼了，他电脑里出现了很多我看不懂的东西。</p>
+<p>而且不管我是坐着还是躺着，总有一束视线，让我如芒在背。</p>
+<p>我正数着身上的骨头玩，那道视线又来了。</p>
+<p>「谢衍……」</p>
+<p>全赖他，看得我好紧张，都数乱三回了。</p>
+<p>谢衍合上电脑。</p>
+<p>他在家没戴眼镜，一双漂亮的桃花眼格外潋滟多情。</p>
+<p>我顿时消了气。</p>
+<p>他问：「你说过，我是你睁开眼看到的第一个人？」</p>
+<p>我扭扭捏捏地点头：「是啊！」</p>
+<p>谢衍出奇地平静：「你想过吗？如果真是这样，很多东西你都不该知道。」</p>
+<p>我一愣。</p>
+<p>我对自己的过去一无所知，理所当然地认为自己诞生于谢衍的实验室。</p>
+<p>但其实我对这个世界并不陌生。</p>
+<p>我知道很多东西，我仅仅不知道自己是谁。</p>
+<p>谢衍一语中的：「我怀疑，你是个人类。」</p>
+<p>谢衍将目光放在另一个玄之又玄的领域——灵魂。</p>
+<p>那些我看不懂的文献都关于这方面。</p>
+<p>他得出了一个结论，虽然在我看来是句废话。</p>
+<p>「尽管没有人能证实灵魂的存在，但也没有人能证实灵魂并不存在。」</p>
+<p>我心想，这个句式我也会。</p>
+<p>尽管没有人能证实你在说废话，但也没有人能证实你没在说废话。</p>
+<p>谢衍说：「如果你配合我的话，我有把握替你找回记忆。」</p>
+<p>他放低声音，充满蛊惑：「难道你不想知道自己是谁吗？」</p>
+<p>我不由自主地点头。</p>
+<p>谢衍笑了笑。</p>
+<p>这一刻，他眼里涌动着天才的疯狂与不可一世。</p>
+<p>但我想的是，他离我好近。</p>
+<p>好想亲上去。</p>
+<p>我觉得不管我是谁，首先一定是个死恋爱脑。</p>
+<p>鉴于我是个骨头架子，可用的方法没几种，谢衍选择尝试催眠。</p>
+<p>我舒舒服服地睡在沙发上。</p>
+<p>谢衍低沉的声音令我很安心。</p>
+<p>我不自觉地开始放松，就像慢慢地降落到一朵云上。</p>
+<p>但突然间，梦里的天空闪过许多杂乱的画面。</p>
+<p>好大的一场火，火光把天都点燃了。</p>
+<p>我用力地撞着门锁，可怎么都撞不开。</p>
+<p>不止我，还有许多人。</p>
+<p>那些嘈杂的呼救声，盖过了谢衍的声音。</p>
+<p>漫天火光的背后，我看见一对情侣。</p>
+<p>「真的这么爱我吗？」</p>
+<p>男人在少女的耳边轻声地问道。</p>
+<p>「那帮我做一件事，好不好？」</p>
+<p>少女懵懂地点头。</p>
+<p>下一秒，她身上燃起熊熊大火。</p>
+<p>面目模糊的男人笑着说：「乖宝贝。」</p>
+<p>我骤然惊醒。</p>
+<p>谢衍问我感觉怎么样？</p>
+<p>我说：「我看见一场很严重的火灾。」</p>
+<p>他若有所思地记了下来。</p>
+<p>「没有别的了吗？」</p>
+<p>我顿了顿：「没有了。」</p>
+<p>最后那段画面，我没有说。</p>
+<p>门铃声突然响了。</p>
+<p>我下意识地看向谢衍。</p>
+<p>他淡定地起身：「你去卧室待着，不要出声。」</p>
+<p>但没想到门锁竟然自己动了。</p>
+<p>我来不及回二楼，转身想去地下室。</p>
+<p>但谢衍推了我一把：「去这间！」</p>
+<p>于是我被推进楼梯拐角的杂物间。</p>
+<p>他不想让我去地下室。</p>
+<p>为什么？</p>
+<p>「衍衍，哦哟，怎么又瘦了？」</p>
+<p>是谢衍的妈妈吧。</p>
+<p>「听你魏叔说你请了长假，怎么回事啊？」</p>
+<p>谢衍淡淡地解释了几句。</p>
+<p>他妈妈一个劲儿地叮嘱他照顾好身体。</p>
+<p>我顺着门缝往外瞧，他们俩都正背对着我。</p>
+<p>楼梯口离我只有几步之遥。</p>
+<p>我屏住呼吸，踮起脚尖，直奔地下室。</p>
+<p>虽然做了心理准备，但推开门的瞬间，我依然头皮发麻。</p>
+<p>里面是一个硕大的玻璃舱，一具赤裸的女性人体悬浮在舱内。</p>
+<p>即使她紧闭双眼，我也能认出，那是梦里的我自己。</p>
+<p>突然，门外传来一声叹息。</p>
+<p>我浑身一凉。</p>
+<p>谢衍走了进来：「还是被你发现了啊。」</p>
+<p>我哆哆嗦嗦地向后退。</p>
+<p>「谢……谢衍……」</p>
+<p>「嗯，我在。」</p>
+<p>他语气平稳得一如既往。</p>
+<p>逼仄的地下室里没有太多空间，我退无可退，后背撞上了冰冷的玻璃舱。</p>
+<p>谢衍忽然笑了：「你的腿骨在抖。」</p>
+<p>死到临头，我却想他笑得有点儿好看。</p>
+<p>我真该死。</p>
+<p>他缓缓地向我贴近，呢喃般耳语：「知道为什么我这么确信你不是妖精吗？」</p>
+<p>油然而生的凉意快掀翻了我头盖骨。</p>
+<p>谢衍捏住我的下巴，令我转头更近距离地看清了玻璃舱。</p>
+<p>那涌动着的无色液体里，浸泡着的根本不是一具完整的躯体。</p>
+<p>而是一整张人皮。</p>
+<p>我直接一口气没上来。</p>
+<p>昏过去了。</p>
+<p>我曾经许愿，希望每天都能看见谢衍那张俊脸。</p>
+<p>但我没想到老天爷真听进去了。</p>
+<p>「醒了？」</p>
+<p>他到底怎么看出一副骨头架子醒没醒的……</p>
+<p>我继续保持装死状态。</p>
+<p>谢衍耸耸肩，自言自语道：「不知道放玻璃舱里泡下，能不能泡醒？」</p>
+<p>他展开双臂，作势要抱我。</p>
+<p>我一个鲤鱼打挺：「醒了醒了！」</p>
+<p>谢衍笑了。</p>
+<p>好变态啊他。</p>
+<p>「太不经吓了，这么多年，胆子还是这样小。」</p>
+<p>？</p>
+<p>谢衍一脸的云淡风轻：「沈皊——这个名字你还记得吗？」</p>
+<p>「沈——皊——」</p>
+<p>我呆呆地重复着。</p>
+<p>一些杂乱到毫无章法的画面在我脑海中反复地出现。</p>
+<p>我从中感受到一种莫名的痛苦。</p>
+<p>谢衍用手按住我的肩头，我不知所措地抬头。</p>
+<p>「沈皊，我们见过的，三年前你找到我，让我出手为你画一张人皮。」</p>
+<p>我随着他的视线再度看向玻璃舱。</p>
+<p>里面那张美人皮起起伏伏。</p>
+<p>「画一张……人皮？」</p>
+<p>谢衍眼瞳漆黑如墨：「是的，我是一名画皮师。」</p>
+<p>上古开天辟地后，天地间异族无数。</p>
+<p>直至女娲抟土造人。</p>
+<p>人，成了万物灵长。</p>
+<p>女娲死后留下的一缕精魄，化为新的族裔。</p>
+<p>他们继承了女娲古神的一部分能力，能塑人皮肉，被称作画皮师。</p>
+<p>谢衍就是当世仅存的画皮师。</p>
+<p>「你是第一个找上我的人类，你说自己叫沈皊。」</p>
+<p>他回忆道：「你让我画一张和你外貌相同的人皮，说到了时间你自己就会来取。」</p>
+<p>他指向那张人皮：「喏……然后你就消失了。」</p>
+<p>谢衍的口吻颇为无奈。</p>
+<p>他打量着我：「到了时间，见是见着了，想认出来却不大容易。」</p>
+<p>谢衍带我回家后，发现地下室里存放着的那张人皮和我有所感应，才逐渐地认定我是沈皊。</p>
+<p>「我猜测，或许因为你生前和我的契约没能完成，才使得你死后执念不消，附在我身边的器物上。」</p>
+<p>我还是不懂：「那你为什么不早告诉我呢？」</p>
+<p>谢衍沉吟片刻，终于开口：「因为我怀疑你是天算。」</p>
+<p>上古祭祀祝祷之人，事鬼神者为巫，祭主赞词者为祝。</p>
+<p>巫祝，上可通鬼神，下可祭亡魂。</p>
+<p>「天算一脉是巫祝后人，精通问卦卜算。」</p>
+<p>「这才能解释，为什么你身为人类却能找到我……为什么三年前你就能料到今天……」</p>
+<p>说着，谢衍眸光渐深。</p>
+<p>「我想不通有什么力量能够杀死一位天算……」</p>
+<p>我害羞地低头：「原来你眼里的我这么强。」</p>
+<p>谢衍：……</p>
+<p>他说：「是我多想了，你怎么会有扮猪吃老虎的脑子。」</p>
+<p>谢衍话锋一转：「我找不到近三年有任何符合你记忆的火灾报道，一切都被刻意地抹去。」</p>
+<p>「你知道这意味着什么吗？」谢衍摩挲着袖口。</p>
+<p>我愣了愣。</p>
+<p>他的眼神像是要看进我心里：「有可能，杀死你的力量比人类文明还要强大。」</p>
+<p>我背后的玻璃舱寒意渗骨。</p>
+<p>谢衍说得这些，我不记得。</p>
+<p>但我相信。</p>
+<p>我只是二百零六块骨头，我想不出他有什么必要骗我。</p>
+<p>谢衍让我披上那张人皮。</p>
+<p>「怎么样？」他问。</p>
+<p>镜子里的女孩让我觉得熟悉又陌生。</p>
+<p>谢衍大概看出我的别扭：「放心，材质只算塑料。」</p>
+<p>他凉凉地补了一刀：「大概是你命犯塑料。」</p>
+<p>塑料也可以？</p>
+<p>我真心诚意地赞叹：「谢师傅，手艺不错。」</p>
+<p>谢衍轻飘飘地瞥我一眼。</p>
+<p>他要我一起出门拜访一个人——他妈妈口中的魏叔。</p>
+<p>现存的所有古老族裔共同成立了一个联盟，谢衍所在的研究所，背后正是联盟在扶持。</p>
+<p>而魏逢是其中举足轻重的人物。</p>
+<p>性格低调，年龄不详，没有人知道他的真实身份，他和谢衍的关系亦师亦友。</p>
+<p>「魏叔那里会有火灾的消息。」</p>
+<p>我弱弱提问：「他那要是没有呢？」</p>
+<p>谢衍微笑：「你最好祈祷他有。」</p>
+<p>魏逢和我想的不太一样。</p>
+<p>尽管谢衍喊他魏叔，但他看起来年纪并不大，三十岁左右。</p>
+<p>和谢衍的斯文俊秀不同，他的一言一行有种骨子里透出来的随性。</p>
+<p>让人视线不自觉地追随他。</p>
+<p>其实细看他五官十分平淡，我甚至记不住他的长相，把他扔进人堆转眼就找不着了似的。</p>
+<p>他仿佛知道谢衍会来，早早地在桌案上摆好两杯茶。</p>
+<p>谢衍低声向不明就里的我解释：「魏叔是位天算。」</p>
+<p>魏逢摆摆手：「现在可不是。」</p>
+<p>我忍不住问为什么。</p>
+<p>魏逢的神情非常平和，丝毫没有愤怒。</p>
+<p>他似笑非笑：「因为啊，我被一个信任的人背叛了。」</p>
+<p>不知怎么的。</p>
+<p>我鬼使神差地接了一句：「背叛别人的人一定会有报应的。」</p>
+<p>魏逢看着我，突然大笑。</p>
+<p>他说：「不，我希望她过得很好。」</p>
+<p>这话没法接。</p>
+<p>憋了半天，我竖起大拇指：「你格局真大。」</p>
+<p>谢衍把我的事简单地说了说，重点放在我提到的火灾。</p>
+<p>魏逢果真是见惯大场面。</p>
+<p>他饶有兴趣地围着我转了一圈：「这还是……我第一次见到画皮师的手艺，果然栩栩如生。」</p>
+<p>我迫不及待地开口：「那您知道火灾的事吗？」</p>
+<p>魏逢低头沉思：「我知道的不多。」</p>
+<p>「三年前，城东老楼发生过一次火灾，和你描述的情况能对上，之所以查不到，是因为那天出现了第三类力量。」</p>
+<p>我问：「第三类力量？」</p>
+<p>谢衍解释：「人类现有科技和已知术法外且未被记载的力量统称为第三类力量。」</p>
+<p>魏逢颔首：「是，由于没有人员伤亡，官方和联盟不约而同地选择对外隐瞒，秘密地调查。」</p>
+<p>我指着自己的鼻子：「没有伤亡，那我算什么？」</p>
+<p>一旁的谢衍想了想：「会不会因为那把火把你烧得灰都不剩，一点儿痕迹都没了。」</p>
+<p>魏逢较为含蓄：「有可能，第三类力量往往是超出认知的强大。」</p>
+<p>我打了个冷战。</p>
+<p>魏逢曲起手指轻敲桌面：「我只知道这些。」</p>
+<p>「如果你们还想继续调查，就只有最后一个方法。」</p>
+<p>「但天命自有安排，因果真的有这么重要吗？」</p>
+<p>他看了一眼谢衍。</p>
+<p>谢衍神色凝重。</p>
+<p>离开魏家后，我问谢衍：「他说的最后一个方法是指什么？」</p>
+<p>谢衍沉默道：「回到火灾当天。」</p>
+<p>我咂舌：「怎么可能？」</p>
+<p>「原本是不可能，但对于你有可能。」</p>
+<p>谢衍静立在台阶下：「天算能够推演未来，同样能追溯过去，但是……」</p>
+<p>他不说，我也能猜到——算命不就是算得越准，反噬越强。</p>
+<p>谢衍垂着眉眼，长睫下是一片鸦青阴影：「你没必要承担强行推演带来的代价，我会有别的办法。」</p>
+<p>我安静地听着。</p>
+<p>一阵静默后，我问他：「既然你都知道这是个烂摊子，为什么还要继续搅进来？」</p>
+<p>谢衍笑：「因为我答应过你。」</p>
+<p>我也笑了：「那一起吧。」</p>
+<p>什么代价不代价的？</p>
+<p>恋爱脑无所畏惧。</p>
+<p>我朝谢衍伸出手，他背后是正午的太阳。</p>
+<p>很温暖。</p>
+<p>天算一定程度上可以理解为开了天眼的人。</p>
+<p>万物发展轨迹在天算眼里无所遁形。</p>
+<p>所以古时把这类人称作「半仙」。</p>
+<p>谢衍说，天算最基础的是识面断命。</p>
+<p>我打算拿他练练手。</p>
+<p>但看了半天，只看出一个「帅」字。</p>
+<p>我把眼睛睁了又闭，闭了又睁。</p>
+<p>还是没变化。</p>
+<p>我喃喃道：「好像不行。」</p>
+<p>谢衍皱起眉：「虽然你没了身体，但神魂还在，不该什么都看不到。」</p>
+<p>过了会儿，他不知想到什么，声音严肃：「走，我们去趟联盟。」</p>
+<p>在联盟机要室内，我们看到了更多的火灾信息。</p>
+<p>三年前，城东的一栋大楼突然发生火灾，火势极大，但人员疏散后，大火突然熄灭。</p>
+<p>更离奇的是，不仅楼内没有留下任何火灾痕迹，完好如初，甚至不久后，所有亲身经历过这场火灾的普通民众都失去了这段记忆。</p>
+<p>我觉得难以置信：「这？」</p>
+<p>什么样的能力才能让刚被烈火燃烧过的高楼瞬间崭新如初，才能篡改人类的集体记忆。</p>
+<p>谢衍沉默不语。</p>
+<p>他起身将我拉到身后，无声地握住我的手：「魏叔，出来吧。」</p>
+<p>魏逢竟然站在角落的阴影处。</p>
+<p>我寒毛直竖，刚刚房间里明明只有我和谢衍。</p>
+<p>魏逢还是那张脸，但看起来莫名地不同。</p>
+<p>他周身像有一层无形的屏障，压得我喘不过气。</p>
+<p>魏逢看向我和谢衍交握的双手，笑得分外邪肆。</p>
+<p>他朝我招手：「宝贝，过来。」</p>
+<p>我的大脑瞬间宕机。</p>
+<p>我问谢衍：「你觉得他有没有可能是喊你？」</p>
+<p>魏逢提前布好了法阵，他隐瞒信息的目的就是把我们骗到这里。</p>
+<p>我被他带走，关在一间别墅。</p>
+<p>醒来时，他正在沏茶：「喝茶吗？你喜欢的君山银针。」</p>
+<p>我按了按太阳穴，大量记忆的回归让我觉得极其疲倦。</p>
+<p>我唯一关心的只有：「谢衍怎么样了？」</p>
+<p>魏逢冷笑：「死了。」</p>
+<p>我笑得比他还冷：「他如果死了，我也会死。」</p>
+<p>魏逢气急败坏，那套上好的蓝釉堆白鱼茶盏眨眼间碎裂四溅。</p>
+<p>「沈皊，你够了，你用这套说辞为难了我上千年。」</p>
+<p>我转过头。</p>
+<p>魏逢蹲在我面前，软下声：「我们不吵了，我们重新来过，好不好？」</p>
+<p>他变成了谢衍的长相：「你喜欢他，我可以变成他的样子。」</p>
+<p>「或者这样的呢？」他又换了张当红小生的脸。</p>
+<p>「不要再喜欢谢衍了，还像千年前那样和我在一起，好不好？」</p>
+<p>他眼里是满满的祈求。</p>
+<p>任谁看了都会心软。</p>
+<p>我轻轻地托起他的脸，毫不掩饰自己的恶意：「现在这样，难道不是你自己一手造成的吗？」</p>
+<p>巫祝，上可通鬼神，下可祭亡魂。</p>
+<p>通鬼神称为巫，寄亡魂称为祝。</p>
+<p>我和魏逢，不是天算。</p>
+<p>我们来自上古氏族。</p>
+<p>他是大巫，我是祝女。</p>
+<p>我们是神明的扈从，也是命定的眷属。</p>
+<p>从有记忆开始，我就跟在他身后。</p>
+<p>我们将理所当然地结为伴侣，再共同庇护氏族。</p>
+<p>如果没有谢衍的话。</p>
+<p>谢衍是突然出现的异族人。</p>
+<p>我们对谢衍的来历一无所知。</p>
+<p>但我决定留下他，因为他表现出的能力非同一般，而且长得好看。</p>
+<p>魏逢并不赞成，那是我第一次违逆魏逢意愿。</p>
+<p>谢衍脑子里充满奇思异想。</p>
+<p>他知道怎么保留火种，怎么提炼海盐，怎么存储食物避免腐坏。</p>
+<p>他讲话做事有条理、有逻辑，对每个族人都好得出奇。</p>
+<p>我根本不必刻意关注他，就会不断地有人告诉我他有多了不起。</p>
+<p>普通族人的寿命并不长，我只能在族人即将死去前，祝祷他们来生和顺。</p>
+<p>那天，有位妇人难产。</p>
+<p>她的亲属跪在我面前，我只能略带哀伤地摇摇头。</p>
+<p>千钧一发之际，是谢衍带来一株神草。</p>
+<p>她吃下去后，下体的血神奇地止住了。</p>
+<p>后来我才知道，那草长在峭壁上。</p>
+<p>谢衍赌上命才采下这么一株。</p>
+<p>我不懂。</p>
+<p>在我眼里，是生是死，都是天命。</p>
+<p>我要做的只是顺从天意。</p>
+<p>但谢衍说：「生命是最宝贵的东西，无论是自己的还是别人的。」</p>
+<p>一种奇异的情绪在我心底蔓延。</p>
+<p>我低声道：「我第一次听过这样的话。」</p>
+<p>他张开掌心抓了抓太阳：「在我来的地方，大家都这样认为。」</p>
+<p>谢衍救人的事又一次使他声望大涨。</p>
+<p>毫无疑问，他的存在已经冒犯了魏逢。</p>
+<p>但我没想到，魏逢会将主意打到我头上。</p>
+<p>魏逢以我的名义把谢衍骗去一处绝地。</p>
+<p>等我到时，他已经施术法，害得谢衍滚落山涧。</p>
+<p>如果是以前，我会认为魏逢最重要，他做什么都是对的。</p>
+<p>但现在，我在他惊诧的眼神中，义无反顾地跳了下去。</p>
+<p>找到谢衍的那一瞬间，我觉得世界都安静了。</p>
+<p>他被急湍和礁石伤得奄奄一息，双眼半睁：「你来救我了吗？」</p>
+<p>我说：「是。」</p>
+<p>他笑：「我知道你会来的。」</p>
+<p>我没再说话，但我知道有些东西不一样了。</p>
+<p>自从我救下谢衍，魏逢开始更加明目张胆地针对他。</p>
+<p>魏逢恨我背叛他，却又希望我能变回以前的样子。</p>
+<p>他不停地阻挠着我和谢衍。</p>
+<p>一次次的故技重施，甚至到了令我厌烦的地步。</p>
+<p>与此同时，我和谢衍的感情越来越好。</p>
+<p>他告诉我，神明是唯心主义，要相信唯物主义。</p>
+<p>但当他接连几次亲眼目睹，我和魏逢用唯心主义的方式斗法后，他说他需要冷静下。</p>
+<p>无论魏逢使什么手段，都阻止不了我们相爱。</p>
+<p>我和谢衍决定结婚。</p>
+<p>那一晚，他从怀中掏出一个精巧的戒指。</p>
+<p>他说：「我有一个秘密——其实我来自未来，这个戒指就是能帮我回到未来的钥匙。」</p>
+<p>我：「哦。」</p>
+<p>谢衍难以置信：「你就这个反应？」</p>
+<p>我同情地拍拍他的肩：「我早就知道了。」</p>
+<p>当初占卜结果显示他是异世之人。</p>
+<p>我很早就知道他和我，和我们是不一样的。</p>
+<p>好的那种不一样。</p>
+<p>谢衍泄了气：「原来如此。」</p>
+<p>他郑重地把戒指放在我的掌心：「我已经修复好钥匙，现在我把选择的权利交给你，无论是回去，还是留在这里，我都会在你身边。」</p>
+<p>他很少说这样的话，平时清冷如玉的脸开始泛红。</p>
+<p>我不懂羞涩是什么，一把抱住他的腰：「你去哪里，我就去哪里。」</p>
+<p>谢衍好笑地推推我的脑袋：「不要这样，这样叫恋爱脑，你要听从你自己的心。」</p>
+<p>我摸了摸自己的心，它跳得很快。</p>
+<p>我决定去谢衍的时空。</p>
+<p>因为我想看看他口中平等祥和的世界是什么样。</p>
+<p>第二天清早，谢衍在约定好的地方等我。</p>
+<p>「谢衍！」</p>
+<p>可能是快回家了，他心情极好，浑身弥漫着愉悦感。</p>
+<p>我同样很期待：「我们走吧。」</p>
+<p>谢衍笑着靠近，帮我整理好发丝。</p>
+<p>他像在叹息：「真的这么爱我吗？」</p>
+<p>「那帮我做一件事好不好？」</p>
+<p>我懵懂地点头。</p>
+<p>下一秒，我身上开始燃起熊熊大火。</p>
+<p>谢衍的脸在火光中变成了魏逢。</p>
+<p>他笑着喊我：「乖宝贝。」</p>
+<p>火焰不热不痛。</p>
+<p>卷走了我关于谢衍的所有记忆。</p>
+<p>我又变回了遇见谢衍前，那个不近人情、眼里只有魏逢的祝女。</p>
+<p>谢衍同样忘记了我。</p>
+<p>但当魏逢要处死谢衍时，我本能地拦住他。</p>
+<p>魏逢的脸色阴晴不定，最后还是让步了。</p>
+<p>谢衍被关进一个阴暗山洞。</p>
+<p>从此，魏逢恨不得寸步不离地跟在我身边，每每看到他的脸，我总感觉自己忘记了什么。</p>
+<p>直到魏逢和我定下婚期。</p>
+<p>他去筹备仪式，我在他的住处找到一本羊皮书。</p>
+<p>里面充斥着大量意味不明的图案和文字。</p>
+<p>只讲三件事。</p>
+<p>长生，不老不死。</p>
+<p>画皮，改容易貌。</p>
+<p>噬魂，篡改记忆。</p>
+<p>随着翻动，羊皮上浮现出新的文字，他们像有意识般地从纸面涌入我的指尖。</p>
+<p>我这才想起，我忘记的是什么。</p>
+<p>我带着羊皮书去找谢衍。</p>
+<p>虽然魏逢不杀他，但在不见天日的山洞里待了几个月。</p>
+<p>他瘦得只剩一把骨头。</p>
+<p>我小心地扶起他，轻声地喊他的名字：「谢衍。」</p>
+<p>他虚弱地张开眼：「我就知道你会来的。」</p>
+<p>谢衍说：「别哭，我都想起来了，我一直在等你。」</p>
+<p>我扶着谢衍出了山洞，要想回他的世界，必须要到他一开始降落的地方。</p>
+<p>谢衍转动戒指，即将打开时空之门时，一双手突然牢牢地扣住我的脚踝。</p>
+<p>是魏逢。</p>
+<p>他死死地盯着我：「瞧，我抓住你了。」</p>
+<p>谢衍面若寒霜。</p>
+<p>但时空之门已然打开，巨大的冲力下，魏逢被迫放手。</p>
+<p>他跪在地上，露出了近乎癫狂的笑容。</p>
+<p>我隐约地觉得不安。</p>
+<p>果然回到现代后，始终有股无形的力量在监视着我和谢衍。</p>
+<p>我们靠着羊皮书上的「画皮」，不断地改变样貌，才躲过接踵而来的窥探。</p>
+<p>就像是一直在逃亡。</p>
+<p>我用手指轻轻地划过羊皮书上的「长生」二字。</p>
+<p>是魏逢。</p>
+<p>他是族中天才，比我更能参悟透这本羊皮书。</p>
+<p>他一直活到现在，在等我和谢衍。</p>
+<p>上千年的布局。</p>
+<p>我占卜了无数次，卦象都显示十死无生。</p>
+<p>谢衍从背后拥住我。</p>
+<p>我握紧他的手：「谢衍，信我吗？」</p>
+<p>他笑：「从遇见你的第一天，我就相信你。」</p>
+<p>「好。」</p>
+<p>十死无生，那便置之死地而后生。</p>
+<p>我篡改了谢衍关于我的记忆。</p>
+<p>动手前，谢衍有所察觉，他下意识地按住我的手，但很快地松开了。</p>
+<p>他闭上眼：「如果这是你想要的。」</p>
+<p>我的眼泪滴在他的额头——明明你才是恋爱脑。</p>
+<p>再睁眼时，谢衍看我的眼神陌生。</p>
+<p>在他记忆中，我是萍水相逢的不速之客，向他约定三年后来拿那张人皮。</p>
+<p>出门时。</p>
+<p>我将魂丝缠在谢衍身上。</p>
+<p>即使还有一缕魂魄，我都会来找他。</p>
+<p>24</p>
+<p>万里晴空。</p>
+<p>我站在高楼的天台上，缓声道：「魏逢，还不和我相见吗？」</p>
+<p>下一秒，魏逢和我相视而立。</p>
+<p>他说：「沈皊，你终于想通了。」</p>
+<p>我笑：「做梦。」</p>
+<p>我转身从天台跳了下去。</p>
+<p>魏逢紧随其后，一跃而下。</p>
+<p>他抱住我，语气甚至说得上宠溺：「你觉得我会让你死吗？」</p>
+<p>太好笑了。</p>
+<p>我说：「是我想让你死。」</p>
+<p>「恋爱脑，去死吧！」</p>
+<p>没有力量可以伤害一位大巫，除了祝女。</p>
+<p>只不过这样，我也活不了。</p>
+<p>我全力地刺向他的心口。</p>
+<p>魏逢眼角渗出鲜血，这是我第一次看到他受伤。</p>
+<p>但他眼里的慌乱不是因为自己，而是因为我。</p>
+<p>毕竟他比我多活那么久。</p>
+<p>我的身体在他巫力的反噬中化为乌有。</p>
+<p>我知道这不会是结局。</p>
+<p>因为来前的卦象显示，我此生唯一一次转机在三年后。</p>
+<p>也就是现在。</p>
+<p>不过我没看出什么转机，只感觉魏逢更疯了。</p>
+<p>我问：「谢衍在哪儿？」</p>
+<p>魏逢打了个响指。</p>
+<p>一件繁复华美的婚纱瞬间出现在我面前。</p>
+<p>他说：「穿上它，马上就让你见到谢衍。」</p>
+<p>这件婚纱很美，我大概猜到他想做什么。</p>
+<p>但是。</p>
+<p>我说：「没必要走这种流程了吧。」</p>
+<p>魏逢的手指抚过我的头发：「听话，你欠我一场婚礼。」</p>
+<p>我讽刺地牵牵嘴角。</p>
+<p>穿上婚纱后，我被魏逢带到教堂举行婚礼。</p>
+<p>在婚礼上，我见到了谢衍。</p>
+<p>他看向我的眼神，古井无波。</p>
+<p>我在心底叹了口气，果然他又不记得我了。</p>
+<p>婚礼布置得很用心，配乐来自骨笛。</p>
+<p>悠扬野性的曲调让我觉得很是熟悉。</p>
+<p>魏逢附在我耳边：「记得吗？这是你最喜欢的曲子。」</p>
+<p>他有意地要讨我欢心。</p>
+<p>但我根本想不起来。</p>
+<p>我忽然感觉有人正注视着我，我下意识地回看过去。</p>
+<p>谢衍的位置空无一人。</p>
+<p>「宝贝，专心。」</p>
+<p>我彻底地厌烦了魏逢的花招：「谢衍人呢？」</p>
+<p>他不在意地扫过那个席位：「与我无关。」</p>
+<p>魏逢像是觉得我的样子很有趣：「沈皊，我早就告诉过你，他没你想得那么简单。」</p>
+<p>「你觉得我是坏人，难道谢衍就一定是好人吗？」他蛊惑般地凑近，还想继续说下去。</p>
+<p>但自他为中心的四周骤然亮起光柱。</p>
+<p>无数符箓接连点燃，由近及远，如链条般地将魏逢困在原地。</p>
+<p>谢衍站在光柱旁，眉眼被光照亮。</p>
+<p>他朝我敞开怀抱：「沈皊。」</p>
+<p>不知怎的，我情不自禁地看了一眼仍作困兽之斗的魏逢。</p>
+<p>他痛苦地嘶喊着。</p>
+<p>像是在与我说什么。</p>
+<p>魏逢想要篡改谢衍的记忆，却阴差阳错地让他想起全部的事。</p>
+<p>三年前，我和魏逢从高楼跌落，他却奇迹地生还。</p>
+<p>这场面被不少民众看到。</p>
+<p>他篡改了在场所有人的记忆。</p>
+<p>事后，哪怕有人残存的记忆，也只记得自己经历了一场火灾。</p>
+<p>这事本就被官方和联盟记录在案。</p>
+<p>谢衍联系上他们，经过双方会议一致认定魏逢是头等危险分子。</p>
+<p>这才有了婚礼上的联合行动。</p>
+<p>一切终于尘埃落定。</p>
+<p>正如我卦象所说，唯一一次转机在三年后。</p>
+<p>魏逢被关进特别犯人牢房，毕竟他在联盟待过不少日子，有人找上谢衍，说魏逢要见我。</p>
+<p>谢衍问我怎么想的。</p>
+<p>我躺在沙发上，闭目养神：「不见。」</p>
+<p>有什么好见的？</p>
+<p>他想说什么，我都知道。</p>
+<p>谢衍继续回到研究所。</p>
+<p>我经常会扮成骨头架子，陪在他身边。</p>
+<p>他好像也不在意我的皮相。</p>
+<p>魏逢自杀的那天。</p>
+<p>我正学着谢衍的样子玩扫雷，刚点几下就被雷炸死。</p>
+<p>谢衍手机突然响了，接起电话后，他只「嗯」了一声就挂断。</p>
+<p>然后他说：「魏逢死了。」</p>
+<p>我握着鼠标的手颤了下，点错地方。</p>
+<p>电脑屏幕里，我又一次被雷炸死。</p>
+<p>魏逢的死让我有些唏嘘。</p>
+<p>生命无常，谁知道下一秒会发生什么事呢？</p>
+<p>我比以往更加黏着谢衍。</p>
+<p>但谢衍说有事，让我在实验室等他。</p>
+<p>百无聊赖，我久违地翻开羊皮书。</p>
+<p>长生、画皮、噬魂……</p>
+<p>「在看什么？」谢衍恰好进门。</p>
+<p>我笑：「你不认识吗？」</p>
+<p>虽然那天魏逢的声音被光柱完全屏蔽。</p>
+<p>但我读懂了他的唇语。</p>
+<p>他说：「不要相信谢衍，羊皮书是他的东西。」</p>
+<p>谢衍垂着头：「你都知道了。」</p>
+<p>羊皮书从一开始就属于谢衍。</p>
+<p>但对书中古语，他只能看懂噬魂，于是他选择来到我和魏逢的时代。</p>
+<p>原本我真的喜欢魏逢。</p>
+<p>是谢衍篡改了我的记忆。</p>
+<p>魏逢偏激。</p>
+<p>受刺激后得到羊皮书，开始变得不择手段，这正合谢衍心意。</p>
+<p>不过他低估了上古大巫的能力。</p>
+<p>即使有我帮他，魏逢仍旧难以对付，我们三个人才会苦苦地纠缠这么久。</p>
+<p>谢衍神色颓唐：「沈皊，忘掉那些好吗？」</p>
+<p>我摇摇头。</p>
+<p>我忘不掉。</p>
+<p>他深深地叹息：「那只好我来帮你了。」</p>
+<p>谢衍的掌心冒出红光，四周火焰将燃。</p>
+<p>他也想烧掉我的记忆。</p>
+<p>我觉得一切真没意思。</p>
+<p>没了记忆的我，还是我吗？</p>
+<p>「谢衍，你也好，魏逢也好，其实都挺没意思的。」</p>
+<p>我撕下一页羊皮书，火焰骤息。</p>
+<p>谢衍难以置信。</p>
+<p>我轻笑：「想知道为什么吗？因为这本是我的东西。」</p>
+<p>我自然知道怎么防范。</p>
+<p>当年我花费毕生心血写成这本羊皮书。</p>
+<p>但卦象显示我练不成长生，除非等到一个有缘人。</p>
+<p>「我的有缘人就是你。」</p>
+<p>我朝他的方向轻轻地握拳：「你从魏逢那看到的东西，还是还给我吧。」</p>
+<p>噬魂不仅可以篡改记忆，还能读取记忆。</p>
+<p>刚才谢衍骗了我，魏逢当时还没死。</p>
+<p>他出门是为了在魏逢死前，读取他的所有记忆。</p>
+<p>魏逢是天才，是唯一修成长生的人。</p>
+<p>谢衍想要。</p>
+<p>我更想要。</p>
+<p>记忆抽取的过程，会有些痛苦。</p>
+<p>谢衍清俊的脸庞因为过于用力暴出青筋。</p>
+<p>我蓦地沉默。</p>
+<p>过了一会儿后，我说：「如果刚才你选择不出门，或许我们会有不一样的结局。」</p>
+<p>巫祝之间有天然的规则，我无法在自保的前提下伤害魏逢。</p>
+<p>如果谢衍不曾对长生动心，不去见魏逢，我的所有布局都会失败，或许我就会做一个寻常人，陪在他身边。</p>
+<p>但谁让谢衍是我的有缘人呢。</p>
+<p>他注定成为我最完美的落子。</p>
+<p>离开前，谢衍额间渗着密密的冷汗，一如初见。</p>
+<p>他用最后的力气，问了一个在我看来有些可笑的问题：「你爱过我吗？」</p>
+<p>我径直走向门外，没有回头。</p>
+<p>「爱过，但我更爱长生。」</p>
+<p>想了想，我和他说了此生最后一句话：「真的很烦你们这些恋爱脑。」</p>
+<p>备案号:YXX1EmmaDrpTRRRJ1ZrTQR1B</p>
+<p>网恋对象是只猫</p>
+<p>​</p>
+<p>​</p>
+<p>非分之想：恰情动时见你</p>
+<p>嫌我矮别直说 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/7/8-%E9%AA%A8%E7%B2%89%E7%BD%90/" title="骨粉罐">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">骨粉罐</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/12/4-%E6%95%85%E4%BA%BA%E5%BD%92/" title="故人归">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">故人归</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

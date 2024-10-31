@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摔倒后觉醒读心术 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/14-%E6%91%94%E5%80%92%E5%90%8E%E8%A7%89%E9%86%92%E8%AF%BB%E5%BF%83%E6%9C%AF/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/14-%E6%91%94%E5%80%92%E5%90%8E%E8%A7%89%E9%86%92%E8%AF%BB%E5%BF%83%E6%9C%AF/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="摔倒后觉醒读心术">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+  <meta name="twitter:title" content="摔倒后觉醒读心术">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="摔倒后觉醒读心术">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10364">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26587.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">摔倒后觉醒读心术</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%91%94%e5%80%92%e5%90%8e%e8%a7%89%e9%86%92%e8%af%bb%e5%bf%83%e6%9c%af&amp;url=https://mohai.us.kg/posts/2023/5/14-%E6%91%94%E5%80%92%E5%90%8E%E8%A7%89%E9%86%92%E8%AF%BB%E5%BF%83%E6%9C%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/14-%E6%91%94%E5%80%92%E5%90%8E%E8%A7%89%E9%86%92%E8%AF%BB%E5%BF%83%E6%9C%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%91%94%e5%80%92%e5%90%8e%e8%a7%89%e9%86%92%e8%af%bb%e5%bf%83%e6%9c%af%20https://mohai.us.kg/posts/2023/5/14-%E6%91%94%E5%80%92%E5%90%8E%E8%A7%89%E9%86%92%E8%AF%BB%E5%BF%83%E6%9C%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26587.jpg" alt="摔倒后觉醒读心术" />
+      
+
+      <p>摔倒后觉醒读心术</p>
+<p>傲娇一时爽，追妻火葬场</p>
+<p>有了读心术后，才发现外表冷酷的老板是个双标怪。</p>
+<p>新来的女助理不小心把咖啡泼他身上。</p>
+<p>老板：「呵，女人，你以为这就能引起我的注意？」</p>
+<p>而我不小心摔进冷酷老板的怀里。</p>
+<p>老板：「好软，想亲。」</p>
+<p>我懵了。</p>
+<p>这，——不对劲！</p>
+<p>当你有了读心术，想不想知道为你哐哐撞大墙的男友在想什么呢？</p>
+<p>当然想。</p>
+<p>于是，男友宋炎一进家门，我就握住了他的手。</p>
+<p>很快，他的声音在我脑海里响起：</p>
+<p>「真是个傻女人，哄两句就出房租养我。可惜还是太不会挣钱了，我想要一辆车都买不起，挤地铁累死我了。等我勾搭上玲姐，我就甩了她。」</p>
+<p>我难以置信地看向宋炎。</p>
+<p>我知道玲姐，是他公司的领导。</p>
+<p>今年四十岁，离异，身高 160，体重 180。</p>
+<p>要不是觉醒了特异功能，我真不知道相恋一年的男友居然是这样的人。</p>
+<p>把我当饭票。</p>
+<p>还要勾搭比他大十五岁的女领导！</p>
+<p>2</p>
+<p>趁着宋炎去洗澡。</p>
+<p>我点开了宋炎的手机。</p>
+<p>之前，秉承着互相尊重的姿态，我从来不查看宋炎的手机。</p>
+<p>因此，宋炎也没有防备我。</p>
+<p>一点开，就看到他和玲姐的聊天记录。</p>
+<p>「宝贝」「老婆」「亲爱的」的叫着，比叫我还肉麻。</p>
+<p>我忍着恶心，把那些聊天记录截屏下来，发到了自己的手机。</p>
+<p>宋炎从浴室出来。</p>
+<p>我就把账本扔到了他的面前。</p>
+<p>「我们交往一年，房租 800 一月，共 9600，AA 你 4800，吃饭就算你 20 一顿……好了，给你抹个零，给我一万五就行了。现金，还是转账？」</p>
+<p>宋炎很生气地看着我：「灵灵，你这是什么意思，男女朋友算这么清楚干嘛？」</p>
+<p>我把刚打印出来的聊天记录扔到了他的面前。</p>
+<p>宋炎的脸色顿时变了：「灵灵，你听我狡辩……不，解释……」</p>
+<p>我直接打断了他：「你要是不给，我就把聊天记录做成传单，在你公司门口发。」</p>
+<p>宋炎憋了半天：「能不能少一点？」</p>
+<p>我面无表情道：「我去打印传单了。」</p>
+<p>宋炎满脸肉痛：「转账！」</p>
+<p>听到一万五到账的美妙信息提醒，我心情终于好了一些。</p>
+<p>3</p>
+<p>宋炎拖着行李箱，走到门口的时候，恶狠狠地瞪了我一眼。</p>
+<p>「赵灵灵，你又无趣又丑，找不到比我更好的了！」</p>
+<p>「谁爱住你这城中村，我跟玲姐去住别墅！」</p>
+<p>说完，快步走了。</p>
+<p>宋炎能不能住别墅我不知道。</p>
+<p>反正我拿着这一万五，第二天就换了个离公司近点的小区房。</p>
+<p>这小区还挺高档的，我那房子完全是捡漏。</p>
+<p>我高兴的发了条朋友圈：「搬新家。」</p>
+<p>很快，我就看到一条回复。</p>
+<p>「新家在哪？」</p>
+<p>我吓得悚然一惊。</p>
+<p>因为那条回复是我老板发的。</p>
+<p>我那老板，年纪轻轻，就深谙扒皮之道。</p>
+<p>严于律己，对员工更严格！</p>
+<p>我发朋友圈都会屏蔽老板。</p>
+<p>刚搬新家，高兴得忘乎所以，居然忘了屏蔽。</p>
+<p>他要是知道我搬得离公司近了，肯定会加倍压榨我！</p>
+<p>就在我想怎么糊弄他的时候。</p>
+<p>那句留言居然删了。</p>
+<p>我松了一口气，连忙删了朋友圈。</p>
+<p>4</p>
+<p>第二天，星期天。</p>
+<p>来大姨妈，我小跑去超市买姨妈垫。</p>
+<p>结果，就看到前面一道高大的身影，怎么长得有点像我老板？</p>
+<p>我吓得后退一步，好像踩到什么东西。</p>
+<p>后面传来一声尖叫声。</p>
+<p>「喂，你走路不看路啊！」伴随着一个熟悉的声音。</p>
+<p>我顿时歇了道歉的心思。</p>
+<p>一转头，哦豁，真是冤家路窄。</p>
+<p>一年轻男人，搂着一个肥胖的中年妇女。</p>
+<p>正是宋炎和他的玲姐！</p>
+<p>宋炎正低头安慰着怀里的肥胖妇女：</p>
+<p>「姐，看你这娇嫩的小脚，都红了，我回去给你揉揉。」</p>
+<p>玲姐被哄得脸发红：「小炎，你真会疼人。」</p>
+<p>「呕。」我真的给看吐了。</p>
+<p>宋炎这才抬头看我：「赵灵灵，居然是你！我们已经分手了，你还跟着我做什么？我跟你说，我和玲姐是真爱，你别想拆散我们！」</p>
+<p>那玲姐也紧紧地抱着宋炎，用警惕地看着我。</p>
+<p>我差点气笑了：「对不起，我对垃圾桶里的垃圾不感兴趣。」</p>
+<p>我又看向玲姐：「看好你的垃圾，别让他出来祸害其他人了。」</p>
+<p>我转身想走，宋炎还揪着我不放。</p>
+<p>「赵灵灵，你别嘴硬了，你那么穷，怎么可能住得起这么高档的小区，肯定是来找我的……」</p>
+<p>就在这时，一个低沉的嗓音响起：</p>
+<p>「赵灵灵是来找我的。」</p>
+<p>5</p>
+<p>这声音特别熟悉。</p>
+<p>我一抬头，果然看到一张熟悉的俊脸，泛着冷意。</p>
+<p>正是我的老板方寒宇。</p>
+<p>方寒宇一身运动装，身形高大，很有压迫感。</p>
+<p>宋炎的目光在我和方寒宇之间徘徊，狐疑道：</p>
+<p>「赵灵灵，这是你男朋友？」</p>
+<p>当然不是！</p>
+<p>显然，宋炎对我的那些关心都浮云表面。</p>
+<p>连我老板都不认识。</p>
+<p>但是，想着宋炎的那一句「找不到比我更好的了」。</p>
+<p>为了争这口气，我没说话，狗胆包天了一次。</p>
+<p>方寒宇也没否认。</p>
+<p>宋炎又见玲姐一眨不眨地盯着方寒宇，脸色难看到了极点：</p>
+<p>「长得倒是和我不相上下，就是这穿的，都是地摊货吧，你来这高档小区做什么，难道是想找富婆？赵灵灵，你这新男友心术不太正啊。」</p>
+<p>我差点气笑了。</p>
+<p>宋炎也知道这种行为心术不正啊。</p>
+<p>他自己做起来，倒是一点不知羞。</p>
+<p>「这小区我哥开发的，你们住在哪一栋楼？」方寒宇冷声问道。</p>
+<p>「开发商？这开发商姓方，是本市首富，你就别吹牛了。我们住在二栋 32 楼，大平层，你这辈子都没住过吧。」宋炎还在疯狂嘲讽。</p>
+<p>「2 栋只租不售，我不租了，请你们今日之内搬走，违约金会打到交租账户上。」</p>
+<p>方寒宇说完，就转身走了。</p>
+<p>宋炎完全不信：「装吧你！玲姐买的房子，看谁能赶我们走。」</p>
+<p>6</p>
+<p>我迟疑了一下，还是追上了方寒宇。</p>
+<p>方寒宇大长腿，好在脚步迈得不快，我不费力就跟上了。</p>
+<p>说实话，我有点怕方寒宇。</p>
+<p>我从没见他笑过，他总冷着脸，跟冷面阎罗似的。</p>
+<p>但是，他刚刚帮了我，我总得道谢。</p>
+<p>方寒宇停下脚步，给手下房产经纪人打了个电话，这才看向我。</p>
+<p>我壮着胆子道：「方总，刚谢谢您帮我解围。」</p>
+<p>方寒宇暗沉沉的目光看了我一眼：</p>
+<p>「我记得你入职体检报告上，视力是 1.5，眼光这么差？」</p>
+<p>说完，转身走了。</p>
+<p>我看着方寒宇的背影，叹了口气。</p>
+<p>这好好的一个帅哥，怎么就长了一张嘴呢？</p>
+<p>7</p>
+<p>很久以前，方寒宇是我的偶像。</p>
+<p>他是我的学长，家境好，长得帅，能力还很强。</p>
+<p>我慕强。</p>
+<p>毕业后，努力进了方寒宇的公司。</p>
+<p>这才知道，什么叫「可远观，不可亵玩」。</p>
+<p>他要求严格就算了，还毒舌。</p>
+<p>而且，那毒舌好像只针对我。</p>
+<p>要不是看着年年上涨的工资，我早就跑路了。</p>
+<p>突然，我的手机响起。</p>
+<p>方寒宇给我发的短信：「以后交男朋友先带给我看。」</p>
+<p>我无语。</p>
+<p>公司把我当孙子，私下还想当我爸？</p>
+<p>8</p>
+<p>我买完姨妈垫，往回走。</p>
+<p>恰好看到宋炎和他的玲姐正在往下搬东西。</p>
+<p>显然，刚刚方寒宇的那通电话起了作用。</p>
+<p>「哟，这不是买的房子吗？怎么被赶下来啦？」我走了过去，故作惊讶道。</p>
+<p>宋炎本来就脸臭，看到我脸更臭了。</p>
+<p>「什么被赶，我们就是不想住了。」</p>
+<p>「玲姐新买的房子离公司更近，我们住那去。」</p>
+<p>「对了，你那新男朋友没一句实话，你别被人骗了，还数钱。」</p>
+<p>宋炎还强撑着面子。</p>
+<p>方寒宇这人，嘴里虽然没一句好话。</p>
+<p>但是，句句实话。</p>
+<p>我拍着玲姐的肩膀，很快，一个声音在我脑海里响起，我复述了出来：</p>
+<p>「刚那男人比宋炎好看多了，我得去打听一下，不知道三万一月能不能包下来。」</p>
+<p>玲姐震惊地看着我。</p>
+<p>我朝着她竖起大拇指：「玲姐，你刚想的是这个吧？不得不说，你眼光很好。」</p>
+<p>我说完，就转身走了。</p>
+<p>留下受到一万点伤害的宋炎，和连忙哄他的玲姐。</p>
+<p>9</p>
+<p>我回到家。</p>
+<p>就看到对面的邻居在搬家。</p>
+<p>「房东说要自己住，叫我们赶紧搬走。」邻居喜滋滋道。</p>
+<p>被黑心房东坑，还这么高兴？</p>
+<p>邻居这是气傻了？！</p>
+<p>「房东赔了我们十二个月的房租！嘿嘿！」邻居继续道。</p>
+<p>我错了，一点不黑心，简直人美心善。</p>
+<p>肯定是个好相处的。</p>
+<p>第二天，周一。</p>
+<p>我刚走出小区，就看到两道熟悉的身影。</p>
+<p>西装革履的高大男人，被一个中年肥胖妇女给拦住了。</p>
+<p>「小哥哥，你叫什么名字啊，加个联系方式呗。」</p>
+<p>男人正是我方寒宇。</p>
+<p>妇女就是玲姐。</p>
+<p>我默默地拿出手机，找了一个角度，给他们拍了一个照。</p>
+<p>嗯，角度不错，玲姐那色眯眯的表情，完全拍下来了。</p>
+<p>然后发给了宋炎。</p>
+<p>他金主好像看上其他人了呢。</p>
+<p>这件事我一发现，就告诉他，就怕他失业。</p>
+<p>真是个操心的好前任。</p>
+<p>方寒宇也拿出手机，打了个电话。</p>
+<p>「喂，我要报警，我在街上被人骚扰了。」</p>
+<p>玲姐也真是坚强。</p>
+<p>警察叔叔来了，才把她给劝走。</p>
+<p>方寒宇的目光突然看了过来，精准地落在我身上：</p>
+<p>「看够了吗？」</p>
+<p>10</p>
+<p>看老板热闹被当场抓包，会是什么下场？</p>
+<p>这老板还是方寒宇。</p>
+<p>我不敢往下想。</p>
+<p>于是，灵机一动，抬头看向墙上某明星的巨幅海报。</p>
+<p>面露痴迷：「不够，不够，远远不够。」</p>
+<p>方寒宇的脸色一黑：</p>
+<p>「PC 被抓。赵灵灵，你眼光还是一如既往的差。」</p>
+<p>我的眼睛顿时一亮。</p>
+<p>以方寒宇的地位，肯定能拿到一手消息。</p>
+<p>他说的话都是真的。</p>
+<p>那海报上的还是个流量明星。</p>
+<p>流量明星 PC，这可是个大新闻。</p>
+<p>待会儿一定要和闺蜜了这个消息。</p>
+<p>突然，一辆低调的豪车停在我们面前。</p>
+<p>从上面走下来一个司机，连忙打开车门。</p>
+<p>「方总，抱歉，刚路上耽搁了一下，让您久等了。」</p>
+<p>方寒宇没有进去，而是看向我。</p>
+<p>「上车。」</p>
+<p>一想到要和方扒皮共处一车，我扭扭捏捏道：「方总，其实我坐地铁就行……」</p>
+<p>「从这里到地铁站，五分钟，地铁时间半小时，再走到公司十分钟。加上换乘时间，差不多要五十分钟。现在距离上班时间还有五十分钟。迟到一次，一千块全勤就没了。」</p>
+<p>方寒宇面无表情地复述着。</p>
+<p>我跟泥鳅似的，滑进了方寒宇的车子。</p>
+<p>「那就麻烦方总了。」</p>
+<p>11</p>
+<p>我缩在最左侧，努力将自己的存在感降到最低。</p>
+<p>方寒宇看着我空出的一大块空间，面无表情道：</p>
+<p>「赵灵灵，原来在你心里，我屁股这么大？」</p>
+<p>我偷偷瞥了老板一眼。</p>
+<p>宽肩窄腰大长腿，屁股一点也不大。</p>
+<p>我认真道：「不大，不大，一点不大。」</p>
+<p>我感觉到方寒宇的脸色更难看了。</p>
+<p>我乖乖把屁股挪过去一点。</p>
+<p>他的脸色才稍微好看一些。</p>
+<p>我心里有些疑惑。</p>
+<p>不是说方总领地意识强，都不肯让人进他休息室吗？</p>
+<p>12</p>
+<p>来到公司。</p>
+<p>我冲进了项目部办公室。</p>
+<p>恨不得跟鸵鸟似的缩一天。</p>
+<p>跟老板同车共处半小时，真紧张啊。</p>
+<p>今天和老板交流次数已用尽，应该不用再见到老板了吧……</p>
+<p>结果刚坐下没多久。</p>
+<p>「小赵，老板叫你去他办公室一趟，好像是关于你的那份策划案……」</p>
+<p>其他同事都用同情的目光看着我。</p>
+<p>「灵灵，你到底哪得罪老板了，他怎么揪着你不放？」</p>
+<p>「保重，活着回来。」</p>
+<p>「我们会为你祈祷的。」</p>
+<p>我深吸了一口气。</p>
+<p>来到老板办公室。</p>
+<p>刚好看到新来的女助理，手里的咖啡朝着方寒宇身上泼去。</p>
+<p>方寒宇极其敏捷地起身，避开了那咖啡，迅速后退到门口。</p>
+<p>刚好撞了我手臂一下。</p>
+<p>接触那一刻，我听到了老板的心声：</p>
+<p>「呵，女人，你以为这就能引起我的注意？」</p>
+<p>不愧是我钢铁直男的老板。</p>
+<p>「很好，你被辞退了，去找人事商量赔偿方案吧。」方寒宇冷酷道。</p>
+<p>新助理哭唧唧地走了。</p>
+<p>方寒宇这才将电脑屏幕转向我：</p>
+<p>「你的策划案我帮你改了下，勉强能用，下午跟我一块去见客户。」</p>
+<p>我震惊，叫我来居然不是骂我？</p>
+<p>怎么办？</p>
+<p>我突然觉得我老板有点帅啊。</p>
+<p>13</p>
+<p>下午。</p>
+<p>我提前去了地下车库等。</p>
+<p>结果，便看到一抹熟悉的身影，在一辆车前自拍着。</p>
+<p>正努力让自己身后车的车标入镜。</p>
+<p>我走了过去。</p>
+<p>宋炎看到我，先是一僵，后又露出高傲的神情。</p>
+<p>「赵灵灵，看玲姐给我买的车，帅吧？」</p>
+<p>「我知道你不懂车，这车看着低调，其实要一千万。」</p>
+<p>「和你在一起的时候只能挤地铁，还是玲姐大方。」</p>
+<p>宋炎很得意道。</p>
+<p>以前，宋炎还挺会装的。</p>
+<p>一副努力工作，为了我们将来美好生活的模样。</p>
+<p>现在，是一点不装了。</p>
+<p>那嫌贫爱富的嘴脸，完全暴露出来。</p>
+<p>我道：「你的车，怎么不进去拍啊？你在车外拍，我还以为是别人的车呢？」</p>
+<p>宋炎脸色微微一变，很快恢复高傲：「车门坏掉了，我正等修车公司的人……」</p>
+<p>他还没说完，那车门就被打开了。</p>
+<p>开门的正是方寒宇。</p>
+<p>我似笑非笑地看着宋炎：「车门不是坏了吗？」</p>
+<p>宋炎的脸色彻底僵住了。</p>
+<p>14</p>
+<p>「宋炎，这是我男朋友的车。」</p>
+<p>「别总装 X，容易被打脸。」</p>
+<p>我说完，高傲地坐上副驾。</p>
+<p>那一刻，宋炎的脸被我狠狠踩在脚底。</p>
+<p>我感觉到莫名快意。</p>
+<p>只是，车门一关。</p>
+<p>我就从高傲的天鹅，变成了怂蛋。</p>
+<p>装 X 容易打脸。</p>
+<p>这句话很快应验在我的身上。</p>
+<p>我怂怂地看向方寒宇，祈祷他没听到我刚刚说的话。</p>
+<p>方寒宇眯着眼看着我：「男朋友？」</p>
+<p>轰隆！</p>
+<p>我仿佛被一道雷劈中。</p>
+<p>完蛋。</p>
+<p>他都听到了。</p>
+<p>我偷偷看方寒宇的脸色。</p>
+<p>怎么觉得他没生气，好像还有点高兴？</p>
+<p>15</p>
+<p>来到合作方的公司。</p>
+<p>我们公司是做人工智能的。</p>
+<p>而对方，是一家大型药企的子公司，需要用到我们的技术。</p>
+<p>这个项目一旦谈下来，方寒宇的身价能再翻几倍。</p>
+<p>所以，方寒宇很重视，亲自来谈合作。</p>
+<p>到了会议室。</p>
+<p>对方出席的也是高层。</p>
+<p>其中有个五十岁左右的男人。</p>
+<p>目光在我身上溜了一圈。</p>
+<p>看得我不太舒服。</p>
+<p>那老头抓着方寒宇聊天，侃侃而谈。</p>
+<p>方寒宇面色严肃，一本正经，似听得认真。</p>
+<p>实则：「糟老头子，你口水喷我脸上了。」</p>
+<p>我倒完茶后，忍着笑，后退了几步。</p>
+<p>隔着几米的距离，我都闻到合作方的口臭。</p>
+<p>在心里默默给老板点了根蜡烛。</p>
+<p>方寒宇不动声色地打断合作方。</p>
+<p>然后打开电脑，将策划案投在大屏幕上，介绍了起来。</p>
+<p>旁边的男人突然将手搭在我肩膀上：</p>
+<p>「你们方总真是年轻有为啊。」</p>
+<p>我刚想避开，突然听到一个猥琐的声音在脑海里响起：</p>
+<p>「我对项目不感兴趣，倒是对技术感兴趣。先拿到他的技术，用他的技术开一家公司，嘿嘿……」</p>
+<p>「这女人身材不错，到时候，让她给我做秘书，嘿嘿……」</p>
+<p>我怒气上涌，伸出手，一巴掌甩在那男人的脸上。</p>
+<p>那男人的脸色很难看：「小姑娘，我就问你一个问题，你反应这么大做什么？」</p>
+<p>说着看向方寒宇，「方总，你这员工脾气还挺大的啊。」</p>
+<p>我冷静下来，也觉得自己的行为有些冲动。</p>
+<p>方寒宇又不知道对方根本不是诚信合作，而是想偷他的技术。</p>
+<p>我这行为，完全就是破坏了合作。</p>
+<p>方寒宇本来就是个工作狂，对我这样的行为肯定很生气。</p>
+<p>完了，要被炒鱿鱼了。</p>
+<p>「陈总，你长得人模狗样，没想到内里是个畜生，一大把年纪了，还不知廉耻。我们的合作到此为止。另外，对我员工动手动脚的事，等着收律师函吧。」</p>
+<p>我眨巴着眼睛，突然觉得鼻子有些发酸。</p>
+<p>第一次觉得，方寒宇的毒舌，这么可爱。</p>
+<p>方寒宇收起电脑就往外走，走了两步，突然停下脚步。</p>
+<p>「还愣着不走干嘛？要我抱你吗？」方寒宇没好气道。</p>
+<p>我连忙跟了上去。</p>
+<p>16</p>
+<p>到了车上。</p>
+<p>方寒宇扯着领带，有些生气。</p>
+<p>我小媳妇似的缩在副驾驶上。</p>
+<p>「方总，对不起，我刚有些冲动。」我连忙道歉。</p>
+<p>「冲动？就该甩两巴掌，一巴掌哪叫冲动了？」方寒宇还骂了一句粗口。</p>
+<p>我直直地盯着他。</p>
+<p>方寒宇扭头看我：「这么看着我干嘛？」</p>
+<p>「老板，你真男人。」我道。</p>
+<p>是真帅。</p>
+<p>方寒宇的耳朵似乎红了，嘟囔了一句：「我当然男人。」</p>
+<p>说着，拿出手机，给自己的律师打电话。</p>
+<p>让他收集那位陈总骚扰女性的证据。</p>
+<p>显然，他是老手，应该干了不少坏事。</p>
+<p>我迟疑了一下，还是道：「老板，其实那陈总不是真心想合作，是想偷技术……您别问我是怎么知道的，这不太好说……」</p>
+<p>我抓耳挠腮，总不能说自己有读心术吧。</p>
+<p>好在方寒宇没有多问，而是又打了个电话，让人去查那陈总的公司。</p>
+<p>「查过？对，是查过了，但是你确定都查清了吗？继续查，这次再漏掉，直接递交辞呈……」</p>
+<p>方寒宇没有去公司。</p>
+<p>而是开着车回家了。</p>
+<p>车子停在地下停车场。</p>
+<p>虽然说是同一小区，我那是一梯四户，方寒宇是大平层。</p>
+<p>价格差了好几倍。</p>
+<p>方寒宇跟着我走到电梯前，要跟着我上楼。</p>
+<p>我连忙道：「方总，送到这里就行了，不用送上楼了。」</p>
+<p>方寒宇莫名其妙地看着我：「我回家，谁送你了？」</p>
+<p>我……就很尴尬。</p>
+<p>17</p>
+<p>方寒宇确实是回自己家。</p>
+<p>而且，他家还在我对面。</p>
+<p>那人美心善的房东，居然是方寒宇？！</p>
+<p>「方总，您不是住大平层吗？怎么住这里来了？」</p>
+<p>「那边住腻了。」方寒宇轻飘飘道。</p>
+<p>我无语。</p>
+<p>房子多了不起啊。</p>
+<p>好吧，确实了不起。</p>
+<p>我和方寒宇成了邻居。</p>
+<p>晚上，躺在床上。</p>
+<p>我突然收到宋炎给我发来的信息：</p>
+<p>「赵灵灵，玲姐要给我开公司了呢。你那开豪车的男友给你开公司了吗？又不给你买车买房，又不给你开公司，不会玩玩而已吧？」</p>
+<p>「他们有钱人都这样，外面不知道养了多少鱼呢，我劝你还是想办法多捞捞钱，让他给你开家公司。」</p>
+<p>这是变着法子炫耀自己有公司呢。</p>
+<p>看着「正在输入」的字样，猜想着他肯定打了大段字。</p>
+<p>我迅速把他加入了黑名单。</p>
+<p>18</p>
+<p>第二天。</p>
+<p>来到公司。</p>
+<p>项目部的同事们在议论纷纷。</p>
+<p>「这次来的是谁啊，跟模特似的。」</p>
+<p>「好像是丁家小姐，就是个模特。」</p>
+<p>「你说这次，她能在总裁办公室待多久啊。」</p>
+<p>我很快加入了八卦的队伍，知道事情的始末。</p>
+<p>我们老板家境好，英俊又多金。</p>
+<p>自然有很多女孩子喜欢她。</p>
+<p>全都是富家千金。</p>
+<p>有些甚至追到公司来。</p>
+<p>「快看，我在网上找到她的照片了，我刚看到真人了，比照片还漂亮。」</p>
+<p>同事们立即凑过去看。</p>
+<p>我也看到了。</p>
+<p>肤白貌美大长腿，确实很美。</p>
+<p>以前这样的事，我都是站在八卦第一线。</p>
+<p>很兴奋。</p>
+<p>但是现在，看着照片上的美女。</p>
+<p>突然觉得有些自卑。</p>
+<p>心里总有说不出的难受。</p>
+<p>那情绪好像叫「嫉妒」？</p>
+<p>我吓了一跳。</p>
+<p>嫉妒什么？</p>
+<p>我不会喜欢上方寒宇了吧？</p>
+<p>人家是天上的星星，我就是路边的野草。</p>
+<p>我连忙将那不切实际的想法，驱除出脑海。</p>
+<p>「赵灵灵，方总打电话叫你去办公室一趟？」</p>
+<p>同事们立即用同情的目光看向我。</p>
+<p>看来总裁没看上丁家小姐。</p>
+<p>这时候被叫去的员工，不是去吸引火力吗？</p>
+<p>19</p>
+<p>知道老板没看上丁小姐。</p>
+<p>我心里竟有些暗喜。</p>
+<p>我去了老板办公室。</p>
+<p>「寒宇，你刚说的话我一个字不信，除非你让我看看。」</p>
+<p>我敲了敲门。</p>
+<p>「进来。」方寒宇的目光看向我。</p>
+<p>丁小姐不太高兴地看了我一眼。</p>
+<p>说实话，这位丁小姐确实美。</p>
+<p>脸很小，皮肤很白，五官精致。</p>
+<p>和方寒宇站一块，还挺配的。</p>
+<p>奈何方寒宇看不上。</p>
+<p>想起方寒宇叫我来的目的，我连忙配合，谈起工作：</p>
+<p>「方总，请问是策划案有什么问题吗？」</p>
+<p>「不是公事，私事。」方寒宇道。</p>
+<p>我疑惑，什么私事？</p>
+<p>「就是她？」丁小姐问道。</p>
+<p>方寒宇点了点头。</p>
+<p>丁小姐看向我：「你是寒宇的女朋友？」</p>
+<p>我愣了一下，看向方寒宇。</p>
+<p>他朝着我使了一个眼色。</p>
+<p>我顿时明白了。</p>
+<p>挡箭牌是吧。</p>
+<p>方寒宇帮了我好几次，这忙自然要帮。</p>
+<p>我点头：「是。」</p>
+<p>丁小姐看着我们二人，眼里满是不甘：「我不信，除非你们亲一下。」</p>
+<p>我……</p>
+<p>这是什么要求？</p>
+<p>不过，盯着方寒宇那薄唇，我心跳竟然有些快。</p>
+<p>夭寿了，癞蛤蟆想吃天鹅肉了。</p>
+<p>20</p>
+<p>最终没亲。</p>
+<p>方寒宇叫来了保安，把丁小姐带走了。</p>
+<p>晚上。</p>
+<p>我洗头洗到一半，突然停水了。</p>
+<p>给物业打电话，说要一个小时再来修。</p>
+<p>迟疑了一下，还是敲了对面邻居的门。</p>
+<p>我保证，我绝没有其他心思。</p>
+<p>就是顶着满头泡沫，有些难受。</p>
+<p>门很快就开了。</p>
+<p>当我看见方寒宇的模样时，眼睛顿时直了。</p>
+<p>他刚刚洗完澡，头发半湿着，腰间裹着浴巾。</p>
+<p>露出结实的胸膛，和八块腹肌。</p>
+<p>我只能保证，我刚刚确实没什么心思。</p>
+<p>现在，好想摸一下腹肌的手感……</p>
+<p>「赵灵灵，你在看什么？」方寒宇那满是磁性的声音响起。</p>
+<p>「我绝对没看你腹肌。」我连忙摆手。</p>
+<p>等意识到自己说了什么，我的脸红透了。</p>
+<p>支支吾吾道：「我房子的水管坏了，头发洗到一半，你能借我一下卫生间吗？」</p>
+<p>方寒宇让开了空间：「进来吧。」</p>
+<p>21</p>
+<p>站在方寒宇的卫生间里。</p>
+<p>我脑海中晃动的依旧是方寒宇的腹肌。</p>
+<p>这浴室里还弥漫着男性沐浴露的香气……</p>
+<p>我想象着方寒宇在这里面搓澡。</p>
+<p>突然觉得鼻子一热。</p>
+<p>我一抹，血红血红的。</p>
+<p>我猛地抓了一把头发。</p>
+<p>完蛋了。</p>
+<p>被美色迷住了。</p>
+<p>我洗完头后，方寒宇已经换上了睡袍。</p>
+<p>正坐在客厅的沙发里，看着电脑。</p>
+<p>高挺的鼻梁上，架着细框眼镜，还挺斯文的。</p>
+<p>方寒宇看向我，此时他真贵气得像只波斯猫。</p>
+<p>「赵灵灵。」他开口。</p>
+<p>我乖乖地走到他跟前。</p>
+<p>「对我腹肌这么感兴趣？那想不想摸一下？」</p>
+<p>我总觉得他的声音带着蛊惑。</p>
+<p>我魔怔似的，点了点头。</p>
+<p>方寒宇笑了。</p>
+<p>他总是臭着一张脸，跟谁欠他几百万似的。</p>
+<p>这是我第一次看见他笑。</p>
+<p>那张俊美的脸，变得鲜活许多。</p>
+<p>「想的美，梦里摸吧。」方寒宇声音愉悦道。</p>
+<p>我无语。</p>
+<p>小气鬼，喝凉水。</p>
+<p>22</p>
+<p>几天后。</p>
+<p>我就听说之前合作的公司被调查了。</p>
+<p>那位想对我动手动脚的陈总，也被警方带走了。</p>
+<p>特别解气。</p>
+<p>方寒宇真是给力！</p>
+<p>下午的时候。</p>
+<p>方寒宇给我发了一条信息。</p>
+<p>「下班去约会。」</p>
+<p>我的心一跳。</p>
+<p>很快，下一条发了过来：「丁雪说要看我们约会的照片，不然就是假的，继续追我。」</p>
+<p>丁雪就是那位丁家小姐。</p>
+<p>原来说做戏啊。</p>
+<p>我的心跳恢复正常。</p>
+<p>下班后，我们去吃饭了。</p>
+<p>一家会员制的高档餐厅。</p>
+<p>我和方寒宇走到门口的时候，看到一抹熟悉的身影。</p>
+<p>宋炎，穿得人模狗样的。</p>
+<p>他身边，却不是玲姐，而是一个年轻女孩。</p>
+<p>「楠楠，这家餐厅是会员制的，只有身价千万的人才能进呢，我今天就带你见识一下。」</p>
+<p>宋炎很是嘚瑟道，然后将卡递给了餐厅的工作人员。</p>
+<p>工作人员说了什么，宋炎顿时怒道：</p>
+<p>「怎么可能用不了？这张会员卡的卡主人叫唐玲，是我姐，我们前几天还来吃饭呢。」</p>
+<p>我慢悠悠道：</p>
+<p>「说不定是玲姐发现她养的小奶狗不乖，停了他的卡呢。」</p>
+<p>宋炎转头看向我，脸色很难看。</p>
+<p>我看向宋炎身边的女孩，年纪很小，应该是个大学生。</p>
+<p>我想到当初不谙世事的自己，于是道：「姑娘，他就是个骗子，找富婆包养的，根本不是什么好人，你别被他骗了。」</p>
+<p>我说着，还给他看了宋炎和了解的聊天记录。</p>
+<p>那女孩脸色顿时变了，拿手里的包砸了宋炎一下：「渣男！」</p>
+<p>说完，就转身跑了。</p>
+<p>「赵灵灵！」宋炎咬牙切齿道。</p>
+<p>「哎呀，这张你和刚那女孩的合照拍得不错，不知道玲姐看到会怎样？」我慢悠悠道。</p>
+<p>我其实并没有拍，吓唬他的。</p>
+<p>果然，宋炎屁都不敢放一个，灰溜溜地跑了。</p>
+<p>我和方寒宇进了餐厅。</p>
+<p>期间，方寒宇还拍了我们的合照。</p>
+<p>然后设置为手机桌面。</p>
+<p>做戏需要做这么全吗？</p>
+<p>方寒宇不会喜欢我吧？</p>
+<p>23</p>
+<p>晚上。</p>
+<p>这个猜想让我翻来覆去睡不着觉。</p>
+<p>灰姑娘总有做梦的权利嘛。</p>
+<p>万一，方寒宇真的喜欢我呢？</p>
+<p>结果，第二天，我的梦就被打碎了。</p>
+<p>方寒宇换了新秘书。</p>
+<p>是方寒宇的多年好友。</p>
+<p>这位好友，和方寒宇的性格截然相反，是个自来熟。</p>
+<p>茶水间相遇，聊起八卦。</p>
+<p>「小赵，你知道方总为什么不结婚，也不谈恋爱吗？」</p>
+<p>我好奇问道：「为什么？」</p>
+<p>「因为方总有喜欢的人，好像认识很久了。他个闷骚，放在心里不说，还是一次喝酒不小心说漏嘴的。」</p>
+<p>「我真好奇寒宇喜欢的女孩是什么样的，你好奇吗？小赵，小赵？」</p>
+<p>他叫了两声，我才回过神。</p>
+<p>我的笑有些不自然：「好奇。」</p>
+<p>原来方寒宇有喜欢的人。</p>
+<p>所以，我真的会错意了。</p>
+<p>方寒宇和我约会，是真的为了做戏。</p>
+<p>「我以前都以为他不喜欢女孩子呢，之前他公司有个女孩，想要接近他，故意摔倒，摔他怀里，结果寒宇就把人给炒了。」</p>
+<p>我从茶水间离开后，就有些心不在焉。</p>
+<p>以至于被方寒宇叫去办公室，不小心踢到桌角。</p>
+<p>身体不受控制地倒去。</p>
+<p>刚好摔到方寒宇的怀里。</p>
+<p>那一瞬间，我心里只有一个想法。</p>
+<p>完了。</p>
+<p>爱情没了，工作也要丢了。</p>
+<p>24</p>
+<p>就在我以为要被炒鱿鱼的时候，</p>
+<p>脑海中突然有个声音响起：</p>
+<p>「好软，想亲。」</p>
+<p>我惊呆了！</p>
+<p>睁开眼，就见方寒宇的眼睛，直勾勾地盯着我的唇。</p>
+<p>好一会儿。</p>
+<p>我才反应过来。</p>
+<p>心脏不受控制地加速跳动。</p>
+<p>我从方寒宇的怀里爬起来。</p>
+<p>却没有离去，而是弯着腰，靠近他的脸。</p>
+<p>「想亲吗？」</p>
+<p>方寒宇以极为缓慢的速度眨着眼睛。</p>
+<p>耳朵也红了个彻底。</p>
+<p>「那就亲吧。」</p>
+<p>我突然凑近，唇贴了上去。</p>
+<p>顿时，各种杂音在我脑海里响起。</p>
+<p>「真的好软。」</p>
+<p>「唔。」</p>
+<p>「%¥%」</p>
+<p>「想……」</p>
+<p>后面的话就有些限制级。</p>
+<p>不便透露。</p>
+<p>一吻完毕，我盯着面前帅气的脸。</p>
+<p>我可以肯定，方寒宇也是喜欢我的。</p>
+<p>就算他以前有喜欢的人，但他现在喜欢我。</p>
+<p>这就足够了。</p>
+<p>我喜欢的人，居然喜欢我。</p>
+<p>对方还是个身家上亿的总裁。</p>
+<p>这概率就跟买彩票似的。</p>
+<p>我大着胆子道：「方寒宇，我们别做戏了，谈真的恋爱吧？」</p>
+<p>方寒宇扭捏了一下：</p>
+<p>「那我勉为其难同意吧。」</p>
+<p>耳朵全红了。</p>
+<p>25</p>
+<p>我和方寒宇真的谈恋爱了。</p>
+<p>一起吃饭、逛街、看电影。</p>
+<p>时不时碰触。</p>
+<p>发现方寒宇的内心活动极其丰富。</p>
+<p>而且，我隐约觉得，方寒宇暗恋的那个人，可能就是我……</p>
+<p>一个月后。</p>
+<p>我得知了一个关于宋炎的消息。</p>
+<p>宋炎的公司涉及保健品诈骗，宋炎作为法人被调查了。</p>
+<p>看来那玲姐给宋炎开公司，根本不是想给他钱花。</p>
+<p>而是想拿他开诈骗公司，顶罪。</p>
+<p>几天后，一个新号加了我，并发给我一张图片。</p>
+<p>我看得呆了。</p>
+<p>那居然是我的图片，有些不堪入目。</p>
+<p>「给我两百万，不然我就把照片发给方寒宇。」</p>
+<p>我忍着怒气思考。</p>
+<p>我觉得有些不对劲。</p>
+<p>我这人比较保守，和宋炎没有越轨的行为。</p>
+<p>同居也是一人一个卧室。</p>
+<p>我仔细看了那照片两眼。</p>
+<p>「宋炎，你这照片是 P 的吧？」</p>
+<p>「管我是不是 P 的，反正我们谈过，我把这照片发给方寒宇，发给他的家人，他们会怎么想？你觉得你还能嫁入豪门吗？」方寒宇发过来，又立即撤回了。</p>
+<p>好在我聪明，刚刚就截了图。</p>
+<p>我的肺差点气炸了。</p>
+<p>这人渣！</p>
+<p>气过之后，我不得不担心。</p>
+<p>要是宋炎真把照片发给方寒宇，方寒宇会怎么想？</p>
+<p>26</p>
+<p>我思考了一晚上。</p>
+<p>还是把这件事告诉了方寒宇。</p>
+<p>方寒宇的脸色极其难看。</p>
+<p>我心里忐忑不安，怕方寒宇对我产生不好的想法。</p>
+<p>迟疑了一下，还是抓住了他的手臂。</p>
+<p>结果，一个长达两分钟的国骂在我脑海响起。</p>
+<p>方寒宇一直在骂宋炎。</p>
+<p>谁能想到方大总裁，居然储存了那么多骂人的词呢？</p>
+<p>我又好笑又感动的，收回了手。</p>
+<p>「两百万是吧？拿给他。」方寒宇咬牙切齿道。</p>
+<p>我看着方寒宇目露凶光，总觉得没那么简单。</p>
+<p>「灵灵，这件事就交给我，你别管了。」</p>
+<p>很快，我就知道方寒宇怎么解决的。</p>
+<p>他先给宋炎打了两百万。</p>
+<p>随后报了警，告宋炎敲诈勒索。</p>
+<p>两百万属于数额特别巨大，要判刑十年以上！</p>
+<p>当晚，我就接到一个陌生电话。</p>
+<p>「灵灵，我错了，对不起，你能不能让方寒宇别告我了……」</p>
+<p>电话那边是宋炎哀求的声音，痛哭流涕，声音里满是后悔。</p>
+<p>宋炎这样的人，真的会忏悔，觉得自己错了吗？</p>
+<p>「宋炎，这一切都是你自作自受。」</p>
+<p>我打断了他，直接挂了电话。</p>
+<p>27</p>
+<p>两个月后。</p>
+<p>方寒宇向我求了婚。</p>
+<p>我戴上了求婚戒指。</p>
+<p>看着他那张俊脸：「方寒宇，这么急着求婚，不会暗恋我很多年吧？」</p>
+<p>方寒宇不自在地看向其他方向。</p>
+<p>「才没，是看你那么喜欢我，我才勉为其难喜欢一下你。」</p>
+<p>「那我谢谢你啊。」</p>
+<p>「不客气。」方寒宇轻声道。</p>
+<p>方寒宇这个傲娇男，不肯告诉我。</p>
+<p>实际上，我早就弄清了过去。</p>
+<p>28</p>
+<p>方寒宇，其实是我的恩人。</p>
+<p>很多年前。</p>
+<p>城里的男孩，资助了一个贫困县的女孩。</p>
+<p>那女孩总是给他写信。</p>
+<p>男生开始没在意。</p>
+<p>后来，他生病了。</p>
+<p>他变得烦躁，绝望。</p>
+<p>偶然之下，他打开了那些信。</p>
+<p>逐渐被那些信上有趣的文字，和描述的有趣景象给吸引了。</p>
+<p>那是个与他生活，完全不同的地方。</p>
+<p>那里虽然贫穷，但是山清水秀，娃娃们放牛、抓鱼。</p>
+<p>而不是像他一样，看似光鲜，实则枯燥、乏味。</p>
+<p>还有那个女孩，她生活的地方并不富裕。</p>
+<p>但是，她就像山林的那些树一样，拥有很顽强的生命力。</p>
+<p>他开始回信。</p>
+<p>他们逐渐成了朋友。</p>
+<p>抑或还滋生了一些其他的感情。</p>
+<p>后来，他去国外治病，与那女孩断了联系。</p>
+<p>他治好后，试图联系那女孩，却怎么也联系不上。</p>
+<p>他上大学，毕业，开了一家公司。</p>
+<p>他的生活很充实，却又觉得，总少了什么。</p>
+<p>直到他看到一份应聘简历，应聘者的名字，赵灵灵。</p>
+<p>那简历上的照片，和资助资料上的照片，重合在一起。</p>
+<p>那缺少的，找到了。</p>
+<p>全文完</p>
+<p>哈哈饭/著</p>
+<p>备案号:YXX1OnnrGrPHOOOkd5gTp5ya</p>
+<p>缩小版的他喊别人爸</p>
+<p>​</p>
+<p>​</p>
+<p>傲娇一时爽，追妻火葬场</p>
+<p>洛溪儿</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/9/30-%E8%A1%B0%E8%80%81/" title="衰老">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">衰老</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/7/17-%E5%8F%8C%E9%9D%A2%E6%A0%A1%E9%9C%B8/" title="双面校霸">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">双面校霸</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

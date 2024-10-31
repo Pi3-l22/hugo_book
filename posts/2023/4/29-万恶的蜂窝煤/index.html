@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万恶的蜂窝煤 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/29-%E4%B8%87%E6%81%B6%E7%9A%84%E8%9C%82%E7%AA%9D%E7%85%A4/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/29-%E4%B8%87%E6%81%B6%E7%9A%84%E8%9C%82%E7%AA%9D%E7%85%A4/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="万恶的蜂窝煤">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26598.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26598.jpg">
+  <meta name="twitter:title" content="万恶的蜂窝煤">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="万恶的蜂窝煤">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="8633">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26598.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">万恶的蜂窝煤</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>18分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%b8%87%e6%81%b6%e7%9a%84%e8%9c%82%e7%aa%9d%e7%85%a4&amp;url=https://mohai.us.kg/posts/2023/4/29-%E4%B8%87%E6%81%B6%E7%9A%84%E8%9C%82%E7%AA%9D%E7%85%A4/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/29-%E4%B8%87%E6%81%B6%E7%9A%84%E8%9C%82%E7%AA%9D%E7%85%A4/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%b8%87%e6%81%b6%e7%9a%84%e8%9c%82%e7%aa%9d%e7%85%a4%20https://mohai.us.kg/posts/2023/4/29-%E4%B8%87%E6%81%B6%E7%9A%84%E8%9C%82%E7%AA%9D%E7%85%A4/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26598.jpg" alt="万恶的蜂窝煤" />
+      
+
+      <p>万恶的蜂窝煤</p>
+<p>1．</p>
+<p>1．</p>
+<p>你见过蜂窝煤不？圆筒状，有很多洞洞的那种。</p>
+<p>这个故事，就是一个和蜂窝煤有关的故事。</p>
+<p>我的中学，是一所县城的寄宿制重点中学，升学率奇高，管理奇严格。确切说，是变态化的军事管理。</p>
+<p>因此，你可以把它想象成一座军工厂，我们就是流水线上的产品。</p>
+<p>学校四周是一望无际的麦田，偶尔也会冒出一两个坟头。那个时候条件不如现在好，每个班所有的女生都睡在一个大宿舍，三个人一张床，通铺。冬天的时候也没有暖气，只有一个小煤炉。</p>
+<p>厕所和床铺一样，也是通的，简称「通厕」，所有的厕位一字排开。夏天的时候蛆虫宝宝们会一躬一躬地排着队从粪池爬上来，开始它们的蛆生历险。</p>
+<p>就是这样精彩的厕所，学校也只有两个（一男，一女），座落在操场的尽头，和宿舍的位置正好是大吊角。所以在冬天的晚上被尿憋醒，是一件十分恐怖的事情。</p>
+<p>冬天另一件比较恐怖的事情，是住在学校的猫头鹰有时候会来抓宿舍的门，不知道它是觉得冷还是怎么样，总之在被抓门声和翅膀声骚扰过后的早上，门上会留下几道深深的抓痕。</p>
+<p>那个时候，每个学生的每天都是相同的：</p>
+<p>起床，早操，早自习，早饭，上课；午饭，午休，上课，课外活动；晚饭，晚自习，熄灯。跟打仗似的，枯燥，了无生趣。</p>
+<p>如果说最有意思的事情，应该是晚自习的时候。趁督导老师没在，大家会凑在一起讲鬼故事，我们学校本身，就有很多鬼故事。</p>
+<p>在这些鬼故事当中，最令人信服的，就是历年被煤气熏死的那些学生们了。</p>
+<p>2．</p>
+<p>煤和煤炉子都是学校配给的，小炉子，蜂窝煤。全宿舍二十几个人轮流值日，守护着那星星之火。有时候，我们也会在那小炉子上烤馒头片或者红薯或者煮方便面。</p>
+<p>有时候也烤鞋垫。</p>
+<p>因此，在那种炉子上烤出来的任何食物，都有一种奇怪但很香的味道。</p>
+<p>这里有必要说一下，我们当时的宿舍，都是教学楼没有建起之前的教室，而我们班的宿舍，之前是化学实验室。</p>
+<p>因了这个缘故，那年冬天全班女生都出了疹，那些疹起先是红色的，继而会变成黑色，从皮肤上深深陷下去，特别像蜂窝煤的洞洞。</p>
+<p>不但痒，且臭，尤其怕冷。大概是因为酷似蜂窝煤的疹，也跟蜂窝煤一样透风吧。</p>
+<p>班主任带着我们看了医生以后，又每天带我们到校外去洗澡，并以防止传染为由，禁止我们回家。</p>
+<p>那段时间，我总觉得自己是一块蜂窝煤，黑漆漆的，随时都有可能被放进炉子里烧掉。</p>
+<p>就在我觉得自己快被烧掉的时候，我做了一个梦。梦见自己的胳膊被学校医务室的医生给割掉了，不疼，也没有流血。</p>
+<p>做了这个梦没几天，坐在我前排的周月死了，中煤气。大家怕冷，所以炉子烧得尤其旺，窗户关得尤其严。周月的床铺靠近火炉，又是上铺。而且那天不知道为什么，她还是头顶着墙睡的。</p>
+<p>当时我没有哭，也不觉得特别难过。因为周月是一个很内向的小姑娘，我们一直没有什么来往。如果一定要说有的话，就是在她死的前一天，我借了她的橡皮。那个橡皮一直在我的铅笔盒里，没有还。</p>
+<p>在去参加她的遗体告别仪式的时候，她穿着崭新的校服，静静地躺在床上，身体像笔一样直。当时我想把橡皮还她，但又觉得有些做作。</p>
+<p>后来大家在宿舍里传看一本破得掉渣的《周公解梦》，我才明白原来自己的那个梦，预示了周月的死：梦见有人正在砍自己的肢体，好友或助手死于非命。</p>
+<p>在看了《周公解梦》的好长一段时间里，我都觉得是我的梦害死了她，总是觉得无论走到哪，周月的灵魂都跟着我。</p>
+<p>我总是看到周月转过身，微笑着，伸着手，让我还她的橡皮，那种感觉是那么的强烈和真实。</p>
+<p>发生那件事情以后，晚自习再也没有人讲鬼故事了。</p>
+<p>3．</p>
+<p>说来也邪门，自从周月死后，班上就开始发生奇怪的事情。</p>
+<p>首先，学校竟然肯花大钱治疗我们身上的蜂窝煤疹了。</p>
+<p>继而，老师们都跟中了邪似的，只要抽学号随机提问，总会抽到 20 号。</p>
+<p>周月就是 20 号。</p>
+<p>老师每次叫完「20 号」，然后用期待的目光等待这位同学站起来回答问题的时候，全班马上一片沉默，继而大家就会纷纷转头看我。我是学习委员，我有义务告诉老师这位同学不在了。</p>
+<p>我硬着头皮，看着前排的空座位站起来说：「20 号是周月。」</p>
+<p>老师们总是轻轻咳嗽一声，然后似乎要掩饰什么似的，说：「那你来回答吧。」</p>
+<p>就这样，只要抽到周月回答问题，总是由我来代替。</p>
+<p>我的同桌高小辉说：「你回答问题的语气，特别像周月。」</p>
+<p>我心中一阵发紧，仓惶地看着前排的空坐。周月笔直坐在那里，眼睛就像蜂窝煤的洞似的，空空的。</p>
+<p>然而，这仅仅开始。</p>
+<p>到了期中测试的时候，后黑板的成绩表上，周月的成绩单赫然排在第二名。全班立刻沸腾了。</p>
+<p>我被班主任叫道了办公室。</p>
+<p>「你的试卷呢？」</p>
+<p>「交了……」</p>
+<p>「你找找！」班主任扔出一叠卷子。</p>
+<p>其实不用找，看到成绩单的那一刻，我就明白了，我在试卷上写了周月的名字。</p>
+<p>我不是故意的。</p>
+<p>甚至，我在考试的时候大脑也是一片空白，我不记得自己什么时间，写了什么名字。</p>
+<p>我什么都不记得，真的什么不记得。</p>
+<p>「周月的事情已经过去了，你到底想怎样？」</p>
+<p>我低着头不说话，我真的没想要怎样。</p>
+<p>「老师……」我抬起头，「你说…… 我是不是被周月…… 附身了？……」</p>
+<p>老师腾地站起来，气道：「这次考试，你的成绩是零分！」</p>
+<p>我一定出现幻觉了，我看到周月在老师身后笑，手里拿着一块橡皮，身上长满了蜂窝煤。</p>
+<p>4．</p>
+<p>从那以后，我变得特别神经质。</p>
+<p>我觉得自己越来越像一块蜂窝煤了。但是有时候呢，比如在做数学题的时候，又会觉得自己是一只壁虎什么的。</p>
+<p>我想经历过高三的朋友们一定有一种感觉，忘记了自己是一个「人」而存在，似乎活着的意义，就是对付那一本又一本的练习册。又似乎，高考那一天永远都不会来，而自己这一生，就将结束在这一本本的练习册中。</p>
+<p>当然，这只是一种感觉。</p>
+<p>不过，左奎这一生就是结束在了这样的练习册中。</p>
+<p>左奎是隔壁理科班的男生，我们年级打篮球的主力，头脑简单，四肢发达。</p>
+<p>我原本对这种男生不感冒的，但是有一次路过操场，看到他打篮球的身影，却莫名喜欢上了他。</p>
+<p>那种喜欢很奇怪，似乎明明不喜欢，又要强迫自己喜欢似的。</p>
+<p>因为喜欢，所以一到课外活动时间，我就会泡在篮球场旁边。课间的时候，会反复路过他们班级门口，只为偷偷瞥他一眼。</p>
+<p>他不帅，单眼皮，有些像现在偶像剧里的韩国明星。他的胳膊很结实，我常常幻想被那双有力的手臂拥在怀里。</p>
+<p>我给左奎写了一封情书，忐忑着，不知该不该给他。如果给，高小辉无疑是最好的送信人选。</p>
+<p>高小辉说，「尤尤，你是不是喜欢上左奎了？」</p>
+<p>「恩？」我的脸瞬然红了，「没有啊……」</p>
+<p>「那你最近看他的眼神有点怪…… 你知道吗？周月死前，拜托过我一件事……」</p>
+<p>「什么事？」我的心里一紧，好像被什么东西攥住了。</p>
+<p>「她拜托我…… 把情书交给左奎…… 但我没答应……」他看着我。</p>
+<p>我急忙把那封情书放到了桌兜里，心掉进了冰窟窿。</p>
+<p>5．</p>
+<p>就在高小辉说周月也喜欢左奎的当天晚上，我梦到校医院的医生割掉了左奎的胳膊。梦里左奎流了好多血，可是感到钻心疼痛的却是我。</p>
+<p>没几天，左奎就死了，也是中煤气。那年冬天天气很干，可是不知为何他们宿舍的煤却发潮了。男生又粗心又懒得好好料理，全宿舍集体中煤气，死了 6 个，左奎就在其中。</p>
+<p>第二天教导处的米主任在晨会上对全体同学激昂地说：「强调过多少回，晚上睡觉一定要开一扇窗户，强调过多少回，我们的学生从来没有冻死的，只有被煤气熏死的！」</p>
+<p>自此，大家就更注意晚上要开窗了。</p>
+<p>也有胆大的，晚上就是不开。教导处的老师查夜的时候，会拿着手电筒光芒四射地敲门，直到学生开了窗为止。</p>
+<p>相当于半个教室大的宿舍，只有那么小小的一个煤炉，晚上要开一扇窗户，宿舍内的温度就可想而知了，而那样的温度对于我来说简直是酷刑。</p>
+<p>那一阵子，我只要一觉得冷，就要不停的上厕所。开始还好些，半夜冻醒要去厕所，就叫上同铺的小娜一起去。可是久而久之，天天如此，有时一晚还要去两次，就没人愿意陪同了。</p>
+<p>所以我不得不一个人从温暖的被窝里爬出来，穿上大衣，忍着剧烈的尿意，穿越整个校区，一路飞奔到操场尽头的厕所。</p>
+<p>厕所里的灯是昏黄的，偶尔猫头鹰也会埋伏在那里。</p>
+<p>去的时候还好，所有注意力都集中在了「憋尿」上，回去的时候就惨了。总觉得身后有人跟着，我走他也走，我跑他也跑，那脚步声总是如影随形。</p>
+<p>最可恶的是，有时候好不容易捱到了宿舍，刚刚躺下，还不待入睡，尿意又如潮水般蜂拥而至。</p>
+<p>尿如潮水。</p>
+<p>有天冬夜，又内急。</p>
+<p>整个宿舍的同学都在睡梦中，有人磨牙，有说梦话的，还有放屁的。宿舍的某个角落里的老鼠似乎也在秘密活动。我想：睡吧，坚持坚持天就亮了。可是，越是想着要忍，越是忍不住。</p>
+<p>于是我哆嗦着从暖暖的被窝里爬出来，开着的窗户吹进刺骨的风，风里还夹杂着猫头鹰的叫声。</p>
+<p>我匆匆忙忙地套了件大衣，坐起来，磕磕碰碰地穿上鞋。这个时候，就有一种黄河要决堤的感觉了。等冲出了宿舍，已经不可遏制了，于是只好在宿舍外面的煤堆旁边就地解决了。不远处的树上，猫头鹰被流水声惊到，拍打着翅膀，蓄势待发。</p>
+<p>原来做坏事的感觉是如此奇妙。</p>
+<p>我看看四周，整个学校都在沉睡中，死气沉沉的。</p>
+<p>没有月亮，宿舍两侧的杨树枯枝僵硬地在风中发着抖，我也不由被传染了一个寒战。</p>
+<p>我想也许就是在这样的一个夜里，左奎他们丢了自己的生命。</p>
+<p>就是这样的夜。</p>
+<p>我回到宿舍门前，门不知被哪个好事的反锁了，这是从来没有的情况。谁会在半夜起来把门反锁上呢？！</p>
+<p>我轻轻敲门，怕惊醒其她同学，可是宿舍里死一样的沉寂。这时宿舍门内的插锁「咔哒」一声开了。</p>
+<p>我没多想，打着哆嗦走进去，看也没看，摸着黑爬倒自己的铺位上。只是出去了一会，被窝里就冰凉冰凉的了。我蜷起身子，奇怪只是这么一小会儿，宿舍里就安静了下来，梦话、磨牙都没有了，可怕的静。</p>
+<p>不管那么多了，困意压境，我又朦朦胧胧地睡去了。</p>
+<p>这时临铺小娜的手啪地搭到我的脖子上，这个丫头，睡觉的时候总是不老实。我轻轻把她的手放回到她的被下，奇怪，她的被窝里也是凉凉的。</p>
+<p>突然，我意识到这不是小娜的手，因为小娜的手没有这么大，这么粗糙。我睡意全无，猛得坐起来，竟然发现宿舍里的其她同学也都坐在床上，看着我。不，不是其「她」，是其「他」。我认得他们，他们是历年被煤气熏死的人，有男有女。而搭在我脖子上的手，是左奎的，他的脸上长出一朵朵蘑菇，每个蘑菇都是蜂窝煤的形状。他望着我，阴阴地笑着：「你不是喜欢我很久了吗？」</p>
+<p>7．</p>
+<p>我，我很害怕。</p>
+<p>我说：「虽然我曾经做害死你的梦，但是你…… 你们…… 我并不曾真正害过你们啊？你们不要找我……」</p>
+<p>左奎不说话，只是冷笑，转头。所有的人，哦不，确切说是鬼，都在冲我冷笑。冷！好冷！</p>
+<p>左奎说：「明天文学社会收到一份投稿，记得发在下一期的校刊上，否则……」</p>
+<p>「否则我们每天都会来找你。」其他人整齐而呆滞地说，这群鬼的合声在寂静的宿舍里回荡着。</p>
+<p>在这个县城的中学混到第三年，我已经是文学社的副社长了。文学社的社长是全校公认的第一才子，我的同桌高小辉。</p>
+<p>发稿子的权力，我还是有的，可是我不想，也不敢。</p>
+<p>「审稿发稿的事，我一般是不过问的。」我小声说。</p>
+<p>左奎瞪了我三秒钟，眼睛里冒出丝丝寒气。他说：「你发就是了，不然的话……」他把冰凉而僵硬的手放在我的脖子上，我喘不过气，我想大叫，可是叫不出来。</p>
+<p>窒息…… 难道？我就这样死了？</p>
+<p>从梦中惊醒，头还在梦魇般地阵痛，好像无数小老鼠在里面打鼓一样。被窝里湿湿凉凉的。</p>
+<p>冷，我蜷缩着，窒息的感觉还在持续，似乎左奎的手从梦里伸到了现实中。</p>
+<p>歪歪头，冷汗！</p>
+<p>脖子上还放着一只冰凉的手，难道？这不是梦？我大叫一声坐起来，宿舍里的同学被惊醒了，小娜缩回冻得冰凉得手，迷迷糊糊地问：「怎么了？」</p>
+<p>「你的手放在了我的脖子上，吓死人了！」我似乎还在梦中，感觉一阵阵发冷。</p>
+<p>这时，下铺的同学惊叫：「下雨了吗？」</p>
+<p>8．</p>
+<p>第二天下了早自习吃早饭的时候，我尿床的丑闻已经传遍了全校，直到高中毕业高考完毕乃至若干年后的同学聚会中，这都是大家津津乐道的笑柄。</p>
+<p>下午，果然收到了高一一班宋晖同学的投稿，稿件是一个恐怖故事，故事里的鬼，就是曾经因中煤气而死在学校宿舍里的同学们。</p>
+<p>我颤抖着看完这份稿件，心中一阵阵发紧，似乎那种寒冷而窒息的感觉又回来了</p>
+<p>「啪！」一个人从后面拍了我一下，我大叫一声把稿件丢在地上。回头，是高小辉。他笑嘻嘻地说：「偷袭成功！可你反应也太夸张了吧？」</p>
+<p>我脸色苍白地说：「夸张个大头鬼啊，人家正在看一份投稿，是鬼故事。」</p>
+<p>高小辉依旧笑嘻嘻地捡起那份稿件，说：「看来是一个不错的鬼故事，连你这个号称天不怕地不怕的人也吓成这个样子。这个故事不简单，发在下期的校刊上吧！」他看也不看就把那份稿件放在待发稿件那一叠来稿中，说：「好了，来！继续下棋吧！今天非赢你不可！」</p>
+<p>我恍然地看着他摆好棋局，心里思量着，那个稿子要不要发。</p>
+<p>「将——军！」高小辉兴高采烈地说：「你今天连输三局了！我看你，心不在棋局上啊！」</p>
+<p>我闷闷地不说话，他关切道：「不就是尿床嘛？是个人都尿过床，有什么嘛！」</p>
+<p>我白了他一眼，觉得脑子里空荡荡的，「我该去做数学练习了。」我转身走了。</p>
+<p>「这就生气啦？！」高小辉望着我的背影喊道。</p>
+<p>一个星期后，校刊上登出了那篇鬼故事。</p>
+<p>故事的大致意思是，一个女生中煤气死了，变成了冤魂。她生前爱着一个酷爱篮球的男生，于是她附在一个女同学身上，打算向那男生表白。但是那个被附身的女生，却迟迟不肯递出情书。冤魂等不及，就用同样煤气中毒的方式，把那个男生带走了。她又怕她爱着的男生寂寞，就顺便多带了几个人，陪他打篮球。</p>
+<p>故事里虽然用了化名，但是我知道，那个女生就是周月，男生则是左奎，被附身的女生就是我。</p>
+<p>如果不是当事人，怎么会写出这种故事。</p>
+<p>「哈！这期校刊卖得出奇得好哪!」高小辉有点得意。</p>
+<p>几百份的印量似乎还满足不了同学们的需求，大家竞相传阅，大部分校刊都被翻得破烂不堪，一下子全校师生都知道了这个鬼故事。</p>
+<p>而我，晚上更加不敢去厕所了。因为不敢去厕所，所以不敢喝水，又因为不敢喝水，所以脾气暴躁脸上长痘。</p>
+<p>心中总觉得窝了一股无名之火，莫名地愤恨，却又不知愤恨什么。</p>
+<p>那夜，当我被涨涨的小腹憋醒，我彻底怒了。我的恐惧，转化成愤怒。原来恐惧也能引起愤怒，人们常用愤怒来掩饰恐惧。</p>
+<p>我想也不想，从床铺上爬下来，气呼呼地出了门，走到门口，蹲下来便解决问题，狠狠地，快意地。</p>
+<p>冲吧！冲吧！冲毁这万恶的蜂窝煤吧！</p>
+<p>提起裤子，我浸泡在黑暗里环顾四周。夜还是静，静得那么焦躁。猫头鹰依旧咕噜咕噜哼哼唧唧，我突然什么都不怕了。</p>
+<p>虽然我什么都不怕了，但是整个学校却陷入了恐慌。</p>
+<p>很多学生都说，自己见鬼了。</p>
+<p>有人说看见午夜的操场上，一群脸色灰白的人在打篮球，其中主力是左奎。</p>
+<p>有的说，上晚自习的时候，周月向自己借钢笔。</p>
+<p>还有人说，半夜的时候，猫头鹰从开着的窗户飞进宿舍，它的脸是周月的脸。</p>
+<p>总之每个人似乎都有一个见鬼实录，每个人都胆战心惊。</p>
+<p>米主任在办公室冲我大发雷霆：「这种宣扬封建迷信的东西，你们也敢刊发在校刊上？无法无天了？！」</p>
+<p>接着又语重心长地说：「学生家长那边，学校费了九牛二虎之力才压下来啊，你这么一搞，真是…… 唉！入党的事，我看你是没戏了。」</p>
+<p>我低着头，不说话。</p>
+<p>「你搞出这么多事情，无非是想让学校内疚而已，是不是？」</p>
+<p>我还是不说话。</p>
+<p>「难道你自己不内疚？」</p>
+<p>我抬头，看见米主任身后，周月的身上布满了蜂窝煤，吓得连忙后退几步。米主任也神经质地一转身，随即又掩饰道：「你还是入党积极分子呢，我们是无神论者，这个世界上哪有什么鬼啊！」说完又不由自主看看后面，后面什么也没有。</p>
+<p>10．</p>
+<p>我去找过高一一班的宋晖，但班里的学生说没有这个人，也许只是笔名，这在校刊上是常有的事，况且又引起这么大的风波，谁还敢承认是自己写的呢？</p>
+<p>关于看见鬼的传言越来越多，校长在早晨升旗仪式后的全校晨会上大发雷霆。</p>
+<p>就在开完晨会的当天晚上，学校又煤气中毒事件。</p>
+<p>中煤气的原因，是因为煤发潮了。</p>
+<p>那几天，隔壁宿舍的女生们，纷纷扬言见到了死去的同学拿着一块蜂窝煤不停地在炉子上烤，嘴里喃喃着：「煤潮了，里面都是尿…… 煤潮了…… 里面都是尿……」</p>
+<p>见到鬼的同学口径一致，任凭谁也不能不信。</p>
+<p>紧接着，她们请假的请假，逃回家的回家，总之谁也不肯住在里面了。</p>
+<p>那个宿舍，成了全校闻名的鬼舍。</p>
+<p>这一下子，整个学校的气氛都变得一片灰暗，连天气都阴沉沉的。</p>
+<p>一到晚上，谁也不敢出门，更别提上厕所了。因此，很多宿舍都自己集资买了尿盆。没买尿盆的宿舍如半夜内急，就会把问题解决在脸盆里。</p>
+<p>又因为这个问题，学校时常爆发打架事件。因为熄灯后，宿舍区统一断电，大晚上谁也分不清哪个是自己的脸盆，尿到别人脸盆里的事情时有发生。</p>
+<p>整个学校几乎陷入崩溃的边缘，四处充斥着尿骚味儿和牢骚声。</p>
+<p>这种时候，学校偏又出台了一个非人政策：一个月才准回家一次，理由是期终考试在即，学校要周末加课。</p>
+<p>学校是封闭式的，除了每周的周末，我们平时只有拿着老师的假条，才能走出校门。</p>
+<p>这个举措给我们造成一种错觉：我们很可能就这么死在这所学校里了。</p>
+<p>要么被煤气熏死，要么被学习压死，要么被鬼吓死。</p>
+<p>总之是死路一条。</p>
+<p>也不知是谁说的，说这个冬天学校购进的蜂窝煤，是用死人的血和成的，里面凝聚了死者的怨气，所以才会屡屡出事。</p>
+<p>还说以前我们宿舍集体皮肤中毒，也是蜂窝煤惹的祸。</p>
+<p>这个说法一传十，十传百。继而整个学校开展了轰轰烈烈的砸蜂窝煤运动。</p>
+<p>米主任不是说过么？二中的学生没有冻死的，只有被煤气熏死的。</p>
+<p>既然如此，大家都宁肯被冻着，也不愿意丢掉性命。</p>
+<p>全校的学生，都熄了炉子。学校马上被冰侵占了，甚至连刚刚流出的鼻涕，也结了冰。</p>
+<p>偏偏这个时候，又下了一场大雪，流感迅速蔓延，每个教室里上课的学生都达不到半数，这教室里的半数，也个个裹得跟蜂窝煤似的，谁也无心上课。</p>
+<p>高小辉在这段时间，变得尤其落魄，无论何时何地都在发抖，就连说话时候，舌头也会发抖。</p>
+<p>他说：「我总是梦到，那些死去的同学，要砍掉我的手……」</p>
+<p>「为什么要砍你的手？」</p>
+<p>他低下头，不说话了，依旧在发抖，不知道是因为冷，还是因为害怕。</p>
+<p>良久，高小辉才说：「你信有鬼吗？」</p>
+<p>我点点头，问：「你呢？」</p>
+<p>他也点点头。</p>
+<p>如果一个人看到了鬼是幻觉的话，没道理全校学生都看到幻觉的。</p>
+<p>「我最近查了好多书，想到一个办法，不知道灵不灵。我们以毒攻毒！这次的事情，可能是那篇鬼故事引起的……」高小辉说完，稍稍想了一下，写下下面的话：</p>
+<p>「这是一封关于祝福和诅咒的信。</p>
+<p>我们应该相信善良，排斥邪恶，相信自己，克服自己所遇到的一切困难，勇往直前</p>
+<p>相信真理，邪不胜正！</p>
+<p>如果你收到这封信，请把它抄写 10 遍，再传给另外 10 个人，你就会收到精灵的祝福，否则，将万魔侵体。」</p>
+<p>他把纸条给我，我抄了 10 份。奇怪的是，当我写到第十份的时候，我竟然相信了高小辉随意的几句话，相信自己已经得到了精灵的祝福。这恐怕就是心理暗示的作用吧。我望了一眼高小辉，他作出一个胜利的手势。</p>
+<p>记得我在上小学的时候，就曾经在地上捡到一角钱，和钱捆在一起的是一封传抄信。信的内容我已经忘记了，只是记得信结尾中说，如果不按照信中的要求传抄 20 遍的话，就会遭厄运。记得那时我抄了 20 遍偷偷放在同学的桌兜里。结果第二天，自己桌兜里又被塞了一封同样的信，我摸着自己发麻的右手，觉得这才是厄运！</p>
+<p>于是校园里又刮起了一阵传抄风。</p>
+<p>一个月后，受到「精灵祝福」的同学们又恢复了常态，只是高小辉脸色愈发苍白了。没有多久就退学了，原因是神经衰弱。</p>
+<p>我猛然记起，那封从他手里留传开来的信，他自己只写了一遍。</p>
+<p>我万万没有想到，很多年后的今天，自己也开始写恐怖故事的今天，我会在一次心理学的年会上遇到高小辉。</p>
+<p>这次年会上，站在讲台上那个眼神忧郁又自信的人，就是高小辉。</p>
+<p>他问：「坐在下面的各位，有多少是从事心理咨询工作的？」</p>
+<p>听课的人纷纷举手。</p>
+<p>他说：「那么，你们当中有 80％以上都有心理问题。」</p>
+<p>下面议论纷纷，也有人表示不满。</p>
+<p>他继续说：「你们也不必不高兴，很多人就是因为自己有心理问题和困惑，才会认真钻研，最终当上心理医生的，就像我一样。」</p>
+<p>紧接着，他开始讲他高中时候的经历：</p>
+<p>那个时候，他出于恶作剧的心态，以学校煤气中毒的学生为主角，写了一篇鬼故事，并匿名发在了校刊上。他当时只是觉得好玩，而且做为文学社社长的他，也是第一次尝试写鬼故事。</p>
+<p>这个故事，得到了全校学生的欢迎，一时成为热点。但是马上整个学校就变得人心惶惶，每个人都开始疑神疑鬼，学生们亲眼见到鬼的传言，也越来越多。</p>
+<p>他在读了心理学后，问过很多当初自称见到鬼的同学，有一部分是真的相信自己见到了鬼。而还有一部分，则是说谎。有些平时得不到关注的孩子，就谎成自己见到了鬼，以期待成为大家热议的焦点。</p>
+<p>就这样真真假假的，学校陷入空前危机。</p>
+<p>最后，凭着一份传抄信，驱除了大家心中鬼。</p>
+<p>「鬼在哪里？」他拍拍自己的胸口，「鬼在这里。那份传抄信我没有抄。因此，鬼还在我的心里，我因患了神经衰弱而退学。」</p>
+<p>高小辉有些激动地说：</p>
+<p>「世界上本来没有路，走的人多了就成了路；世界上本来没有鬼，说的人多了就有了鬼；世界上本来没有神，信的人多了就有了神。我们今天讲的课题就是——」</p>
+<p>他转身在黑板上写下了四个大字：</p>
+<p>「集体臆症」</p>
+<p>和高小辉的重遇，让我又一次回忆起了自己的高中。</p>
+<p>人的记忆很奇怪，就好像一张网一般，总会自动过虑掉一些不开心的事情。留下的，总是美好的。似乎连那些蜂窝煤也变得可爱起来。</p>
+<p>因为，那毕竟是青春。</p>
+<p>因为，人们都说，青春是美好的。</p>
+<p>我翻开毕业纪念册，纪念册封套裂了一个缝，一页纸角探出来。</p>
+<p>我扯出那也纸，心想，大概是以前写给谁的情书？忘记了，毕竟十年过去了。</p>
+<p>那不是情书，没有人给教委领导写情书，那信的开头正是：「尊敬的教委领导」。</p>
+<p>信中详细描述了当时全班女生皮肤中毒的原因，以及学校采取的强制隐瞒措施。并在信的最后强烈呼吁改善学校生活措施，消灭诸如中毒、煤气等等安全隐患。</p>
+<p>信的署名，是「周月」。</p>
+<p>周月的样子我已经忘记了，只是隐约记得，她曾忐忑地请我帮她改改这封信。</p>
+<p>她相信我的文笔。</p>
+<p>而我，辜负了她的信任。</p>
+<p>鬼，仍旧住在我的心里。</p>
+<p>【完】</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/15-%E6%99%9A%E6%98%9F/" title="晚星">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">晚星</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/8/6-%E7%8E%8B%E8%BD%A6%E6%98%93%E4%BD%8D/" title="王车易位">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">王车易位</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

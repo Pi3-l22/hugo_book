@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我错了，下次还敢 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/10/11-%E6%88%91%E9%94%99%E4%BA%86%E4%B8%8B%E6%AC%A1%E8%BF%98%E6%95%A2/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/10/11-%E6%88%91%E9%94%99%E4%BA%86%E4%B8%8B%E6%AC%A1%E8%BF%98%E6%95%A2/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="我错了，下次还敢">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-10-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-10-11T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+  <meta name="twitter:title" content="我错了，下次还敢">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="我错了，下次还敢">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2022-10-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2022-10-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="9997">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/24970.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">我错了，下次还敢</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2022-10-11T00:00:00Z</span>
+          
+
+          | <span>20分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2022-10-11T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%88%91%e9%94%99%e4%ba%86%ef%bc%8c%e4%b8%8b%e6%ac%a1%e8%bf%98%e6%95%a2&amp;url=https://mohai.us.kg/posts/2022/10/11-%E6%88%91%E9%94%99%E4%BA%86%E4%B8%8B%E6%AC%A1%E8%BF%98%E6%95%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/10/11-%E6%88%91%E9%94%99%E4%BA%86%E4%B8%8B%E6%AC%A1%E8%BF%98%E6%95%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%88%91%e9%94%99%e4%ba%86%ef%bc%8c%e4%b8%8b%e6%ac%a1%e8%bf%98%e6%95%a2%20https://mohai.us.kg/posts/2022/10/11-%E6%88%91%E9%94%99%E4%BA%86%E4%B8%8B%E6%AC%A1%E8%BF%98%E6%95%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/24970.jpg" alt="我错了，下次还敢" />
+      
+
+      <p>老板在工作群里发了一条工作通知。</p>
+<p>在众多「收到」的消息中，我发了一条「删掉」。</p>
+<p>下一秒群里就弹出消息提示：慕辰已撤回一条消息。</p>
+<p>咱就是说家人们，我要不要连夜辞职？</p>
+<p>1</p>
+<p>我是被手机震醒的。</p>
+<p>不是电话，是微信消息。</p>
+<p>打开一看，都是同事私聊发我的，除了「你真猛」就是「牛哇牛哇」。</p>
+<p>发生了啥？</p>
+<p>我打开了工作群，开始爬楼翻看昨晚的消息，下一秒就呆住了。</p>
+<p>昨晚老板慕辰在群里发了一条工作通知，在众多「收到」的消息中，我发了一条「删掉」。</p>
+<p>下一秒群里就弹出消息提示：慕辰已撤回一条消息。</p>
+<p>几分钟后，慕辰在群里又发了一遍通知，然后还附上一句：「唐秘书确实很严谨，刚刚的通知有个小问题」。</p>
+<p>我说了啥？</p>
+<p>就在我疑惑的时候，微信又弹出一条新消息，是慕辰的。</p>
+<p>我双手颤抖着打开了对话框，最新的消息是：醒了吗？</p>
+<p>再往上翻，简直就是大型修罗场。</p>
+<p>时间是昨天晚上。</p>
+<p>冤种老板：唐恬，我发的通知有什么问题吗？</p>
+<p>我：问题大了我跟你说，你那个标点符号啊用得太刻薄了！得改！知道了吗小慕！</p>
+<p>……我想采访一下昨天晚上的我，是怎么看出标点符号刻薄的？</p>
+<p>还敢叫小慕！</p>
+<p>我抓着头发满脸惊恐：唐恬你是不是活腻了啊！</p>
+<p>冤种老板：哦，用叹号是有点给员工情绪压力了，那我改一下。</p>
+<p>所以慕辰真的是把第一遍通知的标点符号修改了？</p>
+<p>大哥我那是喝醉之后胡说的，你要不要这么听我话啊？</p>
+<p>明明我是你秘书，你才是老板啊！</p>
+<p>不知道慕辰没有说我叫他小慕这件事是放过我了，还是蓄力准备宰了我……</p>
+<p>就在我灵魂出窍的时候，手机突然来了电话。</p>
+<p>一看来电显示，接通的瞬间我下意识地跪下。</p>
+<p>「老板！」</p>
+<p>慕辰那边半晌才说话：「什么声？你从床上掉下去了？」</p>
+<p>我：「没有，我在跟您认错。」</p>
+<p>慕辰：「……下回少喝点酒，小唐。」</p>
+<p>我欲哭无泪：「对不起老板，我错了。」</p>
+<p>呜呜呜我的老板真好，没有责怪我，还这么体贴！</p>
+<p>下一秒现实就击碎了我的童真。</p>
+<p>「既然酒醒了，就赶紧收拾收拾，跟我出差。」</p>
+<p>果然，资本家不会放过任何一个员工。</p>
+<p>尤其是犯了错的秘书。</p>
+<p>2</p>
+<p>我以为的出差是和其他老板谈业务，所以特意穿得一身正装还有高跟鞋。</p>
+<p>一下楼，我就看见慕辰在不远处站着。</p>
+<p>他穿了一身休闲装，靠着车看手机，姿态优雅又随性。</p>
+<p>「老板？你怎么在这了？」</p>
+<p>慕辰抬头看我，微微皱眉，但是很快就恢复自然：「时间紧急，早去早回。」</p>
+<p>他伸手接过我手里的包放在后排，动作很自然，我受宠若惊。</p>
+<p>慕辰看着我愣在原地：「酒还没醒？不上车愣着做什么，小唐？」</p>
+<p>最后两个字慕辰说得很好听，但是就像魔咒一样在我耳边盘旋着，慕辰没有生气，但是他也没放过揶揄我的任何机会。</p>
+<p>我灰溜溜地上了车，坐在副驾驶。</p>
+<p>开车之前，慕辰递给我一个袋子，声音略带一丝嫌弃：「先把粥喝了，要是吐我车上你付洗车费。」</p>
+<p>「哦。」我在心里翻了个白眼，默默地喝着粥。</p>
+<p>慕辰开车的时候不习惯说话，我也不敢主动开口，瞄着他没有注意我，就偷偷打开了车里的音响。</p>
+<p>他瞥了我一下，勾了一下嘴角：「还挺会享受。」</p>
+<p>我讪笑：「主要是怕您旅途无聊。」</p>
+<p>慕辰挑眉：「不用这么客气，没人的时候我不介意你叫我小慕。」</p>
+<p>没完没了了是吧！</p>
+<p>我咬牙微笑：「老板对不起，下回我喝酒之前一定会把你拉黑名单，等酒醒之后在把你拉出来的，这样行了吧？」</p>
+<p>慕辰没有说话，我话说完了才意识到自己的语气，好像有那么一丢丢的……哀怨。</p>
+<p>那又怎么了？我从毕业就开始跟着慕辰创业，好歹也是公司的元老，四年的时间，我偶尔犯个无伤大雅的小错误怎么了。</p>
+<p>不就是叫了一声小慕嘛！</p>
+<p>平时梦里我对慕辰的称呼可多了去了。</p>
+<p>都是需要加密不能被他知道的那种。</p>
+<p>我昨晚为什么去喝酒？还不是因为知道慕辰有女朋友了！</p>
+<p>但是我作为他的秘书，居然不知道！</p>
+<p>我的暗恋无疾而终都没说什么呢，你为啥在这老对我阴阳怪气。</p>
+<p>「哦，」慕辰单手扶着方向盘，另一只手摸了摸下巴，笑了：「你敢？」</p>
+<p>一点都没威胁我，真的。</p>
+<p>我默默低头喝粥。</p>
+<p>我当然不敢。</p>
+<p>我怎么敢错过慕辰的任何一条消息？</p>
+<p>我肠胃反应很快，所以早上基本不怎么吃饭，怕赶不上上班的车，现在喝完粥，我有了一种不好的预感。</p>
+<p>「老板……」我刚开口，就看见慕辰把车停在了一个商场旁边。</p>
+<p>「我去买点东西，车里太闷，你和我一起吧。」</p>
+<p>跟在慕辰身后，我正想着怎么开口呢，慕辰走进了一家店：「你先去逛逛，我这边时间会有点久。」</p>
+<p>「好！」</p>
+<p>真是天助我也！</p>
+<p>等确定慕辰看不到我之后，我飞奔向卫生间，痛痛快快地解决完，顺便补了个妆。</p>
+<p>回去的时候发现慕辰已经在店门口等我了。</p>
+<p>他手里什么都没拿，我有些疑惑：「不是说买东西吗？」</p>
+<p>慕辰走在前面：「没有合适的。」</p>
+<p>「哦……」看着慕辰的背影，我突然想到，他该不会是特意给我上厕所的机会吧？</p>
+<p>3</p>
+<p>上车之前我看到了一家很好喝的奶茶店，时间还来得及，我就拉着慕辰去买。</p>
+<p>慕辰不喜欢喝这种东西，但是第二杯半价这种事错过就是亏了。</p>
+<p>我一手端着一杯奶茶看着慕辰：「老板，要去给你买杯咖啡吗？」</p>
+<p>慕辰的目光从我手上的两杯上扫了一圈，然后拿走一杯：「不用，我喝这个就行。」</p>
+<p>然后他就……直接喝了……</p>
+<p>「老板……」</p>
+<p>我呆住。</p>
+<p>「怎么了？」慕辰看起来不明所以。</p>
+<p>我指着他手里的那杯：「我喝过了……」</p>
+<p>慕辰挑眉：「怎么，你喝过的我就不能喝？违法？」</p>
+<p>大哥这是法律问题吗？你用的那根习惯我刚刚嘬完啊！虽然之前不是没有过喝一杯水的时候。</p>
+<p>但是那都是之前啊！现在不一样了啊！</p>
+<p>上车之后，见慕辰一脸云淡风轻，我小声嘟囔：「都有女朋友了，怎么还这么没分寸感……」</p>
+<p>「你说什么？」慕辰看向我。</p>
+<p>「没什么。」</p>
+<p>「那是等着我帮你系安全带呢？」</p>
+<p>我急忙扣上安全带：「出发吧，我尊敬的老板！」</p>
+<p>我听见慕辰轻笑一声，车子继续前进。</p>
+<p>不知道为什么，一坐慕辰的车我就犯困，等我醒来的时候，眼前的景象让我差一点掏出手机报警。</p>
+<p>这是什么山沟沟？放眼望去全是大自然！</p>
+<p>「这是什么地方？」要不是看见慕辰就站在车外不远处，我真的以为自己被拐卖了。</p>
+<p>慕辰回头看我，我这才注意到他面前还站着一个陌生男人。</p>
+<p>「这位是护林员老张，这是我的……秘书，唐恬。」慕辰介绍道。</p>
+<p>老张伸出手，我急忙握住：「您好。」</p>
+<p>简单寒暄几句，我就站在一旁，听着慕辰和老张聊工作，原来慕辰承接了一个政府项目，老张守护的这片林子要做生态开发。</p>
+<p>我们公司的工作就是把前期设计这部分搞定。</p>
+<p>所以慕辰这是带着我来实地考察了？</p>
+<p>老张邀请慕辰去他的办公室详聊，慕辰回头看我一眼，我立刻心领神会：「我去拍几张照片做参考。」</p>
+<p>慕辰笑了，走过来低声说：「你放公司的衣服在我后备箱，去车里换上。」</p>
+<p>打开后备箱，看到袋子里被叠得整整齐齐的运动服，我又感动又心酸。</p>
+<p>慕辰真好。</p>
+<p>可惜他已经有女朋友了。</p>
+<p>换好衣服，我很快就找好了位置，拍了照片之后慕辰他们还没谈完，我就坐在屋子外面的椅子上。</p>
+<p>因为山里手机没信号，我就干等着。</p>
+<p>等着等着，我就觉得有点不对劲了。</p>
+<p>怎么好像一直有一道邪恶的目光在盯着我？</p>
+<p>缓缓扭过头，我和一只刚遛弯回来的大白鹅对上了眼。</p>
+<p>下一秒，大白鹅张开翅膀骂骂咧咧地向我扑了过来。</p>
+<p>「慕辰救救救命啊！」</p>
+<p>院子里响起我凄惨的嚎叫声。</p>
+<p>4</p>
+<p>我快被鹅追出院子的时候，慕辰和老张急匆匆地开了门。</p>
+<p>入眼的一幕就是满院子的鹅飞我跳。</p>
+<p>看到慕辰的瞬间，我都快哭出来了，一边叫妈妈一边朝他跑去。</p>
+<p>慕辰下意识地张开手，我直接扑过去抱住他，双腿缠在他腰上远离大白鹅的攻击距离。</p>
+<p>慕辰接住我，然后转过身挡住了一路火花加闪电奔过来的鹅。</p>
+<p>下一秒，我就感觉慕辰身体僵硬了一下，耳边传来闷哼声。</p>
+<p>我趴在慕辰的肩膀探头，只见老张淡定地掐住正咬着慕辰屁股的大白鹅，然后使劲儿一拽……</p>
+<p>「刺啦——」</p>
+<p>我眼看着老张憋着笑，把嘴里还叼着慕辰裤子碎片的鹅拎走了。</p>
+<p>「哇哦……」我没忍住，发出一声感慨，终于见识到了大鹅的战斗力有多强悍了。</p>
+<p>慕辰把我放到地上，我正要说话，一只手蒙住了我的眼睛，咬牙切齿的声音在我头顶响起。</p>
+<p>「转过身去，不准看！」</p>
+<p>「嗯嗯我保证不偷看！」</p>
+<p>我不偷看，我拿手机偷拍。</p>
+<p>但是没想到手机忘静音了，「咔嚓」一声响彻整个院子。</p>
+<p>照片里，慕辰捂着屁股留给我一个恶狠狠的侧脸，透过他的指缝，我看到了……</p>
+<p>紫红色的呢～</p>
+<p>老板真闷骚！</p>
+<p>因为慕辰只穿了这一套衣服，所以他借了老张的裤子，是一条花裤衩。</p>
+<p>老张说这周围都是绿色的，自己就特意买的新鲜的裤衩子。</p>
+<p>看着慕辰阴沉着脸，上半身时尚卫衣，下半身乡村潮裤，我憋笑憋得脸通红。</p>
+<p>慕辰一瘸一拐地走到驾驶位置，尝试着坐进去，但是那大白鹅下嘴太狠了。</p>
+<p>就算隔着宽松的裤衩，我也隐隐能看见慕辰的屁股好像有点肿了。</p>
+<p>本来就挺翘的，现在更翘了。</p>
+<p>「老板，我来吧。」我走过去拉住慕辰。</p>
+<p>他满脸不相信：「你拿了驾照八年了，开过几次车？」</p>
+<p>我伸出手指：「1 次。但是你现在只能靠我了，你就坐我副驾驶嘛，有你指导肯定没事的。」</p>
+<p>慕辰脸上的表情变了变，最后开口：「你先把车倒出来我看看。」</p>
+<p>不就是倒车吗？有什么难的。</p>
+<p>倒进沟里谁不会啊！</p>
+<p>我站在车边，低着头不敢看慕辰。</p>
+<p>慕辰的脸上在几秒钟内展现了月有阴晴圆缺人有悲欢离合，最终咬牙瞪着我。</p>
+<p>看不见我看不见我看不见我。</p>
+<p>老张换了一身衣服走出来，看见我们笑了：「正好，我同事来换班，我送你们回去吧。」</p>
+<p>虽然司机有了，但是还有一个更大的问题就是，慕辰坐不下去啊。</p>
+<p>思来想去，我开口：「老板，要不您委屈一下，在后排躺着？」</p>
+<p>慕辰看着我：「你呢？」</p>
+<p>我指着副驾驶：「这啊。」</p>
+<p>他表情没什么变化，但是直接把我拉倒后排塞进去：「你跟我坐后排，我需要个枕头。」</p>
+<p>你要枕头拉我做什么？</p>
+<p>眼看着慕辰直接调整好位置躺在我腿上，我身体僵硬：「老板你这样不好吧。」</p>
+<p>「有什么不好？」</p>
+<p>「被你女朋友知道不好啊！」</p>
+<p>慕辰抬眼看着我：「谁跟你说我有女朋友的？」</p>
+<p>我愣住：「陈飞啊，我那天去接水，听见陈飞说看见你和一个女生一起吃饭，还挽着你……」</p>
+<p>慕辰露出无语的表情：「那是我妹妹。」</p>
+<p>「哦。」我有些窃喜，面上故作淡定。</p>
+<p>「唐恬。」慕辰突然喊我名字。</p>
+<p>「啊？」</p>
+<p>他目光幽深：「你知道之前，你躺在我腿上睡过多少次吗？我家里的裤子哪条躲过了你的口水？」</p>
+<p>我立刻坐直，笑容讨好：「老板您躺着，哪里不舒服一定要告诉我，需要我给您按按肩膀吗？」</p>
+<p>「你别动就行，」慕辰闭上眼，「我屁股疼。」</p>
+<p>5</p>
+<p>当我搀扶着慕辰回到公司的时候，原本闹哄哄的办公室瞬间变得安静下来。</p>
+<p>我们俩淡定地去了他的办公室。</p>
+<p>慕辰是真的淡定。</p>
+<p>我是装的。</p>
+<p>从慕辰办公室出来后我就被围住了，他们都以为我一白天没出现是被慕辰动私刑了。</p>
+<p>他没对我动私刑，反倒因为我慕辰被鹅「追杀」了。</p>
+<p>和他们说了一声只是去出差后，他们立刻失去了八卦的念头，回到工位开始工作。</p>
+<p>我抓紧时间把今天的资料整理好打印出来，然后又回到了慕辰的办公室。</p>
+<p>敲了半天没人说话，我想了想直接推门进去：「老板……」</p>
+<p>慕辰就好巧不巧地刚从办公室里的休息室走出来，老张的花裤衩正卡在膝盖窝处。</p>
+<p>这回没有遮挡，我把紫红色看了个全貌。</p>
+<p>「老板，我来汇报工作了！」</p>
+<p>还不等我说话，就听我身后传来其他人的身影，在慕辰惊恐的目光中，我迅速地转身关门锁门一气呵成。</p>
+<p>然后才反应过来，不对啊，为什么我还在屋子里？</p>
+<p>我不是应该在门外吗？</p>
+<p>「汇报工作？」慕辰的声音听起来很平静。</p>
+<p>「嗯，」我声音都在颤抖，「老板我可以出去等你处理好了之后再进来。」</p>
+<p>「就在这待着吧，等我两分钟。」</p>
+<p>听见身后传来关门声，我开始在心里数数。</p>
+<p>在我数到 119 的时候，慕辰出来了：「好了。」</p>
+<p>汇报工作的时候，我脸红的应该可以打个 119 灭火了。</p>
+<p>工作处理完后，慕辰喊住我：「等下跟我一起走，晚上去参加个聚餐，对方有意承包这次施工材料，你跟我去探探底。」</p>
+<p>我点头，见慕辰还看着我，只好开口：「还有别的吩咐吗，老板？」</p>
+<p>他露出不自然的神情：「那个，帮我挑一下晚上的配饰。」</p>
+<p>「哦好。」</p>
+<p>就这样，我屁颠屁颠地跟着慕辰去了他的休息室，悄咪咪地参观了一圈之后，开始认真帮他挑配饰。</p>
+<p>但是公司里的种类都不太合适，临时回家拿又来不及。</p>
+<p>「先去趟商场吧，买条新领带。」慕辰看了一眼手表，「现在就走。」</p>
+<p>一天时间里，我和慕辰逛了两次商场了。</p>
+<p>我们直接去了慕辰常去的店，我选好领带让他去试的时候，慕辰递给我一条裙子。</p>
+<p>「你去试试，合适的话晚上就穿这个。」</p>
+<p>看了一眼价签，我果断拒绝：「我家近，要不我回家换一条裙子。」</p>
+<p>慕辰没多说什么，直接把裙子塞到我手里，我只能去更衣室。</p>
+<p>这裙子好看是好看，但是背后的拉锁太难拉了，我把门打开一条缝，喊店员帮忙。</p>
+<p>等了半天，终于有人过来了，推开门，一手扶着我的腰，一手拉拉链。</p>
+<p>「谢谢啊……」我一抬头，看着镜子里我身后的人，差点尖叫了。</p>
+<p>「慕辰你干嘛！」</p>
+<p>慕辰表情看着有些无辜：「帮忙啊，店员都不在，总不能让你等着吧。」</p>
+<p>更衣室太狭小了，我因为激动而变得急促的呼吸声都听得一清二楚。</p>
+<p>「那你好歹提前和我说一声吧！」我压低声音瞪着他。</p>
+<p>慕辰耸耸肩：「你进我办公室看我内裤，不是也没提前说吗？」</p>
+<p>「我敲门了！明明是你没听见！我直接进去还不是以为你屁股疼到晕厥！」</p>
+<p>慕辰笑了，抬手整理了一下我的头发，点点头：「不错，就这件吧。」</p>
+<p>然后他就转身出去了。</p>
+<p>我拎着裙边怒气冲冲地跟了出去。</p>
+<p>什么人啊！</p>
+<p>刚走到收银台，就看见慕辰在刷卡：「她身上的裙子还有刚刚挑的那几条领带一起算了，另外这些领带麻烦帮我送到这个地址。」</p>
+<p>我走过去一看，这不是我家吗？</p>
+<p>「你把领带送我家干嘛？」</p>
+<p>慕辰收回卡，拎着袋子：「你家里公司近，下次直接去你家取。」</p>
+<p>……这人是把我家当仓库了么？</p>
+<p>6</p>
+<p>下车的时候慕辰突然喊住我，示意我转身背对着他。</p>
+<p>心里疑惑的时候，感觉脖子凉了一下。低头一看，是一个小项链。</p>
+<p>身后传来慕辰低沉的声音：「好好戴着，别丢了。」</p>
+<p>我扁扁嘴，不就是担心我身上没有什么闪亮亮可以证明「实力」的东西，才准备的么。</p>
+<p>跟着慕辰进了包厢，建材商老板已经等着了。</p>
+<p>热情地和我们打了招呼之后就说点菜。</p>
+<p>「他们家的招牌可是鹅……」</p>
+<p>我看到慕辰脸色一黑，急忙笑着开口：「宋老板，今儿就咱们三人，他们家一份鹅的量挺多呢，咱们吃不完的，别浪费了。」</p>
+<p>宋老板立刻收住：「对对对，唐秘书说得对，那咱们就少点一点儿，不能浪费不能浪费。」</p>
+<p>我脸上带着礼貌的笑容，内心吐槽：早就知道这个宋老板花钱大手大脚，政府项目怎么可能交给这种人？</p>
+<p>宋老板点菜的时候，我感觉自己的手被人碰了一下，转过头，慕辰面色正常。</p>
+<p>要不是我手背上还残留的热度，我肯定会以为刚刚是错觉。</p>
+<p>菜上齐了之后，宋老板热情招呼，慕辰表情始终十分平静，于是宋老板就把目光投向了我。</p>
+<p>「唐秘书，咱们是第一次见面，这杯酒我敬你，可不能不给我面子啊！」</p>
+<p>慕辰拦下我的酒杯，笑了：「宋老板，第一次见面就让我秘书喝酒，你这看起来可不想要面子啊？」</p>
+<p>宋老板脸色一变，但是毕竟想合作，最终还是和慕辰喝了酒。</p>
+<p>至于我，全程滴酒未沾，都被慕辰拦下了。</p>
+<p>慕辰的态度宋老板看出来了，但是碍于日后可能还会有交集，没有多说什么，帮我扶着醉酒的慕辰来到车边。</p>
+<p>慕辰坚持要做副驾驶，我无奈只能把他塞进去。</p>
+<p>刚要上车，宋老板突然喊住我：「唐秘书，你这项链，是慕老板送你的吧？」</p>
+<p>我点头。</p>
+<p>他笑了笑：「难怪呢，他这么护着你，这项链就是给我的警示啊。」</p>
+<p>宋老板走后，我坐上车扭头看着慕辰：「为什么非要坐副驾驶？」</p>
+<p>慕辰捏着鼻梁：「鉴于你有过把车开到沟里的经验，我觉得自己坐副驾驶心里更有底一些。」</p>
+<p>我摸了摸鼻子：「但是出事了副驾驶很危险啊。」</p>
+<p>慕辰抬眼看着我，醉酒之后的目光带着些许蛊惑：「那就一起死好了。」</p>
+<p>「……老板你这么说我很感动，但是能不能说点好话？」</p>
+<p>慕辰低笑一声：「好，我撤回。」</p>
+<p>幸好通往慕辰家的路车很少，我感觉自己踩油门时候脚都是软的。</p>
+<p>7</p>
+<p>把慕辰放到床上，替他脱了外套松了领带，我煮了一杯蜂蜜水放在他床头。</p>
+<p>准备离开的时候我想到宋老板说的话，就打开手机查了一下慕辰送我的项链。</p>
+<p>寓意是「我所珍视的」。</p>
+<p>我捂着脸，感觉到脸越来越热了。</p>
+<p>慕辰这是什么意思？</p>
+<p>表白吗？</p>
+<p>但是为啥不说出来，非得搞这种暗戳戳的哑谜？</p>
+<p>不对不对，说不定他只是为了避免宋老板对我起什么坏心思呢？</p>
+<p>心里正想着的时候，突然感觉背后传来热气，我转过身，被慕辰圈在了墙和他之间。</p>
+<p>「唐恬……」慕辰嘶哑的声音勾得我魂儿都酥了。</p>
+<p>「老……老板……」我有些哆嗦，这是要表白了？我还没做好准备呢！</p>
+<p>慕辰忽然抓着我的手，贴上了他的身体。</p>
+<p>我清楚地摸到了腹肌，下意识地想抽回手，就听见慕辰开口：「胃疼，帮我揉一会儿。」</p>
+<p>我急忙扶着慕辰回到床上，看着他冒着冷汗的额头，又气又急：「你怎么不早吱声！我现在就给医院打电话……」</p>
+<p>慕辰握住我的手：「没事，主要是生冷的吃的，我药箱里有药，帮我拿过来。」</p>
+<p>我飞快地烧水，给慕辰喂了药，看着他睡过去我才松了一口气，自己缩在客厅沙发对付了一晚上。</p>
+<p>第二天早上起来的时候慕辰还没醒，我来厨房转了一圈，本想熬个粥。</p>
+<p>但是厨房那些厨具的价格劝退了我。</p>
+<p>我的手艺，配不上那些高贵的厨具。</p>
+<p>于是我打开外卖软件，点了两份外卖。</p>
+<p>慕辰看着桌子上的菜，脸都黑了：「唐恬你有没有良心？我喝白粥，你好意思吃炸鸡？」</p>
+<p>我嗦了嗦手指：「你忍一忍，大不了明天我再请你吃炸鸡。」</p>
+<p>在我一边吃炸鸡一边看剧的时候，我都能感受到慕辰那有怨的目光一直锁定在我身上。</p>
+<p>不知道是心虚还是电视剧情节太精彩，我手一抖，挂着酱料的炸鸡掉在了地板上。</p>
+<p>顶着慕辰的视线，我急忙跑去厕所拿出手纸擦干净。</p>
+<p>「老板，你身体如果没什么问题的话，我就先撤了哈。」我随手把手纸放在客厅的茶几上。</p>
+<p>慕辰的表情似乎有些复杂，最终点了点头。</p>
+<p>离开慕辰家之后，我叫上朋友去吃烤肉，一个没忍住又喝了两瓶啤酒。</p>
+<p>就在我和他们吐槽慕辰这个闷狐狸的时候，当事人来电话了。</p>
+<p>我大着舌头接听：「喂，小慕啊～」</p>
+<p>对面几人投来了复杂的目光。</p>
+<p>听筒另一头的慕辰沉默了一会儿，才开口，就算我喝多了，也听出有几分咬牙切齿。</p>
+<p>「唐恬，过来给我送手纸！」</p>
+<p>我摇摇晃晃地站起来：「小慕，你为什么在我吃饭的时候拉屎？」</p>
+<p>8</p>
+<p>虽然我喝多了，但是慕辰家的密码我还是记得清清楚楚的。</p>
+<p>进屋之后，我直奔卫生间，猛地拉开门，笑嘻嘻地看着坐在马桶上一脸惊恐的慕辰。</p>
+<p>我对他伸出手：「老板，我来给你送手指了，你看好看吗？」</p>
+<p>后来呢？</p>
+<p>后来就是现在我酒醒了，正躺在慕辰的床上挺尸。</p>
+<p>我从来没有如此希望自己喝断片过，但是昨晚的一幕幕就像幻灯片一样在我脑子里反复播放。</p>
+<p>我闯进厕所之后慕辰拿毛巾盖在自己腿上。</p>
+<p>我哭着喊着问慕辰为什么不用我的手指，是觉得不好看吗？</p>
+<p>我在慕辰复杂的目光中跪在他面前，然后「哇」的一下吐起来……</p>
+<p>再后来的事我不想回忆了，但是很显然我现在控制不住自己的大脑。</p>
+<p>后来慕辰用仅剩的一格手纸勉强处理了一下卫生问题，然后把我拖出了卫生间。</p>
+<p>慕辰咬牙切齿地把我外套脱下来之后给我丢到他床上，然后我看到他夹着屁股又去了卫生间。</p>
+<p>就是很神奇，我喝多了，但是该记得的片段细节真是一点儿都没忘。</p>
+<p>我鼓足勇气走出卧室，发现屋子里一片安静，慕辰已经去上班了。</p>
+<p>想想现在我还能完好无损地站在这里，甚至还睡了一个好觉，我真的要感谢慕辰的不杀之恩。</p>
+<p>虽然之前确实是一心一意地跟着慕辰工作，但是现在对他有了其他情感之后，我真不敢保证以后会不会做什么对不起他的事。</p>
+<p>毕竟我不知道慕辰喜不喜欢我。</p>
+<p>于是我决定干脆辞职吧。</p>
+<p>但是在那之前，我还是得先「认错」。</p>
+<p>于是我把慕辰家里里外外打扫了一遍，按照他的习惯整理了书房，然后又跑去超市买了水果蔬菜。</p>
+<p>路过手纸货架的时候，我犹豫了一下，一口气拿了三大包。</p>
+<p>回到慕辰家，我把卫生间塞了三四卷手纸才彻底放下心来。</p>
+<p>回家之后，我掏出微信发了一条消息：「对不起老板，我还是辞职吧」。</p>
+<p>因为不敢面对，我直接关机睡觉。</p>
+<p>我做了一个很复杂的梦，一会儿是大鹅，一会儿是慕辰拿着手纸当飘带在我面前跳舞。</p>
+<p>我被吓醒了，开机之后手机像疯了一样「嗡嗡」震动。</p>
+<p>又基本都是同事的私聊。</p>
+<p>「唐秘书不愧是唐秘书，也就你敢做这种事。」</p>
+<p>「老板下班了，你猜他是不是去找你灭口了？」</p>
+<p>「手癌是病，得治啊。」</p>
+<p>什么手癌？</p>
+<p>我升起一种不太好的预感，打开了公司群，又一次开始爬楼。</p>
+<p>我：对不起老公，我还是辞职吧。</p>
+<p>老公？我在说什么！</p>
+<p>我怎么会把这条消息发到工作群里！</p>
+<p>在我这条消息后面，没有人说话。</p>
+<p>慕辰几乎很少看群，看来应该还没有发现，我松了一口气，就在我想怎么能让慕辰一辈子都看不见这条消息的时候，手机突然响了。</p>
+<p>工作群有了一条新消息。</p>
+<p>冤种老板：辞哪个职？秘书还是老婆？</p>
+<p>手机又疯狂跳动起来。</p>
+<p>我缩在被子里瑟瑟发抖：完了，慕辰不会真的要来找我灭口吧？</p>
+<p>慕辰电话打过来的时候我正在研究宇宙的星系，我麻木地接听电话。</p>
+<p>「唐恬，我去找你。」</p>
+<p>「你别来了，我在研究去哪个星球移民。」</p>
+<p>慕辰轻笑一声：「怎么？人都喊了，还想不负责？下楼，我在楼下等你。」</p>
+<p>9 就在我纠结是盛装打扮还是朴素出场的时候，慕辰电话又打了过来。</p>
+<p>我一咬牙，穿着人字拖就跑了下去。</p>
+<p>不能让老板等自己的想法根深蒂固，所以我是一路跑着去见慕辰的。</p>
+<p>他就站在小区的小广场外，看到我的时候，原本平静的脸露出一丝笑容。</p>
+<p>「唐恬……」</p>
+<p>下一秒，我就看见一道黑影从我脚底飞起，然后直直落在了慕辰那张帅气的脸上。</p>
+<p>是我的人字拖。</p>
+<p>它不爱我的脚了。</p>
+<p>我单腿站在原地，不知道是该走还是该留。</p>
+<p>慕辰揉了揉鼻子，俯身捡起落在他脚边的拖鞋，走到我面前半蹲。</p>
+<p>「老板你干嘛！」</p>
+<p>慕辰握着我的脚腕，把拖鞋套在我脚上：「不是要辞职吗，还叫我老板？」</p>
+<p>我穿上拖鞋往后退两步，「你不是还没批吗？」</p>
+<p>慕辰走近两步：「那你希望我批吗？」</p>
+<p>我瘪瘪嘴，没有说话，废话，当然不希望你批啊！</p>
+<p>但是我已经社死到这个份上了，不连夜卷铺盖自己滚蛋难道要等你当着全公司的面开除我吗？</p>
+<p>「唐恬，」慕辰突然喊我的名字，我下意识地抬头看着他，暮色里，他目光清幽深沉，「回答我几个问题。公司成立多久了？」</p>
+<p>「四年。」</p>
+<p>「你跟我一起工作多久了？」</p>
+<p>「四年。」</p>
+<p>「公司的 Q2 目标进展如何？」</p>
+<p>「已经完成 80%，预计 Q2 可以超额完成，但是前提是这次的政府项目不会出现任何纰漏，最关键的就是用材方面……」</p>
+<p>说着说着，我发现慕辰不说话了。</p>
+<p>抬头看着他，他眼中含笑地看着我。</p>
+<p>我心跳加速，说话都有些磕巴了：「怎么了？」</p>
+<p>「唐恬，除了我，没有人比你更了解公司，」他又走近一步，「除了你，也没有人可以站在我身边并肩作战。」</p>
+<p>我想退，但是身后是根柱子：「总有人会比我做得更好的，除了工作，我什么都帮不了你。」</p>
+<p>「这样就够了，」慕辰突然抱住我，在我耳边说着，「除了工作，剩下的都交给我就好了。」</p>
+<p>我心跳得更快了，明知慕辰的意思，我还是忍不住蹬鼻子上脸问一句：「慕辰，你喜欢我多久了？」</p>
+<p>「至少比你还久，」慕辰笑道，「从很早以前，你睡在我腿上流口水的时候开始。」</p>
+<p>我推开他，瞪眼不爽：「就不能是因为我工作能力强、长得漂亮这种理由喜欢我吗？」</p>
+<p>慕辰笑了：「工作能力强、长得漂亮的人有很多，但是让我社死不断的人，只有你一个。」</p>
+<p>「唐恬，可能我这辈子所有的糗事，都是你的功劳了。毕竟没有人敢在我上厕所的时候直冲冲地跑进来要拉手。」</p>
+<p>「……我谢谢你啊！」</p>
+<p>慕辰看着我，眼神中的情丝快把我缠住了，我呆呆地看着他俯下身，然后亲上了我的唇。</p>
+<p>软软的，甜甜的。</p>
+<p>「下次接吻记得闭上眼睛。」</p>
+<p>「下次是什么时候？」我问了一个愚蠢的问题。</p>
+<p>慕辰又低下头：「现在。」</p>
+<p>10</p>
+<p>在我究竟是做慕辰的秘书还是公司的老板娘这个问题上，慕辰和我争论过很多次。</p>
+<p>作为秘书，自然是要时刻关注慕辰的工作。</p>
+<p>作为老板娘，就会轻松许多，而且还可以拥有一个自己的秘书。</p>
+<p>我知道慕辰是不希望我太累，所以坚持让我退居二线，但是我可是女战士，怎么可能在公司上升的关头做慕辰背后的女人呢？</p>
+<p>为了成功说服慕辰，我眼珠子一转，想了个歪计谋。</p>
+<p>所以当慕辰推开我办公室，看到正在面试的俊朗帅哥的时候，脸都黑了。</p>
+<p>「您好？」面试帅哥看着慕辰礼貌发问。</p>
+<p>看着慕辰想发火但是又得忍着的表情，我憋不住笑了：「这位是老板，慕辰。」</p>
+<p>「慕老板您好。」帅哥站起来握手。</p>
+<p>慕辰看了我一眼，「来都来了，要不我来面试？」</p>
+<p>我把位置让给慕辰。</p>
+<p>一开始慕辰的提问还比较正常，问到后来帅哥的表情有些不对了：「慕老板，这些问题，可我应聘的职位好像没什么关系吧？」</p>
+<p>慕辰挑眉：「你不是来应聘秘书的吗？」</p>
+<p>帅哥看了看慕辰，又看看我，表情复杂：「不，我是来面试设计师的。」</p>
+<p>送帅哥离开之后，我躺在办公室的沙发上笑得前仰后合：「慕辰你是不是以为我要给自己招个帅哥秘书啊？」</p>
+<p>慕辰掐着我的腰，咬牙切齿：「故意的？」</p>
+<p>我点头：「这是给你一个警告，如果你非要让我老老实实是地做老板娘，我可是保不准什么时候就被其他帅哥勾搭了呢……」</p>
+<p>慕辰笑了，「你说得对，还是把你扣在我身边保险一点，择日不如撞日，不如今天我们就把事办了吧。」</p>
+<p>「啊？什么事啊……」</p>
+<p>等我回过神来的时候，慕辰已经拉着我从民政局走出来了。</p>
+<p>我这就嫁了？</p>
+<p>「没错，从今往后，你想干什么都行，除了不当我老婆。」</p>
+<p>我怎么可能做出这么丧尽天良的事！</p>
+<p>于是我拉着慕辰去吃饭喝酒，回家的时候，我吐了慕辰一车。</p>
+<p>迷迷糊糊地看着他收拾车垫，我笑嘻嘻地搂着他脖子：「慕辰，还要我付洗车费吗？」</p>
+<p>慕辰捏着我的脸：「人都是你的了，还提钱做什么！」</p>
+<p>慕辰人生中的社死薄又被我光荣地添了一笔。</p>
+<p>「未来还有几十年呢，我已经开始习惯了……」搂着我睡觉的慕辰低声说道。</p>
+<p>我的心立刻被甜蜜蜜充满了。</p>
+<p>人生本来就被各种意外填满，有的虽然看起来「危险重重」，但是说不定在意外的某个角落，就有一个愿意陪着你一起社死的那个人呢？备案号:YXX12eo1O2fwA5QxoyC3K3Q</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/10/11-%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E/" title="似水年华">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">似水年华</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/10/11-%E6%9C%89%E6%B2%A1%E6%9C%89%E8%B6%85%E7%BA%A7%E6%81%90%E6%80%96%E7%9A%84%E9%AC%BC%E6%95%85%E4%BA%8B/" title="有没有超级恐怖的鬼故事？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">有没有超级恐怖的鬼故事？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

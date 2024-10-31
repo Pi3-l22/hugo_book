@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轻舟已过万重山 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/7/9-%E8%BD%BB%E8%88%9F%E5%B7%B2%E8%BF%87%E4%B8%87%E9%87%8D%E5%B1%B1/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/7/9-%E8%BD%BB%E8%88%9F%E5%B7%B2%E8%BF%87%E4%B8%87%E9%87%8D%E5%B1%B1/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="轻舟已过万重山">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26050.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26050.jpg">
+  <meta name="twitter:title" content="轻舟已过万重山">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="轻舟已过万重山">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10822">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26050.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">轻舟已过万重山</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>22分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%bd%bb%e8%88%9f%e5%b7%b2%e8%bf%87%e4%b8%87%e9%87%8d%e5%b1%b1&amp;url=https://mohai.us.kg/posts/2023/7/9-%E8%BD%BB%E8%88%9F%E5%B7%B2%E8%BF%87%E4%B8%87%E9%87%8D%E5%B1%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/7/9-%E8%BD%BB%E8%88%9F%E5%B7%B2%E8%BF%87%E4%B8%87%E9%87%8D%E5%B1%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%bd%bb%e8%88%9f%e5%b7%b2%e8%bf%87%e4%b8%87%e9%87%8d%e5%b1%b1%20https://mohai.us.kg/posts/2023/7/9-%E8%BD%BB%E8%88%9F%E5%B7%B2%E8%BF%87%E4%B8%87%E9%87%8D%E5%B1%B1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26050.jpg" alt="轻舟已过万重山" />
+      
+
+      <p>班费丢了，老师带我查监控。</p>
+<p>看到了教室里吻得难舍难分的一对情侣。</p>
+<p>男的是前一天刚跟我表白的竹马周玉珩，女的是他一直看不上的林夏。</p>
+<p>1</p>
+<p>刚发现班费被丢的时候，班长就一口咬定是我干的，要搜查。</p>
+<p>我看着她给不远处的林夏使了个得意的眼风，心中了然。</p>
+<p>这大概和周玉珩有关。</p>
+<p>众所周知，林夏喜欢周玉珩，但周玉珩一直对她不假辞色。</p>
+<p>昨天周玉珩声势浩大地跟我表白时，我就看到了人群中一脸苍白的林夏，眼中噙着泪带着几分凄楚看着周玉珩。</p>
+<p>导致周玉珩一段表白说得磕磕巴巴。</p>
+<p>好在，我最终接过了那束玫瑰，就在他狂喜抱着我转圈的时候，林夏一捂脸哭着跑了。</p>
+<p>她和班长的关系一向很好，今天这一出，大概就是为了恶心我。</p>
+<p>「我没拿。」我冷静站起来，「教室不是有监控吗？查一下就知道了，有什么好吵的。」</p>
+<p>周玉珩转笔的手一顿，脸上浮现几许紧张，慢吞吞开口：「我觉得不是苏冉干的，她不是那样的人。」</p>
+<p>林夏闻言，眼睛顿时红了一圈，咬着唇楚楚可怜看着周玉珩。</p>
+<p>他不自在撇过头，视而不见。</p>
+<p>班长眼珠一转，大声道：「我觉得苏冉说的有道理，虽然体育课间只有她一个人回教室了，但我也认为不能冤枉同学，所以应该调监控还苏同学一个清白。」</p>
+<p>直觉告诉我有什么不对，但我想不到。</p>
+<p>周玉珩忽然站起身，一脚踹倒桌子怒吼：「没完了是不？不就班费吗？几个钱这么较真，我补双倍。」</p>
+<p>我皱眉，「周玉珩，你这是什么意思，我说了我没拿，你也相信我没拿，那为什么要你出这个钱？正确的不应该是找到真正的班费在哪里吗？」</p>
+<p>周玉珩转身看我，带着几分委屈，「冉冉，我就是见不得你受委屈。」</p>
+<p>「我不委屈。」我冷静回望，「不调查清楚这件事，我才会真的委屈。」</p>
+<p>周玉珩神色变换几番，一咬牙狠狠瞪了林夏一眼，甩下一句，「随你。」</p>
+<p>转身走出教室。</p>
+<p>2</p>
+<p>看到监控的时候，我终于知道了林夏的目的。</p>
+<p>空无一人的教室里，周玉珩将林夏按在墙上，两人吻得难舍难分。</p>
+<p>细碎的阳光照射在他们身后，俊男少女缠绵在一起，看着像是青春偶像剧。</p>
+<p>「苏冉，他说跟你就是玩玩。」</p>
+<p>「你不知道吧？我们打了赌，赌他多久能睡到你，不然你以为他为什么跟你表白？」</p>
+<p>林夏站在我身后，恶毒的眼神将我从上到下扫过，着重停留在胸前。</p>
+<p>「凭你的飞机场吗？」</p>
+<p>我闭上眼深吸一口气，忍了又忍，还是没忍住转身一巴掌扇在她脸上。</p>
+<p>林夏捂着脸，不可思议看着我，气得浑身哆嗦，「你敢打我？」</p>
+<p>我没理她，继续查看监控。</p>
+<p>我还没忘记看监控的目的是为了找出班费，虽然这很可能并不是林夏的目的。</p>
+<p>「你知不知道，周玉珩说他早就对你厌倦了，从小看到大，拉着你的手都不会有生理反应，就像左手拉右手。」</p>
+<p>这个时间段，马上下课要收拾东西了。</p>
+<p>「他说你的卧室特别没有品位，跟男人似的，内衣都随便扔，全是可爱型，看着跟小孩似的，一点欲望都没有。」</p>
+<p>同学们出门上体育课了，先走的是……</p>
+<p>「他还说知道你一直喜欢他，七岁时给你过生日，他忘记买礼物了，路边垃圾桶随便捡了个毛绒玩具，骗你说是提在手里不小心摔倒弄脏了，你爱得跟宝贝一样，洗干净放在床头，现在还抱着睡觉。」</p>
+<p>最后出门的是林夏和班长，他们在座位上拿出了班费的袋子，然后……</p>
+<p>「他说最讨厌你偷偷看他的眼神，那种喜欢让他毛骨悚然，像一个探照灯，只要他出现，你的目光就追随而来，有时候他觉得你像一个变态，时时刻刻关注着他。」</p>
+<p>班费被扔在了垃圾桶后面，找到了。</p>
+<p>我强忍着关掉监控，面无表情看着林夏。</p>
+<p>「说完了吗？」</p>
+<p>林夏一愣，捂着脸警惕地后退两步。</p>
+<p>我微微一笑，「我不再打你的，会脏了我的手。班费找到了，我先回去了。」</p>
+<p>身后，林夏咬牙切齿，「苏冉，你会后悔的！」</p>
+<p>3</p>
+<p>我在垃圾桶后面找到班费，交给老师后就请假了。</p>
+<p>我不想面对周玉珩。</p>
+<p>林夏的话乱糟糟堆在我脑子里，反复旋转跳跃。</p>
+<p>如果说一开始我还不信周玉珩会这么说我，但在她说出毛绒玩具的时候，我突然就信了。</p>
+<p>因为就在前两天，爸爸妈妈叫他来家里吃饭，他熟门熟路走进我的卧室。</p>
+<p>我当时刚换好裙子，红着脸让他以后记得敲门。</p>
+<p>他无所谓耸耸肩，「你身上有什么值得我看的吗？」</p>
+<p>虽然有些不适，但我也只当是熟稔的玩笑话。</p>
+<p>原来这是他真心的嫌弃。</p>
+<p>后来他看到床上的小熊。</p>
+<p>其实毛绒已经都快掉光了，只剩一个光秃秃的身子。</p>
+<p>周玉珩皱眉，带着几分嫌弃，「还留着呢？」</p>
+<p>我低声说：「这毕竟是你送我的第一个生日礼物。」</p>
+<p>我没说出来的事，所以我想好好珍惜。</p>
+<p>周玉珩有几分动容，突然一搂我，「今年送你个好的，回头把这个扔了吧。」</p>
+<p>独属于周玉珩的气息扑面而来，我在他的胳膊里听到自己状若擂鼓的心跳声。</p>
+<p>林夏说得对，我早就喜欢他了。</p>
+<p>所以在他向我表白的时候，毫不犹豫就答应了。</p>
+<p>原来全世界都看得出来，那周玉珩凭什么一直没看出来呢。</p>
+<p>独属于周玉珩的电话铃声突然响起。</p>
+<p>接起，电话中传来一声质问。</p>
+<p>「你为什么要把林夏推下楼梯？」</p>
+<p>4</p>
+<p>赶到医院，林夏的病床前，她的母亲正安慰着她。</p>
+<p>一看到我，她恶狠狠冲过来，手都快戳到我脸上了。</p>
+<p>「你这孩子太恶毒了，嫉妒我们夏夏就可以把她推下楼吗？我告诉你，这事儿没那么容易完！」</p>
+<p>林夏娇滴滴躺在床上，右脚踝打着石膏，看我的眼神中闪烁着得意的光芒。</p>
+<p>她伸手拽着妈妈带着哭腔，「妈妈，你别说了，她也不是故意的。」</p>
+<p>周玉珩站在一边，神色充满失望。</p>
+<p>「苏冉，我没想到你是这样的人。」</p>
+<p>「哦，是吗？」我淡定拿出手机拨通 110.</p>
+<p>「您好，我要报案。」</p>
+<p>林夏慌了，大喊道：「苏冉，你做什么？」</p>
+<p>「报警啊。」我摇摇手机，「既然你说是我推了你，你难道不想讨回公道？」</p>
+<p>「我，我原谅你。」林夏咬着唇哭得楚楚可怜，「我知道你一直介意我和周玉珩走得近，昨天又看到监控……一时没忍住……」</p>
+<p>周玉珩脸上带上几分慌乱和小心翼翼，走过来想拉我的手，「冉冉，我可以解释。」</p>
+<p>我后退一步，三言两语和警察叔叔说完情况，转而冷漠看着林夏。</p>
+<p>「不必了，我不需要你的原谅，因为我没做过这件事。就算你想息事宁人，我也不想被冤枉。」</p>
+<p>「至于你。」我上下打量他，一时竟然想不到怎么骂他会比较合适。</p>
+<p>「冉冉，你别这么看我。」周玉珩反倒先受不了了，「我真的可以解释。」</p>
+<p>「呵，可我不想听。」</p>
+<p>我对着林夏一挑眉，「我接受警察叔叔的调查结果，林夏，我相信清者自清。」</p>
+<p>5</p>
+<p>很可惜，这次是我话说早了。</p>
+<p>林夏敢那么做，就是因为她有底气。</p>
+<p>走廊的监控是坏的，教室监控只能证明我先走出去，林夏追了出去，并且教室里那一巴掌，证明了我和林夏有矛盾。</p>
+<p>让我看起来越发有推她下楼的嫌疑。</p>
+<p>即便我说不是我，也没人信。</p>
+<p>爸爸妈妈被请到了办公室。</p>
+<p>在听到事情的经过后，妈妈甚至没有听我的辩解，就甩了我一巴掌。</p>
+<p>「你能不能懂点事？什么时候能把身上那些坏习惯改掉？」</p>
+<p>妈妈转头对着林夏道歉，「对不起，我孩子从小就放在乡下，所以养歪了，这么多年还是有些小毛病，你看我们需要赔偿多少才可以？」</p>
+<p>我的耳朵中嗡鸣作响，妈妈还在喋喋不休说着我不好。</p>
+<p>周玉珩站在不远处，嘴唇动了动，还是没说什么，反而在对上我的眼神时撇开。</p>
+<p>林夏跳着脚走到我身边悄咪咪说：「苏冉，这就是得罪我的下场。」</p>
+<p>一片嘈杂中，我听到自己的声音。</p>
+<p>「我没推。」</p>
+<p>固执地盯着妈妈，我希望她能站在我这边，哪怕只有一次。</p>
+<p>可她没有。</p>
+<p>「证据确凿，你还要狡辩。」她满眼失望，「你到底还要撒多少谎才肯罢休。」</p>
+<p>「是不是只要别人说我不好，你就会相信。你就那么害怕我超过弟弟吗？」</p>
+<p>「你这是什么话？」妈妈脸上有心事被戳破的难堪，忽然开始捂着脸哭，「我辛辛苦苦把你拉扯大……」</p>
+<p>办公室周围围满了同学，一个个都带着看好戏的神色，我仿佛置身人群，像一个小丑在表演他们想看的戏剧。</p>
+<p>「好了好了。」教导主任出来打圆场，「都是同学，这件事就这么过去吧。」</p>
+<p>林夏微微一笑，用不大不小的声音说：「妈妈，我以前都不知道苏冉同学这么可怜，我们就算了吧。」</p>
+<p>妈妈瞬间抬起头，感激地笑笑：「谢谢啊，这位同学真是人美心善。」</p>
+<p>走出办公室的时候，我看着人群中的周玉珩，轻声问：「你觉得是我吗？」</p>
+<p>周玉珩垂下眼，「我不知道，人是会变的。」</p>
+<p>我点点头，他说的没错，人是会变的。</p>
+<p>6</p>
+<p>晚上，我在家背书，收到周玉珩的消息。</p>
+<p>「下来。」</p>
+<p>我推开窗，他斜斜靠在树上，微微低头，手中似乎还拿着什么。</p>
+<p>想了想，我关上窗顺手将他拉进黑名单。</p>
+<p>门外，爸爸妈妈正在激烈地吵着什么。</p>
+<p>弟弟推门而入，手里拿着手机。</p>
+<p>「姐，周玉珩找你。」</p>
+<p>我接过电话顺手挂断，「以后找我的，你都挂掉。」</p>
+<p>弟弟接过电话，低声问：「姐，你是不是因为我，所以在家不开心？」</p>
+<p>我摸摸他的头，其实他没有做错什么，相反，他很乖。</p>
+<p>小时候我刚从乡下被接回来的时候，他对我敌意很大，老针对我，妈妈对我的坏印象也是从那时起根深蒂固。</p>
+<p>她觉得我要害弟弟，跟弟弟争宠。</p>
+<p>后来上了幼儿园开始，他渐渐改了，会把自己的好吃的留给我，和爸爸妈妈出门的时候，如果我不去，他也不去。</p>
+<p>也许他还记得以前的事，知道我不喜欢他，所以总是缩在角落里偷偷看我。</p>
+<p>还记得有一次爸爸妈妈不在家，我带他出去吃饭，他紧紧握着我的手，吃汉堡的时候，他低头说：「对不起。」</p>
+<p>那一刻，我知道这些事，他其实也记了很久，所以我原谅了他。</p>
+<p>「不关你的事。」我揉揉他的脑袋，「别多想。」</p>
+<p>「姐，周玉珩是不是欺负你了？」他捏着拳头，「我替你揍他。」</p>
+<p>我被逗笑了，点点头。</p>
+<p>「他有眼无珠，以后别理他，我和他也不是朋友了。」</p>
+<p>「姐，你别难过，你这么好，以后还会遇到更好的男人。」</p>
+<p>我轻笑，原来我喜欢他这件事，人尽皆知。</p>
+<p>他却还是拖到了现在才表白，也许真的像林夏所说一样，这不过是他们联手的一场游戏罢了。</p>
+<p>第二天刚走进教室，周玉珩堵住我，脸色不是很好。</p>
+<p>「昨天为什么不下来，还拉黑我。」</p>
+<p>「有事？」</p>
+<p>他像是被我的冷漠刺到了，恶狠狠拽住我的胳膊，「你还没给夏夏道歉！」</p>
+<p>我使劲儿挣脱他，「周玉珩，你是不是有病？我说了我没推她。」</p>
+<p>「警察都证实的事情，有的人还死鸭子嘴硬。」班长在旁边抱着胳膊讥讽道：「就是死不悔改，连她妈妈都说了她的德性。」</p>
+<p>7</p>
+<p>同学们围上来七嘴八舌，看我的眼神都带着谴责。</p>
+<p>「苏冉，没看出来你这么恶毒。」</p>
+<p>「有啥看不出来的，她怕是知道了周玉珩跟他表白，不过是因为和林夏的游戏而已，多年美梦成空，当然要下毒手。」</p>
+<p>「你该不会以为这样周玉珩就会喜欢你了吧？」</p>
+<p>「苏冉，你好恶心啊，跟那些小说里爱而不得的恶毒女配一样。」</p>
+<p>……</p>
+<p>像是有千万种声音在我耳边谩骂，无数种侮辱钻进我的耳朵，深入我的灵魂。</p>
+<p>那个一直抗争的，说着「我没有」的声音渐渐变得越来越小。</p>
+<p>有什么意义呢？我想。</p>
+<p>我的人生就是一场笑话，一个不合时宜的出场。</p>
+<p>我的沉默加剧了她们的情绪，一直到班主任上课铃打响，才给了我清静。</p>
+<p>「都快高考了，我希望大家把时间放在学习上，有些人自己做坏事，就不要连累别人。」</p>
+<p>我蓦然抬头，嘴唇嚅动，在对上班主任的瞬间又慢慢低下，自嘲一笑。</p>
+<p>从那天起，我就接受了同学们的霸凌。</p>
+<p>消失的书本，划满字样的课桌。</p>
+<p>永远扔在凳子下的垃圾。</p>
+<p>甚至凳子上经常会出现脏污，有时候擦都擦不掉。</p>
+<p>有一次我正在努力清洗，周玉珩走过我身边，「苏冉，做错事要承担代价的，什么时候去给夏夏道歉，什么时候就放过你。」</p>
+<p>我恍若未闻。</p>
+<p>这一切在林夏出院回学校后，达到了顶峰。</p>
+<p>她明明已经无碍，但就是会装作脚疼，指使我去做这做那。</p>
+<p>美其名曰给我一个赎罪的机会。</p>
+<p>我不答应，她就会堆起眼泪拉着周玉珩的袖子哭诉，「阿珩，痛……」</p>
+<p>周玉珩看着我，咧嘴一笑，走上前一脚踢在我腿上，疼痛让我跪倒在地。</p>
+<p>他轻描淡写，「不愿意干活，就跪着给夏夏赎罪吧。」</p>
+<p>我爬起来，他就踹，我再爬，他再踹……</p>
+<p>到最后，他的腿都在微微发颤，可我还是固执地站起来，紧紧盯着他，「周玉珩，你要么今天踹死我，否则，我绝不给她低头。」</p>
+<p>周玉珩的眼神中充满不可置信，有同学害怕，扯扯他的衣服，「算了吧。」</p>
+<p>他像是有了一个台阶，故作轻松道：「有人求情，这次就放过你。」</p>
+<p>我低笑一声，「我不稀罕，周玉珩你好像还忘了一件事。」</p>
+<p>我平静注视着他，一字一句，「我们分手吧，以后，我和你之间都没关系了。」</p>
+<p>他猛然站起身，猩红着眼死死注视着我咬牙切齿，「苏冉，你有种再说一遍。」</p>
+<p>8</p>
+<p>「很难懂吗？」</p>
+<p>我忍着疼痛站在原地，「反正是一场游戏，这么多天，你又想起我还是你女朋友吗？」</p>
+<p>「我不同意。」他咬牙切齿，看起来像是真的很生气。</p>
+<p>我觉得很荒谬。</p>
+<p>这一切都很荒谬。</p>
+<p>「为什么？」</p>
+<p>他支支吾吾说不出话，最后来一句，「总之，我不同意。」</p>
+<p>我轻笑一声，「周玉珩，你真恶心。」</p>
+<p>我甚至为自己喜欢过你而感到恶心。</p>
+<p>林夏的脸色不是很好，拽着周玉珩，「阿珩，你什么意思？不就是一场游戏？难道你舍不得了？」</p>
+<p>「不要你管。」他烦躁地一掀林夏，林夏一声惊呼摔倒在地，周玉珩惊慌地去扶她。</p>
+<p>趁他们乱成一团，我抓起书包悄悄溜走。</p>
+<p>腿还是很疼，我走得很慢，一瘸一拐，但是很坚定。</p>
+<p>这段时间发生的事，像一场梦。</p>
+<p>周玉珩，为什么变成了这个样子。</p>
+<p>我不懂。</p>
+<p>明明以前，他对我还是很好的。</p>
+<p>我们的相识，是在公园里。</p>
+<p>刚来到这个城市，陌生而冰冷。受了委屈，我无处可去，只能在附近的公园找地方发泄。</p>
+<p>很多时候，我都是漫无目的行走，自己消化痛苦。</p>
+<p>只有一次，我在写作业，弟弟从床上掉下来，爸爸妈妈不由分说打了我一顿，认定是我没有看好他。</p>
+<p>我跑到公园哭，吵到了在旁边睡觉的周玉珩。</p>
+<p>他一直都是张扬的，染一头红色的头发，在哪里行走都是张扬而耀眼，家里有钱，又是独生子。</p>
+<p>他不懂我的痛，也不理解有父母会这么对待亲生女儿。</p>
+<p>但他尊重我，没有要求我一定要体谅父母，一定要原谅父母，一定要对弟弟好……</p>
+<p>他只是带着我玩。</p>
+<p>打水漂，打篮球，电竞城……</p>
+<p>甚至有一次为了转移我注意力，直接带我去玩剧本杀。</p>
+<p>专注推理，让我忘记时间，也忘记痛苦，只记得和他在一起。</p>
+<p>他把我拉出深渊，我不懂为什么又这么轻易将我推进去。</p>
+<p>我给了他时间的，在他第一次羞辱我的时候，我没有提出分手，我还默认自己是他的女朋友，是因为这个身份让我窃喜。</p>
+<p>人怎么会不爱自己的光呢？</p>
+<p>我冗长而黑暗的人生，因为他才有了快乐啊。</p>
+<p>可是现在……</p>
+<p>光熄灭了。</p>
+<p>9</p>
+<p>我带着证据走进警察局，接待我的还是上次的警察小哥哥。</p>
+<p>他说他叫林延卿。</p>
+<p>我在书包上买了个挂坠，周玉珩没有注意到。</p>
+<p>那个挂坠是个微型摄像机。</p>
+<p>那些小打小闹的恶意，我不能拿他们怎么样，毕竟，你不能去警察局告诉警察，我的同学骂了我一句傻逼，你把他们抓起来吧。</p>
+<p>霸凌，并不止有一种表现形式。</p>
+<p>那些隐藏在身边的一言一行，一举一动，有时候都是霸凌。</p>
+<p>可那些，我没有办法。</p>
+<p>但今天，他们太过了。</p>
+<p>视频清晰记录了，我被踹倒在地的过程，一下又一下。</p>
+<p>林延卿脸色凝重，旁边的小姐姐拳头攥得咯咯响，她安慰我，「放心，我们一定不会放过他们的。」</p>
+<p>「谢谢。」</p>
+<p>「你现在还是应该先去医院。」林延卿眉头紧皱，起身拿起钥匙，「我带你去。」</p>
+<p>不容拒绝地口吻。</p>
+<p>车上，他神色专注，眉头却始终紧皱。</p>
+<p>「苏冉，这些……都会过去的，你现在的目标是高考，知道吗？」</p>
+<p>「我知道。」</p>
+<p>我看着窗外的风景，「这烂泥一样的地方，走出去，才有希望。」</p>
+<p>「对了，有个好消息想不想听？」林延卿突然笑起来，「上次的事有眉目了，我又回去调查了几次，那个台阶虽然没有监控，但楼下靠西边的地方，之前停着一辆车，车上是有行车记录仪的，说不定会找到点证据。」</p>
+<p>「多谢。」</p>
+<p>这对我来说可真是个再好不过的消息了。</p>
+<p>从医院出来，大夫说幸好没有伤到骨头，养养就好。可惜的是，只是轻伤，轻伤和轻微伤都无法定罪。最后在林延卿的强烈要求下，我选择坐轮椅休息，就是看起来有点惨。</p>
+<p>这模样，倒是和林夏一样。</p>
+<p>林延卿送我到家门口就走了。</p>
+<p>深吸一口气，我推开家门，静悄悄地，一如既往没有人。</p>
+<p>爸爸妈妈都在厂里上班，弟弟放学后会去厂里和他们一起吃，至于我，一直都需要自己照顾自己。</p>
+<p>原本我还要给弟弟做饭，但是在我故意多放盐多放辣，菜做得乱七八糟之后，他们便放弃了。</p>
+<p>明知我是故意的，可还是不愿意拿自己的亲生儿子健康去赌。</p>
+<p>只是今天我这个状况，只能从柜子翻出一包方便面，勉强填一下肚子。</p>
+<p>10</p>
+<p>忽然，门被砸得「咣咣」响。</p>
+<p>伴随着周玉珩醉醺醺的声音，「苏冉，你出来。」</p>
+<p>一门之隔，我冷静道：「你喝醉了，回去吧。」</p>
+<p>「我不。」他像是趴在门上，还使劲儿拍着，「你出来，把话给我说清楚。」</p>
+<p>还有什么好说的？</p>
+<p>「你说的，和我分手，我不同意。」</p>
+<p>「周玉珩，你贱不贱？」我冷静回怼，「你该不会觉得，你都这么对我了，我还会喜欢你吧？」</p>
+<p>门那边沉默了，不过片刻，他更疯狂了。</p>
+<p>「为什么不？你不是，不是一直都喜欢我吗？我欺负你，是因为你做错事，做错事就要受到惩罚，难道不对吗？」</p>
+<p>「你凭什么要跟我分手？我都还没答应！」</p>
+<p>一个荒谬的念头升起。</p>
+<p>「周玉珩，你不会是真的喜欢我吧？」</p>
+<p>「不……不行吗？」</p>
+<p>我真的要笑死了。</p>
+<p>「你的喜欢，就是毫无理由地不相信我，就是原本对林夏不屑一顾，在我面前说她只是你的舔狗，后面又开始维护人家，然后来欺负我？周玉珩，你是不是神经病？」</p>
+<p>「我可以解释……」</p>
+<p>「好啊，你解释吧。」</p>
+<p>我靠在门边，丝毫没有开门的意思。</p>
+<p>门外「咚」地一声，周玉珩似乎靠着门坐下了，他慢慢开口：「我不喜欢林夏，一直都不喜欢。」</p>
+<p>「只是她很喜欢我，全心全意的那种，我好像从没有被人这么的关注过，就算是你，冉冉，我甚至不知道你喜不喜欢我，我就是，就是想让你给我低个头，不那么傲气。」</p>
+<p>「林夏说跟我打赌的时候，我一下就答应了，因为我喜欢你，我想和你在一起。所以我就去表白了，你答应的时候，我真的好开心。」</p>
+<p>「可是后面林夏跟我说，你压根不是真心的，你只是被当着那么多人的面表白，不好拒绝罢了，你根本就不喜欢我，不信她可以证明，你不依赖我。」</p>
+<p>「其实我根本不在乎你有没有推林夏，就算，就算你真的推了林夏，也无所谓，有我护着你，谁能把你怎么样呢，可你就是，就是不肯低头，冉冉，你怎么那么倔？」</p>
+<p>我竟然从他的话语中听出了宠溺无奈的感觉，让我恶心。</p>
+<p>我甚至不知道，他到底是为什么会觉得，爱是如此自私狭隘的东西，充满了他迫切需要我臣服的算计。</p>
+<p>我悄悄打开录音，「所以，你知道林夏并不是被我推下去的对吗？」</p>
+<p>「嗯。」周玉珩声音平稳，「我去问她了，林夏说她永远不会对我撒谎，她宁可自己受伤，也要替我看清楚你的心意。」</p>
+<p>真他妈的。</p>
+<p>「既然你知道，你还是鼓动同学们对我进行霸凌，丝毫不在乎我是否愿意。」</p>
+<p>「不是的，我，我只是想让你求我，只要你求求我，我就会保护你呀，为什么你不肯……」</p>
+<p>虽然很恶心，但我还是强忍着继续让他自证。</p>
+<p>「也就是说，我遭遇的一切霸凌，被污蔑，被打，都是你和林夏主导的，目的是让我屈服你，对吗？」</p>
+<p>「嗯。」</p>
+<p>「那些跟你们同流合污的同学呢？他们也知道吗？」</p>
+<p>「不是，那些只是一群傻逼罢了，听风就是雨，我说什么，他们就相信什么。」</p>
+<p>足够了，我关上录音。</p>
+<p>「周玉珩，滚吧，你刚才的话我已经录下来了，我将拿着去报警，你就等着和林夏一起接受法律的制裁吧。」</p>
+<p>「冉冉，如果这能让你开心，让你原谅我，我愿意配合你。」</p>
+<p>傻逼。</p>
+<p>他不会以为这样看起来会很深情吧。</p>
+<p>11</p>
+<p>将证据提交给林延卿后，我难得睡了个好觉。</p>
+<p>早上起来，看到林延卿发来的消息，可以立案。</p>
+<p>心头松了一口气。</p>
+<p>早自习我没上，买通了广播室的师姐，替她广播。</p>
+<p>我施施然对着话筒放出了昨晚周玉珩的录音。</p>
+<p>几乎在第一时间，老师就冲上来了，不断在门外祈求我算了，算了。</p>
+<p>广播室的门拍得震天响，我自岿然不动。</p>
+<p>呵，班费事件后，我去找她。</p>
+<p>她说，这件事班长已经跟她说过了，并不是故意的，只是忘记了掉在垃圾桶，既然找到了就算了。</p>
+<p>林夏事件后，我去找她，她说也没有证据证明你没推啊，要不就算了，人家家长都不追究了，闹大了对你也不好。</p>
+<p>我受欺负的时候，她说的也是，算了。</p>
+<p>同学之间玩闹，不是什么大事，忍忍就过去了。</p>
+<p>既然如此，今天的事，想必我对她说算了，她也能理解吧。</p>
+<p>不知道那些同学们，听到他们坚信的正确崩塌，原来自己在他人眼里就是不明事理的傻逼，会是什么感觉，我很期待呢。</p>
+<p>连续放了三遍，一直到校长都来了，我才施施然打开门。</p>
+<p>「你你你，苏冉你……」</p>
+<p>班主任的手都快戳到我脸上了，一脸惊慌失措。</p>
+<p>我无所谓地耸耸肩，「老师，我也不是故意的，要不就算了？」</p>
+<p>校长看着我，很郑重道：「同学，这些事我都不知道，今天我知道了，一定会给你一个交代的，你放心。」</p>
+<p>「高三了，正是学习的时候，希望这些不要影响你。」</p>
+<p>「不会的。」我轻笑道：「这些，只会是我前进的动力。」</p>
+<p>「另外，我腿脚不方便，申请住校自习，上课对我来说有点困难，这点要求，相信学校不会拒绝吧。」</p>
+<p>校长派了一个学弟帮我搬东西，我还是坐在轮椅上，走进教室，周玉珩面前桌子上都是垃圾，衣服被撕破，头上，脸上不是垃圾就是伤口。</p>
+<p>整个教室寂静无声，齐刷刷的目光向我袭来。</p>
+<p>周玉珩无声翕动嘴唇，似乎是在说，「你满意了吗？」</p>
+<p>怎么可能满意呢？他和林夏的苦，才刚刚开始。</p>
+<p>警察带走了周玉珩和林夏，据说没怎么吓唬就招了。</p>
+<p>虽然罪行不严重，但我拒绝和解。</p>
+<p>这注定要在他们的档案上记下一笔。</p>
+<p>事发后，周玉珩和林夏的父母都来找过我，希望用钱可以让我出个谅解书。</p>
+<p>爸爸妈妈自然同意，但我不同意。</p>
+<p>幸好我成年了，林延卿代表警方坚持让声称本人签字才有效。</p>
+<p>无论爸爸妈妈怎么说，我都不肯，他们没办法，只能骂骂咧咧回去。</p>
+<p>我搬进了学校宿舍，每天都有人帮我打饭，也有人帮我提水。</p>
+<p>其实我的伤没多久就好了，毕竟周玉珩没有真的下死手。</p>
+<p>教室里也安静很多，空座位也有，那些跟着周玉珩欺负我的人，都被周玉珩供了出来，统统记大过。</p>
+<p>他们痛哭流涕来找我道歉还不够，还要被迫在全校人面前念检讨。</p>
+<p>林夏和周玉珩都被学校给了开除处分，在他们被拘留的 15 天内。</p>
+<p>这个结果让我简直不要太满意。</p>
+<p>周玉珩还给我发过消息，我干脆利落拉进黑名单。</p>
+<p>林夏则是疯狂诅咒辱骂，我截图下来，反手又交给警察，没过多久，她就发来了道歉信。</p>
+<p>真开心啊。</p>
+<p>似乎天都晴了。</p>
+<p>12</p>
+<p>周玉珩和林夏被放出来后，在最后冲刺的时候回到了学校。</p>
+<p>两个人看起来都不太好，林夏的头低低的，见人就躲开，似乎很害怕别人的触碰。</p>
+<p>周玉珩好像没多大变化，始终扬着头。</p>
+<p>班主任站在讲台上看着他们神情复杂，「我被调任了，等到你们高考结束我就要走了。」</p>
+<p>「我不是一个合格的老师，在校期间一直都对秉持着和谐团结，学习至上的思想，从而苏冉同学的事放任不管，这是我作为老师的失职，我也希望同学们能够吸取教训，学校能够学到的不仅仅是知识，还有做人的正义以及明辨是非的能力。」</p>
+<p>「我知道，我们很多人盲目崇拜，导致自己失去了判断而犯错，苏冉同学用自己的经历提醒了我们，人不应该盲从，这个教训是惨淡的，我不能说值得，但我希望，做错事的人可以勇于承担自己的错误。」</p>
+<p>「我们都应该向苏冉同学道歉。」</p>
+<p>说完，老师在讲台上对着我鞠躬。</p>
+<p>接着三三两两的同学站起来，低着头羞愧诉说自己的错误，并且向我道歉。</p>
+<p>对于这一切，我这个当事人其实并没有多大的感触。</p>
+<p>伤害已经造成，我不希望轻飘飘地承认错误，就让这个伤疤消失，我要他们永远带着愧疚被自己折磨。</p>
+<p>「我不想原谅。」我坐在座位上淡淡道：「老师，您的举动我很感动，但我不想原谅，可以吗？」</p>
+<p>班主任愕然片刻，勉强一笑，「当然，道歉是我们该做的，但原谅的权利在你自己，这一点，我们不会强迫你。」</p>
+<p>「那就好。」</p>
+<p>班主任的眼神转过周玉珩和林夏，「当然，最主要的主谋们，我看依然没有悔改之意，」</p>
+<p>也许正因为这样，刚下课，我就看到林夏后桌一脚踹在她凳子上，林夏惊叫一声跌坐在地。</p>
+<p>后桌无所谓耸耸肩，「抱歉，脚滑了。」</p>
+<p>林夏咬唇站起身，一声不敢吭，默默扶起凳子坐好。</p>
+<p>只是她刚坐好，后桌就继续踢。</p>
+<p>她只能无奈地重复以上的动作。</p>
+<p>我不想看这一幕，便起身走出教室在天台吹风。</p>
+<p>身后传来脚步声，我转身，离天台稍稍站远一点，周玉珩停下脚步，苦笑一声，「冉冉，你以为我会伤害你吗？」</p>
+<p>「不然呢？」我一挑眉，「你的地位失去了，从天之骄子成了过街老鼠，你不想杀了我吗？」</p>
+<p>他叹息，「我现在才知道，自己错得离谱。」</p>
+<p>「我竟然以为，被依靠才能证明你爱我。」</p>
+<p>我情不自禁笑出声来，「周玉珩，你还是小学生吗？做那种老子天下第一的美梦，要女人依靠你，把你当成天，当成地，来体现你的英雄主义？」</p>
+<p>「到底是谁给你的错觉？」</p>
+<p>13</p>
+<p>周玉珩愣在原地，突然露出苦涩地笑。</p>
+<p>「是啊，我也不知道，大概是从小我奶奶就告诉我，女人就应该依靠男人，要伺候男人，我生来就是享福的，看看我爸妈，我妈什么也不会，都靠着我爸，同样的，她把我和我爸也照顾的很好，他们也没有什么矛盾，所以我觉得，大概这就是爱情的样子。」</p>
+<p>「是我错了……」</p>
+<p>他带着几分可怜望着我，「冉冉，你能原谅我吗？」</p>
+<p>我后退一步，指着自己的脸，「你看我脸上写着傻逼两个字吗？」</p>
+<p>忽然，身后一阵风声传来，周玉珩的瞳孔骤然放大，他大喊着冲过来。</p>
+<p>我转身刚好看到面色狰狞的林夏举着一把刀，向我袭来。</p>
+<p>不过……</p>
+<p>我拿胳膊一档，刀插进胳膊里，借着这个阻力，我顺势一脚踹在她身上。</p>
+<p>之前被在教室踹过后，我就跟着林延卿学习了几招防身术。</p>
+<p>平常也有在锻炼身体，我绝不会把自己的安全再放在其他人手里，毕竟防人之心不可无。</p>
+<p>看，这不是用上了？</p>
+<p>林夏被我踹倒在地，头发散乱，双目通红，嘴里还一直在骂我，我看着胳膊上的伤，心想，这下总不能还是轻微伤了吧。</p>
+<p>周玉珩上前一脚踹在她心口，「林夏，你发什么疯？」</p>
+<p>林夏原本正在骂我，忽然看着周玉珩吃吃笑起来。</p>
+<p>「周玉珩，你为什么要这么对我？你为什么要保护这个贱人？你知不知道没有她我们不会落到这个田地，明明我才是这个世界上最爱你的人，明明我才是！」</p>
+<p>周玉珩被他疯癫的样子吓得后退两步，皱眉，「林夏，到现在你都不觉得自己做错事吗？」</p>
+<p>「我有什么错？」她吼着，「你说，我有什么错？」</p>
+<p>突然，她像是被卡住一样，眼球凸起，嘴里发出「咯咯」的声音，捂着胸口蜷缩成一团不停发抖。</p>
+<p>周玉珩惊呆了，我赶紧掏出电话打 120，又冲上去将她翻过来不停做急救。</p>
+<p>林夏呆呆看着我，一双顾盼神飞的眼睛，一点点失去了光彩，最后，我看到她眼角缓慢地落下一滴泪。</p>
+<p>林夏死了。</p>
+<p>警局里，周玉珩对此供认不讳。</p>
+<p>他完了。</p>
+<p>14</p>
+<p>我在医院包扎，林延卿看着我叹一口气，「现在的孩子，怎么都这么疯狂。」</p>
+<p>说实话，我也没想到林夏会如此孤注一掷。</p>
+<p>「林夏的父母都快疯了，在警局拉着周玉珩要他偿命。」</p>
+<p>那当然，又不是每个孩子都跟我一样是棵草。</p>
+<p>「我们队里有个小姑娘,  她家里人出差了，你要不去跟她住吧。」</p>
+<p>「嗯？」</p>
+<p>「总住在学校也不是个事儿。」</p>
+<p>林延卿摸摸鼻子，「还是要安心准备高考才行。」</p>
+<p>「可我没钱……」</p>
+<p>「不碍事。」</p>
+<p>林延卿轻咳一声,  「我是说，她不介意。」</p>
+<p>「那好。」</p>
+<p>我也没有过多纠缠，相比起种种顾虑，面对善意要尽快收下，至于人情，那是以后该还的。</p>
+<p>说起来,  这世间事,  有多少人情是可以说得清的呢？</p>
+<p>周玉珩已经成年了,  林夏之死最终是因为突发性心肌梗死，诱因则是周玉珩踢在心口上的那一脚。</p>
+<p>至于我胳膊上那一下，林家赔了我 8 万,  这件事就算过去了。</p>
+<p>过多追究也不过是徒劳,  人死如灯灭，往日种种都随风而去吧。</p>
+<p>一直到考试前,  我的父母都没有过问过我一次，这样也好,  免得他们再惦记赔偿款。</p>
+<p>高考就这样在平静的闷热中结束。</p>
+<p>考完那晚,  林延卿请我和小小吃饭，喝多了的他醉眼蒙眬抱着酒瓶打嗝。</p>
+<p>「苏……苏冉……你一定要好好学习……不要,  不要像我妹妹一样……」</p>
+<p>苏小小悄然凑到我耳边，「她妹妹在高考前遭到了校园霸凌,  熬不过去自杀了。」</p>
+<p>原来如此，所以他才会再见我一次开始，就给我那么多帮助，也许在我成功度过这一切之后，他也等于是救下了他的妹妹。</p>
+<p>「林警官,  一切都会过去的。」我轻轻和他碰杯。</p>
+<p>往事暗沉不可追，来日之路光明灿烂。备案号:YXX1wKdOKzcMk11MZFB0wQ</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/2-%E8%BD%BB%E9%B8%BF%E7%85%A7%E5%BD%B1/" title="轻鸿照影">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">轻鸿照影</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/7/21-%E6%B8%85%E5%8C%97%E5%AD%A6%E6%B8%A3%E8%AF%B7%E8%B5%90%E6%95%99/" title="清北学渣请赐教">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">清北学渣请赐教</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「为什么他说话不算话」：如何解决沟通中的「变」 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E8%AF%B4%E8%AF%9D%E4%B8%8D%E7%AE%97%E8%AF%9D%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%B2%9F%E9%80%9A%E4%B8%AD%E7%9A%84%E5%8F%98/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E8%AF%B4%E8%AF%9D%E4%B8%8D%E7%AE%97%E8%AF%9D%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%B2%9F%E9%80%9A%E4%B8%AD%E7%9A%84%E5%8F%98/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="「为什么他说话不算话」：如何解决沟通中的「变」">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26677.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26677.jpg">
+  <meta name="twitter:title" content="「为什么他说话不算话」：如何解决沟通中的「变」">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="「为什么他说话不算话」：如何解决沟通中的「变」">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="5390">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26677.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">「为什么他说话不算话」：如何解决沟通中的「变」</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>11分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e3%80%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bb%96%e8%af%b4%e8%af%9d%e4%b8%8d%e7%ae%97%e8%af%9d%e3%80%8d%ef%bc%9a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e6%b2%9f%e9%80%9a%e4%b8%ad%e7%9a%84%e3%80%8c%e5%8f%98%e3%80%8d&amp;url=https://mohai.us.kg/posts/2023/5/18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E8%AF%B4%E8%AF%9D%E4%B8%8D%E7%AE%97%E8%AF%9D%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%B2%9F%E9%80%9A%E4%B8%AD%E7%9A%84%E5%8F%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E8%AF%B4%E8%AF%9D%E4%B8%8D%E7%AE%97%E8%AF%9D%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%B2%9F%E9%80%9A%E4%B8%AD%E7%9A%84%E5%8F%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e3%80%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bb%96%e8%af%b4%e8%af%9d%e4%b8%8d%e7%ae%97%e8%af%9d%e3%80%8d%ef%bc%9a%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3%e6%b2%9f%e9%80%9a%e4%b8%ad%e7%9a%84%e3%80%8c%e5%8f%98%e3%80%8d%20https://mohai.us.kg/posts/2023/5/18-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E8%AF%B4%E8%AF%9D%E4%B8%8D%E7%AE%97%E8%AF%9D%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%B2%9F%E9%80%9A%E4%B8%AD%E7%9A%84%E5%8F%98/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26677.jpg" alt="「为什么他说话不算话」：如何解决沟通中的「变」" />
+      
+
+      <p>「为什么他说话不算话」：如何解决沟通中的「变」</p>
+<p>摆脱尬聊：社交高手必修课</p>
+<p>沟通的意义是寻找共通点，解决问题，建立共同的新目标。</p>
+<p>但在沟通的过程中，我们也经常会遇到一个非常糟心的情况：变。</p>
+<p>你和对方讨论好了一件事、确定了一个目标，本以为大家会按照共识共同前进，谁曾想有一天，TA 的态度忽然就来了个一百八十度的大转弯。</p>
+<p>你又气又急又伤心，认为对方破坏了彼此的约定。而对方表示，TA 也有自己的苦衷，并不一定愿意回归到过去的情况。</p>
+<p>你认为 TA 这么做破坏了两个人的约定，但又不愿意因此直接选择分道扬镳，一时间不知道怎么处理，才能让自己从这种负面的状态里走出来。</p>
+<p>这其实就是沟通过程中经常会出现的一个情况：变化。</p>
+<p>在之前的文章中，我们有讨论过：沟通，是一个双向的、流动的过程。</p>
+<p>不仅仅是说明沟通的过程需要双方共同的努力，同时也是在强调：沟通的过程，是经常会出现变化的。</p>
+<p>而接纳变化，并根据变化做出相应的调整，也是我们提高沟通能力的一个部分。</p>
+<p>在具体分析应该怎么做之前，我们需要先明确一个问题：我们应该如何看待日常中的共识、承诺等？</p>
+<p>古人告诉我们：一诺千金。</p>
+<p>说出了诺言，就一定要遵守，一个缺乏信誉的人，在社会上是很难立足的。</p>
+<p>可是在现实生活中，还是经常会出现「破坏诺言」「说话不算话」的情况，而且很多时候，破坏约定的人，并不一定出于恶意。</p>
+<p>为什么会出现这样的矛盾？是因为古人的话错了么？</p>
+<p>并不是。</p>
+<p>原因很简单：原则上，我们的确需要认真遵守自己达成的共识、说出的话。</p>
+<p>可是撇开一些涉及到底线的问题，伴随着环境的发展，和个人心境的变化，人们会转变看法，甚至没办法完全遵守自己的诺言，也是经常会发生、而且非常正常的情况。</p>
+<p>举一个非常简单的例子。</p>
+<p>请问一下在座的男性朋友，假如你在和妻子求婚的时候，你告诉妻子：「我永远都不会让你做家务」。</p>
+<p>但等到结婚之后，你的妻子真的完全十指不碰阳春水，即使你累到不行，也拒绝帮你一点忙。</p>
+<p>这时候，你是会认为「我当初给了承诺，必须遵守必须忍」，还是照样会不开心呢？</p>
+<p>相信很多人心里肯定是会不舒服的，不过不舒服，也不代表不愿意遵守承诺，而是伴随着环境的转变和自己当时心境的改变，会格外期待对方愿意去帮忙罢了。</p>
+<p>这也就是为什么，虽然我们非常希望大家可以按照共识做事，可以遵守彼此的诺言，可是有些时候，也确实没有办法遵守全部的诺言。</p>
+<p>生活是非常复杂的，一个问题解决后，很可能立刻跑出来另一个问题。</p>
+<p>当另一个问题出现，需要我们重新调整状态的时候，做出转变是大概率现象。</p>
+<p>到了这时候，沟通就变得格外重要。</p>
+<p>而我们沟通的思路，如果想要切实解决问题，而不纯粹是发泄情绪的话，那么不能仅仅局限在「你不该转变」，而是要去探讨更加深入的「为什么转变」和「接下来应该怎么调整」。</p>
+<p>咱们举一个实际发生的例子：</p>
+<p>知乎有这样的一道题目：「家长说考到 985 奖 1w，我考到了，却不给我钱，说用来交学费，我可以告家长吗？」</p>
+<p>题主的父母向题主承诺，只要考上 985 大学，就奖励一万块钱，随意题主支配。收到承诺的题主开始努力学习，并开心地规划拿到一万块之后做些什么：想买一个打游戏更流畅的手机，想吃喝玩乐，同时也想买点理财……</p>
+<p>高考结束，题主确实考上了 985，但这时候父母转变了态度：他们认为，题主平时就喜欢乱花钱（题主不认为自己乱花钱），因此，虽然一万块照常给，但不会一次性交给题主随意支配，而是以学费的方式提供。</p>
+<p>愤怒的题主认为：父母伤害了自己的信任，想要不花一分钱，白得一个优秀的儿子。要么就别给，给了就说到做到让自己用。</p>
+<p>于是上网提问：自己是不是可以起诉家长，拿回自己该有的一万块钱？</p>
+<p>这件事在网上发布后引起了轩然大波，网友的观点分大致为了两个种类：</p>
+<p>「孩子有错」：小孩解决问题的方式居然就是撒泼打滚，甚至谩骂父母，这孩子不知道感恩。</p>
+<p>「父母有错」：曾子杀猪古已有之，圣人尚且知道，对孩子应该说到做到、言传身教，言而无信的父母，自然会养出冷酷无情的孩子。</p>
+<p>两个观点有错么？站在各自的角度都有道理。</p>
+<p>但这两个观点都有一个共同的问题：情理上没有问题，但在现实操作中，缺乏可实操的参考方案。</p>
+<p>咱们站在「沟通方法」的角度重新复盘一下：</p>
+<p>孩子的诉求：希望父母如愿交给自己一万块，并按照自己期待的方式支配。</p>
+<p>父母的诉求：不介意给孩子钱，但害怕孩子养成糟糕的消费习惯。</p>
+<p>这么一整理的话会发现：其实，「该不该给孩子一万块钱」并不是双方争论的核心矛盾。会让双方产生分歧的一个关键点在于「如何支配大额金钱」，也就是消费观的塑造。</p>
+<p>诚然，父母选择违背约定，是一件伤害孩子信任的错误决定。</p>
+<p>但是客观地说：作为小孩，就算拿到了父母赠与的金钱，真的就可以按照自己的喜好随意挥霍，仅仅是因为父母答应了「自己想怎么用就怎么用」？</p>
+<p>更深入一点想：只要是自己的东西，就可以随意支配，而且其他人不得提出反对意见，这是健康的、对自己的成长由利的消费观么？</p>
+<p>很显然不是。</p>
+<p>父母拥有「言出必行」的责任，同时，也有：「监督孩子健康成长」的责任。从这个角度来说，如果小孩真的认为自己可以随意支配金钱、不考虑自身发展的话，那作为父母，出于担忧的角度破坏约定，虽然让人感到难过，可是会出现这样的情况，并不奇怪。</p>
+<p>当然，从另一个角度来说：如果孩子本身拥有健康、合理的消费观，那么父母自然不会产生这样的顾虑，更谈不上毁约一说。</p>
+<p>因此，面对父母这样的「毁约」，作为孩子，如果仅仅是强调「父母应该言出必行」显然是不够有力的。</p>
+<p>一方面，父母完全可以用「你从小到大做到完全听话了么」去反驳，另一方面，这个沟通方向并没有戳中「父母最核心的诉求」，很有可能沟通不成，反而引发亲子冲突。</p>
+<p>更不用说，题目中的孩子并不完全是为了享乐，他也有掌控金钱、学习理财的诉求。</p>
+<p>这着实是一件非常可惜的事情，孩子努力学习，父母鼓励孩子上进，显然都不是基于恶意的决定。但因为双方都不知道怎么沟通，最终让双向的善意变成了双向的痛苦。</p>
+<p>在明确了最核心的诉求后，我们现在可以重新思考下怎么样通过沟通解决这样的「违约」：</p>
+<p>父母的角度：</p>
+<p>希望让孩子建立健康的消费观，并不一定需要通过不给钱的方式。</p>
+<p>还有一种两全其美的办法，即是在给孩子钱的时候，额外提出一些条件。</p>
+<p>比如：每个学期的最高消费额度/具体的消费分布/想买手机，可以，但最贵只能买多少钱的……</p>
+<p>并告诉孩子，并不是不让他随意支配，真正健康的「随意支配」，是在健康的消费观地指导下，量入为出地通过金钱享受生活的美好。</p>
+<p>孩子的角度：</p>
+<p>显然，题主的处理方式是有问题的。让父母感到心寒不说，运气不好的话可能还会挨一顿胖揍。</p>
+<p>更何况，作为成年人，之后会面临的不开心还有很多，如果每一件事都通过「发脾气、撒泼」解决的话，那也很难做到真正的成熟。</p>
+<p>如果我是当事人，我可能会这么和父母说：</p>
+<p>「我刚刚发脾气并不是因为没有拿到那一万块钱，而是你们给我许下诺言后，却用这样的方式敷衍我，一方面，我觉得我被戏弄到了，另一方面，你们骗了我，又不当回事的态度，让我忍不住想，下一次是不是还会发生类似的事情。」</p>
+<p>——表达自己生气的原因。</p>
+<p>「和你们发脾气是我不对，毕竟你们是我的父母，让我考 985 也是希望我好，我是有些小题大做了。」</p>
+<p>——承认自己的问题，给父母台阶。</p>
+<p>「站在父母的角度，孩子学习是为了自己，可站在小孩的立场，我学习确实还是为了你们。或许以后进入社会会体会更深，但现在的我确实不爱学习，每次做卷子做不出题的时候都很想撕掉卷子。让我坚持下来的动机，并不仅仅是那一万块钱，而是你们骄傲地和别人夸奖我的样子。</p>
+<p>我想变成让你们引以为傲的孩子，为此我付出努力了，我也希望在我努力前进的时候，你们可以信任我一点，站在我的角度考虑考虑事情。</p>
+<p>我知道，你们担心我养成不好的消费习惯，但我总是想尝试一下，不仅仅是为了花钱享乐，也是想学着管理钱财，甚至研究怎么样赚钱，看看这笔钱我能用多久。」</p>
+<p>——提出自己的诉求。</p>
+<p>「你们可以给我开一张银行卡，第一学期先给我五千，剩下的帮我存起来，我正好看看自己的自控力如何，是否真的可以钱生钱，还是只是用来消费。如果我的消费观真的有长进，希望爸妈也能信任我一点。」</p>
+<p>——各退一步，给出具体的解决方案。</p>
+<p>这是一段详细版的表达，放在真实情境使用的时候，可以简化一些。</p>
+<p>试想，假如你们是父母（那种特别不讲道理、把孩子当猴耍的不算在内），面对一个遇到冲突就大哭大闹的孩子，和一个在有冲突的时候认真解释、积极解决问题并提供方案的孩子，你们更愿意相信哪一个？</p>
+<p>这是一个非常典型的面对「变」应该如何调整沟通方式的案例，经常会出现在我们的生活中。</p>
+<p>上文的方案我曾在现实生活中指导过一个拥有类似诉求的小孩。小孩在和父母仔细沟通后，不仅拿回了属于自己的奖励，而且父母额外赠送了他一台新手机，作为他到了大学后依旧不忘自我约束的奖励。</p>
+<p>在明确了彼此的诉求后，即使真的出现「出尔反尔」的情况，沟通也同样可以解决问题，缓解冲突。</p>
+<p>当然，不可否认，沟通需要双方共同的努力，如果对方就是一个不讲道理的人，那么即使沟通也没什么意义。但是，如果一开始就预设了对方一定是个无法沟通、不讲道理的人，并拒绝思考，那自己正在做的，不也是「不讲道理的事情」？</p>
+<p>许多人之所以为「变」而感到痛苦，在于他们认为，「已经达成共识的，就一定会做到，而且不会改变」。</p>
+<p>问题是，计划尚且赶不上变化，更不用说那些日常沟通中产生的共识、承诺了。</p>
+<p>即使是最优秀的人，同样无法保证能够控制住生活中、自我可能出现的各种改变。</p>
+<p>如何处理对话中的「变」，是我们提升沟通能力、解决问题的能力的重要一步。</p>
+<p>综上，面对沟通中的「变」，我们应该做什么？</p>
+<p>首先，明确「变」的原因。</p>
+<p>前面我们也说了，「变」是经常出现的情况。</p>
+<p>但是，之所以出现「出尔反尔」，也是有不同的原因：</p>
+<p>有的是基于心境的变化。比如原本对学区房无感、追求快乐教育的年轻人，在看到了大城市严酷的教育竞争后，决定改变态度，对孩子严格要求。</p>
+<p>有的是基于环境改变。比如答应一起出去玩，但因为天气原因不得不中止。</p>
+<p>有的是出现了新的诉求。比如上文案例中的父母，在解决了孩子的高考问题后，又会开始担心孩子的消费观问题——父母对孩子的担忧，是永远不会停止的。</p>
+<p>还有一些，确确实实就是欺骗和故意的画饼了。</p>
+<p>在明确「变」的原因后，我们就可以去分开，哪些「出尔反尔」属于欺骗、画饼，哪些则属于心境变化、情况转变，从而采用不同的方式去处理问题。</p>
+<p>面对恶意的「变」，当然要重拳出击，可如果对方并无恶意，是不是也可以有更加温和、双赢的解决方案呢？</p>
+<p>其次，精细化自身「最关键的诉求」。</p>
+<p>面对另一方的「出尔反尔」，人们很容易犯一个错误：在情绪过于激动的情况，忽略了自己最核心的需求，转移了问题的关键，产生了新的矛盾。</p>
+<p>举一个很简单的例子：一对小夫妻，挑选结婚珠宝。丈夫看到钻戒价格昂贵后，试图劝说妻子放弃钻戒，转买黄金，并强调「钻石是智商税」。</p>
+<p>妻子生气地回复「钻戒怎么是智商税了，就算是，为什么不能买来给我开心？」慢慢地，对话演变成争吵，甚至闹到网上，大伤感情。</p>
+<p>但其实，如果复盘一下，两个人的核心诉求，无非就是「如何分配婚礼珠宝的支出」。至于钻戒是否保值、黄金是否保值，其实并不是问题的核心。</p>
+<p>觉得钻戒贵？那就买个小的，剩下的买黄金就行了，或者干脆放弃钻戒，买个对戒，剩下的购买黄金。女方实在喜欢的话，也可以退一步，提出买个便宜点的。</p>
+<p>吵架最忌讳的就是跑题，越是想要实现自己的目标，越是不能被带偏。</p>
+<p>接下来，想想「我的诉求，都是对的吗」？</p>
+<p>就好像上文例子中的题主，理论上，他确实拿到钱之后，可以随意支配，想买什么买什么，因为这是父母答应自己的。</p>
+<p>但在实际生活中，我们真的可以理直气壮地肆意挥霍父母的血汗钱么？尤其是在读书阶段、最重要的提高自我的时候？</p>
+<p>在想明白这个问题之后，或许不能立刻解决所有的问题，但一定可以缓解「争吵中的许多不开心」。</p>
+<p>不要对非原则性的承诺过分当真</p>
+<p>前面已经说过了，变，是对话，乃至生活的重要组成部分，很多人即使真的想要做到自己承诺的每一件事，实际操作起来还是会发现有些困难。</p>
+<p>因此，聪明的人在面对达成的共识和对方给予的承诺的时候，除非是极其原则的问题，否则不会把那些话过于当真，给与对方一定的调整的空间。如果对方能够全盘完成那自然更好，如果中间有些小变化，也可以根据具体情况坦然接受和调整。</p>
+<p>举一个很简答的例子：</p>
+<p>认识的一个朋友，谈了一个女朋友。</p>
+<p>女孩在暧昧期间，多次强调自己是个讲道理、不会乱闹脾气的人。</p>
+<p>两人确定关系后，女孩大多数情况下确实非常讲道理。</p>
+<p>但也有一些时候，会闹小脾气。</p>
+<p>朋友并没有因为女生偶尔的小脾气，就认为她骗了自己，而是耐心温柔地哄她，等她冷静下来后两个人再沟通，最后，感情越来越好。</p>
+<p>在下一次沟通之前，可以想想哪些是可以规避的</p>
+<p>多看对方当下拥有的、当下可以提供的，而不仅仅看对方的承诺，是有效避免「被画饼」的重要方法。</p>
+<p>沟通的目的，是为了达成共识。</p>
+<p>但「变」，同样是对话的主旋律之一。</p>
+<p>正确对待对话中的「变」，并通过沟通，进一步明确自身的目的，和他人达成共识。这不仅有助于提高我们的沟通能力，同时也是对应变能力、和同理心的极大挑战。</p>
+<p>学会想明白自己到底想要什么，学着去理解为什么别人会改变，看似是一种「妥协」，实际上，给了双方更进一步深入了解彼此的机会，也能让我们更加全面地、站在不同的角度看待问题。不论是对待亲人、恋人，还是在工作中，都会给自身带来巨大的帮助。</p>
+<p>备案号:YXX1Emmaw26HRRRJ1ZrTQR1B</p>
+<p>不及格沟通实例：专注于「如何反驳」</p>
+<p>​</p>
+<p>​</p>
+<p>摆脱尬聊：社交高手必修课</p>
+<p>非癯仙</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/29-%E4%B8%99%E8%82%9D%E7%A9%B6%E7%AB%9F%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E7%97%85%E6%80%8E%E6%A0%B7%E4%BC%9A%E5%AF%BC%E8%87%B4%E4%B8%99%E8%82%9D%E6%84%9F%E6%9F%93/" title="「丙肝」究竟是一种什么病？怎样会导致「丙肝」感染？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">「丙肝」究竟是一种什么病？怎样会导致「丙肝」感染？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/8/13-%E7%89%A9%E7%90%86%E5%AD%A6%E7%9A%84%E5%A4%A7%E5%8E%A6%E5%B7%B2%E7%BB%8F%E8%90%BD%E6%88%90%E4%B8%8A%E9%9D%A2%E5%8F%AA%E6%9C%89%E4%B8%A4%E6%9C%B5%E4%B9%8C%E4%BA%91%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" title="「物理学的大厦已经落成，上面只有两朵乌云」是什么意思？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">「物理学的大厦已经落成，上面只有两朵乌云」是什么意思？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

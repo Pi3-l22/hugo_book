@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为什么有的人城府深的吓人？ | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/7/16-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E5%9F%8E%E5%BA%9C%E6%B7%B1%E7%9A%84%E5%90%93%E4%BA%BA/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/7/16-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E5%9F%8E%E5%BA%9C%E6%B7%B1%E7%9A%84%E5%90%93%E4%BA%BA/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="为什么有的人城府深的吓人？">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26619.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26619.jpg">
+  <meta name="twitter:title" content="为什么有的人城府深的吓人？">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="为什么有的人城府深的吓人？">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="7802">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26619.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">为什么有的人城府深的吓人？</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>16分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e4%b8%ba%e4%bb%80%e4%b9%88%e6%9c%89%e7%9a%84%e4%ba%ba%e5%9f%8e%e5%ba%9c%e6%b7%b1%e7%9a%84%e5%90%93%e4%ba%ba%ef%bc%9f&amp;url=https://mohai.us.kg/posts/2022/7/16-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E5%9F%8E%E5%BA%9C%E6%B7%B1%E7%9A%84%E5%90%93%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/7/16-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E5%9F%8E%E5%BA%9C%E6%B7%B1%E7%9A%84%E5%90%93%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e4%b8%ba%e4%bb%80%e4%b9%88%e6%9c%89%e7%9a%84%e4%ba%ba%e5%9f%8e%e5%ba%9c%e6%b7%b1%e7%9a%84%e5%90%93%e4%ba%ba%ef%bc%9f%20https://mohai.us.kg/posts/2022/7/16-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E5%9F%8E%E5%BA%9C%E6%B7%B1%E7%9A%84%E5%90%93%E4%BA%BA/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26619.jpg" alt="为什么有的人城府深的吓人？" />
+      
+
+      <p>其实有时候，老好人是最有「城府」的。</p>
+<p>一心为民办事的前村官，成了史上最狡猾的劫匪头子。</p>
+<p>4 年间，炸银行，抢了 500 万。</p>
+<p>公安系统侦察专业的儿子，居然成了劫匪二把手！</p>
+<p>刑侦专家说他，是万中无一的高智商罪犯。</p>
+<p>01 「 惊天抢劫案 」</p>
+<p>一大早，王女士和往常一样，去郑州市银基商贸城楼下的广发银行上班。</p>
+<p>作为银行柜员，每天两点一线的生活，王女士觉得无聊透顶。</p>
+<p>她怎么也想不到，今天，会成为她这辈子，最难忘的一天。</p>
+<p>今天是周六，来银行的办事人很少，一天下来，只接待了 5 个客户。</p>
+<p>整个银行都处在悠闲的氛围中。</p>
+<p>眼看还有 10 分钟就下班了，同事们都十分默契地低头清点钞票。</p>
+<p>突然间，大厅里走进来一个魁梧的蒙面男人，镇定地走向王女士的窗口。</p>
+<p>他从怀里掏出一个小方盒，贴在了钢化玻璃上。</p>
+<p>贴好后，迅速拔了下左右的拉火管。</p>
+<p>此时，王女士才意识到不对劲：「有人抢银行！」</p>
+<p>求生的本能让她立刻蹲到桌子下，双手抱头，并趁机按下了报警按钮。</p>
+<p>警报声响起，整个银行慌乱如麻，就在这个节骨眼，刚准备转身的蒙面人，却折了回来。</p>
+<p>原来炸弹没粘牢，正缓缓往下滑。</p>
+<p>蒙面人居然淡定地用手重新扶好炸弹，随后转身迈腿。</p>
+<p>1 步、2 步、3 步……砰的一声巨响。</p>
+<p>整个银行突然起了浓厚的白雾，就在蒙面人准备洗劫钞票时。</p>
+<p>意外发生了。</p>
+<p>钢化玻璃并没有想象中的碎裂，只有一个小小的洞，根本无法抢钱！</p>
+<p>此时，慌忙逃窜的柜员已经开始报警。</p>
+<p>眼看警铃声由远处响起，玻璃也没被炸碎，普通的劫匪早就应该预料到失败，准备逃跑了。</p>
+<p>可蒙面人却十分镇定，他丝毫不慌，只犹豫了一瞬，便掏出随身携带的铁锤。</p>
+<p>一下、一下地，猛砸起了玻璃。</p>
+<p>终于 3 秒后，玻璃应声碎裂，蒙面人迅速吹了个口哨，两名队友立即冲了进来。</p>
+<p>位置互换，蒙面人迅速撤离现场。</p>
+<p>队友则快速用编织袋将柜台一洗而空，蒙面人逃离门口时，和门外望风的队友点了点头。</p>
+<p>蒙面人掏枪，将赶来阻止的保安一枪打死。</p>
+<p>随后，一个炸弹被扔到了看热闹的人群当中，烟雾四起，在警方赶来前，4 人消失得无影无踪。</p>
+<p>从进入银行，到逃跑，整个过程仅花了 3 分钟！</p>
+<p>这起光天化日之下，持炸弹抢银行的案子，震惊了公安界。</p>
+<p>这就是发生于 2009 年，12 月 9 日的郑州「12.9」特大爆炸案。</p>
+<p>一时间警方乱作一团，公安局局长李民庆更是勃然大怒，并放下狠话：「此案不破，立刻辞职！」</p>
+<p>正在家里看电视的张书海，看着新闻中播放的抢劫画面，一边喝茶，一边笑出了声。</p>
+<p>没错，他就是那个蒙面人。</p>
+<p>「就凭你们这群蠢货，还想抓我？立军令状也没用」</p>
+<p>张书海打开沉甸甸的编织袋，数了数钱，不多不少，刚好 208 万元。</p>
+<p>张书海满意极了，这笔钱，够他一辈子衣食无忧了。</p>
+<p>208 万，在当时是难以想象的巨款。</p>
+<p>要知道，在 2000 年，城镇居民的人均收入，还不到一万元。</p>
+<p>200w，相当于普通人不吃不喝，攒 200 年！</p>
+<p>这起专业、迅速、配合默契的抢劫案，很快在国内引起了轩然大波。</p>
+<p>看到这里，你也许会想，一般抢银行的都是亡命之徒。</p>
+<p>张书海肯定是个没有正经工作，文化程度也不高的恶徒？</p>
+<p>这么想的话，那就太低估了人性的复杂程度了。</p>
+<p>犯下惊天大案的张书海，既不是无业游民，也不是文盲。</p>
+<p>在此之前，他是一位人人敬仰，为民办事的好村官。</p>
+<p>02 「 全村的希望 」</p>
+<p>张书海是个好人，邻里八乡的人都知道。</p>
+<p>他的经历，不能说一帆风顺，可绝对算得上是「教科书般的逆袭」！</p>
+<p>张书海生在一个贫穷的家庭，爸妈砸锅卖铁，供他上了小学。</p>
+<p>可家里的 4 亩田地需要人手，于是张书海一边上学，一边种地。</p>
+<p>很快，家里就供不起他读书了，为了吃饱饭，1970 年张书海初中毕业后，就去当了兵。</p>
+<p>他在辽宁省某部警卫连当兵的 6 年间，因为枪法了得，心理素质极强。</p>
+<p>不但受到军官表扬，还特批转业，当上了侯庄村的民兵营长。</p>
+<p>那时，他心里有着比军营更大的梦想。</p>
+<p>于是 1981 年，口碑极好的他，被乡亲们选举成为村官，开始了自己长达 12 年的「基层领导」生涯。</p>
+<p>在职期间，他实打实地为村民着想，办了不少好事。</p>
+<p>村里的学校，是他亲自带头建立的，不但挨家挨户走访劝说大人给孩子上学，还给困难家庭拨款补助。</p>
+<p>村里的大夫，也是他去区医院里「挖来」的。</p>
+<p>从小穷怕了的他，在被村民推举续任时，暗自立下誓言：</p>
+<p>「我张书海，知道穷的滋味多难受，我要消灭贫穷，让村里人越过越好。」</p>
+<p>说到做到。</p>
+<p>他开始频繁为村里拉投资，招标项目，修桥铺路，接通了外界和侯庄村的农贸往来。</p>
+<p>随着老百姓生活越来越好，张书海的生活也越发滋润。</p>
+<p>不但给家里人盖了几间房，生活条件也稳步上升。</p>
+<p>再说张书海这个人，衣食无忧还名望加身的他，不但没有官腔。</p>
+<p>反而，生活里也是个不折不扣的好男人！</p>
+<p>他感情十分专一，从不花天酒地，对妻子从一而终。</p>
+<p>他还是个难得的好父亲，教育孩子方面，通情达理，平等对话。</p>
+<p>更让人惊叹的是，张书海从不挥霍，穿了好多年的衣服，都舍不得扔，几乎不去饭店。</p>
+<p>一个村长，抽最便宜，2 块钱一包的烟，村民都对他敬佩有加。</p>
+<p>在我们的认知里，这样的人，几乎可以说是「成功人士」的某个模板了。</p>
+<p>谁又能想得到，这样的一个人，居然会跑去犯罪？</p>
+<p>并且，还成为了建国以来，最恶劣的悍匪之一。</p>
+<p>可对于张书海来说，做好人。</p>
+<p>只不过是，一张面具而已。</p>
+<p>03 「 阴暗显现 」</p>
+<p>很快，张书海就发现了，做好人的「代价」。</p>
+<p>干了 12 年廉洁村官的他，被现实狠狠地「教育」了一顿。</p>
+<p>母亲病重，高昂的医药费吞噬着他本就不多的存款。</p>
+<p>一开始，他还打算咬咬牙，攒点钱，维持住生活。</p>
+<p>可一到深夜，藏在心底对金钱的渴望，不断挑逗着他的神经。</p>
+<p>随即，一股无名之火涌上了他的心头：</p>
+<p>「当了村官又如何？这么多年，还不是没攒下钱！这么下去不是办法，我得找个挣快钱的法子。」</p>
+<p>天亮后，张书海下定决心，辞去村官的职位，跟着时代浪潮，下海经商。</p>
+<p>说干就干。</p>
+<p>就在辞官回家的路上，他遇到了成群结队前来劝说的村民。</p>
+<p>看着村民发自内心的不舍挽留，张书海内心十分平静：</p>
+<p>「当官这么多年，该做的都做了，接下来，我要干点大事！」</p>
+<p>想法很丰满，现实很骨感。</p>
+<p>没想到，第一次创业，张书海就赔了个底朝天。</p>
+<p>他开了一家照相馆，连房租都没挣回来。</p>
+<p>无奈之下，张书海只好回到了村里继续当起了村官。</p>
+<p>一般人遇到这种情况，都会发现自己不是做经商的料，也就老老实实继续为人民服务了。</p>
+<p>可张书海心中，始终有一颗经商的种子。</p>
+<p>正印证了那句歌词：得不到的在骚动。</p>
+<p>可去哪里，做什么，得仔细想想。</p>
+<p>很快，一个改变了张书海人生方向的机会，出现了。</p>
+<p>2 年后，他听说妹妹张玉萍，不但失恋了，还在郑州买了房。</p>
+<p>这是个去大城市经商的好机会，借宿在妹妹家，可以省不少钱。</p>
+<p>他不顾村民苦苦哀求，再次辞了官，投奔了妹妹。</p>
+<p>吃穿问题解决，张书海先后尝试了卖麻将、摆鞋摊、开花店，无一例外，都血本无归。</p>
+<p>就在这时，一个致命的变故，让张书海彻底走上了黑化之路。</p>
+<p>他被查出糖尿病与高血压，需要用钱来续命。</p>
+<p>更让人唏嘘的是，他回村竞选乡长时，因为不愿贿赂，被曾经感激他的村民，联合排挤出了村委会。</p>
+<p>张书海维持了三十年的好人面具，彻底崩塌。</p>
+<p>「我当了这么多年村官，好事做了不少，可到头来，却输给了没有钱上！</p>
+<p>连病都看不起，干脆，就去抢！」</p>
+<p>04 「 机关算尽 」</p>
+<p>打定主意的张书海，决定谋划帮手。</p>
+<p>张书海接下来的骚操作，全部踩着反常理的点子走，把人性的狡诈发挥得淋漓尽致。</p>
+<p>一般人，找帮手，要么找同行，要么找道上有经验的人。</p>
+<p>可张书海最擅长的就是，预判别人的预判。</p>
+<p>他早想到了：</p>
+<p>「外人也许更专业，但反水几率大，不好谈分成，还容易被抓。」</p>
+<p>他决定从家里人下手。</p>
+<p>妹妹张玉萍，没有主见，但为人小心谨慎，适合收尾工作。</p>
+<p>于是张书海趁机和妹妹摊牌，很快，两人达成一致。</p>
+<p>随后，张书海又回到老家，找到了在当地打零工的侄子张小马入伙。</p>
+<p>凑齐三人后，张书海决定搞个开门红鼓舞士气。</p>
+<p>「要是成了，就说明老天都同意我干这个。」</p>
+<p>1996 年 11 月 27 日晚饭后，三人蒙着面，带着张书海私藏的松鼠牌猎枪，来到郑州市万福花园小区李全国家门外。</p>
+<p>张书海踩点了半个月，最终，摸清了李全国的作息情况，知道对方只有一人在家。</p>
+<p>于是他让侄子敲门，谎称自己是楼上的租客，来查看水管漏水。</p>
+<p>当李全国开门时，张书海冲了进去，用枪稳住李全国，张小马随后五花大绑了李全国。</p>
+<p>二人搜刮了 15000 元现金和照相机等物品，快速撤离了现场。</p>
+<p>整个过程顺利到不可思议，看着到手的厚厚一沓钱，张书海彻底疯狂了。</p>
+<p>「妈的，我张书海，就是吃这口饭的！我们要搞个大的！」</p>
+<p>他开始仔细谋算更大的案子：抢银行！</p>
+<p>此时，过于胆小的妹妹，和心怀鬼胎的侄子，都不能成为他真正信赖的对象。</p>
+<p>「抢银行，这两个人能力不行，我得找个，能交命的专业队友！」</p>
+<p>张书海选定的目标，不是别人。</p>
+<p>正是自己的亲儿子，张宏超。</p>
+<p>05 「 千钧一发 」</p>
+<p>讽刺的是，他的儿子张宏超，此时正是公安侦察专业的大二学生！</p>
+<p>一个想成为劫匪的老子，一个毕业即将成为警察的儿子。</p>
+<p>张书海已经被犯罪带来的巨额收益蒙蔽，他脑海中只有一个想法：</p>
+<p>「打虎亲兄弟，上阵父子兵，只要我能劝动儿子，这抢银行的计划，指定能成！」</p>
+<p>于是，张书海打了个电话，让儿子回家，说有要事商量。</p>
+<p>11 月 30 日，父子二人吃晚饭，张书海一反常态，给儿子灌了不少酒。</p>
+<p>趁着儿子兴致高涨的时刻，把自己想要抢银行的想法，随口说了出来。</p>
+<p>他想：</p>
+<p>「我这辈子为你付出了这么多，于情于理，都该帮帮你老子我吧」</p>
+<p>没成想，儿子却哈哈大笑了起来。</p>
+<p>「爸，你可真幽默！别说抢银行了，我明儿给你把太阳摘下来都成！」</p>
+<p>本以为爸爸是开玩笑的儿子，逐渐发觉了气氛的不对劲。</p>
+<p>酒霎时间醒了一半，儿子紧张的转了转酒杯，试探性地问道：</p>
+<p>「爸，你……你没开玩笑？」</p>
+<p>看着爸爸缓缓点头的儿子，突然间站了起来，他大声劝说爸爸不要干傻事。</p>
+<p>没想到，向来对儿子慈爱有加的张书海，居然也跟儿子怒吼了起来：</p>
+<p>「我们农村出来的人,没有关系,没有地位,不干这个看，怎么翻身！」</p>
+<p>二人争执不下，儿子看父亲油盐不进，掏出手机，按下了 110……</p>
+<p>「爸！我以后是警察！别怪我举报你！」</p>
+<p>就在儿子，即将按下通话键的那一瞬间，眼疾手快的张书海把手机抢走挂断了。</p>
+<p>气氛像冰块一般凝固。</p>
+<p>心知儿子不是这么容易就范的张书海，决定换一种方式劝说。</p>
+<p>他看着儿子，红了眼眶，缓缓坐了下来。</p>
+<p>颤抖着手，从兜里掏出了一个红包，递给儿子，重重叹了口气。</p>
+<p>「爸爸知道你马上又要交学费了，这是爸爸省吃俭用，省下来的 2000 元钱，虽然不够，但你先拿着。爸爸得了糖尿病，没钱，就活不了多久了。」</p>
+<p>儿子听完，眼眶瞬时红了。</p>
+<p>他想起自己一路长大，爸爸无怨无悔的为他付出，筹学费，一条裤子穿十年都舍不得换。</p>
+<p>儿子抹了把眼泪，把酒一饮而尽，当即决定加入爸爸的团队。</p>
+<p>眼看儿子答应，张书海的心彻底放了下来。</p>
+<p>对他来说，儿子的侦察专业，刚好可以帮助他躲避追踪。</p>
+<p>可想抢银行，人手还是不够。</p>
+<p>被金钱蒙蔽的张书海，想到的办法居然是，让儿子去找帮手！</p>
+<p>听到爸爸苦苦的哀求。</p>
+<p>儿子再一次陷入了挣扎，他不想拉别人下水。</p>
+<p>作为公安学校的学生，他当然知道，他们要做的事情有多疯狂，一旦暴露，早晚要吃枪子。</p>
+<p>令人唏嘘的是，人的底线有时候，就是这么一再降低的。</p>
+<p>一旦开了邪恶的头，欲望就会开闸。</p>
+<p>第二天，儿子便答应了为爸爸谋求帮手的请求。</p>
+<p>他拿起手机，翻找同学录。</p>
+<p>很快，他锁定到了多年的玩伴身上。</p>
+<p>「 别怪我拉你下水，这是我们发达的唯一机会！」</p>
+<p>06 「 狗屎运 」</p>
+<p>儿子盯上的，是自己的高中同学，信息工程学院的张世镜。</p>
+<p>看完了整个案宗的我，只想感慨，有时候，让你堕入深渊的，只是一件微不足道的小事。</p>
+<p>可能是一杯酒，可能是一顿饭。</p>
+<p>他去了张世镜的学校，二人聊了半天，眼看就中午了。</p>
+<p>张世镜拿上仅剩十块钱的饭卡，准备请好朋友去食堂吃饭，他想：</p>
+<p>「就算我再穷，今天也得请一顿像样的菜，大不了，过几天，我饿着点」</p>
+<p>张宏超看出了好友的窘迫，自掏腰包，带着他去了饭馆。</p>
+<p>不但在张世镜的阻拦下，点了一桌子肉菜，还特意嘱咐后厨，多做一份打包给好友。</p>
+<p>吃着饭的张世镜，哭了。</p>
+<p>这顿饭，是他一个月的伙食费，而他的发小张宏超，从小，就经常帮吃不上饭的他买饭，绝口不提还钱的事。</p>
+<p>这个恩情，他一定要报答。</p>
+<p>就是这顿饭，让张世镜，自愿加入了张书海的「抢劫小分队」。</p>
+<p>同样，他们又拉了张世镜的同学，乔红军入伙。</p>
+<p>张书海不再满足抢个体户，他盯上了一个新的渠道：营业厅。</p>
+<p>97 年那会，有钱人都用大哥大，目标明显。</p>
+<p>而且当时交费，必须带着现金，亲自去营业厅，一缴至少几千元。</p>
+<p>张玉萍负责踩点，很快便确认了计划的可行性。</p>
+<p>目标有了，开始准备工具。</p>
+<p>5 个人，一柄枪，显然不够。</p>
+<p>张书海还要一把备用的连发猎枪。</p>
+<p>接下来发生的事，将人性的复杂，诠释得淋漓尽致。</p>
+<p>张书海找到妻子的侄子王志昆，用 5000 元钱，搞到了一把连发式霰弹枪。</p>
+<p>然而重点是，王志昆也不是一般人，他时任郑州市法院的副院长。</p>
+<p>正常来说，根本不可能放任张书海搞枪，还得把他逮起来才对！</p>
+<p>可人性，终究是有弱点的，这点，张书海比任何人都清楚。</p>
+<p>和张世镜一样，王志昆也欠了张家人情。</p>
+<p>张书海一直默默资助王志昆上学，这份恩情，也在王志昆心里生了根。</p>
+<p>他死也想不到，对自己有恩的张书海，会用谎言，让自己走上了一条不归路。</p>
+<p>「志昆啊，我老家不是农村的嘛，我想搞一把猎枪，来看家护院，绝对不伤人！。」</p>
+<p>侥幸心理，与报答恩情交织，王志昆很快便答应了下来。</p>
+<p>枪，也有了。</p>
+<p>1997 年 11 月 19 日下午 5 点，一行人蒙着面，来到郑州市淮河路的电信分局营业厅。</p>
+<p>张小马事先换上警服，端着一把仿真枪，在门口把守。</p>
+<p>张书海则用猎枪控制营业人员，儿子张宏超，和同学张世镜，则快速将钱装进袋子。</p>
+<p>随后几人迅速撤离现场，张小马最后一个走，他利落地掏出自制炸弹，引爆后四人登上张玉萍事先准备的出租车后逃跑。</p>
+<p>整个作案过程，只有 15 分钟。</p>
+<p>警方并没有追上，也因证据不足，迟迟没有发现他们。</p>
+<p>回到家后，张书海数了数钱，足足有 37 万 6683 块！</p>
+<p>这可是一笔巨款，足够 5 个人吃香喝辣过上奢侈的生活了。</p>
+<p>和绝大多数抢劫团伙不同，张书海的小分队，更高智商，也更专业。</p>
+<p>他们早就达成一致。</p>
+<p>遵循见好就收、绝不冲动、避避风头的原则。</p>
+<p>更令人不可思议的是，抢了巨款，5 人却依旧高标准要求自己，绝不胡乱消费，免得引起旁人注意。</p>
+<p>即便是这样，一旦欲望开了闸，贪婪便会顺着脊髓，一寸一寸爬上大脑。</p>
+<p>尝到了抢银行带来的酸爽滋味的张书海，在沉寂了一年多后，决定继续抢！</p>
+<p>这一次，为了分到更多的钱，他特意支开了侄子张小马。</p>
+<p>1999 年 3 月 3 日下午，4 人用同样的方式，来到郑州市交通路建设银行铁路支行储蓄所。</p>
+<p>张书海用铁锤砸碎柜台玻璃，抢走了桌子上的存款专用包，扔下炸药后离开。</p>
+<p>两次抢劫，都十分顺利，因为有专业的反侦查手段，他们没有留下证据。</p>
+<p>警察办案也毫无头绪。</p>
+<p>此时的张书海，对自己的犯罪天赋更加自信。</p>
+<p>可令张书海意外的是，这次大张旗鼓地抢劫，居然只有 5 万元。</p>
+<p>气不过的张书海决定，休整半年，仔细复盘抢劫计划。</p>
+<p>下一次，他必须要抢个大的！</p>
+<p>07 「 冥冥之中 」</p>
+<p>这一次，张书海比以往更加谨慎。</p>
+<p>他反复踩点了大半个月，跑遍了郑州大大小小的银行。</p>
+<p>最终，选择了内部视野狭窄，位置偏僻，人流量少，资金量大，逃跑路线复杂的银基广发银行。</p>
+<p>于是，就有了文章开头那起，惊心动魄的抢劫案。</p>
+<p>这一次，如张书海所计划的那般，他们十分顺利地抢到了 208 万巨款。</p>
+<p>成功后，一行 5 人都沉浸在狂喜中。</p>
+<p>只有张书海，冷静地悄悄执行起了自己的第二个计划：瞒天过海。</p>
+<p>在队友眼中，一条船上的张书海，肯定不会做对不起他们的事。</p>
+<p>可人心，始终隔着肚皮。</p>
+<p>肚皮之下，是算计。</p>
+<p>他们想不到，张书海不但想办法私吞钱财，更是用计谋，将危险一次次地推给了队友。</p>
+<p>每次抢劫，张书海都留了一手。</p>
+<p>他在部署计划时，表面上说外围危险，自己和儿子甘愿担更大风险把守。</p>
+<p>实则，他每分每秒都在计算成功的可行性，一旦失手，他便能够和儿子先行逃跑。</p>
+<p>而分钱的问题上，张书海也有着自己的小九九。</p>
+<p>他十分擅长洗脑，故意夸大自己的作用，每次分成，都让周围人心甘情愿地让他拿大头。</p>
+<p>即便如此，欲望依旧填不满他日益贪婪的内心。</p>
+<p>他想要，神不知鬼不觉地，私吞大部分钱财。</p>
+<p>抢劫成功后，按照计划，张玉萍会先将钱放在自己家中，一周后，几人再依次来取自己的份。</p>
+<p>而张书海，就抓住了这个空挡。</p>
+<p>他背着妹妹，偷偷拿出 70 万元，藏了起来，随后，又原样放好编织袋，压在床板下面。</p>
+<p>张书海还秉承着做戏做全套，他从窗台捏了些灰，洒在了编织袋上。</p>
+<p>就这样，张书海一人，前前后后，分了 100 万。</p>
+<p>看着新闻上每天都在紧锣密鼓地排查，张书海冷笑一声：</p>
+<p>「一群傻子，你们到死也抓不住我。」</p>
+<p>他让侄子和儿子的同学，回老家避风头。</p>
+<p>而狂妄自大的张书海，不顾儿子的劝说，坚持留在妹妹家中。</p>
+<p>张书海很自信，他会像往常一样，将愚蠢的公安，玩弄于股掌之间。</p>
+<p>可他忘了，再狡猾的狐狸，也会露出破绽。</p>
+<p>他认为，最危险的地方，就是最安全的地方。</p>
+<p>没想到，他千算万算，还是漏了几个至关重要的细节。</p>
+<p>就是这些细节，让他彻底落入了警方的法网。</p>
+<p>08 「 露馅 」</p>
+<p>常在河边走，哪有不湿鞋的？</p>
+<p>再高智商的团伙，也无法次次侥幸。</p>
+<p>正所谓：智者千虑，必有一失。</p>
+<p>随着一次次的成功，逐渐自大的张书海，终于，在最后一起抢劫案中。</p>
+<p>犯了连他自己都无法想象的致命错误。</p>
+<p>他考虑到了指纹的证据销毁，戴了手套。</p>
+<p>可他忘记了，包裹炸药的报纸上，留下了他的指纹。</p>
+<p>他考虑到了警方会调查炸药成分，所以自制炸药。</p>
+<p>可他忘记了，炸药所用的拉火管，是军用产品，暴露了他服过兵役的事实。</p>
+<p>他考虑到了将现场的作案工具等东西带走。</p>
+<p>可他却随意的，将包裹手枪的包装盒扔在了原地。</p>
+<p>就是那个包装盒，给了警方巨大的突破。</p>
+<p>那是一种，在郑州十分罕见的，圆形球锁包装盒。</p>
+<p>凭借 1400 人组成的拉网式排查，警方终于锁定了张书海的家。</p>
+<p>就在警方认为自己找到嫌疑人，破案在望时。</p>
+<p>张书海的狡猾，又一次刷新了警方的认知。</p>
+<p>一般逃犯，被警察敲门，早就心理崩溃了。</p>
+<p>可他张书海，却一如平常。</p>
+<p>他冷静地与警方对话，并且十分配合调查，做了笔录。</p>
+<p>就连办案经验丰富的老刑警，此时都开始动摇了。</p>
+<p>「真是他吗？可我办案这么多年，真没见过犯人这么坦然。」</p>
+<p>审讯以后，因为没有直接证据，警察便把他放走了。</p>
+<p>离开公安局后，张书海开始悄无声息地筹备逃亡计划。</p>
+<p>让人十分解恨的是，警方最终赶在张书海逃亡之前，找到了决定性的证据。</p>
+<p>报纸上的指纹，和张书海的指纹完全匹配。</p>
+<p>铁证如山，刚上火车的张书海，就在列车即将开车的节骨眼，被抓捕归案。</p>
+<p>震惊全国的特大连环抢劫案，终于落下了帷幕。</p>
+<p>2001 年 8 月 18 日，张书海、张宏超、张世镜、乔红军、张玉萍、张小马 6 名主犯，被判处死刑。</p>
+<p>张书海的妻子王雨，被判处有期徒刑 12 年。</p>
+<p>王志昆被判处有期徒刑 10 年、张云志被判处有期徒刑 5 年、张大国被判处有期徒刑 2 年、李进才被判处有期徒刑 1 年。</p>
+<p>2001 年 9 月 14 日，12·9 等一系列特大抢劫案的主犯张书海和张宏超，被押赴刑场，执行枪决。</p>
+<p>09 「 案件总结 」</p>
+<p>从一个拥有光明未来，受人爱戴的好村官。</p>
+<p>到遗臭万年，震惊全国的连环悍匪。</p>
+<p>张书海从一个正常人，堕落为眼里只有钱，无人情，无法律，为了钱无所不用其极的暴徒。</p>
+<p>所谓的疾病、存款，只不过是他用来放纵自己欲望的借口。</p>
+<p>为了利益，他出卖家庭，拉着儿子垫背。</p>
+<p>算计队友，步步为营。</p>
+<p>在他眼里，钱，凌驾于一切。</p>
+<p>最讽刺的是，他恰恰伪装成了世人眼中，「好人」模样。</p>
+<p>由善向恶，张书海，也不过是，打开了人人藏在心底里的，欲望的潘多拉魔盒。</p>
+<p>而张书海计划中，因恩情就违法的几人，更是让人惋惜。</p>
+<p>情，永远不能越过法律的边界。</p>
+<p>正如为张书海买枪的，昔日法院副院长王志昆，所悔过的那样：</p>
+<p>「在亲情与法律相抵触时，一定要把法律允许与否作为衡量的标准。」</p>
+<p>此案后来还作为故事原型，被拍成了电视连续剧《荣誉》，2003 年 11 月 16 日在央视一套播出。</p>
+<p>感兴趣的话可以看看。</p>
+<p>资料来源 ：</p>
+<p>《『１２·９』抢劫银行案内幕》，新华网</p>
+<p>《追捕「中原」悍匪张书海 20200313》，经典传奇</p>
+<p>《从疯狂到毁灭——郑州银行劫案主犯犯罪心理剖析》，新华网备案号:YX11Yyd5KMd</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/6/29-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E7%A7%91%E7%A0%94%E4%BA%BA%E5%91%98%E8%A6%81%E6%90%9E%E5%AD%A6%E6%9C%AF%E9%80%A0%E5%81%87/" title="为什么有的科研人员要搞学术造假？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">为什么有的科研人员要搞学术造假？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2022/9/4-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E4%BA%BA%E4%BB%8E%E4%B8%8D%E8%AF%BB%E4%B9%A6%E4%BD%86%E5%85%B6%E8%BF%9C%E8%A7%81%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F%E5%81%9A%E4%BA%8B%E6%96%B9%E6%B3%95%E5%8D%B4%E9%82%A3%E4%B9%88%E5%8D%93%E8%B6%8A/" title="为什么有的人从不读书但其远见、思维方式、做事方法却那么卓越？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">为什么有的人从不读书但其远见、思维方式、做事方法却那么卓越？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

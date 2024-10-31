@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番外：雁南归 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/10/6-%E7%95%AA%E5%A4%96%E9%9B%81%E5%8D%97%E5%BD%92/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/10/6-%E7%95%AA%E5%A4%96%E9%9B%81%E5%8D%97%E5%BD%92/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="番外：雁南归">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta name="twitter:title" content="番外：雁南归">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="番外：雁南归">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="5552">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">番外：雁南归</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>12分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%95%aa%e5%a4%96%ef%bc%9a%e9%9b%81%e5%8d%97%e5%bd%92&amp;url=https://mohai.us.kg/posts/2023/10/6-%E7%95%AA%E5%A4%96%E9%9B%81%E5%8D%97%E5%BD%92/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/10/6-%E7%95%AA%E5%A4%96%E9%9B%81%E5%8D%97%E5%BD%92/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%95%aa%e5%a4%96%ef%bc%9a%e9%9b%81%e5%8d%97%e5%bd%92%20https://mohai.us.kg/posts/2023/10/6-%E7%95%AA%E5%A4%96%E9%9B%81%E5%8D%97%E5%BD%92/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/153.jpg" alt="番外：雁南归" />
+      
+
+      <p>番外：雁南归</p>
+<p>东城暮雪</p>
+<p>中州送来崔氏女时，我未想过她会成为我一生的劫。</p>
+<p>苏略负伤消息传来时，阿姆正为我裁制新衣贺喜。</p>
+<p>我军铁骑攻破那号称「天险」的溧阳关，随南直下，追击中州将士到了渭水。</p>
+<p>这么多年了，我的念想终于要实现了。</p>
+<p>我还在想着中州帝王跪下求饶的场景时，手下来报，崔将率领的残部设下陷阱，苏略大意，铁骑全军覆没。</p>
+<p>我大怒，直接将那个报信的小将给踹飞出去，好啊，真是好，穷途末路了还不忘摆我一道。</p>
+<p>苏略回来后就跪在营帐外，我看着他，跪的真直。</p>
+<p>若不是在这月渠十几年，我都怀疑他是中州的细作了。</p>
+<p>不过也不是没有收获，他杀了那崔将与他三个儿子，中州的有用之才又少了几个。</p>
+<p>我看着远处土地已经开始皲裂的草原，若是再增派兵力，元气大伤的只会是月渠。</p>
+<p>可是我又不想中州帝王好过，看着苏略，想到了一个折辱他们的办法。</p>
+<p>我派人送去休战书信，条件是清河郡崔氏女许嫁。</p>
+<p>那崔将在中州极得民心，他刚死，他的女儿嫁给仇人，多让人开心啊。</p>
+<p>我给中州帝王一个月的时间，必须要见到崔氏女。</p>
+<p>中州的丞相云鹏来信告知我崔氏的情况，这一辈，只有两个女儿。</p>
+<p>我端着羊奶酒，笑了，无论是哪个，进了这月渠，都别想好过。</p>
+<p>我几万月渠勇士，被她爹给灭了，如何能甘心。</p>
+<p>一月之后，苏略在渭水接到了和亲的队伍，崔氏送来的，是他们的五姑娘，叫崔莺。</p>
+<p>莺？果然是养在闺阁里的弱女子，在月渠，只有雄鹰能活下去。</p>
+<p>队伍走了十日便到了，出发前我就吩咐领将，不用管她，一直赶路就是。</p>
+<p>我掀开那马车门，看见了坐在里面的崔莺。</p>
+<p>她穿着中州的嫁衣，热烈似草原落日里的红霞，美的炫目。</p>
+<p>她身旁的两个侍女，如临大敌地拦在她身前，生怕我做什么。</p>
+<p>她出声让两个侍女退下，然后掀起那微遮的盖头，露出一张秀美的面容。</p>
+<p>她起身下马车，站在我面前行礼，「崔莺见过大王子。」</p>
+<p>她那双眼睛，毫无畏惧地直直看着我，里面的倔强清晰明了。</p>
+<p>我笑了，原来还是个有傲骨的女子，可是这傲骨，着实让我看着不爽。</p>
+<p>在她侍女的惊呼声里，我抱起她，走向我的营帐。</p>
+<p>我的族人在欢呼，我以为她会惊慌失色，可是没有。</p>
+<p>那张面容太过平静，让我想摧毁她的念头越发强烈。</p>
+<p>毫无怜惜地将她扔在铺有黑熊毛的榻上，然后伸手去撕扯她的嫁衣。</p>
+<p>她也无表情，任由我动作。</p>
+<p>情到深处时，我看见她咬着唇，眼含泪水。</p>
+<p>不知怎的，我抚着她汗湿的黑发，在她耳边说：「记住，我叫卓纳林。」</p>
+<p>事后我满足地拥着她，感叹不愧是中州水土养育出来的女子。</p>
+<p>可一想到我月渠勇士的惨死之状，我又沉下心思起身离开。</p>
+<p>第二日巡查完将士演练后，阿姆告知我她还没醒。</p>
+<p>我琢磨可能是昨天折腾太过了，便抬步走向营帐想看看她如今情况。</p>
+<p>她还躺在榻上，露出的肌肤青紫斑驳，暧昧横生。</p>
+<p>我让人将她的两个侍女带来，她们一看见崔莺的样子，双双哭了。</p>
+<p>哭声让我烦躁，我出声让她们闭嘴，不想吵醒了她。</p>
+<p>她拥着毯子，让那两个侍女别哭，说自己没事。</p>
+<p>然后看向我，她用嘶哑的嗓音与我告罪：「大王子勿恼，令雪令雨第一次见我如此，吓着了。」</p>
+<p>我看着她，知道她这个样子谁看了都会觉得是我下手太重了，虽然昨天是折腾得很了。</p>
+<p>可我还是板着脸，就坐在椅子上看着她。</p>
+<p>那双倔强平静的眼睛此刻展露无遗，她也不害羞，让侍女取来衣物，在我面前就换上了。</p>
+<p>月渠的衣物穿在她身上，别有一番韵味。</p>
+<p>右手腕上露出一截红绳，挂着一个金色的东西。</p>
+<p>我问她那是什么，她垂眸摸着道：「及笄时亡母赠予的。」</p>
+<p>亡母，对了，在她许嫁的前一月，她的母亲过世了。</p>
+<p>我感觉心里很烦躁，便不想再理她了。</p>
+<p>我让阿姆为她安排一切，王子妃的面子还是要给的，毕竟还有中州的人看着。</p>
+<p>可是其他地方却是可以让我月渠族人发泄恨意的。</p>
+<p>半月后，月渠部落聚集，为我月渠勇士祷告祈福。</p>
+<p>她坐在我身边，面含微笑地看着前方正在举行的仪式。</p>
+<p>篝火燃起映照着她的影子，如青松般挺立。</p>
+<p>我的族人眼含愤恨地看着她，她们的父亲，丈夫与儿子，都死在了中州渭水。</p>
+<p>一个妇人大着胆子上前来，请求我同意让她跪到祭司的面前。</p>
+<p>我笑着不说话，偏头看着她，示意她自己决定。</p>
+<p>跪在祭司面前，为我月渠勇士忏悔，这是她的荣幸。</p>
+<p>那妇人见我不出声，拿不准我是什么意思，有些惶恐。</p>
+<p>不想她自己站了起来，端起面前的羊奶酒，走到祭司面前，将酒倒在了篝火上。</p>
+<p>接着对着篝火双手交叉于胸前的鞠了三下躬。</p>
+<p>周围不满的声音渐渐响起，都要她跪下。</p>
+<p>一个小男孩拿起一根木棍，对着她双膝打去。</p>
+<p>她看见了，但没有躲开，生生受了这一棍。</p>
+<p>不意外的她一只腿已经跪在地上，另一只无论那个男孩怎么用力，她都一只手撑在地上不愿跪下。</p>
+<p>还是阿姆提醒我她嘴角微微有血迹，我才让人阻止了那个孩子。</p>
+<p>她拒绝了别人的帮扶，坚持要自己起来。</p>
+<p>摇摇晃晃的试了好几次，终于还是倒在了地上。</p>
+<p>我问她：「崔莺，让你跪我月渠勇士可是觉得辱没了你？」</p>
+<p>她笑，直直地看着我，回答：「大王子，这是你月渠的勇士，但也是杀害我父兄将士的侵略者。」</p>
+<p>族人的议论在她说出这句话后再也压不住了，纷纷请求我处死她。</p>
+<p>我站起来，给了他们一个眼神，瞬间安静了。</p>
+<p>走到她面前，我掐着她的下颚，迫使她看着我，「你的傲骨，真碍眼。」</p>
+<p>说完后我松开她，点了几个将士，「中州的崔氏女，赏你们了。」</p>
+<p>他们开始还不敢信，等到其中一人大着胆子上前，见我毫无反应，其余几人才一拥而上。</p>
+<p>我转过身，不想眼前这幕脏了我的眼。</p>
+<p>可身后却传来那几人的惨叫，我回头看去，他们捂着受伤的地方躺在地上哀嚎。</p>
+<p>而崔莺，面无表情地看着他们，衣衫凌乱的她，拿着簪子正抵在一个人的脖颈要害处。</p>
+<p>见我转身，盯着我一字一字地说：「卓纳林，我是你的人，焉能受此屈辱。」</p>
+<p>原来那晚，她记得我说的话，我的名字。</p>
+<p>不知怎的，听见她说她是我的人，我尽会如此高兴。</p>
+<p>莺在这里活不了，可她是鹰，翱翔天际的鹰。</p>
+<p>我大笑着抱起她，让那几人滚下去。</p>
+<p>自那晚后，我越发的宠爱她，阿姆提醒我我也不上心。</p>
+<p>我带着她去见了我的父王，那个躺在床上的废物。</p>
+<p>她大惊，问我那个废物如何成了如今的模样。</p>
+<p>我看着她，阴恻恻的笑了。</p>
+<p>从我记事起，这个月渠的王上，自称是我父王的人，隔半月就会来到我的营帐。</p>
+<p>他用沾有荆条的绳索用力地抽打我，还不许我哭出声。</p>
+<p>阿姆为了护住我，被这废物给玷污了，那时我还小，总觉得是自己做错了才会如此。</p>
+<p>于是一开始我会哭着求饶，祈求面前这个男人可以心软放过我与阿姆。</p>
+<p>可是没用，我的求饶只会换来更无情的抽打。</p>
+<p>渐渐地随着我长大，我发现他对待其他的孩子温柔的不像话，只有我，全是厌恶。</p>
+<p>我问阿姆，我活着是为了什么。</p>
+<p>阿姆哭着抱着我，向我说出了真相。</p>
+<p>我不是他的孩子，我是中州皇室的后代，我的父母被中州的帝王杀害。</p>
+<p>阿姆好不容易才带我逃了出来，来到这月渠，成了月渠的大王子。</p>
+<p>我问阿姆，我该怎么做，阿姆说，月渠与中州，都该是我的。</p>
+<p>于是从那时起，我开始学会隐藏自己，直到后来与苏略联手，推翻了我的父王。</p>
+<p>我没让人杀了他，以前他如何待我的，如今我也是那样对他的。</p>
+<p>我将他的孩子带到他面前，一个一个的，亲手杀了他们。</p>
+<p>他被捂住嘴，目眦尽裂地吼叫着，看着他的样子，我心底无端地生出一股快感。</p>
+<p>杀戮，令我感到兴奋。</p>
+<p>崔莺平静地听我讲完，我以为她会害怕的，可是没有。</p>
+<p>那双眼里浮现出了心疼，我嗤之以鼻，我不需要这种情绪，我要的是惧怕。</p>
+<p>她伸手抱着我，说：「那时你很怕吧，被所谓的父亲这般对待，现在好了，都过去了。」</p>
+<p>我愣住了，想过她会说的话，都没有这些。</p>
+<p>那些年少时的伤疤，我在夜里静静地看着它们流血。</p>
+<p>可这个中州来的崔氏女，想为我上药膏。</p>
+<p>若是之前只是我对她感兴趣，那在她抱着我说了那句话后，我想我可以对她好点的，在这月渠，她能依靠的人只有我。</p>
+<p>云鹏又来信，说是一切妥当。</p>
+<p>中州的太子周瑾行与他背后的势力，是我拿下中州最大的障碍。</p>
+<p>于是我与云鹏设计，让中州现在的帝王周临不得不废了他。</p>
+<p>那些书信，不巧被崔莺看见了。</p>
+<p>但我也不怕，她人在这里，一个动作都会受到监视，掀不起什么风浪。</p>
+<p>这日，她穿着骑装，请求我带她去捕捉大雁。</p>
+<p>我审视她，想知道为何会想起去捕捉大雁。</p>
+<p>她笑着拉着我的手，说：「算算时间，我的阿姐要定亲了，我想捕捉两只大雁，贺她新婚。」</p>
+<p>我问是中州哪家门府，她摇头说不知道，家里嫡母不喜与她们说这些。</p>
+<p>我了然，陪她捉了几只大雁，她挑选了其中两只最为肥硕的，还说她的阿姐可以用来补身子。</p>
+<p>我哑然地笑了，这姑娘怕是不知道大雁乃是忠贞之鸟，吃不得的。</p>
+<p>可回头一想，觉得她那样子分外可爱，便让人多准备了几箱礼物，连同她选的两只大雁一起送去了中州。</p>
+<p>我知道中州的女子自小就会被教授刺绣厨艺，便想缠着她为我做一件衣衫。</p>
+<p>她笑着盯着我的眼睛，我搂着她的腰，手掌在那里作乱。</p>
+<p>最后她哭着求饶，说给我做，让我放过她。</p>
+<p>我得到了想要的答案，可美人在怀，焉能放过。</p>
+<p>不过几日，她就拿着自己做的衣衫来让我试试是否合适。</p>
+<p>穿上身，一切刚刚好，我没想到她的手艺这般的好，衣物上的花朵仿若真的。</p>
+<p>我问她这是什么花，她说一个是春日的桃花，一个是夏日的梨花。</p>
+<p>我皱眉，不知她为何要将两个季节的花绣在一起。</p>
+<p>她看见我皱眉，问我还有什么疑惑，我讲了出来，她笑了，说：「我不喜欢秋冬，太冷了，春夏气候合意，刚刚好。」</p>
+<p>我听着她的解释想想的确如此，来月渠这么久，秋冬她都是不爱出门的，也只有春夏能见到她与两个侍女在外面打闹。</p>
+<p>我对她的宠爱月渠上下无人不知，可是很奇怪，这么久了她依旧没有身孕。</p>
+<p>一开始我怜惜她才来月渠身子弱，怕她受不住。</p>
+<p>可是后来她适应了月渠的气候，还是没有动静。</p>
+<p>我有时会摸着她的小腹，问她这里何时才能有一个孩子。</p>
+<p>每当此时，她都很安静，就轻轻地抱着我，说：「求不得。」</p>
+<p>我不明白她的意思，以为她是在害怕，毕竟妇人生产就是过一趟鬼门关。</p>
+<p>直到我找来巫医，才知道她的身子早就坏了，不能有身孕。</p>
+<p>我问巫医为何会如此，巫医支吾着说她应是早年吃过极其寒凉的药物，才会坏了身子。</p>
+<p>我握紧手掌，明白巫医的意思，来月渠之前，她就做好了一切打算，真是好得很。</p>
+<p>我踹开营帐的门，她正坐在椅子上为我缝补衣物。</p>
+<p>见我到来，也不惊讶，似是知道我为何而来。</p>
+<p>我问她为什么，她说我们之间要是有孩子，无论男女，在月渠还是中州，都活不下去，既然如此，为何要让他们来到世上。</p>
+<p>我悲凉地笑了，原来从一开始到现在，我们俩的局面就没变过，永远对立。</p>
+<p>我松开她，自己走了出去，任由这冬日的风雪刮在脸上。</p>
+<p>平生第一次将一个人放在心尖，那人却是没有心的，原来动情，是这般的苦涩滋味。</p>
+<p>我心里那股暴虐气息无法平息，正好云鹏来信，我找到了发泄口。</p>
+<p>当年月渠铁骑全军覆没，如今几年过去，我又组建了一只。</p>
+<p>我将兵力慢慢地部署在溧阳关前，等着和云鹏来个里应外合。</p>
+<p>手下将士来报，说月渠最近混入了几个人，他们都围绕在崔莺身边。</p>
+<p>我想这该是中州帝王的宠妃派的人，来保障她的安全的，便没管。</p>
+<p>可我没想到，有一天她会将匕首亲自插入我的心口。</p>
+<p>与中州的战役就在眼前，可月渠的边防图却不见了。</p>
+<p>手下的将士吵吵囔囔，一口咬定这绝对是崔莺干的，可我不信，只觉得他们聒噪。</p>
+<p>就在这争议声间，她出现在营帐门口，清晰地说：「是我拿的，现在已经送去中州了。」</p>
+<p>我急忙上前，呵斥她住嘴，可她对着我笑了，那里面带着解脱。</p>
+<p>不待我多想，我心口处被插入一把匕首。</p>
+<p>苏略离我最近，反应过来直接拔剑刺入她身体。</p>
+<p>我想让他住手，可是鲜血还是染红了她的衣物。</p>
+<p>她还是在笑，从面容浅笑变成放声大笑。</p>
+<p>等到她躺在地上，眼睛直直地看着苏略，「苏将军，秦听澜你可还记得是谁？」</p>
+<p>我看见苏略的眼光变了，那里面尽是震惊。</p>
+<p>她不管苏略的目光，痴痴地说到：「原来你还记得啊，哈哈…你居然还记得……」</p>
+<p>「你是如何知道她的……」苏略有些犹疑问她。</p>
+<p>「如何知道…你真是可悲啊，可就算如此，我身上还是流着你的血脉，你说可笑不可笑？」</p>
+<p>「爹爹，我要让你看着，你今日为了你的君王杀了我，我要你生生世世都记得，你亲手杀了你的女儿…」</p>
+<p>话音刚落，她撑着身子站起来，握住苏略手中的剑，刺向自己。</p>
+<p>鲜血喷涌而出，溅在我与苏略的脸上，我才知道，一个人原来能流这么多血。</p>
+<p>苏略抱着她软下的身子，哭的不能自已。</p>
+<p>她垂下的手颤抖地向我伸来，她笑着看着我，留下了最后一句话：「求不得啊。」</p>
+<p>那只手落下，她也闭上了眼睛。</p>
+<p>我的爱人我的妻，在这年的冬天永远地离开了我。</p>
+<p>当我醒来，阿姆喜极而泣，直说上苍保佑。</p>
+<p>我问阿姆崔莺呢，阿姆眼神闪躲，我发狠要下床，她才哭着说苏略已经将她火化了。</p>
+<p>我唤来苏略，问他为何这样做，他嘶哑着嗓子哭泣，就是不解释。</p>
+<p>临走前，他将一个盒子留给了我，说是她生前遗愿。</p>
+<p>打开盒子，里面是一截红绳，是她来月渠那年手上戴着的。</p>
+<p>我握着那红绳，泪水再也止不住地流了下来。</p>
+<p>崔莺啊崔莺，你真是心狠，用这种方式将我与苏略之间的君臣情谊生生斩断，也让我们所有人，都记得你。</p>
+<p>我没再问苏略崔莺被他葬在何处，这样夜里无人时我还能自我欺骗说她还活着。</p>
+<p>溧阳关来了一位夫人，说自己是崔莺的母亲，让我将崔莺的遗体交还给她。</p>
+<p>我笑了，永远不可能。</p>
+<p>月渠还来个年轻人，说是来寻找他的妻子带她回家的。</p>
+<p>有人问他的妻子有什么特征，或许可以帮他。</p>
+<p>那个年轻人说他的妻子最爱桃花与梨花，如今应该在有这两种花的地方开心地活着。</p>
+<p>旁人叹口气，说他来错了地方，月渠没有桃花，也没有梨花。</p>
+<p>那个年轻人摇摇头，说他的妻子就在月渠。</p>
+<p>我听着手下收集来的消息，心里苦涩难当。</p>
+<p>原来她在中州早就有了自己的爱人，那件衣衫上的桃花与梨花，是她在思念他。</p>
+<p>原来到头来，自己才是一个笑话。</p>
+<p>我在暗中见到了那个年轻人，温润如玉，清雅似水。</p>
+<p>他的手腕处系着一截红绳，与崔莺留给我的一模一样。</p>
+<p>我吩咐人不用管那个年轻人，在月渠境内，保障他的安全即可。</p>
+<p>中州的废太子周瑾行几年养精蓄锐，打着清君侧的名义起兵。</p>
+<p>我与云鹏联合对抗了两年，终究还是不敌。</p>
+<p>我知道是苏略带着边防图投靠了他们的将领傅知舟，不然月渠不会败得这么快。</p>
+<p>我穿着崔莺为我做的那件衣衫，从容的点燃了营帐，火焰瞬时吞灭了所有。</p>
+<p>恍惚间，我看见崔莺站在那里，穿着大红的嫁衣微笑，一如当年。</p>
+<p>备案号:YX01e1dRg82B0bL4W</p>
+<p>发布于 2021-12-27 17:34 · 禁止转载</p>
+<p>番外：秋意浓</p>
+<p>​</p>
+<p>​</p>
+<p>东城暮雪</p>
+<p>四时驿馆</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/10/6-%E7%95%AA%E5%A4%96%E7%A7%8B%E6%84%8F%E6%B5%93/" title="番外：秋意浓">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">番外：秋意浓</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/3/30-%E7%95%AA%E5%A4%96%E6%BA%AF%E6%A2%A6-%E7%9F%A5%E4%B9%8E/" title="番外·溯梦 - 知乎">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">番外·溯梦 - 知乎</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

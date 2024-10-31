@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媚鱼 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/11/1-%E5%AA%9A%E9%B1%BC/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/11/1-%E5%AA%9A%E9%B1%BC/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="媚鱼">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/16242.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/16242.jpg">
+  <meta name="twitter:title" content="媚鱼">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="媚鱼">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12127">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/16242.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">媚鱼</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%aa%9a%e9%b1%bc&amp;url=https://mohai.us.kg/posts/2022/11/1-%E5%AA%9A%E9%B1%BC/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/11/1-%E5%AA%9A%E9%B1%BC/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%aa%9a%e9%b1%bc%20https://mohai.us.kg/posts/2022/11/1-%E5%AA%9A%E9%B1%BC/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/16242.jpg" alt="媚鱼" />
+      
+
+      <p>我死之前，皇上的白月光回来了。</p>
+<p>他纵容她扯坏我的衣裳，毒杀我的小猫。</p>
+<p>我心疼得睡不着觉，整晚流泪。</p>
+<p>我曾是皇上最爱的贵妃。</p>
+<p>他许我凤冠霞帔、母仪天下。</p>
+<p>后来他挑起别人的盖头，要我跪在殿外，听他们一夜欢好。</p>
+<p>他问我：「你不嫉妒么？」</p>
+<p>我没告诉他，我已经病入膏肓，快死了。</p>
+<p>我做贵妃的第三年，李宗恪的白月光回到宫中。</p>
+<p>她叫宋明嫣，人如其名，明媚嫣然、不知拘束。</p>
+<p>自她进宫后，李宗恪就不大来找我了。</p>
+<p>所有人都在传，说我快要失宠了。</p>
+<p>连枝替我处理掉几个嘴碎的宫女，隔天，宋明嫣就来找我兴师问罪。</p>
+<p>那几个到处说我坏话的丫头，原来是在她身边伺候的。</p>
+<p>宋明嫣长着跟我八分像的脸，她一见我就笑了。</p>
+<p>「你就是李宗恪捧在心尖上的贵妃？我早就想见见你，他还藏着掖着不给我看。」</p>
+<p>她像是在说阿猫阿狗，嘴角带着止不住的得意。</p>
+<p>「原本我很难过，没想到，原来贵妃娘娘是我的替身啊，那我就放心了。」</p>
+<p>我突然想起第一次侍寝的那天晚上。</p>
+<p>李宗恪吻着我的唇，温柔得像一潭春水。</p>
+<p>他贴着我的耳朵喃喃细语，说：「嫣……」</p>
+<p>我以为他是犯了烟瘾，红着脸从床上爬起来，为他取来烟杆，点燃，送到他嘴边。</p>
+<p>他无语地笑笑，轻轻一扯，将我带倒在他身下。</p>
+<p>「小呆子，你怎么这么可爱？」</p>
+<p>烛火摇曳，他的目光游离在我的脸上，好像是在看我，又好像没在看我。</p>
+<p>嫣……宋明嫣。</p>
+<p>原来是这个意思。</p>
+<p>「你瞪人的时候，不好看，别这样，李宗恪不会喜欢的。」</p>
+<p>宋明嫣高高在上地指点我，仿佛我能有今时今日的地位，全是沾了她的光。</p>
+<p>我很讨厌她。</p>
+<p>而她大概还不知道，凡是我讨厌的人，日子都不会好过。</p>
+<p>我放下手中的茶杯，翻了个白眼。</p>
+<p>连枝心领神会，一脚踢在宋明嫣的腿窝，押着她跪在我面前。</p>
+<p>李宗恪把宋明嫣宠上天，她大约以为没人敢动她。</p>
+<p>「你弄疼我了，如果李宗恪知道……」</p>
+<p>她话没说完，连枝就一巴掌扇了上去。</p>
+<p>「娘娘没让你说话，你算个什么身份，也敢多嘴。」</p>
+<p>我歪在椅子上，看着宋明嫣肿起的半张脸，胸中的郁气稍作缓和。</p>
+<p>我从小就是嚣张跋扈的性子，就连公主见了我，也要退让三分。</p>
+<p>我爹爹是镇国侯，哥哥是骠骑将军。</p>
+<p>大齐的江山，有一半是靠着我家祖宗打下来的。</p>
+<p>我是家里最没出息的孩子，因为我只是个贵妃，没当上皇后。</p>
+<p>李宗恪来时，我正在绣荷包，手指头上扎得全是针眼。</p>
+<p>我跟他撒娇抱怨，献宝似的把荷包捧给他。</p>
+<p>李宗恪看都没看，顺手就把它丢在一旁。</p>
+<p>他居高临下地看着我，几个太监把连枝押倒在他脚边。</p>
+<p>他踩着她的手，用力一碾，疼得连枝倒吸凉气。</p>
+<p>「一个贱婢，也敢碰明嫣。」</p>
+<p>李宗恪不是想我了来看我的，他是来为宋明嫣出气的。</p>
+<p>他罚的是连枝，打的却是我的脸。</p>
+<p>我的心凉了半截，冷下脸道：「把你的脚，从连枝的手上挪开。」</p>
+<p>李宗恪摸摸我皱起的眉头，明明是柔情似水的动作，可他的神情全是淡漠疏离。</p>
+<p>「贵妃，明嫣没有家世也没有地位，可她有朕为她撑腰，你不能欺负她。」</p>
+<p>「朕年少时与她错过，如今失而复得，绝不会再让她受委屈。」</p>
+<p>「朕要把所有的好，都给明嫣。」</p>
+<p>「你若不服气，想挑战朕的底线，那就尽管试试。」</p>
+<p>他根本不管，是不是宋明嫣先来惹我。</p>
+<p>他只是见不得她掉一滴眼泪。</p>
+<p>李宗恪离开前，看了眼丢在桌上的荷包，又看了看我满是伤痕的指头。</p>
+<p>他笑话我：「笨手笨脚的，别绣了。」</p>
+<p>从前是他说，别的男人穿的戴的都是自家媳妇亲手做的，他也要。</p>
+<p>我从小在马背上长大，弯弓射大雕还有两下子，做绣活就真是要了我的命。</p>
+<p>可李宗恪哼唧了好久，硬是磨到我咬牙答应。</p>
+<p>如今荷包才绣了半截，他却说他不要了。</p>
+<p>我看见他的腰间挂着一只新荷包，跟宋明嫣的一模一样。</p>
+<p>我明白，他还是想要自己的女人，亲手为他绣穿戴。</p>
+<p>他只是不想要我了。</p>
+<p>好像有什么东西从我的心里抽离，随着李宗恪的背影越走越远。</p>
+<p>他的衣角卷着风，消失在门前。</p>
+<p>我揉揉眼睛，把眼泪化在手背上。</p>
+<p>捡起桌上的荷包，泄愤似的把针头扎进鸳鸯的屁股上。</p>
+<p>连枝劝我：「罢了，娘娘，别做了，熬夜伤身，到时候又该头疼了。」</p>
+<p>我忍下哽咽，面无表情地吩咐她：「去给手上药，多余的话少说。」</p>
+<p>我周媚鱼从来不是半途而废的人。</p>
+<p>我绣的荷包，李宗恪不要，有的是人要。</p>
+<p>李宗恪说到做到，他把所有的好，都给了宋明嫣。</p>
+<p>世间仅有一匹的流光纱，他答应过要找来给我，最后却穿在宋明嫣的身上。</p>
+<p>南海的七彩宝珠，他说要攒够百颗给我做头面，最后也都簪在宋明嫣的发间。</p>
+<p>我有的，宋明嫣都有。</p>
+<p>我没有的，宋明嫣也不缺。</p>
+<p>父亲和哥哥知道我委屈，就从塞外找了好多宝贝给我送来。</p>
+<p>我拿起一块虎皮裹在身上，左手提着千机弩，右手拎着金箭筒。</p>
+<p>连枝说瞧着我像活在深山老林里，有钱的野人。</p>
+<p>我们两个笑作一团。</p>
+<p>我笑得前俯后仰，笑得眼泪都流出来了。</p>
+<p>「怪不得母亲总说父亲是个糙人，他笨死了，哥哥也笨，送的东西乱七八糟的。」</p>
+<p>我倒在榻上，把头埋进被子里，喝下去的水全从眼睛里冒出来，打湿了棉花。</p>
+<p>连枝没了笑声，半晌问我：「娘娘若是想家了，不如请夫人进宫坐坐？」</p>
+<p>见我不吭声，她又故作惊喜地开口：「哇，这里居然藏着一条狐尾，好软好厚实啊娘娘，做成狐裘肯定好看！」</p>
+<p>我掐着手心，把难过全都咽回肚子里。</p>
+<p>扭头对她笑：「你去跟他们说，给我的披风绣羊羔，还要绣小牛，再绣上成片的草原……」</p>
+<p>我好想念塞外的风光。</p>
+<p>我不想待在这里了。</p>
+<p>秋天来临前，我的狐尾披风也做好了。</p>
+<p>连枝捧着它，一路上叽叽喳喳，又说羊羔可爱，又说青草连波。</p>
+<p>最后总得夸夸我：「娘娘的品位就是好。」</p>
+<p>走上玉拱桥，很不巧地，我跟李宗恪撞了个正着。</p>
+<p>看见我，他微微一愣。</p>
+<p>「怎么瘦了？」</p>
+<p>他往前两步，伸手摸向我的袖腕，我侧身躲开，潦草地行了礼。</p>
+<p>李宗恪憋着口气，把我从地上捞起来，他攥着我的手怎么都不肯撒开。</p>
+<p>我性子别扭，生起气来不哄上半个时辰总是好不了。</p>
+<p>从前我不高兴，李宗恪就霸道地抱着我，亲一亲、闹一闹，我骂他打他，他也往我跟前凑。</p>
+<p>原来我很吃他这套，如今却觉得很幼稚，有点烦了。</p>
+<p>李宗恪大约是瞧出我不耐烦了，他轻轻松手，看着空荡荡的手心，表情有些受伤。</p>
+<p>宋明嫣提着风筝追上来，她直呼他的大名，急切地抱怨着：</p>
+<p>「李宗恪！让你找我，怎么跑到这儿来了。」</p>
+<p>或许他是瞧见我了，才没去找宋明嫣呢。</p>
+<p>不过这是不可能的，我自嘲地笑笑。</p>
+<p>这一笑，倒惹得宋明嫣不高兴了。</p>
+<p>她大约以为我是在挑衅，眼珠子滴溜溜一转，目光就落在连枝手里的狐尾披风上。</p>
+<p>「好漂亮的毛色啊！」</p>
+<p>她一把扯过狐尾，凑到李宗恪怀里，兴冲冲道：「我想要！」</p>
+<p>李宗恪捏捏她的脸，笑说：「好，都好。」</p>
+<p>她已经抢走我太多的东西。</p>
+<p>不过那些都是李宗恪的，他爱给谁就给谁，我不在乎。</p>
+<p>可是，狐尾是我父亲猎给我的，谁都别想从我手里拿走！</p>
+<p>我顾不得礼仪，扑上去抢我的披风，宋明嫣死死抓着不松手。</p>
+<p>一来一回，撕扯之间，她的拳头砸在我的额头上。</p>
+<p>我的耳朵忽然嗡嗡作响，头晕目眩。</p>
+<p>我咬牙一推，宋明嫣就惊呼着掉进水里。</p>
+<p>宋明嫣没有大碍，只是天凉，染上风寒。</p>
+<p>李宗恪要我把披风送给她赔罪。</p>
+<p>「明嫣说她不怪你。」</p>
+<p>「她要的不多，她只是喜欢这条狐尾。」</p>
+<p>「周媚鱼，你不该欺负明嫣，毕竟若没有她，也不会有你。」</p>
+<p>他说没有宋明嫣，就不会有我……</p>
+<p>我像是被人当头棒喝，一股前所未有的屈辱涌上心头。</p>
+<p>「宋明嫣喜欢的东西，我就非要让给她么？」</p>
+<p>「在你眼里，我是她的替身，她不在，你才舍得对我好，她回来了，你就要把所有的好都给她。」</p>
+<p>「可你别忘了，狐尾是我的，是我父亲给我的！不是你的东西，你凭什么对我指手画脚！」</p>
+<p>我丢掉所有的仪态，哭着踢打李宗恪，将他往屋外推。</p>
+<p>「你走！你走！你再也不要来了，我再也不想见到你了！」</p>
+<p>李宗恪强硬地搂住我，将我圈禁在他的怀里。</p>
+<p>他恼着脸问我：「你的手不疼吗？胡闹什么！不过是一条狐尾……」</p>
+<p>那不是一条狐尾！</p>
+<p>李宗恪！它不只是一条狐尾！</p>
+<p>它是我仅剩的爱和尊严，它是你再也不会给我的爱和尊严。</p>
+<p>可现在，连它也被宋明嫣扯坏了。</p>
+<p>周围的一切忽然很不真切，虚虚实实，我分不清了。</p>
+<p>李宗恪抱紧我瘫软的身体，我听见他惊慌失措地呼唤着：「周媚鱼！媚鱼，你醒一醒……」</p>
+<p>就好像，他还爱我一样。</p>
+<p>我醒来时，李宗恪已经离开了。</p>
+<p>他没有拿走我的披风，大概是因为，它已经坏掉了，不够漂亮，宋明嫣瞧不上了吧。</p>
+<p>孙太医跪在我眼前，面色沉重，好半晌还是低着声音开口：</p>
+<p>「娘娘的病，比去年更厉害了些，老臣恐怕，无能为力了……」</p>
+<p>我掐着手心，只觉得脑袋乱哄哄的，好一阵子才缓过来。</p>
+<p>我请孙太医起身，装作很镇定的样子，问他：「还有多久，我还能活多久？」</p>
+<p>他垂首，眼底都是惋惜。</p>
+<p>「多则一年半载，少则……三四个月。」</p>
+<p>哦，原来我快死了啊。</p>
+<p>人总有一死，我知道的。</p>
+<p>可我还这么年轻，我还有好多的事没做。</p>
+<p>我的草原，我的牛羊，我还没能找到机会回去看看它们呢……</p>
+<p>父亲常说，生死看淡。</p>
+<p>我终究是个胆小鬼，有愧于他的教导。</p>
+<p>听见自己死期将至，只会害怕到颤抖。</p>
+<p>我藏进被窝里，小心翼翼地掩饰着自己的懦弱，我不愿让自己变成一个可怜人。</p>
+<p>「孙伯伯，媚鱼求你一件事。」</p>
+<p>「别跟别人说，我快死了，好不好？」</p>
+<p>「您知道的，好多人等着看我的笑话……」</p>
+<p>我的声音哽了一下，不再说话了。</p>
+<p>我强打起精神，想装作一切如常的样子。</p>
+<p>可是头疼、胸痛、反胃，身体上的难受越来越频繁。</p>
+<p>连枝见我日渐萎靡，人前变花样地哄着我，只在背地里偷偷抹眼泪。</p>
+<p>有一日，她蹲在墙根叫唤：「娘娘，娘娘！活不成了活不成了……」</p>
+<p>得，我还没死呢，她先疯了。</p>
+<p>过了会儿，她钻进殿里，鬼鬼祟祟地盯着我，然后从怀里掏出一只小病猫。</p>
+<p>「娘娘，救救它吧，不然活不成了……」</p>
+<p>连枝泪眼婆娑地看着我，原来是说它呢。</p>
+<p>我又气又笑，也不知道她是真机灵假机灵，跟我说这个，也不怕扎我心窝子。</p>
+<p>小病猫奄奄一息，我想着留着也活不久，便随连枝的意思，让她自己去照顾，别来烦我就成。</p>
+<p>谁知第二日我中午眯了一小觉，起来就看见它将头埋进我的羊奶碗里，喝得肚子都快炸了。</p>
+<p>我怕它撑死，手忙脚乱地将它捧在手心里不敢动。</p>
+<p>连枝听着声儿进来，惊呼道：「娘娘啊！它吃完就拉……」</p>
+<p>她话没说完，小病猫的屁股就开始噗噗，下面还没拉完，上面又开始吐奶。</p>
+<p>我哭了，我真哭了。</p>
+<p>这双手不能要了。</p>
+<p>原来我以为它快死了，没想到，竟也一日比一日闹腾，顽强地活了下去。</p>
+<p>它专爱喝我碗里的奶，托它的福，我的胃口也跟着好起来了。</p>
+<p>每日有奶我得赶紧喝，不喝就没得喝了。</p>
+<p>连枝见我精神好转，高高兴兴地缠了几个毛线球，让小病猫陪我玩。</p>
+<p>我和它都不喜欢。</p>
+<p>我俩喜欢爬树，日日结伴往院里的树上蹿，吓跑了好几窝麻雀。</p>
+<p>有一日，我刚爬上去两三米，就听见一群人高呼：「陛下万安。」</p>
+<p>李宗恪站在树下，仰头望着我的屁股，神情是百思不得其解的迷惘。</p>
+<p>我觉得好好笑，突然，胸口隐隐作痛，有些抓不稳树干。</p>
+<p>李宗恪忙伸出手，看样子是打算接住我。</p>
+<p>他对我点头道：「媚鱼，不必怕，跳吧。」</p>
+<p>恍惚间，我跟他，似乎回到了没有宋明嫣的日子。</p>
+<p>从前，他待我是很好的。</p>
+<p>我有瞬间的心软，闭上眼睛，跟自己打赌。</p>
+<p>如果李宗恪能接住我，我就跟他好好道个别，这辈子好聚好散。</p>
+<p>我听见宋明嫣在门外哭，她说：「哪里来的猫，好痛。」</p>
+<p>李宗恪，你会选谁呢？</p>
+<p>我松开手，落在了松软的泥土上。</p>
+<p>有点疼，疼出我一颗金贵的眼泪珠子。</p>
+<p>隆冬时节，西平藩王入京朝贡。</p>
+<p>宋明嫣随李宗恪出席宫宴，与我狭路相逢。</p>
+<p>她披着崭新的披风，围领处的狐尾，比我的更大更蓬松。</p>
+<p>她挑衅地笑笑，转眼盯着我无名指上的戒子，脸色立刻沉下来。</p>
+<p>「李宗恪，她的戒子和你的是一对，是不是？你怎么可以，跟别的女人戴对戒。」</p>
+<p>她声音微颤，像是受尽委屈。</p>
+<p>「我不管，狐尾她不给就算了，但是今天就算把她的指头折断，那枚戒子她也得给我！」</p>
+<p>这枚戒子是我和李宗恪的定情物。</p>
+<p>我亲手做好两枚，一枚我戴着，另一枚我趁李宗恪睡觉的时候，偷偷套在他手上。</p>
+<p>那时候他一下子就抓住我了，笑着闹我：「就知道你偷偷摸摸，准不干好事。」</p>
+<p>我不服气地冲他龇牙。</p>
+<p>「怎么不是好事，我们边塞的习俗，戴戒子是要生同榻、死同穴的，你不愿意就算了。」</p>
+<p>他抬手盯着戒子看了好久，然后翻身背对着我，嘟嘟囔囔：</p>
+<p>「娘里娘气的，也不知道做个阳刚的款式，让朕如何面对文武百官……」</p>
+<p>他抱怨着，但戒子倒是一直戴着没摘。</p>
+<p>我笑笑，余光瞥见李宗恪的手指上，如今已是空的了。</p>
+<p>也罢。</p>
+<p>我摘下戒子，向后一抛，懒懒地看着宋明嫣。</p>
+<p>「想要的话，自己去捡。」</p>
+<p>「乞丐一样，整日眼馋别人的东西，也不嫌吃相难看。」</p>
+<p>我提脚要走，李宗恪猛地拽住我。</p>
+<p>「谁准你扔掉的！」</p>
+<p>「给朕捡回来。」</p>
+<p>他的视线落在我的手指上，那里有一圈戒子留下的勒痕。</p>
+<p>虽然我是个替身，但我也是我啊。</p>
+<p>我陪李宗恪三年有余，谁也不敢说，我在他心里没有留下半点痕迹。</p>
+<p>宋明嫣慌了，忙握住他的手，委屈道：「算了，也不是什么值钱的东西，你别为我生气，小心伤身。」</p>
+<p>李宗恪微微一愣，他回头瞧瞧我，冷笑着拂袖而去。</p>
+<p>和西平王一起来的，还有位名叫玉章的术士。</p>
+<p>听说他擅长占星推理，是个能通过去、晓未来的能人。</p>
+<p>他一身白袍出尘绝世，坐在人群里，别提有多扎眼，连一向眼高于顶的宋明嫣，也忍不住向他侧目。</p>
+<p>他却谁也懒得瞧。</p>
+<p>只是托着腮，玩着酒杯，直勾勾地望着我。</p>
+<p>直勾勾地、一眼不眨地望着我。</p>
+<p>我如梦初醒，赶忙收回视线，都不知道自己盯着他看了有多久。</p>
+<p>突然有人拉我一把，回过神的时候，我已经被李宗恪拽进怀里。</p>
+<p>这般举止轻浮，他就像个昏君，而我是罪该万死的妖妃。</p>
+<p>「很好看么，那么出神。」</p>
+<p>他掐着我的腰身，皱了皱眉头。</p>
+<p>「媚鱼，你最近变得太轻了，没好好吃饭？」</p>
+<p>他的下巴搁在我的肩头，跟我贴耳说着亲密的话，眼睛却盯着玉章的方向。</p>
+<p>李宗恪就像一头宣示主权的饿狼，虎视眈眈地观察着所有可能的入侵者。</p>
+<p>我反问：「陛下是嫉妒了？」</p>
+<p>他表情变了变，「怎么可能。」</p>
+<p>我推开他的脑袋，款款起身，俯在他耳边冷下声音道：「那就别这样了，怪恶心的。」</p>
+<p>李宗恪的表情难看极了。</p>
+<p>他不高兴，我就特别高兴。</p>
+<p>李宗恪是一个特别记仇的人。</p>
+<p>我不让他高兴，他自然也不会让我高兴。</p>
+<p>我亲手种下的兰花田被他夷为平地，换成了宋明嫣喜欢的牡丹。</p>
+<p>他为我修建在高处的望远亭也被圈起来，只许宋明嫣进出游玩。</p>
+<p>我喜欢的去处，都没有了。</p>
+<p>这座皇宫，变成了囚禁我的牢笼。</p>
+<p>但是没关系，我快死了，死了就解脱了。</p>
+<p>这一日，赵总管带着人来我宫里，说要拆掉李宗恪亲手为我做的秋千架。</p>
+<p>我想了想，往上面泼了桶油，点了把火。</p>
+<p>「别麻烦了，直接烧了吧，烧了干净。」</p>
+<p>我坐在门槛上，看着一群人手忙脚乱地往火里送水。</p>
+<p>等火灭了，秋千架也只剩下被烧得通红的、光秃秃的铁杆了。</p>
+<p>赵公公唉声叹气，大概是不知道该怎么回话。</p>
+<p>临走时，他虾着腰，与我叹道：「娘娘，您别怪老奴多嘴。」</p>
+<p>「皇上折腾一大圈，无非是心里有娘娘，才跟您闹气儿呢。」</p>
+<p>「娘娘，您就服个软吧，只要您一句话，日子过得肯定比从前风光。」</p>
+<p>我勾勾唇角，李宗恪心里有我？</p>
+<p>那就好，这样到最后，他才会觉得疼呢。</p>
+<p>我起身拍拍尘土，只道：「他的东西，他说了算，我不在乎，随他要什么，全部拿去。」</p>
+<p>明黄色的衣角转过影壁，李宗恪冷笑。</p>
+<p>「贵妃好骨气，真叫朕刮目相看。」</p>
+<p>「既然你什么都不在乎……」</p>
+<p>他侧着脑袋，对宋明嫣道：「明嫣，今日你要什么，朕都赏你。」</p>
+<p>我的心里头咯噔一下。</p>
+<p>宋明嫣的脸色并不好看，她不喜欢被人当作置气的工具。</p>
+<p>可她看着我，还是娇娇地应了声好。</p>
+<p>她的指尖转了一圈，最后指向连枝怀里的小病猫。</p>
+<p>我几乎是尖叫出声：「不行！它是我的！」</p>
+<p>李宗恪讽刺地看着我，风轻云淡道：「贵妃忘了？宫里的一切，都是朕的。」</p>
+<p>「只有朕赏你的，才是你的。」</p>
+<p>他肯定知道，我有多喜欢这只小猫。</p>
+<p>宋明嫣也知道，所以她要抢走它。</p>
+<p>她要抢走所有能让我开心的东西。</p>
+<p>因为我只是她的替身，一个替身，怎么敢嚣张，怎么敢笑。</p>
+<p>她要报复我，她要让我再也笑不出来。</p>
+<p>小病猫被人扔进笼子里，它特别害怕地喵喵叫着。</p>
+<p>它的指甲抓在铁板上，刺啦刺啦的，听得我的心都要碎了。</p>
+<p>宋明嫣不会对它好的，我知道。</p>
+<p>我掉了眼泪，我跟李宗恪服软：「是我错了，我认输了，好不好，别带走它。」</p>
+<p>我每日瞧着它，才能生出一点活下去的希望。</p>
+<p>「没有它，我会死的……」</p>
+<p>我跌坐在地上，哭得像个孩子。</p>
+<p>李宗恪没料到我会这样在乎一只猫。</p>
+<p>他怔在原地，颦眉叹气，像是不知道该拿我怎么办才好。</p>
+<p>我看得懂他的表情，他就要松口了，他不会带走我的小病猫了。</p>
+<p>我抹了把眼泪，冲他扬起一个难看的笑脸，小心翼翼地祈求道：「别带走它，嗯？好不好？」</p>
+<p>宋明嫣却突然蹲在笼子前，笑嘻嘻道：「李宗恪，你记不记得，小时候你弄丢了我的猫，它就是长这个样子的，我猜它放不下我，所以转世来报恩啦。」</p>
+<p>她的声音那么软软的，还轻飘飘地看了我一眼。</p>
+<p>她带着笃定的嘲笑，扼杀掉我的希望。</p>
+<p>我眼看着李宗恪的表情收拢，慢慢变得淡漠。</p>
+<p>他还是带走了我的猫。</p>
+<p>明明我都说了，没有它，我会死的。</p>
+<p>李宗恪把小病猫安顿在了养心殿。</p>
+<p>赵公公时不时给我捎个信儿，说它如今过得很快活，吃得好穿得暖，还有能工巧匠给它做了好多的玩具。</p>
+<p>我偷偷去看过它，确实是这样的，索性也就放弃了把它要回来的念头。</p>
+<p>不然我死了，它又该去哪里呢。</p>
+<p>开春儿的时候，朝中大臣纷纷上奏，说中宫空悬已久，该立后了。</p>
+<p>宋明嫣势在必得。</p>
+<p>凤袍都还没穿在身上，就来与我耀武扬威。</p>
+<p>「做了好几年贵妃，死活做不成皇后，心里该多难受呢。」</p>
+<p>「无妨，李宗恪说了，我们大婚那日，特准你在寝殿外伺候，也算了结你的一桩心愿……」</p>
+<p>我实在没力气理她了。</p>
+<p>近日来，我总是反反复复地发烧，烧得整个人都虚脱了。</p>
+<p>李宗恪来过两回，每次他来，我都在睡觉。</p>
+<p>他好像终于察觉到我不对劲了。</p>
+<p>听孙太医说我是郁结于心，他大发慈悲地把小病猫带过来陪我。</p>
+<p>小病猫来的那个下午，我觉得自己好像回光返照一样，浑身都有劲。</p>
+<p>我忙前忙后，喂它喝奶吃肉，给它抓挠痒痒。</p>
+<p>它窝在我怀里，我就感觉特别充实。</p>
+<p>我陪它在地板上睡了个午觉，醒来时天边的太阳已经快要落山了，时间过得可真快啊。</p>
+<p>小病猫舍不得走。</p>
+<p>我也舍不得小病猫走。</p>
+<p>我抱着它不撒手，还咬了李宗恪伸过来的胳膊。</p>
+<p>他骂我：「无赖。」</p>
+<p>然后拂袖而去，倒是便宜了我。</p>
+<p>听说宋明嫣因为小病猫，对着李宗恪发了好大的火。</p>
+<p>李宗恪头一次罚了她。</p>
+<p>或许是白月光成了米饭粒，日日看着，也会生厌。</p>
+<p>某天清晨，连枝喜气洋洋地将我晃醒。</p>
+<p>「娘娘，天大的好消息，宋明嫣她爹被查了，贪污受贿，强抢民女，已经押进大牢了。」</p>
+<p>「她再也甭想当皇后，还想骑到咱们头上，我呸。」</p>
+<p>我迷迷糊糊地应了声：「谁查的？」</p>
+<p>「还能有谁，自然天底下最疼您、最英明神武的老侯爷啦！」</p>
+<p>我勾起唇角，卷着被子，懒懒地笑了。</p>
+<p>小时候我爹就说，不管是谁欺负我，就算在天涯海角，他也得给我出一口恶气。</p>
+<p>我想，若不是因为李宗恪是皇帝，若不因一句忠君报国，我爹能把他的头拧下来。</p>
+<p>若不是因为他是皇帝，我自己也得把他的头拧下来。</p>
+<p>唉。</p>
+<p>我今日心情极佳，端着碗羊奶慢慢品。</p>
+<p>突然听见院中一阵凄厉的惨叫，好像是……猫？</p>
+<p>连枝先一步跑出去，等我慌慌张张地跟过去，她张开手挡在我眼前，脸色发白。</p>
+<p>「娘娘……别看了。」</p>
+<p>我已经看见了。</p>
+<p>是我的小病猫。</p>
+<p>它拖着断掉的后腿往我这边爬，终于爬不动了，倒在地上浑身痉挛，口中吐着粉色的泡沫，没几下就僵了……</p>
+<p>我把它抱起来，轻轻摇晃着它，它不动。</p>
+<p>我想叫醒它，却发现我根本没给它取过名字。</p>
+<p>因为我怕给了它名字，我就放不下它了。</p>
+<p>可是，我已经放不下它了。</p>
+<p>我低头看着它，它跟往常一样，安安静静地窝在我怀里。</p>
+<p>可是，小家伙，你怎么会变得这么冷，冻得我连牙齿都在打颤……</p>
+<p>你看你，早上非要出门，我就说不要乱跑，不要乱跑，你为什么不听话！</p>
+<p>眼泪好烫，烫得人心疼。</p>
+<p>你怎么说没就没了呢……</p>
+<p>宋明嫣，肯定是宋明嫣！</p>
+<p>你不得好死！</p>
+<p>我拎着马鞭直冲向宋明嫣的寝殿，老远就听见她笑得特别响亮。</p>
+<p>「我爹怎么了，不就多贪了两个钱，多纳了两个妾么？世上哪个男人不是这样的！」</p>
+<p>「周家那个老东西敢算计我，就别怪我不让他女儿舒心！」</p>
+<p>「我今天杀了她的猫，明天还要杀她的婢女，她喜欢的，一个都别想留住！」</p>
+<p>宋明嫣好像是疯了。</p>
+<p>也是，唾手可得的东西，突然烟消云散，如黄粱一梦。</p>
+<p>想当初我见到她时，也差点疯一回。</p>
+<p>可是，她疯她的，不碍着我要打死她。</p>
+<p>我也不知道是从哪里涌上来的力气，挥着马鞭，一下又一下抽打在她身上。</p>
+<p>我的眼前是小病猫被人砸烂的后腿，所以我盯着宋明嫣的两条腿，狠狠地打！</p>
+<p>长久以来积压的情绪，在这一刻彻底爆发。</p>
+<p>我不知疲倦地挥动鞭子，直到宋明嫣血肉模糊，呼喊声渐渐小了下去……</p>
+<p>「够了！」</p>
+<p>李宗恪从我手里夺走长鞭，我才看见他的龙袍竟然都被我打出两条裂口。</p>
+<p>「你闹够了没有！不过是个畜生而已，你是想要明嫣的命嘛！」</p>
+<p>「对！」</p>
+<p>我歇斯底里地喊叫着：「全是因为她！全是因为她！还有你！是你们两个人，毁了我……」</p>
+<p>「小病猫不是畜生！你们才是畜生！」</p>
+<p>我也终于是疯了。</p>
+<p>李宗恪惊愕地看着我，他向我伸手，颤声问我：「媚鱼，你、怎么了……」</p>
+<p>我低头一看，这才发现自己不知道什么时候吐血了，鲜血弄花了我的衣领，还在往下渗。</p>
+<p>我慌了，赶忙捂住嘴，可是血又染红了我的指缝。</p>
+<p>我不要怜悯！谁都别想可怜我！</p>
+<p>我抬腿想跑，却被绊倒在地上。</p>
+<p>我爬不起来了。</p>
+<p>我好痛啊，爹爹，哥哥，我好痛。</p>
+<p>李宗恪终于知道我病入膏肓了。</p>
+<p>他沉默着，空气里是令人窒息的静谧。</p>
+<p>「不治之症？药石无医？谁啊……」</p>
+<p>他突然暴起，像是吃人的恶鬼，拔刀就向太医们砍过去。</p>
+<p>「你们这群庸医！庸医！你们说谁会死，啊！你们说谁会死！」</p>
+<p>「朕的贵妃长命百岁，她怎么可能快死了！」</p>
+<p>「朕要割掉你们的舌头！朕要宰了你们！」</p>
+<p>他在我的病榻前大闹一通，真是吵死了。</p>
+<p>「李宗恪。」</p>
+<p>我睁眼抓住他的衣袍，他手里的刀当啷就掉在地上。</p>
+<p>他一声声应着：「朕在，媚鱼，我在，是不是哪里不舒服，疼了？」</p>
+<p>他朝我伸手，满脸紧张和心疼。</p>
+<p>「别碰我。」我轻声开口，不带半点情绪。</p>
+<p>「毕竟，你爱的是宋明嫣，你亲口说过的，你的好，只属于她。」</p>
+<p>李宗恪的瞳孔猛地一抖，他抱着脑袋，慢慢地发出痛苦的悲鸣，一声接一声，又伤又悔。</p>
+<p>好像是在回忆，这段时间他对我的所作所为。</p>
+<p>豆大的眼泪一滴一滴砸下来。</p>
+<p>他居然跑了。</p>
+<p>这个孬种，他甚至不敢看我一眼。</p>
+<p>李宗恪消失了整整三天。</p>
+<p>再出现的时候，他双眼乌青、胡子拉碴地跪倒在榻边。</p>
+<p>他求我原谅他，他说他爱我，真的爱我。</p>
+<p>我差点没吐出来。</p>
+<p>「媚鱼，是我不好，我总以为，我们还有很多时间。」</p>
+<p>有很多时间干吗呢？留着让你无休无止地欺负我么？</p>
+<p>我懒得跟他废话，就那么静静听着。</p>
+<p>「我怎么能到快要失去你的时候，才敢承认，我离不开你了。」</p>
+<p>「我守着对别的女人的愧疚，我仗着你总是迁就我，不停地伤害你，是我混账。」</p>
+<p>「让我弥补你，求你，媚鱼，让我弥补我的错误。」</p>
+<p>我背对着他，睡了过去。</p>
+<p>醒来的时候，他还在跪着。</p>
+<p>就这么僵持了几天，一趟又一趟的人来劝他：「陛下对贵妃情深义重，但也要保重龙体啊。」</p>
+<p>情深义重？呵，屁。</p>
+<p>他是在感动他自己呢。</p>
+<p>我想了想，还是得好好折磨折磨他，就这么让他跪着，太便宜他了。</p>
+<p>我要让他笑着哭，哭着笑，让他疼，让他累，给他希望又让他失望。</p>
+<p>我死了，他也别想痛快地苟活。</p>
+<p>我跟李宗恪说：「你起来。」</p>
+<p>他的眼睛亮了。</p>
+<p>我说我想荡秋千。</p>
+<p>他的表情落寞了一瞬，像是在跟我道歉。</p>
+<p>然后立马动手，把曾经被我烧掉的秋千架，好好打理了一番。</p>
+<p>第三天，我的院子里多出一架缠着紫藤花的秋千。</p>
+<p>我坐在上面，荡了两下，晒着太阳还挺舒服。</p>
+<p>李宗恪在我身边喋喋不休，说他想起了从前。</p>
+<p>我刚进宫那会儿，羞得很。</p>
+<p>有一日我午睡后，蓬头垢面地坐在秋千上晃荡。</p>
+<p>谁知李宗恪突然就来了，急得我鞋都没穿，裹着一脚泥溜进寝殿，在廊间留下一串泥泞的脚印。</p>
+<p>后来，是他亲手替我洗净脚上的尘土。</p>
+<p>他说，他从没见过那么鲜活的姑娘。</p>
+<p>我浅浅地笑了。</p>
+<p>「再鲜活的人，也会被一个情字磨得了无生气，你说，是不是。」</p>
+<p>李宗恪不吭声了。</p>
+<p>我提脚起身，冲他摆摆手，平淡地开口：「拆了吧，看着烦。」</p>
+<p>我的情绪开始喜怒无常。</p>
+<p>我故意表现出一点恋旧的倾向，李宗恪就把以往的美好回忆，一件一件搬出来，企图能用旧情让我感动。</p>
+<p>他带我去采莲蓬。</p>
+<p>前一刻我还高高兴兴的，跟他说，记得以前我为了给他采莲蓬，贪心得很，一池子的莲蓬都快被我割没了，最后把船都压翻了。</p>
+<p>当然，我也掉进水里，顶着一头荷叶爬上岸，最后什么都没捞着。</p>
+<p>李宗恪跟着我笑，他说我笨。</p>
+<p>「你就是这样，对我的好，总是一股脑地不管不顾。」</p>
+<p>我的笑容淡了下去。</p>
+<p>「是啊，我就是笨，所以别人才不拿我当回事，李宗恪，你知道我为你犯傻，觉得特别有成就感，是不是？」</p>
+<p>他的笑僵在脸上。</p>
+<p>我说：「跳下去。」</p>
+<p>他盯着我默了半晌，苦苦地勾了勾唇角。</p>
+<p>「媚鱼，是我欠你的，我一件一件向你赎罪。」</p>
+<p>他一头扎进水里。</p>
+<p>他说我从前为他受的伤，现在换他来受，只要我高兴，只要我能笑一笑。</p>
+<p>李宗恪在水里泡了半个多时辰，当天夜里就发起高烧。</p>
+<p>我晾了他几天，然后带着粥去探望他，故作动容。</p>
+<p>我说别伤害自己，我会心疼的。</p>
+<p>我用一碗白粥，给他制造错觉。</p>
+<p>他大概以为他那点廉价的自我牺牲，真能挽回我的心意，能弥补他对我造成的伤害。</p>
+<p>我让他相信，只要他伤害自己，我就会心软。</p>
+<p>从此，不必我开口。</p>
+<p>但凡我不高兴、不吃药、吃不下饭，他就自觉地弄出一身伤。</p>
+<p>然后看我虚伪地掉两滴眼泪，说一句心疼，对他笑上几日，他就觉得什么都值了。</p>
+<p>我不停地跟他确认：「李宗恪，你是不是特别爱我，是不是没有我，你都活不下去了。」</p>
+<p>后来他也不停地跟我说：「媚鱼，没有你，我活不下去了。」</p>
+<p>他好像真的骗过了自己，相信了自己是个一往情深的大情种。</p>
+<p>他对我几乎是言听计从，无限包容。</p>
+<p>夏天时闷热，可太医说我不能贪凉，我的寝殿就没放太多的冰。</p>
+<p>李宗恪汗流浃背地坐在榻边，给我打着扇子哄我睡觉。</p>
+<p>有人过来，悄悄跟他说：「皇上，呈元宫那位说，要见您。」</p>
+<p>李宗恪有些心虚地觑着我，不耐烦地挥手，把来人打发走了。</p>
+<p>呈元宫里，住着宋明嫣。</p>
+<p>我面上波澜不惊，其实指甲都快把手心戳破了。</p>
+<p>瞧我的烂记性，险些将她给忘了。</p>
+<p>我挑李宗恪最忙的时候，带着宋明嫣去了京郊的野猫岗。</p>
+<p>那地方阴森森地瘆人，不时响着凄厉的猫叫。</p>
+<p>我解开她腿上的布条，露出她还未长好的血肉。</p>
+<p>已经有几只野猫闻着味儿过来了，它们可不是病猫，没那么温顺。</p>
+<p>宋明嫣再没有了嚣张气焰，她抱着我的腿，哭嚎着求饶。</p>
+<p>我一脚将她踹翻在死人坑里。</p>
+<p>「宋明嫣，你就是个窝囊废！欺软怕硬的东西！」</p>
+<p>「小病猫那么亲人，你还抱过它，你怎么忍心杀了它？」</p>
+<p>「当日你看着它在你手下苦苦挣扎，欺凌弱小的感觉很痛快吧？你没想过报应来得这样快，曾经被你踩在脚下的小东西，也能要了你的命吧。」</p>
+<p>一大群野猫扑在宋明嫣身上啃咬，她拖着双腿，尖叫着往坑外爬。</p>
+<p>「救救我，求求你了，娘娘，我再也不敢了，求你救救我……」</p>
+<p>我的小猫，它不会说话，但它爬向我的那一刻，一定也很想我能救救它吧。</p>
+<p>它犯了什么错呢，何必要遭那种罪。</p>
+<p>它唯一的错，大概就是遇见了我。</p>
+<p>回到宫中时天已经黑了。</p>
+<p>李宗恪在寝殿里等着我。</p>
+<p>我和他在黑暗里平静地注视着对方。</p>
+<p>他一定知道，我杀了宋明嫣。</p>
+<p>可我还是要说，我就是要亲口说给他听，我就是要让他难受！</p>
+<p>「宋明嫣被野猫吃了。」</p>
+<p>「她的腿都被啃光了，还有力气骂我呢。」</p>
+<p>「她死之前，一直在叫你的名字，我估摸着，你若赶过去还能救下她大半个身子……」</p>
+<p>李宗恪低沉出声：「别说了。」</p>
+<p>我端起桌上的茶，细品了一口，嘲讽他：「怎么，舍不得了？」</p>
+<p>他伸出手，替我擦去眼角的泪。</p>
+<p>「媚鱼，别哭了，我心疼。」</p>
+<p>「你做得对，是宋明嫣活该，你想怎么做都行，只要你高兴。」</p>
+<p>真恶心，真恶心。</p>
+<p>想当初他信誓旦旦说，非宋明嫣不要，再看如今，为了讨我开心什么都不管了。</p>
+<p>男人的嘴脸，自私！虚伪！</p>
+<p>我拿起茶杯就砸在他的头上，绷着身子跟他吼：「你以为我还会信你的鬼话吗？你滚！你滚了我就高兴，快滚！」</p>
+<p>我常常后悔，若知道有朝一日我也能将李宗恪玩弄于股掌，我早就这么做了。</p>
+<p>可惜真情总是留不住，偏偏假仁假义，他受用得很。</p>
+<p>贱人。</p>
+<p>我生辰这日，一大早就开始呕血，不是什么好兆头。</p>
+<p>其实跟我预想的差不多，若我能死在今日，往后每年，家里人也就只需要难过这一回。</p>
+<p>挺好的。</p>
+<p>李宗恪在床前握着我的手，眼泪流得跟真的似的。</p>
+<p>他从怀里掏出一对戒子，哭着往我的无名指上套。</p>
+<p>我的手吊在床沿上，听着金戒子一声声从我的指上滑落，磕在脚踏上，当啷啷的，痛快。</p>
+<p>我已经骨瘦如柴了，再没有什么东西能套住我了。</p>
+<p>「媚鱼、媚鱼，我们要生同榻、死同穴啊。」</p>
+<p>「为什么戴不上，为什么戴不上！」</p>
+<p>他嚎啕着，撕心裂肺，很吵，也很爽。</p>
+<p>「李宗恪……」</p>
+<p>我把他叫到跟前，冷冷地看着他。</p>
+<p>「我周媚鱼这辈子，从没跟谁低过头。」</p>
+<p>「你宠我的时候我风光无限，万人追捧，你不爱我了，我跌入泥潭也没有跟谁认过输。」</p>
+<p>「唯一一次我求你，我说你别带走我的猫，你带走它，我会死的……」</p>
+<p>「你明知道我从不说假话，可是你没管我。」</p>
+<p>「李宗恪你记着，是你杀了我，是你杀了周媚鱼！」</p>
+<p>我大口大口地喘息着，李宗恪摇头痛哭：「媚鱼，全是我的错，你快好起来，我赔给你一窝猫，我们在宫里养一群猫。」</p>
+<p>「我没有不爱你，我爱你，我爱的一直是你。」</p>
+<p>「下辈子，下下辈子，生生世世我都给你赎罪，你别抛下我……」</p>
+<p>他的声音渐渐变得遥远。</p>
+<p>我听到了细碎的猫叫声，我的小病猫来接我了。</p>
+<p>除了它，别的猫我都不要。</p>
+<p>「可是李宗恪，我不爱你了，我只觉得你恶心。」</p>
+<p>「生生世世，你和我，别再见了。」</p>
+<p>我没有遗憾地阖上眼。</p>
+<p>我要让他知道，他做的一切，他掏心掏肺的努力，都是白费。</p>
+<p>李宗恪摇晃着我，痛哭失声。</p>
+<p>「别对我这么残忍，媚鱼，你说的都是气话，我不信！」</p>
+<p>「你活下去，你再给我些时间，你会原谅我的。」</p>
+<p>「你醒醒，你别睡着……」</p>
+<p>不甘和悔恨，早晚会要了他的命。</p>
+<p>连枝把小病猫烧成灰，放进我的棺椁里。</p>
+<p>阿爹来接我了。</p>
+<p>他对李宗恪请辞，他不愿再做镇国侯，也不愿再替大齐镇守边疆了。</p>
+<p>「臣没什么高尚的情操。」</p>
+<p>「从前沙场拼死杀敌，丢了只眼睛，缺了只手，疼吗？疼。怕吗？怕。」</p>
+<p>「可臣想着，臣多受一份苦，臣的闺女就能多让陛下高看一分。」</p>
+<p>「她是个傻的，爱钻牛角尖，我怕她得不到夫君的疼爱，心里难过。」</p>
+<p>「臣要让她高高兴兴地、平平安安地活到老，可是她就这么死了……」</p>
+<p>「她就这么死了，留下我这个没用的老东西！」</p>
+<p>「说什么保家卫国，我闺女都没了，我他娘的还保谁的家、守谁的国！」</p>
+<p>李宗恪紧紧地抠着棺材边儿，跌跌撞撞地跟着父亲跑，指甲缝里全是血。</p>
+<p>「谁敢带走我的媚鱼，我就杀了谁！」</p>
+<p>「不是，不是，我错了，别带走她，别带走她，老将军，可怜可怜我……」</p>
+<p>几位公公上前拦住他，低声劝着：「陛下，就让娘娘安息吧。」</p>
+<p>……</p>
+<p>我如愿以偿跟着父亲回到边塞。</p>
+<p>他在远离人烟的地方，养了成群的牛羊。</p>
+<p>它们每天在我坟前咩咩叫，小病猫跟着它们在草原上疯跑，我瞧着心里舒坦极了。</p>
+<p>没两年，哥哥在战场假死，偷偷跑来跟我们团聚。</p>
+<p>大齐的猛将，除了我父亲，就只有我哥哥，再挑下去，竟挑不出一个中用的。</p>
+<p>五年后，边关失守。</p>
+<p>又过两年，皇城也破了。</p>
+<p>李宗恪被敌军发现时，潦草地死在贵妃的寝宫里。</p>
+<p>他手里攥着一枚带血的荷包，还有两枚金戒子，硬是被人抠出来，踩扁了塞进腰带里私吞了。</p>
+<p>做得好。备案号:YXX15Q39rr2iYAX843pCNxNy</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/23-%E5%AA%9A%E5%A8%98/" title="媚娘">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">媚娘</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/30-%E9%97%A8%E9%9D%A2%E6%96%B0%E5%A8%98/" title="门面新娘">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">门面新娘</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

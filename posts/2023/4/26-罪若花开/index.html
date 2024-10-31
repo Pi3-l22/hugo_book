@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罪若花开 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/26-%E7%BD%AA%E8%8B%A5%E8%8A%B1%E5%BC%80/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/26-%E7%BD%AA%E8%8B%A5%E8%8A%B1%E5%BC%80/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="罪若花开">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+  <meta name="twitter:title" content="罪若花开">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="罪若花开">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="5882">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26080.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">罪若花开</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>12分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%bd%aa%e8%8b%a5%e8%8a%b1%e5%bc%80&amp;url=https://mohai.us.kg/posts/2023/4/26-%E7%BD%AA%E8%8B%A5%E8%8A%B1%E5%BC%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/26-%E7%BD%AA%E8%8B%A5%E8%8A%B1%E5%BC%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%bd%aa%e8%8b%a5%e8%8a%b1%e5%bc%80%20https://mohai.us.kg/posts/2023/4/26-%E7%BD%AA%E8%8B%A5%E8%8A%B1%E5%BC%80/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26080.jpg" alt="罪若花开" />
+      
+
+      <p>罪若花开</p>
+<p>恶有恶报：最亲密的人，捅下最锋利的刀</p>
+<p>李八斤抱着孙子敲响了刘大夫家门。</p>
+<p>「刘妹子，我家孙子一直喊腿疼，走几步路就疼得哇哇哭。」</p>
+<p>刘大夫是赤凰村唯一的赤脚医生，赤凰村穷得叮当响，连条水泥路都没有，村里年轻人大都外出务工，留下空巢老人和留守儿童。</p>
+<p>她摸了摸小孩的腿，对李八斤摇了摇头：「李姐，您孙子这可能是骨质钙化，我给你开点药，要是没效果，还得去大医院。」</p>
+<p>李八斤走后，刘大夫心神不宁，赤凰村接二连三出现腿疼、腰疼、骨头疼的人，老少皆有，她前两天竟然还接生了一个软骨儿。</p>
+<p>然而，这一切只是开始。</p>
+<p>一年后，赤凰村老人开始陆续拄拐杖，半夜骨头痛如针刺，没有年轻女子愿意嫁到赤凰村，传言嫁过来，生出来的小孩会是软骨儿，赤凰村不仅人得怪病，动物也难逃劫难——「鸡下软蛋，初生牛犊软骨」。</p>
+<p>如此怪现象引来了探寻真相的记者，一位姓黄的女记者一户户走访了村民，搜集了大量资料，询问了权威医院的骨科专家，最终确定村里人得的是「骨痛病」。</p>
+<p>原因是摄入了一种叫「镉」的金属。</p>
+<p>新闻一经报道，引起热议，当地环保部门检测了赤凰的土地和水源，发现土地中镉含量超标 26 倍！</p>
+<p>村民和牲畜因为摄入了含有镉的谷物，所以出现了骨痛病，赤凰村地广人稀，山丘起伏，专家无法锁定污染源来自哪里。</p>
+<p>村里人心惶惶，外出打工的小年轻赶紧把小孩接到城里，村里那些老人望着晶莹透亮的大米，怎么也不敢相信这是毒大米，舍不得扔，但也不敢吃。</p>
+<p>赤凰村共有八十四户人家，夜幕降临，家家户户亮起了灯，只有一户人家黑漆漆，紧闭的铁门上了锁，锁已经锈迹斑斑。</p>
+<p>屋子的主人叫陈伦，六年前他抱着一盆花，悄无声息离开了赤凰村。</p>
+<p>2</p>
+<p>陈伦办公桌上的兰花叶子已蝶化，是上好稀有品种。</p>
+<p>办公室有个十平米的隔间，隔间里有张床，陈伦是出了名的工作狂，经常睡办公室。</p>
+<p>赤凰村最近爆出的新闻让他双眼聚满愁云，他从小没妈，饥一顿饱一顿，村子里人经常接济他些吃食和衣服，特别是他的两个伯伯，把他当亲儿子疼。</p>
+<p>凌晨一点半，陈伦签完二十厘米高的文件，摘下眼镜，揉了揉满是血丝的双眼，公司上个月启动了三个项目，他事事亲为，工作量很大。</p>
+<p>手机突兀响起，是陌生号码。</p>
+<p>「您好，哪位？」</p>
+<p>对方没有应答，十五秒后陈伦决定挂掉电话，此时，对方说话了。</p>
+<p>「害怕吗？」</p>
+<p>陈伦背脊瑟缩了一下：「我不明白你说什么，你到底是谁？」</p>
+<p>对方继续沉默，陈伦拿手机的手微微颤抖，额头渗出细密汗珠：「你到底是谁？」</p>
+<p>听筒传来一声冷笑，接着是急促的忙音，对方挂了电话，陈伦不知道到底是谁在恶作剧，躺在狭窄的床上辗转难眠，直至天亮才昏沉睡去。</p>
+<p>7 点 50 的闹钟将他吵醒，他 8 点 30 要去签一个合同，他已经连续一星期没休息好，办公室的床又窄又硬，由于缺觉，他脑袋疼得仿佛有人拿针扎他头，脸色暗沉，眼袋浮肿。</p>
+<p>合同签得并不顺利，对方一脸奸笑，口水四溅，讨价还价，陈伦冷眼不语，他十分困顿，已没有耐心与对方斡旋，找了个借口离开，他想回办公室隔间好好补一觉。</p>
+<p>办公室暖气不知何时被关了，冷飕飕，陈伦关上办公室门打了个哆嗦，突然发现办公室来了两位不速之客，两人站在靠墙的黑色陈列柜前，背对着他，正在欣赏陈伦的市十大杰出青年奖杯。</p>
+<p>「二位是？」</p>
+<p>富成化转过身，嘴里叼着根牙签，咧嘴一笑：「老朋友，别来无恙，我昨晚联系过你。」</p>
+<p>另一个人叫卜世人，穿一件普通夹克衫，金色扣子十分夺目，闪闪发光，他瞥了一眼办公桌上的兰花：「陈总还是喜欢花花草草。」</p>
+<p>陈伦脸色骤变，立马转身反锁了办公室门，眸光凛冽：「你俩找我什么事？当初我们可是说好，以后互不打扰。」</p>
+<p>富成化伸出食指对着陈列柜：「当初是当初，这不，我哥俩如今落魄了，你从陈伦变成陈总，你看这些金灿灿的奖杯和荣誉，啧啧啧。」</p>
+<p>陈伦双眸既有愤怒又有心虚：「你们想怎么样？」</p>
+<p>富成化和卜世人交换了一下眼神，伸出两根手指：「二十万。」</p>
+<p>陈伦爽快点了头：「好，我拿二十万买个心安，你们要永远替我保守秘密。」</p>
+<p>3</p>
+<p>富成化和卜世人五五分了钱，先去火锅店吃了顿麻辣牛肉火锅，又去桑拿中心放纵了身体，两人从桑拿房出来时，天已经黑了。</p>
+<p>都市的霓虹闪闪烁烁，彰显着城市的繁华和诱惑，只是没人知道这份歌舞升平的表象下隐藏着多少罪恶。</p>
+<p>富成化伸了舒服的懒腰，长夜漫漫，他决定去赌场翻本，卜世人劝他：「大哥，你这个月一直输，我借你的钱都输得精光，等转运了，再去翻本。」</p>
+<p>富成化表情明明暗暗，从口袋掏出一根牙签放嘴里：「你是在催我还钱吗？」</p>
+<p>「没……没有，你是我大哥，有发财的路子第一个想到我，我的钱不都是大哥带着我赚的，我哪里敢催大哥还钱。」</p>
+<p>富成化把牙签吐在地上，眼神如刀子：「敲诈陈伦的点子是我一个人想出来的，没人会嫌钱多，带你分一杯羹呢，是我讲义气，把你当兄弟。」</p>
+<p>「大哥，反正我也不等着用钱，我这份钱先放你这边。」</p>
+<p>富成化毫不犹豫接过钱，眼风立马软下来：「有陈伦这棵摇钱树，你我不愁没钱花。」</p>
+<p>卜世人谄笑应声，但袖口下的拳头已攥紧。</p>
+<p>4</p>
+<p>一星期后，富成化敲响卜世人出租屋门。</p>
+<p>「妈的，手气真背，又成穷光蛋了，还欠了赌场一屁股债。」</p>
+<p>卜世人脸色一凝，这话意味着他放在富成化那里的钱打了水漂，他努力控制脸部肌肉，俩人一合计决定再敲陈伦一笔，这次索性干票大的，要一百万！</p>
+<p>卜世人用公用电话拨通了陈伦手机号码。</p>
+<p>陈伦面孔痉挛，一怒之下摔了陈列柜里所有奖杯，他坐在办公桌前幽幽凝视那盆兰花，卜世人和富成化根本就是填不满的无底洞，但他也无可奈何。</p>
+<p>怒火平息后，陈伦还是让财务转了账。</p>
+<p>富成化蹲在出租屋床上蘸口水数钱，脸上横肉块块饱绽，他不让卜世人碰钱，卜世人伫立一旁，心里升腾起熊熊烈火，他冷冷凝视贪婪的富成化，眼光逐渐变寒。</p>
+<p>「我欠赌场一屁股债，这次钱就不分你了，等我翻本了肯定给你，你知道我富成化最讲义气了。」</p>
+<p>卜世人扯了下嘴角，怨恨像一条毒蛇，在他心底蠕动着，吐着信子，他抬头看了一眼白炽灯，一秒后，一声「啪」响，似乎是跳闸了。</p>
+<p>黑暗中传来富成化一声惨叫，灯再亮起时，富成化躺在了地上，眼球凸出，呼吸停止，脖子上一道勒痕，身旁是散落的红色钞票。</p>
+<p>5</p>
+<p>李八斤自从孙子腿患病后一直心事重重，后来儿子把孙子接走，她更是倍感孤独，村子里人陆陆续续离开了这片被污染的土地，只剩下老弱病残。</p>
+<p>李八斤拄着拐杖，迎着晨露，像往常一样在赤凰村散步。</p>
+<p>陈伦家的老宅四周已经杂草丛生，李八斤驻足在他家门口，她隐约看到杂草中藏匿着什么，走近一看，是一团血肉模糊的尸体，她大叫一声，晕了过去。</p>
+<p>民警勘查现场后，随即上报给市重案组，这是一起恶性杀人事件。</p>
+<p>尸体被凶手「腰斩」成两段，身体上半段出现在陈伦老宅门口，食指指向陈伦家紧锁的大门，似乎想向人们传达什么讯息。</p>
+<p>而腿部半段则在距离陈伦老宅 60 米的一个小土坡找到，腿部三分之二被埋在土里，为了取出尸体，刑警只能挖地三尺。</p>
+<p>尸体挖出来的同时，工作人员还发现了埋在地下的油罐桶，桶里流出浓稠液体，阵阵恶臭，让人闻之眩晕胸闷呕吐。</p>
+<p>重案组队长刘标捂着口鼻，神情凝重，立刻调来挖掘机作业，一天时间竟然挖出了两百七个高度一米二的油罐桶，专家提取了油罐桶里的物质，竟然是含镉的危险工业废弃物。</p>
+<p>这么大油桶，数量又这么多，肯定要借助交通工具，而且不可能白天掩埋，只能是晚上。</p>
+<p>赤凰村的居民宅子离掩埋点最近的就是陈伦家，他是最有可能发现的，而且尸体上半段还出现在他家门口，凶手似乎想告诉警察，陈伦和这件案子脱不了关系。</p>
+<p>刘标派手下人走访了化工厂，寻找金属废料来源，他则亲自去了一趟陈伦公司。</p>
+<p>「刘警官，我也不知道尸体为什么出现在我家门口，我这星期不是在签合同就是在办公室忙，你可以查看监控，用你们的话说，我有不在场证明。」</p>
+<p>刘警官右手托腮，点了点头，目光落在办公桌上的兰花上。</p>
+<p>「君子若兰，想不到我今天有幸看到大唐凤舞，这可是兰花中的顶级品，叶子颜色如凤凰羽毛，我国古称大唐盛世，故取名大唐凤舞，听说好的品相，价值不菲。」</p>
+<p>陈伦眼里闪过一丝慌乱，刘警官站起身：「我只是来了解点情况，既然你不认识死者，又有不在场证明，我就不打扰了。」</p>
+<p>刘警官起身离去，到门口时，停下脚步，扭头说了句：「据我所知，大唐凤舞这种兰花，对土壤要求很高。」</p>
+<p>陈伦嘴角掠过一阵痉挛。</p>
+<p>6</p>
+<p>另一边，警察通过走访调查终于找到了废弃物的来源，距离村里三十五公里的县城有一家矿业公司，其生产剩余的矿业废料与案发现场的成分一致。</p>
+<p>老板为了节省成本，与没有处理危险废物经营许可证的公司合作，让他们拖走工业废弃物，他一眼就认出了死者是富成化，因为富成化十分精明，不断坐地起价，最后两人也中断了合作。</p>
+<p>死者身份确认，刘标排查了富成化的社会关系，发现他死前拨出的最后一通电话是卜世人，而且据富成化房东供述，两人关系匪浅，富成化死前一天就是去找了卜世人。</p>
+<p>刘标眉头舒展了些许，他用手揉揉了太阳穴，看来卜世人有很大嫌疑。</p>
+<p>警察走访了卜世人的所有社会关系，可惜，没有人知道他去了哪里，出租屋人去屋空。</p>
+<p>整整三天，案件毫无进展。</p>
+<p>陈伦坐在办公桌前双手撑头，心神不宁，这几天他精神一直绷着，胡茬已爬满半边脸，今早没什么行程安排，他想去隔间休息一下。</p>
+<p>他刚起身，身后有把匕首抵住了他，是卜世人的声音，卜世人戴着口罩和帽子：「我昨晚就来了，还在你床上睡了一晚，不过你那床好硬，废话少说，给我五百万，不然我就说出当年真相。」</p>
+<p>陈伦不敢回头，两只干枯的手僵硬地绞着：「我要是不给呢？」</p>
+<p>卜世人笑了：「你还记得我和富成化第一次来要钱时，我西装上的金色纽扣吗？纽扣里装着微型摄像机。</p>
+<p>你当时说，给我们二十万，让我们永远保守秘密，我相信警察应该对你这个价值二十万的秘密，很感兴趣。」</p>
+<p>陈伦攥紧拳头，指甲嵌入掌心：「好，我可以给你五百万，但我必须先见到东西。」</p>
+<p>「钱到手，东西自然会给你，明天上午十二点，我见不到钱，我就把东西交给警察。」</p>
+<p>7</p>
+<p>「和平咖啡馆有两层，但生意很差，所以没什么客人，整个二楼就只有两位客人。」</p>
+<p>卜世人穿一件纯白衬衫，低头喝了口咖啡：「钱呢？」</p>
+<p>陈伦递给他一个黑色运动包，他轻轻拉开拉链，埋头数了半小时，露出满意笑容。</p>
+<p>「我的东西呢？」</p>
+<p>「我没带在身上，在我出租屋里，我藏在了挂钟后面。」</p>
+<p>卜世人拎着沉沉的包，迅速离去，陈伦阴骘的脸上滑过一道残忍微笑。</p>
+<p>——</p>
+<p>「哎呀呀，警官，你们破案也不能耽误我做生意呀，我又没工作，就靠收几个房租讨生活，你们该查的也差了，这屋子你们都翻了个底朝天了，有线索你们早就发现了。」</p>
+<p>说话的是卜世人的房东，一个身材臃肿，满脸雀斑的中年妇女。</p>
+<p>刘标一脸无奈，再一次仔细搜寻了房间，还是毫无所获，对房东点了点头，撤销了房子周围的黄色封条。</p>
+<p>卜世人在郊区找了间黑旅馆，他抱着钱袋坐在马桶上大泄，离开咖啡馆后，这已是他第五次拉稀了，俗话说好汉抵不过三泡稀，他坐在马桶上浑身无力，双腿发软。</p>
+<p>他今天还没吃东西，只喝了一杯咖啡，不过他现在根本没心思想这些，他正在憧憬如何花掉这五百万。</p>
+<p>这次的钱只属于他一个人。</p>
+<p>要不要先去韩国整个容，换个身份，背着命案，警察可不会那么容易放过他。</p>
+<p>卜世人正眯着眼想是整成古天乐还是鹿晗，突然听到了门把手转动的声音，他猛然睁开双眼，瞳孔迅速收缩，拢紧了怀里的黑色运动包：「谁？」</p>
+<p>还没等他站起身，卫生间门被人一脚踹开，陈伦用一块带有乙醚的布蒙住了他的脸，三十秒后，黑色运动包从卜世人怀里坠落，他不知道包里有颗定位器。</p>
+<p>陈伦戴上手套，穿上脚套，拿出一把刀割破了卜世人左手腕，鲜血从手腕处溢出浸湿了卜世人的白色衬衫。</p>
+<p>陈伦把刀子放在卜世人身边，伪造了一份畏罪自杀的遗书。做完这一切，他从窗户把黑色运动包扔了下去，然后戴上口罩和帽子离开了旅馆。</p>
+<p>8</p>
+<p>「房租呢要预交半年，中途不可以退，水电费自付，电器损坏要赔偿，一手交钱一手交钥匙。」</p>
+<p>陈伦掏出一沓厚厚的钱，老板娘数了三遍，把钥匙交到了他手上，瞥了一眼陈伦，阴天还带个太阳镜真奇怪，老板娘把钱揣兜里，屁股一扭一扭走了。</p>
+<p>陈伦摘下口罩和墨镜，环视墙壁，一个圆形挂钟正在滴答滴答走着，他踮起脚拿下了挂钟，没看到纽扣摄像机，只看到一张纸条。</p>
+<p>「傻瓜，我逗你玩呢！我当时纽扣里根本没装摄影机。」</p>
+<p>「王八蛋！」陈伦鬓角青筋直，举起挂钟狠狠掷地。</p>
+<p>刘标蹲在地上目不转睛凝视卜世人的尸体，现场确实像是自杀，遗书上卜世人交代了杀害富成化的详细过程，抛尸陈伦家门口只是为了混淆视听。</p>
+<p>刘标看着遗书，若有所思，杀人动机呢？</p>
+<p>他目光又落在卜世人尸体上，突然感觉卜世人白衬衫纽扣有点奇怪，凸了出来，他立马戴上手套一摸，衣服里竟然藏着纽扣摄像机。</p>
+<p>法医简单检查完尸体后，立刻否认了割腕自杀，如果是自杀割腕，那么伤口应该入口深收口浅，而卜世人手腕处伤口，入口浅收口深且有回刀。</p>
+<p>「我也不信他是自杀，凶手应该被拍了下来。」刘标指了指证物袋里的纽扣摄像机。</p>
+<p>果然，卜世人去咖啡店见陈伦前，安装了纽扣摄像机，记录了他和陈伦在咖啡店的交易，以及陈伦杀他的整个过程。</p>
+<p>他和富成化第一次去陈伦办公室敲诈，根本没有带纽扣摄像机，他只是利用陈伦的心虚编织了一个谎言，而这次，是真的。</p>
+<p>刘标连夜逮捕了陈伦，陈伦已买好去澳洲的飞机票，但还是被「截胡」了。</p>
+<p>他一脸颓色坐在禁锢椅，眼睛凝视地面不存在的一个点，因果轮回，该来的逃不掉。</p>
+<p>「说说你的秘密，从六年前的那盆兰花说起。」</p>
+<p>陈伦抬起头，陷入回忆，六年前他父亲去世，父亲生前最爱兰花，经常去山上和其他村落寻找兰花，他死后留下两株大唐凤舞的花株，陈伦知道这花价值不菲，整日在家悉心照料，可是其中一株还是死了。</p>
+<p>他夜不能寐，起床去小卖部买烟，却意外发现卜世人和富成化在偷偷掩埋油桶，他等人走后，挖出了桶发现了桶里装的金属废弃物，难怪兰花会死，家离掩埋点这么近。</p>
+<p>卜世人和富成化深知陈伦报警后的后果，不仅生意做不成，还会面临牢狱之灾和高额的生态环境治理费。</p>
+<p>陈伦看出两人心中所怕，声称家里死去的兰花是因为土地污染，品种是大唐凤舞，虽然没开花，但是却是父亲花 30 万从别人手里买回来的。</p>
+<p>卜世人和富成化为了自保，东拼西凑了 30 万，他们不懂什么兰花的品种，只当 30 万是给陈伦的封口费。</p>
+<p>陈伦摇头忏悔：「我当时太贪心了，父亲其实只花了 3 千块钱从一个农民手里买的花株。</p>
+<p>我当时不知道废弃工业原料造成的污染后果会那么严重，如果我当初说出真相，村子里人就不会生病甚至死去，我没脸见村里人，他们都是看着我长大的，我真的很后悔。」</p>
+<p>刘标说：「所以，你忏悔的方式就是杀了卜世人，让你的恶行随着他长埋地下？」</p>
+<p>「你当年一走了之，远离了污染，但赤凰村土壤里的镉二十年都不会消失，镉中毒的村民日夜忍受骨痛的非人折磨。」</p>
+<p>陈伦垂下了头，双手掩面，泪水从指缝流出，他想起了父亲临终前说的话。</p>
+<p>君子若兰，做人一定要像兰花一样正直纯洁。</p>
+<p>作者：啊珊的小板凳</p>
+<p>备案号:YX01REYOpd70Ppo9R</p>
+<p>婚城：上位</p>
+<p>​</p>
+<p>​</p>
+<p>恶有恶报：最亲密的人，捅下最锋利的刀</p>
+<p>核融炉 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/8/22-%E7%BD%AA%E5%AD%BD/" title="罪孽">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">罪孽</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/21-%E9%86%89%E6%AC%A2%E5%96%9C/" title="醉欢喜">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">醉欢喜</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第 21 节星星彼端 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC21%E8%8A%82%E6%98%9F%E6%98%9F%E5%BD%BC%E7%AB%AF/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC21%E8%8A%82%E6%98%9F%E6%98%9F%E5%BD%BC%E7%AB%AF/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="第 21 节星星彼端">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta name="twitter:title" content="第 21 节星星彼端">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第 21 节星星彼端">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="12186">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/153.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">第 21 节星星彼端</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>25分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac%2021%20%e8%8a%82%e6%98%9f%e6%98%9f%e5%bd%bc%e7%ab%af&amp;url=https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC21%E8%8A%82%E6%98%9F%E6%98%9F%E5%BD%BC%E7%AB%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC21%E8%8A%82%E6%98%9F%E6%98%9F%E5%BD%BC%E7%AB%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac%2021%20%e8%8a%82%e6%98%9f%e6%98%9f%e5%bd%bc%e7%ab%af%20https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC21%E8%8A%82%E6%98%9F%E6%98%9F%E5%BD%BC%E7%AB%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/153.jpg" alt="第 21 节星星彼端" />
+      
+
+      <p>星星彼端</p>
+<p>霓虹夜行：见幻影，见人心</p>
+<p>查看详情</p>
+<p>1</p>
+<p>最近，我总觉得屋里多了一个人。</p>
+<p>特别是打游戏输的时候，好像就在我耳边骂我菜！</p>
+<p>安装了摄像头，还真让我发现了异常。</p>
+<p>晚上十二点，我家墙角汇聚二十多只蜘蛛，它们整齐地排着横队，像是在等哪位长官发号施令一般。</p>
+<p>持续两分钟左右，它们开始解散，亢奋地爬向四方，不知道干什么去。</p>
+<p>我惊得一身冷汗，拿着视频四处询问，这是什么现象。</p>
+<p>可没有一个靠谱的答案。</p>
+<p>「要不你养两只猫，反正你也喜欢，又能陪你，又能吃蜘蛛。」</p>
+<p>不信鬼佛的同事解释不了原因，但却提供了一个办法。</p>
+<p>然后我这个大冤种，就斥巨资买了两只贼贵的猫。</p>
+<p>带回家的一瞬间，我明显感觉到两个小家伙眼神变了，浑身的毛也炸了起来。</p>
+<p>盯着墙角蜘蛛的集合地，不停呜咽。</p>
+<p>我保持着进门的动作，一动不敢动。</p>
+<p>以前经常听老人家讲，猫属阴，能通灵，碰到尸体还能使其诈尸。</p>
+<p>买的时候没想到这一点，现在想到了，腿肚子都软了。</p>
+<p>不会真看到了什么东西吧？</p>
+<p>一阵风吹来，门「嘭」的一声关上了。</p>
+<p>我十分没骨气地，吓得坐在地上，嗷嗷乱叫。</p>
+<p>好一会儿才缓过神。</p>
+<p>这时，两只小猫崽也安静了下来，趴在笼子里，眼珠子滴溜溜转着，警戒地打探四周。</p>
+<p>我安慰自己，刚到一个新环境，有点害怕也是正常的。</p>
+<p>猫不成熟，我得成熟。</p>
+<p>不能神神叨叨。</p>
+<p>2</p>
+<p>收拾好猫窝、猫盆等一众用品后，时间已经过去了一个半小时。</p>
+<p>再等两个小时，就是十二点。</p>
+<p>我忍不住打开了游戏，想着边玩边观察。</p>
+<p>结果五连输。</p>
+<p>最后一把，我被对方刺客打出阴影了，躲在草丛不敢出去。</p>
+<p>耳边突然传来一声讥笑：你一直蹲草里干吗，是没带纸吗？</p>
+<p>我惊得立马环顾四周，可是什么人也没看到。</p>
+<p>一定是我劳累过度加上心理压力大，负罪感强，出现幻听了。</p>
+<p>结束游戏好久，我的心脏还突突跳得厉害。</p>
+<p>怕猝死，于是吃了褪黑素，赶忙睡觉。</p>
+<p>第二天再看监控，吓了我一跳。</p>
+<p>蜘蛛队伍依然出现了，更诡异的是，两只小猫崽也排在了队伍末端。</p>
+<p>抬着下巴，竖着耳朵，像骄傲的士兵。</p>
+<p>我连忙把视频拿给同事看：「你不是说猫吃蜘蛛吗？这算怎么回事，他们怎么像同一个战线的战友？」</p>
+<p>同事反反复复、来来回回地观看，最后得出结论：「可能这种颜值高的品种，口味比较挑剔，要不，你养只田园猫？」</p>
+<p>我气得想骂人：「我已经没有钱再供养一个主子了，还是老老实实买点杀虫药吧。」</p>
+<p>3</p>
+<p>晚上回家，我先喝了两大杯黑咖啡，满屋子喷杀虫剂。</p>
+<p>然后带着猫主子出门，等待十二点，杀回来。</p>
+<p>等啊等，熬啊熬，终于到了时间。</p>
+<p>我一开门，人傻了。</p>
+<p>蜘蛛是没了，但沙发上怎么坐着一个黑衣短发的少年？</p>
+<p>他腿很长，交叠在一起，衬得我的沙发小得可怜。</p>
+<p>刘海垂下来，遮住了一半眉眼，唇很好看，软软的，润润的，就是太过苍白。</p>
+<p>「解释下吧，为什么这么晚回来？」</p>
+<p>他定睛看着我，语气里夹杂着浓浓的幽怨，声音低沉。</p>
+<p>我回过神，撒腿就准备往外跑。</p>
+<p>门无风而动，「咚」的一声关上了。</p>
+<p>我着急忙慌地去扭门把手，可怎么也按不动。</p>
+<p>背后刮起阵阵阴风，伴随着一种瘆人的压迫感，少年的声音幽幽在我头顶响起：</p>
+<p>「转过来，看着我。」</p>
+<p>嗯？？？</p>
+<p>挣扎了片刻，我苦着脸回过头：「我回来得不是时候，你继续，想要什么就拿，别客气。」</p>
+<p>他挑挑眉：「要你也可以？」</p>
+<p>说完，他哼笑一声：「当我是贼啊，你见过我这么帅的贼吗？」</p>
+<p>没见过。</p>
+<p>我瑟瑟转身，抬起头。</p>
+<p>他离我很近，近到我能看清他鼻尖上的一颗小痣。</p>
+<p>此情此景，有点熟悉，脑海中闪电一般快速划过一个名字，可不等我捕捉，就已经消失不见。</p>
+<p>我哭丧着脸：「那你是谁，我们认识吗？」</p>
+<p>他莫名笑了，整个人充斥着一种危险的气息，低头，俊脸凑过来。</p>
+<p>我几乎疑心他要亲我。</p>
+<p>可他却在距我一厘之处停了下来，挑眉笑得戏谑：「小傻子，鬼压床怕吗？」</p>
+<p>4</p>
+<p>鬼压床这事我熟。</p>
+<p>自一年前起，我就经常半夜突然意识清醒，说不了话，动弹不得。</p>
+<p>百度过，说是睡眠瘫痪症，我也就没太在意。</p>
+<p>但现在经他一提，我品出了点不寻常的味道。</p>
+<p>「难不成你就是经常压我的鬼？」</p>
+<p>「你猜？」</p>
+<p>说完之后，他径直转身往洗手间走去，然后关上了门。</p>
+<p>房间里陷入一种诡异的安静，连猫崽子都不动了，趴在笼子中，静静地看着他消失的方向。</p>
+<p>屏住呼吸听了好一会儿，确认洗手间里没有任何声音传来，我壮着胆子，走到洗手间门外。</p>
+<p>又细细聆听了一会儿，还是没有听到动静。</p>
+<p>于是，我软着嗓子问：「我有治便秘的药。」</p>
+<p>没人回应。</p>
+<p>几分钟过去，我实在没了耐心，扭开了洗手间的门。</p>
+<p>里面空无一人，所有摆设都是我熟悉的模样。</p>
+<p>唯有窗帘在夜风中不断飘扬落下，落下又飘扬。</p>
+<p>明月透过小小窗户，洒下莹润的光泽。</p>
+<p>我这可是十七楼，他是从下水道溜走的吗？</p>
+<p>想着查监控，偏偏所有监控都坏了。</p>
+<p>太诡异了。</p>
+<p>想报警，又觉得太匪夷所思，怕被人当神经病。</p>
+<p>挣扎了一夜，终于熬到天亮，我立马爬起来收拾东西，准备搬家。</p>
+<p>却不防在饭桌上，看到了一张纸条。</p>
+<p>字迹娟秀工整。</p>
+<p>「不准搬走，后果自负。」</p>
+<p>他能看到我的一举一动？</p>
+<p>不行，我肯定是要报警的。</p>
+<p>这个念头升起的下一秒，桌上凭空多出一张纸条。</p>
+<p>字迹潦草，显然是慌忙之间写的。</p>
+<p>「不准报警。」</p>
+<p>我的天呐。</p>
+<p>我惊出了岳云鹏同款表情包。</p>
+<p>「你真的是鬼？」</p>
+<p>桌上再一次凭空多出一张纸条：「幼稚，滚去上班。」</p>
+<p>他态度好恶劣。</p>
+<p>还不讲男德，动不动就玩鬼压床这套。</p>
+<p>5</p>
+<p>下班后，我怎么也不肯回家。</p>
+<p>打了鸡血一样要为公司燃烧自己，贡献我每一根头发。</p>
+<p>同事不满道：「别卷了，大家不会觉得你很努力，只会感慨单身狗真可怜。」</p>
+<p>杀人诛心。</p>
+<p>我疯狂敲击代码，没有搭理。</p>
+<p>这些年，我一直过着家里、公司两点一线的生活，拒绝所有社交，也不结交新朋友。</p>
+<p>连故乡都不敢回去。</p>
+<p>只因为我心里藏了一个人。</p>
+<p>少年时，不知天高地厚，轻易许下一辈子的承诺。</p>
+<p>却不曾想，幸福如泡沫，转眼便消散。</p>
+<p>那人死了。</p>
+<p>留下我一个人，在回忆里狼狈不堪，一碰就疼。</p>
+<p>不敢与人诉说，怕徒增耻笑。</p>
+<p>灵光一闪，我忽然顿住。</p>
+<p>不敢与人说，那可以和鬼说哈。</p>
+<p>不是有一句话吗，你害怕的每一个鬼，都是别人日思夜想想见的人。</p>
+<p>想到这里，我立马收拾东西，火急火燎地往家里跑。</p>
+<p>平时我都是坐地铁回家，今天我破天荒地大方了一回，打了出租车。</p>
+<p>很快，我就后悔了。</p>
+<p>下班高峰，堵死了。</p>
+<p>司机被我不断催促，一个分神，眼见着要和一辆面包车迎面相撞。</p>
+<p>尖叫堵在喉咙，我绝望地等待死亡降临。</p>
+<p>却不知道车辆怎么做到了横向平移，竟生生避开了面包车。</p>
+<p>我和司机面面相觑，冷汗涔涔。</p>
+<p>「我是眼花了吧？」司机颤颤巍巍开口，「祖上保佑，祖上保佑。」</p>
+<p>我没敢作答。</p>
+<p>因为我察觉到身侧有人牵住了我的手，安抚似的轻轻摩挲。</p>
+<p>平安下车后，我的腿肚还在发软，站在马路边，喘得像条狗。</p>
+<p>耳边响起一道熟悉的嗓音：「你真有福气，身边有我这么厉害的帅鬼。」</p>
+<p>「这福气给你，你要不要？」</p>
+<p>要不是因为他，我会担惊受怕吗？</p>
+<p>要不是因为他，我会心急如焚吗？</p>
+<p>要不是因为他，我会突然打车吗？</p>
+<p>恐惧化为愤怒，我狠狠往声音来源踹去，然后拳打脚踢。</p>
+<p>过往的路人，纷纷向我投来看傻子的目光。</p>
+<p>闹了好一阵子，我才罢休。</p>
+<p>回到家，我清了清嗓子：「我要和你好好聊一聊。」</p>
+<p>一阵阴风刮过，少年慢慢在虚空中显露成人形。</p>
+<p>他双手环臂，挑着眉，饶有兴趣地看着我：「胆子很大啊，你想聊什么？」</p>
+<p>我深呼一口气，给自己壮胆：「想和你打听一个人，不对，想和你打听一个鬼。」</p>
+<p>他眸光一沉，唇角渐渐抿成一条直线：「谁？」</p>
+<p>「宋谅。」</p>
+<p>不知是不是我的错觉，我感觉我说出这两个字后，身边的气温骤然低了很多。</p>
+<p>漫长的沉默过后，他走到我身边坐下，背往后靠，大半个身子瘫在沙发上，下巴用力往上抬，白皙的脖子拉得细长，青筋在皮肉下若隐若现。</p>
+<p>有点性感。</p>
+<p>「这人对你很重要？」他问。</p>
+<p>没有丝毫犹豫，我点头说「是」。</p>
+<p>他轻笑一声，坐直身体：「这样啊，那我得好好想一想，拿什么条件跟你交换了。」</p>
+<p>助人为乐的事，他竟然要讲条件，真是个现实的鬼。</p>
+<p>「你要想多久？」</p>
+<p>他重新瘫回沙发：「你搞搞清楚，在这个家，你要以我为尊，态度客气点。」</p>
+<p>我？？？</p>
+<p>这不仅是个现实的鬼，还是个有官僚作风的鬼。</p>
+<p>「凭什么？」</p>
+<p>「能力碾压。」</p>
+<p>行，弱肉强食，天道使然。</p>
+<p>「好吧，谢谢你今天救我。」含糊不清地说完，我就冲进来卫生间洗澡。</p>
+<p>不敢再多停留。</p>
+<p>和鬼共处一室，还是有点怪怪的。</p>
+<p>我甚至还播放了那首歌：我害怕鬼，但鬼未伤我分毫，我不害怕人，但是人把我伤得遍体鳞伤……</p>
+<p>想着给自己洗脑。</p>
+<p>晚上睡觉前，我突然想起一个问题：「你天天召集一群蜘蛛干吗？做鬼也会无聊？」</p>
+<p>他飘在半空，四处游荡，不知道在干吗。</p>
+<p>听见我问，看也不看我，懒懒回道：「调兵遣将，排兵布阵，很过瘾。」</p>
+<p>额，这不是过家家吗？</p>
+<p>应了那句话，男人至死是少年。</p>
+<p>睡着之后，我又被鬼压床了。</p>
+<p>意识清醒，眼睛睁不开，身体动不了。</p>
+<p>耳边传来阵阵得意笑声：「能力碾压。」</p>
+<p>6</p>
+<p>明明我是在自己家，却过得像寄人篱下。</p>
+<p>那个幼稚的男鬼，今儿让我喊他男神，明儿让我喊他芳心纵火犯。</p>
+<p>后儿又让我尊称他主人。</p>
+<p>简直是花样不断。</p>
+<p>就连作息时间，都被他严格把控了。</p>
+<p>早上七点起床做早餐，七点半点燃烟火蜡烛，陪鬼用膳。</p>
+<p>八点郑重和鬼道别，约定晚上到家时间。</p>
+<p>晚上七点，做晚饭，点燃烟火蜡烛，陪鬼用膳，顺带汇报白天的情况。</p>
+<p>晚上九点，陪鬼夜跑。</p>
+<p>十点回来洗漱，十点半准时上床，十一点没睡着，鬼压床伺候。</p>
+<p>不准打游戏。</p>
+<p>更过分的是，吃我的，喝我的，却对我爱答不理的俩猫崽子，一看见他就两眼放光，撒娇卖萌，喵喵叫得十分欢快。</p>
+<p>我对他的恐惧逐渐被不满代替。</p>
+<p>足足忍了九日，我彻底爆发了。</p>
+<p>在下班回来的路上，购置了桃木剑、八卦镜、路边摊算命先生画的黄符、大蒜等一应驱邪避鬼的物件，还把手机壁纸换成了钟馗。</p>
+<p>一进门，我就忍不住嘚瑟：「幼稚鬼，出来谈谈。」</p>
+<p>这回他是在我床上现出原形，怀里抱着我的皮卡丘，眼珠子左右转了转，立马蒙了一层水光，嘴唇抿得直直的，又无辜又委屈。</p>
+<p>「横竖是哥哥不讨喜，惹得妹妹厌烦了，你想怎么对我，就怎么对我吧。」</p>
+<p>我靠，他哪里学的。</p>
+<p>恶心了好一会儿，我拿出桃木剑，左劈右砍，为自己壮势，「你到底什么时候肯帮我，给个准话，我不想当冤种了。」</p>
+<p>幼稚鬼吸吸鼻子，垂下眼皮：「妹妹如今的态度，真真伤了哥哥的心……」</p>
+<p>「你特么给我正常点。」</p>
+<p>忍无可忍，我持剑劈了上去。</p>
+<p>嗞嗞一声响，桃木剑碰到了幼稚鬼的手臂，划出一道黑色伤口。</p>
+<p>我一愣，心情有些沉重，本想吓吓他，怎么还真伤了他？</p>
+<p>幼稚鬼抬眸盯着伤口，脸上像是凝结了一层寒霜。</p>
+<p>窗户灌进狂风，吹出一声又一声的叹息。</p>
+<p>座椅板凳都在抖动，两只猫崽躲进沙发底，似乎感知到了什么，不停凄厉叫唤。</p>
+<p>「你你你……」</p>
+<p>捏剑的手抖个不停，怎么也抬不起来，腿也打颤，我到底还是高看了自己。</p>
+<p>刚想不要这脸面了，乖乖求饶，却不想，他突然多云转晴，露出了明媚笑脸。</p>
+<p>「好久没感到痛了，还挺爽，谢谢啊，还想再来吗？」</p>
+<p>我？？？</p>
+<p>「你要不要再试试其他道具，买都买了，别浪费啊。」他一骨碌坐起来，撑着手臂，抬头从下仰望我，眼神清澈明亮，脸上写满了跃跃欲试。</p>
+<p>我？？？</p>
+<p>真倒霉，摊上个受虐狂。</p>
+<p>这冤种还得当下去。</p>
+<p>把所有东西丢到楼下垃圾桶后，我堆出谄媚的笑容，发自肺腑地道歉：「对不起，我冲动了，年轻人嘛，犯错不可怕，重要的是懂得改正。」</p>
+<p>他懒懒地掏了掏耳朵：「我很大度的，你别紧张。」</p>
+<p>鬼压床那么多次，我真没看出你哪儿大度了。</p>
+<p>干笑两声，我蹲下身子，给他捶腿：「是是是，听我说，谢谢你，因为有你，温暖了四季。」</p>
+<p>他浅笑不语，甚至在随着我的节奏抖腿。</p>
+<p>对于我自己的行为，我只想到了两个字：奴性。</p>
+<p>手机闹钟响了起来，我拿出来一看，七点了，又到了我做晚饭的时间。</p>
+<p>刚想起身，他忽然喊着了我：「许星辰，这日子我过腻了。」</p>
+<p>我早腻了。</p>
+<p>「你又想怎样啊？」我没好气地问。</p>
+<p>「带我出门玩。」</p>
+<p>带鬼出门玩？</p>
+<p>见我不说话，他蓦然勾住我的脖子，鼻尖凑近，贴着我的鼻尖。</p>
+<p>他没呼吸，我听见我的呼吸粗重了很多。</p>
+<p>心跳也加速了。</p>
+<p>「正好一边玩，一边和别的鬼打听打听你说的那个人，怎么样，干不干？」</p>
+<p>我不敢抬眼看他，闷声道：「干。」</p>
+<p>7</p>
+<p>鬼是不能大白天出门的。</p>
+<p>见了太阳会死。</p>
+<p>幼稚鬼一本正经地告诉我这些后，提出了要跟我一起去上班。</p>
+<p>我十分不理解，这不是找死吗？</p>
+<p>他却很得意：「爱冒险的男人才有魅力。」</p>
+<p>「可是你不是说要和别的鬼打听消息吗？白天哪有别的鬼。」我快气哭了。</p>
+<p>「这天下肯定有我的知己，放心吧。」</p>
+<p>我更不理解了。</p>
+<p>但想来那些看见我在大太阳下，打着一把黑伞，不遮自己，反而遮着空气的路人，更更更不理解。</p>
+<p>幼稚鬼不肯坐交通工具，他说晕车，简直扯淡。</p>
+<p>坐地铁，他又嫌挤。</p>
+<p>我只能步行。</p>
+<p>每天要早起一个小时。</p>
+<p>啊，太苦了。</p>
+<p>好不容易到达公司，我却还要拿个椅子，把伞架在上面。</p>
+<p>伞放在地上，那娇气又脆弱的鬼不干。</p>
+<p>一套流程做下来，同事们看我的眼神就跟看弱智一样。</p>
+<p>幼稚鬼两天时间就把我公司的所有雄性贬得一无是处，连保安大叔都没放过。</p>
+<p>「那个男人好秃啊。」</p>
+<p>「那个男人好油啊。」</p>
+<p>「那个男人好假啊。」</p>
+<p>「那个男人好丑啊。」</p>
+<p>……</p>
+<p>我烦不胜烦，咬牙切齿地对着伞，说道：「嗯嗯嗯，这世界上就你一个好男人，可以了吧？」</p>
+<p>话音刚落，办公桌前面的同事从电脑前偏过头：「什么男人？」</p>
+<p>我连忙尬笑摆手：「不知道啊。」</p>
+<p>幼稚鬼在一旁笑得乐不可支，不小心撞掉了伞，阳光落在他身上，立马让他透明了几分。</p>
+<p>吓得我赶快捡起伞，重新罩住他。</p>
+<p>「唉，你对我还挺好，可惜了，人鬼殊途，不然你就能拥有我这样的好男人了。」</p>
+<p>啊，他真的自恋到令人发指。</p>
+<p>「不过这些男人都配不上你，你千万别将就啊。」他又道。</p>
+<p>有了这次教训，幼稚鬼还不收敛。</p>
+<p>不停在我耳边叨叨。</p>
+<p>碰到阳光偏移时，还溜到别人脖子后面吹冷风，把同事的零食偷过来给我吃，和我分享他听到的八卦。</p>
+<p>我快自闭了，甚至想辞职，最好换个星球苟活。</p>
+<p>终于熬到周五下班，我如释重负，想着未来两天睡他个天昏地暗，日月无光。</p>
+<p>但偏偏天不遂人愿，事不如人意。</p>
+<p>领导在公司群里通知，周六团建。</p>
+<p>还是我最讨厌的领导组织的团建。</p>
+<p>这都是什么人间疾苦啊。</p>
+<p>我忍不住仰天长叹。</p>
+<p>幼稚鬼拍了拍我肩膀，装出一副体贴的模样：「有什么烦心事，快说说，让我高兴高兴。」</p>
+<p>……</p>
+<p>8</p>
+<p>得知要团建，幼稚鬼高兴得把我两只猫崽子都撸炸毛了。</p>
+<p>「团建你穿衣柜里那件碎花小裙子吧，天天看你穿制服，一点世俗的欲望都没了。」</p>
+<p>他说得无比真诚。</p>
+<p>「滚。」</p>
+<p>我好想砍点什么。</p>
+<p>第二天中午，我还没睡够，就被鬼压床了。</p>
+<p>还是熟悉的配方。</p>
+<p>「马上起床，不然我就一直压着你。」</p>
+<p>某人在我耳边轻轻呢喃，语调深情，如同情话。</p>
+<p>过了好久，他可能才反应过来，鬼压床不能说话，放开了我。</p>
+<p>我立马睁开眼睛，大口喘息，心跳快得像下一秒就要从嗓子眼蹦出来了。</p>
+<p>幼稚鬼双手握拳，抵在下巴处，蹲在床边，关切地看着我：「好妹妹，你这是怎么了？」</p>
+<p>好一会儿，我平复好情绪，恶狠狠地瞪着他：「有本事你化成人形压我一次试试？」</p>
+<p>他双手捂脸，浮夸地晃动肩膀：「哎呀，你流氓。」</p>
+<p>尾音拖得又软又长。</p>
+<p>我差点被气死。</p>
+<p>起床洗漱完后，我打开衣柜，离当场去世就差一点点。</p>
+<p>里面所有衣服都凭空消失了，找遍全屋，也只有一件碎花连衣裙。</p>
+<p>「大哥，你知道什么叫女孩吗？」我转过身，咬着后槽牙挤出一句话。</p>
+<p>他支着脑袋，散漫地侧躺在尚有我余温的床上，「废话。」</p>
+<p>我哼笑一声，抖了抖碎花连衣裙：「哦，那你为什么不给我留件 bra？瞧不起我？」</p>
+<p>他怔了怔，不知道想到了啥，竟然诡异地红了脸颊。</p>
+<p>莫名其妙。</p>
+<p>穿戴好，化完妆，胡乱吃完饭，终于可以出门了，幼稚鬼突然从后面拉住了我的手。</p>
+<p>「牵手手，今天太阳好大，我好怕怕。」</p>
+<p>我刚想来两句国粹，一回头，却发现幼稚鬼不知道什么时候换了衣服。</p>
+<p>白衬衫，休闲裤，一直遮挡眼睛的刘海也变短了，露出一双水润清明的眼眸，整个人显得干净又阳光。</p>
+<p>鼻尖小痣，俏皮可爱。</p>
+<p>我一时看得失了神。</p>
+<p>「唉，这么帅只能给你一个人看，浪费。」他惋惜道。</p>
+<p>这次路途太远，幼稚鬼只得委屈一下，跟我一起乘坐出租车来到密室逃亡馆。</p>
+<p>有个真鬼在旁边，那些 NPC 完全调动不了我的情绪。</p>
+<p>直到耳边突然传来幼稚鬼亢奋的声音：「这里面有个真鬼诶，我要去交朋友了。」</p>
+<p>成功得把我吓得六神无主，鬼哭狼嚎，在密室里横冲直撞，还不小心摔倒，险些扒了一个 NPC 的裤子。</p>
+<p>同事们和 NPC 纷纷笑话我，使得极度不适应成为人群焦点的我，又窘迫又尴尬。</p>
+<p>对比之下，还是和鬼相处轻松点。</p>
+<p>结束后，幼稚鬼在我耳边憋笑道：「不好意思啊，刚刚看错了，里面就我一个真鬼。」</p>
+<p>我拳头硬了。</p>
+<p>这个鬼欺人太甚。</p>
+<p>「你刚刚还挺可爱。」</p>
+<p>他无视我的愤怒，留下一句话，不知道飘哪儿去了。</p>
+<p>9</p>
+<p>聚完餐，领导又安排唱歌。</p>
+<p>幼稚鬼一直没再出现。</p>
+<p>我也乐得清静，躲在角落补觉。</p>
+<p>忽然，领导发消息给我：「出来一下，有点事儿想问问你。」</p>
+<p>什么事？</p>
+<p>我养小鬼被发现了？</p>
+<p>忐忑不安地走出包厢，却没看见领导。</p>
+<p>这时，手机上又收到一条领导的消息：「直走，转弯，去安全通道聊，那儿安静。」</p>
+<p>我没多想，加快步伐往那儿赶。</p>
+<p>到地方时，领导领带松散，满身酒气，笑得一张大脸上波澜起伏。</p>
+<p>平日里，这位领导都当我是透明人，路上碰到了，我鼓足勇气和他打招呼，他理都不理，像是根本没记住手下有我这号人。</p>
+<p>这会儿，怎么又这么热情？</p>
+<p>「陈总。」忍下心头疑虑，我礼貌开口。</p>
+<p>寒暄了两句，陈总才进入主题，走得也离我越来越近。</p>
+<p>「小许啊，整个部门里，我最看重的就是你，话不多，做事有效率，也不玩拉帮结派那一套。」</p>
+<p>我讪笑，不敢接话，怕他在内涵我，人缘不好，胆小怯弱。</p>
+<p>陈总目光在我脸上逡巡，片刻后，他抬手按在我的肩膀：「你从毕业就来了公司，也该提拔提拔你了。」</p>
+<p>「啊？」这么突然吗？</p>
+<p>他的手顺着我的肩膀慢慢往下，眼神充满了欲念。</p>
+<p>我连忙甩开他的手，转身去拉门。</p>
+<p>他先一步挡在了门面前：「还有一个好消息，总部马上要调我过去了，以后有我在总部替你说好话，升职加薪小意思。」</p>
+<p>我沉下脸：「谢谢你，我现在可以走了吗？」</p>
+<p>他笑得愈发不怀好意：「装什么纯啊，我更喜欢投怀送抱的。」</p>
+<p>说完，他欺身过来，噘起厚嘴唇低头找我的唇。</p>
+<p>我左右躲避，不停挣扎，扯着嗓子呼救。</p>
+<p>可在门外震耳欲聋的音乐声中，我们闹出来的动静实在太小，根本无法引起别人的注意。</p>
+<p>男女力量悬殊较大，没过多久，我就被他强行按在楼梯上。</p>
+<p>「幼稚鬼，救我。」我忍不住连声喊道，眼泪争先恐后往外涌。</p>
+<p>可没有任何用，那人依然放肆。</p>
+<p>从一开始，我就在偷偷祈祷幼稚鬼快点出现，救我于水火，甚至还有种莫名自信，他一定会救我。</p>
+<p>现在看来，我真是蠢。</p>
+<p>衣服即将被剥开时，手心忽然多了一个小小的电击棒。</p>
+<p>我沉下去的心陡然一颤，连忙握住，狠狠捅向面前这个禽兽的小腹，按下开关，直至他瘫软无力翻白眼，我才放过他。</p>
+<p>站起身后，我仍不解气，又恶狠狠地踹了他好几脚。</p>
+<p>「够狠啊，不愧是跟我混的。」</p>
+<p>耳边响起幼稚鬼的声音。</p>
+<p>我怒气不减反增，朝虚空冷笑：「你来了啊，是不是又无聊了，想来逗逗我，不好意思啊，我实在没心情理你。」</p>
+<p>躺在地上的衣冠禽兽恢复了些神志，看见我跟空气说话，表情变得有些惊恐。</p>
+<p>我低头瞥了他一眼，没忍住又给他一脚。</p>
+<p>然后擦干泪痕，裹紧衣服大步离开。</p>
+<p>10</p>
+<p>假期即将结束，可我还是没能想出什么好办法对付人面兽心的领导。</p>
+<p>息事宁人会助纣为虐，举报我又拿不出有力的证据，可能还会遭受报复。</p>
+<p>实在难搞。</p>
+<p>相较于我的心烦意乱，狂躁不安，幼稚鬼像个没事人一样，照样活蹦乱跳。</p>
+<p>我不理他，他就自娱自乐，一会儿隐身，一会儿满房间到处飘荡。</p>
+<p>简直有病。</p>
+<p>他就不能跟我道歉、哄哄我、安慰安慰我？</p>
+<p>脑海中有时会忍不住冒出这个念头，这使我更加烦躁。</p>
+<p>周一清晨，我迈着沉重的步伐出门，幼稚鬼凑上来，我以为他又要缠着我带他去上班，刚想求他放过我，别烦我。</p>
+<p>他却笑着揉了揉我的头发：「早点回来，我在家等你。」</p>
+<p>一句话，莫名其妙地使我心里的委屈爆发，怕他看见我哭，我飞快转过身，拿起包就往外冲。</p>
+<p>「谁稀罕你等了。」</p>
+<p>到达公司时，我乱糟糟的心突然平静了下来，决定无论如何，都要当众揭露狗东西的真实面目。</p>
+<p>然而，还不等我开始行动，我就收到了总部发来的邮件。</p>
+<p>上面大方夸赞我机智勇敢，还说已经开除了狗东西，并且报警处理。</p>
+<p>我一脸懵。</p>
+<p>很快，我在已发送中的邮件中，找到了原因。</p>
+<p>周六晚上，有人用我的工作邮箱给总部发了一封举报信，上面还附有那天晚上狗东西约我去安全通道的聊天记录，以及他对我所做那些事的视频录像。</p>
+<p>证据确凿，难以狡辩。</p>
+<p>上次那个安全通道的监控是坏的，我问过，邮件里的视频是手机拍摄。</p>
+<p>通过拍摄角度分析，拍摄人就在上一层楼梯拐角。</p>
+<p>而那天，上一层楼梯拐角灯光常亮，如果有人站在拍摄点，地上会有影子。</p>
+<p>可我清清楚楚记得，那里没有。</p>
+<p>除非，拍视频的……不是人。</p>
+<p>唇角止不住上扬，心尖某处升起淡淡热气，熨帖全身。</p>
+<p>原来那天，他一直都在啊。</p>
+<p>但他太过分了，竟然等那么久才动手，我差点就被占便宜了！！！</p>
+<p>是想看戏吗？</p>
+<p>11</p>
+<p>实在等不到下班后去见他，我请假跑回家。</p>
+<p>一进门，我准备的满腹言辞刹那忘却，只剩下傻笑。</p>
+<p>好一会儿后，我才稍稍平复，坐在沙发上，呼唤幼稚鬼。</p>
+<p>好几声后，他才懒懒回了一句：「我在。」</p>
+<p>家里窗帘都拉得严丝合缝，加上朝向不好，没有阳光照进来，他完全可以显形，可他却没有。</p>
+<p>不过也正好，更方便我表达。</p>
+<p>「幼稚鬼，谢谢你帮我，如果没有你，这事不会那么顺利解决。</p>
+<p>「我生活一直以来都挺枯燥的，包括我这个人，曾经有一个男孩，短暂地惊艳了我的生命，你是第二个。</p>
+<p>「你和他很像，又帅又有病。</p>
+<p>「我们可以当朋友吗？」</p>
+<p>身后忽然传来一声铁器落地的脆响，我激动回头，「幼稚鬼」三个字还没来得及发出便哽住了。</p>
+<p>我妈站在厨房门口，穿着围裙，表情先是惊恐，而后变成心疼。</p>
+<p>「你在和谁说话？」她小心翼翼地问，「那些药你还有坚持吃吗？」</p>
+<p>伤口毫无预兆地被撕开，我像只被踩到尾巴的猫，一下子从沙发上弹起来，发颤着嗓音回道：「妈，你怎么在这儿？」</p>
+<p>她一下子哭出了声：「怎么会又严重了，为什么啊。」</p>
+<p>我想到了什么，不停在房间里绕圈圈：「幼稚鬼，你说句话给我妈听听。</p>
+<p>「你弄点动静出来也好啊。</p>
+<p>「求你了。」</p>
+<p>可不知道为什么，幼稚鬼始终没有回应。</p>
+<p>无论我怎么解释幼稚鬼的存在，我妈还是强行带我来了医院，直奔精神科。</p>
+<p>对于我的病情，我妈显然比我更加清楚，描述我的状况滔滔不绝。</p>
+<p>我在一旁听着，心口像被一双大手反复揉捏。</p>
+<p>「你现在看到的男鬼是不是当年那个男孩？」医生问。</p>
+<p>我果断摇头：「不是，他们不是同一个人。」</p>
+<p>医生狐疑地看了我一眼：「对医生要坦诚。」</p>
+<p>我蹙眉不悦：「他们确实不是同一个人。」</p>
+<p>他以为我为了隐瞒病情，故意不肯承认当年的诱因又一次发作了，所以才怀疑我不够坦诚。</p>
+<p>但确确实实不是同一个人。</p>
+<p>我那么喜欢宋谅，我不会认不出。</p>
+<p>最后诊断结果和二十岁那年一样：「精神分裂症。」</p>
+<p>五个字，否决了幼稚鬼的存在，否决了我久违的欣喜和感动，甚至否决了我的尊严和人格。</p>
+<p>我妈哭得上气不接下气，而我被迷茫和无助牢牢捆绑，连半分情绪都泄露不出。</p>
+<p>呆呆立在医院长廊，看着周围一张张苦涩的脸。</p>
+<p>12</p>
+<p>我妈陪了我一周。</p>
+<p>由于幼稚鬼改变了我的生活作息，我每天早睡早起。</p>
+<p>精神状态十分好。</p>
+<p>她难得夸赞我。</p>
+<p>我想和她解释，这一切都是那个幼稚鬼的功劳。</p>
+<p>但却不敢提。</p>
+<p>因为这些天，幼稚鬼一次都没出现过。</p>
+<p>生活中明明到处可见他存在的痕迹，偏偏又无法证明他的存在。</p>
+<p>送别我妈去车站时，她看着我，眼神悲凉：「星辰啊，你该放下了，这些年我们都不敢提他的名字，但妈妈知道，你一直忘不了他。」</p>
+<p>我妈口中的那个男孩，就是宋谅。</p>
+<p>他是我少年时，最喜欢的男孩。</p>
+<p>那会儿，我经常躲在体育馆层层人群背后，偷看他在球场上挥洒汗水。</p>
+<p>远观他和朋友嬉笑打闹，我也会忍不住跟着笑。</p>
+<p>反反复复溜进他的空间，再妥帖地删除痕迹，从各种渠道探听关于他的只言片语。</p>
+<p>很多人都说暗恋苦，但我却觉得很甜。</p>
+<p>看见他、和他擦肩、偶尔的交谈、刻意的偶遇等等，都使我对每一天的朝阳格外期待，对每一晚的夕阳格外缅怀。</p>
+<p>特别是随着年龄的增长，阅历的丰富，我更加觉得，全心全意喜欢过一个人，是一件很骄傲的事。</p>
+<p>「心理医生建议你谈恋爱。」我妈期待地看着我，「对象我都物色好了，你要不去见一见，很帅的。」</p>
+<p>这几天，她一有机会就劝我谈恋爱，我耳朵都快听起茧了。</p>
+<p>我深深叹了口气：「再说吧，你先回家，我爸从没离开过你这么久，小心他把家炸了。」</p>
+<p>从车站回家，我一改先前生龙活虎的状态，请了三天假，开启摆烂模式。</p>
+<p>应付长辈，不让他们担心，太耗费精力了，得要好好休养才行。</p>
+<p>晚上的时候，我一边研究自己的病例，一边琢磨捉鬼的手段。</p>
+<p>想着幼稚鬼不出现，我就主动出击制服他。</p>
+<p>忽然，家里的灯一闪，床边多出一个人。</p>
+<p>是幼稚鬼。</p>
+<p>他黑衣黑裤，整张脸似乎也笼罩着一层黑暗，让人分辨不清他的神色。</p>
+<p>我迟迟不敢说话，怕这一切都是我的臆想，眼眶里蓄满了泪水，也不敢轻易落下。</p>
+<p>「看在你这么想我的份上，我送你个惊喜。」</p>
+<p>他凑近过来，如往常一般，揉乱我的发顶。</p>
+<p>我被他眼底的盈盈波光蛊惑，愣愣点头。</p>
+<p>病历上「精神分裂症」五个字，躺在地上，被我践踏。</p>
+<p>我太想相信他是真实存在的。</p>
+<p>走出小区，冷风迎面扑来，明月被乌云遮住，天空黯淡无光。</p>
+<p>我看着身边的虚空，极度不安：「你还在吗？」</p>
+<p>一道嗓音在我身侧响起，右手被一只无形的手包裹住：「我在。」</p>
+<p>心瞬间安定，我满怀期待地跟着他往南面的湿地公园走。</p>
+<p>在进入一片树林后，我人疯了。</p>
+<p>绿莹莹的鬼火四处飘荡，阴风穿梭林间，沙沙作响。</p>
+<p>我第一反应就是跑，幼稚鬼却拉住了我，显出原形。</p>
+<p>「你跑什么？」</p>
+<p>我惊恐得说不出话。</p>
+<p>他又问：「不浪漫吗？」</p>
+<p>「这是浪漫吗？」我不理解。</p>
+<p>他扭捏起来：「嗯，怎么不算呢？」</p>
+<p>「城市里不好找萤火虫，只能用鬼火代替，效果都差不多，我聪明吧？」</p>
+<p>我闭上眼睛，稳了一下情绪，然后飙了一大段含妈量极高的话。</p>
+<p>幼稚鬼身形晃了晃，猛地扑过来，将我抵在树上，手捂住我的嘴巴。</p>
+<p>离得太近，他眼底的慌张一览无遗。</p>
+<p>「别骂，会把我骂走的。」</p>
+<p>好像是有句老话，叫「鬼怕恶人」。</p>
+<p>他是这么好搞定的鬼？</p>
+<p>四目相对，他的眼神不知不觉变得深邃多情，仿佛有丝丝缕缕的暧昧在无形中拉扯着我们贴近，再贴近。</p>
+<p>嘴唇即将相触时，我不小心踩到了树枝。</p>
+<p>咯吱一声脆响，惊醒神志。</p>
+<p>我们两人慌张分开，四处观望，犹如做贼。</p>
+<p>好一会儿后，他笑出了声：「做了鬼我也还是挺有魅力的。」</p>
+<p>刚想骂他有病，他止住笑容，一秒恢复正经：「至少，还能再让你心动一次，哪怕这一次很短暂。」</p>
+<p>我下意识反驳：「谁心动了？」</p>
+<p>他牵住我的手，靠在旁边的树上：「曾经有个女孩，给我写了封情书，上面约我去看萤火虫，我失约了。</p>
+<p>「今天，算我勉强赴约，若有来生，我一定抓够一百只萤火虫，送给她。」</p>
+<p>我听得云里雾里，似懂非懂。</p>
+<p>他垂下眼睫，自嘲一笑：「她骗了我。」</p>
+<p>我好奇道：「骗了你什么？」</p>
+<p>「她说她会喜欢我一辈子。」他轻声道。</p>
+<p>说着，他抬起头，苦涩道：「可她现在，连我长什么样子都忘了。</p>
+<p>「可怜我做鬼都为她守身如玉。」</p>
+<p>13</p>
+<p>五年前，我奔跑两个路口，追上前面骑自行车的男孩。</p>
+<p>送出了人生第一封情书。</p>
+<p>抓心挠肝地熬过了周末，周一去学校的路上，我目睹了那男孩被无牌车碾压的场景。</p>
+<p>我不顾一切跑过去想救他，被溅了一腿血。</p>
+<p>从那以后，那一摊血肉模糊就成了我的噩梦。</p>
+<p>我无时无刻不想念宋谅，又无时无刻不恐惧宋谅。</p>
+<p>在这两个极端的反复拉扯中，我经常做出一些常人不能理解的事。</p>
+<p>比如，自导自演一些情节，自言自语一些对话。</p>
+<p>也是那时，我第一次被诊断出精神分裂。</p>
+<p>心理医生窥探了我的隐秘，让我家里人清除我生活中所有关于宋谅、关于青春的痕迹。</p>
+<p>我很恨他。</p>
+<p>而我能做的唯一反抗，就是伪装成一切正常，再不让他有机会伤害到我珍之又重的过往。</p>
+<p>「忍了又忍，我还是想告诉你，宋谅，我喜欢你。」</p>
+<p>在幼稚鬼第三次完整念完那封情书时，我终于发泄了出来，嚎啕大哭。</p>
+<p>好似兜兜转转，隐隐藏藏，在此刻找到了哭的勇气。</p>
+<p>这五年来，我和时间为敌，不断提醒自己，我爱宋谅。</p>
+<p>许星辰最喜欢最喜欢的少年，就是宋谅。</p>
+<p>但没想到有一天，他站在我面前，我会认不出。</p>
+<p>或许是人自身的保护机制，刻意忘却痛苦的根源。</p>
+<p>也或许如同那句歌词：多少遗憾自负存念想，唯有时间不可挡。</p>
+<p>「小傻子，我来这一趟，是想用我的遗憾弥补你的遗憾。」他又一次揉我的头发，就像已经养成了一个习惯般。</p>
+<p>我抽抽搭搭地止住哭，不停道歉：「对不起，我没有做到承诺，我忘了你，对不起。」</p>
+<p>「我刚开始是有怨念，差点成了大怨鬼，但后面想通了，活着的人，永远比死去的人痛苦，这些年辛苦你了。」</p>
+<p>他温柔地抱住我，声音如同呢喃，让我有一种不太真切的感觉。</p>
+<p>再看满林子的鬼火，我一点也不怕了。</p>
+<p>反而无比幸福。</p>
+<p>失而复得，虚惊一场，这些幸事都在今晚降临了。</p>
+<p>我又哭又笑，一遍一遍喊宋谅的名字，想把过往遗失的都弥补回来。</p>
+<p>但我仅仅只幸福了四个小时。</p>
+<p>宋谅明明提出陪我看日出，说将来皆可盼，却在日出前消散在了风中。</p>
+<p>只剩下一封信。</p>
+<p>样式和我当年送给他的情书一模一样，白色的信封，粉色的信纸。</p>
+<p>笔迹工整隽秀，落笔之间尽是认真。</p>
+<p>「可爱又美丽的许星辰：</p>
+<p>展信佳！</p>
+<p>收到你的情书好久了，很抱歉现在才给你答复。</p>
+<p>我喜欢你，谢谢你也喜欢我。</p>
+<p>在我看不见的角落里，那么认真、那么小心地关注我。</p>
+<p>但其实聪明的我，早就发现端倪了。</p>
+<p>你上课会走神看我，我打球时，你会拉着舍友去帮我助阵，藏在人群里喊我的名字。</p>
+<p>公共课提前一个小时帮我占位。</p>
+<p>在学校门口，守着我的外卖，怕被人偷。</p>
+<p>还有一次下大雨，我没带伞，困在了教室，你个小傻子还偷偷把伞留下了，然后发短信给我，让我明天带给你。</p>
+<p>我注意过那次，你足足擤了十一天鼻涕。</p>
+<p>红着鼻头、可怜巴巴的小惨样，我还挺爱看。</p>
+<p>我一直不肯投胎，兜兜转转在找你。</p>
+<p>终于找到你了，却在前几天，扮鬼，哦不对，我就是鬼，去恐吓那个猥琐男不准报复你时，被他家的风水摆设伤得很重。</p>
+<p>唉，聪明一世糊涂一时。差点魂飞魄散了，养了好多天，才勉强能维持鬼体。</p>
+<p>不过那个猥琐男被我吓得好惨，这辈子他应该都不敢做坏事了。</p>
+<p>别多想，我的离去是必然，没有这件事发生，我也快离开了。</p>
+<p>我的执念化解了，心结了却了，已经没有办法再在人世逗留。</p>
+<p>我知道你一直在找我，想确定我是真实存在的。</p>
+<p>所以，我写下这封信，给你最准确的答案。</p>
+<p>之前你在视频里看到的蜘蛛，不是我无聊玩的游戏，你没发现你这个吸蚊体质已经很久没被蚊子咬了吗？</p>
+<p>小傻子。</p>
+<p>我可是暖男。</p>
+<p>你的小猫崽我也帮你做好思想工作了，以后你再喊它们，它们肯定不会理都不理你的。</p>
+<p>至少能看你一眼。</p>
+<p>哈哈！</p>
+<p>还有，别熬夜，保持好我给你培养的生活习惯，健健康康，平平安安，长命百岁。</p>
+<p>没有人比我更清楚，生命的可贵。</p>
+<p>我很遗憾，我们之间的故事那么晚才开始，更遗憾，我们的故事那么快又结束。</p>
+<p>但是啊，许星辰。</p>
+<p>我们之间是圆满的。</p>
+<p>你要向前看。</p>
+<p>下辈子，惩罚我，怕你，爱你，更离不开你。」</p>
+<p>落款是，你的少年，宋谅。</p>
+<p>流光缱绻，岁月生香。</p>
+<p>宋谅。</p>
+<p>我没有后悔喜欢你。</p>
+<p>谢谢你。</p>
+<p>用你的遗憾弥补我的遗憾。</p>
+<p>用你的答案结束我的耿耿于怀。</p>
+<p>今日阳光灿烂，又是好天气。</p>
+<p>清风拂过草木，抖落旧灰尘。</p>
+<ul>
+<li>完 -</li>
+</ul>
+<p>□ 溺海</p>
+<p>备案号:YX01WBJb1dd6dY8x9</p>
+<p>编辑于 2022-05-11 17:58 · 禁止转载</p>
+<p>点击查看下一节</p>
+<p>盒子与猫</p>
+<p>​</p>
+<p>赞同 209</p>
+<p>​</p>
+<p>已反对</p>
+<p>目录</p>
+<p>38 评论</p>
+<p>分享</p>
+<p>霓虹夜行：见幻影，见人心</p>
+<p>吞茶嚼花 等</p>
+<p>{nonce=‘market’,action: ‘FCPEnd’,params:{}})</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC21%E8%8A%82%E6%AD%BB%E5%AF%B9%E5%A4%B4%E4%B9%9F%E8%A6%81%E8%B0%88%E6%81%8B%E7%88%B1/" title="第 21 节 死对头也要谈恋爱">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">第 21 节 死对头也要谈恋爱</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC22%E8%8A%82%E6%A1%83%E8%8A%B1%E5%8A%AB/" title="第 22 节 桃花劫">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">第 22 节 桃花劫</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

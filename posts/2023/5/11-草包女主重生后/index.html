@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>草包女主重生后 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/5/11-%E8%8D%89%E5%8C%85%E5%A5%B3%E4%B8%BB%E9%87%8D%E7%94%9F%E5%90%8E/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/5/11-%E8%8D%89%E5%8C%85%E5%A5%B3%E4%B8%BB%E9%87%8D%E7%94%9F%E5%90%8E/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="草包女主重生后">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26659.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26659.jpg">
+  <meta name="twitter:title" content="草包女主重生后">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="草包女主重生后">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11543">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26659.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">草包女主重生后</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%8d%89%e5%8c%85%e5%a5%b3%e4%b8%bb%e9%87%8d%e7%94%9f%e5%90%8e&amp;url=https://mohai.us.kg/posts/2023/5/11-%E8%8D%89%E5%8C%85%E5%A5%B3%E4%B8%BB%E9%87%8D%E7%94%9F%E5%90%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/5/11-%E8%8D%89%E5%8C%85%E5%A5%B3%E4%B8%BB%E9%87%8D%E7%94%9F%E5%90%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%8d%89%e5%8c%85%e5%a5%b3%e4%b8%bb%e9%87%8d%e7%94%9f%e5%90%8e%20https://mohai.us.kg/posts/2023/5/11-%E8%8D%89%E5%8C%85%E5%A5%B3%E4%B8%BB%E9%87%8D%E7%94%9F%E5%90%8E/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26659.jpg" alt="草包女主重生后" />
+      
+
+      <p>草包女主重生后</p>
+<p>穿成女配后我只想搞事业</p>
+<p>沈轻轻在自己的婚礼上，抢了我的未婚夫。</p>
+<p>她撕开渣男的真面目后，转头就问我的未婚夫要不要娶她？</p>
+<p>随后顾淮安不顾众人阻拦，执意要当替补新郎。</p>
+<p>远在国外出差的我就这样被绿了。</p>
+<p>1</p>
+<p>知道两人在一起后，我匆匆回国，却意外发生车祸，连人带车掉进河里。</p>
+<p>昏迷的这些日子，我被困在虚无缥缈的世界里，了解了事情的前因后果。</p>
+<p>我是女配，专门帮男女主巩固感情的炮灰女配。</p>
+<p>沈轻轻重生了，她重生在自己婚礼当天，因为前世被渣男和塑料闺蜜骗得团团转，顾淮安也为救她而死，沈轻轻最后含恨而终。</p>
+<p>一朝重生，她发誓要报复前世伤害她的那些人，然后好好珍惜顾淮安，努力弥补对他的亏欠。</p>
+<p>婚礼上，她一看到活生生的顾淮安，就全然忘记我的存在，满脑子只想着要和他破镜重圆。</p>
+<p>于是便出现了所谓的求爱名场面。</p>
+<p>为了让他们能名正言顺地在一起，我这个炮灰女配，还没出场就出车祸死了。</p>
+<p>沈轻轻蠢死的那一世，我作为商界的女强人，虽然一辈子没结婚，但也安享晚年。</p>
+<p>没想到因为她重生，我得早早下线。</p>
+<p>2</p>
+<p>按照小说的发展，「我」死后，顾淮安跟所有人说，他和我已经取消婚约，他并不喜欢我。</p>
+<p>我那个对沈轻轻一往情深的亲弟弟怕她被诟病，也帮着说谎话。</p>
+<p>尘埃落定后，他来到我的墓前，哭着求我原谅他。</p>
+<p>沈轻轻彻底放下芥蒂，和顾淮安疯狂虐渣，然后过起了恩爱日子。</p>
+<p>而我这个炮灰女配自此完成任务，彻底消失在所有人的生活里。</p>
+<p>知道自己的命运这么悲催后，我忍不住骂街。</p>
+<p>这么没脑子的女主居然也能重生，还能凭着抱大腿的心思成为人生赢家，这是把读者当傻子吧！</p>
+<p>许是老天爷感受到了我的怨念，让我在这场车祸中奇迹般地醒过来。</p>
+<p>再次醒来，沈轻轻和顾淮安已经在一起了，我这个突然活过来的未婚妻反倒成了碍眼的人。</p>
+<p>所有人都等着看我的笑话。</p>
+<p>既然死劫都能改，那所谓的女主光环也不过如此。</p>
+<p>这个世界，只遵循胜者为王。</p>
+<p>3</p>
+<p>我醒来的第二天，顾淮安带沈轻轻来医院看我。</p>
+<p>「姜窈，我和轻轻是真心相爱的，希望你能成全我们。」顾淮安搂着沈轻轻的腰，眼里满是柔情。</p>
+<p>沈轻轻则像个娇羞的小媳妇，乖乖巧巧地站在一旁。</p>
+<p>这哪里是来求成全的，这分明是来刺激我的。</p>
+<p>我挑挑眉，嗤笑一声：「如果我不成全呢？」</p>
+<p>「姜窈姐，淮安已经跟我说了你们的事，虽然你们彼此没有感情，但我还是想真诚地跟你道个歉。」沈轻轻大喇喇地跪在我面前。</p>
+<p>「轻轻，你别这样，这不是你的错。」顾淮安心疼坏了，连忙把沈轻轻搂在怀里。</p>
+<p>看着两人旁若无人地卿卿我我，我恶心坏了。</p>
+<p>「沈轻轻，你跟你那小三出身的妈妈真的有得一拼。」我轻蔑地瞥了她一眼。</p>
+<p>「姜窈！」顾淮安厉声警告我。</p>
+<p>他看我的眼神，就像看死人一样。</p>
+<p>小说剧情里，我这个炮灰死得最憋屈。</p>
+<p>我以前只听说沈夫人恶毒，可如今自己遇到这朵盛世白莲，还真有苦难言。</p>
+<p>「不许你侮辱我妈妈，当年要不是张曼如使计，我爸妈就不会分开，我妈妈也不会成为见不得人的小三。」沈轻轻气得眼睛都红了。</p>
+<p>「可人家是明媒正娶，就算是商业联姻，你那渣爹得了人家家族的好处，难道就可以翻脸不认人吗？天底下哪有这么便宜的事。」</p>
+<p>沈轻轻一时说不出反驳的话，只能站在那里哼哼唧唧。</p>
+<p>4</p>
+<p>「别再这辣我眼，不然我不介意让你们身败名裂。」我指了指角落里的摄影机。</p>
+<p>沈轻轻吓得扑到顾淮安怀里求安抚。</p>
+<p>看她这副矫揉造作的样子，我更想打人了。</p>
+<p>「姜窈，这一切都是我的错，和轻轻没关系，你别为难她。」</p>
+<p>「至于毁约问题，我可以弥补你，你想要什么都可以提，我会尽量满足你。」顾淮安为了沈轻轻再次放弃原则。</p>
+<p>做舔狗能做到他这种份上，可挺不容易的。</p>
+<p>前世时，顾淮安眼睁睁地看着沈轻轻和渣男恩爱缠绵。</p>
+<p>为了沈轻轻，他喝酒喝到胃出血；为了沈轻轻，他可以把自己的亲妹妹送去国外自生自灭；为了沈轻轻，他可以打伤自己的腿装可怜，只为沈轻轻正眼看他一眼。</p>
+<p>这没得十年脑血栓，做不出这样的事吧！</p>
+<p>「干巴巴的对不起有用吗？顾淮安，你让我成了整个圈子里的大笑话。</p>
+<p>「你吃了我姜家的地皮，还通过联姻得了不少好处，是不是该吐出来了？」</p>
+<p>我知道顾淮安不好惹，可我偏偏要碰这个硬骨头，如果做人都像沈轻轻一样只知道仗着男人虐渣打脸，还活个什么劲。</p>
+<p>新时代的女性，不必再依附男人而活。</p>
+<p>5</p>
+<p>「姜窈，属于姜家的东西，我会补偿给你，但如今正在启动的项目，跟你们姜家没什么关系。」</p>
+<p>看着顾淮安一副不欠我的样子，我气笑了。</p>
+<p>「这就是你的尽量弥补？」</p>
+<p>「姜窈，你太贪心了，答应和你在一起时，我就说过互不干涉，你完全没必要表现出一副我负了你的样子。」</p>
+<p>他简单的几句话就把自己撇得干干净净。</p>
+<p>「可就算是合作，也要遵守契约精神，你单方面毁约，怎么反倒是我的错了？</p>
+<p>「我现在甚至怀疑，你和我在一起时，就已经和她搞在一起了，不然她怎么会在婚礼上公然示爱。」我眼神不正经地在他们二人之间来回打量。</p>
+<p>沈轻轻受不了我这么侮辱她，哭着跑出去。</p>
+<p>「姜窈，如果轻轻出了什么差池，我一定不会放过你。」顾淮安警告我后，连忙去追沈轻轻。</p>
+<p>俗话说，敌人的敌人是朋友，我宁愿恶得明明白白，也不想勉强自己大方。</p>
+<p>我想顾淮安会喜欢我送给他的新婚礼物。</p>
+<p>6</p>
+<p>「还有吗？」我看着沈轻轻和渣男的恩爱记录，牙都要酸掉了。</p>
+<p>凭什么沈轻轻这样的人都能重来，而我就要做他们爱情的垫脚石。</p>
+<p>沈轻轻的塑料闺蜜林雅谄媚道：「我只找到这些，如果姜小姐还要的话，我再去找找。」</p>
+<p>「不用了。」</p>
+<p>把钱拿给林雅后，我让她带渣男出国避避风头，免得把我套出来。</p>
+<p>按照剧情发展，接下来就是沈轻轻的虐渣路，她仗着自己是顾夫人，可没少做狐假虎威的事。</p>
+<p>能下床后，我约张曼如谈合作。</p>
+<p>圈里的人都说，张曼如心如蛇蝎，连一个沈轻轻也容不下。</p>
+<p>如今一想到我自己的遭遇，我不弄死他们，已经够大度了。</p>
+<p>7</p>
+<p>张曼如如期赴约。</p>
+<p>病房里，张曼如安慰我几句后，开始进入正题：「姜小姐打算怎么做？」</p>
+<p>我朝她抛出橄榄枝，希望两家能联姻，以此达成合作关系。</p>
+<p>「联姻？」张曼如闻言一脸错愕地看着我。</p>
+<p>顾淮安有男主光环，我又和他彻底交恶，如果我不做好准备，姜家早晚被他吸干血。</p>
+<p>「大家都说沈少爷脑子不正常，但我觉得不过是单纯了些，他是个适合结婚的对象。</p>
+<p>「我知道沈决无心公司，那沈夫人倒不如好好培养孙子，一旦这个孩子长大，我姜氏集团也会由他来管理。」</p>
+<p>姜堰既然靠不住，那就再练个小号。</p>
+<p>张曼如听到我这么说，诧异得把茶杯都摔碎了。</p>
+<p>「姜小姐确定要嫁入我沈家？」</p>
+<p>「确定，婚期就定在六月初六，和沈轻轻同一天婚礼。」</p>
+<p>张曼如闻言有些失态，儿子太单纯，女儿又太叛逆，她不仅要面对丈夫的不闻不问，还要担心自己的一双儿女会不会被欺负。</p>
+<p>张曼如有手段，如果不是把自己困在情爱里，哪里由得沈轻轻在沈家上蹿下跳。</p>
+<p>爱情这种东西，果然害人不浅。</p>
+<p>8</p>
+<p>姜家和沈家要联姻的消息迅速传开，同时跟着一起来的，还有沈轻轻和渣男的恩爱视频。</p>
+<p>顾淮安成为接盘侠的梗，一度占据新闻头条。</p>
+<p>「姐，沈轻轻的视频，是不是你干的？」姜堰闯进病房，不由分说地质问我。</p>
+<p>我看着这个脑残弟弟，想到他就是暗恋沈轻轻的深情男三，恨不得把他赶出家门。</p>
+<p>我放下文件，抬头看着他：「你这是在质问我？」</p>
+<p>「姐，你和顾淮安只是商业联姻，如今他也赔偿了我们姜家，你何必死咬不放。」</p>
+<p>我拿桌面上的水果直接朝他扔去：「蠢货，我看你连白痴都不如。」</p>
+<p>这二货只看到赔偿，却看不到顾淮安的狼子野心。</p>
+<p>沈轻轻受了委屈，他怎么可能会善罢甘休，所谓的正义不过是由胜利者书写的。</p>
+<p>在顾淮安眼里，我们这些伤害沈轻轻的人，可不就是恶毒的人。</p>
+<p>9</p>
+<p>「姐，看在我的面子上，你就别为难轻轻了。」姜堰跟我装可怜。</p>
+<p>父母车祸去世后，我和姜堰相依为命，他说过不会让我难过，可如今为了一个沈轻轻，却要委屈我这个姐姐。</p>
+<p>「姜堰，你要为了一个朝三暮四的女人，为难姐姐吗？</p>
+<p>「你记不记得，你曾说过不会让任何人伤害我，可是你现在在做什么？」</p>
+<p>我的话让姜堰羞愧难当。</p>
+<p>「姐……」</p>
+<p>我疲惫地揉了揉眉心：「你回去吧！如果再让我知道你和沈轻轻纠缠不休，我就当没你这个弟弟。」</p>
+<p>剧情里我死后，姜堰被沈轻轻和顾淮安设计，我辛辛苦苦打拼下来的事业被顾淮安收入囊中。</p>
+<p>如果姜堰再执迷不悟下去，那这个弟弟不必再要了。</p>
+<p>婚期将近，我每天忙得不可开交，婚礼全是张曼如筹备的。</p>
+<p>她的手段也厉害，怕自己的儿子成为大众议论的焦点，她把矛头指向了沈轻轻。</p>
+<p>这段日子，光是她和前夫哥的爱恨纠葛，已经闹得满城风雨，更何况她在婚礼上公然抢别人的未婚夫。</p>
+<p>10</p>
+<p>婚礼前，我和沈家人坐在一起吃了顿饭。</p>
+<p>饭桌上，我那所谓的公公怕沈轻轻受委屈，打算帮我们改婚期。</p>
+<p>「不可能，婚期必须是六月初六，毕竟姜家这边的亲朋好友已经通知，到时候媒体朋友也会来。」</p>
+<p>我瞥了闷闷不乐的沈轻轻一眼，然后给身旁一直不出声的沈决夹菜。</p>
+<p>「谢谢。」沈决转头跟我道谢，他的眼睛很干净。</p>
+<p>「不客气。」</p>
+<p>沈父看到我这样，不由得皱紧眉头，他不敢得罪我，只能把气撒在沈决身上。</p>
+<p>「阿决，你怎么能让姜小姐照顾你？你真的太不懂事了。」</p>
+<p>沈决不出声，显然已经对这些话免疫了。</p>
+<p>「伯父，阿决这样就很好，以后是我俩过日子，说实话你有点指手画脚了。」我的话让在座的人都变了脸色。</p>
+<p>失了面子的沈父闻言脸色阴沉得厉害，他刚想反驳，又被我打断。</p>
+<p>「我不知道伯父为什么不喜欢阿决，但伯父要想清楚什么最重要，为了一个上不得台面的私生女，让沈、姜两家都不开心，伯父确定自己能承担这个风险吗？」</p>
+<p>沈父哑口无言，而沈轻轻眼里满是恼意。</p>
+<p>小说里，是沈轻轻央求顾淮安帮忙，才让沈家度过这次危机，而这也是张曼如后面被公司董事架空的主要原因。</p>
+<p>吃完饭后，沈轻轻哭着离开。</p>
+<p>如今的靠山成了顾淮安，她倒是越来越矫情了。</p>
+<p>11</p>
+<p>因为顾淮安对我这个前未婚妻理亏，没立场横插一脚，所以两家的合作还算顺利。</p>
+<p>而沈轻轻因为顾淮安拒绝她的报复请求，这段时间一直在闹别扭。</p>
+<p>顾淮安这个恋爱脑觉得她娇蛮可爱，可在我看来，这叫胸大无脑、自私自利。</p>
+<p>转眼就到了婚礼这天。</p>
+<p>看着酒店里高朋满座的沈家亲戚，我满意地点了点头，张曼如还真对我胃口。</p>
+<p>顾淮安给沈轻轻举办的盛世婚礼，还是被我破坏了。</p>
+<p>沈轻轻的出嫁很心酸，身边只有沈父一个长辈，伴娘还是花钱租的。</p>
+<p>「啧啧啧，沈小姐的人缘居然这么不好，连个闺蜜都没有。」我和沈心怡过来看沈轻轻的笑话。</p>
+<p>仗着沈父的宠爱，沈轻轻什么也不愿意学，跟草包没什么区别，平日又爱玩，身边的人全是狐朋狗友，没一个能拿得出手。</p>
+<p>没有顾淮安爱她，她什么也不是。</p>
+<p>12</p>
+<p>「姜窈，我都已经说对不起了，你为什么就是死咬不放？」沈轻轻歇斯底里地质问我。</p>
+<p>我打量着一身镂空婚纱的沈轻轻，勾唇轻笑。</p>
+<p>「沈轻轻，有些事不是简简单单的对不起就完了，每个人都要为自己的错误买单，而不是把自己的快乐建立在别人的痛苦之上。」</p>
+<p>「今天是你大喜的日子，我可是打算送一个大礼给你的。」</p>
+<p>我让沈心怡控制住她，随后把带来的墨汁泼在她那价值几百万的婚纱上。</p>
+<p>「啊啊啊啊！姜窈，我要杀了你。」沈轻轻疯狂挣扎。</p>
+<p>无视沈轻轻杀人的目光，我扬手打了她一巴掌。</p>
+<p>「沈轻轻，我姜窈从来不是让人随意揉捏的烂好人，你既然惹了我，就要承受被报复的后果。</p>
+<p>「你是顾淮安娇养的金丝雀，可我姜窈不是，我有钱有能力，我甚至可以做顾淮安的对手。」</p>
+<p>沈轻轻见婚纱被毁，倒在地上哭得梨花带雨。</p>
+<p>「轻轻，你怎么了？」匆匆赶来的顾淮安连忙把沈轻轻抱在怀里，眼里满是心疼。</p>
+<p>「淮安，你特意给我设计的婚纱被她们毁了。」沈轻轻哭得不能自已。</p>
+<p>眼见婚礼时间就要到了，我正要抬脚离开，就被顾淮安抓住。</p>
+<p>13</p>
+<p>「姜窈，你太过分了。」顾淮安抓着我的手臂，恨不得把我千刀万剐。</p>
+<p>「我哪里过分了，过分的是你顾淮安，你表面说要弥补我，可背地里却在抢我姜家的生意。</p>
+<p>「你甚至设计姜堰，让他与我离心，既然你不让我好过，那我也让你们尝尝自己种下的恶果。」</p>
+<p>我注意到躲在角落的姜堰，寒心离开。</p>
+<p>早在一周前，欺骗沈轻轻的渣男就回国了，比起和他们争这些，这三人更适合狗咬狗。</p>
+<p>婚礼上，我看着面无表情的沈决给我戴上戒指，觉得有些不真实。</p>
+<p>虽然我和他没有感情，但比起身旁空无一人，我好像没那么孤独了。</p>
+<p>新房里，我看着一幅幅漂亮的油彩画，有些吃惊。</p>
+<p>沈决来到我身边，默默无语。</p>
+<p>「这些画很有灵气。」我毫不掩饰地夸奖。</p>
+<p>「谢谢。」他朝我露出一个浅浅的笑容，梨涡若隐若现。</p>
+<p>大家都说沈决不正常，如今一相处，我才发现他只是闷而已，他在艺术方面有很高的造诣。</p>
+<p>小说里沈父应该是拿了沈决的作品去招摇撞骗，才会成为著名的油画大师。</p>
+<p>新婚夜，沈决怕唐突我，独自在沙发上睡了一晚。</p>
+<p>第二天醒来，沈轻轻前男友大闹婚礼的视频被挂在热搜上。</p>
+<p>14</p>
+<p>视频里，渣男深情告白，还一一列出这几年他们俩做过的事，简直恩爱又缠绵。</p>
+<p>我看着视频里顾淮安越来越黑的脸，忍不住笑出声。</p>
+<p>这时，沈决刚好从浴室出来，我抬头望去，就看到他不好意思的眼神。</p>
+<p>我一时反应不过来，笑着摸了摸自己的脸：「怎么了？」</p>
+<p>「没事。」他说完就走出房门。</p>
+<p>餐桌上，大家都在安静地吃早餐，可沈父坐不住了。</p>
+<p>他指责我昨天不该把沈轻轻的婚纱弄脏，害她穿了一件不合适的婚纱举办婚礼。</p>
+<p>我看着一旁默默吃饭的张曼如，无语道：「爸，你明明知道婆婆膈应她，我也膈应她，你一大清早地提她干嘛！」</p>
+<p>「你混账。」沈父拍桌大骂。</p>
+<p>「爸，沈轻轻害我成为笑柄，我只是反击回来，怎么就混账了？况且我不是你们沈家随意揉捏的小媳妇，咱们两家是商业联姻。」</p>
+<p>我一句句的敲打让沈父变了脸色，他放下碗筷，脸色阴沉地出门了。</p>
+<p>15</p>
+<p>「嫂子，你好厉害，连爸爸都敢顶嘴。」沈心怡眼里再也没有对我的轻视。</p>
+<p>「心怡，男人是靠不住的，你能依靠的只有自己，当自己足够强大，他们连狗屁都不是。」</p>
+<p>我这番话表面是说给沈心怡听，其实是让张曼如明白，别为了所谓的情爱活得那么卑微。</p>
+<p>我越说越起劲，身旁的沈决突然起身，直把我吓个半死。</p>
+<p>「哥，你去哪儿？」</p>
+<p>「回房画画。」沈决瓮里瓮气地回答她。</p>
+<p>看着他离去的背影，我一时摸不着头脑。</p>
+<p>很快就到了沈轻轻回门的日子，她一脸笑容地挽着顾淮安的胳膊进来，眼神里透着丝丝春意，可见顾淮安真的很宠她。</p>
+<p>「爸，我好想你。」沈轻轻旁若无人地对着沈父撒娇。</p>
+<p>她以前对我那婆婆还会做表面功夫，可自从和顾淮安在一起后，她就没再把沈家放在眼里。</p>
+<p>似乎在她眼里，顾淮安只要稍稍用点手段，就能把沈家弄破产。</p>
+<p>前世的顾淮安确实很厉害，可如今为爱降智的顾淮安不过如此。</p>
+<p>「真没教养，难怪亲妈会做小三。」沈心怡在我身旁小声嘀咕。</p>
+<p>「沈心怡，你就这么跟姐姐说话？」沈父拉下脸。</p>
+<p>眼见顾淮安的脸色阴沉，为了给他一个交代，沈父让沈心怡回房思过。</p>
+<p>眼见张曼如没反应，我拉住沈心怡，不让她离开：「爸，明明是沈轻轻对我婆婆不礼貌，心怡提醒她而已，她哪里错了？」</p>
+<p>这沈家人都是光打嘴炮的，但凡张曼如没那么在乎沈父，也没必要被沈轻轻这么膈应。</p>
+<p>16</p>
+<p>「姜窈，你现在嫁进我沈家，就要守沈家的规矩，我是你的长辈。」沈父说着就拿起茶杯就往地上摔去。</p>
+<p>周围的人都被吓得大气不敢出。</p>
+<p>我刚想回怼，就被沈决拉住胳膊：</p>
+<p>「爸，你好恶心。」</p>
+<p>「爸，你真的好虚伪。」</p>
+<p>沈决不说话还好，一说话就直接往人心口里捅。</p>
+<p>「瞎说什么大实话。」我开始火上浇油。</p>
+<p>就在沈父扬手要打我和沈决时，张曼如直接推开他，还说要和他离婚。</p>
+<p>大家都被张曼如这一出弄得反应不过来，过了一会，沈轻轻不知想到什么，在沈父耳边轻声说了些话。</p>
+<p>「我不同意。」回过神的沈父眼睛闪烁，显然心里有鬼。</p>
+<p>「曼如，我错了，你就再给我一次机会吧！」他情真意切地跟我婆婆道歉，只差跪下来了。</p>
+<p>接着沈轻轻红着眼跟张曼如道歉。</p>
+<p>「夫人，我只是太想我爸了，才忘记跟你打招呼，我并没有不尊重你。」</p>
+<p>直觉告诉我，沈轻轻很不对劲。</p>
+<p>脑海里闪过一些小说片段，我看着诚心诚意的沈轻轻，嗤笑一声。</p>
+<p>她还真是黄鼠狼给鸡拜年——没安好心。</p>
+<p>17</p>
+<p>吃饭的时候，沈轻轻挑食挑得很厉害。</p>
+<p>她嫌弃地看着桌面上的菜，忍不住抱怨：「爸，怎么都没有我爱吃的菜？」</p>
+<p>我瞥了她一眼，随意地夹起一块猪大肠，直接放进嘴里嚼起来。</p>
+<p>沈父见沈轻轻和顾淮安一直不动筷子，没好气地问：「何妈，这些菜怎么都这么重口味？」</p>
+<p>阿姨连忙解释：「先生，今天的菜单是少夫人要求的。」</p>
+<p>此话一出，沈轻轻控诉我公报私仇，还嚷着我不欢迎她回来。</p>
+<p>「看来你心里是有点数的。</p>
+<p>「我们都爱吃，难道就因为你们不喜欢，我们就得迎合你们，做什么春秋大梦呢！」</p>
+<p>我说着就给沈决夹了一筷子猪肝。</p>
+<p>他也不挑，说了声谢谢后，斯斯文文地吃起来。</p>
+<p>「就是，你们太矫情了。」沈心怡战战兢兢地夹起碗里的蚕蛹，直往嘴里怼。</p>
+<p>这顿饭，沈轻轻吃得没滋没味，还没等跟沈父说几句话，就闹着离开。</p>
+<p>顾淮安油腻一笑，搂着沈轻轻离开。</p>
+<p>晚上，张曼如让我去书房找她，只说有要事相商。</p>
+<p>「阿窈，你可知道沈轻轻今天跟你公公说了什么？」张曼如眼里闪过片刻的慌张。</p>
+<p>可见沈父不爱她，她心知肚明。</p>
+<p>「我不知道，但猜也能猜到，公公不喜欢婆婆，但他能昧着良心求你原谅，肯定说明你还有利用价值。」</p>
+<p>眼看张曼如在深思，我不经意道：「听说婆婆底下有个很能干的经理。」</p>
+<p>「婆婆，你也别怪我多嘴，我之前偶然听说那个经理在京都有一栋价值上亿的别墅。」</p>
+<p>我言尽于此，只希望她能尽快清醒。</p>
+<p>18</p>
+<p>回到房间，沈决已经洗完澡出来，我看他还打算睡沙发，觉得自己有些过分。</p>
+<p>「沈决，你以后来床上睡觉吧！」我说完就装作若无其事的样子，淡定地去浴室洗漱。</p>
+<p>闻到沈决身上淡淡的檀木香，我失眠了。</p>
+<p>「沈决，你为什么这么闷啊！」</p>
+<p>「我不闷，我只是觉得没必要说那些废话。」本以为他不会出声，结果这厮居然会反驳了。</p>
+<p>「那你是心甘情愿娶我吗？」</p>
+<p>「嗯，他们都说你很厉害，有你在，我妈和妹妹也不至于被他欺负得太惨。」</p>
+<p>合着我在他心目中就是个母夜叉。</p>
+<p>「睡觉。」</p>
+<p>我气得转过身，只希望离沈决远远的。</p>
+<p>「阿窈，你很好，我是真心想和你过日子的。」安静的房间里，沈决在自言自语。</p>
+<p>我听着他的声音，迷迷糊糊睡过去。</p>
+<p>19</p>
+<p>在相处中，我渐渐习惯沈决的存在，他话很少，但给人的感觉又格外安心。</p>
+<p>看着默默付出的沈决，我好像真的捡到宝了。</p>
+<p>就在我和沈家人越来越熟时，林雅那边出事了。</p>
+<p>因为沈轻轻被林雅刺激得一病不起，顾淮安为了帮沈轻轻报仇，让手底下的人毁了林雅的容貌，还动用手里的权力，让林雅父母一夜之间失去工作。</p>
+<p>被逼得走投无路的林雅来求我，希望我能给她父母一条生路。</p>
+<p>「你是不是伤害沈轻轻了？」我看着脸上全是疤痕的林雅，有些心惊。</p>
+<p>顾淮安狠起来也是真狠。</p>
+<p>「我只不过是和她撕破脸皮，骂她蠢钝如猪，骂她是野种而已，这些话不知道怎么刺激到她了，她哭着让顾淮安把我赶走。·</p>
+<p>「本以为没事，可沈轻轻突然陷入梦魇，怎么叫也醒不过来，顾淮安为了帮她报仇，才会这么报复我。」</p>
+<p>林雅凄惨地跪在我面前，希望我能帮她讨回公道。</p>
+<p>「我为什么要帮你？顾淮安的手段这么狠辣，万一我折进去怎么办？」</p>
+<p>劫后余生的林雅连忙说：「我有证据，我手里有顾淮安和黑社会交易的录音，当时顾淮安本想把我卖去偏远山区，好在我机灵逃脱。」</p>
+<p>确认录音是真的后，我给了林雅一笔钱，让她带父母去乡下避避风头，等需要她的时候，再叫她回来。</p>
+<p>20</p>
+<p>既然已经牵扯到人口买卖，那顾淮安离去监牢踩缝纫机不远了。</p>
+<p>就在我忙着找顾淮安的犯罪证据时，许久不见的姜堰来找我。</p>
+<p>他态度诚恳地跟我道歉，还说会帮我管理公司，让我不要太劳累。</p>
+<p>「你到底想说什么？」到底是自己带大的亲弟弟，我很清楚姜堰有事瞒着我。</p>
+<p>「姐，我想拿回自己的公司股份，想做出一番事业给你看。」</p>
+<p>我静静地看着他，直把他看得心虚起来。</p>
+<p>「姐……」</p>
+<p>「可以，但是一旦出了什么事，你自己负责，我不会管你。」</p>
+<p>嗤，就这样的傻白甜，怎么可能斗得过狡猾的顾淮安。</p>
+<p>姜堰进入公司后，开始培养自己的人，他招了一个很专业的助理，专业到可以跟我手底下的团队相提并论。</p>
+<p>我能感觉到，在他的蛊惑下，姜堰对我的戒心越来越大。</p>
+<p>有野心没实力，说的就是姜堰。</p>
+<p>21</p>
+<p>一次外出，我在街上遇到了坐着轮椅卖艺的沈轻轻的前夫哥，他浑身脏兮兮的，有些过路人看他可怜，会扔下一些零钱给他。</p>
+<p>想到要把顾淮安弄进监狱，我来到他面前，问是不是被报复了。</p>
+<p>「我这一身伤，都是顾淮安做的，他为了沈轻轻，已经变得越来越肆无忌惮。」渣男提起顾淮安，还是一脸恐惧。</p>
+<p>「有没有兴趣和我合作，等把顾淮安扳倒后，你就出庭作证，告他蓄意伤人。」</p>
+<p>我看着双腿已经被弄得畸形的男人，感叹顾淮安是真狠，虽然渣男罪有应得，但已经是法制社会的今天，他没资格这样做。</p>
+<p>渣男说出殴打自己的人，我开始派人去查，结果一查才知道，顾淮安跟黑道有很大的利益牵扯。</p>
+<p>都说上帝使人灭亡，必先使人疯狂。</p>
+<p>如果不是为了沈轻轻，他绝不会让自己处于这么危险的境地，这沈轻轻也不知是他的恩赐还是劫。</p>
+<p>渣男绿茶都被报复后，这次顾淮安把矛头对准姜氏集团，他的野心昭然若揭。</p>
+<p>22</p>
+<p>书房里，沈决放下笔，一脸担忧地看着我。「阿窈，你不开心吗？」</p>
+<p>看着眼前乖巧的小奶狗，我起了调戏的心思。</p>
+<p>「嗯，我在外面被人欺负了。」</p>
+<p>我眨眨眼，努力让自己演得逼真一点。</p>
+<p>沈决没说话，而是起身拿了一个保险箱过来，他也不打开，就安静地把钥匙递给我。</p>
+<p>打开保险箱，等看到里面的存折金额，我不由得对沈决刮目相看。</p>
+<p>「你哪来这么多钱？」</p>
+<p>「我那些画赚的。」沈决看向身旁的油画，眼里满是柔和。</p>
+<p>沈决是个很有个性的艺术家，在他眼里，这些画就如同他的孩子，他根本就不愿意卖给那些唯利是图的商人。</p>
+<p>「你居然舍得了，如果不是了解你，我都怀疑你被夺舍了。」</p>
+<p>「阿窈，我有钱，所以你不必活得这么累，我以前听别人说，管理一个大公司很消耗心力，我不想你也这样。」</p>
+<p>看出沈决是真的担心，我没再乱开玩笑。</p>
+<p>「我没事，只是姜堰不太听话，我想好好教训他而已。」</p>
+<p>我戳了戳他的梨涡，不正经地说：「笑一个。」</p>
+<p>沈决闻言朝我扬起一个很大的笑容。</p>
+<p>以前我总是戳他的梨涡，也不知是害羞还是什么，他总是落荒而逃。</p>
+<p>可今天他居然会乖乖任我摆布，沈决是真的招人稀罕。</p>
+<p>23</p>
+<p>因为我当初的提醒，张曼如开始有了戒心，她布局多日，总算把挪用公款的叛徒抓了。</p>
+<p>小说剧情里，张曼如为人强势，得罪了不少人，因为手底下的人挪用公款，还恶意栽赃给她，导致她要面临牢狱之灾。</p>
+<p>在沈父和顾淮安一系列操作下，张曼如平白无故地坐了二十年的牢。</p>
+<p>大仇得报的沈轻轻还特意去监狱看她的笑话。</p>
+<p>儿子被迫成为沈父的傀儡，女儿又被强制送出国，出狱后的张曼如可谓孤苦无依。</p>
+<p>「阿窈，你怎么了？」张曼如拿手在我眼前晃了晃。</p>
+<p>我回过神，看着眼前雷厉风行的女强人，笑着说：「婆婆，你最近好像变了一个人。」</p>
+<p>「我是看到你和阿决的相处，才渐渐想通的。」</p>
+<p>「我对沈家明是一见钟情，那时候知道要嫁给他，我高兴得整宿睡不着觉，我好不容易把他盼回国，他却要跟我解除婚约，他说他有喜欢的人了。」</p>
+<p>张曼如说到最后，眼里逐渐被泪水浸湿。</p>
+<p>「阿窈，我很羡慕你，我羡慕你果断狠绝，羡慕你从不拘泥于儿女情长。」</p>
+<p>听她这么一说，我也挺佩服我自己，如果我对顾淮安动心，估计也得无脑疯魔。</p>
+<p>重获新生的张曼如开始步步为营，比起成为有钱的富家太太，她更想做自己命运的掌舵者。</p>
+<p>24</p>
+<p>这些日子，顾淮安的小动作不断，但凡我想做的生意，他都要横插一脚。</p>
+<p>我和他正式宣战。</p>
+<p>酒会上，我看着盛装出席的沈轻轻和姜堰在角落说话，拿着酒杯朝他们走去。</p>
+<p>「顾夫人真有雅兴，这不知道的，还以为你未婚呢！也不知顾淮安看到会不会乱吃飞醋。」</p>
+<p>顾淮安深情舔狗的名声在圈子里可是出了名的。</p>
+<p>「嫂子好。」沈轻轻笑眯眯地跟我打招呼。</p>
+<p>「可别，我可不是你嫂子，我小姑子是沈心怡，像你这样的，我实在没脸和你扯上关系。」</p>
+<p>「姐，你别这样。」</p>
+<p>姜堰觉得我在为难沈轻轻，脸色有些难看。</p>
+<p>想到自己教出这么个玩意，我恨不得和他断绝关系。</p>
+<p>「闭嘴，你跟她扯在一起，也不怕别人戳你的脊梁骨，一个连抢婚都做得出来的人，她还有什么做不出来。」</p>
+<p>也不知是不是顾淮安特意交代，沈轻轻没有和我争执。</p>
+<p>她略带深意地看了姜堰一眼，便提起裙摆奔向不远处的顾淮安。</p>
+<p>看着明显失落的姜堰，我很无语。</p>
+<p>「姜堰，我最后再问你一遍，沈轻轻到底和你说了什么？」</p>
+<p>他敷衍道：「姐，我们只是聊聊天而已，你别多想。」</p>
+<p>就在我忙着应付顾淮安的刁难时，姜堰出事了，他听信别人的谗言，投资了一批没有质量保证的食品。</p>
+<p>事态的发展出乎我的预料，因为食品出现重大品质问题，有人在网上质疑姜氏赚黑心钱。</p>
+<p>25</p>
+<p>一群人天天堵在公司门口，非要我给他们一个交代。</p>
+<p>「姜堰，你究竟做了什么？」我怒气冲冲地来到他的办公室，非要他给我一个解释。</p>
+<p>「姐，我只是觉得那个产品有很大的利润，我不知道后果会这么严重。」姜堰终于害怕了。</p>
+<p>他低下头，嘴里喃喃着沈轻轻骗她。</p>
+<p>「你就是个蠢货，明明没这个能力，非觉得自己厉害得不得了。</p>
+<p>「姜堰，我限你三天之内给我处理好这些麻烦，如果做不到，我俩断绝关系。」</p>
+<p>事实证明，我还是高估姜堰了。</p>
+<p>三天时间匆匆而过，那个所谓的助理消失后，姜堰彻底怀疑人生，他用酒麻痹自己，希望能忘掉眼前的烦恼。</p>
+<p>我看着在办公室里耍酒疯的姜堰，拿起一瓶冰水直接往他头上浇去。</p>
+<p>「姜堰，你离开吧！我会把属于你的股份折合金钱给你，有了这些钱，你这辈子衣食无忧。」</p>
+<p>「姐，你不要我了吗？」姜堰不可置信地看着我，眼里满是哀伤。</p>
+<p>「姜堰，你招来的助理是商业间谍，他窃取了公司机密，他是顾淮安派来的人。</p>
+<p>「我问了你无数次，可你宁愿相信外人，也不相信我，我想我们的姐弟情分就到这里吧！往后也不要见了。」</p>
+<p>姜堰见我来真的，只能灰溜溜离开。</p>
+<p>只有把碍事的姜堰弄走，我才能心无旁骛地对付顾淮安，这一次，我要他牢底坐穿。</p>
+<p>26</p>
+<p>许是想打我的脸，沈轻轻一大早就跑来沈家找存在感。</p>
+<p>「猫哭耗子假慈悲。」沈心怡担忧地看了我一眼，如今外人眼里的姜家风雨飘摇，稍有不慎就会满盘皆输。</p>
+<p>沈轻轻笑意盈盈地劝我：「姜窈，如果你求我，我可以考虑让淮安帮你渡过难关。」</p>
+<p>顾淮安很有手段，就是眼太瞎了，这种货色也能当成宝来呵护。</p>
+<p>既然已经撕破脸皮，我也没必要再克制。</p>
+<p>我一把抓起她的头发，如泼妇一样使劲薅，直把她弄得连连大叫。</p>
+<p>「就你这样的废物，哪里配得上做我姜窈的对手，你知不知道？顾淮安就是毁在你手里。」</p>
+<p>胜负未定，这蠢货就大张旗鼓地跑过来沾沾自喜，也难怪前世被人骗得团团转。</p>
+<p>沈轻轻离开后，我握着间谍窃取机密的证据，直接去警局报警。</p>
+<p>经过调查，顾淮安确实用了不正当手段进行恶意竞争。</p>
+<p>看守所里，顾淮安笑我太天真，还扬言自己很快就会出去。</p>
+<p>「姜窈，你比我想象的还聪明，但你太急功近利了，你当真以为这样就能让我坐牢。」顾淮安眼神里满是轻视。</p>
+<p>「不试试又怎么知道。」</p>
+<p>借着顾淮安无法出来的时间，我提交了顾淮安跟黑社会勾结的证据，同时还有林雅录下的录音机。</p>
+<p>借着如今的扫黑行动，顾淮安插翅难逃。</p>
+<p>法庭上，林雅和渣男纷纷出席，控告顾淮安报私仇，藐视法律的存在。</p>
+<p>27</p>
+<p>接连被控告的顾淮安有些慌了，他没想到我会这么早就布局。</p>
+<p>或许在他眼里，所有女人都像沈轻轻一样柔弱。</p>
+<p>只能说，顾淮安轻敌了。</p>
+<p>数罪并罚的顾淮安被判了二十年有期徒刑，听完宣判后，沈轻轻闹着要上诉，在她眼里，顾淮安的结局不该这样。</p>
+<p>「轻轻，你别难过，我已经帮你安排好了后路，我进去后，你要好好生活。」</p>
+<p>顾淮安已经爱沈轻轻入骨，他得到了沈轻轻的爱，却因为沈轻轻失去了自由，只能说恋爱脑真的可怕。</p>
+<p>刚走出法院，失去理智的沈轻轻就大骂我恶毒，还诅咒我没有好下场。</p>
+<p>「我有没有好下场不知道，但是顾淮安一定没有好下场，沈轻轻，你才是害他坐牢的罪魁祸首。」</p>
+<p>自以为重来一次就是老天爷亲闺女，她只想着要报复害她的人，却偏偏没脑子，才导致顾淮安做事越来越狠，以致走到触犯法律的地步。</p>
+<p>没有靠山的沈轻轻来找沈父帮忙，可她不知道，沈父如今也自身难保，他再也拿捏不了张曼如。</p>
+<p>再次经历前世的孤立无援，沈轻轻彻底疯了。</p>
+<p>为了弄死我，她直接开车朝我撞来，我刚侥幸逃脱，她又接着撞上来。</p>
+<p>因为控制不好方向盘，她连人带车撞上石柱，整个车身直接报废。</p>
+<p>医院里，我看着昏迷的沈轻轻，感叹她活了两世还看不清。</p>
+<p>28</p>
+<p>因为故意谋杀，沈轻轻也进监狱踩缝纫机了。</p>
+<p>如今解决了心头大患，我开始考虑和沈决的婚姻。</p>
+<p>当初和沈决结婚，确实是为了利益，可经过相处，他确实是个适合搭伙过日子的对象。</p>
+<p>或许我可以尝试过不一样的人生。</p>
+<p>五年时间匆匆而过，沈父两年前意外中风，现在行动不便，身旁只有一个保姆照顾他。</p>
+<p>沈心怡出国追逐梦想，张曼如也顺利坐上沈氏集团的第一把交椅。</p>
+<p>大家都在努力过好自己的小日子。</p>
+<p>我看着眼前要换尿布的小奶娃，有些无从下手。</p>
+<p>「沈决，你快来。」</p>
+<p>过了一会，沈决拿着一包专用湿巾过来，他接过小孩，熟练地给他擦屁股、换尿布。</p>
+<p>跟沈决这个专业奶爸不同，我自从生下沈南和，就直接投入工作中，很少给他弄这些。</p>
+<p>「沈决，我这个当妈的是不是有点不太称职啊！」眼见帮不上忙，我尴尬地摸了摸鼻子。</p>
+<p>「没有。」</p>
+<p>他捏着沈南和的小手，笑着说：「我很喜欢现在的生活，你只要做自己想做的事就好，家里有我。」</p>
+<p>沈决的画越来越值钱，因为不想让外界打扰自己的生活，很少人知道他的真实身份。</p>
+<p>这几年，姜堰去了国外，因为对我有愧，他一直给沈南和寄各种东西。</p>
+<p>沈决问我会不会原谅他，我笑着摇摇头。</p>
+<p>「从一开始，我就对姜堰失望了，作为姐姐，我很称职，但是他作为弟弟，却伤透了我的心，我如今已经有了自己的生活，他的愧疚于我而言毫无意义。」</p>
+<p>生活还在继续，大家都该往前走才对。</p>
+<p>（全文完）</p>
+<p>备案号:YXX1Bee1PJMTwwwKzxYi3Z0b</p>
+<p>​</p>
+<p>​</p>
+<p>穿成女配后我只想搞事业</p>
+<p>一加一 等</p>
+<p>×</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/7/10-%E6%9B%B9%E6%93%8D%E7%A9%BF%E6%88%90%E6%AD%A6%E5%A4%A7%E9%83%8E/" title="曹操穿成武大郎">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">曹操穿成武大郎</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/9-%E5%B2%91%E5%87%9D/" title="岑凝">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">岑凝</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

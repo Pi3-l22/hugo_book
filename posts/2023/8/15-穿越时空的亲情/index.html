@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穿越时空的亲情 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/8/15-%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%BA%B2%E6%83%85/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/8/15-%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%BA%B2%E6%83%85/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="穿越时空的亲情">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+  <meta name="twitter:title" content="穿越时空的亲情">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="穿越时空的亲情">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="4068">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">穿越时空的亲情</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>9分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%a9%bf%e8%b6%8a%e6%97%b6%e7%a9%ba%e7%9a%84%e4%ba%b2%e6%83%85&amp;url=https://mohai.us.kg/posts/2023/8/15-%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%BA%B2%E6%83%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/8/15-%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%BA%B2%E6%83%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%a9%bf%e8%b6%8a%e6%97%b6%e7%a9%ba%e7%9a%84%e4%ba%b2%e6%83%85%20https://mohai.us.kg/posts/2023/8/15-%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%BA%B2%E6%83%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26615.jpg" alt="穿越时空的亲情" />
+      
+
+      <p>穿越时空的亲情</p>
+<p>这个事件发生在 2015 年开春。</p>
+<p>这个事件发生在 2015 年开春。</p>
+<p>元宵节刚过，我们中心迎来一个值得纪念的日子，因为一对超过 80 岁的姐妹在家人的陪同下到我们中心做 DNA 鉴定。</p>
+<p>其中妹妹 83 岁，姐姐 85 岁，这也是迄今为止在我们中心做鉴定有纪录的年纪最长者。</p>
+<p>当然，她们不是要鉴定什么狗血的奇葩事件，而是一对失散近七十年的姐妹，终于重逢了，为了让双方的家人吃个定心丸，也为了给这个百年寻亲的故事划上一个圆满的句号，她们相约来到我们中心，做出这个人生中第一次也是最有亲情的一次 DNA 鉴定。</p>
+<p>记得那天，场面非常温馨、非常感人，我们在场每一个人都被两姐妹炙热的亲情所感动，连涛哥这个平日里故作镇静的冷血动物都哽咽了。</p>
+<p>至于我，很不好意思地告诉大家，平常看着电视剧里面感人的场面都会眼神朦胧的人，自然是泪流满面。</p>
+<p>为了让大家一起感受这份温情，那么就让我带你们一起，回到那个战火峰飞的岁月。</p>
+<p>1941 年，我国进入抗日战争中期。</p>
+<p>同年发生了两件大事，一件是国民党正式对日本宣战，另一件是年末日军偷袭珍珠港事件。</p>
+<p>这两件大事，当时姐姐和妹妹自然是完全不知道，就算知道，她们也根本不会去关心，因为当时只有一件事对她们来说才算得上真正的大事，这件事直接攸关她们的性命：怎么才能填饱肚子？</p>
+<p>姐妹一家，是那战火纷飞的岁月，无数逃难的难民之一。</p>
+<p>姐妹一家原籍华北。当时的华北已经是沦陷区，日本军国主义在华北推行「治安强化运动」，实行烧光、杀光、抢光三光政策，犯下了不可饶恕的罪行。</p>
+<p>姐妹一家原本有十余口人，半年过去，只剩下包括其父母、弟弟、一个年纪比姐妹两大不了多少的叔叔在内的六口人。</p>
+<p>与其在家等死，不如出去找条活路，于是全家人背井离乡，从华北老家跟随逃难的人流一路南下，期间风餐露宿、担惊受怕，吃了无数的苦。</p>
+<p>一路上都是破烂萧条，比他们原来的地方情况好不了多少。经过中原某省的时候，已经临近冬天，饥饿加寒冷让一家子人充满了绝望。</p>
+<p>姐妹两个记得最清楚的是，他们的粮食几乎全部吃完，为了不饿死，只能搭配树皮、草根一起吃，导致几个小孩子满身浮肿，弟弟更是两腿沉重，稍微走动就全身疲乏又发热不止，懂点现代医学常识的就能看出来这是因为饥饿和吃了不干净东西导致的肝炎。</p>
+<p>再这样下去弟弟就撑不住了，父亲和小叔叔仗着自己还有点点精神，去田里捉田鼠，给三个孩子补充下营养。但当时别说田鼠了，就连草里的蝗虫，地上的蚂蚁都被前面的逃难者当成了食物。</p>
+<p>两个大男人守了半天，幸运的是，居然被他们抓到了一只大的和一只小的田鼠，还有几只水虱子！这样的细节，当时年纪尚幼的姐妹俩历经了七十余年，居然还清楚记得！</p>
+<p>喜出望外之余，两只田鼠拔完毛，内脏都没去，就直接和几只水虱子丢到水里和一些野菜加热炖煮。</p>
+<p>这样我们看来不可思议的食物，当时三个孩子竟然吃得津津有味。而父母和小叔叔忙合了半天却一点都没吃。</p>
+<p>姐姐回忆起来说，等他们三个小孩吃完，她看到小叔叔一个人在旁边混着野菜吃着他们剩下的水虱壳和一些煮烂的内脏，而父母则一人一大碗把剩下的清汤水喝了个腮满肚圆。</p>
+<p>说到这里，姐妹俩泪流满面。</p>
+<p>仅剩的粮食越来越少，再这样持续下去，很可能几个人不被病死，就是会被饿死。</p>
+<p>幸运的是天无绝人之路，路过一个小村子的时候，一户两个儿子都在战乱中去世的好心老夫妻临时收留了她们一行，但这户人家情况也不好，不能久留，商议之后，她们忍痛留下姐姐，过继给老夫妻俩做女儿，一家五口继续逃难。</p>
+<p>当时的姐妹俩还小，听父母说两个人要暂时分开了，都大哭大闹，不愿意分开。妹妹后来说：我当时还以为和姐姐会分开十几天，心里很伤心，觉得有这么长时间姐姐不陪着自己，会很难受，但万万没有想到，再次重逢居然是大半个世纪之后了。</p>
+<p>逃难到南方某省境内的时候，人流已经分散了很多，有的是在半路上就倒下再也起不来，有的是实在走不动了就在某一个地方暂时安家了，等待他们的，绝大部分是厄运。</p>
+<p>这一家子算得上是在当时很幸运的人家，如果不幸运的话，他们多半活不下来，也就没有这后来的故事。</p>
+<p>在逃难的过程中，他们认识了一户人家，一家四口，父母加上一对十几岁的女儿。这一户人家唯一的男丁还是个半残疾，一只手缺了几根手指，逃难很不方便，有两个男丁的姐妹一家子一路对其很是照顾。</p>
+<p>这户人家虽然和他们一样穷，但有一个富亲戚，他们的目的也就是逃难到富亲戚家寻求帮助。两家到了南方的这个省份，见到了这户人家的富亲戚，在对方的挽留下，也就在这里安定了下来，有了富亲戚的帮助，也勉强能过上饱一餐饥一餐的生活。</p>
+<p>对比之前生死不定的日子，算是不幸中的大幸。</p>
+<p>一家人安定下来后，因为有两个壮劳力，再加上新认识富亲戚的接济，生活慢慢稳定下来，也终于能吃饱肚子了。</p>
+<p>原本他们想等局势稍微稳定下来，就去把姐姐一家接过来，一起生活，结果人算不如天算，抗日战争越打越激烈，竟然蔓延到他们所在的、原本还算安定的南方这个省份来。</p>
+<p>这时候他们没有再去逃难，好不容易稳定下来，谁都不愿意再去体验一次那种极致的苦难。</p>
+<p>但是，去接姐姐的想法，就一直搁浅了下来。</p>
+<p>抗战刚刚胜利，内战的硝烟又弥漫在这个饱经苦难的大地上，数百公里的距离，居然让一家人团聚的想法一再拖延。</p>
+<p>就这样年复一年，小叔叔成家立业了，妹妹也成了大姑娘，更重要的是，解放战争胜利了！</p>
+<p>于是，生活安稳下来的一家人，终于可以北上接姐姐团聚了！</p>
+<p>但是，现实生活远远比电视剧更曲折，等到弟弟和父亲长途跋涉到了收养姐姐的人家，却听到一个噩耗，姐姐不见了！</p>
+<p>消息传回来，妹妹和母亲几乎哭瞎了双眼，想着自己现在衣食无忧的生活，而姐姐却不知道在哪里，那种内心的悲凉和伤痛，是我们常人远远无法想象的。</p>
+<p>直到七十多年后姐妹重逢，妹妹才知到姐姐所经历的，可惜，这时候他们逃难的一家子，只剩下了孤零零的姐妹两人，而父亲母亲弟弟叔叔，都已经长眠地下了。</p>
+<p>原来姐姐被老夫妻收养后，老夫妻对她很好，视同几出，但家里情况困难，虽然比之前逃难好不少，饱一餐饥一餐却还是免不了的，姐姐也就常常跟着老夫妻上山挖野菜，混着粮食吃。</p>
+<p>有一次老夫妻上山挖野菜的时候，姐姐身体不舒服在家休息，没有跟着走，结果就被一个走街串巷的人贩子看上了，人贩子说是老夫妻的亲戚，还拿饼给姐姐吃。</p>
+<p>开始姐姐还很警觉，直到这人贩子叫出老夫妻的名字，姐姐才放下心来，自己当时肚子很饿，就吃了人贩子给的饼，等她醒过来的时候，已经在一部牛车上，反抗无果后，她被卖给了一户人家当童养媳。</p>
+<p>万幸的是，这户人家算是一个良善人家，除了让姐姐做很多活计之外，吃穿方面倒也没亏待她，现在回忆起来，姐姐还对这户人家早已经去世的两个老人心存感激。</p>
+<p>又过了几年，因为内战的原因，这户人家搬迁到了西部的一个省份，这户人家家底不错，所以姐姐之前逃难时经历过的苦难幸运地没有再次重演。</p>
+<p>这离奇的经历和千里以上的距离，最终导致了两姐妹分离了大半个世纪。</p>
+<p>在 1965 年左右，姐姐曾经在丈夫的支持下，找到了养父母的家，遗憾的是，养父已经去世，养母老态龙钟，只记得她是谁，也记得她父亲和弟弟来找过她，但是现在他们住在哪里、什么情况，养母根本说不出个所以然来。</p>
+<p>善心的姐姐就把养母接了回去，一直赡养到养母离世。</p>
+<p>姐姐在寻找家人的同时，家人也一直在寻找姐姐，但苦于当时情况困难、通讯又不发达，两家人相隔千里，想要找到对方的难度不亚于海底捞针。</p>
+<p>再后来，妹妹一个个送走母亲、父亲、叔叔、弟弟，所有经历当时苦难的亲人们都一个个离她远去了。</p>
+<p>年已八旬的妹妹经历了这些痛苦，却依旧坚强，因为她心里始终有一个执念：我一定要找到姐姐，姐姐一定还活着，一定还在某个地方等着我！</p>
+<p>而千里之外，同样强大的执念，也在支持公公婆婆、养母和丈夫都一个个陆续过世，伤痛万分的姐姐！</p>
+<p>最后的最后，在网络的时代，我们这个故事迎来了大团圆！</p>
+<p>姐妹俩的孙子和孙女，为了奶奶毕生的愿望，几乎不约而同在网上发布了寻亲的信息，某一天，妹妹的孙女在某个寻亲网站上看到了信息，前面的经历和奶奶说的几乎一样，欣喜若狂，赶紧打电话联系对方，接电话的是姐姐的孙子，两个年近不惑的中年人流着泪核对了双方的信息，又马上通知了各自的奶奶。</p>
+<p>2014 年 1 月 12 日，一个值得两家人终生难忘的日子。</p>
+<p>妹妹在家人的陪同下，经过两个多小时的飞行，赶到了姐姐所居住的城市。姐姐本来腿脚已经太不灵便，坚决拒绝家人让她在家安心等待的要求，一定要到机场迎接妹妹。</p>
+<p>时间仿佛永远定格在妹妹从机场出站通道出来的那一刻。</p>
+<p>姐妹俩推开家人的搀扶，蹒跚上前抱头痛哭，老泪纵横，哭得像两个刚刚出生的孩子。</p>
+<p>一份被珍藏和压抑了七十余年的感情，终于彻底释放了开来</p>
+<p>写到这里，我早已经泪流满面。</p>
+<p>不过即使再美好的事物也有人怀疑，两人的亲戚中有极少数的会说一些风言风语，说这么多年了，说不定会搞错。</p>
+<p>于是，姐妹俩决定年后来鉴定中心做一个鉴定，让这些 NC 亲戚闭上嘴，也为自己的相逢划上完美的句号。</p>
+<p>让时间再次回到帮两位老奶奶做 DNA 鉴定的那一天。</p>
+<p>我们主任亲自全程陪同两位老奶奶做鉴定，做的最快的加急鉴定，所有费用全免，结果出来的时候，所有的人都长时间地鼓掌，为这对经历了半个多世纪才重逢的姐妹献上自己心中最热烈的祝贺！</p>
+<p>事情已经过去两年，当时的情形还深深映在我的脑海里。</p>
+<p>给我印象最深的不是姐妹的眼泪、不是众人的热情、也不是那足以催泪数升的感人场面。</p>
+<p>给我印象最深的，是两位老人再三强调的一个词「幸运」。</p>
+<p>是的，虽然分别了大半个世纪，而且经历了常人无法想象的苦难，两个老人依旧觉得自己是幸运的。</p>
+<p>姐姐说自己幸运地遇到了养父母、幸运地被卖到了一户良善的人家、幸运地遇到了一个好丈夫、幸运地有了一个好孙儿。</p>
+<p>妹妹说自己幸运地留在了父母身边、幸运地遇到了一个素不相识的富亲戚、幸运的成了一个好家庭，幸福的有了一个好孙女。</p>
+<p>最幸运的是，两个人遇到了一个好时代，拥有了幸福满满的和睦家庭。</p>
+<p>有很多朋友，在事情不顺的时候，尝尝会怨天尤人，抱怨这个抱怨那个，仿佛自己正经历着许多不公平。</p>
+<p>和这两位老奶奶坎坷的一生相比，你们所谓的困难和不公平又算什么呢？为什么不试着将自己的内心沉静下来，去学会思考学会感恩。</p>
+<p>当你真正地以一个感恩的心态去看待你经历事情的时候，你会发现自己所谓的不公平，其实只是自己一时的郁闷而已。</p>
+<p>静一静，这郁闷就烟消云散了。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/9/21-%E7%A9%BF%E8%B6%8A%E5%A5%B3%E7%9A%84%E4%BD%9C%E6%AD%BB%E5%8F%B2/" title="穿越女的作死史">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">穿越女的作死史</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/2/23-%E7%AA%97%E5%A4%96%E9%80%A2%E8%8A%B1/" title="窗外逢花">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">窗外逢花</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

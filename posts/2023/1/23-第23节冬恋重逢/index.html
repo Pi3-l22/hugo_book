@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第23节冬恋重逢 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC23%E8%8A%82%E5%86%AC%E6%81%8B%E9%87%8D%E9%80%A2/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC23%E8%8A%82%E5%86%AC%E6%81%8B%E9%87%8D%E9%80%A2/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="第23节冬恋重逢">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+  <meta name="twitter:title" content="第23节冬恋重逢">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第23节冬恋重逢">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11569">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26615.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">第23节冬恋重逢</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac23%e8%8a%82%e5%86%ac%e6%81%8b%e9%87%8d%e9%80%a2&amp;url=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC23%E8%8A%82%E5%86%AC%E6%81%8B%E9%87%8D%E9%80%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC23%E8%8A%82%E5%86%AC%E6%81%8B%E9%87%8D%E9%80%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac23%e8%8a%82%e5%86%ac%e6%81%8b%e9%87%8d%e9%80%a2%20https://mohai.us.kg/posts/2023/1/23-%E7%AC%AC23%E8%8A%82%E5%86%AC%E6%81%8B%E9%87%8D%E9%80%A2/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26615.jpg" alt="第23节冬恋重逢" />
+      
+
+      <p>第三次了，我又在地铁上遇到了这个帅哥。</p>
+<p>事不过三，就在我决定上前去要联系方式的时候，帅哥在这一站下去了，我拎着包跟着也下去了。</p>
+<p>帅哥身高 180 以上，这长腿迈得我根本追不上，今天地铁站人又很多，等我刷完码出站的时候发现，我居然把人跟丢了。</p>
+<p>我顺着前面的出站口出去，拐弯的时候胳膊被人一把抓住，身体被带到拐角的楼梯下，一股淡淡的男香席卷而来。</p>
+<p>「你跟着我？」帅哥挑了挑眉，口罩都遮不住的帅气。</p>
+<p>我点点头，心里有些疑惑这声音怎么有些耳熟。</p>
+<p>「有事？」帅哥松开我的胳膊， 往后退了一步。</p>
+<p>「额那个，可不可以加个联系方式呀？」我点开二维码，递到他面前，眼神不自然地移到别处。</p>
+<p>「好呀。」余光感觉到他摘了口罩，我转过去看到那张脸，心跳漏掉半拍。</p>
+<p>他微微弯着腰，双手撑着膝盖，视线与我齐平，笑得眼睛亮晶晶的，如果没有那半分揶揄的话就更好了。</p>
+<p>我深吸一口气，掐灭手机，转头就走。</p>
+<p>没走几步，后衣领被人一拎，被带到一个温暖的怀抱，我禁不住抖了两下。</p>
+<p>「蒋禾，分手三年了，没想到你口味还是一点没变啊。」耳边传来戏谑的声音，还带着温热缠绵的气息。</p>
+<p>我闭上眼，镇定自若，「江晏，你也一样，揪人衣领的坏毛病一点没改。」</p>
+<p>「是吗？可我只抓过你的衣领啊。」</p>
+<p>哦，原来是这臭不要脸的性格一点没改。</p>
+<p>我暗自呸了两声，抓着他的手想让他松开。</p>
+<p>两个人较劲了一会，听到后面带着狐疑的女声：「小晏？」</p>
+<p>我缓缓转过头，看到面前穿得精致的妇人，听到江晏短促地叫了声「妈」。</p>
+<p>我立马离江晏远远的，尴尬地叫了声：「阿姨好。」</p>
+<p>江阿姨冲我点点头，轻飘飘地瞥了眼江晏，「谈女朋友了就带回家看看，在马路边上纠缠像什么样子。」</p>
+<p>「知道了妈。」江晏嘴角挤着弧度，眼睛直勾勾地看着我。</p>
+<p>「我路过，车在前面，跟我去吧。」江阿姨瞅了我一眼，随后踩着小皮鞋转身走了。</p>
+<p>「我也走了。」我避开江晏的视线，抬脚要进地铁站。</p>
+<p>「你还想走去哪？」江晏长臂一伸，把我捞了回去，「蒋禾，是你先过来跟着我的。」</p>
+<p>「你先放开行不行？」我抬眼对上前面回头看的江阿姨的视线，心里一阵慌乱。</p>
+<p>「那不行，我妈都说了，谈了女朋友就要带回家看看。」江晏一脸坏笑，笑得我心尖一颤，我还记得当时在学校篮球场他投完最后一个三分，也是这么冲我笑的。</p>
+<p>「谁是你女朋友了。」我拨开他的手。</p>
+<p>「我妈说的。」</p>
+<p>我无语。</p>
+<p>我被江晏拉上了车，车内的温度跟外面骤然不同。</p>
+<p>我局促地缩在一边，一下子不明白自己怎么就稀里糊涂跟他上了车。</p>
+<p>江晏突然凑过来，右手伸到我的耳侧，帮我系好安全带，「没点安全意识？」</p>
+<p>我转过头对上他的视线，漆黑的眼底飞快划着窗外的白色景象，那一年好像也是下雪的冬天，他给我买了条围巾，单手插兜，又酷又拽地递给我说：「随便买的。」</p>
+<p>我回过神，没想到我还能记得这么清楚，我飞快地转过头。</p>
+<p>面前突然伸来一只手，下一秒，我的口罩被他拽了下来。</p>
+<p>「你要做什么？」话没说完，江晏从我手里抽走我的手机对着我的脸，人脸识别开锁成功。</p>
+<p>「你要干什么？」我一脸不解。</p>
+<p>「不是要联系方式吗？」修长的手指在屏幕上飞快地点着。</p>
+<p>「现在不想要了。」</p>
+<p>「是吗？」江晏抬起眼，眼神直勾勾的，看得人心虚，他点了添加发送，把手机递给我，「嘴还是这么硬。」</p>
+<p>我白了他一眼，把手机接过来，那边已经同意好友申请了。</p>
+<p>我毫不犹豫，给他发了消息。</p>
+<p>「我要下车。」</p>
+<p>那边回复：「什么理由？」</p>
+<p>「那你凭什么随随便便把我带走？」</p>
+<p>「刚刚我没强迫你呀。」</p>
+<p>「……」</p>
+<p>耳边传来一声轻笑。</p>
+<p>「免费上我家蹭顿饭，不乐意？」</p>
+<p>「但是你妈好像误会了。」</p>
+<p>「误会不好吗？」</p>
+<p>「江晏，你什么时候这么死皮赖脸了？」</p>
+<p>那边微微一愣，过了好几分钟才回复我。</p>
+<p>「嗯，分开这么久，当然不知道了。」</p>
+<p>末了他又加了一句话：「学会顶嘴了？」</p>
+<p>懒得搭理他，我闭上眼，不知道什么缘故，鼻尖萦绕着熟悉的味道，竟沉沉睡了过去。</p>
+<p>迷迷糊糊间被脸上的动作搞醒，睁开眼，江晏凑得很近，左手支着我身后的座椅，右手轻轻戳着我的脸，眼神里溢着温柔。</p>
+<p>我毫不留情地拍开他的手，看到驾驶位已经没人了，「你妈妈呢？」</p>
+<p>「先下去了。」</p>
+<p>「你为什么不叫我？」</p>
+<p>「你睡着的时候最乖。」江晏退了回去，手指头有一下没一下地敲着腿面，扯着嘴角，满脸慵懒。</p>
+<p>我还没想好说点什么，肚子却不争气地叫了几声。</p>
+<p>江晏喉结滑了几下，笑出了声，「饿了，那刚刚还不愿意跟我回来吃饭啊？」</p>
+<p>我撇过头去，懒得搭理他。</p>
+<p>江晏松开安全带，开了车门，「走吧，进去吧。」</p>
+<p>江晏家远离闹市，是栋别墅，大学那会跟他他恋爱的时候，我还没来过他家，没想到第一次来他家居然是在这样的情况下，没有任何关系牵连的情况下。</p>
+<p>「你不换？」江晏伸脚踢了踢摆在我面前的拖鞋。</p>
+<p>「哦。」我应了一声，弯腰换鞋，外面地上有些积雪，鞋边一圈化开的雪渍，我想找点面纸擦一擦，面前伸出一双大手把鞋拎走了。</p>
+<p>「我让阿姨帮你擦一下。」他的手指头伸进鞋里，勾着进了屋，轻松自然，好像他不是那个曾经因为舍友坐了一下他的床半夜打车出去住酒店的极度洁癖患者。</p>
+<p>「好，谢谢。」</p>
+<p>我放好包，刚巧江阿姨下楼了。</p>
+<p>「李阿姨弄好饭菜了，洗下手下楼吃饭吧。」说完自顾自下了楼，我一时揣摩不出江晏妈妈到底是欢迎我还是不欢迎我。</p>
+<p>跟着江晏下了楼，来到餐厅，被满满一桌子菜吓到了。</p>
+<p>「李阿姨，今天弄这么多啊？」江晏帮我抽出椅子，示意我坐下。</p>
+<p>「那可不，你妈妈今天回来说江晏带女朋友回来吃饭了。」李阿姨看着我，笑得一脸慈爱。</p>
+<p>我带着尴尬不失礼貌的笑容问了声好。</p>
+<p>「那真是沾光了。」江晏顺手拿了桌子上的水杯抿了口，冲我挑挑眉。</p>
+<p>「咳咳，我们先吃，你爸一会回来。」江阿姨板着脸，扫了眼我们。</p>
+<p>我低头默默吃饭，江晏夹了好几块肉往我碗里堆。</p>
+<p>「够了。」我小声跟他说，让他别再夹了。</p>
+<p>「怕你饿着。」末了又给我夹了块肉。</p>
+<p>我敢怒不敢言。</p>
+<p>「小禾啊，爸妈是做什么的？」江晏妈妈突然开口，气势凌人。</p>
+<p>「爸妈在银行上班。」</p>
+<p>「哦，那你现在什么工作啊？」</p>
+<p>「我在一个小公司里做会计。」</p>
+<p>「你跟阿晏怎么认识的？」</p>
+<p>「妈，你查户口呢？」江晏有些不满。</p>
+<p>「你谈女朋友我还不能问了？」江阿姨放下筷子，表情严肃。</p>
+<p>「宋女士，你未免太严肃了吧？」身后传来一个男人的声音。</p>
+<p>「爸。」江晏起身抽开旁边的椅子。</p>
+<p>当我看到江晏爸爸的脸的时候，一下子愣住，这个世界未免也太小了。</p>
+<p>「冯老师好。」我起身问好。</p>
+<p>「小禾啊，这么巧。」冯老师拍拍我的肩膀，随后跟江阿姨解释，「这是我学生，刚才我就听你在这儿盘问人家，不把人家小姑娘吓着，吃饭就吃饭，再说了蒋禾这孩子我觉着不错。」</p>
+<p>江阿姨脸色一僵，撇着嘴，看着还有些娇嗔，看样子江晏爸妈感情很好。</p>
+<p>我听的有些不好意思，感觉有只脚在踢我，我看过去，江晏勾着唇仿佛无事发生。</p>
+<p>还好后面一切比较正常，只是我突然意识到一个问题，江晏跟冯老师不是一个姓。</p>
+<p>吃完饭，江晏被冯老师叫到书房，我正准备措辞想跟江阿姨道别的时候，江阿姨叫住了我。</p>
+<p>「小禾啊，陪我喝杯茶。」依旧喜怒不形于色。</p>
+<p>我有些疑惑，但还是点头答应了。</p>
+<p>江阿姨把我领到一楼的茶室，慢条斯理地给我沏了杯茶。</p>
+<p>「以前喝过茶吗？」江阿姨问。</p>
+<p>「没喝过。」</p>
+<p>「这壶茶不错。」</p>
+<p>我抿了口点点头，下一秒我预想发生的事还是发生了。</p>
+<p>江阿姨不知道从哪个兜里掏了张银行卡出来。</p>
+<p>「江阿姨……」</p>
+<p>「里面五百万，主动离开阿宴。」</p>
+<p>其实我本来想说我跟她儿子现在没有任何关系。</p>
+<p>看着这似曾相识的场景，听着这似曾相识的话，心里有些莫名的烦躁，我伸手把桌上的银行卡移了过来。</p>
+<p>「江阿姨，密码是什么？」我脸上挤着笑。</p>
+<p>江阿姨精致的面庞突然有了丝变动，瞪着眼，满是不可置信，言语不自然地说：「阿晏的生日。」</p>
+<p>多亏我还记得住。</p>
+<p>「知道了，阿姨那我先走了。」</p>
+<p>我捏着银行卡下了楼，把卡塞进包包的最内侧，穿好鞋，随后打了车直奔商场。</p>
+<p>坐在出租车上，我给中介发了消息。</p>
+<p>「你好，前两天我去看那家店，我现在就去租，麻烦你一会去商场一趟。」</p>
+<p>随后又给领导发了辞职申请。</p>
+<p>刚发完消息，手机就弹出来自江晏的语音通话。</p>
+<p>我眨眨眼，选择了拒绝。</p>
+<p>窗外的夜晚城市，四处斑斓的霓虹灯，窗子上映着我平静的脸庞。</p>
+<p>三年前也有人来找我，那会我年轻气盛，什么都没要，但是现在可不一样。</p>
+<p>我并不爱现在的工作，我从小到大唯一感兴趣的东西就是甜品。</p>
+<p>上个月我就已经计划辞职出来创业，在市中心的商圈看了不少门店，德力广场负一楼的位置最好，价格也是最高。</p>
+<p>但是谁能想到，天降五百万呢？</p>
+<p>启动资金绝对是够了。</p>
+<p>我赶到商场跟中介汇合，签了合同，联系好了装修公司和设备厂，还好店里原本的风格就是我喜欢的，所以需要改装的地方并不多。</p>
+<p>开业第一天，客流量不错。</p>
+<p>我在整理收银处的时候，前方传来熟悉的声音。</p>
+<p>「你好，一份草莓软酪。」江晏伸手指了指柜台下的样品。</p>
+<p>「我也要！」「我也要！」</p>
+<p>后面还跟着俩男生，宋煜和张霄，我认识，大学时候校篮球队的，天天没事跟着江晏跑。</p>
+<p>「不好意思，草莓软酪今天已经卖完了。」我没骗人，真卖完了。</p>
+<p>「这才几点就卖完了？」宋煜看了看表。</p>
+<p>「每天都是限份量的。」不然我手都要做断了。</p>
+<p>「今天可是特意来……」张霄刚出声就被江晏打断。</p>
+<p>「点别的。」江晏回头看了他们一眼，眼神又轻飘飘落回我脸上，「巧克力冰山熔岩。」</p>
+<p>「在这儿吃还是带走？」</p>
+<p>「在这儿吃。」江晏掏出手机扫码，我没看他的脸，但也能感觉到他在盯着我看。</p>
+<p>江晏接过盘子找了小桌子就坐，宋煜和张霄付完钱在后面嘀咕：「晏哥，你叫我们过来说是捧场，你怎么都不意思意思。」</p>
+<p>「你俩要不再多买点打包走人吧。」江晏伸了伸长腿，搭着眼，气定神闲地说着没良心的话。</p>
+<p>「咳咳，吃吧吃吧。」</p>
+<p>江晏今天压了顶灰色鸭舌帽，穿了身运动装，显得格外阳光帅气，至于为什么戴着帽子也能感觉他是帅哥这我也不清楚，但是我看到斜对面桌的两个女孩子已经跃跃欲试了。</p>
+<p>其中一个女孩子捏着手机小心翼翼地上前询问能不能加个联系方式，江晏礼貌拒绝，随即微扬着下巴看向我，似笑非笑。</p>
+<p>他的帽檐压得有些低，眼底晦暗不明，但我却清楚地察觉到了几分挑衅。</p>
+<p>毕竟之前我就是这么尾随他要了联系方式的。</p>
+<p>我站在柜台后，太阳穴突突地跳。</p>
+<p>在江晏坐走了一批又一批的人之后，我实在受不了了。</p>
+<p>「江晏，你怎么会来？」我坐在他对面。</p>
+<p>「你不接我电话，担心你，就问了你闺蜜。」江晏好整以暇地看着我</p>
+<p>我就知道管圆守不住嘴。</p>
+<p>「我收了你妈妈的银行卡，我答应她跟你保持距离。」</p>
+<p>「嗯，我知道。」江晏用勺子挖了点甜品，不紧不慢地往嘴里送。</p>
+<p>「你以后别来了。」我移开视线，试图让自己看起来冷酷无情。</p>
+<p>「钱拿来开店了？」江晏不答反问。</p>
+<p>「嗯。」</p>
+<p>「那为什么不能来？」江晏微微后倚，说得一本正经，「我来我妈投资的店吃点甜品不可以吗？」</p>
+<p>我一时语塞，我都拿人家钱了，还这样，我的良心会痛。</p>
+<p>「总之，你不要再来了。」</p>
+<p>「甜品不错，可惜没吃到草莓软酪，以前你给我做过一次，回味至今。」</p>
+<p>「所以呢？」</p>
+<p>「所以明天我会早点来。」</p>
+<p>……</p>
+<p>江晏这人除了洁癖之外还有个特点就是非常准时。</p>
+<p>之前大学谈恋爱的时候，每次出门约会，江晏都会准时到达我的宿舍楼下，然而我却在楼上穿衣打扮磨磨蹭蹭并且告诉他我真的还有十分钟就好了。</p>
+<p>直到我舍友带饭回宿舍，满腔同情地跟我说：「你还没好啊，我看江晏在楼下被风吹得灰头土脸的。」</p>
+<p>我急匆匆地赶下楼，撒娇道谦，江晏毫不客气地把冷冰冰地双手往我脖子里塞，「后天，我要吃到你做好的草莓软酪。」</p>
+<p>这次，他同样也很准时。</p>
+<p>准时到甚至提前三个小时给我打电话催我到店。</p>
+<p>「喂？」嗯，我确实刚醒。</p>
+<p>「还没起床？」江晏的声音伴随着滋滋的电流声一下子拉近。</p>
+<p>我瞬间清醒：「这才几点？」</p>
+<p>「你开店的人不用提前准备食材吗？」</p>
+<p>「我晚上会提前准备好一部分，还有一些一会去弄来得及。」说完我突然意识到我为什么要跟他解释这些，「我开店，好像跟你没关系吧？」</p>
+<p>那头一愣，「我是顾客，决定跟你预定今天所有的草莓软酪。」</p>
+<p>「这位顾客不好意思，今天本店不售卖这一甜品。」</p>
+<p>我赶到店里的时候，远远就看到江晏站在门口。</p>
+<p>江晏很高，腿也很长，还没在一起的时候，我就注意到了。</p>
+<p>大学里的游泳课，泳池边望过去，肉条条的一大片，江晏穿着泳裤，大长腿直直地杵着，在一众男生里，白得晃眼。</p>
+<p>我拽了拽身上的连体泳衣，不好意思地走过去，虽说是一路半垂着脑袋，眼睛却没从江晏的腹肌上移开过。</p>
+<p>就在我打算若无其事地从他面前走过时，不知道从哪里窜出来一个小朋友，腰上围着泳圈狠狠把我撞了一下，我一下子没反应过来，手在空中胡乱挥舞几下，身体不受控制地栽到泳池里。</p>
+<p>眼睛闭上的上一秒，我看到江晏立在岸边，勾着唇歪着脑袋望着我，没有任何要出手帮我的意思。</p>
+<p>鼻腔里瞬间涌入泳池里带着消毒水味道的水。</p>
+<p>要死了，江晏居然真的袖手旁观，等我从泳池里活过来，我发誓一定不再暗恋他了。</p>
+<p>就在呼吸渐渐稀薄的时候，腰侧覆上一双大手，温暖有力地把我拖了起来。</p>
+<p>「不会游泳跑来泳池干什么？」耳畔传来跟泳池一个温度的声音。</p>
+<p>「就是不会才来学。」我下意识反驳，转头却对上江晏一双清明的眼。</p>
+<p>「下次走路，记得看路，别看我。」</p>
+<p>老实说，这话要是从别人嘴里说出来，我肯定在心里鄙夷一句自恋狂。</p>
+<p>但是，这是江晏。</p>
+<p>后来跟江晏在一起之后，他毫不留情地拆穿我：「以后偷看我不要那么光明正大，每次我都能发现。」</p>
+<p>我羞恼一会后反应过来：「你每次能发现我是不是也证明你也在看我啊。」</p>
+<p>江晏神色一滞，不回我的话，迈着腿自顾自地往前走。</p>
+<p>印象里，江晏很少主动，看起来都是慵懒随意的模样，好像下一秒就能单手插兜不带丝毫留恋地走人。</p>
+<p>江晏像风，像云，是我把握不住的东西。</p>
+<p>所以尽管我暗恋他那么多年，我也没有勇气主动表白，在我以为我跟江晏这一辈子再也不会碰面的时候，他又出现了。</p>
+<p>就像此刻，他大步向我走来，眼里褪去从前的随意，多了几分坚定。</p>
+<p>「蒋店长，来得比顾客还迟？」江晏撇了撇嘴角。</p>
+<p>「你来这么早，我还没营业。」况且我也没想你过来。</p>
+<p>我开了店门，进去简单收拾了一下，套上工作服，想要系腰后的带子的时候，江晏顺势接了过去，帮我打了个结。</p>
+<p>我一愣，「谢谢。」</p>
+<p>「嗯，不谢，做一份草莓软酪给我就够了。」我转过身，江晏看我的眼神里写满了对草莓软酪的虔诚和执着。</p>
+<p>我再一次稀里糊涂地答应了。</p>
+<p>直到江晏露出得逞的笑，我才反应过来，心里有些气恼，指使他打扫店里的卫生。</p>
+<p>我转身进了后厨，打开冰箱，把包里早就准备好的草莓放了进去。</p>
+<p>关上门，我禁不住自嘲，到底是我太了解江晏呢，还是太了解我自己呢。</p>
+<p>等我将切碎的草莓包好之后，抬头看见江晏倚在门框上静静地看着我。</p>
+<p>我有些心慌，移开眼神，「你站那里做什么？」</p>
+<p>江晏抬腿走过来，手撑在台面上，将我圈在怀里。</p>
+<p>「当然是看你。」耳侧传来温热的气息，「只允许你偷看我，不允许我看你吗？」</p>
+<p>我宁愿江晏像以前一样，拽得不搭理人，而不是像此刻，狠狠拿捏我。</p>
+<p>我随手捏了一颗草莓，侧过身往他嘴巴里塞。</p>
+<p>江晏启唇，咬了一口草莓，唇上沾着粉色的汁水。</p>
+<p>我呼吸瞬间漏掉一拍，因为江晏看我的眼神实在过于暧昧黏腻，感受到他的贴近和逐渐加快的呼吸，我一时不知道哪根筋搭错了，把手上他没吃完的另一半草莓塞到了我的嘴里。</p>
+<p>我愣了，江晏也愣了，随后他轻笑出声，微微侧身去拿台面上的草莓软酪，「不逗你了，蒋店长，认真工作。」</p>
+<p>这人怎么这样。</p>
+<p>我没好气地推开他，把他赶出了后厨。</p>
+<p>我深呼吸好几口，缓好心绪，才开始做今日份的甜品。</p>
+<p>等我做完出来的时候，发现江晏已经不在了。</p>
+<p>陆陆续续已经来了一波顾客，我忙着打包售卖，一时半会空不下来。</p>
+<p>「这位顾客，请问你要点什么？」队伍排到了最后两位顾客，我照例询问。</p>
+<p>话刚说完，面前的阿姨把手上的袋子甩在了我的面前，满脸的不悦。</p>
+<p>我看了看，这是我店里的包装袋，我一时还没反应过来怎么回事，这位阿姨就不满地开口：「你店里的甜品是你做的？」声音尖锐刺耳。</p>
+<p>「是。」我点点头。</p>
+<p>「做的什么东西，难吃就算了，里面怎么有苍蝇？」那个阿姨暴力地打开包装袋，指给我看。</p>
+<p>我心一咯噔，这段时间天气都很冷，哪来的苍蝇。</p>
+<p>「就是啊，故意恶心人呢嘛，我们招你惹你了。」一旁的年轻女士附和。</p>
+<p>「阿姨，非常不好意思，我在包装前都会检查一下以确保没有异物，可能是我疏忽了，要不我给您退款吧。」</p>
+<p>「退钱就行了？你知道我被这只苍蝇恶心得一天没吃下饭吗？你个姑娘怎么这么不注重卫生呢？」那个阿姨用力地拍打收银台，我把吓得一愣，店里吃甜品的人也看了过来。</p>
+<p>我越发慌乱，抖着声问：「阿姨，您希望得到什么解决方式呢？」</p>
+<p>「哼，这事儿解决不了，我要打举报电话。」</p>
+<p>「你可以找人来检查我这里的卫生环境。」我捏了捏拳头。</p>
+<p>「你信不信我能找人搞垮你的店。」她女儿抽了张凳子坐下，翘着二郎腿，甚至对店里的其他顾客恶语相向。</p>
+<p>身后传来江晏的声音：「这位顾客，非常不好意思，应该是我们有了疏忽才导致这样的情况，这样我们给您退三倍的价钱可以吗？」</p>
+<p>那位阿姨冷哼一声，默许了。</p>
+<p>江晏走过来握了握我的手，我才意识到自己的手有些发抖。</p>
+<p>「别怕，就是存心来闹事的，花点钱就行。」那人走后，江晏拍拍我的背，小声安抚我，「刚刚我出去买饮料了，没跟你说，以后遇到事给我打电话好不好？」</p>
+<p>我呆呆地盯着他外套的纽扣，点了点头。</p>
+<p>当初要开甜品店的时候，我爸妈是最先反对的，他们念叨我没什么经验，在社会上一定会吃亏。</p>
+<p>他们说的对，今天遇到这样的情况，确实是我没想到的。</p>
+<p>「小禾，小禾。」江晏唤了我两声，思绪逐渐回来。</p>
+<p>「怎么，吓着了？」江晏揉了揉我的脑袋，带着温柔的笑意，「怎么还跟大学时候一个样，遇到事像只迟钝的小乌龟。」</p>
+<p>江晏果然温柔不过三秒，不逗我就浑身难受，我一把拍开他的手，准备把桌面上被甩烂的甜品扔掉。</p>
+<p>没想到，转身的时候却看到熟悉的人。</p>
+<p>江晏妈妈。</p>
+<p>站在门口静静地看着我们，我也不知道她看了多久，我被她盯得太阳穴突突地跳，今天都是什么事儿。</p>
+<p>逃避不是事儿，尽管现在心里慌得不行。</p>
+<p>我没看江晏，故作镇定地坐过去，把江阿姨邀请进来坐一坐。</p>
+<p>江阿姨点点头，好像看起来没有很生气。</p>
+<p>「江阿姨，这是我开的甜品店，你想吃点什么吗？」我坐在江阿姨的对面，有些手足无措。</p>
+<p>「不用了，我来就是看看。」江阿姨坐在椅子上，环顾四周，「客流量怎么样？」</p>
+<p>「挺好的。」</p>
+<p>「江阿姨，你怎么知道……」我有些疑惑。</p>
+<p>「当然是阿晏回去说的了。」江阿姨看了眼我身后的江晏，「通知我来看看我投资的甜品店。」</p>
+<p>江晏妈妈轻飘飘的语气，却听得我脑门直冒虚汗。</p>
+<p>「江阿姨，那张卡我没动，这个店是我自己出了一部分，剩下的是我爸妈支持的资金。」还好我没真用人家的钱，不然我跟江晏还拉拉扯扯被人家看到，真是太尴尬了。</p>
+<p>「阿姨，卡还在，我去拿给您。」我起身要去包里拿银行卡，其实那天接过卡也是一时冲动，本来就在想着找个机会还给江晏妈妈，没想到江晏妈妈自己找过来了。</p>
+<p>「咳咳。」江阿姨不自然地咳嗽了两声，「这个事，也不急，先不用给我了，阿姨今天来就是看看。」</p>
+<p>江阿姨顺势起身，在柜台出转了转：「小禾啊，早就听阿晏说什么草莓软酪好吃了，给阿姨装一份吧。」</p>
+<p>江晏站在一旁，闷闷地笑。</p>
+<p>我有些发懵，「阿姨，有的。」我把刚刚做好的那几份都装了起来。</p>
+<p>江阿姨掏出手机要付钱。</p>
+<p>「阿姨不用了不用了，我请您吃。」我赶忙摆摆手，一旁的江晏脸上笑意更浓了。</p>
+<p>「那不行，这钱我得付。」江阿姨执意要付钱，我无奈之下只好给她扫了码。</p>
+<p>「阿姨慢走啊。」</p>
+<p>「妈，有空再来。」</p>
+<p>江晏胳膊撑在柜台上，满眼狡黠：「我收回刚刚的话，你原来不是个遇事愣头愣脑的小乌龟。」</p>
+<p>我伸手戳了一下江晏：「你怎么跟你妈说了我开店的事？」</p>
+<p>「可不是我主动说的，那天你从我家走后，我妈可是三天两头就打探你的消息呢。」江晏抽张椅子坐下，手指漫不经心地把玩餐具。</p>
+<p>「什么意思？」我皱起眉头，不明所以。</p>
+<p>「我妈在你面前装呢，在家后悔好几天了。」</p>
+<p>小剧场：</p>
+<p>宋梅第一次见到自家儿子身边出现女人的时候，激动地差点叫出来。</p>
+<p>但还是理了理衣服，假装趾高气昂地走过去。</p>
+<p>她知道要是想让自己儿子主动带女孩回家吃饭肯定比登天还难，所以自己先下手为强，让他们一块跟着回去吃饭。</p>
+<p>宋梅女士走在前面的时候，悄悄拿出手机给家里的李阿姨发信息，让她赶紧准备饭菜。</p>
+<p>坐上车后，宋梅透过后视镜悄悄打量蒋禾。</p>
+<p>其实她早就听说过蒋禾了，是自己老公之前的学生，还是自己儿子好几年放不下的人。</p>
+<p>也不知道她朋友给她出的哪门子主意，说是让她装一装，试探试探人小姑娘。</p>
+<p>江晏万万没想到自己妈妈这么戏精，就连宋梅女士自己也没想到，自己要装成一个恶婆婆。</p>
+<p>饭桌上，宋梅头一回看到自家儿子忙前忙后给人小姑娘夹菜，心里头突然有些发酸，于是故意板着脸问蒋禾家住哪、父母干什么的。</p>
+<p>问到一半，自己老公回来冯立恒回来了，冯立恒看着她撇了一嘴，宋梅就知道自己演不下去了，低头乖乖吃饭。</p>
+<p>吃完饭又收到自己那个损友的消息，说是电视剧里都那么演，让宋梅准备张银行卡出来。</p>
+<p>宋梅心领神会，立马跑书房里找了张卡出来。</p>
+<p>就在她静静等待，等待蒋禾表达对自己儿子坚贞不移的爱和誓死捍卫的决心的时候，她眼睁睁看着小姑娘从她手里接过卡，道了再见，头也不回地离开了。</p>
+<p>宋梅慌了，端茶杯的手都抖得不行。</p>
+<p>糟了，这要是江晏知道了，不得跟她断绝母子关系。</p>
+<p>宋梅愁着脸去找自家老公认错，冯立恒拍着书桌数落她闲着没事干。</p>
+<p>江晏刚准备出门去找跑了的蒋禾，就被宋梅拉住：「儿啊，妈不是故意的。」</p>
+<p>江晏倚着门框，阖着眼，故作悲痛。</p>
+<p>「儿啊，别难过，那张卡里的钱，原本妈妈也是打算作为一部分彩礼的。」宋梅拽了拽江晏的袖口。</p>
+<p>「知道了。」江晏冷漠地推开她的手，转身的时候嘴角却勾起了一个小弧度。</p>
+<p>我追问江晏，他妈妈到底是什么情况，江晏摇了摇头，直勾勾地看着我：「你答应让我送你回家，我就告诉你。」</p>
+<p>我翻了个白眼，转身收拾东西。</p>
+<p>今天这么一闹，我也没心情继续营业了。</p>
+<p>我关好门，江晏顺其自然地接过我手里的包。</p>
+<p>「3 号线？」</p>
+<p>「嗯，你怎么知道。」</p>
+<p>「因为某人就是在 3 号线偷看我还尾随我跟我要联系方式。」江晏就是这样，平平淡淡的语气说着气人的话。</p>
+<p>我刷了码，大步流星地往前走，还没下楼梯，胳膊被人一把抓住。</p>
+<p>「走慢点。」</p>
+<p>我这才意识到楼梯上人很多，江晏拉着我的胳膊把我带到扶手内侧，高大的身躯把我跟耸动的人群隔开。</p>
+<p>「谢谢。」我低声喃着。</p>
+<p>「你说什么？」江晏低头把耳朵凑了过来，「你说让我去你家吃个晚饭？好啊。」</p>
+<p>江晏转过来，抿着嘴憋笑，清亮的眸子里映着我的脸庞，我突然失了呼吸，感觉我们同周遭已然割裂开，他的眼里只有我，我的眼里也只有他。</p>
+<p>「蒋禾，你再这么看着我……」江晏动了动唇，我突然恢复意识，伸手捂住了他的嘴巴，感受到他滚烫的呼吸，我又立马缩回了手。</p>
+<p>「地铁来了。」我躲开他的视线。</p>
+<p>刚好是晚高峰，地铁里人多得可怕，我勉强挤进去，找了个站脚的地方，但是周围没什么可以搭把手的地方。</p>
+<p>「我不介意你扶着我的胳膊。」头顶传来江晏的声音，他个子高，可以抓住上面的栏杆。</p>
+<p>「不用。」我转过头，脚下使力站稳，结果地铁刚出发，我被身后人一妆，一下子撞到了江晏的怀里。</p>
+<p>我反应过来想要离开，结果江晏右手环到我的身后：「别动，再动你身后那个大叔可要贴你身上了。」</p>
+<p>我闻言身子一僵，老老实实呆在江晏怀里，脸红了一路。</p>
+<p>下地铁前一看，我身后哪有什么大叔，明明都是阿姨。</p>
+<p>出地铁后，江晏拉住我。</p>
+<p>「我买点什么比较好。」江晏眼里闪过一丝局促和紧张。</p>
+<p>「什么买什么？」我不解。</p>
+<p>「我总不能两手空空去见岳父岳母吧。」</p>
+<p>……</p>
+<p>「怎么就是你岳父岳母了。」没脸没皮的。</p>
+<p>「你凭空带个大男人回家吃饭，你爸妈不误会也难。」江晏勾了勾我的手。</p>
+<p>「那你不去吃，不就不误会了。」我试图挣开他的手。</p>
+<p>「行吧，那下次来的时候再买。」</p>
+<p>我们边走边拌嘴，走进小区，上了电梯。</p>
+<p>电梯门快关上的时候，江晏突然凑过来悄声说一句：「你说下次来的时候，是不是该带彩礼了。」</p>
+<p>话刚说完，电梯顶部传来滋滋的声音，随后灯「啪」的熄灭。</p>
+<p>我反应过来：「江晏，让你胡说八道，电梯停了。」</p>
+<p>「怕了？」我眼前一片黑暗，只有耳畔传来江晏带着轻笑的声音。</p>
+<p>「比起怕电梯，我更怕你。」感受到有双手攀附上我的腰，我喉咙一紧。</p>
+<p>「时隔几年，想我吗？」江晏一下一下摩挲着我。</p>
+<p>「不想。」我别开脸，却无法忽视自己呼之欲出的心跳。</p>
+<p>「嘴硬。」</p>
+<p>「我没有。」感受到他贴的越来越紧，我双臂抵着他，试图逃脱。</p>
+<p>「别动，就一会，让我抱一会。」江晏收紧手臂，把我带到电梯轿厢最角落。</p>
+<p>「小禾，我很想你。」江晏把下巴搁在我的肩膀上，声音又闷又哑，脖颈间全是他炙热的气息。</p>
+<p>「你想我吗？」江晏追问。</p>
+<p>「我……」话还没说完，又被他打断。</p>
+<p>「别想否认，地铁里你早就认出来是我了。」聪明如江晏，肯定一下子就知道，是我太冲动，不顾后果地冲上前去确认是否就是他，哪怕我心里其实早已有答案，世界上怎么会有那么像的两个人。</p>
+<p>「为什么换了手机号。」</p>
+<p>「我，我一时冲动。」我越说越没底气，我何尝没想过再找他，还不是因为死鸭子嘴硬拉不下脸。</p>
+<p>「那为什么要跟我分手。」</p>
+<p>「有个女生过来找我了，说要给我一笔钱让我离开你。」</p>
+<p>「你这就信了？」</p>
+<p>「一开始我当然没信，后来看到她上了你的车。」我承认我这个人就是很冲动，一气之下拒接江晏的所有电话。</p>
+<p>「后来我准备去找你了，结果找不到了。」我捏了捏他的衣袖。</p>
+<p>「那个女生是我妈前夫情人的女儿，我妈跟前夫关系不好很多年了，那天我走也是因为他送情人去机场的时候出车祸了，后来他和我妈离婚，家里一堆事要处理，我妈把我送出国了。」</p>
+<p>「对不起，我不知道会有这么多事情发生在一起。」我心开始抽抽地疼，江晏那会一定很需要我的陪伴。</p>
+<p>「不用道歉，我那会也需要时间自己冷静冷静。」江晏轻轻拍着我的背。</p>
+<p>小剧场：</p>
+<p>在国外的时候，江晏恨不得一天有 48 个小时，去忙所有的事情，忙完就回国去逮那个让人牙根作痒的坏东西。</p>
+<p>那会他妈跟老冯新婚一周年，江晏打了视频回去道喜。</p>
+<p>「阿晏，年底回不回来啊？」江妈妈噙着泪水。</p>
+<p>「不一定呢。」江晏揉揉眉心，「家里就你吗？」</p>
+<p>「你爸忙着学校的事情呢，跟学生打电话呢。」江妈妈走进书房，把摄像头对准老冯。</p>
+<p>江晏看到人正准备问声好，就听到老冯嘴里说出一直压在自己心底的两个字「蒋禾」。</p>
+<p>江晏处于震惊，任由自己妈怎么叫都没反应，直到老冯挂了电话，江晏赶紧说让爸接电话。</p>
+<p>老冯有些意外，江晏这孩子嘴硬，一年到头都没喊几声爸。</p>
+<p>江晏一番打听，自己苦苦思念的人是自己爸学生呢。</p>
+<p>最后江晏讨好似的叫了好几声爸，老冯答应向他「汇报」蒋禾的情况。</p>
+<p>「爸，她怎么总是在做汇报啊，你是不是压榨人家呢。」江晏看着照片里的蒋禾，扎着高马尾，站在讲台上做着汇报。</p>
+<p>「你这小子，心疼上了，人家学习认真，哪像你。」</p>
+<p>「还有照片吗？」江晏躺在床上，脸上带着笑。</p>
+<p>「没了，不拍了，我不是变态，想看自己回来。」</p>
+<p>「爸，她就不干点别的事吗？」</p>
+<p>老冯看到教室外，一个男生追上蒋禾，有说有笑，给江晏发了消息：「是有别的事，在跟别的男生有说有笑。」</p>
+<p>江晏闷了一腔怨气，决定下个月就回国。</p>
+<p>江晏摸上我的脸，嘴唇渐渐贴近，就在快要亲上的那一秒，电梯灯亮。</p>
+<p>眼睛还没适应突来的亮光，「叮」的一声，电梯门开了。</p>
+<p>江晏维持着刚刚的姿势，在我耳边轻声咒骂。</p>
+<p>而我看着电梯外的一男一女，愣愣地叫了声，「爸，妈。」</p>
+<p>江晏赶紧拉开距离，拉着我的手说了句「叔叔阿姨好」。</p>
+<p>「咳咳。」我爸不自然地咳嗽了两声，犹豫间还是抬腿准备进来。</p>
+<p>「好，好。」我妈一下子看明白怎么回事，一把拉住我爸，把他拉了出去，使了两个眼色。</p>
+<p>「你们先上去吧，我跟你爸好像忘记买酱油了，一会回来啊。」我妈一脸笑盈盈地拉着我爸走了。</p>
+<p>江晏按下电梯，一脸坏笑：「看来这个误会解释不清了。」</p>
+<p>我掐了一把他的手臂，「都怪你。」</p>
+<p>我把江晏带回家，还没一会，我爸我妈真拎一瓶酱油回来了。</p>
+<p>「是小江吧。」我妈给江晏倒了杯水。</p>
+<p>「是，阿姨。」江晏有些意外。</p>
+<p>「之前大学的时候，小禾就给我看过你照片了，还是这么帅。」</p>
+<p>「妈，你去做饭吧。」我眼神示意她。</p>
+<p>「老蒋，去做饭。」我妈头也没回，吩咐我爸进厨房。</p>
+<p>「阿姨，我今年刚回来。」</p>
+<p>「我知道的，小禾说你们分手了，阿姨惋惜好久了，我跟你说啊我家女儿就是冲动得很，前阵子还辞职跑去开甜品店了。」我妈拉着江晏诉苦。</p>
+<p>「阿姨，小禾梦想就是开甜品店，年轻人创业是要冲动点。」</p>
+<p>「我们也是怕她一个小姑娘吃亏，还好你能陪着她。」我妈感动地拍拍江晏的手。</p>
+<p>我无语了，想去个洗手间，短暂逃避一下，却被我妈拉住：「你上哪去，你坐这招待人家小江，你说你谈了男朋友也不带回来。」</p>
+<p>「我去厨房。」我妈没好气地瞪了我两眼，我只好乖乖坐着。</p>
+<p>「看样子，阿姨很喜欢我嘛。」江晏凑过来，眨眨眼。</p>
+<p>「少来。」</p>
+<p>「现在你要是不让我做你男朋友，可说不过去了。」</p>
+<p>「哼，勉强同意吧。」我撅撅嘴，突然想到什么。</p>
+<p>「对了，你妈妈给我的银行卡，你带回去吧。」我在包里拿出卡。</p>
+<p>江晏想了想还是接过卡：「嗯，回去让我妈准备个大的，上门提亲的时候用。」</p>
+<p>我忍不住笑出声，凑巧我爸妈端着饭菜出来，招呼我们上桌吃饭。</p>
+<p>吃完饭，我妈让我去送送小江。</p>
+<p>我穿上外套跟着出去。</p>
+<p>「刚刚你在饭桌上怎么就说让家长也见个面啊，会不会太快了。」我按下电梯。</p>
+<p>「我急。」江晏拉着我的手，狠狠捏了一下。</p>
+<p>「我又跑不了。」我反捏回去。</p>
+<p>「我怕。」</p>
+<p>我微微发怔，随后神色认真地跟他说：「不会的。」</p>
+<p>「那你不如证明一下。」</p>
+<p>「怎么证明？」</p>
+<p>「亲亲小江。」江晏缓缓凑近。</p>
+<p>「电梯有监控。」我别开脸。</p>
+<p>「不管。」江晏左手稳住我的头，没有犹豫地吻了上来。</p>
+<p>没有技巧，没有试探，全是感情。</p>
+<p>嗯，分开这么久，我确实很想他。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC16%E8%8A%82%E6%A0%A1%E9%9C%B8%E4%B8%8D%E5%A5%BD%E6%83%B9/" title="第16节校霸不好惹">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">第16节校霸不好惹</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC25%E8%8A%82%E8%80%81%E5%85%AC%E5%A4%B1%E5%BF%86%E5%90%8E%E6%9B%B4%E7%94%9C%E4%BA%86/" title="第25节老公失忆后更甜了">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">第25节老公失忆后更甜了</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

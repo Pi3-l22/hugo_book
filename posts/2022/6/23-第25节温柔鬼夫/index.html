@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第 25 节温柔鬼夫 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC25%E8%8A%82%E6%B8%A9%E6%9F%94%E9%AC%BC%E5%A4%AB/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC25%E8%8A%82%E6%B8%A9%E6%9F%94%E9%AC%BC%E5%A4%AB/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="第 25 节温柔鬼夫">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta name="twitter:title" content="第 25 节温柔鬼夫">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="第 25 节温柔鬼夫">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11717">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26679.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">第 25 节温柔鬼夫</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ac%ac%2025%20%e8%8a%82%e6%b8%a9%e6%9f%94%e9%ac%bc%e5%a4%ab&amp;url=https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC25%E8%8A%82%E6%B8%A9%E6%9F%94%E9%AC%BC%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC25%E8%8A%82%E6%B8%A9%E6%9F%94%E9%AC%BC%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ac%ac%2025%20%e8%8a%82%e6%b8%a9%e6%9f%94%e9%ac%bc%e5%a4%ab%20https://mohai.us.kg/posts/2022/6/23-%E7%AC%AC25%E8%8A%82%E6%B8%A9%E6%9F%94%E9%AC%BC%E5%A4%AB/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26679.jpg" alt="第 25 节温柔鬼夫" />
+      
+
+      <p>温柔鬼夫</p>
+<p>霓虹夜行：见幻影，见人心</p>
+<p>查看详情</p>
+<p>1</p>
+<p>我屋里多了一个人，也有可能不是个人。</p>
+<p>是个……鬼。</p>
+<p>还是个有强迫症的鬼，更是个企图用美色，勾引我跟他谈恋爱的鬼。</p>
+<p>2</p>
+<p>我今年二十三岁，刚来到这陌生的城市独自打拼。</p>
+<p>租了个小单间。</p>
+<p>拎包入住的时候，就觉得屋子异常的干净。</p>
+<p>所有的一切都一尘不染，所有的东西都摆放得整齐。</p>
+<p>而我偏偏就看不惯，在家被父母天天各种叨叨，自己住当然想怎么样就怎么样，遥控器乱丢又怎么样？</p>
+<p>反正没人说我了。</p>
+<p>还有被子，早起不叠又怎么样，这样散乱着还有益健康。</p>
+<p>第二天早起。</p>
+<p>我美滋滋地去上班，回来一推开房门，瞬间惊呆。</p>
+<p>所有被我乱扔的一切，都被摆得整整齐齐，就连床上的被子都叠得方方正正，就跟军训里教官要求的豆腐块一样。</p>
+<p>3</p>
+<p>我跑去质问房东，我的房间为什么会有人乱进，还帮我收拾东西。</p>
+<p>房东莫名其妙，说我脑子有病，五百块钱的房租，还想有人帮忙收拾房子。</p>
+<p>我偏不信邪，买了监控探头，对准整个客厅跟那张床。</p>
+<p>早上去上班的时候，把被子直接扔地上，沙发上的抱枕也乱丢。</p>
+<p>在公司，趁着老板不注意，我就摸鱼看监控，整整一天都没任何动静。</p>
+<p>我还以为他怕了。</p>
+<p>盲猜是房东，忘了这房已出租所以过来打扫，又怕我冤枉他偷东西，所以打死不承认，现在被我一闹肯定也不来了。</p>
+<p>下班回家的时候。</p>
+<p>我特意买了个新的门锁，打算回去就换上。</p>
+<p>可门推开的一瞬间，我惊呆了。</p>
+<p>所有的东西整整齐齐，就跟我昨天下班回来看到的一样，就连我的牙刷，我习惯头朝下，都被调成头朝上。</p>
+<p>再打开监控，依旧凌乱，跟我眼前所见，完全不一样。</p>
+<p>这一刻……</p>
+<p>我怀疑到底是我眼睛有毛病还是监控有毛病。</p>
+<p>4</p>
+<p>「不会吧？」</p>
+<p>「闹鬼？」</p>
+<p>「还是个会帮你收拾屋子的鬼？」</p>
+<p>「那他图什么啊？」</p>
+<p>「该不会是贪图你的美色，想借着他的贤惠征服你吧？」</p>
+<p>说话的是我闺蜜，在另一个城市，跟我过着一样的生活，有着一颗渴望恋爱的心，立马就脑补出一场人鬼恋。</p>
+<p>鬼夫还得是高帅富，鬼王的那种，弹指一响，黄金万两，无所不能。</p>
+<p>我直接挂断。</p>
+<p>这货嘴上没把门的，信她一成都会死得很难看。</p>
+<p>我去找房东退房。</p>
+<p>房东一听说闹鬼，脸色顿时一沉，让我别胡说八道，退房可以，押金一千不退。</p>
+<p>神经病！</p>
+<p>要扣我一千块？</p>
+<p>为了一千块，我连鬼都可以不怕。</p>
+<p>离开房东家的时候，我把门砸得特别的响。</p>
+<p>发泄怒气。</p>
+<p>可最终还是得回到出租屋。</p>
+<p>其实闺蜜脑补的那些，什么希腊神匠雕琢出来的俊美容颜，我一点都不感兴趣，就想知道，他是不是能弹指一响，就真的有黄金万两。</p>
+<p>5</p>
+<p>「鬼大爷，其实我这个人没有什么物种歧视，就是胆儿比较小，所以你在这住可以，帮我收拾房间也行，就是千万不要吓唬我。」</p>
+<p>双手合十。</p>
+<p>毕恭毕敬。</p>
+<p>点头哈腰。</p>
+<p>我人生二十三年来，第一次如此地惶恐。</p>
+<p>反正对方很不给面子。</p>
+<p>我说半天，人家一点回应都没，连是男是女都不知道。</p>
+<p>闺蜜很兴奋，不停地发消息问我，跟鬼住在一起什么感觉，还叫我半夜十二点去照镜子，看看那鬼夫长得怎么样，是不是帅到爆炸。</p>
+<p>所以咯，少女怀春可以，真的要少看点那些乱七八糟的恋爱文。</p>
+<p>看看都成什么样了。</p>
+<p>我这边怕得要死，她在那边带恋爱吧的节奏，搞得我这边不上不下，都不知道该期待，还是该害怕。</p>
+<p>反正挺相安无事。</p>
+<p>我每天上班回来，出租屋都会被收拾得很干净。</p>
+<p>闺蜜说这鬼夫绝了，典型的贤夫良父，让我努力赚钱把人娶回家。</p>
+<p>要不是隔得远，我一巴掌给她甩过去，这货满脑子都是啥？</p>
+<p>做做家务就贤夫良父啦？</p>
+<p>好歹也得在我下班回来的时候，端上一碗热腾腾的面。</p>
+<p>说这个话的时候，我正在煮面，对着视频那头的闺蜜讲：「最好再来个荷包蛋，再煎上两根火腿肠。」</p>
+<p>第二天下班。</p>
+<p>门一推开，空气中弥漫着浓郁的蛋香味。</p>
+<p>客厅小饭桌上。</p>
+<p>一碗面，面上铺着荷包蛋，旁边还有两根香煎火腿肠，一切都完美得刚刚好。</p>
+<p>卧槽！</p>
+<p>糟糕了！</p>
+<p>我想落荒而逃，却鬼使神差地拿出手机拍给闺蜜看。</p>
+<p>这种时候，这该死的虚荣心！</p>
+<p>我还配图：「看，贤夫良父，你想要的。」</p>
+<p>6</p>
+<p>「卧槽！」</p>
+<p>「他还真给你煮面？」</p>
+<p>「真的假的，你自己煮的想来糊弄我吧？」</p>
+<p>「这种好事我怎么就没摊上？」</p>
+<p>闺蜜在那边大呼小叫，搞得原本想跑路的我竟然有点期待。</p>
+<p>恋爱脑一上头，那是鬼都不怕。</p>
+<p>沙发一坐。</p>
+<p>开整。</p>
+<p>「还别说，这面煮得刚刚好，时间掐得挺准啊，我再晚回来几分钟，这面保准就坨了。」</p>
+<p>「这么贤惠，你还不赶紧地把人给娶了，换成是我，立马半夜十二点照镜子看看他长什么样。」</p>
+<p>闺蜜出现在屏幕上，贴着面膜，把我给吓一跳，差点没把手机扔了。</p>
+<p>用她的话说，半夜十二点照镜子就能见鬼，如果不行，再来削个苹果，只要皮不断还能许愿。</p>
+<p>这种脑残的事我能做？</p>
+<p>只是正好在十二点的时候，上洗手间正好路过。</p>
+<p>瞄了眼镜子什么没有，就说不可能咯，就算有鬼，人家半夜十二点跑洗手间看你上厕所？</p>
+<p>不过我确定了一件事，那鬼能听到我说话，还似乎想跟我处对象。</p>
+<p>因为第二天下班回家，又是面，又是煎蛋，还有两根火腿肠摆在那。</p>
+<p>监控探头似乎有毛病。</p>
+<p>从监控画面上看，饭桌上收拾得很干净什么都没。</p>
+<p>我肉眼再去看，那碗面还冒着热气，闻起来喷香，那货厨艺挺不错。</p>
+<p>「现在就差看他长得帅不帅了，让他出来见见面，长得帅的话，你要不收我就收了。」</p>
+<p>闺蜜恨不得马上收拾行李。</p>
+<p>这鬼她看上了，多好啊，爱收拾房子，会做饭，还不会瞎比比。</p>
+<p>想想也是。</p>
+<p>怎么着也得见面再说，看看人长得怎么样。</p>
+<p>7</p>
+<p>「见鬼十法，第一种，牛眼泪抹一抹眼睛。」</p>
+<p>「我去哪找牛眼泪。」</p>
+<p>「诶，第二种好，室内打伞也能见鬼。」</p>
+<p>正好我有伞。</p>
+<p>大晚上的，我撑着伞在房间里四处晃了晃。</p>
+<p>衣柜……</p>
+<p>床底下……</p>
+<p>全都看了个遍。</p>
+<p>别说鬼了，蟑螂都没一只。</p>
+<p>「他是不是长得丑，所以根本就不敢见你？」</p>
+<p>闺蜜一脸三八样。</p>
+<p>我：「也有可能，电影里鬼都是很瘆人的，说不定眼珠子转一转，直接砸地上的都有。」</p>
+<p>「咦惹，你别说了，摧毁我对鬼夫的幻想。」</p>
+<p>闺蜜直接挂了。</p>
+<p>这货真的是半点不靠谱。</p>
+<p>我正打算收起伞，门突然被敲响。</p>
+<p>大晚上的，像我这样的单身美少女，是不会有人找的。</p>
+<p>我猫眼瞄了一下，瓜子般的下巴，凸起的喉结，微微敞开的白衬衫，肯定不是房东那大胖子。</p>
+<p>陌生人，单身美少女是绝对不会开门的。</p>
+<p>何况是晚上。</p>
+<p>所以我问他：「你谁啊？大半夜来敲我门干嘛？」</p>
+<p>门外没有回答。</p>
+<p>我拿出手机打给闺蜜，按下免提：「老公，有人敲门。」</p>
+<p>「谁啊？」</p>
+<p>闺蜜可会来事，变声器超猛男，低沉的声音透着无与伦比的威压。</p>
+<p>「呵……」</p>
+<p>门外的笑声淡淡的，我再一瞄，人总算是不见了。</p>
+<p>「肯定是被你吓跑了。」</p>
+<p>我看向手机，闺蜜在打量着我的伞：「刚才敲门的那个，该不会是鬼吧？」</p>
+<p>我打了个激灵再往外看去，什么都没看到。</p>
+<p>「那人长什么样？」</p>
+<p>「帅不帅？」</p>
+<p>「是不是传说中的男主脸？」</p>
+<p>她又开始三八了，一脸兴奋那个样好像外头真是鬼。</p>
+<p>按理来说该害怕的，被她这么一搅和，我都不知道该怕还是该干啥。</p>
+<p>「没看到脸，看到下巴还有脖子那里，感觉还可以，蛮……就蛮干净的那种感觉。」</p>
+<p>我边收伞边形容。</p>
+<p>闺蜜：「啧啧啧，干净，那通常都是帅哥。」</p>
+<p>这一次换我挂她，动不动就帅哥帅哥，我明天把监控探头装外头。</p>
+<p>8</p>
+<p>第二天晚上。</p>
+<p>我走出公司已经十二点多，末班车都没了。</p>
+<p>身为社畜，九九六不说，还要被无良老板扯着加班到现在，真的是怨气满满。</p>
+<p>最主要是什么，是我家那碗面肯定坨了。</p>
+<p>出租屋离公司也就三个站，打车不划算，所以我打算走回去。</p>
+<p>当散步嘛，坐一天了对吧，反正我不会承认我就是穷。</p>
+<p>工作才第一个月，工资还没领，租了房，还被房东扣押一千块。</p>
+<p>人生啊……</p>
+<p>每一步踩得都是艰难。</p>
+<p>大城市就是好，就算大半夜的也一样灯火通明，就是多了点乱七八糟的人。</p>
+<p>这不……</p>
+<p>我被堵在巷子里。</p>
+<p>现在恨不得扇自己几巴掌，抄什么近路咯？</p>
+<p>这哪是抄近路。</p>
+<p>这根本是在找死，嫌命长，抄的往奈何桥的路。</p>
+<p>「美女？」</p>
+<p>「一个人？」</p>
+<p>「处对象不？来跟哥玩玩？」</p>
+<p>那男的喝了酒，醉醺醺地凑过来，一阵恶臭。</p>
+<p>「这我女朋友。」</p>
+<p>他的后领被人拽住，直接往后一拖。</p>
+<p>那男的摔了。</p>
+<p>我抬起头，映入眼帘的是那瓜子般的下巴，再往上看……</p>
+<p>「学长？」</p>
+<p>这人我认识，高我一届的校草，闺蜜追捧的男神。</p>
+<p>毕业后了无音讯，没想到居然会在这碰上。</p>
+<p>「走吧，送你回去。」</p>
+<p>他转身往前走，我急忙小碎步跟上：「学长，你怎么会在这？」</p>
+<p>「正好路过。」</p>
+<p>「哦，幸亏有你啊，要不然我就完蛋了。」</p>
+<p>「是啊。」</p>
+<p>他的回答很冷淡，我倒是没在意，人家救了你一命，还想怎么样？</p>
+<p>到家之后，我邀请他进来坐坐。</p>
+<p>他意味深长地看我一眼，留了一句：「晚安。」然后走了。</p>
+<p>我愣了半天，才想起来连人家微信都没加。</p>
+<p>真是的！</p>
+<p>人家好歹救你一命啊。</p>
+<p>莫小葱，你还真是根大青葱，活该单身。</p>
+<p>9</p>
+<p>「我的天！」</p>
+<p>「你这是走了什么桃花运，校草英雄救美还送你回家？」</p>
+<p>闺蜜在那头一惊一乍。</p>
+<p>我开了包薯片，美滋滋：「最近桃花很旺。」</p>
+<p>「诶？」</p>
+<p>「等等。」</p>
+<p>「你不是都有鬼夫了？」</p>
+<p>闺蜜提醒了我，进门就有的那碗面今晚没了。</p>
+<p>桌上干干净净。</p>
+<p>我狠狠地啃了口薯片：「那货今晚没给我煮面，我决定把他休了，努力娶校草。」</p>
+<p>「人家是鬼，你好歹给点面子，偷摸着点说行不？」</p>
+<p>闺蜜翻了个白眼：「也不怕半夜被鬼压床。」</p>
+<p>「反正我不管，你别想跟我抢校草。」</p>
+<p>视频一挂，我去洗澡。</p>
+<p>回忆着被英雄救美的那一幕，后悔得很，怎么能忘了加微信？</p>
+<p>好歹跟人家道个谢，请吃几顿饭什么的。</p>
+<p>推开浴室的门，那熟悉的面香味扑鼻而来，让我瞬间打了个激灵。</p>
+<p>就那小饭桌上，刚煮好的面，香煎荷包蛋，还有两根火腿肠。</p>
+<p>那货还在。</p>
+<p>那我刚才跟闺蜜说的话岂不是全都被他听了去？</p>
+<p>说不害怕是假的，毕竟做了亏心事，换成谁不怕半夜鬼敲门啊？</p>
+<p>平时吃面，我是吃得理所当然，现在吃得战战兢兢，把词汇组织好几次之后：</p>
+<p>「那什么。」</p>
+<p>「我之前跟我闺蜜说的话，其实都是开玩笑。」</p>
+<p>「真的。」</p>
+<p>「我是人，人怎么能娶鬼呢？」</p>
+<p>「我又见不着你，也摸不着你，对吧？」</p>
+<p>「再说了。」</p>
+<p>「鬼也不需要老婆啊又不能亲亲搂搂抱抱……」</p>
+<p>10</p>
+<p>我闭嘴了，瞎扯个鬼，像在暗示人家对我搂搂抱抱。</p>
+<p>幸亏那鬼大度，从头到尾都没有再理我。</p>
+<p>第二天下班，</p>
+<p>才走出公司，就听到一声呼唤：「莫小葱。」</p>
+<p>干净清脆。</p>
+<p>男神不愧是男神，声音也这么好听。</p>
+<p>「你怎么会在这？」</p>
+<p>我很震惊，甚至还有点窃喜，他该不会在这等我吧？</p>
+<p>本仙女也是貌美如花，男神看上我，想让我以身相许也不是不可能。</p>
+<p>「正好下班，没想到你也从里头出来。」</p>
+<p>男神下巴微扬示意我身后大厦。</p>
+<p>我：「这么巧？你也在这里上班啊？」</p>
+<p>「嗯。」</p>
+<p>他声音冷冷淡淡，没等我说话，他就转身朝着公交车站走去。</p>
+<p>我赶紧跟上：「怎么以前都没见过你？」</p>
+<p>「呵。」</p>
+<p>他笑了。</p>
+<p>月色下。</p>
+<p>这微扬的唇角，还真是该死的迷人。</p>
+<p>我一时有点愣神，直到他转头看向我：「你才在这上班几天？」</p>
+<p>「五天。」</p>
+<p>我赶紧收回视线，指了指公交车站：「我一会在那等车。」</p>
+<p>「我也是。」</p>
+<p>他唇角勾了勾：「32 路车。」</p>
+<p>「好巧，我也是 32 路车，我们真有缘分。」</p>
+<p>天注定的，男神注定属于我。</p>
+<p>我大概笑得很花痴，男神望向我的眼神意味深长。</p>
+<p>更巧的来了。</p>
+<p>我们居然同一站下车，他把我送到家门口才离开。</p>
+<p>本来想叫他进门坐坐，但他只是在门口，温柔地说了一声晚安就走了。</p>
+<p>真是个淑男啊，彬彬有礼，不会让人觉得他有任何危险。</p>
+<p>「你那公司叫什么？」</p>
+<p>「我现在就投简历，我要跳槽，我要跟男神偶遇。」</p>
+<p>闺蜜在手机那头咋咋呼呼，我眉开眼笑：「晚了，男神绝对是我的掌中物。」</p>
+<p>「啊啊啊。」</p>
+<p>「绝交！」</p>
+<p>闺蜜直接挂了，这货气得上头，都没问我跟鬼夫处得怎么样。</p>
+<p>话说桌上没面。</p>
+<p>我去洗了个澡，出来，诶，面香喷喷刚上桌。</p>
+<p>四处看了看，没看到鬼，心就更虚，吃着人家的面，心里却爱着男神的颜，这叫什么？</p>
+<p>11</p>
+<p>我本善良！</p>
+<p>奈何上天要我做个养鱼的海王。</p>
+<p>闺蜜说怎么也得见见，看看鬼帅还是男神帅。</p>
+<p>万一鬼更帅呢。</p>
+<p>小说中的鬼夫，那都是帅得天地为之色变，让我别错过。</p>
+<p>还奸笑着说人家不只是有鬼夫的颜，还有鬼夫的腰，更重要的是还能弹指一响黄金万两，那我还当什么社畜？被鬼夫包养，天天买买买，吃喝玩乐晒不好么？</p>
+<p>我直接挂了，看透透的，她就想我甩掉男神让她捡便宜，像我这样的美少女会是那么颜控，那么物质的渣女么？</p>
+<p>我只是……</p>
+<p>唔……</p>
+<p>对鬼夫有亿点点的好奇，特意去网购牛眼泪，此处感谢万能的淘宝。</p>
+<p>你能想象？</p>
+<p>那上面不止有牛眼泪，连送鬼套餐都有。</p>
+<p>店主还说送鬼套餐五折。</p>
+<p>他说我见鬼后，会需要这个套餐，再买会来不及。</p>
+<p>我谢谢他了。</p>
+<p>反正划算，就一起买回来了。</p>
+<p>闺蜜比我还兴奋，非要我拍下那鬼的样子给她看。</p>
+<p>真是一点都不讲科学，摄像头能拍鬼的话，我那监控探头也不至于装门外。</p>
+<p>为了杀鬼个猝不及防。</p>
+<p>在门口跟男神告别后，我直接进了浴室。</p>
+<p>开水假装洗澡。</p>
+<p>然后往眼睛抹上牛眼泪，悄眯眯地推门出来。</p>
+<p>鞋子都没穿。</p>
+<p>踮着脚尖猫着腰，一点点地挪向厨房。</p>
+<p>火在烧。</p>
+<p>水在开。</p>
+<p>探头望进去……</p>
+<p>12</p>
+<p>我怀疑那店主卖的是假的牛眼泪，明明说好的能见鬼，厨房空荡荡，只有火在烧，水在开，什么都没。</p>
+<p>我拿出手机拍给闺蜜看，她一脸失望：「哎哟，这个鬼夫藏得还挺深。」</p>
+<p>「他是不是长得丑，所以才这么东躲西藏。」</p>
+<p>我真的去洗澡了。</p>
+<p>洗完澡出来。</p>
+<p>桌上放着煮好的面，还有一张小纸条：我长得不丑。</p>
+<p>「字迹秀逸，刚劲有力，看着就像个帅哥。」</p>
+<p>闺蜜两眼发光，我怀疑她就是看上我的男神，所以怂恿我娶鬼夫。</p>
+<p>不丑怎么不敢见人？</p>
+<p>丑媳妇都要见公婆，何况还想跟我谈恋爱。</p>
+<p>吃完面去睡觉。</p>
+<p>至于那个店主怂恿我买的送鬼套餐。</p>
+<p>想了想还是没用。</p>
+<p>做渣女可以，但不能没良心，人家帮我收拾家务，还天天给我煮面吃，我赶人走合适么？</p>
+<p>要走的是我才对，所以这个工资发下来，我立马就找地方搬家。</p>
+<p>「莫小葱，你就是个渣女。」</p>
+<p>闺蜜撇撇嘴，说我那是在自我洗脑降低愧疚感。</p>
+<p>我没理她，这货就想抢我男神。</p>
+<p>「再叨叨，就把你拉黑，先绝交二十四小时。」</p>
+<p>我重重威胁，闺蜜怂了，再次问我，是不是真打算甩了鬼夫，她考虑接盘，有个会做家务还会煮面的鬼，感觉不要太好。</p>
+<p>我直接挂了，可能我真就是个渣女。</p>
+<p>这种时候竟然想两个都要，在外有男神，在家有鬼夫，美得都能飘上天跟太阳肩并肩。</p>
+<p>13</p>
+<p>有件事我很肯定，男神就是喜欢我，要不然也不会每次都装偶遇等我下班。</p>
+<p>还说正巧路过。</p>
+<p>哪有这么巧，不管我是十点还是十二点走出公司，都能听到干净清脆的喊声：「莫小葱。」</p>
+<p>他从路灯下走过来。</p>
+<p>光洒在他身上，朦胧得让人有种不真实感。</p>
+<p>被送的一个星期，男神都是把我送到门口，然后道一声晚安就走。</p>
+<p>矜持淑男。</p>
+<p>把人的心撩得痒痒。</p>
+<p>闺蜜每天追问我，鬼夫跟男神之间，到底选谁。</p>
+<p>而她哪一个都可以，不管鬼夫还是男神。</p>
+<p>她都愿意接盘，让我早做选择不要耽误她的青春。</p>
+<p>想来想去，觉得闺蜜说得对，我不能那么渣地吃着鬼煮的面，在外头跟男神又勾勾搭搭地暧昧。</p>
+<p>所以我在找房子。</p>
+<p>闺蜜可兴奋了，说已经给我公司递了简历。</p>
+<p>让我把房子转租给她，还怕我反悔，直接转账一千块钱押金给我。</p>
+<p>这……</p>
+<p>我没敢收。</p>
+<p>这种事得问问人家鬼吧，万一人家不同意呢？</p>
+<p>闺蜜说没事，反正到时候她住进去，日久生情肯定就能成。</p>
+<p>还发个诱惑照过来，说到时候天天在家穿这种，就不信鬼夫能撑得住。</p>
+<p>我正在吃面，差点没喷了，这货真是恋爱脑一上头啥都敢干。</p>
+<p>「你准备搬家？」</p>
+<p>回家的路上，男神突然问我，清亮的眼睛在月色下藏着碎光。</p>
+<p>「嗯。」</p>
+<p>我刚点头，他说：「我那正好有个空房间，不如你搬过来吧。」</p>
+<p>「啊？」</p>
+<p>我当场傻眼。</p>
+<p>这算什么，直接邀请同居这么劲爆的吗？</p>
+<p>14</p>
+<p>「不愿意也没……」</p>
+<p>男神话没说完，我大脑一短路：「我愿意！」</p>
+<p>说完心狂颤，扑通扑通地简直要从嗓子眼里跳出来。</p>
+<p>「收拾好打电话给我。」</p>
+<p>男神唇角勾了勾，他笑起来真好看，我痴了。</p>
+<p>走一路我们再没说过话。</p>
+<p>还是好像说了？</p>
+<p>就那种梦里梦外分不清，心在狂，脑在颤。</p>
+<p>「我要跟男神同居了。」</p>
+<p>「同居？莫小葱，你居然要跟我男神同居了？」</p>
+<p>闺蜜在狂啸。</p>
+<p>嫉妒的女人最可怕。</p>
+<p>她此刻已经面目全非：「莫小葱，我恨你。」</p>
+<p>再一看！</p>
+<p>她把我拉黑了。</p>
+<p>这得亏隔着十万八千里，要不然能把我活活掐死。</p>
+<p>但我不在意，为了男神，众叛亲离都不怕。</p>
+<p>这一晚我没睡，除了收拾行李外，主要还是兴奋得根本睡不着。</p>
+<p>母胎单身二十三年。</p>
+<p>平生第一次跟男人同居，而且还是跟男神同居，别说睡觉了，躺床上翻来覆去，满脑子都是男神那句：「不如你搬过来吧，搬过来，过来……」</p>
+<p>迷迷糊糊间。</p>
+<p>我看到了男神，他在望着我，笑得真好看。</p>
+<p>我朝他走过去。</p>
+<p>他望着我，温柔且深情地呢喃：「莫小葱，你真的一点都不记得我了吗？」</p>
+<p>嗯？</p>
+<p>我愣了一下，惶然间睁开眼睛，看到天花板。</p>
+<p>男神不见了。</p>
+<p>可温柔的眼神还有那句低喃还在耳边萦绕。</p>
+<p>男神嘛。</p>
+<p>高我一届的学长。</p>
+<p>我怎么可能会不记得，这梦还真是奇奇怪怪。</p>
+<p>15</p>
+<p>刚到公司，绝交一晚上的闺蜜电话来了，郑重其事地警告我，从今天起，鬼夫就是她的，让我收敛点，不准再跟她的男鬼勾勾搭搭，让我赶紧滚蛋。</p>
+<p>「行李已经收拾好，今晚就滚蛋。」</p>
+<p>为了让她放心，我还特意把收拾好的行李照片给她发过去。</p>
+<p>其实就一个行李箱，毕竟才住几天，来的时候，行李箱都没装满。</p>
+<p>闺蜜表示很满意。</p>
+<p>她已经递交辞呈，等着走完程序就去会鬼夫。</p>
+<p>「你就不怕么？」</p>
+<p>「人家可是鬼，连脸都没露。」</p>
+<p>我怀疑闺蜜脑子大概是缺了一根筋，有点短路。</p>
+<p>人家都是避而不及，哪有她这样上赶着招鬼，还美滋滋地倒贴钱。</p>
+<p>「鬼又怎么样？」</p>
+<p>「莫小葱，你物种歧视啊？」</p>
+<p>「我告诉你，现在我们虽然是人，可分分钟都会变成鬼，到时候被人歧视看你爽不爽。」</p>
+<p>闺蜜直接挂了。</p>
+<p>还生气，真是的，我这分明是担心她为她好。</p>
+<p>好吧……</p>
+<p>我绝不承认心里有点酸，毕竟吃人家这么多天的面，走的时候应该有点交代。</p>
+<p>所以我下午请了假。</p>
+<p>经理那个脸啊，阴沉沉地说现在的小女生真是不懂事，才刚来几天啊，就敢请假。</p>
+<p>我没理他，天天九九六，还日常加班到十二点。</p>
+<p>是谁不懂事？</p>
+<p>要不是口袋没钱，我早就撂担子不干了。</p>
+<p>离开公司。</p>
+<p>我照着导航找到一家拜拜店，在店主的推荐下，买了不少的纸钱，还有一套据说是鬼界最流行的西装，打算回去烧给鬼夫表达谢意。</p>
+<p>毕竟人家也好歹收拾家这么久，还煮了这么多碗面。</p>
+<p>离开的时候。</p>
+<p>店长意味深长：「小丫头，桃花运不错啊。」</p>
+<p>我回他一笑。</p>
+<p>那当然咯，本少女人见人爱，花见花开，男神见了都心颤！</p>
+<p>16</p>
+<p>「鬼神大佬，非常感谢你这段日子的照顾。」</p>
+<p>「其实你很好。」</p>
+<p>「真的，会干家务，又会煮那么好吃的面。」</p>
+<p>「我闺蜜喜欢你喜欢得不得了，都愿意倒贴钱来找你，所以我走后，你也别难过，别舍不得，我闺蜜很快就会来陪你了。」</p>
+<p>额……</p>
+<p>这话有点不对。</p>
+<p>我及时刹车，把西装烧给他：「虽然我们萍水相逢，可这段日子，你的照顾让我觉得很温暖，而且我觉得是你的出现让我变得幸运，连男神都能遇上，还能相信爱情。」</p>
+<p>等等……</p>
+<p>这话好像也有点不对。</p>
+<p>明明是离别，怎么搞得好像是在显摆。</p>
+<p>「总之不管怎么说，非常感谢你这段时间的照顾，真的，特别的感谢，我会铭记在心。」</p>
+<p>我双手合十，对着四周围都拜了拜，满是虔诚。</p>
+<p>以前的无神论者，现在觉得这个世界真奇妙，还有这么温柔的鬼。</p>
+<p>虽然没见过面，但我相信如闺蜜所说，他一定是个很温柔的帅哥。</p>
+<p>反正到最后，他也没有跟我道别，离开的时候我把门轻轻带上，心情有点低落，就那种……酸酸的，舍不得的那种感觉。</p>
+<p>这是失恋的滋味？</p>
+<p>甚至还有种不走了的冲动，想要就这么留下来。</p>
+<p>还是算了。</p>
+<p>我得走，我得离开这里，冲向男神的怀抱。</p>
+<p>是男神！</p>
+<p>让我有离开这里的勇气。</p>
+<p>拉着行李箱到楼下，我给男神发了信息。</p>
+<p>他在上班，给我发了个地址，让我先自己过去，密码是我生日。</p>
+<p>就说他喜欢我吧。</p>
+<p>连我生日都知道，指不定在大学时候就暗恋我。</p>
+<p>17</p>
+<p>男神住所是间小公寓，跟我住的根本就不是一个区，而且就不是一个档次。</p>
+<p>我那五百块钱一个月。</p>
+<p>他这 58 上，就算是单间，最低也要千二起步。</p>
+<p>何况还是三个房间，打扫得一尘不染，东西也都摆放得整整齐齐。</p>
+<p>空气中有着淡淡茶香。</p>
+<p>这都不用猜，肯定是为了迎接我特意收拾过。</p>
+<p>「我住哪间房？」</p>
+<p>「都行，你自己挑一间。」</p>
+<p>男神秒回，我感觉他就拿着手机，就在等着回我信息。</p>
+<p>这该死的恋爱的感觉。</p>
+<p>总之我推开每个房间的门，借机参观男神房间。</p>
+<p>主卧挺大，落地窗玻璃，纱窗飘逸，流苏随风轻轻摇摆。</p>
+<p>男神这房间布置得真不错，天蓝色调，看着神清气爽，就像他人一样干净。</p>
+<p>当然……</p>
+<p>我也不是那么不要脸的人，肯定不能选主卧啊，选了主卧旁边的次卧。</p>
+<p>另外一间是书房。</p>
+<p>我去瞄了一眼，书桌上还有一张照片，是个建筑物。</p>
+<p>有点眼熟，好像在哪见过，又一时间想不起来。</p>
+<p>本来我还打算收拾一下。</p>
+<p>就……</p>
+<p>装一装贤妻良母。</p>
+<p>发现都没下手的地方，就撩起袖子做顿好吃的。</p>
+<p>三菜一汤。</p>
+<p>我最拿手的糖醋排骨刚上桌，门传来叮一声。</p>
+<p>男神回来了。</p>
+<p>我正要迎上去，闺蜜电话过来：「莫小葱，你在哪呢？你要同居的男神早就死了。」</p>
+<p>18</p>
+<p>「你说什么？」</p>
+<p>我的笑容顿时凝固，而男神也在这时候走进来。</p>
+<p>四目相对。</p>
+<p>我视线落在男神怀里那一大束玫瑰花上。</p>
+<p>闺蜜：「你还记得我们拍毕业照那天，校门外那事故么，那死者就是男神。」</p>
+<p>怀抱玫瑰花，被醉酒的卡车司机碾过。</p>
+<p>那花还撒落一地，我们都在讨论收花的女孩子会是谁。</p>
+<p>「送给你。」</p>
+<p>男神走过来，唇角的笑里透着温柔。</p>
+<p>我把电话挂了，接过花深吸了口气，真的好香，是我喜欢的味道。</p>
+<p>「这都是你做的？」</p>
+<p>男神视线落在桌上，我：「对啊对啊，也不知道合不合你口味，反正我挺爱吃的。」</p>
+<p>我急忙放下花迎过来，闺蜜的电话又来了，这货摆明了就是嫉妒我。</p>
+<p>所以……</p>
+<p>趁着男神转身去拿碗的时候，我把她拉黑，然后微信回了一句：「再叽歪就绝交。」</p>
+<p>同居的第一顿饭。</p>
+<p>我煮的。</p>
+<p>男神吃得津津有味。</p>
+<p>我在偷瞄他，鬼不是不能吃东西的么？</p>
+<p>他还挺能吃，我最爱的排骨，他一块接着一块地吃不停嘴。</p>
+<p>鬼不是没下巴的吗？</p>
+<p>他有下巴，整个人看着还挺真实的，一点都不鬼。</p>
+<p>「怎么？」</p>
+<p>「我脸上有脏东西？」</p>
+<p>他看向我，唇角噙着笑，眼中闪动着碎碎的光，简直能要命。</p>
+<p>我迅速收回视线，脸     刷地一下火辣辣地热。</p>
+<p>栽了栽了。</p>
+<p>就算是鬼，我也认了。</p>
+<p>鬼怎么了？</p>
+<p>鬼那也是人变的，怎么能搞物种歧视呢？</p>
+<p>「莫小葱，你变了，你变得有异性没人性。」</p>
+<p>闺蜜痛心疾首。</p>
+<p>我冷笑：「换成是你，你变得比我还狠。」</p>
+<p>19</p>
+<p>「那也是。」</p>
+<p>「那你怎么说？」</p>
+<p>「一样是鬼，你选鬼夫还是选男神？」</p>
+<p>闺蜜突然尖叫：「莫小葱，鬼夫该不会就是男神吧？」</p>
+<p>「嗯，有可能。」</p>
+<p>我揉了揉耳朵，环顾房间，来的时候就发现了，熟悉的那种干净，男神肯定有强迫症，所有的东西都摆放整齐。</p>
+<p>「我不信，你去问一下。」</p>
+<p>闺蜜满脸幽怨，再加上那绿豆泥面膜一言难尽。</p>
+<p>我直接挂了。</p>
+<p>怎么问？</p>
+<p>问男神是不是鬼，还是不是偷摸跟我住一起的鬼？</p>
+<p>我怕他直接把我扫地出门。</p>
+<p>几天相处下来。</p>
+<p>男神真的是个很温柔的人。</p>
+<p>他话很少，但会把我乱丢的每一件东西整整齐齐地摆放好，会在我下班的时候，守在公司门外，然后把我送到家，就在卧室门口，唇角浅扬，温柔地跟我说一声晚安，然后回到他的房间。</p>
+<p>「我梦寐以求的男人啊，会持家还不瞎比比，我主外他主内，妇唱夫随不要太完美。」</p>
+<p>「莫小葱，你还在等什么？」</p>
+<p>「要颜值有颜值，要内在有内在，你还不赶紧上？」</p>
+<p>闺蜜咬牙切齿，恨不得穿到我身上替我把男神给嚯嚯了。</p>
+<p>「他不表白啊。」</p>
+<p>「难不成让我个美少女跟他说我想睡他吗？」</p>
+<p>闺蜜抛个白眼：「贱人就是矫情，拉黑不解释。」</p>
+<p>挂断的时候，我正好走出公司，远远看到男神就站在灯下。</p>
+<p>他喜欢站在光中等我。</p>
+<p>每次我看过去，他总能第一眼就捕捉到我的视线，望过来时唇角噙着很温柔的笑。</p>
+<p>「莫小葱。」</p>
+<p>每次我看到他，他都会喊一声，然后从光里一步步朝我走来。</p>
+<p>像是……</p>
+<p>天神走入凡尘。</p>
+<p>可他是鬼，是不知道什么时候会消失的鬼。</p>
+<p>20</p>
+<p>以前没心没肺，突然有了惆怅，怕突然间在那束光下会看不到男神。</p>
+<p>「想什么呢？」</p>
+<p>男神抬起头拍了下我额头，他的手似乎没有温度，很凉，但绝不是冰块的凉。</p>
+<p>我抬起头望着他，脑子一蒙：「你为什么还不跟我表白？」</p>
+<p>男神眨了眨眼睛，我看到他的耳根子红了，我们就这么瞪着彼此。</p>
+<p>「诶莫小葱，刚下班啊？要不要我送你？」</p>
+<p>同事骑着小电驴路过。</p>
+<p>我摇头：「不了，我男朋友来接我。」</p>
+<p>「嘁，每次都看你独来独往，什么时候有的男朋友？」</p>
+<p>他眼瞎，这么帅的男神看不见。</p>
+<p>我扭头看向男神，他正在望着我笑唇角浅扬。</p>
+<p>迷人的帅，像漫画里走出来的人物。</p>
+<p>「诶，莫小葱，你对着空气发什么花痴呐？」</p>
+<p>同事拍了拍车后座，再一次问我：「确定不让我送你吗？」</p>
+<p>「不用，谢谢。」</p>
+<p>我冲他一笑，谢谢两个字，特别的咬牙切齿。</p>
+<p>他走了，走的时候还嘟囔：「好好的小姑娘脑子怕不是有毛病。」</p>
+<p>回家的路上。</p>
+<p>男神一句话没说。</p>
+<p>我偷瞄他，他唇角温柔的笑容消失，显得有点严肃。</p>
+<p>肯定是因为同事的话。</p>
+<p>他不吭声，我也不好说什么，只能低着头跟上。</p>
+<p>突然间。</p>
+<p>撞入怀抱中。</p>
+<p>一抬眸。</p>
+<p>正对上男神那盛满碎光的清亮眸子。</p>
+<p>21</p>
+<p>「没有什么问题想问我？」</p>
+<p>他在盯着我，似乎在审视着什么，衡量着什么。</p>
+<p>我挠了挠头，迟疑了下，小心翼翼：「你能弹指一响变出花不完的钱吗？」</p>
+<p>我还弹指「哒」给他看。</p>
+<p>他脸色一沉，扬手就拍我的额头：「你这脑袋瓜在想什么？」</p>
+<p>「不能吗？」</p>
+<p>我揉了揉额头，小说里的鬼夫都有这本事。</p>
+<p>他说：「不能。」</p>
+<p>「好吧。」</p>
+<p>「不能也行。」</p>
+<p>我摸了摸鼻子，小心翼翼：「我可以养你。」</p>
+<p>养鬼而已嘛，人家养小鬼，我养个帅鬼，怎么算都不亏，男神多好啊，长得帅不说，又会持家又会煮面，闺蜜想要都没有，我没理由往外推，再说了，谁几十年后不变成鬼，到时我跟他都是鬼，那就更搭了，而且他是老鬼还能罩我这个新鬼。</p>
+<p>「莫小葱，你不怕吗？」</p>
+<p>「为什么要怕？」</p>
+<p>我挠挠头，不懂，他这么好看，应该是他怕我，还好遇上的是本少女，还矜持点，换成是闺蜜，早就啊呜一口把他吃了。</p>
+<p>「我是鬼。」</p>
+<p>男神语气中有无奈，为什么会是无奈呢？</p>
+<p>「嗯呐。」</p>
+<p>「所以你愿意让我养不？」</p>
+<p>我很认真的，虽然没准备花跟戒指。</p>
+<p>「莫小葱！」</p>
+<p>「认真点！」</p>
+<p>他哑着声，眼圈红了。</p>
+<p>肯定是被我感动的，像我这样的美少女主动开口说要养他啊，换成谁，谁都会感动得乌拉乌拉。</p>
+<p>我还主动去勾男神那骨节分明的手指：「我就是认真的，以后你就是我的鬼了。」</p>
+<p>都到这一步了，绝对不能少一个步骤。</p>
+<p>我踮起脚尖，闭着眼睛朝着男神的唇撞了过去。</p>
+<p>之所以是撞。</p>
+<p>是因为我没站稳，整个人直接就扑过去了，被他搂住，压制着情绪咬牙：「莫小葱，你会后悔。」</p>
+<p>22</p>
+<p>「那我也愿意。」</p>
+<p>我亲了过去，冰冰凉凉，就像冰激凌，如果再来点香草味。</p>
+<p>唔……</p>
+<p>他突然低头……</p>
+<p>怎么结束的，怎么回家的，我整个人是懵的。</p>
+<p>只记得我们十指紧扣了。</p>
+<p>在门口，磨磨唧唧，难舍难分了十几分钟，才各回各自的房间。</p>
+<p>「什么？」</p>
+<p>「你们接吻了？」</p>
+<p>「妈啊，是什么感觉？」</p>
+<p>母胎单身二十几年的闺蜜，问我口水是不是甜的，在小说里，关于接吻的形容词都是蜜糖，甜得不行还能让人上瘾。</p>
+<p>我认认真真：「像吃冰激凌，有淡淡的茶香味，唔，如果是香草味就好了。」</p>
+<p>「嘁！」</p>
+<p>闺蜜撇了撇嘴：「男神怎么跟你表白的？」</p>
+<p>「不是他，是我表白的。」</p>
+<p>我把过程讲了一遍，忍不住吐槽：「明明是他主动来勾搭我，都那样了还管我后不后悔，当时我就只想扑过去，先把他解决了再说。」</p>
+<p>「哎啊……」</p>
+<p>「羡慕死我了……」</p>
+<p>闺蜜满眼粉红泡泡，我认认真真：「你去找个人谈恋爱吧，谈恋爱的感觉真的好好，就那种心被填满，不管看到什么都会觉得好幸福啊，都能飘上天跟太阳肩并肩了。」</p>
+<p>「你信不信我拉黑你？」</p>
+<p>「我这是不想谈恋爱吗？」</p>
+<p>「我辞职信都递了！」</p>
+<p>「你赶紧问问，那个鬼夫到底是不是你男神，如果是的话，你得把那一千块退我。」</p>
+<p>「我又没收你钱。」</p>
+<p>在闺蜜的威逼下，我还是硬着头皮敲男神门。</p>
+<p>「有事？」</p>
+<p>他拉开门，望着我，唇角噙着笑满眼都是碎光。</p>
+<p>怎么会有这么温柔的鬼。</p>
+<p>视线落在他身上，就已经沦陷，根本收不回来。</p>
+<p>我想跟你睡觉。</p>
+<p>等等……</p>
+<p>这只是想想，想想而已。</p>
+<p>我要问的是：「之前出租屋，给我煮面的鬼是你？」</p>
+<p>「嗯。」</p>
+<p>男神点头。</p>
+<p>我：「所以你从什么时候就开始看上我了？」</p>
+<p>这该死的好奇心啊，反正问都问了，我：「你那天回学校还捧着花，该不会就是要来找我告白的吧？」</p>
+<p>23</p>
+<p>「莫小葱，你是真把我忘了。」</p>
+<p>男神把我拉进书房，递过一本厚厚的相册。</p>
+<p>里面有一张老照片吗，是孤儿院小朋友的合照，有我，有男神，他站在我旁边，我们手牵手。</p>
+<p>「你说过你要嫁给我，你还记得吗？」</p>
+<p>他问我。</p>
+<p>我：「……」</p>
+<p>这种时候，我能说不记得这么煞风景的事么，只能心虚地点头。</p>
+<p>「你说谎眼神总是乱飘，不记得就说不记得。」</p>
+<p>他拉着我坐下，跟我说当年在孤儿院，他因为个子瘦小总是被欺负，我经常会帮他，每次过家家，总会拉着他一起玩，当他的新娘。</p>
+<p>后来我被领养。</p>
+<p>他则是在孤儿院长大，之后一直在寻找我。</p>
+<p>那天早上，他接到私家侦探的电话，说终于找到我了。</p>
+<p>他拿到了照片。</p>
+<p>我也看到了那张照片，我坐在球场上笑得很明媚。</p>
+<p>他买了花来看我。</p>
+<p>没承想，被醉酒的卡车司机直接碾过。</p>
+<p>在他的瞳孔中，剩下的只有无尽的黑。</p>
+<p>可奇怪的是他又回来了，在头七的时候出现在我身旁。</p>
+<p>就好像……</p>
+<p>我是个磁铁，而他被某种神秘的力量牵引着靠近。</p>
+<p>而且随着时间推移，他身上的能量就会越来越强，甚至可以触摸到东西。</p>
+<p>所以……</p>
+<p>在出租屋的时候，他就帮我收拾屋子什么的。</p>
+<p>原本我撑伞的那天，他就想告诉我，他就是那个鬼。</p>
+<p>可我害怕得给闺蜜打电话，所以他就走了。</p>
+<p>这些天。</p>
+<p>他一直想告诉我事情的全部。</p>
+<p>可又怕……</p>
+<p>磨磨唧唧到现在。</p>
+<p>他问我：「莫小葱，你有的选择，可以反悔。」</p>
+<p>我只剩最后一个问题，就是鬼夫真的那么猛，一夜一次一次一夜吗？</p>
+<p>好吧……</p>
+<p>男神决定用行动告诉我这个问题的最终答案。</p>
+<p>至于他是鬼……</p>
+<p>唔……</p>
+<p>世界上养鬼的人千千万，也不差我一个咯。</p>
+<p>闺蜜很羡慕我，非让我给她介绍个像男神一样帅的鬼夫。</p>
+<p>抱歉。</p>
+<p>我家鬼夫独一无二，再没有能比他帅，还比他会持家会煮面的鬼。</p>
+<p>最后的最后……</p>
+<p>到底是什么神秘的力量让男神出现在我身边。</p>
+<p>大概是执念吧。</p>
+<p>他要找到我，已经成为连死亡也阻止不了的执念。</p>
+<p>希望这个执念……</p>
+<p>能让我们绑定下辈子，在下个轮回再次相遇。</p>
+<ul>
+<li>完 -</li>
+</ul>
+<p>□ 溏心小肉粽</p>
+<p>备案号:YX01WBJb1dd6dY8x9</p>
+<p>编辑于 2022-05-18 15:41 · 禁止转载</p>
+<p>点击查看下一节</p>
+<p>不存在的山</p>
+<p>​</p>
+<p>赞同 121</p>
+<p>​</p>
+<p>已反对</p>
+<p>目录</p>
+<p>18 评论</p>
+<p>分享</p>
+<p>霓虹夜行：见幻影，见人心</p>
+<p>吞茶嚼花 等</p>
+<p>{nonce=‘market’,action: ‘FCPEnd’,params:{}})</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2022/6/23-%E7%AC%AC24%E8%8A%82%E8%8B%9F%E4%BD%8F%E4%B8%A7%E5%B0%B8%E4%B8%8D%E6%95%8C%E9%94%A6%E9%B2%A4/" title="第 24 节苟住！丧尸不敌锦鲤">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">第 24 节苟住！丧尸不敌锦鲤</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/23-%E7%AC%AC26%E8%8A%82%E4%BD%A0%E6%AF%94%E6%98%9F%E8%BE%B0%E6%9B%B4%E9%97%AA%E8%80%80/" title="第 26 节 你比星辰更闪耀">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">第 26 节 你比星辰更闪耀</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

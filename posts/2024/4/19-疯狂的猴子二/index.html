@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>疯狂的猴子（二） | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90%E4%BA%8C/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90%E4%BA%8C/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="疯狂的猴子（二）">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta name="twitter:title" content="疯狂的猴子（二）">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="疯狂的猴子（二）">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="3901">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/25859.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">疯狂的猴子（二）</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>8分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%96%af%e7%8b%82%e7%9a%84%e7%8c%b4%e5%ad%90%ef%bc%88%e4%ba%8c%ef%bc%89&amp;url=https://mohai.us.kg/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90%E4%BA%8C/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90%E4%BA%8C/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%96%af%e7%8b%82%e7%9a%84%e7%8c%b4%e5%ad%90%ef%bc%88%e4%ba%8c%ef%bc%89%20https://mohai.us.kg/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90%E4%BA%8C/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/25859.jpg" alt="疯狂的猴子（二）" />
+      
+
+      <p>疯狂的猴子（二）</p>
+<p>黑拳往事</p>
+<p>3</p>
+<p>我上大学的时候，胡子还没有长起来，只有一些象征性的绒毛而已。或许是我发育的慢，跟对面胡子拉碴的猴子比起来，确实是显得幼齿了一些。但是，打人不打脸，骂人不揭短，对方说这样的话也太让我下不来台了。</p>
+<p>于是我收起了和颜悦色的表情，冷冷地说：「巧了，我儿子跟你一样高。」</p>
+<p>猴子也不动怒，只是微微一笑，松开了手向后退去。直觉告诉我，这是一个老辣的对手。</p>
+<p>他摆开架势，轻快的移动着步伐，一时间看不出来他是哪种搏击风格。但是看他脚底的移动速度，倒颇有点拳击手的感觉。不过很快我就推翻了这个结论，因为我刚架起双拳，对方就狠狠的抽了我一腿！</p>
+<p>这一腿低扫极为凌厉，速度很快，我下意识的提膝格挡，「啪」的一下抽在了我的小腿上。虽然我专门锻炼过胫骨的硬度，但这一腿还是让我感到十分酸爽。我紧接着一记后手摆拳打过去，对方迅速下潜避过，然后一个反击拳砸过来。我刚要防御，他忽然变线，迅速收了拳又是一腿扫来！</p>
+<p>这一腿抽在了我的软肋上。在那瞬间我下意识的绷紧了腹侧的肌肉，硬生生的接了这一腿。感受着腹部火辣辣的疼痛，我终于明白这个家伙为什么叫「猴子」了。因为他的移动速度和反应速度都非常的快，简直就像猴子一样。</p>
+<p>猴子来回轻快的跳跃着，并时不时做出挑衅的表情，向我扮出一个鬼脸。他的这一举动让现场气氛大为高涨，观众们仿佛被捅到了 G 点，兴奋得大呼小叫。</p>
+<p>随便挑衅吧，我的心理防线没那么脆弱。在基地对练的时候，小妖也喜欢做出这副贱样，每次都被凶器追着打。</p>
+<p>我不理会他的挑逗，移动步伐一点点的往前逼迫着他。每次跟乃昆实战练习的时候，他都是这样逼迫我的。泰拳手以作风硬朗和攻击犀利著称，基本上不打游击战，只打阵地战。每次乃昆迈着步子向我逼迫而来的时候，我都会从他瘦弱的身躯上感受到一股强大的压迫。</p>
+<p>现在，我要把这种压迫送给面前的猴子。</p>
+<p>舞池就那么大，移动的速度再快也没有多少可以回旋的空间，猴子被我逼的往后退了几步，已经快到了边缘地带。他脸上的不屑和挑衅被一闪而过的愤怒所代替，狠狠的和我拼了几下重拳。之前我判断这家伙的上肢力量应该很猛，果不其然，他的拳速非常快，而且很重。其中一拳擦过我的下巴，让我有些小小的震荡。</p>
+<p>我想持续的给对方施展压迫，并不是出于什么战术上的安排，而是不想看见他那令人生厌的挑衅表情。猴子想撕开这种压迫冲出来，我两个刺蹬把他顶了回去，控制好距离之后，我感觉心里稍微有些底了。</p>
+<p>面对一个移动速度和力量都要高上一筹的对手，应该怎么办？乃昆曾经说过，力量并不是绝对的，力量并不会直接转变成打击效果，这中间还有很多步骤。相比于其他国家，泰拳手的深蹲训练做的并不多，但他们却以犀利的扫踢而著名。乃昆告诉我，打击效果=力量+打击点+硬度+打击频率。</p>
+<p>猴子被我逼迫到了一个空间有限的角落内，他迅速的朝左侧移动想摆脱这种压制，我不可能给他这个机会。几个组合拳的交锋过后，我开始连续低扫，小腿胫骨猛烈的朝着对方下盘砍去。我突然发动的暴击让猴子有点猝不及防，他甚至被我踢了几个趔趄。在我连扫了四五腿之后，猴子的身体才反应了过来，狠狠的给了我一个迎击。</p>
+<p>这一拳正打在我的左眼眶上方，顿时一阵眩晕，甚至有些向后倒去的错觉。紧接着，对方的一记摆拳又从我的左腮打过，让我直接一个摆头。这势大力沉的一拳打的我左脸发麻，连耳朵里面都是疼的。但这一击瞬间冲淡了刚才的眩晕感，不等猴子出第三拳，我又是一个低扫，正在进攻中的猴子一个趔趄，「扑通」一声摔在了地上。</p>
+<p>这时周围喧哗的嘈杂声才涌入了我的耳朵。刚才打斗的过于投入，我完全忽略了其他观众的存在。现在听起来格外清晰，还夹杂着几声女人的尖叫，我估计是那几个头发长长的大波妹。</p>
+<p>猴子马上站了起来。在他倒地的时候我并没有上去，因为缠斗并非我所擅长。重新站起来的猴子脸色非常难看，没有了之前神气活现的表情。他依靠自己的重拳开始对我猛攻，但脚下的步伐已没有了初时的那般灵活。在我低扫的重创之下，他的大腿应该承受了巨大的痛楚。</p>
+<p>猴子的重拳非常具有威胁性，如果再被他完全命中两拳的话，我今天绝对就是 KO 出局了。他换了一个反架，把刚才受到重创的腿放到了后面，但这样也同时削弱了他的出拳频率。我用刺蹬和扫踢不停的控制着距离，但在数招之后，我们还是缠抱在了一起。</p>
+<p>缠抱不是搂抱，搂抱是体力不支的表现，缠抱则是一种进攻手段。我们刚刚缠在一起，猴子的双手就卡在了我的后脖颈上，看来这家伙也不擅长地面技术，而是直接进入了内围对战。</p>
+<p>猴子双手卡住我的脖颈，直接拿膝盖朝我腹部顶去，这是典型的「箍颈顶膝。」在这里，我要特别感谢我的教练乃昆，一位前泰拳王者，一位从小浸淫此道并且精通内围战术的高手。他曾经无数次的训练过我，内围对战的精髓是「破坏重心。」</p>
+<p>4</p>
+<p>在猴子缠抱住我颈部，用膝盖顶我的时候，我的双手也缠住了他。「箍颈」并不是让你控制住对手，它的意义在于破坏掉对手的重心。</p>
+<p>我并没有去卡猴子的脖颈——如果他把脖子挺起来，会完全抵消我的力道。所谓「箍颈」，其实卡的是后脑，这是泰拳手的不传之秘。</p>
+<p>后脑一旦被双手缠上，头再也抬不起来。我腰上发力，把他朝一边甩去，猴子控制不住的向一侧倾斜，同时他顶过来的膝盖失去了力量，只是轻轻的从我腹肌上擦过。</p>
+<p>接下来我当然不会客气，一记顶膝结结实实的撞了过去，同时还向下压着他的后脑增加冲击力。猴子的身体被我顶得一颤，但他跟着又是一膝顶了过来，我如法炮制，破坏了他的重心，承受了他这一下完全没有杀伤力的膝击，然后箍紧他的后脑，狠狠的一膝再次反顶了回去。</p>
+<p>在我们互相连续六七次膝击之后，猴子终于松开了他的手，捂着肚子痛苦的倒了下去。我挫伤了他的肋骨，断没断我不知道，但他已经丧失了继续对抗的能力。</p>
+<p>这场比赛我赢了，付出了还能承受的代价，左耳朵一直耳鸣了两天，好像有人一直在我耳边吹哨子。事后拐子告诉我，整场对战时间四分二十五秒——听上去很短暂，但对于场上的人来说这四分多钟漫长得如同一个世纪。</p>
+<p>下了场后，乃昆面露微笑，拍拍我肩膀并未给予任何评价。但我能看出来，他很满意。</p>
+<p>比赛打完，我有一种虚脱般的无力感，这种感觉在以前每次期末考试完之后都会出现，但这一次来的特别虚脱，算来也只有高考那次能与其比肩。这场比赛赢了，我能拿到六千块钱，但那个时候，我对钱已经没有那么激动了。</p>
+<p>我们刚走出「沙海酒吧」，才发现外面下雪了，天上正静谧的飘着鹅毛。凶器说预报的会有雪，终于来了。</p>
+<p>我翻开手机看了一眼日历，寒假就在眼前。看着车窗外的雪，一时间思乡心切。</p>
+<p>杨蒙打过来电话，说要帮我买车票，一起回家过年。我随便找了一个借口拒绝了她。</p>
+<p>我不想伤她太深。</p>
+<p>关于春运的恐怖我就不多说了，那趟绿皮火车差点把我的裤衩子给挤掉。回到家呆了几天，思来想去，还是拿出了三千块钱塞给父亲。我不敢拿太多，害怕他心生疑惑。</p>
+<p>「你从哪弄来的钱？」果不其然，父亲一脸的警惕。</p>
+<p>「我找了个公司，打零工攒的。」我早就想好了托辞。</p>
+<p>「打零工？」父亲疑惑的看着我，「隔壁王老黑他儿本科毕业都一年了，还找不着活在家闲着呢，你打零工能挣这么多钱？」</p>
+<p>「专业不一样嘛。」我夸张地摆摆手，「我学艺术的，随便帮人修修图一个月都能赚千八百的。」</p>
+<p>经过我的一番「解释」，父亲算是勉强相信了。但他并没有要这些钱，而是说：「在外面不容易，等回去别打零工了，耽误学业。这些钱你自己留着以后吃点好的。」</p>
+<p>我拗不过他，也害怕再争执下去会扯出不必要的话题来，钱最后还是自己拿着了。从那以后，我几乎不敢给家里钱，就害怕父母生疑。</p>
+<p>大学的第一个寒假在家里过的很糜烂，天天跟家里的那些朋友混在一起，喝酒，上网，通宵打牌。当时从天津带回来的一件真维斯的外套放在椅子上，不知道被哪个打牌的混蛋扔的烟头烫了两个窟窿，一直到现在我还带在身边。</p>
+<p>糜烂的日子弹指即过，不过几天的时间，我就感到了深深的空虚。在基地数月以来养成的习惯，每天没有按时训练总觉得少了点什么，心里空落落的。我无比怀念拳头击打在人身上的触感，以及对手在自己面前无力倒下时的那种满足。我忽然觉得，在平淡的社会生活中，不管我做什么，都得不到那种高潮一般的快感。</p>
+<p>我扳着指头过天数，过完大年初五，亲戚之间也走动的差不多了，我就随便找了一个借口回了天津。</p>
+<p>我是最后一个回到基地的。看见这帮家伙的面孔，我忽然间觉得很亲切。我也不明白，为什么心里会一直惦念着这帮如狼似虎的家伙们。扔下行李，竟然感觉这里比宿舍还亲切。我想，妈的，我是彻底上了贼船了。</p>
+<p>在别人都还沉浸在未消的年味时，我已经开始了比上一年更加刻苦和激烈的训练。乃昆也很照顾我，说实话，在我们这些拳手里，包括后来还有新来的两个新人，乃昆对我的训练是最多，最用心的。也许，这就是一种投缘吧。</p>
+<p>我的表现博取了李向昂的赏识和信任，在新一年里，他给我安排了比去年多得多的拳赛。一开始在天津的周边打，像之前的沙海酒吧，包括丽达夜总会那个场子。丽达是整个圈子里水平最次的，稍微有点实力的拳手都不在那个场子打，在那混的，都是一些入门级的拳手，或许这也是给黑拳手的另一个生存空间吧。</p>
+<p>我在丽达还碰见过几次王辉他三叔，他每次见了我都是喜笑颜开，一口一个「西毒哥」。</p>
+<p>在周边打了一段时间后，开始去比较远的地方。这些地方大都是李向昂领着去的，比如杭州，厦门，广州，都以南方居多。也就在这段时间里，我从一个看见飞机就无比激动的天真烂漫小青年变成了一个一想到要坐飞机就头大的忧郁王子。</p>
+<p>在这些不同的城市打拳赛，比赛的地方也各不相同，有的在俱乐部，有的在地下仓库，有的在私人停车场，还有的在五星级酒店的地下室里。</p>
+<p>在这些随着岁月流逝，已经有些模糊的拳赛记忆中，给我印象最深刻的一次，还是在福建厦门的那一场。</p>
+<p>备案号:YX01v0LEbM4kqemBr</p>
+<p>坚硬的朝鲜男人</p>
+<p>​</p>
+<p>​</p>
+<p>黑拳往事</p>
+<p>欧阳乾</p>
+<p>×</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/4/19-%E7%96%AF%E7%8B%82%E7%9A%84%E7%8C%B4%E5%AD%90/" title="疯狂的猴子">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">疯狂的猴子</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/1/29-%E7%96%AF%E5%A5%B3%E4%BA%BA/" title="疯女人">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">疯女人</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

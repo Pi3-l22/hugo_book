@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腐烂的信仰 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/7/13-%E8%85%90%E7%83%82%E7%9A%84%E4%BF%A1%E4%BB%B0/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/7/13-%E8%85%90%E7%83%82%E7%9A%84%E4%BF%A1%E4%BB%B0/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="腐烂的信仰">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26616.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26616.jpg">
+  <meta name="twitter:title" content="腐烂的信仰">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="腐烂的信仰">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="9331">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26616.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">腐烂的信仰</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>19分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e8%85%90%e7%83%82%e7%9a%84%e4%bf%a1%e4%bb%b0&amp;url=https://mohai.us.kg/posts/2023/7/13-%E8%85%90%E7%83%82%E7%9A%84%E4%BF%A1%E4%BB%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/7/13-%E8%85%90%E7%83%82%E7%9A%84%E4%BF%A1%E4%BB%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%85%90%e7%83%82%e7%9a%84%e4%bf%a1%e4%bb%b0%20https://mohai.us.kg/posts/2023/7/13-%E8%85%90%E7%83%82%E7%9A%84%E4%BF%A1%E4%BB%B0/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26616.jpg" alt="腐烂的信仰" />
+      
+
+      <p>腐烂的信仰</p>
+<p>01</p>
+<p>01</p>
+<p>我妈是被拐来的，她是个大学生，而我爸是穷山沟里的光棍。</p>
+<p>对我妈来说，我爸简直就是恶魔，经常打骂她，那时候我还小。</p>
+<p>支教的陈老师留了作业，让我们写一篇关于妈妈的作文。</p>
+<p>可我从生下来，就没见过妈妈，我只有爸爸。</p>
+<p>我把老师留的作业，告诉我爸，我爸「呵呵」一笑，他说：「儿子，你有妈妈。」</p>
+<p>我被我爸抱着下了地窖，我一直以为地窖里放的是土豆，没想到，地窖里，还有一个女人。</p>
+<p>她的头发很乱，缩在墙角里，身上还有股臭味儿，屎尿都在附近，还有一个铁盆，那应该是她吃饭的盆。</p>
+<p>见到这个女人的第一眼，我就觉得厌恶，她好脏。</p>
+<p>陈老师讲的妈妈，是会抱着我唱歌、会教我读书认字的人，她像个狗一样，怎么会是我妈？</p>
+<p>可我爸，却笑着说道：「儿子，她就是你妈，你妈还是个大学生。」</p>
+<p>大学生？陈老师也是大学生，为什么陈老师那么美；而这个女人，却很丑、很脏？我想不明白。</p>
+<p>我爸提了提裤子，把手搭在我肩膀上：「儿子，你先出去，爸有事要跟你妈说。」</p>
+<p>地窖里很臭，我根本不想待在这里，我转身离开。</p>
+<p>我爬到地窖口，就听见地窖里传来女人刺耳的尖叫声，原来她不是哑巴，她好像很怕我爸。</p>
+<p>我回到屋子里，看着作业本，迟迟无法下笔，我不知道该如何写我妈，是按照真实情况写吗？</p>
+<p>我纠结了好久，才开始动笔写：「我的妈妈，被我爸关在地窖里，她是个大学生，我从来没喊过她妈妈，她浑身都是屎臭味儿，我不喜欢她，她… …」</p>
+<p>没等我写完，我爸就开门进屋，他一脸的满足，裤子的拉链还是开的。</p>
+<p>他拿起桌子的白酒瓶，猛地喝了两口，他走到我身边，笑着说道：「儿子，写什么呢？」</p>
+<p>我如实回答：「写作文。」</p>
+<p>我爸坐在我身边，把我的作业本拿起来，看了看，他的脸色突然变得很差，把我的作业本撕碎：「你在乱写什么？」</p>
+<p>我被我爸吓到，他从来没有对我发过火，我是他唯一的儿子：「我在写作文。」</p>
+<p>「狗屁！」我爸把我的作业本扔在地上，狠狠地踩了两脚。</p>
+<p>我被吓哭，站在原地，哭得喘不上气：「我写的是事实，你说那个女人是我妈，她为什么被拴在地窖里？那么脏，我不要她当我妈妈。」</p>
+<p>我爸见我哭了，急忙蹲下身，把我抱起来，给我擦眼泪：「好儿子，别哭了，那不是你妈，爸逗你玩呢，你妈生你难产死了。」</p>
+<p>我小声地抽泣着：「那地窖里的女人是谁？她为什么被关在地窖里？」</p>
+<p>我爸笑了笑，亲了我的脸，他说：「等你长大，爸也给你弄一个，让你养在地窖里。」</p>
+<p>02</p>
+<p>我爸的话，我不信。</p>
+<p>他就是为了哄我才说谎的，地窖里的女人就是我妈。</p>
+<p>等我长大，我才不要地窖里的女人，我想要像陈老师一样漂亮的女人。</p>
+<p>我爸把我放在土炕上，继续喝酒；我又拿了个新的作业本，继续写作文。</p>
+<p>这次，我把妈妈的样子，写成陈老师那样的女人。</p>
+<p>午夜，我被震耳欲聋的打雷声吵醒。</p>
+<p>我翻身看向我爸，他睡得正熟，外面下起瓢泼大雨，我的脑子里，突然出现地窖里的女人，她会不会冷？</p>
+<p>我看她穿得很单薄，地窖里本来就潮湿、阴冷。</p>
+<p>我从土炕上坐起来，看向窗外，地窖上压着一个很大的石墩，除了我爸，根本没人能把石墩移开。</p>
+<p>第二天早上，我被尿憋醒，坐了起来。</p>
+<p>地窖里的女人竟然在屋里。</p>
+<p>她缩在墙角，脖子上套着铁链，她被拴在木桩上，身上的衣服湿透，光着脚。</p>
+<p>我看她的同时，她也看我，她看我的眼神很奇怪，她示意我过去。</p>
+<p>我讨厌她，当然不会跟她接触，我绕开她，跑了出去。</p>
+<p>院子里，我爸、我奶奶正在抽水，昨天的雨太大，地窖里进水了。</p>
+<p>我走到我爸身边，大声地说道：「爸，你咋把那女人放屋里了？吓我一跳。」</p>
+<p>我奶瞪了我爸一眼：「那疯女人养着有什么用？卖掉算了。」</p>
+<p>我爸倒吸了口气，又吐了出去：「卖了，我咋办？村里连个女人都没有。」</p>
+<p>我奶又瞪了我爸一眼，随后看向我，笑着说道：「孙儿，饿了吧？奶给你做饭去。」</p>
+<p>我是家里独苗，我奶对我特别好：「嗯嗯。」</p>
+<p>尿完尿，我回到屋里，那女人跪坐在地上，眼睛里布满了红血丝，她又朝我招手，艰难地吐出两个字：「过来。」</p>
+<p>她的声音非常沙哑，还很小。</p>
+<p>见我不过去，她又开口：「你过来，我给你个好玩的。」</p>
+<p>她的左手握拳，示意我过去。</p>
+<p>我很好奇，她说的好玩的是什么。</p>
+<p>我朝她走过去，问道：「什么好玩的？」</p>
+<p>我话音儿刚落，她突然掐住我的脖子，把我按倒在地上，我的头狠狠地磕在地上，好疼。</p>
+<p>我第一次感到窒息，她要掐死我。</p>
+<p>我本能地求生：「咳咳咳，救命，爸！」</p>
+<p>地窖的女人双眼发红，像是充了血，她发出沙哑的声音：「杀了你，杀了你这个野种！」</p>
+<p>我抓住女人的手腕，拼命地挣扎，但无济于事，女人的力气实在太大：「妈，别杀我。」</p>
+<p>我不知道为什么，我会叫出妈。</p>
+<p>女人掐在我脖子上的手，突然一松，我猛地吸入一大口气：「咳咳咳…. ..」</p>
+<p>女人愣了几秒，她的手依旧放在我脖子上，但没有用力掐，她死死地盯着我看。</p>
+<p>突然，她哭出声，猛地将我推开，她躲到角落，缩成一团：「别打我，我不跑了，我再也不敢跑了。」</p>
+<p>女人的话音儿刚落，我就听见奶奶的脚步声，她进屋，看了眼女人，又看了眼我：「孙儿，怎么了？」</p>
+<p>女人用惊恐的目光，看着我，她害怕奶奶。</p>
+<p>我要是说实话，奶奶肯定动手打她。</p>
+<p>03</p>
+<p>我摇了摇头：「没怎么，奶，我饿了。」</p>
+<p>我奶的手里拿着烧火棍，她盯着我看了几秒，还是发现了异样：「脖子是怎么弄的？」</p>
+<p>我的脖子上有红色的手印，我奶奶是个精明的人，她虽然年纪大，但脑子很好使。</p>
+<p>她举起烧火棍，狠狠地砸在女人的头上：「反了你了，敢打我孙子！」</p>
+<p>女人被打得四处乱爬，但她脖子上的铁链限制她的逃跑，她只有挨打的份儿。</p>
+<p>我奶朝门外大喊一声：「军儿，快进来，这疯女人要杀你儿子。」</p>
+<p>女人缩在墙角，我爸风风火火地走进来，他把我抱起来，仔细地看了看我的脖子，咬牙切齿地骂道：「妈的，老子杀了你。」</p>
+<p>我爸把我放下，朝那女人狠狠地踢了几脚，我被吓哭，我奶把我抱到院子里。</p>
+<p>屋里传来女人撕心裂肺的哭喊声。</p>
+<p>我奶用手给我擦眼泪：「别哭，孙儿，咱们去吃饭。」</p>
+<p>「我不去。」我挣开我奶，跑进屋里。</p>
+<p>我爸抡起凳子，狠狠地砸在女人身上，我跑到女人前面，张开双手：「她是我妈，你不能打她。」</p>
+<p>「陈老师说了，打人犯法。」我年纪虽然小，但陈老师教的，我都记得。</p>
+<p>我爸愣了几秒，他抓着我的衣服，把我拽起来：「狗屁，你老师教的都是狗屁！」</p>
+<p>我奶走进屋，把我爸推开：「你跟孩子来什么劲？要我说，就把她卖了，就没这些糟心事。」</p>
+<p>我爸面色难看，没有说话。</p>
+<p>我奶又说：「这孩子叫她妈，要是有感情了，还不得记恨你？」</p>
+<p>我奶说这话，丝毫不避讳我。</p>
+<p>我爸愣了几秒，我奶的话戳中他的心思，他冷冷地说道：「卖了。」</p>
+<p>我爸抓着我妈的头发，把她拖拽了出去，关进了地窖里。</p>
+<p>我妈虽然差点儿掐死我，但我还是忍不住想跟她靠近。</p>
+<p>到了晚上，我趁着我爸熟睡偷偷地跑了出去。</p>
+<p>地窖上面没有压着石头，而且换了把锁头，我用钥匙将锁头打开，偷偷地下去。</p>
+<p>地窖里非常黑，我将手电打开，那女人听见脚步声，缩在墙角，低着头，我猜她身上一定有很多伤。</p>
+<p>白天的时候，我爸下手非常狠，像是要杀掉她。</p>
+<p>我小声地说道：「妈，是我。」</p>
+<p>缩在墙角的女人，听见我的声音，明显地愣了一下，她缓缓地抬起头，看向我，她披头散发的样子，看起来有些恐怖。</p>
+<p>脸上、身上都是血迹，但我却不害怕，我知道，她是我妈，她不会伤害我。</p>
+<p>她看我眼神清澈，至少她现在是清醒的，她朝我张开手，示意我过去。</p>
+<p>我走了过去，她把我抱在怀里，失声痛哭。</p>
+<p>她身上依旧很臭，但我好像没有那么嫌弃，这难道就是陈老师讲的血浓于水吗？</p>
+<p>冥冥之中，她在吸引着我。</p>
+<p>我用手摸了摸我妈的脸，她脖子上依旧拴着铁链：「我爸要把你卖掉，他要把你卖到哪里去？」</p>
+<p>我妈摇了摇头，她除了哭，说不出一句话。</p>
+<p>我又问道：「你是大学生？陈老师也是大学生。」</p>
+<p>我话音刚落，我妈的眼睛明显地动了一下，那是看到希望的样子，她拉着我的手，小声地说道：「我是大学生，跟你的陈老师一样，六年前，来山里支教。儿子，你把我的事告诉陈老师，让她救我，你爸他要杀了我，卖掉我身上的器官。」</p>
+<p>04</p>
+<p>我整个人愣住：杀人？卖掉器官？</p>
+<p>这些都太血腥，我只在新闻里，听说过，我就一个妈妈，我不能眼睁睁地看着她死。</p>
+<p>我从地窖里爬出来，小心翼翼地回到屋里，还好我爸没醒。</p>
+<p>第二天我去学校里上学，趁着课间休息的时候，我走到陈老师身边，小声地说道：「老师，我妈妈是被拐卖来的，她被我爸拴在地窖里。」</p>
+<p>陈老师瞪大了眼睛，她张望了四周，确定没人，才小声地说道：「你妈妈叫什么？」</p>
+<p>我想起昨晚我妈对我说的话：「我妈叫陈丽，她也是大学生，来山里支教。陈老师，我爸要把我妈卖了，卖掉她的器官，求你救救我妈。」</p>
+<p>陈老师红了眼睛，她弯下腰，带着哭腔说道：「你妈叫陈丽？」</p>
+<p>「嗯。」我点了点头，「陈老师，你跟我妈认识吗？」</p>
+<p>陈老师用手擦掉眼泪，点了点头：「我一直都在找你妈妈，她是我亲姐姐。」</p>
+<p>我妈竟然是陈老师的亲姐姐？那我就是陈老师的外甥？</p>
+<p>陈老师用手捂住嘴，不让自己哭出声，她拨打了报警电话，又开口说道：「小斌，带我去你家。」</p>
+<p>「陈老师，就你自己去吗？」我担心陈老师的安危，她打不过我爸。</p>
+<p>陈老师摇了摇头：「我多带几个老师一起去。」</p>
+<p>陈老师又带了三个老师，那三个老师我都认识，都是本地人。</p>
+<p>他们的学历不高，中专或者大专毕业，被学校招聘过来，临时当老师。</p>
+<p>我带着陈老师回家，回家的路上，我心里七上八下的，我爸一定会生气，但我不能让他把我妈杀掉，卖了器官。</p>
+<p>走了很久的山路，总算是到了我家。</p>
+<p>我爸、我奶正在家里翻谷子。</p>
+<p>我爸瞧见陈老师来，笑着问道：「儿子，这些都是你老师？这是来家访？」</p>
+<p>我没有说话，走到地窖前，用手指着地窖：「我妈就在地窖里。」</p>
+<p>我爸邹着眉头，厉声地说道：「胡说八道！你妈早死了，生你难产死的。」</p>
+<p>我爸又在说谎。</p>
+<p>我奶也开口说话：「孙儿，过来，别惹你爸生气。」</p>
+<p>我没有过去，而是站在陈老师身边，陈老师冷着脸：「把地窖打开，我已经报警，你们别想跑。」</p>
+<p>我爸冷哼一声，他色眯眯地打量着陈老师，好像要把陈老师关进地窖里。</p>
+<p>「这是我家，你要是不家访，就滚出去。」我爸说完这话，门口就多了二十几个男人。</p>
+<p>他们都是村子里的人，我叫他们叔叔、伯伯，他们是来给我爸撑腰的，跟我爸是一伙的。</p>
+<p>陈老师的脸上，明显地有几分慌张，她用手指着地窖，怒吼道：「把地窖打开！」</p>
+<p>我爸依旧无动于衷，就站在原地，其余的人开始起哄，对陈老师品头论足，像是商量价钱。</p>
+<p>陈老师再次拨打报警电话，警察在来的路上，因为是山路，需要的时间长。</p>
+<p>李老师突然笑着说道：「误会，都是误会。我们先回去吧。」</p>
+<p>他拉着陈老师的手腕，示意陈老师先走，可陈老师站在原地，大声地说道：「我不走，我要等警察。」</p>
+<p>05</p>
+<p>僵持了两个小时，警察总算是到了，而且只来了两个警察。</p>
+<p>陈老师哭着说道：「警察同志，我姐就在地窖里，让他把地窖打开。」</p>
+<p>警察看了我爸一眼：「把地窖打开。」</p>
+<p>我爸懒洋洋地把地窖上的锁头打开，一股儿发霉味儿在空气中飘荡。</p>
+<p>陈老师跟其中一个警察一起下了地窖，过了几分钟，又爬了上来。</p>
+<p>陈老师的脸铁青，她怒吼道：「你把我姐藏起来了！」</p>
+<p>我爸冷笑几声，没好气地说道：「陈老师，你疯了吧？你姐是谁我都不知道。」</p>
+<p>陈老师瘫坐在地上，有气无力地哭喊，其余的人都在看热闹。</p>
+<p>警察询问了一遍，村民说的都一样：我家没有女人，我也没有妈。</p>
+<p>警察又在家里翻了一遍，也确实没有找到我妈。</p>
+<p>他们把我妈藏到哪里了？</p>
+<p>我说的话没有人相信，我只能坐在地上哭。</p>
+<p>我妈就要死了，我却无能为力。</p>
+<p>陈老师被其他人抬走，警察也离开，看热闹的人也都散了。</p>
+<p>家里只剩下我爸、我奶，还有我。</p>
+<p>我爸狠狠地扇了我一巴掌：「你个白眼狼，跟外人联合起来害我，老子打死你！」</p>
+<p>我奶拦着：「别打了，家里就这儿一个独苗，打坏了，怎么办？」</p>
+<p>我爸把我奶推开：「让开，我非得打死他！」</p>
+<p>我被我爸狠狠地打了一顿，差点儿死掉。</p>
+<p>我爸还不允许我上学，他走哪儿，就把我带到哪儿，我开始恨他。</p>
+<p>但我年纪太小，根本没反抗的力气。</p>
+<p>时间飞逝，转眼十年过去。</p>
+<p>我成年了，村里的姑娘少得可怜，我爸开始给我张罗婚事。</p>
+<p>在他眼里，传宗接代是大事。</p>
+<p>我爸也不知道用的什么手段，拐来一个漂亮的女孩，看起来也就二十岁。</p>
+<p>我爸把我推到屋子里，猥琐地说道：「抓紧办事，给老郭家留个种。」</p>
+<p>说完这话，我爸就将门关上，又在外面上了锁。</p>
+<p>女孩蜷缩着身体，惊恐地看着我，她说：「求你放过我，我可以给你钱，我家里有钱，求你了。」</p>
+<p>我不会伤害这个女孩，我跟我爸不一样，他是禽兽，我不是。</p>
+<p>我坐在椅子上，轻声地说道：「你别怕，我不会伤害你，你叫什么？」</p>
+<p>女孩警惕地看着我，小声地说道：「我叫刘萌。」</p>
+<p>「我叫郭斌，早点儿睡吧。」我不想说话，我感觉很累。</p>
+<p>我拿了被褥，铺在地上，女孩的脚腕上绑着铁链，她睡在土炕上。</p>
+<p>我想，当初我妈也是被人拐来的，被迫生下的我。</p>
+<p>我妈当时一定非常绝望、恐惧，我好心疼她，也不知道我妈是否还活着。</p>
+<p>第二天，我跟我爸下地干活，他一脸猥琐的笑，拍了拍我的肩膀：「咋样？滋味不错吧？这可是你老子我花两万给你买的媳妇，抓紧给我弄个孙子出来，我好把她卖了。」</p>
+<p>06</p>
+<p>我爸的话，让我感到窒息，我虽然没有文化，没上过学，但我知道礼义廉耻。</p>
+<p>陈老师知道我是她外甥，但又拿不出证明，她只能偷偷地给我送东西，教我做人的道理。</p>
+<p>还好，我的三观正常。</p>
+<p>我爸见我不说话，又开口说道：「儿子，想什么呢？女人都一样。」</p>
+<p>我故意往后退了两步，离我爸远点儿：「我妈还活着吗？」</p>
+<p>我爸愣了几秒，脸上的笑瞬间僵硬住，他没好气地的说道：「提她干啥？是老子把你养大的，白眼狼！」</p>
+<p>我将铁锹扔在地上，怒吼道：「我要听一句实话，你把我妈藏哪儿了？是杀了，还是卖了？」</p>
+<p>我已经成年，有自己的三观，越是三观正，我心里越是难受。</p>
+<p>当年，我妈被提前转走，一定是有人通风报信，错失了良机。</p>
+<p>我爸没有说话，他瞪着眼珠子看我：「不知道。」</p>
+<p>「你不说，我不给你养老。」我爸最怕两件事：一件是我家断后；另外一件，就是怕我不给他养老。</p>
+<p>我爸咬牙切齿地看着我，抬起手就要打我的脸，被我躲开：「我不是小孩，你管不住我，我就问你一句，我妈呢？」</p>
+<p>我爸冷哼一声，没好气地说道：「死了！你这辈子都别想见到她。」</p>
+<p>「你这辈子，也别想见到我。」说完这话，我转身跑开，身后传来我爸的声音，「你要去哪儿？回来，你个白眼狼！」</p>
+<p>自从我奶奶去世，我爸的身体就变得不好，他总喝酒，毫无节制地喝酒，有时还会咳血。</p>
+<p>我想带他去山外看病，可他死活不去，就躲在大山里，过着与世隔绝的日子。</p>
+<p>到了晚上，我回到房间，看见刘萌缩在角落里，头发乱糟糟的，我心里有个想法，放她走。</p>
+<p>我用钥匙解开她身上的铁链，她诧异地看着我，「你走吧，我送你离开。」</p>
+<p>我家有个破旧的摩托车，我骑在摩托车上，刘萌坐在车后面，刚要出门，我爸就出现在门口，他用铁锹拦住大门：「小兔崽子，你要干什么？你疯了？老子花两万才给你买来的媳妇，你就这么把她送走？咳咳咳…. ..」</p>
+<p>我爸的头发银白，看起来非常沧桑，他是错的，我不能听他的话。</p>
+<p>我冷冷地说道：「让开，拐卖是犯法的。」</p>
+<p>我的声音很冷，自从我爸让我辍学，跟着他种地，我对他就有恨，并且恨意越来越重。</p>
+<p>当初，跟我一起上学的小金子考上大学，在外面发展得很好，还娶了个有文化的姑娘；再看我，大字不认识几个，家里还穷，只能靠拐卖来传宗接代，我感觉自己像是个猴子。</p>
+<p>我爸对我横眉竖眼：「你想走，除非从我身上压过去！」</p>
+<p>我无视我爸的存在，启动摩托，带着刘萌直接冲了过去，我爸也不是傻子，他知道躲开，但还是受了点儿轻伤，摔倒在地上。</p>
+<p>我带着刘萌连夜去了镇上，到镇上的时候，天已经蒙蒙亮，我把她送到有车的地方，让她坐车离开。</p>
+<p>临走前，刘萌给了我一张纸条，上面写着她的电话号码：「谢谢你，救了我一生。」</p>
+<p>刘萌的眼睛很好看，水汪汪的，像是黑色的葡萄，但我跟刘萌不是一个世界的人，根本不可能，刘萌走后，我将她留给我的纸条扔掉，我又骑上破摩托回到家里。</p>
+<p>回到家后，家里聚集很多人，都是村里的男人。</p>
+<p>我意识到，大事不好。</p>
+<p>07</p>
+<p>我爸躺在土炕上，嘴角还有血，眼神溃散，像是丢了魂儿。</p>
+<p>我焦急地问道：「爸，你怎么了？」</p>
+<p>我爸没有说话，他大口地喘气，村里的刘大夫开口说道：「你爸他总喝酒，估计是肝硬化。」</p>
+<p>我从来没有想过，有那么一天，我爸会躺在床上，这么虚弱地看着我，他猛地干咳几声：「咳咳咳…… 我没事，你们都走。」</p>
+<p>村里的男人，互相交替目光，都出去。</p>
+<p>屋里只剩下我和我爸，我的眼眶忍不住发红，我爸是我在世上唯一的亲人，他要是死了，我就真的变成孤儿了。</p>
+<p>我爸叹了口气：「那女人，被你送走了？」</p>
+<p>我点了点头：「嗯，送走了。」</p>
+<p>我爸抬手，拍了拍胸口，他的声音很虚弱：「我省吃俭用，攒了几万块钱，给你买了个媳妇，你咋就不知道好歹？你把她送走，谁嫁给你？谁给你生孩子？」</p>
+<p>「爸，你别说了，我带你去看病。」我不想跟我爸吵架，他身体太虚弱，我害怕他会离开我。</p>
+<p>我爸躺在土炕上，摇了摇头，他说：「我要死了，看病没用，浪费那钱干啥？你不该把她放走，你糊涂，我怎么就养了你这个白眼狼？不知好歹的东西。」</p>
+<p>任由他骂，我就坐在土炕边儿陪他。</p>
+<p>我爸这辈子都生活在大山里，他没有文化，没有见识，在他的世界里，传宗接代就是人生大事，其余都不重要。</p>
+<p>这跟陈老师教给我的思想完全相反，陈老师告诉我：人应该做自己喜欢的事，做有价值的人。</p>
+<p>可我价值是什么？我连小学都没毕业。</p>
+<p>我恨我爸，不仅仅因为我妈的失踪，更因为他剥夺了我上学的权利，剥夺了我走出大山的机会。</p>
+<p>可这一切，恨又有什么用？到头来，伤心的还是我自己。</p>
+<p>我爸的喉咙里传出沙哑的声音，他开始给我讲他年轻时候的事，说着说着，就聊到我妈身上，他终于开口：「你妈她没死，她跑了，我不知道她跑到哪里去了。」</p>
+<p>我皱紧眉头，我妈没死？</p>
+<p>她没死，为什么不回家？不去找陈老师？</p>
+<p>见我愣住，我爸又说道：「她没死，当年，她在地窖里挖洞，跑了。」</p>
+<p>「为什么不早点儿告诉我？」我一直以为我妈的死跟我有关，因为我的愚蠢才害死她，我自责了这么多年。</p>
+<p>我爸红着眼睛说道：「我怕你去找她，你妈是大学生，家境应该不错，我怕你走出大山，再也不回来看我。」</p>
+<p>08</p>
+<p>我的眼泪顺着眼角滑落，不知道说什么。</p>
+<p>我爸拉着我的手，虚弱地说道：「你是我儿子，你得留在大山里，给郭家留个后，不能断了香火。」</p>
+<p>我苦笑一声：「留个香火？继续住在大山里，拐卖人家姑娘，做非法的勾搭吗？无知、落后、贫穷，我为什么要留下？当初你为什么不让我上学？我连走出去看看的机会你都不给我，我这辈子都让你毁了，我妈的半生也被你毁了。」</p>
+<p>我爸抬起手捶胸，脸色铁青：「白眼狼，我养了个白眼狼！」</p>
+<p>我蹲在地上抱头痛哭，如果我从未接受陈老师的思想、观念，我想我不会放刘萌走，我会像我爸一样，腐朽的思想将我控制，我也不会如此的煎熬。</p>
+<p>我陪了我爸一晚，这一晚我没有合眼，照顾他。</p>
+<p>他板着脸，还在生气，也不跟我说话。</p>
+<p>我给他做饭，给他喂饭，他吃得很少，我知道他已经到肝癌晚期，活不了多久。</p>
+<p>我陪在他身边一个月，他还是走了。</p>
+<p>临走前，我爸拉着我的手，对我说：「儿子，走出大山看看吧，家里的钱都在铁箱子下面。」</p>
+<p>我把我爸葬在树下，给他立了墓碑，这世上，我还有一个亲人，那就是我妈。</p>
+<p>我做梦都没想到，我爸为我攒了八万，我拿上这些钱，坐上火车，来到陈老师生活的城市。</p>
+<p>我要把我妈可能还活着的消息，亲口告诉她。</p>
+<p>陈老师是我的老师，也是我的亲小姨。</p>
+<p>几经周折，我总算来到陈老师生活的城市，我不认识字，这一路来，都靠打听。</p>
+<p>陈老师在车站接我下车，十年过去，她保养得不错，依旧是风韵犹存。</p>
+<p>她带我去饭店吃饭，我紧张地说道：「陈老师，我妈她还活着。」</p>
+<p>陈老师愣了几秒，眼神里闪过一丝慌张，她在慌张什么？</p>
+<p>陈老师的声音有些发抖：「真的吗？你妈在哪儿？」</p>
+<p>我摇了摇头：「我不知道，我爸没说，他不知道我妈的下落，我一定能找到我妈。」</p>
+<p>陈老师愣了几秒，她脸上的笑僵硬住：「你要找你妈？」</p>
+<p>我点了点头：「嗯。」</p>
+<p>「陈老师，你怎么了？」我妈是她亲姐，她难道不想找吗？</p>
+<p>陈老师尬笑两声，她说：「没怎么，你就是个小孩，找人这事太辛苦，我怕你吃不消。」</p>
+<p>「没事，我一定能找到我妈。」我笑了笑，也不知道我妈现在变成什么样，只有她活在世上，我就知足。</p>
+<p>陈老师没再说什么，她不像在山村支教的时候对我关心冷暖，教我道理。在她眼里，我好像是个麻烦。</p>
+<p>这顿饭，吃得有些不是滋味儿。</p>
+<p>我在陈老师住的城市，找了一份保安的工作，我虽然不认识多少字，但我年轻，还有力气，外形也不错。</p>
+<p>小区保安也没太多的工作，闲着的时候，我就学习，把落下的弥补上，在大城市里，不认识字可不行。</p>
+<p>我非常努力，学了半年，就认识了很多字，还会发短信。</p>
+<p>我记得陈老师的生日，小时候，她告诉过我，她还给我过过生日，我到蛋糕店，买了一个蛋糕，想着给她一个惊喜。</p>
+<p>我知道她上班的地方，我很早就在学校门口等她，手里还拿着蛋糕。</p>
+<p>最后一堂课的下课铃响起，我看见陈老师走出教学楼，当她走出学校门口时，我看见一个女人，牵着一个小男孩，走了过去。</p>
+<p>那女人的背影，好熟悉，像是我妈妈。</p>
+<p>09</p>
+<p>我愣了几秒，是我眼花了吗？</p>
+<p>我又往前走了几步，当女人回过头的一瞬间，我看清女人的脸，她的额头上，还有一道伤疤，那是我爸动手打的。</p>
+<p>她是我妈妈，她还活着。</p>
+<p>陈老师已经找到我妈，她为什么不告诉我？</p>
+<p>我的心像是被一把刀子狠狠地刺入。</p>
+<p>我的手有些发抖，拿出手机，给陈老师发消息：「小姨，生日快日，我想给你过生日。」</p>
+<p>我亲眼看着陈老师上车，我妈抱着小男孩也上车，车牌号我记了下来，我打了一辆车，跟在那辆车后面。</p>
+<p>陈老师给我回了消息：「小斌，谢谢你，但今天不行，今天我有事。」</p>
+<p>十年前，陈老师亲口告诉我，我是她亲外甥，如果她有证据，她一定会带我离开大山，可她没有。</p>
+<p>她告诉我，她是我的亲人，她教会我道理，她在大山支教五年，我俩偷偷地见过很多次，在我心里，她就像是我妈，弥补我对母爱的缺失。</p>
+<p>我的眼泪止不住地往下掉，也对，我爸害了我妈一辈子，他们原本就是两个世界的人，我本不该生下来，我好矛盾。</p>
+<p>我妈现在拥有一个幸福的家庭，我不该出现。</p>
+<p>怪不得陈老师不希望我继续寻找我妈，原来是不想我打扰她们。</p>
+<p>我坐在车里哭出声，那我备受煎熬的这十年，又算什么？</p>
+<p>车停在一家高档酒店门口，我看见我妈下车，车上还下来一个中年男人，他站在我妈身边，那个小男孩拉着我妈的手，他们一家三口很幸福，我有点儿想我爸了。</p>
+<p>我下了车，站在路边看着这一切，某个瞬间，我跟我妈对视上，但也只是对视一眼，她就没再看我。</p>
+<p>陈老师发现我的存在，她跟我妈说了几句话，就让我妈他们先进酒店，她穿过马路来见我。</p>
+<p>她沉思了片刻，才开口说道：「小斌，事情不是你想的那样，你妈有她的难处，她好不容易从阴影里走出来，有属于自己的家，我不希望你打扰她。」</p>
+<p>我点了点头：「我知道，她本该就是这样的人生。」</p>
+<p>陈老师咬了咬嘴：「我可以帮你，让你上学，但是是专科。」</p>
+<p>「我妈她知道我在找她吗？」年龄越大，我心里就越难受，越是恨我爸，恨他杀了我妈，恨那个时候的我不懂事，害了我妈，我愧疚了十年，十年啊！</p>
+<p>陈老师愣了几秒，眼皮垂了下去，我已经知道答案。</p>
+<p>想必，我妈从来没想见过，没想找我，毕竟我是她的耻辱，是她的噩梦。</p>
+<p>我苦笑几声，从背包里拿出五万块钱，递给陈老师：「陈老师，这钱是我爸存的，就当他赎罪了，麻烦你，拿给我妈。」</p>
+<p>我转身离开，上了出租车：「师傅，快走。」</p>
+<p>出租车的后视镜里，我看见我妈站在酒店门口，她在看我，我不能下车，不能跟她见面，我不能毁掉她的幸福。</p>
+<p>我离开这座城市，换了另外一个城市生活。</p>
+<p>五年后，我赶上直播热潮，当了一名主播，赚了点儿钱，我又花钱自费报了成人高考。</p>
+<p>我梦寐以求的大学生活，终于实现。</p>
+<p>某天下午，我收到陈老师发来的消息，她说我妈癌症晚期，想见我最后一面。</p>
+<p>我不想经历悲伤的时刻，我没有回陈老师的消息，一个人喝酒消愁，喝酒了就不会有伤心的事。</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/6/17-%E6%B5%AE%E7%94%9F%E4%B8%80%E6%A2%A6/" title="浮生一梦">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">浮生一梦</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/3/2-%E7%88%B6%E6%AF%8D%E8%A0%A2%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E4%BD%93%E9%AA%8C/" title="父母蠢是一种什么体验？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">父母蠢是一种什么体验？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

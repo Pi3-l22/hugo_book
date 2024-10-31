@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流景 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/2/20-%E6%B5%81%E6%99%AF/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/2/20-%E6%B5%81%E6%99%AF/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="流景">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26665.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26665.jpg">
+  <meta name="twitter:title" content="流景">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="流景">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="11603">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26665.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">流景</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>24分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%b5%81%e6%99%af&amp;url=https://mohai.us.kg/posts/2023/2/20-%E6%B5%81%E6%99%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/2/20-%E6%B5%81%E6%99%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%b5%81%e6%99%af%20https://mohai.us.kg/posts/2023/2/20-%E6%B5%81%E6%99%AF/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26665.jpg" alt="流景" />
+      
+
+      <p>我是皇上的白月光，但他爱上了我的替身。</p>
+<p>我怀胎三月，他灌我喝下堕子汤。</p>
+<p>我的血流了一地，疼得钻心。</p>
+<p>他笑着哄我：「乖，生过孩子，就不漂亮了。」</p>
+<p>若我不漂亮，就不像失踪的方婉了。</p>
+<p>后来，我重活一世。</p>
+<p>当众烧掉他与我的订婚书。</p>
+<p>我祝他和方婉郎情妾意，百年好合。</p>
+<p>他却说，非我不娶。</p>
+<p>他们都说，方婉是我的替身，等我回京，她就会失宠。</p>
+<p>半年前，沈玉安外出打猎，在山间救下迷路的方婉，一眼定情。</p>
+<p>我远在江南养病，都听说，太子爷爱上一个孤女，整日捧在手心里宠着。</p>
+<p>沈玉安给我写信，叫我别误会。</p>
+<p>他说方婉是个有趣的人，脑袋里装的都是稀奇古怪的东西。</p>
+<p>她爱自由，嫁人生子不是她的追求。</p>
+<p>过段时间，她就要离开京城了。</p>
+<p>厚厚的一沓信，沈玉安没问过我一句，病好没好、伤疼不疼。</p>
+<p>字里行间，全是方婉。</p>
+<p>回京那日，沈玉安没来接我。</p>
+<p>我去了趟太子府，倒要看看，他在忙什么，忙到把我都给忘了。</p>
+<p>我到时，方婉正凑在沈玉安跟前，分着吃他手里的点心。</p>
+<p>两人挨得很近，鼻息交缠，唇间不过咫尺。</p>
+<p>沈玉安的耳尖泛起粉色的红。</p>
+<p>我的心突然揪着疼了一下，眼睛又酸又热。</p>
+<p>我攥了攥手，笑着问：「太子府穷得就剩一块点心了？这样掰着吃，够不够塞牙缝？」</p>
+<p>沈玉安猛地抬头，看清是我，又惊又喜。他问我：「流景，你怎么突然回来了？」</p>
+<p>我反问：「我给你写的信，你没看？」</p>
+<p>他愣了愣，还没开口，方婉突然插话：「是不是上个月送来的那封？」</p>
+<p>「那天你急着陪我出门，把她的信丢在一边，后来也忘了看，是不是？」</p>
+<p>她转头笑眯眯地跟我赔罪：「不过这也不是什么大不了的事，南姑娘，我跟你说句抱歉，你别怪殿下。」</p>
+<p>「你不知道，他就是个糊涂虫，整日丢三落四。」</p>
+<p>沈玉安拍拍自己的脑袋，装着叹气：「孤糊涂，都是谁害的？」</p>
+<p>「你日日往外跑，孤不管你，你早丢了八百回了。」</p>
+<p>两人你看着我，我看着你，四目相对，全是亲密无间。</p>
+<p>我站在这里，真多余啊。</p>
+<p>原来，在我支着下巴，等沈玉安回信的那些日子里，他把他的时间，都留给了另一个女人。</p>
+<p>我把自己闷在房里好几天。</p>
+<p>沈玉安日日都来，我日日不见。</p>
+<p>他让人传话，说白马山上的桃花开了，从前说好一起去看的，他在等我。</p>
+<p>若我不去，他就一直等着。</p>
+<p>母亲将我从榻上拽起来，把我塞进马车，逼着我去见他。</p>
+<p>母亲说，沈玉安是储君，总有一天，他会有三宫六院，院里塞得满满当当，全是女人。</p>
+<p>他的心会掰成好几瓣，这儿留一点，那儿忘一块。</p>
+<p>这是迟早的事。</p>
+<p>我知道，我都知道。</p>
+<p>我的脑子清醒得很，我只是心里难受。</p>
+<p>从前沈玉安说，这辈子就爱我一个，我也是当笑话来听。</p>
+<p>可是，我得要他明白，我是他未过门的妻子，预备的太子妃，未来的皇后。</p>
+<p>他身边的女人来来往往，可以，但要是有人想骑在我的头上，那是做梦。</p>
+<p>沈玉安不能给我完整的爱，那就给我绝对的权力和尊重，也是好的。</p>
+<p>马车摇摇晃晃往山上走，我心里这么想着，抬手抹掉脸上的眼泪。</p>
+<p>沈玉安在半山腰等我。</p>
+<p>天上飘着小雨，他也不打伞，苦哈哈地装可怜。</p>
+<p>他从怀里掏出一个盒子，神秘兮兮地跟我咬耳朵：</p>
+<p>「你不是一直喜欢母后的紫云镯么，快拿着，孤给你偷来了。」</p>
+<p>他把盒子往我怀里塞，我气得笑出声，在他胳膊上拧了一把，把他拽进伞底下。</p>
+<p>沈玉安笑眯眯地凑过来，捧着我的脸细细地看。</p>
+<p>他拇指轻轻蹭着我的眼尾，仿佛我是什么脆弱的宝贝，稍用力就会弄碎。</p>
+<p>「哭过了，是不是？」</p>
+<p>「眼睛都红了，跟兔子似的，赶明儿孤送你一车胡萝卜啃啃……」</p>
+<p>我喜欢他这样珍重地对待我，也喜欢他说俏皮话逗我笑。</p>
+<p>天边滚了道响雷，沈玉安突然不说话了，盯着黑压压的云皱了皱眉。</p>
+<p>之后，他一直在走神。</p>
+<p>他为我撑伞，伞歪在一边，露出我半个肩膀，他也没发现。</p>
+<p>直到身后传来一阵急促的马蹄声。</p>
+<p>太子府来人说，方婉要走了，她正在收拾行李，马上启程，谁都拦不住。</p>
+<p>沈玉安才回神骂道：「让你们看着她，一帮废物！」</p>
+<p>「她最害怕打雷，大下雨的，她要去哪里！胡闹！」</p>
+<p>电闪雷鸣的天气，风这样冷，我的鞋子湿透了，寒气顺着脚底往上爬。</p>
+<p>沈玉安不在意。</p>
+<p>他心里想的只有方婉。</p>
+<p>他在想她讨厌下雨，害怕打雷。</p>
+<p>我心里酸酸的，有时候，我真恨自己不是根木头。</p>
+<p>沈玉安问我：「流景，方婉没处可去，孤去瞧瞧她，你自己下山可以吗？」</p>
+<p>我笑着反问：「我说不行，你就不去吗？」</p>
+<p>沈玉安喉结微动，捏捏我的脸，哄我说：「孤知道你最乖最懂事，别说气话。」</p>
+<p>他把伞塞进我手里，翻身上马，影子很快消失在雨里。</p>
+<p>我没再留他。</p>
+<p>要走的人，是留不住的。</p>
+<p>我一个人撑着伞，在桃花林里走了会儿。</p>
+<p>雨下得很急，枝头的花都被打散了，碾在鞋底，揉成肮脏的泥。</p>
+<p>从前看着很美的景色，忽然就觉得好难看，再也不喜欢了。</p>
+<p>那一天，沈玉安和方婉在城中拉扯，弄得人尽皆知。</p>
+<p>所有人都说，太子爷好像是真心喜欢方姑娘的。</p>
+<p>不然怎么会为了挽留她，把自己的未婚妻扔在白马山上不管了？</p>
+<p>白马山上多危险啊，大老虎吃人，一口一个。</p>
+<p>从前他们说，南流景是太子爷心尖上的白月光。</p>
+<p>现在他们说，白月光？也不过如此。</p>
+<p>画月把传言一字不漏地说给我听，骂道：「我瞧那方姑娘就是故意的，什么时候走不成？偏要挑着太子爷跟姑娘去玩的时候。」</p>
+<p>「大街上拉拉扯扯，她还有脸哭。」</p>
+<p>「说什么受够了当替身，她知道自己不招人待见，如今姑娘回来了，她趁早自己走，免得别人开口赶人，她要脸。」</p>
+<p>「说着说着，她还晕过去了，不偏不倚，就倒在太子爷怀里，好些人都看见了，这会儿倒不要脸了，呸！」</p>
+<p>我把手里的鱼食抛进池塘，静静听着。</p>
+<p>画月气得直转圈，在我耳边念叨：「姑娘，您就真由着她折腾，不管管？」</p>
+<p>管是要管的，不过，不着急。</p>
+<p>方婉倒是巴不得我立刻出手收拾她，等我背上善妒跋扈的名声，她可高兴了。</p>
+<p>我南家世代簪缨，就凭她也想让我家的门楣挂上污点？</p>
+<p>她不配。</p>
+<p>我与沈玉安婚期将近，等我入主东宫，就抬她做太子侍妾。</p>
+<p>到时候关门打狗，是是非非，就是咱们东宫的家务事了。</p>
+<p>沈玉安带着方婉来的时候，我正在池塘边晒太阳。</p>
+<p>他挨着我坐下，轻轻碰碰我的肩膀。</p>
+<p>我扭头递给他一个客气的笑脸。</p>
+<p>他有些陌生地看着我，片刻后问我：「流景，你生孤的气了？」</p>
+<p>我讽刺他：「怎么会呢？殿下不是说了，我最乖最懂事。」</p>
+<p>沈玉安慌了。</p>
+<p>他大约是想起十三岁那年，他惹我生气，我当时笑嘻嘻说没事，他就没当回事。</p>
+<p>后来半年里他做什么我都说没事，倒是将军家的小儿子，常常惹得我破口大骂追着打。</p>
+<p>沈玉安心里难受了，把我堵在墙边，非要我骂他打他。</p>
+<p>「流景，你怎么不对孤发牢骚了？」</p>
+<p>「你是不是不喜欢孤喜欢别人了？」</p>
+<p>「你快点骂骂孤，孤怎么心慌得厉害。」</p>
+<p>沈玉安，我的坏脾气金贵着呢，想让我为你难受，你配吗？</p>
+<p>那一年，沈玉安差点弄丢我跟他的婚事。</p>
+<p>他追在我屁股后面哄了我好久，做小伏低。</p>
+<p>我哭着骂他那天，他高兴得多吃了两碗饭。</p>
+<p>沈玉安从小，就是个贱骨头。</p>
+<p>方婉在一边瞧着沈玉安为我着急，笑眯眯地凑上来。</p>
+<p>「南姑娘，你就别生气了，殿下心里装的全是你，谁也抢不走他。」</p>
+<p>「我今日来，就是跟你道别的，我回去就走，只要你跟殿下好好的，我怎么样都行。」</p>
+<p>沈玉安拧着眉头问她：「说好不走了，你怎么总是说话不算话！」</p>
+<p>方婉对他冷下脸：「我不走留着干嘛？」</p>
+<p>「你为了别的女人，日日给我摆脸色，你觉得我惹她不高兴了，你就对我爱答不理。」</p>
+<p>「既然我在这儿她就不高兴，那我走不就行了吗？我凭什么受你们的气！」</p>
+<p>「就因为你们有权有势，就不拿我当人看，你们凭什么欺负我？」</p>
+<p>「我宁愿死，也不受你们的委屈！」</p>
+<p>她说着，转身要往池子里跳。</p>
+<p>我一把扯住她，狠狠甩了她两巴掌。</p>
+<p>「我不理你，你倒蹬鼻子上脸！」</p>
+<p>「凭着一张嘴造谣生事，谁欺负你了，如何欺负你了，来，我听你说说明白。」</p>
+<p>「想死在我南家，你看看你自己够不够格！」</p>
+<p>方婉冷冷一笑，突然拽着我一起，跳进水里。</p>
+<p>我不会游泳，手脚胡乱地拍着，身子越来越沉，呛了好几口水。</p>
+<p>混乱中，沈玉安一把抓住我，他冷脸把我丢给身后跟来的人，转身游向方婉。</p>
+<p>后来发生的事，我都浑浑噩噩的，只记得沈玉安拖着方婉上岸，哭着求她醒一醒。</p>
+<p>方婉呕出好几口水，恢复些神志，拽着沈玉安的衣服，跟他一起哭了。</p>
+<p>她埋怨他：「我在你心里，永远都排在她后头，你知不知道刚刚我有多害怕？」</p>
+<p>「你明明知道她身边有那么多人去救她，可是你还是丢下我，先去找她了。」</p>
+<p>「我死心了，殿下，你放我走吧……」</p>
+<p>沈玉安紧紧地搂着她，他跟她保证：「别走，你别走。」</p>
+<p>「孤答应你，以后丢下谁也不会丢下你了，好不好？」</p>
+<p>落水后，我开始发烧，每夜梦魇缠身。</p>
+<p>我梦见我和沈玉安成亲了，大婚那日，他一直不高兴。</p>
+<p>等到后半夜，他冲进洞房，粗鲁地扯掉我的盖头。</p>
+<p>他把手里的信甩在我脸上，是方婉写的，她说她走了，我再也不用瞧她不顺眼了。</p>
+<p>沈玉安指着我的鼻子骂：「你的教养都吃到狗肚子里去了！」</p>
+<p>「她只是想待在我身边，就这么一点小小的愿望，你都不能容忍吗？」</p>
+<p>明明我什么都没做，就因为方婉模棱两可的几句话，他就把所有的错都联想到我身上。</p>
+<p>他像一只发疯的野兽，将我压在身下，发泄着心里的不满。</p>
+<p>新婚夜变成一场折磨，我的尊严被他碾成碎片。</p>
+<p>太阳升起时，他对着满身伤痕的我冷笑：「哭什么，你应该高兴啊，你赢了。」</p>
+<p>从此，他白天是仁德的君主。</p>
+<p>夜里就变成褪下衣冠的禽兽。</p>
+<p>所有人都说，我是宠冠六宫的皇后，是他此生挚爱。</p>
+<p>只有我知道，他每晚抱着我，喊的却是方婉的名字。</p>
+<p>后来，我怀孕了。</p>
+<p>有一日，他突然对我说：「你怎么不像婉婉了？」</p>
+<p>我顿时冷汗涔涔，我知道，我的孩子大概是保不住了。</p>
+<p>他捏着我的下巴，把堕子汤灌进我的嘴里，我疼得撕心裂肺，他却只说：「流景，你要永远漂亮，永远像她。」</p>
+<p>沈玉安，我恨你！</p>
+<p>我从梦里惊醒，手探向胸口，那里跳动着我的心脏。</p>
+<p>梦的最后，我清楚地记得，在我生辰那日，方婉风光回宫。</p>
+<p>她可真是好手段，消失两年，把沈玉安对她的喜欢变成执念，对她思念到不能自拔。</p>
+<p>她回来了，立刻就变成他失而复得的宝物。</p>
+<p>再也没有人能取代，方婉在沈玉安心目中的地位。</p>
+<p>我死的那天，天上飘着大雪。</p>
+<p>方婉拔走我头上的玉簪，她笑着把它摔碎了。</p>
+<p>那是母亲留给我的遗物，是我可悲的生命里，最后一点念想。</p>
+<p>我脑子里紧绷的弦，就那么断了。</p>
+<p>我举着剪刀冲向方婉，扎破她的手臂。</p>
+<p>下一刻，一支箭贯穿了我的胸口。</p>
+<p>沈玉安站在远处，他握着弓，亲手射杀了我。</p>
+<p>我猛然惊醒。</p>
+<p>梦里的疼，都是真的啊。</p>
+<p>我攥着胸口的衣料，崩溃大哭。</p>
+<p>母亲急得抱紧我，心疼得直掉眼泪。</p>
+<p>我哭喊着：「我不嫁了！我不嫁了！我不要沈玉安了！」</p>
+<p>方婉拽我落水的事，惊动了皇后。</p>
+<p>她叫我进宫吃午饭，说要为我做主。</p>
+<p>我到时方婉正跪在院里，大太阳晒着，瞧着很不好受。</p>
+<p>桌上摆满我爱吃的菜，我小口喝着鱼汤，沈玉安坐在我对面，脸色很难看。</p>
+<p>「有人因为你跪了两个时辰，你还有心情吃饭？流景，你怎么变成这样了？」</p>
+<p>我面不改色，边吃边说：「做错事就要受罚，不然不长记性。」</p>
+<p>沈玉安眯了眯眼，咄咄逼人地质问我：「方婉言语不检、举止失礼，她有她的错处。」</p>
+<p>「可是流景，她拖你下水，是不是因为你辱骂她、殴打她？」</p>
+<p>我放下碗筷，平静地看着他，点头说是。</p>
+<p>他笑着问我：「既然你们都有错，为什么只有一个人受罚？难道就因为你姓南，她姓方？」</p>
+<p>他明着说我仗势欺人。</p>
+<p>我反问：「那依太子殿下的看法，该怎么罚我才好？我把脸伸出去，让她打回来可好？」</p>
+<p>沈玉安垂下眼，声音放缓些：</p>
+<p>「流景，你明明知道，孤不是那个意思。」</p>
+<p>皇后慢悠悠开口：「你们两个，都快成亲的人了，何必为了一个无关紧要的女人吵成这样？」</p>
+<p>「太子，那个方婉心思重又恃宠而骄，你若不想日后家宅不宁，就离她远点。」</p>
+<p>我喝掉碗里最后一口汤，放下勺子，掏出我与沈玉安的订婚帖。</p>
+<p>薄薄的一张纸，曾经寄托着我所有的少女情思。</p>
+<p>我不曾犹豫，将它扔进汤锅里。</p>
+<p>那张纸片刻就被浸湿，毁得面目全非。</p>
+<p>沈玉安立刻去捞，他的手被热汤烫成淡淡的粉色。</p>
+<p>订婚帖像烂泥一样，软塌塌地挂在他的手指上。</p>
+<p>他眼里有一点泪光，压着火气问我：「南流景！你疯了是不是？」</p>
+<p>我不理他，只是跪在地上，向皇后叩首：</p>
+<p>「姑姑，我与父母已经商量好了，从前定下的亲事，还是算了。」</p>
+<p>「姑姑，父亲说，从前他没能护得住你，如今，他不想南家的姑娘，再受苦了。」</p>
+<p>我悔婚那天，沈玉安一路沉默着，跟着我到南府大门。</p>
+<p>我进门前，他终于开口：「流景，孤这里，可不卖后悔药。」</p>
+<p>我头也不回地告诉他：「绝不后悔。」</p>
+<p>我和太子婚事告吹的事，很快就传遍京城。</p>
+<p>母亲每天守着大门，看哪家富贵公子敢来提亲。</p>
+<p>等了月余，也没人来踏门槛。</p>
+<p>京城的公子哥都在看沈玉安的脸色，他把我变成一个笑话。</p>
+<p>我娘气得天天在家骂我爹。</p>
+<p>爹爹没办法，只好给远方的老朋友写了封信，管他借个儿子，来与我相看。</p>
+<p>来人叫陈锦颐，是江北陈氏的嫡支。</p>
+<p>他家祖宗是开国大将，两百年的名流世家，手里握着太祖御赐的丹书铁券，连皇上都得敬让三分。</p>
+<p>母亲把陈锦颐夸得天花乱坠。</p>
+<p>说他温文尔雅、能文能武，最重要的，他是世间不可多得的美男子。</p>
+<p>其实，这些都不重要。</p>
+<p>我对爱情已经不抱幻想，爱会让人受伤。</p>
+<p>我对陈锦颐的期待，仅限于，他父亲是陈家家主，而他是嫡长子。</p>
+<p>若我与他能成，日后便是整个陈氏的当家主母，太祖恩赐，见到皇上都不必跪了。</p>
+<p>想想都高兴。</p>
+<p>相看那日，我们在大相国寺见面。</p>
+<p>陈锦颐一身胭脂红的袍子，前襟点缀着孔雀羽毛，奢华到让人挪不开眼。</p>
+<p>他确实是美若天仙，如果扮上女装，大约我都要自愧不如。</p>
+<p>母亲笑得牙花都露出来了，一路走一路夸，偶尔问几个刁钻的小问题，陈锦颐也都滴水不漏地答上了。</p>
+<p>他实在是太完美了，完美得不真实。</p>
+<p>我有点慌，就想扯下他的面具瞧瞧，他背后长着怎样的嘴脸。</p>
+<p>午饭时，母亲找了个极其拙劣的借口匆匆离场，留下我跟陈锦颐培养感情。</p>
+<p>她的马车刚走，陈锦颐脸上的笑就落了下去。</p>
+<p>他不笑的时候，像个冷心肠的菩萨，我与他之间，顿时生出无限长的距离。</p>
+<p>他刚刚，果然是装的！</p>
+<p>「你不记得我了？」陈锦颐挑眉问我。</p>
+<p>「小时候，你把我堵在墙角，揪着我的耳朵叫我小娘们儿，你忘了？」</p>
+<p>「你敢把我忘了？」</p>
+<p>娘啊，他的表情好吓人。</p>
+<p>我模模糊糊地想起来，我八九岁那年，跟刘将军家的小儿子打架打输了。</p>
+<p>他身边总是跟着一个白白净净瘦瘦小小的豆芽菜，两个人关系很好。</p>
+<p>我就非常卑鄙地，把那个豆芽菜抓来，逼着他叫我姐姐祖宗，还对他言语羞辱，以泄心头之恨。</p>
+<p>我小时候，确实有一段时间，背着爹娘净干些人嫌狗不待见的事儿，可混账了。</p>
+<p>后来我也想过要找他道歉，但他已经不在京城了。</p>
+<p>再见面，他变成又高又大的陈锦颐，除了漂亮，哪还有半点豆芽菜的样子。</p>
+<p>想起母亲刚刚说我贤良淑德、优雅端庄，生来就随她，我尴尬得脚趾抠地，再也待不下去了。</p>
+<p>我想不用道别了，最好是再也不见。</p>
+<p>我转身就要跑，后领却被陈锦颐钩住。</p>
+<p>他低头在我耳边笑：「姐姐，我让你走了吗？」</p>
+<p>落日前，陈锦颐送我回家。</p>
+<p>我完全看不穿他的心思，心里忐忑，眼看到了家门口，我抬起屁股就想跳车。</p>
+<p>他手臂一伸，揽着我的腰把我拽进怀里。</p>
+<p>陈锦颐挑起眉梢，戏弄地问我：「这么着急，你很怕我？」</p>
+<p>有一点，毕竟我已经打不过他了。</p>
+<p>他笑话我：「所以说，小时候为什么那么坏。」</p>
+<p>他离我太近，香气扑鼻。</p>
+<p>我又羞又恼，刚想骂他，车帘突然被人用剑挑开。</p>
+<p>是沈玉安。</p>
+<p>他半垂眼帘，剑光折射在他的侧脸，照出阴狠的神态。</p>
+<p>他平静地开口：「南流景。」</p>
+<p>「谁教你投怀送抱，还要脸不要？」</p>
+<p>「下车。」</p>
+<p>陈锦颐偏偏笑着搂紧我。</p>
+<p>他把下巴搁在我的肩上，眼尾瞥向沈玉安，挠痒一样低声说：「别动，动了，你就输了。」</p>
+<p>那一天，沈玉安和陈锦颐在我家门前，大打出手。</p>
+<p>京中又有人说，白月光到底是白月光，便是不爱了，也容不得别人染指。</p>
+<p>我与陈锦颐相看的事，也弄得人尽皆知，这下，我真是被架在火上烤了。</p>
+<p>母亲一日问我八遍，陈锦颐瞧不瞧得上我。</p>
+<p>我只说：「谁管他瞧不瞧得我，怎么不问问我瞧不瞧得上他？」</p>
+<p>母亲一巴掌拍在我的后脑勺上。</p>
+<p>「哪儿轮得上你挑三拣四？」</p>
+<p>如今我的情况，确实不容乐观。</p>
+<p>世上统共也没几个人敢娶我，其中一个，还因为我小时候嘴欠，把他给得罪了。</p>
+<p>母亲拉下老脸给陈锦颐去了封请帖，借着长辈的名义，请他到家里坐坐。</p>
+<p>他没回信，没把我们南家放在眼里。</p>
+<p>母亲气病了。</p>
+<p>我跟母亲说，这辈子大不了就不嫁了，待在她身边做个老姑娘也不错。</p>
+<p>她笑着点头，抡起棒槌，追着我满院跑。</p>
+<p>贵妃生辰时，皇上把宴会设在南湖的画舫上，并邀城中公子小姐与她做伴。</p>
+<p>我登上船，没想到，方婉竟然也在。</p>
+<p>听说荣恩侯认她做了干女儿，梦里，好像没有这茬事。</p>
+<p>不过沈玉安为了她跟我闹得分道扬镳，明眼人都知道，方婉是颗上好的棋子。</p>
+<p>所有人都在等着看，我和她，会闹出怎样的热闹。</p>
+<p>方婉穿罗裙戴珠钗，跟沈玉安站在一起，宛如一对璧人。</p>
+<p>她看见我，高高兴兴地跑过来，扬声与我打招呼：「南姐姐，你今日能来，我好开心。」</p>
+<p>她张开手臂，好像要抱我，我下意识抬起胳膊一挡，她突然就摔倒了。</p>
+<p>沈玉安快步上前，方婉扶着他的胳膊站起身，红着眼眶看我一眼。</p>
+<p>「南姐姐，我知道你讨厌我，可是我一直很想亲近你，在京中，我只认识你一个，我们可以好好相处吗？」</p>
+<p>沈玉安打断她，翻过她的手心，看着蹭破的皮，问她疼不疼。</p>
+<p>方婉赶紧摇头：「不怪南姐姐，是我自己没站稳。」</p>
+<p>沈玉安低低地应了一声。</p>
+<p>「嗯，孤知道。」</p>
+<p>「日后你走慢些，别伤到自己。」</p>
+<p>方婉微微一愣，笑着点头，没再说话。</p>
+<p>晌午陪着贵妃吃了点酒，我有点乏，就挑了个安静的地方坐着吹吹风。</p>
+<p>忽然有人从背后狠狠推我一把，我险些跌进湖里。</p>
+<p>画月眼疾手快扶稳我，回头就看见方婉撇着嘴笑。</p>
+<p>「南姐姐，别瞪我啊，好吓人。」</p>
+<p>「我只是想跟你打个招呼，你自己没站稳，可不怪我……」</p>
+<p>我想也没想，回手就是一巴掌抽在她脸上。</p>
+<p>方婉瞪着我，又要掉眼泪。</p>
+<p>我冷笑：「这儿没别人，你装给谁看。」</p>
+<p>我揪住她的衣领，摁着她的头，把她往湖里推。</p>
+<p>方婉吓得抱紧围栏，失声惊叫。</p>
+<p>「我只是跟你打个招呼，你要是站不稳，可别怪我……」</p>
+<p>我话音未落，忽然一支长箭直直地射向我，沈玉安站在不远处挽着弓。</p>
+<p>和梦里一模一样，他为了方婉，要了我的命。</p>
+<p>长箭擦破我的耳朵，我像丢了魂一样，跌坐在地上，止不住地发抖。</p>
+<p>那支箭明明没有刺进我的胸口，可是我的心，好疼啊。</p>
+<p>疼得我直掉眼泪。</p>
+<p>所有人都在围观我的狼狈，方婉扑进沈玉安的怀里，紧紧抱着他不肯撒手。</p>
+<p>沈玉安推开她，在我身前蹲下。</p>
+<p>他掏出手帕擦着我的眼泪，轻声安慰着：「流景，吓到了是不是？」</p>
+<p>「孤是一时情急，怕你闹出人命。」</p>
+<p>我几乎是咆哮出声：「滚——」</p>
+<p>「你别碰我！」</p>
+<p>沈玉安还要向我伸手，一只镶玉的宝靴突然踹在他的胸口。</p>
+<p>有人把我抱了起来，我不看就知道，是陈锦颐。</p>
+<p>他的香气特别好闻，我第一次见他，就牢牢记住了。</p>
+<p>他用衣服盖住我，把我的眼泪都藏起来，不让人看，不让人指点。</p>
+<p>陈锦颐抱我回家。</p>
+<p>母亲从榻上跳起来，高兴得病全好了。</p>
+<p>她刚要笑，看见我昏昏沉沉的样子，又哭起来。</p>
+<p>听大夫说我没事，只是惊吓过度，养两天就好了。</p>
+<p>她没忍住，指着东边破口大骂，中气十足。</p>
+<p>骂到一半，回头看见陈锦颐还在，她叉着腰问他，为什么不回请帖！</p>
+<p>「你若不是想娶我的心肝儿，就别来招惹她。」</p>
+<p>陈锦颐却说，他根本没收到过请帖。</p>
+<p>他跟母亲说喜欢我，想娶我，只是大概我瞧不上他。</p>
+<p>母亲大力地拍着他的胳膊，笑得眼睛都看不见了。</p>
+<p>「怎么会，流景日日都念叨你呢，说你一表人才，她可满意了！」</p>
+<p>娘，我还没死呢，你在胡说八道些什么。</p>
+<p>我虚弱地张张嘴，说不出话。</p>
+<p>我娘尽情污蔑我，再也没人管得住她。</p>
+<p>请帖的事左右调查，什么也没查出来，但大家心里都明白，是谁动的手脚。</p>
+<p>荒唐，沈玉安，你真荒唐。</p>
+<p>画舫的事惊动圣驾，皇上为了安抚我爹爹，狠狠罚了沈玉安。</p>
+<p>姑姑请母亲进宫说话，她说自从方婉出现，沈玉安就像换了个人似的。</p>
+<p>她与他说过很多次，离方婉远一点，他就是不听。</p>
+<p>前几日，沈玉安居然问她，她把他养大，是真心待他好，还是想要控制他。</p>
+<p>姑姑这回，是真的伤心了。</p>
+<p>母亲回家后与我感叹，从前怎么没发现，沈玉安是这样忘恩负义的人。</p>
+<p>他生母爬龙床，生下他以后，还拿孩子威胁皇上。</p>
+<p>若不是姑姑求情，说稚子无辜，他早就跟着他生母一起下去了。</p>
+<p>我想起梦里，姑姑就是被沈玉安活活气死的。</p>
+<p>思来想去，还是跟母亲说：「姑姑一辈子恪守德行，可是偶尔，也要为自己多想一想。」</p>
+<p>她收养沈玉安后不久，就诞下三皇子，若真论起来，太子之位，怎么也轮不到沈玉安去坐。</p>
+<p>沈玉安生辰这日，给我发来请帖。</p>
+<p>陈锦颐趁我看不见，把它叠成纸燕，飞到墙那头去了。</p>
+<p>我从屋里拿出茶，他立马举起书挡着脸，装作很专心的样子，估计正躲在书后头得意呢。</p>
+<p>我生病这些日子，他天天跑来，母亲起先很高兴，渐渐也觉得烦了。</p>
+<p>那日二人商量提亲的好日子，母亲说，算好了明年二月十六，大吉。</p>
+<p>陈锦颐讨价还价，说今年八月八，是个上上签，他母亲已经启程往京城来了。</p>
+<p>我娘笑说真好，然后望着陈锦颐的后背，翻了好几个大白眼。</p>
+<p>她偷偷跟我说：「不然娘还是给你找个离得近的，陈家这小伙儿，太黏人了。」</p>
+<p>哈哈哈哈哈。</p>
+<p>哎，她呀，是舍不得我了。</p>
+<p>我躺在院里的摇椅上，看看陈锦颐，看看云，看看鸟，再看看手里的残卷。</p>
+<p>时间就静悄悄地溜走了。</p>
+<p>我打了个盹儿，醒来的时候，身上盖着毯子，陈锦颐不见人影了。</p>
+<p>他不在，我突然觉得心里空落落的。</p>
+<p>母亲正巧过来，她拾起压在石桌上的一幅画，扑哧笑出声。</p>
+<p>我凑过去一瞧，看见画里的我歪在摇椅上，睡得口水直流，嘴边儿还题着小字：烧鹅、烧鹅……</p>
+<p>母亲笑得停不下来，我的脸噌地烧起来。</p>
+<p>嘟嘟囔囔地骂：「陈锦颐人呢！」</p>
+<p>「娘，你还是给我找个离家近的吧，我也觉得他不怎么样。」</p>
+<p>母亲摸摸我的头发，又摸摸我的脸。</p>
+<p>「他呀，给你买你做梦都想吃的烧鹅去了。」</p>
+<p>她笑着笑着就红了眼圈，欣慰地感慨：「我就知道，我闺女是个有福气的。」</p>
+<p>我出门接烧鹅，跟沈玉安撞个正着。</p>
+<p>他坐在门前的台阶上，看见我，慢慢起身，拍拍衣摆上的灰。</p>
+<p>「我今天，一直在等你，可是你没来。」</p>
+<p>他颓着肩膀，神色落寞。</p>
+<p>「流景，你不在我身边，做什么都没意思。」</p>
+<p>「那天的事，我跟你道歉，好不好？」</p>
+<p>「我只是怕你伤到方婉，荣恩侯会找你麻烦。」</p>
+<p>「方婉的心也不坏，她只是想和你亲近，你别因为我，就对她那么大敌意……」</p>
+<p>我笑了。</p>
+<p>沈玉安的话停在嘴边，或许是我表情里的轻蔑太明显，他有些受伤地看着我。</p>
+<p>从前我以为，若我和他告别，一定会有很多话要告诉他。</p>
+<p>我要让他知道，他是如何伤害我，又如何让我心碎。</p>
+<p>我们十几年的感情，是如何被他糟蹋得面目全非。</p>
+<p>真到了这一天，我想了想，却觉得，说什么都是浪费，都是多余。</p>
+<p>我笑着说：「别太自以为是，殿下。」</p>
+<p>「日后别来了，陈锦颐看见你，会不高兴。」</p>
+<p>说着话，陈锦颐就出现在巷口。</p>
+<p>他像晚归的良人，懒懒地向我挥手。</p>
+<p>我朝他跑过去。</p>
+<p>沈玉安带着哭腔，在我身后问：「就算孤娶了方婉，你也无所谓吗？」</p>
+<p>是的，我无所谓。</p>
+<p>沈玉安，省省吧。</p>
+<p>没过两天，宫中传来消息，说沈玉安跪在殿前，非要娶方婉为妻。</p>
+<p>虽说方婉如今是荣恩侯府的女儿，但到底，她只是一个来路不明的孤女。</p>
+<p>有些东西需要沉淀，拥有一个头衔，并不代表拥有相应的能力。</p>
+<p>沈玉安贵为太子，他要娶的不是一个头衔，而是一个贤德的皇后，关乎国体，关乎国运。</p>
+<p>可是，他是铁了心的，在早朝上当着群臣的面，跪地不起。</p>
+<p>皇上只能咬牙答应，否则，就是打了荣恩侯的脸面。</p>
+<p>大婚敲定后，方婉一跃成为京城最受追捧的贵女。</p>
+<p>我跟她在赏花宴上遇见，她被众人簇拥着，瞧见我，笑眯眯地叫了句：「南姐姐。」</p>
+<p>「八月八日我就要与殿下完婚了，我好开心啊，你快祝福我。」</p>
+<p>「不过这回，大约是我最后一次叫你声姐姐了。」</p>
+<p>「再见面，就得你给我行礼，叫我声太子妃娘娘了。」</p>
+<p>八月八？这不是巧了吗？</p>
+<p>我突然记起，梦中那晚洞房花烛，方婉留信出走。</p>
+<p>拜她所赐，那一夜，成了我的噩梦。</p>
+<p>现在，轮到她了。</p>
+<p>沈玉安大婚那天，我跟陈锦颐订婚的消息，也传遍京城。</p>
+<p>听说他心不在焉，在婚礼上弄错好几个流程。</p>
+<p>睡觉前，宫中传来回信，说沈玉安和方婉在洞房里大吵一架，她大哭大闹，颜面尽失。</p>
+<p>我躺在榻上，闭着眼睛听笑话，想着下次见到方婉，要怎么戳她痛处。</p>
+<p>第二日清晨，母亲气冲冲地来找我，说沈玉安昨晚在我家门前守了一夜。</p>
+<p>如今全城百姓都传疯了，有人说太子荒唐，有人说方婉横刀夺爱，还有人说我心机深重。</p>
+<p>因为一个沈玉安，搅得大家都面上无光。</p>
+<p>我怎么都想不到，他居然能这么糊涂。</p>
+<p>上辈子和这辈子，他都要害死我。</p>
+<p>姑姑派人来请了几回，让沈玉安回宫，他只当听不见。</p>
+<p>我家大门紧闭，只能以静制动，省得再闹出点别的荒唐事。</p>
+<p>母亲生怕影响我的婚事，捂着心口倒在榻上，说不出话。</p>
+<p>我心疼得恨不得拿刀出去捅了沈玉安。</p>
+<p>我家屋顶上愁云密布，院外突然有人喊：「不好了，陈家郎君跟太子爷打起来了！」</p>
+<p>我手忙脚乱地赶过去，看见沈玉安灰头土脸地倒在地上。</p>
+<p>陈锦颐长身玉立，白色的袍子不染纤尘，半点没有打架的样子。</p>
+<p>他垂眼俯视着沈玉安，整个人杀气腾腾。</p>
+<p>他说：「一个草包，也敢跟我陈家找不痛快。」</p>
+<p>「今日你是太子，明日呢？」</p>
+<p>等回头看见我，他又马上笑了。</p>
+<p>好像刚刚那个嚣张跋扈的陈世子，不是春风化雨的陈锦颐。</p>
+<p>「我给你带了烧鹅，母亲自己做的，她让我带来给你尝尝。」</p>
+<p>他晃晃手里的包裹，我才看见，他的拳头受伤了。</p>
+<p>他字里行间，说得好像我已经是他家的人了。</p>
+<p>他的态度于我的名声而言，可以说是力挽狂澜。</p>
+<p>我跟陈锦颐说：「只知道护着烧鹅，怎么不想想护着你自己？」</p>
+<p>我让人去准备药膏，沈玉安喊我：「南流景，我也受伤了！」</p>
+<p>我只问他：「与我何干。」</p>
+<p>想来不出一刻，旁人又会说，陈世子与南姑娘情投意合，至于太子……</p>
+<p>不过一厢情愿。</p>
+<p>沈玉安近来行事荒唐，姑姑说，皇上已经有了废储的心思。</p>
+<p>毕竟是自己养大的孩子，她心有不忍，还想再劝劝沈玉安。</p>
+<p>母亲也不好多说，只是私下里偷偷跟我聊，姑姑从小德行高尚，就是欠缺考虑。</p>
+<p>若是沈玉安登上大宝，估计我们几家都要不好受了。</p>
+<p>陈锦颐在旁边给我剥瓜子，我好像看见他的眼神沉了沉，再抬头时，又是满脸笑意。</p>
+<p>他给我的小食盒剥了满满的瓜子仁。</p>
+<p>黄昏时，母亲留他吃饭，他说家中有事，先告辞了。</p>
+<p>我追着他出门，把他拽到角落里，嘱咐他：「你不要插手沈玉安的事，他已经失了圣心，我们就等着，他好不了太久的。」</p>
+<p>陈锦颐点头说好。</p>
+<p>答应得也太痛快了。</p>
+<p>我盯着他，狐疑地问：「你不骗我？」</p>
+<p>这回他想了想，郑重其事地点头，说绝不骗我。</p>
+<p>就跟我演。</p>
+<p>方婉当上太子妃后，还没来得及风光，就跟着沈玉安一起，被关了禁闭。</p>
+<p>那日我进宫去看姑姑，刚踏进她的寝宫，就听见她在摔东西。</p>
+<p>「狗胆包天的刁妇！你果然干不出好事来！」</p>
+<p>方婉跪行到她脚边，抱着她的腿哭喊：「母后，您一定要救救殿下啊！」</p>
+<p>「如今能救他的，只有您了啊！」</p>
+<p>「我不是故意的，父亲让我拿东西给殿下盖章，我、我也不知道他会贪污啊……」</p>
+<p>姑姑一脚踢开她，指着她的鼻子大骂：「还敢狡辩！」</p>
+<p>「你与荣恩侯合伙坑害太子，只这一桩事吗？！」</p>
+<p>「你还以为瞒得住谁！」</p>
+<p>……</p>
+<p>我才知道，原来是荣恩侯借沈玉安的手，搜刮好处，刚刚被人递了折子。</p>
+<p>这是结党营私，这是大罪啊！</p>
+<p>方婉被人拖走后，我进殿去探望姑姑。</p>
+<p>她手里拨着念珠，一直不说话。</p>
+<p>过了很久，她突然开口：「流景，你的心真狠。」</p>
+<p>「他是你的表哥啊，你们十几年的感情，你说要断送他的性命，就断送他的性命。」</p>
+<p>「你和陈家那个，真是好手段。」</p>
+<p>「你做得不错，太子也是罪有应得，可是，他是本宫养大的孩子啊……」</p>
+<p>「你走吧，以后不要来了。」</p>
+<p>我回家时，陈锦颐正在门口等我。</p>
+<p>看到我哭，他的笑落了下去。</p>
+<p>他擦掉我的眼泪，什么也没说。</p>
+<p>我觉得他有点不高兴，抽抽搭搭地跟他解释：「我不是心疼沈玉安。」</p>
+<p>我比谁都巴不得沈玉安不好过，我只是被姑姑说得难过了。</p>
+<p>陈锦颐哦了一声，头偏向另一边，轻轻舒了口气。</p>
+<p>他一直没说，荣恩侯的事是他做的。</p>
+<p>他不说，我也不问。</p>
+<p>画月说：「姑爷真是难得的好男人。」</p>
+<p>「换了别的人，给女人做点芝麻绿豆大点的事，都要敲锣打鼓昭告天下呢。」</p>
+<p>我手下缝着嫁衣，笑着逗她：「可是他骗我了，骗女人的男人，不是好男人。」</p>
+<p>画月反驳我：「哪有，姑爷说得是，不折腾太子爷，又没说不折腾荣恩侯。」</p>
+<p>「谁让太子爷不长眼，偏偏娶了方婉。」</p>
+<p>「他呀，是罪有应得。」</p>
+<p>如今，我家里的人，都向着陈锦颐。</p>
+<p>我出嫁那天，母亲一直笑。</p>
+<p>笑得我鼻头发酸。</p>
+<p>陈锦颐牵着我上花轿，他倒是高兴了，嘴角都快咧到耳后根去了。</p>
+<p>我看见母亲又偷偷翻了他两个白眼。</p>
+<p>我怕爹娘舍不得，我就跟着他笑。</p>
+<p>爹娘怕我舍不得，他们就跟着我笑。</p>
+<p>嫁到江北的第二个月，我听说，皇上饶了沈玉安一命，把他贬为庶人。</p>
+<p>姑姑去送他，他对着姑姑大骂：「你收养我，不就是因为老三体弱，怕他早夭，没人帮你巩固后位吗？」</p>
+<p>「你根本就没把我当成你亲儿子，若是老三犯事，你死也不会不要他！」</p>
+<p>「你这个恶毒的女人，把我从我娘手里抢过来，你害死我娘，你不得好死！」</p>
+<p>他简直是，胡言乱语。</p>
+<p>我又想起母亲说，方婉出现前，他明明不是这样的。</p>
+<p>年关前，陈锦颐跟我回京城。</p>
+<p>姑姑请我进宫说话，母亲说，她一直很后悔当日对我说话说重了。</p>
+<p>马车停在宫门前，我一下车，就突然冲出一个人扯住我。</p>
+<p>「流景，流景，你是要去见母后吗？」</p>
+<p>「你帮我求求她，你跟她说，我知错了，我再也不胡闹了，求她救救我……」</p>
+<p>「我好饿好冷啊，流景，你有没有吃的……」</p>
+<p>他身边还跟着个神志不清的女人，一直在念叨：「不可能啊，我是穿越的，我是凤命啊，我要当皇后呀！」</p>
+<p>「我是皇后，你们这些杂碎，还不给我跪下！」</p>
+<p>陈锦颐一把搂住我，不让他们碰到我。</p>
+<p>他一个眼神，几个随从拔刀，沈玉安再也不敢上前。</p>
+<p>他在我身后骂：「南流景，你背弃感情，你不得好死……」</p>
+<p>陈锦颐捂住我的耳朵，我模模糊糊地听见他吩咐人说：「割掉他的舌头，不干不净，不如不要。」</p>
+<p>他说完又来看我脸色，轻声问我：「走吗？」</p>
+<p>我对他笑笑，牵住他的手，点头说：「走吧。」备案号:YXX1DpBOjMGtO6QePjDcPdPz</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/4/2-%E6%B5%81%E6%94%BE/" title="流放">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">流放</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/4/27-%E9%BE%99%E5%AE%AB%E5%B0%8F%E5%87%A4%E5%87%B0/" title="龙宫小凤凰">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">龙宫小凤凰</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

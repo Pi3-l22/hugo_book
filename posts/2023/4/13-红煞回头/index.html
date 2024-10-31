@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红煞回头 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/4/13-%E7%BA%A2%E7%85%9E%E5%9B%9E%E5%A4%B4/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/4/13-%E7%BA%A2%E7%85%9E%E5%9B%9E%E5%A4%B4/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="红煞回头">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26623.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26623.jpg">
+  <meta name="twitter:title" content="红煞回头">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="红煞回头">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="10199">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26623.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">红煞回头</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e7%ba%a2%e7%85%9e%e5%9b%9e%e5%a4%b4&amp;url=https://mohai.us.kg/posts/2023/4/13-%E7%BA%A2%E7%85%9E%E5%9B%9E%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/4/13-%E7%BA%A2%E7%85%9E%E5%9B%9E%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%ba%a2%e7%85%9e%e5%9b%9e%e5%a4%b4%20https://mohai.us.kg/posts/2023/4/13-%E7%BA%A2%E7%85%9E%E5%9B%9E%E5%A4%B4/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26623.jpg" alt="红煞回头" />
+      
+
+      <p>七月十四的时候，我哥在村口撞死了一个妙龄女子，女子咽气的时候刚好十二点。</p>
+<p>八爷抽着旱烟脸色很难看：「七月十四十二点钟，竟然死在了一年中最邪性的日子。」</p>
+<p>「必须得配阴婚，不然全族死绝。」</p>
+<p>1</p>
+<p>我哥撞死了邻村的翠翠，我们这穷山恶水的，翠翠又是超生的黑户。</p>
+<p>我妈和翠翠家里人商量私了，翠翠家人别提多乐意了。</p>
+<p>最后两家敲定价格，翠翠爸拿着十万块钱喜笑颜开地就走了。</p>
+<p>翠翠的尸身瞅都没瞅一眼。</p>
+<p>八爷拦住一脚踏出家门的翠翠爸。</p>
+<p>翠翠爸护犊子似的护住怀里的钱包，警惕地看着八爷：「你想干啥，进了我兜的钱，就别想让我吐出去。」</p>
+<p>八爷不屑地冷哼一声：「这翠翠生辰几何，你们直接把人扔这儿了，我们得给这姑娘下葬立碑不是？」</p>
+<p>听到只是问个生辰，翠翠爸松了口气。</p>
+<p>随后又一脸嫌弃地说：「她的生日换别的时候我也就不记得了，偏偏这玩意儿是七月十四十二点出生的，一秒不差。」</p>
+<p>「这么个晦气玩意儿，这时候出生不就是给我添堵，自从她出生，我就没顺心过。」</p>
+<p>听到翠翠爸的话，八爷脸色惨白地跌坐在椅子上。</p>
+<p>我和我妈急忙去扶，翠翠爸趁这个空当走了。</p>
+<p>2</p>
+<p>八爷脸色惨白浑身都在发抖：「事儿大了，事儿大了啊。」</p>
+<p>我妈闻言也紧张了起来：「八叔，事儿不是都解决了吗？还有什么事？」</p>
+<p>八爷有气无力地瞥了我妈一眼：「这女娃娃，在一年中至阴至邪的日子出生，又在至阴至邪的日子去了。」</p>
+<p>「要成红煞啊。」</p>
+<p>「什么？」我妈瞪大了眼睛抓住八爷的胳膊，「八叔，那阔娃不会有事吧？」</p>
+<p>阔娃就是我哥。</p>
+<p>八爷的眼神很冷：「别说阔娃了，搞不好全族都得给这个女娃娃陪葬。」</p>
+<p>「那可是红煞啊，红煞降世，千里绝户啊。」</p>
+<p>我妈身子也软了下去，幸好我在后边扶着。</p>
+<p>八爷眼神阴狠地看着我妈：「桂芳，这事是你家惹的，你家要想办法平。」</p>
+<p>「现在能解这个女娃娃怨气的唯一办法就是配阴婚，让她不至于做孤魂野鬼。」</p>
+<p>「这样或许能解了女娃娃的怨气。」</p>
+<p>听到能解了翠翠的怨气，我妈的眼睛一亮，抓着八爷的手：「八叔，配，我们配，能保住阔娃的命，啥都行。」</p>
+<p>八爷瞥了我妈一眼：「说得容易，阴婚谁配？」</p>
+<p>我妈指着我：「句句配，句句今年已经十八了，能成家了，让他配。」</p>
+<p>「我阔娃不能娶个孤魂野鬼。」</p>
+<p>听着我妈的话，我通体发凉。</p>
+<p>我弱弱地开口：「妈，我、我不想」</p>
+<p>「你闭嘴，」我话没说完，就被我妈打断了，我妈双目赤红地瞪着我，「你敢不配阴婚就别认我这个妈。」</p>
+<p>我被我妈的眼神吓得后退了两步，不敢再开口了。</p>
+<p>八爷站起来，看着我叹了口气：「既然如此，那准备准备，今儿晚上就配。」</p>
+<p>3</p>
+<p>天刚擦黑，八爷就递给我一个白灯笼，让我去翠翠被撞死的地方带翠翠回去。</p>
+<p>八爷盯着我，神情异常严肃：「记住，无论如何都不要回头，不管听到什么，感觉到什么，无论如何都不要回头。」</p>
+<p>我被八爷的眼神看得心里发毛，连忙回答知道了，拎着白灯笼向村口走去。</p>
+<p>到了翠翠出事的地方，我按八爷的嘱咐在周围走了一圈，边走边喊：「沈氏翠翠，我来接你回家喽。」</p>
+<p>喊了十来声，白灯笼里的火开始突突地跳。</p>
+<p>我盯着灯笼里的火，吓得大气都不敢喘，背脊发凉，浑身冒着冷汗。</p>
+<p>等灯笼里的火变成了红色，我猛地转身。</p>
+<p>八爷说了，火烛变成红色就代表着翠翠回来了……</p>
+<p>红色的烛火突突地跳着，我呼吸急促，脚下不敢停地朝着家里走去。</p>
+<p>今夜的路格外地漫长，走着走着发现我竟然又回到了村口。</p>
+<p>鬼打墙！！！</p>
+<p>我大汗淋漓地愣在原地，怎么会这样？</p>
+<p>八爷说了，翠翠还没成煞。</p>
+<p>只要我不回头就不会遇到邪乎事。</p>
+<p>可是这是怎么回事？</p>
+<p>我站在原地不知所措。</p>
+<p>此时，四面八方也传来笑声。</p>
+<p>如怨如诉的那种笑。</p>
+<p>我瞪大眼睛，怔愣在原地。</p>
+<p>就在我以为我完了的时候，身后传来了八爷的声音：</p>
+<p>「句句，你在干嘛？」</p>
+<p>我如蒙大赦，猛地回头，朝着声音的方向寻去。</p>
+<p>回头看到的却是一身大红嫁衣的翠翠。</p>
+<p>正对着我嘿嘿嘿地笑。</p>
+<p>我吓得直接跌坐在原地，手里的灯笼也直接摔在地上熄灭了。</p>
+<p>翠翠嘿嘿嘿地朝着我走来，我呼吸急促地看着，想跑身体却怎么也动不了。</p>
+<p>然后我脑袋一昏，晕了过去。</p>
+<p>4</p>
+<p>第二天我醒了以后，天已经大亮了，我睁开眼睛对着周围扫了一圈，发现自己竟然身处在乱葬岗里。</p>
+<p>看着周围一个一个的坟堆，我连滚带爬地起来向家里跑去。</p>
+<p>到了我家，八爷还有我妈都在我家门口张望。</p>
+<p>八爷见到我，瞳孔剧烈收缩。</p>
+<p>「发生了什么事？灯呢？」</p>
+<p>我把昨晚上的情形和八爷说了一遍，八爷阴沉着脸，看不出在想什么。</p>
+<p>末了，八爷重重地叹了口气：「灯灭事断，阴婚失败了。」</p>
+<p>听到阴婚失败了，我妈一个踉跄跌倒在地，嘴里呢喃着：「失败了，失败了，怎么会失败了，失败了阔娃怎么办啊？」</p>
+<p>八爷颤颤巍巍地从椅子上站起身来，来回踱步，半晌，才闷闷地开口：「没办法了，失败了只能重新配了」。</p>
+<p>「这次在家摆流水席，请五仙坐镇，风风光光地迎沈氏姑娘翠翠进门。」</p>
+<p>所谓五仙，是胡黄白柳灰。</p>
+<p>八爷一早画了五仙的画像，摆好了贡品。</p>
+<p>黄仙位东，白仙压西，柳仙坐南，灰仙守北，胡仙镇中。</p>
+<p>我妈一阵布置，嘴上有些不乐意：</p>
+<p>「八爷，咱至于给这些畜生摆这么大的阵仗吗？」</p>
+<p>听到我妈的话，本来在抽旱烟的八爷，重重地把烟杆拍在桌子上。</p>
+<p>猛地抬头怒视着我妈，凶狠的眼神把我妈吓了一个踉跄。</p>
+<p>「胡言乱语，不知死活，这是五大仙家。」</p>
+<p>「今日若无这五仙坐镇，开阴路，守平安，翠翠把你家拆了，可怪不得旁人。」</p>
+<p>随着三爷话落，供五仙的五个方位，香烛竟然齐齐熄灭。</p>
+<p>八爷脸色大变：「不好。」</p>
+<p>突如其来的奇异现象，把我妈也吓得不轻。</p>
+<p>八爷直接上去抽了我妈两个嘴巴子，让我妈跪在地上死命地磕头。</p>
+<p>我妈这时还哪敢多话，直接扑通一声跪下来，乒乒乓乓地磕着头。</p>
+<p>直到我妈磕得满头鲜血，香烛无火自燃，八爷才重重松了一口气，又重新坐下。</p>
+<p>八爷冷冷地看着我妈：「胆子太肥了，对五大仙家你都敢出言不敬，桂芬，如果你再这么口无遮拦，这事我是真的不敢再管下去了。」</p>
+<p>我妈一听八爷想撒手，瞬间急了，一个咕噜从地上爬了起来，口齿不清地说：「八爷放心，放心，我听话。」</p>
+<p>八爷冷哼一声不再看我妈。</p>
+<p>5</p>
+<p>接着八爷开始在我房间里鼓捣。</p>
+<p>八爷在床头点了两根婴儿手臂高的大白蜡。</p>
+<p>灼灼的光影下，映射得八爷的脸惨白惨白的。</p>
+<p>八爷目光灼灼地看着我：「记住，今儿晚上睡觉的时候你把脚尖对准床头，这样那个女娃子就看不到你。」</p>
+<p>「阴婚必须要配，不然女娃娃怨气难消，咱们全族都要陪葬。」</p>
+<p>「但是阴婚配了，只要这个女娃娃进了房门就可以，不用非得和她圆房。」</p>
+<p>我瑟缩着脖子：「八爷，我知道……」</p>
+<p>说着，八爷又往我手里塞了一道符：「好孩子，晚上你拿着这道符躺在床上，这样就算那个女娃子看到你了，这个符也能保你一命」</p>
+<p>我拼命点着头：「八爷，我记住了。」</p>
+<p>月上柳梢的时候，八爷站起身来：「句句，我走了，记住，脚尖一定对准床头。」</p>
+<p>我浑身颤抖地点着头，目送八爷出门。</p>
+<p>6</p>
+<p>八爷刚走，我就把鞋脱了，鞋尖对准床头。</p>
+<p>我摆弄了几遍，直到把一双鞋摆成一条直线，确定方位没问题后，我才上床，用被子蒙住头，大气都不敢喘。</p>
+<p>过了不知道多久，我被闷得浑身大汗，想露头透透气的时候，突然狂风大作。</p>
+<p>这股邪风把我屋子里的门跟窗户都吹开了，屋子里的摆件也被吹得七零八落的。</p>
+<p>可偏偏床头的两根白蜡烛一点都没受影响，依旧灼灼地燃着。</p>
+<p>我被吓得缩在被子里瑟瑟发抖，就连牙齿都在打战。</p>
+<p>过了不知道多大会，风停了，我刚想松口气。</p>
+<p>就听到了踢踏踢踏的脚步声，就像一双脚在地上滑蹭前行的脚步声。</p>
+<p>脚步声由远及近，直到停在我床边戛然而止，我缩在被子里大气都不敢喘。</p>
+<p>更不敢露出头去看。</p>
+<p>这时，八爷给我的符在我手心里开始灼灼地发热，滚烫的灼烧感，让我心里稍微安定了几分。</p>
+<p>又想到八爷说，翠翠看不到我，我偷偷地松了口气。</p>
+<p>7</p>
+<p>房间内久久没有动静，就在我以为翠翠是不是走了的时候，床头的一声「句句」把我吓得险些尖叫出声。</p>
+<p>尖叫声卡在喉咙里，被我硬生生地咬着舌头，咽了下去。</p>
+<p>见我久久不回应，翠翠吼了一声……</p>
+<p>我瑟缩在床上，吓得浑身发抖。</p>
+<p>翠翠站在床头幽幽地唱着：「冤有头，债有主，奈何奈何一家亲。」</p>
+<p>「句句，把被子拿下来，看看我，看看我……」</p>
+<p>翠翠的声音如泣如诉的，特别哀怨。</p>
+<p>而且声音带着一丝说不明白的蛊惑，我不受控制地慢慢揭开了被子。</p>
+<p>因为我是头朝下趴着，所以揭开被子后第一眼看到的是，一双踮着脚跟穿着红色绣花鞋的惨白阴森的脚。</p>
+<p>我吓得大气不敢喘，但是头还是不受控制地慢慢地向上望去。</p>
+<p>穿着大红嫁衣的翠翠，站在我床边，正幽幽地看着我。</p>
+<p>大白蜡烛映照得翠翠的脸惨白惨白的。</p>
+<p>翠翠明明是在笑，但是眼睛中却流出两行血泪，就那样直勾勾地看着我。</p>
+<p>我死死地咬着舌头，生怕因为害怕喊出声音，被翠翠知道我在哪。</p>
+<p>翠翠看着我嘿嘿地笑，看得我浑身发毛。</p>
+<p>那直勾勾的眼神，不像是不知道我在哪的样子……</p>
+<p>莫非翠翠能看得到我？</p>
+<p>这个想法一出，我被吓得浑身冒着冷汗。</p>
+<p>不可能不可能，八爷说了，只要鞋尖对床就没有人能看到我。</p>
+<p>巧合，巧合，翠翠不可能知道我在哪的……</p>
+<p>8</p>
+<p>翠翠就那么生硬硬地站在床边，盯着我看。</p>
+<p>我半蹲着坐在床上，全身发抖，浑身发麻，一动也不敢动。</p>
+<p>过了好久，翠翠幽幽地叹了口气，转身向门外飘去，翠翠转身的那一瞬间，大白蜡烛瞬间熄灭。</p>
+<p>我整个人瘫软在床上，大口大口地吸着气。</p>
+<p>我就这么瘫软着，直到天边开始泛起肚白，太阳开始徐徐升起。</p>
+<p>我一个咕噜起身，穿起鞋，跌跌撞撞地向门外跑去。</p>
+<p>我刚开门，就发现八爷站在我门口。</p>
+<p>就那么直挺挺地站着。</p>
+<p>八爷看到我瞳孔剧缩，上前来拉住我的手，特别用力的那种拉，攥得我手腕隐隐作痛。</p>
+<p>「昨晚上她没来？」</p>
+<p>我紧赶着摇头：「来了，但是我听您的鞋尖对床，她没有找到我……」</p>
+<p>说到她没有找到我的时候，我又下意识地闭上了嘴，想起昨晚上翠翠那直勾勾的眼神，她是真的没有找到我吗？</p>
+<p>八爷盯着我看了好一会，才幽幽开口：「她只是在你床边站了一会就走了吗？」</p>
+<p>我疯狂点头。</p>
+<p>9</p>
+<p>这时候我妈喜笑颜开地带着我哥从门口进来。</p>
+<p>对，我哥出车祸的事情已经解决了，阴婚我也替他配了，他现在什么事都没有了。</p>
+<p>自然趾高气扬地回来了。</p>
+<p>我妈话音在耳边回荡着：「我可怜的阔娃竟然瘦了这么多，妈等会给你做点好吃的，好好给你补补。」</p>
+<p>我妈只顾对着我哥嘘寒问暖，从始至终没给我一个眼神。</p>
+<p>我黯然神伤地低下了头。</p>
+<p>「你手里拿着什么东西？」</p>
+<p>八爷的一声怒吼把我吓得一个激灵，我猛地抬头向我哥望去，才注意到我哥手里拿着一条手指粗细的白蛇。</p>
+<p>我哥冲着八爷扬了扬手：「八爷这几天受累了，这是我在我家墙根抓的白蛇，虽然说小是小了点，但是这么通体发白的蛇也不常见」</p>
+<p>「等下就让我妈给炖了，咱们大家伙都补补。」</p>
+<p>我妈在旁边附和着：「中，等下妈就给你炖了，八叔，您看阔娃多孝顺，还知道给您抓蛇补身子。」</p>
+<p>我妈自顾自地说着，丝毫不顾及八爷已经愤怒到极致的神情。</p>
+<p>八爷快步上前甩了我哥一个大嘴巴子，我哥被甩得懵逼了一秒。</p>
+<p>「快把你手里的蛇放了。」八爷指着我哥手里的小白蛇，急得直跺脚。</p>
+<p>但是我哥从小到大被我妈惯坏了，从我哥出生到现在，没人动过他一根手指头。</p>
+<p>八爷赏了他两个大嘴巴子，我哥还能安安生生地听他话才是怪事。</p>
+<p>我哥趁八爷不注意的时候，扬起手里的蛇，狠狠地朝着地面上摔去。</p>
+<p>来回摔了四五下，本来还生龙活虎的蛇，立马就不动了。</p>
+<p>八爷没想到我哥会来这么一手，想阻止都来不及。</p>
+<p>等八爷反应过来后，白蛇已经死得透透的了。</p>
+<p>八爷腿一软，跌坐在地上，脸色煞白煞白的，没有一丝血色，嘴里一直呢喃着：「完了完了……」</p>
+<p>我妈虽然对八爷打我哥的事情很不满，但是八爷到底是长辈。</p>
+<p>我妈上前去扶八爷起来：「八爷，不就是一条蛇吗，您太小题大做了，把阔娃都吓到了。」</p>
+<p>八爷没搭我妈的话，抬起眼皮，有气无力地看了我妈一眼，跌跌撞撞地走了。</p>
+<p>我哥看着八爷颓败的模样，得意地昂着头，像个斗胜的公鸡。</p>
+<p>晚上的时候，我妈用白蛇给我哥炖了一大碗汤。</p>
+<p>我哥呼哧呼哧全吃了，看着我哥满嘴冒油星的样子，我脊背生出来一种说不清的寒意。</p>
+<p>10</p>
+<p>我躺在床上，窗户外边已经黑透了，但是我还是没有一点睡意，翻来覆去的死活睡不着。</p>
+<p>心里慌慌的，总觉得有什么事情会发生。</p>
+<p>我在床上左右翻滚的时候，门吱呀一声开了。</p>
+<p>穿着一身大红嫁衣的翠翠，晃晃悠悠地从门外飘了进来。</p>
+<p>我吓得瞬间从床上弹了起来，豆大的汗珠从我脑门上滴答滴答地滑落。</p>
+<p>屋子的门无风自关。</p>
+<p>就这样僵持了好久，翠翠也没有什么动作，就那么直勾勾地盯着我。</p>
+<p>我吞了口口水，往床尾缩了缩。</p>
+<p>我们两个就这么僵持着，过了好一会，在我昏昏欲睡的时候，我被一阵嘶嘶的声音搅得瞬间惊醒了。</p>
+<p>我清楚明白这是蛇吐信子时候嘶鸣的声音，而且数量特别庞大，不是一条。</p>
+<p>我联想到白天的白蛇，还有八爷面如死灰的样子，料想我哥今天吃的蛇肯定不是普通的蛇。</p>
+<p>我抱着被子瑟瑟发抖，我甚至能清楚地听到蛇的嘶鸣声离我越来越近。</p>
+<p>然后院子里传来各种家禽的叫声，还有我哥和我妈尖厉的嘶吼声。</p>
+<p>我完全能想象得到我妈在经历着什么，我一个咕噜从床上跳起来，想下床的时候，一直沉默的翠翠开口了。</p>
+<p>声音很呆滞：「句句，别去，别怕。」</p>
+<p>翠翠说话的空当，已经有十几条蛇爬到我房间的窗户上了。</p>
+<p>黑暗中，交缠舞动的蛇影格外地清晰，我看得头皮发麻，有点瑟缩。</p>
+<p>又想到我妈和我哥一贯对我的态度，我彻底绝了出去的想法，最后瘫软在床上。</p>
+<p>直到整个家里没有一点声音，直到我窗口的蛇慢慢地退去。</p>
+<p>这一晚上，我再没有一点睡意，就愣愣地等着天破晓。</p>
+<p>天快亮的时候，翠翠转身走了。</p>
+<p>到了门口她又停顿了一下，依旧是呆滞嘶哑的声音：「句句，谁都别信，任何人都别。」</p>
+<p>11</p>
+<p>我打开房门，满院子的动物骨架，还有残留的毒液和蛇爬行过的痕迹，这一切，都在昭示着昨天晚上发生过什么。</p>
+<p>八爷缓缓地从门外走了进来，不过一天没见，八爷的头发竟然全白了，脸色也很难看，就像整个人没了精气神一样。</p>
+<p>八爷扫了一眼我家叹了口气：「造孽啊妖孽啊。」</p>
+<p>我没说话，呆滞地向我妈房间走去。</p>
+<p>「句句，」八爷叫住了我，「别去看了，等会我让人去吧。」</p>
+<p>八爷释放出的善意，让我忍不住鼻子一酸，顿在原地看着八爷。</p>
+<p>八爷把我带到了他家里，令我震惊的是，八爷的家里竟然也一片狼藉。</p>
+<p>院子里全部都是动物骨架，所幸，人都没事。</p>
+<p>八爷看着我，叹了一口气：「昨晚上不止你家，全族都遭难了，但是只有你家死人了。」</p>
+<p>「句句啊，昨天你哥摔死的那条蛇是我请过来坐镇的常仙啊，常仙本来存着善意来帮忙了，但是你哥杀了他，你妈炖了他，所以他们两个的死，谁都没有办法。」</p>
+<p>我黯然地低下了头。</p>
+<p>随后八爷枯瘦的手抓住了我的胳膊：「句句，你是无辜的，你们一房现在就剩你一个人了，我必须要保住你。」</p>
+<p>我震惊地看着八爷：「八爷，这事情还没过去吗？」</p>
+<p>八爷摇着头：「完全没有，常仙报复心很强，讲究不死不休，昨晚上没对你下手，应该是你刚配完阴婚，阴气很重」</p>
+<p>「所以常仙没发现你，但是今儿晚上肯定还会去的。」</p>
+<p>想着昨天窗户上舞动的蛇群，我差点腿软得趴在地上。</p>
+<p>「八爷，救救我。」</p>
+<p>八爷上下地打量着我，答非所问地说：「翠翠昨晚上去了吗？」</p>
+<p>我不敢有丝毫隐瞒：「去了，在我床边站了一晚上。」</p>
+<p>八爷若有所思地点了点头。</p>
+<p>「八爷，翠翠是在保护我吗？」</p>
+<p>八爷瞪了我一眼，冷喝道：「红煞怎么可能会救你，她去是想害你，但是昨晚上常仙也在，是两方僵持不下，你因祸得福了。」</p>
+<p>八爷咬着牙：「事情一样一样地来，先解决了常仙再解决红煞。」</p>
+<p>12</p>
+<p>八爷又递给我两张符，叮嘱我，一张贴在左侧大门上，一张贴在右侧大门上。</p>
+<p>这样能保证我今儿晚上平安无恙。</p>
+<p>八爷眯着眼睛看着我：「句句啊，先想办法把今晚上过了，过了今天晚上，我再想办法和常仙谈谈，彻底把这个事情解决了。」</p>
+<p>八爷语气说得很诚恳，而且现在也是我唯一能仰仗的长辈，我急忙接下八爷的符，并跟八爷再三保证，晚上一定会听话的，八爷这才松了口气。</p>
+<p>13</p>
+<p>天已经黑透了，我躺在床上翻来覆去的睡不着。</p>
+<p>今天晚上，说不出来的平静，翠翠也没有来，常仙至今也没有动静，总感觉平得有点说不出的怪异。</p>
+<p>我甚至觉得这种平静还不如翠翠在的时候……</p>
+<p>这个想法刚冒出来，我就暗骂自己贱骨头。</p>
+<p>平平静静的难道不好吗？一定是八爷给我的符起了作用了。</p>
+<p>我强迫自己闭上眼睛镇静下来，不再去想那些乱七八糟的事情。</p>
+<p>就这么耗着耗着，我竟然真的睡着了。</p>
+<p>也不知过了多久，我是被一阵很杂乱的声音吵醒的。</p>
+<p>我迷迷糊糊地听着是蛇吐信子的声音，嘈嘈切切的，声音很杂乱。</p>
+<p>我一个激灵就从床上弹了起来。</p>
+<p>再定睛一看，窗户上果然爬满了蛇。</p>
+<p>跟昨天不一样的是，昨天的蛇只是在窗户上趴着，并没有别的什么行动。</p>
+<p>而今天的蛇则是和疯了一样，疯狂地撞击着玻璃。</p>
+<p>我缩在床角瑟瑟发抖，眼睁睁地看着窗户上的玻璃被蛇群撞了个洞。</p>
+<p>破口越来越大，渐渐地有一些体积小的蛇从窗口爬进来了。</p>
+<p>很快，我房间的地面上就爬满了蛇，窸窸窣窣地，交缠着向我床边攀爬。</p>
+<p>原来一个人恐怖到极致，连尖叫都发不出。</p>
+<p>就在我彻底绝望的时候，一阵悠扬的箫声传来，正在攀爬不止的蛇，突然都停了下来，过了一小会，又统统退却，向着门外爬去。</p>
+<p>等到屋子里的蛇全部都消失不见后，从外边走进来一个四五十岁的中年男人。</p>
+<p>13</p>
+<p>我看着男人，过了好久，我才找到自己的声音：「是你救了我？」</p>
+<p>男人皱着眉头上下打量着我点了点头。</p>
+<p>过了好久竟然轻笑出声：「你这娃娃，年纪不大，摊上的事情倒是不少，你招惹了什么人，这么咬牙切齿地想要把你置于死地。」</p>
+<p>男人说得我一阵迷茫，有人要害我？没有啊。</p>
+<p>男人接着说：「我叫岁贡，是个出马仙，是常仙家的弟子，路过这里看到你家万蛇潮涌，才想来看看发生了什么。」</p>
+<p>「没想到，刚进门就看到你家门口贴着献祭符。」</p>
+<p>我瞪大眼睛不可置信地看着岁贡：「你说什么？献祭符，那不是保我平安的吗？」</p>
+<p>岁贡摇着头：「非也非也，门口的两张符，一张是避煞符，是帮你规避恶鬼的，还有一张是献祭符，是要把你献祭给常仙的」</p>
+<p>「如果我没猜错的话，应该是你们一族做了什么对常仙大逆不道的事情，才有人想出这个法子，把你连人带魂都献祭给常仙」</p>
+<p>「以此来平息常仙的怒火。」</p>
+<p>献祭？我脑子突突地跳，是八爷想献祭我吗？</p>
+<p>我盯着岁贡，不知道他的话该不该信。</p>
+<p>八爷是把我从小看到大的长辈，而岁贡刚才也确确实实救了我的命。</p>
+<p>岁贡托着下巴看着我，你身上竟然还有跟红煞的阴婚。</p>
+<p>不如你和我说说，这个是怎么回事？</p>
+<p>14</p>
+<p>岁贡到底救过我的命，他问出来了我也不好意思推托。</p>
+<p>就把和翠翠配阴婚的事情，当个闲话说给岁贡听了。</p>
+<p>岁贡听完之后拍着腿哈哈大笑</p>
+<p>「你小子，实在太倒霉了，每次出事，你们家里的人都第一个想着拿你顶雷」</p>
+<p>「你什么意思？」我盯着岁贡。</p>
+<p>岁贡抓起酒壶咕咚咕咚地灌了两口：「按你说的，那个叫翠翠的女娃娃必成红煞。」</p>
+<p>「你家里人为了平息女娃娃的怨气，把你送给了翠翠当新郎官。」</p>
+<p>「但是配完阴婚你煞气入体，只要红煞近你的身，你必死无疑，所以让你配阴婚，看似是一条活路，实则是一条死路。」</p>
+<p>「一个你全家人的活路，你自己一个人的死路。」</p>
+<p>我被岁贡说得脊背发凉，但是还是不死心地辩驳：「八爷教了我翠翠看不到我的办法，也给了我符的。」</p>
+<p>我话说完，岁贡笑得更欢了。</p>
+<p>「你说的那个符，我没看到，暂且不论，单说你八爷教你的翠翠看不到你的办法。」</p>
+<p>「鞋尖对床？」岁贡冷哼一声，「鞋尖对床，鬼洞房。」</p>
+<p>「那不是让翠翠看不到你，是怕翠翠看不到你。」</p>
+<p>我还想再说什么，可一想到前天晚上，翠翠确实直勾勾地盯着我看，那样子，一点都不像看不到我的样子。</p>
+<p>还有今儿晚上，如果不是岁贡过来，我可能早就是一架白骨了。</p>
+<p>我瘫坐在地上，八爷，确实是要害我，我信了。</p>
+<p>15</p>
+<p>「有趣有趣，一个好鬼一个坏人。」</p>
+<p>岁贡在旁边念叨着。</p>
+<p>「好鬼？」</p>
+<p>「对，」岁贡点点头，「确实是好鬼，你家人把你送给翠翠，翠翠如果想取你性命，这上穷碧落，没有一个人能挑出一点理。」</p>
+<p>「可偏偏，她没取你性命，甚至昨晚上还护了你，我听你所言，昨晚上群蛇如果不是有红煞震慑的话，你觉得你能活到现在？」</p>
+<p>「这世道啊，当真有趣啊，恶鬼是善，善人是恶。」</p>
+<p>「恶鬼哪能比得过人心啊。」</p>
+<p>岁贡哈哈大笑着。</p>
+<p>待岁贡笑完了，我问他：「常仙还会再来吗？」</p>
+<p>岁贡没有一丝犹豫地回答：「会，常仙讲究不死不休，你今儿晚上没有献祭完成，明天晚上常仙必定还会卷土重来。」</p>
+<p>16</p>
+<p>我看着岁贡：「是不是随便一个人献祭就可以。」</p>
+<p>岁贡摇摇头：「自然不是，给常仙献祭必然得是极阴的人，你和红煞配了阴婚，你自然是可以的。」</p>
+<p>「再有就是行走阴阳两界的人，这种人身上阴气很重，也是可以的。」</p>
+<p>我双眼一亮：「八爷是不是也可以？」</p>
+<p>「他会道术。」</p>
+<p>岁贡盯着我：「你想要你祖宗的命？」</p>
+<p>我冷笑一声：「他从未对我有半点养育之恩，算不得我亲祖宗。」</p>
+<p>「而且他如此算计我，我还要以德报怨，自我牺牲献祭救他的命吗？」</p>
+<p>岁贡盯着我半晌，突然笑了：「果然人心比鬼恶啊，我倒是可以教你献祭办法，但是你八爷年纪大了，常仙可能看不上哟。」</p>
+<p>我低头沉吟半晌：「还和年龄有关。」</p>
+<p>岁贡漫不经心地回答：「那是自然。」</p>
+<p>「没关系」我摇了摇头，「你只管教我，明天晚上我去找八爷，能成自然是最好的，如果成不了，麻烦你帮我收尸」</p>
+<p>岁贡盯着我沉吟了半晌：「我不喜欢多管闲事，不过你们这个事情我很感兴趣，也罢，我明天晚上就陪你等着，如果你死了，我一定帮你收尸。」</p>
+<p>17</p>
+<p>第二天，天刚蒙蒙亮，我就去找了八爷。</p>
+<p>等我从八爷家回来后，已经是正午了，岁贡竟然还没睡醒。</p>
+<p>我上前晃了岁贡好久，岁贡才睁开蒙眬的睡眼。</p>
+<p>「成了？」岁贡问我。</p>
+<p>我点点头。</p>
+<p>「怎么成的？」</p>
+<p>「其实没什么，」我看着岁贡，「我只是实话和八爷说了」</p>
+<p>岁贡摸着下巴，饶有兴致地看着我：「实话实说， 他会同意？」</p>
+<p>「会。」我看着岁贡的眼睛坚定地回答。</p>
+<p>「八爷可能会不在乎我的死活，但是不可能不在乎整个家族的死活。」</p>
+<p>「在八爷眼里，家族很重要，最起码要比他的命重要得多。」</p>
+<p>「八爷答应我，他先献祭，用他的命换我的命，但是如果他失败了，我就要用我的命去换全族的命。」</p>
+<p>岁贡又仰头喝了两大口酒，叹道：「很复杂，我扯不清楚。」</p>
+<p>我盯着岁贡的酒葫芦，答非所问地说：「我家里有我妈藏了三十多年的老酒，本来想等我哥结婚的时候再开封的。」</p>
+<p>「但是我哥死了，我拿给你喝吧。」</p>
+<p>「算报答了你昨晚上救我，也劳烦你，如果我死了，帮我收尸。」</p>
+<p>岁贡听到好酒，眼睛一亮，几乎没有犹豫就答应了我。</p>
+<p>18</p>
+<p>晚上的时候，岁贡躺在我床上昏昏欲睡：「你八爷怎么还没来？」</p>
+<p>「不会骗你的吧。」</p>
+<p>我低着头看着地上，闷声说：「不会，如果他敢不来，我宁愿自杀也不会献祭。」</p>
+<p>岁贡手里捏着我给他灌的酒，一口一口地喝着。</p>
+<p>我抬起头，看着他：「你是好人还是坏人？」</p>
+<p>岁贡哈哈大笑：「这世界上有好人吗？我帮你只是因为对你的事情感兴趣。」</p>
+<p>而且，岁贡冲我扬了扬手里的酒葫芦：「你也请我喝酒了，我们不拖不欠的。」</p>
+<p>「不是，」我闷闷地说，「你是个好人。」</p>
+<p>「所有的人都在算计我，最起码你没有。」</p>
+<p>岁贡眯着眼睛：「我从来都不是好人，但是我没见过比你更可怜的人，所以我想当一次好人。」</p>
+<p>这个时候八爷从大门走了进来。</p>
+<p>我看着八爷，轻飘飘地对岁贡说：「岁贡，可惜啊，我想活着。」</p>
+<p>岁贡手里的酒葫芦应声掉在地上，他盯着我：「酒里有毒。」</p>
+<p>我摇头：「没有，只是放了一些我们这里的药。」</p>
+<p>「岁贡，马上你会睡过去，你不会感觉到痛的，你放心。」</p>
+<p>岁贡盯着我：「为什么？」</p>
+<p>「因为啊，岁贡，我不想死，我一点风险都不想冒，你是出马仙，也是最妥帖的人选。」</p>
+<p>岁贡仰头哈哈大笑：「我这一辈子就这一次不设防，就动了一次恻隐之心，就多管了一次闲事啊。」</p>
+<p>我低下头：「对不起。」</p>
+<p>我再抬头的时候，岁贡已经昏睡过去了，八爷在我家桌子上画献祭符。</p>
+<p>时不时地看一眼岁贡：「出马仙，再合适不过了。」</p>
+<p>八爷等画完以后，满头大汗地瘫软在地。</p>
+<p>我上前去扶住八爷，八爷有些吃惊，随后又任由我把他扶起来。</p>
+<p>八爷叹了口气：「句句，别怪八爷，八爷实在……没有办法。」</p>
+<p>我垂下头：「自然不会。」</p>
+<p>19</p>
+<p>我扶着八爷朝八爷家走的时候，村里的支路上涌满了密密麻麻的蛇，朝着我家的方向爬去。</p>
+<p>我和八爷走过的地方蛇会自动绕行。</p>
+<p>八爷看着这一幕，松了口气：「献祭成功了，那个出马仙，已经死了。」</p>
+<p>20</p>
+<p>到了八爷家之后，穿着大红嫁衣的翠翠，正在院子里等着我们。</p>
+<p>我能明显地感觉到，八爷浑身都在发抖。</p>
+<p>「红、红煞。」</p>
+<p>我把八爷甩到一旁：「八爷，出马仙人不错，对我有恩，他死了，我心里不舒服，想着给他报仇。」</p>
+<p>「献祭符是你画的，所以杀了你给他报仇再合适不过了。」</p>
+<p>八爷浑身发抖地看着翠翠。</p>
+<p>翠翠踮着脚尖，一步一步地走向八爷……</p>
+<p>番外 1</p>
+<p>岁贡献祭的前一天晚上，他问我还有什么愿望吗？</p>
+<p>我想了想，我说我想见见翠翠，她是世界上唯一一个对我好的人，我想问问为什么。</p>
+<p>岁贡哈哈大笑，给我画了引魂符。</p>
+<p>翠翠来了之后，岁贡去了我哥的房间，把空间留给了我和翠翠。</p>
+<p>翠翠依旧踮着脚尖，目光呆滞地看着我，我问她：「你为什么不杀我，反而救我？」</p>
+<p>翠翠盯着我，声音很机械：「你是好人。」</p>
+<p>「小时候，你给过我一块糖。」</p>
+<p>翠翠这么说，我突然想起，好像确实有这么一回事。</p>
+<p>是我妈打麻将赢了，心情好，给了我两块糖。</p>
+<p>那天，我又刚好去邻村办事，看到了脸肿得特别高的翠翠。</p>
+<p>我犹豫了好久，把糖分给了她一块。</p>
+<p>我思考了好久，翠翠为什么要救我，却没想到，原来是因为这个，原来只是因为一块糖……</p>
+<p>番外 2</p>
+<p>翠翠杀了八爷后，好像变得没那么呆滞了。</p>
+<p>我看着翠翠：「以后你怎么办？」</p>
+<p>「我想，」翠翠看着我突然笑了，「我妈嫌弃我是女孩子，天天对我非打即骂，我想当男孩子。」</p>
+<p>我看着翠翠，诚挚地说：「那祝你下辈子得偿所愿。」</p>
+<p>翠翠桀桀桀地笑着：「不要下辈子，你身上阴气很重，我剥了你的皮套我身上就可以。」</p>
+<p>我脑门上冷汗直流，往后退了两步，颤抖着问她：「你什么意思？」</p>
+<p>翠翠步步逼近：「我想，要你的皮」</p>
+<p>「恩将仇报，人不为己，天诛地灭，你刚教我的，你忘了吗？」</p>
+<p>我不死心地看着翠翠：「所以，你从一开始就是为了我的皮？」</p>
+<p>翠翠摇着头：「自然不是，是你对出马仙做的事情教我的。」</p>
+<p>「本来我还能压抑得住，但是你又让我杀了八爷，我才知道，原来杀戮这么美妙。」</p>
+<p>看着近在咫尺的翠翠，我通体发麻地闭上了眼睛。备案号:YXX1lRBzXj4TYDZ58AzCM1Mb</p>
+<p>.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/6/25-%E7%BA%A2%E7%93%B7%E7%A5%AD/" title="红瓷祭">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">红瓷祭</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/22-%E7%BA%A2%E9%9B%BE%E9%87%8D%E7%8E%B0/" title="红雾重现">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">红雾重现</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

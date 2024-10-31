@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妻子的秘密 | 墨海拾贝</title>
+
+    
+<link href="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2023/3/20-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2023/3/20-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="妻子的秘密">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta name="twitter:title" content="妻子的秘密">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="妻子的秘密">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="wordCount" content="6592">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26302.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">妻子的秘密</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">0001-01-01T00:00:00Z</span>
+          
+
+          | <span>14分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">0001-01-01T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://blog.pi3.fun" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%a6%bb%e5%ad%90%e7%9a%84%e7%a7%98%e5%af%86&amp;url=https://mohai.us.kg/posts/2023/3/20-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2023/3/20-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%a6%bb%e5%ad%90%e7%9a%84%e7%a7%98%e5%af%86%20https://mohai.us.kg/posts/2023/3/20-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26302.jpg" alt="妻子的秘密" />
+      
+
+      <p>妻子的秘密(吴双柳心纯)小说全集免费阅读完整版目录 - zhuanlan.zhihu.com《妻子的秘密》描述： 娇妻背叛后，仇人的老婆送上了门。</p>
+<p>第1章 老婆出轨</p>
+<p>夏日炎炎的工地，下午三点钟，五十度的砖头无比烫手。</p>
+<p>“这时候要是能来一瓶冰镇可乐就美滋滋了！”</p>
+<p>在工地辛苦卸货的我，看着自己那副磨破了的手套，抿了抿自己干燥的嘴唇。</p>
+<p>自从三年前公司破产后，为了养活如花似玉的老婆和天真可爱的儿子，我买了一辆二手货车，开车拉货。</p>
+<p>为了多挣点钱，我还会帮忙卸货，下雨天或者晚上没单子的时候，我就兼职送外卖。</p>
+<p>然而，刚把车上的货卸完，我还准备再接一单的时候，电话突然响了起来。</p>
+<p>我拿起手机一看，是老婆打来的，连忙接通。</p>
+<p>“宝贝，有什么事吗？”</p>
+<p>虽然结婚七年了，但我依旧叫她宝贝，宠她如初。</p>
+<p>“爸爸……”</p>
+<p>然而听筒里面传来的却是五岁半儿子的声音。</p>
+<p>儿子的语调中，带着一点哭腔。</p>
+<p>“怎么了小星？是不是又惹妈妈生气了？”我笑了笑，对淘气的儿子问道。</p>
+<p>因为一般儿子打电话过来，基本都是告状的，我想这次也不例外。</p>
+<p>“不是，是有一个叔叔来我家吃饭，吃完饭，那个叔叔就抱起妈妈就去了房间，然后叔叔一直打妈妈，都把妈妈打哭了……爸爸，你什么时候回来啊？我好害怕……”</p>
+<p>听到儿子的回答后，我脸上的笑容顿时就凝固了，脑袋突然一片空白！</p>
+<p>那哪里是打什么妈妈啊，这明明就是在偷情啊！</p>
+<p>之后儿子说的话，我基本没听，因为我的心态已经彻底崩了！</p>
+<p>我甚至能隐约听到，此时电话那头正传来一阵阵老婆断断续续的声音！</p>
+<p>内心的痛苦和愤怒，令我呼吸愈发急促，手也气得在发抖！</p>
+<p>和儿子挂完电话后，我整个人摇晃了一下，脑袋嗡嗡作响，一时间头晕目眩……</p>
+<p>为什么？为什么会这样？</p>
+<p>要知道，从结婚到现在，我可从来都没有亏待过我老婆啊！</p>
+<p>哪怕是公司破产了，我也没让她出去工作，把她当公主一样宠着。</p>
+<p>我没日没夜的工作，拼死拼活每个月还能挣上两万左右。</p>
+<p>虽然现在的日子是很累，但只要不苦着老婆，不苦着儿子，我都能熬下去，而且我坚信自己能够东山再起！</p>
+<p>……</p>
+<p>我老婆，是十年前我在一次朋友结婚的宴席上认识的。</p>
+<p>面莹如玉婉丽非凡的她，有着一双勾人的明眸，身材更是好到没话说。</p>
+<p>天雷勾动了地火，仅一眼，我就认定了她，并开始疯狂的追求她！</p>
+<p>虽然我当时也算一表人才，但性格高冷的她对我一直爱理不理。</p>
+<p>因为我没钱，出身农村，而且只是一家国企公司里面的一个小设计师，一个月工资一万都不到。</p>
+<p>但生活在城市小康家庭中的她，过惯了娇生惯养掌上明珠的生活，所以根本就看不上我这个农村仔。</p>
+<p>在追她的过程中，她甚至好几次都明确告诉我，她是不可能嫁给我这个穷屌丝的！</p>
+<p>但我并没有放弃，她的拒绝，变成了我奋发向上的动力。</p>
+<p>为了追她，我直接辞掉了在国企稳定带编的工作，开始经商，贷款创办了自己的设计公司。</p>
+<p>利用自己的专业优势，利用自己在国企工作时积累的人脉，我的设计公司一路风生水起！</p>
+<p>从无到有，从小到大，从弱到强！不到三年的时间，我的设计公司便在市场上站稳了脚，我的身价，也迈入百万级别！</p>
+<p>小到室内装修边边角角的设计，大到大型建筑总体结构的设计，我的设计公司全部都能接，而且全部都能做好，获得了客户们的一致好评！</p>
+<p>她看到了我的潜力，看到了我公司发展的前景，也看到了我对她的真心。</p>
+<p>所以，在我追她的第四年，当我将两百万的彩礼摆在她父母面前时，她答应嫁给我了！</p>
+<p>结婚一年后，我的身价已迈入了千万级别，而她也为我生下了一个胖小子。</p>
+<p>家庭事业双丰收，站在人生巅峰的我，出手也大方，直接给她父母买了一套将近三百万的房子，还给她妹妹买了一辆五十万的奥迪！</p>
+<p>逢年过节时，孝敬岳父岳母二老的红包，都是几万起，而且从没有断过。</p>
+<p>岳父岳母对我爱不释手，天天在亲戚朋友面前夸赞我这个好女婿！</p>
+<p>我也把乡下腿脚不方便的老妈接到了城里，但老妈来了后一直跟我说在城里住不习惯。</p>
+<p>老妈说她不喜欢进屋就要脱鞋，不喜欢一个人整天面对着电视，不喜欢有味道的空气。</p>
+<p>她天天跟我唠叨着要自己回乡下种菜养鸡，那样自由自在。</p>
+<p>我知道老妈喜欢跟土地和庄稼打交道。</p>
+<p>老爸去世的早，我读书的学费和生活费，都是老妈靠摆地摊卖瓜果蔬菜卖出来的！</p>
+<p>没办法，拗不过老妈回乡下的心，最后我只好花了一百多万在老家给她建了一套别墅，并给了她一张一百万的银行卡。</p>
+<p>接下来的两年，我的家庭生活美满，我的公司也越做越大，成为了业内小有名气的老板。</p>
+<p>但好景不长彩云易散，由于我的疏忽大意，导致在一次大型建筑项目的投标上，我公司员工提供的设计方案，被招标方发现抄袭了另外一家设计公司两年前的作品！</p>
+<p>一石激起千层浪，作为公司法人的我，直接被告上了法庭！</p>
+<p>最终法院判决我公司赔偿对方两千万元的侵权费！</p>
+<p>一时间，资金断裂，名誉受损，我的公司也就此破产，还欠下了数百万元的债务！</p>
+<p>我卖掉了名下所有资产，最后再加上之前给老妈的那一百万现金以及她自己这些年辛苦攒下的所有积蓄，才凑够钱把债务还清。</p>
+<p>然后，刚满三十岁的我，便开始了现在早起晚归的拉货卸货送外卖生活。一干，就是两年。</p>
+<p>期间，我也想过各种办法筹钱重新把公司开起来。</p>
+<p>但由于个人信用问题，银行连一万块都不贷给我。</p>
+<p>我又去找岳父岳母借钱，毕竟当年我是拿了两百万的彩礼才将他们的女儿娶进门的。</p>
+<p>可他们却跟我说要留着那两百万给小女儿买房当嫁妆，直接拒绝了我。</p>
+<p>曾经商业上的朋友，更是对我避而远之。他们甚至还嘲笑我，说我的名声已经被我搞臭了，就算我把公司重新开起来，也不可能接到项目的。</p>
+<p>得志猫儿胜过虎，落毛凤凰不如鸡……</p>
+<p>但即便如此，我也从来没有被命运击垮，也从未动摇过自己的信念。</p>
+<p>我一个人做两个人的工，没日没夜拼死拼活，每个月用一万，自己存一万，等攒够了钱，大不了换个城市从零做起！</p>
+<p>别的不说，我吴双的设计天赋是与生俱来的，只要有了启动资金，只要我用心经营，就一定可以东山再起！</p>
+<p>可是，老婆出轨的消息，却如五雷轰顶一般击穿了我的天灵盖，让我丧失了所有的信念和斗志！</p>
+<p>要知道，她一直都是我奋斗的动力，她一直都是我吴双的信仰啊！</p>
+<p>现在信仰没了，我的天也塌了……</p>
+<p>越想越失望，越想越愤怒！</p>
+<p>彻底崩溃的我，直接从工具箱中拿出扳手放在副驾驶上，然后发动了货车！</p>
+<p>没错，我要亲手锤死这对狗男女！</p>
+<p>第2章 同归于尽</p>
+<p>嘭嘭！！</p>
+<p>想到他们俩在房间内的一幕幕，我忍不住在方向盘上猛的锤了两拳！</p>
+<p>没有被戴过绿帽，永远也不可能明白我此时多么难受多么痛苦！</p>
+<p>我不停的加速，不停的超车，就是想快点赶回家中，亲手锤死他们！</p>
+<p>这样的狗男女，绝对不能放过他们！</p>
+<p>一个小时后，我回到了小区门口。</p>
+<p>把车停好后，我拿起副驾驶上的扳手，匆匆奔向了电梯！</p>
+<p>在电梯中，回忆着曾经和老婆在一起时的甜蜜，回想着我们一家三口的幸福生活，我眼角的不知不觉就湿润了。</p>
+<p>要知道，就在昨天，我们俩口子还带着儿子去看了电影去逛了游乐园啊！</p>
+<p>我之所以这么拼命的工作赚钱，就是不想让老婆孩子跟着我受苦受累。</p>
+<p>但一切都不可能回到从前了，从老婆给我戴绿帽的那一刻起，所有的美好，都已随之破灭！</p>
+<p>等杀了这对狗男女后，我也会自杀，同归于尽，一了百了！</p>
+<p>但想到可爱的儿子和乡下的老妈时，我又陷入了犹豫。</p>
+<p>儿子我可以一起带走，这样一家三口在另一个世界也能团团圆圆整整齐齐，但老妈她……</p>
+<p>想起老妈一瘸一拐的挑着担子去市集上卖瓜果蔬菜的场景，眼泪不自觉的就掉了下来。</p>
+<p>老妈辛苦了一辈子，一把屎一把尿把我拉扯大，供我读完大学，结果我不但没有尽到一点孝心，反而还要老妈白发人送黑发人……</p>
+<p>叮咚！</p>
+<p>就在这时，电梯门开了。</p>
+<p>“柳心纯，这一切都是你害的！”</p>
+<p>“妈，儿子只能下辈子给您尽孝了！”</p>
+<p>虽然心中有所顾虑，但被怒气冲昏头脑的我，已经管不了那么多了！</p>
+<p>我就像一具行尸走肉，不顾一切的冲出了电梯，抡着扳手走向了转角处的出租房！</p>
+<p>唯有杀了他们，才能解心头之恨！</p>
+<p>结果，出租房门口一个熟悉的身影，令我顿时僵在了原地。</p>
+<p>“妈……”</p>
+<p>看到坐在门口地板上的人，竟然是我那住在乡下的老妈时，我懵了……</p>
+<p>老妈头上的白发，比上一次见她时又多了不少。</p>
+<p>她身上穿着的，还是五年前我给她买的那件短袖，短袖看起来很新，平时肯定没怎么穿过。</p>
+<p>而她的身边，则放着大包小包的果蔬鸡蛋土特产。</p>
+<p>“妈，您怎么不进去坐啊？”</p>
+<p>我连忙迈开脚步，上前将老妈从冰冷生硬的地板上扶了起来，心疼的对老妈问道。</p>
+<p>说实话，在看到老妈后，我的心突然就软了下来。</p>
+<p>并不是我原谅了老婆的背叛，而是我不想老妈孤独终老无人送终。</p>
+<p>“心纯说你还没有下班，我就想着在门口等你回来，刚坐下，你就回来了。”老妈咧嘴笑了笑，还是一如既往的轻言细语。</p>
+<p>看到我手中的大扳手，她继续对我笑着问道：“双儿，你怎么拿这么大个扳手，家里有东西要修吗？”</p>
+<p>“是……是的，家里的水管有点漏水，需要修一修。”我愣了愣，连忙将扳手往回缩了缩。</p>
+<p>要是被老妈知道我拿这扳手是用来敲我老婆脑袋的，估计老妈肯定会伤心得晕死过去！</p>
+<p>“对了妈，难道心纯她就没叫你进去坐吗？”我拿起地上的大包小包，一边敲着门，一边对老妈问道。</p>
+<p>砰砰砰！</p>
+<p>我是用扳手敲门的，所以声音非常响。</p>
+<p>“心纯她叫了我进去坐，是我自己没有进去，在外面坐着挺好的，凉快。”老妈眯着眼，慈笑着对我回答道。</p>
+<p>“谁啊！”</p>
+<p>这时，老婆穿着拖鞋从屋内慢吞吞的打开了门。</p>
+<p>“老公？你这么早就回来了？”当老婆看到我站在门口时，有些惊讶的对我问道。</p>
+<p>“嗯。”我冷冷的点了点头，迅速将目光扫向了屋内。</p>
+<p>客厅里，除了儿子在看动画片，没有其他人。</p>
+<p>然后我又快步走向房间。</p>
+<p>我们租的房子不大，两室一厅，要是藏了人的话，我一眼就能瞅出来！</p>
+<p>主卧室中，被子已经被叠得整整齐齐，柜子和床底下都藏不了人。</p>
+<p>狭窄的次卧室中就只有一张空荡荡的床，更不可能藏人。</p>
+<p>很显然，那个奸夫已经走了。</p>
+<p>“吴双，你干什么呢？换了鞋洗了澡再进房间啊！你看你，鞋这么脏，把地板都踩脏了……”</p>
+<p>这时，耳边传来了老婆带着怨气的谩骂声。</p>
+<p>一个女人，只有在对一个男人极其嫌弃的时候，才会用这种语气，才会直呼男人的姓名。</p>
+<p>嫌弃我脏，嫌弃我没有钱，嫌弃我不再风光……</p>
+<p>我握紧双拳，竭力克制着内心的冲动。</p>
+<p>要不是妈在一旁，我此时肯定抡起扳手朝着她的脑门敲过去了！</p>
+<p>但正是因为老妈在旁边，给了我更多思考的时间。</p>
+<p>我不能因为冲动而杀人，我一定要将这女人的丑恶行径揭露出来公之于众！</p>
+<p>杀人还不如诛心，我要让她生不如死，要让她钉在耻辱钉上！</p>
+<p>没有突然消失的爱，只有突然才明白。</p>
+<p>想到这里，我紧握的双拳渐渐松开，脸上的表情也由愤怒变成了冷漠。</p>
+<p>我走出房间，老老实实的换上了拖鞋，为老妈倒了一杯水后，便拿着干净的衣服走进了卫生间……</p>
+<p>……</p>
+<p>“妈，你这次来什么时候走？”正当我还在卫生间洗澡的时候，门外客厅中隐隐约约传来了老婆对老妈的质问声。</p>
+<p>我听到后，气得手中香皂都要被我捏碎了！</p>
+<p>这是人该说的话吗？</p>
+<p>要知道，现在都已经快傍晚了啊！</p>
+<p>老妈从乡下赶来城里，起码要早上五点起床，然后扛着大包小包走将近十里的山路去镇上搭车，而且中途还要转好几次车才能来到我家！</p>
+<p>结果，老妈连杯水都没喝完，老婆竟然就问老妈什么时候走了！</p>
+<p>这也太过分了！</p>
+<p>直到这时，我终于明白当年老妈为什么要执意选择回乡下住了，原来就是因为她遭到了这个不孝儿媳的嫌弃啊！</p>
+<p>第3章 天无绝人之路</p>
+<p>“我明天就走的，家里的农活还没有忙完，而且鸡鸭猫狗也要人喂。”</p>
+<p>紧接着，客厅中传来了老妈的声音。</p>
+<p>心善的老妈，说话永远都是那么温文尔雅。</p>
+<p>即使老婆对她下了逐客令，她也丝毫不生气。</p>
+<p>我知道，老妈是不想给我们添麻烦，不想看到我们夫妻俩因她的到来而吵架。</p>
+<p>“妈……”还在卫生间的我，攥拳暗自心疼道。</p>
+<p>老妈辛苦了一辈子，省吃俭用，就是为了我的生活能好点。</p>
+<p>而我呢？除了给她修了那栋空巢别墅外，就再也没有任何孝敬她老人家的举动了……</p>
+<p>甚至就连曾经给她的那一百万，最后也被我拿去还了债……</p>
+<p>想想都觉得愧疚。</p>
+<p>不行，我不能再委屈老妈了。</p>
+<p>老婆出轨的事，我不能告诉老妈，我也绝不能因为冲动杀妻而酿成大祸。</p>
+<p>我要重振旗鼓，我要报答老妈，我还有很多事要做。</p>
+<p>换好衣服，调整了一下心情后，我走出卫生间，来到了客厅。</p>
+<p>客厅中，老婆在一旁玩着手机，儿子则在一旁看电视，并没有看到老妈的身影。</p>
+<p>“老婆，咱妈呢？”我连忙对老婆问道。</p>
+<p>“做饭去了。”老婆没有抬头，一边在手机上打字和别人嘻嘻呵呵的聊天，一边漫不经心的对我回答道。</p>
+<p>听到老婆的回答后，我的脸立即就阴沉了下来！</p>
+<p>要知道，老妈可是长辈啊！</p>
+<p>而且老妈本来腿脚就不方便，又辛辛苦苦赶了一天的路，却还要来伺候我们的吃喝！</p>
+<p>但老婆呢，竟然躺在沙发上心安理得的玩着手机！</p>
+<p>哪怕去帮老妈洗洗菜也好啊！</p>
+<p>依稀记得以前我有钱的时候，就算是带着老婆回乡下老家，老婆都会主动去帮老妈洗碗洗菜。</p>
+<p>时过境迁，人心尽显，可笑，简直可笑。</p>
+<p>“双儿，洗好澡了吗？赶紧过来帮我搭把手。”当我还在怀古伤今之时，厨房里面的老妈突然唤了我一声。</p>
+<p>“哦哦！好！”我回过神来，失望的看了一眼老婆后，便迅速迈步来到了厨房。</p>
+<p>“双儿，我从家里带了你最喜欢吃的腊肉，但我砍不动了，你过来帮我砍一下。”老妈见我来了后，脸上立即浮现出了笑容，连忙将手中的菜刀递给了我。</p>
+<p>“妈，您先去客厅休息吧，厨房太热了，我来煮就好。”看到老妈满头大汗的样子，我鼻尖一酸，连忙上前去替老妈擦了擦额头上的汗珠。</p>
+<p>“你煮的不好吃，得我主厨才行！”老妈咧嘴笑了笑，并不愿离去。</p>
+<p>“行吧！”看到老妈热忱的眼神，我也笑着点了点头。</p>
+<p>“妈，这次来省城了就多住几天吧，明天带你去下馆子吃大餐。”我怕老妈明天真的就回去了，所以想主动挽留一下她。</p>
+<p>毕竟自己现在也攒了将近二十万的存款了，老妈好不容易来省城一趟，带她出去随便吃点也花不了多少钱。</p>
+<p>“不行，明天我得回去，家里鸡鸭猫狗没人喂。这次来找你，是有事情跟你商量的。”老妈摇了摇头，然后神情变得严肃了起来。</p>
+<p>“什么事？”看到老妈一脸严肃的样子，我心头猛的咯噔了一下，连忙对老妈小心翼翼的问道。</p>
+<p>说实话，我很害怕老妈这时候突然嘣出一句她身体患病了，需要住院需要治疗。</p>
+<p>这样的话，也许我就真的不能再尽孝了……</p>
+<p>“咱村要搞大开发，村里面的房子都要被征收了。开发商说我们家的那栋别墅只能补偿一百万，我觉得补偿有些低，所以想问问你。而且房产证我也带来了，我怕放在家被我弄丢了。”老妈凝着眸，一本正经的对心如鼓跳的我说道。</p>
+<p>说完后，她便从裤兜中将那包裹得严严实实的房产证拿了出来。</p>
+<p>“双儿，我知道你生意上需要启动资金，这笔补偿款要是下来了，对你重振公司应该是有帮助的！从哪里跌倒，就应该从哪里爬起来！”</p>
+<p>老妈一边将房产证递给我，一边用信任的语气对我鼓励道。</p>
+<p>听完老妈把话说完，我长舒了一口气，还好老妈这次带来的不是坏消息。</p>
+<p>看着手中的房产证，我的心中感触颇多。</p>
+<p>当年，在公司破产之后，老妈也跟我说过将这栋别墅卖了好支援我的事业。</p>
+<p>但是，一座乡下的别墅，又是二手的，根本卖不出价钱。</p>
+<p>建房子花了一百多万，最后出三十万都没有人问津，所以当时也就不了了之了。</p>
+<p>好在苍天有眼，天无绝人之路！</p>
+<p>正如老妈所说，有了这笔征地拆迁补偿款，至少在资金上绝对不成问题了！</p>
+<p>“双儿，先切菜吧。如果你明天有空的话，可以跟我回去谈谈价，最近开发商都在。”老妈见我愣在原地，连忙对我催促道。</p>
+<p>“嗯，有空的，我也好久没回老家了。”</p>
+<p>我欣然点了点头，但转瞬便蹙起了眉头，对老妈问道：“妈，房子要是被征收了，到时您住哪？”</p>
+<p>虽然巨额的补偿款确实很诱人，但毕竟是老妈的养老住宅，我不能因为我的事业，而让老妈连房子都没得住。</p>
+<p>“这你就放心吧，我们有安置房的。”老妈笑着对我回答道。</p>
+<p>“那就好！妈，等我重振旗鼓了，再帮您盖一栋大房子！”</p>
+<p>“别盖了，浪费钱，你还是留着钱好好做生意吧……”</p>
+<p>其实我哪里还盖什么房子啊，等我吴双东山再起时，一定要把老妈接到身边孝敬！</p>
+<p>从小到大，不管是我蹒跚学步一事无成的时候，还是我功成名就飞黄腾达的时候，亦或是我倾家荡产青黄不接的时候，一直陪在我身边不离不弃始终为我着想的，就只有我老妈了。</p>
+<p>什么狗屁爱情，全他妈是钱堆出来的！</p>
+<p>老子有钱的时候，对老子百依百顺惟命是从。</p>
+<p>当老子落魄的时候，给老子摆脸色也就算了，关键是他妈的竟然还绿老子！</p>
+<p>古人总结得一点都没错，夫妻本是同林鸟，大难临头各自飞！</p>
+<p>唯有父母，才是自己最不应该辜负的！</p>
+<p>……</p>
+<p>一家人吃完晚饭后，我以散步为由，开车去了趟电科城，买了一套针眼监控器。</p>
+<p>说句心里话，我还是不太愿意相信老婆会出轨。</p>
+<p>在老婆身上倾注了那么多的爱，心中还是对她抱有一丝希望的。</p>
+<p>明天就要和老妈一起回去了，如果老婆真的背着我偷人，我不在的这些天，她肯定会再次把那男人带回家的！</p>
+<p>买这套监控设备，也算是为了给自己一个交代吧。</p>
+<p>如果老婆没有出轨，我依然可以待她如初！</p>
+<p>但如果她确确实实出轨了，我绝不会给她任何机会！.</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2023/5/9-%E4%B8%83%E6%9C%88%E6%AC%A2/" title="七月欢">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">七月欢</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2023/7/7-%E5%A6%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86/" title="妻子的秘密">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">妻子的秘密</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="Pi3-l22/hugo_book"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
