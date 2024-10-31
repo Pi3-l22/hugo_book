@@ -1054,20 +1054,33 @@
 
   <section class="max-w-[65ch] mx-auto space-y-4">
     
+<article>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/2023\/1\/24-15%E6%88%91%E5%9C%A8%E7%8E%8B%E8%80%85%E5%B3%A1%E8%B0%B7%E6%8D%A1%E4%BA%86%E4%B8%80%E4%B8%AA%E5%A4%A7%E7%A5%9E%E7%94%B7%E7%A5%A8\/';
+        this.page.title = '15我在王者峡谷捡了一个大神男票';
+        this.page.url = 'https:\/\/mohai.us.kg\/posts\/2023\/1\/24-15%E6%88%91%E5%9C%A8%E7%8E%8B%E8%80%85%E5%B3%A1%E8%B0%B7%E6%8D%A1%E4%BA%86%E4%B8%80%E4%B8%AA%E5%A4%A7%E7%A5%9E%E7%94%B7%E7%A5%A8\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
 
 
-<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
-  <article>
-    <script
-      src="https://utteranc.es/client.js"
-      repo="Pi3-l22/hugo_book"
-      issue-term="og:title"
-      theme="github-light"
-      crossorigin="anonymous"
-      async>
-    </script>
-  </article>
-</template>
 
 
 
@@ -1160,8 +1173,8 @@
     </div>
 
     <script>
-  window.lightTheme = "emerald"
-  window.darkTheme = "forest"
+  window.lightTheme = "retro"
+  window.darkTheme = "night"
 </script>
 
 
@@ -1210,6 +1223,28 @@
     
 
     
+
+    
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-15FB092M49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-15FB092M49');
+        }
+      </script>
+    
+  
+
 
     
 

@@ -1852,20 +1852,33 @@
 
   <section class="max-w-[65ch] mx-auto space-y-4">
     
+<article>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/2024\/8\/22-%E8%83%BD%E5%86%99%E4%B8%80%E4%B8%AA%E6%B8%A9%E6%B6%A6%E5%A4%A7%E5%B0%8F%E5%A7%90x%E5%86%9B%E9%98%80%E7%9A%84%E6%95%85%E4%BA%8B%E5%90%97_\/';
+        this.page.title = '能写一个温润大小姐X军阀的故事吗_';
+        this.page.url = 'https:\/\/mohai.us.kg\/posts\/2024\/8\/22-%E8%83%BD%E5%86%99%E4%B8%80%E4%B8%AA%E6%B8%A9%E6%B6%A6%E5%A4%A7%E5%B0%8F%E5%A7%90x%E5%86%9B%E9%98%80%E7%9A%84%E6%95%85%E4%BA%8B%E5%90%97_\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
 
 
-<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
-  <article>
-    <script
-      src="https://utteranc.es/client.js"
-      repo="Pi3-l22/hugo_book"
-      issue-term="og:title"
-      theme="github-light"
-      crossorigin="anonymous"
-      async>
-    </script>
-  </article>
-</template>
 
 
 
@@ -1958,8 +1971,8 @@
     </div>
 
     <script>
-  window.lightTheme = "emerald"
-  window.darkTheme = "forest"
+  window.lightTheme = "retro"
+  window.darkTheme = "night"
 </script>
 
 
@@ -2008,6 +2021,28 @@
     
 
     
+
+    
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-15FB092M49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-15FB092M49');
+        }
+      </script>
+    
+  
+
 
     
 
