@@ -3,7 +3,7 @@ title: 有哪一瞬间你觉得男朋友或老公很陋（low）？ - 知乎(1)
 date: 2024-05-08
 lastmod: 2024-05-08
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26172.jpg
 images:

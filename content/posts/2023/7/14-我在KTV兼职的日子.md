@@ -3,7 +3,7 @@ title: 我在KTV兼职的日子
 date: 2023-07-14
 lastmod: 2023-07-14
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26587.jpg
 images:

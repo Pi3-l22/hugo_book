@@ -3,7 +3,7 @@ title: 有没有主是变态，病娇，黑化，囚禁之类的He_ - 知乎
 date: 2023-12-07
 lastmod: 2023-12-07
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26641.jpg
 images:

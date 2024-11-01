@@ -3,7 +3,7 @@ title: Eva2. .0.
 date: 2024-03-05
 lastmod: 2024-03-05
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/5323.jpg
 images:

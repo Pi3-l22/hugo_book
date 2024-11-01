@@ -3,7 +3,7 @@ title: 普通人的 ABO 求生记
 date: 2023-05-10
 lastmod: 2023-05-10
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26667.jpg
 images:

@@ -3,7 +3,7 @@ title: ICU门口，到底是绝望还是希望？
 date: 2022-10-17
 lastmod: 2022-10-17
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26068.jpg
 images:

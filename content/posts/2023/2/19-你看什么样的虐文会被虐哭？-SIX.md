@@ -3,7 +3,7 @@ title: 你看什么样的虐文会被虐哭？-SIX
 date: 2023-02-19
 lastmod: 2023-02-19
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26626.jpg
 images:

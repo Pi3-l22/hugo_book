@@ -3,7 +3,7 @@ title: 过年期间你从七大姑八大姨那里听来的惊天大八卦有哪�
 date: 2024-07-06
 lastmod: 2024-07-06
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26590.jpg
 images:

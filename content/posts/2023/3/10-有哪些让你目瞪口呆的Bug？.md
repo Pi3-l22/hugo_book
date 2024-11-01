@@ -3,7 +3,7 @@ title: 有哪些让你目瞪口呆的 Bug ？
 date: 2023-03-10
 lastmod: 2023-03-10
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26050.jpg
 images:

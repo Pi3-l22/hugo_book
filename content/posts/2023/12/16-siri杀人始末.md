@@ -3,7 +3,7 @@ title: siri杀人始末
 date: 2023-12-16
 lastmod: 2023-12-16
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26596.jpg
 images:

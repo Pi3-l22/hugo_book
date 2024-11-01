@@ -3,7 +3,7 @@ title: 如果穿越成为虐文的配该怎么办？ - DGAF 的回答 - 知乎
 date: 2024-04-13
 lastmod: 2024-04-13
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/5346.jpg
 images:

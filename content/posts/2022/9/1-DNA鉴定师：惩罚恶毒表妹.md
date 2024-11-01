@@ -3,7 +3,7 @@ title: DNA鉴定师：惩罚恶毒表妹
 date: 2022-09-01
 lastmod: 2022-09-01
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/12398.jpg
 images:

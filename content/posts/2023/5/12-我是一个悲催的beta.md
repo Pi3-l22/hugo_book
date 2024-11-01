@@ -3,7 +3,7 @@ title: 我是一个悲催的 beta
 date: 2023-05-12
 lastmod: 2023-05-12
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26052.jpg
 images:

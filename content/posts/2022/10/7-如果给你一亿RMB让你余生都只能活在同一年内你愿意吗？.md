@@ -3,7 +3,7 @@ title: 如果给你一亿RMB让你余生都只能活在同一年内你愿意吗�
 date: 2022-10-07
 lastmod: 2022-10-07
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26626.jpg
 images:

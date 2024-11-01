@@ -3,7 +3,7 @@ title: 恶毒女配化身CP头子
 date: 2023-11-01
 lastmod: 2023-11-01
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26622.jpg
 images:

@@ -3,7 +3,7 @@ title: 玄幻小说中 BOSS 为什么不直接轰杀早期主角？
 date: 2022-12-18
 lastmod: 2022-12-18
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26678.jpg
 images:

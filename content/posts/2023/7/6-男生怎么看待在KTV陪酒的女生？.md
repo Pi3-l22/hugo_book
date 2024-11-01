@@ -3,7 +3,7 @@ title: 男生怎么看待在KTV陪酒的女生？
 date: 2023-07-06
 lastmod: 2023-07-06
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26619.jpg
 images:

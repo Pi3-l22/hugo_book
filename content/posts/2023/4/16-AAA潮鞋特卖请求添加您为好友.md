@@ -3,7 +3,7 @@ title: AAA 潮鞋特卖请求添加您为好友
 date: 2023-04-16
 lastmod: 2023-04-16
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26612.jpg
 images:

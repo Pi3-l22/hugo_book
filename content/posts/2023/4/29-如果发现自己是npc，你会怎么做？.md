@@ -3,7 +3,7 @@ title: 如果发现自己是npc，你会怎么做？
 date: 2023-04-29
 lastmod: 2023-04-29
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26616.jpg
 images:

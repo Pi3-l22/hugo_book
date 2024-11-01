@@ -3,7 +3,7 @@ title: 他的VIP
 date: 2022-11-16
 lastmod: 2022-11-16
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26624.jpg
 images:

@@ -76,15 +76,18 @@ class CrawlerScheduler:
 
             if current_count > last_count:
                 logging.info(f"检测到新文章，从 {last_count} 增加到 {current_count}")
-                self.crawler.crawl_all_articles()
-                self.save_article_count(current_count)
-                
-                # 添加 Git 提交操作
-                git_manager = GitManager()
-                if git_manager.commit_and_push():
-                    logging.info("Git提交成功")
+                # 修改为只爬取新文章
+                if self.crawler.crawl_new_articles(last_count, current_count):
+                    self.save_article_count(current_count)
+                    
+                    # 添加 Git 提交操作
+                    git_manager = GitManager()
+                    if git_manager.commit_and_push():
+                        logging.info("Git提交成功")
+                    else:
+                        logging.error("Git提交失败")
                 else:
-                    logging.error("Git提交失败")
+                    logging.error("爬取新文章失败")
             else:
                 logging.info(f"未检测到新文章，当前文章数: {current_count}")
 

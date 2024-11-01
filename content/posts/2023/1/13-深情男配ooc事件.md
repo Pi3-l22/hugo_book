@@ -3,7 +3,7 @@ title: 深情男配ooc事件
 date: 2023-01-13
 lastmod: 2023-01-13
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/11986.jpg
 images:

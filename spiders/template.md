@@ -3,7 +3,7 @@ title:
 date: 
 lastmod: 
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://cdn.jsdelivr.net/gh/Pi3-l22/pico_rep/img/c.jpg
 images:

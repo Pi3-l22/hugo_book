@@ -3,7 +3,7 @@ title: 你们有没有在某个瞬间发现这个世界有bug的经历？
 date: 2022-11-10
 lastmod: 2022-11-10
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26659.jpg
 images:

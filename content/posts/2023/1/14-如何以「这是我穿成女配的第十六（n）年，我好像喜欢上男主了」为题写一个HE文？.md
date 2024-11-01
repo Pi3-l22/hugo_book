@@ -3,7 +3,7 @@ title: 如何以「这是我穿成女配的第十六（n）年，我好像喜欢
 date: 2023-01-14
 lastmod: 2023-01-14
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26304.jpg
 images:

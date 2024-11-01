@@ -3,7 +3,7 @@ title: Siri有什么令人毛骨悚然的问题回答？
 date: 2023-07-19
 lastmod: 2023-07-19
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26172.jpg
 images:

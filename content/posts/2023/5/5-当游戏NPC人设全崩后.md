@@ -3,7 +3,7 @@ title: 当游戏 NPC 人设全崩后
 date: 2023-05-05
 lastmod: 2023-05-05
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26641.jpg
 images:

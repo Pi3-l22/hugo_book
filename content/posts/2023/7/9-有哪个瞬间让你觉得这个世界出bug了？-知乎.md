@@ -3,7 +3,7 @@ title: 有哪个瞬间让你觉得这个世界出bug了？ - 知乎
 date: 2023-07-09
 lastmod: 2023-07-09
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/25913.jpg
 images:

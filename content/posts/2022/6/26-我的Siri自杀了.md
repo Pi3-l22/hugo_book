@@ -3,7 +3,7 @@ title: 我的Siri自杀了
 date: 2022-06-26
 lastmod: 2022-06-26
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26584.jpg
 images:

@@ -3,7 +3,7 @@ title: 人类的身体存在哪些bug
 date: 2022-09-03
 lastmod: 2022-09-03
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26674.jpg
 images:

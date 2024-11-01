@@ -3,7 +3,7 @@ title: 我怀疑我是恐怖小说 npc
 date: 2023-05-12
 lastmod: 2023-05-12
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26622.jpg
 images:

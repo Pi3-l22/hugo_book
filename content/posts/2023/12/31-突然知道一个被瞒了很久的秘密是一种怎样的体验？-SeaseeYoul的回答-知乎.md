@@ -3,7 +3,7 @@ title: 突然知道一个被瞒了很久的秘密是一种怎样的体验？ - S
 date: 2023-12-31
 lastmod: 2023-12-31
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26589.jpg
 images:

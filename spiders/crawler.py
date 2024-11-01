@@ -187,7 +187,7 @@ class ArticleCrawler:
                 page_url = f"{self.base_url}page/{page}/#board"
                 logging.info(f"正在爬取第 {page} 页")
                 if not self.crawl_page(page_url):
-                    logging.error(f"爬取第 {page} 页失败")
+                    logging.error(f"爬��第 {page} 页失败")
                 time.sleep(2)  # 页面间延时
                 
         except Exception as e:
@@ -203,6 +203,58 @@ class ArticleCrawler:
             logging.error(f"读取封面图片列表失败: {str(e)}")
             # 返回一个默认的封面图片列表，以防文件读取失败
             return ["https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Crossed-Out%20Eyes.png"]
+
+    def crawl_new_articles(self, last_count, current_count):
+        """只爬取新增的文章"""
+        try:
+            articles_to_crawl = current_count - last_count
+            logging.info(f"需要爬取 {articles_to_crawl} 篇新文章")
+            
+            # 修改每页文章数为20
+            articles_per_page = 20  # 每页20篇文章
+            pages_needed = (articles_to_crawl + articles_per_page - 1) // articles_per_page
+            
+            # 从第一页开始爬取，直到获取足够的新文章
+            articles_crawled = 0
+            page = 1
+            
+            while articles_crawled < articles_to_crawl and page <= pages_needed:
+                page_url = self.base_url if page == 1 else f"{self.base_url}page/{page}/#board"
+                
+                response = requests.get(page_url, headers=self.headers)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.text, 'html.parser')
+                
+                # 获取文章列表
+                articles = soup.find('div', class_='list-group').find_all('a', class_='list-group-item')
+                
+                # 只处理需要的文章数量
+                for article in articles[:articles_to_crawl - articles_crawled]:
+                    try:
+                        title = article.find('div', class_='list-group-item-title').text.strip()
+                        article_url = f"https://onehu.xyz{article['href']}"
+                        
+                        # 获取文章内容
+                        content, date = self.get_article_content(article_url)
+                        
+                        # 保存文章
+                        if self.save_article(title, date, content):
+                            articles_crawled += 1
+                            logging.info(f"成功爬取第 {articles_crawled} 篇新文章: {title}")
+                            time.sleep(1)  # 添加延时
+                        
+                    except Exception as e:
+                        logging.error(f"处理文章失败: {str(e)}")
+                        continue
+                
+                page += 1
+                time.sleep(2)  # 页面间延时
+                
+            return True
+            
+        except Exception as e:
+            logging.error(f"爬取新文章过程中出现错误: {str(e)}")
+            return False
 
 class GitManager:
     def __init__(self):

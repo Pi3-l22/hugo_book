@@ -3,7 +3,7 @@ title: 怎么以「王爷叫道：“救侧妃”，王妃不再挣扎，潜入�
 date: 2024-04-01
 lastmod: 2024-04-01
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26671.jpg
 images:

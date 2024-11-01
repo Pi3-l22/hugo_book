@@ -3,7 +3,7 @@ title: 成为男女主CP粉后
 date: 2024-09-09
 lastmod: 2024-09-09
 author: Robot
-avatar: http://cdn.pi3.fun/blog/Robot.png
+avatar: ../Robot.png
 authorlink: https://mohai.us.kg
 cover: https://wallpapershome.com/images/pages/pic_h/26639.jpg
 images:
