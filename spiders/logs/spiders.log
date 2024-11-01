@@ -1,0 +1,17 @@
+2024-11-01 14:52:29,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-01 14:52:29,148 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-01 14:52:29,149 - INFO - 定时任务已启动
+2024-11-01 14:52:29,150 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-11-01 14:52:29,151 - INFO - Added job "CrawlerScheduler.crawl_job" to job store "default"
+2024-11-01 14:52:29,151 - INFO - Scheduler started
+2024-11-01 18:10:49,082 - INFO - Running job "CrawlerScheduler.crawl_job (trigger: cron[hour='18', minute='7'], next run at: 2024-11-01 18:10:49 CST)" (scheduled at 2024-11-01 18:10:49.081437+08:00)
+2024-11-01 18:10:49,366 - INFO - 检测到新文章，从 6082 增加到 6086
+2024-11-01 18:10:49,366 - INFO - 需要爬取 4 篇新文章
+2024-11-01 18:10:49,451 - INFO - 保存文章成功: ../content/posts/2024/11/1-赛金花：浮萍.md
+2024-11-01 18:10:49,452 - INFO - 成功爬取第 1 篇新文章: 6. 赛金花：浮萍
+2024-11-01 18:10:50,740 - INFO - 保存文章成功: ../content/posts/2024/11/1-男生或女生可以不自爱到什么程度？.md
+2024-11-01 18:10:50,741 - INFO - 成功爬取第 2 篇新文章: 男生或女生可以不自爱到什么程度？
+2024-11-01 18:10:52,096 - INFO - 保存文章成功: ../content/posts/2024/11/1-有没有什么校园甜文_.md
+2024-11-01 18:10:52,096 - INFO - 成功爬取第 3 篇新文章: 有没有什么校园甜文_
+2024-11-01 18:10:53,380 - INFO - 保存文章成功: ../content/posts/2024/11/1-海兰珠：还君明珠.md
+2024-11-01 18:10:53,380 - INFO - 成功爬取第 4 篇新文章: 5. 海兰珠：还君明珠
