@@ -3,17 +3,16 @@ title: 我在KTV兼职的日子
 date: 2023-07-14
 lastmod: 2023-07-14
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/11986.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26587.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/11986.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26587.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-07-14true
 ---
 
 <!--more-->

@@ -1,19 +1,18 @@
 ---
 title: 如何以「这是我穿成女配的第十六（n）年，我好像喜欢上男主了」为题写一个 HE 文？ -摘酒钱
 date: 2023-03-05
-lastmod: 2023-03-50
+lastmod: 2023-03-05
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26182.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26587.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26182.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26587.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-03-05true
 ---
 
 <!--more-->

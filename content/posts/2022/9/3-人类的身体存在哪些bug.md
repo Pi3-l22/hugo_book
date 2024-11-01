@@ -1,19 +1,18 @@
 ---
 title: 人类的身体存在哪些bug
 date: 2022-09-03
-lastmod: 2022-09-30
+lastmod: 2022-09-03
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26675.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26674.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26675.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26674.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2022-09-03true
 ---
 
 <!--more-->

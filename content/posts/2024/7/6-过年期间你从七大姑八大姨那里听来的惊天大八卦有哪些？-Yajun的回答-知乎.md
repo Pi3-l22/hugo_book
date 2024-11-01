@@ -1,19 +1,18 @@
 ---
 title: 过年期间你从七大姑八大姨那里听来的惊天大八卦有哪些？ - Yajun 的回答 - 知乎
 date: 2024-07-06
-lastmod: 2024-07-60
+lastmod: 2024-07-06
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26052.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26590.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26052.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26590.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2024-07-06true
 ---
 
 <!--more-->

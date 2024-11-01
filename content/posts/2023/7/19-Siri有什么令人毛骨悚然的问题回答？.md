@@ -3,17 +3,16 @@ title: Siri有什么令人毛骨悚然的问题回答？
 date: 2023-07-19
 lastmod: 2023-07-19
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26664.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26172.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26664.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26172.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-07-19true
 ---
 
 <!--more-->

@@ -3,17 +3,16 @@ title: 如何以「我重生在反派boss的床上」为开头写一篇故事？
 date: 2023-03-14
 lastmod: 2023-03-14
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26125.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/454.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26125.jpg
+  - https://wallpapershome.com/images/pages/pic_h/454.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-03-14true
 ---
 
 <!--more-->

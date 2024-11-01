@@ -3,17 +3,16 @@ title: 如何以【我怀疑，我是恐怖小说的NPC】为开头，写一篇�
 date: 2022-09-21
 lastmod: 2022-09-21
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26617.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/6502.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26617.jpg
+  - https://wallpapershome.com/images/pages/pic_h/6502.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2022-09-21true
 ---
 
 <!--more-->

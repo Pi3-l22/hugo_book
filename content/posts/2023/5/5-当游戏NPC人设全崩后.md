@@ -1,19 +1,18 @@
 ---
 title: 当游戏 NPC 人设全崩后
 date: 2023-05-05
-lastmod: 2023-05-50
+lastmod: 2023-05-05
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26640.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26641.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26640.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26641.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-05-05true
 ---
 
 <!--more-->

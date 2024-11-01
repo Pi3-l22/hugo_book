@@ -3,17 +3,16 @@ title: ICU门口，到底是绝望还是希望？
 date: 2023-07-27
 lastmod: 2023-07-27
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26583.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/24969.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26583.jpg
+  - https://wallpapershome.com/images/pages/pic_h/24969.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-07-27true
 ---
 
 <!--more-->

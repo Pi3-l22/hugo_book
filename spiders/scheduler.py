@@ -106,12 +106,12 @@ class CrawlerScheduler:
         # 添加两个定时任务，分别在0点和12点前后运行
         self.scheduler.add_job(
             self.crawl_job,
-            trigger=self.random_time_trigger(0),
+            trigger=self.random_time_trigger(6),
             id='crawler_midnight'
         )
         self.scheduler.add_job(
             self.crawl_job,
-            trigger=self.random_time_trigger(12),
+            trigger=self.random_time_trigger(18),
             id='crawler_noon'
         )
 

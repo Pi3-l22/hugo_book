@@ -3,17 +3,16 @@ title: siri杀人始末
 date: 2023-12-16
 lastmod: 2023-12-16
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26661.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26596.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26661.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26596.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-12-16true
 ---
 
 <!--more-->

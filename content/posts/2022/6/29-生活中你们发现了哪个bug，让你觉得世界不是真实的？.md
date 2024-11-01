@@ -3,17 +3,16 @@ title: 生活中你们发现了哪个 bug，让你觉得世界不是真实的？
 date: 2022-06-29
 lastmod: 2022-06-29
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26582.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26624.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26582.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26624.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2022-06-29true
 ---
 
 <!--more-->

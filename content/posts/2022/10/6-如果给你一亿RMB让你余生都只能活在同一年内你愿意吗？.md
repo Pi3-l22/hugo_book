@@ -1,19 +1,18 @@
 ---
 title: 如果给你一亿RMB让你余生都只能活在同一年内你愿意吗？
 date: 2022-10-06
-lastmod: 2022-10-60
+lastmod: 2022-10-06
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26622.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26671.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26622.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26671.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2022-10-06true
 ---
 
 <!--more-->

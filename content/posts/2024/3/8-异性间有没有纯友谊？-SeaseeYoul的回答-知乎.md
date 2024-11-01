@@ -1,19 +1,18 @@
 ---
 title: 异性间有没有纯友谊？ - Seasee Youl 的回答 - 知乎
 date: 2024-03-08
-lastmod: 2024-03-80
+lastmod: 2024-03-08
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26598.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/454.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26598.jpg
+  - https://wallpapershome.com/images/pages/pic_h/454.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2024-03-08true
 ---
 
 <!--more-->

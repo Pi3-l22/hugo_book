@@ -3,17 +3,16 @@ title: 我的Siri自杀了
 date: 2022-06-26
 lastmod: 2022-06-26
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26001.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/26584.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26001.jpg
+  - https://wallpapershome.com/images/pages/pic_h/26584.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2022-06-26true
 ---
 
 <!--more-->

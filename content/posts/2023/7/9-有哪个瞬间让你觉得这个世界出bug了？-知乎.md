@@ -1,19 +1,18 @@
 ---
 title: 有哪个瞬间让你觉得这个世界出bug了？ - 知乎
 date: 2023-07-09
-lastmod: 2023-07-90
+lastmod: 2023-07-09
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26640.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/25913.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26640.jpg
+  - https://wallpapershome.com/images/pages/pic_h/25913.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2023-07-09true
 ---
 
 <!--more-->

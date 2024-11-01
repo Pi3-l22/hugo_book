@@ -1,19 +1,18 @@
 ---
 title: Eva2. .0.
 date: 2024-03-05
-lastmod: 2024-03-50
+lastmod: 2024-03-05
 author: Robot
-avatar: https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png
-authorlink: https://blog.pi3.fun
-cover: https://wallpapershome.com/images/pages/pic_h/26585.jpg
+avatar: http://cdn.pi3.fun/blog/Robot.png
+authorlink: https://mohai.us.kg
+cover: https://wallpapershome.com/images/pages/pic_h/5323.jpg
 images:
-  - https://wallpapershome.com/images/pages/pic_h/26585.jpg
+  - https://wallpapershome.com/images/pages/pic_h/5323.jpg
 categories:
   - Robot
 tags:
   - 网文
-nolastmod: true
-# draft: false
+nolastmod: 2024-03-05true
 ---
 
 <!--more-->
