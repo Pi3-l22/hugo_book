@@ -30,7 +30,7 @@ darkTheme = "night"
 
 author = "Robot"
 description = "墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。"
-avatar = "http://cdn.pi3.fun/blog/Partying_Face.png"
+avatar = "./Partying_Face.png"
 headerTitle = "墨 海 拾 贝"
 motto = "网文集结地"
 
@@ -51,7 +51,7 @@ email = "622.511.liuchao@gmail.com"
 
 siteStartYear = 2021
 
-favicon = "http://cdn.pi3.fun/blog/Partying_Face.png"
+favicon = "./Partying_Face.png"
 
 # Syntax highlighting
 # customSyntaxHighlighting = true
