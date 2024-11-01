@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳如是：赤伶 | 墨海拾贝</title>
+
+    
+<link href="/Partying_Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/10/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/10/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="柳如是：赤伶">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-31T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26617.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26617.jpg">
+  <meta name="twitter:title" content="柳如是：赤伶">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="柳如是：赤伶">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-10-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-31T00:00:00+00:00">
+  <meta itemprop="wordCount" content="10132">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26617.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">柳如是：赤伶</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-10-31T00:00:00Z</span>
+          
+
+          | <span>21分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-10-31T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="http://cdn.pi3.fun/blog/Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://mohai.us.kg" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%9f%b3%e5%a6%82%e6%98%af%ef%bc%9a%e8%b5%a4%e4%bc%b6&amp;url=https://mohai.us.kg/posts/2024/10/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/10/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%9f%b3%e5%a6%82%e6%98%af%ef%bc%9a%e8%b5%a4%e4%bc%b6%20https://mohai.us.kg/posts/2024/10/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26617.jpg" alt="柳如是：赤伶" />
+      
+
+      <p>柳如是：赤伶</p>
+<p>1、</p>
+<p>老鸨说：「你是院里唯一的赔钱货。」</p>
+<p>这不是废话么，作为一个平平无奇、身无长物、只拥有了干饭魂的打工人，我哪里比得过那群既会琴棋书画、又会诗词歌赋、个个叫出名来都是学霸的穿越者。</p>
+<p>能维持自己在这个歌楼小院里不被饿死就不错了。</p>
+<p>至于让我赚钱，呵，上一个这么想的回春阁老鸨，坟头草长得都快有一人高了。</p>
+<p>当然，这样不吉利的话，我是不能对胸怀大志、立誓要将秦淮歌楼做大做强的现任老鸨说的，我只能拍着胸脯向她表明，我尽力了。</p>
+<p>老鸨看一看我平如毡毯的胸口，失望着摇摇头，叹气走开了。</p>
+<p>我也摇一摇头，整理了一下前襟，再三确定，那本该高耸如山峦的地方当真是被我强压下去了，这才步出了歌楼。</p>
+<p>今儿是复社集会的大日子，若是去得晚了，好位置可就全让那帮青年士子给占光了。</p>
+<p>我不敢过多耽搁，急匆匆地往扫叶楼赶去。</p>
+<p>果不其然，就因为我在小院里和老鸨多说了那么几句话，到了扫叶楼之后何止是坐的地方没有了，就连站都只能站在人群后头。</p>
+<p>前面的男子身高八尺，足足把我挡个完全，我不由得伸手扒拉他两下：「兄台，麻烦低低头，让小弟也看一看今日复社宗主。」</p>
+<p>男子低下头来，找了好一圈，才找到被他矮了将近两个头的我，赶紧拱手道歉让开一步道：「失敬失敬，是在下碍着小哥儿了，哥儿来得正好，今日复社宗主可是虞山先生呢！」</p>
+<p>虞山先生？</p>
+<p>「就是那个学贯天人、有当代文章伯之称的大才子虞山先生？」我欣喜若狂，想不到只在传闻中听说过的大人物，竟然会在这里出现。</p>
+<p>更想不到有朝一日我能亲眼得见他。</p>
+<p>于是，我顺着前面兄台让出的一步空地，慌忙往前挤，终是挤到了近前面。</p>
+<p>但看一个长衫翩翩、甚是儒雅的中年男子坐在扫叶楼内的高位上，轻理着衣袖，斜过身去同一旁稍显俊秀的青年士子说话。</p>
+<p>青年满面通红，兴奋之情简直溢于言表，他不住地点头，待得虞山先生说完，方直起身道：「诸位诸位，难得今儿东林书院的虞山先生到咱们金陵来参加集会，虞山先生说了，今日不考校八股，只问诗词，先生给出一句话，大家凭此各自作诗一首，先生会从中择取优异者，迎为入幕之宾，对坐清谈。」</p>
+<p>底下士子闻言，纷纷叫好，摩拳擦掌跃跃欲试。</p>
+<p>我亦跟着激动起来，如论八股，我怕是比不得这些年轻有为的士子，但要说作诗，这可是我拿手的。</p>
+<p>遂静下心来，听着那青年又道：「大家可都听好咯，先生给出的一句话是：无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。」</p>
+<p>「啊，这……这是什么题？」</p>
+<p>「是让咱们作词吗？」</p>
+<p>青年的话音一落，刚才还纷纷叫好的士子们，你望着我，我望着你，多少有点摸不着头脑，青年也不多言，只管道：「都别磨蹭了，赶紧想想吧，一炷香后先生可就要看诸位的大作了。」</p>
+<p>一炷香？时间说长不长，说短倒也不短。</p>
+<p>我离开了人群，寻着僻静的地方，敛起长袍衣摆坐下。</p>
+<p>2、</p>
+<p>虞山先生本家姓钱，名为谦益，字受之，号牧斋，万历三十八年时候就中了探花，因文采过人，不久就成为了东林魁首，一度官至礼部侍郎。</p>
+<p>照着这个趋势，他本可以更上一层，官至阁臣，无奈在其主考浙江时，发生了一件震惊天下的大事。</p>
+<p>一个名叫钱千秋的考生在考场上作弊，将「一朝平步上青云」写在每段话的末尾作为暗号，与浙江考场官员勾结，事发后虞山先生受此牵连，不得不引咎撤职。</p>
+<p>他给出的那句诗文「无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故」，原出自南宋文学大家陆放翁的《卜算子.咏梅》。</p>
+<p>陆放翁做咏梅一词的时候，正因力主对金朝用兵而受贬，故而便用「群花」比喻当时官场中卑鄙的小人，用梅花自喻高洁，以示自己即便身处泥淖，也不会趋炎附势的决心。</p>
+<p>此刻虞山先生用陆放翁的咏梅来出题，结合他如今的处境，不难看出他的用意。</p>
+<p>我想通之后，略一思忖，便回身去往高台那里拿了纸笔，饱蘸乌墨，洋洋洒洒写了数行字，一掷笔，便将写就的诗文呈了上去。</p>
+<p>负责为虞山先生出题的青年见我这般早早就交了卷，甚是诧异，不无好心地劝我道：「我看兄台年纪尚轻，怕是有些急躁，不如拿回去再想一想，若是实在没了好的，再交上来也不迟。」</p>
+<p>「不必再想，仁兄只管替小弟把诗词呈给先生吧。」</p>
+<p>我谢过他的好意，坚持就写这一首。</p>
+<p>青年没法子，只得捧着我那笔迹未干的诗词送到虞山先生跟前，不知他同虞山先生说了什么，我只看虞山先生如星一般光灿的眸子向我看来，亮了一亮之后，不觉含笑对我点一点头，就把诗词收下了。</p>
+<p>一炷香后，各路士子陆续呈上了自己的大作，青年前前后后忙得几乎飞起，好容易把大家伙儿的诗都收得齐全了，才道：「大家坐着等一等，待虞山先生品评之后某再来同诸位回话。」</p>
+<p>说时，他人就陪着虞山先生进到了扫叶楼的厢房里。</p>
+<p>已是春暮，随着艳阳高照，庭院里也跟着起了暑气，有不少耐不住性子的士子，彼此催促推搡着想去厢房那边探个究竟，看看自己到底有没有入选。</p>
+<p>我也等得有些心焦，不过我的心焦不是要去厢房探个究竟，而是我出来的时辰不短了，再不回去，势必又要挨老鸨一顿骂的。</p>
+<p>好在就在我思考走还是不走的时候，跟着虞山先生进房的青年终于出来了，手里拿了稀稀疏疏的几张纸，对比刚才交上去的厚厚一沓，着实有些惨烈。</p>
+<p>他清一清嗓子，先说了几句客套话，才接着道：「大家写的都还不错，只是虞山先生时间有限，暂且择出来这么几个出挑的，待会儿我点到名字的兄台，还请移步到茶房去。」</p>
+<p>他一一地念，每念一个名字，底下便都是一阵欢呼伴着一阵哀嚎，及至他手上只剩下最后一张纸的时候，众人的目光已经盯在了上面，动也不敢动了。</p>
+<p>「云间柳隐！」</p>
+<p>伴随他的话音，我腾的一下就站了起来，几乎不敢相信自己会是最后那一个入幕之宾。</p>
+<p>青年见我激动如斯，亦跟着笑道：「恭喜哥儿了，茶房有请。」</p>
+<p>前面被念中名字的人，都已在茶房坐得端正了，我到的时候，茶房里只剩下虞山先生左手边还有一个位子。</p>
+<p>那等尊贵的地方，我不大好意思过去，反是虞山先生招了招手，唤我道：「这位小兄弟就是云间柳隐罢？此座是钱某专为你而留，还请上座。」</p>
+<p>我这么……这么厉害吗？竟然能得虞山先生如此青睐！</p>
+<p>怀着小心，我上前在虞山先生身侧坐下，凑近看去，虞山先生比远远望之的时候还要温文尔雅。</p>
+<p>他目光柔和地看向我，手上拿着的诗句正是我递上去的。</p>
+<p>「都说金陵人杰地灵，而今看来所言不虚，想不到云间柳隐会是你这般年轻秀挺的男子，说句得罪在座各位的话，今日的诗句中，唯柳兄弟所作的《上巳》最为出众。应怜芳草梦，犹待卷帘知，甚佳！甚佳！」</p>
+<p>他不住地夸赞，浑然不觉我已经从脸红到了耳。</p>
+<p>虽说我在歌楼也曾以自己会作诗而沾沾自喜，无奈歌楼中有太多文采过人的小姐姐，每个拎出来都能出口成章，倒显得我平凡了。</p>
+<p>眼下虞山先生说我的诗写得好，这多少给了我信心。</p>
+<p>怀着这般雀跃的小心情，我同虞山先生一谈就谈了两个时辰，等到我回味过来的时候，才惊觉我、可、能、要、死、了！</p>
+<p>我忘了老鸨说过，不许我再出来乱跑！</p>
+<p>发现一次，打一次！</p>
+<p>老天爷呀，我得赶紧回去了，余光瞥见虞山先生正与别的士子清谈，我顾不得同他多说，起身拎着袍摆就往歌楼跑。</p>
+<p>3、</p>
+<p>一路上不知撞了多少行人，终于赶到歌楼的时候，果不其然，老鸨已经站在歌楼外头等着我好久了。</p>
+<p>她捏着巾帕，眼眶通红，年逾四十的面孔上写满了苦大仇深。</p>
+<p>唬得我当即站在原地，不敢上前。</p>
+<p>不过是来晚了那么一丢丢，老鸨不至于对我恨成这样吧？</p>
+<p>「妈妈，我又不会跑了，怎的还劳动您老人家亲自出门迎接呢？」我讪讪笑说着。</p>
+<p>老鸨通红的眼睛瞪了瞪我，突然就捂着帕子失声大哭：「就你一个赔钱的没跑，其他赚钱的可是全都跑了！我的老天爷呀，我的命怎么这么苦啊……」</p>
+<p>她高声嚎啕着，给我都嚎蒙了：「妈妈，你说谁，谁跑了？」</p>
+<p>「青烟、玉碎、玲珑、宝慧，这几个台柱子都跑了！」</p>
+<p>啊？青烟她们跑了，这是为啥呀？</p>
+<p>而今这世道想赚钱可是不容易，她们在歌楼赚的也不少啊，我这个赔钱的都没跑，她们跑什么跑？</p>
+<p>「青烟说是乱世出英雄，嚷嚷着自赎其身往辽东找什么吴三桂去了。玉碎说歌楼待得太无聊了，不待了，收拾收拾东西穿什么老家去了。玲珑呢一向和青烟不对付，听青烟说去找吴三桂，她就非要去找个李自成，还说什么将来看谁先成功。宝慧就更糊涂了，跟个姓张的家里贩卖红枣的穷小子跑了。」</p>
+<p>啧啧，姐妹们厉害啊，平日里一个赛一个柔柔弱弱，绿绿茶茶的，想不到背地里都是一腔热血，说追男人就追男人去了！</p>
+<p>佩服，佩服！</p>
+<p>我着实想竖几下大拇指，可看着老鸨如丧考妣的模样，又深觉这等时候还是不要火上浇油为妙，便好心劝慰她：「妈妈，你往好处想，青烟她们跑了，总比去到咱们死对头怡红院那边强啊！」</p>
+<p>老鸨啐我一声：「呸，怡红院是什么腌臜地方，哪里比得过我歌楼清高？我歌楼的姑娘可都是卖艺不卖身的，她怡红院能做到吗？」</p>
+<p>那倒也是，要不然我也不能安稳地在歌楼呆到现在。</p>
+<p>不过，青烟她们跑都跑了，这会儿哭也没用啊。</p>
+<p>老鸨抹抹眼泪：「我何尝不知道哭也没用，可我不哭也不行啊，能赚钱的就那么几个，她们跑了，我吃什么喝什么啊？还有你，平日里你赚不到钱，也都是青烟她们匀一点吃喝给你，眼下她们走了，我看你上哪儿喝西北风去。」</p>
+<p>对哦，老鸨不说，我都差点忘了，青烟她们走了，我吃谁的喝谁的去啊？凭我那一手字，那三两句诗文，能比得过青烟她们吗？</p>
+<p>再则，我这会儿……这会儿还是男儿身呢。</p>
+<p>老鸨兴许也想到了这一点，霎时又大哭起来：「哎哟，我的命苦啊，我一手培养出来的姑娘，说走全走了，这可怎么办呐？外头钱庄紧跟着催账，要是月底拿不出银子，我这歌楼可全都要赔给人了！」</p>
+<p>「妈妈，妈妈……」我被她嚎的眼泪也快跟着下来了，想想这么多年老鸨虽说一直嗔斥我赔钱，但她并没有赶我出去，也没有苛待过我，让我在乱世里好歹有个安身之地。</p>
+<p>虽说她年轻时候也曾貌美如花，也曾宾客满门，可如今她早已过了韶华之龄，青春时攒下的积蓄大多花在了盖这座歌楼上，后来更是为了把歌楼做大做强，不惜抵押歌楼从钱庄借了万两的银子，没了青烟宝慧这几个「顶梁柱」赚钱维持营生，歌楼倒闭的日子就在眼前了。</p>
+<p>我已经熬倒了一个回春阁了，不能再把歌楼熬倒了。</p>
+<p>由是，我皱着眉头深思了几回，便把老鸨拉进了歌楼里，关上门对她道：「妈妈，或许我可以试试让歌楼起死回生。」</p>
+<p>老鸨原是止住了哭，闻听此言，眼泪哗啦一下又落了满襟：「我的儿啊，难为你这等时候还为妈妈着想，可妈妈毕生的心愿是开歌楼，不是开小倌馆啊！」</p>
+<p>啊呸，什么小倌馆？</p>
+<p>我抿抿唇，横竖熟知我的那些姐妹都走了，这会儿我就是变成个猴也没什么要紧，于是就抬手取下了头上的四方平定巾，如瀑的长发瞬时落了满肩。</p>
+<p>惊得老鸨话都说不利索了：「你……你……男不男……女不女……」</p>
+<p>哎，我叹了口气，早知道她惊吓成这样，我就多说两句话铺垫铺垫了。</p>
+<p>「妈妈，我其实是女儿身。」</p>
+<p>4、</p>
+<p>过了一炷香的功夫，屋子里的烛火都被点起来了，老鸨还是维持着一炷香之前时的模样，捧着茶盏一动不动。</p>
+<p>我换好了罗裙在她面前站定，微微一屈膝：「妈妈您瞧，这般打扮可好？」</p>
+<p>老鸨目光在我身上转了一转，又在我脸上看了几回，良久，她把茶盏一掷，点着我的额头愤愤道：「你这个死丫头，你是个女儿身怎的不早说？早知你这幅模样，我又何须费尽心思去捧红青烟她们几个？还害得我倒贴了你几年银两。」</p>
+<p>我揉着额头偷偷一笑：「多亏妈妈心肠好，才叫我无忧活到了现在。」</p>
+<p>老鸨啐我一声，再三打量了我一眼，方道：「那时我见你落魄，把你捡到歌楼来做个打杂的，问你叫什么，你说你叫柳隐，而今想想这定是你胡诌出来的姓名，那么，这会子你该说你真名叫什么了吧？」</p>
+<p>「不瞒妈妈，我的确是姓柳，只是不叫柳隐，而叫……柳如是。」</p>
+<p>我笑说着，至于老鸨当不当真就看她自己怎么想了。</p>
+<p>老鸨作为曾经红极一时的头牌，身上多少有点东西的，听我说罢，不觉点点头：「我见青山多妩媚，料青山见我应如是。柳如是，的确是个好名字！」</p>
+<p>她咂摸着，就在我要佩服她一下就猜中我名字来历的时候，她蓦地就攥紧了我的手，泪盈于眶：「如是啊，妈妈以后可就指望你把秦淮歌楼发扬光大了。」</p>
+<p>「妈妈，你还真是不客气啊！」我慨叹着，不过倒也没有拒绝她。</p>
+<p>没拒绝的原因诚然有保全歌楼的意思在，但是我还有另一个目的。</p>
+<p>如今朝堂之上，一些宦官、王公、勋戚、权臣为着争名夺利，纷纷广结党羽，操纵朝政，把大好的江山搞得乌烟瘴气，民不聊生。</p>
+<p>值此生死存亡之际，东林学派的兴起和复社的集会，无疑对于扭转士风起了积极的作用。</p>
+<p>众多东林学子和复社士子不顾路途险阻，纷至沓来，强烈要求改变宦官专权乱政的局面，主张政事归于六部，公论付之言官，使天下欣欣望治；竭力反对皇帝派遣矿监、税使到各地进行疯狂掠夺、横征暴敛；反对屡见不鲜的科举舞弊行为，主张取士不分等级贵贱，按照个人才智，予以破格录用。</p>
+<p>这些针砭时政的主张固然可以得到百姓的支持，可同时也遭到了操纵朝政的宦官和权贵们的激烈反对。</p>
+<p>两者之间因政见分歧逐渐形成了激烈的党争局面，而今局面越闹越大，隐隐有闹出人命的迹象了。</p>
+<p>譬如这次的复社集会，原先约定好是要在绿柳居的，临时却又换去了扫叶楼。</p>
+<p>下次再要集会，怕是扫叶楼也不安全了，既如此，那我就给复社找个安全的地方。</p>
+<p>都说最危险的地方最安全，与其被人抓住非法集会，倒不如落个流连风月的名声。</p>
+<p>前者丢命，后者丢名，两相对比，还是命最重要。</p>
+<p>既是做了重回女儿身的打算，旧年里我跟着徐佛姐姐学的那点子东西，就都得拾起来重新学起了。</p>
+<p>琴要弹，画要作，舞要跳，歌要唱。</p>
+<p>当然，凭我一己之力是来不了这么多的，歌楼要想做大做强，首先第一步就是得招新人。</p>
+<p>我把话给老鸨说了之后，老鸨拍着胸脯，直言让我放心，一切都包在她身上。</p>
+<p>随后，她就说到做到，在一个月内便买来了七个姿容出众、各怀绝技的姑娘，添上我正好凑个吉利数字。</p>
+<p>自此，秦淮八艳的名号就在我的带领下在金陵打响了。</p>
+<p>5、</p>
+<p>初时，我以秦淮八艳的名义邀请复社宗主到歌楼集会小坐时，被复社张浦宗主以不成体统给拒绝了。</p>
+<p>我想了想，歌楼眼下在小宛和香君她们的支撑下，已经日渐向好，甚至比青烟她们在时还要喜人，就无需我亲自出面忙前忙后了。</p>
+<p>我便换了男子装束，依旧用着云间柳隐的名号，再次向张宗主发起了邀请，只是声称把聚会的地点选在了秦淮歌楼。</p>
+<p>这一回，他答应了。</p>
+<p>不单如此，张宗主还给我回了信，说是有一位故人想要见我。</p>
+<p>故人？哪位故人？</p>
+<p>我虽是时常去复社参加集会，可因着身为女儿家的缘故，且寄居歌楼，是以我与复社的士子们并无过多来往，更遑论是交友了，会是谁想要见我？</p>
+<p>我皱着眉苦苦思索。</p>
+<p>答案很快在集会的那天揭晓了，任是我想破了头，也没想到那位故人居然是曾任过复社一日宗主的虞山先生——钱谦益。</p>
+<p>虞山先生看见我倒没怎么惊讶，只是叹道：「柳兄弟可叫钱某好找哇。」</p>
+<p>我受宠若惊，忙拱手相问：「未知先生急着找弟子何事？」</p>
+<p>虞山先生摆一摆手，笑道：「柳兄弟莫慌，钱某找你并无要紧事，只是那日见你诗文上佳，本欲同你多谈几句，不想转身的功夫就不见你人影了。后来钱某问过了吴伟业他们，都说不知你家住哪里，倒让钱某心中颇觉遗憾。也是巧了，这次钱某再到金陵，闻听柳兄弟你给天如发了请帖，便冒昧和天如一道来了，你不会介意吧？」</p>
+<p>傻子才会介意！</p>
+<p>能请得动虞山先生和西铭先生同时到往歌楼，这不仅仅是我的荣幸，更是歌楼的荣幸。</p>
+<p>我喜之不尽，忙请二位先生去雅间稍事休息，又唤了跑堂哥儿过来上茶。</p>
+<p>孰料哥儿没来，竟是小宛和香君那几个丫头亲自过来了，斟茶的斟茶，上点心的上点心，每个人过来的时候都悄悄冲我挤了挤眼。</p>
+<p>以我对她们的了解，这几个姑娘定是误会了什么。</p>
+<p>好在虞山先生没在意她们的目光，只是趁着西铭先生给众士子讲学的时候，打量着歌楼自顾自同我闲话家常，又道：「此地虽好，终是不能久留，可眼下朝堂已今非昔比，一日比一日腐败潦倒，满洲的铁骑都快踏到家门口了，整个金陵贵胄却还在歌舞升平。」</p>
+<p>大明吏治腐败已非一朝一夕，要想改，也非一朝一夕就能改得了的。</p>
+<p>这个道理我懂，虞山先生更懂，正因为懂才心怀忧惧，留给大明的时间怕是已经不多了。</p>
+<p>想到这里，虞山先生不由得长叹口气，在临走的时候，抛开了吏治不谈，却含笑打趣我道：「若柳兄弟身为女子，想来比之这里的八艳也不遑多让。」</p>
+<p>「啊？」我一怔，下意识就想低头看看是不是哪里露出了马脚，好在关键时候头脑反应了过来，强忍住羞赧，亦是含笑回他，「那柳某就多谢虞山先生夸奖了。」</p>
+<p>虞山先生哈哈付之一笑，负手走出了雅间道：「若柳兄弟当真为女儿身，那钱某厚着老脸也要做你的入幕之宾。」</p>
+<p>6、</p>
+<p>「柳姐姐，柳姐姐，快从实招来，今日登门找你的那个老男人，是不是瞧中姐姐你了？」</p>
+<p>虞山先生刚走没一会儿，之前佯装成小厮的小宛、香君、圆圆等人就换了女儿装，齐刷刷跑到我屋里来问个究竟。</p>
+<p>我好笑地看着眼前的几张八卦脸：「什么老男人，说话要客气一些，那位可是大名鼎鼎的虞山先生呢。」</p>
+<p>「啊，他就是虞山先生呀？」小宛等人纷纷讶然，又转而责怪我不早介绍一下。</p>
+<p>我哀叹着扶额：「姐妹们，我同虞山先生之间当真不是你们想得那样，我们是志同道合的盟友。」</p>
+<p>「那夫妻也是盟友呀。」香君头脑灵活，笑嘻嘻说道。</p>
+<p>我忙摆一摆手打住她：「可不能这么说虞山先生，太不敬了。先生有大才，又胸怀大志，是为国为民的人物，岂能与我这么个女子结为夫妻？」</p>
+<p>香君直摇头，不以为然道：「姐姐话别说的太满，以我之见，倒觉得虞山先生待你非同寻常，说不得你本就与他有缘。」</p>
+<p>这话她敢说，然而我可不敢信。</p>
+<p>在歌楼掩护下，复社士子便又有惊无险地聚了几次会。</p>
+<p>虞山先生还需得回东林书院主持大局，由是近来的几次集会，他都没有参加。</p>
+<p>深秋时分，眼见歌楼生意在我带动下越发红火，老鸨又是喜又是忧，跑来拉着我的手苦口婆心地说：「如是啊，要不然那什么聚会咱们就别搞了吧，上回朝廷的人过来吵吵嚷嚷的，说什么乱党不乱党的，差点把客人都吓死了，咱们就唱唱曲弹弹琴赚赚钱不好吗？」</p>
+<p>我拍拍她的手背，知她是怕我把歌楼再折腾黄了，便抚慰她道：「妈妈放心，我心里有数呢。只是妈妈也看到了，如今的世道乱得很，即便我们不聚会，外头也有的是人聚会，倒不如就大大方方的开门做生意，又没有哪个规定说了不许人听曲儿。」</p>
+<p>「可这……这能行吗？」老鸨还是有些不放心。</p>
+<p>然而生逢乱世，似我等女子，便如漂泊浮萍，如无四方平定之地，寄居歌楼纵使可以夺得一时安宁，可又岂能夺得一世安宁？</p>
+<p>倒不如跟着热血士子们搏一搏，兴许可以搏个出路。</p>
+<p>当然，这话我同老鸨是说不明白的，她满心惦念的都是她的歌楼，我只要保证歌楼不会毁于一旦就可以了。</p>
+<p>这日又到了集会的时候，只是天儿不大好，入了深秋，满地都是枯黄残叶，看得人心里凄凄冷冷的。</p>
+<p>士子们未免引人耳目，便分批赶来聆听西铭先生讲学，我身着男子装束从屋子里出来欲要进雅间的时候，恰与一人碰个正着。</p>
+<p>我才刚要开口，便听头顶一道低沉笑声传来：「真是巧了，钱某正要去找柳兄弟，不想在这里就与柳兄弟碰见了。」</p>
+<p>我讶然，慌忙抬起头：「是虞山先生？」</p>
+<p>虞山先生对我一笑：「许久不见，柳兄弟别来无恙？」</p>
+<p>「无恙，无恙得很。」我惊喜着，忙开了另一侧雅间的门，请虞山先生坐下，待得给他上了茶，才问道，「先生今日如何得空过来了？弟子还想着过些时日去往东林书院一趟拜会先生呢。」</p>
+<p>虞山先生面色静了一静，许久方道：「不瞒柳兄弟，朝中阉党已经开始对东林书院的学子下手了，正四处暗杀他们，我来金陵既是为了避祸，亦是为了伸张正义，他们越怕什么，我便越说什么，总有一日要说得他们节节败退，溃不成军！」</p>
+<p>我为着使老鸨宽心，已多日未曾出门，想不到外头竟发生了这样大的事。</p>
+<p>「万岁他就由着阉党横行朝野吗？」我实在忍不住了，不禁问出声，「朝上难道就没人告诉万岁，这世道都乱不成样了？」</p>
+<p>「此乃历朝积弊，不是一朝所成，当今万岁即使知道，也是有心杀贼，无力回天了。」</p>
+<p>那就由着世道乱下去？</p>
+<p>我咬了咬唇，还待要说，忽听窗户外头一阵呼喝叫骂之音，夹杂着老鸨的小意赔笑，一并传入耳中。</p>
+<p>我心头一跳，忙悄悄打开窗户，顺着一丝缝隙往下望去，但见一群身着飞鱼文赐服的人团团围在了歌楼门前。</p>
+<p>「是东厂的人！」我大惊失色，蓦地站起，连带着虞山先生都被我惊得站了起来。</p>
+<p>「想来他们是得到我在此的消息了，柳兄弟莫怕，大不了老朽就豁出这条命去，也断不会连累柳兄弟你的。」</p>
+<p>「先生说得哪里话？先生既是到了金陵，我等势必要庇护先生周全的。」</p>
+<p>我说着，赶紧开了门唤来跑堂小厮，让他把香君、小宛等人都叫过来，又对他吩咐道：「再去我房里，让香君取我的衣裳来。」</p>
+<p>小厮一叠声地答应着，虞山先生看着我，大有不解之意：「柳兄弟这是要干什么？」</p>
+<p>我顾不得同他多解释，四下看了看，忙扯着他的衣袖，把他扯到一个大大的立柜跟前，打开了柜门道：「还请先生委屈一下，暂且进去躲一躲。」</p>
+<p>「那柳兄弟你呢？」虞山先生狐疑地问。</p>
+<p>我抿抿唇，想要说出真相，可一时间竟不知该从何说起，只得支吾一声：「我不要紧，先生先躲一躲，待那帮阉宦走了，弟子再同先生解释。」说着，耳听楼下有了脚步声，我一把便将他塞进了柜子，严严实实挂了把大锁。</p>
+<p>与此同时，小宛和香君、圆圆她们也都得了消息赶来了，我一面换着衣裳一面嘱咐她们：「待会儿要是有人问起西铭先生他们过来做什么，就说是来吟诗作对的，万万不可提集会二字。」</p>
+<p>秦淮八艳，可不止容颜绝艳，那吟诗作对的本事，论起来比寻常生员都要强许多呢。</p>
+<p>小宛她们都是极为聪慧的姑娘，听我这般说，当即会意过来，忙就去往西铭先生那里，假装是去附庸风雅。</p>
+<p>我亦卸了珠钗，长披着一头乌发，坐在镜子前假意梳妆。</p>
+<p>没人知道那半日的时光我是怎样度过来的，只记得阉宦们走的时候，我扶着门槛腿都快要吓得软了。</p>
+<p>不过，好歹是让虞山先生他们躲过了一劫。</p>
+<p>我强打起精神，转回身打开了柜门，许是在柜子里躲得久了，虞山先生面色有些暗红，唯如星一般的眸子尚且璀璨着。</p>
+<p>他看见我，唇角动了动，许久才似定住心神道：「想不到柳兄弟竟是女娇娥。」</p>
+<p>「让先生见笑了。」我羞了一羞，虽说我的身份迟早都会有暴露的一天，但我并没想过会暴露得这么早，暴露得这么离奇。</p>
+<p>但……事情到了这一步，过多的解释也无甚必要，我为了缓解眼下的尴尬，便抬起头来，看着他温润的眉眼笑趣道：「先生不是说，若柳某为女儿身，便做柳某的入幕之宾吗？这一回，先生可算是如愿了。」</p>
+<p>「哈哈，好一个牙尖嘴利的姑娘！」虞山先生被我逗乐起来，一扫之前阴霾，「钱某何其有幸能做姑娘入幕之宾，倒是不知，姑娘自名柳隐，是真名呢还是化名？」</p>
+<p>我莞尔一笑，微微屈膝行了一礼道：「此前欺瞒先生，实是无奈之举。小女姓柳，名为柳隐，实为柳如是。」</p>
+<p>「柳如是？如是……」虞山先生嘴中念了一句，倏尔展开笑颜，「柳如是，真是好一个柳儒士啊！姑娘比之这天底下大千男子还要气概，钱某甘愿做姑娘的入幕之宾！」</p>
+<p>7、</p>
+<p>「姐姐，你可想好了，当真要跟他走吗？」</p>
+<p>秦淮歌楼，小院之内，香君和小宛拉住了我的手，百般不舍：「咱们歌楼虽说不是久留之地，可那男子又有几个是靠得住的呢？况且，虞山先生名声在外，他当真肯为了娶你不顾一切吗？便是他肯，你二人之间年岁也相差甚多，若有一日他先走了，姐姐你可怎么办呢？」</p>
+<p>她二人一叠声说着，几乎把能想到的情形全都问了一遍。</p>
+<p>我何尝没有想过这些呢？</p>
+<p>杜十娘怒沉百宝箱的故事，老鸨不知对我们说了多少遍，而相似的情节，每隔一段时日，还是会在各家青楼小院上演。</p>
+<p>香君她们担忧我会步杜十娘后尘，原也在情理之中。</p>
+<p>再者，她们说得也对，纵使我再怎么出名，说到底也是出身青楼，而受之他名扬四海，与我成亲定会舆论纷纷。</p>
+<p>至于说年岁，我倒是没有什么介怀之处。</p>
+<p>人这一辈子寻的，不就是可以聊得到一块儿的知己吗？他既是认定了我，那么我自然也认定了他。</p>
+<p>「两位妹妹不必多说，我心意已决。」我坚定地说道。</p>
+<p>香君一愣，攥着我的手也不由得紧了起来：「姐姐就那么喜欢他吗？」</p>
+<p>「不仅仅是喜欢，香君，有朝一日，我盼着你可以懂我。」</p>
+<p>我说着，亦握紧了她的手：「中原鼎沸，正需大英雄出而戡乱御侮，应如谢东山运筹却敌，不可如陶靖节亮节高风。如我身为男子，必当救亡图存，以身报国！可惜我如今托了个女儿身，不能救亡图存，那么就寻一志同道合之人，辅佐他以身报国！」</p>
+<p>「可……可若是他不愿走报国这条路……」</p>
+<p>「如有朝一日他不愿，那么，我就自己走下去！」</p>
+<p>我含着笑，整理好了行囊，终是在老鸨和香君她们的泪眼中登上了马车。</p>
+<p>车内，虞山先生……不，是受之他已经等我许久了，看见我来，他原是绷紧了面容蓦地一松，对着我伸出手微微笑道：「我以为你不会来了。」</p>
+<p>「既然我答应嫁给你，就不会再反悔了。」我说着，把手放在他温热的掌心里，目光徐徐从车窗外的歌楼上掠过。</p>
+<p>这所歌楼承载过我的青春，承载过我的成长，更承载过我的志向，离开她说不难过是骗人的，可若离开她是为了更好的前行，我想那我就没什么可悔之处。</p>
+<p>「受之，你知道吗？曾经有人预言过，你我会成为夫妻。」</p>
+<p>我收回目光，掉转过头，俏皮地对身侧端坐着的儒雅男子笑道。</p>
+<p>他哦了一声，倍感诧异：「是谁这么有本事？」</p>
+<p>「是香君。」我托着腮，不觉想到从前，「那时候你第一次到歌楼里来找我，香君她们就说你待我不同，我还笑话她乱讲，说我和你之间不是她们想的那样，我和你只是志同道合的盟友，香君便说夫妻也是盟友。没成想，当时我未曾当真的话，今儿竟真的成真了。」</p>
+<p>受之望着我一笑：「那么，她后来有没有再预言别的？」</p>
+<p>预言别的？我想起临行前香君活似连珠串儿般问的那些话，好像哪一句都不是好话，想是也当不得预言，便摇一摇头：「别的没有了，不过她希望我和你之间能够长久。」</p>
+<p>「那是自然。」受之握一握我的手，「未免你思乡，我在江南依着歌楼的样式，给你盖了一座绛云楼。你放心，我同你之间定会长长久久，咱们的大明也会长长久久的。」</p>
+<p>如果真是这般，那就太好了。</p>
+<p>我扬起了唇，耳听马蹄飞溅，不由得挺起脊梁，一道随它奔向了未来</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/31-%E5%92%8C%E5%A4%A7%E5%8F%94%E5%9C%A8%E4%B8%80%E8%B5%B7%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89_/" title="和大叔在一起是什么感觉_">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">和大叔在一起是什么感觉_</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/10/31-%E5%A6%82%E4%BD%95%E4%BB%A5%E4%BD%A0%E8%8B%A5%E6%95%A2%E5%96%9D%E6%9C%AC%E7%8E%8B%E8%AE%A9%E4%BD%A0%E5%85%A8%E6%97%8F%E9%99%AA%E8%91%AC%E4%BB%96%E5%88%9A%E8%AF%B4%E5%AE%8C%E6%88%91%E7%AB%AF%E8%B5%B7%E6%AF%92%E9%85%92%E4%B8%80%E5%8F%A3%E9%A5%AE%E4%B8%8B%E4%B8%BA%E5%BC%80%E5%A4%B4%E5%86%99%E4%B8%AA%E6%95%85%E4%BA%8B/" title="如何以「『你若敢喝，本王让你全族陪葬！』他刚说完，我端起毒酒一口饮下」为开头写个故事？">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">如何以「『你若敢喝，本王让你全族陪葬！』他刚说完，我端起毒酒一口饮下」为开头写个故事？</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+<article>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/2024\/10\/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6\/';
+        this.page.title = '柳如是：赤伶';
+        this.page.url = 'https:\/\/mohai.us.kg\/posts\/2024\/10\/31-%E6%9F%B3%E5%A6%82%E6%98%AF%E8%B5%A4%E4%BC%B6\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+
+
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "retro"
+  window.darkTheme = "night"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-15FB092M49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-15FB092M49');
+        }
+      </script>
+    
+  
+
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
