@@ -88,8 +88,18 @@ class ArticleCrawler:
                 os.makedirs(dir_path, exist_ok=True)
 
                 # 清理标题中的序号和非法字符
-                clean_title = re.sub(r"^\d+\.\s*", '', title)  # 移除开头的数字序号
-                safe_title = re.sub(r"\s+", "", clean_title)
+                # 检查开头是否只有数字
+                if not re.match(r"^\d+$", title):
+                    # 移除开头的所有数字、点和空格
+                    clean_title = re.sub(r"^[\s\.0-9]+", '', title)
+                    
+                    # 移除末尾的 .md
+                    clean_title = re.sub(r"\.md$", '', clean_title)
+                    
+                    # 移除所有空白字符
+                    safe_title = re.sub(r"\s+", "", clean_title)
+                else:
+                    safe_title = title  # 如果开头只有数字，保持不变
                 
                 # 新的文件名格式：日期-标题.md
                 filename = f"{day}-{safe_title}.md"
@@ -104,7 +114,7 @@ class ArticleCrawler:
                 # 替换模板中的变量
                 article_content = self.template.replace("title: ", f"title: {clean_title}")
                 article_content = article_content.replace("date: ", f"date: {full_date}")
-                article_content = article_content.replace("lastmod: ", f"lastmod: {full_date}")
+                article_content = re.sub(r'lastmod:\s*\n', f'lastmod: {full_date}\n', article_content)
                 article_content = article_content.replace("cover: https://cdn.jsdelivr.net/gh/Pi3-l22/pico_rep/img/c.jpg", 
                                                        f"cover: {cover_image}")
                 article_content = article_content.replace("  - https://cdn.jsdelivr.net/gh/Pi3-l22/pico_rep/img/cpp.jpg",
