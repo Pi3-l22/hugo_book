@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圈心 | 墨海拾贝</title>
+
+    
+<link href="/Partying_Face.png" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="https://mohai.us.kg/posts/2024/11/9-%E5%9C%88%E5%BF%83/" />
+
+
+
+<meta name="author" content="Robot" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="网文">
+
+
+
+<meta name="generator" content="Hugo 0.133.1">
+
+
+<meta property="og:url" content="https://mohai.us.kg/posts/2024/11/9-%E5%9C%88%E5%BF%83/">
+  <meta property="og:site_name" content="墨海拾贝">
+  <meta property="og:title" content="圈心">
+  <meta property="og:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-09T00:00:00+00:00">
+    <meta property="article:tag" content="网文">
+    <meta property="og:image" content="https://wallpapershome.com/images/pages/pic_h/26585.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wallpapershome.com/images/pages/pic_h/26585.jpg">
+  <meta name="twitter:title" content="圈心">
+  <meta name="twitter:description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
+        <div class="h-10 rounded-full">
+          <img src="/Partying_Face.png" alt="墨 海 拾 贝" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://mohai.us.kg/" class="text-lg font-semibold cursor-pointer">
+          墨 海 拾 贝
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">网文集结地</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
+    <ion-icon name="information-circle"></ion-icon>关于</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜索">
+    <ion-icon name="search"></ion-icon>
+    搜索
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="关于">关于</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
+  
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents"></nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="圈心">
+  <meta itemprop="description" content="墨海拾贝——一个汇集网络文章的平台。这里是网文的聚集地。我们为您搜罗了最精彩、最刺激、最令人心潮澎湃的网络爽文。无论是都市传奇、玄幻冒险还是历史穿越，每一篇都能带给您前所未有的阅读快感。让我们一起在墨海拾贝，享受阅读的极致乐趣。">
+  <meta itemprop="datePublished" content="2024-11-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="13017">
+  <meta itemprop="image" content="https://wallpapershome.com/images/pages/pic_h/26585.jpg">
+  <meta itemprop="keywords" content="网文">
+
+      <header>
+        <h1 itemprop="headline">圈心</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2024-11-09T00:00:00Z</span>
+          
+
+          | <span>26分钟阅读</span>
+
+          
+          | <span>更新于
+            
+              <span data-format="luxon">2024-11-09T00:00:00Z</span>
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="../Robot.png" alt="Robot" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <a itemprop="url" href="https://mohai.us.kg" target="_blank">
+        <span itemprop="name">Robot</span>
+      </a>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e5%9c%88%e5%bf%83&amp;url=https://mohai.us.kg/posts/2024/11/9-%E5%9C%88%E5%BF%83/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://mohai.us.kg/posts/2024/11/9-%E5%9C%88%E5%BF%83/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e5%9c%88%e5%bf%83%20https://mohai.us.kg/posts/2024/11/9-%E5%9C%88%E5%BF%83/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+      <img src="https://wallpapershome.com/images/pages/pic_h/26585.jpg" alt="圈心" />
+      
+
+      <p>圈心</p>
+<p>褚寂然失忆了，他坚定地认为我是他的老婆。</p>
+<p>褚寂然失忆了，他坚定地认为我是他的老婆。</p>
+<p>「你说我们没关系，那为什么衣柜里都是你的衣服？」</p>
+<p>褚寂然一抬下巴，露出果然如此的神情来。</p>
+<p>「你是不是看我瘸了，所以想和奸夫跑路？」</p>
+<p>我再三解释：「我们只是合约关系！」</p>
+<p>褚寂然笑了：「你当在演戏？什么霸道总裁契约强制爱？」</p>
+<p>他指了指房间里东西：「双人床、情侣毛巾、情侣杯。」</p>
+<p>「你跟我说我们是合约？拜托，编谎话也要像一点好吧？」</p>
+<p>我一针见血：「你能找到结婚证吗？」</p>
+<p>褚寂然很笃定：「你把它藏哪去了？」</p>
+<p>这些分明都是他为了怀念白月光买的成双成对，现在却成了和我恩爱的证明。</p>
+<p>1</p>
+<p>见我不说话，褚寂然得意洋洋：「没话说了吧。」</p>
+<p>他突然软乎下来：「别生气了嘛老婆，我最舍不得你了。」</p>
+<p>我猛地怔住了，褚寂然叫我从来都是连名带姓。</p>
+<p>他明确地告诉我，我是替身。</p>
+<p>他可以给我钱，却不会给我爱。</p>
+<p>但是现在，失忆的褚寂然反悔了。</p>
+<p>他拄着拐杖踉踉跄跄的样子莫名有点好笑，那副总是拒人于千里之外的模样彻底崩裂。褚寂然从背后环住我的腰。</p>
+<p>「千错万错都是我的错，只要你不走，你想要什么我都给你。」</p>
+<p>褚寂然强硬地捏住我的下巴，在他想吻我时，只听细小的咔嚓一声。</p>
+<p>褚寂然捂腿狂叫。</p>
+<p>「啊啊啊啊啊啊啊啊！」</p>
+<p>海豚音不错，连夜上医院。</p>
+<p>医生很委婉。</p>
+<p>「建议这段时间静养比较好。」</p>
+<p>褚寂然对着医生嗖嗖直放眼刀，医生心领神会开了缓解面部肌肉的药。</p>
+<p>「眼周抽筋有点严重呢。」</p>
+<p>褚寂然扑倒在我怀里：「老婆他欺负我！」</p>
+<p>2</p>
+<p>我不是个合格的替身。</p>
+<p>因为我和徐轻云长得不是特别像，如果非要说，大概就是我们两个眼底都有一颗小痣。侧头看人时，某些角度有种恍惚的神似。</p>
+<p>几年前我经营着我爸留下来的烧烤店。</p>
+<p>炙热的夏天，呛人的烟雾夹杂着炭火燃烧后独特的苦涩气味。</p>
+<p>肉串在铁板上滋啦冒油，芝麻的香气在高温烘烤下直扑心脾。</p>
+<p>我的手艺算不上好，但赶在夏天旺季，喝酒划拳的客人不少。</p>
+<p>因为位置不错，门口的大马路到这个季节总有几辆带着辣妹的酷炫跑车。</p>
+<p>我总是转着手里的签子盘算什么时候我也可以买辆车，载着我心爱的小白脸一路风驰电掣。</p>
+<p>褚寂然就是这个时候出现的。</p>
+<p>他原本开了过去，掠过了我的店面，甩了我一脸汽车尾气。</p>
+<p>但是很快他又倒了回来。</p>
+<p>我抬眼一瞧，这男人生了双桃花眼，薄嘴唇。长得又俊又撩人，不当小白脸可惜了。</p>
+<p>不过，就算他当了小白脸也肯定是赔钱货。</p>
+<p>哪有人看人斜着眼，就差把爷很高贵，是您不配几个大字写在脸上了。</p>
+<p>我刚想说我这庙小容不下这尊大佛，这位爷就朝店里走去，寻了最里面的位置坐下。</p>
+<p>也不嫌弃经久烟熏火燎的桌椅带着股油腻。</p>
+<p>褚寂然点好菜，要了一杯水，把所有的串都涮了一遍。</p>
+<p>我看得眼皮直跳，可是当他把五张毛爷爷整整齐齐压在玻璃杯下面的时候，我听见了自己心跳的声音。</p>
+<p>舔狗竟是我自己。</p>
+<p>褚寂然每个星期来一次，多数是在周四。</p>
+<p>两串娃娃菜，两串花菜，一串烤翅。</p>
+<p>不要辣，不要孜然。</p>
+<p>还要放在矿泉水里涮一遍才能下口。</p>
+<p>我一直觉得这是暴殄天物，所谓烧烤吃的就是那一口孜然味。</p>
+<p>带着微微的辣在舌尖绽放，配着食物本身的香气加上炭火赋予的烟熏味。在喉咙留下浓墨重彩的记忆，以至于唇齿留香，欲罢不能。</p>
+<p>既然如此嫌它，用水涮过一遍才能入口，那还吃什么烧烤？</p>
+<p>只能说他醉翁之意不在酒。</p>
+<p>可我这店里只有一个打下手的五十岁大爷，难道他是冲着我来的？</p>
+<p>每当褚寂然那逼近一米九的个子坐进我这小小的门面，压迫感瞬间拉满。</p>
+<p>那么光芒万丈的一个人，怎么看都觉得和这名不见经传的小小铺子格格不入。</p>
+<p>而且褚寂然十分大方，不管点了什么，最后结账一定是五张小红鱼叠好压在玻璃杯下。</p>
+<p>他很少和我交谈，更多的时候就是自己坐着。可能半个小时，可能一个小时。</p>
+<p>我转动竹签时总觉得有一道视线黏在我背后，绵长却不热烈。</p>
+<p>后来我学了做冰粉，山楂味的。加上葡萄干椰果，放在冰箱冰镇一个下午。晚上拿出来送给客人，清热解暑。</p>
+<p>褚寂然的手捏着搪瓷勺子，瞳孔微微放大。吃了一个月的烧烤，我们终于搭上了话。</p>
+<p>他说我手艺很好。</p>
+<p>褚寂然的嘴唇水润润的，带着山楂的红。在白炽灯的照射下，黑发盈出一圈光晕，使得他整个人看上去像笼罩了一层温柔的雾。</p>
+<p>那双眼睛有种说不出的哀伤与落寞。</p>
+<p>那天，他留下了一千块。</p>
+<p>我决定吃一个星期素，求佛祖保佑褚寂然财运亨通。</p>
+<p>这可是我的财神爷。</p>
+<p>然而，褚寂然是蒸蒸日上了，我的烧烤摊却倒闭了。</p>
+<p>褚寂然最后一次来我免费请他吃了一顿。</p>
+<p>男人侧着头，很惊讶的样子。</p>
+<p>「你今天怎么这么大方？」</p>
+<p>我嘿嘿一笑：「明天关门了，今天回馈老顾客。」</p>
+<p>褚寂然把小红鱼收回钱包，汤勺在冰粉上敲了敲。</p>
+<p>今天做的是桃子味。</p>
+<p>粉嘟嘟的，还有个俗气的名字。</p>
+<p>叫初恋的味道。</p>
+<p>提起初恋我就惆怅，因为我的初恋并不是很美好。</p>
+<p>我看着在汤勺蹂躏下的冰粉更惆怅了，不知道褚寂然是不是也想起了初恋，他把冰粉戳了个稀烂。</p>
+<p>或许从这点能看出来，他对徐轻云并不只是爱恋。</p>
+<p>但说起当时，褚寂然突然就认认真真地和我对上了视线。</p>
+<p>他说：「我们在一起吧，我可以给你想要的一切，除了爱情。」</p>
+<p>他似乎很纠结，所以眉头拧得死紧。</p>
+<p>在我给出回答之前，褚寂然给了我最真实的评价。</p>
+<p>「花菜太老，娃娃菜太嫩，鸡翅有点夹生。两个月了，除了搓冰粉，烧烤真的很难吃。」</p>
+<p>他顿了顿。</p>
+<p>「就当我是烧烤店的投资人，给你个机会好好学习？」</p>
+<p>真好，原来褚寂然还怕会伤害我的自尊心。</p>
+<p>人不能为了尊严连钱都不要了。</p>
+<p>多好的借口啊，勤劳的烧烤店老板娘和她的一米九帅哥合伙人。</p>
+<p>脍炙人口的爱情，充满了孜然味。</p>
+<p>3</p>
+<p>这次我学聪明了，没有自己埋头苦干，而是吃遍了市里的烧烤店。高价挖来了两个师傅，势必要把家族企业发扬光大。</p>
+<p>不仅如此，我还紧跟潮流，推出了各种团购套餐。在当地吃喝玩乐推荐处刷了一次又一次的脸熟，誓要成为烧烤协会会长。</p>
+<p>谁见了不夸我一句现代独立自主女强人。</p>
+<p>一开始，我并不知道怎么和褚寂然相处。</p>
+<p>他总是很忙，一个星期顶多抽出半天的时间和我大眼瞪小眼。</p>
+<p>我们的交情都是在烧烤桌上建立的，可是现在搬进了褚寂然的大平层。</p>
+<p>在那张纯白的原木桌上，少了腻手的油渍和辛辣的炭火味，我们好像不知道该怎么交流了。</p>
+<p>所以我们不约而同选择了工作。</p>
+<p>直到某天晚上，褚寂然突然抱回了一个大熊。</p>
+<p>他甚至准备了一束百合。</p>
+<p>褚寂然是冷淡且笨拙的，但在这种淡漠之下，我感觉到了淡淡的喜欢。</p>
+<p>于是我们第一次约会。</p>
+<p>虽然褚寂然高冷，但是作为一个男朋友，他忠诚、有钱、有求必应。可以打九十九分，我几乎忘记了自己是一个替身。</p>
+<p>因为褚寂然的家里没有任何关于徐轻云的东西。</p>
+<p>他甚至从没提起这个名字，直到有次他带我见了他的朋友。</p>
+<p>那个人定睛看了我半晌，最后咧嘴笑了。</p>
+<p>「你知道吗？你长得有点像一个人。」</p>
+<p>我侧头，他却伸手按了我一下。致使我垂首，只能抬眼瞪他。</p>
+<p>那人笑得更厉害了些。</p>
+<p>「就是这个角度，你有点像徐轻云。」</p>
+<p>这是我第一次听到徐轻云的名字，从别人的口中。</p>
+<p>肖毅颠颠地跑出去，把正在和别人聊天的褚寂然拉过来。</p>
+<p>他揽着褚寂然的肩膀，一副哥俩好的样子。</p>
+<p>「看不出来你还挺深情，娶不到徐轻云就找了个替身。但是看起来也不是很像嘛。」</p>
+<p>褚寂然冷冷拍开他的手。</p>
+<p>「无聊。」</p>
+<p>事后我问褚寂然徐轻云是谁，他顿了下，看起来有些严肃。</p>
+<p>「一个老朋友，你不必管她。」</p>
+<p>虽然这么说，但对于自己和某人长得很像这一点我有些耿耿于怀。于是说不上有意还是无意，我开始接近褚寂然的圈子，打听关于徐轻云的事情。</p>
+<p>我也终于知道为什么褚寂然会说，他可以给我一切，除了爱。</p>
+<p>徐轻云是他的同学，听说整个学生时期两个人都跟蜜里调油似的，就等着毕业结婚，三年抱俩。</p>
+<p>可真到了毕业，情况急转直下。徐轻云转眼另嫁他人，速度之快，褚寂然甚至没来得及做出反应。</p>
+<p>这件事在他们圈子里影响蛮大，所有人都唏嘘天意弄人。反倒是褚寂然看得开，他既没消沉也没堕落。只是又变成了曾经那副冷热不近的样子。跟谁都是点头之交，再没交心的人了。</p>
+<p>我对着镜子左照右照都觉得，如果非要说是替身，那要在我身上看见徐轻云的影子蛮难的。</p>
+<p>褚寂然这生意做得有点亏。</p>
+<p>恰巧那时候烧烤店生意火爆，我的小金库很快积攒了一笔资金。</p>
+<p>褚寂然抖着报纸，把标题用红笔圈起来。</p>
+<p>「这里要做开发区。」</p>
+<p>许是我疑惑的样子太过傻气，褚寂然弯了唇角。</p>
+<p>他用食指在我鼻尖上刮了下。</p>
+<p>「把你挣的钱拿出来投资，我出七你出三。」</p>
+<p>以褚寂然的眼光，这是笔只挣不赔的买卖。</p>
+<p>这个男人实在是该死地贴心。</p>
+<p>他竟然带着我一起挣钱。</p>
+<p>我瞥见褚寂然盯着我的侧脸出神，也不知哪根筋搭错了，开口就问：「我这样子是不是很像徐轻云？」</p>
+<p>褚寂然嘴边的笑突然就消失了，他冷冷地看着我，语气带了点讥讽。</p>
+<p>「你可以这么想。」</p>
+<p>我脑海骤然响起了那首：「你要结婚了，新郎不是我。」</p>
+<p>帅气多金还深情，我严重怀疑褚寂然拿了男二剧本。</p>
+<p>我拍了拍他的肩，深刻表示：「没事的，你可以尽情从我身上找她的影子。只要钱给够，什么都好说。」</p>
+<p>褚寂然的回答是把报纸盖在我的脸上。</p>
+<p>「蠢死了。」</p>
+<p>周末采购的时候褚寂然挑了很多成双成对的东西，我嘴贱地问：「是用来怀念你那逝去的爱情吗？」</p>
+<p>褚寂然一个抱枕扔过来。</p>
+<p>「对啊，这些都是给她买的，你不准用。」</p>
+<p>事实上，这些东西我用了六年。</p>
+<p>这六年我几乎忘记了徐轻云这个人的存在，日子平淡到我以为我和褚寂然是老夫老妻了。</p>
+<p>那句用来怀念前任的话不过是句玩笑，可现在拿出来看却发现，这或许真是褚寂然内心所想。</p>
+<p>那天我从我的烧烤城美滋滋烤了两根羊肉串，刚出来就被抱着孩子的女人堵住了。</p>
+<p>她说：「我是徐轻云。」</p>
+<p>她还说：「这是褚寂然的孩子。」</p>
+<p>我突然发现我退场的时候到了。</p>
+<p>一个替身拿什么去和正主争，尤其是，她还有个孩子。</p>
+<p>是的，他们有一个孩子。</p>
+<p>虽然很难过，但难过之余我想把褚寂然暴打一顿。</p>
+<p>徐轻云垂着眼睫，抱着孩子的手有点抖。</p>
+<p>「他过得还好吗？」</p>
+<p>我嘴角直抽抽：「挺好的。」</p>
+<p>徐轻云的眼泪跟断了线的珠子似的吧嗒吧嗒往下掉。</p>
+<p>「真的很对不起姜小姐，可我实在没有办法了。我和程遥之间出了点问题，而这孩子是我和寂然结婚之前有的。现在我离婚了，只能找寂然帮忙了。」</p>
+<p>我喉咙紧得喘不过气，指尖冰凉。</p>
+<p>但我想争一争。</p>
+<p>我努力冷静下来，挂上无懈可击的笑容。</p>
+<p>「这是寂然的孩子，我想他不会不管的。不过你毕竟已经离婚了，而我现在和寂然正在交往。这件事还是由我跟他说比较好吧。」</p>
+<p>徐轻云点点头。</p>
+<p>「那就麻烦你了，姜小姐。」</p>
+<p>我嗅到了危险的气息，徐轻云不是个简单的人。</p>
+<p>4</p>
+<p>褚寂然今天回来得很晚，脸色也不太好，阴沉沉的。</p>
+<p>但他还是没忘记给我的铃兰浇浇水，然后去冰箱找他的山楂冰粉。</p>
+<p>可能是因为心不在焉，今天的菜咸了。</p>
+<p>褚寂然夹了块鲈鱼，入嘴的一瞬间，我感觉他浑身都打了个哆嗦。</p>
+<p>好像有默契一样，我们两个一句话不说。</p>
+<p>吃完饭后，褚寂然把碗筷放入洗碗机。我洗了点水果，打开投影仪，紧接着正襟危坐在沙发上。云里雾里，不知道看了些什么。</p>
+<p>褚寂然问我怎么不脱鞋。</p>
+<p>他摊开双臂摆在沙发靠背上，翘着的一缕头发，让他现在看上去有几分俏皮。</p>
+<p>然后他很体贴地问我，努力把他的坏情绪藏了起来。</p>
+<p>「今天怎么坐这么正经？是不是工作上出了什么事情？和我说说看？」</p>
+<p>他拉住我，往他的怀里靠。</p>
+<p>褚寂然身上有好闻的青竹香。</p>
+<p>我们每天晚上依偎在一起看电视的时候，褚寂然就这么抱着我，一颗一颗喂葡萄。</p>
+<p>他是不是也这么对徐轻云？</p>
+<p>或者，他抱着我的时候，心里都是徐轻云的样子。</p>
+<p>我整个人都不好了。</p>
+<p>说不清的情绪在心里蔓延，仿佛无数根针浅浅扎在心上，泛起绵密的疼痛。</p>
+<p>褚寂然注意到我的神色，他抿唇，漆黑的瞳孔注视我的一举一动。</p>
+<p>「到底怎么了？」</p>
+<p>我闭上眼，干脆破罐子破摔。</p>
+<p>「我今天见到徐轻云了。」</p>
+<p>褚寂然并没有我想象中那么大的反应，他只是不轻不重地摸了下我的脸。</p>
+<p>「哦，就为这个？」</p>
+<p>我惊讶地看着褚寂然，他神色淡淡，不知为何有些生气的样子。</p>
+<p>「姜琦，相处这么久，你觉得我是什么样的人呢？</p>
+<p>「多情、滥情，还是虚伪奸诈？</p>
+<p>「你觉得我们在一起六年，你的存在只是为了填补另一个人的空缺？我没有那么无聊，不喜欢的人，我不会留在身边。」</p>
+<p>他抬起我的手，在指尖落下一个吻。</p>
+<p>「洗澡水放好了，去洗个澡放松一下。你今晚吃得太少了，我去给你准备点零食。」</p>
+<p>洗澡并没有让我放松，我做了一晚上的梦。</p>
+<p>醒来的时候褚寂然不在身边，指针刚好指向一点。手机屏幕突兀地亮着，徐轻云发来的消息很是紧急。</p>
+<p>「姜小姐，请你帮帮我吧。俊俊发高烧，我实在不知道怎么办了！」</p>
+<p>我连夜赶到了儿童医院。</p>
+<p>因为是深夜，输液室的灯光只开了一半，环境有些昏暗。</p>
+<p>我站在门口，把自己藏匿在阴影里。</p>
+<p>那里面，褚寂然抱着俊俊，神色很安详。</p>
+<p>他低头，看着这个粉雕玉琢的小男孩，微微勾了唇角。</p>
+<p>右手也不自觉地轻轻拍打着，哄着俊俊入睡，生怕惊了他的美梦。</p>
+<p>看起来，像个完美的父亲。</p>
+<p>而徐轻云，握着保温杯，一脸的庆幸。</p>
+<p>「还好你来了，不然我真不知道该怎么办。」</p>
+<p>褚寂然侧头。</p>
+<p>「程遥呢？」</p>
+<p>徐轻云听了这话，不禁愣神，低头的瞬间落下几颗泪珠来。</p>
+<p>她用手拭去了，展露出一个坚强的笑容来。</p>
+<p>「我和他离婚了。」</p>
+<p>「为什么？」褚寂然很诧异的样子，眼睛都睁大了。</p>
+<p>徐轻云转过身子，声音逐渐哽咽起来。</p>
+<p>「你别问了。」</p>
+<p>我看不下去了，于是走到阳台吹风。</p>
+<p>不知道什么时候，徐轻云走到了我的背后。</p>
+<p>她的声音很温柔。</p>
+<p>「姜小姐，寂然他和你的感情很好呢。一直说，想和你要个孩子。」</p>
+<p>我诧异地转过身，徐轻云笑着，似乎并不把我放在眼里。</p>
+<p>「我还没告诉他俊俊是他的孩子，你知道吗，血脉亲情最是割舍不掉。你觉得，你拿什么和我争？</p>
+<p>「他是一个父亲，那他就一定会做出正确的选择。</p>
+<p>「况且，他心里还有我呢。」</p>
+<p>不然怎么会半夜，睡衣都没换，只套了一件外套就到医院来。</p>
+<p>那通信息是徐轻云故意发给我的，她就是要我看看。在褚寂然心里，她永远是最重要的位置。</p>
+<p>即便不是，有俊俊作为牵绊，她也是无可动摇的地位。</p>
+<p>我争不过她的，所以我决定离开褚寂然。</p>
+<p>收拾好自己的东西，我决定先去大理旅游。</p>
+<p>那是我一直向往的地方，从少年蹉跎到青年，也没时间去。</p>
+<p>坐在车上我给褚寂然打了个电话。</p>
+<p>「我们分手吧。」</p>
+<p>回应我的是长久的沉默。</p>
+<p>「因为什么？」</p>
+<p>「你自己知道的。」</p>
+<p>我听见褚寂然冷笑了一下：「给我个理由。」</p>
+<p>「俊俊够吗？」</p>
+<p>四个字还没来得及说完，一声巨响险些把我的耳膜炸裂，紧接着，褚寂然挂断了。</p>
+<p>半个小时后，助理小李一把鼻涕一把泪地告诉我。</p>
+<p>「不好了姜总，褚总他出车祸要截肢了，呜呜呜呜呜呜呜呜呜他要变成残废了！」</p>
+<p>5</p>
+<p>我赶到医院的时候褚寂然已经醒了，麻药的效用还没过。他睁着眼，盲目地盯着天花板。</p>
+<p>嘴唇干到裂皮，褚寂然伸出舌尖舔了舔。</p>
+<p>他又摸了把自己被吊起来的腿，一瞬间联想到什么不好的事情，整个脸都白了。</p>
+<p>「我这是怎么了？」</p>
+<p>小李心有余悸地抹了把汗。</p>
+<p>「还好只是骨裂，你出车祸了，不记得了吗褚总？」</p>
+<p>褚寂然四下看了眼，把放在床头柜上的手机拿了过来。</p>
+<p>虽然屏幕碎得不成样子，但好在手机还能用。</p>
+<p>「小李？你，是谁？」</p>
+<p>紧接着他又看向我。</p>
+<p>「你又是？」</p>
+<p>褚寂然疑惑地皱着眉，很是苦恼。他捧着头，努力在回忆些什么，但结果都是徒劳。</p>
+<p>我伸出手指在褚寂然面前晃了晃，被他拍开。</p>
+<p>「我是不记得事，不是傻了！」</p>
+<p>我有些诧异，但这时候还是褚寂然身体要紧。</p>
+<p>「你别慌，我找医生来看看。」</p>
+<p>然而我话音刚落，褚寂然就抓住了我的手。</p>
+<p>他瞳孔微微放大，整个人处在一种震惊喜悦的状态。</p>
+<p>「我记得你，我记得这个声音！」</p>
+<p>他打开手机页面，通讯记录上显示几个小时前我们曾通过话。</p>
+<p>而褚寂然给我的备注是，老婆。</p>
+<p>他眼巴巴看着我。</p>
+<p>「你是我老婆对吗？」</p>
+<p>我定定地看着褚寂然，褚寂然也定定地看着我。</p>
+<p>他身体扭动幅度太大，而麻药这时候该到时间了。</p>
+<p>褚寂然的脸色逐渐不对劲，冷汗顺着他的额头一滴一滴往下淌。终于，他忍不住了。拽着我的手浮现出青筋，骨结都泛了白。</p>
+<p>褚寂然咬着牙，恨恨道：「好疼！」</p>
+<p>他像一尾脱水的鱼，猛地蹦跶回了床上。</p>
+<p>照完 CT，褚寂然的脑子里没毛病。医生的解释是大脑遇到危险启动了自我保护机制，忘记了一些东西。基本上只能靠他自己想起来了，没办法实现外界干预。</p>
+<p>我看了眼挂在我身上的褚寂然。</p>
+<p>「你真的什么也想不起来了吗？」</p>
+<p>褚寂然很努力地思索：「我记得我们吵架了。」</p>
+<p>他突然红了眼眶：「你说你要走，你是不是想跟我离婚？」</p>
+<p>医生在旁边委婉提醒：「这段时间还是不要刺激他的好。」</p>
+<p>三天后，褚寂然出院了。我决定跟他解释我并不是他的老婆。</p>
+<p>褚寂然呵呵冷笑，一副你骗不了我的样子。</p>
+<p>他打开冰箱，里里外外翻找了一遍。拄着拐来找我：「老婆，冰箱里有东西不见了，我不知道是什么。」</p>
+<p>我认命地叹气。</p>
+<p>「是山楂冰粉，你等着我给你搓。」</p>
+<p>褚寂然点点头，接了壶水去浇铃兰花，嘴里还不住嚷嚷。</p>
+<p>「老婆，你的花快枯死了！」</p>
+<p>我在搓山楂冰粉，没空理他。褚寂然把我摆在客厅的行李箱搬到了卧室，把我收拾好的东西又一件件拿出来摆好。</p>
+<p>失忆了的褚寂然有股子傻气，不像以前那个冷静矜贵的人，总是摸不透他的内心。</p>
+<p>他捧着冰粉，一口气塞了半碗，整个腮帮子都鼓鼓的。笑得眼睛都看不见了，还不忘夸奖我。</p>
+<p>「老婆你手艺好好啊，这绝对是我吃过世界上最好吃的东西。</p>
+<p>「你以前可没这么夸过我。」</p>
+<p>褚寂然沉静下来，小心翼翼地问我。</p>
+<p>「我以前是什么样的？」</p>
+<p>我想了想，回复他。</p>
+<p>「吃完就把碗丢了呗，顶多说一句还不错。」</p>
+<p>褚寂然低下头，很难过的样子。</p>
+<p>「我一定很不体贴，很差劲吧，不然你怎么会想离开呢？」</p>
+<p>差劲吗？并不，褚寂然是个很温柔的人。</p>
+<p>我摸了摸他的头，褚寂然小狗一样在我手上蹭了蹭。</p>
+<p>「再给我个机会好吗？」</p>
+<p>手机铃声打断了我们之间暧昧的气氛，徐轻云的声音温柔又焦急。</p>
+<p>「寂然，你还好吗？我听小李说你出了车祸！」</p>
+<p>褚寂然拧眉，他应该对徐轻云的声音有印象。在短暂的思索过后，他回复：「我很好谢谢你的关心。」</p>
+<p>他看了眼备注，除了名字没有别的信息。</p>
+<p>俊俊的哭声传来，徐轻云一边哄孩子一边不住道歉。</p>
+<p>「不好意思啊寂然，孩子太吵了，你别怪他，他也是关心你。」</p>
+<p>她说着说着就带了哭腔。</p>
+<p>「寂然，你知不知道我和俊俊有多关心你？」</p>
+<p>褚寂然迷茫地眨了眨眼：「俊俊是谁？」</p>
+<p>他像是想到什么，转眼间吓得脸色煞白，结结巴巴地问我：「你是因为这个才要离开我的吗？俊俊，俊俊不会是我的私生子吧？」</p>
+<p>褚寂然一个没拿稳，手机掉在了地上。历经艰苦的手机终于宣告退休，在一阵刺耳的电流声后宣告报废。</p>
+<p>褚寂然愣愣地把它捡起来，把徐轻云这个名字又念了几遍。</p>
+<p>最后他和我保证：「老婆，你相信我，我和这个人绝对绝对没有关系了！」</p>
+<p>但事情并不是褚寂然怎么想就怎么发展的，当天夜里徐轻云就抱着俊俊上门了，一起来的还有褚寂然的母亲。</p>
+<p>我没有见过褚寂然的家人，在一起六年。每当逢年过节褚寂然就会消失两天，他家风甚严，想来褚老太太看不上我的出身。</p>
+<p>褚寂然怕我难堪，所以每次都是一个人回家，算得上别样的体贴。</p>
+<p>等我真见到褚老太太，我才知道什么叫做教科书一样的恶婆婆。</p>
+<p>我听小李说过，褚寂然幼年丧父，偌大的一个家都靠褚老太太一个人支撑。褚寂然对其说一不二，算得上愚孝。比妈宝男还妈宝男。</p>
+<p>没失忆的褚寂然对他妈言听计从，那失忆的不得被轰成渣？</p>
+<p>徐轻云牵着俊俊，低眉顺眼地跟在老太太身后。老太太既没拿正眼瞧她也没拿正眼瞧我，只是对着褚寂然略一抬头。</p>
+<p>「到底怎么回事？」</p>
+<p>褚寂然一哆嗦，由此可见心理阴影从小扎根。</p>
+<p>「伯母，是这样的。」</p>
+<p>我话还没说完，老太太冷笑一声。</p>
+<p>「这是我们的家事，有你插嘴的份儿吗？出去等着吧。」</p>
+<p>我心里叹了口气，心想这事我还真插不上嘴。</p>
+<p>我看了眼徐轻云，她正搂着俊俊，低垂着眼眸不知在想什么。</p>
+<p>正要离开，褚寂然一把拉住了我。</p>
+<p>「有什么事直接说，姜琦是我老婆，她应该在这。」</p>
+<p>我还没反应过来，褚寂然沉着脸，冷声道：「我大概也猜出是为了什么，虽然我不记得了，但俊俊这孩子十有八九不是我的。」</p>
+<p>徐轻云闻言咬唇，满腹的委屈。</p>
+<p>「既然你不记得了，又怎么能说俊俊不是，我们在一起四年，最后一次确实没有措施啊。」</p>
+<p>褚寂然拄着拐走近俊俊，孩子生得确实好看，浓眉大眼，粉雕玉琢的一个娃娃。</p>
+<p>「你非要这么说就亲子鉴定吧，明天我让小李去接你们。」</p>
+<p>老太太没有反对，只是看看我又看看褚寂然。</p>
+<p>「如果结果出来，俊俊是我孙子，那我绝对不允许他流落在外。」</p>
+<p>褚寂然揽着我，一字一字咬得极其清晰。</p>
+<p>「但我的老婆只有姜琦一个，我不会认其他人。」</p>
+<p>徐轻云眼中含泪，莞尔一笑。</p>
+<p>「没关系，我只要俊俊好就行。」</p>
+<p>我总觉得这事不简单，可没等我细想，褚寂然就抱着我嚎起来：「呜呜呜呜呜，老婆，你一定吃了很多苦吧！我妈她，实在是太可怕了。你放心，有我以后一定不会再有婆媳矛盾了，我们分开住啊！」</p>
+<p>6</p>
+<p>褚寂然抱着枕头，半夜三更好像幽灵一样站在沙发跟前。</p>
+<p>因为白天那通折腾，我现在并不是很想和褚寂然面对面。所以我选择睡沙发，其实我更想回烧烤城。但是褚寂然拖着那条伤腿，做西子捧心状，不知道的还以为我在虐待他。</p>
+<p>「回你房间去。」</p>
+<p>「没有你我睡不着。」</p>
+<p>褚寂然委屈巴巴。</p>
+<p>「老婆你相信我，我跟徐轻云真的什么都没有。你看我的通话记录，最多的就是你，紧急联系人也是你。」</p>
+<p>我从沙发上爬起来，盯着褚寂然的黑眸。</p>
+<p>一派平静，看不出假装的样子。</p>
+<p>我故意说：「徐轻云是你心尖尖上的初恋，为了她你可是吵着闹着要和我离婚。」</p>
+<p>褚寂然登时吓得发抖，连说话都变得结结巴巴。</p>
+<p>他伸出手指来描摹我的眉眼。</p>
+<p>「老婆，你别骗我，我记得的，你身上的味道。</p>
+<p>「我们在一起很久了对吧。</p>
+<p>「我怎么可能为了她要离开你呢。」</p>
+<p>褚寂然在地板上铺了毛毯，他躺得板正。</p>
+<p>「老婆睡吧，我陪着你。」</p>
+<p>我醒来的时候睡在床上，褚寂然被拉去做亲子鉴定了。</p>
+<p>手机上有徐轻云发来的消息。</p>
+<p>「姜小姐，我们做个交易吧。三百万，我会带着俊俊从你和褚寂然的生活里消失。你要想好，过了今天就算你和褚寂然结婚，俊俊也会作为我和他之间的联系横亘在你们中间。」</p>
+<p>我还没来得及回复，又接到了一通电话。烧烤城的伙计因为操作失误被炭烫伤了，现在正在医院接受治疗。</p>
+<p>我作为负责人又急匆匆赶去了一院，在这里我见到了徐轻云的前夫。</p>
+<p>本来不应该这么巧的，伤者的家属拉着我做了一系列保证。一不注意就拖到了下午，这时候亲子鉴定早就做完了。</p>
+<p>褚寂然无端发来了一句让我安心的话。</p>
+<p>「姜琦，你放心，俊俊绝对不会是我和徐轻云的孩子。」</p>
+<p>他这个语气总让我觉得他又恢复记忆了。</p>
+<p>然后我就在楼上看见徐轻云拉着俊俊往肿瘤病房走去。</p>
+<p>她在这里有得癌症的亲人？</p>
+<p>徐轻云说她是孤身一人带着俊俊来到容城的，怎么会有凭空冒出来的亲人？</p>
+<p>我悄悄跟了上去。</p>
+<p>单人病房里有一个清瘦的男人，病号服在他身上像是宽大的袍子。露出来的手臂上青青紫紫都是扎出来的针孔，眼下乌黑一片，戴着针织的帽子靠在窗台上。</p>
+<p>窗台上种着一盆雏菊。</p>
+<p>徐轻云牵着俊俊，两人坐在床边。</p>
+<p>我在门口的便签上看到了他的名字，程遥，徐轻云的前夫。</p>
+<p>程遥的声音很沙哑，但是听起来很愉悦。</p>
+<p>「工作忙完了吗？今天这么早有空来看我？」</p>
+<p>徐轻云噘嘴：「被你白养了六年，来看看你怎么了？」</p>
+<p>程遥只是笑笑，伸手摸了摸俊俊的头。</p>
+<p>「医药费还够吗？实在不行把房子卖了吧，别那么辛苦。」</p>
+<p>我这个角度看不清徐轻云的表情，但是她像是在笑的样子，可声音听起来有点哽咽。</p>
+<p>「房子卖了你出院了住哪？放心好了我有办法。你养了我们母子六年，我帮你承担医药费也是应该的。」</p>
+<p>于是程遥抬头看她，弯了眉眼。</p>
+<p>「明明就是我拖累了你。」</p>
+<p>徐轻云扭过头，在光晕中我看到了一滴泪珠。</p>
+<p>「说这种话干嘛，俊俊又不是你的孩子。」</p>
+<p>两人又说了一阵话，徐轻云要走了。我躲到卫生间里，等她走后溜进了程遥的病房。</p>
+<p>他像是早就知道我的存在，一点也不意外。</p>
+<p>「程先生你好。」</p>
+<p>程遥点点头：「你好。」</p>
+<p>「听说褚寂然失忆了。」</p>
+<p>我没说话表示默认，于是程遥自顾自说起了有关于他们三个的往事。</p>
+<p>「我的身体一直不是很好，年轻的时候就得了胃癌，三天两头往医院跑。轻云她其实是我父母收养的，我生病后她就一直照顾我。」</p>
+<p>「十九岁的时候父母出了意外都走了，家里的担子就都落在了轻云的身上。我本来打算一走了之不拖累她的。可是突然有一天轻云告诉我，医药费有着落了。我那时候知道她有个男朋友，家里条件很好，隐隐约约也猜到了，可我真的想活下去。我选择了沉默。后来我的胃癌痊愈了，轻云选择和褚寂然分手，和我去外省结婚。我发誓一定会对她好，于是不久我们有了俊俊。好景不长，短短六年，病魔再次找上我。轻云带我来到这里治疗，还说俊俊不是我的要和我离婚。但是她不会不管我，我猜她一定又去找褚寂然了。」</p>
+<p>程遥说到这里说不下去了，他不住地流眼泪。</p>
+<p>「可是我不想拖累她了，轻云每天都工作十二个小时。我知道医药费早就用完了，这都是她四处求人借来的。关于俊俊的身世，她坚信他是褚寂然的孩子。真的很对不起你，这位小姐。不管真相如何，你都该得到公正的对待。」</p>
+<p>他摘下帽子，从后脑薅下几根头发。又从抽屉里拿出几根递给我。</p>
+<p>「这是我趁俊俊睡着偷偷剪下来的，你拿去化验。」</p>
+<p>程遥对着我充满歉意地一笑。</p>
+<p>「轻云她真的很聪明，褚寂然也不应该被这样对待。」</p>
+<p>我拿着程遥和俊俊的头发去了鉴定中心，静静等待结果。</p>
+<p>这几天褚寂然都不大敢和我说话，他似乎时不时会想起什么，但记忆总会在关键时候中断。</p>
+<p>但深刻在骨子里的习惯让他每天都会拎着水壶给我的铃兰浇水。每天会雷打不动地打开冰箱询问他的山楂冰粉去哪了。</p>
+<p>褚寂然会习惯性地挑眉，眉眼下压的样子看起来有点严肃。</p>
+<p>下一秒又切换成单纯无害的病患模式。</p>
+<p>「老婆，肚子饿啦！」</p>
+<p>在鉴定结果没出来的这段时间，褚寂然总是半夜偷偷爬起来。</p>
+<p>他也不干什么，就是坐在阳台上晒月亮。</p>
+<p>终于我忍不住问他。</p>
+<p>「大半夜不睡觉，你在干什么啊？」</p>
+<p>褚寂然回头像要哭出来的样子。</p>
+<p>「我怕，如果结果真的是坏的，你要离开我怎么办？而我，连我们的记忆都没有。我们是怎么认识的，你是什么样的人，我是什么样的人？</p>
+<p>「无数的画面在我的脑海里重叠，有你的，也有她的，可偏偏最重要的我想不起来。」</p>
+<p>他失落地喃喃自语。</p>
+<p>「我要问问她为什么要这么骗我。」</p>
+<p>褚寂然抬头，茫然地盯着我。</p>
+<p>「姜琦，你觉得我是什么样的人？你觉得我会为了她抛弃你？还是在你心里，我根本就是个滥情的人，甚至于，你和她一样也根本没有爱过我？」</p>
+<p>我愣愣地站在原地，褚寂然突然反应过来，单脚蹦过来抱住我。</p>
+<p>「老婆老婆我是发疯乱说话，我没有别的意思！」</p>
+<p>他没注意到，自己早就泪流满面。</p>
+<p>褚寂然抱了我半晌，深深埋在我的颈窝里。</p>
+<p>很快湿漉漉一片。</p>
+<p>「老婆，我想吃山楂冰粉。</p>
+<p>「老婆，你不会有一天就突然不见的对吧？</p>
+<p>「我真的很喜欢很喜欢和你在一起的日子，每一天每一分。我们在一起已经六年了，还有三个月是七年。」</p>
+<p>7</p>
+<p>在亲子鉴定结果出来的前一天，褚寂然反而平静下来。</p>
+<p>他在家里翻箱倒柜，终于在杂物室的小角落找到了一盒旧物。</p>
+<p>里面放了些零碎的东西。</p>
+<p>发夹，卡片，手链。</p>
+<p>褚寂然的表情看不出怀念，想来早就释然。</p>
+<p>他空出一只手来拉住我，另一只手在箱子里翻翻找找。</p>
+<p>我侧头望去，碎发遮住了褚寂然的眼睛。时间仿佛回到了很多年前的那个夏天，年纪尚轻的褚寂然不知是何种心绪收集了徐轻云留下的东西。把它们放在角落里，不再过问，想必是很难受吧。</p>
+<p>不然怎么会露出那么脆弱的神情。</p>
+<p>我没忍住，轻轻碰了碰褚寂然的眼睛。</p>
+<p>他回过神，幽深平静的眸子看向我，缓缓扬起了嘴角。</p>
+<p>「我想起来一些事情，似乎从徐轻云刚刚和我在一起的时候就一直在暗示我，她迟早会离我而去。那段日子，每天都提心吊胆的。她总是突然消失，又突然出现。哀伤又无助，用她的眼睛看着我，便什么话都问不出来了。</p>
+<p>「后来我知道程遥的存在，她的哥哥，病入膏肓。我不知道我怎么了，我好像成了徐轻云手里的傀儡，没了自己的思想，只会按照她的想法做事。」</p>
+<p>褚寂然捏了下我的手。</p>
+<p>「你知道吗？时间一久我竟然有点害怕她。</p>
+<p>「后来她突然消失，我竟说不清是失落还是庆幸。」</p>
+<p>劳累许久，褚寂然的腿有些受不住。他靠在我的身上，声音逐渐变得模糊起来。</p>
+<p>「她总是以离开为要挟，迫使我的底线一点点降低。她走后我把这些她遗落在我身边的东西收了起来，所有人都觉得我是深情，其实不然。我只是很遗憾，我这样缺爱的人，只要一点点温暖就可以一直留下来的。」</p>
+<p>我突然发觉，在褚寂然的淡漠之下其实是伪装起来的壳，内里的褚寂然孤独又脆弱。</p>
+<p>他日复一日地给铃兰浇水，吃山楂冰粉，其实不是习惯，而是他独特的安全感需求。</p>
+<p>严厉的母亲，弃他而去的徐轻云，褚寂然急需什么东西来证明他是被需要的。</p>
+<p>我愣了下，被男人紧紧抱在怀里。</p>
+<p>「我第一次见你的时候，你低头专注的样子有点像她。相处起来才知道你们一点都不像，你总是笑呵呵的，是温暖的。但悲哀的是，我好像已经不知道要怎么好好谈恋爱了。我笨拙地接近你说着违心的话，我一点都不诚实。</p>
+<p>「我忘了一件很重要的事，一件可以让你留在我身边的事。」</p>
+<p>褚寂然似乎很累的样子，把真实的自己剖开揉碎，完完全全展现在我眼前。</p>
+<p>在睡着之前，他仍拉着我的手。</p>
+<p>睡梦中是不安的呓语。</p>
+<p>「别走。」</p>
+<p>我安抚好他打算去医院看看受伤的员工，顺带看看程遥。</p>
+<p>徐轻云也在，程遥不知道说了什么。</p>
+<p>从我的角度只看到徐轻云回手一巴掌甩在了程遥脸上，力道不大，只能说是轻轻拍了下。</p>
+<p>程遥仍笑着，捉过徐轻云的手揉了揉。</p>
+<p>「打疼没？」</p>
+<p>徐轻云捂着胸口说不出话来，程遥便拉着她，细声说着什么。</p>
+<p>「轻云，我们不治了，回家好不好？我的身体我自己有数，就算找到合适的肾源又能怎么样呢，不要再让自己那么辛苦了。」</p>
+<p>徐轻云冷冷看他一眼，倔强地咬着牙。</p>
+<p>「程遥，你以为你的命是你自己的？你的命是我徐轻云从十九岁开始每日照料，殚精竭虑，费尽心机好不容易才从死神那抢来的。怎么你说怎样就怎样，我告诉你，你的命是我的。我不准你死，你就不准死！」</p>
+<p>她俯下身子趴在程遥腿上。</p>
+<p>「我记得呢哥哥，很小很小的时候你来孤儿院见过我的，你说不会让别人欺负我，后来你就把我领回了家。你是我的，谁也抢不走，谁都不行。</p>
+<p>「所以你才留下了俊俊。」</p>
+<p>徐轻云顿了顿，才说：「是。」</p>
+<p>她故意留下个孩子，就是知道程遥的身体一定会再出问题。这个孩子是用来要挟褚寂然的筹码，是程遥活下去的保障。</p>
+<p>亲子鉴定的结果出来了，俊俊确实是褚寂然的孩子。</p>
+<p>徐轻云的神色很冷，她把俊俊领到了褚母的身边。</p>
+<p>「五百万，我不会再和这个孩子相见，也不会打扰你们。」</p>
+<p>说最后两个字时她扫了眼我和褚寂然。</p>
+<p>心口突然有些闷，刚好那边医院也通知我去拿报告，于是找了个借口出门。</p>
+<p>走了几步褚寂然突然追了出来。</p>
+<p>他拄着拐杖，神情慌乱又小心，终究是没忍住伸手拉了拉我的袖子。</p>
+<p>「你要走吗？」</p>
+<p>我摇摇头，褚寂然仍跟着我。</p>
+<p>「你一定是骗我的，说不定我放了你，你就不见了。你是不是怪我？怪我没记起来，怪我没早些认识你。」</p>
+<p>褚寂然垂着眼，显得可怜巴巴的。</p>
+<p>「债不能不认，可是我跟徐轻云没有关系了。你要是看我烦，我不说话，你别不要我。」</p>
+<p>我怕他腿疼得厉害，便让他赶紧回去，只说自己去拿个东西。</p>
+<p>褚寂然不肯，在我后边亦步亦趋地跟着，始终保持一米的距离。</p>
+<p>我想走到大路上叫了车带他一起也行，不知道楼上哪个缺德的，扔了个苹果下来，刚好砸在褚寂然头上。</p>
+<p>褚寂然啊了一声，随即左摇右晃。我赶紧把人扶着，抬头一看，褚寂然额头红了一大片，贴着头皮往里延伸，不知道有多严重。</p>
+<p>男人扶着额头，软绵绵地倒在我身上，小声嚷嚷。</p>
+<p>「好晕，想吐。」</p>
+<p>我心说坏了，脑震荡没跑了。</p>
+<p>这里离马路还有些距离，褚寂然的头却是耽误不得了。于是脱了高跟鞋，憋着一口气把人背了起来。</p>
+<p>褚寂然在我背上趴着，许久也不说话。我生怕他是内伤，不住诱着他开口。</p>
+<p>「褚寂然，你醒醒，能听见我说话吗？」</p>
+<p>喊了好几声，褚寂然才浅浅回应我两句。</p>
+<p>「老婆，我没死。」</p>
+<p>我听他开口，心就放下大半。</p>
+<p>那头，褚寂然还在絮絮叨叨说着，都是些胡言乱语。</p>
+<p>后来就是叫我的名字，姜琦姜琦叫个不停。</p>
+<p>人似乎清醒了些，贴着我的耳根问我。</p>
+<p>「你愿不愿意嫁给我？你不嫁给我你嫁给谁？我骗你的，我就是故意买的情侣装，谁都不准用，就给你用。」</p>
+<p>褚寂然低了嗓子，像是撒娇。</p>
+<p>「嫁给我吧，嫁给我吧！」</p>
+<p>我心里焦急，只能应付他。</p>
+<p>「嫁嫁嫁，你快别说话了！」</p>
+<p>褚寂然突然笑了出来。</p>
+<p>「老婆，我想起来了。徐轻云和我分手的那天我喝醉了，她扶着我去车里歇了一夜，我醒来的时候她人就不见了。我们过夜只有那一次，那夜我们什么都没发生，车里有行车记录仪。优盘在那个放杂物的箱子里，你找到它一切就真相大白了。我先前只想起来有东西在里面，具体是什么却不知。」</p>
+<p>他吻了吻我的耳垂。</p>
+<p>「你答应了的，要嫁给我。」</p>
+<p>我再唤他的名字却没有回应，转头一看，褚寂然垂着脑袋已然晕了过去。</p>
+<p>那边的亲子鉴定结果也出来了，俊俊是程遥的亲生儿子。</p>
+<p>徐轻云知道是程遥给了我鉴定材料，她也没说什么只是托我带话给褚寂然。</p>
+<p>「是我对不起他也对不起你，日后若有机会，一定弥补。」</p>
+<p>我匿名捐了钱给徐轻云，不久后收到了一封感谢信。他们卖了外省的房子给程遥治病，只说人活着就行，其他的可以慢慢来。</p>
+<p>褚寂然记忆恢复了就看不着那样脆弱的神态了，男人垂着眼眸，看着冷冷淡淡的。</p>
+<p>就是耳垂有些红，看着有几分羞赧。</p>
+<p>「你还挺聪明的，知道另做一份亲子鉴定。」</p>
+<p>他扬了扬眉，尽管脑袋裹得像个印度阿三，也好看得叫人心惊。</p>
+<p>我就知道这个男人又要口是心非了。</p>
+<p>于是故意做出一副决绝的样子来。</p>
+<p>「我们分手吧。」</p>
+<p>褚寂然弯了眼眸。</p>
+<p>「好。」</p>
+<p>我心头一惊，男人拽着我倒在床上。</p>
+<p>「我们结婚。」</p>
+<p>（完）</p>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/2024/11/9-%E5%A5%B3%E7%94%9F%E5%AE%BF%E8%88%8D%E5%8F%91%E7%94%9F%E8%BF%87%E5%93%AA%E4%BA%9B%E8%AE%A9%E4%BD%A0%E7%94%9F%E6%B0%94%E7%9A%84%E4%BA%8B%E6%83%85/" title="女生宿舍发生过哪些让你生气的事情？">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">女生宿舍发生过哪些让你生气的事情？</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/2024/11/9-%E5%8D%B1%E6%83%85/" title="危情">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">危情</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+    </article>
+  </div>
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+<article>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/2024\/11\/9-%E5%9C%88%E5%BF%83\/';
+        this.page.title = '圈心';
+        this.page.url = 'https:\/\/mohai.us.kg\/posts\/2024\/11\/9-%E5%9C%88%E5%BF%83\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mohai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+
+
+
+
+
+
+
+
+  </section>
+  
+</div>
+
+
+            
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            
+              <div>
+  
+  <p>
+    © 2021 - 2024 墨海拾贝
+  </p>
+  
+
+  
+  <p> </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Cut out summary from your post content here.</p>
+<p>The remaining content of your post.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "retro"
+  window.darkTheme = "night"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-15FB092M49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-15FB092M49');
+        }
+      </script>
+    
+  
+
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
