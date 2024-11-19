@@ -137,3 +137,7 @@ project/
 3. 添加文章内容查重
 4. 增加更多的异常处理机制
 5. 添加邮件通知功能
+
+```shell
+nohup python3 -u scheduler.py > run.log 2>&1 &
+```
